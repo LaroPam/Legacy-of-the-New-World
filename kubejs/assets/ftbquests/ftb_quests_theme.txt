@@ -1,0 +1,37 @@
+extra_quest_shapes: crown, laurel, scroll, shield, coin, star, ribbon
+# Visual foundation for Nasledie 2.0
+background: color:transparent
+selected_chapter_highlight_1: #70A67C52
+selected_chapter_highlight_2: #307C5C3B
+text_color: #DDE8F7
+hover_text_color: #9ADDF6
+disabled_text_color: #8B98A9
+widget_border: #536D89
+widget_background: #992A3D57
+button: hollow_rectangle:{{widget_border}}
+panel: {{container_slot}}
+disabled_button: hollow_rectangle:{{widget_border}}
+hover_button: {{button}} + {{widget_background}}; padding=1
+context_menu: hollow_rectangle:{{widget_border}}; round_edges + {{background}}; color=#D5C5AC; padding=1
+scroll_bar_background: {{widget_background}}
+scroll_bar: {{button}} + {{widget_background}}; padding=1
+container_slot: hollow_rectangle:#526C8C + color=#24374B
+text_box: hollow_rectangle:#526C8C + color=#24374B
+quest_view_background: color:transparent
+quest_view_border: #4F6A86
+quest_view_title: #D9E8F9
+quest_started_color: #83C4ED
+quest_not_started_color: #A8BDD4
+quest_locked_color: #788395
+dependency_line_completed_color: #63BE91
+dependency_line_uncompleted_color: #83B8E0
+dependency_line_requires_color: #DEB768
+dependency_line_required_for_color: #72B8D9
+quest_spacing: 1.05
+quest_completed_color: #4EAE7B
+rewards_text_color: #80D4A7
+tasks_text_color: #9ACBF0
+symbol_in: #B9854B
+symbol_out: #4E3D31
+check_icon: builtin
+add_icon: builtin
