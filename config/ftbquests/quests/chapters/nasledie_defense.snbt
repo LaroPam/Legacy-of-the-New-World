@@ -1,0 +1,994 @@
+{
+    filename: "nasledie_defense"
+    id: "A1279E21532D7CDD"
+    group: "842B4DB4DBD349A0"
+    title: "Военное дело — Академия защитника"
+    icon: "minecraft:shield"
+    order_index: 8
+    progression_mode: "flexible"
+    default_hide_dependency_lines: false
+    default_quest_shape: "shield"
+
+    quest_links: []
+    quests: [
+        {
+            id: "A33D4E94573F3BD4"
+            title: "Первый урок: хищная флора"
+            x: 0.00d
+            y: 0.00d
+            icon: "mowziesmobs:foliaath_seed"
+            shape: "star"
+            size: 1.28d
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основной путь"
+                "§eЗачем: §fFoliaath неподвижен, но опасен в ближнем бою. Важны дистанция и момент атаки."
+                "§bПрактика: §fНайдите растение, наблюдайте за его радиусом атаки и победите без разрушения базы."
+                "§aАвтопроверка: §fДостижение Mowzie’s Mobs за личное убийство Foliaath."
+            ]
+            tasks: [
+                {
+                    id: "2AC585CD48AE540C"
+                    type: "advancement"
+                    advancement: "mowziesmobs:kill_foliaath"
+                }
+            ]
+            rewards: [
+                {
+                    id: "071C7F1FB19DAD7E"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "A38D068DD2668743"
+                    type: "item"
+                    item: { Count: 1b, id: "better_weaponry:iron_rapier" }
+                }
+            ]
+        }
+        {
+            id: "FF7561483C27E289"
+            title: "Воздушная угроза: нага"
+            x: 4.00d
+            y: 0.00d
+            icon: "mowziesmobs:naga_fang"
+            shape: "shield"
+            size: 1.20d
+            dependencies: [
+                "A33D4E94573F3BD4"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основной путь"
+                "§eЗачем: §fЛетающий противник учит выбору позиции и контролю траектории."
+                "§bПрактика: §fРазведайте местность, наблюдайте за атаками Naga и победите."
+                "§aАвтопроверка: §fДостижение за убийство Naga."
+            ]
+            tasks: [
+                {
+                    id: "CDC030E307026F75"
+                    type: "advancement"
+                    advancement: "mowziesmobs:kill_naga"
+                }
+            ]
+            rewards: [
+                {
+                    id: "5F68AFDAA4817906"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "AA399F2BF91DDC9A"
+                    type: "item"
+                    item: { Count: 1b, id: "better_weaponry:iron_glaive" }
+                }
+            ]
+        }
+        {
+            id: "4843AED5CE824450"
+            title: "Железный воин: окно уязвимости"
+            x: 8.00d
+            y: 0.00d
+            icon: "mowziesmobs:wrought_helmet"
+            shape: "shield"
+            size: 1.20d
+            dependencies: [
+                "FF7561483C27E289"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основной путь"
+                "§eЗачем: §fFerrous Wroughtnaut требует тактики: удары в неподходящий момент бесполезны."
+                "§bПрактика: §fИзучите телеграфирование ударов и защищённые фазы босса, затем победите."
+                "§aАвтопроверка: §fДостижение за убийство Ferrous Wroughtnaut."
+            ]
+            tasks: [
+                {
+                    id: "122EB5284B0C49F9"
+                    type: "advancement"
+                    advancement: "mowziesmobs:kill_ferrous_wroughtnaut"
+                }
+            ]
+            rewards: [
+                {
+                    id: "800E451366EC4DE4"
+                    type: "xp"
+                    xp: 430
+                }
+                {
+                    id: "4BD691D8722ED500"
+                    type: "item"
+                    item: { Count: 1b, id: "better_weaponry:iron_dagger" }
+                }
+            ]
+        }
+        {
+            id: "92AF3238F7B8776E"
+            title: "Морозный охотник"
+            x: 12.00d
+            y: 0.00d
+            icon: "mowziesmobs:ice_crystal"
+            shape: "shield"
+            size: 1.20d
+            dependencies: [
+                "4843AED5CE824450"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основной путь"
+                "§eЗачем: §fFrostmaw требует контроля пространства и умения реагировать на ледяные атаки."
+                "§bПрактика: §fПроведите разведку арены и победите Frostmaw."
+                "§aАвтопроверка: §fДостижение за убийство Frostmaw."
+            ]
+            tasks: [
+                {
+                    id: "108B6BC0929EADED"
+                    type: "advancement"
+                    advancement: "mowziesmobs:kill_frostmaw"
+                }
+            ]
+            rewards: [
+                {
+                    id: "DC877DB36958D61B"
+                    type: "xp"
+                    xp: 470
+                }
+                {
+                    id: "30C5D55AEEE6C96C"
+                    type: "item"
+                    item: { Count: 1b, id: "better_weaponry:iron_spear" }
+                }
+            ]
+        }
+        {
+            id: "A378D8F13118FF97"
+            title: "Владыка солнечной маски"
+            x: 16.00d
+            y: 0.00d
+            icon: "mowziesmobs:sol_visage"
+            shape: "crown"
+            size: 1.36d
+            dependencies: [
+                "92AF3238F7B8776E"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основной путь"
+                "§eЗачем: §fUmvuthi завершает боевую академию сложным сражением с несколькими паттернами."
+                "§bПрактика: §fОтыщите Umvuthi, изучите угрозы и одержите победу."
+                "§aАвтопроверка: §fДостижение Mowzie’s Mobs за убийство Umvuthi."
+            ]
+            tasks: [
+                {
+                    id: "C8B4A970644DEB80"
+                    type: "advancement"
+                    advancement: "mowziesmobs:kill_umvuthi"
+                }
+            ]
+            rewards: [
+                {
+                    id: "118FDEE47349AE31"
+                    type: "xp"
+                    xp: 680
+                }
+                {
+                    id: "E94494FEE399E886"
+                    type: "item"
+                    item: { Count: 1b, id: "better_weaponry:iron_broadsword" }
+                }
+            
+                {
+                    id: "8A9381716BF62BE8"
+                    type: "item"
+                    item: { Count: 4b, id: "minecraft:golden_apple" }
+                }
+            ]
+        }
+        {
+            id: "216A8A3EE5B58D96"
+            title: "Нападение из засады"
+            x: 4.00d
+            y: -5.00d
+            icon: "mowziesmobs:bluff_rod"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "A33D4E94573F3BD4"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fBluff помогает освоить чтение новых паттернов нападения."
+                "§bПрактика: §fВстретьте Bluff и победите его, соблюдая дистанцию."
+                "§aАвтопроверка: §fДостижение Mowzie’s Mobs за убийство Bluff."
+            ]
+            tasks: [
+                {
+                    id: "4DDEEE579CE5F2DB"
+                    type: "advancement"
+                    advancement: "mowziesmobs:kill_bluff"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A0D7E21276F8AF2B"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "28A29F4055668579"
+                    type: "item"
+                    item: { Count: 1b, id: "better_weaponry:amethyst_rapier" }
+                }
+            ]
+        }
+        {
+            id: "5C3BCCAC46517EDE"
+            title: "Сокровище умеет убегать"
+            x: 8.00d
+            y: -5.00d
+            icon: "minecraft:shield"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "216A8A3EE5B58D96"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fGrottol проверяет скорость реакции и выбор инструмента."
+                "§bПрактика: §fНайдите Grottol и успешно добудьте его трофей."
+                "§aАвтопроверка: §fДостижение Mowzie’s Mobs, а не наличие алмазов."
+            ]
+            tasks: [
+                {
+                    id: "DFB81C420271AD35"
+                    type: "advancement"
+                    advancement: "mowziesmobs:kill_grottol"
+                }
+            ]
+            rewards: [
+                {
+                    id: "212492A056EFDA3B"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "8901B1692773F258"
+                    type: "item"
+                    item: { Count: 1b, id: "better_weaponry:amethyst_glaive" }
+                }
+            ]
+        }
+        {
+            id: "1AA2F1D6F60E9FDB"
+            title: "Защитник племени"
+            x: 12.00d
+            y: -5.00d
+            icon: "mowziesmobs:umvuthana_mask_fury"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "5C3BCCAC46517EDE"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fБоевая группа племени требует контроля нескольких угроз."
+                "§bПрактика: §fВыберите подходящую защиту и победите Umvuthana Raptor."
+                "§aАвтопроверка: §fДостижение за победу над Umvuthana Raptor."
+            ]
+            tasks: [
+                {
+                    id: "C67FEB9782F3A330"
+                    type: "advancement"
+                    advancement: "mowziesmobs:kill_umvuthana_raptor"
+                }
+            ]
+            rewards: [
+                {
+                    id: "EBD43B3B7948F7AA"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "FE9A78F7CD9E4096"
+                    type: "item"
+                    item: { Count: 1b, id: "better_weaponry:amethyst_shield" }
+                }
+            ]
+        }
+        {
+            id: "667FADB4630B1FBC"
+            title: "Урок скрытности"
+            x: 20.00d
+            y: -5.00d
+            icon: "mowziesmobs:umvuthana_mask_fear"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "A378D8F13118FF97"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fНе все опасные ситуации требуют немедленной атаки."
+                "§bПрактика: §fПосле столкновения с Umvuthi попробуйте раскрыть механику скрытного посещения рощи."
+                "§aАвтопроверка: §fСпециальный модовый триггер sneak_grove. Родитель: kill_umvuthi."
+            ]
+            tasks: [
+                {
+                    id: "DD5CC3BCCBF95FCD"
+                    type: "advancement"
+                    advancement: "mowziesmobs:sneak_grove"
+                }
+            ]
+            rewards: [
+                {
+                    id: "9054D997D6B39559"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "A5E7964A2440D4F6"
+                    type: "item"
+                    item: { Count: 1b, id: "better_weaponry:emerald_shield" }
+                }
+            ]
+        }
+        {
+            id: "62D20856FFA016C3"
+            title: "Сила солнечного благословения"
+            x: 24.00d
+            y: -5.00d
+            icon: "mowziesmobs:grant_suns_blessing"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "667FADB4630B1FBC"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fНекоторые награды связаны с поведением и взаимодействием с миром."
+                "§bПрактика: §fПолучите солнечное благословение, ориентируясь на внутриигровую механику Mowzie’s Mobs."
+                "§aАвтопроверка: §fИзменение эффектов: получен suns_blessing."
+            ]
+            tasks: [
+                {
+                    id: "DE2D5ECE493360C8"
+                    type: "advancement"
+                    advancement: "mowziesmobs:suns_blessing"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A8222F5A26639C50"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "C1A4565277B178BD"
+                    type: "item"
+                    item: { Count: 1b, id: "better_weaponry:amethyst_katana" }
+                }
+            ]
+        }
+        {
+            id: "0EF67FFF73E6D383"
+            title: "Литейный материал для артиллерии"
+            x: 4.00d
+            y: 11.00d
+            icon: "createbigcannons:casting_sand"
+            shape: "circle"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "A33D4E94573F3BD4"
+            ]
+            description: [
+                "§7Проверка: §fЭто только Item Task: наличие детали/материала, а не доказательство сборки, включения или работы орудия."
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fCreate Big Cannons использует отдельную технологию изготовления тяжёлых элементов."
+                "§bПрактика: §fИзучите литьё: составьте безопасный учебный стенд и получите Casting Sand."
+                "§aАвтопроверка: §fItem Task подтверждает только получение Casting Sand."
+            ]
+            tasks: [
+                {
+                    id: "3B9C2FC4D514178B"
+                    type: "item"
+                    item: "createbigcannons:casting_sand"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "9D653146B6ED43B5"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "590A667B79E4289F"
+                    type: "item"
+                    item: { Count: 1b, id: "createbigcannons:cannon_welder" }
+                }
+            ]
+        }
+        {
+            id: "35AB582E2E08DF86"
+            title: "Развёрнутый сборщик стволов"
+            x: 8.00d
+            y: 11.00d
+            icon: "createbigcannons:cannon_builder"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "0EF67FFF73E6D383"
+            ]
+            description: [
+                "§7Проверка: §fЭто только Item Task: наличие детали/материала, а не доказательство сборки, включения или работы орудия."
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fCannon Builder отвечает за сборку элементов ствола."
+                "§bПрактика: §fПолучите инструмент, затем посмотрите реальную схему работы и подготовьте площадку."
+                "§aАвтозачёт: §fУстановите createbigcannons:cannon_builder в мире. Это подтверждает монтаж блока, но НЕ производство, передачу энергии или работу станка."
+            ]
+            tasks: [
+                {
+                    id: "71A787824B72E7B7"
+                    type: "advancement"
+                    advancement: "nasledie:setup/defense/cannon_builder"
+                }
+            ]
+            rewards: [
+                {
+                    id: "5ADACCED338520E7"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "A62FB32A558D3B1C"
+                    type: "item"
+                    item: { Count: 1b, id: "createbigcannons:gas_mask" }
+                }
+            ]
+        }
+        {
+            id: "35D125C19D556E7A"
+            title: "Монтаж сверлильного станка"
+            x: 12.00d
+            y: 11.00d
+            icon: "createbigcannons:cannon_drill"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "35AB582E2E08DF86"
+            ]
+            description: [
+                "§7Проверка: §fЭто только Item Task: наличие детали/материала, а не доказательство сборки, включения или работы орудия."
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fТяжёлые заготовки требуют обработки канала."
+                "§bПрактика: §fПолучите Cannon Drill, разберите схему его питания и используйте на испытательном стенде."
+                "§aАвтозачёт: §fУстановите createbigcannons:cannon_drill в мире. Это подтверждает монтаж блока, но НЕ производство, передачу энергии или работу станка."
+            ]
+            tasks: [
+                {
+                    id: "E0E22FE62612CCB3"
+                    type: "advancement"
+                    advancement: "nasledie:setup/defense/cannon_drill"
+                }
+            ]
+            rewards: [
+                {
+                    id: "4ACB08C83499CEED"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "19D23436CC8529D3"
+                    type: "item"
+                    item: { Count: 2b, id: "mowziesmobs:dart" }
+                }
+            ]
+        }
+        {
+            id: "17FE2073432FC7E0"
+            title: "Монтаж орудийной станины"
+            x: 16.00d
+            y: 11.00d
+            icon: "createbigcannons:fixed_cannon_mount"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "35D125C19D556E7A"
+            ]
+            description: [
+                "§7Проверка: §fЭто только Item Task: наличие детали/материала, а не доказательство сборки, включения или работы орудия."
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fУправление направлением ствола — отдельный раздел артиллерии."
+                "§bПрактика: §fСоберите Mount, испытайте поворот на безопасном полигоне."
+                "§aАвтозачёт: §fУстановите createbigcannons:fixed_cannon_mount в мире. Это подтверждает монтаж блока, но НЕ производство, передачу энергии или работу станка."
+            ]
+            tasks: [
+                {
+                    id: "16A1085F05EB2E6F"
+                    type: "advancement"
+                    advancement: "nasledie:setup/defense/fixed_cannon_mount"
+                }
+            ]
+            rewards: [
+                {
+                    id: "6D592BE78118D9DC"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "050F3FEAE0725F8C"
+                    type: "item"
+                    item: { Count: 1b, id: "mowziesmobs:blowgun" }
+                }
+            ]
+        }
+        {
+            id: "8EC3B7E438EA800A"
+            title: "Монтаж механизма заряжания"
+            x: 20.00d
+            y: 11.00d
+            icon: "createbigcannons:cannon_loader"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "17FE2073432FC7E0"
+            ]
+            description: [
+                "§7Проверка: §fЭто только Item Task: наличие детали/материала, а не доказательство сборки, включения или работы орудия."
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fLoader позволяет автоматизировать передачу снаряда и заряда."
+                "§bПрактика: §fПолучите Loader и изучите, как ориентируются снаряд, пороховой заряд и шомпол."
+                "§aАвтозачёт: §fУстановите createbigcannons:cannon_loader в мире. Это подтверждает монтаж блока, но НЕ производство, передачу энергии или работу станка."
+            ]
+            tasks: [
+                {
+                    id: "BBFC51AD08E029FE"
+                    type: "advancement"
+                    advancement: "nasledie:setup/defense/cannon_loader"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A2E894377B0C3D26"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "1635AF1A87BE11E8"
+                    type: "item"
+                    item: { Count: 1b, id: "mowziesmobs:glowing_jelly" }
+                }
+            ]
+        }
+        {
+            id: "1E7E546AB7203A0B"
+            title: "Кража у Морозной Пасти"
+            x: 12.00d
+            y: 5.00d
+            icon: "mowziesmobs:ice_crystal"
+            shape: "shield"
+            size: 1.20d
+            dependencies: [
+                "FF7561483C27E289"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Секретный вызов: §fнеобязательно устраивать бой с Frostmaw до конца."
+                "§bЗадание: §fпохитьте ледяной кристалл у живого Frostmaw."
+                "§aПроверка: §fсобытие steal_ice_crystal, убийство босса само по себе не подходит."
+            ]
+            tasks: [
+                {
+                    id: "367F0386357C1D90"
+                    type: "advancement"
+                    advancement: "mowziesmobs:steal_ice_crystal"
+                }
+            ]
+            rewards: [
+                {
+                    id: "888438102750DE8B"
+                    type: "xp"
+                    xp: 390
+                }
+                {
+                    id: "77555500508BF1C9"
+                    type: "item"
+                    item: { Count: 1b, id: "mowziesmobs:ice_crystal" }
+                }
+            ]
+        }
+        {
+            id: "B89ADDCBCB295F18"
+            title: "Монастырь испытаний"
+            x: 16.00d
+            y: 5.00d
+            icon: "minecraft:chiseled_stone_bricks"
+            shape: "scroll"
+            size: 1.12d
+            dependencies: [
+                "A378D8F13118FF97"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Новая экспедиция: §fна горных склонах встречаются тайные монастыри."
+                "§bЗадание: §fразыщите Monastery Mowzie’s Mobs и разведайте подъёмы к испытанию Скульптора."
+                "§aПроверка: §fFTB Structure Task на реальную структуру mowziesmobs:monastery."
+            ]
+            tasks: [
+                {
+                    id: "00730F93FACE1FC6"
+                    type: "structure"
+                    structure: "mowziesmobs:monastery"
+                }
+            ]
+            rewards: [
+                {
+                    id: "68C1B0BAF202E0E4"
+                    type: "xp"
+                    xp: 280
+                }
+                {
+                    id: "B7970D42064CAE81"
+                    type: "item"
+                    item: { Count: 4b, id: "mowziesmobs:geomancer_beads" }
+                }
+            ]
+        }
+        {
+            id: "DF85EFBB8E452760"
+            title: "Экзамен Скульптора"
+            x: 20.00d
+            y: 5.00d
+            icon: "mowziesmobs:earthrend_gauntlet"
+            shape: "crown"
+            size: 1.32d
+            dependencies: [
+                "B89ADDCBCB295F18"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Испытание выносливости: §fсила без движения здесь не поможет."
+                "§bЗадание: §fуспешно завершите испытание Скульптора в монастыре."
+                "§aПроверка: §fсобытие sculptor_challenge. Не путать с событием провала."
+            ]
+            tasks: [
+                {
+                    id: "A2ACFF4EFDF10E4B"
+                    type: "advancement"
+                    advancement: "mowziesmobs:sculptor_challenge"
+                }
+            ]
+            rewards: [
+                {
+                    id: "5E1CC50DD33E36BC"
+                    type: "xp"
+                    xp: 900
+                }
+                {
+                    id: "DF627600D416A5BD"
+                    type: "item"
+                    item: { Count: 1b, id: "mowziesmobs:geomancer_belt" }
+                }
+            
+                {
+                    id: "7EE4F1B1A2C73F68"
+                    type: "item"
+                    item: { Count: 7b, id: "minecraft:diamond" }
+                }
+            ]
+        }
+        {
+            id: "B704072AA3306667"
+            title: "Роща солнечного племени"
+            x: 4.00d
+            y: -10.00d
+            icon: "minecraft:acacia_log"
+            shape: "scroll"
+            size: 1.12d
+            dependencies: [
+                "216A8A3EE5B58D96"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Маршрут этнографа: §fследы племени ведут к редкой роще."
+                "§bЗадание: §fотыщите Umvuthana Grove и обозначьте выходы перед исследованием."
+                "§aПроверка: §fStructure Task на mowziesmobs:umvuthana_grove; обычное убийство члена племени не подходит."
+            ]
+            tasks: [
+                {
+                    id: "FC5D1E7B9801B73A"
+                    type: "structure"
+                    structure: "mowziesmobs:umvuthana_grove"
+                }
+            ]
+            rewards: [
+                {
+                    id: "E259103D308BEB81"
+                    type: "xp"
+                    xp: 240
+                }
+                {
+                    id: "BAC3462A1F1170AE"
+                    type: "item"
+                    item: { Count: 4b, id: "mowziesmobs:foliaath_seed" }
+                }
+            ]
+        }
+        {
+            id: "06BF2A4D15D6CD27"
+            title: "Зал кованого стража"
+            x: 8.00d
+            y: -10.00d
+            icon: "minecraft:anvil"
+            shape: "scroll"
+            size: 1.12d
+            dependencies: [
+                "B704072AA3306667"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Подземная архитектура: §fнайдите отдельный зал железного воителя."
+                "§bЗадание: §fобнаружьте Wrought Chamber и разведайте арену; сражение необязательно для зачёта."
+                "§aПроверка: §fStructure Task на mowziesmobs:wrought_chamber, не достижение за убийство босса."
+            ]
+            tasks: [
+                {
+                    id: "5BBAC2DB65AB3E78"
+                    type: "structure"
+                    structure: "mowziesmobs:wrought_chamber"
+                }
+            ]
+            rewards: [
+                {
+                    id: "2859491B8BFAC019"
+                    type: "xp"
+                    xp: 300
+                }
+                {
+                    id: "80A93380C9A3252A"
+                    type: "item"
+                    item: { Count: 10b, id: "mowziesmobs:glowing_jelly" }
+                }
+            ]
+        }
+        {
+            id: "0DA6143558A570BF"
+            title: "Гроттол и кирка удачи"
+            x: 12.00d
+            y: -8.00d
+            icon: "minecraft:golden_pickaxe"
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "5C3BCCAC46517EDE"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fМаленькое сокровище требует правильного зачарования."
+                "§bПрактика: §fПобедите Grottol киркой с Fortune, изучите особую добычу."
+                "§aАвтопроверка: §fСобытие kill_grottol_fortune, не обычное убийство."
+            ]
+            tasks: [
+                {
+                    id: "874A4D265FD20B8B"
+                    type: "advancement"
+                    advancement: "mowziesmobs:kill_grottol_fortune"
+                }
+            ]
+            rewards: [
+                {
+                    id: "1FE1BE8620BED875"
+                    type: "xp"
+                    xp: 340
+                }
+                {
+                    id: "9A1B4C79AA45FBD4"
+                    type: "item"
+                    item: { Count: 12b, id: "minecraft:emerald" }
+                }
+            ]
+        }
+        {
+            id: "A3EDE771A3D3FAE9"
+            title: "Гроттол в сохранности"
+            x: 16.00d
+            y: -8.00d
+            icon: "minecraft:diamond_pickaxe"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "0DA6143558A570BF"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fЕсть и другой способ забрать подземное сокровище."
+                "§bПрактика: §fПобедите другого Grottol инструментом с Silk Touch."
+                "§aАвтопроверка: §fОтдельное событие kill_grottol_silk_touch."
+            ]
+            tasks: [
+                {
+                    id: "424B3E60069B0790"
+                    type: "advancement"
+                    advancement: "mowziesmobs:kill_grottol_silk_touch"
+                }
+            ]
+            rewards: [
+                {
+                    id: "DD33BD380BBE6F76"
+                    type: "xp"
+                    xp: 350
+                }
+                {
+                    id: "6CA611CE7F09F9DB"
+                    type: "item"
+                    item: { Count: 10b, id: "minecraft:diamond" }
+                }
+            ]
+        }
+        {
+            id: "4CE1E389229E6BFE"
+            title: "Падение у Скульптора"
+            x: 24.00d
+            y: 5.00d
+            icon: "minecraft:feather"
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "DF85EFBB8E452760"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fДаже великие искатели однажды проигрывают испытание."
+                "§bПрактика: §fПопробуйте испытание Скульптора ещё раз и потерпите поражение."
+                "§aАвтопроверка: §fОсобое событие sculptor_failure; успешное испытание не засчитает его."
+            ]
+            tasks: [
+                {
+                    id: "444E0765693B0FD0"
+                    type: "advancement"
+                    advancement: "mowziesmobs:sculptor_failure"
+                }
+            ]
+            rewards: [
+                {
+                    id: "4D667552B3DAA6E3"
+                    type: "xp"
+                    xp: 160
+                }
+                {
+                    id: "96CB0FB6631A5C98"
+                    type: "item"
+                    item: { Count: 5b, id: "mowziesmobs:geomancer_beads" }
+                }
+            ]
+        }
+    
+        {
+            id: "0EA51C1EFC97CF87"
+            title: "Караул солнечной рощи"
+            x: 8.00d
+            y: -15.00d
+            icon: "minecraft:golden_sword"
+            shape: "shield"
+            size: 1.18d
+            optional: true
+            dependencies: [
+                "B704072AA3306667"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§fНе все патрули солнечного племени одинаково опасны."
+                "§fВступи в бой и одолей двух разных воинов: Умвутану Ярости и Умвутану Страха."
+                "§fОба убийства подтверждаются отдельными игровыми событиями."
+                "§aАвтопроверка: §fСобственное скрытое достижение: все условия обязательны."
+            ]
+            tasks: [
+                {
+                    id: "448F6A93723378AF"
+                    type: "advancement"
+                    advancement: "nasledie:alpha39/mowzie/grove_watch"
+                }
+            
+                {
+                    id: "CF070C6BAB247D3D"
+                    type: "advancement"
+                    advancement: "nasledie:alpha39/mowzie/grove_watch__fear"
+                }
+            ]
+            rewards: [
+                {
+                    id: "0D9C63BEE6D7DD9A"
+                    type: "xp"
+                    xp: 230
+                }
+                {
+                    id: "8BE7C9F823C076B4"
+                    type: "item"
+                    item: { Count: 6b, id: "minecraft:gold_ingot" }
+                }
+            ]
+        }
+    
+        {
+            id: "9B6EFB1C669C7CFA"
+            title: "Четыре испытания трофейного топора"
+            x: 20.00d
+            y: 0.00d
+            icon: "minecraft:nether_star"
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [ "A378D8F13118FF97" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Финал боевой школы"
+                "§eПредыстория: §fПродолжение боевой школы после испытаний основной линии."
+                "§bИспытание: §fИспользуя трофейную Wrought Axe в основной руке, победите разбойничьего зверя (Ravager), призывателя (Evoker), пиглина-брута и визер-скелета."
+                "§aАвтопроверка: §fЧетыре независимых убийства при условии, что Wrought Axe находится в основной руке."
+                "§7Важно: §fПроверяется экипировка в момент убийства; причина последнего удара отдельно не проверяется."
+            ]
+            tasks: [
+                {
+                    id: "E843B6B59654DC48"
+                    type: "advancement"
+                    advancement: "nasledie:alpha41_qa2/warrior/1_ravager"
+                }
+                {
+                    id: "B2FAEDC85043BEE5"
+                    type: "advancement"
+                    advancement: "nasledie:alpha41_qa2/warrior/2_evoker"
+                }
+                {
+                    id: "1E123CD8FDFCCC36"
+                    type: "advancement"
+                    advancement: "nasledie:alpha41_qa2/warrior/3_piglin_brute"
+                }
+                {
+                    id: "C3C44679039989CE"
+                    type: "advancement"
+                    advancement: "nasledie:alpha41_qa2/warrior/4_wither_skeleton"
+                }
+            ]
+            rewards: [
+                {
+                    id: "0260BFDDB1D80C39"
+                    type: "xp"
+                    xp: 950
+                }
+                {
+                    id: "847949EC8AB7219D"
+                    type: "item"
+                    item: { Count: 1b, id: "minecraft:totem_of_undying" }
+                }
+            ]
+        }
+    ]
+}

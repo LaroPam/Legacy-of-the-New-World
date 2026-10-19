@@ -1,0 +1,1591 @@
+{
+    filename: "nasledie_create"
+    id: "9B72DF3BE0E6A5DE"
+    group: "842B4DB4DBD349A0"
+    title: "Механическая эпоха — Академия Create"
+    icon: "create:cogwheel"
+    order_index: 2
+    progression_mode: "flexible"
+    default_hide_dependency_lines: false
+    default_quest_shape: "gear"
+    default_quest_size: 1.28d
+
+    quest_links: []
+    quests: [
+        {
+            id: "1D1395D17D6238DB"
+            title: "Сплав инженера"
+            x: 0.00d
+            y: 0.00d
+            icon: "create:andesite_alloy"
+            shape: "star"
+            size: 1.28d
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fАндезитовый сплав — отправная точка Create. Изучите способы его получения и применения."
+                "§bПрактика: §fИзготовьте андезитовый сплав, затем откройте дерево достижений Create."
+                "§aЧто реально проверяется: §fВ инвентарь попал create:andesite_alloy; это получение предмета, а не запуск механизма."
+                "§dЕсли не получается: §fПроверяется только появление андезитового сплава в инвентаре; способ изготовления достижение не различает. Не считайте его экзаменом на автоматизацию."
+        ]
+            tasks: [
+                {
+                    id: "19E60BDF80E3F2D7"
+                    type: "advancement"
+                    advancement: "create:andesite_alloy"
+                }
+            ]
+            rewards: [
+                {
+                    id: "2B1FBDB5261E2C28"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "DB40DC297B3CCBFC"
+                    type: "item"
+                    item: { Count: 4b, id: "create:builders_tea" }
+                }
+            ]
+        }
+        {
+            id: "F208B2429B83E7D8"
+            title: "Первый машинный корпус"
+            x: 3.00d
+            y: 0.00d
+            icon: "create:andesite_casing"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "1D1395D17D6238DB"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fКорпуса формируют блоки более сложных машин."
+                "§bПрактика: §fПримените андезитовый сплав к обтёсанному бревну. Сравните корпус с обычной декоративной обшивкой."
+                "§aЧто реально проверяется: §fСобытие Create: создание андезитового корпуса."
+            ]
+            tasks: [
+                {
+                    id: "E3D7397E1575AB91"
+                    type: "advancement"
+                    advancement: "create:andesite_casing"
+                }
+            ]
+            rewards: [
+                {
+                    id: "30EBE28C1B31E045"
+                    type: "xp"
+                    xp: 110
+                }
+                {
+                    id: "E1E7D9F7C612174F"
+                    type: "item"
+                    item: { Count: 1b, id: "create:clipboard" }
+                }
+            ]
+        }
+        {
+            id: "013B127CA07E038A"
+            title: "Работающий механический пресс"
+            x: 6.00d
+            y: 0.00d
+            icon: "create:mechanical_press"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "F208B2429B83E7D8"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fПресс создаёт листы при подаче вращения. Наличие блока не равно работе."
+                "§bПрактика: §fПоставьте пресс над Depot/ёмкостью, подведите кинетическую энергию и действительно спрессуйте материал."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за результат прессования."
+                "§dЕсли не получается: §fЕсли пресс не работает, проверьте вал, наличие Depot/Basin, ресурс под прессом и не превышен ли запас Stress Units."
+        ]
+            tasks: [
+                {
+                    id: "5E0CBC1F12029523"
+                    type: "advancement"
+                    advancement: "create:mechanical_press"
+                }
+            ]
+            rewards: [
+                {
+                    id: "6F6D5C3C019D1BB6"
+                    type: "xp"
+                    xp: 145
+                }
+                {
+                    id: "D701BDE428EB1530"
+                    type: "item"
+                    item: { Count: 1b, id: "create:blue_toolbox" }
+                }
+            ]
+        }
+        {
+            id: "82EB3ADD3D2CD6B9"
+            title: "Вентилятор в движении"
+            x: 9.00d
+            y: 0.00d
+            icon: "create:encased_fan"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "013B127CA07E038A"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fВентилятор меняет режимы обработки в зависимости от среды."
+                "§bПрактика: §fПодключите Encased Fan к кинетической сети и убедитесь, что он вращается."
+                "§aЧто реально проверяется: §fВстроенный триггер Create за включение вентилятора."
+                "§dЕсли не получается: §fПри отсутствии эффекта проверьте вращение, направление потока и расстояние до предметов."
+        ]
+            tasks: [
+                {
+                    id: "271C27A5780C7688"
+                    type: "advancement"
+                    advancement: "create:encased_fan"
+                }
+            ]
+            rewards: [
+                {
+                    id: "DF0053F6E28E970A"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "4A5CA5F4E96C051C"
+                    type: "item"
+                    item: { Count: 1b, id: "create:goggles" }
+                }
+            ]
+        }
+        {
+            id: "1245D0A9CAC83D18"
+            title: "Обработка воздушным потоком"
+            x: 12.00d
+            y: 0.00d
+            icon: "create:propeller"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "82EB3ADD3D2CD6B9"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fОдин воздушный поток способен обрабатывать много предметов."
+                "§bПрактика: §fПодайте предметы в поток, добейтесь смены результата; исследуйте, как влияют вода, лава и пламя."
+                "§aЧто реально проверяется: §fВстроенное достижение Create: вентилятор действительно обработал предмет."
+                "§dЕсли не получается: §fВода, лава, огонь и дым дают разные способы обработки; проверьте, что входной предмет действительно преобразовался."
+        ]
+            tasks: [
+                {
+                    id: "3B94C74FCBF2893C"
+                    type: "advancement"
+                    advancement: "create:fan_processing"
+                }
+            ]
+            rewards: [
+                {
+                    id: "C881B1638C549609"
+                    type: "xp"
+                    xp: 135
+                }
+                {
+                    id: "16D49370002A53E0"
+                    type: "item"
+                    item: { Count: 1b, id: "create:wrench" }
+                }
+            ]
+        }
+        {
+            id: "EA8154FB9A317740"
+            title: "Первая лесопилка"
+            x: 15.00d
+            y: 0.00d
+            icon: "create:mechanical_saw"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "1245D0A9CAC83D18"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fMechanical Saw автоматизирует деревообработку."
+                "§bПрактика: §fУстановите пилу в правильной ориентации и обработайте ей материал, а не просто держите пилу в инвентаре."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за обработку пилой."
+                "§dЕсли не получается: §fМеханическая пила должна получить вращение и обработать подходящий материал. Простая установка блока не является результатом."
+        ]
+            tasks: [
+                {
+                    id: "F7FB05F2621AF0EB"
+                    type: "advancement"
+                    advancement: "create:saw_processing"
+                }
+            ]
+            rewards: [
+                {
+                    id: "79A52029E0143092"
+                    type: "xp"
+                    xp: 135
+                }
+                {
+                    id: "F7BD4686B7B29720"
+                    type: "item"
+                    item: { Count: 1b, id: "create:attribute_filter" }
+                }
+            ]
+        }
+        {
+            id: "C8C4ECA83D73BF63"
+            title: "Уплотнение под прессом"
+            x: 18.00d
+            y: 0.00d
+            icon: "minecraft:iron_block"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "EA8154FB9A317740"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fПресс над Basin объединяет несколько компонентов в результат."
+                "§bПрактика: §fПодключите Press и Basin, выполните операцию компактирования по рецепту JEI."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за компактирование."
+                "§dЕсли не получается: §fДля Compacting важны Basin, Press и нужный рецепт; проверяйте, что на выходе получен результат."
+        ]
+            tasks: [
+                {
+                    id: "51F720FFB7DC0FE5"
+                    type: "advancement"
+                    advancement: "create:compacting"
+                }
+            ]
+            rewards: [
+                {
+                    id: "390EA805B80222D8"
+                    type: "xp"
+                    xp: 145
+                }
+                {
+                    id: "948F8C80760DB189"
+                    type: "item"
+                    item: { Count: 2b, id: "create:filter" }
+                }
+            ]
+        }
+        {
+            id: "F68B3CF3BC1979DB"
+            title: "Настоящий конвейер"
+            x: 21.00d
+            y: 0.00d
+            icon: "create:belt_connector"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "C8C4ECA83D73BF63"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fКонвейер передаёт предметы между машинами."
+                "§bПрактика: §fСоедините два Shaft механическим ремнём и проверьте его движение."
+                "§aЧто реально проверяется: §fВстроенное событие Create: установлен механический ремень."
+                "§dЕсли не получается: §fУ конвейера нужны два ведущих вала на подходящем расстоянии. Вращение без перемещения предметов ещё не завершает практику."
+        ]
+            tasks: [
+                {
+                    id: "D63F4FEBC924D4F1"
+                    type: "advancement"
+                    advancement: "create:belt"
+                }
+            ]
+            rewards: [
+                {
+                    id: "590976DFF7E6E9E3"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "BEEA09EC114AFD46"
+                    type: "item"
+                    item: { Count: 1b, id: "create:brass_tunnel" }
+                }
+            ]
+        }
+        {
+            id: "26B8EA27D2BE22B9"
+            title: "Управляемая выгрузка"
+            x: 24.00d
+            y: 0.00d
+            icon: "create:andesite_funnel"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "F68B3CF3BC1979DB"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fFunnel управляет входом и выходом предметов из инвентарей."
+                "§bПрактика: §fНастройте воронку и убедитесь, что предметы проходят между хранилищем и лентой."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за применение Funnel."
+                "§dЕсли не получается: §fFunnel должен быть правильно ориентирован и иметь подходящий режим. Проверьте подачу по направлению потока."
+        ]
+            tasks: [
+                {
+                    id: "507B21131F96807E"
+                    type: "advancement"
+                    advancement: "create:funnel"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A1B8DBEA39D15F93"
+                    type: "xp"
+                    xp: 145
+                }
+                {
+                    id: "B13D812B7949F964"
+                    type: "item"
+                    item: { Count: 2b, id: "create:andesite_tunnel" }
+                }
+            ]
+        }
+        {
+            id: "2EBBB558E1A30F2F"
+            title: "Вертикальная логистика"
+            x: 27.00d
+            y: 0.00d
+            icon: "create:chute"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "26B8EA27D2BE22B9"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fChute транспортирует предметы вертикально."
+                "§bПрактика: §fОрганизуйте поток предметов из одного уровня на другой через Chute."
+                "§aЧто реально проверяется: §fВстроенный триггер Create за перемещение предметов через Chute."
+                "§dЕсли не получается: §fChute передаёт предметы вниз по вертикали; проверьте свободный выход и узкие места."
+        ]
+            tasks: [
+                {
+                    id: "3A2663716F512069"
+                    type: "advancement"
+                    advancement: "create:chute"
+                }
+            ]
+            rewards: [
+                {
+                    id: "536ADDC8E984E8F5"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "0E3AA4417FF0D73C"
+                    type: "item"
+                    item: { Count: 2b, id: "create:andesite_funnel" }
+                }
+            ]
+        }
+        {
+            id: "CDAC640579002402"
+            title: "Диплом механика: смешивание"
+            x: 30.00d
+            y: 0.00d
+            icon: "create:mechanical_mixer"
+            shape: "star"
+            size: 1.28d
+            dependencies: [
+                "2EBBB558E1A30F2F"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fМиксер — итоговый узел первичной механической мастерской."
+                "§bПрактика: §fПодайте вращение, подключите Basin и выполните реальный рецепт смешивания."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за успешное смешивание; не просто наличие миксера."
+                "§dЕсли не получается: §fДля смешивания нужна кинетика, Basin и рецепт; для некоторых рецептов необходим нагрев Blaze Burner."
+        ]
+            tasks: [
+                {
+                    id: "6E1D33F6A97FA968"
+                    type: "advancement"
+                    advancement: "create:mechanical_mixer"
+                }
+            ]
+            rewards: [
+                {
+                    id: "8E4E53AAC58F3289"
+                    type: "xp"
+                    xp: 220
+                }
+                {
+                    id: "E78A003701425C24"
+                    type: "item"
+                    item: { Count: 1b, id: "create:mechanical_bearing" }
+                }
+            ]
+        }
+        {
+            id: "3FA8926603B35ADD"
+            title: "Первая водяная энергия"
+            x: 3.00d
+            y: -5.00d
+            icon: "create:water_wheel"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "1D1395D17D6238DB"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fВодяное колесо преобразует течение в кинетическую мощность."
+                "§bПрактика: §fРазместите колесо и направьте поток воды так, чтобы оно реально вращалось."
+                "§aЧто реально проверяется: §fВстроенный триггер Create за использование водяного колеса."
+                "§dЕсли не получается: §fЕсли колесо не вращает вал, проверьте направление течения, фактическое вращение колеса и подключение кинетического потребителя."
+        ]
+            tasks: [
+                {
+                    id: "C9CD51A3B87F5F54"
+                    type: "advancement"
+                    advancement: "create:water_wheel"
+                }
+            ]
+            rewards: [
+                {
+                    id: "FEC896192890425A"
+                    type: "xp"
+                    xp: 115
+                }
+                {
+                    id: "E20AE565A0EFFE42"
+                    type: "item"
+                    item: { Count: 1b, id: "create:smart_fluid_pipe" }
+                }
+            ]
+        }
+        {
+            id: "91C8A76B406CF0AF"
+            title: "Ветряная энергетика"
+            x: 6.00d
+            y: -5.00d
+            icon: "create:sail_frame"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "3FA8926603B35ADD"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fМельница позволяет работать независимо от водных потоков."
+                "§bПрактика: §fСоберите ветряк из подходящих блоков, запустите его и сравните мощность с водяным колесом."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за запуск ветряка."
+            ]
+            tasks: [
+                {
+                    id: "708E0E91AC49CB3B"
+                    type: "advancement"
+                    advancement: "create:windmill"
+                }
+            ]
+            rewards: [
+                {
+                    id: "6AE850DB6FF1C479"
+                    type: "xp"
+                    xp: 140
+                }
+                {
+                    id: "F28F99B61BFB07DE"
+                    type: "item"
+                    item: { Count: 1b, id: "create:rotation_speed_controller" }
+                }
+            ]
+        }
+        {
+            id: "37C2A96BD4EE0C5C"
+            title: "Изменение скорости передачи"
+            x: 9.00d
+            y: -5.00d
+            icon: "create:cogwheel"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "91C8A76B406CF0AF"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fМалые и большие шестерни меняют частоту вращения."
+                "§bПрактика: §fСоедините малую и большую шестерни, добейтесь изменения скорости."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за изменение передачи."
+            ]
+            tasks: [
+                {
+                    id: "2DDD5A19DEF85A46"
+                    type: "advancement"
+                    advancement: "create:shifting_gears"
+                }
+            ]
+            rewards: [
+                {
+                    id: "0C1012057562018E"
+                    type: "xp"
+                    xp: 155
+                }
+                {
+                    id: "12DD275E97656EDB"
+                    type: "item"
+                    item: { Count: 1b, id: "create:display_link" }
+                }
+            ]
+        }
+        {
+            id: "95DD2AD4CCAA7D90"
+            title: "Жернова в деле"
+            x: 12.00d
+            y: -5.00d
+            icon: "create:millstone"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "37C2A96BD4EE0C5C"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fMillstone измельчает материалы с использованием вращения."
+                "§bПрактика: §fПодайте сырьё в работающие жернова и заберите готовый продукт."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за работу жерновов."
+                "§dЕсли не получается: §fНа Millstone подавайте подходящий ресурс. При отсутствии результата проверьте рецепт в JEI и скорость вращения."
+        ]
+            tasks: [
+                {
+                    id: "85070721FB6C64A5"
+                    type: "advancement"
+                    advancement: "create:millstone"
+                }
+            ]
+            rewards: [
+                {
+                    id: "F03932FD6EEF594B"
+                    type: "xp"
+                    xp: 125
+                }
+                {
+                    id: "C66C8AB23BFBEF6A"
+                    type: "item"
+                    item: { Count: 1b, id: "create:stock_link" }
+                }
+            ]
+        }
+        {
+            id: "CCF5C3CD6FF300E7"
+            title: "Склейка конструкции"
+            x: 15.00d
+            y: -5.00d
+            icon: "create:super_glue"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "95DD2AD4CCAA7D90"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fSuper Glue объединяет блоки в единую движущуюся конструкцию."
+                "§bПрактика: §fСклейте несколько блоков и проверьте, что они двигаются совместно."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за склеивание."
+            ]
+            tasks: [
+                {
+                    id: "85675FFC14C65E45"
+                    type: "advancement"
+                    advancement: "create:super_glue"
+                }
+            ]
+            rewards: [
+                {
+                    id: "2694F870B74901A3"
+                    type: "xp"
+                    xp: 135
+                }
+                {
+                    id: "02B477CC82A406DB"
+                    type: "item"
+                    item: { Count: 1b, id: "create:package_frogport" }
+                }
+            ]
+        }
+        {
+            id: "8D62D114AA053441"
+            title: "Подвижный механизм с инструментом"
+            x: 18.00d
+            y: -5.00d
+            icon: "create:mechanical_harvester"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "CCF5C3CD6FF300E7"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fКонструкции могут не только двигаться, но и выполнять работу."
+                "§bПрактика: §fСоберите движущийся механизм с пилой, буром или сборщиком и запустите его."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за работающий инструмент на конструкции."
+            ]
+            tasks: [
+                {
+                    id: "F842D047590284C6"
+                    type: "advancement"
+                    advancement: "create:contraption_actors"
+                }
+            ]
+            rewards: [
+                {
+                    id: "AD9C7871E706E212"
+                    type: "xp"
+                    xp: 180
+                }
+                {
+                    id: "2B0A057373A598A2"
+                    type: "item"
+                    item: { Count: 1b, id: "create:water_wheel" }
+                }
+            ]
+        }
+        {
+            id: "4C3AA9001AA8E8D5"
+            title: "Стык подвижного и стационарного складов"
+            x: 21.00d
+            y: -5.00d
+            icon: "create:portable_storage_interface"
+            shape: "shield"
+            size: 1.20d
+            dependencies: [
+                "8D62D114AA053441"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fPortable Storage Interface разгружает подвижные конструкции без ручного доступа."
+                "§bПрактика: §fСоедините два интерфейса и передайте предмет при стыковке."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за перенос предмета через интерфейс."
+                "§dЕсли не получается: §fPortable Storage Interface работает, когда две половины оказываются близко и конструкция останавливается или правильно стыкуется."
+        ]
+            tasks: [
+                {
+                    id: "FE793AB3B143DFDA"
+                    type: "advancement"
+                    advancement: "create:portable_storage_interface"
+                }
+            ]
+            rewards: [
+                {
+                    id: "7806B80292C45E5B"
+                    type: "xp"
+                    xp: 180
+                }
+                {
+                    id: "2F9A45621E064720"
+                    type: "item"
+                    item: { Count: 1b, id: "create:fluid_pipe" }
+                }
+            ]
+        }
+        {
+            id: "49C8A0032E4C0E17"
+            title: "Горелка для новой технологии"
+            x: 27.00d
+            y: 5.00d
+            icon: "create:blaze_burner"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "CDAC640579002402"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fBlaze Burner нужен для высокотемпературных технологий."
+                "§bПрактика: §fПодготовьте горелку и изучите нагрев. Продолжайте жидкостную ветку после базовой механики."
+                "§aЧто реально проверяется: §fПредметное достижение Create за Blaze Burner; наличие горелки не доказывает нагрев."
+            ]
+            tasks: [
+                {
+                    id: "1D64353AC1AF8D30"
+                    type: "advancement"
+                    advancement: "create:burner"
+                }
+            ]
+            rewards: [
+                {
+                    id: "CD56C8364C457311"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "D4486C141609C92C"
+                    type: "item"
+                    item: { Count: 1b, id: "create:encased_fan" }
+                }
+            ]
+        }
+        {
+            id: "8F58E4E6C70518FE"
+            title: "Водонепроницаемый корпус"
+            x: 24.00d
+            y: 5.00d
+            icon: "create:copper_casing"
+            shape: "circle"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "49C8A0032E4C0E17"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fCopper Casing открывает жидкостное оборудование."
+                "§bПрактика: §fИзготовьте медный корпус способом, который указан в достижении Create."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за применение меди к корпусу."
+            ]
+            tasks: [
+                {
+                    id: "1AAE1E23056F0F90"
+                    type: "advancement"
+                    advancement: "create:copper_casing"
+                }
+            ]
+            rewards: [
+                {
+                    id: "7E54AE46A5938224"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "34C55C6BF3008F24"
+                    type: "item"
+                    item: { Count: 1b, id: "create:speedometer" }
+                }
+            ]
+        }
+        {
+            id: "F7E2465288E575FF"
+            title: "Насос под давлением"
+            x: 21.00d
+            y: 5.00d
+            icon: "create:mechanical_pump"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "8F58E4E6C70518FE"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fMechanical Pump задаёт направление движения жидкостей."
+                "§bПрактика: §fРазместите насос и подайте вращение. С помощью гаечного ключа проверьте направление."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за работающий Mechanical Pump."
+                "§dЕсли не получается: §fMechanical Pump требует вращения и корректной ориентации трубы; проверьте направление потока, а не только наличие блока."
+        ]
+            tasks: [
+                {
+                    id: "CA4B8FC486EB487E"
+                    type: "advancement"
+                    advancement: "create:mechanical_pump_0"
+                }
+            ]
+            rewards: [
+                {
+                    id: "BF94D074277715B5"
+                    type: "xp"
+                    xp: 165
+                }
+                {
+                    id: "29DFA9E30C0F65C3"
+                    type: "item"
+                    item: { Count: 1b, id: "create:stressometer" }
+                }
+            ]
+        }
+        {
+            id: "8EC3094B2671ABF2"
+            title: "Прозрачная труба"
+            x: 18.00d
+            y: 5.00d
+            icon: "create:fluid_pipe"
+            shape: "circle"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "F7E2465288E575FF"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fПрозрачная труба позволяет наблюдать движение жидкости."
+                "§bПрактика: §fПропустите жидкость через трубопровод и примените ключ к трубе."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за применение ключа к трубе с жидкостью."
+            ]
+            tasks: [
+                {
+                    id: "52F5CA098142BA9F"
+                    type: "advancement"
+                    advancement: "create:glass_pipe"
+                }
+            ]
+            rewards: [
+                {
+                    id: "C5A5DE27AEF2A9EE"
+                    type: "xp"
+                    xp: 125
+                }
+                {
+                    id: "6F31A3271DE74C21"
+                    type: "item"
+                    item: { Count: 1b, id: "create:adjustable_chain_gearshift" }
+                }
+            ]
+        }
+        {
+            id: "1C477D2FE85FE89C"
+            title: "Автоматическая подача воды"
+            x: 15.00d
+            y: 5.00d
+            icon: "minecraft:water_bucket"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "8EC3094B2671ABF2"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fВода может подаваться насосом непосредственно из мира."
+                "§bПрактика: §fЗаберите воду из источника с помощью трубы/насоса."
+                "§aЧто реально проверяется: §fВстроенное событие Create: забор воды из мира."
+            ]
+            tasks: [
+                {
+                    id: "09EF4F4DFB94BBB8"
+                    type: "advancement"
+                    advancement: "create:water_supply"
+                }
+            ]
+            rewards: [
+                {
+                    id: "F197DD1E55590808"
+                    type: "xp"
+                    xp: 200
+                }
+                {
+                    id: "CC0F7F35E50AD200"
+                    type: "item"
+                    item: { Count: 1b, id: "create:clutch" }
+                }
+            ]
+        }
+        {
+            id: "E151ABC26C849155"
+            title: "Водяной шланг"
+            x: 12.00d
+            y: 5.00d
+            icon: "create:hose_pulley"
+            shape: "circle"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "1C477D2FE85FE89C"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fHose Pulley работает с объёмами жидкости, а не с отдельными ведрами."
+                "§bПрактика: §fОпустите шланг и убедитесь, что он заполняет или опорожняет водоём."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за использование шланга."
+            ]
+            tasks: [
+                {
+                    id: "5D610852F1E036E0"
+                    type: "advancement"
+                    advancement: "create:hose_pulley"
+                }
+            ]
+            rewards: [
+                {
+                    id: "4DC262DE3D8A4653"
+                    type: "xp"
+                    xp: 180
+                }
+                {
+                    id: "C8BF6E7819198E30"
+                    type: "item"
+                    item: { Count: 1b, id: "create:flywheel" }
+                }
+            ]
+        }
+        {
+            id: "93F9199B68F09FF2"
+            title: "Дозатор жидкости"
+            x: 24.00d
+            y: 9.00d
+            icon: "create:spout"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "8F58E4E6C70518FE"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fSpout наполняет предметы при прохождении под насадкой."
+                "§bПрактика: §fПодавайте жидкость к Spout и наполните предмет."
+                "§aЧто реально проверяется: §fВстроенный триггер Create за заполнение предмета."
+                "§dЕсли не получается: §fSpout работает при наличии жидкости и подходящего предмета под ним; проверяйте рецепт и объём в резервуаре."
+        ]
+            tasks: [
+                {
+                    id: "B0A7EC56FE937A39"
+                    type: "advancement"
+                    advancement: "create:spout"
+                }
+            ]
+            rewards: [
+                {
+                    id: "18494468ECA01463"
+                    type: "xp"
+                    xp: 175
+                }
+                {
+                    id: "06B4B00AD5FDAC4D"
+                    type: "item"
+                    item: { Count: 1b, id: "create:brass_encased_shaft" }
+                }
+            ]
+        }
+        {
+            id: "053070B7D8792A37"
+            title: "Осушение контейнеров"
+            x: 21.00d
+            y: 9.00d
+            icon: "create:item_drain"
+            shape: "circle"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "93F9199B68F09FF2"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fItem Drain извлекает жидкость из контейнеров."
+                "§bПрактика: §fПропустите жидкостный предмет через Item Drain."
+                "§aЧто реально проверяется: §fВстроенный триггер Create за опустошение контейнера."
+            ]
+            tasks: [
+                {
+                    id: "38FEDC6794055042"
+                    type: "advancement"
+                    advancement: "create:drain"
+                }
+            ]
+            rewards: [
+                {
+                    id: "8A72ABADF141B6B0"
+                    type: "xp"
+                    xp: 155
+                }
+                {
+                    id: "43D20AD71B244CD7"
+                    type: "item"
+                    item: { Count: 1b, id: "create:copper_valve_handle" }
+                }
+            ]
+        }
+        {
+            id: "18ED8A27D511509E"
+            title: "Паровая мощность"
+            x: 18.00d
+            y: 9.00d
+            icon: "create:steam_engine"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "053070B7D8792A37"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fПаровая машина преобразует нагрев и воду в кинетическую мощность."
+                "§bПрактика: §fСоберите малый котёл с паровым двигателем, нагревом и подачей воды."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за работающий паровой двигатель."
+                "§dЕсли не получается: §fДвигателю требуются корректная котельная, нагрев и вода. Контролируйте запас SU и опасность перегрева."
+        ]
+            tasks: [
+                {
+                    id: "E9D5DAC80DCD8DF7"
+                    type: "advancement"
+                    advancement: "create:steam_engine"
+                }
+            ]
+            rewards: [
+                {
+                    id: "42EF280DA9AF574B"
+                    type: "xp"
+                    xp: 275
+                }
+                {
+                    id: "FAE4FA38C95BC2CD"
+                    type: "item"
+                    item: { Count: 1b, id: "create:andesite_encased_shaft" }
+                }
+            ]
+        }
+        {
+            id: "46F430629A9DEE95"
+            title: "Юра и ручной привод"
+            x: 30.00d
+            y: -4.00d
+            icon: "create:hand_crank"
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "CDAC640579002402"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fШуточный экзамен: сколько можно крутить руками?"
+                "§bПрактика: §fДостигните скрытого достижения Create, крутя ручной привод. Осторожно, испытание на выносливость!"
+                "§aЧто реально проверяется: §fРедкое встроенное достижение Create; не закрывается обычной шестерёнкой."
+            ]
+            tasks: [
+                {
+                    id: "0637E489D1A05438"
+                    type: "advancement"
+                    advancement: "create:hand_crank_000"
+                }
+            ]
+            rewards: [
+                {
+                    id: "12ACD175C07CF5EE"
+                    type: "xp"
+                    xp: 160
+                }
+                {
+                    id: "F03D70B8D5D4E762"
+                    type: "item"
+                    item: { Count: 1b, id: "create:brass_sheet" }
+                }
+            ]
+        }
+        {
+            id: "B20BCF3BF2BBE521"
+            title: "Ветряк под реальной нагрузкой"
+            x: 6.00d
+            y: -9.00d
+            icon: "create:windmill_bearing"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "91C8A76B406CF0AF"
+            ]
+            description: [
+                "§6Наследие 2.0 · Дополнительный практикум"
+                "§eЗачем: §fОбычный ветряк легко собрать; настоящий опыт — получить от него высокую производительность и правильно подобрать паруса."
+                "§bПошаговая практика: §fСоберите ветряк максимальной мощности (максимум парусной площади по правилам Create) и проверьте достижение A Strong Breeze. Измерьте обороты и SU."
+                "§dЕсли не получается: §fЕсли прогресс не идёт, проверьте площадь парусов, правильное соединение конструкции и работу Windmill Bearing."
+                "§aЧестная проверка: §fВстроенное событийное достижение create:windmill_maxed; не требуется собирать предмет из предыдущего задания повторно."
+            ]
+            tasks: [
+                {
+                    id: "766712F9948ECE22"
+                    type: "advancement"
+                    advancement: "create:windmill_maxed"
+                }
+            ]
+            rewards: [
+                {
+                    id: "2945E3C2892CFECB"
+                    type: "xp"
+                    xp: 240
+                }
+                {
+                    id: "ED97BA1D7A1FA5C9"
+                    type: "item"
+                    item: { Count: 2b, id: "create:windmill_bearing" }
+                }
+            ]
+        }
+        {
+            id: "63D8F44C93AB9D80"
+            title: "Точная подача через воронку"
+            x: 24.00d
+            y: -4.00d
+            icon: "create:brass_funnel"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "26B8EA27D2BE22B9"
+            ]
+            description: [
+                "§6Наследие 2.0 · Дополнительный практикум"
+                "§eЗачем: §fУправляемый поток предметов важнее бесконечного набора сундуков: воронки меняют поведение в зависимости от режима и положения."
+                "§bПошаговая практика: §fРазместите ДВЕ Funnel на Mechanical Belt так, чтобы их створки соприкоснулись: это условие скрытого достижения The Parrots and the Flaps."
+                "§dЕсли не получается: §fДве Funnel должны именно соприкасаться на конвейере. Одной воронки и обычной передачи предметов недостаточно."
+                "§aЧестная проверка: §fВстроенное событийное достижение create:belt_funnel_kiss; не требуется собирать предмет из предыдущего задания повторно."
+            ]
+            tasks: [
+                {
+                    id: "96E68FF624F61567"
+                    type: "advancement"
+                    advancement: "create:belt_funnel_kiss"
+                }
+            ]
+            rewards: [
+                {
+                    id: "5547E35AF13969C5"
+                    type: "xp"
+                    xp: 180
+                }
+                {
+                    id: "DE60995A4745424D"
+                    type: "item"
+                    item: { Count: 1b, id: "create:brass_funnel" }
+                }
+            ]
+        }
+        {
+            id: "82858847B7756EBF"
+            title: "Первый шоколад для мастерской"
+            x: 6.00d
+            y: 9.00d
+            icon: "create:chocolate_bucket"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "E151ABC26C849155"
+            ]
+            description: [
+                "§6Наследие 2.0 · Дополнительный практикум"
+                "§eЗачем: §fЖидкости нужны не только как топливо: шоколад можно получать и транспортировать в механических системах."
+                "§bПошаговая практика: §fПодготовьте ингредиенты, воспользуйтесь Mixing и Fluid Handling для получения ведра шоколада. Сравните альтернативные способы передачи жидкости."
+                "§dЕсли не получается: §fЭто достижение Create с проверкой ПОЛУЧЕНИЯ ведра шоколада, а не работы автоматической фабрики. Проверьте рецепт в JEI с действующими KubeJS-правками."
+                "§aЧестная проверка: §fПолучение именно create:chocolate_bucket (это НЕ проверка производства)."
+            ]
+            tasks: [
+                {
+                    id: "74B3824154D5338F"
+                    type: "advancement"
+                    advancement: "create:chocolate_bucket"
+                }
+            ]
+            rewards: [
+                {
+                    id: "FA92DE5B0D9E5440"
+                    type: "xp"
+                    xp: 160
+                }
+                {
+                    id: "042AEE26C9CBF1AE"
+                    type: "item"
+                    item: { Count: 4b, id: "createaddition:chocolate_cake" }
+                }
+            ]
+        }
+        {
+            id: "1DCEBEFB5C85037B"
+            title: "Автоматическая пасека"
+            x: 12.00d
+            y: 10.50d
+            icon: "create:mechanical_pump"
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "E151ABC26C849155"
+            ]
+            description: [
+                "§6Наследие 2.0 · Дополнительный практикум"
+                "§eЗачем: §fЖидкостные трубы способны забирать мёд непосредственно из улья — это основа фермы, а не получение ещё одной бутылки."
+                "§bПошаговая практика: §fПодсоедините насос и жидкостные трубы к Bee Nest или Beehive и извлеките мёд автоматически. Цель — встроенное достижение Create Honey Drain."
+                "§dЕсли не получается: §fПроверьте уровень мёда в улье, подвод труб, направление насоса и доступность резервуара. Item Drain здесь не требуется."
+                "§aЧестная проверка: §fВстроенное событийное достижение create:honey_drain; не требуется собирать предмет из предыдущего задания повторно."
+            ]
+            tasks: [
+                {
+                    id: "F10B472CDCC11380"
+                    type: "advancement"
+                    advancement: "create:honey_drain"
+                }
+            ]
+            rewards: [
+                {
+                    id: "99562F5D37BF99A0"
+                    type: "xp"
+                    xp: 220
+                }
+                {
+                    id: "6B21F5266D009489"
+                    type: "item"
+                    item: { Count: 4b, id: "create:fluid_tank" }
+                }
+            ]
+        }
+        {
+            id: "5F239B4F41DD0E0C"
+            title: "Встреча двух жидкостей"
+            x: 12.00d
+            y: 14.00d
+            icon: "create:encased_fan"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "1DCEBEFB5C85037B"
+            ]
+            description: [
+                "§6Наследие 2.0 · Дополнительный практикум"
+                "§eЗачем: §fВ Create трубопроводы могут работать с несколькими жидкостями. Этот практикум посвящён их встрече в одной сети."
+                "§bПошаговая практика: §fПроложите трубы так, чтобы два разных потока жидкости встретились в одной трубной сети: это условие скрытого достижения Cross Streams."
+                "§dЕсли не получается: §fПроверяйте насосы, направление перекачки и наличие обеих жидкостей; воздушный поток Encased Fan здесь не участвует."
+                "§aЧестная проверка: §fВстроенное событийное достижение create:cross_streams; не требуется собирать предмет из предыдущего задания повторно."
+            ]
+            tasks: [
+                {
+                    id: "6932B7BEC57CD89E"
+                    type: "advancement"
+                    advancement: "create:cross_streams"
+                }
+            ]
+            rewards: [
+                {
+                    id: "E414770D7AA531A2"
+                    type: "xp"
+                    xp: 225
+                }
+                {
+                    id: "6642D86172FE39CF"
+                    type: "item"
+                    item: { Count: 1b, id: "create:sequenced_gearshift" }
+                }
+            ]
+        }
+        {
+            id: "51AECF619A98596B"
+            title: "Овощной фейерверк"
+            x: 33.00d
+            y: 0.00d
+            icon: "create:potato_cannon"
+            shape: "star"
+            size: 1.28d
+            dependencies: [
+                "CDAC640579002402"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Побочная история: §fиспытайте пневматику в безопасном тире."
+                "§bЗадание: §fдобейтесь столкновения СНАРЯДОВ РАЗНЫХ ТИПОВ из Potato Cannon; попадание в блок не засчитывается."
+                "§aПроверка: §fсобытие Create potato_cannon_collide. Отдельный результат двух траекторий."
+            ]
+            optional: true
+            tasks: [
+                {
+                    id: "F0A6E84A614A9DC4"
+                    type: "advancement"
+                    advancement: "create:potato_cannon_collide"
+                }
+            ]
+            rewards: [
+                {
+                    id: "DE91A3FDA063BD35"
+                    type: "xp"
+                    xp: 200
+                }
+                {
+                    id: "DC15781FE37EDD39"
+                    type: "item"
+                    item: { Count: 3b, id: "create:blaze_cake" }
+                }
+            ]
+        }
+        {
+            id: "0F8DAD91D9AEBBB3"
+            title: "Самоукладывающаяся колея"
+            x: 18.00d
+            y: -9.00d
+            icon: "create:mechanical_piston"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "8D62D114AA053441"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Инженерный вызов: §fмашина строит собственный маршрут."
+                "§bЗадание: §fсоберите вагонеточную конструкцию с инструментом, которая укладывает рельсы впереди себя."
+                "§aПроверка: §fдостижение Create self_deploying; обычный Deployer на месте не подойдёт."
+            ]
+            optional: true
+            tasks: [
+                {
+                    id: "FCEFA56934AFB766"
+                    type: "advancement"
+                    advancement: "create:self_deploying"
+                }
+            ]
+            rewards: [
+                {
+                    id: "28E4BF677058A532"
+                    type: "xp"
+                    xp: 275
+                }
+                {
+                    id: "6F934055E9297E67"
+                    type: "item"
+                    item: { Count: 4b, id: "create:railway_casing" }
+                }
+            ]
+        }
+        {
+            id: "549B77B92B0AFF7C"
+            title: "Две выдвижные руки"
+            x: 6.00d
+            y: 5.00d
+            icon: "create:extendo_grip"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "013B127CA07E038A"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Необязательное испытание: §fпочувствуйте настоящий инженерный размах."
+                "§bЗадание: §fвозьмите Extendo Grip в ОБЕ руки одновременно. Удлинение одной руки не засчитывается."
+                "§aПроверка: §fскрытое достижение Create extendo_grip_dual; изготовление предмета само по себе не закрывает квест."
+            ]
+            optional: true
+            tasks: [
+                {
+                    id: "230511641E221C05"
+                    type: "advancement"
+                    advancement: "create:extendo_grip_dual"
+                }
+            ]
+            rewards: [
+                {
+                    id: "ACD92161FCB59C32"
+                    type: "xp"
+                    xp: 225
+                }
+                {
+                    id: "3642D2A65841E1BA"
+                    type: "item"
+                    item: { Count: 8b, id: "create:polished_rose_quartz" }
+                }
+            ]
+        }
+        {
+            id: "078DEE5AC16D0721"
+            title: "Картон с гербом"
+            x: 33.00d
+            y: -4.00d
+            icon: "create:cardboard_chestplate"
+            shape: "star"
+            size: 1.28d
+            dependencies: [
+                "46F430629A9DEE95"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Секретное ателье инженеров: §fдаже картон достоин церемониальной отделки."
+                "§bЗадание: §fпримените кузнечный шаблон отделки к картонной броне Create."
+                "§aПроверка: §fсобытие cardboard_armor_trim; обычная картонная броня этого не подтверждает."
+            ]
+            optional: true
+            tasks: [
+                {
+                    id: "AC25D8DC76AB1A1E"
+                    type: "advancement"
+                    advancement: "create:cardboard_armor_trim"
+                }
+            ]
+            rewards: [
+                {
+                    id: "56C41F4BCC1577A7"
+                    type: "xp"
+                    xp: 200
+                }
+                {
+                    id: "D6433363A88A23A7"
+                    type: "item"
+                    item: { Count: 8b, id: "create:brass_sheet" }
+                }
+            ]
+        }
+        {
+            id: "F7BBC141C944B0BA"
+            title: "Десертный триптих"
+            x: 6.00d
+            y: 13.00d
+            icon: "create:chocolate_glazed_berries"
+            shape: "star"
+            size: 1.28d
+            dependencies: [
+                "82858847B7756EBF"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Секрет фабрики сладостей: §fодин носик — три уникальных изделия."
+                "§bЗадание: §fна одном и том же Spout приготовьте Chocolate Glazed Berries, Honeyed Apple и Sweet Roll."
+                "§aПроверка: §fсобытие Create foods, а не простое получение шоколада."
+            ]
+            optional: true
+            tasks: [
+                {
+                    id: "DBEC0C74EBB62C33"
+                    type: "advancement"
+                    advancement: "create:foods"
+                }
+            ]
+            rewards: [
+                {
+                    id: "6593827A716A953B"
+                    type: "xp"
+                    xp: 275
+                }
+                {
+                    id: "56E0B44DB1628514"
+                    type: "item"
+                    item: { Count: 6b, id: "create:honeyed_apple" }
+                }
+            ]
+        }
+        {
+            id: "098405E74DFFDA00"
+            title: "Рельсовое происшествие"
+            x: 22.00d
+            y: -13.00d
+            icon: "create:track"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "0F8DAD91D9AEBBB3"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fНеобязательное испытание железнодорожного инженера: рельсы могут быть инструментом, но несут ответственность."
+                "§fНа отдельном безопасном полигоне добейтесь срабатывания достижения Create за столкновение поезда с мобом. Не используйте друзей, питомцев и ценный подвижной состав."
+                "§aАвтопроверка: §fcreate:train_roadkill"
+                "§7Триггер Create train_roadkill_builtin. Не требуется строить полноценную станцию."
+            ]
+            tasks: [
+                {
+                    id: "496D7317CD061314"
+                    type: "advancement"
+                    advancement: "create:train_roadkill"
+                }
+            ]
+            rewards: [
+                {
+                    id: "25A36D3851DA057C"
+                    type: "xp"
+                    xp: 330
+                }
+                {
+                    id: "CD26F73278431496"
+                    type: "item"
+                    item: { Count: 12b, id: "create:railway_casing" }
+                }
+            ]
+        }
+        {
+            id: "1DDBD113F023CE39"
+            title: "Водолаз лавового озера"
+            x: 9.00d
+            y: 17.00d
+            icon: "create:netherite_diving_helmet"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "F7BBC141C944B0BA"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fОбычного костюма для воды недостаточно для работы возле лавы."
+                "§fИсследуйте защитное снаряжение Create и получите особое достижение за работу в лаве с соответствующим костюмом."
+                "§aАвтопроверка: §fcreate:diving_suit_lava"
+                "§7Триггер diving_suit_lava_builtin. Будьте осторожны: испытание связано с лавой."
+            ]
+            tasks: [
+                {
+                    id: "6E485A6DF31910E5"
+                    type: "advancement"
+                    advancement: "create:diving_suit_lava"
+                }
+            ]
+            rewards: [
+                {
+                    id: "5A0340E2EEDAF194"
+                    type: "xp"
+                    xp: 400
+                }
+                {
+                    id: "C83555A6C779F8E2"
+                    type: "item"
+                    item: { Count: 1b, id: "create:netherite_diving_boots" }
+                }
+            ]
+        }
+            {
+            id: "EC70D65F82B2FEF1"
+            title: "Выдвижная хватка инженера"
+            x: 31.00d
+            y: 4.00d
+            icon: "minecraft:iron_pickaxe"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "51AECF619A98596B"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§bПрактика: §fИспытайте Extendo Grip в работе: выберите подходящий объект и используйте его в игре."
+                "§aАвтозачёт: §fВстроенный событийный триггер create:extendo_grip_builtin; родитель create:potato_cannon."
+            ]
+            tasks: [
+                {
+                    id: "E637DD4C05A00340"
+                    type: "advancement"
+                    advancement: "create:extendo_grip"
+                }
+            ]
+            rewards: [
+                {
+                    id: "5E8244CA45F7F309"
+                    type: "xp"
+                    xp: 210
+                }
+                {
+                    id: "EF5953124213F569"
+                    type: "item"
+                    item: { Count: 32b, id: "minecraft:iron_ingot" }
+                }
+            ]
+        }
+]
+}

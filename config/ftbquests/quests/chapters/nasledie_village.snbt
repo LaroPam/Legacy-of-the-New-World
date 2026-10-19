@@ -1,0 +1,371 @@
+{
+    filename: "nasledie_village"
+    id: "30082B6F5380787E"
+    group: "842B4DB4DBD349A0"
+    title: "Живое поселение — путь общины"
+    icon: "minecraft:bell"
+    order_index: 4
+    progression_mode: "flexible"
+    default_hide_dependency_lines: false
+    default_quest_shape: "heart"
+    default_quest_size: 1.28d
+
+    quest_links: []
+    quests: [
+        {
+            id: "C3524B3B7A1175C3"
+            title: "Найти поселение MCA"
+            x: 0.00d
+            y: 0.00d
+            icon: "minecraft:bell"
+            shape: "scroll"
+            size: 1.12d
+            rewards: [
+                { id: "D5092CC17B90E3D4" type: "xp" xp: 25 }
+                {
+                    id: "E7AB6BA897EB1495"
+                    type: "item"
+                    item: { Count: 1b, id: "mca:bouquet" }
+                }
+        ]
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Отыщите поселение. Здесь начинается общение с персонажами MCA, а не строительство случайных фонарей."
+                "§7Проверка: отдельное достижение mca:root"
+        ]
+            tasks: [
+                {
+                    id: "63C46EE849CA0293"
+                    type: "advancement"
+                    advancement: "mca:root"
+                }
+        ]
+        }
+        
+        
+        {
+            id: "AFC6DEB96FAAF4A1"
+            title: "Первое знакомство"
+            x: 3.00d
+            y: 0.00d
+            icon: "mca:bouquet"
+            shape: "heart"
+            size: 1.16d
+            rewards: [
+                { id: "98887813195809D6" type: "xp" xp: 34 }
+                {
+                    id: "1C4E7214CBE61A8E"
+                    type: "item"
+                    item: { Count: 2b, id: "mca:rose_gold_ingot" }
+                }
+        ]
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Повышайте отношения с одним из жителей MCA. Настоящее достижение засчитывается механикой отношений."
+                "§7Проверка: отдельное достижение mca:friend"
+        ]
+            dependencies: [
+                "C3524B3B7A1175C3"
+        ]
+            tasks: [
+                {
+                    id: "3635D9825DD96D91"
+                    type: "advancement"
+                    advancement: "mca:friend"
+                }
+        ]
+        }
+        
+        
+        
+        
+        
+        
+        {
+            id: "7154299D354A1B07"
+            rewards: [
+                { id: "85D6707BFA770E96" type: "xp" xp: 55 }
+                {
+                    id: "8EC48D211D675F6B"
+                    type: "item"
+                    item: { Count: 2b, id: "mca:bouquet" }
+                }
+        ]
+            title: "Подарок с историей"
+            icon: "mca:bouquet"
+            shape: "heart"
+            size: 1.16d
+            x: 6.00d
+            y: -3.00d
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Подарите жителю MCA действительно подходящий подарок и изучите предпочтения персонажей."
+                "§7Проверка: отдельное достижение mca:excellent_gift"
+        ]
+            dependencies: [
+                "AFC6DEB96FAAF4A1"
+        ]
+            tasks: [
+                {
+                    id: "88A7E186D32C52FD"
+                    type: "advancement"
+                    advancement: "mca:excellent_gift"
+                }
+        ]
+        }
+        {
+            id: "28708C663F59906A"
+            rewards: [
+                { id: "90F276D08E688186" type: "xp" xp: 58 }
+                {
+                    id: "BC58FE5FF823C2BE"
+                    type: "item"
+                    item: { Count: 1b, id: "mca:bouquet" }
+                }
+        ]
+            title: "Сделка с жителем MCA"
+            icon: "minecraft:emerald"
+            shape: "coin"
+            size: 1.14d
+            x: 6.00d
+            y: 3.00d
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Освойте торговую механику MCA. В отличие от обычного достижения vanilla Trade проверяется отдельный прогресс MCA."
+                "§7Проверка: отдельное достижение mca:merchant"
+        ]
+            dependencies: [
+                "AFC6DEB96FAAF4A1"
+        ]
+            tasks: [
+                {
+                    id: "9633A27AE3E401D5"
+                    type: "advancement"
+                    advancement: "mca:merchant"
+                }
+        ]
+        }
+        {
+            id: "10E550A7AA6FE780"
+            title: "Признанный горожанин"
+            x: 9.00d
+            y: 3.00d
+            icon: "mca:rose_gold_ingot"
+            shape: "heart"
+            size: 1.16d
+            rewards: [
+                { id: "50F641D2AD1B05B3" type: "xp" xp: 61 }
+                {
+                    id: "90097A628307AEC3"
+                    type: "item"
+                    item: { Count: 4b, id: "mca:rose_gold_ingot" }
+                }
+        ]
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Продвигайтесь в социальной системе MCA до статуса, предусмотренного достижением Noble."
+                "§7Проверка: отдельное достижение mca:noble"
+        ]
+            dependencies: [
+                "28708C663F59906A"
+        ]
+            tasks: [
+                {
+                    id: "21FDD1A387DB41A1"
+                    type: "advancement"
+                    advancement: "mca:noble"
+                }
+        ]
+            optional: true
+}
+        {
+            id: "2C75530B1A6E014E"
+            title: "Семейная история"
+            x: 9.00d
+            y: -3.00d
+            icon: "mca:wedding_ring"
+            shape: "heart"
+            size: 1.16d
+            rewards: [
+                { id: "A7615A94A27C9F1A" type: "xp" xp: 64 }
+                {
+                    id: "D6AB8B0061AF5921"
+                    type: "item"
+                    item: { Count: 3b, id: "mca:bouquet" }
+                }
+        ]
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Необязательная ветка MCA: изучите отношения и механику свадьбы. Не требуется для основного развития города."
+                "§7Проверка: отдельное достижение mca:marriage"
+        ]
+            dependencies: [
+                "7154299D354A1B07"
+        ]
+            tasks: [
+                {
+                    id: "608653C777F8F28B"
+                    type: "advancement"
+                    advancement: "mca:marriage"
+                }
+        ]
+            optional: true
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        {
+            id: "E7B10EC3B6680953"
+            title: "Доверие жителя"
+            x: 6.00d
+            y: 0.00d
+            icon: "mca:rose_gold_ingot"
+            shape: "heart"
+            size: 1.16d
+            rewards: [
+                { id: "34E2C94859E6E09C" type: "xp" xp: 103 }
+                {
+                    id: "4B6D163EB3C65AED"
+                    type: "item"
+                    item: { Count: 3b, id: "mca:rose_gold_ingot" }
+                }
+        ]
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Продолжите отношения с жителем MCA до состояния близкой дружбы. Простой предмет не заменяет общение."
+                "§7Проверка: отдельное достижение mca:best_friend"
+        ]
+            dependencies: [
+                "AFC6DEB96FAAF4A1"
+        ]
+            optional: true
+            tasks: [
+                {
+                    id: "C6DD537BA92B10F2"
+                    type: "advancement"
+                    advancement: "mca:best_friend"
+                }
+        ]
+        }
+        
+        
+        
+        
+        {
+            id: "C1275FDF3B2F99C1"
+            rewards: [
+                { id: "CC94661AC57D8C80" type: "xp" xp: 118 }
+                {
+                    id: "4629397E657CDB3A"
+                    type: "item"
+                    item: { Count: 1b, id: "mca:rose_gold_ingot" }
+                }
+        ]
+            title: "Оборудовать пункт набора"
+            icon: "recruits:recruit_shield_block"
+            shape: "shield"
+            size: 1.20d
+            x: 3.00d
+            y: 7.00d
+            description: [
+                "§bДействие: §fПоставьте Recruit Shield Block в центре будущего военного лагеря."
+                "§aАвтозачёт: §fminecraft:placed_block доказывает размещение пункта, но не найм бойца."
+                "§dВажно: §fПроверка события выполняется серверным datapack и требует теста в Minecraft."
+            ]
+            dependencies: [
+                "C3524B3B7A1175C3"
+        ]
+            optional: true
+            tasks: [
+                {
+                    id: "9F9843ECA3FE9E3D"
+                    type: "advancement"
+                    advancement: "nasledie:alpha34/actions/9f9843eca3fe9e3d"
+                }
+        ]
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        {
+            id: "4F244541933746FE"
+            rewards: [
+                { id: "D8FF53D603002B94" type: "xp" xp: 145 }
+                {
+                    id: "190A18997C7590E5"
+                    type: "item"
+                    item: { Count: 2b, id: "mca:bouquet" }
+                }
+        ]
+            title: "Установить доску заказов"
+            icon: "bountiful:bountyboard"
+            shape: "scroll"
+            size: 1.12d
+            x: 6.00d
+            y: 7.00d
+            description: [
+                "§bДействие: §fУстановите городскую доску заказов, затем попробуйте принять настоящий заказ."
+                "§aАвтозачёт: §fminecraft:placed_block доказывает размещение доски; принятие заказа отдельно не фиксируется."
+                "§dВажно: §fПроверка события выполняется серверным datapack и требует теста в Minecraft."
+            ]
+            dependencies: [
+                "C1275FDF3B2F99C1"
+        ]
+            optional: true
+            tasks: [
+                {
+                    id: "F94E2C9AE9DA1A88"
+                    type: "advancement"
+                    advancement: "nasledie:alpha34/actions/f94e2c9ae9da1a88"
+                }
+        ]
+        }
+        {
+            id: "EF7C435DEE5C7F2A"
+            optional: true
+            title: "Юра — мэр нашего города"
+            x: 12.00d
+            y: 3.00d
+            shape: "laurel"
+            size: 1.28d
+            icon: "minecraft:bell"
+            dependencies: [
+                "10E550A7AA6FE780"
+        ]
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Необязательный престижный рубеж: получите статус Mayor в MCA. Имя Юры — часть истории, а не проверка конкретного никнейма."
+                "§7Проверка: отдельное достижение mca:mayor"
+        ]
+            tasks: [
+                {
+                    id: "42E072EB8DE902A5"
+                    type: "advancement"
+                    advancement: "mca:mayor"
+                }
+        ]
+            rewards: [
+                { id: "84462364412A8D6D" type: "xp" xp: 148 }
+                {
+                    id: "F6ACD78BAF859C50"
+                    type: "item"
+                    item: { Count: 6b, id: "mca:rose_gold_ingot" }
+                }
+        ]
+        }
+    ]
+}

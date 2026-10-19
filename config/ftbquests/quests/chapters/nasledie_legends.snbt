@@ -1,0 +1,2777 @@
+{
+    filename: "nasledie_legends"
+    id: "2D3B7589DD553745"
+    group: "842B4DB4DBD349A0"
+    title: "Тайны мира и легендарные экспедиции"
+    icon: "minecraft:filled_map"
+    order_index: 9
+    progression_mode: "flexible"
+    default_hide_dependency_lines: false
+    default_quest_shape: "circle"
+
+    quest_links: []
+    quests: [
+        {
+            id: "E5CDBE2CB81CBFFC"
+            title: "Первый полевой артефакт"
+            x: 0.00d
+            y: 0.00d
+            icon: "alexscaves:cave_tablet"
+            shape: "star"
+            size: 1.50d
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основной путь"
+                "§eЗачем: §fМеханика подземных экспедиций начинается с изучения древних табличек."
+                "§bПрактика: §fОтыщите Cave Tablet и изучите дальнейшие рецепты экспедиции."
+                "§aАвтопроверка: §fДостижение получения Cave Tablet."
+            ]
+            tasks: [
+                {
+                    id: "EF5CC1269FCFCCA5"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/cave_tablet"
+                }
+            ]
+            rewards: [
+                {
+                    id: "6C456172E3856297"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "2FF9504B7CCC9C34"
+                    type: "item"
+                    item: { Count: 2b, id: "alexscaves:bioluminescent_torch" }
+                }
+            ]
+        }
+        {
+            id: "3C74408B2EA9F8D7"
+            title: "Атлас подземного мира"
+            x: 4.00d
+            y: 0.00d
+            icon: "alexscaves:cave_book"
+            shape: "circle"
+            size: 1.20d
+            dependencies: [
+                "E5CDBE2CB81CBFFC"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основной путь"
+                "§eЗачем: §fCave Book открывает сведения об особых пещерах."
+                "§bПрактика: §fСоздайте Cave Book, прочитайте подсказки и подготовьте маршрут."
+                "§aАвтопроверка: §fДостижение получения Cave Book."
+            ]
+            tasks: [
+                {
+                    id: "707B4C8FB38E0E79"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/cave_book"
+                }
+            ]
+            rewards: [
+                {
+                    id: "483C6F7044981DCA"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "7E11A5910F837BA9"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:azure_magnet" }
+                }
+            ]
+        }
+        {
+            id: "8B88E55204890F85"
+            title: "Кодекс исследователя"
+            x: 8.00d
+            y: 0.00d
+            icon: "alexscaves:cave_codex"
+            shape: "circle"
+            size: 1.20d
+            dependencies: [
+                "3C74408B2EA9F8D7"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основной путь"
+                "§eЗачем: §fCodex углубляет поиск необычных пещер."
+                "§bПрактика: §fПолучите Cave Codex и изучите его назначение."
+                "§aАвтопроверка: §fДостижение за получение Cave Codex, не посещение пещеры."
+            ]
+            tasks: [
+                {
+                    id: "BAE83E72223364AB"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/cave_codex"
+                }
+            ]
+            rewards: [
+                {
+                    id: "1B4C91A2E8C5721C"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "D275F5C9B72F4648"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:amber" }
+                }
+            ]
+        }
+        {
+            id: "1E0319E7396C1AF2"
+            title: "Карта неизвестных полостей"
+            x: 12.00d
+            y: 0.00d
+            icon: "alexscaves:cave_map"
+            shape: "circle"
+            size: 1.20d
+            dependencies: [
+                "8B88E55204890F85"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основной путь"
+                "§eЗачем: §fCave Map — отдельный навигационный предмет именно Alex’s Caves."
+                "§bПрактика: §fПолучите Cave Map и используйте в экспедиции."
+                "§aАвтопроверка: §fДостижение получения Cave Map, не доказательство находки биома."
+            ]
+            tasks: [
+                {
+                    id: "3F859D323BE8CAC2"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/cave_map"
+                }
+            ]
+            rewards: [
+                {
+                    id: "C81BD21098AFA38C"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "B7B799FC080D56BE"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:abyssmarine" }
+                }
+            ]
+        }
+        {
+            id: "60D9315769C4E578"
+            title: "Магнитный горизонт"
+            x: 16.00d
+            y: -5.00d
+            icon: "alexscaves:cave_book"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "1E0319E7396C1AF2"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fОсобый биом Alex’s Caves имеет собственные угрозы и ресурсы."
+                "§bПрактика: §fНайдите и действительно посетите указанную пещеру. Изучите хотя бы один уникальный элемент."
+                "§aАвтопроверка: §fBiome Task подтверждает посещение биома, но не сбор ресурсов."
+            ]
+            tasks: [
+                {
+                    id: "20E3F1B113B1CDB1"
+                    type: "biome"
+                    biome: "alexscaves:magnetic_caves"
+                }
+            ]
+            rewards: [
+                {
+                    id: "9E2DCA3ECF9D4753"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "2404BE3DB698B460"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:bone_ribs" }
+                }
+            ]
+        }
+        {
+            id: "A682A9C8CBE99BB1"
+            title: "Древние глубины"
+            x: 20.00d
+            y: -5.00d
+            icon: "alexscaves:cave_book"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "60D9315769C4E578"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fОсобый биом Alex’s Caves имеет собственные угрозы и ресурсы."
+                "§bПрактика: §fНайдите и действительно посетите указанную пещеру. Изучите хотя бы один уникальный элемент."
+                "§aАвтопроверка: §fBiome Task подтверждает посещение биома, но не сбор ресурсов."
+            ]
+            tasks: [
+                {
+                    id: "E294C5C25F7D1D1A"
+                    type: "biome"
+                    biome: "alexscaves:primordial_caves"
+                }
+            ]
+            rewards: [
+                {
+                    id: "87E307CE4C6E9E5F"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "5A022B662094BBDA"
+                    type: "item"
+                    item: { Count: 2b, id: "alexscaves:candy_cane" }
+                }
+            ]
+        }
+        {
+            id: "C54CEAEDCFA1F140"
+            title: "Токсичная тайна"
+            x: 24.00d
+            y: -5.00d
+            icon: "alexscaves:cave_book"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "A682A9C8CBE99BB1"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fОсобый биом Alex’s Caves имеет собственные угрозы и ресурсы."
+                "§bПрактика: §fНайдите и действительно посетите указанную пещеру. Изучите хотя бы один уникальный элемент."
+                "§aАвтопроверка: §fBiome Task подтверждает посещение биома, но не сбор ресурсов."
+            ]
+            tasks: [
+                {
+                    id: "B0442BC0C484811D"
+                    type: "biome"
+                    biome: "alexscaves:toxic_caves"
+                }
+            ]
+            rewards: [
+                {
+                    id: "DF2DF49F3D7A4EFF"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "93C3A108FDC85970"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:bone_nodule" }
+                }
+            ]
+        }
+        {
+            id: "EF811CDE1BFBABE2"
+            title: "На краю бездны"
+            x: 16.00d
+            y: 5.00d
+            icon: "alexscaves:cave_book"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "1E0319E7396C1AF2"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fОсобый биом Alex’s Caves имеет собственные угрозы и ресурсы."
+                "§bПрактика: §fНайдите и действительно посетите указанную пещеру. Изучите хотя бы один уникальный элемент."
+                "§aАвтопроверка: §fBiome Task подтверждает посещение биома, но не сбор ресурсов."
+            ]
+            tasks: [
+                {
+                    id: "7BBF11488F2C6812"
+                    type: "biome"
+                    biome: "alexscaves:abyssal_chasm"
+                }
+            ]
+            rewards: [
+                {
+                    id: "E7DAF7EF1EF5CDDB"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "F9D1A640355B3DBB"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:diving_boots" }
+                }
+            ]
+        }
+        {
+            id: "E64ED6625A930A36"
+            title: "Забытые полости"
+            x: 20.00d
+            y: 5.00d
+            icon: "alexscaves:cave_book"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "EF811CDE1BFBABE2"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fОсобый биом Alex’s Caves имеет собственные угрозы и ресурсы."
+                "§bПрактика: §fНайдите и действительно посетите указанную пещеру. Изучите хотя бы один уникальный элемент."
+                "§aАвтопроверка: §fBiome Task подтверждает посещение биома, но не сбор ресурсов."
+            ]
+            tasks: [
+                {
+                    id: "77D77958BAC81241"
+                    type: "biome"
+                    biome: "alexscaves:forlorn_hollows"
+                }
+            ]
+            rewards: [
+                {
+                    id: "F1B2719273A97A69"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "29285C07DC8A089E"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:curly_fern" }
+                }
+            ]
+        }
+        {
+            id: "338E0B562BF293D5"
+            title: "Сладкие катакомбы"
+            x: 24.00d
+            y: 5.00d
+            icon: "alexscaves:cave_book"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "E64ED6625A930A36"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fОсобый биом Alex’s Caves имеет собственные угрозы и ресурсы."
+                "§bПрактика: §fНайдите и действительно посетите указанную пещеру. Изучите хотя бы один уникальный элемент."
+                "§aАвтопроверка: §fBiome Task подтверждает посещение биома, но не сбор ресурсов."
+            ]
+            tasks: [
+                {
+                    id: "DA2A00086055E837"
+                    type: "biome"
+                    biome: "alexscaves:candy_cavity"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A1F838EC139C333B"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "B7BDF553A11E800A"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:deep_sea_sushi_roll" }
+                }
+            ]
+        }
+        {
+            id: "5EEE4A0183E3245F"
+            title: "Магнитная геология"
+            x: 20.00d
+            y: -10.00d
+            icon: "alexscaves:raw_scarlet_neodymium"
+            shape: "circle"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "60D9315769C4E578"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fМагнитные минералы используются в новых технологиях."
+                "§bПрактика: §fНайдите магнитную пещеру, добудьте неодим и исследуйте его разновидности."
+                "§aАвтопроверка: §fДостижение за изменение инвентаря с Neodymium; требует внутреннего родителя discover_magnetic_caves."
+            ]
+            tasks: [
+                {
+                    id: "76EC5DF1D9D766B2"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/neodymium"
+                }
+            ]
+            rewards: [
+                {
+                    id: "6622420A5BE9116D"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "8E70BA9833803CB3"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:dark_tatters" }
+                }
+            ]
+        }
+        {
+            id: "FCE22E10D39BCA44"
+            title: "Железный страж пещеры"
+            x: 24.00d
+            y: -10.00d
+            icon: "alexscaves:heavyweight"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "5EEE4A0183E3245F"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fИскусственные существа подземелий требуют новых тактик."
+                "§bПрактика: §fПобедите Boundroid."
+                "§aАвтопроверка: §fДостижение за убийство Boundroid."
+            ]
+            tasks: [
+                {
+                    id: "CC6823BD044EC04B"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/defeat_boundroid"
+                }
+            ]
+            rewards: [
+                {
+                    id: "773CA0EA7B51C9E4"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "F403190DCCF36CCE"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:burrowing_arrow" }
+                }
+            ]
+        }
+        {
+            id: "C23DDD9DAAD5EAB7"
+            title: "Тайное жертвоприношение"
+            x: 24.00d
+            y: 10.00d
+            icon: "alexscaves:cave_book"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "E64ED6625A930A36"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fВ забытой пещере есть собственные опасные ритуалы."
+                "§bПрактика: §fИзучите мир Underzealots, добейтесь соответствующего события."
+                "§aАвтопроверка: §fСпециальное достижение Underzealot Sacrifice; описание не выдаёт предмет за ритуал."
+            ]
+            tasks: [
+                {
+                    id: "1EDDE4E0338D702F"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/underzealot_sacrifice"
+                }
+            ]
+            rewards: [
+                {
+                    id: "646CFC96C0DB46AD"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "57C5E3FC9345FCFC"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:ancient_sapling" }
+                }
+            ]
+        }
+        {
+            id: "2A2A1ECDD23269E9"
+            title: "Хозяин забытых коридоров"
+            x: 28.00d
+            y: 10.00d
+            icon: "alexscaves:cave_book"
+            shape: "crown"
+            size: 1.24d
+            optional: true
+            dependencies: [
+                "C23DDD9DAAD5EAB7"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fForsaken завершает опасную подземную экспедицию."
+                "§bПрактика: §fПобедите Forsaken."
+                "§aАвтопроверка: §fДостижение за убийство Forsaken."
+            ]
+            tasks: [
+                {
+                    id: "98BA9EBED4B6F9C8"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/defeat_forsaken"
+                }
+            ]
+            rewards: [
+                {
+                    id: "5129D4F1E8B600A2"
+                    type: "xp"
+                    xp: 480
+                }
+                {
+                    id: "261BF3059E736C63"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:archaic_vine" }
+                }
+            ]
+        }
+        {
+            id: "2C50224379627B14"
+            title: "Лаборатория карамели"
+            x: 28.00d
+            y: 5.00d
+            icon: "alexscaves:caramel"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "338E0B562BF293D5"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fСладкие катакомбы дают необычные ингредиенты."
+                "§bПрактика: §fРазберитесь в добыче карамели и получите её."
+                "§aАвтопроверка: §fДостижение получения Caramel."
+            ]
+            tasks: [
+                {
+                    id: "90466BB0E10406D8"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/caramel"
+                }
+            ]
+            rewards: [
+                {
+                    id: "8DA9EA43C557B937"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "0DD6401C82C00FE3"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:bioluminesscence" }
+                }
+            ]
+        }
+        {
+            id: "66097831A964FDD6"
+            title: "Экспериментальная кухня катакомб"
+            x: 32.00d
+            y: 5.00d
+            icon: "alexscaves:caramel_apple"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "2C50224379627B14"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fНеобычные материалы создают новые кулинарные рецепты."
+                "§bПрактика: §fПриготовьте Caramel Apple."
+                "§aАвтопроверка: §fДостижение получения Caramel Apple."
+            ]
+            tasks: [
+                {
+                    id: "D6F02046A85402F4"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/caramel_apple"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A510D9E8F9D611DC"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "FDD8F0E99DE1FBAE"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:biome_treat" }
+                }
+            ]
+        }
+        {
+            id: "054E760F5D9B1153"
+            title: "Сердце магнитной бури"
+            x: 24.00d
+            y: -14.00d
+            icon: "alexscaves:azure_magnet"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "FCE22E10D39BCA44"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Магнитные пещеры: §fиспытайте себя против Magnetron."
+                "§bЗадание: §fразыщите и победите Магнетрона, используя укрытия от магнитных атак."
+                "§aПроверка: §fсобытие убийства Magnetron, а не добыча неодима."
+            ]
+            tasks: [
+                {
+                    id: "FD0DC251B144523B"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/defeat_magnetron"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A8495F33945ADC4D"
+                    type: "xp"
+                    xp: 400
+                }
+                {
+                    id: "2FB0CA65430CA52D"
+                    type: "item"
+                    item: { Count: 6b, id: "alexscaves:azure_neodymium_ingot" }
+                }
+            ]
+        }
+        {
+            id: "B156B9A8303E6235"
+            title: "Разбудить гиганта"
+            x: 28.00d
+            y: -5.00d
+            icon: "alexscaves:atlatitan_egg"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "C54CEAEDCFA1F140"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Возвращение в первобытные глубины: §fдревние ящеры не прощают недооценки."
+                "§bЗадание: §fнайдите и победите крупного динозавра в мире Alex’s Caves."
+                "§aПроверка: §fсобытие defeat_big_dinosaur, не убийство обычного моба."
+            ]
+            tasks: [
+                {
+                    id: "C050057826EEA0AD"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/defeat_big_dinosaur"
+                }
+            ]
+            rewards: [
+                {
+                    id: "539E0A863121EC94"
+                    type: "xp"
+                    xp: 450
+                }
+                {
+                    id: "E08C846E4B7F56B0"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:primitive_club" }
+                }
+            ]
+        }
+        {
+            id: "B658222BC6AAB8B9"
+            title: "Птерозавр над бездной"
+            x: 32.00d
+            y: -5.00d
+            icon: "alexscaves:bioluminescent_torch"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "B156B9A8303E6235"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Союзник палеонтолога: §fзверь, который меняет маршруты подземелья."
+                "§bЗадание: §fнайдите и приручите Subterranodon."
+                "§aПроверка: §fсобытие tame_subterranodon; простой контакт с ним не подходит."
+            ]
+            tasks: [
+                {
+                    id: "F189A06BEECD6104"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/tame_subterranodon"
+                }
+            ]
+            rewards: [
+                {
+                    id: "4135BC1C7FD06B0A"
+                    type: "xp"
+                    xp: 280
+                }
+                {
+                    id: "496BCA089ADFE898"
+                    type: "item"
+                    item: { Count: 12b, id: "alexscaves:bioluminescent_torch" }
+                }
+            ]
+        }
+        {
+            id: "CD890C4519D39302"
+            title: "Ожившая химия"
+            x: 36.00d
+            y: -5.00d
+            icon: "alexscaves:acid_bucket"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "B658222BC6AAB8B9"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Кроссовер механизмов и токсичных пещер: §fопасный эксперимент требует защиты."
+                "§bЗадание: §fвызовите ржавление Create-механизма кислотой Alex’s Caves в безопасной лаборатории."
+                "§aПроверка: §fсобытие acid_create_rust; кислотное ведро без взаимодействия недостаточно."
+            ]
+            tasks: [
+                {
+                    id: "41D2E486796896B3"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/acid_create_rust"
+                }
+            ]
+            rewards: [
+                {
+                    id: "F53C2FA4AE251D11"
+                    type: "xp"
+                    xp: 310
+                }
+                {
+                    id: "FBCB2DF4A758A187"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:hazmat_chestplate" }
+                }
+            ]
+        }
+        {
+            id: "F83BDD5302CAB271"
+            title: "Разговор с глубиной"
+            x: 16.00d
+            y: 10.00d
+            icon: "alexscaves:pearl"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "EF811CDE1BFBABE2"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Бездна не всегда враждебна: §fосвойте мирное взаимодействие с Deep Ones."
+                "§bЗадание: §fулучшите отношение жителей глубины до нейтрального."
+                "§aПроверка: §fсобытие deep_ones_become_neutral, не просто обнаружение племени."
+            ]
+            tasks: [
+                {
+                    id: "A96EAF8513030121"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/deep_ones_become_neutral"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A3112DF10619948A"
+                    type: "xp"
+                    xp: 250
+                }
+                {
+                    id: "517066ECF52741B3"
+                    type: "item"
+                    item: { Count: 12b, id: "alexscaves:marine_snow" }
+                }
+            ]
+        }
+        {
+            id: "20BB4BB6D059B828"
+            title: "Торговцы затонувшего мира"
+            x: 16.00d
+            y: 15.00d
+            icon: "alexscaves:pearl"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "F83BDD5302CAB271"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Подводная дипломатия: §fпознакомьтесь с необычной экономикой глубин."
+                "§bЗадание: §fпроведите настоящую сделку с Deep One."
+                "§aПроверка: §fсобытие торговли, не само изменение репутации."
+            ]
+            tasks: [
+                {
+                    id: "D2BB0ABAF37BF615"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/trade_with_deep_one"
+                }
+            ]
+            rewards: [
+                {
+                    id: "E597393FCB61A2E4"
+                    type: "xp"
+                    xp: 260
+                }
+                {
+                    id: "1AFA97DBBC02AA81"
+                    type: "item"
+                    item: { Count: 8b, id: "alexscaves:bioluminesscence" }
+                }
+            ]
+        }
+        {
+            id: "FF39C1FF3A9C0C7E"
+            title: "Спасти подлодку"
+            x: 20.00d
+            y: 15.00d
+            icon: "alexscaves:abyssmarine"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "20BB4BB6D059B828"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Секретная экспедиция: §fзатонувшая техника иногда может ожить."
+                "§bЗадание: §fнайдите неисправную подлодку и почините её."
+                "§aПроверка: §fсобытие repair_submarine, не изготовление обычной лодки."
+            ]
+            tasks: [
+                {
+                    id: "8912301EF70CF42E"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/repair_submarine"
+                }
+            ]
+            rewards: [
+                {
+                    id: "3406A848B87099E6"
+                    type: "xp"
+                    xp: 330
+                }
+                {
+                    id: "F7DD52E0143D5962"
+                    type: "item"
+                    item: { Count: 24b, id: "alexscaves:abyssmarine" }
+                }
+            ]
+        }
+        {
+            id: "DD30229DC0039862"
+            title: "Архив Бездны"
+            x: 12.00d
+            y: 10.00d
+            icon: "alexscaves:abyssmarine"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "EF811CDE1BFBABE2"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Побочное исследование: §fне каждая тёмная арка — просто декорация."
+                "§bЗадание: §fразыщите Abyssal Ruins, обозначьте вход и выход."
+                "§aПроверка: §fсобытие посещения руин, отличное от входа в основной биом."
+            ]
+            tasks: [
+                {
+                    id: "F0A8DE17833875A8"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/discover_abyssal_ruins"
+                }
+            ]
+            rewards: [
+                {
+                    id: "F36533EF0DE13A8A"
+                    type: "xp"
+                    xp: 240
+                }
+                {
+                    id: "E8E3DE31E4A6A829"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:abyssal_altar" }
+                }
+            ]
+        }
+        {
+            id: "66EADAB24A1552E0"
+            title: "Медвежий мармелад"
+            x: 28.00d
+            y: 0.00d
+            icon: "alexscaves:gelatin_red"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "338E0B562BF293D5"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Сладкая экспедиция: §fдружить с обитателями конфетных пещер можно едой."
+                "§bЗадание: §fпокормите Gummy Bear."
+                "§aПроверка: §fотдельное событие взаимодействия feed_gummy_bear."
+            ]
+            tasks: [
+                {
+                    id: "381A5A69B9EF257E"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/feed_gummy_bear"
+                }
+            ]
+            rewards: [
+                {
+                    id: "F7291AC1CB6781B5"
+                    type: "xp"
+                    xp: 200
+                }
+                {
+                    id: "0C5C77D7A767C478"
+                    type: "item"
+                    item: { Count: 12b, id: "alexscaves:gelatin_red" }
+                }
+            ]
+        }
+        {
+            id: "F169B6525412B860"
+            title: "Оседлать сладкую бурю"
+            x: 32.00d
+            y: 0.00d
+            icon: "alexscaves:gummy_ring_red"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "66EADAB24A1552E0"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Адреналин без меча: §fиспытайте необычный транспорт Candy Cavity."
+                "§bЗадание: §fпрокатитесь на Gum Worm."
+                "§aПроверка: §fсобытие посадки ride_gum_worm, не убийство червя."
+            ]
+            tasks: [
+                {
+                    id: "FAD287A9ED587EED"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/ride_gum_worm"
+                }
+            ]
+            rewards: [
+                {
+                    id: "051B142AC1F8F78E"
+                    type: "xp"
+                    xp: 320
+                }
+                {
+                    id: "C5E93799AF098834"
+                    type: "item"
+                    item: { Count: 8b, id: "alexscaves:gummy_ring_red" }
+                }
+            ]
+        }
+        {
+            id: "D1155DEF31997ADB"
+            title: "Башня Ликочародейки"
+            x: 36.00d
+            y: 5.00d
+            icon: "alexscaves:confection_oven"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "66097831A964FDD6"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Редкая структура: §fкондитерская легенда не заканчивается на заводской кухне."
+                "§bЗадание: §fразыщите башню Licowitch в сладких пещерах, осторожно изучите опасности."
+                "§aПроверка: §fвстроенное достижение посещения башни, а не предмет."
+            ]
+            tasks: [
+                {
+                    id: "0C3219FA82885700"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/licowitch_tower"
+                }
+            ]
+            rewards: [
+                {
+                    id: "08C76B4D107F0EC7"
+                    type: "xp"
+                    xp: 300
+                }
+                {
+                    id: "F83C2768B3C2D0E2"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:confection_oven" }
+                }
+            ]
+        }
+        {
+            id: "F204791E23CFF9E5"
+            title: "Сумрак живого мотылька"
+            x: 32.00d
+            y: 10.00d
+            icon: "alexscaves:moth_ball"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "2A2A1ECDD23269E9"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Охотничья заметка: §fглубины Forlorn Hollows таят и малые угрозы."
+                "§bЗадание: §fпобедите Gloomoth."
+                "§aПроверка: §fотдельное достижение defeat_gloomoth."
+            ]
+            tasks: [
+                {
+                    id: "F77B1F2EAB288EEA"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/defeat_gloomoth"
+                }
+            ]
+            rewards: [
+                {
+                    id: "AACF255FA85B2B3A"
+                    type: "xp"
+                    xp: 260
+                }
+                {
+                    id: "040DA4459B841EA2"
+                    type: "item"
+                    item: { Count: 8b, id: "alexscaves:moth_ball" }
+                }
+            ]
+        }
+        {
+            id: "FD6B3DB0A377F701"
+            title: "Испытание галеновой перчатки"
+            x: 28.00d
+            y: -14.00d
+            icon: "minecraft:iron_sword"
+            shape: "shield"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "054E760F5D9B1153"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fМагнитное оружие опасно не менее, чем сами обитатели шахт."
+                "§bПрактика: §fПобедите врага с помощью Galena Gauntlet в событии мода."
+                "§aАвтопроверка: §fОсобый счётчик kill_mob_with_galena_gauntlet."
+            ]
+            tasks: [
+                {
+                    id: "1EF083740DA2EA92"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/galena_gauntlet_challenge"
+                }
+            ]
+            rewards: [
+                {
+                    id: "6A1CBE24E9E7B799"
+                    type: "xp"
+                    xp: 380
+                }
+                {
+                    id: "D15B770365378D12"
+                    type: "item"
+                    item: { Count: 10b, id: "alexscaves:azure_neodymium_ingot" }
+                }
+            ]
+        }
+        {
+            id: "6F2F3D36A0C60B9E"
+            title: "Последний вагон карьера"
+            x: 32.00d
+            y: -14.00d
+            icon: "minecraft:minecart"
+            shape: "shield"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "FD6B3DB0A377F701"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fБольшой карьер требует довести механическую задачу до конца."
+                "§bПрактика: §fЗавершите Quarry до финального события мода."
+                "§aАвтопроверка: §fОтдельное событие finished_quarry, не просто крафт детали."
+            ]
+            tasks: [
+                {
+                    id: "091D4B2535E074D5"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/finished_quarry"
+                }
+            ]
+            rewards: [
+                {
+                    id: "1D4415CD27332E6E"
+                    type: "xp"
+                    xp: 420
+                }
+                {
+                    id: "EC2B34EE532BA8EA"
+                    type: "item"
+                    item: { Count: 12b, id: "alexscaves:scarlet_neodymium_ingot" }
+                }
+            ]
+        }
+        {
+            id: "28820C6F7944A6F3"
+            title: "Купание в кислоте"
+            x: 40.00d
+            y: -5.00d
+            icon: "alexscaves:hazmat_chestplate"
+            shape: "star"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "CD890C4519D39302"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fВ токсичных пещерах нужна специальная защита."
+                "§bПрактика: §fНаденьте подходящее снаряжение и выдержите контакт с кислотой."
+                "§aАвтопроверка: §fСобытие enter_acid_with_armor; обычный вход в биом не считается."
+            ]
+            tasks: [
+                {
+                    id: "B26A54F896F88393"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/enter_acid_with_armor"
+                }
+            ]
+            rewards: [
+                {
+                    id: "6FD6F37114DB579F"
+                    type: "xp"
+                    xp: 330
+                }
+                {
+                    id: "9B9F2CDEC0B617C7"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:hazmat_mask" }
+                }
+            ]
+        }
+        {
+            id: "35A20348AABD6323"
+            title: "Остановить расплавление"
+            x: 44.00d
+            y: -5.00d
+            icon: "minecraft:blast_furnace"
+            shape: "crown"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "28820C6F7944A6F3"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fВ ядерной лаборатории ошибка может стоить всей мастерской."
+                "§bПрактика: §fПредотвратите аварию Nuclear Furnace при начавшемся перегреве."
+                "§aАвтопроверка: §fСобытие stop_nuclear_furnace_meltdown, не наличие печи."
+            ]
+            tasks: [
+                {
+                    id: "6FA188EBCCFFB6BE"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/stop_nuclear_furnace_meltdown"
+                }
+            ]
+            rewards: [
+                {
+                    id: "0F2306D0A0E0BC3A"
+                    type: "xp"
+                    xp: 790
+                }
+                {
+                    id: "11B064F2A4C8171E"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:hazmat_leggings" }
+                }
+            ]
+        }
+        {
+            id: "CF6FFE76F5F9E33C"
+            title: "Капитан глубоководной лодки"
+            x: 24.00d
+            y: 15.00d
+            icon: "minecraft:boat"
+            shape: "star"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "FF39C1FF3A9C0C7E"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fПочинить подлодку мало: нужно вывести её в путь."
+                "§bПрактика: §fПосле ремонта сядьте в Submarine и совершите погружение."
+                "§aАвтопроверка: §fСобытие started_riding с транспортом submarine, а не ремонт."
+            ]
+            tasks: [
+                {
+                    id: "85FCE00D32C382D1"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/ride_submarine"
+                }
+            ]
+            rewards: [
+                {
+                    id: "219BB320CD7F872F"
+                    type: "xp"
+                    xp: 260
+                }
+                {
+                    id: "9BD11645BE417224"
+                    type: "item"
+                    item: { Count: 24b, id: "alexscaves:abyssmarine" }
+                }
+            ]
+        }
+        {
+            id: "835B28BFA782D516"
+            title: "Дипломат глубин"
+            x: 28.00d
+            y: 15.00d
+            icon: "alexscaves:pearl"
+            shape: "star"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "CF6FFE76F5F9E33C"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fСоюзников среди Deep Ones можно заслужить поступками."
+                "§bПрактика: §fПовышайте отношение до статуса helpful, не ограничиваясь нейтралитетом."
+                "§aАвтопроверка: §fСобытие deep_one_helpful, отличное от neutral и торговли."
+            ]
+            tasks: [
+                {
+                    id: "DD4607D57AFBF3B5"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/deep_ones_become_helpful"
+                }
+            ]
+            rewards: [
+                {
+                    id: "1E509562104EC298"
+                    type: "xp"
+                    xp: 320
+                }
+                {
+                    id: "907B5312653E9F98"
+                    type: "item"
+                    item: { Count: 12b, id: "alexscaves:bioluminescent_torch" }
+                }
+            ]
+        }
+        {
+            id: "99E7481EE409646E"
+            title: "След на камне"
+            x: 36.00d
+            y: 10.00d
+            icon: "minecraft:painting"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "F204791E23CFF9E5"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fВ пещерах встречаются рисунки, способные рассказать историю."
+                "§bПрактика: §fИзучите пещерную живопись до срабатывания особого события."
+                "§aАвтопроверка: §fКритерий cave_painting, а не случайный рисунок в инвентаре."
+            ]
+            tasks: [
+                {
+                    id: "5DD1E5A1C73AE043"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/cave_painting"
+                }
+            ]
+            rewards: [
+                {
+                    id: "8977E52E9A8B1AA1"
+                    type: "xp"
+                    xp: 250
+                }
+                {
+                    id: "48C74A2A68448984"
+                    type: "item"
+                    item: { Count: 14b, id: "alexscaves:bioluminescent_torch" }
+                }
+            ]
+        }
+        {
+            id: "1BE92C03BDBB686A"
+            title: "Город пряничных стен"
+            x: 36.00d
+            y: 0.00d
+            icon: "minecraft:cookie"
+            shape: "star"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "F169B6525412B860"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fВ Candy Cavity бывают целые поселения из сладостей."
+                "§bПрактика: §fНайдите Gingerbread Town, не просто биом Candy Cavity."
+                "§aАвтопроверка: §fДостижение со структурным предикатом gingerbread_town."
+            ]
+            tasks: [
+                {
+                    id: "79CF9756F32ADDDD"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/gingerbread_town"
+                }
+            ]
+            rewards: [
+                {
+                    id: "E348FC82BA6E43DC"
+                    type: "xp"
+                    xp: 340
+                }
+                {
+                    id: "62D9D8E2BB42BE5F"
+                    type: "item"
+                    item: { Count: 16b, id: "alexscaves:caramel" }
+                }
+            ]
+        }
+        {
+            id: "A9FDA172CB9A8629"
+            title: "Рог сладкого скакуна"
+            x: 40.00d
+            y: 5.00d
+            icon: "minecraft:golden_carrot"
+            shape: "star"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "D1155DEF31997ADB"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fНе все чудеса сладкой пещеры съедобны."
+                "§bПрактика: §fПриручите Candicorn, отыскав подходящего обитателя Candy Cavity."
+                "§aАвтопроверка: §fОтдельное tame_animal с типом candicorn."
+            ]
+            tasks: [
+                {
+                    id: "F0853985F7974E7D"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/tame_candicorn"
+                }
+            ]
+            rewards: [
+                {
+                    id: "32ACBB25BA502CB9"
+                    type: "xp"
+                    xp: 330
+                }
+                {
+                    id: "C2BEC2991D5DC381"
+                    type: "item"
+                    item: { Count: 16b, id: "alexscaves:caramel" }
+                }
+            ]
+        }
+        {
+            id: "0AC844524C34131D"
+            title: "Семья первобытных"
+            x: 32.00d
+            y: 15.00d
+            icon: "minecraft:wheat"
+            shape: "star"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "835B28BFA782D516"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fЭкспедиция по пещерам включает и заботу о древней фауне."
+                "§bПрактика: §fРазведите двух Grottoceratops в первобытных пещерах."
+                "§aАвтопроверка: §fОтдельный bred_animals с типом grottoceratops."
+            ]
+            tasks: [
+                {
+                    id: "6D0110F2473C1611"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/breed_grottoceratops"
+                }
+            ]
+            rewards: [
+                {
+                    id: "ECA734ECCB0126EC"
+                    type: "xp"
+                    xp: 310
+                }
+                {
+                    id: "CEDB569F7A186DFE"
+                    type: "item"
+                    item: { Count: 2b, id: "alexscaves:primitive_club" }
+                }
+            ]
+        }
+        {
+            id: "6E775F1F2C2EDC48"
+            title: "Загадка на каменной стене"
+            x: 40.00d
+            y: 10.00d
+            icon: "alexscaves:limestone_chiseled"
+            shape: "star"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "99E7481EE409646E"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fНе всякую наскальную роспись можно объяснить с первого взгляда."
+                "§fРазберитесь с загадочной Cave Painting и откройте отдельное секретное событие мода."
+                "§aАвтопроверка: §falexscaves:alexscaves/mystery_cave_painting"
+                "§7Проверяется триггер mystery_cave_painting, не наличие рисунка в сумке."
+            ]
+            tasks: [
+                {
+                    id: "6F52C7FF6287C28F"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/mystery_cave_painting"
+                }
+            ]
+            rewards: [
+                {
+                    id: "4DF777EB22BB1CF8"
+                    type: "xp"
+                    xp: 360
+                }
+                {
+                    id: "5B728D8811A2A3DC"
+                    type: "item"
+                    item: { Count: 16b, id: "alexscaves:bioluminescent_torch" }
+                }
+            ]
+        }
+        {
+            id: "1FDE61E7AC73CF59"
+            title: "За спиной кто-то дышит"
+            x: 28.00d
+            y: 20.00d
+            icon: "alexscaves:marine_snow"
+            shape: "star"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "835B28BFA782D516"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fДаже после знакомства с Deep Ones их мир способен удивлять."
+                "§fИсследуйте глубины и спровоцируйте особое событие слежки Deep One."
+                "§aАвтопроверка: §falexscaves:alexscaves/stalked_by_deep_one"
+                "§7Триггер stalked_by_deep_one; конкретное поведение проверяйте в тестовом мире."
+            ]
+            tasks: [
+                {
+                    id: "57780C703261CC71"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/stalked_by_deep_one"
+                }
+            ]
+            rewards: [
+                {
+                    id: "5383C817E55D6437"
+                    type: "xp"
+                    xp: 295
+                }
+                {
+                    id: "8E3C9BB842B21F0B"
+                    type: "item"
+                    item: { Count: 16b, id: "alexscaves:abyssmarine" }
+                }
+            ]
+        }
+        {
+            id: "3EBA900FE44E6268"
+            title: "Жемчужина на алтаре"
+            x: 32.00d
+            y: 20.00d
+            icon: "alexscaves:abyssal_altar"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "1FDE61E7AC73CF59"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fРуины Бездны скрывают взаимодействие, не похожее на обычное открывание сундука."
+                "§fНайдите Abyssal Altar и примените на нём Pearl из Alex’s Caves."
+                "§aАвтопроверка: §falexscaves:alexscaves/pearl_on_abyssal_altar"
+                "§7Проверяется item_used_on_block: pearl на abyssal_altar. Требуется соответствующий предмет."
+            ]
+            tasks: [
+                {
+                    id: "74982CBDC5BACD90"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/pearl_on_abyssal_altar"
+                }
+            ]
+            rewards: [
+                {
+                    id: "11A1D74B5F12E895"
+                    type: "xp"
+                    xp: 415
+                }
+                {
+                    id: "AC80C56943F7DD12"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:abyssal_altar" }
+                }
+            ]
+        }
+        {
+            id: "1AD4F36AEE69BAE9"
+            title: "Страж бездонного рудника"
+            x: 8.00d
+            y: 10.00d
+            icon: "alexscaves:depth_charge"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "DD30229DC0039862"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fДревние подводные разработки охраняют не только утопленники."
+                "§fИсследуйте Abyssal Ruins и победите Mine Guardian."
+                "§aАвтопроверка: §falexscaves:alexscaves/defeat_mine_guardian"
+                "§7Достижение player_killed_entity: alexscaves:mine_guardian."
+            ]
+            tasks: [
+                {
+                    id: "43D594E7968A0276"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/defeat_mine_guardian"
+                }
+            ]
+            rewards: [
+                {
+                    id: "3222D0E8ED330EDA"
+                    type: "xp"
+                    xp: 440
+                }
+                {
+                    id: "2B61800494A9E0BB"
+                    type: "item"
+                    item: { Count: 4b, id: "alexscaves:depth_charge" }
+                }
+            ]
+        }
+        {
+            id: "7727FFA6871B87B6"
+            title: "Договор с валлумраптором"
+            x: 36.00d
+            y: 15.00d
+            icon: "alexscaves:primitive_club"
+            shape: "star"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "0AC844524C34131D"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fЗнакомство с древними хищниками не обязательно заканчивается сражением."
+                "§fИсследуйте условия приручения Vallumraptor и получите собственного спутника."
+                "§aАвтопроверка: §falexscaves:alexscaves/tame_vallumraptor"
+                "§7Достижение tame_animal именно для alexscaves:vallumraptor."
+            ]
+            tasks: [
+                {
+                    id: "F9D19B81D164E652"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/tame_vallumraptor"
+                }
+            ]
+            rewards: [
+                {
+                    id: "473B5180C14688EE"
+                    type: "xp"
+                    xp: 380
+                }
+                {
+                    id: "ED93EB8B41C300E4"
+                    type: "item"
+                    item: { Count: 2b, id: "alexscaves:primitive_club" }
+                }
+            ]
+        }
+        {
+            id: "FDF8F9FB47383497"
+            title: "Союз с грозой пещер"
+            x: 32.00d
+            y: -9.00d
+            icon: "alexscaves:primitive_club"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "B156B9A8303E6235"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fНе каждый древний гигант обязан быть врагом."
+                "§fПопробуйте приручить Tremorsaurus и изучите, что ему необходимо."
+                "§aАвтопроверка: §falexscaves:alexscaves/tame_tremorsaurus"
+                "§7Достижение tame_animal с entity=alexscaves:tremorsaurus."
+            ]
+            tasks: [
+                {
+                    id: "5BD2DA559B59FD41"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/tame_tremorsaurus"
+                }
+            ]
+            rewards: [
+                {
+                    id: "0C879CF5CC43B67C"
+                    type: "xp"
+                    xp: 530
+                }
+                {
+                    id: "4388B9844649E107"
+                    type: "item"
+                    item: { Count: 4b, id: "alexscaves:tree_star" }
+                }
+            ]
+        }
+        {
+            id: "60FEF5A262F30317"
+            title: "Юрский экспресс"
+            x: 36.00d
+            y: -9.00d
+            icon: "minecraft:minecart"
+            shape: "star"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "FDF8F9FB47383497"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fКогда доисторические звери освоят железную дорогу, у шахты начнётся совсем другая история."
+                "§fУстройте поездку, при которой сработает особое достижение Dinosaurs Minecart."
+                "§aАвтопроверка: §falexscaves:alexscaves/dinosaurs_minecart"
+                "§7Триггер dinosaurs_minecart; не просто крафт вагонетки."
+            ]
+            tasks: [
+                {
+                    id: "75E9BBD4DC301FF4"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/dinosaurs_minecart"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A27C777665144943"
+                    type: "xp"
+                    xp: 465
+                }
+                {
+                    id: "46CB9D1971B7A153"
+                    type: "item"
+                    item: { Count: 6b, id: "create:railway_casing" }
+                }
+            ]
+        }
+        {
+            id: "9FCD3892785E34CA"
+            title: "Последний отсчёт Нуклипера"
+            x: 40.00d
+            y: -9.00d
+            icon: "alexscaves:uranium"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "CD890C4519D39302"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fВ токсичных глубинах опасность приходит не только от радиации."
+                "§fНайдите Nucleeper и победите его, подготовив защиту и безопасную дистанцию."
+                "§aАвтопроверка: §falexscaves:alexscaves/defeat_nucleeper"
+                "§7Достижение player_killed_entity: alexscaves:nucleeper."
+            ]
+            tasks: [
+                {
+                    id: "A5A037134CB40514"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/defeat_nucleeper"
+                }
+            ]
+            rewards: [
+                {
+                    id: "F480BAEC8B8D25C1"
+                    type: "xp"
+                    xp: 480
+                }
+                {
+                    id: "A8AD5ABF7031F03D"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:hazmat_chestplate" }
+                }
+            ]
+        }
+        {
+            id: "AC100A1C72C67C78"
+            title: "Остановить обратный отсчёт"
+            x: 48.00d
+            y: -5.00d
+            icon: "minecraft:shears"
+            shape: "crown"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "35A20348AABD6323"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fСамая опасная бомба — та, которую можно обезвредить вовремя."
+                "§fВ безопасной тестовой зоне обезвредьте Nuclear Bomb ножницами; не ставьте эксперимент рядом с базой."
+                "§aАвтопроверка: §falexscaves:alexscaves/defuse_nuclear_bomb"
+                "§7player_interacted_with_entity: nuclear_bomb с minecraft:shears. Не требует взрывать бомбу."
+            ]
+            tasks: [
+                {
+                    id: "291D4EDD37D3E94F"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/defuse_nuclear_bomb"
+                }
+            ]
+            rewards: [
+                {
+                    id: "B9F93AEA1A7A07C9"
+                    type: "xp"
+                    xp: 920
+                }
+                {
+                    id: "A4F7D2542561E3DC"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:hazmat_boots" }
+                }
+            ]
+        }
+        {
+            id: "A070AFC86412D9CF"
+            title: "Лучистый питомец"
+            x: 24.00d
+            y: -19.00d
+            icon: "alexscaves:radgill"
+            shape: "star"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "054E760F5D9B1153"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fНебольшой спутник глубоких пещер требует особого подхода."
+                "§fВыясните, как приручить Raycat в Alex’s Caves."
+                "§aАвтопроверка: §falexscaves:alexscaves/tame_raycat"
+                "§7minecraft:tame_animal с entity=alexscaves:raycat; предварительное модовое достижение может потребовать ловли Radgill."
+            ]
+            tasks: [
+                {
+                    id: "2120E9B6A5265BCE"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/tame_raycat"
+                }
+            ]
+            rewards: [
+                {
+                    id: "3200697E90C4D2AE"
+                    type: "xp"
+                    xp: 345
+                }
+                {
+                    id: "52FE196CCFC2CD0F"
+                    type: "item"
+                    item: { Count: 12b, id: "alexscaves:bioluminescent_torch" }
+                }
+            ]
+        }
+            {
+            id: "383DD6353CA94C12"
+            title: "Детонатор на расстоянии"
+            x: -4.00d
+            y: -4.00d
+            icon: "minecraft:redstone"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "E5CDBE2CB81CBFFC"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fОсвойте дистанционное приведение взрывного устройства в действие в безопасном месте игрового мира."
+                "§aАвтозачёт: §fМодовый триггер Remote Detonation, а не наличие детонатора."
+            ]
+            tasks: [
+                {
+                    id: "07B75F1A9D3AB484"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/remote_detonation"
+                }
+            ]
+            rewards: [
+                {
+                    id: "DFBACF0D2B10ABD3"
+                    type: "xp"
+                    xp: 300
+                }
+                {
+                    id: "4CD064F4349CE0C2"
+                    type: "item"
+                    item: { Count: 5b, id: "minecraft:diamond" }
+                }
+            ]
+        }
+        {
+            id: "273A0D05D74B7984"
+            title: "Всадник ядерного снаряда"
+            x: -8.00d
+            y: -4.00d
+            icon: "minecraft:tnt"
+            shape: "star"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "383DD6353CA94C12"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fРискованный игровой трюк: прокатитесь на Nuclear Bomb. Тестируйте вдали от базы и деревень."
+                "§aАвтозачёт: §fСобытие посадки верхом на ядерную бомбу; наличие бомбы не засчитывается."
+            ]
+            tasks: [
+                {
+                    id: "7FDD374D3736CB85"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/ride_nuclear_bomb"
+                }
+            ]
+            rewards: [
+                {
+                    id: "C077EB431491CB92"
+                    type: "xp"
+                    xp: 320
+                }
+                {
+                    id: "1AE87ADA789BCC28"
+                    type: "item"
+                    item: { Count: 1b, id: "minecraft:totem_of_undying" }
+                }
+            ]
+        }
+        {
+            id: "3FCB8D7FF82745AF"
+            title: "Пробуждение огненного титана"
+            x: -4.00d
+            y: 4.00d
+            icon: "minecraft:blaze_powder"
+            shape: "star"
+            size: 1.18d
+            optional: true
+            dependencies: [
+                "E5CDBE2CB81CBFFC"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fНайдите путь к вызову Luxtructosaurus и проведите настоящее призывание."
+                "§aАвтозачёт: §fВстроенное событие вызова Luxtructosaurus."
+            ]
+            tasks: [
+                {
+                    id: "CEB0866E39AF2D89"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/summon_luxtructosaurus"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A880F3D71407C9F9"
+                    type: "xp"
+                    xp: 360
+                }
+                {
+                    id: "50C4E1F228182427"
+                    type: "item"
+                    item: { Count: 2b, id: "minecraft:netherite_scrap" }
+                }
+            ]
+        }
+        {
+            id: "06A53594EC209D3A"
+            title: "Шаг атлатитана"
+            x: -8.00d
+            y: 4.00d
+            icon: "minecraft:dragon_egg"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "3FCB8D7FF82745AF"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fИспытайте мощный топот атлатитана. Условия самого достижения мода могут включать победу над Luxtructosaurus."
+                "§aАвтозачёт: §fОтдельное событие Atlatitan Stomp."
+            ]
+            tasks: [
+                {
+                    id: "EC93D71B1FF7CB9F"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/atlatitan_stomp"
+                }
+            ]
+            rewards: [
+                {
+                    id: "B60AEBA0309C98C9"
+                    type: "xp"
+                    xp: 340
+                }
+                {
+                    id: "02DD50AD6069CC9A"
+                    type: "item"
+                    item: { Count: 8b, id: "minecraft:diamond" }
+                }
+            ]
+        }
+        {
+            id: "70F6DFB37F774EB1"
+            title: "Наблюдатель издали"
+            x: -4.00d
+            y: 9.00d
+            icon: "minecraft:spyglass"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "E5CDBE2CB81CBFFC"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fИсследуйте поведение Beholder, взаимодействуя с ним с большой дистанции."
+                "§aАвтозачёт: §fСпециальный триггер Beholder Far Away, не убийство существа."
+            ]
+            tasks: [
+                {
+                    id: "2E89877B342DA3ED"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/beholder_far_away"
+                }
+            ]
+            rewards: [
+                {
+                    id: "DD218CDE99C51ADC"
+                    type: "xp"
+                    xp: 270
+                }
+                {
+                    id: "A5BD8E7652063382"
+                    type: "item"
+                    item: { Count: 8b, id: "minecraft:ender_pearl" }
+                }
+            ]
+        }
+        {
+            id: "FED39CE9F2148371"
+            title: "Ручной Треморзилла"
+            x: -4.00d
+            y: -9.00d
+            icon: "minecraft:dragon_egg"
+            shape: "star"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "E5CDBE2CB81CBFFC"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fВырастите Треморзиллу из яйца и приручите её — это долгий путь, а не охота за обычным трофеем."
+                "§aАвтозачёт: §fДействие tame_animal: приручение Tremorzilla; встроенному достижению потребуется ранее вылупить яйцо."
+            ]
+            tasks: [
+                {
+                    id: "D47EF87CD179DA17"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/tame_tremorzilla"
+                }
+            ]
+            rewards: [
+                {
+                    id: "2BDA9E5B0596D0C0"
+                    type: "xp"
+                    xp: 470
+                }
+                {
+                    id: "DE8234E4BC6C09C4"
+                    type: "item"
+                    item: { Count: 1b, id: "minecraft:netherite_ingot" }
+                }
+            ]
+        }
+        {
+            id: "A6AF0FFF36488B07"
+            title: "Луч великана"
+            x: -8.00d
+            y: -9.00d
+            icon: "minecraft:beacon"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "FED39CE9F2148371"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fДобейтесь попадания смертельным лучом Треморзиллы по цели. Продумайте безопасную площадку."
+                "§aАвтозачёт: §fСпециальный триггер Tremorzilla Kill Beam."
+            ]
+            tasks: [
+                {
+                    id: "2F98D47F7BFFE154"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/tremorzilla_kill_beam"
+                }
+            ]
+            rewards: [
+                {
+                    id: "DD92DCF40261AD36"
+                    type: "xp"
+                    xp: 500
+                }
+                {
+                    id: "6A09AD11512E32FE"
+                    type: "item"
+                    item: { Count: 1b, id: "minecraft:enchanted_golden_apple" }
+                }
+            ]
+        }
+        {
+            id: "3E03C21C1C3001DF"
+            title: "Победить Лукструктозавра"
+            x: -8.00d
+            y: 2.00d
+            icon: "minecraft:netherite_sword"
+            shape: "crown"
+            size: 1.30d
+            optional: true
+            dependencies: [
+                "3FCB8D7FF82745AF"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§bПрактика: §fПосле призывания Лукструктозавра проведите отдельное сражение и лично победите босса."
+                "§aАвтозачёт: §fЛичное убийство alexscaves:luxtructosaurus (не событие призыва)."
+            ]
+            tasks: [
+                {
+                    id: "E48E5C573B014981"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/defeat_luxtructosaurus"
+                }
+            ]
+            rewards: [
+                {
+                    id: "595741E0A545C36B"
+                    type: "xp"
+                    xp: 920
+                }
+                {
+                    id: "06315902F1B5F729"
+                    type: "item"
+                    item: { Count: 4b, id: "alexscaves:tectonic_shard" }
+                }
+            
+                {
+                    id: "9A7CA0292C94F9E6"
+                    type: "item"
+                    item: { Count: 3b, id: "minecraft:netherite_scrap" }
+                }
+            ]
+        }
+        {
+            id: "5DA969509DFEF44B"
+            title: "Нотор — охотник магнитных глубин"
+            x: 12.00d
+            y: -7.00d
+            icon: "minecraft:compass"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "60D9315769C4E578"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§bПрактика: §fИсследуйте магнитные пещеры и победите опасного Notor. Подготовьте пространство для манёвров."
+                "§aАвтозачёт: §fЛичное убийство alexscaves:notor."
+            ]
+            tasks: [
+                {
+                    id: "34D4BAC328698F4A"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/defeat_notor"
+                }
+            ]
+            rewards: [
+                {
+                    id: "3B5CB85DA32BF379"
+                    type: "xp"
+                    xp: 380
+                }
+                {
+                    id: "291715BC9F8B0FAE"
+                    type: "item"
+                    item: { Count: 2b, id: "alexscaves:azure_magnet" }
+                }
+            ]
+        }
+        {
+            id: "A7C984849A56D149"
+            title: "Корродент из забытых пустот"
+            x: 16.00d
+            y: 3.00d
+            icon: "minecraft:diamond_sword"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "E64ED6625A930A36"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§bПрактика: §fВ забытых пещерах найдите Corrodent и одолейте его: у этого противника своя механика охоты."
+                "§aАвтозачёт: §fЛичное убийство alexscaves:corrodent."
+            ]
+            tasks: [
+                {
+                    id: "0D8DB90EF83D8258"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/defeat_corrodent"
+                }
+            ]
+            rewards: [
+                {
+                    id: "19F228B4FF40C164"
+                    type: "xp"
+                    xp: 370
+                }
+                {
+                    id: "EEFACD08D7DFB848"
+                    type: "item"
+                    item: { Count: 12b, id: "alexscaves:corrodent_teeth" }
+                }
+            ]
+        }
+        {
+            id: "7AF2CF003133B836"
+            title: "Вылупление Треморзиллы"
+            x: -4.00d
+            y: -2.00d
+            icon: "minecraft:dragon_egg"
+            shape: "star"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "E5CDBE2CB81CBFFC"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§bПрактика: §fДобейтесь настоящего вылупления яйца Треморзиллы. Приручение взрослого существа — отдельная задача."
+                "§aАвтозачёт: §fСпециальное событие hatch_tremorzilla_egg, не получение яйца."
+            ]
+            tasks: [
+                {
+                    id: "84CAB32D81BDB0D7"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/hatch_tremorzilla_egg"
+                }
+            ]
+            rewards: [
+                {
+                    id: "9AB7DBB73CA54E25"
+                    type: "xp"
+                    xp: 460
+                }
+                {
+                    id: "AF8CD6970781AC28"
+                    type: "item"
+                    item: { Count: 8b, id: "alexscaves:primordial_soup" }
+                }
+            ]
+        }
+        {
+            id: "5F3AED9BBF4F1BB6"
+            title: "Пурпурное погружение"
+            x: 40.00d
+            y: 0.00d
+            icon: "alexscaves:purple_soda_bucket"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [ "1BE92C03BDBB686A" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fИсследуйте странные жидкости сладких пещер."
+                "§bИспытание: §fВойдите в пурпурную газировку: нужен контакт с блоком purple_soda."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/enter_purple_soda. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "7386AEA917BB1138", type: "advancement", advancement: "alexscaves:alexscaves/enter_purple_soda" } ]
+            rewards: [
+                { id: "45E69B48ABD30F6E", type: "xp", xp: 250 }
+                { id: "20AF9D930B33899C", type: "item", item: { Count: 4b, id: "alexscaves:gummy_ring_blue" } }
+            ]
+        }
+        {
+            id: "7947BD2068E57CC5"
+            title: "Дорога из леденцов"
+            x: 44.00d
+            y: 0.00d
+            icon: "alexscaves:rock_candy_pink"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [ "5F3AED9BBF4F1BB6" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fПревратите разведку сладких катакомб в испытание на передвижение."
+                "§bИспытание: §fПройдите по каменным леденцам: достижение проверяет блок, на который наступили."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/walk_on_rock_candy. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "A1E17A15FC51704E", type: "advancement", advancement: "alexscaves:alexscaves/walk_on_rock_candy" } ]
+            rewards: [
+                { id: "F031FB3D47327D6F", type: "xp", xp: 230 }
+                { id: "C2485FFE1CC65509", type: "item", item: { Count: 6b, id: "alexscaves:gummy_ring_blue" } }
+            ]
+        }
+        {
+            id: "605FA347740DE9A7"
+            title: "Мятная цепная реакция"
+            x: 48.00d
+            y: 0.00d
+            icon: "alexscaves:frostmint_spear"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [ "7947BD2068E57CC5" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fСладкие находки могут быть опаснее обычного оружия."
+                "§bИспытание: §fЗапустите событие Frostmint Explosion в Candy Cavity."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/frostmint_explosion. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "31D2000577E77C46", type: "advancement", advancement: "alexscaves:alexscaves/frostmint_explosion" } ]
+            rewards: [
+                { id: "CBA1B7B79D250FAE", type: "xp", xp: 350 }
+                { id: "0633D97E5D02911E", type: "item", item: { Count: 3b, id: "minecraft:golden_apple" } }
+            ]
+        }
+        {
+            id: "8DB19C7D42300F1B"
+            title: "Сахарная лихорадка"
+            x: 44.00d
+            y: 5.00d
+            icon: "alexscaves:caramel_apple"
+            shape: "circle"
+            size: 1.16d
+            optional: true
+            dependencies: [ "A9FDA172CB9A8629" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fПопробуйте эффекты кондитерской биологии."
+                "§bИспытание: §fПолучите эффект Sugar Rush; засчитывается изменение эффекта, не простое получение еды."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/sugar_rush. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "AF77C4812F7BBD1C", type: "advancement", advancement: "alexscaves:alexscaves/sugar_rush" } ]
+            rewards: [
+                { id: "2D6797615525F411", type: "xp", xp: 230 }
+                { id: "BFC46563197C112B", type: "item", item: { Count: 6b, id: "alexscaves:gummy_ring_red" } }
+            ]
+        }
+        {
+            id: "5302C3B080472681"
+            title: "Червь из сахарной породы"
+            x: 48.00d
+            y: 5.00d
+            icon: "alexscaves:shot_gum"
+            shape: "star"
+            size: 1.16d
+            optional: true
+            dependencies: [ "8DB19C7D42300F1B" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fОпасные обитатели сладкой пещеры требуют подготовки к бою."
+                "§bИспытание: §fЛично победите Gum Worm."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/defeat_gum_worm. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "AD2D87B8D0535826", type: "advancement", advancement: "alexscaves:alexscaves/defeat_gum_worm" } ]
+            rewards: [
+                { id: "470C77359EDE5DD9", type: "xp", xp: 440 }
+                { id: "2941B6340C453B14", type: "item", item: { Count: 1b, id: "alexscaves:shot_gum" } }
+            ]
+        }
+        {
+            id: "C133D2D8DF77C482"
+            title: "Сладкий берсерк"
+            x: 52.00d
+            y: 5.00d
+            icon: "alexscaves:candy_cane"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [ "5302C3B080472681" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fСледующее испытание — ещё один противник Карамельной впадины."
+                "§bИспытание: §fЛично победите Caniac."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/defeat_caniac. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "234BC69C8B07890F", type: "advancement", advancement: "alexscaves:alexscaves/defeat_caniac" } ]
+            rewards: [
+                { id: "618C36566336927B", type: "xp", xp: 430 }
+                { id: "2D928EBE845AC3A6", type: "item", item: { Count: 5b, id: "minecraft:diamond" } }
+            ]
+        }
+        {
+            id: "E0FC9F1146B778E2"
+            title: "Гром среди карамели"
+            x: 56.00d
+            y: 5.00d
+            icon: "alexscaves:shot_gum"
+            shape: "crown"
+            size: 1.26d
+            optional: true
+            dependencies: [ "C133D2D8DF77C482" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fЗакончите боевую ветку сладкого царства."
+                "§bИспытание: §fЛично победите Gumbeeper."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/defeat_gumbeeper. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "94F3A72D5489CA46", type: "advancement", advancement: "alexscaves:alexscaves/defeat_gumbeeper" } ]
+            rewards: [
+                { id: "83F836F9C619A86F", type: "xp", xp: 490 }
+                { id: "E2BCF756C39F9C40", type: "item", item: { Count: 1b, id: "minecraft:enchanted_golden_apple" } }
+            
+                {
+                    id: "D9B9E900FDA50DAB"
+                    type: "xp"
+                    xp: 620
+                }
+            ]
+        }
+        {
+            id: "680C2889E6EF571F"
+            title: "Запретное яблоко"
+            x: 44.00d
+            y: 10.00d
+            icon: "alexscaves:darkened_apple"
+            shape: "circle"
+            size: 1.16d
+            optional: true
+            dependencies: [ "6E775F1F2C2EDC48" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fРазгадайте, что происходит с пищей в мрачных пещерах."
+                "§bИспытание: §fСъешьте Darkened Apple: проверяется специальное событие мода."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/eat_darkened_apple. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "991BF1C8C4DBFA6B", type: "advancement", advancement: "alexscaves:alexscaves/eat_darkened_apple" } ]
+            rewards: [
+                { id: "E9D9A5A57310245A", type: "xp", xp: 330 }
+                { id: "EBFE448836B483FA", type: "item", item: { Count: 8b, id: "minecraft:ender_pearl" } }
+            ]
+        }
+        {
+            id: "1C4B8279C22D289B"
+            title: "Взгляд из полумрака"
+            x: 48.00d
+            y: 10.00d
+            icon: "alexscaves:shadow_silk"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [ "680C2889E6EF571F" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fВы не одни в этих коридорах."
+                "§bИспытание: §fЛично победите Watcher."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/defeat_watcher. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "DD314611D3BABAC5", type: "advancement", advancement: "alexscaves:alexscaves/defeat_watcher" } ]
+            rewards: [
+                { id: "19D8C212B3B730F4", type: "xp", xp: 420 }
+                { id: "73ACE490458E8E3B", type: "item", item: { Count: 5b, id: "alexscaves:shadow_silk" } }
+            ]
+        }
+        {
+            id: "22EF4B3D99CB8E8B"
+            title: "Пир доисторического великана"
+            x: 40.00d
+            y: 15.00d
+            icon: "alexscaves:primordial_soup"
+            shape: "circle"
+            size: 1.16d
+            optional: true
+            dependencies: [ "7727FFA6871B87B6" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fИсследуйте мир древних обитателей без охоты."
+                "§bИспытание: §fПокормите Relicheirus именно Primordial Soup."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/feed_relicheirus. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "5350908870AD8DDB", type: "advancement", advancement: "alexscaves:alexscaves/feed_relicheirus" } ]
+            rewards: [
+                { id: "876E8FBACF9E03DC", type: "xp", xp: 310 }
+                { id: "C5F9B715E9A1B27B", type: "item", item: { Count: 6b, id: "alexscaves:amber" } }
+            ]
+        }
+        {
+            id: "8A4368A1D28651AC"
+            title: "Глаза подводного мира"
+            x: 36.00d
+            y: 20.00d
+            icon: "alexscaves:bioluminescent_torch"
+            shape: "circle"
+            size: 1.16d
+            optional: true
+            dependencies: [ "3EBA900FE44E6268" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fПриспособьтесь к путешествию в непроглядной воде."
+                "§bИспытание: §fПолучите эффект Deepsight; одной находки в инвентаре недостаточно."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/deepsight. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "AA034F08F502920D", type: "advancement", advancement: "alexscaves:alexscaves/deepsight" } ]
+            rewards: [
+                { id: "8F6C133E67BFAD8E", type: "xp", xp: 270 }
+                { id: "6F5BC989587F1C13", type: "item", item: { Count: 18b, id: "alexscaves:bioluminescent_torch" } }
+            ]
+        }
+        {
+            id: "A0718A921F867880"
+            title: "Гаммарак на ужине"
+            x: 44.00d
+            y: -9.00d
+            icon: "alexscaves:spelunkie"
+            shape: "circle"
+            size: 1.16d
+            optional: true
+            dependencies: [ "9FCD3892785E34CA" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fДаже радиационные жители пещер нуждаются в заботе."
+                "§bИспытание: §fПокормите Gammaroach предметом Spelunkie."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/feed_gammaroach. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "CE2B23F8914E6028", type: "advancement", advancement: "alexscaves:alexscaves/feed_gammaroach" } ]
+            rewards: [
+                { id: "AAE5F1834611089B", type: "xp", xp: 310 }
+                { id: "A91297D480C19543", type: "item", item: { Count: 20b, id: "minecraft:golden_carrot" } }
+            ]
+        }
+        {
+            id: "2FD4730BC0FE9EAE"
+            title: "Мозгоед у реактора"
+            x: 48.00d
+            y: -9.00d
+            icon: "alexscaves:polymer_plate"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [ "A0718A921F867880" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fХищники токсичных пещер проверят защиту на прочность."
+                "§bИспытание: §fЛично победите Brainiac."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/defeat_brainiac. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "11BF459EDE9D0B5B", type: "advancement", advancement: "alexscaves:alexscaves/defeat_brainiac" } ]
+            rewards: [
+                { id: "F032BF8886EAA8DA", type: "xp", xp: 460 }
+                { id: "4A26E4E68334FF06", type: "item", item: { Count: 6b, id: "alexscaves:polymer_plate" } }
+            ]
+        }
+        {
+            id: "176790254CA17C3C"
+            title: "Перекроить поверхность"
+            x: 52.00d
+            y: -5.00d
+            icon: "alexscaves:conversion_crucible"
+            shape: "star"
+            size: 1.16d
+            optional: true
+            dependencies: [ "AC100A1C72C67C78" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fЗдесь вы уже не просто исследуете природу, а меняете её."
+                "§bИспытание: §fЗапустите событие конверсии обычного биома."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/convert_biome. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "A360EB8DDE8736DC", type: "advancement", advancement: "alexscaves:alexscaves/convert_biome" } ]
+            rewards: [
+                { id: "F1DBD7D491919805", type: "xp", xp: 600 }
+                { id: "6888917AADBF4525", type: "item", item: { Count: 8b, id: "minecraft:diamond" } }
+            ]
+        }
+        {
+            id: "05BBD788896174D5"
+            title: "Незер больше не прежний"
+            x: 56.00d
+            y: -5.00d
+            icon: "alexscaves:conversion_crucible"
+            shape: "crown"
+            size: 1.24d
+            optional: true
+            dependencies: [ "176790254CA17C3C" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fПеренесите эксперимент с биомами в Нижний мир."
+                "§bИспытание: §fВызовите отдельное событие преобразования биома Незера."
+                "§aАвтопроверка: §fДостижение alexscaves:alexscaves/convert_nether_biome. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "303509E63A4F796B", type: "advancement", advancement: "alexscaves:alexscaves/convert_nether_biome" } ]
+            rewards: [
+                { id: "ED952F119E8B112D", type: "xp", xp: 660 }
+                { id: "2CFBC676A42A48CC", type: "item", item: { Count: 4b, id: "minecraft:netherite_scrap" } }
+            
+                {
+                    id: "8BDCA8E5B53742A8"
+                    type: "xp"
+                    xp: 850
+                }
+            ]
+        }
+
+        {
+            id: "03AF226767BF1BAC"
+            title: "Рацион радиоактивных глубин"
+            x: 52.00d
+            y: -9.00d
+            icon: "alexscaves:green_soylent"
+            shape: "shield"
+            size: 1.18d
+            optional: true
+            dependencies: [
+                "2FD4730BC0FE9EAE"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§fУстрой опасную дегустацию трёх странных продуктов токсичных пещер."
+                "§fСъешь Spelunkie, Slam и Green Soylent. Все три продукта обязательны."
+                "§fИспользуется собственное достижение Alex’s Caves с тремя условиями consume_item."
+                "§aАвтопроверка: §fДостижение мода с несколькими обязательными событиями."
+            ]
+            tasks: [
+                {
+                    id: "B440F05DFE6A6514"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/eat_radiation_foods"
+                }
+            ]
+            rewards: [
+                {
+                    id: "5DFDAB2B04CD011D"
+                    type: "xp"
+                    xp: 330
+                }
+                {
+                    id: "E7FF3D695DFBB286"
+                    type: "item"
+                    item: { Count: 8b, id: "minecraft:golden_carrot" }
+                }
+            ]
+        }
+        {
+            id: "52CDC1EEE3086A8D"
+            title: "Живой палеопарк"
+            x: 44.00d
+            y: 15.00d
+            icon: "alexscaves:primitive_club"
+            shape: "star"
+            size: 1.18d
+            optional: true
+            dependencies: [
+                "22EF4B3D99CB8E8B"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§fПроведи полевое исследование трёх доисторических существ."
+                "§fВзаимодействуй с Grottoceratops, Subterranodon и Tremorsaurus."
+                "§fСобытия фиксируются отдельно; ни убийства, ни одно взаимодействие со случайным динозавром недостаточны."
+                "§aАвтопроверка: §fСобственное скрытое достижение: все условия обязательны."
+            ]
+            tasks: [
+                {
+                    id: "248E39C598F716F0"
+                    type: "advancement"
+                    advancement: "nasledie:alpha39/caves/paleo_fieldwork"
+                }
+            
+                {
+                    id: "F2D09F2EE0AB426F"
+                    type: "advancement"
+                    advancement: "nasledie:alpha39/caves/paleo_fieldwork__subterranodon"
+                }
+
+                {
+                    id: "8D029FBBC4B7912B"
+                    type: "advancement"
+                    advancement: "nasledie:alpha39/caves/paleo_fieldwork__tremorsaurus"
+                }
+            ]
+            rewards: [
+                {
+                    id: "C9BADD3E7995B811"
+                    type: "xp"
+                    xp: 300
+                }
+                {
+                    id: "C7EF7C6B889BFC09"
+                    type: "item"
+                    item: { Count: 6b, id: "minecraft:emerald" }
+                }
+            ]
+        }
+        {
+            id: "662E9E2A4828CD48"
+            title: "Шоколадная передышка"
+            x: 60.00d
+            y: 5.00d
+            icon: "alexscaves:block_of_chocolate"
+            shape: "scroll"
+            size: 1.18d
+            optional: true
+            dependencies: [
+                "E0FC9F1146B778E2"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§fПосле сахарных битв пришло время маленькой гастрономической победы."
+                "§fСъешь именно шоколадный блок Alex’s Caves."
+                "§fПростого ношения предмета в инвентаре недостаточно: проверяется consume_item."
+                "§aАвтопроверка: §fДостижение мода с несколькими обязательными событиями."
+            ]
+            tasks: [
+                {
+                    id: "423508D3A8CBA585"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/eat_block_of_chocolate"
+                }
+            ]
+            rewards: [
+                {
+                    id: "B0A677FD8171A7E5"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "4D7842F8B627A2FB"
+                    type: "item"
+                    item: { Count: 2b, id: "alexscaves:sundae" }
+                }
+            ]
+        }
+    
+        {
+            id: "E9BA2C6E0A89756A"
+            title: "Атлас шести затерянных глубин"
+            x: 60.00d
+            y: -5.00d
+            icon: "alexscaves:cave_map"
+            shape: "star"
+            size: 1.32d
+            optional: true
+            dependencies: [ "05BBD788896174D5" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Итоговая экспедиция"
+                "§eЗачем: §fФинальное испытание большого спелеолога: каждый тип редких пещер должен быть исследован лично."
+                "§bЦель: §fПосети магнитные, первобытные, токсичные, бездонные, забытые и сладкие пещеры."
+                "§aАвтопроверка: §fШесть независимых достижений биомов Alex’s Caves. Требуются все шесть; карта в инвентаре не считается."
+            ]
+            tasks: [
+                {
+                    id: "6C0341925A53CD3C"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/discover_magnetic_caves"
+                }
+                {
+                    id: "B0C94CE3A7AC41CA"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/discover_primordial_caves"
+                }
+                {
+                    id: "B33105BF60586E48"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/discover_toxic_caves"
+                }
+                {
+                    id: "32D26FF9C297B3F7"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/discover_abyssal_chasm"
+                }
+                {
+                    id: "2ED7780F04463FA2"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/discover_forlorn_hollows"
+                }
+                {
+                    id: "A8D25DAF8AC41817"
+                    type: "advancement"
+                    advancement: "alexscaves:alexscaves/discover_candy_cavity"
+                }
+            ]
+            rewards: [
+                {
+                    id: "C4A96417531BA1E1"
+                    type: "xp"
+                    xp: 1100
+                }
+                {
+                    id: "C3B066C642A6FCA8"
+                    type: "item"
+                    item: { Count: 12b, id: "minecraft:diamond" }
+                }
+            ]
+        }
+    ]
+}

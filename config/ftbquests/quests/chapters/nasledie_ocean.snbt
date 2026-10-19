@@ -1,0 +1,805 @@
+{
+    filename: "nasledie_ocean"
+    id: "42E670E2D2E5798E"
+    group: "842B4DB4DBD349A0"
+    title: "Бездна и её сокровища — Морская академия"
+    icon: "minecraft:heart_of_the_sea"
+    order_index: 17
+    progression_mode: "flexible"
+    default_hide_dependency_lines: false
+    default_quest_shape: "circle"
+
+    quest_links: []
+    quests: [
+        {
+            id: "A68C40E37C45E3BF"
+            title: "За горизонтом мелководья"
+            x: 0.00d
+            y: 0.00d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "star"
+            size: 1.28d
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fПереход к океанской экспедиции требует иной тактики."
+                "§bПрактика: §fВойдите в биом Deep Ocean; организуйте место для выдоха и запасную лодку."
+                "§aПроверка: §fBiome Task: deep_ocean."
+            ]
+            tasks: [
+                {
+                    id: "2FEBEB75DA38988A"
+                    type: "biome"
+                    biome: "minecraft:deep_ocean"
+                }
+            ]
+            rewards: [
+                {
+                    id: "2628A3EB0042C12E"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "62AF445078F2DCE7"
+                    type: "item"
+                    item: { Count: 1b, id: "create:copper_diving_helmet" }
+                }
+            ]
+        }
+        {
+            id: "D5B701274F41916E"
+            title: "Первое кораблекрушение"
+            x: 4.50d
+            y: 0.00d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "scroll"
+            size: 1.12d
+            dependencies: [
+                "A68C40E37C45E3BF"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fУчимся осматривать отсеки и искать добычу без лишнего риска."
+                "§bПрактика: §fНайдите затонувшее судно, исследуйте трюм и безопасно всплывите."
+                "§aПроверка: §fStructure Task: shipwreck; добыча сундука не подменяет разведку."
+            ]
+            tasks: [
+                {
+                    id: "96FFB4E0BF7E16C8"
+                    type: "structure"
+                    structure: "minecraft:shipwreck"
+                }
+            ]
+            rewards: [
+                {
+                    id: "DFACFA2012B5192D"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "31FD27AACB5A8B9F"
+                    type: "item"
+                    item: { Count: 1b, id: "create:copper_diving_boots" }
+                }
+            ]
+        }
+        {
+            id: "F805A24AC6136435"
+            title: "Патруль глубины"
+            x: 9.00d
+            y: 0.00d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "shield"
+            size: 1.20d
+            dependencies: [
+                "D5B701274F41916E"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fУтопленники опасны с трезубцами и в тесных проходах."
+                "§bПрактика: §fПобедите утопленника у обломков корабля."
+                "§aПроверка: §fKill Task: drowned."
+            ]
+            tasks: [
+                {
+                    id: "91E4302CE482E518"
+                    type: "kill"
+                    entity: "minecraft:drowned"
+                }
+            ]
+            rewards: [
+                {
+                    id: "C92C8C015AB1F010"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "C61EC06F34F434EF"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:pump_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "76F24423146B2BF8"
+            title: "Монумент YUNG"
+            x: 13.50d
+            y: 0.00d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "scroll"
+            size: 1.12d
+            dependencies: [
+                "F805A24AC6136435"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fYUNG меняет океанский монумент; обычный structure ID здесь ненадёжен."
+                "§bПрактика: §fНайдите улучшенный монумент, обозначьте подводный вход."
+                "§aПроверка: §fStructure Task: betteroceanmonuments:ocean_monument."
+            ]
+            tasks: [
+                {
+                    id: "7FAE7D04F05EBF32"
+                    type: "structure"
+                    structure: "betteroceanmonuments:ocean_monument"
+                }
+            ]
+            rewards: [
+                {
+                    id: "94C1E04D29502E44"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "0DD8A2610AA1FBE3"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:diving_helmet" }
+                }
+            ]
+        }
+        {
+            id: "D8C373CD97382003"
+            title: "Первый страж монумента"
+            x: 18.00d
+            y: 0.00d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "shield"
+            size: 1.20d
+            dependencies: [
+                "76F24423146B2BF8"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fРазбираем луч стража и водные укрытия."
+                "§bПрактика: §fПобедите обычного стража."
+                "§aПроверка: §fKill Task: guardian."
+            ]
+            tasks: [
+                {
+                    id: "F5FCD11F985346EA"
+                    type: "kill"
+                    entity: "minecraft:guardian"
+                }
+            ]
+            rewards: [
+                {
+                    id: "7248B9D0D2866C1C"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "C9D9D580938F6A9D"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:diving_chestplate" }
+                }
+            ]
+        }
+        {
+            id: "7561C2A49CE25872"
+            title: "Владыка глубин"
+            x: 22.50d
+            y: 0.00d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "crown"
+            size: 1.36d
+            dependencies: [
+                "D8C373CD97382003"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fСтарший страж накладывает утомление и требует подготовки."
+                "§bПрактика: §fПобедите старшего стража и снимите угрозу монумента."
+                "§aПроверка: §fKill Task: elder_guardian."
+            ]
+            tasks: [
+                {
+                    id: "2343095445B562A1"
+                    type: "kill"
+                    entity: "minecraft:elder_guardian"
+                }
+            ]
+            rewards: [
+                {
+                    id: "BAE5D3A17655E0CE"
+                    type: "xp"
+                    xp: 550
+                }
+                {
+                    id: "C1CB416E297D364C"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:diving_leggings" }
+                }
+            
+                {
+                    id: "60BA4F308062A89D"
+                    type: "item"
+                    item: { Count: 24b, id: "minecraft:prismarine_crystals" }
+                }
+            ]
+        }
+        {
+            id: "F70436662909AF80"
+            title: "Настоящее сердце океана"
+            x: 22.50d
+            y: 5.00d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "star"
+            size: 1.28d
+            dependencies: [
+                "7561C2A49CE25872"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fЭта находка нужна для проводника, но не доказывает его работу."
+                "§bПрактика: §fНайдите Heart of the Sea в сокровищах. Это именно добыча редкого компонента."
+                "§aПроверка: §fItem Task: наличие сердца океана; получение возможно и другим способом."
+            ]
+            tasks: [
+                {
+                    id: "46935A4A7AA97DE2"
+                    type: "item"
+                    item: "minecraft:heart_of_the_sea"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "45BD6BAC9C418838"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "200C736EA942D80A"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:lanternfish_bucket" }
+                }
+            ]
+        }
+        {
+            id: "A6C3DFEC8B6B5AA3"
+            title: "Действующий проводник"
+            x: 18.00d
+            y: 5.00d
+            icon: "minecraft:conduit"
+            shape: "star"
+            size: 1.28d
+            dependencies: [
+                "F70436662909AF80"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fПроводник — следующий этап подводной инфраструктуры."
+                "§bПрактика: §fСоберите рамку из не менее 16 призмариновых блоков, поместите проводник в воду и войдите в область его действия."
+                "§aАвтозачёт: §fПолучите эффект minecraft:conduit_power. Это подтверждает работу какого-либо проводника рядом с игроком, но не авторство постройки."
+            ]
+            tasks: [
+                {
+                    id: "9CCE0E71193A443D"
+                    type: "advancement"
+                    advancement: "nasledie:ocean/conduit_power"
+                }
+            ]
+            rewards: [
+                {
+                    id: "778F19895AF62730"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "719CF31B7C8E053A"
+                    type: "item"
+                    item: { Count: 1b, id: "create:copper_backtank" }
+                }
+            ]
+        }
+        {
+            id: "E89F59FCDCE5619F"
+            title: "Архив затопленного сооружения"
+            x: 13.50d
+            y: 5.00d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "scroll"
+            size: 1.12d
+            dependencies: [
+                "A6C3DFEC8B6B5AA3"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fРедкая руина из Dungeons and Taverns добавляет вторую археологическую цель."
+                "§bПрактика: §fИсследуйте Conduit Ruin, сопоставьте руины с подводными технологиями."
+                "§aПроверка: §fStructure Task: nova_structures:conduit_ruin."
+            ]
+            tasks: [
+                {
+                    id: "9282645F52182867"
+                    type: "structure"
+                    structure: "nova_structures:conduit_ruin"
+                }
+            ]
+            rewards: [
+                {
+                    id: "D9E3815AA3D51911"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "1367A9060B099D21"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:pump_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "CA1FCBC43099A918"
+            title: "Испытать водолазное снаряжение"
+            x: 9.00d
+            y: 5.00d
+            icon: "create:copper_diving_helmet"
+            shape: "shield"
+            size: 1.20d
+            dependencies: [
+                "E89F59FCDCE5619F"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fCreate умеет выдавать достижение за определённую работу водолазного оборудования."
+                "§bПрактика: §fПолучите достижение Diving Suit, изучив использование баллона и экипировки."
+                "§aПроверка: §fСобытие create:diving_suit; точную механику подтвердить в игре."
+            ]
+            tasks: [
+                {
+                    id: "B40BA970509B22CC"
+                    type: "advancement"
+                    advancement: "create:diving_suit"
+                }
+            ]
+            rewards: [
+                {
+                    id: "17C88AE406281C5D"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "40A05AF5CA038739"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:sea_glass_shards" }
+                }
+            ]
+        }
+        {
+            id: "5D6F6A8D9A89C57C"
+            title: "Ледяная вода"
+            x: 0.00d
+            y: -6.50d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "A68C40E37C45E3BF"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fМаршрут с льдом и низкой видимостью отличается от тёплого."
+                "§bПрактика: §fПосетите Frozen Ocean, изучите опасности льда."
+                "§aПроверка: §fBiome Task: frozen_ocean."
+            ]
+            tasks: [
+                {
+                    id: "BF75EF717FD6F51E"
+                    type: "biome"
+                    biome: "minecraft:frozen_ocean"
+                }
+            ]
+            rewards: [
+                {
+                    id: "298BB7E9902C9B36"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "788FA68424BDF647"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:advanced_deposit_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "A303D9CBF0C8194D"
+            title: "Коралловый маршрут"
+            x: 4.50d
+            y: -6.50d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "5D6F6A8D9A89C57C"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fТёплый океан хорош для ориентирования по рифам."
+                "§bПрактика: §fПосетите Warm Ocean и изучите местную фауну."
+                "§aПроверка: §fBiome Task: warm_ocean."
+            ]
+            tasks: [
+                {
+                    id: "BA021C9A5BA89AB7"
+                    type: "biome"
+                    biome: "minecraft:warm_ocean"
+                }
+            ]
+            rewards: [
+                {
+                    id: "EE2A11B1E6AF4A9D"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "C5AC426171018149"
+                    type: "item"
+                    item: { Count: 1b, id: "better_weaponry:diamond_cutlass" }
+                }
+            ]
+        }
+        {
+            id: "A19C3A7B7AF63B80"
+            title: "Холодные руины"
+            x: 9.00d
+            y: -6.50d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "A303D9CBF0C8194D"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fСравниваем руины и следы жителей прошлого."
+                "§bПрактика: §fНайдите именно холодные океанские руины."
+                "§aПроверка: §fStructure Task: ocean_ruin_cold (vanilla registry)."
+            ]
+            tasks: [
+                {
+                    id: "5508A100E3FBDE09"
+                    type: "structure"
+                    structure: "minecraft:ocean_ruin_cold"
+                }
+            ]
+            rewards: [
+                {
+                    id: "1AFA372E293E4ABB"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "44382E5BAF7D142F"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:magnetic_light" }
+                }
+            ]
+        }
+        {
+            id: "6FD514AB841DF820"
+            title: "Тёплые руины"
+            x: 13.50d
+            y: -6.50d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "A19C3A7B7AF63B80"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fДополнительное посещение другого типа руин."
+                "§bПрактика: §fНайдите тёплые океанские руины."
+                "§aПроверка: §fStructure Task: ocean_ruin_warm (vanilla registry)."
+            ]
+            tasks: [
+                {
+                    id: "9FAC1C9141ADFDF0"
+                    type: "structure"
+                    structure: "minecraft:ocean_ruin_warm"
+                }
+            ]
+            rewards: [
+                {
+                    id: "23AF29A1C6E458E2"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "B227AB2618D95735"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:lanternfish" }
+                }
+            ]
+        }
+        {
+            id: "75934B268BAE9806"
+            title: "Пиратский корабль"
+            x: 9.00d
+            y: 11.50d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "CA1FCBC43099A918"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fОтдельная приключенческая структура, не обычный shipwreck."
+                "§bПрактика: §fИсследуйте корабль нежити."
+                "§aПроверка: §fStructure Task: dungeons_arise:undead_pirate_ship."
+            ]
+            tasks: [
+                {
+                    id: "27162C92A28E4C58"
+                    type: "structure"
+                    structure: "dungeons_arise:undead_pirate_ship"
+                }
+            ]
+            rewards: [
+                {
+                    id: "4DB061B4556EE9C3"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "9269AC46DC9B2C87"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:tripodfish_bucket" }
+                }
+            ]
+        }
+        {
+            id: "42CDC43E1DFBDB97"
+            title: "Маяк открытого моря"
+            x: 13.50d
+            y: 11.50d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "75934B268BAE9806"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fСтроения побережья помогают организовать береговой маршрут."
+                "§bПрактика: §fОтыщите Lighthouse из When Dungeons Arise."
+                "§aПроверка: §fStructure Task lighthouse."
+            ]
+            tasks: [
+                {
+                    id: "A83C203425FBD8C3"
+                    type: "structure"
+                    structure: "dungeons_arise:lighthouse"
+                }
+            ]
+            rewards: [
+                {
+                    id: "3643110C1F14A100"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "0DA0B7A80AA44297"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:magnetic_activator" }
+                }
+            ]
+        }
+        {
+            id: "362F963DF6A6BCFE"
+            title: "Поселение среди волн"
+            x: 18.00d
+            y: 11.50d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "42CDC43E1DFBDB97"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fДеревня на воде — не обычный сундук с лутом."
+                "§bПрактика: §fНайдите Ocean Village из Towns and Towers."
+                "§aПроверка: §fStructure Task: village_ocean."
+            ]
+            tasks: [
+                {
+                    id: "2F2EDC9E4E0967C5"
+                    type: "structure"
+                    structure: "towns_and_towers:village_ocean"
+                }
+            ]
+            rewards: [
+                {
+                    id: "824B9142D55780EC"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "797236A82A13B28A"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:copper_valve" }
+                }
+            ]
+        }
+        {
+            id: "9BA296205688E999"
+            title: "Кладбище под водой"
+            x: 22.50d
+            y: 11.50d
+            icon: "minecraft:heart_of_the_sea"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "362F963DF6A6BCFE"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fНеобычные следы в океане для опытных дайверов."
+                "§bПрактика: §fНайдите морскую заброшенную могилу Tombstone."
+                "§aПроверка: §fStructure Task, реальная структура JAR."
+            ]
+            tasks: [
+                {
+                    id: "2908D5A187F4D81C"
+                    type: "structure"
+                    structure: "tombstone:abandoned_grave_ocean"
+                }
+            ]
+            rewards: [
+                {
+                    id: "EC6D879922AC52EC"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "786E39891868F0F9"
+                    type: "item"
+                    item: { Count: 1b, id: "alexscaves:enigmatic_engine" }
+                }
+            ]
+        }
+        {
+            id: "99935D46EBDDE471"
+            title: "Паруса иллагерского корсара"
+            x: 27.00d
+            y: 11.50d
+            icon: "minecraft:compass"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "9BA296205688E999"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fОпасность может ждать и над поверхностью."
+                "§bПрактика: §fНайдите морское судно Illager Corsair и оцените подход с воды."
+                "§aАвтопроверка: §fОтдельный Structure Task на illager_corsair."
+            ]
+            tasks: [
+                {
+                    id: "A5B7D9C7CDEDE248"
+                    type: "structure"
+                    structure: "dungeons_arise:illager_corsair"
+                }
+            ]
+            rewards: [
+                {
+                    id: "33769E468058933E"
+                    type: "xp"
+                    xp: 390
+                }
+                {
+                    id: "6762FE3AA633DF17"
+                    type: "item"
+                    item: { Count: 10b, id: "minecraft:nautilus_shell" }
+                }
+            ]
+        }
+        {
+            id: "27C6A5C2087489CC"
+            title: "Галеон разбойников"
+            x: 31.50d
+            y: 11.50d
+            icon: "minecraft:spyglass"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "99935D46EBDDE471"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fСледующий корабль крупнее обычной добычи пиратов."
+                "§bПрактика: §fРазыщите Illager Galley, отличающийся от Corsair."
+                "§aАвтопроверка: §fОтдельный Structure Task на illager_galley."
+            ]
+            tasks: [
+                {
+                    id: "A7D23292CEF13F73"
+                    type: "structure"
+                    structure: "dungeons_arise:illager_galley"
+                }
+            ]
+            rewards: [
+                {
+                    id: "19C9B3DEF6AD9473"
+                    type: "xp"
+                    xp: 450
+                }
+                {
+                    id: "D2CAC2A6F5CA05CD"
+                    type: "item"
+                    item: { Count: 4b, id: "minecraft:nautilus_shell" }
+                }
+            ]
+        }
+    
+        {
+            id: "D1FC6F90AE011A99"
+            title: "Под куполом проводника"
+            x: 27.00d
+            y: 5.00d
+            icon: "minecraft:conduit"
+            shape: "shield"
+            size: 1.23d
+            optional: true
+            dependencies: [ "F70436662909AF80" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная глубоководная операция"
+                "§eСуть: §fПерестройте океанский бой вокруг действующего проводника, а не только водолазного снаряжения."
+                "§bИспытание: §fУбейте стража и старшего стража во время действия эффекта Сила проводника."
+                "§aАвтопроверка: §fДва отдельных достижения на убийство под эффектом minecraft:conduit_power."
+                "§7Это дополнительные победы, а не повторный зачёт старых задач без эффекта."
+            ]
+            tasks: [
+                { id: "9E205F89BE5431DE" type: "advancement" advancement: "nasledie:alpha42/ocean/conduit_duel/guard" }
+                { id: "AA1806CEFCB9C9F8" type: "advancement" advancement: "nasledie:alpha42/ocean/conduit_duel/elder" }
+            ]
+            rewards: [
+                {
+                    id: "FE91B9EE5FB9C130"
+                    type: "xp"
+                    xp: 700
+                }
+                {
+                    id: "5DB57503B22AEE75"
+                    type: "item"
+                    item: { Count: 8b, id: "minecraft:diamond" }
+                }
+            ]
+        }
+    ]
+}

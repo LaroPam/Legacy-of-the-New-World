@@ -1,0 +1,2193 @@
+{
+    filename: "nasledie_guild"
+    id: "0ABE8126BB237195"
+    group: "842B4DB4DBD349A0"
+    title: "Гильдия искателей — Большой атлас приключений"
+    icon: "minecraft:spyglass"
+    order_index: 11
+    progression_mode: "flexible"
+    default_hide_dependency_lines: false
+    default_quest_shape: "circle"
+
+    quest_links: []
+    quests: [
+        {
+            id: "898102A102A9739A"
+            title: "Первый знак гильдии"
+            x: 0.00d
+            y: 0.00d
+            icon: "minecraft:spyglass"
+            shape: "star"
+            size: 1.50d
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основной путь"
+                "§eЗачем: §fНовая карта приключений начинается с изучения настоящей структуры."
+                "§bПрактика: §fНайдите и посетите улучшенное малое подземелье YUNG."
+                "§aАвтопроверка: §fДостижение Better Dungeons за обнаружение Small Dungeon."
+            ]
+            tasks: [
+                {
+                    id: "CB6E7402F25B779E"
+                    type: "advancement"
+                    advancement: "betterdungeons:small_dungeon"
+                }
+            ]
+            rewards: [
+                {
+                    id: "3F01A1EA128C56CD"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "9A417583952063C0"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:banana" }
+                }
+            ]
+        }
+        {
+            id: "5086797B05BC7619"
+            title: "Гнездо пауков"
+            x: 4.00d
+            y: 0.00d
+            icon: "minecraft:spyglass"
+            shape: "circle"
+            size: 1.20d
+            dependencies: [
+                "898102A102A9739A"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основной путь"
+                "§eЗачем: §fПодземелья YUNG отличаются маршрутом и составом угроз."
+                "§bПрактика: §fИсследуйте Spider Dungeon, отметьте безопасный выход."
+                "§aАвтопроверка: §fДостижение обнаружения Spider Dungeon."
+            ]
+            tasks: [
+                {
+                    id: "18F43A7FDE323AC8"
+                    type: "advancement"
+                    advancement: "betterdungeons:spider_dungeon"
+                }
+            ]
+            rewards: [
+                {
+                    id: "07034157BEF7222B"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "C46C0749E7F95388"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:bison_carpet" }
+                }
+            ]
+        }
+        {
+            id: "5386AE04902DA4BF"
+            title: "Осада мёртвого зала"
+            x: 8.00d
+            y: 0.00d
+            icon: "minecraft:spyglass"
+            shape: "circle"
+            size: 1.20d
+            dependencies: [
+                "5086797B05BC7619"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основной путь"
+                "§eЗачем: §fПлотный зал с противниками учит поэтапной зачистке."
+                "§bПрактика: §fНайдите Zombie Dungeon и исследуйте его без принудительного строительства."
+                "§aАвтопроверка: §fДостижение обнаружения Zombie Dungeon, не проверка зачистки."
+            ]
+            tasks: [
+                {
+                    id: "469F5EFC4FFF3AAF"
+                    type: "advancement"
+                    advancement: "betterdungeons:zombie_dungeon"
+                }
+            ]
+            rewards: [
+                {
+                    id: "D4BC3D8FB758108E"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "2BF87AB6636E05F4"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:bear_fur" }
+                }
+            ]
+        }
+        {
+            id: "93EA4AC90BB6F5E7"
+            title: "Крепость стрелков"
+            x: 12.00d
+            y: 0.00d
+            icon: "minecraft:spyglass"
+            shape: "circle"
+            size: 1.20d
+            dependencies: [
+                "5386AE04902DA4BF"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основной путь"
+                "§eЗачем: §fДальний бой меняет подход к разведке."
+                "§bПрактика: §fОткройте Skeleton Dungeon и проверьте тактику укрытий."
+                "§aАвтопроверка: §fДостижение обнаружения Skeleton Dungeon."
+            ]
+            tasks: [
+                {
+                    id: "5E97402C6A141E9B"
+                    type: "advancement"
+                    advancement: "betterdungeons:skeleton_dungeon"
+                }
+            ]
+            rewards: [
+                {
+                    id: "72C86E05999BF24C"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "1F635F558DD02651"
+                    type: "item"
+                    item: { Count: 2b, id: "alexsmobs:emu_feather" }
+                }
+            ]
+        }
+        {
+            id: "E0B32143847E9AF0"
+            title: "Подземелье среди лавы"
+            x: 4.00d
+            y: 10.00d
+            icon: "minecraft:spyglass"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "898102A102A9739A"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fВ Незере подземелья подчиняются другим правилам выживания."
+                "§bПрактика: §fОтыщите Small Nether Dungeon."
+                "§aАвтопроверка: §fДостижение Better Dungeons за посещение структуры."
+            ]
+            tasks: [
+                {
+                    id: "4E7FD4D0AD8E2AAB"
+                    type: "advancement"
+                    advancement: "betterdungeons:small_nether_dungeon"
+                }
+            ]
+            rewards: [
+                {
+                    id: "604D452A7FCDEE1F"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "8AC529E8A683AAEF"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:moose_antler" }
+                }
+            ]
+        }
+        {
+            id: "7E2ECDC313839529"
+            title: "Справочник натуралиста"
+            x: 4.00d
+            y: -5.00d
+            icon: "alexsmobs:animal_dictionary"
+            shape: "circle"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "898102A102A9739A"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fAlex’s Mobs меняет поведение животных; словарь помогает изучать взаимодействия."
+                "§bПрактика: §fИспользуйте Animal Dictionary; затем прочитайте описание нескольких существ. Проверка модового корневого достижения требует теста в игре."
+                "§aАвтопроверка: §fВ JAR критерий root — minecraft:consume_item с Animal Dictionary. Точное срабатывание нужно проверить в игре."
+            ]
+            tasks: [
+                {
+                    id: "DF613C552AAB99E3"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/root"
+                }
+            ]
+            rewards: [
+                {
+                    id: "6FA8B0CA81B2B942"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "0AF5BB9EA3C52B9D"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:moose_headgear" }
+                }
+            ]
+        }
+        {
+            id: "59BE881A23FA5362"
+            title: "Разведка без охоты"
+            x: 8.00d
+            y: -5.00d
+            icon: "alexsmobs:tab_icon"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "7E2ECDC313839529"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fНаблюдение за существом — отдельная механика, а не сбор трофея."
+                "§bПрактика: §fРазыщите бизона и осмотрите его через подзорную трубу."
+                "§aАвтопроверка: §fДостижение Bison Spyglass; точные свойства триггера из JAR."
+            ]
+            tasks: [
+                {
+                    id: "B8724A276DA4E33E"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/bison_spyglass"
+                }
+            ]
+            rewards: [
+                {
+                    id: "B73E8306FB08A897"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "6925CFCA2E6F6A74"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:frontier_cap" }
+                }
+            ]
+        }
+        {
+            id: "E4D66B92C822D527"
+            title: "Соколиная школа"
+            x: 12.00d
+            y: -5.00d
+            icon: "alexsmobs:tab_icon"
+            shape: "circle"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "59BE881A23FA5362"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fПриручение хищной птицы открывает необычный способ взаимодействия с животными."
+                "§bПрактика: §fИзучите поведение белоголового орлана и приручите его."
+                "§aАвтопроверка: §fДостижение за приручение Bald Eagle."
+            ]
+            tasks: [
+                {
+                    id: "1C48B503B8478573"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/tame_bald_eagle"
+                }
+            ]
+            rewards: [
+                {
+                    id: "26326889370F71BB"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "BD896A601AB1174F"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:fish_oil" }
+                }
+            ]
+        }
+        {
+            id: "252A21A892E4E5A0"
+            title: "Перчатка сокольника"
+            x: 16.00d
+            y: -5.00d
+            icon: "minecraft:spyglass"
+            shape: "circle"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "E4D66B92C822D527"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fСпециализированное снаряжение развивает приручение птиц."
+                "§bПрактика: §fСоздайте Falconry Glove, проверьте работу со своим орланом."
+                "§aАвтопроверка: §fДостижение за получение перчатки (не за успешное управление)."
+            ]
+            tasks: [
+                {
+                    id: "759D0DAB459CBE63"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/falconry_glove"
+                }
+            ]
+            rewards: [
+                {
+                    id: "13C7AF7649A9A62B"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "9F27B33C67538570"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:fish_bones" }
+                }
+            ]
+        }
+        {
+            id: "1AC57DF4745395A2"
+            title: "Капюшон птицы"
+            x: 20.00d
+            y: -5.00d
+            icon: "alexsmobs:falconry_hood"
+            shape: "circle"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "252A21A892E4E5A0"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fРазберитесь с дополнительным управлением птицей."
+                "§bПрактика: §fПолучите Falconry Hood и изучите его применение."
+                "§aАвтопроверка: §fДостижение за получение Falconry Hood."
+            ]
+            tasks: [
+                {
+                    id: "22E721C24FD5B046"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/falconry_hood"
+                }
+            ]
+            rewards: [
+                {
+                    id: "432AAA23DBDC85B5"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "4CBE76FFDA50CA15"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:kangaroo_hide" }
+                }
+            ]
+        }
+        {
+            id: "96E3403FB5591B32"
+            title: "Испытание сокольника"
+            x: 24.00d
+            y: -5.00d
+            icon: "alexsmobs:tab_icon"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "1AC57DF4745395A2"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fЗаключительный этап соколиной ветки: не сбор вещей, а специализированный вызов."
+                "§bПрактика: §fВыполните достижение Bald Eagle Challenge с прирученной птицей."
+                "§aАвтопроверка: §fСпециальный триггер Alex’s Mobs, родитель — Falconry Hood."
+            ]
+            tasks: [
+                {
+                    id: "4B88B955150B6A48"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/bald_eagle_challenge"
+                }
+            ]
+            rewards: [
+                {
+                    id: "419D8287AF7E6078"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "A43F77881AB9BDA1"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:flying_fish_boots" }
+                }
+            ]
+        }
+        {
+            id: "71006DAD7D01307F"
+            title: "След слонов"
+            x: 8.00d
+            y: -10.00d
+            icon: "alexsmobs:acacia_blossom"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "7E2ECDC313839529"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fЦветение акации имеет практическое значение для слонов."
+                "§bПрактика: §fИзучите растения саванны и получите Acacia Blossom."
+                "§aАвтопроверка: §fМодовое достижение за получение цветка."
+            ]
+            tasks: [
+                {
+                    id: "7D5DAF92982708EF"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/acacia_blossom"
+                }
+            ]
+            rewards: [
+                {
+                    id: "57926C2B31F816A5"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "0785AC100C0A3760"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:ghostly_pickaxe" }
+                }
+            ]
+        }
+        {
+            id: "95C85BF47DA01D26"
+            title: "Союзник саванны"
+            x: 12.00d
+            y: -10.00d
+            icon: "alexsmobs:tab_icon"
+            shape: "circle"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "71006DAD7D01307F"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fКрупных животных можно приручать, а не только атаковать."
+                "§bПрактика: §fПриручите слона."
+                "§aАвтопроверка: §fДостижение за приручение Elephant."
+            ]
+            tasks: [
+                {
+                    id: "15C166A4D89162BA"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/tame_elephant"
+                }
+            ]
+            rewards: [
+                {
+                    id: "D3B216123AD4AA64"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "0C4BFF4046A7A2D0"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:maraca" }
+                }
+            ]
+        }
+        {
+            id: "4BCEC123A1B35749"
+            title: "Торжественный караван"
+            x: 16.00d
+            y: -10.00d
+            icon: "alexsmobs:tab_icon"
+            shape: "star"
+            size: 1.18d
+            optional: true
+            dependencies: [
+                "95C85BF47DA01D26"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fПосле приручения открываются дополнительные взаимодействия."
+                "§bПрактика: §fВыполните слоновье испытание Elephant Swag."
+                "§aАвтопроверка: §fСпециальный триггер Elephant Swag."
+            ]
+            tasks: [
+                {
+                    id: "58335DF876EA81E6"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/elephant_swag"
+                }
+            ]
+            rewards: [
+                {
+                    id: "E8D5A60A8D981C71"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "7E903E1A7F6750C3"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:mosquito_repellent_stew" }
+                }
+            ]
+        }
+        {
+            id: "19FCA77EB16A1E4A"
+            title: "Орнитолог: колибри"
+            x: 20.00d
+            y: -10.00d
+            icon: "alexsmobs:tab_icon"
+            shape: "circle"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "E4D66B92C822D527"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fРазведение диких животных сильно отличается от убийства ради предметов."
+                "§bПрактика: §fИзучите поведение колибри и добейтесь появления птенца."
+                "§aАвтопроверка: §fКритерий bred_animals для Hummingbird."
+            ]
+            tasks: [
+                {
+                    id: "7E70E9A3A5A1191F"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/breed_hummingbird"
+                }
+            ]
+            rewards: [
+                {
+                    id: "4D7EB6A9919C1821"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "6ADE5ABF99B7DDBC"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:komodo_spit_bottle" }
+                }
+            ]
+        }
+        {
+            id: "0FF56BD66615E8C4"
+            title: "Кормушка колибри"
+            x: 24.00d
+            y: -10.00d
+            icon: "alexsmobs:hummingbird_feeder"
+            shape: "circle"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "19FCA77EB16A1E4A"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fНаблюдение за животными требует подходящего окружения."
+                "§bПрактика: §fПолучите кормушку и попробуйте привлечь колибри."
+                "§aАвтопроверка: §fДостижение за предмет Hummingbird Feeder, не за работу кормушки."
+            ]
+            tasks: [
+                {
+                    id: "4E1986006686C9D9"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/hummingbird_feeder"
+                }
+            ]
+            rewards: [
+                {
+                    id: "D6534C59FCE22C05"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "45EC38B51214ECCB"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:gongylidia" }
+                }
+            ]
+        }
+        {
+            id: "E159D133BD51F992"
+            title: "Необычная находка кашалота"
+            x: 8.00d
+            y: -15.00d
+            icon: "alexsmobs:tab_icon"
+            shape: "star"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "7E2ECDC313839529"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fМорские животные требуют других действий, чем просто выживание."
+                "§bПрактика: §fИзучите механику кашалота и получите Ambergris."
+                "§aАвтопроверка: §fВопреки названию, реальный критерий в JAR — получение Ambergris, НЕ факт спасения."
+            ]
+            tasks: [
+                {
+                    id: "39A067E2131CDD55"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/save_cachalot_whale"
+                }
+            ]
+            rewards: [
+                {
+                    id: "3E7679BD2778D7C4"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "ADF42CBA894C39D5"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:pocket_sand" }
+                }
+            ]
+        }
+        {
+            id: "7FBCE407DFCAF42C"
+            title: "Эхолокатор"
+            x: 12.00d
+            y: -15.00d
+            icon: "alexsmobs:echolocator"
+            shape: "circle"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "E159D133BD51F992"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fЭхолокатор даёт новый инструмент исследования океана."
+                "§bПрактика: §fПолучите Echolocator и испытайте его возможности."
+                "§aАвтопроверка: §fДостижение получения Echolocator, не поиск кита."
+            ]
+            tasks: [
+                {
+                    id: "21F87E7F378A3020"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/echolocator"
+                }
+            ]
+            rewards: [
+                {
+                    id: "4ED0C1C8AF635160"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "CF7B6BF1184A2CB6"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:bison_fur" }
+                }
+            ]
+        }
+        {
+            id: "1BC5E19E384E37E0"
+            title: "Знакомство со скальным зверем"
+            x: 16.00d
+            y: -15.00d
+            icon: "alexsmobs:tab_icon"
+            shape: "circle"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "7FBCE407DFCAF42C"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fНе каждое животное встречает игрока одинаково."
+                "§bПрактика: §fВзаимодействуйте с Rocky Roller, изучите его реакцию."
+                "§aАвтопроверка: §fДостижение с несколькими альтернативными условиями (удар, встреча или взаимодействие), не обязательно бой."
+            ]
+            tasks: [
+                {
+                    id: "028613C2BE9560AA"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/rocky_roller"
+                }
+            ]
+            rewards: [
+                {
+                    id: "E088C2BFACB4161E"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "FE9BC9B29133FEE5"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:spiked_scute" }
+                }
+            ]
+        }
+        {
+            id: "51C3266BACCA8D53"
+            title: "Крокодилы без охоты"
+            x: 20.00d
+            y: -15.00d
+            icon: "alexsmobs:tab_icon"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "1BC5E19E384E37E0"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fИзучайте, как мод обрабатывает разные виды взаимодействия с хищниками."
+                "§bПрактика: §fНайдите крокодила и безопасно исследуйте поведение."
+                "§aАвтопроверка: §fДостижение с несколькими альтернативными критериями, не обязательно приручение."
+            ]
+            tasks: [
+                {
+                    id: "9F2731DFF0A441F6"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/crocodile"
+                }
+            ]
+            rewards: [
+                {
+                    id: "86703DFA0C6F6935"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "D8036EDFD4408A1E"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:bone_serpent_tooth" }
+                }
+            ]
+        }
+        {
+            id: "427CD312AE0EB773"
+            title: "Новая жизнь в дельте"
+            x: 24.00d
+            y: -15.00d
+            icon: "alexsmobs:crocodile_egg"
+            shape: "circle"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "51C3266BACCA8D53"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная специализация"
+                "§eЗачем: §fПопробуйте создать устойчивую популяцию, а не добывать трофеи."
+                "§bПрактика: §fРазведите крокодилов."
+                "§aАвтопроверка: §fДостижение за появление потомства Crocodile."
+            ]
+            tasks: [
+                {
+                    id: "A89148DDDD415A6E"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/breed_crocodile"
+                }
+            ]
+            rewards: [
+                {
+                    id: "6BDD833B4F40282D"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "8EA45FCA2CA99EE2"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:spiked_turtle_shell" }
+                }
+            ]
+        }
+        {
+            id: "99429B59EE71CDA8"
+            title: "Чайка-карманница"
+            x: 12.00d
+            y: -20.00d
+            icon: "alexsmobs:fish_bones"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "7FBCE407DFCAF42C"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Живая природа: §fна побережье опасайтесь пернатых грабителей."
+                "§bЗадание: §fпозвольте чайке украсть еду из вашего инвентаря. Смотрите за запасами!"
+                "§aПроверка: §fотдельное событие seagull_steal, а не убийство чайки."
+            ]
+            tasks: [
+                {
+                    id: "0AC2D5EAA8796419"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/seagull_steal"
+                }
+            ]
+            rewards: [
+                {
+                    id: "511AB87863B9F9EB"
+                    type: "xp"
+                    xp: 175
+                }
+                {
+                    id: "67FA7DE32E8F3E4F"
+                    type: "item"
+                    item: { Count: 12b, id: "alexsmobs:fish_bones" }
+                }
+            ]
+        }
+        {
+            id: "6901B3595877A394"
+            title: "Марьячи в хитиновом панцире"
+            x: 16.00d
+            y: -20.00d
+            icon: "alexsmobs:maraca"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "99429B59EE71CDA8"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Побочная комедия: §fкому нужна сцена, если есть таракан?"
+                "§bЗадание: §fвручите таракану маракас, дождитесь выступления."
+                "§aПроверка: §fсобытие взаимодействия la_cucaracha."
+            ]
+            tasks: [
+                {
+                    id: "7595687ED72073B8"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/la_cucaracha"
+                }
+            ]
+            rewards: [
+                {
+                    id: "C660852559608337"
+                    type: "xp"
+                    xp: 200
+                }
+                {
+                    id: "75F0D5E2E7C4D904"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:maraca" }
+                }
+            ]
+        }
+        {
+            id: "B949C4277618FEC3"
+            title: "Рак-богомол в команде"
+            x: 20.00d
+            y: -20.00d
+            icon: "alexsmobs:rainbow_jelly"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "6901B3595877A394"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Экспедиция к рифам: §fне все морские хищники враги."
+                "§bЗадание: §fприручите Mantis Shrimp несколькими кормлениями тропической рыбой; приготовьтесь к длинному процессу."
+                "§aПроверка: §fсобытие приручения, не получение ведра с мобом."
+            ]
+            tasks: [
+                {
+                    id: "C9E59F08BD5A37B8"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/tame_mantis_shrimp"
+                }
+            ]
+            rewards: [
+                {
+                    id: "283A8B2205F3F016"
+                    type: "xp"
+                    xp: 240
+                }
+                {
+                    id: "29423AE3B59676E6"
+                    type: "item"
+                    item: { Count: 6b, id: "alexsmobs:rainbow_jelly" }
+                }
+            ]
+        }
+        {
+            id: "C5769170EBDD1A02"
+            title: "Червь из пустоты"
+            x: 28.00d
+            y: -15.00d
+            icon: "alexsmobs:mysterious_worm"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "427CD312AE0EB773"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Побочная легенда Края: §fиспытание для тех, кто освоил дальние экспедиции."
+                "§bЗадание: §fбросьте Mysterious Worm в пустоту Края. Подготовьте платформу и пути эвакуации."
+                "§aПроверка: §fотдельное событие вызова Void Worm; сам бой ещё впереди."
+            ]
+            tasks: [
+                {
+                    id: "4183BD5511A7CAD6"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/void_worm_summon"
+                }
+            ]
+            rewards: [
+                {
+                    id: "39675DA1E253D5E6"
+                    type: "xp"
+                    xp: 420
+                }
+                {
+                    id: "DEF8FB1E93712BD2"
+                    type: "item"
+                    item: { Count: 2b, id: "alexsmobs:enderiophage_rocket" }
+                }
+            ]
+        }
+        {
+            id: "2DAF49A8C5352825"
+            title: "Укротитель Бездны"
+            x: 32.00d
+            y: -15.00d
+            icon: "alexsmobs:dimensional_carver"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "C5769170EBDD1A02"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Босс-экзамен: §fстолкновение с Void Worm в Краю."
+                "§bЗадание: §fуничтожьте Червя Пустоты, сохранив команду и добычу."
+                "§aПроверка: §fсобытие победы void_worm_kill; призывание не закроет эту цель."
+            ]
+            tasks: [
+                {
+                    id: "D82E89EEE3373184"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/void_worm_kill"
+                }
+            ]
+            rewards: [
+                {
+                    id: "4F06F9CC6A1A5609"
+                    type: "xp"
+                    xp: 850
+                }
+                {
+                    id: "FF9EC3034DE48458"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:dimensional_carver" }
+                }
+            ]
+        }
+        {
+            id: "4B932485B3983E85"
+            title: "Банановая дипломатия"
+            x: 28.00d
+            y: -10.00d
+            icon: "alexsmobs:banana"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "0FF56BD66615E8C4"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Экспедиция в джунгли: §fне всякая встреча требует меча."
+                "§bЗадание: §fнайдите гориллу, приручите её бананами, обеспечьте безопасную дорогу домой."
+                "§aПроверка: §fсобытие tame_gorilla, а не простая находка бананов."
+            ]
+            tasks: [
+                {
+                    id: "0DD3FFD0B7484ED9"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/tame_gorilla"
+                }
+            ]
+            rewards: [
+                {
+                    id: "0817C3831B17CE29"
+                    type: "xp"
+                    xp: 230
+                }
+                {
+                    id: "37F440447D7F27DE"
+                    type: "item"
+                    item: { Count: 12b, id: "alexsmobs:banana" }
+                }
+            ]
+        }
+        {
+            id: "3C2AA39C0E1FDEF8"
+            title: "Небесный компаньон"
+            x: 32.00d
+            y: -10.00d
+            icon: "alexsmobs:cosmic_cod"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "4B932485B3983E85"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Дальний поход: §fнайдите необычного Cosmaw в Краю."
+                "§bЗадание: §fскормите ему Cosmic Cod, приручите существо и испытайте его поведение."
+                "§aПроверка: §fсобытие tame_cosmaw, отличный от встречи с существом."
+            ]
+            tasks: [
+                {
+                    id: "AE1702787FA1C576"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/tame_cosmaw"
+                }
+            ]
+            rewards: [
+                {
+                    id: "DD69CD529D48F42B"
+                    type: "xp"
+                    xp: 310
+                }
+                {
+                    id: "A2F044B5E7D89E7C"
+                    type: "item"
+                    item: { Count: 8b, id: "alexsmobs:cosmic_cod" }
+                }
+            ]
+        }
+        {
+            id: "32AF726FDB0E97B5"
+            title: "Тысяча превращений"
+            x: 28.00d
+            y: -5.00d
+            icon: "alexsmobs:transmutation_table"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "96E3403FB5591B32"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Необязательное долгое достижение: §fпревратите лабораторию в место чудес."
+                "§bЗадание: §fна ОДНОМ Transmutation Table преобразуйте суммарно 1000 предметов."
+                "§aПроверка: §fособый счётчик Alex’s Mobs; само изготовление стола не годится."
+            ]
+            tasks: [
+                {
+                    id: "EEF9EB41FB958A97"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/transmute_1000_items"
+                }
+            ]
+            rewards: [
+                {
+                    id: "4E1DC822985542F9"
+                    type: "xp"
+                    xp: 500
+                }
+                {
+                    id: "468A1A0846659193"
+                    type: "item"
+                    item: { Count: 3b, id: "alexsmobs:ambergris" }
+                }
+            ]
+        }
+        {
+            id: "FBBF01EF727D4ABF"
+            title: "Благословение солнечной птицы"
+            x: 32.00d
+            y: -5.00d
+            icon: "alexsmobs:bear_dust"
+            shape: "circle"
+            size: 1.12d
+            dependencies: [
+                "32AF726FDB0E97B5"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Редкое природное чудо: §fследите за небом и не сражайтесь по привычке."
+                "§bЗадание: §fполучите благословение Sunbird."
+                "§aПроверка: §fналоженный эффект по достижению sunbird_blessing, не предмет в инвентаре."
+            ]
+            tasks: [
+                {
+                    id: "0E9AF7AA89FA607F"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/sunbird_blessing"
+                }
+            ]
+            rewards: [
+                {
+                    id: "70EBFC43CD759428"
+                    type: "xp"
+                    xp: 280
+                }
+                {
+                    id: "EA7FD8798EBA2C73"
+                    type: "item"
+                    item: { Count: 4b, id: "alexsmobs:bear_dust" }
+                }
+            ]
+        }
+        {
+            id: "8EC4540A9E0B729E"
+            title: "Внезапный аромат"
+            x: 24.00d
+            y: -20.00d
+            icon: "minecraft:glass_bottle"
+            shape: "circle"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "B949C4277618FEC3"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fДикая природа умеет защищаться без мечей."
+                "§bПрактика: §fВстретьте скунса и получите его пахучую атаку."
+                "§aАвтопроверка: §fСпециальное достижение skunk_spray, а не убийство скунса."
+            ]
+            tasks: [
+                {
+                    id: "29E50068B2FF04A3"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/skunk"
+                }
+            ]
+            rewards: [
+                {
+                    id: "BBDEBEEB232A24E9"
+                    type: "xp"
+                    xp: 190
+                }
+                {
+                    id: "E82866965531A5FF"
+                    type: "item"
+                    item: { Count: 2b, id: "alexsmobs:stink_bottle" }
+                }
+            ]
+        }
+        {
+            id: "E0ECA7B8B4204545"
+            title: "Муравьиный переполох"
+            x: 28.00d
+            y: -20.00d
+            icon: "minecraft:grass_block"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "8EC4540A9E0B729E"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fНебольшие колонии тоже умеют давать отпор."
+                "§bПрактика: §fОтыщите жилище муравьёв-листорезов и потревожьте его."
+                "§aАвтопроверка: §fУникальное событие stomp_leafcutter_anthill."
+            ]
+            tasks: [
+                {
+                    id: "D435CE7733FBFA85"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/stomp_leafcutter_anthill"
+                }
+            ]
+            rewards: [
+                {
+                    id: "021949B557A8C38C"
+                    type: "xp"
+                    xp: 240
+                }
+                {
+                    id: "8194F2FB4034B414"
+                    type: "item"
+                    item: { Count: 4b, id: "alexsmobs:leafcutter_ant_pupa" }
+                }
+            ]
+        }
+        {
+            id: "A11B0DC1744B593F"
+            title: "Невидимый шахтёр"
+            x: 32.00d
+            y: -20.00d
+            icon: "minecraft:iron_pickaxe"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "E0ECA7B8B4204545"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fВ подземных туннелях встречаются не только шахтёры-люди."
+                "§bПрактика: §fСпровоцируйте необычное событие с Underminer."
+                "§aАвтопроверка: §fКритерий undermine_underminer; обычная добыча руды не подходит."
+            ]
+            tasks: [
+                {
+                    id: "24AB6256A2D9BBB4"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/underminer"
+                }
+            ]
+            rewards: [
+                {
+                    id: "85056A6F6B57104C"
+                    type: "xp"
+                    xp: 275
+                }
+                {
+                    id: "888678855C4569D4"
+                    type: "item"
+                    item: { Count: 8b, id: "minecraft:emerald" }
+                }
+            ]
+        }
+        {
+            id: "96A5A07EA384E3E1"
+            title: "Хозяин зимнего леса"
+            x: 36.00d
+            y: -10.00d
+            icon: "alexsmobs:bear_fur"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "3C2AA39C0E1FDEF8"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fОпасного зверя иногда выгоднее сделать союзником."
+                "§bПрактика: §fПриручите медведя гризли, подготовив подходящую пищу и безопасное место."
+                "§aАвтопроверка: §fОтдельное tame_animal с типом grizzly_bear."
+            ]
+            tasks: [
+                {
+                    id: "06532CC026CAA5AC"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/tame_grizzly_bear"
+                }
+            ]
+            rewards: [
+                {
+                    id: "19B5E83F4A6EEB2F"
+                    type: "xp"
+                    xp: 270
+                }
+                {
+                    id: "FBC83DBD78910444"
+                    type: "item"
+                    item: { Count: 8b, id: "alexsmobs:bear_fur" }
+                }
+            ]
+        }
+        {
+            id: "A69880141C867BB1"
+            title: "Маленький капуцин"
+            x: 40.00d
+            y: -10.00d
+            icon: "alexsmobs:banana"
+            shape: "circle"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "96A5A07EA384E3E1"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fПосле крупного зверя попробуйте приручить проворного малыша."
+                "§bПрактика: §fРазыщите и приручите Capuchin Monkey; для достижения может понадобиться банан."
+                "§aАвтопроверка: §fОтдельное приручение capuchin_monkey."
+            ]
+            tasks: [
+                {
+                    id: "DC2C56189DCC8AA8"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/tame_capuchin"
+                }
+            ]
+            rewards: [
+                {
+                    id: "34F81556DEA4775B"
+                    type: "xp"
+                    xp: 275
+                }
+                {
+                    id: "773FBC2AE2313D9C"
+                    type: "item"
+                    item: { Count: 16b, id: "alexsmobs:banana" }
+                }
+            ]
+        }
+        {
+            id: "7187AE5CE52E38D9"
+            title: "Трепещущий спутник"
+            x: 36.00d
+            y: -5.00d
+            icon: "minecraft:lead"
+            shape: "circle"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "FBBF01EF727D4ABF"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fЕщё одно редкое существо может стать спутником исследователя."
+                "§bПрактика: §fПриручите Flutter и изучите его поведение."
+                "§aАвтопроверка: §fОтдельное tame_animal с типом flutter."
+            ]
+            tasks: [
+                {
+                    id: "2A9C2DF352A7DE69"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/tame_flutter"
+                }
+            ]
+            rewards: [
+                {
+                    id: "1200A518DDC8F001"
+                    type: "xp"
+                    xp: 290
+                }
+                {
+                    id: "224D372B77742496"
+                    type: "item"
+                    item: { Count: 2b, id: "alexsmobs:maraca" }
+                }
+            ]
+        }
+        {
+            id: "3C70087F08BB9172"
+            title: "Приручить осу-охотника"
+            x: 40.00d
+            y: -5.00d
+            icon: "minecraft:honey_bottle"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "7187AE5CE52E38D9"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fНе каждый насекомый годится в безобидные питомцы."
+                "§bПрактика: §fНайдите и приручите Tarantula Hawk."
+                "§aАвтопроверка: §fОтдельное tame_animal с типом tarantula_hawk; это не его убийство."
+            ]
+            tasks: [
+                {
+                    id: "CB231AF64CF7844D"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/tame_tarantula_hawk"
+                }
+            ]
+            rewards: [
+                {
+                    id: "FBC4E2F2AD0725B6"
+                    type: "xp"
+                    xp: 360
+                }
+                {
+                    id: "A43B542396E56048"
+                    type: "item"
+                    item: { Count: 12b, id: "minecraft:golden_carrot" }
+                }
+            ]
+        }
+        {
+            id: "7A5B99FCC0910E12"
+            title: "Лягушка багрового края"
+            x: 8.00d
+            y: 10.00d
+            icon: "minecraft:warped_fungus"
+            shape: "circle"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "E0B32143847E9AF0"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fВ Незере можно завести необычного спутника, но путь опасен."
+                "§bПрактика: §fНайдите и приручите Warped Toad."
+                "§aАвтопроверка: §fДостижение tame_warped_toad; нужны условия мода."
+            ]
+            tasks: [
+                {
+                    id: "D71A0A651BCC7FB7"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/tame_warped_toad"
+                }
+            ]
+            rewards: [
+                {
+                    id: "897E47B8C26A1135"
+                    type: "xp"
+                    xp: 250
+                }
+                {
+                    id: "0899E08E42FF7FCC"
+                    type: "item"
+                    item: { Count: 10b, id: "minecraft:magma_cream" }
+                }
+            ]
+        }
+        {
+            id: "B9C5E7F638070495"
+            title: "Ужин для стриддера"
+            x: 12.00d
+            y: 10.00d
+            icon: "minecraft:warped_fungus"
+            shape: "circle"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "7A5B99FCC0910E12"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fДаже мелкие обитатели лавы имеют свои пищевые привычки."
+                "§bПрактика: §fНакормите Stradpole личинкой mosquito_larva из Alex’s Mobs."
+                "§aАвтопроверка: §fСобытие взаимодействия с stradpole и нужной личинкой."
+            ]
+            tasks: [
+                {
+                    id: "B76888DE9EDE91C9"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/stradpole_feed"
+                }
+            ]
+            rewards: [
+                {
+                    id: "BA498D91EEDB41C6"
+                    type: "xp"
+                    xp: 230
+                }
+                {
+                    id: "948407FB0134180D"
+                    type: "item"
+                    item: { Count: 16b, id: "minecraft:glowstone_dust" }
+                }
+            ]
+        }
+        {
+            id: "7C9F211F3C3FEE27"
+            title: "Червь, которого стало двое"
+            x: 36.00d
+            y: -15.00d
+            icon: "alexsmobs:void_worm_eye"
+            shape: "crown"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "2DAF49A8C5352825"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fДаже битва с Void Worm может пойти не по сценарию."
+                "§fВ бою добейтесь разделения Void Worm и выживите. Это отдельная механика, а не второе убийство босса."
+                "§aАвтопроверка: §falexsmobs:alexsmobs/void_worm_split"
+                "§7Событие void_worm_split. Сначала потребуются условия для вызова червя."
+            ]
+            tasks: [
+                {
+                    id: "553932FEAD227C14"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/void_worm_split"
+                }
+            ]
+            rewards: [
+                {
+                    id: "9726CAD6A4DE94B5"
+                    type: "xp"
+                    xp: 850
+                }
+                {
+                    id: "5467E15FE47EF054"
+                    type: "item"
+                    item: { Count: 1b, id: "alexsmobs:void_worm_eye" }
+                }
+            
+                {
+                    id: "3E4CF80823D58C49"
+                    type: "item"
+                    item: { Count: 8b, id: "minecraft:diamond" }
+                }
+            ]
+        }
+        {
+            id: "237F60330304F23A"
+            title: "Яблочная дипломатия"
+            x: 4.00d
+            y: -15.00d
+            icon: "minecraft:apple"
+            shape: "circle"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "7E2ECDC313839529"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fГривистый волк отличается поведением от обычного приручаемого животного."
+                "§fВстретьте Maned Wolf и взаимодействуйте с ним, держа обычное яблоко."
+                "§aАвтопроверка: §falexsmobs:alexsmobs/maned_wolf_apple"
+                "§7Событие player_interacted_with_entity для Maned Wolf + apple."
+            ]
+            tasks: [
+                {
+                    id: "C92175746EB0E538"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/maned_wolf_apple"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A8FB999F2DD78D51"
+                    type: "xp"
+                    xp: 185
+                }
+                {
+                    id: "AD6876A1CFD3C4FA"
+                    type: "item"
+                    item: { Count: 8b, id: "alexsmobs:fish_oil" }
+                }
+            ]
+        }
+        {
+            id: "936D71E0D75C5CFD"
+            title: "Муравьеды — семейное дело"
+            x: 4.00d
+            y: -20.00d
+            icon: "minecraft:egg"
+            shape: "star"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "237F60330304F23A"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fЗнакомство с фауной становится исследованием размножения редких существ."
+                "§fНайдите пару муравьедов и добейтесь появления детёныша, следуя механике мода."
+                "§aАвтопроверка: §falexsmobs:alexsmobs/breed_anteater"
+                "§7Автопроверка minecraft:bred_animals с child=alexsmobs:anteater. Модовое достижение требует своего родителя."
+            ]
+            tasks: [
+                {
+                    id: "922A3F4C3EC4B7E1"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/breed_anteater"
+                }
+            ]
+            rewards: [
+                {
+                    id: "F59C07669DFAF93A"
+                    type: "xp"
+                    xp: 340
+                }
+                {
+                    id: "CA966E76D9AF8EF0"
+                    type: "item"
+                    item: { Count: 16b, id: "alexsmobs:banana" }
+                }
+            ]
+        }
+        {
+            id: "ACE2BBCB182D3BF5"
+            title: "Сквозь подзорную трубу"
+            x: 8.00d
+            y: -20.00d
+            icon: "minecraft:spyglass"
+            shape: "star"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "237F60330304F23A"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательное приключение"
+                "§fОбитателя лавовых озёр лучше сначала изучить на расстоянии."
+                "§fОтправьтесь в Незер и рассмотрите Laviathan через подзорную трубу."
+                "§aАвтопроверка: §falexsmobs:alexsmobs/laviathan_spyglass"
+                "§7Достижение using_item с условием наблюдения Laviathan. Не требуется собирать группу из четырёх игроков."
+            ]
+            tasks: [
+                {
+                    id: "048E9E30492793A7"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/laviathan_spyglass"
+                }
+            ]
+            rewards: [
+                {
+                    id: "3FE09F92254FBBE7"
+                    type: "xp"
+                    xp: 300
+                }
+                {
+                    id: "BBA5A637E3351EAE"
+                    type: "item"
+                    item: { Count: 8b, id: "minecraft:ender_pearl" }
+                }
+            ]
+        }
+            {
+            id: "9ED723F7F76497AD"
+            title: "Охотничий инстинкт тигра"
+            x: -4.00d
+            y: -5.00d
+            icon: "minecraft:leather_boots"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "7E2ECDC313839529"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fПолучите благословение тигра, взаимодействуя с его поведением, а не убивая его."
+                "§aАвтозачёт: §fСрабатывание эффекта Tigers Blessing, не предмет."
+            ]
+            tasks: [
+                {
+                    id: "E31E10F52379A985"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/tigers_blessing"
+                }
+            ]
+            rewards: [
+                {
+                    id: "83D5063FFB1FD676"
+                    type: "xp"
+                    xp: 170
+                }
+                {
+                    id: "3B6363CB026EEDD1"
+                    type: "item"
+                    item: { Count: 12b, id: "minecraft:golden_carrot" }
+                }
+            ]
+        }
+        {
+            id: "1F1BD6529A7A9340"
+            title: "Сила стаи косаток"
+            x: -4.00d
+            y: -10.00d
+            icon: "minecraft:trident"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "7E2ECDC313839529"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fНайдите косаток и заслужите эффект Orcas Might. Исследуйте, как он помогает в море."
+                "§aАвтозачёт: §fДействительно получен эффект Orcas Might."
+            ]
+            tasks: [
+                {
+                    id: "85AEF46145E44491"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/orcas_might"
+                }
+            ]
+            rewards: [
+                {
+                    id: "1F747A374D8F453B"
+                    type: "xp"
+                    xp: 190
+                }
+                {
+                    id: "6A6400B436C91254"
+                    type: "item"
+                    item: { Count: 4b, id: "minecraft:nautilus_shell" }
+                }
+            ]
+        }
+        {
+            id: "1DAF34828799DEB2"
+            title: "Лавиафан — полный экипаж"
+            x: -4.00d
+            y: -15.00d
+            icon: "minecraft:saddle"
+            shape: "star"
+            size: 1.18d
+            optional: true
+            dependencies: [
+                "7E2ECDC313839529"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fОрганизуйте поездку на лавиафане с четырьмя пассажирами. Вдвоём придётся найти попутчиков!"
+                "§aАвтозачёт: §fСрабатывание особого события четырёх пассажиров; для достижения мода предварительно потребуется Straddle Saddle."
+            ]
+            tasks: [
+                {
+                    id: "2B0B55BD0E65DDF9"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/laviathan_four_passengers"
+                }
+            ]
+            rewards: [
+                {
+                    id: "20E86B7B51DE4EC5"
+                    type: "xp"
+                    xp: 260
+                }
+                {
+                    id: "03AB03F661832E69"
+                    type: "item"
+                    item: { Count: 6b, id: "minecraft:diamond" }
+                }
+            ]
+        }
+        {
+            id: "F5D02EE894BC9AE7"
+            title: "Багровая лихорадка"
+            x: -4.00d
+            y: -20.00d
+            icon: "minecraft:spider_eye"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "7E2ECDC313839529"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fИзучите опасную стадию багрового комара и попадите под его эффект. Приготовьте лечение и запаситесь защитой."
+                "§aАвтозачёт: §fСпециальное событие Mosquito Sick, а не добыча трофея."
+            ]
+            tasks: [
+                {
+                    id: "D56737FA84966C27"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/crimson_mosquito_sick"
+                }
+            ]
+            rewards: [
+                {
+                    id: "DADA51D52DAD7CB9"
+                    type: "xp"
+                    xp: 160
+                }
+                {
+                    id: "305AA21ABF09B954"
+                    type: "item"
+                    item: { Count: 2b, id: "minecraft:golden_apple" }
+                }
+            ]
+        }
+        {
+            id: "A3CBB2323447F658"
+            title: "Владыка багровых москитов"
+            x: -8.00d
+            y: -20.00d
+            icon: "minecraft:netherite_sword"
+            shape: "crown"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "F5D02EE894BC9AE7"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fОтыщите и победите Warped Mosco. Это настоящий боевой экзамен после знакомства с комарами."
+                "§aАвтозачёт: §fУбийство Warped Mosco; мод также может требовать предыдущее достижение."
+            ]
+            tasks: [
+                {
+                    id: "34F5F50D21BC4D56"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/warped_mosco_kill"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A40E8A361D977FE4"
+                    type: "xp"
+                    xp: 730
+                }
+                {
+                    id: "4C52543FAF4E6581"
+                    type: "item"
+                    item: { Count: 2b, id: "minecraft:netherite_scrap" }
+                }
+            ]
+        }
+        {
+            id: "6CC28B3392054882"
+            title: "Уклонение от эму"
+            x: -4.00d
+            y: 0.00d
+            icon: "minecraft:feather"
+            shape: "circle"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "7E2ECDC313839529"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fНайдите эму и испытайте его особенности боя. Цель — уклониться от его атаки, а не собрать перья."
+                "§aАвтозачёт: §fОсобый триггер Emu Dodge; встроенное родительское достижение эму также может потребоваться."
+            ]
+            tasks: [
+                {
+                    id: "8AB36C5296825BAB"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/emu_dodge"
+                }
+            ]
+            rewards: [
+                {
+                    id: "ABE0E3B76A19128B"
+                    type: "xp"
+                    xp: 160
+                }
+                {
+                    id: "58F34CC8E9DE0710"
+                    type: "item"
+                    item: { Count: 10b, id: "minecraft:emerald" }
+                }
+            ]
+        }
+        {
+            id: "63D42711634C8471"
+            title: "Слон с бивнями — редкий союзник"
+            x: 8.00d
+            y: -12.00d
+            icon: "minecraft:saddle"
+            shape: "star"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "95C85BF47DA01D26"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§bПрактика: §fНайдите слона с бивнями и приручите именно его. Обычный слон не подходит."
+                "§aАвтозачёт: §fПриручение слона с NBT Tusked:true (minecraft:tame_animal)."
+            ]
+            tasks: [
+                {
+                    id: "0F678BCA0EF98D93"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/tame_elephant_tusked"
+                }
+            ]
+            rewards: [
+                {
+                    id: "3B1BE5466690CB69"
+                    type: "xp"
+                    xp: 310
+                }
+                {
+                    id: "CE9EF8074FA4A6F1"
+                    type: "item"
+                    item: { Count: 18b, id: "minecraft:emerald" }
+                }
+            ]
+        }
+        {
+            id: "3684E8517DD612A0"
+            title: "Рак-богомол путешествует в ведре"
+            x: 16.00d
+            y: -22.00d
+            icon: "minecraft:water_bucket"
+            shape: "circle"
+            size: 1.15d
+            optional: true
+            dependencies: [
+                "B949C4277618FEC3"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§bПрактика: §fПриручив рака-богомола, приседайте и попробуйте взаимодействовать с ним ведром воды."
+                "§aАвтозачёт: §fВзаимодействие с раком-богомолом при приседании и с ведром воды."
+            ]
+            tasks: [
+                {
+                    id: "DEA54A00E62A3118"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/mantis_shrimp_bucket"
+                }
+            ]
+            rewards: [
+                {
+                    id: "65DBFB4436B0F43F"
+                    type: "xp"
+                    xp: 180
+                }
+                {
+                    id: "D2E71F70087BBB47"
+                    type: "item"
+                    item: { Count: 8b, id: "alexsmobs:shrimp_fried_rice" }
+                }
+            ]
+        }
+        {
+            id: "50F2011C089DD095"
+            title: "Лихорадка с Края"
+            x: 2.00d
+            y: -1.00d
+            icon: "minecraft:ender_eye"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "7E2ECDC313839529"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§bПрактика: §fВстретьте эндериофага и получите эффект Ender Flu; это рискованная встреча, а не охота за трофеем."
+                "§aАвтозачёт: §fПолучение эффекта alexsmobs:ender_flu; родительское достижение требует встречи с эндериофагом."
+            ]
+            tasks: [
+                {
+                    id: "A4355D31B671A4F9"
+                    type: "advancement"
+                    advancement: "alexsmobs:alexsmobs/ender_flu"
+                }
+            ]
+            rewards: [
+                {
+                    id: "5450F539177DC9D5"
+                    type: "xp"
+                    xp: 260
+                }
+                {
+                    id: "BC1951F4B2FDE616"
+                    type: "item"
+                    item: { Count: 12b, id: "alexsmobs:enderiophage_rocket" }
+                }
+            ]
+        }
+        {
+            id: "23B7EC4E576DFA6A"
+            title: "Наследники ледяной стаи"
+            x: 44.00d
+            y: -10.00d
+            icon: "alexsmobs:froststalker_horn"
+            shape: "star"
+            size: 1.16d
+            optional: true
+            dependencies: [ "A69880141C867BB1" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fОт редких спутников переходите к зимней полевой биологии."
+                "§bИспытание: §fДобейтесь появления детёныша Froststalker разведением."
+                "§aАвтопроверка: §fДостижение alexsmobs:alexsmobs/breed_froststalker. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "BE573E7F2A4BA6A8", type: "advancement", advancement: "alexsmobs:alexsmobs/breed_froststalker" } ]
+            rewards: [
+                { id: "FEB1BDEE7E40E5FC", type: "xp", xp: 360 }
+                { id: "EFED07266FA8019D", type: "item", item: { Count: 2b, id: "alexsmobs:froststalker_horn" } }
+            ]
+        }
+        {
+            id: "ABADB8973594E0A0"
+            title: "Неведомый наблюдатель"
+            x: 44.00d
+            y: -5.00d
+            icon: "alexsmobs:ghostly_pickaxe"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [ "3C70087F08BB9172" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fВ дальних мирах встречаются противники, которых легко не заметить."
+                "§bИспытание: §fВступите в контакт с Farseer: достаточно ударить его, взаимодействовать с ним или убить. Достижение НЕ требует победы."
+                "§aАвтопроверка: §fДостижение alexsmobs:alexsmobs/farseer. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "67EB012B75E4E17D", type: "advancement", advancement: "alexsmobs:alexsmobs/farseer" } ]
+            rewards: [
+                { id: "4AB9D667812AFDAD", type: "xp", xp: 370 }
+                { id: "EA90B0AC15BC136D", type: "item", item: { Count: 12b, id: "minecraft:ender_pearl" } }
+            ]
+        }
+        {
+            id: "418BF87D0F99A324"
+            title: "Призрак на пути"
+            x: 48.00d
+            y: -5.00d
+            icon: "alexsmobs:soul_heart"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [ "ABADB8973594E0A0" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fИщите не только боссов, но и необычных обитателей иных измерений."
+                "§bИспытание: §fВступите в контакт со Spectre: достижение засчитывает удар, взаимодействие или убийство."
+                "§aАвтопроверка: §fДостижение alexsmobs:alexsmobs/spectre. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "8A80559D121514DF", type: "advancement", advancement: "alexsmobs:alexsmobs/spectre" } ]
+            rewards: [
+                { id: "9C1CAA6FAFB04CF2", type: "xp", xp: 370 }
+                { id: "4CBBC378DE1EC688", type: "item", item: { Count: 6b, id: "alexsmobs:ender_residue" } }
+            ]
+        }
+
+        {
+            id: "F57181DBDA992F0B"
+            title: "Три записи полевого дневника"
+            x: 52.00d
+            y: -5.00d
+            icon: "minecraft:writable_book"
+            shape: "scroll"
+            size: 1.18d
+            optional: true
+            dependencies: [
+                "418BF87D0F99A324"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§fСобери три необычных наблюдения за существами, которых трудно найти."
+                "§fВзаимодействуй с аллигаторовой черепахой, Скрикером и Мурмуром."
+                "§fКаждый вид должен быть отмечен отдельно: нападение или убийство не заменяют взаимодействие."
+                "§aАвтопроверка: §fСобственное скрытое достижение: все условия обязательны."
+            ]
+            tasks: [
+                {
+                    id: "C612D321BB2F41BF"
+                    type: "advancement"
+                    advancement: "nasledie:alpha39/mobs/field_notes"
+                }
+            
+                {
+                    id: "40A451A51A88D6AB"
+                    type: "advancement"
+                    advancement: "nasledie:alpha39/mobs/field_notes__skreecher"
+                }
+
+                {
+                    id: "43F8B3172D48C078"
+                    type: "advancement"
+                    advancement: "nasledie:alpha39/mobs/field_notes__murmur"
+                }
+            ]
+            rewards: [
+                {
+                    id: "C9E8C56A4EB6D013"
+                    type: "xp"
+                    xp: 260
+                }
+                {
+                    id: "71F50C6C3EFF1D49"
+                    type: "item"
+                    item: { Count: 5b, id: "minecraft:emerald" }
+                }
+            ]
+        }
+        {
+            id: "8D963EB7C6BEE5F5"
+            title: "Трофеи трёх пустошей"
+            x: 56.00d
+            y: -5.00d
+            icon: "minecraft:diamond_sword"
+            shape: "shield"
+            size: 1.18d
+            optional: true
+            dependencies: [
+                "F57181DBDA992F0B"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§fЗаверши большую охотничью экспедицию по разным опасным биомам."
+                "§fПобеди Скелевэга, Душевного стервятника и Гремучую змею."
+                "§fВсе три убийства необходимы; встреча с существами не засчитывается."
+                "§aАвтопроверка: §fСобственное скрытое достижение: все условия обязательны."
+            ]
+            tasks: [
+                {
+                    id: "22F7EC69362808B9"
+                    type: "advancement"
+                    advancement: "nasledie:alpha39/mobs/three_wastes"
+                }
+            
+                {
+                    id: "316E579AA065229B"
+                    type: "advancement"
+                    advancement: "nasledie:alpha39/mobs/three_wastes__vulture"
+                }
+
+                {
+                    id: "63209AE7ECA1A6BE"
+                    type: "advancement"
+                    advancement: "nasledie:alpha39/mobs/three_wastes__snake"
+                }
+            ]
+            rewards: [
+                {
+                    id: "14B955A66ACBA60B"
+                    type: "xp"
+                    xp: 390
+                }
+                {
+                    id: "E225E76156D2E30D"
+                    type: "item"
+                    item: { Count: 2b, id: "minecraft:golden_apple" }
+                }
+            ]
+        }
+    
+        {
+            id: "9B3BBB54EE27AC7B"
+            title: "Питомник трёх биомов"
+            x: 48.00d
+            y: -10.00d
+            icon: "minecraft:golden_carrot"
+            shape: "star"
+            size: 1.26d
+            optional: true
+            dependencies: [ "23B7EC4E576DFA6A" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Финал питомника"
+                "§eПредыстория: §fПосле разведения морозных охотников открой новые природные направления питомника."
+                "§bИспытание: §fРасширь заповедник: выведи потомство лисы, панды и верблюда."
+                "§aАвтопроверка: §fТри уникальных события bred_animals по типу потомства. Старые достижения Alex’s Mobs не повторяются."
+                "§7Все три задания необходимо выполнить. Это отдельный финальный этап."
+            ]
+            tasks: [
+                {
+                    id: "30686C3A97975C1A"
+                    type: "advancement"
+                    advancement: "nasledie:alpha41_qa2/sanctuary/1_fox"
+                }
+                {
+                    id: "C06628BCB166D5AD"
+                    type: "advancement"
+                    advancement: "nasledie:alpha41_qa2/sanctuary/2_panda"
+                }
+                {
+                    id: "73959D8EAE7FCEFC"
+                    type: "advancement"
+                    advancement: "nasledie:alpha41_qa2/sanctuary/3_camel"
+                }
+            ]
+            rewards: [
+                {
+                    id: "CD34C6A7B5029863"
+                    type: "xp"
+                    xp: 690
+                }
+                {
+                    id: "88C20CAE36B6D958"
+                    type: "item"
+                    item: { Count: 20b, id: "minecraft:golden_carrot" }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,786 @@
+{
+    filename: "nasledie_exploration"
+    id: "67AB9D3E8CAB8CAC"
+    group: "842B4DB4DBD349A0"
+    title: "Путешественники — Полевая школа навигации"
+    icon: "minecraft:compass"
+    order_index: 3
+    progression_mode: "flexible"
+    default_hide_dependency_lines: false
+    default_quest_shape: "circle"
+
+    quest_links: []
+    quests: [
+        {
+            id: "30000F5F1F069AFA"
+            title: "Первые тысяча метров"
+            icon: "minecraft:leather_boots"
+            x: 0.00d
+            y: 0.00d
+            shape: "star"
+            size: 1.28d
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Учебная ступень"
+                "§eЗадача: §fНачать настоящую экспедицию вместо сбора факелов и компасов."
+                "§bПрактика: §fПройдите в мире суммарно 1000 блоков. Обсудите с напарником, как отмечать новые находки в Xaero World Map."
+                "§aАвтопроверка: §fСчётчик minecraft:walk_one_cm ≥ 100000 (суммарно один километр)."
+                "§7Почему это важно: Это отправная точка дальнейших самостоятельных исследований."
+            ]
+            tasks: [
+                {
+                    id: "6DAFC3737DCD53B2"
+                    type: "stat"
+                    stat: "minecraft:walk_one_cm"
+                    value: 100000
+                }
+            ]
+            rewards: [
+                {
+                    id: "DFF6C4CC8D271E5C"
+                    type: "xp"
+                    xp: 45
+                }
+                {
+                    id: "528681BE45EA0650"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:magnet_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "5DCFED353E2F543B"
+            title: "Проверенный маршрут"
+            icon: "minecraft:leather_boots"
+            x: 3.00d
+            y: 0.00d
+            shape: "scroll"
+            size: 1.12d
+            dependencies: [
+                "30000F5F1F069AFA"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Учебная ступень"
+                "§eЗадача: §fВыстроить устойчивый маршрут перемещения между базой и новыми местами."
+                "§bПрактика: §fДоведите суммарный путь пешком до 2500 блоков. Сравните передвижение пешком с транспортом и быстрыми переходами."
+                "§aАвтопроверка: §fСчётчик minecraft:walk_one_cm ≥ 250000."
+                "§7Почему это важно: Большие исследования требуют планирования расстояний."
+            ]
+            tasks: [
+                {
+                    id: "ECCBE2392F49F900"
+                    type: "stat"
+                    stat: "minecraft:walk_one_cm"
+                    value: 250000
+                }
+            ]
+            rewards: [
+                {
+                    id: "5B1DBB1D370C4BC6"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "4D9113921EDFF73D"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:advanced_pickup_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "4654570D569F8AFB"
+            title: "Пепельная саванна"
+            icon: "minecraft:acacia_sapling"
+            x: 3.00d
+            y: -3.00d
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "30000F5F1F069AFA"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fИсследовать необычную экосистему Terralith."
+                "§bПрактика: §fНайдите биом Ashen Savanna, запомните отличия рельефа и растений от обычной саванны."
+                "§aАвтопроверка: §fПроверяется посещение terralith:ashen_savanna, а не наличие компаса."
+                "§7Почему это важно: Учимся узнавать разнообразие генерируемых земель."
+            ]
+            tasks: [
+                {
+                    id: "1F5360CCD8CE458A"
+                    type: "biome"
+                    biome: "terralith:ashen_savanna"
+                }
+            ]
+            rewards: [
+                {
+                    id: "17C0E874928AACF3"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "CB5BA404C4A0DF6F"
+                    type: "item"
+                    item: { Count: 6b, id: "waystones:warp_dust" }
+                }
+            ]
+        }
+        {
+            id: "F740FB239378B229"
+            title: "Цветущая долина"
+            icon: "minecraft:flowering_azalea"
+            x: 6.00d
+            y: -3.00d
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "4654570D569F8AFB"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fСравнить две природные зоны новой генерации."
+                "§bПрактика: §fОтыщите Blooming Valley в Terralith и отметьте место для будущей красивой постройки."
+                "§aАвтопроверка: §fПроверяется вход в terralith:blooming_valley. Постройка не является условием."
+                "§7Почему это важно: Маршрутное исследование и выбор места для строительства."
+            ]
+            tasks: [
+                {
+                    id: "C55A48C157E28D15"
+                    type: "biome"
+                    biome: "terralith:blooming_valley"
+                }
+            ]
+            rewards: [
+                {
+                    id: "BD35D85AF39DB97A"
+                    type: "xp"
+                    xp: 95
+                }
+                {
+                    id: "71DF945B7CCCE31E"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:refill_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "142D439350347E70"
+            title: "Белые утёсы"
+            icon: "minecraft:calcite"
+            x: 9.00d
+            y: -3.00d
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "F740FB239378B229"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fОсвоить ориентирование по крупным природным объектам."
+                "§bПрактика: §fНайдите White Cliffs, сравните обрывы и плато и запишите путь к безопасному спуску."
+                "§aАвтопроверка: §fПроверка посещения terralith:white_cliffs; запись маршрута остается вашей задачей."
+                "§7Почему это важно: Навигация по заметным природным ориентирам."
+            ]
+            tasks: [
+                {
+                    id: "713D7FB28D6AD2FD"
+                    type: "biome"
+                    biome: "terralith:white_cliffs"
+                }
+            ]
+            rewards: [
+                {
+                    id: "8D8DC5F54CA7B78D"
+                    type: "xp"
+                    xp: 105
+                }
+                {
+                    id: "947CE5CFC8D5D112"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:filter_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "F17A293356CD1404"
+            title: "Шахта под саванной"
+            icon: "minecraft:stone_bricks"
+            x: 3.00d
+            y: 3.00d
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "30000F5F1F069AFA"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательная экспедиция"
+                "§eЗачем: §fВ тёплых регионах можно отыскать отдельный вариант шахт YUNG."
+                "§bПрактика: §fНайдите Acacia Mineshaft в саванне. Это независимое исследование, а не повтор посещения Small Dungeon."
+                "§aАвтопроверка: §fFTB Structure Task: bettermineshafts:mineshaft_acacia; не другая структура с похожим названием."
+            ]
+            tasks: [
+                {
+                    id: "96C5B34A113E7F96"
+                    type: "structure"
+                    structure: "bettermineshafts:mineshaft_acacia"
+                }
+            ]
+            rewards: [
+                {
+                    id: "8E557FF7AA47112B"
+                    type: "xp"
+                    xp: 95
+                }
+                {
+                    id: "27ACE1076C426FBB"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:smelting_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "28CBD873B6A9B3EA"
+            title: "Капельная шахта"
+            icon: "minecraft:bone"
+            x: 6.00d
+            y: 3.00d
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "F17A293356CD1404"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательная экспедиция"
+                "§eЗачем: §fШахта среди натёчных камней требует нового маршрута."
+                "§bПрактика: §fОтыщите Dripstone Mineshaft. Гильдейское Skeleton Dungeon — другая структура."
+                "§aАвтопроверка: §fFTB Structure Task: bettermineshafts:mineshaft_dripstone; не другая структура с похожим названием."
+            ]
+            tasks: [
+                {
+                    id: "E1B87B2889B2EA7D"
+                    type: "structure"
+                    structure: "bettermineshafts:mineshaft_dripstone"
+                }
+            ]
+            rewards: [
+                {
+                    id: "2E261DC27ACDEBDA"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "7AEC9902C37CF31B"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:anvil_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "B7BA27A969107D22"
+            title: "Старая шахта"
+            icon: "minecraft:rail"
+            x: 9.00d
+            y: 3.00d
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "28CBD873B6A9B3EA"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fИзучить новую архитектуру шахт Better Mineshafts."
+                "§bПрактика: §fОтыщите дубовую разновидность улучшенной шахты. Обратите внимание на коридоры, помещения и добываемые ресурсы."
+                "§aАвтопроверка: §fПроверка входа в bettermineshafts:mineshaft_oak; построенные вами шахты не подходят."
+                "§7Почему это важно: Ищем отличия модовых структур от ванильных."
+            ]
+            tasks: [
+                {
+                    id: "D1B2EA43994AFCFC"
+                    type: "structure"
+                    structure: "bettermineshafts:mineshaft_oak"
+                }
+            ]
+            rewards: [
+                {
+                    id: "B26B59C84C17F3A4"
+                    type: "xp"
+                    xp: 130
+                }
+                {
+                    id: "8EAC64A2E41986DA"
+                    type: "item"
+                    item: { Count: 3b, id: "immersive_aircraft:industrial_gears" }
+                }
+            ]
+        }
+        {
+            id: "07A63C78A1E0EFD4"
+            title: "Мираж над морем"
+            icon: "minecraft:spyglass"
+            x: 3.00d
+            y: -6.00d
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "30000F5F1F069AFA"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fНаучиться искать удалённые и необычные биомы."
+                "§bПрактика: §fОткройте Mirage Isles в Terralith. Используйте карту и разведку, не полагаясь только на случайность."
+                "§aАвтопроверка: §fПосещение терралитовского биома terralith:mirage_isles."
+                "§7Почему это важно: Экспедиция по редкой географии мира."
+            ]
+            tasks: [
+                {
+                    id: "2518A9B103A1E106"
+                    type: "biome"
+                    biome: "terralith:mirage_isles"
+                }
+            ]
+            rewards: [
+                {
+                    id: "EF2810C3B87F754E"
+                    type: "xp"
+                    xp: 140
+                }
+                {
+                    id: "FBFB8C038AAD5667"
+                    type: "item"
+                    item: { Count: 2b, id: "waystones:warp_scroll" }
+                }
+            ]
+        }
+        {
+            id: "A91583B5B92C22EB"
+            title: "Изумрудные пики"
+            icon: "minecraft:emerald"
+            x: 6.00d
+            y: -6.00d
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "07A63C78A1E0EFD4"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fСравнить уникальные горные формы."
+                "§bПрактика: §fНайдите Emerald Peaks из Terralith, оцените высотность и опасные участки для путешествия."
+                "§aАвтопроверка: §fПроверяется биом terralith:emerald_peaks."
+                "§7Почему это важно: Планируем горные маршруты до развития воздушного транспорта."
+            ]
+            tasks: [
+                {
+                    id: "52B225211590B893"
+                    type: "biome"
+                    biome: "terralith:emerald_peaks"
+                }
+            ]
+            rewards: [
+                {
+                    id: "8483DB252E6F8986"
+                    type: "xp"
+                    xp: 160
+                }
+                {
+                    id: "E338BB9C458BE06E"
+                    type: "item"
+                    item: { Count: 1b, id: "immersive_aircraft:improved_landing_gear" }
+                }
+            ]
+        }
+        {
+            id: "E6DC4A843BE1C287"
+            title: "Осенние небесные острова"
+            icon: "minecraft:elytra"
+            x: 9.00d
+            y: -6.00d
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "A91583B5B92C22EB"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fИсследовать один из самых необычных пейзажей Terralith."
+                "§bПрактика: §fОтыщите Skylands Autumn и изучите высотные переходы, прежде чем планировать строительство."
+                "§aАвтопроверка: §fПроверка биома terralith:skylands_autumn."
+                "§7Почему это важно: Поздняя экспедиция — дополнительный вызов."
+            ]
+            tasks: [
+                {
+                    id: "8A8B547AB7CFEE1B"
+                    type: "biome"
+                    biome: "terralith:skylands_autumn"
+                }
+            ]
+            rewards: [
+                {
+                    id: "6B304218B6BC25E1"
+                    type: "xp"
+                    xp: 175
+                }
+                {
+                    id: "1F384F63D1846B4B"
+                    type: "item"
+                    item: { Count: 1b, id: "immersive_aircraft:engine" }
+                }
+            ]
+        }
+        {
+            id: "D8325F832D406D1F"
+            title: "Ледяное убежище"
+            icon: "minecraft:packed_ice"
+            x: 3.00d
+            y: 6.00d
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "30000F5F1F069AFA"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fНаучиться находить малые сооружения в снежных биомах."
+                "§bПрактика: §fНайдите иглу и обследуйте её. Посмотрите, какие дополнительные помещения могут скрываться под полом."
+                "§aАвтопроверка: §fПроверяется посещение minecraft:igloo, не наличие кровати или сундука."
+                "§7Почему это важно: Малые структуры могут содержать скрытые открытия."
+            ]
+            tasks: [
+                {
+                    id: "08C1B94EFFCF234D"
+                    type: "structure"
+                    structure: "minecraft:igloo"
+                }
+            ]
+            rewards: [
+                {
+                    id: "8A55F783AF09C940"
+                    type: "xp"
+                    xp: 95
+                }
+                {
+                    id: "15E3A184AF1A8C4F"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:feeding_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "CD62103DCF8B4FDA"
+            title: "Ледниковый разлом"
+            icon: "minecraft:blue_ice"
+            x: 6.00d
+            y: 6.00d
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "D8325F832D406D1F"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fПродолжить холодную экспедицию к опасным формам рельефа."
+                "§bПрактика: §fНайдите Glacial Chasm в Terralith. Заранее продумайте маршрут вверх и способ возвращения."
+                "§aАвтопроверка: §fПроверяется terralith:glacial_chasm, отсутствие необходимости добывать лёд."
+                "§7Почему это важно: Высотная разведка и подготовка транспорта."
+            ]
+            tasks: [
+                {
+                    id: "A927988A3E0C4354"
+                    type: "biome"
+                    biome: "terralith:glacial_chasm"
+                }
+            ]
+            rewards: [
+                {
+                    id: "F71A37C1C1E76209"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "DCFB2DD7AA48045E"
+                    type: "item"
+                    item: { Count: 1b, id: "waystones:warp_stone" }
+                }
+            ]
+        }
+        {
+            id: "4A366B92A0D4BDCD"
+            title: "Хижина среди болот"
+            icon: "minecraft:vine"
+            x: 9.00d
+            y: 6.00d
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "CD62103DCF8B4FDA"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fОтыскать скрытое сооружение в сложной местности."
+                "§bПрактика: §fПосетите болотную хижину, определите её безопасный подход и опасности окружающей зоны."
+                "§aАвтопроверка: §fПроверяется посещение minecraft:swamp_hut."
+                "§7Почему это важно: Испытываем навигацию в болотах и повышаем сложность экспедиций."
+            ]
+            tasks: [
+                {
+                    id: "2CB9C560350D89DF"
+                    type: "structure"
+                    structure: "minecraft:swamp_hut"
+                }
+            ]
+            rewards: [
+                {
+                    id: "E7541E569CC8C6FA"
+                    type: "xp"
+                    xp: 110
+                }
+                {
+                    id: "FEE05CC7C8C75CF7"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:advanced_filter_upgrade" }
+                }
+            ]
+        }
+
+    
+        {
+            id: "EA048E705BEC8414"
+            title: "Шахта грибников"
+            x: 12.00d
+            y: 3.00d
+            icon: "minecraft:red_mushroom"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "B7BA27A969107D22"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательная экспедиция"
+                "§eЦель: §fШахта грибников."
+                "§bПриключение: §fНайдите редкую грибную шахту YUNG. Осмотрите её ярусы и отметьте выход; обнаружение самой структуры подтверждается автоматически."
+                "§aАвтопроверка: §fПосещение структуры bettermineshafts:mineshaft_mushroom."
+            ]
+            tasks: [
+                {
+                    id: "2F654D4AA501904E"
+                    type: "structure"
+                    structure: "bettermineshafts:mineshaft_mushroom"
+                }
+            ]
+            rewards: [
+                {
+                    id: "D5DEEDEE2B2FEEBD"
+                    type: "xp"
+                    xp: 240
+                }
+                {
+                    id: "FB5ED438C46672D4"
+                    type: "item"
+                    item: { Count: 3b, id: "minecraft:diamond" }
+                }
+            ]
+        }
+        {
+            id: "F09FD8875C97CD92"
+            title: "Медная шахта красных пустошей"
+            x: 12.00d
+            y: 0.00d
+            icon: "minecraft:raw_gold"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "B7BA27A969107D22"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательная экспедиция"
+                "§eЦель: §fМедная шахта красных пустошей."
+                "§bПриключение: §fОтыщите шахту YUNG в месах. Сравните её архитектуру с привычной заброшенной шахтой; зачёт — только посещение структуры."
+                "§aАвтопроверка: §fПосещение структуры bettermineshafts:mineshaft_mesa."
+            ]
+            tasks: [
+                {
+                    id: "57D7410A9A94CCC6"
+                    type: "structure"
+                    structure: "bettermineshafts:mineshaft_mesa"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A68C553D9D479CD1"
+                    type: "xp"
+                    xp: 230
+                }
+                {
+                    id: "B4FB6E7190A43EB8"
+                    type: "item"
+                    item: { Count: 2b, id: "minecraft:golden_apple" }
+                }
+            ]
+        }
+        {
+            id: "507F5E2261A499DA"
+            title: "Улей под землёй"
+            x: 12.00d
+            y: 9.00d
+            icon: "minecraft:honeycomb"
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "4A366B92A0D4BDCD"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательная экспедиция"
+                "§eЦель: §fУлей под землёй."
+                "§bПриключение: §fВ глубине мира Terralith найдите подземный гигантский улей. Возьмите свет и оцените опасность насекомых; проверяется структура."
+                "§aАвтопроверка: §fПосещение структуры terralith:underground/giant_bee_hive."
+            ]
+            tasks: [
+                {
+                    id: "44D83CDB34470CDA"
+                    type: "structure"
+                    structure: "terralith:underground/giant_bee_hive"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A247C9BA3501908C"
+                    type: "xp"
+                    xp: 250
+                }
+                {
+                    id: "0CAD4D5C9204D709"
+                    type: "item"
+                    item: { Count: 8b, id: "minecraft:honey_block" }
+                }
+            ]
+        }
+        {
+            id: "2DCB2702FC5C1F31"
+            title: "Башня, ушедшая в камень"
+            x: 12.00d
+            y: 6.00d
+            icon: "minecraft:prismarine_shard"
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "4A366B92A0D4BDCD"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательная экспедиция"
+                "§eЦель: §fБашня, ушедшая в камень."
+                "§bПриключение: §fИсследуйте затонувшую подземную башню Terralith. Отметьте координаты выхода и сохраните редкие находки; зачёт по структуре."
+                "§aАвтопроверка: §fПосещение структуры terralith:underground/sunken_tower."
+            ]
+            tasks: [
+                {
+                    id: "43FE86FB8CFCC773"
+                    type: "structure"
+                    structure: "terralith:underground/sunken_tower"
+                }
+            ]
+            rewards: [
+                {
+                    id: "FFDCD29FD0545B07"
+                    type: "xp"
+                    xp: 270
+                }
+                {
+                    id: "B90541ED7203CA29"
+                    type: "item"
+                    item: { Count: 8b, id: "minecraft:ender_pearl" }
+                }
+            ]
+        }
+        {
+            id: "57FD47EFC4E11601"
+            title: "Осенняя башня мага"
+            x: 12.00d
+            y: -6.00d
+            icon: "minecraft:enchanted_book"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "E6DC4A843BE1C287"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательная экспедиция"
+                "§eЦель: §fОсенняя башня мага."
+                "§bПриключение: §fНайдите осеннюю башню мага Terralith. От обычных башен она отличается сезонным оформлением; достижение — именно отдельная структура."
+                "§aАвтопроверка: §fПосещение структуры terralith:mage_tower_autumn."
+            ]
+            tasks: [
+                {
+                    id: "7FA354D437F303AE"
+                    type: "structure"
+                    structure: "terralith:mage_tower_autumn"
+                }
+            ]
+            rewards: [
+                {
+                    id: "FB4C8AE09F7B95CD"
+                    type: "xp"
+                    xp: 230
+                }
+                {
+                    id: "097BE5CBDFB16E6F"
+                    type: "item"
+                    item: { Count: 16b, id: "minecraft:experience_bottle" }
+                }
+            ]
+        }
+        {
+            id: "C580A1C9022BB90F"
+            title: "Ледяной подземный архив"
+            x: 3.00d
+            y: 10.00d
+            icon: "minecraft:blue_ice"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "D8325F832D406D1F"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательная экспедиция"
+                "§eЦель: §fЛедяной подземный архив."
+                "§bПриключение: §fОтыщите морозное подземелье Terralith и подготовьте безопасный выход. Проверка требует нахождения конкретной структуры."
+                "§aАвтопроверка: §fПосещение структуры terralith:underground/frosted_dungeon."
+            ]
+            tasks: [
+                {
+                    id: "5A311BB8254199E4"
+                    type: "structure"
+                    structure: "terralith:underground/frosted_dungeon"
+                }
+            ]
+            rewards: [
+                {
+                    id: "51A6D9571C34976C"
+                    type: "xp"
+                    xp: 280
+                }
+                {
+                    id: "4E1505818E030DE8"
+                    type: "item"
+                    item: { Count: 4b, id: "minecraft:diamond" }
+                }
+            ]
+        }
+]
+}

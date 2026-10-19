@@ -1,0 +1,860 @@
+{
+    filename: "nasledie_relics"
+    id: "14127D019AF8A60A"
+    group: "842B4DB4DBD349A0"
+    title: "Хранители находок — Relics и Artifacts"
+    icon: "relics:researching_table"
+    order_index: 15
+    progression_mode: "flexible"
+    default_hide_dependency_lines: false
+    default_quest_shape: "circle"
+
+    quest_links: []
+    quests: [
+        {
+            id: "BF8C1895E9D7830E"
+            title: "Первый артефакт — начало коллекции"
+            x: 0.00d
+            y: 0.00d
+            icon: "artifacts:flame_pendant"
+            shape: "star"
+            size: 1.28d
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основная линия"
+                "§eЗачем: §fArtifacts открывает первую школу необычных предметов: находки, эффекты и их коллекцию."
+                "§bЗадание: §fОтыщите настоящий артефакт Artifacts, исследуйте его свойства и подготовьте место для хранения."
+                "§aЗачёт: §fДостижение Artifacts за обнаружение настоящего артефакта."
+            ]
+            tasks: [
+                {
+                    id: "2C4263E8E03E95D9"
+                    type: "advancement"
+                    advancement: "artifacts:amateur_archaeologist"
+                }
+            ]
+            rewards: [
+                {
+                    id: "3C13A5C314A0BFF6"
+                    type: "xp"
+                    xp: 210
+                }
+                {
+                    id: "6BC0A03AF2879F54"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:advanced_pickup_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "43496821860704D3"
+            title: "Первая настоящая реликвия"
+            x: 2.55d
+            y: -5.50d
+            icon: "relics:leather_belt"
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "BF8C1895E9D7830E"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fКоллекция Relics состоит из предметов с уникальными свойствами."
+                "§bЗадание: §fНайдите Leather Belt и изучите его описание и слот экипировки."
+                "§dИз описания Relics: §fУвеличивает максимальное количество слотов для экипировки реликвий."
+                "§aЗачёт: §fНаличие реликвии."
+            ]
+            tasks: [
+                {
+                    id: "0F267E026F300146"
+                    type: "item"
+                    item: "relics:leather_belt"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "B23598EDB4ADD9BE"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "50A47B2C46AE5A15"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:tool_swapper_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "C59D7785BCFC682D"
+            title: "Печать пространства"
+            x: 6.80d
+            y: -5.50d
+            icon: "relics:spatial_sign"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "43496821860704D3"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСреди Relics есть необычные предметы для самостоятельных маршрутов."
+                "§bЗадание: §fНайдите Spatial Sign и изучите указанную в моде способность и способы её использования."
+                "§dИз описания Relics: §fПри использовании возвращает носителя по пройденному в течение определенного времени маршруту. Повторное использование прервёт действие способности."
+                "§aЗачёт: §fНаличие зарегистрированного Spatial Sign, не его активация."
+            ]
+            tasks: [
+                {
+                    id: "84772FCF368100DC"
+                    type: "item"
+                    item: "relics:spatial_sign"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "F76E3C3B68A43220"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "29CA4DCA9ED22AC9"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:xp_pump_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "2CB6F19A77F3D3C0"
+            title: "Опыт для реликвий"
+            x: 11.05d
+            y: -5.50d
+            icon: "relics:relic_experience_bottle"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "C59D7785BCFC682D"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fИзучаем систему накопления опыта реликвий."
+                "§bЗадание: §fПолучите Relic Experience Bottle, разберитесь, как она используется."
+                "§aЗачёт: §fНаличие конкретного предмета."
+            ]
+            tasks: [
+                {
+                    id: "44972725B5632111"
+                    type: "item"
+                    item: "relics:relic_experience_bottle"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "886EC5AC684ED7CA"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "68713E21E5861195"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:anvil_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "F5D8F4D63F925F92"
+            title: "Охотник на мимиков"
+            x: 4.25d
+            y: 0.00d
+            icon: "artifacts:mimic_spawn_egg"
+            shape: "shield"
+            size: 1.20d
+            dependencies: [
+                "BF8C1895E9D7830E"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основная линия"
+                "§eЗачем: §fНе каждый сундук в подземелье безопасен."
+                "§bЗадание: §fПобедите настоящего мимика Artifacts."
+                "§aЗачёт: §fДостижение chest_slayer за убийство мимика."
+            ]
+            tasks: [
+                {
+                    id: "9252B7D24A80B6D8"
+                    type: "advancement"
+                    advancement: "artifacts:chest_slayer"
+                }
+            ]
+            rewards: [
+                {
+                    id: "45C7BDC7455E2423"
+                    type: "xp"
+                    xp: 210
+                }
+                {
+                    id: "F93D3E4AEC0B7907"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:advanced_magnet_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "71351EBD4433810D"
+            title: "Экспериментальная трапеза"
+            x: 8.50d
+            y: 0.00d
+            icon: "artifacts:onion_ring"
+            shape: "star"
+            size: 1.28d
+            dependencies: [
+                "F5D8F4D63F925F92"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Основная линия"
+                "§eЗачем: §fНекоторые скрытые эффекты открываются через необычную пищу."
+                "§bЗадание: §fПолучите достижение Adventurous Eater согласно условиям мода."
+                "§aЗачёт: §fДостижение consume_item Artifacts, не наличие обычной еды."
+            ]
+            tasks: [
+                {
+                    id: "3B6DDF4018DD7C8A"
+                    type: "advancement"
+                    advancement: "artifacts:adventurous_eater"
+                }
+            ]
+            rewards: [
+                {
+                    id: "4EC3D1E9962E0012"
+                    type: "xp"
+                    xp: 210
+                }
+                {
+                    id: "CCC40C6F7D274092"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:advanced_hopper_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "6CD091542ED7E77D"
+            title: "Повелитель волн"
+            x: 15.30d
+            y: -5.50d
+            icon: "relics:aqua_walker"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "2CB6F19A77F3D3C0"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fВ течение определенного времени позволяет передвигаться по поверхности воды, не проваливаясь в неё. По истечении запаса времени ботинки начинают тонуть, затягивая их носителя с собой под…"
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "2EA5CC15589369D7"
+                    type: "item"
+                    item: "relics:aqua_walker"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "81CED0F2CD6DAC32"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "4580ED4334778484"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:compression_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "0068C3492D5FEF60"
+            title: "Дорога по воде"
+            x: 19.55d
+            y: -5.50d
+            icon: "relics:amphibian_boot"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "6CD091542ED7E77D"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fУскоряет скорость плаванья в зависимости от его продолжительности."
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "5F61D6DAB8C204F2"
+                    type: "item"
+                    item: "relics:amphibian_boot"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "8617814CB21D0301"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "799BC338229CA0A5"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:jukebox_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "2783FBF67E012E66"
+            title: "Талисман утопленника"
+            x: 19.55d
+            y: -11.00d
+            icon: "relics:drowned_belt"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "0068C3492D5FEF60"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fУвеличивает максимальное количество слотов для экипировки реликвий."
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "DFFBA392093D8C17"
+                    type: "item"
+                    item: "relics:drowned_belt"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "88D28C9C2D494B40"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "6982F643E5238F64"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:crafting_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "6E2FE392089D97DF"
+            title: "Ожерелье из глубин"
+            x: 15.30d
+            y: -11.00d
+            icon: "relics:jellyfish_necklace"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "2783FBF67E012E66"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fНоситель не тонет в воде."
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "1E794951499EA59D"
+                    type: "item"
+                    item: "relics:jellyfish_necklace"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "63EFAC84036F1411"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "63D95F69550751D2"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:smoking_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "CC5ABE356CD75C8E"
+            title: "Обувь для лавы"
+            x: 11.05d
+            y: -11.00d
+            icon: "relics:magma_walker"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "6E2FE392089D97DF"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fВ течение определенного времени позволяет передвигаться по поверхности лавы, не проваливаясь в неё и не получая урона. По истечении запаса времени ботинки начинают перегреваться и…"
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "040924D896345338"
+                    type: "item"
+                    item: "relics:magma_walker"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "F451F9F66EA3B074"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "178D7CDE43C4FFE9"
+                    type: "item"
+                    item: { Count: 3b, id: "createdeco:brass_coin" }
+                }
+            ]
+        }
+        {
+            id: "FC18B444C7E1629F"
+            title: "Ледяная скорость"
+            x: 6.80d
+            y: -11.00d
+            icon: "relics:ice_skates"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "CC5ABE356CD75C8E"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fУвеличивает скорость передвижения по льду в зависимости от продолжительности скольжения."
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "41EAF76F41688C0E"
+                    type: "item"
+                    item: "relics:ice_skates"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "CE0B3D592576F0A6"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "379C9FA2159B07A7"
+                    type: "item"
+                    item: { Count: 3b, id: "createdeco:brass_coinstack" }
+                }
+            ]
+        }
+        {
+            id: "C3620DEF30C9A9E2"
+            title: "Роликовые сапоги"
+            x: 2.55d
+            y: -11.00d
+            icon: "relics:roller_skates"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "FC18B444C7E1629F"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fУвеличивает скорость передвижения в зависимости от её продолжительности. Все блоки становятся скользкими для носителя."
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "1AF887A0DABB4721"
+                    type: "item"
+                    item: "relics:roller_skates"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "2154430DDB342057"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "0E2B5402D903960F"
+                    type: "item"
+                    item: { Count: 3b, id: "createdeco:copper_coin" }
+                }
+            ]
+        }
+        {
+            id: "37A42269B00D8373"
+            title: "Зеркало странника"
+            x: 2.55d
+            y: 5.50d
+            icon: "relics:magic_mirror"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "BF8C1895E9D7830E"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fПосле использования телепортирует владельца к его точке возрождения."
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "FDADE971D09A2879"
+                    type: "item"
+                    item: "relics:magic_mirror"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "4003DE3F6E08999B"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "3339A3BB75D0024B"
+                    type: "item"
+                    item: { Count: 3b, id: "createdeco:copper_coinstack" }
+                }
+            ]
+        }
+        {
+            id: "7A6DE62914ABF934"
+            title: "Зов коня"
+            x: 6.80d
+            y: 5.50d
+            icon: "relics:horse_flute"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "37A42269B00D8373"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fИспользование реликвии по лошади переместит животное во внутреннее хранилище. Повторное использование высвободит существо. Если расстояние между владельцем и призванной лошадью превысит…"
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "EED1A8D58C24AF0E"
+                    type: "item"
+                    item: "relics:horse_flute"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "A33B16A04B68050B"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "82D1DF408BE7E1EE"
+                    type: "item"
+                    item: { Count: 3b, id: "createdeco:iron_coin" }
+                }
+            ]
+        }
+        {
+            id: "02183638E5416B5E"
+            title: "Колчан охотника"
+            x: 11.05d
+            y: 5.50d
+            icon: "relics:arrow_quiver"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "7A6DE62914ABF934"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fСтрельба из лука в первую очередь использует стрелы из внутреннего хранилища колчана. Нажатие стрелой ЛКМ на колчане в инвентаре разместит её во внутреннее хранилище реликвии. Нажатие…"
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "8012384127A61C3A"
+                    type: "item"
+                    item: "relics:arrow_quiver"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "6039E984E70B9F0B"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "FE9118E2A9518B6A"
+                    type: "item"
+                    item: { Count: 3b, id: "createdeco:iron_coinstack" }
+                }
+            ]
+        }
+        {
+            id: "E3EA2CF97420E989"
+            title: "Пояс следопыта"
+            x: 15.30d
+            y: 5.50d
+            icon: "relics:hunter_belt"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "02183638E5416B5E"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fУвеличивает максимальное количество слотов для экипировки реликвий."
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "388A327432DBFF12"
+                    type: "item"
+                    item: "relics:hunter_belt"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "722FF3D6D72C64C8"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "35A8466D05B2B607"
+                    type: "item"
+                    item: { Count: 3b, id: "createdeco:zinc_coin" }
+                }
+            ]
+        }
+        {
+            id: "B4210CAE7916EC4B"
+            title: "Кольцо бастиона"
+            x: 15.30d
+            y: 11.00d
+            icon: "relics:bastion_ring"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "E3EA2CF97420E989"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fДелает пиглинов нейтральными по отношению к носителю. Ближайший пиглин будет указывать на расположение бастиона неподалёку."
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "A0E206C553FB9B9D"
+                    type: "item"
+                    item: "relics:bastion_ring"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "7E44526AA4C853A7"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "66DCEBBE2DAF050F"
+                    type: "item"
+                    item: { Count: 3b, id: "createdeco:zinc_coinstack" }
+                }
+            ]
+        }
+        {
+            id: "95E67FB14F3417B2"
+            title: "Священный медальон"
+            x: 11.05d
+            y: 11.00d
+            icon: "relics:holy_locket"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "B4210CAE7916EC4B"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fПеренаправляет часть регенерируемого здоровья ближайших существ носителю реликвии."
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "8F8D8404A1B4E27A"
+                    type: "item"
+                    item: "relics:holy_locket"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "33BB57BA36D6BEDF"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "AC01C02D94909B44"
+                    type: "item"
+                    item: { Count: 3b, id: "createdeco:brass_bars" }
+                }
+            ]
+        }
+        {
+            id: "AF5426942D7C2622"
+            title: "Ускорение полёта"
+            x: 6.80d
+            y: 11.00d
+            icon: "relics:elytra_booster"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "95E67FB14F3417B2"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fИспользование любого горючего топлива на реликвии в инвентаре пополняет её внутренний буфер. Использование способности во время полёта на элитрах устремляет носителя вперёд, расходуя…"
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "CFF1B2F44710173E"
+                    type: "item"
+                    item: "relics:elytra_booster"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "A50E9721F6BF54BB"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "BC1D4F110BFDBA48"
+                    type: "item"
+                    item: { Count: 1b, id: "createdeco:brass_catwalk" }
+                }
+            ]
+        }
+        {
+            id: "B80C987F9AB03683"
+            title: "Споровый мешочек"
+            x: 2.55d
+            y: 11.00d
+            icon: "relics:spore_sack"
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "AF5426942D7C2622"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция / специализация"
+                "§eЗачем: §fСамостоятельная специализация коллекционера реликвий: редкая находка, а не крафт ванильного предмета."
+                "§bЗадание: §fНайдите предмет, изучите его способности и сравните с предыдущим экспонатом. Умение использовать эффект пока не проверяется автоматически."
+                "§dИз описания Relics: §fПри получении урона выбрасывает в случайном направлении спору, прилипающую к поверхностям и взрывающуюся при приближении цели, нанося ей урон, а также отравляя, замедляя и блокируя…"
+                "§aЗачёт: §fItem Task подтверждает наличие конкретной реликвии, а не активацию её эффекта."
+            ]
+            tasks: [
+                {
+                    id: "325EC61A0C837974"
+                    type: "item"
+                    item: "relics:spore_sack"
+                    count: 1L
+                    consume_items: false
+                }
+            ]
+            rewards: [
+                {
+                    id: "536AEF68E19CC635"
+                    type: "xp"
+                    xp: 150
+                }
+                {
+                    id: "F306F7DEC77D9A93"
+                    type: "item"
+                    item: { Count: 3b, id: "createdeco:copper_bars" }
+                }
+            ]
+        }
+    ]
+}

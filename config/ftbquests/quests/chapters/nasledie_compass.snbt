@@ -1,0 +1,1185 @@
+{
+    filename: "nasledie_compass"
+    id: "9D8645FBEA4E9EC9"
+    group: "842B4DB4DBD349A0"
+    title: "Орден картографов"
+    icon: "minecraft:compass"
+    order_index: 18
+    progression_mode: "flexible"
+    default_hide_dependency_lines: false
+    default_quest_shape: "circle"
+
+    quest_links: []
+    quests: [
+        {
+            id: "EB2746965E47F745"
+            title: "Компасы искателя структур"
+            x: 0.00d
+            y: 0.00d
+            icon: "explorerscompass:explorerscompass"
+            shape: "star"
+            size: 1.22d
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fExplorer’s Compass ищет реальные структуры, а не направляет только к спавну."
+                "§bПрактика: §fИзучите рецепт и интерфейс компаса искателя. Получите достижение мода."
+                "§aПроверка: §fAdvancement explorer_compass (получение/открытие рецепта)."
+            ]
+            tasks: [
+                {
+                    id: "2328EBD7A28DF61B"
+                    type: "advancement"
+                    advancement: "explorerscompass:explorers_compass"
+                }
+            ]
+            rewards: [
+                {
+                    id: "FED06116F509EA58"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "FDC723AC81F66457"
+                    type: "item"
+                    item: { Count: 1b, id: "immersive_aircraft:telescope" }
+                }
+            ]
+        }
+        {
+            id: "125225CC968ECEB1"
+            title: "Дозор среди деревьев"
+            x: 4.50d
+            y: 0.00d
+            icon: "explorerscompass:explorerscompass"
+            shape: "scroll"
+            size: 1.10d
+            dependencies: [
+                "EB2746965E47F745"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fУчимся переключать цель компаса на конкретную структуру."
+                "§bПрактика: §fНайдите пожарную башню в лесу Dungeons and Taverns."
+                "§aПроверка: §fStructure Task: firewatch_tower_forest."
+            ]
+            tasks: [
+                {
+                    id: "8F59176B3B6D69C7"
+                    type: "structure"
+                    structure: "nova_structures:firewatch_tower_forest"
+                }
+            ]
+            rewards: [
+                {
+                    id: "0072783AE024993A"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "A48E6BA31B379E00"
+                    type: "item"
+                    item: { Count: 1b, id: "waystones:scoped_sharestone" }
+                }
+            ]
+        }
+        {
+            id: "12202D6F529C409B"
+            title: "Шпиль Terralith"
+            x: 9.00d
+            y: 0.00d
+            icon: "explorerscompass:explorerscompass"
+            shape: "scroll"
+            size: 1.10d
+            dependencies: [
+                "125225CC968ECEB1"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fСледующая экспедиция идёт к другой генерации ландшафта."
+                "§bПрактика: §fОтыщите Spire Terralith и отметьте ориентиры."
+                "§aПроверка: §fStructure Task: terralith:spire."
+            ]
+            tasks: [
+                {
+                    id: "941E51CF23EED674"
+                    type: "structure"
+                    structure: "terralith:spire"
+                }
+            ]
+            rewards: [
+                {
+                    id: "B040F0F1A46DFEC8"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "9377244A8C05FFCB"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:tool_swapper_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "95734C53761E6456"
+            title: "Сигнальная крепость"
+            x: 13.50d
+            y: 0.00d
+            icon: "explorerscompass:explorerscompass"
+            shape: "scroll"
+            size: 1.10d
+            dependencies: [
+                "12202D6F529C409B"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fУчимся планировать заход к опасному сооружению."
+                "§bПрактика: §fОтыщите Bandit Towers, разведайте периметр."
+                "§aПроверка: §fStructure Task bandit_towers."
+            ]
+            tasks: [
+                {
+                    id: "D2F86C01E63045E3"
+                    type: "structure"
+                    structure: "dungeons_arise:bandit_towers"
+                }
+            ]
+            rewards: [
+                {
+                    id: "5B8944021AAFCB9B"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "646381E9A6327C9E"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:advanced_pickup_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "225B6CD9BBAC0F47"
+            title: "Таверна на границе джунглей"
+            x: 18.00d
+            y: 0.00d
+            icon: "explorerscompass:explorerscompass"
+            shape: "scroll"
+            size: 1.10d
+            dependencies: [
+                "95734C53761E6456"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fСравниваем типы локаций и подбор маршрута."
+                "§bПрактика: §fНайдите Tavern Jungle из Dungeons and Taverns."
+                "§aПроверка: §fStructure Task tavern_jungle."
+            ]
+            tasks: [
+                {
+                    id: "0260B55C44DAEEDB"
+                    type: "structure"
+                    structure: "nova_structures:tavern_jungle"
+                }
+            ]
+            rewards: [
+                {
+                    id: "D94D4217B4B24B7A"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "172B9C9720670098"
+                    type: "item"
+                    item: { Count: 1b, id: "create:blue_toolbox" }
+                }
+            ]
+        }
+        {
+            id: "0A349956329B7C72"
+            title: "Старая башня мага"
+            x: 22.50d
+            y: 0.00d
+            icon: "explorerscompass:explorerscompass"
+            shape: "scroll"
+            size: 1.10d
+            dependencies: [
+                "225B6CD9BBAC0F47"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fРазведка редкой постройки Terralith."
+                "§bПрактика: §fОтыщите Mage Tower, запомните особенности генерации."
+                "§aПроверка: §fStructure Task mage_tower."
+            ]
+            tasks: [
+                {
+                    id: "B9BFE4846CF24F80"
+                    type: "structure"
+                    structure: "terralith:mage_tower"
+                }
+            ]
+            rewards: [
+                {
+                    id: "8052AD7F5FFB5CE2"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "37DB883834337A3A"
+                    type: "item"
+                    item: { Count: 1b, id: "immersive_aircraft:propeller" }
+                }
+            ]
+        }
+        {
+            id: "0CE8AF2473DAB8AA"
+            title: "Аванпост шахтёров"
+            x: 22.50d
+            y: 5.00d
+            icon: "explorerscompass:explorerscompass"
+            shape: "scroll"
+            size: 1.10d
+            dependencies: [
+                "0A349956329B7C72"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fИспытание другого климата и рельефа."
+                "§bПрактика: §fНайдите Miners Outpost в бедлендах."
+                "§aПроверка: §fStructure Task badlands_miner_outpost."
+            ]
+            tasks: [
+                {
+                    id: "B7DD248EFDB307AE"
+                    type: "structure"
+                    structure: "nova_structures:badlands_miner_outpost"
+                }
+            ]
+            rewards: [
+                {
+                    id: "3238E2B47D778EE1"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "9A940417A2B44B4A"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:advanced_tool_swapper_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "59752216F591E945"
+            title: "Форт снежных скитальцев"
+            x: 18.00d
+            y: 5.00d
+            icon: "explorerscompass:explorerscompass"
+            shape: "scroll"
+            size: 1.10d
+            dependencies: [
+                "0CE8AF2473DAB8AA"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fФинальная основная экспедиция через суровый климат."
+                "§bПрактика: §fНайдите Stray Fort, составьте собственный план возвращения."
+                "§aПроверка: §fStructure Task stray_fort."
+            ]
+            tasks: [
+                {
+                    id: "DD21B13522820F32"
+                    type: "structure"
+                    structure: "nova_structures:stray_fort"
+                }
+            ]
+            rewards: [
+                {
+                    id: "0AB3EDD101D09964"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "D47DE7FF2BD08B68"
+                    type: "item"
+                    item: { Count: 1b, id: "waystones:portstone" }
+                }
+            ]
+        }
+        {
+            id: "52B457F0F3B0109A"
+            title: "Техническая профилактика компаса"
+            x: 13.50d
+            y: 5.00d
+            icon: "explorerscompass:explorerscompass"
+            shape: "star"
+            size: 1.45d
+            dependencies: [
+                "59752216F591E945"
+            ]
+            description: [
+                "§6Наследие 2.0 · Основной путь"
+                "§eЗачем: §fУ компаса есть дополнительные способы получения и восстановления."
+                "§bПрактика: §fПолучите достижение, связанное с восстановлением/получением прибора."
+                "§aПроверка: §fДостижение repair_explorers_compass; конкретный способ нужен по JAR/в игре."
+            ]
+            tasks: [
+                {
+                    id: "16EAAB4C340A124E"
+                    type: "advancement"
+                    advancement: "explorerscompass:repair_explorers_compass"
+                }
+            ]
+            rewards: [
+                {
+                    id: "D988B095E79137E7"
+                    type: "xp"
+                    xp: 100
+                }
+                {
+                    id: "A25CA1B8E1BC97C3"
+                    type: "item"
+                    item: { Count: 1b, id: "create:cyan_toolbox" }
+                }
+            ]
+        }
+        {
+            id: "C98BCEC5872D8647"
+            title: "Пограничный пункт"
+            x: 0.00d
+            y: -6.50d
+            icon: "explorerscompass:explorerscompass"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "EB2746965E47F745"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fНеобязательное тренировочное направление."
+                "§bПрактика: §fНайдите Desert Outpost Terralith."
+                "§aПроверка: §fStructure Task: desert_outpost."
+            ]
+            tasks: [
+                {
+                    id: "5CF8DAC4F4138CBC"
+                    type: "structure"
+                    structure: "terralith:desert_outpost"
+                }
+            ]
+            rewards: [
+                {
+                    id: "7005D45EC27EB0CB"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "C17E905B3AA44CFD"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:stonecutter_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "E74BE19F5E31D304"
+            title: "Укреплённое поселение"
+            x: 4.50d
+            y: -6.50d
+            icon: "explorerscompass:explorerscompass"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "C98BCEC5872D8647"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fРедкое поселение отличается от обычной деревни."
+                "§bПрактика: §fНайдите Fortified Village Terralith."
+                "§aПроверка: §fStructure Task: fortified_village."
+            ]
+            tasks: [
+                {
+                    id: "022AB79B133AD5D0"
+                    type: "structure"
+                    structure: "terralith:fortified_village"
+                }
+            ]
+            rewards: [
+                {
+                    id: "BBD5176860EABA52"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "B1C46E71E35E0E85"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:compacting_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "BC793EEF82907B7E"
+            title: "Тайное убежище"
+            x: 9.00d
+            y: -6.50d
+            icon: "explorerscompass:explorerscompass"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "E74BE19F5E31D304"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fФинальная специализация по поиску скрытых структур."
+                "§bПрактика: §fНайдите Illager Hideout."
+                "§aПроверка: §fStructure Task: illager_hideout."
+            ]
+            tasks: [
+                {
+                    id: "B3E86B80EE8981C4"
+                    type: "structure"
+                    structure: "nova_structures:illager_hideout"
+                }
+            ]
+            rewards: [
+                {
+                    id: "E718A8327EC7F706"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "429DAD4F5249B0E9"
+                    type: "item"
+                    item: { Count: 1b, id: "waystones:warp_plate" }
+                }
+            ]
+        }
+        {
+            id: "36816E6DCCAC9776"
+            title: "Торговый лагерь"
+            x: 13.50d
+            y: 11.50d
+            icon: "explorerscompass:explorerscompass"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "52B457F0F3B0109A"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fЛокации путников тоже могут быть целями компаса."
+                "§bПрактика: §fНайдите Merchant Campsite."
+                "§aПроверка: §fStructure Task: merchant_campsite."
+            ]
+            tasks: [
+                {
+                    id: "5B42B64673540FB1"
+                    type: "structure"
+                    structure: "dungeons_arise:merchant_campsite"
+                }
+            ]
+            rewards: [
+                {
+                    id: "ACD41E0E6289D1EA"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "5294F094759D64D9"
+                    type: "item"
+                    item: { Count: 2b, id: "createdeco:iron_ladder" }
+                }
+            ]
+        }
+        {
+            id: "B1509620769451B8"
+            title: "Дворец вдали"
+            x: 18.00d
+            y: 11.50d
+            icon: "explorerscompass:explorerscompass"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "36816E6DCCAC9776"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fБольшая архитектурная экспедиция с редкой целью."
+                "§bПрактика: §fОтыщите Shiraz Palace."
+                "§aПроверка: §fStructure Task Shiraz Palace."
+            ]
+            tasks: [
+                {
+                    id: "094B728D627B8F2A"
+                    type: "structure"
+                    structure: "dungeons_arise:shiraz_palace"
+                }
+            ]
+            rewards: [
+                {
+                    id: "FBDE019FAFA71056"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "0302CBB1879C4465"
+                    type: "item"
+                    item: { Count: 1b, id: "waystones:blackstone_waystone" }
+                }
+            ]
+        }
+        {
+            id: "8C486E24C425E49B"
+            title: "Хижина под землёй"
+            x: 22.50d
+            y: 11.50d
+            icon: "explorerscompass:explorerscompass"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "B1509620769451B8"
+            ]
+            description: [
+                "§6Наследие 2.0 · Необязательная ветка"
+                "§eЗачем: §fСложный поиск под землёй, без повторных карт и компасов."
+                "§bПрактика: §fОтыщите подземную хижину Terralith."
+                "§aПроверка: §fStructure Task underground_cabin."
+            ]
+            tasks: [
+                {
+                    id: "0849188CF45D6F63"
+                    type: "structure"
+                    structure: "terralith:underground_cabin"
+                }
+            ]
+            rewards: [
+                {
+                    id: "08166227FA0695F7"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "AAF749CBBDDA820F"
+                    type: "item"
+                    item: { Count: 1b, id: "waystones:deepslate_waystone" }
+                }
+            ]
+        }
+        {
+            id: "3BFF245E8A4EEBE2"
+            title: "Система заброшенных шахт"
+            x: 9.00d
+            y: -12.00d
+            icon: "minecraft:iron_pickaxe"
+            shape: "scroll"
+            size: 1.10d
+            dependencies: [
+                "BC793EEF82907B7E"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Побочная подземная экспедиция: §fструктура больше обычной шахты."
+                "§bЗадание: §fразыщите Mining System из When Dungeons Arise и отметьте безопасный вход."
+                "§aПроверка: §fStructure Task на dungeons_arise:mining_system."
+            ]
+            tasks: [
+                {
+                    id: "A3B92F91A7D0955F"
+                    type: "structure"
+                    structure: "dungeons_arise:mining_system"
+                }
+            ]
+            rewards: [
+                {
+                    id: "64366A5F8B4B0C9D"
+                    type: "xp"
+                    xp: 340
+                }
+                {
+                    id: "72CB46B1CC6BBDFC"
+                    type: "item"
+                    item: { Count: 8b, id: "minecraft:diamond" }
+                }
+            ]
+        }
+        {
+            id: "4AD20583645F8C5F"
+            title: "Гнездо механизмов"
+            x: 13.50d
+            y: -12.00d
+            icon: "create:cogwheel"
+            shape: "scroll"
+            size: 1.10d
+            dependencies: [
+                "3BFF245E8A4EEBE2"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Механическая экспедиция: §fздесь ваша техника встречает чужую."
+                "§bЗадание: §fнайдите Mechanical Nest из When Dungeons Arise."
+                "§aПроверка: §fStructure Task на отдельную редкую структуру mechanical_nest."
+            ]
+            tasks: [
+                {
+                    id: "54EB9DD4A6367C5C"
+                    type: "structure"
+                    structure: "dungeons_arise:mechanical_nest"
+                }
+            ]
+            rewards: [
+                {
+                    id: "0100802363AB95ED"
+                    type: "xp"
+                    xp: 370
+                }
+                {
+                    id: "79717EAACA65D4C0"
+                    type: "item"
+                    item: { Count: 3b, id: "create:precision_mechanism" }
+                }
+            ]
+        }
+        {
+            id: "07C8419F1FE8738D"
+            title: "Чумной приют"
+            x: 18.00d
+            y: -12.00d
+            icon: "minecraft:brewing_stand"
+            shape: "scroll"
+            size: 1.10d
+            dependencies: [
+                "4AD20583645F8C5F"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Мрачный поход: §fобдумайте путь отхода до входа."
+                "§bЗадание: §fобнаружьте Plague Asylum, исследуйте внешнюю оборону."
+                "§aПроверка: §fStructure Task, а не добыча в случайном сундуке."
+            ]
+            tasks: [
+                {
+                    id: "948AAB8C4305A155"
+                    type: "structure"
+                    structure: "dungeons_arise:plague_asylum"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A1D64FFBA7CE28AD"
+                    type: "xp"
+                    xp: 380
+                }
+                {
+                    id: "7FF9D907C9491436"
+                    type: "item"
+                    item: { Count: 6b, id: "minecraft:golden_apple" }
+                }
+            ]
+        }
+        {
+            id: "CEBF8266AC205E60"
+            title: "Колизей забытой империи"
+            x: 22.50d
+            y: -12.00d
+            icon: "minecraft:shield"
+            shape: "shield"
+            size: 1.16d
+            dependencies: [
+                "07C8419F1FE8738D"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Разведка арены: §fмонументальное сооружение обещает отдельную историю."
+                "§bЗадание: §fразыщите Coliseum мода When Dungeons Arise."
+                "§aПроверка: §fStructure Task на coliseum."
+            ]
+            tasks: [
+                {
+                    id: "365F93B66ADD30F2"
+                    type: "structure"
+                    structure: "dungeons_arise:coliseum"
+                }
+            ]
+            rewards: [
+                {
+                    id: "B04DD2DE2E809163"
+                    type: "xp"
+                    xp: 390
+                }
+                {
+                    id: "76E31028FB99404E"
+                    type: "item"
+                    item: { Count: 2b, id: "minecraft:netherite_scrap" }
+                }
+            ]
+        }
+        {
+            id: "5DB6F54ADA7C276F"
+            title: "Обитель грибных шахт"
+            x: 27.00d
+            y: -12.00d
+            icon: "minecraft:red_mushroom"
+            shape: "scroll"
+            size: 1.10d
+            dependencies: [
+                "CEBF8266AC205E60"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Необычная геология: §fвладелец компаса должен уметь искать и под поверхностью."
+                "§bЗадание: §fнайдите Mushroom Mines из When Dungeons Arise."
+                "§aПроверка: §fStructure Task на mushroom_mines."
+            ]
+            tasks: [
+                {
+                    id: "A88CABEA9AFDB969"
+                    type: "structure"
+                    structure: "dungeons_arise:mushroom_mines"
+                }
+            ]
+            rewards: [
+                {
+                    id: "3FD8CEE6F601DA46"
+                    type: "xp"
+                    xp: 330
+                }
+                {
+                    id: "AF4373DCEE47E9CC"
+                    type: "item"
+                    item: { Count: 32b, id: "minecraft:experience_bottle" }
+                }
+            ]
+        }
+        {
+            id: "34A240DB0D634249"
+            title: "Комплекс мага"
+            x: 27.00d
+            y: 0.00d
+            icon: "minecraft:enchanting_table"
+            shape: "shield"
+            size: 1.16d
+            dependencies: [
+                "0A349956329B7C72"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочный квест"
+                "§6Секрет высшей картографии: §fбашня мага и его комплекс — разные сооружения Terralith."
+                "§bЗадание: §fразыщите полноценный Mage Complex."
+                "§aПроверка: §fStructure Task на terralith:mage_complex; посещение Mage Tower не подходит."
+            ]
+            tasks: [
+                {
+                    id: "2A5CA6AD3E14A770"
+                    type: "structure"
+                    structure: "terralith:mage_complex"
+                }
+            ]
+            rewards: [
+                {
+                    id: "E8A8F1B3922029CD"
+                    type: "xp"
+                    xp: 410
+                }
+                {
+                    id: "4D6EF920E19399F3"
+                    type: "item"
+                    item: { Count: 12b, id: "minecraft:ender_pearl" }
+                }
+            ]
+        }
+        {
+            id: "A13990B38C18BF50"
+            title: "Испытание небесного всадника"
+            x: 31.50d
+            y: -12.00d
+            icon: "minecraft:saddle"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "5DB6F54ADA7C276F"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fКогда подземелья надоели, посмотрите вверх."
+                "§bПрактика: §fНайдите Heavenly Rider из When Dungeons Arise."
+                "§aАвтопроверка: §fОтдельная структура heavenly_rider, не похожее сооружение."
+            ]
+            tasks: [
+                {
+                    id: "666955DBE54D61E0"
+                    type: "structure"
+                    structure: "dungeons_arise:heavenly_rider"
+                }
+            ]
+            rewards: [
+                {
+                    id: "2F19A0A1927980D5"
+                    type: "xp"
+                    xp: 470
+                }
+                {
+                    id: "43A5B9D6CE271345"
+                    type: "item"
+                    item: { Count: 12b, id: "minecraft:ender_pearl" }
+                }
+            ]
+        }
+        {
+            id: "8E33F6A4EE9EECA6"
+            title: "Забытый иллагерский форт"
+            x: 36.00d
+            y: -12.00d
+            icon: "minecraft:crossbow"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "A13990B38C18BF50"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fНайдите настоящую укреплённую базу разбойников."
+                "§bПрактика: §fОтыщите Illager Fort и отметьте безопасный подход."
+                "§aАвтопроверка: §fОтдельная структура illager_fort."
+            ]
+            tasks: [
+                {
+                    id: "D3F3CDB7FE7088A4"
+                    type: "structure"
+                    structure: "dungeons_arise:illager_fort"
+                }
+            ]
+            rewards: [
+                {
+                    id: "820D4474C6DB377A"
+                    type: "xp"
+                    xp: 425
+                }
+                {
+                    id: "D5AE9BE80D3A56AA"
+                    type: "item"
+                    item: { Count: 6b, id: "minecraft:golden_apple" }
+                }
+            ]
+        }
+        {
+            id: "973E6DFEEE903031"
+            title: "Дворец Кайры"
+            x: 40.50d
+            y: -12.00d
+            icon: "minecraft:shield"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "8E33F6A4EE9EECA6"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fСамые большие крепости требуют экспедиции с припасами."
+                "§bПрактика: §fНайдите Keep Kayra и разведайте наружные укрепления."
+                "§aАвтопроверка: §fОтдельная структура keep_kayra."
+            ]
+            tasks: [
+                {
+                    id: "EF9BA62F9F428A53"
+                    type: "structure"
+                    structure: "dungeons_arise:keep_kayra"
+                }
+            ]
+            rewards: [
+                {
+                    id: "B611160AC81DEC18"
+                    type: "xp"
+                    xp: 490
+                }
+                {
+                    id: "A165F165CE7D0F29"
+                    type: "item"
+                    item: { Count: 2b, id: "minecraft:netherite_scrap" }
+                }
+            ]
+        }
+        {
+            id: "C0194CADC20BB042"
+            title: "Дом высоко в джунглях"
+            x: 31.50d
+            y: 0.00d
+            icon: "minecraft:scaffolding"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "34A240DB0D634249"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fИногда искомые комнаты прячутся над листьями."
+                "§bПрактика: §fНайдите Jungle Tree House в джунглях."
+                "§aАвтопроверка: §fОтдельная структура jungle_tree_house."
+            ]
+            tasks: [
+                {
+                    id: "DAABA6A411E477E7"
+                    type: "structure"
+                    structure: "dungeons_arise:jungle_tree_house"
+                }
+            ]
+            rewards: [
+                {
+                    id: "14939022E9C1E1D9"
+                    type: "xp"
+                    xp: 280
+                }
+                {
+                    id: "8727E8A2AE03E8A8"
+                    type: "item"
+                    item: { Count: 18b, id: "minecraft:emerald" }
+                }
+            ]
+        }
+        {
+            id: "1B7D417FC2AD346C"
+            title: "Древний храм среди деревьев"
+            x: 36.00d
+            y: 0.00d
+            icon: "minecraft:torch"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "C0194CADC20BB042"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fЗа зарослями часто скрывается гораздо более опасный комплекс."
+                "§bПрактика: §fНайдите Infested Temple, подготовьте свет и выход."
+                "§aАвтопроверка: §fОтдельная структура infested_temple."
+            ]
+            tasks: [
+                {
+                    id: "98957766DBDB51A0"
+                    type: "structure"
+                    structure: "dungeons_arise:infested_temple"
+                }
+            ]
+            rewards: [
+                {
+                    id: "2C0FBC1B87E63CAE"
+                    type: "xp"
+                    xp: 410
+                }
+                {
+                    id: "752F723BC0C99D6C"
+                    type: "item"
+                    item: { Count: 15b, id: "minecraft:diamond" }
+                }
+            ]
+        }
+        {
+            id: "BD1F1FA8837A8FC5"
+            title: "Монастырь странников"
+            x: 27.00d
+            y: 11.50d
+            icon: "minecraft:bell"
+            shape: "scroll"
+            size: 1.12d
+            optional: true
+            dependencies: [
+                "8C486E24C425E49B"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fДороги приводят не только к форпостам и шахтам."
+                "§bПрактика: §fОтыщите Monastery из When Dungeons Arise; не путайте с монастырём Mowzie’s Mobs."
+                "§aАвтопроверка: §fОтдельный ID dungeons_arise:monastery."
+            ]
+            tasks: [
+                {
+                    id: "E5AEAEB40E24B062"
+                    type: "structure"
+                    structure: "dungeons_arise:monastery"
+                }
+            ]
+            rewards: [
+                {
+                    id: "9D5D3D2F15BC4B10"
+                    type: "xp"
+                    xp: 385
+                }
+                {
+                    id: "A930F821D0AE6CBE"
+                    type: "item"
+                    item: { Count: 24b, id: "minecraft:experience_bottle" }
+                }
+            ]
+        }
+    
+        {
+            id: "79B22217425743C5"
+            title: "Секретная записка трактирщика"
+            x: 22.50d
+            y: -4.50d
+            icon: "minecraft:paper"
+            shape: "scroll"
+            size: 1.10d
+            optional: true
+            dependencies: [
+                "225B6CD9BBAC0F47"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Необязательная экспедиция"
+                "§eЦель: §fСекретная записка трактирщика."
+                "§bПриключение: §fНе ограничивайтесь поиском таверны: исследуйте её добычу и получите особую награду за открытие сундука по событию мода. Зачёт — nova_structures:adventure/tavern_quest (генерация добычи)."
+                "§aАвтопроверка: §fДостижение nova_structures:adventure/tavern_quest."
+            ]
+            tasks: [
+                {
+                    id: "E6721674E4EB9DE4"
+                    type: "advancement"
+                    advancement: "nova_structures:adventure/tavern_quest"
+                }
+            ]
+            rewards: [
+                {
+                    id: "29983A7B151E09FA"
+                    type: "xp"
+                    xp: 300
+                }
+                {
+                    id: "B21B10548F674E91"
+                    type: "item"
+                    item: { Count: 20b, id: "minecraft:emerald" }
+                }
+            ]
+        }
+        {
+            id: "EF5D057D0A543404"
+            title: "Небесный претендент"
+            x: 45.00d
+            y: -12.00d
+            icon: "minecraft:spyglass"
+            shape: "star"
+            size: 1.16d
+            optional: true
+            dependencies: [ "973E6DFEEE903031" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fНайдите очередную вершину среди редких сооружений When Dungeons Arise."
+                "§bИспытание: §fПосетите Heavenly Challenger; проверяется фактическое нахождение в структуре."
+                "§aАвтопроверка: §fДостижение dungeons_arise:find_heavenly_challenger. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "711145DA19CFEFC6", type: "advancement", advancement: "dungeons_arise:find_heavenly_challenger" } ]
+            rewards: [
+                { id: "E39D3368A870948C", type: "xp", xp: 450 }
+                { id: "A878BAC34BE2AF54", type: "item", item: { Count: 3b, id: "minecraft:golden_apple" } }
+            ]
+        }
+        {
+            id: "9F4C744CFD45A276"
+            title: "Небесный завоеватель"
+            x: 49.50d
+            y: -12.00d
+            icon: "minecraft:elytra"
+            shape: "star"
+            size: 1.16d
+            optional: true
+            dependencies: [ "EF5D057D0A543404" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fПродолжите поиск необычайно редких высотных сооружений."
+                "§bИспытание: §fПосетите Heavenly Conqueror; используется отдельное достижение на структуру."
+                "§aАвтопроверка: §fДостижение dungeons_arise:find_heavenly_conqueror. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "648A65E3AE5C5398", type: "advancement", advancement: "dungeons_arise:find_heavenly_conqueror" } ]
+            rewards: [
+                { id: "FE95A9B01A333221", type: "xp", xp: 520 }
+                { id: "BE1A02832EAF8EFB", type: "item", item: { Count: 8b, id: "minecraft:diamond" } }
+            ]
+        }
+        {
+            id: "8268BA06604DD7A2"
+            title: "Тайник монастырского картографа"
+            x: 31.50d
+            y: 11.50d
+            icon: "minecraft:filled_map"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [ "BD1F1FA8837A8FC5" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fПодземелья хранят сведения о ещё более загадочных местах."
+                "§bИспытание: §fИсследуйте монастырские сундуки: достижение фиксирует генерацию добычи из таблицы monastery_map, а не наличие карты в рюкзаке."
+                "§aАвтопроверка: §fДостижение dungeons_arise:find_infested_temple_map. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "A178783D72C49ABB", type: "advancement", advancement: "dungeons_arise:find_infested_temple_map" } ]
+            rewards: [
+                { id: "BF9BC0215F069876", type: "xp", xp: 380 }
+                { id: "9C268FFE86A769AA", type: "item", item: { Count: 20b, id: "minecraft:emerald" } }
+            ]
+        }
+        {
+            id: "FC2F522F0B5765F9"
+            title: "Кузница забытой крепости"
+            x: 40.50d
+            y: 0.00d
+            icon: "minecraft:blast_furnace"
+            shape: "star"
+            size: 1.16d
+            optional: true
+            dependencies: [ "1B7D417FC2AD346C" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fОтправьтесь за другой большой тайной инженерных руин."
+                "§bИспытание: §fНайдите Foundry из When Dungeons Arise; проверяется посещение самой структуры."
+                "§aАвтопроверка: §fДостижение dungeons_arise:find_foundry. §7Каждое задание проверяется отдельно."
+            ]
+            tasks: [ { id: "2D9F0B3797E81C20", type: "advancement", advancement: "dungeons_arise:find_foundry" } ]
+            rewards: [
+                { id: "95002E5C84E111B8", type: "xp", xp: 420 }
+                { id: "AFA44BB13ADCD410", type: "item", item: { Count: 8b, id: "minecraft:iron_block" } }
+            ]
+        }
+        {
+            id: "D79F172C28F00556"
+            title: "Штурм забытого форта"
+            x: 36.00d
+            y: -17.00d
+            icon: "minecraft:crossbow"
+            shape: "shield"
+            size: 1.16d
+            optional: true
+            dependencies: [ "8E33F6A4EE9EECA6" ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительное приключение"
+                "§eЗачем: §fНайти крепость — это только разведка. Теперь предстоит пережить бой в её стенах."
+                "§bИспытание: §fПобедите разбойника с арбалетом и поборника внутри Illager Fort из When Dungeons Arise."
+                "§aАвтопроверка: §fВ каждом испытании и игрок, и убитый противник должны находиться внутри dungeons_arise:illager_fort."
+                "§7Задания независимы: их можно выполнять в разном порядке. Срабатывание в совместной игре требуется проверить на сервере."
+            ]
+            tasks: [
+                {
+                    id: "34A49AB6F09BC7D3"
+                    type: "advancement"
+                    advancement: "nasledie:alpha41/fort_assault/pillager_inside_fort"
+                }
+                {
+                    id: "D7ED0C831178C781"
+                    type: "advancement"
+                    advancement: "nasledie:alpha41/fort_assault/vindicator_inside_fort"
+                }
+            ]
+            rewards: [
+                { id: "78B53CCFE54D2760", type: "xp", xp: 750 }
+                { id: "3CC8A7F6C709580F", type: "item", item: { Count: 1b, id: "minecraft:totem_of_undying" } }
+                { id: "BFB27DA2430E6379", type: "item", item: { Count: 12b, id: "minecraft:emerald" } }
+            ]
+        }
+]
+}

@@ -1,0 +1,361 @@
+{
+    filename: "nasledie_economy"
+    id: "8F4597A009915275"
+    group: "842B4DB4DBD349A0"
+    title: "Торговля и экономика — гильдия купцов"
+    icon: "minecraft:emerald"
+    order_index: 5
+    progression_mode: "flexible"
+    default_hide_dependency_lines: false
+    default_quest_shape: "square"
+    default_quest_size: 1.28d
+
+    quest_links: []
+    quests: [
+        {
+            id: "D49CAFA761D24CA4"
+            title: "Первая прибыль"
+            icon: "minecraft:emerald"
+            x: 0.00d
+            y: 0.00d
+            shape: "star"
+            size: 1.28d
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Учебная ступень"
+                "§eЗадача: §fУзнать, как производится настоящая торговая операция."
+                "§bПрактика: §fНайдите жителя, который покупает у вас товар. Предложите ему нужный ресурс и совершите обмен, получив изумруд."
+                "§aАвтопроверка: §fСрабатывает только после завершённой сделки с результатом «изумруд». Наличие изумруда в сундуке не засчитывается."
+                "§7Почему это важно: Это первый шаг экономики: продаём продукцию, а не просто собираем валюту."
+            ]
+            tasks: [
+                {
+                    id: "B2593BF864CE4073"
+                    type: "advancement"
+                    advancement: "nasledie:economy/earned_emerald"
+                }
+            ]
+            rewards: [
+                {
+                    id: "78B677B2934FDA7B"
+                    type: "xp"
+                    xp: 45
+                }
+                {
+                    id: "65D6BE213DAF3367"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:upgrade_base" }
+                }
+            ]
+        }
+        {
+            id: "B31BCA46216D2DC6"
+            title: "Обратная сторона торговли"
+            icon: "minecraft:bread"
+            x: 3.00d
+            y: 0.00d
+            shape: "coin"
+            size: 1.14d
+            dependencies: [
+                "D49CAFA761D24CA4"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Учебная ступень"
+                "§eЗадача: §fОтличать продажу товара жителю от покупки готовой продукции."
+                "§bПрактика: §fНайдите фермера, который продаёт хлеб, и купите его за изумруд. Сравните стоимость этого предложения с выращиванием пшеницы."
+                "§aАвтопроверка: §fУчитывается только покупка хлеба через торговый слот, не изготовление или получение из сундука."
+                "§7Почему это важно: Разбираем торговое предложение и экономическую целесообразность."
+            ]
+            tasks: [
+                {
+                    id: "4DF70D881910B93B"
+                    type: "advancement"
+                    advancement: "nasledie:economy/bought_bread"
+                }
+            ]
+            rewards: [
+                {
+                    id: "C94F4E4BAA92FEF4"
+                    type: "xp"
+                    xp: 55
+                }
+                {
+                    id: "7E88BE618FB3ABC9"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:hopper_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "E03032475F008D4D"
+            title: "Редстоун через рынок"
+            icon: "minecraft:redstone"
+            x: 6.00d
+            y: 0.00d
+            shape: "coin"
+            size: 1.14d
+            dependencies: [
+                "B31BCA46216D2DC6"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Учебная ступень"
+                "§eЗадача: §fОсвоить закупку технического ресурса у специалиста."
+                "§bПрактика: §fНайдите священника, продающего редстоун. Совершите покупку и сравните этот путь добычи с шахтой."
+                "§aАвтопроверка: §fПроверяется торговое событие с предметом покупки «редстоун»."
+                "§7Почему это важно: Торговля может быть источником ингредиентов для будущей автоматизации."
+            ]
+            tasks: [
+                {
+                    id: "4D784565D336F2A0"
+                    type: "advancement"
+                    advancement: "nasledie:economy/bought_redstone"
+                }
+            ]
+            rewards: [
+                {
+                    id: "41FD5C2A16F8D504"
+                    type: "xp"
+                    xp: 70
+                }
+                {
+                    id: "2BE24198D860870B"
+                    type: "item"
+                    item: { Count: 1b, id: "create:content_observer" }
+                }
+            ]
+        }
+        {
+            id: "D15B25FAA41E05AE"
+            title: "Торговая специализация"
+            icon: "minecraft:glass"
+            x: 9.00d
+            y: 0.00d
+            shape: "laurel"
+            size: 1.28d
+            dependencies: [
+                "E03032475F008D4D"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Учебная ступень"
+                "§eЗадача: §fПонять, почему профессия и уровень жителя влияют на ассортимент."
+                "§bПрактика: §fРазвивайте торговлю с библиотекарем до предложения стекла и купите стекло."
+                "§aАвтопроверка: §fПроверяется торговая покупка стекла; обычный крафт стекла не засчитывается."
+                "§7Почему это важно: Учимся получать доступ к ассортименту следующего уровня."
+            ]
+            tasks: [
+                {
+                    id: "09D7871336A8BE50"
+                    type: "advancement"
+                    advancement: "nasledie:economy/bought_glass"
+                }
+            ]
+            rewards: [
+                {
+                    id: "1FA3BBC64D94AB59"
+                    type: "xp"
+                    xp: 85
+                }
+                {
+                    id: "42D74E4A3A5C1262"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:advanced_filter_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "FB634EE0C189A59B"
+            title: "Сделка знаний"
+            icon: "minecraft:enchanted_book"
+            x: 12.00d
+            y: 0.00d
+            shape: "coin"
+            size: 1.14d
+            dependencies: [
+                "D15B25FAA41E05AE"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Учебная ступень"
+                "§eЗадача: §fНаучиться выбирать ценный предмет с переменными характеристиками."
+                "§bПрактика: §fНайдите библиотекаря с подходящей зачарованной книгой, сравните цены и купите её."
+                "§aАвтопроверка: §fЗасчитывается только факт покупки зачарованной книги у жителя."
+                "§7Почему это важно: У дорогих товаров ценность определяется не только редкостью, но и свойствами."
+            ]
+            tasks: [
+                {
+                    id: "B5A0C19DDE23ADF0"
+                    type: "advancement"
+                    advancement: "nasledie:economy/bought_enchanted_book"
+                }
+            ]
+            rewards: [
+                {
+                    id: "95FEB160E83B095C"
+                    type: "xp"
+                    xp: 115
+                }
+                {
+                    id: "9B84E6772B07E792"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:restock_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "F0C5DD6DFBF85A1C"
+            title: "Поставка из Края"
+            icon: "minecraft:ender_pearl"
+            x: 15.00d
+            y: 0.00d
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "FB634EE0C189A59B"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fОсвоить редкие закупки у развитого торговца."
+                "§bПрактика: §fРазвивайте священника до уровня, когда он предлагает жемчуг Края, и совершите покупку."
+                "§aАвтопроверка: §fЗасчитывается покупка жемчуга Края в торговом окне; предмет, найденный в мире, не подходит."
+                "§7Почему это важно: Поздняя торговля открывает ресурсы, прежде недоступные в ассортименте жителей."
+            ]
+            tasks: [
+                {
+                    id: "18EDD1C01190CE24"
+                    type: "advancement"
+                    advancement: "nasledie:economy/bought_ender_pearl"
+                }
+            ]
+            rewards: [
+                {
+                    id: "0EFADF676D60E4E8"
+                    type: "xp"
+                    xp: 135
+                }
+                {
+                    id: "289EC8F032B99EDF"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:stack_upgrade_tier_2" }
+                }
+            ]
+        }
+        {
+            id: "9CE7C2CFF54FECE4"
+            title: "Десять завершённых сделок"
+            icon: "minecraft:emerald"
+            x: 3.00d
+            y: -3.00d
+            shape: "coin"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "D49CAFA761D24CA4"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fПроверить устойчивый оборот, а не разовый обмен."
+                "§bПрактика: §fСовершите суммарно десять ванильных сделок. Подходят покупки и продажи через жителей; прогресс накопительный."
+                "§aАвтопроверка: §fПроверка игровой статистики minecraft:traded_with_villager ≥ 10."
+                "§7Почему это важно: Счётчик отличает систематическую торговлю от обладания одним изумрудом."
+            ]
+            tasks: [
+                {
+                    id: "BEB88D215C2F506B"
+                    type: "stat"
+                    stat: "minecraft:traded_with_villager"
+                    value: 10
+                }
+            ]
+            rewards: [
+                {
+                    id: "7D78B24357D2EC6C"
+                    type: "xp"
+                    xp: 80
+                }
+                {
+                    id: "6AA065C6C331D036"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:storage_tool" }
+                }
+            ]
+        }
+        {
+            id: "62F24C6158049C2F"
+            title: "Установка контроллера склада"
+            icon: "sophisticatedstorage:controller"
+            x: 3.00d
+            y: 3.00d
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "D49CAFA761D24CA4"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fОсвоить специализированный блок для сети хранилищ."
+                "§bПрактика: §fИзготовьте Storage Controller и изучите подключение контейнеров Sophisticated Storage. Не называйте получение блока работающей сетью."
+                "§aАвтозачёт: §fУстановите sophisticatedstorage:controller в мире. Это подтверждает монтаж блока, но НЕ производство, передачу энергии или работу станка."
+                "§7Почему это важно: Специализированное оборудование становится основой логистики."
+            ]
+            tasks: [
+                {
+                    id: "9CE891DE2960CDE8"
+                    type: "advancement"
+                    advancement: "nasledie:setup/economy/controller"
+                }
+            ]
+            rewards: [
+                {
+                    id: "1A573ED982AF51AF"
+                    type: "xp"
+                    xp: 60
+                }
+                {
+                    id: "109BCCFAF90E6E8A"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:deposit_upgrade" }
+                }
+            ]
+        }
+        {
+            id: "BE7C211A268C501D"
+            title: "Гильдия постоянных клиентов"
+            icon: "minecraft:emerald"
+            x: 6.00d
+            y: -3.00d
+            shape: "laurel"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "9CE7C2CFF54FECE4"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочная экспедиция"
+                "§eЗадача: §fПродемонстрировать уже развитую торговую инфраструктуру."
+                "§bПрактика: §fДоведите общий счётчик обменов с жителями до 25. Следите за ассортиментом и восстановлением запасов."
+                "§aАвтопроверка: §fПроверка игровой статистики minecraft:traded_with_villager ≥ 25. Условие накопительное."
+                "§7Почему это важно: Профессиональная торговля требует десятков последовательных сделок."
+            ]
+            tasks: [
+                {
+                    id: "0B4DDDAE184A446C"
+                    type: "stat"
+                    stat: "minecraft:traded_with_villager"
+                    value: 25
+                }
+            ]
+            rewards: [
+                {
+                    id: "E88C418242D04FDE"
+                    type: "xp"
+                    xp: 160
+                }
+                {
+                    id: "C0EDCA44769C74A3"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:advanced_magnet_upgrade" }
+                }
+            ]
+        }
+    ]
+}

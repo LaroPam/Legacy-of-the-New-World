@@ -1,0 +1,622 @@
+{
+    filename: "nasledie_life"
+    id: "DC7EC49FBED1A9C6"
+    group: "842B4DB4DBD349A0"
+    title: "Дом и ремёсла — школа хозяйства"
+    icon: "minecraft:campfire"
+    order_index: 1
+    progression_mode: "flexible"
+    default_hide_dependency_lines: false
+    default_quest_shape: "heart"
+    default_quest_size: 1.28d
+
+    quest_links: []
+    quests: [
+        
+        
+        {
+            id: "464A27B6AA037B37"
+            rewards: [
+                { id: "132937842DFF6979" type: "xp" xp: 31 }
+                {
+                    id: "9A59563D7C5578F2"
+                    type: "item"
+                    item: { Count: 6b, id: "farmersdelight:rope" }
+                }
+        ]
+            title: "Разделка на доске"
+            icon: "farmersdelight:cutting_board"
+            shape: "heart"
+            size: 1.16d
+            x: 0.00d
+            y: 0.00d
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Положите ингредиент на Cutting Board и разделайте его ножом. Достижение срабатывает при использовании механики, а не от наличия доски."
+                "§7Проверка: отдельное достижение farmersdelight:main/use_cutting_board"
+        ]
+
+            tasks: [
+                {
+                    id: "26109FF6DB36F2A5"
+                    type: "advancement"
+                    advancement: "farmersdelight:main/use_cutting_board"
+                }
+        ]
+        }
+        {
+            id: "6E42774EBA2B38FB"
+            title: "Собрать фильтр для хранилища"
+            x: 3.00d
+            y: 8.00d
+            icon: "sophisticatedstorage:filter_upgrade"
+            optional: true
+            shape: "square"
+            size: 1.14d
+            rewards: [
+                { id: "21D7E12CDA3FADCE" type: "xp" xp: 34 }
+                {
+                    id: "F0B03E577169E5D5"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:stack_upgrade_tier_1" }
+                }
+        ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Хозяйственные технологии"
+                "§eЗадача: §fИзготовьте Filter Upgrade из Sophisticated Storage по рецепту, изучите настройки белого и чёрного списков."
+                "§aАвтопроверка: §fМомент создания конкретного модуля по рецепту sophisticatedstorage:filter_upgrade."
+                "§7Изменена цель: проверяется изготовление компонента; установка в GUI и работоспособность фильтра автоматически не подтверждаются."
+            ]
+            dependencies: [
+                "464A27B6AA037B37"
+        ]
+            tasks: [
+                {
+                    id: "9202CAEA03C27166"
+                    type: "advancement"
+                    advancement: "nasledie:alpha35/engineering/6e42774eba2b38fb"
+                }
+        ]
+        }
+        
+        
+        
+        {
+            id: "5B2F6F1B27706E1D"
+            title: "Рисовые поля"
+            x: 3.00d
+            y: -4.00d
+            icon: "farmersdelight:rice"
+            shape: "scroll"
+            size: 1.12d
+            rewards: [
+                { id: "7B13C85A382F3327" type: "xp" xp: 46 }
+                {
+                    id: "A19CE19BB0E8150D"
+                    type: "item"
+                    item: { Count: 8b, id: "farmersdelight:straw" }
+                }
+        ]
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Посадите рис Farmer’s Delight в нужных условиях. Проверьте разницу между посадкой риса и выращиванием пшеницы."
+                "§7Проверка: отдельное достижение farmersdelight:main/plant_rice"
+        ]
+            dependencies: [
+                "464A27B6AA037B37"
+        ]
+            tasks: [
+                {
+                    id: "A27CF8349E3464F8"
+                    type: "advancement"
+                    advancement: "farmersdelight:main/plant_rice"
+                }
+        ]
+        }
+        {
+            id: "9E550CA158EE0E76"
+            rewards: [
+                { id: "C29BFB55466323C3" type: "xp" xp: 49 }
+                {
+                    id: "D122C9070CB592EE"
+                    type: "item"
+                    item: { Count: 4b, id: "farmersdelight:tomato_seeds" }
+                }
+        ]
+            title: "Томаты на подвязке"
+            icon: "farmersdelight:tomato_seeds"
+            shape: "heart"
+            size: 1.16d
+            x: 6.00d
+            y: -4.00d
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Вырастите томаты, подвяжите растение верёвкой и соберите урожай с подвязанного куста. Проверяется именно специфическое достижение."
+                "§7Проверка: отдельное достижение farmersdelight:main/harvest_ropelogged_tomato"
+        ]
+            dependencies: [
+                "5B2F6F1B27706E1D"
+        ]
+            tasks: [
+                {
+                    id: "F66CF5EDC8ADAF11"
+                    type: "advancement"
+                    advancement: "farmersdelight:main/harvest_ropelogged_tomato"
+                }
+        ]
+        }
+        {
+            id: "FE2674FC9E1DD748"
+            rewards: [
+                { id: "1FEB0F180C2762CD" type: "xp" xp: 52 }
+                {
+                    id: "A7EE3E5D31CCF686"
+                    type: "item"
+                    item: { Count: 8b, id: "farmersdelight:rope" }
+                }
+        ]
+            title: "Солома из урожая"
+            icon: "farmersdelight:straw"
+            shape: "heart"
+            size: 1.16d
+            x: 9.00d
+            y: -4.00d
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Получите солому способом, предусмотренным Farmer’s Delight, и изучите, на что она расходуется."
+                "§7Проверка: отдельное достижение farmersdelight:main/harvest_straw"
+        ]
+            dependencies: [
+                "9E550CA158EE0E76"
+        ]
+            tasks: [
+                {
+                    id: "9FA8189E04B11E38"
+                    type: "advancement"
+                    advancement: "farmersdelight:main/harvest_straw"
+                }
+        ]
+        }
+        {
+            id: "C3D9E46E5C4B9DA5"
+            rewards: [
+                { id: "ADC6458544D5EBD8" type: "xp" xp: 55 }
+                {
+                    id: "0963BCF253AC2D88"
+                    type: "item"
+                    item: { Count: 10b, id: "farmersdelight:straw" }
+                }
+        ]
+            title: "Компост как производственный цикл"
+            icon: "farmersdelight:organic_compost"
+            shape: "gear"
+            size: 1.16d
+            x: 12.00d
+            y: -4.00d
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Сделайте органический компост и установите его. Подготовьте место, где он будет превращаться в богатую почву."
+                "§7Проверка: отдельное достижение farmersdelight:main/place_organic_compost"
+        ]
+            dependencies: [
+                "FE2674FC9E1DD748"
+        ]
+            tasks: [
+                {
+                    id: "C178D79B48E6505D"
+                    type: "advancement"
+                    advancement: "farmersdelight:main/place_organic_compost"
+                }
+        ]
+        }
+        {
+            id: "0F10C8510B15A8C2"
+            rewards: [
+                { id: "CA42275784D56D8B" type: "xp" xp: 58 }
+                {
+                    id: "DF1F77E39D8D0A62"
+                    type: "item"
+                    item: { Count: 6b, id: "farmersdelight:rice" }
+                }
+        ]
+            title: "Плодородная почва"
+            icon: "farmersdelight:rich_soil"
+            shape: "heart"
+            size: 1.16d
+            x: 15.00d
+            y: -4.00d
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Добейтесь образования Rich Soil из компоста. Проверяется получение результата, не просто наличие обычной земли."
+                "§7Проверка: отдельное достижение farmersdelight:main/get_rich_soil"
+        ]
+            dependencies: [
+                "C3D9E46E5C4B9DA5"
+        ]
+            tasks: [
+                {
+                    id: "0A4D7825FCB74AAF"
+                    type: "advancement"
+                    advancement: "farmersdelight:main/get_rich_soil"
+                }
+        ]
+        }
+        {
+            id: "70BD314183AC1CDE"
+            title: "Котёл для настоящей кухни"
+            x: 3.00d
+            y: 0.00d
+            icon: "farmersdelight:cooking_pot"
+            shape: "square"
+            size: 1.14d
+            rewards: [
+                { id: "B2762433E254DB09" type: "xp" xp: 61 }
+                {
+                    id: "000ECC140458F69F"
+                    type: "item"
+                    item: { Count: 3b, id: "farmersdelight:tomato_seeds" }
+                }
+        ]
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Установите Cooking Pot на подходящий источник тепла. Изучите интерфейс, рецепты и необходимость ёмкости для готового блюда."
+                "§7Проверка: отдельное достижение farmersdelight:main/place_cooking_pot"
+        ]
+            dependencies: [
+                "464A27B6AA037B37"
+        ]
+            tasks: [
+                {
+                    id: "4A4BC43BC45FAEB0"
+                    type: "advancement"
+                    advancement: "farmersdelight:main/place_cooking_pot"
+                }
+        ]
+        }
+        
+        {
+            id: "4E740C0034B4382F"
+            title: "Питание с эффектом Nourishment"
+            x: 6.00d
+            y: 0.00d
+            icon: "farmersdelight:fruit_salad"
+            shape: "heart"
+            size: 1.16d
+            rewards: [
+                { id: "699372646B4C5EC5" type: "xp" xp: 67 }
+                {
+                    id: "9722C6AE4200775A"
+                    type: "item"
+                    item: { Count: 2b, id: "farmersdelight:apple_cider" }
+                }
+        ]
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Приготовьте и съешьте подходящее блюдо Farmer’s Delight. Проверяется факт получения модового пищевого эффекта через достижение."
+                "§7Проверка: отдельное достижение farmersdelight:main/eat_nourishing_food"
+        ]
+            dependencies: [
+                "70BD314183AC1CDE"
+        ]
+            tasks: [
+                {
+                    id: "1B49009A828B2ECD"
+                    type: "advancement"
+                    advancement: "farmersdelight:main/eat_nourishing_food"
+                }
+        ]
+        }
+        
+        {
+            id: "6D582231374D6FBB"
+            rewards: [
+                { id: "750B94F5603D4949" type: "xp" xp: 73 }
+                {
+                    id: "554584654C84ED13"
+                    type: "item"
+                    item: { Count: 2b, id: "farmersdelight:mushroom_rice" }
+                }
+        ]
+            title: "Грибная ферма"
+            icon: "farmersdelight:brown_mushroom_colony"
+            shape: "gear"
+            size: 1.16d
+            x: 6.00d
+            y: -8.00d
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Получите грибную колонию Farmer’s Delight и разберитесь, как она отличается от обычного гриба."
+                "§7Проверка: отдельное достижение farmersdelight:main/get_mushroom_colony"
+        ]
+            dependencies: [
+                "5B2F6F1B27706E1D"
+        ]
+            tasks: [
+                {
+                    id: "2BDA593B68C50CCB"
+                    type: "advancement"
+                    advancement: "farmersdelight:main/get_mushroom_colony"
+                }
+        ]
+        }
+        
+        {
+            id: "E3867CE6EB276D6B"
+            rewards: [
+                { id: "A6F176260745473D" type: "xp" xp: 79 }
+                {
+                    id: "246BF81167BBF758"
+                    type: "item"
+                    item: { Count: 4b, id: "farmersdelight:fruit_salad" }
+                }
+        ]
+            title: "Агроном-практик"
+            icon: "farmersdelight:cabbage_seeds"
+            shape: "laurel"
+            size: 1.28d
+            x: 9.00d
+            y: -8.00d
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Необязательный продвинутый экзамен: посадите все культуры, перечисленные в достижении Farmer’s Delight. Это долгосрочная цель."
+                "§7Проверка: отдельное достижение farmersdelight:main/plant_all_crops"
+        ]
+            dependencies: [
+                "6D582231374D6FBB"
+        ]
+            tasks: [
+                {
+                    id: "F4DF31DFE52853E5"
+                    type: "advancement"
+                    advancement: "farmersdelight:main/plant_all_crops"
+                }
+        ]
+            optional: true
+}
+        {
+            id: "470CCDD13E8599DD"
+            rewards: [
+                { id: "9AFDFC871C0A0750" type: "xp" xp: 82 }
+                {
+                    id: "A439D7F65A6972EE"
+                    type: "item"
+                    item: { Count: 1b, id: "farmersdelight:flint_knife" }
+                }
+        ]
+            title: "Племенное хозяйство"
+            icon: "minecraft:wheat"
+            shape: "heart"
+            size: 1.16d
+            x: 3.00d
+            y: -8.00d
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Разведите животных, чтобы создать восполняемый источник пищи. Проверка через ванильное достижение размножения, а не через пшеницу в инвентаре."
+                "§7Проверка: отдельное достижение minecraft:husbandry/breed_an_animal"
+        ]
+            dependencies: [
+                "5B2F6F1B27706E1D"
+        ]
+            tasks: [
+                {
+                    id: "6ABEE22EABA4B33B"
+                    type: "advancement"
+                    advancement: "minecraft:husbandry/breed_an_animal"
+                }
+        ]
+        }
+        {
+            id: "119A349F7B3DEF2E"
+            rewards: [
+                { id: "1AD3292673844C14" type: "xp" xp: 85 }
+                {
+                    id: "125926F87D9F1D93"
+                    type: "item"
+                    item: { Count: 1b, id: "cold_sweat:waterskin" }
+                }
+        ]
+            title: "Отопление Hearth"
+            icon: "cold_sweat:hearth"
+            shape: "square"
+            size: 1.14d
+            x: 6.00d
+            y: 4.00d
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Установите Hearth и разберитесь с его климатическим эффектом. Достижение может иметь несколько критериев, поэтому изучите реальные условия мода."
+                "§7Проверка: отдельное достижение cold_sweat:use_hearth"
+        ]
+            dependencies: [
+                "C2A7FBADC6571244"
+        ]
+            tasks: [
+                {
+                    id: "089A35EBBDFC71F0"
+                    type: "advancement"
+                    advancement: "cold_sweat:use_hearth"
+                }
+        ]
+            optional: true
+}
+        
+        
+        
+        {
+            id: "85F72175E8F3882D"
+            rewards: [
+                { id: "63E8EEFEA0C68670" type: "xp" xp: 97 }
+                {
+                    id: "16A98E69539E61BC"
+                    type: "item"
+                    item: { Count: 4b, id: "cold_sweat:goat_fur" }
+                }
+        ]
+            title: "Дымоход и отвод тепла"
+            icon: "cold_sweat:smokestack"
+            shape: "heart"
+            size: 1.16d
+            x: 9.00d
+            y: 4.00d
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Разберитесь с подключением и использованием дымохода Cold Sweat. Срабатывает только соответствующее достижение."
+                "§7Проверка: отдельное достижение cold_sweat:use_smokestack"
+        ]
+            dependencies: [
+                "119A349F7B3DEF2E"
+        ]
+            tasks: [
+                {
+                    id: "869CF05764697B2E"
+                    type: "advancement"
+                    advancement: "cold_sweat:use_smokestack"
+                }
+        ]
+            optional: true
+}
+        
+        
+        {
+            id: "C2A7FBADC6571244"
+            title: "Утепление экипировки"
+            x: 3.00d
+            y: 4.00d
+            icon: "cold_sweat:goat_fur"
+            shape: "heart"
+            size: 1.16d
+            rewards: [
+                { id: "868F9E237257D898" type: "xp" xp: 106 }
+                {
+                    id: "0C4C5BEF7ACF2592"
+                    type: "item"
+                    item: { Count: 3b, id: "cold_sweat:goat_fur" }
+                }
+        ]
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Опробуйте систему утепления брони Cold Sweat. Именно факт изменения экипировки подтверждается достижением."
+                "§7Проверка: отдельное достижение cold_sweat:insulate_armor"
+        ]
+            dependencies: [
+                "464A27B6AA037B37"
+        ]
+            optional: true
+            tasks: [
+                {
+                    id: "EB2B62404E45C371"
+                    type: "advancement"
+                    advancement: "cold_sweat:insulate_armor"
+                }
+        ]
+        }
+        {
+            id: "6BF257BC86E5F51D"
+            title: "Собрать модуль автоподбора"
+            x: 6.00d
+            y: 8.00d
+            icon: "sophisticatedbackpacks:pickup_upgrade"
+            shape: "square"
+            size: 1.14d
+            rewards: [
+                { id: "FE6DB408B4338A4E" type: "xp" xp: 109 }
+                {
+                    id: "9AC7292D0F159C21"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedbackpacks:filter_upgrade" }
+                }
+        ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Хозяйственные технологии"
+                "§eЗадача: §fСоздайте Pickup Upgrade для рюкзака Sophisticated Backpacks, затем попробуйте использовать его в походе."
+                "§aАвтопроверка: §fКрафт по рецепту sophisticatedbackpacks:pickup_upgrade."
+                "§7Изменена цель: в этой версии квест засчитывает изготовление, а не факт работы автоматического подбора."
+            ]
+            dependencies: [
+                "6E42774EBA2B38FB"
+        ]
+            optional: true
+            tasks: [
+                {
+                    id: "F73D0D411F42B427"
+                    type: "advancement"
+                    advancement: "nasledie:alpha35/engineering/6bf257bc86e5f51d"
+                }
+        ]
+        }
+        
+        {
+            id: "BCC7916DB9793560"
+            rewards: [
+                { id: "0BDB9AFD33B278D0" type: "xp" xp: 115 }
+                {
+                    id: "0502840F06FC6C8E"
+                    type: "item"
+                    item: { Count: 1b, id: "sophisticatedstorage:pickup_upgrade" }
+                }
+        ]
+            title: "Установить железный сундук"
+            icon: "sophisticatedstorage:iron_chest"
+            shape: "square"
+            size: 1.14d
+            x: 9.00d
+            y: 8.00d
+            description: [
+                "§bДействие: §fУстановите железный сундук Sophisticated Storage в своём хранилище."
+                "§aАвтозачёт: §fminecraft:placed_block доказывает установку сундука, но не сортировку предметов."
+                "§dВажно: §fПроверка события выполняется серверным datapack и требует теста в Minecraft."
+            ]
+            dependencies: [
+                "6BF257BC86E5F51D"
+        ]
+            optional: true
+            tasks: [
+                {
+                    id: "BDC7F410E273570A"
+                    type: "advancement"
+                    advancement: "nasledie:alpha34/actions/bdc7f410e273570a"
+                }
+        ]
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        {
+            id: "52659216F4F03E2C"
+            optional: true
+            title: "Максим: праздничный ужин на двоих"
+            x: 9.00d
+            y: 0.00d
+            shape: "star"
+            size: 1.28d
+            icon: "farmersdelight:roast_chicken_block"
+            dependencies: [
+                "4E740C0034B4382F"
+        ]
+            description: [
+                "§6«Наследие 2.0» · Учебная программа"
+                "Приготовьте настоящий банкет Farmer’s Delight и установите праздничное блюдо. Необязательная совместная цель для Максима и Юры."
+                "§7Проверка: отдельное достижение farmersdelight:main/place_feast"
+        ]
+            tasks: [
+                {
+                    id: "A718485CDDB4F5EA"
+                    type: "advancement"
+                    advancement: "farmersdelight:main/place_feast"
+                }
+        ]
+            rewards: [
+                { id: "826EB2233D94B278" type: "xp" xp: 142 }
+                {
+                    id: "A480853E0D204F84"
+                    type: "item"
+                    item: { Count: 6b, id: "farmersdelight:cabbage_rolls" }
+                }
+        ]
+        }
+    ]
+}

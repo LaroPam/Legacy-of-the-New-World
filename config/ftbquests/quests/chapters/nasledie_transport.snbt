@@ -1,0 +1,695 @@
+{
+    filename: "nasledie_transport"
+    id: "D90DA6CC0E252361"
+    group: "842B4DB4DBD349A0"
+    title: "Дороги, поезда и экспедиции — Академия транспорта"
+    icon: "create:track_station"
+    order_index: 6
+    progression_mode: "flexible"
+    default_hide_dependency_lines: false
+    default_quest_shape: "gear"
+
+    quest_links: []
+    quests: [
+        {
+            id: "168FB859D289DA38"
+            title: "Стандарт железнодорожного пути"
+            x: 3.00d
+            y: 0.00d
+            icon: "create:track"
+            shape: "star"
+            size: 1.28d
+            dependencies: [
+                "C1772DE6B882A602"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fТрасса в Create начинается с железнодорожных путей, а не сундуков."
+                "§bПрактика: §fПолучите Train Track из Create, выберите площадку под первую линию."
+                "§aЧто реально проверяется: §fВстроенное предметное достижение Create за путь; уложенная дорога не проверяется."
+            ]
+            tasks: [
+                {
+                    id: "B8951AD3219EF0D1"
+                    type: "advancement"
+                    advancement: "create:track_0"
+                }
+            ]
+            rewards: [
+                {
+                    id: "E192E8A7CA15CDCF"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "88B129BA9E09CAF1"
+                    type: "item"
+                    item: { Count: 1b, id: "railways:conductor_whistle" }
+                }
+            ]
+        }
+        {
+            id: "C1772DE6B882A602"
+            title: "Прочная железнодорожная обшивка"
+            x: 0.00d
+            y: 0.00d
+            icon: "create:sturdy_sheet"
+            shape: "gear"
+            size: 1.16d
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fSturdy Sheet используется в корпусах железнодорожных узлов."
+                "§bПрактика: §fИзучите изготовление прочных листов и подготовьте их для железной дороги."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за получение Sturdy Sheet."
+            ]
+            tasks: [
+                {
+                    id: "A9B7BEC16BC9B0C6"
+                    type: "advancement"
+                    advancement: "create:sturdy_sheet"
+                }
+            ]
+            rewards: [
+                {
+                    id: "D20E6830EACB6DEC"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "BD21D32CFDC58823"
+                    type: "item"
+                    item: { Count: 1b, id: "railways:buffer" }
+                }
+            ]
+        }
+        {
+            id: "0BE47753BC6BEF28"
+            title: "Обшивка состава"
+            x: 6.00d
+            y: 0.00d
+            icon: "create:railway_casing"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "168FB859D289DA38"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fКорпуса вагонов формируют железнодорожные сборки."
+                "§bПрактика: §fИзготовьте и примените железнодорожные корпуса."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за применение Train Casing."
+            ]
+            tasks: [
+                {
+                    id: "BDBDED8BF01AEB5E"
+                    type: "advancement"
+                    advancement: "create:train_casing_00"
+                }
+            ]
+            rewards: [
+                {
+                    id: "F932959126AC355B"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "57E05C8301B969C4"
+                    type: "item"
+                    item: { Count: 1b, id: "railways:big_buffer" }
+                }
+            ]
+        }
+        {
+            id: "D727915E29A5F477"
+            title: "Первый настоящий поезд"
+            x: 9.00d
+            y: 0.00d
+            icon: "create:track_station"
+            shape: "star"
+            size: 1.28d
+            dependencies: [
+                "0BE47753BC6BEF28"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fПоезд собирается на путях через Train Station."
+                "§bПрактика: §fПостройте мини-состав, установите Train Controls и соберите его на станции."
+                "§aЧто реально проверяется: §fВстроенное достижение Create именно за сборку поезда."
+                "§dЕсли не получается: §fСостав собирается из вагонов на рельсах у Train Station. Проверьте правильное соединение элементов перед Assembly."
+        ]
+            tasks: [
+                {
+                    id: "3D2174EACF07F95C"
+                    type: "advancement"
+                    advancement: "create:train"
+                }
+            ]
+            rewards: [
+                {
+                    id: "5196D28F75562374"
+                    type: "xp"
+                    xp: 140
+                }
+                {
+                    id: "552AEF12A8DE842C"
+                    type: "item"
+                    item: { Count: 1b, id: "railways:benchcart" }
+                }
+            ]
+        }
+        {
+            id: "27A5DCA80F77C440"
+            title: "Первое движение по расписанию"
+            x: 12.00d
+            y: 0.00d
+            icon: "create:schedule"
+            shape: "shield"
+            size: 1.20d
+            dependencies: [
+                "D727915E29A5F477"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fРасписание связывает станции и автоматическое управление."
+                "§bПрактика: §fНазначьте проводника и выдайте ему Train Schedule."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за назначение расписания поезду."
+                "§dЕсли не получается: §fВыполнение расписания и посадка машиниста требуют работающей сети путей и доступных станций."
+        ]
+            tasks: [
+                {
+                    id: "9998071F2FAE1D42"
+                    type: "advancement"
+                    advancement: "create:conductor"
+                }
+            ]
+            rewards: [
+                {
+                    id: "2CAF0AF921FC64BF"
+                    type: "xp"
+                    xp: 140
+                }
+                {
+                    id: "B92D36963FACE365"
+                    type: "item"
+                    item: { Count: 1b, id: "railways:track_coupler" }
+                }
+            ]
+        }
+        {
+            id: "3DC5EEC5097BB375"
+            title: "Разделение участков пути"
+            x: 15.00d
+            y: 0.00d
+            icon: "create:track_signal"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "27A5DCA80F77C440"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fTrain Signals предотвращают конфликты на одном пути."
+                "§bПрактика: §fПоставьте сигнал на железнодорожном участке и разберитесь с направлением контроля."
+                "§aЧто реально проверяется: §fВстроенный триггер Create за установку Train Signal."
+                "§dЕсли не получается: §fСигналы работают с участками рельсов: проверьте цвет и занятость, а не только установку блока."
+        ]
+            tasks: [
+                {
+                    id: "C0A3AF7C0A981D59"
+                    type: "advancement"
+                    advancement: "create:track_signal"
+                }
+            ]
+            rewards: [
+                {
+                    id: "D71790F5CBCDC251"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "9C3DC73F9E7C9AB1"
+                    type: "item"
+                    item: { Count: 1b, id: "railways:semaphore" }
+                }
+            ]
+        }
+        {
+            id: "57D8DDEFF1169558"
+            title: "Табло прибытия"
+            x: 18.00d
+            y: 0.00d
+            icon: "create:display_board"
+            shape: "square"
+            size: 1.14d
+            dependencies: [
+                "3DC5EEC5097BB375"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fДисплеи показывают транспортное расписание."
+                "§bПрактика: §fПодключите Display Link к Display Board и отобразите прибытие состава."
+                "§aЧто реально проверяется: §fВстроенный триггер Create за информирование о прибытии поезда."
+            ]
+            tasks: [
+                {
+                    id: "E31AC6F19B2DD5E5"
+                    type: "advancement"
+                    advancement: "create:display_board_0"
+                }
+            ]
+            rewards: [
+                {
+                    id: "0B2B0EBE6F1CD65E"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "88A4ECC77773D39C"
+                    type: "item"
+                    item: { Count: 1b, id: "railways:link_and_pin" }
+                }
+            ]
+        }
+        {
+            id: "2CC98EB2E8824152"
+            title: "Машинист подаёт сигнал"
+            x: 12.00d
+            y: -5.00d
+            icon: "create:steam_whistle"
+            shape: "gear"
+            size: 1.16d
+            dependencies: [
+                "D727915E29A5F477"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Инженерная академия"
+                "§eЗачем: §fSteam Whistle устанавливается на поезд и активируется во время движения."
+                "§bПрактика: §fСядьте за управление, установите свисток и подайте сигнал."
+                "§aЧто реально проверяется: §fВстроенный триггер Create за свисток на поезде."
+            ]
+            tasks: [
+                {
+                    id: "279DB6A1B9E4B78B"
+                    type: "advancement"
+                    advancement: "create:train_whistle"
+                }
+            ]
+            rewards: [
+                {
+                    id: "CDA4CFA872D15EAB"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "8A94B84E19721AC0"
+                    type: "item"
+                    item: { Count: 1b, id: "railways:conductor_vent" }
+                }
+            ]
+        }
+        {
+            id: "AB76CE2DB46422C6"
+            title: "Поезд через портал"
+            x: 15.00d
+            y: -5.00d
+            icon: "minecraft:amethyst_block"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "2CC98EB2E8824152"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fПоздняя транспортная экспедиция через измерения."
+                "§bПрактика: §fСпланируйте безопасный проход состава через портал."
+                "§aЧто реально проверяется: §fВстроенный триггер Create за поездку поездом через портал."
+            ]
+            tasks: [
+                {
+                    id: "37BB8687ABCA4220"
+                    type: "advancement"
+                    advancement: "create:train_portal"
+                }
+            ]
+            rewards: [
+                {
+                    id: "94B293E531EFDC64"
+                    type: "xp"
+                    xp: 170
+                }
+                {
+                    id: "615FE01FB9B2442A"
+                    type: "item"
+                    item: { Count: 1b, id: "railways:paint_brush" }
+                }
+            ]
+        }
+        {
+            id: "7B13E63BEA35FC61"
+            title: "Красный — значит остановка"
+            x: 18.00d
+            y: -5.00d
+            icon: "create:track_signal"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "3DC5EEC5097BB375"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fИзучите поведение занятого сигнального участка."
+                "§bПрактика: §fНастройте пересечение путей и добейтесь красного сигнала."
+                "§aЧто реально проверяется: §fСкрытое достижение Create за красный Train Signal."
+            ]
+            tasks: [
+                {
+                    id: "FBA2EA8F0C39D5FD"
+                    type: "advancement"
+                    advancement: "create:red_signal"
+                }
+            ]
+            rewards: [
+                {
+                    id: "75BC1AA623E01A57"
+                    type: "xp"
+                    xp: 120
+                }
+                {
+                    id: "DA26974B4AD0EE98"
+                    type: "item"
+                    item: { Count: 1b, id: "railways:copycat_headstock" }
+                }
+            ]
+        }
+        {
+            id: "3E14426D5444F75E"
+            title: "Тысяча рельсов, одна фабрика"
+            x: 6.00d
+            y: -5.00d
+            icon: "create:mechanical_press"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "C1772DE6B882A602"
+            ]
+            description: [
+
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fСложный промышленный побочный проект для массового изготовления путей."
+                "§bПрактика: §fИзготовьте более тысячи путей при помощи одного и того же пресса."
+                "§aЧто реально проверяется: §fВстроенное достижение Create: 1000+ путей от одного пресса."
+                "§dЕсли не получается: §fАвтоматическое изготовление рельсов требует рабочей цепочки Crafter и подачи материалов, одного крафтера недостаточно."
+        ]
+            tasks: [
+                {
+                    id: "A21AA2836CF50C7F"
+                    type: "advancement"
+                    advancement: "create:track_crafting_factory"
+                }
+            ]
+            rewards: [
+                {
+                    id: "6CF3DD19D0CE4D5A"
+                    type: "xp"
+                    xp: 200
+                }
+                {
+                    id: "80215007A38A558E"
+                    type: "item"
+                    item: { Count: 1b, id: "railways:fuel_tank" }
+                }
+            ]
+        }
+        {
+            id: "0A24638E79FF2418"
+            title: "Шесть вагонов — один состав"
+            x: 9.00d
+            y: -9.00d
+            icon: "minecraft:minecart"
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "3E14426D5444F75E"
+                "D727915E29A5F477"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fБольшая железная дорога требует продуманной длины станций."
+                "§bПрактика: §fСоберите поезд минимум с шестью вагонами и проверьте участки путей."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за состав из минимум шести вагонов."
+            ]
+            tasks: [
+                {
+                    id: "7A11B506111A1E62"
+                    type: "advancement"
+                    advancement: "create:long_train"
+                }
+            ]
+            rewards: [
+                {
+                    id: "9584313F87F8C5D1"
+                    type: "xp"
+                    xp: 220
+                }
+                {
+                    id: "C1E325B5AC1D56B1"
+                    type: "item"
+                    item: { Count: 1b, id: "immersive_aircraft:enhanced_propeller" }
+                }
+            ]
+        }
+        {
+            id: "B6EA6A2338C90595"
+            title: "Рейс на 5000 блоков"
+            x: 12.00d
+            y: -9.00d
+            icon: "create:green_seat"
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "0A24638E79FF2418"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Дополнительная практика"
+                "§eЗачем: §fФинальная экспедиция: настоящая дальняя перевозка."
+                "§bПрактика: §fПроедьте более 5000 блоков на поезде и выйдите из сиденья вдали от старта."
+                "§aЧто реально проверяется: §fВстроенное достижение Create за 5000 блоков поездки."
+            ]
+            tasks: [
+                {
+                    id: "A840D72A51B48C7C"
+                    type: "advancement"
+                    advancement: "create:long_travel"
+                }
+            ]
+            rewards: [
+                {
+                    id: "A33174DDCCC66E3E"
+                    type: "xp"
+                    xp: 250
+                }
+                {
+                    id: "2408C0A3EDC56DC7"
+                    type: "item"
+                    item: { Count: 1b, id: "immersive_aircraft:engine" }
+                }
+            ]
+        }
+        {
+            id: "B39341943A77E20B"
+            title: "Дрезина на рельсах"
+            x: 3.00d
+            y: 5.00d
+            icon: "railways:handcar"
+            shape: "gear"
+            size: 1.16d
+            optional: true
+            dependencies: [
+                "168FB859D289DA38"
+            ]
+            description: [
+                "§bДействие: §fПоставьте ручную дрезину Steam ’n’ Rails на рельсы."
+                "§aАвтозачёт: §fminecraft:placed_block проверяет установку Handcar, а не поездку."
+                "§dВажно: §fПроверка события выполняется серверным datapack и требует теста в Minecraft."
+            ]
+            tasks: [
+                {
+                    id: "EEF5774CADE39519"
+                    type: "advancement"
+                    advancement: "nasledie:alpha34/actions/eef5774cade39519"
+                }
+            ]
+            rewards: [
+                {
+                    id: "397BB2E88BE9E43C"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "C0A464588876405C"
+                    type: "item"
+                    item: { Count: 1b, id: "immersive_aircraft:gyroscope" }
+                }
+            ]
+        }
+        {
+            id: "CABC4D7CB8FBE2B6"
+            title: "За штурвалом биплана"
+            x: 9.00d
+            y: 5.00d
+            icon: "immersive_aircraft:biplane"
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "D727915E29A5F477"
+            ]
+            description: [
+                "§bДействие: §fСоберите биплан, сядьте за штурвал и подготовьтесь к взлёту."
+                "§aАвтозачёт: §fminecraft:started_riding подтверждает посадку в биплан, но не полёт."
+                "§dВажно: §fПроверка события выполняется серверным datapack и требует теста в Minecraft."
+            ]
+            tasks: [
+                {
+                    id: "357B61E283AA8D27"
+                    type: "advancement"
+                    advancement: "nasledie:alpha34/actions/357b61e283aa8d27"
+                }
+            ]
+            rewards: [
+                {
+                    id: "6D7C085E8F642F56"
+                    type: "xp"
+                    xp: 125
+                }
+                {
+                    id: "CCDC167C31B74EBD"
+                    type: "item"
+                    item: { Count: 1b, id: "immersive_aircraft:hull_reinforcement" }
+                }
+            ]
+        }
+        {
+            id: "34F99F7AE0F5BD92"
+            title: "На борту грузового дирижабля"
+            x: 12.00d
+            y: 5.00d
+            icon: "immersive_aircraft:cargo_airship"
+            shape: "star"
+            size: 1.28d
+            optional: true
+            dependencies: [
+                "CABC4D7CB8FBE2B6"
+            ]
+            description: [
+                "§bДействие: §fПостройте грузовой дирижабль и займите место пилота."
+                "§aАвтозачёт: §fminecraft:started_riding подтверждает посадку на Cargo Airship, не реальную перевозку груза."
+                "§dВажно: §fПроверка события выполняется серверным datapack и требует теста в Minecraft."
+            ]
+            tasks: [
+                {
+                    id: "762D58F4A6D0B9FD"
+                    type: "advancement"
+                    advancement: "nasledie:alpha34/actions/762d58f4a6d0b9fd"
+                }
+            ]
+            rewards: [
+                {
+                    id: "37A8AA830C971427"
+                    type: "xp"
+                    xp: 155
+                }
+                {
+                    id: "E66C23BBC420F22B"
+                    type: "item"
+                    item: { Count: 1b, id: "immersive_aircraft:improved_landing_gear" }
+                }
+            ]
+        }
+        {
+            id: "0C11F617809503C4"
+            title: "Примерить фуражку проводника"
+            x: 15.00d
+            y: 5.00d
+            icon: "railways:conductor_cap"
+            shape: "square"
+            size: 1.14d
+            optional: true
+            dependencies: [
+                "27A5DCA80F77C440"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Железнодорожный персонал"
+                "§eЗадача: §fНаденьте Conductor Cap Steam ’n’ Rails в слот шлема."
+                "§aАвтопроверка: §fСервер обнаружит надетую railways:conductor_cap в головном слоте."
+                "§7Это примерка формы, а не назначение NPC-проводника и не проверка его работы."
+            ]
+            tasks: [
+                {
+                    id: "A62C8B9DBBC8BE51"
+                    type: "advancement"
+                    advancement: "nasledie:alpha35/engineering/0c11f617809503c4"
+                }
+            ]
+            rewards: [
+                {
+                    id: "B8BF8D3AEB537889"
+                    type: "xp"
+                    xp: 75
+                }
+                {
+                    id: "8DBC62FEAA81CD73"
+                    type: "item"
+                    item: { Count: 1b, id: "immersive_aircraft:eco_engine" }
+                }
+            ]
+        }
+    
+
+        {
+            id: "6E3CC9D4F972BDBB"
+            title: "Столкновение задним ходом"
+            x: 7.00d
+            y: 4.00d
+            icon: "create:railway_casing"
+            shape: "shield"
+            size: 1.20d
+            optional: true
+            dependencies: [
+                "D727915E29A5F477"
+            ]
+            description: [
+                "§6НАСЛЕДИЕ 2.0 · Побочное приключение"
+                "§eЗачем: §fПроведите контролируемый эксперимент с поездом задним ходом. Используйте отдельный испытательный путь вдали от ваших складов."
+                "§aАвтозачёт: §fСпециальный триггер Create: поезд сталкивается задним ходом."
+            ]
+            tasks: [
+                {
+                    id: "597F76479A5C70C6"
+                    type: "advancement"
+                    advancement: "create:train_crash_backwards"
+                }
+            ]
+            rewards: [
+                {
+                    id: "0A3A31AC3F162459"
+                    type: "xp"
+                    xp: 310
+                }
+                {
+                    id: "70E27DB9B4E9F83E"
+                    type: "item"
+                    item: { Count: 6b, id: "minecraft:diamond" }
+                }
+            ]
+        }
+]
+}
