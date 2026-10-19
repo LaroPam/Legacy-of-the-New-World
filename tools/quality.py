@@ -446,7 +446,28 @@ def semantic_coverage(reviews, baseline, baseline_commit):
                              "meaning": "Coverage records human/agent editorial review; it does not prove gameplay correctness or validate changed text."}
 
 
-def evaluate(current_files, baseline_files, reference=REFERENCE, registry=None, reviews=None, baseline_commit=BASELINE):
+def introduced_icons(current, baseline, evidence):
+    """New icons need retained registration/model evidence, not a guess from their name."""
+    before = {str(q.get('id')): q for _, _, q in quest_rows(baseline)}
+    supported = (evidence or {}).get('items', {})
+    errors = []
+    for name, _, quest in quest_rows(current):
+        old = before.get(str(quest.get('id')), {})
+        icon = str(quest.get('icon', ''))
+        if icon == str(old.get('icon', '')):
+            continue
+        entry = supported.get(icon, {})
+        if not (entry.get('kind') in ('minecraft_builtin', 'forge_item_registration')
+                and re.fullmatch('[a-f0-9]{64}', str(entry.get('source_sha256', '')))
+                and entry.get('registration_evidence') and entry.get('model')
+                and re.fullmatch('[a-f0-9]{64}', str(entry.get('model_sha256', '')))
+                and entry.get('textures')):
+            errors.append(problem('new_icon_unverified', f'{name}#{quest.get("id")}',
+                                  'New icon lacks exact-version registration/model/texture evidence', icon=icon))
+    return errors
+
+
+def evaluate(current_files, baseline_files, reference=REFERENCE, registry=None, reviews=None, baseline_commit=BASELINE, icon_evidence=None):
     current, parse_errors = parse_files(current_files)
     baseline, baseline_errors = parse_files(baseline_files)
     report = {"schema_version": 1, "baseline_commit": baseline_commit, "reference": reference,
@@ -459,6 +480,7 @@ def evaluate(current_files, baseline_files, reference=REFERENCE, registry=None, 
     preservation_errors, report["changed_files"] = preservation(current_files, baseline_files, current, baseline, reference)
     report["errors"].extend(preservation_errors)
     report["errors"].extend(resource_checks(current_files, current))
+    report["errors"].extend(introduced_icons(current, baseline, icon_evidence))
     geometry_issues, report["geometry"] = geometry(current)
     old_geometry, report["baseline_geometry"] = geometry(baseline)
     current_quality = prose_issues(current) + duplicate_conditions(current) + geometry_issues
@@ -522,9 +544,11 @@ def main(argv=None):
         current, baseline, commit = snapshots(root, args.baseline)
         registry = parse_json(args.registry.read_text(encoding="utf-8")) if args.registry else None
         reviews = {p.relative_to(root).as_posix(): parse_json(p.read_text(encoding="utf-8")) for p in sorted((root / "reviews").glob("semantic_*.json"))}
-        report = evaluate(current, baseline, args.reference, registry, reviews, commit)
+        icon_path = root / 'reviews/reference_icon_evidence.json'
+        icon_evidence = parse_json(icon_path.read_text()) if icon_path.exists() else None
+        report = evaluate(current, baseline, args.reference, registry, reviews, commit, icon_evidence)
         report_path = args.report if args.report.is_absolute() else root / args.report
-        # Never let a report path overwrite an input or a tracked repository file.
+        # Never let a report path overwrite protected game input files.
         relative = report_path.resolve().relative_to(root) if report_path.resolve().is_relative_to(root) else None
         if relative is not None and any(relative.as_posix() == prefix or relative.as_posix().startswith(prefix + "/") for prefix in INPUT_ROOTS):
             raise ValueError("Report path is inside protected quest/game data")

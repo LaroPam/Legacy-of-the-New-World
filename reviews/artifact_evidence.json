@@ -12071,11 +12071,11 @@
       "error": "HTTPError: HTTP Error 500: Internal Server Error"
     },
     {
-      "file": "lootintegrations-1.20.1-4.7.jar",
+      "file": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
       "error": "TimeoutError: The read operation timed out"
     },
     {
-      "file": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+      "file": "lootintegrations-1.20.1-4.7.jar",
       "error": "TimeoutError: The read operation timed out"
     },
     {
@@ -12091,15 +12091,15 @@
       "error": "HTTPError: HTTP Error 500: Internal Server Error"
     },
     {
+      "file": "better_weaponry-1.1.3-forge-1.20.1.jar",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
       "file": "cristellib-1.1.6-forge.jar",
       "error": "TimeoutError: The read operation timed out"
     },
     {
       "file": "architectury-9.2.14-forge.jar",
-      "error": "TimeoutError: The read operation timed out"
-    },
-    {
-      "file": "better_weaponry-1.1.3-forge-1.20.1.jar",
       "error": "TimeoutError: The read operation timed out"
     },
     {
@@ -12115,16 +12115,8 @@
       "error": "TimeoutError: The read operation timed out"
     },
     {
-      "file": "citadel-2.6.3-1.20.1.jar",
-      "error": "HTTPError: HTTP Error 500: Internal Server Error"
-    },
-    {
       "file": "createaddition-1.20.1-1.3.3.jar",
       "error": "TimeoutError: The read operation timed out"
-    },
-    {
-      "file": "[forge]ctov-3.4.14.jar",
-      "error": "ValueError: Artifact checksum failed: [forge]ctov-3.4.14.jar"
     },
     {
       "file": "oculus-mc1.20.1-1.8.0.jar",
@@ -12133,6 +12125,14 @@
     {
       "file": "Towns-and-Towers-1.12-Fabric+Forge.jar",
       "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "file": "citadel-2.6.3-1.20.1.jar",
+      "error": "HTTPError: HTTP Error 500: Internal Server Error"
+    },
+    {
+      "file": "[forge]ctov-3.4.14.jar",
+      "error": "ValueError: Artifact checksum failed: [forge]ctov-3.4.14.jar"
     },
     {
       "file": "DungeonsArise-1.20.x-2.1.58-release.jar",

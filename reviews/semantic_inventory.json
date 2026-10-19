@@ -15848,11 +15848,23 @@
         }
       ],
       "reward_notes": [],
-      "dependency_notes": [],
+      "dependency_notes": [
+        {
+          "kind": "mechanic",
+          "status": "confirmed_static_blocker",
+          "message": "Оба локальных advancement ссылаются на типы mowziesmobs:umvuthana_fury и mowziesmobs:umvuthana_fear. В EntityHandler точного JAR 1.8.2 этих регистраций нет. Предложение по исправлению должно сохранить Quest/Task ID и проверить реальные типы/маски; условия в визуальном эталоне оставлены неизменными."
+        }
+      ],
       "dependencies": [
         "B704072AA3306667"
       ],
-      "editorial_findings": [],
+      "editorial_findings": [
+        {
+          "kind": "mechanic",
+          "status": "confirmed_static_blocker",
+          "message": "Оба локальных advancement ссылаются на типы mowziesmobs:umvuthana_fury и mowziesmobs:umvuthana_fear. В EntityHandler точного JAR 1.8.2 этих регистраций нет. Предложение по исправлению должно сохранить Quest/Task ID и проверить реальные типы/маски; условия в визуальном эталоне оставлены неизменными."
+        }
+      ],
       "review_scope": "Context inventory + retained editorial findings; supported_by_objective does not mean final approval. Review entries remain unresolved."
     },
     {

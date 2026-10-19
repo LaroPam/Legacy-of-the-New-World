@@ -67,6 +67,16 @@ class PreservationTests(unittest.TestCase):
     def test_overlap_is_blocked(self):
         self.assertIn('node_overlap', self.codes(self.report(SOURCE.replace(b'x: 3d', b'x: 0.2d'))))
 
+    def test_new_icon_needs_exact_evidence(self):
+        bad = SOURCE.replace(b'title: "First"', b'title: "First" icon: "invented:thing"')
+        self.assertIn('new_icon_unverified', self.codes(self.report(bad)))
+
+    def test_model_name_alone_does_not_validate_registration(self):
+        current = SOURCE.replace(b'title: "First"', b'title: "First" icon: "invented:thing"')
+        evidence = {'items':{'invented:thing':{'model':'assets/invented/models/item/thing.json'}}}
+        report = quality.evaluate({REF:current}, {REF:SOURCE}, icon_evidence=evidence)
+        self.assertIn('new_icon_unverified', self.codes(report))
+
     def test_cycle_detected_even_without_changed_baseline(self):
         source = SOURCE.replace(b'title: "First"', b'dependencies:["0000000000000005"] title:"First"')
         self.assertIn('dependency_cycle', self.codes(quality.evaluate({REF:source}, {REF:source})))

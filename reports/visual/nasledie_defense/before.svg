@@ -1,7 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -1088.00 1792.00 1920.00" width="1792.00" height="1920.00" role="img" aria-labelledby="nasledie_defense-before-title" data-quest-count="25">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-448.00 -1088.00 2112.00 1920.00" width="2112.00" height="1920.00" role="img" aria-labelledby="nasledie_defense-before-title" data-quest-count="25">
 <title id="nasledie_defense-before-title">Военное дело — Академия защитника — схема SNBT, не скриншот игры</title>
 <defs><marker id="nasledie_defense-before-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
 <g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
+<path d="M -448 -1088.00 v 1920.00"/>
+<path d="M -384 -1088.00 v 1920.00"/>
+<path d="M -320 -1088.00 v 1920.00"/>
+<path d="M -256 -1088.00 v 1920.00"/>
+<path d="M -192 -1088.00 v 1920.00"/>
 <path d="M -128 -1088.00 v 1920.00"/>
 <path d="M -64 -1088.00 v 1920.00"/>
 <path d="M 0 -1088.00 v 1920.00"/>
@@ -31,37 +36,37 @@
 <path d="M 1536 -1088.00 v 1920.00"/>
 <path d="M 1600 -1088.00 v 1920.00"/>
 <path d="M 1664 -1088.00 v 1920.00"/>
-<path d="M -128.00 -1088 h 1792.00"/>
-<path d="M -128.00 -1024 h 1792.00"/>
-<path d="M -128.00 -960 h 1792.00"/>
-<path d="M -128.00 -896 h 1792.00"/>
-<path d="M -128.00 -832 h 1792.00"/>
-<path d="M -128.00 -768 h 1792.00"/>
-<path d="M -128.00 -704 h 1792.00"/>
-<path d="M -128.00 -640 h 1792.00"/>
-<path d="M -128.00 -576 h 1792.00"/>
-<path d="M -128.00 -512 h 1792.00"/>
-<path d="M -128.00 -448 h 1792.00"/>
-<path d="M -128.00 -384 h 1792.00"/>
-<path d="M -128.00 -320 h 1792.00"/>
-<path d="M -128.00 -256 h 1792.00"/>
-<path d="M -128.00 -192 h 1792.00"/>
-<path d="M -128.00 -128 h 1792.00"/>
-<path d="M -128.00 -64 h 1792.00"/>
-<path d="M -128.00 0 h 1792.00"/>
-<path d="M -128.00 64 h 1792.00"/>
-<path d="M -128.00 128 h 1792.00"/>
-<path d="M -128.00 192 h 1792.00"/>
-<path d="M -128.00 256 h 1792.00"/>
-<path d="M -128.00 320 h 1792.00"/>
-<path d="M -128.00 384 h 1792.00"/>
-<path d="M -128.00 448 h 1792.00"/>
-<path d="M -128.00 512 h 1792.00"/>
-<path d="M -128.00 576 h 1792.00"/>
-<path d="M -128.00 640 h 1792.00"/>
-<path d="M -128.00 704 h 1792.00"/>
-<path d="M -128.00 768 h 1792.00"/>
-<path d="M -128.00 832 h 1792.00"/>
+<path d="M -448.00 -1088 h 2112.00"/>
+<path d="M -448.00 -1024 h 2112.00"/>
+<path d="M -448.00 -960 h 2112.00"/>
+<path d="M -448.00 -896 h 2112.00"/>
+<path d="M -448.00 -832 h 2112.00"/>
+<path d="M -448.00 -768 h 2112.00"/>
+<path d="M -448.00 -704 h 2112.00"/>
+<path d="M -448.00 -640 h 2112.00"/>
+<path d="M -448.00 -576 h 2112.00"/>
+<path d="M -448.00 -512 h 2112.00"/>
+<path d="M -448.00 -448 h 2112.00"/>
+<path d="M -448.00 -384 h 2112.00"/>
+<path d="M -448.00 -320 h 2112.00"/>
+<path d="M -448.00 -256 h 2112.00"/>
+<path d="M -448.00 -192 h 2112.00"/>
+<path d="M -448.00 -128 h 2112.00"/>
+<path d="M -448.00 -64 h 2112.00"/>
+<path d="M -448.00 0 h 2112.00"/>
+<path d="M -448.00 64 h 2112.00"/>
+<path d="M -448.00 128 h 2112.00"/>
+<path d="M -448.00 192 h 2112.00"/>
+<path d="M -448.00 256 h 2112.00"/>
+<path d="M -448.00 320 h 2112.00"/>
+<path d="M -448.00 384 h 2112.00"/>
+<path d="M -448.00 448 h 2112.00"/>
+<path d="M -448.00 512 h 2112.00"/>
+<path d="M -448.00 576 h 2112.00"/>
+<path d="M -448.00 640 h 2112.00"/>
+<path d="M -448.00 704 h 2112.00"/>
+<path d="M -448.00 768 h 2112.00"/>
+<path d="M -448.00 832 h 2112.00"/>
 </g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
 <path data-from="A33D4E94573F3BD4" data-to="FF7561483C27E289" d="M 28.60 0.00 L 226.00 0.00" marker-end="url(#nasledie_defense-before-arrow)"><title>A33D4E94573F3BD4 → FF7561483C27E289</title></path>
 <path data-from="FF7561483C27E289" data-to="4843AED5CE824450" d="M 283.00 0.00 L 482.00 0.00" marker-end="url(#nasledie_defense-before-arrow)"><title>FF7561483C27E289 → 4843AED5CE824450</title></path>
@@ -94,7 +99,8 @@ ID: A33D4E94573F3BD4
 Значок: mowziesmobs:foliaath_seed
 Форма: star
 x=0.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
@@ -106,7 +112,8 @@ ID: FF7561483C27E289
 Значок: mowziesmobs:naga_fang
 Форма: shield
 x=4.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
@@ -118,7 +125,8 @@ ID: 4843AED5CE824450
 Значок: mowziesmobs:wrought_helmet
 Форма: shield
 x=8.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
@@ -131,7 +139,8 @@ ID: 92AF3238F7B8776E
 Значок: mowziesmobs:ice_crystal
 Форма: shield
 x=12.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
@@ -143,7 +152,8 @@ ID: A378D8F13118FF97
 Значок: mowziesmobs:sol_visage
 Форма: crown
 x=16.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="33.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="37.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-27.20,-16.32 -12.24,0.00 0.00,-27.20 12.24,0.00 27.20,-16.32 19.04,19.04 -19.04,19.04" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
@@ -155,7 +165,8 @@ ID: 216A8A3EE5B58D96
 Значок: mowziesmobs:bluff_rod
 Форма: shield
 x=4.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
@@ -167,7 +178,8 @@ ID: 5C3BCCAC46517EDE
 Значок: minecraft:shield
 Форма: shield
 x=8.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
@@ -179,7 +191,8 @@ ID: 1AA2F1D6F60E9FDB
 Значок: mowziesmobs:umvuthana_mask_fury
 Форма: shield
 x=12.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
@@ -191,7 +204,8 @@ ID: 667FADB4630B1FBC
 Значок: mowziesmobs:umvuthana_mask_fear
 Форма: shield
 x=20.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
@@ -203,7 +217,8 @@ ID: 62D20856FFA016C3
 Значок: mowziesmobs:grant_suns_blessing
 Форма: shield
 x=24.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
@@ -216,7 +231,8 @@ ID: 0EF67FFF73E6D383
 Значок: createbigcannons:casting_sand
 Форма: circle
 x=4.0, y=11.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="22.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
@@ -229,7 +245,8 @@ ID: 35AB582E2E08DF86
 Значок: createbigcannons:cannon_builder
 Форма: gear
 x=8.0, y=11.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
@@ -242,7 +259,8 @@ ID: 35D125C19D556E7A
 Значок: createbigcannons:cannon_drill
 Форма: gear
 x=12.0, y=11.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
@@ -255,7 +273,8 @@ ID: 17FE2073432FC7E0
 Значок: createbigcannons:fixed_cannon_mount
 Форма: gear
 x=16.0, y=11.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
@@ -267,7 +286,8 @@ ID: 8EC3B7E438EA800A
 Значок: createbigcannons:cannon_loader
 Форма: gear
 x=20.0, y=11.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
@@ -280,7 +300,8 @@ ID: 1E7E546AB7203A0B
 Значок: mowziesmobs:ice_crystal
 Форма: shield
 x=12.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
@@ -292,7 +313,8 @@ ID: B89ADDCBCB295F18
 Значок: minecraft:chiseled_stone_bricks
 Форма: scroll
 x=16.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
@@ -304,7 +326,8 @@ ID: DF85EFBB8E452760
 Значок: mowziesmobs:earthrend_gauntlet
 Форма: crown
 x=20.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="32.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="36.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-26.40,-15.84 -11.88,0.00 0.00,-26.40 11.88,0.00 26.40,-15.84 18.48,18.48 -18.48,18.48" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
@@ -316,7 +339,8 @@ ID: B704072AA3306667
 Значок: minecraft:acacia_log
 Форма: scroll
 x=4.0, y=-10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">19</text>
@@ -328,7 +352,8 @@ ID: 06BF2A4D15D6CD27
 Значок: minecraft:anvil
 Форма: scroll
 x=8.0, y=-10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">20</text>
@@ -340,7 +365,8 @@ ID: 0DA6143558A570BF
 Значок: minecraft:golden_pickaxe
 Форма: star
 x=12.0, y=-8.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">21</text>
@@ -352,7 +378,8 @@ ID: A3EDE771A3D3FAE9
 Значок: minecraft:diamond_pickaxe
 Форма: shield
 x=16.0, y=-8.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">22</text>
@@ -364,7 +391,8 @@ ID: 4CE1E389229E6BFE
 Значок: minecraft:feather
 Форма: star
 x=24.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">23</text>
@@ -376,7 +404,8 @@ ID: 0EA51C1EFC97CF87
 Значок: minecraft:golden_sword
 Форма: shield
 x=8.0, y=-15.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-23.60,-23.60 23.60,-23.60 18.88,7.08 0.00,23.60 -18.88,7.08" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">24</text>
@@ -388,7 +417,8 @@ ID: 9B6EFB1C669C7CFA
 Значок: minecraft:nether_star
 Форма: star
 x=20.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">25</text>

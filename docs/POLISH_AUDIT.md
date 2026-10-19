@@ -81,6 +81,10 @@
 Файл: `config/ftbquests/quests/chapters/nasledie_defense.snbt`.
 - **description / confirmed:** Точное EN-описание достижения требует гибели от падения во время испытания Скульптора; произвольное поражение недостаточно.
 
+### Караул солнечной рощи — `0EA51C1EFC97CF87`
+Файл: `config/ftbquests/quests/chapters/nasledie_defense.snbt`.
+- **mechanic / confirmed_static_blocker:** Оба локальных advancement ссылаются на типы mowziesmobs:umvuthana_fury и mowziesmobs:umvuthana_fear. В EntityHandler точного JAR 1.8.2 этих регистраций нет. Предложение по исправлению должно сохранить Quest/Task ID и проверить реальные типы/маски; условия в визуальном эталоне оставлены неизменными.
+
 ### Четыре испытания трофейного топора — `9B6EFB1C669C7CFA`
 Файл: `config/ftbquests/quests/chapters/nasledie_defense.snbt`.
 - **icon / confirmed:** Звезда Незера не обозначает условие четырёх убийств с трофейным топором в основной руке; зарегистрированный wrought_axe точнее.
