@@ -1,0 +1,3367 @@
+{
+  "summary": {
+    "audit_date": "2026-10-16",
+    "jar_files": 96,
+    "zip_contents": {
+      "lithostitched-forge-1.20.1-1.4.11.zip": 52,
+      "recruits-1.20.1-1.15.2.zip": 44
+    },
+    "all_jars_match_large_zips": true,
+    "jar_integrity": "96 / 96 CRC OK",
+    "jar_ids_including_nested": 105,
+    "missing_mandatory_external_mod_ids": {},
+    "unique_jar_file_hashes": 96,
+    "gameplay_recipe_json_entries": 14518,
+    "advancement_json_entries": 5952,
+    "config_and_kubejs": {
+      "config.zip": {
+        "files": 292,
+        "integrity": "OK"
+      },
+      "kubejs.zip": {
+        "files": 65,
+        "integrity": "OK",
+        "server_scripts": [
+          "kubejs/server_scripts/nasledie_stage_status.js",
+          "kubejs/server_scripts/nasledie_team_milestones.js"
+        ],
+        "recipe_script_files": []
+      }
+    },
+    "notes": [
+      "JAR Zip CRC and metadata checks are not a Minecraft runtime test.",
+      "Some recipe JSON entries are recipe book unlocks / compat entries rather than independent recipes; namespace/ID validation is required.",
+      "mods.toml version ranges not yet evaluated for full semantic compatibility; dependencies may be bundled in nested JARs.",
+      "Config and KubeJS files are provided; their gameplay effects must be checked before creating quests."
+    ]
+  },
+  "mods": [
+    {
+      "file": "[forge]ctov-3.4.14.jar",
+      "sha256": "c4b0326efa655b180cc2b9d87994ca639ee4415debbf45788f665e9f4f864d3c",
+      "bytes": 6772753,
+      "mods": [
+        {
+          "id": "ctov",
+          "version": "3.4.14"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "alexscaves-2.0.2(1).jar",
+      "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+      "bytes": 74871657,
+      "mods": [
+        {
+          "id": "alexscaves",
+          "version": "2.0.2"
+        }
+      ],
+      "recipes_json": 467,
+      "advancements_json": 146,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "alexsmobs-1.22.9.jar",
+      "sha256": "16bc5bcc19db9029c24f951346ec71098e6f5b0afef96e61894a2e9407aad37c",
+      "bytes": 26350793,
+      "mods": [
+        {
+          "id": "alexsmobs",
+          "version": "1.22.9"
+        }
+      ],
+      "recipes_json": 84,
+      "advancements_json": 106,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "AmbientSounds_FORGE_v6.3.10_mc1.20.1.jar",
+      "sha256": "ea2abb7d9636ff4a8f497775c6fea524dc28b543cb88cb9c00e0e349ce71adfc",
+      "bytes": 53432458,
+      "mods": [
+        {
+          "id": "ambientsounds",
+          "version": "6.3.10"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "appleskin-forge-mc1.20.1-2.5.1.jar",
+      "sha256": "e12419e43e3babc810af289403c5cd96bd7f09809b389acc6bb2f122b4b2a426",
+      "bytes": 47428,
+      "mods": [
+        {
+          "id": "appleskin",
+          "version": "${file.jarVersion}"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "architectury-9.2.14-forge.jar",
+      "sha256": "218b471d0b8a1f6cda14cfc1beb9eeb0df54304500acc6c5613d9b88ec65d9af",
+      "bytes": 580602,
+      "mods": [
+        {
+          "id": "architectury",
+          "version": "9.2.14"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "artifacts-forge-9.5.19(1).jar",
+      "sha256": "f1e4dc786866b6e4f2a48142f2acf63bb9bee54ac2f31621ad5d8f18ab54c7b0",
+      "bytes": 850974,
+      "mods": [
+        {
+          "id": "artifacts",
+          "version": "9.5.19"
+        }
+      ],
+      "recipes_json": 3,
+      "advancements_json": 3,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jars/expandability-forge-9.0.4.jar",
+          "mod_ids": [
+            "expandability"
+          ]
+        },
+        {
+          "path": "META-INF/jars/mixinextras-forge-0.3.5.jar",
+          "mod_ids": [
+            "mixinextras"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "balm-forge-1.20.1-7.3.44.jar",
+      "sha256": "ad11d968770bb1ce73377626b6f1dcd4ae6f8be1ef6f37cee9b872b8176aebd3",
+      "bytes": 561741,
+      "mods": [
+        {
+          "id": "balm",
+          "version": "7.3.44"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jarjar/kuma-api-forge-20.1.12+1.20.1.jar",
+          "mod_ids": [
+            "kuma_api"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "better_weaponry-1.1.3-forge-1.20.1.jar",
+      "sha256": "eeb86114548e87a115de70a58ea066bbe8846c9f57a8902bb564dd06919c36cb",
+      "bytes": 650331,
+      "mods": [
+        {
+          "id": "better_weaponry",
+          "version": "1.1.3"
+        }
+      ],
+      "recipes_json": 171,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "betterarcheology-1.2.1-1.20.1(1).jar",
+      "sha256": "4180f72ec4b69690ec160ac50e48c087f0fe7c98681dcd1f70d82ed5cbfeec9e",
+      "bytes": 982838,
+      "mods": [
+        {
+          "id": "betterarcheology",
+          "version": "1.2.1-1.20.1"
+        }
+      ],
+      "recipes_json": 80,
+      "advancements_json": 54,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "Bountiful-6.0.4+1.20.1-forge(1).jar",
+      "sha256": "ba171d8cf146faa138563b4b7114742e1589fc444fce7503a1779eb80a8a4765",
+      "bytes": 502662,
+      "mods": [
+        {
+          "id": "bountiful",
+          "version": "6.0.4+1.20.1"
+        }
+      ],
+      "recipes_json": 2,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "bountiful_npc-forge-1.20.1-1.0.6(1).jar",
+      "sha256": "a4a9adaa2f367d5f618e562562a09ad4bfbe94c0a514c77c52d47d35b9441fde",
+      "bytes": 153983,
+      "mods": [
+        {
+          "id": "bountiful_npc",
+          "version": "1.0.6"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "citadel-2.6.3-1.20.1(1).jar",
+      "sha256": "56c7ab87348a5292583aac787b6cf11b5193e77f02af1d17ea75a96f8640b3ce",
+      "bytes": 3185275,
+      "mods": [
+        {
+          "id": "citadel",
+          "version": "2.6.3"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "cloth-config-11.1.136-forge.jar",
+      "sha256": "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2",
+      "bytes": 1181413,
+      "mods": [
+        {
+          "id": "cloth_config",
+          "version": "11.1.136"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "ColdSweat-2.4.3.2.jar",
+      "sha256": "229bb3929f4a73eea9ea7988b66f87ff70eea84955725e0df1e22f62d3c2604a",
+      "bytes": 2726263,
+      "mods": [
+        {
+          "id": "cold_sweat",
+          "version": "${file.jarVersion}"
+        }
+      ],
+      "recipes_json": 47,
+      "advancements_json": 21,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "copycats-3.0.10+mc.1.20.1-forge.jar",
+      "sha256": "684a7a65a576d84bee4250b3cc10ddcaa66958cee05b541b1cd99df8bdc0185e",
+      "bytes": 2003713,
+      "mods": [
+        {
+          "id": "copycats",
+          "version": "3.0.10+mc.1.20.1-forge"
+        }
+      ],
+      "recipes_json": 136,
+      "advancements_json": 68,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jars/mixinextras-forge-0.4.1.jar",
+          "mod_ids": [
+            "mixinextras"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "create-1.20.1-6.0.8(1).jar",
+      "sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+      "bytes": 19170905,
+      "mods": [
+        {
+          "id": "create",
+          "version": "6.0.8"
+        }
+      ],
+      "recipes_json": 2782,
+      "advancements_json": 1118,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jarjar/Ponder-Forge-1.20.1-1.0.91.jar",
+          "mod_ids": [
+            "ponder"
+          ]
+        },
+        {
+          "path": "META-INF/jarjar/Registrate-MC1.20-1.3.3.jar",
+          "mod_ids": []
+        },
+        {
+          "path": "META-INF/jarjar/flywheel-forge-1.20.1-1.0.5.jar",
+          "mod_ids": [
+            "flywheel"
+          ]
+        },
+        {
+          "path": "META-INF/jarjar/mixinextras-forge-0.4.1.jar",
+          "mod_ids": [
+            "mixinextras"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "create_cold_sweat-1.1.2.jar",
+      "sha256": "a6a799830c93713eb729b7e6c22bc15a9b69d792e8ae55b6dbd18e0c9f758240",
+      "bytes": 216702,
+      "mods": [
+        {
+          "id": "create_cold_sweat",
+          "version": "1.1.2"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "createaddition-1.20.1-1.3.3(1).jar",
+      "sha256": "9bf3ae15d86ec95d128542caf10e4b5498e49ca02f725b9302d6daecd5eae1db",
+      "bytes": 1577313,
+      "mods": [
+        {
+          "id": "createaddition",
+          "version": "${file.jarVersion}"
+        }
+      ],
+      "recipes_json": 135,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "createbigcannons-5.11.4-mc.1.20.1-forge(1).jar",
+      "sha256": "11845f0d79a9014977f667a57b14d0527928bee8b66bc6b50bedcc29ee81878a",
+      "bytes": 4058306,
+      "mods": [
+        {
+          "id": "createbigcannons",
+          "version": "5.11.4"
+        }
+      ],
+      "recipes_json": 222,
+      "advancements_json": 72,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jars/mixinextras-forge-0.4.1.jar",
+          "mod_ids": [
+            "mixinextras"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "createdeco-2.0.3-1.20.1-forge.jar",
+      "sha256": "7d6dd0094d18d6bab64fcd7de680ea736015d1a1ffc472d3fe03122bc7aa0864",
+      "bytes": 3509013,
+      "mods": [
+        {
+          "id": "createdeco",
+          "version": "2.0.3-1.20.1-forge"
+        }
+      ],
+      "recipes_json": 3448,
+      "advancements_json": 1717,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "createdieselgenerators-1.20.1-1.3.12(1).jar",
+      "sha256": "808e87b98ea9d42a43096a113a7fa1a89c65bee95608855c6cfe2914d6f1f642",
+      "bytes": 3128610,
+      "mods": [
+        {
+          "id": "createdieselgenerators",
+          "version": "1.20.1-1.3.12"
+        }
+      ],
+      "recipes_json": 135,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
+      "sha256": "936de62489c0d6fbe74202486cbe2b191b8629b02bab1d480acfdb03690f33f4",
+      "bytes": 1144290,
+      "mods": [
+        {
+          "id": "creativecore",
+          "version": "2.12.40"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "cristellib-1.1.6-forge.jar",
+      "sha256": "3856ad565ea45d6189452d813e2f021b365b686d3b1adae5f747c56a1e535d9f",
+      "bytes": 431318,
+      "mods": [
+        {
+          "id": "cristellib",
+          "version": "1.1.6"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jars/jankson-1.2.3.jar",
+          "mod_ids": []
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "cupboard-1.20.1-4.2.jar",
+      "sha256": "6a384b880c2429e017f83657438e1fc00d091592cc2860d6d2986094bac5d48f",
+      "bytes": 33422,
+      "mods": [
+        {
+          "id": "cupboard",
+          "version": "${file.jarVersion}"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "curios-forge-5.14.1+1.20.1.jar",
+      "sha256": "1e817919a35b37cf30524aaec73f0ca5130452f23f168f844854df282eb8e51f",
+      "bytes": 398066,
+      "mods": [
+        {
+          "id": "curios",
+          "version": "${file.jarVersion}"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "dungeons-and-taverns-3.0.3.f[Forge].jar",
+      "sha256": "251b531ff2882c61a4c2eba3bd7b1683aa22b6c2d459e27bfde04a2948c99e1e",
+      "bytes": 13161907,
+      "mods": [
+        {
+          "id": "mr_dungeons_andtaverns",
+          "version": "3.0.3.f"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 20,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "DungeonsArise-1.20.x-2.1.58-release.jar",
+      "sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+      "bytes": 8762342,
+      "mods": [
+        {
+          "id": "dungeons_arise",
+          "version": "2.1.58-1.20.x"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 39,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "embeddium-0.3.31+mc1.20.1.jar",
+      "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb",
+      "bytes": 1320675,
+      "mods": [
+        {
+          "id": "embeddium",
+          "version": "0.3.31+mc1.20.1"
+        },
+        {
+          "id": "rubidium",
+          "version": "0.7.1"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jarjar/mixinextras-forge-0.3.5.jar",
+          "mod_ids": [
+            "mixinextras"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "emotecraft-for-MC1.20.1-2.2.7-b.build.50-forge.jar",
+      "sha256": "ffaac96e37e6fa950080e2eb4aa361aa8b7bd6c4370862f39893ac2d266d7c14",
+      "bytes": 680255,
+      "mods": [
+        {
+          "id": "emotecraft",
+          "version": "2.2.7-b.build.50"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "entityculling-forge-1.11.3-mc1.20.1.jar",
+      "sha256": "86de2a9fc6538bc26e71e5393ae72018eb9bb349a5dbaa0645fd194da5654b66",
+      "bytes": 1515076,
+      "mods": [
+        {
+          "id": "entityculling",
+          "version": "1.11.3"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jars/TRansition-1.0.26-1.20.1-forge-SNAPSHOT.jar",
+          "mod_ids": [
+            "transition"
+          ]
+        },
+        {
+          "path": "META-INF/jars/TRender-1.0.17-1.20.1-forge-SNAPSHOT.jar",
+          "mod_ids": [
+            "trender"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "epic-fight-20.14.17-mc1.20.1-forge(1).jar",
+      "sha256": "69566cf70ae2d91d3f2564c608f014c87e290cef6215c2a27719851165485f73",
+      "bytes": 8071119,
+      "mods": [
+        {
+          "id": "epicfight",
+          "version": "20.14.17"
+        }
+      ],
+      "recipes_json": 31,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "epic-fight-invincible-lib-20.14.8.2-mc1.20.1-forge.jar",
+      "sha256": "0017db1a54bca5ac90ac7e4010e3a59a93ab287ad2a6b68b6781dd5beabf31ed",
+      "bytes": 268536,
+      "mods": [
+        {
+          "id": "invincible",
+          "version": "20.14.8.2"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "ExplorersCompass-1.20.1-1.4.0-forge(1).jar",
+      "sha256": "0d9a7705f39a9eac19c33e0fbe5422280048991a341dc0d9471bff32111c502c",
+      "bytes": 174387,
+      "mods": [
+        {
+          "id": "explorerscompass",
+          "version": "1.20.1-1.4.0-forge"
+        }
+      ],
+      "recipes_json": 2,
+      "advancements_json": 4,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "FarmersDelight-1.20.1-1.3.4(1).jar",
+      "sha256": "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce",
+      "bytes": 3311051,
+      "mods": [
+        {
+          "id": "farmersdelight",
+          "version": "1.20.1-1.3.4"
+        }
+      ],
+      "recipes_json": 530,
+      "advancements_json": 218,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jarjar/mixinextras-forge-0.3.6.jar",
+          "mod_ids": [
+            "mixinextras"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "ferritecore-6.0.1-forge.jar",
+      "sha256": "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54",
+      "bytes": 123034,
+      "mods": [
+        {
+          "id": "ferritecore",
+          "version": "${file.jarVersion}"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "ftb-library-forge-2001.2.13(1).jar",
+      "sha256": "41810281b65336265cae2c88412022d02f2f0a3f28c66a06173d86f98acf14a7",
+      "bytes": 780558,
+      "mods": [
+        {
+          "id": "ftblibrary",
+          "version": "2001.2.13"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "ftb-quests-forge-2001.4.22(1).jar",
+      "sha256": "9ea9d159a78a2724cfe0457b024680fdb52a2126eff9cfa5280a30578f647a68",
+      "bytes": 1255469,
+      "mods": [
+        {
+          "id": "ftbquests",
+          "version": "2001.4.22"
+        }
+      ],
+      "recipes_json": 7,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "ftb-teams-forge-2001.3.2(1).jar",
+      "sha256": "b1cb4d82ea9f137a87e12a7aaf3329619294b56f7d70337dfd557a76e10b6e07",
+      "bytes": 252579,
+      "mods": [
+        {
+          "id": "ftbteams",
+          "version": "2001.3.2"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "ftb-xmod-compat-forge-2.1.3.jar",
+      "sha256": "16a8eb9de88d5c33d29cb076cc39dfb337b2c54348e1ef1efe9dd60cf85e5f72",
+      "bytes": 129725,
+      "mods": [
+        {
+          "id": "ftbxmodcompat",
+          "version": "2.1.3"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "geckolib-forge-1.20.1-4.8.4.jar",
+      "sha256": "c04abba4fd354dd8c0e8a732f1f05f4dca893d2e1d962b2ab128bbd411478747",
+      "bytes": 1038209,
+      "mods": [
+        {
+          "id": "geckolib",
+          "version": "4.8.4"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jarjar/mclib-20.jar",
+          "mod_ids": []
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "immersive_aircraft-1.5.0+1.20.1-forge.jar",
+      "sha256": "7e00754f893d910f301134e0cada37dde0be36c8df15ebf98a5b6512fa664077",
+      "bytes": 2441036,
+      "mods": [
+        {
+          "id": "immersive_aircraft",
+          "version": "1.5.0+1.20.1"
+        }
+      ],
+      "recipes_json": 27,
+      "advancements_json": 1,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jars/MathParser.org-mXparser-5.2.1.jar",
+          "mod_ids": []
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "ImmersiveUI-FORGE-0.3.0(1).jar",
+      "sha256": "7295ae6681b178ed633e951b1f4478d15b2ed7b13836038caf7d3c9427fff1ff",
+      "bytes": 401514,
+      "mods": [
+        {
+          "id": "immersiveui",
+          "version": "0.3.0"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jars/mixinextras-forge-0.4.1.jar",
+          "mod_ids": [
+            "mixinextras"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "interiors-1.20.1-forge-0.6.0.jar",
+      "sha256": "22d256df6dc6249e3421c0cffd1aa4454434fe840401171d288baa2da7dfd441",
+      "bytes": 489265,
+      "mods": [
+        {
+          "id": "interiors",
+          "version": "0.6.0"
+        }
+      ],
+      "recipes_json": 264,
+      "advancements_json": 128,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "Jade-1.20.1-Forge-11.13.3.jar",
+      "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+      "bytes": 553487,
+      "mods": [
+        {
+          "id": "jade",
+          "version": "${file.jarVersion}"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "jei-1.20.1-forge-15.56.0.205.jar",
+      "sha256": "6b251e60a4719c874da89d750af97aa6498f6f4475e3ae79cb1288c7bf0cb65c",
+      "bytes": 1778129,
+      "mods": [
+        {
+          "id": "jei",
+          "version": "15.56.0.205"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "Kambrik-6.1.1+1.20.1-forge.jar",
+      "sha256": "37d0c2b03a1f3aacb30498d67c35adaca99dc9ecd30f66f383016f4cbc85be8e",
+      "bytes": 325546,
+      "mods": [
+        {
+          "id": "kambrik",
+          "version": "6.1.1+1.20.1"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "kotlinforforge-4.12.0-all.jar",
+      "sha256": "6a66c6a68ec09f8717cdbf06883394f0ee24d7cd826b7134a0f81839e8e720ae",
+      "bytes": 7442998,
+      "mods": [],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jarjar/kfflang-4.12.0.jar",
+          "mod_ids": []
+        },
+        {
+          "path": "META-INF/jarjar/kfflib-4.12.0.jar",
+          "mod_ids": []
+        },
+        {
+          "path": "META-INF/jarjar/kffmod-4.12.0.jar",
+          "mod_ids": [
+            "kotlinforforge"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "kubejs-forge-2001.6.5-build.26(1).jar",
+      "sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+      "bytes": 1658792,
+      "mods": [
+        {
+          "id": "kubejs",
+          "version": "2001.6.5-build.26"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jars/mixinextras-forge-0.2.0-rc.2.jar",
+          "mod_ids": [
+            "mixinextras"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "L_Enders_Cataclysm-3.31(1).jar",
+      "sha256": "c29dcf940168208517b72f2d9965828b106a6b94cbea55d5001558c69a27b362",
+      "bytes": 73916104,
+      "mods": [
+        {
+          "id": "cataclysm",
+          "version": "3.31"
+        }
+      ],
+      "recipes_json": 189,
+      "advancements_json": 21,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jarjar/mixinextras-forge-0.5.3.jar",
+          "mod_ids": []
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "lionfishapi-3.0.jar",
+      "sha256": "d2fdaf7e9bc53fde7da4a86ab17018a3ed6c16fc2d46de5054e5a83e2bef7871",
+      "bytes": 101931,
+      "mods": [
+        {
+          "id": "lionfishapi",
+          "version": "3.0"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "lithostitched-forge-1.20.1-1.4.11.jar",
+      "sha256": "c19a5a36c0e6cb3782cf7ca5b9648fb1bce5fc41fd737bed423a1f4971bccf75",
+      "bytes": 476347,
+      "mods": [
+        {
+          "id": "lithostitched",
+          "version": "1.4.11"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "lootintegration_wda-1.8.jar",
+      "sha256": "8645bc1926c231c715beb2393141c97079f9a84798039734479d69753ddd42bb",
+      "bytes": 8134,
+      "mods": [
+        {
+          "id": "lootintegration_wda",
+          "version": "1"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "lootintegrations-1.20.1-4.7.jar",
+      "sha256": "88dc2701f90c04a4fa343be11ea0c21cbda1d675cba514f201946dcd8eae17ea",
+      "bytes": 42220,
+      "mods": [
+        {
+          "id": "lootintegrations",
+          "version": "${file.jarVersion}"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "lootr-forge-1.20-0.7.35.94.jar",
+      "sha256": "01200ee5889e6bcc3c5fa8f32b7b49a4bd58e653699eeb655c6f2dd314e3ce51",
+      "bytes": 463485,
+      "mods": [
+        {
+          "id": "lootr",
+          "version": "0.7.35.94"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 10,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "minecraft-comes-alive-7.6.26+1.20.1-universal.jar",
+      "sha256": "5dc3ee1f2f74221b3b7b73456451bf9a3f0cc87c8378a64233680f051dbc3d19",
+      "bytes": 13058547,
+      "mods": [
+        {
+          "id": "mca",
+          "version": "7.6.26+1.20.1"
+        }
+      ],
+      "recipes_json": 419,
+      "advancements_json": 221,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "modernfix-forge-5.27.88+mc1.20.1.jar",
+      "sha256": "0f4321aa704c3d7813822065675c33441759dc52b6825fa522b5a36f37e430d5",
+      "bytes": 1009661,
+      "mods": [
+        {
+          "id": "modernfix",
+          "version": "5.27.88+mc1.20.1"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jarjar/mixinextras-forge-0.4.1.jar",
+          "mod_ids": [
+            "mixinextras"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+      "sha256": "6c27d16aa715ac6613a55fc463739e2c7b78279e4e4c4cede299e4a2d4a70f08",
+      "bytes": 76237,
+      "mods": [
+        {
+          "id": "mousetweaks",
+          "version": "${file.jarVersion}"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "mowziesmobs-1.8.2(1).jar",
+      "sha256": "e8ce1768cda6f1e1fadd2321c92921b473bd0cee45ba4b8387fb30f8326cb31c",
+      "bytes": 36033850,
+      "mods": [
+        {
+          "id": "mowziesmobs",
+          "version": "1.8.2"
+        }
+      ],
+      "recipes_json": 12,
+      "advancements_json": 16,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar",
+      "sha256": "8f05afb56310b21e91d2f1d1200a9c0d98a34a9689b9b6288a6507c0498b299d",
+      "bytes": 21667,
+      "mods": [
+        {
+          "id": "nerb",
+          "version": "0.4.1"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "notenoughanimations-forge-1.12.6-mc1.20.1.jar",
+      "sha256": "66f1f6d61102dd03a4afafe4c9f1d39be9e55dabc8d0821cb46acca1328b525d",
+      "bytes": 1870649,
+      "mods": [
+        {
+          "id": "notenoughanimations",
+          "version": "1.12.6"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jars/TRansition-1.0.25-1.20.1-forge-SNAPSHOT.jar",
+          "mod_ids": [
+            "transition"
+          ]
+        },
+        {
+          "path": "META-INF/jars/TRender-1.0.17-1.20.1-forge-SNAPSHOT.jar",
+          "mod_ids": [
+            "trender"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "OctoLib-FORGE-0.5.0.1+1.20.1.jar",
+      "sha256": "5bb146c691f2c5054752f006a61aab6335ecb1cd9718a9643733de5367971047",
+      "bytes": 424035,
+      "mods": [
+        {
+          "id": "octolib",
+          "version": "0.5.0.1"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jars/snakeyaml-2.2.jar",
+          "mod_ids": []
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "oculus-mc1.20.1-1.8.0.jar",
+      "sha256": "0945df0cba0f62b3901dd80c3268e5311b770ece78c78037a45db12ac0425fef",
+      "bytes": 2851119,
+      "mods": [
+        {
+          "id": "oculus",
+          "version": "1.8.0"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jars/jcpp-1.4.14.jar",
+          "mod_ids": []
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "ocuwheel-forge-1.20.1-1.0.2.jar",
+      "sha256": "4cf4597fb3a64408377b504ff648d75cf1288d0d98fa1a562bbb711285684d0a",
+      "bytes": 863001,
+      "mods": [
+        {
+          "id": "ocuwheel",
+          "version": "1.0.2"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+      "sha256": "90d9965cb9efdbda29fdc5610be3914cf7008bf5c392ff34f7ab25f96a852691",
+      "bytes": 181437,
+      "mods": [
+        {
+          "id": "playeranimator",
+          "version": "1.0.2-rc1+1.20"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "raccompat-1.20.1-0.1.3(1).jar",
+      "sha256": "8ba216e8c9bfa502e69a88f491fdd1cba141c5cfa9d1293cf749effd1ef2f5a1",
+      "bytes": 119631,
+      "mods": [
+        {
+          "id": "raccompat",
+          "version": "0.1.3"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "ramcompat-1.20.1-0.1.4(1).jar",
+      "sha256": "d3e1114c3a0b8b7761b6f9ec9ac17d3e487bc488b4bb1a4acf8740726be90ccb",
+      "bytes": 43635,
+      "mods": [
+        {
+          "id": "ramcompat",
+          "version": "0.1.4"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "rarcompat-1.20.1-0.5(1).jar",
+      "sha256": "2de2a9cfd21edf676072ca7432ff9acdd28f8e077fcac90a46d3dea8f82bf9f1",
+      "bytes": 409926,
+      "mods": [
+        {
+          "id": "rarcompat",
+          "version": "0.5"
+        }
+      ],
+      "recipes_json": 1,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "recruits-1.20.1-1.15.2(1).jar",
+      "sha256": "4b53c1b752e886ba10985aad2df30d668971810230eb77867e07428a21d1af7f",
+      "bytes": 2811101,
+      "mods": [
+        {
+          "id": "recruits",
+          "version": "1.15.2"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "relics-1.20.1-0.8.0.13(2).jar",
+      "sha256": "2731d3b81533564c5d206faf94e4e8afaf928d97b47b720e5d6aaa017333096f",
+      "bytes": 1521089,
+      "mods": [
+        {
+          "id": "relics",
+          "version": "0.8.0.13"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "rhino-forge-2001.2.3-build.10(1).jar",
+      "sha256": "fed2211429301bf043864183cab9ab8e92d4cc4dbb9e488ce6c75217c54584a6",
+      "bytes": 1798244,
+      "mods": [
+        {
+          "id": "rhino",
+          "version": "2001.2.3-build.10"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "ritchiesprojectilelib-2.1.1-mc.1.20.1-forge.jar",
+      "sha256": "5531ec454792f98993fa29d55f8810444ba3e9ef8f04331c5811b84ec8d0c3dc",
+      "bytes": 78625,
+      "mods": [
+        {
+          "id": "ritchiesprojectilelib",
+          "version": "2.1.1"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "sliceanddice-forge-3.6.0.jar",
+      "sha256": "bafdcbeda044603b59eb16059829a6698c1a58d1ce865b8658e598f2718d315a",
+      "bytes": 588268,
+      "mods": [
+        {
+          "id": "sliceanddice",
+          "version": "3.6.0"
+        }
+      ],
+      "recipes_json": 11,
+      "advancements_json": 3,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jarjar/mixinextras-forge-0.4.1.jar",
+          "mod_ids": [
+            "mixinextras"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "sophisticatedbackpacks-1.20.1-3.26.9.2194(1).jar",
+      "sha256": "a597c6ae9442da5903cbfbd080c8503d71c41398fc6a34dd6e378d3d4b6a8136",
+      "bytes": 1215726,
+      "mods": [
+        {
+          "id": "sophisticatedbackpacks",
+          "version": "3.26.9.2194"
+        }
+      ],
+      "recipes_json": 167,
+      "advancements_json": 83,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "sophisticatedcore-1.20.1-1.5.6.2383(1).jar",
+      "sha256": "f8bf822f2a4ad48bca059af3b5e8ad42d716a99ed0ce57b246bbf80c233dae1e",
+      "bytes": 1758805,
+      "mods": [
+        {
+          "id": "sophisticatedcore",
+          "version": "1.5.6.2383"
+        }
+      ],
+      "recipes_json": 5,
+      "advancements_json": 1,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "sophisticatedstorage-1.20.1-1.5.1.2158(1).jar",
+      "sha256": "d9408b91e54189fe5d3217794e98cd1183dec5b31585671662c16f8e6b6c65d1",
+      "bytes": 1919182,
+      "mods": [
+        {
+          "id": "sophisticatedstorage",
+          "version": "1.5.1.2158"
+        }
+      ],
+      "recipes_json": 679,
+      "advancements_json": 331,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "sound-physics-remastered-forge-1.20.1-1.5.1.jar",
+      "sha256": "591fa317c4e462039dae01967bf370acb284d5118cf5839a33f1d01b6c0def3c",
+      "bytes": 206984,
+      "mods": [
+        {
+          "id": "sound_physics_remastered",
+          "version": "1.20.1-1.5.1"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "Steam_Rails-1.7.3+forge-mc1.20.1(1).jar",
+      "sha256": "0e98b72472ff78464f6e69025bb47f942e7f66a976382fbb87ceff765a8b00cf",
+      "bytes": 17042037,
+      "mods": [
+        {
+          "id": "railways",
+          "version": "1.7.3+forge-mc1.20.1"
+        }
+      ],
+      "recipes_json": 4157,
+      "advancements_json": 1294,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jars/mixinextras-forge-0.5.3.jar",
+          "mod_ids": []
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "structureessentials-1.20.1-5.0.jar",
+      "sha256": "602c8f17f6d805458c3da679b28183b0dfb4987457fd8a365de339d127f22831",
+      "bytes": 62974,
+      "mods": [
+        {
+          "id": "structureessentials",
+          "version": "${file.jarVersion}"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "supermartijn642configlib-1.1.8-forge-mc1.20.jar",
+      "sha256": "bea425ef7e9cd27a7fc0f4b89e00cbd0a1ee050f071ecaa9f28f7238f400f0a3",
+      "bytes": 206584,
+      "mods": [
+        {
+          "id": "supermartijn642configlib",
+          "version": "1.1.8"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "Terralith_1.20.x_v2.5.4(3).jar",
+      "sha256": "8f65f309d8f2723754bf4b60c7b5763d3ab6ed04b01c172109ba6564e981b95f",
+      "bytes": 3156901,
+      "mods": [
+        {
+          "id": "terralith",
+          "version": "2.5.4"
+        }
+      ],
+      "recipes_json": 16,
+      "advancements_json": 10,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "tombstone-1.20.1-9.1.5(2).jar",
+      "sha256": "b610a465ac5bffa8142076324946a59ab4b662affec7c25ddcb4ece9e33d6497",
+      "bytes": 2560746,
+      "mods": [
+        {
+          "id": "tombstone",
+          "version": "9.1.5"
+        }
+      ],
+      "recipes_json": 192,
+      "advancements_json": 238,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "Towns-and-Towers-1.12-Fabric+Forge(2).jar",
+      "sha256": "9c8115af7109579da990249fdd67b38323a45be70f8a3a962b61da69c7021984",
+      "bytes": 2864275,
+      "mods": [
+        {
+          "id": "t_and_t",
+          "version": "${file.jarVersion}"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "TravelersTitles-1.20-Forge-4.0.2(2).jar",
+      "sha256": "e72bcce5e31ab2d5f09eff53697969b32e56c35801b3014e03d558b442b9d38b",
+      "bytes": 228191,
+      "mods": [
+        {
+          "id": "travelerstitles",
+          "version": "1.20-Forge-4.0.2"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "village_recruits-1.0.7.93TC-205(2).jar",
+      "sha256": "9f34d9fed68f1f07bd83040759bece65240b31e37b0d4cea08286b1605137437",
+      "bytes": 13207969,
+      "mods": [
+        {
+          "id": "village_recruits",
+          "version": "1.0.7.93TC-205"
+        }
+      ],
+      "recipes_json": 63,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "waystones-forge-1.20.1-14.1.21(2).jar",
+      "sha256": "fd6fe3c645328ea7be5bc6723d02c881e34650e0cbd4527ba59e42fa4cbe3c80",
+      "bytes": 536782,
+      "mods": [
+        {
+          "id": "waystones",
+          "version": "14.1.21"
+        }
+      ],
+      "recipes_json": 34,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "workers-1.20.1-2.0.3(3).jar",
+      "sha256": "c7c59a7a87bf51ec5ffbadfe5340f854f92397591a52ab5af1df8bffd71d941e",
+      "bytes": 1316715,
+      "mods": [
+        {
+          "id": "workers",
+          "version": "2.0.3"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "xaerominimap-forge-1.20.1-26.6.0(1).jar",
+      "sha256": "9b39cd06094d7631c8614d172d0ba8399c71c981530af417f12a7909fcb855bd",
+      "bytes": 2196194,
+      "mods": [
+        {
+          "id": "xaerominimap",
+          "version": "26.6.0"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jarjar/xaerolib-forge-1.20.1-1.7.3.jar",
+          "mod_ids": [
+            "xaerolib"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "xaeroworldmap-forge-1.20.1-1.47.0(1).jar",
+      "sha256": "88c6d844163c95a94d92bc6d87d9011cc840bd6207c3099a81b113d4450a3f6b",
+      "bytes": 1429424,
+      "mods": [
+        {
+          "id": "xaeroworldmap",
+          "version": "1.47.0"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [
+        {
+          "path": "META-INF/jarjar/xaerolib-forge-1.20.1-1.7.3.jar",
+          "mod_ids": [
+            "xaerolib"
+          ]
+        }
+      ],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "YungsApi-1.20-Forge-4.0.6(2).jar",
+      "sha256": "101c30d01d0cf9d86190f578eb1e43bd06b64092e95662a00ef52946f472c7b1",
+      "bytes": 370524,
+      "mods": [
+        {
+          "id": "yungsapi",
+          "version": "1.20-Forge-4.0.6"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "YungsBetterDungeons-1.20-Forge-4.0.4(2).jar",
+      "sha256": "93c24e4075c51da0866f3fc92322bdb60e590ac2cd78dce275460839c54c36f5",
+      "bytes": 792381,
+      "mods": [
+        {
+          "id": "betterdungeons",
+          "version": "1.20-Forge-4.0.4"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 7,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "YungsBetterMineshafts-1.20-Forge-4.0.4(2).jar",
+      "sha256": "6632e7bcc58325098e85bcb755483de7cb3af92a5ea548f3b5c0162cbf0dc1dc",
+      "bytes": 492998,
+      "mods": [
+        {
+          "id": "bettermineshafts",
+          "version": "1.20-Forge-4.0.4"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "YungsBetterNetherFortresses-1.20-Forge-2.0.6(3).jar",
+      "sha256": "12cffc99dccca69d294ba5bc39c331367794b339061572a6f3773620303a2f51",
+      "bytes": 619255,
+      "mods": [
+        {
+          "id": "betterfortresses",
+          "version": "1.20-Forge-2.0.6"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 1,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "YungsBetterOceanMonuments-1.20-Forge-3.0.4(3).jar",
+      "sha256": "bea2640c4afeb5231362a756d886ca4f246c7951175c91348272b3ce5d483bae",
+      "bytes": 1033262,
+      "mods": [
+        {
+          "id": "betteroceanmonuments",
+          "version": "1.20-Forge-3.0.4"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "YungsBetterStrongholds-1.20-Forge-4.0.3(3).jar",
+      "sha256": "054b0a1be86510ed6bd05de66a29200f13f5603c0c9eb7e62074ddc3d19cb0e4",
+      "bytes": 473564,
+      "mods": [
+        {
+          "id": "betterstrongholds",
+          "version": "1.20-Forge-4.0.3"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 1,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    },
+    {
+      "file": "zmedievalmusic-1.20.1-2.2(1).jar",
+      "sha256": "afe5d3d0b6623fb2df6622a76e8fc93d8ab8b32cd9384ca138dec1944049ac84",
+      "bytes": 304415885,
+      "mods": [
+        {
+          "id": "medievalmusic",
+          "version": "${file.jarVersion}"
+        }
+      ],
+      "recipes_json": 0,
+      "advancements_json": 0,
+      "nested_libraries": [],
+      "matches_combined_zips": true
+    }
+  ],
+  "mandatory_dependencies": [
+    {
+      "source": "ctov",
+      "required": "lithostitched",
+      "version_range": "[1.4,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ctov",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ctov",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "alexscaves",
+      "required": "citadel",
+      "version_range": "[2.6.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "alexscaves",
+      "required": "forge",
+      "version_range": "[47.1.3,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "alexsmobs",
+      "required": "citadel",
+      "version_range": "[2.6.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "alexsmobs",
+      "required": "forge",
+      "version_range": "[47.1.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ambientsounds",
+      "required": "forge",
+      "version_range": "[46,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ambientsounds",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ambientsounds",
+      "required": "creativecore",
+      "version_range": "[2.12.36,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "appleskin",
+      "required": "forge",
+      "version_range": "[47.0.12,)",
+      "side": "CLIENT"
+    },
+    {
+      "source": "architectury",
+      "required": "minecraft",
+      "version_range": "[1.20,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "architectury",
+      "required": "forge",
+      "version_range": "[46,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "artifacts",
+      "required": "forge",
+      "version_range": "[47.0.46,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "artifacts",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.20.2)",
+      "side": "BOTH"
+    },
+    {
+      "source": "artifacts",
+      "required": "curios",
+      "version_range": "[5.8.1+1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "artifacts",
+      "required": "expandability",
+      "version_range": "[9.0.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "artifacts",
+      "required": "cloth_config",
+      "version_range": "[11.0.99,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "artifacts",
+      "required": "architectury",
+      "version_range": "[9.0.8,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "balm",
+      "required": "forge",
+      "version_range": "[46.0.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "balm",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "better_weaponry",
+      "required": "minecraft",
+      "version_range": "[1.20.1]",
+      "side": "BOTH"
+    },
+    {
+      "source": "betterarcheology",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betterarcheology",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.20.4)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betterarcheology",
+      "required": "yungsapi",
+      "version_range": "[1.20-Forge-4.0.2,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betterarcheology",
+      "required": "supermartijn642configlib",
+      "version_range": "[1.1.8,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "bountiful",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "bountiful",
+      "required": "kambrik",
+      "version_range": "[6.1.0,7.0.0)",
+      "side": "BOTH"
+    },
+    {
+      "source": "bountiful",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "bountiful_npc",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "bountiful_npc",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "bountiful_npc",
+      "required": "bountiful",
+      "version_range": "[0.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "citadel",
+      "required": "forge",
+      "version_range": "[47.0.34,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "cloth_config",
+      "required": "forge",
+      "version_range": "[45,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "cold_sweat",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "cold_sweat",
+      "required": "minecraft",
+      "version_range": "[1.20.1, 1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "copycats",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "copycats",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "copycats",
+      "required": "create",
+      "version_range": "[6.0.7,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "create",
+      "required": "forge",
+      "version_range": "[47.1.3,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "create",
+      "required": "minecraft",
+      "version_range": "[1.20.1]",
+      "side": "BOTH"
+    },
+    {
+      "source": "create",
+      "required": "flywheel",
+      "version_range": "[1.0.0,2.0)",
+      "side": "CLIENT"
+    },
+    {
+      "source": "create",
+      "required": "ponder",
+      "version_range": "[0.8,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "create_cold_sweat",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "create_cold_sweat",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "create_cold_sweat",
+      "required": "create",
+      "version_range": "[0.5.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "create_cold_sweat",
+      "required": "cold_sweat",
+      "version_range": "[2.3,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "createaddition",
+      "required": "forge",
+      "version_range": "[40,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "createaddition",
+      "required": "create",
+      "version_range": "[6.0.3,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "createaddition",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "createbigcannons",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "createbigcannons",
+      "required": "minecraft",
+      "version_range": "[1.20.1]",
+      "side": "BOTH"
+    },
+    {
+      "source": "createbigcannons",
+      "required": "create",
+      "version_range": "[6.0.7,6.1.0)",
+      "side": "BOTH"
+    },
+    {
+      "source": "createbigcannons",
+      "required": "ritchiesprojectilelib",
+      "version_range": "[2.1.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "createdeco",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "createdeco",
+      "required": "minecraft",
+      "version_range": "1.20.1",
+      "side": "BOTH"
+    },
+    {
+      "source": "createdeco",
+      "required": "create",
+      "version_range": "6.0.2",
+      "side": "BOTH"
+    },
+    {
+      "source": "createdieselgenerators",
+      "required": "forge",
+      "version_range": "[40.2.4,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "createdieselgenerators",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "createdieselgenerators",
+      "required": "create",
+      "version_range": "[6.0.7,6.1.0)",
+      "side": "BOTH"
+    },
+    {
+      "source": "creativecore",
+      "required": "forge",
+      "version_range": "[46,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "creativecore",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "cristellib",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "cristellib",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.20.2)",
+      "side": "BOTH"
+    },
+    {
+      "source": "cupboard",
+      "required": "forge",
+      "version_range": "[30,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "cupboard",
+      "required": "minecraft",
+      "version_range": "[1.19,1.30)",
+      "side": "BOTH"
+    },
+    {
+      "source": "curios",
+      "required": "forge",
+      "version_range": "[46,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "curios",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "dungeons_arise",
+      "required": "forge",
+      "version_range": "[46,)",
+      "side": "SERVER"
+    },
+    {
+      "source": "dungeons_arise",
+      "required": "minecraft",
+      "version_range": "[1.20, 1.21)",
+      "side": "SERVER"
+    },
+    {
+      "source": "emotecraft",
+      "required": "playeranimator",
+      "version_range": "[0.2.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "entityculling",
+      "required": "minecraft",
+      "version_range": "1.20.1",
+      "side": "BOTH"
+    },
+    {
+      "source": "epicfight",
+      "required": "forge",
+      "version_range": "[47.4.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "epicfight",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "invincible",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "invincible",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "invincible",
+      "required": "epicfight",
+      "version_range": "[20.12.13,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "explorerscompass",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "explorerscompass",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "farmersdelight",
+      "required": "forge",
+      "version_range": "[47.1.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "farmersdelight",
+      "required": "minecraft",
+      "version_range": "[1.20,1.20.1]",
+      "side": "BOTH"
+    },
+    {
+      "source": "ferritecore",
+      "required": "forge",
+      "version_range": "[46.0.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ferritecore",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftblibrary",
+      "required": "forge",
+      "version_range": "[47.3,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftblibrary",
+      "required": "minecraft",
+      "version_range": "[1.20,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftblibrary",
+      "required": "architectury",
+      "version_range": "[9.0.8,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftbquests",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftbquests",
+      "required": "architectury",
+      "version_range": "[9.0.8,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftbquests",
+      "required": "ftblibrary",
+      "version_range": "[2001.2.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftbquests",
+      "required": "ftbteams",
+      "version_range": "[2001.1.4,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftbteams",
+      "required": "forge",
+      "version_range": "[47.1.47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftbteams",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftbteams",
+      "required": "architectury",
+      "version_range": "[9.1.12,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftbteams",
+      "required": "ftblibrary",
+      "version_range": "[2001.2.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftbxmodcompat",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftbxmodcompat",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftbxmodcompat",
+      "required": "architectury",
+      "version_range": "[9.0.8,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ftbxmodcompat",
+      "required": "ftblibrary",
+      "version_range": "[2001.1.3,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "geckolib",
+      "required": "forge",
+      "version_range": "[47.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "geckolib",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "immersive_aircraft",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "immersive_aircraft",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "immersiveui",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "immersiveui",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "immersiveui",
+      "required": "octolib",
+      "version_range": "[0.4.2,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "interiors",
+      "required": "create",
+      "version_range": "[6,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "jade",
+      "required": "forge",
+      "version_range": "[46, )",
+      "side": "BOTH"
+    },
+    {
+      "source": "jei",
+      "required": "forge",
+      "version_range": "[47.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "jei",
+      "required": "minecraft",
+      "version_range": "[1.20.1, 1.20.2)",
+      "side": "BOTH"
+    },
+    {
+      "source": "kambrik",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "kambrik",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "kubejs",
+      "required": "forge",
+      "version_range": "[47.1.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "kubejs",
+      "required": "rhino",
+      "version_range": "[2001.2.2-build.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "kubejs",
+      "required": "architectury",
+      "version_range": "[9.1.12,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "cataclysm",
+      "required": "lionfishapi",
+      "version_range": "[3.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "cataclysm",
+      "required": "forge",
+      "version_range": "[36.0.42,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "lionfishapi",
+      "required": "forge",
+      "version_range": "[47.0.34,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "lithostitched",
+      "required": "forge",
+      "version_range": "[46,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "lithostitched",
+      "required": "minecraft",
+      "version_range": "[1.20,1.20.2)",
+      "side": "BOTH"
+    },
+    {
+      "source": "lootintegration_wda",
+      "required": "lootintegrations",
+      "version_range": "[0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "lootintegrations",
+      "required": "forge",
+      "version_range": "[30,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "lootintegrations",
+      "required": "minecraft",
+      "version_range": "[1.20,1.30)",
+      "side": "BOTH"
+    },
+    {
+      "source": "lootintegrations",
+      "required": "cupboard",
+      "version_range": "[1.20.1-1.5,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "mca",
+      "required": "forge",
+      "version_range": "[47.0.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "mca",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "mca",
+      "required": "architectury",
+      "version_range": "[9.0.8,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "modernfix",
+      "required": "forge",
+      "version_range": "[46.0.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "modernfix",
+      "required": "minecraft",
+      "version_range": "[1.20, 1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "mowziesmobs",
+      "required": "forge",
+      "version_range": "[47.1.3,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "mowziesmobs",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "mowziesmobs",
+      "required": "geckolib",
+      "version_range": "[4.4.2,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "nerb",
+      "required": "forge",
+      "version_range": "[46,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "nerb",
+      "required": "minecraft",
+      "version_range": "[1.20,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "nerb",
+      "required": "architectury",
+      "version_range": "[9.2.14,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "nerb",
+      "required": "octolib",
+      "version_range": "[0.4.2,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "notenoughanimations",
+      "required": "minecraft",
+      "version_range": "1.20.1",
+      "side": "BOTH"
+    },
+    {
+      "source": "octolib",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "octolib",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "octolib",
+      "required": "architectury",
+      "version_range": "[9.2.14,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "oculus",
+      "required": "minecraft",
+      "version_range": "[1.20.1]",
+      "side": "BOTH"
+    },
+    {
+      "source": "ocuwheel",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "CLIENT"
+    },
+    {
+      "source": "ocuwheel",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.20.2)",
+      "side": "CLIENT"
+    },
+    {
+      "source": "ocuwheel",
+      "required": "oculus",
+      "version_range": "[1.7.0,)",
+      "side": "CLIENT"
+    },
+    {
+      "source": "ocuwheel",
+      "required": "flywheel",
+      "version_range": "[1.0.0,2.0.0)",
+      "side": "CLIENT"
+    },
+    {
+      "source": "ocuwheel",
+      "required": "create",
+      "version_range": "[6.0.8,7.0.0)",
+      "side": "CLIENT"
+    },
+    {
+      "source": "playeranimator",
+      "required": "minecraft",
+      "version_range": "[1.20,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "raccompat",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "raccompat",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "raccompat",
+      "required": "curios",
+      "version_range": "[5.2.0+1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "raccompat",
+      "required": "octolib",
+      "version_range": "[0.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "raccompat",
+      "required": "relics",
+      "version_range": "[0.6.5,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ramcompat",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ramcompat",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ramcompat",
+      "required": "curios",
+      "version_range": "[5.2.0+1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ramcompat",
+      "required": "octolib",
+      "version_range": "[0.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ramcompat",
+      "required": "relics",
+      "version_range": "[0.6.5,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "rarcompat",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "rarcompat",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "rarcompat",
+      "required": "curios",
+      "version_range": "[5.2.0+1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "rarcompat",
+      "required": "octolib",
+      "version_range": "[0.3,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "rarcompat",
+      "required": "artifacts",
+      "version_range": "[9.5.13,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "rarcompat",
+      "required": "relics",
+      "version_range": "[0.8.0.7,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "relics",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "relics",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "relics",
+      "required": "curios",
+      "version_range": "[5.2.0+1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "relics",
+      "required": "octolib",
+      "version_range": "[0.4.2,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ritchiesprojectilelib",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "ritchiesprojectilelib",
+      "required": "minecraft",
+      "version_range": "1.20.1",
+      "side": "BOTH"
+    },
+    {
+      "source": "sliceanddice",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "sliceanddice",
+      "required": "minecraft",
+      "version_range": "[1.20.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "sliceanddice",
+      "required": "create",
+      "version_range": "[6.0.7,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "sliceanddice",
+      "required": "kotlinforforge",
+      "version_range": "[4.3.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "sophisticatedbackpacks",
+      "required": "forge",
+      "version_range": "[47.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "sophisticatedbackpacks",
+      "required": "sophisticatedcore",
+      "version_range": "[1.5.5.+,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "sophisticatedcore",
+      "required": "forge",
+      "version_range": "[47.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "sophisticatedstorage",
+      "required": "forge",
+      "version_range": "[47.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "sophisticatedstorage",
+      "required": "sophisticatedcore",
+      "version_range": "[1.5.5.+,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "sound_physics_remastered",
+      "required": "forge",
+      "version_range": "[47.0.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "sound_physics_remastered",
+      "required": "minecraft",
+      "version_range": "[1.20.1]",
+      "side": "BOTH"
+    },
+    {
+      "source": "railways",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "railways",
+      "required": "minecraft",
+      "version_range": "[1.20.1]",
+      "side": "BOTH"
+    },
+    {
+      "source": "railways",
+      "required": "create",
+      "version_range": "[6.0.7,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "structureessentials",
+      "required": "forge",
+      "version_range": "[30,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "structureessentials",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "structureessentials",
+      "required": "cupboard",
+      "version_range": "[1.20.1-3.7,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "supermartijn642configlib",
+      "required": "forge",
+      "version_range": "[46,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "supermartijn642configlib",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "terralith",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "tombstone",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "tombstone",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.20.2)",
+      "side": "BOTH"
+    },
+    {
+      "source": "t_and_t",
+      "required": "forge",
+      "version_range": "[43,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "t_and_t",
+      "required": "minecraft",
+      "version_range": "[1.19.3,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "t_and_t",
+      "required": "cristellib",
+      "version_range": "[1.0.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "travelerstitles",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "travelerstitles",
+      "required": "forge",
+      "version_range": "[46.0.2,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "travelerstitles",
+      "required": "yungsapi",
+      "version_range": "[1.20-Forge-4.0.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "village_recruits",
+      "required": "forge",
+      "version_range": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "village_recruits",
+      "required": "minecraft",
+      "version_range": "[1.20.1,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "village_recruits",
+      "required": "recruits",
+      "version_range": "[1.14.2.3,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "village_recruits",
+      "required": "workers",
+      "version_range": "[2.0.3,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "waystones",
+      "required": "forge",
+      "version_range": "[46.0.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "waystones",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "waystones",
+      "required": "balm",
+      "version_range": "[7.3.28,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "workers",
+      "required": "recruits",
+      "version_range": "[1.15.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "xaerominimap",
+      "required": "forge",
+      "version_range": "[46, 48)",
+      "side": "BOTH"
+    },
+    {
+      "source": "xaerominimap",
+      "required": "minecraft",
+      "version_range": "[1.20, 1.20.1]",
+      "side": "BOTH"
+    },
+    {
+      "source": "xaeroworldmap",
+      "required": "forge",
+      "version_range": "[46, 48)",
+      "side": "BOTH"
+    },
+    {
+      "source": "xaeroworldmap",
+      "required": "minecraft",
+      "version_range": "[1.20, 1.20.1]",
+      "side": "BOTH"
+    },
+    {
+      "source": "xaeroworldmap",
+      "required": "xaerolib",
+      "version_range": "[1.0,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "yungsapi",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "yungsapi",
+      "required": "forge",
+      "version_range": "[46.0.2,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betterdungeons",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betterdungeons",
+      "required": "forge",
+      "version_range": "[46.0.2,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betterdungeons",
+      "required": "yungsapi",
+      "version_range": "[1.20-Forge-4.0.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "bettermineshafts",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "bettermineshafts",
+      "required": "forge",
+      "version_range": "[46.0.2,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "bettermineshafts",
+      "required": "yungsapi",
+      "version_range": "[1.20-Forge-4.0.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betterfortresses",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betterfortresses",
+      "required": "forge",
+      "version_range": "[46.0.2,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betterfortresses",
+      "required": "yungsapi",
+      "version_range": "[1.20-Forge-4.0.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betteroceanmonuments",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betteroceanmonuments",
+      "required": "forge",
+      "version_range": "[46.0.2,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betteroceanmonuments",
+      "required": "yungsapi",
+      "version_range": "[1.20-Forge-4.0.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betterstrongholds",
+      "required": "minecraft",
+      "version_range": "[1.20,1.21)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betterstrongholds",
+      "required": "forge",
+      "version_range": "[46.0.2,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "betterstrongholds",
+      "required": "yungsapi",
+      "version_range": "[1.20-Forge-4.0.1,)",
+      "side": "BOTH"
+    },
+    {
+      "source": "medievalmusic",
+      "required": "forge",
+      "version_range": "[30,)",
+      "side": "CLIENT"
+    },
+    {
+      "source": "medievalmusic",
+      "required": "minecraft",
+      "version_range": "[1.17,1.22)",
+      "side": "CLIENT"
+    }
+  ],
+  "mod_id_sources": {
+    "alexscaves": [
+      "alexscaves-2.0.2(1).jar"
+    ],
+    "alexsmobs": [
+      "alexsmobs-1.22.9.jar"
+    ],
+    "ambientsounds": [
+      "AmbientSounds_FORGE_v6.3.10_mc1.20.1.jar"
+    ],
+    "appleskin": [
+      "appleskin-forge-mc1.20.1-2.5.1.jar"
+    ],
+    "architectury": [
+      "architectury-9.2.14-forge.jar"
+    ],
+    "artifacts": [
+      "artifacts-forge-9.5.19(1).jar"
+    ],
+    "balm": [
+      "balm-forge-1.20.1-7.3.44.jar"
+    ],
+    "better_weaponry": [
+      "better_weaponry-1.1.3-forge-1.20.1.jar"
+    ],
+    "betterarcheology": [
+      "betterarcheology-1.2.1-1.20.1(1).jar"
+    ],
+    "betterdungeons": [
+      "YungsBetterDungeons-1.20-Forge-4.0.4(2).jar"
+    ],
+    "betterfortresses": [
+      "YungsBetterNetherFortresses-1.20-Forge-2.0.6(3).jar"
+    ],
+    "bettermineshafts": [
+      "YungsBetterMineshafts-1.20-Forge-4.0.4(2).jar"
+    ],
+    "betteroceanmonuments": [
+      "YungsBetterOceanMonuments-1.20-Forge-3.0.4(3).jar"
+    ],
+    "betterstrongholds": [
+      "YungsBetterStrongholds-1.20-Forge-4.0.3(3).jar"
+    ],
+    "bountiful": [
+      "Bountiful-6.0.4+1.20.1-forge(1).jar"
+    ],
+    "bountiful_npc": [
+      "bountiful_npc-forge-1.20.1-1.0.6(1).jar"
+    ],
+    "cataclysm": [
+      "L_Enders_Cataclysm-3.31(1).jar"
+    ],
+    "citadel": [
+      "citadel-2.6.3-1.20.1(1).jar"
+    ],
+    "cloth_config": [
+      "cloth-config-11.1.136-forge.jar"
+    ],
+    "cold_sweat": [
+      "ColdSweat-2.4.3.2.jar"
+    ],
+    "copycats": [
+      "copycats-3.0.10+mc.1.20.1-forge.jar"
+    ],
+    "create": [
+      "create-1.20.1-6.0.8(1).jar"
+    ],
+    "create_cold_sweat": [
+      "create_cold_sweat-1.1.2.jar"
+    ],
+    "createaddition": [
+      "createaddition-1.20.1-1.3.3(1).jar"
+    ],
+    "createbigcannons": [
+      "createbigcannons-5.11.4-mc.1.20.1-forge(1).jar"
+    ],
+    "createdeco": [
+      "createdeco-2.0.3-1.20.1-forge.jar"
+    ],
+    "createdieselgenerators": [
+      "createdieselgenerators-1.20.1-1.3.12(1).jar"
+    ],
+    "creativecore": [
+      "CreativeCore_FORGE_v2.12.40_mc1.20.1.jar"
+    ],
+    "cristellib": [
+      "cristellib-1.1.6-forge.jar"
+    ],
+    "ctov": [
+      "[forge]ctov-3.4.14.jar"
+    ],
+    "cupboard": [
+      "cupboard-1.20.1-4.2.jar"
+    ],
+    "curios": [
+      "curios-forge-5.14.1+1.20.1.jar"
+    ],
+    "dungeons_arise": [
+      "DungeonsArise-1.20.x-2.1.58-release.jar"
+    ],
+    "embeddium": [
+      "embeddium-0.3.31+mc1.20.1.jar"
+    ],
+    "emotecraft": [
+      "emotecraft-for-MC1.20.1-2.2.7-b.build.50-forge.jar"
+    ],
+    "entityculling": [
+      "entityculling-forge-1.11.3-mc1.20.1.jar"
+    ],
+    "epicfight": [
+      "epic-fight-20.14.17-mc1.20.1-forge(1).jar"
+    ],
+    "expandability": [
+      "artifacts-forge-9.5.19(1).jar > META-INF/jars/expandability-forge-9.0.4.jar"
+    ],
+    "explorerscompass": [
+      "ExplorersCompass-1.20.1-1.4.0-forge(1).jar"
+    ],
+    "farmersdelight": [
+      "FarmersDelight-1.20.1-1.3.4(1).jar"
+    ],
+    "ferritecore": [
+      "ferritecore-6.0.1-forge.jar"
+    ],
+    "flywheel": [
+      "create-1.20.1-6.0.8(1).jar > META-INF/jarjar/flywheel-forge-1.20.1-1.0.5.jar"
+    ],
+    "ftblibrary": [
+      "ftb-library-forge-2001.2.13(1).jar"
+    ],
+    "ftbquests": [
+      "ftb-quests-forge-2001.4.22(1).jar"
+    ],
+    "ftbteams": [
+      "ftb-teams-forge-2001.3.2(1).jar"
+    ],
+    "ftbxmodcompat": [
+      "ftb-xmod-compat-forge-2.1.3.jar"
+    ],
+    "geckolib": [
+      "geckolib-forge-1.20.1-4.8.4.jar"
+    ],
+    "immersive_aircraft": [
+      "immersive_aircraft-1.5.0+1.20.1-forge.jar"
+    ],
+    "immersiveui": [
+      "ImmersiveUI-FORGE-0.3.0(1).jar"
+    ],
+    "interiors": [
+      "interiors-1.20.1-forge-0.6.0.jar"
+    ],
+    "invincible": [
+      "epic-fight-invincible-lib-20.14.8.2-mc1.20.1-forge.jar"
+    ],
+    "jade": [
+      "Jade-1.20.1-Forge-11.13.3.jar"
+    ],
+    "jei": [
+      "jei-1.20.1-forge-15.56.0.205.jar"
+    ],
+    "kambrik": [
+      "Kambrik-6.1.1+1.20.1-forge.jar"
+    ],
+    "kotlinforforge": [
+      "kotlinforforge-4.12.0-all.jar > META-INF/jarjar/kffmod-4.12.0.jar"
+    ],
+    "kubejs": [
+      "kubejs-forge-2001.6.5-build.26(1).jar"
+    ],
+    "kuma_api": [
+      "balm-forge-1.20.1-7.3.44.jar > META-INF/jarjar/kuma-api-forge-20.1.12+1.20.1.jar"
+    ],
+    "lionfishapi": [
+      "lionfishapi-3.0.jar"
+    ],
+    "lithostitched": [
+      "lithostitched-forge-1.20.1-1.4.11.jar"
+    ],
+    "lootintegration_wda": [
+      "lootintegration_wda-1.8.jar"
+    ],
+    "lootintegrations": [
+      "lootintegrations-1.20.1-4.7.jar"
+    ],
+    "lootr": [
+      "lootr-forge-1.20-0.7.35.94.jar"
+    ],
+    "mca": [
+      "minecraft-comes-alive-7.6.26+1.20.1-universal.jar"
+    ],
+    "medievalmusic": [
+      "zmedievalmusic-1.20.1-2.2(1).jar"
+    ],
+    "mixinextras": [
+      "artifacts-forge-9.5.19(1).jar > META-INF/jars/mixinextras-forge-0.3.5.jar",
+      "copycats-3.0.10+mc.1.20.1-forge.jar > META-INF/jars/mixinextras-forge-0.4.1.jar",
+      "create-1.20.1-6.0.8(1).jar > META-INF/jarjar/mixinextras-forge-0.4.1.jar",
+      "createbigcannons-5.11.4-mc.1.20.1-forge(1).jar > META-INF/jars/mixinextras-forge-0.4.1.jar",
+      "embeddium-0.3.31+mc1.20.1.jar > META-INF/jarjar/mixinextras-forge-0.3.5.jar",
+      "FarmersDelight-1.20.1-1.3.4(1).jar > META-INF/jarjar/mixinextras-forge-0.3.6.jar",
+      "ImmersiveUI-FORGE-0.3.0(1).jar > META-INF/jars/mixinextras-forge-0.4.1.jar",
+      "kubejs-forge-2001.6.5-build.26(1).jar > META-INF/jars/mixinextras-forge-0.2.0-rc.2.jar",
+      "modernfix-forge-5.27.88+mc1.20.1.jar > META-INF/jarjar/mixinextras-forge-0.4.1.jar",
+      "sliceanddice-forge-3.6.0.jar > META-INF/jarjar/mixinextras-forge-0.4.1.jar"
+    ],
+    "modernfix": [
+      "modernfix-forge-5.27.88+mc1.20.1.jar"
+    ],
+    "mousetweaks": [
+      "MouseTweaks-forge-mc1.20.1-2.25.1.jar"
+    ],
+    "mowziesmobs": [
+      "mowziesmobs-1.8.2(1).jar"
+    ],
+    "mr_dungeons_andtaverns": [
+      "dungeons-and-taverns-3.0.3.f[Forge].jar"
+    ],
+    "nerb": [
+      "Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar"
+    ],
+    "notenoughanimations": [
+      "notenoughanimations-forge-1.12.6-mc1.20.1.jar"
+    ],
+    "octolib": [
+      "OctoLib-FORGE-0.5.0.1+1.20.1.jar"
+    ],
+    "oculus": [
+      "oculus-mc1.20.1-1.8.0.jar"
+    ],
+    "ocuwheel": [
+      "ocuwheel-forge-1.20.1-1.0.2.jar"
+    ],
+    "playeranimator": [
+      "player-animation-lib-forge-1.0.2-rc1+1.20.jar"
+    ],
+    "ponder": [
+      "create-1.20.1-6.0.8(1).jar > META-INF/jarjar/Ponder-Forge-1.20.1-1.0.91.jar"
+    ],
+    "raccompat": [
+      "raccompat-1.20.1-0.1.3(1).jar"
+    ],
+    "railways": [
+      "Steam_Rails-1.7.3+forge-mc1.20.1(1).jar"
+    ],
+    "ramcompat": [
+      "ramcompat-1.20.1-0.1.4(1).jar"
+    ],
+    "rarcompat": [
+      "rarcompat-1.20.1-0.5(1).jar"
+    ],
+    "recruits": [
+      "recruits-1.20.1-1.15.2(1).jar"
+    ],
+    "relics": [
+      "relics-1.20.1-0.8.0.13(2).jar"
+    ],
+    "rhino": [
+      "rhino-forge-2001.2.3-build.10(1).jar"
+    ],
+    "ritchiesprojectilelib": [
+      "ritchiesprojectilelib-2.1.1-mc.1.20.1-forge.jar"
+    ],
+    "rubidium": [
+      "embeddium-0.3.31+mc1.20.1.jar"
+    ],
+    "sliceanddice": [
+      "sliceanddice-forge-3.6.0.jar"
+    ],
+    "sophisticatedbackpacks": [
+      "sophisticatedbackpacks-1.20.1-3.26.9.2194(1).jar"
+    ],
+    "sophisticatedcore": [
+      "sophisticatedcore-1.20.1-1.5.6.2383(1).jar"
+    ],
+    "sophisticatedstorage": [
+      "sophisticatedstorage-1.20.1-1.5.1.2158(1).jar"
+    ],
+    "sound_physics_remastered": [
+      "sound-physics-remastered-forge-1.20.1-1.5.1.jar"
+    ],
+    "structureessentials": [
+      "structureessentials-1.20.1-5.0.jar"
+    ],
+    "supermartijn642configlib": [
+      "supermartijn642configlib-1.1.8-forge-mc1.20.jar"
+    ],
+    "t_and_t": [
+      "Towns-and-Towers-1.12-Fabric+Forge(2).jar"
+    ],
+    "terralith": [
+      "Terralith_1.20.x_v2.5.4(3).jar"
+    ],
+    "tombstone": [
+      "tombstone-1.20.1-9.1.5(2).jar"
+    ],
+    "transition": [
+      "entityculling-forge-1.11.3-mc1.20.1.jar > META-INF/jars/TRansition-1.0.26-1.20.1-forge-SNAPSHOT.jar",
+      "notenoughanimations-forge-1.12.6-mc1.20.1.jar > META-INF/jars/TRansition-1.0.25-1.20.1-forge-SNAPSHOT.jar"
+    ],
+    "travelerstitles": [
+      "TravelersTitles-1.20-Forge-4.0.2(2).jar"
+    ],
+    "trender": [
+      "entityculling-forge-1.11.3-mc1.20.1.jar > META-INF/jars/TRender-1.0.17-1.20.1-forge-SNAPSHOT.jar",
+      "notenoughanimations-forge-1.12.6-mc1.20.1.jar > META-INF/jars/TRender-1.0.17-1.20.1-forge-SNAPSHOT.jar"
+    ],
+    "village_recruits": [
+      "village_recruits-1.0.7.93TC-205(2).jar"
+    ],
+    "waystones": [
+      "waystones-forge-1.20.1-14.1.21(2).jar"
+    ],
+    "workers": [
+      "workers-1.20.1-2.0.3(3).jar"
+    ],
+    "xaerolib": [
+      "xaerominimap-forge-1.20.1-26.6.0(1).jar > META-INF/jarjar/xaerolib-forge-1.20.1-1.7.3.jar",
+      "xaeroworldmap-forge-1.20.1-1.47.0(1).jar > META-INF/jarjar/xaerolib-forge-1.20.1-1.7.3.jar"
+    ],
+    "xaerominimap": [
+      "xaerominimap-forge-1.20.1-26.6.0(1).jar"
+    ],
+    "xaeroworldmap": [
+      "xaeroworldmap-forge-1.20.1-1.47.0(1).jar"
+    ],
+    "yungsapi": [
+      "YungsApi-1.20-Forge-4.0.6(2).jar"
+    ]
+  }
+}
