@@ -1,0 +1,331 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -832.00 1507.20 1664.00" width="1507.20" height="1664.00" role="img" aria-labelledby="nasledie_relics-after-title" data-quest-count="21">
+<title id="nasledie_relics-after-title">Хранители находок — Relics и Artifacts — схема SNBT, не скриншот игры</title>
+<defs><marker id="nasledie_relics-after-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
+<g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
+<path d="M -128 -832.00 v 1664.00"/>
+<path d="M -64 -832.00 v 1664.00"/>
+<path d="M 0 -832.00 v 1664.00"/>
+<path d="M 64 -832.00 v 1664.00"/>
+<path d="M 128 -832.00 v 1664.00"/>
+<path d="M 192 -832.00 v 1664.00"/>
+<path d="M 256 -832.00 v 1664.00"/>
+<path d="M 320 -832.00 v 1664.00"/>
+<path d="M 384 -832.00 v 1664.00"/>
+<path d="M 448 -832.00 v 1664.00"/>
+<path d="M 512 -832.00 v 1664.00"/>
+<path d="M 576 -832.00 v 1664.00"/>
+<path d="M 640 -832.00 v 1664.00"/>
+<path d="M 704 -832.00 v 1664.00"/>
+<path d="M 768 -832.00 v 1664.00"/>
+<path d="M 832 -832.00 v 1664.00"/>
+<path d="M 896 -832.00 v 1664.00"/>
+<path d="M 960 -832.00 v 1664.00"/>
+<path d="M 1024 -832.00 v 1664.00"/>
+<path d="M 1088 -832.00 v 1664.00"/>
+<path d="M 1152 -832.00 v 1664.00"/>
+<path d="M 1216 -832.00 v 1664.00"/>
+<path d="M 1280 -832.00 v 1664.00"/>
+<path d="M 1344 -832.00 v 1664.00"/>
+<path d="M -128.00 -832 h 1507.20"/>
+<path d="M -128.00 -768 h 1507.20"/>
+<path d="M -128.00 -704 h 1507.20"/>
+<path d="M -128.00 -640 h 1507.20"/>
+<path d="M -128.00 -576 h 1507.20"/>
+<path d="M -128.00 -512 h 1507.20"/>
+<path d="M -128.00 -448 h 1507.20"/>
+<path d="M -128.00 -384 h 1507.20"/>
+<path d="M -128.00 -320 h 1507.20"/>
+<path d="M -128.00 -256 h 1507.20"/>
+<path d="M -128.00 -192 h 1507.20"/>
+<path d="M -128.00 -128 h 1507.20"/>
+<path d="M -128.00 -64 h 1507.20"/>
+<path d="M -128.00 0 h 1507.20"/>
+<path d="M -128.00 64 h 1507.20"/>
+<path d="M -128.00 128 h 1507.20"/>
+<path d="M -128.00 192 h 1507.20"/>
+<path d="M -128.00 256 h 1507.20"/>
+<path d="M -128.00 320 h 1507.20"/>
+<path d="M -128.00 384 h 1507.20"/>
+<path d="M -128.00 448 h 1507.20"/>
+<path d="M -128.00 512 h 1507.20"/>
+<path d="M -128.00 576 h 1507.20"/>
+<path d="M -128.00 640 h 1507.20"/>
+<path d="M -128.00 704 h 1507.20"/>
+<path d="M -128.00 768 h 1507.20"/>
+<path d="M -128.00 832 h 1507.20"/>
+</g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
+<path data-from="BF8C1895E9D7830E" data-to="43496821860704D3" d="M 12.03 -25.95 L 149.91 -323.33" marker-end="url(#nasledie_relics-after-arrow)"><title>BF8C1895E9D7830E → 43496821860704D3</title></path>
+<path data-from="43496821860704D3" data-to="C59D7785BCFC682D" d="M 191.80 -352.00 L 406.40 -352.00" marker-end="url(#nasledie_relics-after-arrow)"><title>43496821860704D3 → C59D7785BCFC682D</title></path>
+<path data-from="C59D7785BCFC682D" data-to="2CB6F19A77F3D3C0" d="M 461.00 -352.00 L 678.40 -352.00" marker-end="url(#nasledie_relics-after-arrow)"><title>C59D7785BCFC682D → 2CB6F19A77F3D3C0</title></path>
+<path data-from="BF8C1895E9D7830E" data-to="F5D8F4D63F925F92" d="M 28.60 0.00 L 242.00 0.00" marker-end="url(#nasledie_relics-after-arrow)"><title>BF8C1895E9D7830E → F5D8F4D63F925F92</title></path>
+<path data-from="F5D8F4D63F925F92" data-to="71351EBD4433810D" d="M 299.00 0.00 L 512.40 0.00" marker-end="url(#nasledie_relics-after-arrow)"><title>F5D8F4D63F925F92 → 71351EBD4433810D</title></path>
+<path data-from="2CB6F19A77F3D3C0" data-to="6CD091542ED7E77D" d="M 733.00 -352.00 L 950.40 -352.00" marker-end="url(#nasledie_relics-after-arrow)"><title>2CB6F19A77F3D3C0 → 6CD091542ED7E77D</title></path>
+<path data-from="6CD091542ED7E77D" data-to="0068C3492D5FEF60" d="M 1005.00 -352.00 L 1222.40 -352.00" marker-end="url(#nasledie_relics-after-arrow)"><title>6CD091542ED7E77D → 0068C3492D5FEF60</title></path>
+<path data-from="0068C3492D5FEF60" data-to="2783FBF67E012E66" d="M 1251.20 -377.80 L 1251.20 -675.20" marker-end="url(#nasledie_relics-after-arrow)"><title>0068C3492D5FEF60 → 2783FBF67E012E66</title></path>
+<path data-from="2783FBF67E012E66" data-to="6E2FE392089D97DF" d="M 1225.40 -704.00 L 1008.00 -704.00" marker-end="url(#nasledie_relics-after-arrow)"><title>2783FBF67E012E66 → 6E2FE392089D97DF</title></path>
+<path data-from="6E2FE392089D97DF" data-to="CC5ABE356CD75C8E" d="M 953.40 -704.00 L 736.00 -704.00" marker-end="url(#nasledie_relics-after-arrow)"><title>6E2FE392089D97DF → CC5ABE356CD75C8E</title></path>
+<path data-from="CC5ABE356CD75C8E" data-to="FC18B444C7E1629F" d="M 681.40 -704.00 L 464.00 -704.00" marker-end="url(#nasledie_relics-after-arrow)"><title>CC5ABE356CD75C8E → FC18B444C7E1629F</title></path>
+<path data-from="FC18B444C7E1629F" data-to="C3620DEF30C9A9E2" d="M 409.40 -704.00 L 192.00 -704.00" marker-end="url(#nasledie_relics-after-arrow)"><title>FC18B444C7E1629F → C3620DEF30C9A9E2</title></path>
+<path data-from="BF8C1895E9D7830E" data-to="37A42269B00D8373" d="M 12.03 25.95 L 151.09 325.87" marker-end="url(#nasledie_relics-after-arrow)"><title>BF8C1895E9D7830E → 37A42269B00D8373</title></path>
+<path data-from="37A42269B00D8373" data-to="7A6DE62914ABF934" d="M 189.00 352.00 L 406.40 352.00" marker-end="url(#nasledie_relics-after-arrow)"><title>37A42269B00D8373 → 7A6DE62914ABF934</title></path>
+<path data-from="7A6DE62914ABF934" data-to="02183638E5416B5E" d="M 461.00 352.00 L 678.40 352.00" marker-end="url(#nasledie_relics-after-arrow)"><title>7A6DE62914ABF934 → 02183638E5416B5E</title></path>
+<path data-from="02183638E5416B5E" data-to="E3EA2CF97420E989" d="M 733.00 352.00 L 950.40 352.00" marker-end="url(#nasledie_relics-after-arrow)"><title>02183638E5416B5E → E3EA2CF97420E989</title></path>
+<path data-from="E3EA2CF97420E989" data-to="B4210CAE7916EC4B" d="M 979.20 377.80 L 979.20 675.20" marker-end="url(#nasledie_relics-after-arrow)"><title>E3EA2CF97420E989 → B4210CAE7916EC4B</title></path>
+<path data-from="B4210CAE7916EC4B" data-to="95E67FB14F3417B2" d="M 953.40 704.00 L 736.00 704.00" marker-end="url(#nasledie_relics-after-arrow)"><title>B4210CAE7916EC4B → 95E67FB14F3417B2</title></path>
+<path data-from="95E67FB14F3417B2" data-to="AF5426942D7C2622" d="M 681.40 704.00 L 464.00 704.00" marker-end="url(#nasledie_relics-after-arrow)"><title>95E67FB14F3417B2 → AF5426942D7C2622</title></path>
+<path data-from="AF5426942D7C2622" data-to="B80C987F9AB03683" d="M 409.40 704.00 L 192.00 704.00" marker-end="url(#nasledie_relics-after-arrow)"><title>AF5426942D7C2622 → B80C987F9AB03683</title></path>
+</g><g class="quests" font-family="system-ui, sans-serif" text-anchor="middle">
+<g data-quest-id="BF8C1895E9D7830E" tabindex="0" role="button" aria-label="Первый артефакт — начало коллекции" transform="translate(0.00,0.00)" style="cursor:pointer">
+<title>Первый артефакт — начало коллекции
+ID: BF8C1895E9D7830E
+Значок: artifacts:flame_pendant
+Форма: star
+x=0.0, y=0.0
+Без изменений</title>
+<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
+<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первый артефакт — начало</text>
+<text class="quest-label" y="65.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">коллекции</text>
+</g>
+<g data-quest-id="43496821860704D3" tabindex="0" role="button" aria-label="Первая настоящая реликвия" transform="translate(163.20,-352.00)" style="cursor:pointer">
+<title>Первая настоящая реликвия
+ID: 43496821860704D3
+Значок: relics:leather_belt
+Форма: star
+x=2.55, y=-5.5
+Без изменений</title>
+<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
+<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первая настоящая реликвия</text>
+</g>
+<g data-quest-id="C59D7785BCFC682D" tabindex="0" role="button" aria-label="Печать пространства" transform="translate(435.20,-352.00)" style="cursor:pointer">
+<title>Печать пространства
+ID: C59D7785BCFC682D
+Значок: relics:spatial_sign
+Форма: coin
+x=6.8, y=-5.5
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Печать пространства</text>
+</g>
+<g data-quest-id="2CB6F19A77F3D3C0" tabindex="0" role="button" aria-label="Опыт для реликвий" transform="translate(707.20,-352.00)" style="cursor:pointer">
+<title>Опыт для реликвий
+ID: 2CB6F19A77F3D3C0
+Значок: relics:relic_experience_bottle
+Форма: coin
+x=11.05, y=-5.5
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Опыт для реликвий</text>
+</g>
+<g data-quest-id="F5D8F4D63F925F92" tabindex="0" role="button" aria-label="Охотник на мимиков" transform="translate(272.00,0.00)" style="cursor:pointer">
+<title>Охотник на мимиков
+ID: F5D8F4D63F925F92
+Значок: artifacts:mimic_spawn_egg
+Форма: shield
+x=4.25, y=0.0
+Без изменений</title>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Охотник на мимиков</text>
+</g>
+<g data-quest-id="71351EBD4433810D" tabindex="0" role="button" aria-label="Экспериментальная трапеза" transform="translate(544.00,0.00)" style="cursor:pointer">
+<title>Экспериментальная трапеза
+ID: 71351EBD4433810D
+Значок: artifacts:onion_ring
+Форма: star
+x=8.5, y=0.0
+Без изменений</title>
+<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
+<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Экспериментальная трапеза</text>
+</g>
+<g data-quest-id="6CD091542ED7E77D" tabindex="0" role="button" aria-label="Повелитель волн" transform="translate(979.20,-352.00)" style="cursor:pointer">
+<title>Повелитель волн
+ID: 6CD091542ED7E77D
+Значок: relics:aqua_walker
+Форма: coin
+x=15.3, y=-5.5
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Повелитель волн</text>
+</g>
+<g data-quest-id="0068C3492D5FEF60" tabindex="0" role="button" aria-label="Дорога по воде" transform="translate(1251.20,-352.00)" style="cursor:pointer">
+<title>Дорога по воде
+ID: 0068C3492D5FEF60
+Значок: relics:amphibian_boot
+Форма: coin
+x=19.55, y=-5.5
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дорога по воде</text>
+</g>
+<g data-quest-id="2783FBF67E012E66" tabindex="0" role="button" aria-label="Талисман утопленника" transform="translate(1251.20,-704.00)" style="cursor:pointer">
+<title>Талисман утопленника
+ID: 2783FBF67E012E66
+Значок: relics:drowned_belt
+Форма: coin
+x=19.55, y=-11.0
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Талисман утопленника</text>
+</g>
+<g data-quest-id="6E2FE392089D97DF" tabindex="0" role="button" aria-label="Ожерелье из глубин" transform="translate(979.20,-704.00)" style="cursor:pointer">
+<title>Ожерелье из глубин
+ID: 6E2FE392089D97DF
+Значок: relics:jellyfish_necklace
+Форма: coin
+x=15.3, y=-11.0
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Ожерелье из глубин</text>
+</g>
+<g data-quest-id="CC5ABE356CD75C8E" tabindex="0" role="button" aria-label="Обувь для лавы" transform="translate(707.20,-704.00)" style="cursor:pointer">
+<title>Обувь для лавы
+ID: CC5ABE356CD75C8E
+Значок: relics:magma_walker
+Форма: coin
+x=11.05, y=-11.0
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Обувь для лавы</text>
+</g>
+<g data-quest-id="FC18B444C7E1629F" tabindex="0" role="button" aria-label="Ледяная скорость" transform="translate(435.20,-704.00)" style="cursor:pointer">
+<title>Ледяная скорость
+ID: FC18B444C7E1629F
+Значок: relics:ice_skates
+Форма: coin
+x=6.8, y=-11.0
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Ледяная скорость</text>
+</g>
+<g data-quest-id="C3620DEF30C9A9E2" tabindex="0" role="button" aria-label="Роликовые сапоги" transform="translate(163.20,-704.00)" style="cursor:pointer">
+<title>Роликовые сапоги
+ID: C3620DEF30C9A9E2
+Значок: relics:roller_skates
+Форма: coin
+x=2.55, y=-11.0
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Роликовые сапоги</text>
+</g>
+<g data-quest-id="37A42269B00D8373" tabindex="0" role="button" aria-label="Зеркало странника" transform="translate(163.20,352.00)" style="cursor:pointer">
+<title>Зеркало странника
+ID: 37A42269B00D8373
+Значок: relics:magic_mirror
+Форма: coin
+x=2.55, y=5.5
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Зеркало странника</text>
+</g>
+<g data-quest-id="7A6DE62914ABF934" tabindex="0" role="button" aria-label="Зов коня" transform="translate(435.20,352.00)" style="cursor:pointer">
+<title>Зов коня
+ID: 7A6DE62914ABF934
+Значок: relics:horse_flute
+Форма: coin
+x=6.8, y=5.5
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Зов коня</text>
+</g>
+<g data-quest-id="02183638E5416B5E" tabindex="0" role="button" aria-label="Колчан охотника" transform="translate(707.20,352.00)" style="cursor:pointer">
+<title>Колчан охотника
+ID: 02183638E5416B5E
+Значок: relics:arrow_quiver
+Форма: coin
+x=11.05, y=5.5
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Колчан охотника</text>
+</g>
+<g data-quest-id="E3EA2CF97420E989" tabindex="0" role="button" aria-label="Пояс следопыта" transform="translate(979.20,352.00)" style="cursor:pointer">
+<title>Пояс следопыта
+ID: E3EA2CF97420E989
+Значок: relics:hunter_belt
+Форма: coin
+x=15.3, y=5.5
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Пояс следопыта</text>
+</g>
+<g data-quest-id="B4210CAE7916EC4B" tabindex="0" role="button" aria-label="Кольцо бастиона" transform="translate(979.20,704.00)" style="cursor:pointer">
+<title>Кольцо бастиона
+ID: B4210CAE7916EC4B
+Значок: relics:bastion_ring
+Форма: coin
+x=15.3, y=11.0
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Кольцо бастиона</text>
+</g>
+<g data-quest-id="95E67FB14F3417B2" tabindex="0" role="button" aria-label="Священный медальон" transform="translate(707.20,704.00)" style="cursor:pointer">
+<title>Священный медальон
+ID: 95E67FB14F3417B2
+Значок: relics:holy_locket
+Форма: coin
+x=11.05, y=11.0
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">19</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Священный медальон</text>
+</g>
+<g data-quest-id="AF5426942D7C2622" tabindex="0" role="button" aria-label="Ускорение полёта" transform="translate(435.20,704.00)" style="cursor:pointer">
+<title>Ускорение полёта
+ID: AF5426942D7C2622
+Значок: relics:elytra_booster
+Форма: coin
+x=6.8, y=11.0
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">20</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Ускорение полёта</text>
+</g>
+<g data-quest-id="B80C987F9AB03683" tabindex="0" role="button" aria-label="Споровый мешочек" transform="translate(163.20,704.00)" style="cursor:pointer">
+<title>Споровый мешочек
+ID: B80C987F9AB03683
+Значок: relics:spore_sack
+Форма: coin
+x=2.55, y=11.0
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">21</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Споровый мешочек</text>
+</g>
+</g></svg>

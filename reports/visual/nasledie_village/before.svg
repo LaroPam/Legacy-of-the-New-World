@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -320.00 1024.00 896.00" width="1024.00" height="896.00" role="img" aria-labelledby="nasledie_village-before-title" data-quest-count="10">
+<title id="nasledie_village-before-title">Живое поселение — путь общины — схема SNBT, не скриншот игры</title>
+<defs><marker id="nasledie_village-before-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
+<g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
+<path d="M -128 -320.00 v 896.00"/>
+<path d="M -64 -320.00 v 896.00"/>
+<path d="M 0 -320.00 v 896.00"/>
+<path d="M 64 -320.00 v 896.00"/>
+<path d="M 128 -320.00 v 896.00"/>
+<path d="M 192 -320.00 v 896.00"/>
+<path d="M 256 -320.00 v 896.00"/>
+<path d="M 320 -320.00 v 896.00"/>
+<path d="M 384 -320.00 v 896.00"/>
+<path d="M 448 -320.00 v 896.00"/>
+<path d="M 512 -320.00 v 896.00"/>
+<path d="M 576 -320.00 v 896.00"/>
+<path d="M 640 -320.00 v 896.00"/>
+<path d="M 704 -320.00 v 896.00"/>
+<path d="M 768 -320.00 v 896.00"/>
+<path d="M 832 -320.00 v 896.00"/>
+<path d="M 896 -320.00 v 896.00"/>
+<path d="M -128.00 -320 h 1024.00"/>
+<path d="M -128.00 -256 h 1024.00"/>
+<path d="M -128.00 -192 h 1024.00"/>
+<path d="M -128.00 -128 h 1024.00"/>
+<path d="M -128.00 -64 h 1024.00"/>
+<path d="M -128.00 0 h 1024.00"/>
+<path d="M -128.00 64 h 1024.00"/>
+<path d="M -128.00 128 h 1024.00"/>
+<path d="M -128.00 192 h 1024.00"/>
+<path d="M -128.00 256 h 1024.00"/>
+<path d="M -128.00 320 h 1024.00"/>
+<path d="M -128.00 384 h 1024.00"/>
+<path d="M -128.00 448 h 1024.00"/>
+<path d="M -128.00 512 h 1024.00"/>
+<path d="M -128.00 576 h 1024.00"/>
+</g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
+<path data-from="C3524B3B7A1175C3" data-to="AFC6DEB96FAAF4A1" d="M 25.40 0.00 L 162.80 0.00" marker-end="url(#nasledie_village-before-arrow)"><title>C3524B3B7A1175C3 → AFC6DEB96FAAF4A1</title></path>
+<path data-from="AFC6DEB96FAAF4A1" data-to="7154299D354A1B07" d="M 210.53 -18.53 L 363.35 -171.35" marker-end="url(#nasledie_village-before-arrow)"><title>AFC6DEB96FAAF4A1 → 7154299D354A1B07</title></path>
+<path data-from="AFC6DEB96FAAF4A1" data-to="28708C663F59906A" d="M 210.53 18.53 L 363.64 171.64" marker-end="url(#nasledie_village-before-arrow)"><title>AFC6DEB96FAAF4A1 → 28708C663F59906A</title></path>
+<path data-from="28708C663F59906A" data-to="10E550A7AA6FE780" d="M 409.80 192.00 L 546.80 192.00" marker-end="url(#nasledie_village-before-arrow)"><title>28708C663F59906A → 10E550A7AA6FE780</title></path>
+<path data-from="7154299D354A1B07" data-to="2C75530B1A6E014E" d="M 410.20 -192.00 L 546.80 -192.00" marker-end="url(#nasledie_village-before-arrow)"><title>7154299D354A1B07 → 2C75530B1A6E014E</title></path>
+<path data-from="AFC6DEB96FAAF4A1" data-to="E7B10EC3B6680953" d="M 218.20 0.00 L 354.80 0.00" marker-end="url(#nasledie_village-before-arrow)"><title>AFC6DEB96FAAF4A1 → E7B10EC3B6680953</title></path>
+<path data-from="C3524B3B7A1175C3" data-to="C1275FDF3B2F99C1" d="M 10.01 23.35 L 180.18 420.43" marker-end="url(#nasledie_village-before-arrow)"><title>C3524B3B7A1175C3 → C1275FDF3B2F99C1</title></path>
+<path data-from="C1275FDF3B2F99C1" data-to="4F244541933746FE" d="M 219.00 448.00 L 355.60 448.00" marker-end="url(#nasledie_village-before-arrow)"><title>C1275FDF3B2F99C1 → 4F244541933746FE</title></path>
+<path data-from="10E550A7AA6FE780" data-to="EF7C435DEE5C7F2A" d="M 602.20 192.00 L 736.40 192.00" marker-end="url(#nasledie_village-before-arrow)"><title>10E550A7AA6FE780 → EF7C435DEE5C7F2A</title></path>
+</g><g class="quests" font-family="system-ui, sans-serif" text-anchor="middle">
+<g data-quest-id="C3524B3B7A1175C3" tabindex="0" role="button" aria-label="Найти поселение MCA" transform="translate(0.00,0.00)" style="cursor:pointer">
+<title>Найти поселение MCA
+ID: C3524B3B7A1175C3
+Значок: minecraft:bell
+Форма: scroll
+x=0.0, y=0.0
+Без изменений</title>
+<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
+<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Найти поселение MCA</text>
+</g>
+<g data-quest-id="AFC6DEB96FAAF4A1" tabindex="0" role="button" aria-label="Первое знакомство" transform="translate(192.00,0.00)" style="cursor:pointer">
+<title>Первое знакомство
+ID: AFC6DEB96FAAF4A1
+Значок: mca:bouquet
+Форма: heart
+x=3.0, y=0.0
+Без изменений</title>
+<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
+<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первое знакомство</text>
+</g>
+<g data-quest-id="7154299D354A1B07" tabindex="0" role="button" aria-label="Подарок с историей" transform="translate(384.00,-192.00)" style="cursor:pointer">
+<title>Подарок с историей
+ID: 7154299D354A1B07
+Значок: mca:bouquet
+Форма: heart
+x=6.0, y=-3.0
+Без изменений</title>
+<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
+<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Подарок с историей</text>
+</g>
+<g data-quest-id="28708C663F59906A" tabindex="0" role="button" aria-label="Сделка с жителем MCA" transform="translate(384.00,192.00)" style="cursor:pointer">
+<title>Сделка с жителем MCA
+ID: 28708C663F59906A
+Значок: minecraft:emerald
+Форма: coin
+x=6.0, y=3.0
+Без изменений</title>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.80" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сделка с жителем MCA</text>
+</g>
+<g data-quest-id="10E550A7AA6FE780" tabindex="0" role="button" aria-label="Признанный горожанин" transform="translate(576.00,192.00)" style="cursor:pointer">
+<title>Признанный горожанин
+ID: 10E550A7AA6FE780
+Значок: mca:rose_gold_ingot
+Форма: heart
+x=9.0, y=3.0
+Без изменений</title>
+<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
+<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Признанный горожанин</text>
+</g>
+<g data-quest-id="2C75530B1A6E014E" tabindex="0" role="button" aria-label="Семейная история" transform="translate(576.00,-192.00)" style="cursor:pointer">
+<title>Семейная история
+ID: 2C75530B1A6E014E
+Значок: mca:wedding_ring
+Форма: heart
+x=9.0, y=-3.0
+Без изменений</title>
+<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
+<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Семейная история</text>
+</g>
+<g data-quest-id="E7B10EC3B6680953" tabindex="0" role="button" aria-label="Доверие жителя" transform="translate(384.00,0.00)" style="cursor:pointer">
+<title>Доверие жителя
+ID: E7B10EC3B6680953
+Значок: mca:rose_gold_ingot
+Форма: heart
+x=6.0, y=0.0
+Без изменений</title>
+<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
+<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Доверие жителя</text>
+</g>
+<g data-quest-id="C1275FDF3B2F99C1" tabindex="0" role="button" aria-label="Оборудовать пункт набора" transform="translate(192.00,448.00)" style="cursor:pointer">
+<title>Оборудовать пункт набора
+ID: C1275FDF3B2F99C1
+Значок: recruits:recruit_shield_block
+Форма: shield
+x=3.0, y=7.0
+Без изменений</title>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Оборудовать пункт набора</text>
+</g>
+<g data-quest-id="4F244541933746FE" tabindex="0" role="button" aria-label="Установить доску заказов" transform="translate(384.00,448.00)" style="cursor:pointer">
+<title>Установить доску заказов
+ID: 4F244541933746FE
+Значок: bountiful:bountyboard
+Форма: scroll
+x=6.0, y=7.0
+Без изменений</title>
+<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
+<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Установить доску заказов</text>
+</g>
+<g data-quest-id="EF7C435DEE5C7F2A" tabindex="0" role="button" aria-label="Юра — мэр нашего города" transform="translate(768.00,192.00)" style="cursor:pointer">
+<title>Юра — мэр нашего города
+ID: EF7C435DEE5C7F2A
+Значок: minecraft:bell
+Форма: laurel
+x=12.0, y=3.0
+Без изменений</title>
+<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="25.60" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
+<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Юра — мэр нашего города</text>
+</g>
+</g></svg>

@@ -32,7 +32,9 @@ def main() -> None:
     parser.add_argument("--cache", type=Path, default=Path("/workspace/.onboarding/artifacts"))
     parser.add_argument("--output", type=Path, default=Path("reviews/artifact_evidence.json"))
     parser.add_argument("--priority-only", action="store_true")
+    parser.add_argument("--retry-failures", action="store_true", help="Retain saved successful evidence and retry only failed downloads")
     args = parser.parse_args()
+    previous = json.loads(args.output.read_text()) if args.retry_failures else None
     repo = Path(__file__).resolve().parents[1]
     catalog = json.loads((repo / "references/mod_catalog.json").read_text())
     by_sha = {entry["sha256"]: entry for entry in catalog["mods"]}
@@ -55,6 +57,9 @@ def main() -> None:
     selected = [i for i in items if not i["name"].startswith(OMIT)]
     if args.priority_only:
         selected = [i for i in selected if i["name"].startswith(PRIORITY)]
+    if previous is not None:
+        failed_names = {i["file"] for i in previous["failures"]}
+        selected = [i for i in selected if i["name"] in failed_names]
     selected.sort(key=lambda i: (not i["name"].startswith(PRIORITY), i["size"]))
     required = sum(i["size"] for i in selected)
     if required * 2 > shutil.disk_usage(args.cache).free:
@@ -102,7 +107,7 @@ def main() -> None:
             "advancement_json": advancements, "structure_json": structures, "biome_json": biomes,
         }
 
-    verified = []
+    verified = list(previous["artifacts"]) if previous is not None else []
     failures = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         futures = {pool.submit(obtain, item): item for item in selected}
@@ -120,7 +125,7 @@ def main() -> None:
         "all_public_sha256_match_catalog": True,
         "evidence_scope": "Static inspection only. Item model assets do not prove item registry IDs or valid rendering. Advancement JSON can be overridden or conditionally loaded. Minecraft client/server were not started.",
         "artifacts": sorted(verified, key=lambda x: x["file"].lower()),
-        "not_downloaded": [{"file": i["name"], "sha256": i["sha256"], "bytes": i["size"],
+        "not_downloaded": previous["not_downloaded"] if previous is not None else [{"file": i["name"], "sha256": i["sha256"], "bytes": i["size"],
                             "reason": "audio-only artifact not needed for quest static inspection" if i["name"].startswith(OMIT) else "priority-only run"}
                            for i in items if i not in selected],
         "failures": failures,

@@ -1,0 +1,441 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -1280.00 1792.00 2560.00" width="1792.00" height="2560.00" role="img" aria-labelledby="nasledie_cataclysm-after-title" data-quest-count="28">
+<title id="nasledie_cataclysm-after-title">Кровавые хроники Катаклизма — Школа выживания — схема SNBT, не скриншот игры</title>
+<defs><marker id="nasledie_cataclysm-after-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
+<g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
+<path d="M -128 -1280.00 v 2560.00"/>
+<path d="M -64 -1280.00 v 2560.00"/>
+<path d="M 0 -1280.00 v 2560.00"/>
+<path d="M 64 -1280.00 v 2560.00"/>
+<path d="M 128 -1280.00 v 2560.00"/>
+<path d="M 192 -1280.00 v 2560.00"/>
+<path d="M 256 -1280.00 v 2560.00"/>
+<path d="M 320 -1280.00 v 2560.00"/>
+<path d="M 384 -1280.00 v 2560.00"/>
+<path d="M 448 -1280.00 v 2560.00"/>
+<path d="M 512 -1280.00 v 2560.00"/>
+<path d="M 576 -1280.00 v 2560.00"/>
+<path d="M 640 -1280.00 v 2560.00"/>
+<path d="M 704 -1280.00 v 2560.00"/>
+<path d="M 768 -1280.00 v 2560.00"/>
+<path d="M 832 -1280.00 v 2560.00"/>
+<path d="M 896 -1280.00 v 2560.00"/>
+<path d="M 960 -1280.00 v 2560.00"/>
+<path d="M 1024 -1280.00 v 2560.00"/>
+<path d="M 1088 -1280.00 v 2560.00"/>
+<path d="M 1152 -1280.00 v 2560.00"/>
+<path d="M 1216 -1280.00 v 2560.00"/>
+<path d="M 1280 -1280.00 v 2560.00"/>
+<path d="M 1344 -1280.00 v 2560.00"/>
+<path d="M 1408 -1280.00 v 2560.00"/>
+<path d="M 1472 -1280.00 v 2560.00"/>
+<path d="M 1536 -1280.00 v 2560.00"/>
+<path d="M 1600 -1280.00 v 2560.00"/>
+<path d="M 1664 -1280.00 v 2560.00"/>
+<path d="M -128.00 -1280 h 1792.00"/>
+<path d="M -128.00 -1216 h 1792.00"/>
+<path d="M -128.00 -1152 h 1792.00"/>
+<path d="M -128.00 -1088 h 1792.00"/>
+<path d="M -128.00 -1024 h 1792.00"/>
+<path d="M -128.00 -960 h 1792.00"/>
+<path d="M -128.00 -896 h 1792.00"/>
+<path d="M -128.00 -832 h 1792.00"/>
+<path d="M -128.00 -768 h 1792.00"/>
+<path d="M -128.00 -704 h 1792.00"/>
+<path d="M -128.00 -640 h 1792.00"/>
+<path d="M -128.00 -576 h 1792.00"/>
+<path d="M -128.00 -512 h 1792.00"/>
+<path d="M -128.00 -448 h 1792.00"/>
+<path d="M -128.00 -384 h 1792.00"/>
+<path d="M -128.00 -320 h 1792.00"/>
+<path d="M -128.00 -256 h 1792.00"/>
+<path d="M -128.00 -192 h 1792.00"/>
+<path d="M -128.00 -128 h 1792.00"/>
+<path d="M -128.00 -64 h 1792.00"/>
+<path d="M -128.00 0 h 1792.00"/>
+<path d="M -128.00 64 h 1792.00"/>
+<path d="M -128.00 128 h 1792.00"/>
+<path d="M -128.00 192 h 1792.00"/>
+<path d="M -128.00 256 h 1792.00"/>
+<path d="M -128.00 320 h 1792.00"/>
+<path d="M -128.00 384 h 1792.00"/>
+<path d="M -128.00 448 h 1792.00"/>
+<path d="M -128.00 512 h 1792.00"/>
+<path d="M -128.00 576 h 1792.00"/>
+<path d="M -128.00 640 h 1792.00"/>
+<path d="M -128.00 704 h 1792.00"/>
+<path d="M -128.00 768 h 1792.00"/>
+<path d="M -128.00 832 h 1792.00"/>
+<path d="M -128.00 896 h 1792.00"/>
+<path d="M -128.00 960 h 1792.00"/>
+<path d="M -128.00 1024 h 1792.00"/>
+<path d="M -128.00 1088 h 1792.00"/>
+<path d="M -128.00 1152 h 1792.00"/>
+<path d="M -128.00 1216 h 1792.00"/>
+<path d="M -128.00 1280 h 1792.00"/>
+</g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
+<path data-from="8B22878BF8763415" data-to="1E822E9D64762351" d="M 27.40 0.00 L 226.80 0.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>8B22878BF8763415 → 1E822E9D64762351</title></path>
+<path data-from="1E822E9D64762351" data-to="4E228116310381E8" d="M 282.20 0.00 L 480.40 0.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>1E822E9D64762351 → 4E228116310381E8</title></path>
+<path data-from="8B22878BF8763415" data-to="FEE6E381AE1C38B7" d="M 15.20 -22.80 L 240.25 -360.37" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>8B22878BF8763415 → FEE6E381AE1C38B7</title></path>
+<path data-from="FEE6E381AE1C38B7" data-to="11CA5BADA78F67A2" d="M 281.40 -384.00 L 482.80 -384.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>FEE6E381AE1C38B7 → 11CA5BADA78F67A2</title></path>
+<path data-from="11CA5BADA78F67A2" data-to="92B1754C45756107" d="M 538.20 -384.00 L 736.40 -384.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>11CA5BADA78F67A2 → 92B1754C45756107</title></path>
+<path data-from="8B22878BF8763415" data-to="9648CF8E2A62BFAF" d="M 15.20 22.80 L 240.25 360.37" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>8B22878BF8763415 → 9648CF8E2A62BFAF</title></path>
+<path data-from="9648CF8E2A62BFAF" data-to="A13ADF5DA222DA68" d="M 281.40 384.00 L 480.40 384.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>9648CF8E2A62BFAF → A13ADF5DA222DA68</title></path>
+<path data-from="4E228116310381E8" data-to="391F9987F1F32442" d="M 540.60 0.00 L 739.60 0.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>4E228116310381E8 → 391F9987F1F32442</title></path>
+<path data-from="391F9987F1F32442" data-to="8792C39846E0D49E" d="M 793.40 0.00 L 992.40 0.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>391F9987F1F32442 → 8792C39846E0D49E</title></path>
+<path data-from="8792C39846E0D49E" data-to="DE6173A11D04779E" d="M 1052.60 0.00 L 1242.00 0.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>8792C39846E0D49E → DE6173A11D04779E</title></path>
+<path data-from="8B22878BF8763415" data-to="0B35EC876DCDE6DC" d="M 8.66 -25.99 L 247.02 -741.06" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>8B22878BF8763415 → 0B35EC876DCDE6DC</title></path>
+<path data-from="0B35EC876DCDE6DC" data-to="64338CFBA5C5B699" d="M 281.40 -768.00 L 480.40 -768.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>0B35EC876DCDE6DC → 64338CFBA5C5B699</title></path>
+<path data-from="64338CFBA5C5B699" data-to="0A9ACE48F5328D23" d="M 540.60 -768.00 L 739.60 -768.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>64338CFBA5C5B699 → 0A9ACE48F5328D23</title></path>
+<path data-from="0A9ACE48F5328D23" data-to="52813202FFECF301" d="M 793.40 -768.00 L 992.40 -768.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>0A9ACE48F5328D23 → 52813202FFECF301</title></path>
+<path data-from="8B22878BF8763415" data-to="F2FD5EEB117B3119" d="M 8.66 25.99 L 247.02 741.06" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>8B22878BF8763415 → F2FD5EEB117B3119</title></path>
+<path data-from="F2FD5EEB117B3119" data-to="43C293DB6BB1573F" d="M 281.40 768.00 L 482.80 768.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>F2FD5EEB117B3119 → 43C293DB6BB1573F</title></path>
+<path data-from="43C293DB6BB1573F" data-to="E3651E9F6E43FAEB" d="M 538.20 768.00 L 738.80 768.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>43C293DB6BB1573F → E3651E9F6E43FAEB</title></path>
+<path data-from="E3651E9F6E43FAEB" data-to="A96277A6BE605D32" d="M 794.20 768.00 L 995.60 768.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>E3651E9F6E43FAEB → A96277A6BE605D32</title></path>
+<path data-from="A96277A6BE605D32" data-to="A0BE4189EEE72883" d="M 1049.40 768.00 L 1248.40 768.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>A96277A6BE605D32 → A0BE4189EEE72883</title></path>
+<path data-from="0B35EC876DCDE6DC" data-to="1CB249497EF14D92" d="M 256.00 -793.40 L 256.00 -1124.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>0B35EC876DCDE6DC → 1CB249497EF14D92</title></path>
+<path data-from="1CB249497EF14D92" data-to="28A645C41091FB06" d="M 281.00 -1152.00 L 484.00 -1152.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>1CB249497EF14D92 → 28A645C41091FB06</title></path>
+<path data-from="28A645C41091FB06" data-to="B2584C9F3E1DF7E2" d="M 537.00 -1152.00 L 740.00 -1152.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>28A645C41091FB06 → B2584C9F3E1DF7E2</title></path>
+<path data-from="F2FD5EEB117B3119" data-to="A0D9B1BC47B0A927" d="M 256.00 793.40 L 256.00 1124.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>F2FD5EEB117B3119 → A0D9B1BC47B0A927</title></path>
+<path data-from="A0D9B1BC47B0A927" data-to="AB0DB46C4BD473E2" d="M 281.00 1152.00 L 484.00 1152.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>A0D9B1BC47B0A927 → AB0DB46C4BD473E2</title></path>
+<path data-from="AB0DB46C4BD473E2" data-to="CC6AECEDA32DA758" d="M 537.00 1152.00 L 740.00 1152.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>AB0DB46C4BD473E2 → CC6AECEDA32DA758</title></path>
+<path data-from="92B1754C45756107" data-to="BBA92955F4AA2D1F" d="M 796.60 -384.00 L 994.40 -384.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>92B1754C45756107 → BBA92955F4AA2D1F</title></path>
+<path data-from="A0BE4189EEE72883" data-to="F21761F49BC3DC1D" d="M 1308.60 768.00 L 1506.40 768.00" marker-end="url(#nasledie_cataclysm-after-arrow)"><title>A0BE4189EEE72883 → F21761F49BC3DC1D</title></path>
+</g><g class="quests" font-family="system-ui, sans-serif" text-anchor="middle">
+<g data-quest-id="8B22878BF8763415" tabindex="0" role="button" aria-label="Цитадель на краю Бездны" transform="translate(0.00,0.00)" style="cursor:pointer">
+<title>Цитадель на краю Бездны
+ID: 8B22878BF8763415
+Значок: cataclysm:chiseled_end_stone_bricks
+Форма: star
+x=0.0, y=0.0
+Без изменений</title>
+<circle class="selection-ring" r="34.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-24.40 7.60,-10.46 23.21,-7.54 12.30,4.00 14.34,19.74 0.00,12.93 -14.34,19.74 -12.30,4.00 -23.21,-7.54 -7.60,-10.46" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
+<text class="quest-label" y="48.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Цитадель на краю Бездны</text>
+</g>
+<g data-quest-id="1E822E9D64762351" tabindex="0" role="button" aria-label="Сторож цитадели" transform="translate(256.00,0.00)" style="cursor:pointer">
+<title>Сторож цитадели
+ID: 1E822E9D64762351
+Значок: cataclysm:void_core
+Форма: shield
+x=4.0, y=0.0
+Без изменений</title>
+<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
+<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сторож цитадели</text>
+</g>
+<g data-quest-id="4E228116310381E8" tabindex="0" role="button" aria-label="Страж Края" transform="translate(512.00,0.00)" style="cursor:pointer">
+<title>Страж Края
+ID: 4E228116310381E8
+Значок: cataclysm:gauntlet_of_guard
+Форма: crown
+x=8.0, y=0.0
+Без изменений</title>
+<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-25.60,-15.36 -11.52,0.00 0.00,-25.60 11.52,0.00 25.60,-15.36 17.92,17.92 -17.92,17.92" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
+<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Страж Края</text>
+</g>
+<g data-quest-id="FEE6E381AE1C38B7" tabindex="0" role="button" aria-label="Раскалённая арена" transform="translate(256.00,-384.00)" style="cursor:pointer">
+<title>Раскалённая арена
+ID: FEE6E381AE1C38B7
+Значок: cataclysm:altar_of_fire
+Форма: scroll
+x=4.0, y=-6.0
+Без изменений</title>
+<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
+<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Раскалённая арена</text>
+</g>
+<g data-quest-id="11CA5BADA78F67A2" tabindex="0" role="button" aria-label="Восставший из жара" transform="translate(512.00,-384.00)" style="cursor:pointer">
+<title>Восставший из жара
+ID: 11CA5BADA78F67A2
+Значок: cataclysm:burning_ashes
+Форма: shield
+x=8.0, y=-6.0
+Без изменений</title>
+<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
+<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Восставший из жара</text>
+</g>
+<g data-quest-id="92B1754C45756107" tabindex="0" role="button" aria-label="Ignis — мастер пламени" transform="translate(768.00,-384.00)" style="cursor:pointer">
+<title>Ignis — мастер пламени
+ID: 92B1754C45756107
+Значок: cataclysm:bulwark_of_the_flame
+Форма: crown
+x=12.0, y=-6.0
+Без изменений</title>
+<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-25.60,-15.36 -11.52,0.00 0.00,-25.60 11.52,0.00 25.60,-15.36 17.92,17.92 -17.92,17.92" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
+<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Ignis — мастер пламени</text>
+</g>
+<g data-quest-id="9648CF8E2A62BFAF" tabindex="0" role="button" aria-label="Ледяная тюрьма" transform="translate(256.00,384.00)" style="cursor:pointer">
+<title>Ледяная тюрьма
+ID: 9648CF8E2A62BFAF
+Значок: cataclysm:door_of_seal
+Форма: scroll
+x=4.0, y=6.0
+Без изменений</title>
+<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
+<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Ледяная тюрьма</text>
+</g>
+<g data-quest-id="A13ADF5DA222DA68" tabindex="0" role="button" aria-label="Проклятие тюрьмы" transform="translate(512.00,384.00)" style="cursor:pointer">
+<title>Проклятие тюрьмы
+ID: A13ADF5DA222DA68
+Значок: cataclysm:cursed_tombstone
+Форма: crown
+x=8.0, y=6.0
+Без изменений</title>
+<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-25.60,-15.36 -11.52,0.00 0.00,-25.60 11.52,0.00 25.60,-15.36 17.92,17.92 -17.92,17.92" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
+<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Проклятие тюрьмы</text>
+</g>
+<g data-quest-id="391F9987F1F32442" tabindex="0" role="button" aria-label="Заброшенная фабрика" transform="translate(768.00,0.00)" style="cursor:pointer">
+<title>Заброшенная фабрика
+ID: 391F9987F1F32442
+Значок: cataclysm:emp
+Форма: scroll
+x=12.0, y=0.0
+Без изменений</title>
+<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
+<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Заброшенная фабрика</text>
+</g>
+<g data-quest-id="8792C39846E0D49E" tabindex="0" role="button" aria-label="Последний сигнал фабрики" transform="translate(1024.00,0.00)" style="cursor:pointer">
+<title>Последний сигнал фабрики
+ID: 8792C39846E0D49E
+Значок: cataclysm:witherite_ingot
+Форма: crown
+x=16.0, y=0.0
+Без изменений</title>
+<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-25.60,-15.36 -11.52,0.00 0.00,-25.60 11.52,0.00 25.60,-15.36 17.92,17.92 -17.92,17.92" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
+<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Последний сигнал фабрики</text>
+</g>
+<g data-quest-id="DE6173A11D04779E" tabindex="0" role="button" aria-label="Великий экзамен Катаклизма" transform="translate(1280.00,0.00)" style="cursor:pointer">
+<title>Великий экзамен Катаклизма
+ID: DE6173A11D04779E
+Значок: cataclysm:music_disc_the_cataclysmfarer
+Форма: star
+x=20.0, y=0.0
+Без изменений</title>
+<circle class="selection-ring" r="42.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-32.00 9.97,-13.72 30.43,-9.89 16.13,5.24 18.81,25.89 0.00,16.96 -18.81,25.89 -16.13,5.24 -30.43,-9.89 -9.97,-13.72" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
+<text class="quest-label" y="56.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Великий экзамен</text>
+<text class="quest-label" y="72.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Катаклизма</text>
+</g>
+<g data-quest-id="0B35EC876DCDE6DC" tabindex="0" role="button" aria-label="Проклятая пирамида" transform="translate(256.00,-768.00)" style="cursor:pointer">
+<title>Проклятая пирамида
+ID: 0B35EC876DCDE6DC
+Значок: cataclysm:sandstone_poison_dart_trap
+Форма: scroll
+x=4.0, y=-12.0
+Без изменений</title>
+<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
+<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Проклятая пирамида</text>
+</g>
+<g data-quest-id="64338CFBA5C5B699" tabindex="0" role="button" aria-label="Древний наследник песков" transform="translate(512.00,-768.00)" style="cursor:pointer">
+<title>Древний наследник песков
+ID: 64338CFBA5C5B699
+Значок: cataclysm:remnant_skull
+Форма: crown
+x=8.0, y=-12.0
+Без изменений</title>
+<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-25.60,-15.36 -11.52,0.00 0.00,-25.60 11.52,0.00 25.60,-15.36 17.92,17.92 -17.92,17.92" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
+<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Древний наследник песков</text>
+</g>
+<g data-quest-id="0A9ACE48F5328D23" tabindex="0" role="button" aria-label="Кузница погибших душ" transform="translate(768.00,-768.00)" style="cursor:pointer">
+<title>Кузница погибших душ
+ID: 0A9ACE48F5328D23
+Значок: minecraft:blackstone
+Форма: scroll
+x=12.0, y=-12.0
+Без изменений</title>
+<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
+<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Кузница погибших душ</text>
+</g>
+<g data-quest-id="52813202FFECF301" tabindex="0" role="button" aria-label="Расплавленный колосс" transform="translate(1024.00,-768.00)" style="cursor:pointer">
+<title>Расплавленный колосс
+ID: 52813202FFECF301
+Значок: cataclysm:infernal_forge
+Форма: crown
+x=16.0, y=-12.0
+Без изменений</title>
+<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-25.60,-15.36 -11.52,0.00 0.00,-25.60 11.52,0.00 25.60,-15.36 17.92,17.92 -17.92,17.92" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
+<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Расплавленный колосс</text>
+</g>
+<g data-quest-id="F2FD5EEB117B3119" tabindex="0" role="button" aria-label="Затонувшая Акрополь" transform="translate(256.00,768.00)" style="cursor:pointer">
+<title>Затонувшая Акрополь
+ID: F2FD5EEB117B3119
+Значок: cataclysm:lacrima
+Форма: scroll
+x=4.0, y=12.0
+Без изменений</title>
+<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
+<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Затонувшая Акрополь</text>
+</g>
+<g data-quest-id="43C293DB6BB1573F" tabindex="0" role="button" aria-label="Страж морских руин" transform="translate(512.00,768.00)" style="cursor:pointer">
+<title>Страж морских руин
+ID: 43C293DB6BB1573F
+Значок: cataclysm:chitin_claw
+Форма: shield
+x=8.0, y=12.0
+Без изменений</title>
+<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
+<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Страж морских руин</text>
+</g>
+<g data-quest-id="E3651E9F6E43FAEB" tabindex="0" role="button" aria-label="Тайна Сциллы" transform="translate(768.00,768.00)" style="cursor:pointer">
+<title>Тайна Сциллы
+ID: E3651E9F6E43FAEB
+Значок: cataclysm:essence_of_the_storm
+Форма: shield
+x=12.0, y=12.0
+Без изменений</title>
+<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
+<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Тайна Сциллы</text>
+</g>
+<g data-quest-id="A96277A6BE605D32" tabindex="0" role="button" aria-label="Город под водой" transform="translate(1024.00,768.00)" style="cursor:pointer">
+<title>Город под водой
+ID: A96277A6BE605D32
+Значок: cataclysm:stone_tiles
+Форма: scroll
+x=16.0, y=12.0
+Без изменений</title>
+<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">19</text>
+<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Город под водой</text>
+</g>
+<g data-quest-id="A0BE4189EEE72883" tabindex="0" role="button" aria-label="Левиафан морских глубин" transform="translate(1280.00,768.00)" style="cursor:pointer">
+<title>Левиафан морских глубин
+ID: A0BE4189EEE72883
+Значок: cataclysm:tidal_claws
+Форма: crown
+x=20.0, y=12.0
+Без изменений</title>
+<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-25.60,-15.36 -11.52,0.00 0.00,-25.60 11.52,0.00 25.60,-15.36 17.92,17.92 -17.92,17.92" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">20</text>
+<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Левиафан морских глубин</text>
+</g>
+<g data-quest-id="1CB249497EF14D92" tabindex="0" role="button" aria-label="Забытая часовня пустоши" transform="translate(256.00,-1152.00)" style="cursor:pointer">
+<title>Забытая часовня пустоши
+ID: 1CB249497EF14D92
+Значок: cataclysm:chiseled_obsidian_bricks
+Форма: scroll
+x=4.0, y=-18.0
+Без изменений</title>
+<circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">21</text>
+<text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Забытая часовня пустоши</text>
+</g>
+<g data-quest-id="28A645C41091FB06" tabindex="0" role="button" aria-label="Шпиль последнего стража" transform="translate(512.00,-1152.00)" style="cursor:pointer">
+<title>Шпиль последнего стража
+ID: 28A645C41091FB06
+Значок: cataclysm:chiseled_end_stone_bricks
+Форма: scroll
+x=8.0, y=-18.0
+Без изменений</title>
+<circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">22</text>
+<text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Шпиль последнего стража</text>
+</g>
+<g data-quest-id="B2584C9F3E1DF7E2" tabindex="0" role="button" aria-label="Аметистовое гнездо" transform="translate(768.00,-1152.00)" style="cursor:pointer">
+<title>Аметистовое гнездо
+ID: B2584C9F3E1DF7E2
+Значок: cataclysm:amethyst_crab_shell
+Форма: scroll
+x=12.0, y=-18.0
+Без изменений</title>
+<circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">23</text>
+<text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Аметистовое гнездо</text>
+</g>
+<g data-quest-id="A0D9B1BC47B0A927" tabindex="0" role="button" aria-label="Заброшенная деревня" transform="translate(256.00,1152.00)" style="cursor:pointer">
+<title>Заброшенная деревня
+ID: A0D9B1BC47B0A927
+Значок: cataclysm:ancient_metal_ingot
+Форма: scroll
+x=4.0, y=18.0
+Без изменений</title>
+<circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">24</text>
+<text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Заброшенная деревня</text>
+</g>
+<g data-quest-id="AB0DB46C4BD473E2" tabindex="0" role="button" aria-label="Захваченный поселок" transform="translate(512.00,1152.00)" style="cursor:pointer">
+<title>Захваченный поселок
+ID: AB0DB46C4BD473E2
+Значок: cataclysm:chiseled_obsidian_bricks
+Форма: scroll
+x=8.0, y=18.0
+Без изменений</title>
+<circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">25</text>
+<text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Захваченный поселок</text>
+</g>
+<g data-quest-id="CC6AECEDA32DA758" tabindex="0" role="button" aria-label="Площадка древних раскопок" transform="translate(768.00,1152.00)" style="cursor:pointer">
+<title>Площадка древних раскопок
+ID: CC6AECEDA32DA758
+Значок: cataclysm:ancient_metal_ingot
+Форма: scroll
+x=12.0, y=18.0
+Без изменений</title>
+<circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">26</text>
+<text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Площадка древних раскопок</text>
+</g>
+<g data-quest-id="BBA92955F4AA2D1F" tabindex="0" role="button" aria-label="Пепельный караул" transform="translate(1024.00,-384.00)" style="cursor:pointer">
+<title>Пепельный караул
+ID: BBA92955F4AA2D1F
+Значок: cataclysm:burning_ashes
+Форма: shield
+x=16.0, y=-6.0
+Без изменений</title>
+<circle class="selection-ring" r="33.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-23.60,-23.60 23.60,-23.60 18.88,7.08 0.00,23.60 -18.88,7.08" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">27</text>
+<text class="quest-label" y="47.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Пепельный караул</text>
+</g>
+<g data-quest-id="F21761F49BC3DC1D" tabindex="0" role="button" aria-label="Стражи морской пучины" transform="translate(1536.00,768.00)" style="cursor:pointer">
+<title>Стражи морской пучины
+ID: F21761F49BC3DC1D
+Значок: cataclysm:chitin_claw
+Форма: shield
+x=24.0, y=12.0
+Без изменений</title>
+<circle class="selection-ring" r="33.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="-23.60,-23.60 23.60,-23.60 18.88,7.08 0.00,23.60 -18.88,7.08" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">28</text>
+<text class="quest-label" y="47.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Стражи морской пучины</text>
+</g>
+</g></svg>
