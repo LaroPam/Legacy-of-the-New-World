@@ -89,6 +89,16 @@ class PreservationTests(unittest.TestCase):
         r = self.report(extra={'kubejs/data/test/advancements/a.json': b'{"criteria":{},"criteria":{}}'})
         self.assertIn('parse', self.codes(r))
 
+    def test_original_gameplay_defect_cannot_be_called_release_ready(self):
+        path = 'kubejs/data/test/advancements/a.json'
+        files = {REF:SOURCE, path:b'{"criteria":{"a":{"trigger":"minecraft:player_killed_entity","conditions":{"entity":{"type":"test:missing"}}}}}'}
+        evidence = {'namespace':'test','entities':['test:real'],'source':'fixture exact registry','source_sha256':'a'*64}
+        report = quality.evaluate(files, files, entity_evidence=evidence)
+        self.assertEqual(len(report['gameplay_blockers']), 1)
+        self.assertFalse(report['summary']['release_ready'])
+        self.assertEqual(report['errors'], [])
+        self.assertIn('unregistered_entity_predicate', {i['code'] for i in report['warnings']})
+
 
 class GeometryTests(unittest.TestCase):
     def test_intersection_not_just_exact_center(self):

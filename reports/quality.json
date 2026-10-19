@@ -6,6 +6,24 @@
   "errors": [],
   "warnings": [
     {
+      "code": "unregistered_entity_predicate",
+      "location": "kubejs/data/nasledie/advancements/alpha39/mowzie/grove_watch.json",
+      "message": "Entity type absent from exact mod EntityHandler registrations; gameplay is blocked pending a separate fix",
+      "entity": "mowziesmobs:umvuthana_fury",
+      "evidence": "mowziesmobs-1.8.2.jar / com.bobmowzie.mowziesmobs.server.entity.EntityHandler",
+      "source_sha256": "e8ce1768cda6f1e1fadd2321c92921b473bd0cee45ba4b8387fb30f8326cb31c",
+      "baseline_status": "pre_existing_gameplay_blocker"
+    },
+    {
+      "code": "unregistered_entity_predicate",
+      "location": "kubejs/data/nasledie/advancements/alpha39/mowzie/grove_watch__fear.json",
+      "message": "Entity type absent from exact mod EntityHandler registrations; gameplay is blocked pending a separate fix",
+      "entity": "mowziesmobs:umvuthana_fear",
+      "evidence": "mowziesmobs-1.8.2.jar / com.bobmowzie.mowziesmobs.server.entity.EntityHandler",
+      "source_sha256": "e8ce1768cda6f1e1fadd2321c92921b473bd0cee45ba4b8387fb30f8326cb31c",
+      "baseline_status": "pre_existing_gameplay_blocker"
+    },
+    {
       "code": "technical_prose",
       "location": "config/ftbquests/quests/chapters/nasledie_archeology.snbt#D224CC946496E3DE",
       "message": "Player-facing text contains implementation details or template labels",
@@ -4439,6 +4457,24 @@
       "current_sha256": "0c8eb4e8ce050740a5c01a2dc2e1f49140b66c309004661cd7de2cc3563ba6f8"
     }
   ],
+  "gameplay_blockers": [
+    {
+      "code": "unregistered_entity_predicate",
+      "location": "kubejs/data/nasledie/advancements/alpha39/mowzie/grove_watch.json",
+      "message": "Entity type absent from exact mod EntityHandler registrations; gameplay is blocked pending a separate fix",
+      "entity": "mowziesmobs:umvuthana_fury",
+      "evidence": "mowziesmobs-1.8.2.jar / com.bobmowzie.mowziesmobs.server.entity.EntityHandler",
+      "source_sha256": "e8ce1768cda6f1e1fadd2321c92921b473bd0cee45ba4b8387fb30f8326cb31c"
+    },
+    {
+      "code": "unregistered_entity_predicate",
+      "location": "kubejs/data/nasledie/advancements/alpha39/mowzie/grove_watch__fear.json",
+      "message": "Entity type absent from exact mod EntityHandler registrations; gameplay is blocked pending a separate fix",
+      "entity": "mowziesmobs:umvuthana_fear",
+      "evidence": "mowziesmobs-1.8.2.jar / com.bobmowzie.mowziesmobs.server.entity.EntityHandler",
+      "source_sha256": "e8ce1768cda6f1e1fadd2321c92921b473bd0cee45ba4b8387fb30f8326cb31c"
+    }
+  ],
   "geometry": {
     "config/ftbquests/quests/chapters/nasledie_archeology.snbt": {
       "nodes": 23,
@@ -5771,15 +5807,18 @@
   },
   "summary": {
     "errors": 0,
-    "warnings": 439,
+    "warnings": 441,
     "unknown": 9,
-    "result": "pass_with_warnings_or_unknowns"
+    "result": "pass_with_warnings_or_unknowns",
+    "gameplay_blockers": 2,
+    "release_ready": false
   },
   "issue_counts": {
     "errors": {},
     "warnings": {
       "edge_long": 21,
-      "technical_prose": 418
+      "technical_prose": 418,
+      "unregistered_entity_predicate": 2
     },
     "unknown": {
       "external_registry_unknown": 6,

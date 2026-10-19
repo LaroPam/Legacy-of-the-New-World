@@ -1,0 +1,20 @@
+{
+  "scope": "Browser report smoke test only; Minecraft not run",
+  "html_sha256": "36769eb4e8893db773c9c8fa7e61cb590ea16f549ca312084b4589642c43d7ae",
+  "chapters": 18,
+  "reference_nodes_per_side": 25,
+  "changed_quests": 25,
+  "checks": [
+    "default reference selection",
+    "all chapter options",
+    "both diagrams",
+    "quest detail",
+    "changed filter",
+    "label toggle",
+    "zoom",
+    "locate",
+    "chapter switching"
+  ],
+  "javascript_errors": [],
+  "result": "passed"
+}

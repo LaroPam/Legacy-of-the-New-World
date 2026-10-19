@@ -1,0 +1,8 @@
+{
+  "baseline_commit": "f68124fb33597aa13b4b6a8dd8c6dde7c879b188",
+  "chapter": "config/ftbquests/quests/chapters/nasledie_defense.snbt",
+  "chapter_sha256": "0c8eb4e8ce050740a5c01a2dc2e1f49140b66c309004661cd7de2cc3563ba6f8",
+  "purpose": "visual reference for author review; not gameplay-ready release",
+  "zip_sha256": "e2571f455ecbaf41d7d15ecf904c9189d3094652a2e9625df83ca7ab79ee27ea",
+  "patch_sha256": "631b630b0564b96ef6b1dd0340d9e903b5a04b91d4a18214c910a3d59acb0fd7"
+}

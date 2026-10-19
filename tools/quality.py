@@ -467,7 +467,37 @@ def introduced_icons(current, baseline, evidence):
     return errors
 
 
-def evaluate(current_files, baseline_files, reference=REFERENCE, registry=None, reviews=None, baseline_commit=BASELINE, icon_evidence=None):
+def static_entity_checks(parsed, evidence):
+    if not evidence:
+        return []
+    namespace = evidence['namespace'] + ':'
+    registered = set(evidence['entities'])
+    problems = []
+    def scan(value, path):
+        if isinstance(value, dict):
+            # Only entity predicates: do not confuse loot/predicate type names with entities.
+            candidates = [value.get(k) for k in ('entity', 'player')]
+            if value.get('condition') == 'minecraft:entity_properties':
+                candidates.append(value.get('predicate'))
+            for candidate in candidates:
+                if isinstance(candidate, dict):
+                    ident = candidate.get('type', '')
+                    if isinstance(ident, str) and ident.startswith(namespace) and ident not in registered:
+                        problems.append(problem('unregistered_entity_predicate', path,
+                                                'Entity type absent from exact mod EntityHandler registrations; gameplay is blocked pending a separate fix',
+                                                entity=ident, evidence=evidence['source'], source_sha256=evidence['source_sha256']))
+            for key, child in value.items():
+                scan(child, path)
+        elif isinstance(value, list):
+            for child in value:
+                scan(child, path)
+    for name, body in parsed.items():
+        if name.startswith('kubejs/data/') and '/advancements/' in name:
+            scan(body.get('criteria', {}), name)
+    return problems
+
+
+def evaluate(current_files, baseline_files, reference=REFERENCE, registry=None, reviews=None, baseline_commit=BASELINE, icon_evidence=None, entity_evidence=None):
     current, parse_errors = parse_files(current_files)
     baseline, baseline_errors = parse_files(baseline_files)
     report = {"schema_version": 1, "baseline_commit": baseline_commit, "reference": reference,
@@ -481,6 +511,13 @@ def evaluate(current_files, baseline_files, reference=REFERENCE, registry=None, 
     report["errors"].extend(preservation_errors)
     report["errors"].extend(resource_checks(current_files, current))
     report["errors"].extend(introduced_icons(current, baseline, icon_evidence))
+    report['gameplay_blockers'] = static_entity_checks(current, entity_evidence)
+    old_blockers = {issue_key(p) for p in static_entity_checks(baseline, entity_evidence)}
+    for item in report['gameplay_blockers']:
+        if issue_key(item) in old_blockers:
+            report['warnings'].append({**item, 'baseline_status':'pre_existing_gameplay_blocker'})
+        else:
+            report['errors'].append(item)
     geometry_issues, report["geometry"] = geometry(current)
     old_geometry, report["baseline_geometry"] = geometry(baseline)
     current_quality = prose_issues(current) + duplicate_conditions(current) + geometry_issues
@@ -506,6 +543,8 @@ def finish(report):
     report["summary"] = {"errors": len(report["errors"]), "warnings": len(report["warnings"]), "unknown": len(report["unknown"]),
                          "result": "fail" if report["errors"] else "pass_with_warnings_or_unknowns" if report["warnings"] or report["unknown"] else "pass"}
     report["issue_counts"] = {level: dict(sorted(Counter(i["code"] for i in report[level]).items())) for level in ("errors", "warnings", "unknown")}
+    report['summary']['gameplay_blockers'] = len(report.get('gameplay_blockers', []))
+    report['summary']['release_ready'] = False  # This command never runs a game/upgrade test.
     return report
 
 
@@ -546,7 +585,9 @@ def main(argv=None):
         reviews = {p.relative_to(root).as_posix(): parse_json(p.read_text(encoding="utf-8")) for p in sorted((root / "reviews").glob("semantic_*.json"))}
         icon_path = root / 'reviews/reference_icon_evidence.json'
         icon_evidence = parse_json(icon_path.read_text()) if icon_path.exists() else None
-        report = evaluate(current, baseline, args.reference, registry, reviews, commit, icon_evidence)
+        entity_path = root / 'reviews/mowzie_entity_evidence.json'
+        entity_evidence = parse_json(entity_path.read_text()) if entity_path.exists() else None
+        report = evaluate(current, baseline, args.reference, registry, reviews, commit, icon_evidence, entity_evidence)
         report_path = args.report if args.report.is_absolute() else root / args.report
         # Never let a report path overwrite protected game input files.
         relative = report_path.resolve().relative_to(root) if report_path.resolve().is_relative_to(root) else None
