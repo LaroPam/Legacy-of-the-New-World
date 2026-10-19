@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_carrot"
+    },
+    "title": {
+      "text": "Развести лис"
+    },
+    "description": {
+      "text": "Получить потомство нужного вида животных."
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "action": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:fox"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "action"
+    ]
+  ]
+}

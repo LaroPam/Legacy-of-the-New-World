@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "sophisticatedstorage:controller"
+    },
+    "title": {
+      "text": "Установка контроллера склада"
+    },
+    "description": {
+      "text": "Установите блок в мире (не проверяет работу машины)"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "block_placed": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "sophisticatedstorage:controller"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "block_placed"
+    ]
+  ]
+}

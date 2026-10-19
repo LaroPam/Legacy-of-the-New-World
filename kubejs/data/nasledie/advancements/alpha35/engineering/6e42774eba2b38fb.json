@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "sophisticatedstorage:filter_upgrade"
+    },
+    "title": {
+      "text": "Собрать фильтр для хранилища"
+    },
+    "description": {
+      "text": "§7Проверка Alpha35 · craft_storage"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "sophisticatedstorage:filter_upgrade"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "crafted"
+    ]
+  ]
+}

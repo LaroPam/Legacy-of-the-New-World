@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "createaddition:copper_wire"
+    },
+    "title": {
+      "text": "Первая проводка"
+    },
+    "description": {
+      "text": "minecraft:item_used_on_block отслеживает успешное применение Copper Wire к блоку; передача мощности не доказывается."
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "action": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "createaddition:copper_wire"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "action"
+    ]
+  ]
+}

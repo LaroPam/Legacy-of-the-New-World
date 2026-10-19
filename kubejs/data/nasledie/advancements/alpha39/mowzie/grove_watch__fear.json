@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_sword"
+    },
+    "title": {
+      "text": "Караул солнечной рощи"
+    },
+    "description": {
+      "text": "Скрытое событие для задания «Наследие нового мира»"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "fear": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "mowziesmobs:umvuthana_fear"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "fear"
+    ]
+  ]
+}

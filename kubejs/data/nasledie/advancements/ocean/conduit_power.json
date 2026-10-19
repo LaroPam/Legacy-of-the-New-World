@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"item": "minecraft:conduit"},
+    "title": {"text": "Действующий проводник"},
+    "description": {"text": "Получите эффект силы проводника под водой"},
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "conduit_power": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {"effects": {"minecraft:conduit_power": {}}}
+    }
+  },
+  "requirements": [["conduit_power"]]
+}

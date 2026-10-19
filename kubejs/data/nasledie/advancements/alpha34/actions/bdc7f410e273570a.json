@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "sophisticatedstorage:iron_chest"
+    },
+    "title": {
+      "text": "Установить железный сундук"
+    },
+    "description": {
+      "text": "minecraft:placed_block доказывает установку сундука, но не сортировку предметов."
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "action": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "sophisticatedstorage:iron_chest"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "action"
+    ]
+  ]
+}

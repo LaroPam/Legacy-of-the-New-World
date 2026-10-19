@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "betterarcheology:chicken_fossil"
+    },
+    "title": {
+      "text": "Музейная экспозиция: птица"
+    },
+    "description": {
+      "text": "minecraft:placed_block проверяет размещение Chicken Fossil, а не происхождение частей."
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "action": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "betterarcheology:chicken_fossil"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "action"
+    ]
+  ]
+}

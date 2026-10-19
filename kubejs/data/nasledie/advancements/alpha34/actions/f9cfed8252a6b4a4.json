@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "createdieselgenerators:distillation_controller"
+    },
+    "title": {
+      "text": "Сборка перегонной колонны"
+    },
+    "description": {
+      "text": "minecraft:item_used_on_block подтверждает использование контроллера по блоку, но не устойчивую работу колонны."
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "action": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "createdieselgenerators:distillation_controller"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "action"
+    ]
+  ]
+}

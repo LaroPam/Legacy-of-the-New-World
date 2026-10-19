@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "immersive_aircraft:biplane"
+    },
+    "title": {
+      "text": "За штурвалом биплана"
+    },
+    "description": {
+      "text": "minecraft:started_riding подтверждает посадку в биплан, но не полёт."
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "action": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "vehicle": {
+                "type": "immersive_aircraft:biplane"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "action"
+    ]
+  ]
+}

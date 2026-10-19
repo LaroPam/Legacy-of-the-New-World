@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "betterarcheology:diamond_brush"
+    },
+    "title": {
+      "text": "Алмазная кисть в деле"
+    },
+    "description": {
+      "text": "minecraft:using_item подтверждает использование алмазной кисти, а не найденный предмет."
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "action": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "betterarcheology:diamond_brush"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "action"
+    ]
+  ]
+}

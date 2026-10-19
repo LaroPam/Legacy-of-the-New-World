@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "complete_trade": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:bread"
+          ]
+        },
+        "villager": {
+          "type": "minecraft:villager"
+        }
+      }
+    }
+  }
+}

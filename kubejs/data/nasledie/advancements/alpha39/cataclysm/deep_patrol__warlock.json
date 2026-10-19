@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "cataclysm:chitin_claw"
+    },
+    "title": {
+      "text": "Стражи морской пучины"
+    },
+    "description": {
+      "text": "Скрытое событие для задания «Наследие нового мира»"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "warlock": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "cataclysm:deepling_warlock"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "warlock"
+    ]
+  ]
+}

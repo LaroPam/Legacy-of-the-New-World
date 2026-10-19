@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "betterarcheology:iron_brush"
+    },
+    "title": {
+      "text": "Железная кисть в деле"
+    },
+    "description": {
+      "text": "minecraft:using_item подтверждает использование железной кисти; успешное извлечение артефакта не проверяется."
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "action": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "betterarcheology:iron_brush"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "action"
+    ]
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "display": {
+    "icon": {
+      "item": "createdieselgenerators:oil_scanner"
+    },
+    "title": {
+      "text": "Нефтяной сигнал"
+    },
+    "description": {
+      "text": "§7Проверка Alpha35 · scan"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "oil_2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "createdieselgenerators:oil_scanner"
+                  ],
+                  "nbt": "{Type:2}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "oil_3": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "createdieselgenerators:oil_scanner"
+                  ],
+                  "nbt": "{Type:3}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "oil_2",
+      "oil_3"
+    ]
+  ]
+}

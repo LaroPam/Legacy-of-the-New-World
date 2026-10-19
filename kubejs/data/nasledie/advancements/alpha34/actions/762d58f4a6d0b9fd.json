@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "immersive_aircraft:cargo_airship"
+    },
+    "title": {
+      "text": "На борту грузового дирижабля"
+    },
+    "description": {
+      "text": "minecraft:started_riding подтверждает посадку на Cargo Airship, не реальную перевозку груза."
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "action": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "vehicle": {
+                "type": "immersive_aircraft:cargo_airship"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "action"
+    ]
+  ]
+}

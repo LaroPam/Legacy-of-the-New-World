@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "railways:conductor_cap"
+    },
+    "title": {
+      "text": "Примерить фуражку проводника"
+    },
+    "description": {
+      "text": "§7Проверка Alpha35 · wear_cap"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "equipped": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "head": {
+                  "items": [
+                    "railways:conductor_cap"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "equipped"
+    ]
+  ]
+}

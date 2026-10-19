@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "createbigcannons:cannon_builder"
+    },
+    "title": {
+      "text": "Развёрнутый сборщик стволов"
+    },
+    "description": {
+      "text": "Установите блок в мире (не проверяет работу машины)"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "block_placed": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "createbigcannons:cannon_builder"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "block_placed"
+    ]
+  ]
+}

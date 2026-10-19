@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:writable_book"
+    },
+    "title": {
+      "text": "Три записи полевого дневника"
+    },
+    "description": {
+      "text": "Скрытое событие для задания «Наследие нового мира»"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "turtle": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "alexsmobs:alligator_snapping_turtle"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "turtle"
+    ]
+  ]
+}

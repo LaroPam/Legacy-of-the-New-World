@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "betterarcheology:wolf_fossil"
+    },
+    "title": {
+      "text": "Музейная экспозиция: волк"
+    },
+    "description": {
+      "text": "minecraft:placed_block проверяет установку Wolf Fossil."
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "action": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "betterarcheology:wolf_fossil"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "action"
+    ]
+  ]
+}

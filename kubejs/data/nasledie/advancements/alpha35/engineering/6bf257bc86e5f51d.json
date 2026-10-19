@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "sophisticatedbackpacks:pickup_upgrade"
+    },
+    "title": {
+      "text": "Собрать модуль автоподбора"
+    },
+    "description": {
+      "text": "§7Проверка Alpha35 · craft_pickup"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "sophisticatedbackpacks:pickup_upgrade"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "crafted"
+    ]
+  ]
+}

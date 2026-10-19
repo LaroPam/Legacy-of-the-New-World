@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "createdieselgenerators:engine_turbocharger"
+    },
+    "title": {
+      "text": "Примерка турбонаддува"
+    },
+    "description": {
+      "text": "§7Проверка Alpha35 · turbo"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "applied": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "createdieselgenerators:engine_turbocharger"
+              ]
+            }
+          },
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "createdieselgenerators:diesel_engine"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "applied"
+    ]
+  ]
+}
