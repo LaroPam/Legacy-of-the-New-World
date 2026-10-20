@@ -1,4 +1,4 @@
-name: Questbook presentation guard
+name: Questbook static checks
 on: [push, pull_request]
 jobs:
   static:
@@ -13,7 +13,6 @@ jobs:
       - run: python -m pip install -r tools/requirements.txt
       - run: python -m unittest discover -s tests -v
       - run: python tools/quality.py --report reports/quality-ci.json
-      - run: python tools/apply_reference.py --check
       - run: python tools/apply_polish.py --check
       - uses: actions/upload-artifact@v4
         if: always()

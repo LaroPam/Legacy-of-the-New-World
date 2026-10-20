@@ -2,7 +2,7 @@
     filename: "nasledie_defense"
     id: "A1279E21532D7CDD"
     group: "842B4DB4DBD349A0"
-    title: "Охота и артиллерия"
+    title: "Охота и артиллерия — мастерство в действии"
     icon: "minecraft:shield"
     order_index: 8
     progression_mode: "flexible"
@@ -22,6 +22,7 @@
             description: [
                 "§7Не всякая неподвижная зелень безобидна."
                 "§fНайдите и убейте Пастецвета (Foliaath). Следите за его выпадами и не спешите подходить вплотную."
+                "Выберите дальнейшую цель: победить железного воителя и испытать его топор, исследовать солнечную рощу, пройти испытание Скульптора или оснастить артиллерийную мастерскую. Эти маршруты самостоятельны."
             ]
             tasks: [
                 {
@@ -81,14 +82,12 @@
         {
             id: "4843AED5CE824450"
             title: "Окно в железной броне"
-            x: 5.00d
+            x: 7.50d
             y: 0.00d
             icon: "mowziesmobs:wrought_helmet"
             shape: "crown"
             size: 1.30d
-            dependencies: [
-                "FF7561483C27E289"
-            ]
+            dependencies: ["06BF2A4D15D6CD27"]
             description: [
                 "§7Кованый страж не уступит тому, кто просто машет оружием."
                 "§fУбейте Ferrous Wroughtnaut. Понаблюдайте за сериями его ударов и найдите момент, когда можно ответить."
@@ -116,14 +115,12 @@
         {
             id: "92AF3238F7B8776E"
             title: "Морозный охотник"
-            x: 7.50d
-            y: 0.00d
+            x: 5.00d
+            y: -2.50d
             icon: "mowziesmobs:ice_crystal"
             shape: "crown"
             size: 1.30d
-            dependencies: [
-                "4843AED5CE824450"
-            ]
+            dependencies: ["1E7E546AB7203A0B"]
             description: [
                 "§fОдержите победу над Морозной Пастью (Frostmaw). Оставьте себе пространство для отхода от ледяных атак."
                 "§7Цель этой охоты — убить великана. Кража его кристалла будет отдельным приключением."
@@ -151,14 +148,12 @@
         {
             id: "A378D8F13118FF97"
             title: "Владыка солнечной маски"
-            x: 10.00d
-            y: 0.00d
+            x: 5.00d
+            y: 5.00d
             icon: "mowziesmobs:sol_visage"
             shape: "crown"
             size: 1.30d
-            dependencies: [
-                "92AF3238F7B8776E"
-            ]
+            dependencies: ["0EA51C1EFC97CF87"]
             description: [
                 "§7Солнечная роща хранит больше опасностей, чем кажется с опушки."
                 "§fНайдите и убейте Умвути (Umvuthi). Изучите его атаки и заранее выберите пути отхода."
@@ -193,7 +188,7 @@
             id: "216A8A3EE5B58D96"
             title: "Каменная засада"
             x: 0.00d
-            y: 2.50d
+            y: -2.50d
             icon: "mowziesmobs:bluff_rod"
             shape: "shield"
             size: 1.05d
@@ -228,8 +223,8 @@
         {
             id: "5C3BCCAC46517EDE"
             title: "Сокровище умеет убегать"
-            x: 2.50d
-            y: 5.00d
+            x: 0.00d
+            y: -5.00d
             icon: "minecraft:diamond"
             shape: "circle"
             size: 1.05d
@@ -264,15 +259,13 @@
         {
             id: "1AA2F1D6F60E9FDB"
             title: "Воин в маске"
-            x: 5.00d
+            x: 0.00d
             y: 5.00d
             icon: "mowziesmobs:umvuthana_mask_fury"
             shape: "shield"
             size: 1.05d
             optional: true
-            dependencies: [
-                "5C3BCCAC46517EDE"
-            ]
+            dependencies: ["B704072AA3306667"]
             description: [
                 "§fПобедите Умвутану-Ястреба (Umvuthana Raptor). Ищите именно этого воина солнечного племени."
                 "§7Наблюдайте за его движениями: знакомая маска ещё не означает знакомую тактику."
@@ -300,15 +293,13 @@
         {
             id: "667FADB4630B1FBC"
             title: "Свой среди чужих"
-            x: 12.50d
-            y: 0.00d
+            x: 0.00d
+            y: 7.50d
             icon: "mowziesmobs:umvuthana_mask_fear"
             shape: "scroll"
             size: 1.05d
             optional: true
-            dependencies: [
-                "A378D8F13118FF97"
-            ]
+            dependencies: ["1AA2F1D6F60E9FDB"]
             description: [
                 "§fНаденьте маску Умвутаны и подойдите к живому Умвути ближе чем на 15 блоков."
                 "§7Оставайтесь рядом несколько секунд, пока он не считает вас своей целью. Маскировка позволяет побывать среди племени мирным гостем."
@@ -336,8 +327,8 @@
         {
             id: "62D20856FFA016C3"
             title: "Благословение Солнца"
-            x: 12.50d
-            y: -2.50d
+            x: 0.00d
+            y: 10.00d
             icon: "mowziesmobs:grant_suns_blessing"
             shape: "star"
             size: 1.15d
@@ -372,15 +363,13 @@
         {
             id: "0EF67FFF73E6D383"
             title: "Песок будущих орудий"
-            x: 0.00d
-            y: -2.50d
+            x: 5.00d
+            y: 10.00d
             icon: "createbigcannons:casting_sand"
             shape: "circle"
             size: 1.05d
             optional: true
-            dependencies: [
-                "A33D4E94573F3BD4"
-            ]
+            dependencies: []
             description: [
                 "§fПолучите одну единицу литейного песка Create Big Cannons. Он понадобится для знакомства с артиллерийным литьём."
                 "§7Для этого шага достаточно песка в инвентаре; он останется у вас."
@@ -410,8 +399,8 @@
         {
             id: "35AB582E2E08DF86"
             title: "Место для сборки стволов"
-            x: 2.50d
-            y: -2.50d
+            x: 7.50d
+            y: 10.00d
             icon: "createbigcannons:cannon_builder"
             shape: "gear"
             size: 1.05d
@@ -446,8 +435,8 @@
         {
             id: "35D125C19D556E7A"
             title: "Сверлильный станок"
-            x: 5.00d
-            y: -2.50d
+            x: 10.00d
+            y: 10.00d
             icon: "createbigcannons:cannon_drill"
             shape: "gear"
             size: 1.05d
@@ -482,8 +471,8 @@
         {
             id: "17FE2073432FC7E0"
             title: "Основание орудия"
-            x: 7.50d
-            y: -2.50d
+            x: 12.50d
+            y: 10.00d
             icon: "createbigcannons:fixed_cannon_mount"
             shape: "gear"
             size: 1.05d
@@ -518,8 +507,8 @@
         {
             id: "8EC3B7E438EA800A"
             title: "Механизм заряжания"
-            x: 10.00d
-            y: -2.50d
+            x: 15.00d
+            y: 10.00d
             icon: "createbigcannons:cannon_loader"
             shape: "gear"
             size: 1.05d
@@ -530,6 +519,7 @@
             description: [
                 "§fУстановите механизм заряжания Create Big Cannons."
                 "§7Продумайте пространство для подачи боеприпасов. Для завершения этого шага достаточно монтажа; заряжать и стрелять пока не нужно."
+                "Монтажный маршрут подготовил рабочие места и механизм заряжания. Дальше изучите во встроенных анимациях Create Big Cannons сборку ствола, боеприпасы и порядок стрельбы. Установка этих блоков ещё не является испытанием готового орудия."
             ]
             tasks: [
                 {
@@ -555,7 +545,7 @@
             id: "1E7E546AB7203A0B"
             title: "Кристалл без поединка"
             x: 2.50d
-            y: 2.50d
+            y: -2.50d
             icon: "mowziesmobs:ice_crystal"
             shape: "star"
             size: 1.15d
@@ -589,14 +579,12 @@
         {
             id: "B89ADDCBCB295F18"
             title: "Тропа к монастырю"
-            x: 10.00d
-            y: 2.50d
+            x: -2.50d
+            y: 0.00d
             icon: "minecraft:chiseled_stone_bricks"
             shape: "scroll"
             size: 1.05d
-            dependencies: [
-                "A378D8F13118FF97"
-            ]
+            dependencies: ["A33D4E94573F3BD4"]
             description: [
                 "§fНайдите монастырь Скульптора (Monastery) из Mowzie’s Mobs и войдите на его территорию."
                 "§7Осмотритесь и найдите дорогу к хозяину. Само испытание ждёт в следующем задании."
@@ -624,8 +612,8 @@
         {
             id: "DF85EFBB8E452760"
             title: "Вершина Скульптора"
-            x: 10.00d
-            y: 5.00d
+            x: -5.00d
+            y: 0.00d
             icon: "mowziesmobs:earthrend_gauntlet"
             shape: "crown"
             size: 1.25d
@@ -665,14 +653,12 @@
         {
             id: "B704072AA3306667"
             title: "Роща солнечного племени"
-            x: -2.50d
-            y: 5.00d
+            x: 0.00d
+            y: 2.50d
             icon: "minecraft:acacia_log"
             shape: "scroll"
             size: 1.05d
-            dependencies: [
-                "216A8A3EE5B58D96"
-            ]
+            dependencies: ["A33D4E94573F3BD4"]
             description: [
                 "§fОтыщите рощу Умвутаны (Umvuthana Grove) и войдите в неё."
                 "§7Разведайте входы и безопасные выходы. Для этой экспедиции достаточно обнаружить само поселение."
@@ -700,14 +686,12 @@
         {
             id: "06BF2A4D15D6CD27"
             title: "Зал кованого стража"
-            x: -2.50d
-            y: 7.50d
+            x: 5.00d
+            y: 0.00d
             icon: "minecraft:anvil"
             shape: "scroll"
             size: 1.05d
-            dependencies: [
-                "B704072AA3306667"
-            ]
+            dependencies: ["FF7561483C27E289"]
             description: [
                 "§fНайдите подземный зал Кованого стража (Wrought Chamber) и войдите внутрь."
                 "§7Осмотрите арену, прежде чем решать, готовы ли вы к бою. Победа над её хозяином здесь не требуется."
@@ -735,8 +719,8 @@
         {
             id: "0DA6143558A570BF"
             title: "Гроттол и удача"
-            x: 2.50d
-            y: 7.50d
+            x: 0.00d
+            y: -7.50d
             icon: "minecraft:golden_pickaxe"
             shape: "star"
             size: 1.10d
@@ -771,8 +755,8 @@
         {
             id: "A3EDE771A3D3FAE9"
             title: "Гроттол в сохранности"
-            x: 5.00d
-            y: 7.50d
+            x: 0.00d
+            y: -10.00d
             icon: "mowziesmobs:captured_grottol"
             shape: "star"
             size: 1.10d
@@ -807,15 +791,13 @@
         {
             id: "4CE1E389229E6BFE"
             title: "Цена неверного шага"
-            x: 10.00d
-            y: 7.50d
+            x: -2.50d
+            y: -2.50d
             icon: "minecraft:feather"
             shape: "circle"
             size: 1.05d
             optional: true
-            dependencies: [
-                "DF85EFBB8E452760"
-            ]
+            dependencies: ["B89ADDCBCB295F18"]
             description: [
                 "§7Даже после удачного восхождения высота остаётся опасной."
                 "§fЭтот отдельный вызов засчитывается при гибели от падения во время испытания Скульптора."
@@ -845,15 +827,13 @@
         {
             id: "0EA51C1EFC97CF87"
             title: "Караул солнечной рощи"
-            x: -5.00d
+            x: 2.50d
             y: 5.00d
             icon: "mowziesmobs:umvuthana_mask_fury"
             shape: "shield"
             size: 1.10d
             optional: true
-            dependencies: [
-                "B704072AA3306667"
-            ]
+            dependencies: ["1AA2F1D6F60E9FDB"]
             description: [
                 "§fПобедите двух разных воинов солнечного племени:"
                 "§f• Умвутану Ярости;"
@@ -890,13 +870,13 @@
         {
             id: "9B6EFB1C669C7CFA"
             title: "Четыре испытания топора"
-            x: 12.50d
-            y: 2.50d
+            x: 10.00d
+            y: 0.00d
             icon: "mowziesmobs:wrought_axe"
             shape: "star"
             size: 1.30d
             optional: true
-            dependencies: [ "A378D8F13118FF97" ]
+            dependencies: ["4843AED5CE824450"]
             description: [
                 "§7Трофей Кованого стража пора взять в новую экспедицию."
                 "§fПобедите разорителя, призывателя, пиглина-брута и визер-скелета."

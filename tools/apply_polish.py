@@ -19,10 +19,20 @@ def render(source, design, fixes):
         end = apply_reference.value_end(result, pos)
         quest = snbt.loads(result[pos:end])
         for key, fix in fixes.get(str(quest['id']), {}).items():
-            if key != 'dependencies' or list(quest.get(key, [])) != fix['before']:
+            if key != 'dependencies' or quest.get(key) != fix['before']:
                 raise ValueError('Dependency fix differs from baseline')
-            span = apply_reference.field_spans(result, pos)[key]
-            edits.append((*span, json.dumps(fix['after'])))
+            spans = apply_reference.field_spans(result, pos)
+            if key in spans:
+                edits.append((*spans[key], json.dumps(fix['after'])))
+            else:
+                line_start = result.rfind('\n', 0, end - 1) + 1
+                closing_indent = result[line_start:end - 1]
+                if not closing_indent.strip():
+                    edits.append((line_start, end - 1, closing_indent + '    dependencies: ' +
+                                  json.dumps(fix['after']) + '\n' + closing_indent))
+                else:
+                    edits.append((end - 1, end - 1, '\n            dependencies: ' +
+                                  json.dumps(fix['after']) + '\n        '))
         pos = apply_reference.whitespace(result, end)
     for start, end, value in sorted(edits, reverse=True):
         result = result[:start] + value + result[end:]
@@ -49,7 +59,10 @@ def main():
         guarded = deepcopy(after)
         for q in guarded['quests']:
             for key, fix in scope['quest_fixes'].get(str(q['id']), {}).items():
-                q[key] = fix['before']
+                if fix['before'] is None:
+                    q.pop(key, None)
+                else:
+                    q[key] = fix['before']
         if quality.canonical(quality.protected_body(before)) != quality.canonical(quality.protected_body(guarded)):
             raise ValueError('Protected data changed outside exact approved fixes')
         target = root/name

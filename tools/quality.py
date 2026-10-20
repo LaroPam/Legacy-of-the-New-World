@@ -200,7 +200,10 @@ def preservation(current_files, baseline_files, current, baseline, reference, sc
                         or canonical(quest.get(key)) != canonical(fix.get('after'))):
                     errors.append(problem('approved_fix_mismatch', reference_file, 'Reviewed field fix does not match exact before/after', quest=str(quest.get('id')), field=key))
                 else:
-                    quest[key] = previous[key]
+                    if key in previous:
+                        quest[key] = previous[key]
+                    else:
+                        quest.pop(key, None)
         if canonical(protected_body(old)) != canonical(protected_body(new)):
             errors.append(problem("mechanics_changed", reference_file,
                                   "A protected field changed: IDs, tasks, rewards, dependencies, optional flags, chapter settings and quest order are immutable"))

@@ -1,8 +1,10 @@
 """Mutation tests: changes that must never pass a presentation-only review."""
 import importlib.util
 from pathlib import Path
+import sys
 import unittest
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 spec = importlib.util.spec_from_file_location('quality', Path(__file__).resolve().parents[1] / 'tools/quality.py')
 quality = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(quality)
@@ -98,6 +100,20 @@ class PreservationTests(unittest.TestCase):
         codes = self.codes(quality.evaluate({REF:new}, {REF:SOURCE}, scope=scope))
         self.assertIn('approved_fix_mismatch', codes)
         self.assertIn('mechanics_changed', codes)
+
+    def test_add_dependency_to_original_root_preserves_absent_field(self):
+        import apply_polish
+        # Reverse this tiny route: remove the old edge, then attach the old root.
+        fixes = {
+            '0000000000000005': {'dependencies': {'before': ['0000000000000002'], 'after': [], 'reason': 'New route start'}},
+            '0000000000000002': {'dependencies': {'before': None, 'after': ['0000000000000005'], 'reason': 'Join existing expedition'}},
+        }
+        design = {'chapter': {}, 'quests': {}}
+        result = apply_polish.render(SOURCE.decode(), design, fixes).encode()
+        scope = {'quest_fixes': fixes}
+        self.assertEqual(quality.evaluate({REF: result}, {REF: SOURCE}, scope=scope)['errors'], [])
+        altered = result.replace(b'xp: 10', b'xp: 11')
+        self.assertIn('mechanics_changed', self.codes(quality.evaluate({REF: altered}, {REF: SOURCE}, scope=scope)))
 
     def test_advancement_condition_change_is_protected(self):
         name = 'kubejs/data/test/advancements/a.json'
