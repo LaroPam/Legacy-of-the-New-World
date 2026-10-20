@@ -1,0 +1,27 @@
+{
+  "minecraft:iron_helmet": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in iron_helmet; official client item model and texture chain."
+  },
+  "minecraft:emerald_block": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in emerald_block; official client item model and texture chain."
+  },
+  "minecraft:acacia_fence": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in acacia_fence; official client item model and texture chain."
+  },
+  "minecraft:pointed_dripstone": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in pointed_dripstone; official client item model and texture chain."
+  },
+  "farmersdelight:steak_and_potatoes": {
+    "jar": "FarmersDelight-1.20.1-1.3.4.jar",
+    "sha256": "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce",
+    "registration": "public static final RegistryObject<Item> STEAK_AND_POTATOES = ModItems.registerWithTab(\"steak_and_potatoes\", () -> new ConsumableItem(ModItems.bowlFoodItem(FoodValues.STEAK_AND_POTATOES)));"
+  }
+}

@@ -22,7 +22,12 @@
     "nasledie_compass"
   ],
   "completed_chapters": [
-    "nasledie_defense"
+    "nasledie_defense",
+    "nasledie_prolog",
+    "nasledie_life",
+    "nasledie_village",
+    "nasledie_economy",
+    "nasledie_exploration"
   ],
   "file_fixes": {
     "kubejs/data/nasledie/advancements/alpha39/mowzie/grove_watch.json": {
