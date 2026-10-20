@@ -1,7 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-640.00 -1344.00 4608.00 2752.00" width="4608.00" height="2752.00" role="img" aria-labelledby="nasledie_legends-before-title" data-quest-count="78">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1408.00 -1344.00 5376.00 2752.00" width="5376.00" height="2752.00" role="img" aria-labelledby="nasledie_legends-before-title" data-quest-count="78">
 <title id="nasledie_legends-before-title">Тайны мира и легендарные экспедиции — схема SNBT, не скриншот игры</title>
 <defs><marker id="nasledie_legends-before-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
 <g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
+<path d="M -1408 -1344.00 v 2752.00"/>
+<path d="M -1344 -1344.00 v 2752.00"/>
+<path d="M -1280 -1344.00 v 2752.00"/>
+<path d="M -1216 -1344.00 v 2752.00"/>
+<path d="M -1152 -1344.00 v 2752.00"/>
+<path d="M -1088 -1344.00 v 2752.00"/>
+<path d="M -1024 -1344.00 v 2752.00"/>
+<path d="M -960 -1344.00 v 2752.00"/>
+<path d="M -896 -1344.00 v 2752.00"/>
+<path d="M -832 -1344.00 v 2752.00"/>
+<path d="M -768 -1344.00 v 2752.00"/>
+<path d="M -704 -1344.00 v 2752.00"/>
 <path d="M -640 -1344.00 v 2752.00"/>
 <path d="M -576 -1344.00 v 2752.00"/>
 <path d="M -512 -1344.00 v 2752.00"/>
@@ -75,50 +87,50 @@
 <path d="M 3840 -1344.00 v 2752.00"/>
 <path d="M 3904 -1344.00 v 2752.00"/>
 <path d="M 3968 -1344.00 v 2752.00"/>
-<path d="M -640.00 -1344 h 4608.00"/>
-<path d="M -640.00 -1280 h 4608.00"/>
-<path d="M -640.00 -1216 h 4608.00"/>
-<path d="M -640.00 -1152 h 4608.00"/>
-<path d="M -640.00 -1088 h 4608.00"/>
-<path d="M -640.00 -1024 h 4608.00"/>
-<path d="M -640.00 -960 h 4608.00"/>
-<path d="M -640.00 -896 h 4608.00"/>
-<path d="M -640.00 -832 h 4608.00"/>
-<path d="M -640.00 -768 h 4608.00"/>
-<path d="M -640.00 -704 h 4608.00"/>
-<path d="M -640.00 -640 h 4608.00"/>
-<path d="M -640.00 -576 h 4608.00"/>
-<path d="M -640.00 -512 h 4608.00"/>
-<path d="M -640.00 -448 h 4608.00"/>
-<path d="M -640.00 -384 h 4608.00"/>
-<path d="M -640.00 -320 h 4608.00"/>
-<path d="M -640.00 -256 h 4608.00"/>
-<path d="M -640.00 -192 h 4608.00"/>
-<path d="M -640.00 -128 h 4608.00"/>
-<path d="M -640.00 -64 h 4608.00"/>
-<path d="M -640.00 0 h 4608.00"/>
-<path d="M -640.00 64 h 4608.00"/>
-<path d="M -640.00 128 h 4608.00"/>
-<path d="M -640.00 192 h 4608.00"/>
-<path d="M -640.00 256 h 4608.00"/>
-<path d="M -640.00 320 h 4608.00"/>
-<path d="M -640.00 384 h 4608.00"/>
-<path d="M -640.00 448 h 4608.00"/>
-<path d="M -640.00 512 h 4608.00"/>
-<path d="M -640.00 576 h 4608.00"/>
-<path d="M -640.00 640 h 4608.00"/>
-<path d="M -640.00 704 h 4608.00"/>
-<path d="M -640.00 768 h 4608.00"/>
-<path d="M -640.00 832 h 4608.00"/>
-<path d="M -640.00 896 h 4608.00"/>
-<path d="M -640.00 960 h 4608.00"/>
-<path d="M -640.00 1024 h 4608.00"/>
-<path d="M -640.00 1088 h 4608.00"/>
-<path d="M -640.00 1152 h 4608.00"/>
-<path d="M -640.00 1216 h 4608.00"/>
-<path d="M -640.00 1280 h 4608.00"/>
-<path d="M -640.00 1344 h 4608.00"/>
-<path d="M -640.00 1408 h 4608.00"/>
+<path d="M -1408.00 -1344 h 5376.00"/>
+<path d="M -1408.00 -1280 h 5376.00"/>
+<path d="M -1408.00 -1216 h 5376.00"/>
+<path d="M -1408.00 -1152 h 5376.00"/>
+<path d="M -1408.00 -1088 h 5376.00"/>
+<path d="M -1408.00 -1024 h 5376.00"/>
+<path d="M -1408.00 -960 h 5376.00"/>
+<path d="M -1408.00 -896 h 5376.00"/>
+<path d="M -1408.00 -832 h 5376.00"/>
+<path d="M -1408.00 -768 h 5376.00"/>
+<path d="M -1408.00 -704 h 5376.00"/>
+<path d="M -1408.00 -640 h 5376.00"/>
+<path d="M -1408.00 -576 h 5376.00"/>
+<path d="M -1408.00 -512 h 5376.00"/>
+<path d="M -1408.00 -448 h 5376.00"/>
+<path d="M -1408.00 -384 h 5376.00"/>
+<path d="M -1408.00 -320 h 5376.00"/>
+<path d="M -1408.00 -256 h 5376.00"/>
+<path d="M -1408.00 -192 h 5376.00"/>
+<path d="M -1408.00 -128 h 5376.00"/>
+<path d="M -1408.00 -64 h 5376.00"/>
+<path d="M -1408.00 0 h 5376.00"/>
+<path d="M -1408.00 64 h 5376.00"/>
+<path d="M -1408.00 128 h 5376.00"/>
+<path d="M -1408.00 192 h 5376.00"/>
+<path d="M -1408.00 256 h 5376.00"/>
+<path d="M -1408.00 320 h 5376.00"/>
+<path d="M -1408.00 384 h 5376.00"/>
+<path d="M -1408.00 448 h 5376.00"/>
+<path d="M -1408.00 512 h 5376.00"/>
+<path d="M -1408.00 576 h 5376.00"/>
+<path d="M -1408.00 640 h 5376.00"/>
+<path d="M -1408.00 704 h 5376.00"/>
+<path d="M -1408.00 768 h 5376.00"/>
+<path d="M -1408.00 832 h 5376.00"/>
+<path d="M -1408.00 896 h 5376.00"/>
+<path d="M -1408.00 960 h 5376.00"/>
+<path d="M -1408.00 1024 h 5376.00"/>
+<path d="M -1408.00 1088 h 5376.00"/>
+<path d="M -1408.00 1152 h 5376.00"/>
+<path d="M -1408.00 1216 h 5376.00"/>
+<path d="M -1408.00 1280 h 5376.00"/>
+<path d="M -1408.00 1344 h 5376.00"/>
+<path d="M -1408.00 1408 h 5376.00"/>
 </g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
 <path data-from="E5CDBE2CB81CBFFC" data-to="3C74408B2EA9F8D7" d="M 33.00 0.00 L 226.00 0.00" marker-end="url(#nasledie_legends-before-arrow)"><title>E5CDBE2CB81CBFFC → 3C74408B2EA9F8D7</title></path>
 <path data-from="3C74408B2EA9F8D7" data-to="8B88E55204890F85" d="M 283.00 0.00 L 482.00 0.00" marker-end="url(#nasledie_legends-before-arrow)"><title>3C74408B2EA9F8D7 → 8B88E55204890F85</title></path>
@@ -204,9 +216,10 @@ ID: E5CDBE2CB81CBFFC
 Значок: alexscaves:cave_tablet
 Форма: star
 x=0.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="36.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="40.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-30.00 9.35,-12.86 28.53,-9.27 15.12,4.91 17.63,24.27 0.00,15.90 -17.63,24.27 -15.12,4.91 -28.53,-9.27 -9.35,-12.86" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="0.00,-30.00 9.35,-12.86 28.53,-9.27 15.12,4.91 17.63,24.27 0.00,15.90 -17.63,24.27 -15.12,4.91 -28.53,-9.27 -9.35,-12.86" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
 <text class="quest-label" y="54.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первый полевой артефакт</text>
 </g>
@@ -216,9 +229,10 @@ ID: 3C74408B2EA9F8D7
 Значок: alexscaves:cave_book
 Форма: circle
 x=4.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Атлас подземного мира</text>
 </g>
@@ -228,9 +242,10 @@ ID: 8B88E55204890F85
 Значок: alexscaves:cave_codex
 Форма: circle
 x=8.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Кодекс исследователя</text>
 </g>
@@ -240,9 +255,10 @@ ID: 1E0319E7396C1AF2
 Значок: alexscaves:cave_map
 Форма: circle
 x=12.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Карта неизвестных</text>
 <text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">полостей</text>
@@ -253,9 +269,10 @@ ID: 60D9315769C4E578
 Значок: alexscaves:cave_book
 Форма: scroll
 x=16.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Магнитный горизонт</text>
 </g>
@@ -265,9 +282,10 @@ ID: A682A9C8CBE99BB1
 Значок: alexscaves:cave_book
 Форма: scroll
 x=20.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Древние глубины</text>
 </g>
@@ -277,9 +295,10 @@ ID: C54CEAEDCFA1F140
 Значок: alexscaves:cave_book
 Форма: scroll
 x=24.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Токсичная тайна</text>
 </g>
@@ -289,9 +308,10 @@ ID: EF811CDE1BFBABE2
 Значок: alexscaves:cave_book
 Форма: scroll
 x=16.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">На краю бездны</text>
 </g>
@@ -301,9 +321,10 @@ ID: E64ED6625A930A36
 Значок: alexscaves:cave_book
 Форма: scroll
 x=20.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Забытые полости</text>
 </g>
@@ -313,9 +334,10 @@ ID: 338E0B562BF293D5
 Значок: alexscaves:cave_book
 Форма: scroll
 x=24.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сладкие катакомбы</text>
 </g>
@@ -325,9 +347,10 @@ ID: 5EEE4A0183E3245F
 Значок: alexscaves:raw_scarlet_neodymium
 Форма: circle
 x=20.0, y=-10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Магнитная геология</text>
 </g>
@@ -337,9 +360,10 @@ ID: FCE22E10D39BCA44
 Значок: alexscaves:heavyweight
 Форма: shield
 x=24.0, y=-10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Железный страж пещеры</text>
 </g>
@@ -349,9 +373,10 @@ ID: C23DDD9DAAD5EAB7
 Значок: alexscaves:cave_book
 Форма: shield
 x=24.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Тайное жертвоприношение</text>
 </g>
@@ -361,9 +386,10 @@ ID: 2A2A1ECDD23269E9
 Значок: alexscaves:cave_book
 Форма: crown
 x=28.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.80,-14.88 -11.16,0.00 0.00,-24.80 11.16,0.00 24.80,-14.88 17.36,17.36 -17.36,17.36" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.80,-14.88 -11.16,0.00 0.00,-24.80 11.16,0.00 24.80,-14.88 17.36,17.36 -17.36,17.36" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
 <text class="quest-label" y="48.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Хозяин забытых коридоров</text>
 </g>
@@ -373,9 +399,10 @@ ID: 2C50224379627B14
 Значок: alexscaves:caramel
 Форма: scroll
 x=28.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Лаборатория карамели</text>
 </g>
@@ -385,9 +412,10 @@ ID: 66097831A964FDD6
 Значок: alexscaves:caramel_apple
 Форма: shield
 x=32.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Экспериментальная кухня</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">катакомб</text>
@@ -398,9 +426,10 @@ ID: 054E760F5D9B1153
 Значок: alexscaves:azure_magnet
 Форма: circle
 x=24.0, y=-14.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.40" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сердце магнитной бури</text>
 </g>
@@ -410,9 +439,10 @@ ID: B156B9A8303E6235
 Значок: alexscaves:atlatitan_egg
 Форма: circle
 x=28.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.40" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Разбудить гиганта</text>
 </g>
@@ -422,9 +452,10 @@ ID: B658222BC6AAB8B9
 Значок: alexscaves:bioluminescent_torch
 Форма: circle
 x=32.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.40" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">19</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Птерозавр над бездной</text>
 </g>
@@ -434,9 +465,10 @@ ID: CD890C4519D39302
 Значок: alexscaves:acid_bucket
 Форма: circle
 x=36.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.40" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">20</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Ожившая химия</text>
 </g>
@@ -446,9 +478,10 @@ ID: F83BDD5302CAB271
 Значок: alexscaves:pearl
 Форма: circle
 x=16.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.40" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">21</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Разговор с глубиной</text>
 </g>
@@ -458,9 +491,10 @@ ID: 20BB4BB6D059B828
 Значок: alexscaves:pearl
 Форма: circle
 x=16.0, y=15.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.40" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">22</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Торговцы затонувшего мира</text>
 </g>
@@ -470,9 +504,10 @@ ID: FF39C1FF3A9C0C7E
 Значок: alexscaves:abyssmarine
 Форма: circle
 x=20.0, y=15.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.40" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">23</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Спасти подлодку</text>
 </g>
@@ -482,9 +517,10 @@ ID: DD30229DC0039862
 Значок: alexscaves:abyssmarine
 Форма: circle
 x=12.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.40" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">24</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Архив Бездны</text>
 </g>
@@ -494,9 +530,10 @@ ID: 66EADAB24A1552E0
 Значок: alexscaves:gelatin_red
 Форма: circle
 x=28.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.40" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">25</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Медвежий мармелад</text>
 </g>
@@ -506,9 +543,10 @@ ID: F169B6525412B860
 Значок: alexscaves:gummy_ring_red
 Форма: circle
 x=32.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.40" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">26</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Оседлать сладкую бурю</text>
 </g>
@@ -518,9 +556,10 @@ ID: D1155DEF31997ADB
 Значок: alexscaves:confection_oven
 Форма: circle
 x=36.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.40" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">27</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Башня Ликочародейки</text>
 </g>
@@ -530,9 +569,10 @@ ID: F204791E23CFF9E5
 Значок: alexscaves:moth_ball
 Форма: circle
 x=32.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.40" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">28</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сумрак живого мотылька</text>
 </g>
@@ -542,9 +582,10 @@ ID: FD6B3DB0A377F701
 Значок: minecraft:iron_sword
 Форма: shield
 x=28.0, y=-14.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-22.40,-22.40 22.40,-22.40 17.92,6.72 0.00,22.40 -17.92,6.72" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-22.40,-22.40 22.40,-22.40 17.92,6.72 0.00,22.40 -17.92,6.72" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">29</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Испытание галеновой</text>
 <text class="quest-label" y="62.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">перчатки</text>
@@ -555,9 +596,10 @@ ID: 6F2F3D36A0C60B9E
 Значок: minecraft:minecart
 Форма: shield
 x=32.0, y=-14.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-22.40,-22.40 22.40,-22.40 17.92,6.72 0.00,22.40 -17.92,6.72" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-22.40,-22.40 22.40,-22.40 17.92,6.72 0.00,22.40 -17.92,6.72" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">30</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Последний вагон карьера</text>
 </g>
@@ -567,9 +609,10 @@ ID: 28820C6F7944A6F3
 Значок: alexscaves:hazmat_chestplate
 Форма: star
 x=40.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-22.40 6.98,-9.60 21.30,-6.92 11.29,3.67 13.17,18.12 0.00,11.87 -13.17,18.12 -11.29,3.67 -21.30,-6.92 -6.98,-9.60" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-22.40 6.98,-9.60 21.30,-6.92 11.29,3.67 13.17,18.12 0.00,11.87 -13.17,18.12 -11.29,3.67 -21.30,-6.92 -6.98,-9.60" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">31</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Купание в кислоте</text>
 </g>
@@ -579,9 +622,10 @@ ID: 35A20348AABD6323
 Значок: minecraft:blast_furnace
 Форма: crown
 x=44.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-22.40,-13.44 -10.08,0.00 0.00,-22.40 10.08,0.00 22.40,-13.44 15.68,15.68 -15.68,15.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-22.40,-13.44 -10.08,0.00 0.00,-22.40 10.08,0.00 22.40,-13.44 15.68,15.68 -15.68,15.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">32</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Остановить расплавление</text>
 </g>
@@ -591,9 +635,10 @@ ID: CF6FFE76F5F9E33C
 Значок: minecraft:boat
 Форма: star
 x=24.0, y=15.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">33</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Капитан глубоководной</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">лодки</text>
@@ -604,9 +649,10 @@ ID: 835B28BFA782D516
 Значок: alexscaves:pearl
 Форма: star
 x=28.0, y=15.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-22.40 6.98,-9.60 21.30,-6.92 11.29,3.67 13.17,18.12 0.00,11.87 -13.17,18.12 -11.29,3.67 -21.30,-6.92 -6.98,-9.60" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-22.40 6.98,-9.60 21.30,-6.92 11.29,3.67 13.17,18.12 0.00,11.87 -13.17,18.12 -11.29,3.67 -21.30,-6.92 -6.98,-9.60" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">34</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дипломат глубин</text>
 </g>
@@ -616,9 +662,10 @@ ID: 99E7481EE409646E
 Значок: minecraft:painting
 Форма: scroll
 x=36.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">35</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">След на камне</text>
 </g>
@@ -628,9 +675,10 @@ ID: 1BE92C03BDBB686A
 Значок: minecraft:cookie
 Форма: star
 x=36.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-22.40 6.98,-9.60 21.30,-6.92 11.29,3.67 13.17,18.12 0.00,11.87 -13.17,18.12 -11.29,3.67 -21.30,-6.92 -6.98,-9.60" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-22.40 6.98,-9.60 21.30,-6.92 11.29,3.67 13.17,18.12 0.00,11.87 -13.17,18.12 -11.29,3.67 -21.30,-6.92 -6.98,-9.60" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">36</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Город пряничных стен</text>
 </g>
@@ -640,9 +688,10 @@ ID: A9FDA172CB9A8629
 Значок: minecraft:golden_carrot
 Форма: star
 x=40.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-22.40 6.98,-9.60 21.30,-6.92 11.29,3.67 13.17,18.12 0.00,11.87 -13.17,18.12 -11.29,3.67 -21.30,-6.92 -6.98,-9.60" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-22.40 6.98,-9.60 21.30,-6.92 11.29,3.67 13.17,18.12 0.00,11.87 -13.17,18.12 -11.29,3.67 -21.30,-6.92 -6.98,-9.60" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">37</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Рог сладкого скакуна</text>
 </g>
@@ -652,9 +701,10 @@ ID: 0AC844524C34131D
 Значок: minecraft:wheat
 Форма: star
 x=32.0, y=15.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-22.40 6.98,-9.60 21.30,-6.92 11.29,3.67 13.17,18.12 0.00,11.87 -13.17,18.12 -11.29,3.67 -21.30,-6.92 -6.98,-9.60" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-22.40 6.98,-9.60 21.30,-6.92 11.29,3.67 13.17,18.12 0.00,11.87 -13.17,18.12 -11.29,3.67 -21.30,-6.92 -6.98,-9.60" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">38</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Семья первобытных</text>
 </g>
@@ -664,9 +714,10 @@ ID: 6E775F1F2C2EDC48
 Значок: alexscaves:limestone_chiseled
 Форма: star
 x=40.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">39</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Загадка на каменной стене</text>
 </g>
@@ -676,9 +727,10 @@ ID: 1FDE61E7AC73CF59
 Значок: alexscaves:marine_snow
 Форма: star
 x=28.0, y=20.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">40</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">За спиной кто-то дышит</text>
 </g>
@@ -688,9 +740,10 @@ ID: 3EBA900FE44E6268
 Значок: alexscaves:abyssal_altar
 Форма: shield
 x=32.0, y=20.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">41</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Жемчужина на алтаре</text>
 </g>
@@ -700,9 +753,10 @@ ID: 1AD4F36AEE69BAE9
 Значок: alexscaves:depth_charge
 Форма: shield
 x=8.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">42</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Страж бездонного рудника</text>
 </g>
@@ -712,9 +766,10 @@ ID: 7727FFA6871B87B6
 Значок: alexscaves:primitive_club
 Форма: star
 x=36.0, y=15.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">43</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Договор с валлумраптором</text>
 </g>
@@ -724,9 +779,10 @@ ID: FDF8F9FB47383497
 Значок: alexscaves:primitive_club
 Форма: shield
 x=32.0, y=-9.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">44</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Союз с грозой пещер</text>
 </g>
@@ -736,9 +792,10 @@ ID: 60FEF5A262F30317
 Значок: minecraft:minecart
 Форма: star
 x=36.0, y=-9.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">45</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Юрский экспресс</text>
 </g>
@@ -748,9 +805,10 @@ ID: 9FCD3892785E34CA
 Значок: alexscaves:uranium
 Форма: shield
 x=40.0, y=-9.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">46</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Последний отсчёт</text>
 <text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Нуклипера</text>
@@ -761,9 +819,10 @@ ID: AC100A1C72C67C78
 Значок: minecraft:shears
 Форма: crown
 x=48.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-14.40 -10.80,0.00 0.00,-24.00 10.80,0.00 24.00,-14.40 16.80,16.80 -16.80,16.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.00,-14.40 -10.80,0.00 0.00,-24.00 10.80,0.00 24.00,-14.40 16.80,16.80 -16.80,16.80" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">47</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Остановить обратный</text>
 <text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">отсчёт</text>
@@ -774,9 +833,10 @@ ID: A070AFC86412D9CF
 Значок: alexscaves:radgill
 Форма: star
 x=24.0, y=-19.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">48</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Лучистый питомец</text>
 </g>
@@ -786,9 +846,10 @@ ID: 383DD6353CA94C12
 Значок: minecraft:redstone
 Форма: shield
 x=-4.0, y=-4.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">49</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Детонатор на расстоянии</text>
 </g>
@@ -798,9 +859,10 @@ ID: 273A0D05D74B7984
 Значок: minecraft:tnt
 Форма: star
 x=-8.0, y=-4.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">50</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Всадник ядерного снаряда</text>
 </g>
@@ -810,9 +872,10 @@ ID: 3FCB8D7FF82745AF
 Значок: minecraft:blaze_powder
 Форма: star
 x=-4.0, y=4.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.60 7.35,-10.12 22.44,-7.29 11.90,3.87 13.87,19.09 0.00,12.51 -13.87,19.09 -11.90,3.87 -22.44,-7.29 -7.35,-10.12" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-23.60 7.35,-10.12 22.44,-7.29 11.90,3.87 13.87,19.09 0.00,12.51 -13.87,19.09 -11.90,3.87 -22.44,-7.29 -7.35,-10.12" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">51</text>
 <text class="quest-label" y="47.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Пробуждение огненного</text>
 <text class="quest-label" y="63.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">титана</text>
@@ -823,9 +886,10 @@ ID: 06A53594EC209D3A
 Значок: minecraft:dragon_egg
 Форма: shield
 x=-8.0, y=4.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">52</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Шаг атлатитана</text>
 </g>
@@ -835,9 +899,10 @@ ID: 70F6DFB37F774EB1
 Значок: minecraft:spyglass
 Форма: shield
 x=-4.0, y=9.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">53</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Наблюдатель издали</text>
 </g>
@@ -847,9 +912,10 @@ ID: FED39CE9F2148371
 Значок: minecraft:dragon_egg
 Форма: star
 x=-4.0, y=-9.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">54</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Ручной Треморзилла</text>
 </g>
@@ -859,9 +925,10 @@ ID: A6AF0FFF36488B07
 Значок: minecraft:beacon
 Форма: shield
 x=-8.0, y=-9.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">55</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Луч великана</text>
 </g>
@@ -871,9 +938,10 @@ ID: 3E03C21C1C3001DF
 Значок: minecraft:netherite_sword
 Форма: crown
 x=-8.0, y=2.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="32.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="36.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-26.00,-15.60 -11.70,0.00 0.00,-26.00 11.70,0.00 26.00,-15.60 18.20,18.20 -18.20,18.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-26.00,-15.60 -11.70,0.00 0.00,-26.00 11.70,0.00 26.00,-15.60 18.20,18.20 -18.20,18.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">56</text>
 <text class="quest-label" y="50.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Победить Лукструктозавра</text>
 </g>
@@ -883,9 +951,10 @@ ID: 5DA969509DFEF44B
 Значок: minecraft:compass
 Форма: shield
 x=12.0, y=-7.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">57</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Нотор — охотник магнитных</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">глубин</text>
@@ -896,9 +965,10 @@ ID: A7C984849A56D149
 Значок: minecraft:diamond_sword
 Форма: shield
 x=16.0, y=3.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">58</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Корродент из забытых</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">пустот</text>
@@ -909,9 +979,10 @@ ID: 7AF2CF003133B836
 Значок: minecraft:dragon_egg
 Форма: star
 x=-4.0, y=-2.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">59</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Вылупление Треморзиллы</text>
 </g>
@@ -921,9 +992,10 @@ ID: 5F3AED9BBF4F1BB6
 Значок: alexscaves:purple_soda_bucket
 Форма: scroll
 x=40.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">60</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Пурпурное погружение</text>
 </g>
@@ -933,9 +1005,10 @@ ID: 7947BD2068E57CC5
 Значок: alexscaves:rock_candy_pink
 Форма: scroll
 x=44.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">61</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дорога из леденцов</text>
 </g>
@@ -945,9 +1018,10 @@ ID: 605FA347740DE9A7
 Значок: alexscaves:frostmint_spear
 Форма: shield
 x=48.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">62</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Мятная цепная реакция</text>
 </g>
@@ -957,9 +1031,10 @@ ID: 8DB19C7D42300F1B
 Значок: alexscaves:caramel_apple
 Форма: circle
 x=44.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">63</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сахарная лихорадка</text>
 </g>
@@ -969,9 +1044,10 @@ ID: 5302C3B080472681
 Значок: alexscaves:shot_gum
 Форма: star
 x=48.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">64</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Червь из сахарной породы</text>
 </g>
@@ -981,9 +1057,10 @@ ID: C133D2D8DF77C482
 Значок: alexscaves:candy_cane
 Форма: shield
 x=52.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">65</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сладкий берсерк</text>
 </g>
@@ -993,9 +1070,10 @@ ID: E0FC9F1146B778E2
 Значок: alexscaves:shot_gum
 Форма: crown
 x=56.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-25.20,-15.12 -11.34,0.00 0.00,-25.20 11.34,0.00 25.20,-15.12 17.64,17.64 -17.64,17.64" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-25.20,-15.12 -11.34,0.00 0.00,-25.20 11.34,0.00 25.20,-15.12 17.64,17.64 -17.64,17.64" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">66</text>
 <text class="quest-label" y="49.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Гром среди карамели</text>
 </g>
@@ -1005,9 +1083,10 @@ ID: 680C2889E6EF571F
 Значок: alexscaves:darkened_apple
 Форма: circle
 x=44.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">67</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Запретное яблоко</text>
 </g>
@@ -1017,9 +1096,10 @@ ID: 1C4B8279C22D289B
 Значок: alexscaves:shadow_silk
 Форма: shield
 x=48.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">68</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Взгляд из полумрака</text>
 </g>
@@ -1029,9 +1109,10 @@ ID: 22EF4B3D99CB8E8B
 Значок: alexscaves:primordial_soup
 Форма: circle
 x=40.0, y=15.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">69</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Пир доисторического</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">великана</text>
@@ -1042,9 +1123,10 @@ ID: 8A4368A1D28651AC
 Значок: alexscaves:bioluminescent_torch
 Форма: circle
 x=36.0, y=20.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">70</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Глаза подводного мира</text>
 </g>
@@ -1054,9 +1136,10 @@ ID: A0718A921F867880
 Значок: alexscaves:spelunkie
 Форма: circle
 x=44.0, y=-9.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">71</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Гаммарак на ужине</text>
 </g>
@@ -1066,9 +1149,10 @@ ID: 2FD4730BC0FE9EAE
 Значок: alexscaves:polymer_plate
 Форма: shield
 x=48.0, y=-9.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">72</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Мозгоед у реактора</text>
 </g>
@@ -1078,9 +1162,10 @@ ID: 176790254CA17C3C
 Значок: alexscaves:conversion_crucible
 Форма: star
 x=52.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">73</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Перекроить поверхность</text>
 </g>
@@ -1090,9 +1175,10 @@ ID: 05BBD788896174D5
 Значок: alexscaves:conversion_crucible
 Форма: crown
 x=56.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.80,-14.88 -11.16,0.00 0.00,-24.80 11.16,0.00 24.80,-14.88 17.36,17.36 -17.36,17.36" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.80,-14.88 -11.16,0.00 0.00,-24.80 11.16,0.00 24.80,-14.88 17.36,17.36 -17.36,17.36" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">74</text>
 <text class="quest-label" y="48.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Незер больше не прежний</text>
 </g>
@@ -1102,9 +1188,10 @@ ID: 03AF226767BF1BAC
 Значок: alexscaves:green_soylent
 Форма: shield
 x=52.0, y=-9.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.60,-23.60 23.60,-23.60 18.88,7.08 0.00,23.60 -18.88,7.08" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.60,-23.60 23.60,-23.60 18.88,7.08 0.00,23.60 -18.88,7.08" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">75</text>
 <text class="quest-label" y="47.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Рацион радиоактивных</text>
 <text class="quest-label" y="63.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">глубин</text>
@@ -1115,9 +1202,10 @@ ID: 52CDC1EEE3086A8D
 Значок: alexscaves:primitive_club
 Форма: star
 x=44.0, y=15.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.60 7.35,-10.12 22.44,-7.29 11.90,3.87 13.87,19.09 0.00,12.51 -13.87,19.09 -11.90,3.87 -22.44,-7.29 -7.35,-10.12" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-23.60 7.35,-10.12 22.44,-7.29 11.90,3.87 13.87,19.09 0.00,12.51 -13.87,19.09 -11.90,3.87 -22.44,-7.29 -7.35,-10.12" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">76</text>
 <text class="quest-label" y="47.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Живой палеопарк</text>
 </g>
@@ -1127,9 +1215,10 @@ ID: 662E9E2A4828CD48
 Значок: alexscaves:block_of_chocolate
 Форма: scroll
 x=60.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-23.60" y="-23.60" width="47.20" height="47.20" rx="8.26" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-23.60" y="-23.60" width="47.20" height="47.20" rx="8.26" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">77</text>
 <text class="quest-label" y="47.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Шоколадная передышка</text>
 </g>
@@ -1139,9 +1228,10 @@ ID: E9BA2C6E0A89756A
 Значок: alexscaves:cave_map
 Форма: star
 x=60.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="32.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="36.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-26.40 8.22,-11.32 25.11,-8.16 13.31,4.32 15.52,21.36 0.00,13.99 -15.52,21.36 -13.31,4.32 -25.11,-8.16 -8.22,-11.32" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-26.40 8.22,-11.32 25.11,-8.16 13.31,4.32 15.52,21.36 0.00,13.99 -15.52,21.36 -13.31,4.32 -25.11,-8.16 -8.22,-11.32" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">78</text>
 <text class="quest-label" y="50.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Атлас шести затерянных</text>
 <text class="quest-label" y="66.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">глубин</text>

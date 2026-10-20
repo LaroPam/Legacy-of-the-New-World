@@ -76,7 +76,7 @@ x=0.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Разделка на доске</text>
 </g>
@@ -89,7 +89,7 @@ x=3.0, y=8.0
 Есть изменения</title>
 <circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Собрать фильтр для</text>
 <text class="quest-label" y="62.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">хранилища</text>
@@ -103,7 +103,7 @@ x=3.0, y=-4.0
 Есть изменения</title>
 <circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Рисовые поля</text>
 </g>
@@ -116,7 +116,7 @@ x=6.0, y=-4.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Томаты на подвязке</text>
 </g>
@@ -129,7 +129,7 @@ x=9.0, y=-4.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Солома из урожая</text>
 </g>
@@ -142,7 +142,7 @@ x=12.0, y=-4.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Компост как</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">производственный цикл</text>
@@ -156,7 +156,7 @@ x=15.0, y=-4.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Плодородная почва</text>
 </g>
@@ -169,7 +169,7 @@ x=3.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Котёл для настоящей кухни</text>
 </g>
@@ -182,7 +182,7 @@ x=6.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Питание с эффектом</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Nourishment</text>
@@ -196,7 +196,7 @@ x=6.0, y=-8.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Грибная ферма</text>
 </g>
@@ -209,7 +209,7 @@ x=9.0, y=-8.0
 Есть изменения</title>
 <circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="25.60" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="25.60" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Агроном-практик</text>
 </g>
@@ -222,7 +222,7 @@ x=3.0, y=-8.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Племенное хозяйство</text>
 </g>
@@ -235,7 +235,7 @@ x=6.0, y=4.0
 Есть изменения</title>
 <circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Отопление Hearth</text>
 </g>
@@ -248,7 +248,7 @@ x=9.0, y=4.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дымоход и отвод тепла</text>
 </g>
@@ -261,7 +261,7 @@ x=3.0, y=4.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Утепление экипировки</text>
 </g>
@@ -274,7 +274,7 @@ x=6.0, y=8.0
 Есть изменения</title>
 <circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Собрать модуль</text>
 <text class="quest-label" y="62.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">автоподбора</text>
@@ -288,7 +288,7 @@ x=9.0, y=8.0
 Есть изменения</title>
 <circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Установить железный</text>
 <text class="quest-label" y="62.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">сундук</text>
@@ -302,7 +302,7 @@ x=9.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Максим: праздничный ужин</text>
 <text class="quest-label" y="65.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">на двоих</text>

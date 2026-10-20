@@ -126,7 +126,7 @@ x=0.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сплав инженера</text>
 </g>
@@ -139,7 +139,7 @@ x=3.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первый машинный корпус</text>
 </g>
@@ -152,7 +152,7 @@ x=6.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Работающий механический</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">пресс</text>
@@ -166,7 +166,7 @@ x=9.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Вентилятор в движении</text>
 </g>
@@ -179,7 +179,7 @@ x=12.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Обработка воздушным</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">потоком</text>
@@ -193,7 +193,7 @@ x=15.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первая лесопилка</text>
 </g>
@@ -206,7 +206,7 @@ x=18.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Уплотнение под прессом</text>
 </g>
@@ -219,7 +219,7 @@ x=21.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Настоящий конвейер</text>
 </g>
@@ -232,7 +232,7 @@ x=24.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Управляемая выгрузка</text>
 </g>
@@ -245,7 +245,7 @@ x=27.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Вертикальная логистика</text>
 </g>
@@ -258,7 +258,7 @@ x=30.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Диплом механика:</text>
 <text class="quest-label" y="65.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">смешивание</text>
@@ -272,7 +272,7 @@ x=3.0, y=-5.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первая водяная энергия</text>
 </g>
@@ -285,7 +285,7 @@ x=6.0, y=-5.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Ветряная энергетика</text>
 </g>
@@ -298,7 +298,7 @@ x=9.0, y=-5.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Изменение скорости</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">передачи</text>
@@ -312,7 +312,7 @@ x=12.0, y=-5.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Жернова в деле</text>
 </g>
@@ -325,7 +325,7 @@ x=15.0, y=-5.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Склейка конструкции</text>
 </g>
@@ -338,7 +338,7 @@ x=18.0, y=-5.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Подвижный механизм с</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">инструментом</text>
@@ -352,7 +352,7 @@ x=21.0, y=-5.0
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Стык подвижного и</text>
 <text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">стационарного складов</text>
@@ -366,7 +366,7 @@ x=27.0, y=5.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">19</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Горелка для новой</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">технологии</text>
@@ -380,7 +380,7 @@ x=24.0, y=5.0
 Есть изменения</title>
 <circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="22.00" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">20</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Водонепроницаемый корпус</text>
 </g>
@@ -393,7 +393,7 @@ x=21.0, y=5.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">21</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Насос под давлением</text>
 </g>
@@ -406,7 +406,7 @@ x=18.0, y=5.0
 Есть изменения</title>
 <circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="22.00" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">22</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Прозрачная труба</text>
 </g>
@@ -419,7 +419,7 @@ x=15.0, y=5.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">23</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Автоматическая подача</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">воды</text>
@@ -433,7 +433,7 @@ x=12.0, y=5.0
 Есть изменения</title>
 <circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="22.00" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">24</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Водяной шланг</text>
 </g>
@@ -446,7 +446,7 @@ x=24.0, y=9.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">25</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дозатор жидкости</text>
 </g>
@@ -459,7 +459,7 @@ x=21.0, y=9.0
 Есть изменения</title>
 <circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="22.00" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">26</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Осушение контейнеров</text>
 </g>
@@ -472,7 +472,7 @@ x=18.0, y=9.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">27</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Паровая мощность</text>
 </g>
@@ -485,7 +485,7 @@ x=30.0, y=-4.0
 Есть изменения</title>
 <circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">28</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Юра и ручной привод</text>
 </g>
@@ -498,7 +498,7 @@ x=6.0, y=-9.0
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">29</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Ветряк под реальной</text>
 <text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">нагрузкой</text>
@@ -512,7 +512,7 @@ x=24.0, y=-4.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">30</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Точная подача через</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">воронку</text>
@@ -526,7 +526,7 @@ x=6.0, y=9.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">31</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первый шоколад для</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">мастерской</text>
@@ -540,7 +540,7 @@ x=12.0, y=10.5
 Есть изменения</title>
 <circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">32</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Автоматическая пасека</text>
 </g>
@@ -553,7 +553,7 @@ x=12.0, y=14.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">33</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Встреча двух жидкостей</text>
 </g>
@@ -566,7 +566,7 @@ x=33.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">34</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Овощной фейерверк</text>
 </g>
@@ -579,7 +579,7 @@ x=18.0, y=-9.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">35</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Самоукладывающаяся колея</text>
 </g>
@@ -592,7 +592,7 @@ x=6.0, y=5.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">36</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Две выдвижные руки</text>
 </g>
@@ -605,7 +605,7 @@ x=33.0, y=-4.0
 Есть изменения</title>
 <circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">37</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Картон с гербом</text>
 </g>
@@ -618,7 +618,7 @@ x=6.0, y=13.0
 Есть изменения</title>
 <circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">38</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Десертный триптих</text>
 </g>
@@ -631,7 +631,7 @@ x=22.0, y=-13.0
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">39</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Рельсовое происшествие</text>
 </g>
@@ -644,7 +644,7 @@ x=9.0, y=17.0
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">40</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Водолаз лавового озера</text>
 </g>
@@ -657,7 +657,7 @@ x=31.0, y=4.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">41</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Выдвижная хватка инженера</text>
 </g>

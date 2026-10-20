@@ -1,874 +1,958 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-640.00 -1536.00 4352.00 2304.00" width="4352.00" height="2304.00" role="img" aria-labelledby="nasledie_guild-after-title" data-quest-count="58">
-<title id="nasledie_guild-after-title">Гильдия искателей — Большой атлас приключений — схема SNBT, не скриншот игры</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1248.00 -1536.00 4960.00 2464.00" width="4960.00" height="2464.00" role="img" aria-labelledby="nasledie_guild-after-title" data-quest-count="58">
+<title id="nasledie_guild-after-title">Гильдия — спутники, открытия и испытания — схема SNBT, не скриншот игры</title>
 <defs><marker id="nasledie_guild-after-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
 <g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
-<path d="M -640 -1536.00 v 2304.00"/>
-<path d="M -576 -1536.00 v 2304.00"/>
-<path d="M -512 -1536.00 v 2304.00"/>
-<path d="M -448 -1536.00 v 2304.00"/>
-<path d="M -384 -1536.00 v 2304.00"/>
-<path d="M -320 -1536.00 v 2304.00"/>
-<path d="M -256 -1536.00 v 2304.00"/>
-<path d="M -192 -1536.00 v 2304.00"/>
-<path d="M -128 -1536.00 v 2304.00"/>
-<path d="M -64 -1536.00 v 2304.00"/>
-<path d="M 0 -1536.00 v 2304.00"/>
-<path d="M 64 -1536.00 v 2304.00"/>
-<path d="M 128 -1536.00 v 2304.00"/>
-<path d="M 192 -1536.00 v 2304.00"/>
-<path d="M 256 -1536.00 v 2304.00"/>
-<path d="M 320 -1536.00 v 2304.00"/>
-<path d="M 384 -1536.00 v 2304.00"/>
-<path d="M 448 -1536.00 v 2304.00"/>
-<path d="M 512 -1536.00 v 2304.00"/>
-<path d="M 576 -1536.00 v 2304.00"/>
-<path d="M 640 -1536.00 v 2304.00"/>
-<path d="M 704 -1536.00 v 2304.00"/>
-<path d="M 768 -1536.00 v 2304.00"/>
-<path d="M 832 -1536.00 v 2304.00"/>
-<path d="M 896 -1536.00 v 2304.00"/>
-<path d="M 960 -1536.00 v 2304.00"/>
-<path d="M 1024 -1536.00 v 2304.00"/>
-<path d="M 1088 -1536.00 v 2304.00"/>
-<path d="M 1152 -1536.00 v 2304.00"/>
-<path d="M 1216 -1536.00 v 2304.00"/>
-<path d="M 1280 -1536.00 v 2304.00"/>
-<path d="M 1344 -1536.00 v 2304.00"/>
-<path d="M 1408 -1536.00 v 2304.00"/>
-<path d="M 1472 -1536.00 v 2304.00"/>
-<path d="M 1536 -1536.00 v 2304.00"/>
-<path d="M 1600 -1536.00 v 2304.00"/>
-<path d="M 1664 -1536.00 v 2304.00"/>
-<path d="M 1728 -1536.00 v 2304.00"/>
-<path d="M 1792 -1536.00 v 2304.00"/>
-<path d="M 1856 -1536.00 v 2304.00"/>
-<path d="M 1920 -1536.00 v 2304.00"/>
-<path d="M 1984 -1536.00 v 2304.00"/>
-<path d="M 2048 -1536.00 v 2304.00"/>
-<path d="M 2112 -1536.00 v 2304.00"/>
-<path d="M 2176 -1536.00 v 2304.00"/>
-<path d="M 2240 -1536.00 v 2304.00"/>
-<path d="M 2304 -1536.00 v 2304.00"/>
-<path d="M 2368 -1536.00 v 2304.00"/>
-<path d="M 2432 -1536.00 v 2304.00"/>
-<path d="M 2496 -1536.00 v 2304.00"/>
-<path d="M 2560 -1536.00 v 2304.00"/>
-<path d="M 2624 -1536.00 v 2304.00"/>
-<path d="M 2688 -1536.00 v 2304.00"/>
-<path d="M 2752 -1536.00 v 2304.00"/>
-<path d="M 2816 -1536.00 v 2304.00"/>
-<path d="M 2880 -1536.00 v 2304.00"/>
-<path d="M 2944 -1536.00 v 2304.00"/>
-<path d="M 3008 -1536.00 v 2304.00"/>
-<path d="M 3072 -1536.00 v 2304.00"/>
-<path d="M 3136 -1536.00 v 2304.00"/>
-<path d="M 3200 -1536.00 v 2304.00"/>
-<path d="M 3264 -1536.00 v 2304.00"/>
-<path d="M 3328 -1536.00 v 2304.00"/>
-<path d="M 3392 -1536.00 v 2304.00"/>
-<path d="M 3456 -1536.00 v 2304.00"/>
-<path d="M 3520 -1536.00 v 2304.00"/>
-<path d="M 3584 -1536.00 v 2304.00"/>
-<path d="M 3648 -1536.00 v 2304.00"/>
-<path d="M 3712 -1536.00 v 2304.00"/>
-<path d="M -640.00 -1536 h 4352.00"/>
-<path d="M -640.00 -1472 h 4352.00"/>
-<path d="M -640.00 -1408 h 4352.00"/>
-<path d="M -640.00 -1344 h 4352.00"/>
-<path d="M -640.00 -1280 h 4352.00"/>
-<path d="M -640.00 -1216 h 4352.00"/>
-<path d="M -640.00 -1152 h 4352.00"/>
-<path d="M -640.00 -1088 h 4352.00"/>
-<path d="M -640.00 -1024 h 4352.00"/>
-<path d="M -640.00 -960 h 4352.00"/>
-<path d="M -640.00 -896 h 4352.00"/>
-<path d="M -640.00 -832 h 4352.00"/>
-<path d="M -640.00 -768 h 4352.00"/>
-<path d="M -640.00 -704 h 4352.00"/>
-<path d="M -640.00 -640 h 4352.00"/>
-<path d="M -640.00 -576 h 4352.00"/>
-<path d="M -640.00 -512 h 4352.00"/>
-<path d="M -640.00 -448 h 4352.00"/>
-<path d="M -640.00 -384 h 4352.00"/>
-<path d="M -640.00 -320 h 4352.00"/>
-<path d="M -640.00 -256 h 4352.00"/>
-<path d="M -640.00 -192 h 4352.00"/>
-<path d="M -640.00 -128 h 4352.00"/>
-<path d="M -640.00 -64 h 4352.00"/>
-<path d="M -640.00 0 h 4352.00"/>
-<path d="M -640.00 64 h 4352.00"/>
-<path d="M -640.00 128 h 4352.00"/>
-<path d="M -640.00 192 h 4352.00"/>
-<path d="M -640.00 256 h 4352.00"/>
-<path d="M -640.00 320 h 4352.00"/>
-<path d="M -640.00 384 h 4352.00"/>
-<path d="M -640.00 448 h 4352.00"/>
-<path d="M -640.00 512 h 4352.00"/>
-<path d="M -640.00 576 h 4352.00"/>
-<path d="M -640.00 640 h 4352.00"/>
-<path d="M -640.00 704 h 4352.00"/>
-<path d="M -640.00 768 h 4352.00"/>
+<path d="M -1216 -1536.00 v 2464.00"/>
+<path d="M -1152 -1536.00 v 2464.00"/>
+<path d="M -1088 -1536.00 v 2464.00"/>
+<path d="M -1024 -1536.00 v 2464.00"/>
+<path d="M -960 -1536.00 v 2464.00"/>
+<path d="M -896 -1536.00 v 2464.00"/>
+<path d="M -832 -1536.00 v 2464.00"/>
+<path d="M -768 -1536.00 v 2464.00"/>
+<path d="M -704 -1536.00 v 2464.00"/>
+<path d="M -640 -1536.00 v 2464.00"/>
+<path d="M -576 -1536.00 v 2464.00"/>
+<path d="M -512 -1536.00 v 2464.00"/>
+<path d="M -448 -1536.00 v 2464.00"/>
+<path d="M -384 -1536.00 v 2464.00"/>
+<path d="M -320 -1536.00 v 2464.00"/>
+<path d="M -256 -1536.00 v 2464.00"/>
+<path d="M -192 -1536.00 v 2464.00"/>
+<path d="M -128 -1536.00 v 2464.00"/>
+<path d="M -64 -1536.00 v 2464.00"/>
+<path d="M 0 -1536.00 v 2464.00"/>
+<path d="M 64 -1536.00 v 2464.00"/>
+<path d="M 128 -1536.00 v 2464.00"/>
+<path d="M 192 -1536.00 v 2464.00"/>
+<path d="M 256 -1536.00 v 2464.00"/>
+<path d="M 320 -1536.00 v 2464.00"/>
+<path d="M 384 -1536.00 v 2464.00"/>
+<path d="M 448 -1536.00 v 2464.00"/>
+<path d="M 512 -1536.00 v 2464.00"/>
+<path d="M 576 -1536.00 v 2464.00"/>
+<path d="M 640 -1536.00 v 2464.00"/>
+<path d="M 704 -1536.00 v 2464.00"/>
+<path d="M 768 -1536.00 v 2464.00"/>
+<path d="M 832 -1536.00 v 2464.00"/>
+<path d="M 896 -1536.00 v 2464.00"/>
+<path d="M 960 -1536.00 v 2464.00"/>
+<path d="M 1024 -1536.00 v 2464.00"/>
+<path d="M 1088 -1536.00 v 2464.00"/>
+<path d="M 1152 -1536.00 v 2464.00"/>
+<path d="M 1216 -1536.00 v 2464.00"/>
+<path d="M 1280 -1536.00 v 2464.00"/>
+<path d="M 1344 -1536.00 v 2464.00"/>
+<path d="M 1408 -1536.00 v 2464.00"/>
+<path d="M 1472 -1536.00 v 2464.00"/>
+<path d="M 1536 -1536.00 v 2464.00"/>
+<path d="M 1600 -1536.00 v 2464.00"/>
+<path d="M 1664 -1536.00 v 2464.00"/>
+<path d="M 1728 -1536.00 v 2464.00"/>
+<path d="M 1792 -1536.00 v 2464.00"/>
+<path d="M 1856 -1536.00 v 2464.00"/>
+<path d="M 1920 -1536.00 v 2464.00"/>
+<path d="M 1984 -1536.00 v 2464.00"/>
+<path d="M 2048 -1536.00 v 2464.00"/>
+<path d="M 2112 -1536.00 v 2464.00"/>
+<path d="M 2176 -1536.00 v 2464.00"/>
+<path d="M 2240 -1536.00 v 2464.00"/>
+<path d="M 2304 -1536.00 v 2464.00"/>
+<path d="M 2368 -1536.00 v 2464.00"/>
+<path d="M 2432 -1536.00 v 2464.00"/>
+<path d="M 2496 -1536.00 v 2464.00"/>
+<path d="M 2560 -1536.00 v 2464.00"/>
+<path d="M 2624 -1536.00 v 2464.00"/>
+<path d="M 2688 -1536.00 v 2464.00"/>
+<path d="M 2752 -1536.00 v 2464.00"/>
+<path d="M 2816 -1536.00 v 2464.00"/>
+<path d="M 2880 -1536.00 v 2464.00"/>
+<path d="M 2944 -1536.00 v 2464.00"/>
+<path d="M 3008 -1536.00 v 2464.00"/>
+<path d="M 3072 -1536.00 v 2464.00"/>
+<path d="M 3136 -1536.00 v 2464.00"/>
+<path d="M 3200 -1536.00 v 2464.00"/>
+<path d="M 3264 -1536.00 v 2464.00"/>
+<path d="M 3328 -1536.00 v 2464.00"/>
+<path d="M 3392 -1536.00 v 2464.00"/>
+<path d="M 3456 -1536.00 v 2464.00"/>
+<path d="M 3520 -1536.00 v 2464.00"/>
+<path d="M 3584 -1536.00 v 2464.00"/>
+<path d="M 3648 -1536.00 v 2464.00"/>
+<path d="M 3712 -1536.00 v 2464.00"/>
+<path d="M -1248.00 -1536 h 4960.00"/>
+<path d="M -1248.00 -1472 h 4960.00"/>
+<path d="M -1248.00 -1408 h 4960.00"/>
+<path d="M -1248.00 -1344 h 4960.00"/>
+<path d="M -1248.00 -1280 h 4960.00"/>
+<path d="M -1248.00 -1216 h 4960.00"/>
+<path d="M -1248.00 -1152 h 4960.00"/>
+<path d="M -1248.00 -1088 h 4960.00"/>
+<path d="M -1248.00 -1024 h 4960.00"/>
+<path d="M -1248.00 -960 h 4960.00"/>
+<path d="M -1248.00 -896 h 4960.00"/>
+<path d="M -1248.00 -832 h 4960.00"/>
+<path d="M -1248.00 -768 h 4960.00"/>
+<path d="M -1248.00 -704 h 4960.00"/>
+<path d="M -1248.00 -640 h 4960.00"/>
+<path d="M -1248.00 -576 h 4960.00"/>
+<path d="M -1248.00 -512 h 4960.00"/>
+<path d="M -1248.00 -448 h 4960.00"/>
+<path d="M -1248.00 -384 h 4960.00"/>
+<path d="M -1248.00 -320 h 4960.00"/>
+<path d="M -1248.00 -256 h 4960.00"/>
+<path d="M -1248.00 -192 h 4960.00"/>
+<path d="M -1248.00 -128 h 4960.00"/>
+<path d="M -1248.00 -64 h 4960.00"/>
+<path d="M -1248.00 0 h 4960.00"/>
+<path d="M -1248.00 64 h 4960.00"/>
+<path d="M -1248.00 128 h 4960.00"/>
+<path d="M -1248.00 192 h 4960.00"/>
+<path d="M -1248.00 256 h 4960.00"/>
+<path d="M -1248.00 320 h 4960.00"/>
+<path d="M -1248.00 384 h 4960.00"/>
+<path d="M -1248.00 448 h 4960.00"/>
+<path d="M -1248.00 512 h 4960.00"/>
+<path d="M -1248.00 576 h 4960.00"/>
+<path d="M -1248.00 640 h 4960.00"/>
+<path d="M -1248.00 704 h 4960.00"/>
+<path d="M -1248.00 768 h 4960.00"/>
+<path d="M -1248.00 832 h 4960.00"/>
+<path d="M -1248.00 896 h 4960.00"/>
 </g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
-<path data-from="898102A102A9739A" data-to="5086797B05BC7619" d="M 33.00 0.00 L 226.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>898102A102A9739A → 5086797B05BC7619</title></path>
-<path data-from="5086797B05BC7619" data-to="5386AE04902DA4BF" d="M 283.00 0.00 L 482.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>5086797B05BC7619 → 5386AE04902DA4BF</title></path>
-<path data-from="5386AE04902DA4BF" data-to="93EA4AC90BB6F5E7" d="M 539.00 0.00 L 738.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>5386AE04902DA4BF → 93EA4AC90BB6F5E7</title></path>
-<path data-from="898102A102A9739A" data-to="E0B32143847E9AF0" d="M 12.26 30.64 L 245.45 613.63" marker-end="url(#nasledie_guild-after-arrow)"><title>898102A102A9739A → E0B32143847E9AF0</title></path>
-<path data-from="898102A102A9739A" data-to="7E2ECDC313839529" d="M 20.61 -25.77 L 237.26 -296.57" marker-end="url(#nasledie_guild-after-arrow)"><title>898102A102A9739A → 7E2ECDC313839529</title></path>
-<path data-from="7E2ECDC313839529" data-to="59BE881A23FA5362" d="M 283.00 -320.00 L 484.00 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → 59BE881A23FA5362</title></path>
-<path data-from="59BE881A23FA5362" data-to="E4D66B92C822D527" d="M 537.00 -320.00 L 738.00 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>59BE881A23FA5362 → E4D66B92C822D527</title></path>
-<path data-from="E4D66B92C822D527" data-to="252A21A892E4E5A0" d="M 795.00 -320.00 L 994.00 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>E4D66B92C822D527 → 252A21A892E4E5A0</title></path>
-<path data-from="252A21A892E4E5A0" data-to="1AC57DF4745395A2" d="M 1051.00 -320.00 L 1250.00 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>252A21A892E4E5A0 → 1AC57DF4745395A2</title></path>
-<path data-from="1AC57DF4745395A2" data-to="96E3403FB5591B32" d="M 1307.00 -320.00 L 1506.80 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>1AC57DF4745395A2 → 96E3403FB5591B32</title></path>
-<path data-from="7E2ECDC313839529" data-to="71006DAD7D01307F" d="M 272.87 -341.08 L 494.51 -618.14" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → 71006DAD7D01307F</title></path>
-<path data-from="71006DAD7D01307F" data-to="95C85BF47DA01D26" d="M 537.00 -640.00 L 738.00 -640.00" marker-end="url(#nasledie_guild-after-arrow)"><title>71006DAD7D01307F → 95C85BF47DA01D26</title></path>
-<path data-from="95C85BF47DA01D26" data-to="4BCEC123A1B35749" d="M 795.00 -640.00 L 994.40 -640.00" marker-end="url(#nasledie_guild-after-arrow)"><title>95C85BF47DA01D26 → 4BCEC123A1B35749</title></path>
-<path data-from="E4D66B92C822D527" data-to="19FCA77EB16A1E4A" d="M 790.90 -334.31 L 1254.56 -624.10" marker-end="url(#nasledie_guild-after-arrow)"><title>E4D66B92C822D527 → 19FCA77EB16A1E4A</title></path>
-<path data-from="19FCA77EB16A1E4A" data-to="0FF56BD66615E8C4" d="M 1307.00 -640.00 L 1506.00 -640.00" marker-end="url(#nasledie_guild-after-arrow)"><title>19FCA77EB16A1E4A → 0FF56BD66615E8C4</title></path>
-<path data-from="7E2ECDC313839529" data-to="E159D133BD51F992" d="M 266.03 -345.07 L 501.16 -932.89" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → E159D133BD51F992</title></path>
-<path data-from="E159D133BD51F992" data-to="7FBCE407DFCAF42C" d="M 538.20 -960.00 L 738.00 -960.00" marker-end="url(#nasledie_guild-after-arrow)"><title>E159D133BD51F992 → 7FBCE407DFCAF42C</title></path>
-<path data-from="7FBCE407DFCAF42C" data-to="1BC5E19E384E37E0" d="M 795.00 -960.00 L 994.00 -960.00" marker-end="url(#nasledie_guild-after-arrow)"><title>7FBCE407DFCAF42C → 1BC5E19E384E37E0</title></path>
-<path data-from="1BC5E19E384E37E0" data-to="51C3266BACCA8D53" d="M 1051.00 -960.00 L 1252.00 -960.00" marker-end="url(#nasledie_guild-after-arrow)"><title>1BC5E19E384E37E0 → 51C3266BACCA8D53</title></path>
-<path data-from="51C3266BACCA8D53" data-to="427CD312AE0EB773" d="M 1305.00 -960.00 L 1506.00 -960.00" marker-end="url(#nasledie_guild-after-arrow)"><title>51C3266BACCA8D53 → 427CD312AE0EB773</title></path>
-<path data-from="7FBCE407DFCAF42C" data-to="99429B59EE71CDA8" d="M 768.00 -987.00 L 768.00 -1251.60" marker-end="url(#nasledie_guild-after-arrow)"><title>7FBCE407DFCAF42C → 99429B59EE71CDA8</title></path>
-<path data-from="99429B59EE71CDA8" data-to="6901B3595877A394" d="M 793.40 -1280.00 L 995.60 -1280.00" marker-end="url(#nasledie_guild-after-arrow)"><title>99429B59EE71CDA8 → 6901B3595877A394</title></path>
-<path data-from="6901B3595877A394" data-to="B949C4277618FEC3" d="M 1049.40 -1280.00 L 1251.60 -1280.00" marker-end="url(#nasledie_guild-after-arrow)"><title>6901B3595877A394 → B949C4277618FEC3</title></path>
-<path data-from="427CD312AE0EB773" data-to="C5769170EBDD1A02" d="M 1563.00 -960.00 L 1763.60 -960.00" marker-end="url(#nasledie_guild-after-arrow)"><title>427CD312AE0EB773 → C5769170EBDD1A02</title></path>
-<path data-from="C5769170EBDD1A02" data-to="2DAF49A8C5352825" d="M 1817.40 -960.00 L 2019.60 -960.00" marker-end="url(#nasledie_guild-after-arrow)"><title>C5769170EBDD1A02 → 2DAF49A8C5352825</title></path>
-<path data-from="0FF56BD66615E8C4" data-to="4B932485B3983E85" d="M 1563.00 -640.00 L 1763.60 -640.00" marker-end="url(#nasledie_guild-after-arrow)"><title>0FF56BD66615E8C4 → 4B932485B3983E85</title></path>
-<path data-from="4B932485B3983E85" data-to="3C2AA39C0E1FDEF8" d="M 1817.40 -640.00 L 2019.60 -640.00" marker-end="url(#nasledie_guild-after-arrow)"><title>4B932485B3983E85 → 3C2AA39C0E1FDEF8</title></path>
-<path data-from="96E3403FB5591B32" data-to="32AF726FDB0E97B5" d="M 1562.20 -320.00 L 1763.60 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>96E3403FB5591B32 → 32AF726FDB0E97B5</title></path>
-<path data-from="32AF726FDB0E97B5" data-to="FBBF01EF727D4ABF" d="M 1817.40 -320.00 L 2019.60 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>32AF726FDB0E97B5 → FBBF01EF727D4ABF</title></path>
-<path data-from="B949C4277618FEC3" data-to="8EC4540A9E0B729E" d="M 1305.40 -1280.00 L 1507.60 -1280.00" marker-end="url(#nasledie_guild-after-arrow)"><title>B949C4277618FEC3 → 8EC4540A9E0B729E</title></path>
-<path data-from="8EC4540A9E0B729E" data-to="E0ECA7B8B4204545" d="M 1561.40 -1280.00 L 1762.80 -1280.00" marker-end="url(#nasledie_guild-after-arrow)"><title>8EC4540A9E0B729E → E0ECA7B8B4204545</title></path>
-<path data-from="E0ECA7B8B4204545" data-to="A11B0DC1744B593F" d="M 1818.20 -1280.00 L 2018.80 -1280.00" marker-end="url(#nasledie_guild-after-arrow)"><title>E0ECA7B8B4204545 → A11B0DC1744B593F</title></path>
-<path data-from="3C2AA39C0E1FDEF8" data-to="96A5A07EA384E3E1" d="M 2073.40 -640.00 L 2274.80 -640.00" marker-end="url(#nasledie_guild-after-arrow)"><title>3C2AA39C0E1FDEF8 → 96A5A07EA384E3E1</title></path>
-<path data-from="96A5A07EA384E3E1" data-to="A69880141C867BB1" d="M 2330.20 -640.00 L 2531.60 -640.00" marker-end="url(#nasledie_guild-after-arrow)"><title>96A5A07EA384E3E1 → A69880141C867BB1</title></path>
-<path data-from="FBBF01EF727D4ABF" data-to="7187AE5CE52E38D9" d="M 2073.40 -320.00 L 2275.60 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>FBBF01EF727D4ABF → 7187AE5CE52E38D9</title></path>
-<path data-from="7187AE5CE52E38D9" data-to="3C70087F08BB9172" d="M 2329.40 -320.00 L 2530.80 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>7187AE5CE52E38D9 → 3C70087F08BB9172</title></path>
-<path data-from="E0B32143847E9AF0" data-to="7A5B99FCC0910E12" d="M 281.40 640.00 L 483.60 640.00" marker-end="url(#nasledie_guild-after-arrow)"><title>E0B32143847E9AF0 → 7A5B99FCC0910E12</title></path>
-<path data-from="7A5B99FCC0910E12" data-to="B9C5E7F638070495" d="M 537.40 640.00 L 739.60 640.00" marker-end="url(#nasledie_guild-after-arrow)"><title>7A5B99FCC0910E12 → B9C5E7F638070495</title></path>
-<path data-from="2DAF49A8C5352825" data-to="7C9F211F3C3FEE27" d="M 2073.40 -960.00 L 2272.40 -960.00" marker-end="url(#nasledie_guild-after-arrow)"><title>2DAF49A8C5352825 → 7C9F211F3C3FEE27</title></path>
-<path data-from="7E2ECDC313839529" data-to="237F60330304F23A" d="M 256.00 -347.00 L 256.00 -930.00" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → 237F60330304F23A</title></path>
-<path data-from="237F60330304F23A" data-to="936D71E0D75C5CFD" d="M 256.00 -987.00 L 256.00 -1250.00" marker-end="url(#nasledie_guild-after-arrow)"><title>237F60330304F23A → 936D71E0D75C5CFD</title></path>
-<path data-from="237F60330304F23A" data-to="ACE2BBCB182D3BF5" d="M 272.87 -981.08 L 493.26 -1256.57" marker-end="url(#nasledie_guild-after-arrow)"><title>237F60330304F23A → ACE2BBCB182D3BF5</title></path>
-<path data-from="7E2ECDC313839529" data-to="9ED723F7F76497AD" d="M 229.00 -320.00 L -226.80 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → 9ED723F7F76497AD</title></path>
-<path data-from="7E2ECDC313839529" data-to="1F1BD6529A7A9340" d="M 233.10 -334.31 L -231.24 -624.52" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → 1F1BD6529A7A9340</title></path>
-<path data-from="7E2ECDC313839529" data-to="1DAF34828799DEB2" d="M 239.13 -341.08 L -237.51 -936.89" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → 1DAF34828799DEB2</title></path>
-<path data-from="7E2ECDC313839529" data-to="F5D02EE894BC9AE7" d="M 243.29 -343.82 L -242.26 -1254.24" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → F5D02EE894BC9AE7</title></path>
-<path data-from="F5D02EE894BC9AE7" data-to="A3CBB2323447F658" d="M -282.20 -1280.00 L -480.40 -1280.00" marker-end="url(#nasledie_guild-after-arrow)"><title>F5D02EE894BC9AE7 → A3CBB2323447F658</title></path>
-<path data-from="7E2ECDC313839529" data-to="6CC28B3392054882" d="M 233.10 -305.69 L -231.58 -15.26" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → 6CC28B3392054882</title></path>
-<path data-from="95C85BF47DA01D26" data-to="63D42711634C8471" d="M 743.85 -652.07 L 538.12 -754.94" marker-end="url(#nasledie_guild-after-arrow)"><title>95C85BF47DA01D26 → 63D42711634C8471</title></path>
-<path data-from="B949C4277618FEC3" data-to="3684E8517DD612A0" d="M 1257.28 -1291.36 L 1049.94 -1395.03" marker-end="url(#nasledie_guild-after-arrow)"><title>B949C4277618FEC3 → 3684E8517DD612A0</title></path>
-<path data-from="7E2ECDC313839529" data-to="50F2011C089DD095" d="M 243.93 -295.85 L 141.06 -90.12" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → 50F2011C089DD095</title></path>
-<path data-from="A69880141C867BB1" data-to="23B7EC4E576DFA6A" d="M 2585.40 -640.00 L 2786.80 -640.00" marker-end="url(#nasledie_guild-after-arrow)"><title>A69880141C867BB1 → 23B7EC4E576DFA6A</title></path>
-<path data-from="3C70087F08BB9172" data-to="ABADB8973594E0A0" d="M 2586.20 -320.00 L 2786.80 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>3C70087F08BB9172 → ABADB8973594E0A0</title></path>
-<path data-from="ABADB8973594E0A0" data-to="418BF87D0F99A324" d="M 2842.20 -320.00 L 3042.80 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>ABADB8973594E0A0 → 418BF87D0F99A324</title></path>
-<path data-from="418BF87D0F99A324" data-to="F57181DBDA992F0B" d="M 3098.20 -320.00 L 3298.40 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>418BF87D0F99A324 → F57181DBDA992F0B</title></path>
-<path data-from="F57181DBDA992F0B" data-to="8D963EB7C6BEE5F5" d="M 3354.60 -320.00 L 3554.40 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>F57181DBDA992F0B → 8D963EB7C6BEE5F5</title></path>
-<path data-from="23B7EC4E576DFA6A" data-to="9B3BBB54EE27AC7B" d="M 2842.20 -640.00 L 3040.80 -640.00" marker-end="url(#nasledie_guild-after-arrow)"><title>23B7EC4E576DFA6A → 9B3BBB54EE27AC7B</title></path>
+<path data-from="898102A102A9739A" data-to="5086797B05BC7619" d="M -933.00 480.00 L -830.00 480.00" marker-end="url(#nasledie_guild-after-arrow)"><title>898102A102A9739A → 5086797B05BC7619</title></path>
+<path data-from="5086797B05BC7619" data-to="5386AE04902DA4BF" d="M -773.00 480.00 L -670.00 480.00" marker-end="url(#nasledie_guild-after-arrow)"><title>5086797B05BC7619 → 5386AE04902DA4BF</title></path>
+<path data-from="5386AE04902DA4BF" data-to="93EA4AC90BB6F5E7" d="M -613.00 480.00 L -510.00 480.00" marker-end="url(#nasledie_guild-after-arrow)"><title>5386AE04902DA4BF → 93EA4AC90BB6F5E7</title></path>
+<path data-from="93EA4AC90BB6F5E7" data-to="E0B32143847E9AF0" d="M -453.00 480.00 L -354.00 480.00" marker-end="url(#nasledie_guild-after-arrow)"><title>93EA4AC90BB6F5E7 → E0B32143847E9AF0</title></path>
+<path data-from="7E2ECDC313839529" data-to="59BE881A23FA5362" d="M 31.00 0.00 L 130.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → 59BE881A23FA5362</title></path>
+<path data-from="59BE881A23FA5362" data-to="E4D66B92C822D527" d="M 187.00 0.00 L 290.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>59BE881A23FA5362 → E4D66B92C822D527</title></path>
+<path data-from="E4D66B92C822D527" data-to="252A21A892E4E5A0" d="M 347.00 0.00 L 450.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>E4D66B92C822D527 → 252A21A892E4E5A0</title></path>
+<path data-from="252A21A892E4E5A0" data-to="1AC57DF4745395A2" d="M 507.00 0.00 L 610.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>252A21A892E4E5A0 → 1AC57DF4745395A2</title></path>
+<path data-from="1AC57DF4745395A2" data-to="96E3403FB5591B32" d="M 667.00 0.00 L 766.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>1AC57DF4745395A2 → 96E3403FB5591B32</title></path>
+<path data-from="7E2ECDC313839529" data-to="71006DAD7D01307F" d="M 0.00 31.00 L 0.00 130.00" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → 71006DAD7D01307F</title></path>
+<path data-from="71006DAD7D01307F" data-to="95C85BF47DA01D26" d="M 0.00 187.00 L 0.00 290.00" marker-end="url(#nasledie_guild-after-arrow)"><title>71006DAD7D01307F → 95C85BF47DA01D26</title></path>
+<path data-from="95C85BF47DA01D26" data-to="4BCEC123A1B35749" d="M 0.00 347.00 L 0.00 450.00" marker-end="url(#nasledie_guild-after-arrow)"><title>95C85BF47DA01D26 → 4BCEC123A1B35749</title></path>
+<path data-from="0FF56BD66615E8C4" data-to="19FCA77EB16A1E4A" d="M 160.00 -187.00 L 160.00 -290.00" marker-end="url(#nasledie_guild-after-arrow)"><title>0FF56BD66615E8C4 → 19FCA77EB16A1E4A</title></path>
+<path data-from="59BE881A23FA5362" data-to="0FF56BD66615E8C4" d="M 160.00 -27.00 L 160.00 -130.00" marker-end="url(#nasledie_guild-after-arrow)"><title>59BE881A23FA5362 → 0FF56BD66615E8C4</title></path>
+<path data-from="7E2ECDC313839529" data-to="E159D133BD51F992" d="M 0.00 -31.00 L 0.00 -130.00" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → E159D133BD51F992</title></path>
+<path data-from="E159D133BD51F992" data-to="7FBCE407DFCAF42C" d="M -19.09 -179.09 L -138.79 -298.79" marker-end="url(#nasledie_guild-after-arrow)"><title>E159D133BD51F992 → 7FBCE407DFCAF42C</title></path>
+<path data-from="7FBCE407DFCAF42C" data-to="1BC5E19E384E37E0" d="M -187.00 -320.00 L -290.00 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>7FBCE407DFCAF42C → 1BC5E19E384E37E0</title></path>
+<path data-from="99429B59EE71CDA8" data-to="51C3266BACCA8D53" d="M 0.00 -347.00 L 0.00 -450.00" marker-end="url(#nasledie_guild-after-arrow)"><title>99429B59EE71CDA8 → 51C3266BACCA8D53</title></path>
+<path data-from="51C3266BACCA8D53" data-to="427CD312AE0EB773" d="M 0.00 -507.00 L 0.00 -610.00" marker-end="url(#nasledie_guild-after-arrow)"><title>51C3266BACCA8D53 → 427CD312AE0EB773</title></path>
+<path data-from="E159D133BD51F992" data-to="99429B59EE71CDA8" d="M 0.00 -187.00 L 0.00 -290.00" marker-end="url(#nasledie_guild-after-arrow)"><title>E159D133BD51F992 → 99429B59EE71CDA8</title></path>
+<path data-from="E0ECA7B8B4204545" data-to="6901B3595877A394" d="M 499.09 -339.09 L 618.79 -458.79" marker-end="url(#nasledie_guild-after-arrow)"><title>E0ECA7B8B4204545 → 6901B3595877A394</title></path>
+<path data-from="427CD312AE0EB773" data-to="B949C4277618FEC3" d="M 0.00 -667.00 L 0.00 -770.00" marker-end="url(#nasledie_guild-after-arrow)"><title>427CD312AE0EB773 → B949C4277618FEC3</title></path>
+<path data-from="418BF87D0F99A324" data-to="C5769170EBDD1A02" d="M -347.00 0.00 L -450.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>418BF87D0F99A324 → C5769170EBDD1A02</title></path>
+<path data-from="C5769170EBDD1A02" data-to="2DAF49A8C5352825" d="M -507.00 0.00 L -610.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>C5769170EBDD1A02 → 2DAF49A8C5352825</title></path>
+<path data-from="237F60330304F23A" data-to="4B932485B3983E85" d="M -187.00 160.00 L -290.00 160.00" marker-end="url(#nasledie_guild-after-arrow)"><title>237F60330304F23A → 4B932485B3983E85</title></path>
+<path data-from="7E2ECDC313839529" data-to="3C2AA39C0E1FDEF8" d="M -31.00 0.00 L -130.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → 3C2AA39C0E1FDEF8</title></path>
+<path data-from="2DAF49A8C5352825" data-to="32AF726FDB0E97B5" d="M -667.00 0.00 L -770.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>2DAF49A8C5352825 → 32AF726FDB0E97B5</title></path>
+<path data-from="7187AE5CE52E38D9" data-to="FBBF01EF727D4ABF" d="M 160.00 -507.00 L 160.00 -606.00" marker-end="url(#nasledie_guild-after-arrow)"><title>7187AE5CE52E38D9 → FBBF01EF727D4ABF</title></path>
+<path data-from="59BE881A23FA5362" data-to="8EC4540A9E0B729E" d="M 179.09 -19.09 L 298.79 -138.79" marker-end="url(#nasledie_guild-after-arrow)"><title>59BE881A23FA5362 → 8EC4540A9E0B729E</title></path>
+<path data-from="8EC4540A9E0B729E" data-to="E0ECA7B8B4204545" d="M 339.09 -179.09 L 458.79 -298.79" marker-end="url(#nasledie_guild-after-arrow)"><title>8EC4540A9E0B729E → E0ECA7B8B4204545</title></path>
+<path data-from="1BC5E19E384E37E0" data-to="A11B0DC1744B593F" d="M -347.00 -320.00 L -450.00 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>1BC5E19E384E37E0 → A11B0DC1744B593F</title></path>
+<path data-from="A69880141C867BB1" data-to="96A5A07EA384E3E1" d="M -507.00 160.00 L -610.00 160.00" marker-end="url(#nasledie_guild-after-arrow)"><title>A69880141C867BB1 → 96A5A07EA384E3E1</title></path>
+<path data-from="4B932485B3983E85" data-to="A69880141C867BB1" d="M -347.00 160.00 L -450.00 160.00" marker-end="url(#nasledie_guild-after-arrow)"><title>4B932485B3983E85 → A69880141C867BB1</title></path>
+<path data-from="19FCA77EB16A1E4A" data-to="7187AE5CE52E38D9" d="M 160.00 -347.00 L 160.00 -450.00" marker-end="url(#nasledie_guild-after-arrow)"><title>19FCA77EB16A1E4A → 7187AE5CE52E38D9</title></path>
+<path data-from="6901B3595877A394" data-to="3C70087F08BB9172" d="M 659.09 -499.09 L 778.79 -618.79" marker-end="url(#nasledie_guild-after-arrow)"><title>6901B3595877A394 → 3C70087F08BB9172</title></path>
+<path data-from="7E2ECDC313839529" data-to="7A5B99FCC0910E12" d="M 21.92 21.92 L 138.79 138.79" marker-end="url(#nasledie_guild-after-arrow)"><title>7E2ECDC313839529 → 7A5B99FCC0910E12</title></path>
+<path data-from="7A5B99FCC0910E12" data-to="B9C5E7F638070495" d="M 179.09 179.09 L 298.79 298.79" marker-end="url(#nasledie_guild-after-arrow)"><title>7A5B99FCC0910E12 → B9C5E7F638070495</title></path>
+<path data-from="C5769170EBDD1A02" data-to="7C9F211F3C3FEE27" d="M -480.00 -27.00 L -480.00 -126.00" marker-end="url(#nasledie_guild-after-arrow)"><title>C5769170EBDD1A02 → 7C9F211F3C3FEE27</title></path>
+<path data-from="71006DAD7D01307F" data-to="237F60330304F23A" d="M -27.00 160.00 L -130.00 160.00" marker-end="url(#nasledie_guild-after-arrow)"><title>71006DAD7D01307F → 237F60330304F23A</title></path>
+<path data-from="96A5A07EA384E3E1" data-to="936D71E0D75C5CFD" d="M -667.00 160.00 L -770.00 160.00" marker-end="url(#nasledie_guild-after-arrow)"><title>96A5A07EA384E3E1 → 936D71E0D75C5CFD</title></path>
+<path data-from="B9C5E7F638070495" data-to="ACE2BBCB182D3BF5" d="M 339.09 339.09 L 458.79 458.79" marker-end="url(#nasledie_guild-after-arrow)"><title>B9C5E7F638070495 → ACE2BBCB182D3BF5</title></path>
+<path data-from="6CC28B3392054882" data-to="9ED723F7F76497AD" d="M 979.09 -819.09 L 1098.79 -938.79" marker-end="url(#nasledie_guild-after-arrow)"><title>6CC28B3392054882 → 9ED723F7F76497AD</title></path>
+<path data-from="3684E8517DD612A0" data-to="1F1BD6529A7A9340" d="M 0.00 -987.00 L 0.00 -1086.00" marker-end="url(#nasledie_guild-after-arrow)"><title>3684E8517DD612A0 → 1F1BD6529A7A9340</title></path>
+<path data-from="ACE2BBCB182D3BF5" data-to="1DAF34828799DEB2" d="M 507.00 480.00 L 606.00 480.00" marker-end="url(#nasledie_guild-after-arrow)"><title>ACE2BBCB182D3BF5 → 1DAF34828799DEB2</title></path>
+<path data-from="ACE2BBCB182D3BF5" data-to="F5D02EE894BC9AE7" d="M 499.09 499.09 L 618.79 618.79" marker-end="url(#nasledie_guild-after-arrow)"><title>ACE2BBCB182D3BF5 → F5D02EE894BC9AE7</title></path>
+<path data-from="F5D02EE894BC9AE7" data-to="A3CBB2323447F658" d="M 659.09 659.09 L 775.96 775.96" marker-end="url(#nasledie_guild-after-arrow)"><title>F5D02EE894BC9AE7 → A3CBB2323447F658</title></path>
+<path data-from="3C70087F08BB9172" data-to="6CC28B3392054882" d="M 819.09 -659.09 L 938.79 -778.79" marker-end="url(#nasledie_guild-after-arrow)"><title>3C70087F08BB9172 → 6CC28B3392054882</title></path>
+<path data-from="4BCEC123A1B35749" data-to="63D42711634C8471" d="M 0.00 507.00 L 0.00 606.00" marker-end="url(#nasledie_guild-after-arrow)"><title>4BCEC123A1B35749 → 63D42711634C8471</title></path>
+<path data-from="B949C4277618FEC3" data-to="3684E8517DD612A0" d="M 0.00 -827.00 L 0.00 -930.00" marker-end="url(#nasledie_guild-after-arrow)"><title>B949C4277618FEC3 → 3684E8517DD612A0</title></path>
+<path data-from="3C2AA39C0E1FDEF8" data-to="50F2011C089DD095" d="M -160.00 -27.00 L -160.00 -126.00" marker-end="url(#nasledie_guild-after-arrow)"><title>3C2AA39C0E1FDEF8 → 50F2011C089DD095</title></path>
+<path data-from="936D71E0D75C5CFD" data-to="23B7EC4E576DFA6A" d="M -827.00 160.00 L -930.00 160.00" marker-end="url(#nasledie_guild-after-arrow)"><title>936D71E0D75C5CFD → 23B7EC4E576DFA6A</title></path>
+<path data-from="32AF726FDB0E97B5" data-to="ABADB8973594E0A0" d="M -827.00 0.00 L -926.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>32AF726FDB0E97B5 → ABADB8973594E0A0</title></path>
+<path data-from="3C2AA39C0E1FDEF8" data-to="418BF87D0F99A324" d="M -187.00 0.00 L -290.00 0.00" marker-end="url(#nasledie_guild-after-arrow)"><title>3C2AA39C0E1FDEF8 → 418BF87D0F99A324</title></path>
+<path data-from="A11B0DC1744B593F" data-to="F57181DBDA992F0B" d="M -507.00 -320.00 L -606.00 -320.00" marker-end="url(#nasledie_guild-after-arrow)"><title>A11B0DC1744B593F → F57181DBDA992F0B</title></path>
+<path data-from="9ED723F7F76497AD" data-to="8D963EB7C6BEE5F5" d="M 1139.09 -979.09 L 1255.96 -1095.96" marker-end="url(#nasledie_guild-after-arrow)"><title>9ED723F7F76497AD → 8D963EB7C6BEE5F5</title></path>
+<path data-from="23B7EC4E576DFA6A" data-to="9B3BBB54EE27AC7B" d="M -987.00 160.00 L -1086.00 160.00" marker-end="url(#nasledie_guild-after-arrow)"><title>23B7EC4E576DFA6A → 9B3BBB54EE27AC7B</title></path>
 </g><g class="quests" font-family="system-ui, sans-serif" text-anchor="middle">
-<g data-quest-id="898102A102A9739A" tabindex="0" role="button" aria-label="Первый знак гильдии" transform="translate(0.00,0.00)" style="cursor:pointer">
-<title>Первый знак гильдии
+<g data-quest-id="898102A102A9739A" tabindex="0" role="button" aria-label="Первая запись искателя" transform="translate(-960.00,480.00)" style="cursor:pointer">
+<title>Первая запись искателя
 ID: 898102A102A9739A
 Значок: minecraft:spyglass
-Форма: star
-x=0.0, y=0.0
-Без изменений</title>
-<circle class="selection-ring" r="40.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-30.00 9.35,-12.86 28.53,-9.27 15.12,4.91 17.63,24.27 0.00,15.90 -17.63,24.27 -15.12,4.91 -28.53,-9.27 -9.35,-12.86" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: scroll
+x=-15.0, y=7.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
-<text class="quest-label" y="54.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первый знак гильдии</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первая запись искателя</text>
 </g>
-<g data-quest-id="5086797B05BC7619" tabindex="0" role="button" aria-label="Гнездо пауков" transform="translate(256.00,0.00)" style="cursor:pointer">
-<title>Гнездо пауков
+<g data-quest-id="5086797B05BC7619" tabindex="0" role="button" aria-label="Подземелье паучьих нитей" transform="translate(-800.00,480.00)" style="cursor:pointer">
+<title>Подземелье паучьих нитей
 ID: 5086797B05BC7619
 Значок: minecraft:spyglass
-Форма: circle
-x=4.0, y=0.0
-Без изменений</title>
+Форма: scroll
+x=-12.5, y=7.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Гнездо пауков</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Подземелье паучьих нитей</text>
 </g>
-<g data-quest-id="5386AE04902DA4BF" tabindex="0" role="button" aria-label="Осада мёртвого зала" transform="translate(512.00,0.00)" style="cursor:pointer">
-<title>Осада мёртвого зала
+<g data-quest-id="5386AE04902DA4BF" tabindex="0" role="button" aria-label="Залы беспокойных мертвецов" transform="translate(-640.00,480.00)" style="cursor:pointer">
+<title>Залы беспокойных мертвецов
 ID: 5386AE04902DA4BF
 Значок: minecraft:spyglass
-Форма: circle
-x=8.0, y=0.0
-Без изменений</title>
+Форма: scroll
+x=-10.0, y=7.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Осада мёртвого зала</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Залы беспокойных</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">мертвецов</text>
 </g>
-<g data-quest-id="93EA4AC90BB6F5E7" tabindex="0" role="button" aria-label="Крепость стрелков" transform="translate(768.00,0.00)" style="cursor:pointer">
-<title>Крепость стрелков
+<g data-quest-id="93EA4AC90BB6F5E7" tabindex="0" role="button" aria-label="Укрытия против стрелков" transform="translate(-480.00,480.00)" style="cursor:pointer">
+<title>Укрытия против стрелков
 ID: 93EA4AC90BB6F5E7
 Значок: minecraft:spyglass
-Форма: circle
-x=12.0, y=0.0
-Без изменений</title>
+Форма: scroll
+x=-7.5, y=7.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Крепость стрелков</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Укрытия против стрелков</text>
 </g>
-<g data-quest-id="E0B32143847E9AF0" tabindex="0" role="button" aria-label="Подземелье среди лавы" transform="translate(256.00,640.00)" style="cursor:pointer">
-<title>Подземелье среди лавы
+<g data-quest-id="E0B32143847E9AF0" tabindex="0" role="button" aria-label="Последнее подземелье — среди лавы" transform="translate(-320.00,480.00)" style="cursor:pointer">
+<title>Последнее подземелье — среди лавы
 ID: E0B32143847E9AF0
 Значок: minecraft:spyglass
-Форма: scroll
-x=4.0, y=10.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: star
+x=-5.0, y=7.5
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Подземелье среди лавы</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Последнее подземелье —</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">среди лавы</text>
 </g>
-<g data-quest-id="7E2ECDC313839529" tabindex="0" role="button" aria-label="Справочник натуралиста" transform="translate(256.00,-320.00)" style="cursor:pointer">
-<title>Справочник натуралиста
+<g data-quest-id="7E2ECDC313839529" tabindex="0" role="button" aria-label="Справочник живого мира" transform="translate(0.00,0.00)" style="cursor:pointer">
+<title>Справочник живого мира
 ID: 7E2ECDC313839529
 Значок: alexsmobs:animal_dictionary
-Форма: circle
-x=4.0, y=-5.0
-Без изменений</title>
-<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: star
+x=0.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Справочник натуралиста</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Справочник живого мира</text>
 </g>
-<g data-quest-id="59BE881A23FA5362" tabindex="0" role="button" aria-label="Разведка без охоты" transform="translate(512.00,-320.00)" style="cursor:pointer">
-<title>Разведка без охоты
+<g data-quest-id="59BE881A23FA5362" tabindex="0" role="button" aria-label="Бизон в объективе" transform="translate(160.00,0.00)" style="cursor:pointer">
+<title>Бизон в объективе
 ID: 59BE881A23FA5362
 Значок: alexsmobs:tab_icon
 Форма: scroll
-x=8.0, y=-5.0
-Без изменений</title>
-<circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+x=2.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
-<text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Разведка без охоты</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Бизон в объективе</text>
 </g>
-<g data-quest-id="E4D66B92C822D527" tabindex="0" role="button" aria-label="Соколиная школа" transform="translate(768.00,-320.00)" style="cursor:pointer">
-<title>Соколиная школа
+<g data-quest-id="E4D66B92C822D527" tabindex="0" role="button" aria-label="Первый пернатый союзник" transform="translate(320.00,0.00)" style="cursor:pointer">
+<title>Первый пернатый союзник
 ID: E4D66B92C822D527
 Значок: alexsmobs:tab_icon
-Форма: circle
-x=12.0, y=-5.0
-Без изменений</title>
+Форма: scroll
+x=5.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Соколиная школа</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первый пернатый союзник</text>
 </g>
-<g data-quest-id="252A21A892E4E5A0" tabindex="0" role="button" aria-label="Перчатка сокольника" transform="translate(1024.00,-320.00)" style="cursor:pointer">
-<title>Перчатка сокольника
+<g data-quest-id="252A21A892E4E5A0" tabindex="0" role="button" aria-label="Посадочное место на руке" transform="translate(480.00,0.00)" style="cursor:pointer">
+<title>Посадочное место на руке
 ID: 252A21A892E4E5A0
 Значок: minecraft:spyglass
-Форма: circle
-x=16.0, y=-5.0
-Без изменений</title>
+Форма: scroll
+x=7.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Перчатка сокольника</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Посадочное место на руке</text>
 </g>
-<g data-quest-id="1AC57DF4745395A2" tabindex="0" role="button" aria-label="Капюшон птицы" transform="translate(1280.00,-320.00)" style="cursor:pointer">
-<title>Капюшон птицы
+<g data-quest-id="1AC57DF4745395A2" tabindex="0" role="button" aria-label="Управление полётом орлана" transform="translate(640.00,0.00)" style="cursor:pointer">
+<title>Управление полётом орлана
 ID: 1AC57DF4745395A2
 Значок: alexsmobs:falconry_hood
-Форма: circle
-x=20.0, y=-5.0
-Без изменений</title>
+Форма: scroll
+x=10.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Капюшон птицы</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Управление полётом орлана</text>
 </g>
-<g data-quest-id="96E3403FB5591B32" tabindex="0" role="button" aria-label="Испытание сокольника" transform="translate(1536.00,-320.00)" style="cursor:pointer">
-<title>Испытание сокольника
+<g data-quest-id="96E3403FB5591B32" tabindex="0" role="button" aria-label="Орлан достигает дальней цели" transform="translate(800.00,0.00)" style="cursor:pointer">
+<title>Орлан достигает дальней цели
 ID: 96E3403FB5591B32
 Значок: alexsmobs:tab_icon
-Форма: shield
-x=24.0, y=-5.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: star
+x=12.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Испытание сокольника</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Орлан достигает дальней</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">цели</text>
 </g>
-<g data-quest-id="71006DAD7D01307F" tabindex="0" role="button" aria-label="След слонов" transform="translate(512.00,-640.00)" style="cursor:pointer">
-<title>След слонов
+<g data-quest-id="71006DAD7D01307F" tabindex="0" role="button" aria-label="Цветы для большого спутника" transform="translate(0.00,160.00)" style="cursor:pointer">
+<title>Цветы для большого спутника
 ID: 71006DAD7D01307F
 Значок: alexsmobs:acacia_blossom
 Форма: scroll
-x=8.0, y=-10.0
-Без изменений</title>
-<circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+x=0.0, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
-<text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">След слонов</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Цветы для большого</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">спутника</text>
 </g>
-<g data-quest-id="95C85BF47DA01D26" tabindex="0" role="button" aria-label="Союзник саванны" transform="translate(768.00,-640.00)" style="cursor:pointer">
-<title>Союзник саванны
+<g data-quest-id="95C85BF47DA01D26" tabindex="0" role="button" aria-label="Слон принимает предложение" transform="translate(0.00,320.00)" style="cursor:pointer">
+<title>Слон принимает предложение
 ID: 95C85BF47DA01D26
 Значок: alexsmobs:tab_icon
-Форма: circle
-x=12.0, y=-10.0
-Без изменений</title>
+Форма: scroll
+x=0.0, y=5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Союзник саванны</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Слон принимает</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">предложение</text>
 </g>
-<g data-quest-id="4BCEC123A1B35749" tabindex="0" role="button" aria-label="Торжественный караван" transform="translate(1024.00,-640.00)" style="cursor:pointer">
-<title>Торжественный караван
+<g data-quest-id="4BCEC123A1B35749" tabindex="0" role="button" aria-label="Праздничный караван" transform="translate(0.00,480.00)" style="cursor:pointer">
+<title>Праздничный караван
 ID: 4BCEC123A1B35749
 Значок: alexsmobs:tab_icon
-Форма: star
-x=16.0, y=-10.0
-Без изменений</title>
-<circle class="selection-ring" r="33.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.60 7.35,-10.12 22.44,-7.29 11.90,3.87 13.87,19.09 0.00,12.51 -13.87,19.09 -11.90,3.87 -22.44,-7.29 -7.35,-10.12" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=0.0, y=7.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
-<text class="quest-label" y="47.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Торжественный караван</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Праздничный караван</text>
 </g>
-<g data-quest-id="19FCA77EB16A1E4A" tabindex="0" role="button" aria-label="Орнитолог: колибри" transform="translate(1280.00,-640.00)" style="cursor:pointer">
-<title>Орнитолог: колибри
+<g data-quest-id="19FCA77EB16A1E4A" tabindex="0" role="button" aria-label="Потомство среди цветов" transform="translate(160.00,-320.00)" style="cursor:pointer">
+<title>Потомство среди цветов
 ID: 19FCA77EB16A1E4A
 Значок: alexsmobs:tab_icon
-Форма: circle
-x=20.0, y=-10.0
-Без изменений</title>
+Форма: scroll
+x=2.5, y=-5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Орнитолог: колибри</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Потомство среди цветов</text>
 </g>
-<g data-quest-id="0FF56BD66615E8C4" tabindex="0" role="button" aria-label="Кормушка колибри" transform="translate(1536.00,-640.00)" style="cursor:pointer">
-<title>Кормушка колибри
+<g data-quest-id="0FF56BD66615E8C4" tabindex="0" role="button" aria-label="Кормушка цветочного сада" transform="translate(160.00,-160.00)" style="cursor:pointer">
+<title>Кормушка цветочного сада
 ID: 0FF56BD66615E8C4
 Значок: alexsmobs:hummingbird_feeder
-Форма: circle
-x=24.0, y=-10.0
-Без изменений</title>
+Форма: scroll
+x=2.5, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Кормушка колибри</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Кормушка цветочного сада</text>
 </g>
-<g data-quest-id="E159D133BD51F992" tabindex="0" role="button" aria-label="Необычная находка кашалота" transform="translate(512.00,-960.00)" style="cursor:pointer">
-<title>Необычная находка кашалота
+<g data-quest-id="E159D133BD51F992" tabindex="0" role="button" aria-label="Амбра морского гиганта" transform="translate(0.00,-160.00)" style="cursor:pointer">
+<title>Амбра морского гиганта
 ID: E159D133BD51F992
 Значок: alexsmobs:tab_icon
-Форма: star
-x=8.0, y=-15.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=0.0, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Необычная находка</text>
-<text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">кашалота</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Амбра морского гиганта</text>
 </g>
-<g data-quest-id="7FBCE407DFCAF42C" tabindex="0" role="button" aria-label="Эхолокатор" transform="translate(768.00,-960.00)" style="cursor:pointer">
-<title>Эхолокатор
+<g data-quest-id="7FBCE407DFCAF42C" tabindex="0" role="button" aria-label="Слушать скрытые полости" transform="translate(-160.00,-320.00)" style="cursor:pointer">
+<title>Слушать скрытые полости
 ID: 7FBCE407DFCAF42C
 Значок: alexsmobs:echolocator
-Форма: circle
-x=12.0, y=-15.0
-Без изменений</title>
+Форма: scroll
+x=-2.5, y=-5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Эхолокатор</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Слушать скрытые полости</text>
 </g>
-<g data-quest-id="1BC5E19E384E37E0" tabindex="0" role="button" aria-label="Знакомство со скальным зверем" transform="translate(1024.00,-960.00)" style="cursor:pointer">
-<title>Знакомство со скальным зверем
+<g data-quest-id="1BC5E19E384E37E0" tabindex="0" role="button" aria-label="Знакомство с каменным катком" transform="translate(-320.00,-320.00)" style="cursor:pointer">
+<title>Знакомство с каменным катком
 ID: 1BC5E19E384E37E0
 Значок: alexsmobs:tab_icon
-Форма: circle
-x=16.0, y=-15.0
-Без изменений</title>
+Форма: scroll
+x=-5.0, y=-5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">19</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Знакомство со скальным</text>
-<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">зверем</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Знакомство с каменным</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">катком</text>
 </g>
-<g data-quest-id="51C3266BACCA8D53" tabindex="0" role="button" aria-label="Крокодилы без охоты" transform="translate(1280.00,-960.00)" style="cursor:pointer">
-<title>Крокодилы без охоты
+<g data-quest-id="51C3266BACCA8D53" tabindex="0" role="button" aria-label="Крокодил на близком расстоянии" transform="translate(0.00,-480.00)" style="cursor:pointer">
+<title>Крокодил на близком расстоянии
 ID: 51C3266BACCA8D53
 Значок: alexsmobs:tab_icon
 Форма: scroll
-x=20.0, y=-15.0
-Без изменений</title>
-<circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+x=0.0, y=-7.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">20</text>
-<text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Крокодилы без охоты</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Крокодил на близком</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">расстоянии</text>
 </g>
-<g data-quest-id="427CD312AE0EB773" tabindex="0" role="button" aria-label="Новая жизнь в дельте" transform="translate(1536.00,-960.00)" style="cursor:pointer">
-<title>Новая жизнь в дельте
+<g data-quest-id="427CD312AE0EB773" tabindex="0" role="button" aria-label="Новая жизнь у воды" transform="translate(0.00,-640.00)" style="cursor:pointer">
+<title>Новая жизнь у воды
 ID: 427CD312AE0EB773
 Значок: alexsmobs:crocodile_egg
-Форма: circle
-x=24.0, y=-15.0
-Без изменений</title>
+Форма: scroll
+x=0.0, y=-10.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">21</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Новая жизнь в дельте</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Новая жизнь у воды</text>
 </g>
-<g data-quest-id="99429B59EE71CDA8" tabindex="0" role="button" aria-label="Чайка-карманница" transform="translate(768.00,-1280.00)" style="cursor:pointer">
-<title>Чайка-карманница
+<g data-quest-id="99429B59EE71CDA8" tabindex="0" role="button" aria-label="Чайка забрала обед" transform="translate(0.00,-320.00)" style="cursor:pointer">
+<title>Чайка забрала обед
 ID: 99429B59EE71CDA8
 Значок: alexsmobs:fish_bones
-Форма: circle
-x=12.0, y=-20.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: scroll
+x=0.0, y=-5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">22</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Чайка-карманница</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Чайка забрала обед</text>
 </g>
-<g data-quest-id="6901B3595877A394" tabindex="0" role="button" aria-label="Марьячи в хитиновом панцире" transform="translate(1024.00,-1280.00)" style="cursor:pointer">
-<title>Марьячи в хитиновом панцире
+<g data-quest-id="6901B3595877A394" tabindex="0" role="button" aria-label="Музыкант с шестью лапами" transform="translate(640.00,-480.00)" style="cursor:pointer">
+<title>Музыкант с шестью лапами
 ID: 6901B3595877A394
 Значок: alexsmobs:maraca
-Форма: circle
-x=16.0, y=-20.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: scroll
+x=10.0, y=-7.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">23</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Марьячи в хитиновом</text>
-<text class="quest-label" y="62.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">панцире</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Музыкант с шестью лапами</text>
 </g>
-<g data-quest-id="B949C4277618FEC3" tabindex="0" role="button" aria-label="Рак-богомол в команде" transform="translate(1280.00,-1280.00)" style="cursor:pointer">
-<title>Рак-богомол в команде
+<g data-quest-id="B949C4277618FEC3" tabindex="0" role="button" aria-label="Рак-богомол становится союзником" transform="translate(0.00,-800.00)" style="cursor:pointer">
+<title>Рак-богомол становится союзником
 ID: B949C4277618FEC3
 Значок: alexsmobs:rainbow_jelly
-Форма: circle
-x=20.0, y=-20.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: scroll
+x=0.0, y=-12.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">24</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Рак-богомол в команде</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Рак-богомол становится</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">союзником</text>
 </g>
-<g data-quest-id="C5769170EBDD1A02" tabindex="0" role="button" aria-label="Червь из пустоты" transform="translate(1792.00,-960.00)" style="cursor:pointer">
-<title>Червь из пустоты
+<g data-quest-id="C5769170EBDD1A02" tabindex="0" role="button" aria-label="Позвать Червя Бездны" transform="translate(-480.00,0.00)" style="cursor:pointer">
+<title>Позвать Червя Бездны
 ID: C5769170EBDD1A02
 Значок: alexsmobs:mysterious_worm
-Форма: circle
-x=28.0, y=-15.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: scroll
+x=-7.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">25</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Червь из пустоты</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Позвать Червя Бездны</text>
 </g>
-<g data-quest-id="2DAF49A8C5352825" tabindex="0" role="button" aria-label="Укротитель Бездны" transform="translate(2048.00,-960.00)" style="cursor:pointer">
-<title>Укротитель Бездны
+<g data-quest-id="2DAF49A8C5352825" tabindex="0" role="button" aria-label="Победа над Червём Бездны" transform="translate(-640.00,0.00)" style="cursor:pointer">
+<title>Победа над Червём Бездны
 ID: 2DAF49A8C5352825
 Значок: alexsmobs:dimensional_carver
-Форма: circle
-x=32.0, y=-15.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: scroll
+x=-10.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">26</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Укротитель Бездны</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Победа над Червём Бездны</text>
 </g>
-<g data-quest-id="4B932485B3983E85" tabindex="0" role="button" aria-label="Банановая дипломатия" transform="translate(1792.00,-640.00)" style="cursor:pointer">
-<title>Банановая дипломатия
+<g data-quest-id="4B932485B3983E85" tabindex="0" role="button" aria-label="Договориться с гориллой" transform="translate(-320.00,160.00)" style="cursor:pointer">
+<title>Договориться с гориллой
 ID: 4B932485B3983E85
 Значок: alexsmobs:banana
-Форма: circle
-x=28.0, y=-10.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: scroll
+x=-5.0, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">27</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Банановая дипломатия</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Договориться с гориллой</text>
 </g>
-<g data-quest-id="3C2AA39C0E1FDEF8" tabindex="0" role="button" aria-label="Небесный компаньон" transform="translate(2048.00,-640.00)" style="cursor:pointer">
-<title>Небесный компаньон
+<g data-quest-id="3C2AA39C0E1FDEF8" tabindex="0" role="button" aria-label="Союзник среди островов Края" transform="translate(-160.00,0.00)" style="cursor:pointer">
+<title>Союзник среди островов Края
 ID: 3C2AA39C0E1FDEF8
 Значок: alexsmobs:cosmic_cod
-Форма: circle
-x=32.0, y=-10.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: scroll
+x=-2.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">28</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Небесный компаньон</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Союзник среди островов</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Края</text>
 </g>
-<g data-quest-id="32AF726FDB0E97B5" tabindex="0" role="button" aria-label="Тысяча превращений" transform="translate(1792.00,-320.00)" style="cursor:pointer">
-<title>Тысяча превращений
+<g data-quest-id="32AF726FDB0E97B5" tabindex="0" role="button" aria-label="Тысяча превращений в одном месте" transform="translate(-800.00,0.00)" style="cursor:pointer">
+<title>Тысяча превращений в одном месте
 ID: 32AF726FDB0E97B5
 Значок: alexsmobs:transmutation_table
-Форма: circle
-x=28.0, y=-5.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: scroll
+x=-12.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">29</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Тысяча превращений</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Тысяча превращений в</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">одном месте</text>
 </g>
-<g data-quest-id="FBBF01EF727D4ABF" tabindex="0" role="button" aria-label="Благословение солнечной птицы" transform="translate(2048.00,-320.00)" style="cursor:pointer">
+<g data-quest-id="FBBF01EF727D4ABF" tabindex="0" role="button" aria-label="Благословение солнечной птицы" transform="translate(160.00,-640.00)" style="cursor:pointer">
 <title>Благословение солнечной птицы
 ID: FBBF01EF727D4ABF
 Значок: alexsmobs:bear_dust
-Форма: circle
-x=32.0, y=-5.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: star
+x=2.5, y=-10.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">30</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Благословение солнечной</text>
-<text class="quest-label" y="62.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">птицы</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Благословение солнечной</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">птицы</text>
 </g>
-<g data-quest-id="8EC4540A9E0B729E" tabindex="0" role="button" aria-label="Внезапный аромат" transform="translate(1536.00,-1280.00)" style="cursor:pointer">
-<title>Внезапный аромат
+<g data-quest-id="8EC4540A9E0B729E" tabindex="0" role="button" aria-label="Аромат полевого исследования" transform="translate(320.00,-160.00)" style="cursor:pointer">
+<title>Аромат полевого исследования
 ID: 8EC4540A9E0B729E
 Значок: minecraft:glass_bottle
-Форма: circle
-x=24.0, y=-20.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=5.0, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">31</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Внезапный аромат</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Аромат полевого</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">исследования</text>
 </g>
-<g data-quest-id="E0ECA7B8B4204545" tabindex="0" role="button" aria-label="Муравьиный переполох" transform="translate(1792.00,-1280.00)" style="cursor:pointer">
-<title>Муравьиный переполох
+<g data-quest-id="E0ECA7B8B4204545" tabindex="0" role="button" aria-label="Муравьи отвечают на визит" transform="translate(480.00,-320.00)" style="cursor:pointer">
+<title>Муравьи отвечают на визит
 ID: E0ECA7B8B4204545
 Значок: minecraft:grass_block
-Форма: shield
-x=28.0, y=-20.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=7.5, y=-5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">32</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Муравьиный переполох</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Муравьи отвечают на визит</text>
 </g>
-<g data-quest-id="A11B0DC1744B593F" tabindex="0" role="button" aria-label="Невидимый шахтёр" transform="translate(2048.00,-1280.00)" style="cursor:pointer">
-<title>Невидимый шахтёр
+<g data-quest-id="A11B0DC1744B593F" tabindex="0" role="button" aria-label="Опередить призрачного шахтёра" transform="translate(-480.00,-320.00)" style="cursor:pointer">
+<title>Опередить призрачного шахтёра
 ID: A11B0DC1744B593F
 Значок: minecraft:iron_pickaxe
-Форма: shield
-x=32.0, y=-20.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=-7.5, y=-5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">33</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Невидимый шахтёр</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Опередить призрачного</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">шахтёра</text>
 </g>
-<g data-quest-id="96A5A07EA384E3E1" tabindex="0" role="button" aria-label="Хозяин зимнего леса" transform="translate(2304.00,-640.00)" style="cursor:pointer">
-<title>Хозяин зимнего леса
+<g data-quest-id="96A5A07EA384E3E1" tabindex="0" role="button" aria-label="Медведь принимает угощение" transform="translate(-640.00,160.00)" style="cursor:pointer">
+<title>Медведь принимает угощение
 ID: 96A5A07EA384E3E1
 Значок: alexsmobs:bear_fur
-Форма: shield
-x=36.0, y=-10.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=-10.0, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">34</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Хозяин зимнего леса</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Медведь принимает</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">угощение</text>
 </g>
-<g data-quest-id="A69880141C867BB1" tabindex="0" role="button" aria-label="Маленький капуцин" transform="translate(2560.00,-640.00)" style="cursor:pointer">
-<title>Маленький капуцин
+<g data-quest-id="A69880141C867BB1" tabindex="0" role="button" aria-label="Маленький спутник из джунглей" transform="translate(-480.00,160.00)" style="cursor:pointer">
+<title>Маленький спутник из джунглей
 ID: A69880141C867BB1
 Значок: alexsmobs:banana
-Форма: circle
-x=40.0, y=-10.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=-7.5, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">35</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Маленький капуцин</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Маленький спутник из</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">джунглей</text>
 </g>
-<g data-quest-id="7187AE5CE52E38D9" tabindex="0" role="button" aria-label="Трепещущий спутник" transform="translate(2304.00,-320.00)" style="cursor:pointer">
-<title>Трепещущий спутник
+<g data-quest-id="7187AE5CE52E38D9" tabindex="0" role="button" aria-label="Разборчивый любитель цветов" transform="translate(160.00,-480.00)" style="cursor:pointer">
+<title>Разборчивый любитель цветов
 ID: 7187AE5CE52E38D9
 Значок: minecraft:lead
-Форма: circle
-x=36.0, y=-5.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=2.5, y=-7.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">36</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Трепещущий спутник</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Разборчивый любитель</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">цветов</text>
 </g>
-<g data-quest-id="3C70087F08BB9172" tabindex="0" role="button" aria-label="Приручить осу-охотника" transform="translate(2560.00,-320.00)" style="cursor:pointer">
-<title>Приручить осу-охотника
+<g data-quest-id="3C70087F08BB9172" tabindex="0" role="button" aria-label="Оса становится союзником" transform="translate(800.00,-640.00)" style="cursor:pointer">
+<title>Оса становится союзником
 ID: 3C70087F08BB9172
 Значок: minecraft:honey_bottle
-Форма: shield
-x=40.0, y=-5.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=12.5, y=-10.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">37</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Приручить осу-охотника</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Оса становится союзником</text>
 </g>
-<g data-quest-id="7A5B99FCC0910E12" tabindex="0" role="button" aria-label="Лягушка багрового края" transform="translate(512.00,640.00)" style="cursor:pointer">
-<title>Лягушка багрового края
+<g data-quest-id="7A5B99FCC0910E12" tabindex="0" role="button" aria-label="Искажённая жаба" transform="translate(160.00,160.00)" style="cursor:pointer">
+<title>Искажённая жаба
 ID: 7A5B99FCC0910E12
 Значок: minecraft:warped_fungus
-Форма: circle
-x=8.0, y=10.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=2.5, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">38</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Лягушка багрового края</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Искажённая жаба</text>
 </g>
-<g data-quest-id="B9C5E7F638070495" tabindex="0" role="button" aria-label="Ужин для стриддера" transform="translate(768.00,640.00)" style="cursor:pointer">
-<title>Ужин для стриддера
+<g data-quest-id="B9C5E7F638070495" tabindex="0" role="button" aria-label="Угощение для страдпола" transform="translate(320.00,320.00)" style="cursor:pointer">
+<title>Угощение для страдпола
 ID: B9C5E7F638070495
 Значок: minecraft:warped_fungus
-Форма: circle
-x=12.0, y=10.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.40" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=5.0, y=5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">39</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Ужин для стриддера</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Угощение для страдпола</text>
 </g>
-<g data-quest-id="7C9F211F3C3FEE27" tabindex="0" role="button" aria-label="Червь, которого стало двое" transform="translate(2304.00,-960.00)" style="cursor:pointer">
-<title>Червь, которого стало двое
+<g data-quest-id="7C9F211F3C3FEE27" tabindex="0" role="button" aria-label="У червя стало два направления" transform="translate(-480.00,-160.00)" style="cursor:pointer">
+<title>У червя стало два направления
 ID: 7C9F211F3C3FEE27
 Значок: alexsmobs:void_worm_eye
-Форма: crown
-x=36.0, y=-15.0
-Без изменений</title>
-<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-25.60,-15.36 -11.52,0.00 0.00,-25.60 11.52,0.00 25.60,-15.36 17.92,17.92 -17.92,17.92" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: star
+x=-7.5, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">40</text>
-<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Червь, которого стало</text>
-<text class="quest-label" y="65.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">двое</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">У червя стало два</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">направления</text>
 </g>
-<g data-quest-id="237F60330304F23A" tabindex="0" role="button" aria-label="Яблочная дипломатия" transform="translate(256.00,-960.00)" style="cursor:pointer">
-<title>Яблочная дипломатия
+<g data-quest-id="237F60330304F23A" tabindex="0" role="button" aria-label="Яблоко для гривистого волка" transform="translate(-160.00,160.00)" style="cursor:pointer">
+<title>Яблоко для гривистого волка
 ID: 237F60330304F23A
 Значок: minecraft:apple
-Форма: circle
-x=4.0, y=-15.0
-Без изменений</title>
+Форма: scroll
+x=-2.5, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">41</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Яблочная дипломатия</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Яблоко для гривистого</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">волка</text>
 </g>
-<g data-quest-id="936D71E0D75C5CFD" tabindex="0" role="button" aria-label="Муравьеды — семейное дело" transform="translate(256.00,-1280.00)" style="cursor:pointer">
-<title>Муравьеды — семейное дело
+<g data-quest-id="936D71E0D75C5CFD" tabindex="0" role="button" aria-label="Семья муравьедов" transform="translate(-800.00,160.00)" style="cursor:pointer">
+<title>Семья муравьедов
 ID: 936D71E0D75C5CFD
 Значок: minecraft:egg
-Форма: star
-x=4.0, y=-20.0
-Без изменений</title>
+Форма: scroll
+x=-12.5, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">42</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Муравьеды — семейное дело</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Семья муравьедов</text>
 </g>
-<g data-quest-id="ACE2BBCB182D3BF5" tabindex="0" role="button" aria-label="Сквозь подзорную трубу" transform="translate(512.00,-1280.00)" style="cursor:pointer">
-<title>Сквозь подзорную трубу
+<g data-quest-id="ACE2BBCB182D3BF5" tabindex="0" role="button" aria-label="Лавовый гигант в объективе" transform="translate(480.00,480.00)" style="cursor:pointer">
+<title>Лавовый гигант в объективе
 ID: ACE2BBCB182D3BF5
 Значок: minecraft:spyglass
-Форма: star
-x=8.0, y=-20.0
-Без изменений</title>
+Форма: scroll
+x=7.5, y=7.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">43</text>
-<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сквозь подзорную трубу</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Лавовый гигант в</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">объективе</text>
 </g>
-<g data-quest-id="9ED723F7F76497AD" tabindex="0" role="button" aria-label="Охотничий инстинкт тигра" transform="translate(-256.00,-320.00)" style="cursor:pointer">
-<title>Охотничий инстинкт тигра
+<g data-quest-id="9ED723F7F76497AD" tabindex="0" role="button" aria-label="Заслужить благословение тигра" transform="translate(1120.00,-960.00)" style="cursor:pointer">
+<title>Заслужить благословение тигра
 ID: 9ED723F7F76497AD
 Значок: minecraft:leather_boots
-Форма: shield
-x=-4.0, y=-5.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=17.5, y=-15.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">44</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Охотничий инстинкт тигра</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Заслужить благословение</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">тигра</text>
 </g>
-<g data-quest-id="1F1BD6529A7A9340" tabindex="0" role="button" aria-label="Сила стаи косаток" transform="translate(-256.00,-640.00)" style="cursor:pointer">
-<title>Сила стаи косаток
+<g data-quest-id="1F1BD6529A7A9340" tabindex="0" role="button" aria-label="Сила морской стаи" transform="translate(0.00,-1120.00)" style="cursor:pointer">
+<title>Сила морской стаи
 ID: 1F1BD6529A7A9340
 Значок: minecraft:trident
-Форма: shield
-x=-4.0, y=-10.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: star
+x=0.0, y=-17.5
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">45</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сила стаи косаток</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сила морской стаи</text>
 </g>
-<g data-quest-id="1DAF34828799DEB2" tabindex="0" role="button" aria-label="Лавиафан — полный экипаж" transform="translate(-256.00,-960.00)" style="cursor:pointer">
-<title>Лавиафан — полный экипаж
+<g data-quest-id="1DAF34828799DEB2" tabindex="0" role="button" aria-label="Четыре места на лавиафане" transform="translate(640.00,480.00)" style="cursor:pointer">
+<title>Четыре места на лавиафане
 ID: 1DAF34828799DEB2
 Значок: minecraft:saddle
 Форма: star
-x=-4.0, y=-15.0
-Без изменений</title>
-<circle class="selection-ring" r="33.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.60 7.35,-10.12 22.44,-7.29 11.90,3.87 13.87,19.09 0.00,12.51 -13.87,19.09 -11.90,3.87 -22.44,-7.29 -7.35,-10.12" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+x=10.0, y=7.5
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">46</text>
-<text class="quest-label" y="47.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Лавиафан — полный экипаж</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Четыре места на лавиафане</text>
 </g>
-<g data-quest-id="F5D02EE894BC9AE7" tabindex="0" role="button" aria-label="Багровая лихорадка" transform="translate(-256.00,-1280.00)" style="cursor:pointer">
-<title>Багровая лихорадка
+<g data-quest-id="F5D02EE894BC9AE7" tabindex="0" role="button" aria-label="Грибная болезнь москита" transform="translate(640.00,640.00)" style="cursor:pointer">
+<title>Грибная болезнь москита
 ID: F5D02EE894BC9AE7
 Значок: minecraft:spider_eye
-Форма: shield
-x=-4.0, y=-20.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=10.0, y=10.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">47</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Багровая лихорадка</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Грибная болезнь москита</text>
 </g>
-<g data-quest-id="A3CBB2323447F658" tabindex="0" role="button" aria-label="Владыка багровых москитов" transform="translate(-512.00,-1280.00)" style="cursor:pointer">
-<title>Владыка багровых москитов
+<g data-quest-id="A3CBB2323447F658" tabindex="0" role="button" aria-label="Остановить искажённого моско" transform="translate(800.00,800.00)" style="cursor:pointer">
+<title>Остановить искажённого моско
 ID: A3CBB2323447F658
 Значок: minecraft:netherite_sword
-Форма: crown
-x=-8.0, y=-20.0
-Без изменений</title>
-<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-25.60,-15.36 -11.52,0.00 0.00,-25.60 11.52,0.00 25.60,-15.36 17.92,17.92 -17.92,17.92" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: star
+x=12.5, y=12.5
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">48</text>
-<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Владыка багровых москитов</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Остановить искажённого</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">моско</text>
 </g>
-<g data-quest-id="6CC28B3392054882" tabindex="0" role="button" aria-label="Уклонение от эму" transform="translate(-256.00,0.00)" style="cursor:pointer">
-<title>Уклонение от эму
+<g data-quest-id="6CC28B3392054882" tabindex="0" role="button" aria-label="Эму уклоняется от выстрела" transform="translate(960.00,-800.00)" style="cursor:pointer">
+<title>Эму уклоняется от выстрела
 ID: 6CC28B3392054882
 Значок: minecraft:feather
-Форма: circle
-x=-4.0, y=0.0
-Без изменений</title>
-<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=15.0, y=-12.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">49</text>
-<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Уклонение от эму</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Эму уклоняется от</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">выстрела</text>
 </g>
-<g data-quest-id="63D42711634C8471" tabindex="0" role="button" aria-label="Слон с бивнями — редкий союзник" transform="translate(512.00,-768.00)" style="cursor:pointer">
-<title>Слон с бивнями — редкий союзник
+<g data-quest-id="63D42711634C8471" tabindex="0" role="button" aria-label="Редкий участник каравана" transform="translate(0.00,640.00)" style="cursor:pointer">
+<title>Редкий участник каравана
 ID: 63D42711634C8471
 Значок: minecraft:saddle
 Форма: star
-x=8.0, y=-12.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+x=0.0, y=10.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">50</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Слон с бивнями — редкий</text>
-<text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">союзник</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Редкий участник каравана</text>
 </g>
-<g data-quest-id="3684E8517DD612A0" tabindex="0" role="button" aria-label="Рак-богомол путешествует в ведре" transform="translate(1024.00,-1408.00)" style="cursor:pointer">
-<title>Рак-богомол путешествует в ведре
+<g data-quest-id="3684E8517DD612A0" tabindex="0" role="button" aria-label="Вода для сухопутной прогулки" transform="translate(0.00,-960.00)" style="cursor:pointer">
+<title>Вода для сухопутной прогулки
 ID: 3684E8517DD612A0
 Значок: minecraft:water_bucket
-Форма: circle
-x=16.0, y=-22.0
-Без изменений</title>
-<circle class="selection-ring" r="33.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=0.0, y=-15.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">51</text>
-<text class="quest-label" y="47.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Рак-богомол путешествует</text>
-<text class="quest-label" y="63.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">в ведре</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Вода для сухопутной</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">прогулки</text>
 </g>
-<g data-quest-id="50F2011C089DD095" tabindex="0" role="button" aria-label="Лихорадка с Края" transform="translate(128.00,-64.00)" style="cursor:pointer">
-<title>Лихорадка с Края
+<g data-quest-id="50F2011C089DD095" tabindex="0" role="button" aria-label="Нежелательная находка Края" transform="translate(-160.00,-160.00)" style="cursor:pointer">
+<title>Нежелательная находка Края
 ID: 50F2011C089DD095
 Значок: minecraft:ender_eye
-Форма: shield
-x=2.0, y=-1.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: star
+x=-2.5, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">52</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Лихорадка с Края</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Нежелательная находка</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Края</text>
 </g>
-<g data-quest-id="23B7EC4E576DFA6A" tabindex="0" role="button" aria-label="Наследники ледяной стаи" transform="translate(2816.00,-640.00)" style="cursor:pointer">
+<g data-quest-id="23B7EC4E576DFA6A" tabindex="0" role="button" aria-label="Наследники ледяной стаи" transform="translate(-960.00,160.00)" style="cursor:pointer">
 <title>Наследники ледяной стаи
 ID: 23B7EC4E576DFA6A
 Значок: alexsmobs:froststalker_horn
-Форма: star
-x=44.0, y=-10.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=-15.0, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">53</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Наследники ледяной стаи</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Наследники ледяной стаи</text>
 </g>
-<g data-quest-id="ABADB8973594E0A0" tabindex="0" role="button" aria-label="Неведомый наблюдатель" transform="translate(2816.00,-320.00)" style="cursor:pointer">
-<title>Неведомый наблюдатель
+<g data-quest-id="ABADB8973594E0A0" tabindex="0" role="button" aria-label="Наблюдатель у края мира" transform="translate(-960.00,0.00)" style="cursor:pointer">
+<title>Наблюдатель у края мира
 ID: ABADB8973594E0A0
 Значок: alexsmobs:ghostly_pickaxe
-Форма: shield
-x=44.0, y=-5.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: star
+x=-15.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">54</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Неведомый наблюдатель</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Наблюдатель у края мира</text>
 </g>
-<g data-quest-id="418BF87D0F99A324" tabindex="0" role="button" aria-label="Призрак на пути" transform="translate(3072.00,-320.00)" style="cursor:pointer">
-<title>Призрак на пути
+<g data-quest-id="418BF87D0F99A324" tabindex="0" role="button" aria-label="Спектр среди островов" transform="translate(-320.00,0.00)" style="cursor:pointer">
+<title>Спектр среди островов
 ID: 418BF87D0F99A324
 Значок: alexsmobs:soul_heart
-Форма: shield
-x=48.0, y=-5.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: scroll
+x=-5.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">55</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Призрак на пути</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Спектр среди островов</text>
 </g>
-<g data-quest-id="F57181DBDA992F0B" tabindex="0" role="button" aria-label="Три записи полевого дневника" transform="translate(3328.00,-320.00)" style="cursor:pointer">
-<title>Три записи полевого дневника
+<g data-quest-id="F57181DBDA992F0B" tabindex="0" role="button" aria-label="Три живые записи дневника" transform="translate(-640.00,-320.00)" style="cursor:pointer">
+<title>Три живые записи дневника
 ID: F57181DBDA992F0B
 Значок: minecraft:writable_book
-Форма: scroll
-x=52.0, y=-5.0
-Без изменений</title>
-<circle class="selection-ring" r="33.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-23.60" y="-23.60" width="47.20" height="47.20" rx="8.26" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: star
+x=-10.0, y=-5.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">56</text>
-<text class="quest-label" y="47.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Три записи полевого</text>
-<text class="quest-label" y="63.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">дневника</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Три живые записи дневника</text>
 </g>
-<g data-quest-id="8D963EB7C6BEE5F5" tabindex="0" role="button" aria-label="Трофеи трёх пустошей" transform="translate(3584.00,-320.00)" style="cursor:pointer">
-<title>Трофеи трёх пустошей
+<g data-quest-id="8D963EB7C6BEE5F5" tabindex="0" role="button" aria-label="Трофеи трёх разных миров" transform="translate(1280.00,-1120.00)" style="cursor:pointer">
+<title>Трофеи трёх разных миров
 ID: 8D963EB7C6BEE5F5
 Значок: minecraft:diamond_sword
-Форма: shield
-x=56.0, y=-5.0
-Без изменений</title>
-<circle class="selection-ring" r="33.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.60,-23.60 23.60,-23.60 18.88,7.08 0.00,23.60 -18.88,7.08" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: star
+x=20.0, y=-17.5
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">57</text>
-<text class="quest-label" y="47.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Трофеи трёх пустошей</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Трофеи трёх разных миров</text>
 </g>
-<g data-quest-id="9B3BBB54EE27AC7B" tabindex="0" role="button" aria-label="Питомник трёх биомов" transform="translate(3072.00,-640.00)" style="cursor:pointer">
+<g data-quest-id="9B3BBB54EE27AC7B" tabindex="0" role="button" aria-label="Питомник трёх биомов" transform="translate(-1120.00,160.00)" style="cursor:pointer">
 <title>Питомник трёх биомов
 ID: 9B3BBB54EE27AC7B
 Значок: minecraft:golden_carrot
 Форма: star
-x=48.0, y=-10.0
-Без изменений</title>
-<circle class="selection-ring" r="35.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.20 7.85,-10.81 23.97,-7.79 12.70,4.13 14.81,20.39 0.00,13.36 -14.81,20.39 -12.70,4.13 -23.97,-7.79 -7.85,-10.81" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+x=-17.5, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#38D968" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">58</text>
-<text class="quest-label" y="49.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Питомник трёх биомов</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Питомник трёх биомов</text>
 </g>
 </g></svg>

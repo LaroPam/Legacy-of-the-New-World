@@ -1,7 +1,9 @@
 {
   "baseline": "f68124fb33597aa13b4b6a8dd8c6dde7c879b188",
-  "head": "1d25fbb79ad078542c644ce76e0bf9f1d973713c",
-  "source_digest": "3486ccf63dd8172106a7d66b18f69df79f0a48ec80d9e1f14c4981b3b15ab2e9",
+  "head": "41c4bae3c1bd87f55df35e1a951827780afe6844",
+  "source_digest": "9061b5db1a63873021f71b20c0c4044d6e876f2f273dedd1129b5a72700856ee",
+  "theme_sha256": "c67395cd48fc6c301bf68778b6b1b708a310874b0eaac7c706e3c06edb42968d",
+  "palette_design_sha256": "e24da5c3365f2382a00a093602f082e799c80724643d5c953b52a0ef0c8ac8ec",
   "pixels_per_unit": 64,
   "chapters": [
     {
@@ -32,7 +34,7 @@
       "file": "config/ftbquests/quests/chapters/nasledie_create.snbt",
       "slug": "nasledie_create",
       "before_sha256": "844b0a3e8b51b6cfcb1588082fc99189792a72ec58c0d1dda5c1632c1790ae58",
-      "after_sha256": "3658be035af5a157ac0de9dfedf07da2cfd7710bd2f33b12ecd9a9341260665a",
+      "after_sha256": "1f2be262bcef4bae51a0ca025696ccfe20c691d1ea0ef7cb162621390e9e9e8e",
       "bounds": [
         -128.0,
         -960.0,
@@ -80,19 +82,19 @@
       "file": "config/ftbquests/quests/chapters/nasledie_transport.snbt",
       "slug": "nasledie_transport",
       "before_sha256": "4b8fada317e8eb4cd52e1f3f776c8795c35a48c212430036da2614e248822019",
-      "after_sha256": "4b8fada317e8eb4cd52e1f3f776c8795c35a48c212430036da2614e248822019",
+      "after_sha256": "8a69d0c5602d96eab59e010078b2cecc69e9cd1439d8ce5c778eb703bdc61b4c",
       "bounds": [
         -128.0,
         -704.0,
         1408.0,
-        1152.0
+        1312.0
       ]
     },
     {
       "file": "config/ftbquests/quests/chapters/nasledie_industry.snbt",
       "slug": "nasledie_industry",
       "before_sha256": "327be73b82360abd006bc8f77b7ea112110650cb69eb77d24638d6e3826b4ec6",
-      "after_sha256": "327be73b82360abd006bc8f77b7ea112110650cb69eb77d24638d6e3826b4ec6",
+      "after_sha256": "3a286992c9bd852ef8da833200e35509f956563653acde725c17a0cef85bf0db",
       "bounds": [
         -128.0,
         -832.0,
@@ -104,7 +106,7 @@
       "file": "config/ftbquests/quests/chapters/nasledie_defense.snbt",
       "slug": "nasledie_defense",
       "before_sha256": "14c3539f872c00b3c971947fad2d4abe2d0236bd59ebc72caacc6e6d560201df",
-      "after_sha256": "0c8eb4e8ce050740a5c01a2dc2e1f49140b66c309004661cd7de2cc3563ba6f8",
+      "after_sha256": "385d85fe2a99e5ce594d05c11a0306b0f414e93be93364834fb65609f1948cd6",
       "bounds": [
         -448.0,
         -1088.0,
@@ -116,11 +118,11 @@
       "file": "config/ftbquests/quests/chapters/nasledie_legends.snbt",
       "slug": "nasledie_legends",
       "before_sha256": "cf938dd5693e5a0330e4f16ebd0ecd401ce976394407f65821e99dfd0c046d60",
-      "after_sha256": "cf938dd5693e5a0330e4f16ebd0ecd401ce976394407f65821e99dfd0c046d60",
+      "after_sha256": "4fd399f4229dca53ba54de8fbfe18993a06a9344672d7c36037d84089c423838",
       "bounds": [
-        -640.0,
+        -1408.0,
         -1344.0,
-        4608.0,
+        5376.0,
         2752.0
       ]
     },
@@ -128,35 +130,35 @@
       "file": "config/ftbquests/quests/chapters/nasledie_grand_projects.snbt",
       "slug": "nasledie_grand_projects",
       "before_sha256": "84d78d557a0461a49fcf14518c73b21fcdc2bfad9ba0af3610cbb68959636f4a",
-      "after_sha256": "84d78d557a0461a49fcf14518c73b21fcdc2bfad9ba0af3610cbb68959636f4a",
+      "after_sha256": "ea23039114467f5a07fb4a10c0906df956ab7cfb3f87c108e2a47acdaec87706",
       "bounds": [
-        -128.0,
-        -448.0,
-        2560.0,
-        1216.0
+        -608.0,
+        -1088.0,
+        3040.0,
+        1856.0
       ]
     },
     {
       "file": "config/ftbquests/quests/chapters/nasledie_guild.snbt",
       "slug": "nasledie_guild",
       "before_sha256": "53d567464b265f88e089541d048426f2cb236178548505496d1d1f3c8949931f",
-      "after_sha256": "53d567464b265f88e089541d048426f2cb236178548505496d1d1f3c8949931f",
+      "after_sha256": "929cac4bce8dfeeedf4bd2b2d16c4f9f867df4ec99cb1da87b3cf04548d35c7b",
       "bounds": [
-        -640.0,
+        -1248.0,
         -1536.0,
-        4352.0,
-        2304.0
+        4960.0,
+        2464.0
       ]
     },
     {
       "file": "config/ftbquests/quests/chapters/nasledie_cataclysm.snbt",
       "slug": "nasledie_cataclysm",
       "before_sha256": "0a372fda4c59a36a014a013ff974fc631a0cb79e4e9b4b2f81db919965454051",
-      "after_sha256": "0a372fda4c59a36a014a013ff974fc631a0cb79e4e9b4b2f81db919965454051",
+      "after_sha256": "cb560353d9e0230e9746a0e2bde7b3ca15218d451918767c536bccdbe3fa282f",
       "bounds": [
-        -128.0,
+        -768.0,
         -1280.0,
-        1792.0,
+        2432.0,
         2560.0
       ]
     },
@@ -164,60 +166,60 @@
       "file": "config/ftbquests/quests/chapters/nasledie_archeology.snbt",
       "slug": "nasledie_archeology",
       "before_sha256": "7f72c641410a7f21143635cea34d129447ff593483fb08591e01aaeb0c8798ed",
-      "after_sha256": "7f72c641410a7f21143635cea34d129447ff593483fb08591e01aaeb0c8798ed",
+      "after_sha256": "987db494908ad53536585405fef455df55c9e1f16e00963af576075fa3249116",
       "bounds": [
         -400.0,
-        -832.0,
+        -1088.0,
         2867.2,
-        1664.0
+        2016.0
       ]
     },
     {
       "file": "config/ftbquests/quests/chapters/nasledie_relics.snbt",
       "slug": "nasledie_relics",
       "before_sha256": "077ae95054edb80def55c3fa38c620b85e53e07e590cef88a68a78480432fc2c",
-      "after_sha256": "077ae95054edb80def55c3fa38c620b85e53e07e590cef88a68a78480432fc2c",
+      "after_sha256": "212bb698b3814332bfda60d0675674c0aa1cd3d72e5a79024fffa7f477d116c0",
       "bounds": [
-        -128.0,
-        -832.0,
-        1507.2,
-        1664.0
+        -448.0,
+        -1088.0,
+        1827.2,
+        1920.0
       ]
     },
     {
       "file": "config/ftbquests/quests/chapters/nasledie_netheritage.snbt",
       "slug": "nasledie_netheritage",
       "before_sha256": "f9a99872ac2402065cf10d53e67409a9b026161cf2c3cf2406b948642e23c451",
-      "after_sha256": "f9a99872ac2402065cf10d53e67409a9b026161cf2c3cf2406b948642e23c451",
+      "after_sha256": "9703068c50d85a9b445a32196e67d54f674b0d321fd03eb48779bac8ddcc0d3f",
       "bounds": [
         -640.0,
-        -544.0,
+        -928.0,
         2496.0,
-        1408.0
+        1856.0
       ]
     },
     {
       "file": "config/ftbquests/quests/chapters/nasledie_ocean.snbt",
       "slug": "nasledie_ocean",
       "before_sha256": "e73a6fbb41366c6fbfe7b747a6880790ca87814f3922edbe2c0f36685445873a",
-      "after_sha256": "e73a6fbb41366c6fbfe7b747a6880790ca87814f3922edbe2c0f36685445873a",
+      "after_sha256": "0aaf42d8011f57555181e4424e16476f331090e2cdad8434172c5fdb95113350",
       "bounds": [
         -128.0,
-        -544.0,
+        -1088.0,
         2272.0,
-        1408.0
+        2016.0
       ]
     },
     {
       "file": "config/ftbquests/quests/chapters/nasledie_compass.snbt",
       "slug": "nasledie_compass",
       "before_sha256": "254f650a92c057d8d3f6237e892c90d6147691573f6a9dc31d3f230230f54a0f",
-      "after_sha256": "254f650a92c057d8d3f6237e892c90d6147691573f6a9dc31d3f230230f54a0f",
+      "after_sha256": "25d703f0da3af11bc67ae16acd83e1416067ef3bd5f490252de6419b90e0aa24",
       "bounds": [
         -128.0,
         -1216.0,
         3424.0,
-        2080.0
+        2624.0
       ]
     }
   ]

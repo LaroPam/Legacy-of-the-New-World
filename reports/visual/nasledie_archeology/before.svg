@@ -1,52 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-400.00 -832.00 2867.20 1664.00" width="2867.20" height="1664.00" role="img" aria-labelledby="nasledie_archeology-before-title" data-quest-count="23">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-400.00 -1088.00 2867.20 2016.00" width="2867.20" height="2016.00" role="img" aria-labelledby="nasledie_archeology-before-title" data-quest-count="23">
 <title id="nasledie_archeology-before-title">Архив древних находок — схема SNBT, не скриншот игры</title>
 <defs><marker id="nasledie_archeology-before-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
 <g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
-<path d="M -384 -832.00 v 1664.00"/>
-<path d="M -320 -832.00 v 1664.00"/>
-<path d="M -256 -832.00 v 1664.00"/>
-<path d="M -192 -832.00 v 1664.00"/>
-<path d="M -128 -832.00 v 1664.00"/>
-<path d="M -64 -832.00 v 1664.00"/>
-<path d="M 0 -832.00 v 1664.00"/>
-<path d="M 64 -832.00 v 1664.00"/>
-<path d="M 128 -832.00 v 1664.00"/>
-<path d="M 192 -832.00 v 1664.00"/>
-<path d="M 256 -832.00 v 1664.00"/>
-<path d="M 320 -832.00 v 1664.00"/>
-<path d="M 384 -832.00 v 1664.00"/>
-<path d="M 448 -832.00 v 1664.00"/>
-<path d="M 512 -832.00 v 1664.00"/>
-<path d="M 576 -832.00 v 1664.00"/>
-<path d="M 640 -832.00 v 1664.00"/>
-<path d="M 704 -832.00 v 1664.00"/>
-<path d="M 768 -832.00 v 1664.00"/>
-<path d="M 832 -832.00 v 1664.00"/>
-<path d="M 896 -832.00 v 1664.00"/>
-<path d="M 960 -832.00 v 1664.00"/>
-<path d="M 1024 -832.00 v 1664.00"/>
-<path d="M 1088 -832.00 v 1664.00"/>
-<path d="M 1152 -832.00 v 1664.00"/>
-<path d="M 1216 -832.00 v 1664.00"/>
-<path d="M 1280 -832.00 v 1664.00"/>
-<path d="M 1344 -832.00 v 1664.00"/>
-<path d="M 1408 -832.00 v 1664.00"/>
-<path d="M 1472 -832.00 v 1664.00"/>
-<path d="M 1536 -832.00 v 1664.00"/>
-<path d="M 1600 -832.00 v 1664.00"/>
-<path d="M 1664 -832.00 v 1664.00"/>
-<path d="M 1728 -832.00 v 1664.00"/>
-<path d="M 1792 -832.00 v 1664.00"/>
-<path d="M 1856 -832.00 v 1664.00"/>
-<path d="M 1920 -832.00 v 1664.00"/>
-<path d="M 1984 -832.00 v 1664.00"/>
-<path d="M 2048 -832.00 v 1664.00"/>
-<path d="M 2112 -832.00 v 1664.00"/>
-<path d="M 2176 -832.00 v 1664.00"/>
-<path d="M 2240 -832.00 v 1664.00"/>
-<path d="M 2304 -832.00 v 1664.00"/>
-<path d="M 2368 -832.00 v 1664.00"/>
-<path d="M 2432 -832.00 v 1664.00"/>
+<path d="M -384 -1088.00 v 2016.00"/>
+<path d="M -320 -1088.00 v 2016.00"/>
+<path d="M -256 -1088.00 v 2016.00"/>
+<path d="M -192 -1088.00 v 2016.00"/>
+<path d="M -128 -1088.00 v 2016.00"/>
+<path d="M -64 -1088.00 v 2016.00"/>
+<path d="M 0 -1088.00 v 2016.00"/>
+<path d="M 64 -1088.00 v 2016.00"/>
+<path d="M 128 -1088.00 v 2016.00"/>
+<path d="M 192 -1088.00 v 2016.00"/>
+<path d="M 256 -1088.00 v 2016.00"/>
+<path d="M 320 -1088.00 v 2016.00"/>
+<path d="M 384 -1088.00 v 2016.00"/>
+<path d="M 448 -1088.00 v 2016.00"/>
+<path d="M 512 -1088.00 v 2016.00"/>
+<path d="M 576 -1088.00 v 2016.00"/>
+<path d="M 640 -1088.00 v 2016.00"/>
+<path d="M 704 -1088.00 v 2016.00"/>
+<path d="M 768 -1088.00 v 2016.00"/>
+<path d="M 832 -1088.00 v 2016.00"/>
+<path d="M 896 -1088.00 v 2016.00"/>
+<path d="M 960 -1088.00 v 2016.00"/>
+<path d="M 1024 -1088.00 v 2016.00"/>
+<path d="M 1088 -1088.00 v 2016.00"/>
+<path d="M 1152 -1088.00 v 2016.00"/>
+<path d="M 1216 -1088.00 v 2016.00"/>
+<path d="M 1280 -1088.00 v 2016.00"/>
+<path d="M 1344 -1088.00 v 2016.00"/>
+<path d="M 1408 -1088.00 v 2016.00"/>
+<path d="M 1472 -1088.00 v 2016.00"/>
+<path d="M 1536 -1088.00 v 2016.00"/>
+<path d="M 1600 -1088.00 v 2016.00"/>
+<path d="M 1664 -1088.00 v 2016.00"/>
+<path d="M 1728 -1088.00 v 2016.00"/>
+<path d="M 1792 -1088.00 v 2016.00"/>
+<path d="M 1856 -1088.00 v 2016.00"/>
+<path d="M 1920 -1088.00 v 2016.00"/>
+<path d="M 1984 -1088.00 v 2016.00"/>
+<path d="M 2048 -1088.00 v 2016.00"/>
+<path d="M 2112 -1088.00 v 2016.00"/>
+<path d="M 2176 -1088.00 v 2016.00"/>
+<path d="M 2240 -1088.00 v 2016.00"/>
+<path d="M 2304 -1088.00 v 2016.00"/>
+<path d="M 2368 -1088.00 v 2016.00"/>
+<path d="M 2432 -1088.00 v 2016.00"/>
+<path d="M -400.00 -1088 h 2867.20"/>
+<path d="M -400.00 -1024 h 2867.20"/>
+<path d="M -400.00 -960 h 2867.20"/>
+<path d="M -400.00 -896 h 2867.20"/>
 <path d="M -400.00 -832 h 2867.20"/>
 <path d="M -400.00 -768 h 2867.20"/>
 <path d="M -400.00 -704 h 2867.20"/>
@@ -74,6 +78,7 @@
 <path d="M -400.00 704 h 2867.20"/>
 <path d="M -400.00 768 h 2867.20"/>
 <path d="M -400.00 832 h 2867.20"/>
+<path d="M -400.00 896 h 2867.20"/>
 </g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
 <path data-from="D224CC946496E3DE" data-to="79C6E9FC12713C40" d="M 25.00 0.00 L 243.60 0.00" marker-end="url(#nasledie_archeology-before-arrow)"><title>D224CC946496E3DE → 79C6E9FC12713C40</title></path>
 <path data-from="79C6E9FC12713C40" data-to="A39CCB33A472D0AD" d="M 297.40 0.00 L 516.00 0.00" marker-end="url(#nasledie_archeology-before-arrow)"><title>79C6E9FC12713C40 → A39CCB33A472D0AD</title></path>
@@ -104,9 +109,10 @@ ID: D224CC946496E3DE
 Значок: betterarcheology:iron_brush
 Форма: circle
 x=0.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.00" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Железная кисть в деле</text>
 </g>
@@ -116,9 +122,10 @@ ID: 79C6E9FC12713C40
 Значок: minecraft:spyglass
 Форма: scroll
 x=4.25, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Полевой лагерь</text>
 </g>
@@ -128,9 +135,10 @@ ID: A39CCB33A472D0AD
 Значок: betterarcheology:villager_fossil_head
 Форма: circle
 x=8.5, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.00" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первая окаменелость</text>
 </g>
@@ -140,9 +148,10 @@ ID: C4248A7F0011AAF7
 Значок: betterarcheology:archeology_table
 Форма: gear
 x=12.75, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Стол исследователя</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">установлен</text>
@@ -153,9 +162,10 @@ ID: FBF1AAEFC633EC9F
 Значок: minecraft:spyglass
 Форма: scroll
 x=12.75, y=5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Засыпанные руины</text>
 </g>
@@ -165,9 +175,10 @@ ID: 08AC8A56B7F8989F
 Значок: betterarcheology:diamond_brush
 Форма: circle
 x=8.5, y=5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.00" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Алмазная кисть в деле</text>
 </g>
@@ -177,9 +188,10 @@ ID: F4DBD3E2D7478445
 Значок: betterarcheology:sheep_fossil
 Форма: laurel
 x=4.25, y=5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="25.60" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="25.60" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Полная палеонтологическая</text>
 <text class="quest-label" y="65.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">коллекция</text>
@@ -190,9 +202,10 @@ ID: D69937827610767B
 Значок: minecraft:spyglass
 Форма: scroll
 x=2.55, y=-5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">У забытых могил</text>
 </g>
@@ -202,9 +215,10 @@ ID: 88ABBD5262DB0432
 Значок: minecraft:spyglass
 Форма: scroll
 x=6.8, y=-5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Песчаный обелиск</text>
 </g>
@@ -214,9 +228,10 @@ ID: 718927C2E9263AAC
 Значок: minecraft:spyglass
 Форма: scroll
 x=11.05, y=-5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Курган исследователей</text>
 </g>
@@ -226,9 +241,10 @@ ID: A387D38D6E080261
 Значок: minecraft:spyglass
 Форма: scroll
 x=15.3, y=-5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Подземный архив</text>
 </g>
@@ -238,9 +254,10 @@ ID: 2BA185CBF139E3AF
 Значок: betterarcheology:artifact_shards
 Форма: circle
 x=2.55, y=11.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="22.00" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Осколки необычного</text>
 <text class="quest-label" y="62.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">артефакта</text>
@@ -251,9 +268,10 @@ ID: 01C584DB0BC6D1D4
 Значок: betterarcheology:unidentified_artifact
 Форма: star
 x=6.8, y=11.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Неопознанный артефакт</text>
 </g>
@@ -263,9 +281,10 @@ ID: D97CBEDC468A5108
 Значок: betterarcheology:chicken_fossil
 Форма: coin
 x=19.55, y=5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="22.80" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Музейная экспозиция:</text>
 <text class="quest-label" y="62.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">птица</text>
@@ -276,9 +295,10 @@ ID: FCDA95A50F3EBC9F
 Значок: betterarcheology:creeper_fossil
 Форма: coin
 x=23.8, y=5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="22.80" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Музейная экспозиция:</text>
 <text class="quest-label" y="62.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">крипер</text>
@@ -289,9 +309,10 @@ ID: 72A2A054CFCAC69D
 Значок: betterarcheology:guardian_fossil
 Форма: coin
 x=28.05, y=5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="22.80" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Музейная экспозиция:</text>
 <text class="quest-label" y="62.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">страж</text>
@@ -302,9 +323,10 @@ ID: 9F662B92CD52ECF4
 Значок: betterarcheology:wolf_fossil
 Форма: coin
 x=32.3, y=5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.80" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="22.80" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Музейная экспозиция: волк</text>
 </g>
@@ -314,9 +336,10 @@ ID: C71D778A13B77EBF
 Значок: minecraft:mossy_cobblestone
 Форма: scroll
 x=-4.25, y=-5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Каменный круг</text>
 <text class="quest-label" y="62.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">доисторических племён</text>
@@ -327,9 +350,10 @@ ID: 938F14F75C60045E
 Значок: minecraft:terracotta
 Форма: scroll
 x=-4.25, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">19</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Погребённые руины месы</text>
 </g>
@@ -339,9 +363,10 @@ ID: 19745F0470E73C17
 Значок: minecraft:sea_lantern
 Форма: scroll
 x=19.55, y=-5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">20</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Зал забытых светильников</text>
 </g>
@@ -351,9 +376,10 @@ ID: 316AFB9A561BE01E
 Значок: minecraft:vine
 Форма: scroll
 x=19.55, y=-11.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">21</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Храм под джунглями</text>
 </g>
@@ -363,9 +389,10 @@ ID: 88352D47820D40B4
 Значок: minecraft:nautilus_shell
 Форма: scroll
 x=15.3, y=-11.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">22</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Обломки подводной</text>
 <text class="quest-label" y="62.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">цивилизации</text>
@@ -376,9 +403,10 @@ ID: 8F6CAF327167B0A5
 Значок: minecraft:chiseled_bookshelf
 Форма: laurel
 x=36.55, y=5.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="25.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="25.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">23</text>
 <text class="quest-label" y="49.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Большое открытие музея</text>
 </g>

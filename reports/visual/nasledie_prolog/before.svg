@@ -36,7 +36,7 @@ x=0.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="33.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="37.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-27.60 8.60,-11.83 26.25,-8.53 13.91,4.52 16.22,22.33 0.00,14.63 -16.22,22.33 -13.91,4.52 -26.25,-8.53 -8.60,-11.83" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="0.00,-27.60 8.60,-11.83 26.25,-8.53 13.91,4.52 16.22,22.33 0.00,14.63 -16.22,22.33 -13.91,4.52 -26.25,-8.53 -8.60,-11.83" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
 <text class="quest-label" y="51.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Начало летописи</text>
 </g>
@@ -49,7 +49,7 @@ x=3.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.00" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первый инструмент повара</text>
 </g>
@@ -62,7 +62,7 @@ x=6.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Семена другого мира</text>
 </g>
@@ -75,7 +75,7 @@ x=3.0, y=3.0
 Есть изменения</title>
 <circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Рюкзак за плечами</text>
 </g>

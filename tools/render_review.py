@@ -74,7 +74,7 @@ def shared_bounds(before: dict, after: dict) -> tuple[float, float, float, float
 
 def frame(shape: str, radius: float, color: str) -> str:
     """Draw schematic frames, never claim to render FTB custom shape textures."""
-    attrs = f'fill="#152532" stroke="{color}" stroke-width="2.4"'
+    attrs = f'class="quest-frame" fill="#152532" stroke="{color}" stroke-width="2.4"'
     if shape in {"square", "scroll"}:
         rounding = radius * (0.1 if shape == "square" else 0.35)
         return f'<rect x="{-radius:.2f}" y="{-radius:.2f}" width="{2*radius:.2f}" height="{2*radius:.2f}" rx="{rounding:.2f}" {attrs}/>'
@@ -99,7 +99,7 @@ def frame(shape: str, radius: float, color: str) -> str:
     return f'<circle r="{radius:.2f}" {attrs}/>'
 
 
-def svg_for(chapter: dict, other: dict, bounds: tuple, prefix: str, numbers: dict) -> str:
+def svg_for(chapter: dict, other: dict, bounds: tuple, prefix: str, numbers: dict, palette=None) -> str:
     """Use real coordinates and direct dependency lines, with no auto-layout."""
     esc = html.escape
     quests, other_quests = quest_map(chapter), quest_map(other)
@@ -145,7 +145,7 @@ def svg_for(chapter: dict, other: dict, bounds: tuple, prefix: str, numbers: dic
         radius = 20 * float(quest.get("size", 1))
         shape = str(quest.get("shape", chapter.get("default_quest_shape", "circle")))
         changed = other_quests.get(ident) != quest
-        color = "#83b8ca" if quest.get("optional", False) else "#e8c97d"
+        color = palette['properties']['quest_not_started_color'] if palette else ("#83b8ca" if quest.get("optional", False) else "#e8c97d")
         title = plain(quest.get("title", ident))
         icon = str(quest.get("icon", "не задан явно"))
         lines = textwrap.wrap(title, width=25, break_long_words=False) or [ident]
@@ -173,10 +173,12 @@ HTML = r'''<!doctype html>
 </style></head><body>
 <header><h1>Наследие нового мира · сравнение глав</h1>
 <p class="notice"><strong>Статическая схема из SNBT. Это не Minecraft и не скриншот FTB Quests.</strong></p>
-<p>Настоящие координаты, размеры и зависимости. Номера заменяют значки предметов; рамки условны. Цвет: золотой — без optional, голубой — с optional. Эти поля не доказывают обязательность в игре. Пунктирное оранжевое кольцо — изменённая запись.</p>
+<p>Настоящие координаты, размеры и зависимости. Номера заменяют значки предметов; рамки условны. Слева диагностические цвета: золотой — без optional, голубой — с optional. Справа — новая палитра главы с примером выбранного состояния, а не реальный прогресс игроков. Пунктирное оранжевое кольцо — изменённая запись.</p>
 <details><summary>Источники и воспроизводимость</summary><p class="meta" id="source-info"></p></details></header>
 <main>
 <div class="toolbar"><label for="chapter">Глава</label><select id="chapter"></select></div>
+<div class="toolbar"><label for="quest-state">Пример состояния</label><select id="quest-state"><option value="not_started">Доступен</option><option value="started">Начат</option><option value="completed">Выполнен</option><option value="locked">Закрыт</option></select><span id="palette-name"></span></div>
+<div id="palette-swatches" class="toolbar"></div>
 <div class="summary" id="summary"></div>
 <div class="toolbar"><button id="fit">Вписать обе схемы</button><button id="zoom-out" aria-label="Уменьшить масштаб">−</button><button id="zoom-in" aria-label="Увеличить масштаб">+</button><button id="actual">100%</button><span id="scale" class="meta"></span><label><input id="labels" type="checkbox" checked> Подписи</label><label><input id="sync-pan" type="checkbox" checked> Вместе перемещать</label></div>
 <p class="legend">Единица SNBT = 64 px при 100%. Общие границы и одинаковый масштаб у пары; сравнение не подгоняет главы по отдельности. Перетаскивайте пустое место или пользуйтесь полосами прокрутки. Скрытые в данных линии показаны пунктиром для аудита.</p>
@@ -208,6 +210,9 @@ function populateQuests(){const [a,b]=getMaps(),term=$('search').value.trim().to
 function applyScale(next,center=true){const old=scale;scale=Math.max(.04,Math.min(4,next));panels.forEach(panel=>{const svg=panel.querySelector('svg'),x=(panel.scrollLeft+panel.clientWidth/2)/old,y=(panel.scrollTop+panel.clientHeight/2)/old;svg.style.width=current.bounds[2]*scale+'px';svg.style.height=current.bounds[3]*scale+'px';if(center){panel.scrollLeft=x*scale-panel.clientWidth/2;panel.scrollTop=y*scale-panel.clientHeight/2;}});$('scale').textContent=Math.round(scale*100)+'% · одинаково до / после';}
 function fit(){const target=Math.min(...panels.map(panel=>Math.min((panel.clientWidth-18)/current.bounds[2],(panel.clientHeight-18)/current.bounds[3])));applyScale(target,false);panels.forEach(panel=>{panel.scrollLeft=0;panel.scrollTop=0;});}
 function loadChapter(){current=DATA.chapters[Number($('chapter').value)];selected=null;$('search').value='';panels[0].innerHTML=current.before_svg;panels[1].innerHTML=current.after_svg;$('before-title').textContent='Alpha 42 · '+clean(current.before.title||'глава отсутствует');$('after-title').textContent='Рабочие файлы · '+clean(current.after.title||'глава отсутствует');const [a,b]=getMaps(),changed=current.ids.filter(id=>!equal(a[id],b[id])).length;$('summary').innerHTML=['Квесты: '+Object.keys(a).length+' → '+Object.keys(b).length,'Изменённых записей: '+changed,'Задачи: '+count(current.before,'tasks')+' → '+count(current.after,'tasks'),'Награды: '+count(current.before,'rewards')+' → '+count(current.after,'rewards')].map(text=>'<span>'+esc(text)+'</span>').join('');const settings=chapter=>Object.fromEntries(Object.entries(chapter).filter(([key])=>key!=='quests'));$('before-settings').textContent=JSON.stringify(settings(current.before),null,2);$('after-settings').textContent=JSON.stringify(settings(current.after),null,2);$('chapter-notes').textContent='Файл: '+current.file+'. Связи между главами, quest_links и декоративные изображения не рисуются; исходные данные доступны ниже. Размеры и формы узлов показаны условно.';populateQuests();requestAnimationFrame(fit);history.replaceState(null,'','#'+current.slug);}
+function applyPalette(){if(!current.palette)return;const p=current.palette.properties,state=$('quest-state').value;$('palette-name').textContent=current.palette.name;$('after').querySelectorAll('.quest-frame').forEach(el=>el.setAttribute('stroke',p['quest_'+state+'_color']));$('after').querySelector('.dependencies').setAttribute('stroke',p[state==='completed'?'dependency_line_completed_color':'dependency_line_uncompleted_color']);$('palette-swatches').innerHTML=[['locked','Закрыт'],['not_started','Доступен'],['started','Начат'],['completed','Выполнен']].map(([s,label])=>'<span style="border:2px solid '+p['quest_'+s+'_color']+';border-radius:6px;padding:.35rem .6rem">'+label+' <code>'+p['quest_'+s+'_color']+'</code></span>').join('');}
+$('quest-state').addEventListener('change',applyPalette);
+$('chapter').addEventListener('change',()=>requestAnimationFrame(applyPalette));
 function count(chapter,key){return (chapter.quests||[]).reduce((n,q)=>n+(q[key]||[]).length,0);}
 $('source-info').textContent='База: '+DATA.baseline+' · рабочий HEAD: '+DATA.head+' · SHA256 прочитанных SNBT: '+DATA.source_digest+'. Снимок включает несохранённые в Git изменения файлов.';
 DATA.chapters.forEach((chapter,index)=>{const option=document.createElement('option');option.value=index;option.textContent=String(index+1).padStart(2,'0')+' · '+clean(chapter.after.title||chapter.before.title);$('chapter').append(option);});
@@ -216,11 +221,14 @@ $('chapter').addEventListener('change',loadChapter);$('search').addEventListener
 $('locate').onclick=()=>{if(!selected)return;const maps=getMaps();panels.forEach((panel,index)=>{const quest=maps[index][selected];if(!quest)return;panel.scrollLeft=(Number(quest.x||0)*64-current.bounds[0])*scale-panel.clientWidth/2;panel.scrollTop=(Number(quest.y||0)*64-current.bounds[1])*scale-panel.clientHeight/2;});};
 panels.forEach((panel,index)=>{let drag=null,suppressClick=false;panel.addEventListener('click',event=>{if(suppressClick){suppressClick=false;return;}const node=event.target.closest('[data-quest-id]');if(node)selectQuest(node.dataset.questId);});panel.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){const node=event.target.closest('[data-quest-id]');if(node){event.preventDefault();selectQuest(node.dataset.questId);}}});panel.addEventListener('pointerdown',event=>{if(event.button!==0||event.target.closest('[data-quest-id]'))return;drag={x:event.clientX,y:event.clientY,left:panel.scrollLeft,top:panel.scrollTop};panel.setPointerCapture(event.pointerId);panel.classList.add('dragging');});panel.addEventListener('pointermove',event=>{if(!drag)return;const dx=event.clientX-drag.x,dy=event.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>4)suppressClick=true;panel.scrollLeft=drag.left-dx;panel.scrollTop=drag.top-dy;});const stop=()=>{drag=null;panel.classList.remove('dragging');};panel.addEventListener('pointerup',stop);panel.addEventListener('pointercancel',stop);panel.addEventListener('scroll',()=>{if(!$('sync-pan').checked||scrolling)return;scrolling=true;panels[1-index].scrollLeft=panel.scrollLeft;panels[1-index].scrollTop=panel.scrollTop;requestAnimationFrame(()=>scrolling=false);});});
 loadChapter();
+applyPalette();
 </script></body></html>
 '''
 
 
 def build(root: Path, baseline: str, output: Path) -> dict:
+    palette_path = root / "reviews/chapter_palettes.json"
+    palettes = json.loads(palette_path.read_text())['chapters'] if palette_path.exists() else {}
     baseline = git(root, "rev-parse", "--verify", baseline + "^{commit}").strip()
     head = git(root, "rev-parse", "HEAD").strip()
     old_files = git(root, "ls-tree", "-r", "--name-only", baseline, "--", CHAPTER_DIR.as_posix()).splitlines()
@@ -245,10 +253,13 @@ def build(root: Path, baseline: str, output: Path) -> dict:
                    "before_sha256": hashlib.sha256(before_text.encode("utf-8")).hexdigest(),
                    "after_sha256": hashlib.sha256(after_text.encode("utf-8")).hexdigest()}
         chapter["before_svg"] = svg_for(before, after, bounds, slug + "-before", numbers)
-        chapter["after_svg"] = svg_for(after, before, bounds, slug + "-after", numbers)
+        chapter["palette"] = palettes.get(slug)
+        chapter["after_svg"] = svg_for(after, before, bounds, slug + "-after", numbers, chapter["palette"])
         chapters.append(chapter)
     chapters.sort(key=lambda entry: (entry["after"].get("order_index", entry["before"].get("order_index", 0)), entry["slug"]))
     data = {"baseline": baseline, "head": head, "source_digest": digest.hexdigest(),
+            "theme_sha256": hashlib.sha256((root/'kubejs/assets/ftbquests/ftb_quests_theme.txt').read_bytes()).hexdigest(),
+            "palette_design_sha256": hashlib.sha256(palette_path.read_bytes()).hexdigest() if palette_path.exists() else None,
             "pixels_per_unit": PIXELS_PER_UNIT, "chapters": chapters}
     output.mkdir(parents=True, exist_ok=True)
     for chapter in chapters:

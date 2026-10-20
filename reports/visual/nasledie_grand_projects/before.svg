@@ -1,68 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -448.00 2560.00 1216.00" width="2560.00" height="1216.00" role="img" aria-labelledby="nasledie_grand_projects-before-title" data-quest-count="26">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-608.00 -1088.00 3040.00 1856.00" width="3040.00" height="1856.00" role="img" aria-labelledby="nasledie_grand_projects-before-title" data-quest-count="26">
 <title id="nasledie_grand_projects-before-title">Великие проекты — Архитекторы нового мира — схема SNBT, не скриншот игры</title>
 <defs><marker id="nasledie_grand_projects-before-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
 <g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
-<path d="M -128 -448.00 v 1216.00"/>
-<path d="M -64 -448.00 v 1216.00"/>
-<path d="M 0 -448.00 v 1216.00"/>
-<path d="M 64 -448.00 v 1216.00"/>
-<path d="M 128 -448.00 v 1216.00"/>
-<path d="M 192 -448.00 v 1216.00"/>
-<path d="M 256 -448.00 v 1216.00"/>
-<path d="M 320 -448.00 v 1216.00"/>
-<path d="M 384 -448.00 v 1216.00"/>
-<path d="M 448 -448.00 v 1216.00"/>
-<path d="M 512 -448.00 v 1216.00"/>
-<path d="M 576 -448.00 v 1216.00"/>
-<path d="M 640 -448.00 v 1216.00"/>
-<path d="M 704 -448.00 v 1216.00"/>
-<path d="M 768 -448.00 v 1216.00"/>
-<path d="M 832 -448.00 v 1216.00"/>
-<path d="M 896 -448.00 v 1216.00"/>
-<path d="M 960 -448.00 v 1216.00"/>
-<path d="M 1024 -448.00 v 1216.00"/>
-<path d="M 1088 -448.00 v 1216.00"/>
-<path d="M 1152 -448.00 v 1216.00"/>
-<path d="M 1216 -448.00 v 1216.00"/>
-<path d="M 1280 -448.00 v 1216.00"/>
-<path d="M 1344 -448.00 v 1216.00"/>
-<path d="M 1408 -448.00 v 1216.00"/>
-<path d="M 1472 -448.00 v 1216.00"/>
-<path d="M 1536 -448.00 v 1216.00"/>
-<path d="M 1600 -448.00 v 1216.00"/>
-<path d="M 1664 -448.00 v 1216.00"/>
-<path d="M 1728 -448.00 v 1216.00"/>
-<path d="M 1792 -448.00 v 1216.00"/>
-<path d="M 1856 -448.00 v 1216.00"/>
-<path d="M 1920 -448.00 v 1216.00"/>
-<path d="M 1984 -448.00 v 1216.00"/>
-<path d="M 2048 -448.00 v 1216.00"/>
-<path d="M 2112 -448.00 v 1216.00"/>
-<path d="M 2176 -448.00 v 1216.00"/>
-<path d="M 2240 -448.00 v 1216.00"/>
-<path d="M 2304 -448.00 v 1216.00"/>
-<path d="M 2368 -448.00 v 1216.00"/>
-<path d="M 2432 -448.00 v 1216.00"/>
-<path d="M -128.00 -448 h 2560.00"/>
-<path d="M -128.00 -384 h 2560.00"/>
-<path d="M -128.00 -320 h 2560.00"/>
-<path d="M -128.00 -256 h 2560.00"/>
-<path d="M -128.00 -192 h 2560.00"/>
-<path d="M -128.00 -128 h 2560.00"/>
-<path d="M -128.00 -64 h 2560.00"/>
-<path d="M -128.00 0 h 2560.00"/>
-<path d="M -128.00 64 h 2560.00"/>
-<path d="M -128.00 128 h 2560.00"/>
-<path d="M -128.00 192 h 2560.00"/>
-<path d="M -128.00 256 h 2560.00"/>
-<path d="M -128.00 320 h 2560.00"/>
-<path d="M -128.00 384 h 2560.00"/>
-<path d="M -128.00 448 h 2560.00"/>
-<path d="M -128.00 512 h 2560.00"/>
-<path d="M -128.00 576 h 2560.00"/>
-<path d="M -128.00 640 h 2560.00"/>
-<path d="M -128.00 704 h 2560.00"/>
-<path d="M -128.00 768 h 2560.00"/>
+<path d="M -576 -1088.00 v 1856.00"/>
+<path d="M -512 -1088.00 v 1856.00"/>
+<path d="M -448 -1088.00 v 1856.00"/>
+<path d="M -384 -1088.00 v 1856.00"/>
+<path d="M -320 -1088.00 v 1856.00"/>
+<path d="M -256 -1088.00 v 1856.00"/>
+<path d="M -192 -1088.00 v 1856.00"/>
+<path d="M -128 -1088.00 v 1856.00"/>
+<path d="M -64 -1088.00 v 1856.00"/>
+<path d="M 0 -1088.00 v 1856.00"/>
+<path d="M 64 -1088.00 v 1856.00"/>
+<path d="M 128 -1088.00 v 1856.00"/>
+<path d="M 192 -1088.00 v 1856.00"/>
+<path d="M 256 -1088.00 v 1856.00"/>
+<path d="M 320 -1088.00 v 1856.00"/>
+<path d="M 384 -1088.00 v 1856.00"/>
+<path d="M 448 -1088.00 v 1856.00"/>
+<path d="M 512 -1088.00 v 1856.00"/>
+<path d="M 576 -1088.00 v 1856.00"/>
+<path d="M 640 -1088.00 v 1856.00"/>
+<path d="M 704 -1088.00 v 1856.00"/>
+<path d="M 768 -1088.00 v 1856.00"/>
+<path d="M 832 -1088.00 v 1856.00"/>
+<path d="M 896 -1088.00 v 1856.00"/>
+<path d="M 960 -1088.00 v 1856.00"/>
+<path d="M 1024 -1088.00 v 1856.00"/>
+<path d="M 1088 -1088.00 v 1856.00"/>
+<path d="M 1152 -1088.00 v 1856.00"/>
+<path d="M 1216 -1088.00 v 1856.00"/>
+<path d="M 1280 -1088.00 v 1856.00"/>
+<path d="M 1344 -1088.00 v 1856.00"/>
+<path d="M 1408 -1088.00 v 1856.00"/>
+<path d="M 1472 -1088.00 v 1856.00"/>
+<path d="M 1536 -1088.00 v 1856.00"/>
+<path d="M 1600 -1088.00 v 1856.00"/>
+<path d="M 1664 -1088.00 v 1856.00"/>
+<path d="M 1728 -1088.00 v 1856.00"/>
+<path d="M 1792 -1088.00 v 1856.00"/>
+<path d="M 1856 -1088.00 v 1856.00"/>
+<path d="M 1920 -1088.00 v 1856.00"/>
+<path d="M 1984 -1088.00 v 1856.00"/>
+<path d="M 2048 -1088.00 v 1856.00"/>
+<path d="M 2112 -1088.00 v 1856.00"/>
+<path d="M 2176 -1088.00 v 1856.00"/>
+<path d="M 2240 -1088.00 v 1856.00"/>
+<path d="M 2304 -1088.00 v 1856.00"/>
+<path d="M 2368 -1088.00 v 1856.00"/>
+<path d="M 2432 -1088.00 v 1856.00"/>
+<path d="M -608.00 -1088 h 3040.00"/>
+<path d="M -608.00 -1024 h 3040.00"/>
+<path d="M -608.00 -960 h 3040.00"/>
+<path d="M -608.00 -896 h 3040.00"/>
+<path d="M -608.00 -832 h 3040.00"/>
+<path d="M -608.00 -768 h 3040.00"/>
+<path d="M -608.00 -704 h 3040.00"/>
+<path d="M -608.00 -640 h 3040.00"/>
+<path d="M -608.00 -576 h 3040.00"/>
+<path d="M -608.00 -512 h 3040.00"/>
+<path d="M -608.00 -448 h 3040.00"/>
+<path d="M -608.00 -384 h 3040.00"/>
+<path d="M -608.00 -320 h 3040.00"/>
+<path d="M -608.00 -256 h 3040.00"/>
+<path d="M -608.00 -192 h 3040.00"/>
+<path d="M -608.00 -128 h 3040.00"/>
+<path d="M -608.00 -64 h 3040.00"/>
+<path d="M -608.00 0 h 3040.00"/>
+<path d="M -608.00 64 h 3040.00"/>
+<path d="M -608.00 128 h 3040.00"/>
+<path d="M -608.00 192 h 3040.00"/>
+<path d="M -608.00 256 h 3040.00"/>
+<path d="M -608.00 320 h 3040.00"/>
+<path d="M -608.00 384 h 3040.00"/>
+<path d="M -608.00 448 h 3040.00"/>
+<path d="M -608.00 512 h 3040.00"/>
+<path d="M -608.00 576 h 3040.00"/>
+<path d="M -608.00 640 h 3040.00"/>
+<path d="M -608.00 704 h 3040.00"/>
+<path d="M -608.00 768 h 3040.00"/>
 </g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
 <path data-from="FD0417DEF7F45B46" data-to="A54DE6FD7E31FCAD" d="M 28.60 0.00 L 226.80 0.00" marker-end="url(#nasledie_grand_projects-before-arrow)"><title>FD0417DEF7F45B46 → A54DE6FD7E31FCAD</title></path>
 <path data-from="A54DE6FD7E31FCAD" data-to="001DB3A2FEAEBBD6" d="M 282.20 0.00 L 483.20 0.00" marker-end="url(#nasledie_grand_projects-before-arrow)"><title>A54DE6FD7E31FCAD → 001DB3A2FEAEBBD6</title></path>
@@ -96,9 +113,10 @@ ID: FD0417DEF7F45B46
 Значок: create:stressometer
 Форма: star
 x=0.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Мастерская контроля</text>
 <text class="quest-label" y="65.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">нагрузки</text>
@@ -109,9 +127,10 @@ ID: A54DE6FD7E31FCAD
 Значок: create:clockwork_bearing
 Форма: gear
 x=4.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Автоматический часовой</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">узел</text>
@@ -122,9 +141,10 @@ ID: 001DB3A2FEAEBBD6
 Значок: create:display_link
 Форма: square
 x=8.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Диспетчерский</text>
 <text class="quest-label" y="62.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">информационный стенд</text>
@@ -135,9 +155,10 @@ ID: 33706B9F6B93BA33
 Значок: create:packager
 Форма: gear
 x=12.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Автоматическая упаковка</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">заказов</text>
@@ -148,9 +169,10 @@ ID: C32715AF6479C057
 Значок: create:stock_ticker
 Форма: coin
 x=16.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.80" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.80" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Учёт складского спроса</text>
 </g>
@@ -160,9 +182,10 @@ ID: 9401D666941DF3EB
 Значок: create:package_frogport
 Форма: gear
 x=20.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Пересылка посылки</text>
 </g>
@@ -172,9 +195,10 @@ ID: 6F6CBC1AF7ABE154
 Значок: create:red_table_cloth
 Форма: coin
 x=24.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.80" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="22.80" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Торговая точка</text>
 <text class="quest-label" y="62.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">автоматизации</text>
@@ -185,9 +209,10 @@ ID: 9B721B53DDC184D8
 Значок: create:factory_gauge
 Форма: square
 x=4.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Панель промышленных</text>
 <text class="quest-label" y="62.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">показателей</text>
@@ -198,9 +223,10 @@ ID: 13293A60CC292DB9
 Значок: create:mechanical_arm
 Форма: gear
 x=8.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Многоадресная выдача</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">материалов</text>
@@ -211,9 +237,10 @@ ID: F24A5CA9571CE25A
 Значок: create:linked_controller
 Форма: gear
 x=12.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Удалённый пульт</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">управления</text>
@@ -224,9 +251,10 @@ ID: 545EE0ABAC59400C
 Значок: create:item_drain
 Форма: gear
 x=16.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Управление потоком</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">жидкости</text>
@@ -237,9 +265,10 @@ ID: 6555136BC726B91D
 Значок: create:steam_whistle
 Форма: shield
 x=20.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Паровая тревожная система</text>
 </g>
@@ -249,9 +278,10 @@ ID: D21A9F7F45B8BAA3
 Значок: create:weighted_ejector
 Форма: star
 x=24.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="33.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="37.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-27.60 8.60,-11.83 26.25,-8.53 13.91,4.52 16.22,22.33 0.00,14.63 -16.22,22.33 -13.91,4.52 -26.25,-8.53 -8.60,-11.83" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="0.00,-27.60 8.60,-11.83 26.25,-8.53 13.91,4.52 16.22,22.33 0.00,14.63 -16.22,22.33 -13.91,4.52 -26.25,-8.53 -8.60,-11.83" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
 <text class="quest-label" y="51.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Высокопроизводительная</text>
 <text class="quest-label" y="67.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">отгрузка</text>
@@ -262,9 +292,10 @@ ID: 481A6638D3700BB6
 Значок: create:cuckoo_clock
 Форма: star
 x=4.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Музей удивительных</text>
 <text class="quest-label" y="65.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">механизмов</text>
@@ -275,9 +306,10 @@ ID: D1E72065750CAA2D
 Значок: create:steam_whistle
 Форма: star
 x=8.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Органная мастерская</text>
 </g>
@@ -287,9 +319,10 @@ ID: 18D464DFE627EAFF
 Значок: minecraft:jukebox
 Форма: gear
 x=12.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Музыкальная рука</text>
 </g>
@@ -299,9 +332,10 @@ ID: ADF4DE4021A4DDD2
 Значок: create:haunted_bell
 Форма: square
 x=16.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
 <text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Тревожный колокол</text>
 </g>
@@ -311,9 +345,10 @@ ID: 6318A6A61AD56A13
 Значок: create:chest_minecart_contraption
 Форма: gear
 x=28.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Механическая разгрузка</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">вагона</text>
@@ -324,9 +359,10 @@ ID: 167ACBD7508350FA
 Значок: minecraft:chipped_anvil
 Форма: shield
 x=32.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">19</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Ремонт железнодорожной</text>
 <text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">линии</text>
@@ -337,9 +373,10 @@ ID: 2D51B2D4E3D0E0DF
 Значок: create:water_wheel
 Форма: shield
 x=20.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">20</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Кинетика раскалённого</text>
 <text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">мира</text>
@@ -350,9 +387,10 @@ ID: 35271CE5B6428CAF
 Значок: create:deployer
 Форма: star
 x=36.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">21</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Максим и Юра — два</text>
 <text class="quest-label" y="65.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">инженера</text>
@@ -363,9 +401,10 @@ ID: 02E8F7C592478C40
 Значок: create:copper_backtank
 Форма: gear
 x=0.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">22</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Автономное обеспечение</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">воздухом</text>
@@ -376,9 +415,10 @@ ID: C3F2CF43CEF0F671
 Значок: create:mechanical_arm
 Форма: gear
 x=12.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">23</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Механическая подача к</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">горелкам</text>
@@ -389,9 +429,10 @@ ID: EAD9E4891242F10A
 Значок: create:cardboard_chestplate
 Форма: gear
 x=24.0, y=-5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">24</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Картонная маскировка</text>
 </g>
@@ -401,9 +442,10 @@ ID: E7F2853B8418F46D
 Значок: create:chute
 Форма: gear
 x=28.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">25</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Посылка с разгрузкой</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">через жёлоб</text>
@@ -414,9 +456,10 @@ ID: 9310EF94F77C64F4
 Значок: create:rope_pulley
 Форма: shield
 x=4.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">26</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Глубокая шахта: 200</text>
 <text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">блоков</text>

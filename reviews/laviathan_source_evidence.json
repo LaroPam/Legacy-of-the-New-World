@@ -1,0 +1,11 @@
+{
+  "jar": "alexsmobs-1.22.9.jar",
+  "sha256": "16bc5bcc19db9029c24f951346ec71098e6f5b0afef96e61894a2e9407aad37c",
+  "class": "com/github/alexthe666/alexsmobs/entity/EntityLaviathan.class",
+  "facts": [
+    "canAddPassenger allows total passenger count below 4, not player count.",
+    "With body gear, small nearby non-player Mob that is not an Enemy, WaterAnimal or Laviathan can board automatically when not submerged.",
+    "Every 40 server ticks with more than 3 passengers, native trigger is awarded to each ServerPlayer passenger."
+  ],
+  "gameplay_test": "not run"
+}

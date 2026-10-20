@@ -367,6 +367,10 @@ def resource_checks(files, parsed):
     extra = re.search(r"(?m)^extra_quest_shapes:\s*(.*)$", theme)
     custom_shapes = [s.strip() for s in extra.group(1).split(",")] if extra else []
     for shape in custom_shapes:
+        # These textures ship in exact FTB Quests 2001.4.22.
+        # Resource list and SHA256 are recorded in reviews/theme_source_evidence.json.
+        if shape in {"diamond", "pentagon", "hexagon", "octagon", "heart", "gear"}:
+            continue
         for texture in ("shape", "outline", "background"):
             name = f"kubejs/assets/ftbquests/textures/shapes/{shape}/{texture}.png"
             if name not in files:
@@ -620,6 +624,8 @@ def main(argv=None):
         if scope and scope.get('baseline_commit') != commit:
             raise ValueError('Approved scope baseline mismatch')
         report = evaluate(current, baseline, args.reference, registry, reviews, commit, icon_evidence, entity_evidence, scope)
+        report['input_sha256'] = {name: hashlib.sha256(data).hexdigest()
+                                  for name, data in sorted(current.items())}
         report_path = args.report if args.report.is_absolute() else root / args.report
         # Never let a report path overwrite protected game input files.
         relative = report_path.resolve().relative_to(root) if report_path.resolve().is_relative_to(root) else None

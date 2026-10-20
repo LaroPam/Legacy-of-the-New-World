@@ -1,43 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -544.00 2272.00 1408.00" width="2272.00" height="1408.00" role="img" aria-labelledby="nasledie_ocean-before-title" data-quest-count="21">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -1088.00 2272.00 2016.00" width="2272.00" height="2016.00" role="img" aria-labelledby="nasledie_ocean-before-title" data-quest-count="21">
 <title id="nasledie_ocean-before-title">Бездна и её сокровища — Морская академия — схема SNBT, не скриншот игры</title>
 <defs><marker id="nasledie_ocean-before-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
 <g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
-<path d="M -128 -544.00 v 1408.00"/>
-<path d="M -64 -544.00 v 1408.00"/>
-<path d="M 0 -544.00 v 1408.00"/>
-<path d="M 64 -544.00 v 1408.00"/>
-<path d="M 128 -544.00 v 1408.00"/>
-<path d="M 192 -544.00 v 1408.00"/>
-<path d="M 256 -544.00 v 1408.00"/>
-<path d="M 320 -544.00 v 1408.00"/>
-<path d="M 384 -544.00 v 1408.00"/>
-<path d="M 448 -544.00 v 1408.00"/>
-<path d="M 512 -544.00 v 1408.00"/>
-<path d="M 576 -544.00 v 1408.00"/>
-<path d="M 640 -544.00 v 1408.00"/>
-<path d="M 704 -544.00 v 1408.00"/>
-<path d="M 768 -544.00 v 1408.00"/>
-<path d="M 832 -544.00 v 1408.00"/>
-<path d="M 896 -544.00 v 1408.00"/>
-<path d="M 960 -544.00 v 1408.00"/>
-<path d="M 1024 -544.00 v 1408.00"/>
-<path d="M 1088 -544.00 v 1408.00"/>
-<path d="M 1152 -544.00 v 1408.00"/>
-<path d="M 1216 -544.00 v 1408.00"/>
-<path d="M 1280 -544.00 v 1408.00"/>
-<path d="M 1344 -544.00 v 1408.00"/>
-<path d="M 1408 -544.00 v 1408.00"/>
-<path d="M 1472 -544.00 v 1408.00"/>
-<path d="M 1536 -544.00 v 1408.00"/>
-<path d="M 1600 -544.00 v 1408.00"/>
-<path d="M 1664 -544.00 v 1408.00"/>
-<path d="M 1728 -544.00 v 1408.00"/>
-<path d="M 1792 -544.00 v 1408.00"/>
-<path d="M 1856 -544.00 v 1408.00"/>
-<path d="M 1920 -544.00 v 1408.00"/>
-<path d="M 1984 -544.00 v 1408.00"/>
-<path d="M 2048 -544.00 v 1408.00"/>
-<path d="M 2112 -544.00 v 1408.00"/>
+<path d="M -128 -1088.00 v 2016.00"/>
+<path d="M -64 -1088.00 v 2016.00"/>
+<path d="M 0 -1088.00 v 2016.00"/>
+<path d="M 64 -1088.00 v 2016.00"/>
+<path d="M 128 -1088.00 v 2016.00"/>
+<path d="M 192 -1088.00 v 2016.00"/>
+<path d="M 256 -1088.00 v 2016.00"/>
+<path d="M 320 -1088.00 v 2016.00"/>
+<path d="M 384 -1088.00 v 2016.00"/>
+<path d="M 448 -1088.00 v 2016.00"/>
+<path d="M 512 -1088.00 v 2016.00"/>
+<path d="M 576 -1088.00 v 2016.00"/>
+<path d="M 640 -1088.00 v 2016.00"/>
+<path d="M 704 -1088.00 v 2016.00"/>
+<path d="M 768 -1088.00 v 2016.00"/>
+<path d="M 832 -1088.00 v 2016.00"/>
+<path d="M 896 -1088.00 v 2016.00"/>
+<path d="M 960 -1088.00 v 2016.00"/>
+<path d="M 1024 -1088.00 v 2016.00"/>
+<path d="M 1088 -1088.00 v 2016.00"/>
+<path d="M 1152 -1088.00 v 2016.00"/>
+<path d="M 1216 -1088.00 v 2016.00"/>
+<path d="M 1280 -1088.00 v 2016.00"/>
+<path d="M 1344 -1088.00 v 2016.00"/>
+<path d="M 1408 -1088.00 v 2016.00"/>
+<path d="M 1472 -1088.00 v 2016.00"/>
+<path d="M 1536 -1088.00 v 2016.00"/>
+<path d="M 1600 -1088.00 v 2016.00"/>
+<path d="M 1664 -1088.00 v 2016.00"/>
+<path d="M 1728 -1088.00 v 2016.00"/>
+<path d="M 1792 -1088.00 v 2016.00"/>
+<path d="M 1856 -1088.00 v 2016.00"/>
+<path d="M 1920 -1088.00 v 2016.00"/>
+<path d="M 1984 -1088.00 v 2016.00"/>
+<path d="M 2048 -1088.00 v 2016.00"/>
+<path d="M 2112 -1088.00 v 2016.00"/>
+<path d="M -128.00 -1088 h 2272.00"/>
+<path d="M -128.00 -1024 h 2272.00"/>
+<path d="M -128.00 -960 h 2272.00"/>
+<path d="M -128.00 -896 h 2272.00"/>
+<path d="M -128.00 -832 h 2272.00"/>
+<path d="M -128.00 -768 h 2272.00"/>
+<path d="M -128.00 -704 h 2272.00"/>
+<path d="M -128.00 -640 h 2272.00"/>
+<path d="M -128.00 -576 h 2272.00"/>
 <path d="M -128.00 -512 h 2272.00"/>
 <path d="M -128.00 -448 h 2272.00"/>
 <path d="M -128.00 -384 h 2272.00"/>
@@ -60,6 +69,7 @@
 <path d="M -128.00 704 h 2272.00"/>
 <path d="M -128.00 768 h 2272.00"/>
 <path d="M -128.00 832 h 2272.00"/>
+<path d="M -128.00 896 h 2272.00"/>
 </g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
 <path data-from="A68C40E37C45E3BF" data-to="D5B701274F41916E" d="M 28.60 0.00 L 259.60 0.00" marker-end="url(#nasledie_ocean-before-arrow)"><title>A68C40E37C45E3BF → D5B701274F41916E</title></path>
 <path data-from="D5B701274F41916E" data-to="F805A24AC6136435" d="M 313.40 0.00 L 546.00 0.00" marker-end="url(#nasledie_ocean-before-arrow)"><title>D5B701274F41916E → F805A24AC6136435</title></path>
@@ -88,9 +98,10 @@ ID: A68C40E37C45E3BF
 Значок: minecraft:heart_of_the_sea
 Форма: star
 x=0.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">За горизонтом мелководья</text>
 </g>
@@ -100,9 +111,10 @@ ID: D5B701274F41916E
 Значок: minecraft:heart_of_the_sea
 Форма: scroll
 x=4.5, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первое кораблекрушение</text>
 </g>
@@ -112,9 +124,10 @@ ID: F805A24AC6136435
 Значок: minecraft:heart_of_the_sea
 Форма: shield
 x=9.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Патруль глубины</text>
 </g>
@@ -124,9 +137,10 @@ ID: 76F24423146B2BF8
 Значок: minecraft:heart_of_the_sea
 Форма: scroll
 x=13.5, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Монумент YUNG</text>
 </g>
@@ -136,9 +150,10 @@ ID: D8C373CD97382003
 Значок: minecraft:heart_of_the_sea
 Форма: shield
 x=18.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первый страж монумента</text>
 </g>
@@ -148,9 +163,10 @@ ID: 7561C2A49CE25872
 Значок: minecraft:heart_of_the_sea
 Форма: crown
 x=22.5, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="33.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="37.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-27.20,-16.32 -12.24,0.00 0.00,-27.20 12.24,0.00 27.20,-16.32 19.04,19.04 -19.04,19.04" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="-27.20,-16.32 -12.24,0.00 0.00,-27.20 12.24,0.00 27.20,-16.32 19.04,19.04 -19.04,19.04" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
 <text class="quest-label" y="51.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Владыка глубин</text>
 </g>
@@ -160,9 +176,10 @@ ID: F70436662909AF80
 Значок: minecraft:heart_of_the_sea
 Форма: star
 x=22.5, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Настоящее сердце океана</text>
 </g>
@@ -172,9 +189,10 @@ ID: A6C3DFEC8B6B5AA3
 Значок: minecraft:conduit
 Форма: star
 x=18.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
 <text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Действующий проводник</text>
 </g>
@@ -184,9 +202,10 @@ ID: E89F59FCDCE5619F
 Значок: minecraft:heart_of_the_sea
 Форма: scroll
 x=13.5, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Архив затопленного</text>
 <text class="quest-label" y="62.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">сооружения</text>
@@ -197,9 +216,10 @@ ID: CA1FCBC43099A918
 Значок: create:copper_diving_helmet
 Форма: shield
 x=9.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Испытать водолазное</text>
 <text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">снаряжение</text>
@@ -210,9 +230,10 @@ ID: 5D6F6A8D9A89C57C
 Значок: minecraft:heart_of_the_sea
 Форма: scroll
 x=0.0, y=-6.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Ледяная вода</text>
 </g>
@@ -222,9 +243,10 @@ ID: A303D9CBF0C8194D
 Значок: minecraft:heart_of_the_sea
 Форма: scroll
 x=4.5, y=-6.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Коралловый маршрут</text>
 </g>
@@ -234,9 +256,10 @@ ID: A19C3A7B7AF63B80
 Значок: minecraft:heart_of_the_sea
 Форма: scroll
 x=9.0, y=-6.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Холодные руины</text>
 </g>
@@ -246,9 +269,10 @@ ID: 6FD514AB841DF820
 Значок: minecraft:heart_of_the_sea
 Форма: scroll
 x=13.5, y=-6.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Тёплые руины</text>
 </g>
@@ -258,9 +282,10 @@ ID: 75934B268BAE9806
 Значок: minecraft:heart_of_the_sea
 Форма: scroll
 x=9.0, y=11.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Пиратский корабль</text>
 </g>
@@ -270,9 +295,10 @@ ID: 42CDC43E1DFBDB97
 Значок: minecraft:heart_of_the_sea
 Форма: scroll
 x=13.5, y=11.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Маяк открытого моря</text>
 </g>
@@ -282,9 +308,10 @@ ID: 362F963DF6A6BCFE
 Значок: minecraft:heart_of_the_sea
 Форма: scroll
 x=18.0, y=11.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Поселение среди волн</text>
 </g>
@@ -294,9 +321,10 @@ ID: 9BA296205688E999
 Значок: minecraft:heart_of_the_sea
 Форма: scroll
 x=22.5, y=11.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Кладбище под водой</text>
 </g>
@@ -306,9 +334,10 @@ ID: 99935D46EBDDE471
 Значок: minecraft:compass
 Форма: scroll
 x=27.0, y=11.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">19</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Паруса иллагерского</text>
 <text class="quest-label" y="62.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">корсара</text>
@@ -319,9 +348,10 @@ ID: 27C6A5C2087489CC
 Значок: minecraft:spyglass
 Форма: scroll
 x=31.5, y=11.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">20</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Галеон разбойников</text>
 </g>
@@ -331,9 +361,10 @@ ID: D1FC6F90AE011A99
 Значок: minecraft:conduit
 Форма: shield
 x=27.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.60,-24.60 24.60,-24.60 19.68,7.38 0.00,24.60 -19.68,7.38" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.60,-24.60 24.60,-24.60 19.68,7.38 0.00,24.60 -19.68,7.38" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">21</text>
 <text class="quest-label" y="48.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Под куполом проводника</text>
 </g>

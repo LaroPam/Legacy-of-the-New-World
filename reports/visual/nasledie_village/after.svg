@@ -57,7 +57,7 @@ x=0.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#FFAF78" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первые соседи</text>
 </g>
@@ -70,7 +70,7 @@ x=2.5, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#FFAF78" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Знакомые лица</text>
 </g>
@@ -83,7 +83,7 @@ x=5.0, y=-2.5
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#FFAF78" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Подарок с историей</text>
 </g>
@@ -96,7 +96,7 @@ x=5.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#FFAF78" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Звание торговца</text>
 </g>
@@ -109,7 +109,7 @@ x=7.5, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" class="quest-frame" fill="#152532" stroke="#FFAF78" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дворянин поселения</text>
 </g>
@@ -122,7 +122,7 @@ x=10.0, y=-2.5
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#FFAF78" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Семейная история</text>
 </g>
@@ -135,7 +135,7 @@ x=7.5, y=-2.5
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#FFAF78" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Близкий друг</text>
 </g>
@@ -148,7 +148,7 @@ x=10.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" class="quest-frame" fill="#152532" stroke="#FFAF78" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Оборудовать пункт набора</text>
 </g>
@@ -161,7 +161,7 @@ x=12.5, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#FFAF78" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Установить доску заказов</text>
 </g>
@@ -174,7 +174,7 @@ x=15.0, y=0.0
 Есть изменения</title>
 <circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" class="quest-frame" fill="#152532" stroke="#FFAF78" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Юра — мэр города</text>
 </g>

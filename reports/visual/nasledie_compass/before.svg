@@ -1,61 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -1216.00 3424.00 2080.00" width="3424.00" height="2080.00" role="img" aria-labelledby="nasledie_compass-before-title" data-quest-count="33">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -1216.00 3424.00 2624.00" width="3424.00" height="2624.00" role="img" aria-labelledby="nasledie_compass-before-title" data-quest-count="33">
 <title id="nasledie_compass-before-title">Орден картографов — схема SNBT, не скриншот игры</title>
 <defs><marker id="nasledie_compass-before-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
 <g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
-<path d="M -128 -1216.00 v 2080.00"/>
-<path d="M -64 -1216.00 v 2080.00"/>
-<path d="M 0 -1216.00 v 2080.00"/>
-<path d="M 64 -1216.00 v 2080.00"/>
-<path d="M 128 -1216.00 v 2080.00"/>
-<path d="M 192 -1216.00 v 2080.00"/>
-<path d="M 256 -1216.00 v 2080.00"/>
-<path d="M 320 -1216.00 v 2080.00"/>
-<path d="M 384 -1216.00 v 2080.00"/>
-<path d="M 448 -1216.00 v 2080.00"/>
-<path d="M 512 -1216.00 v 2080.00"/>
-<path d="M 576 -1216.00 v 2080.00"/>
-<path d="M 640 -1216.00 v 2080.00"/>
-<path d="M 704 -1216.00 v 2080.00"/>
-<path d="M 768 -1216.00 v 2080.00"/>
-<path d="M 832 -1216.00 v 2080.00"/>
-<path d="M 896 -1216.00 v 2080.00"/>
-<path d="M 960 -1216.00 v 2080.00"/>
-<path d="M 1024 -1216.00 v 2080.00"/>
-<path d="M 1088 -1216.00 v 2080.00"/>
-<path d="M 1152 -1216.00 v 2080.00"/>
-<path d="M 1216 -1216.00 v 2080.00"/>
-<path d="M 1280 -1216.00 v 2080.00"/>
-<path d="M 1344 -1216.00 v 2080.00"/>
-<path d="M 1408 -1216.00 v 2080.00"/>
-<path d="M 1472 -1216.00 v 2080.00"/>
-<path d="M 1536 -1216.00 v 2080.00"/>
-<path d="M 1600 -1216.00 v 2080.00"/>
-<path d="M 1664 -1216.00 v 2080.00"/>
-<path d="M 1728 -1216.00 v 2080.00"/>
-<path d="M 1792 -1216.00 v 2080.00"/>
-<path d="M 1856 -1216.00 v 2080.00"/>
-<path d="M 1920 -1216.00 v 2080.00"/>
-<path d="M 1984 -1216.00 v 2080.00"/>
-<path d="M 2048 -1216.00 v 2080.00"/>
-<path d="M 2112 -1216.00 v 2080.00"/>
-<path d="M 2176 -1216.00 v 2080.00"/>
-<path d="M 2240 -1216.00 v 2080.00"/>
-<path d="M 2304 -1216.00 v 2080.00"/>
-<path d="M 2368 -1216.00 v 2080.00"/>
-<path d="M 2432 -1216.00 v 2080.00"/>
-<path d="M 2496 -1216.00 v 2080.00"/>
-<path d="M 2560 -1216.00 v 2080.00"/>
-<path d="M 2624 -1216.00 v 2080.00"/>
-<path d="M 2688 -1216.00 v 2080.00"/>
-<path d="M 2752 -1216.00 v 2080.00"/>
-<path d="M 2816 -1216.00 v 2080.00"/>
-<path d="M 2880 -1216.00 v 2080.00"/>
-<path d="M 2944 -1216.00 v 2080.00"/>
-<path d="M 3008 -1216.00 v 2080.00"/>
-<path d="M 3072 -1216.00 v 2080.00"/>
-<path d="M 3136 -1216.00 v 2080.00"/>
-<path d="M 3200 -1216.00 v 2080.00"/>
-<path d="M 3264 -1216.00 v 2080.00"/>
+<path d="M -128 -1216.00 v 2624.00"/>
+<path d="M -64 -1216.00 v 2624.00"/>
+<path d="M 0 -1216.00 v 2624.00"/>
+<path d="M 64 -1216.00 v 2624.00"/>
+<path d="M 128 -1216.00 v 2624.00"/>
+<path d="M 192 -1216.00 v 2624.00"/>
+<path d="M 256 -1216.00 v 2624.00"/>
+<path d="M 320 -1216.00 v 2624.00"/>
+<path d="M 384 -1216.00 v 2624.00"/>
+<path d="M 448 -1216.00 v 2624.00"/>
+<path d="M 512 -1216.00 v 2624.00"/>
+<path d="M 576 -1216.00 v 2624.00"/>
+<path d="M 640 -1216.00 v 2624.00"/>
+<path d="M 704 -1216.00 v 2624.00"/>
+<path d="M 768 -1216.00 v 2624.00"/>
+<path d="M 832 -1216.00 v 2624.00"/>
+<path d="M 896 -1216.00 v 2624.00"/>
+<path d="M 960 -1216.00 v 2624.00"/>
+<path d="M 1024 -1216.00 v 2624.00"/>
+<path d="M 1088 -1216.00 v 2624.00"/>
+<path d="M 1152 -1216.00 v 2624.00"/>
+<path d="M 1216 -1216.00 v 2624.00"/>
+<path d="M 1280 -1216.00 v 2624.00"/>
+<path d="M 1344 -1216.00 v 2624.00"/>
+<path d="M 1408 -1216.00 v 2624.00"/>
+<path d="M 1472 -1216.00 v 2624.00"/>
+<path d="M 1536 -1216.00 v 2624.00"/>
+<path d="M 1600 -1216.00 v 2624.00"/>
+<path d="M 1664 -1216.00 v 2624.00"/>
+<path d="M 1728 -1216.00 v 2624.00"/>
+<path d="M 1792 -1216.00 v 2624.00"/>
+<path d="M 1856 -1216.00 v 2624.00"/>
+<path d="M 1920 -1216.00 v 2624.00"/>
+<path d="M 1984 -1216.00 v 2624.00"/>
+<path d="M 2048 -1216.00 v 2624.00"/>
+<path d="M 2112 -1216.00 v 2624.00"/>
+<path d="M 2176 -1216.00 v 2624.00"/>
+<path d="M 2240 -1216.00 v 2624.00"/>
+<path d="M 2304 -1216.00 v 2624.00"/>
+<path d="M 2368 -1216.00 v 2624.00"/>
+<path d="M 2432 -1216.00 v 2624.00"/>
+<path d="M 2496 -1216.00 v 2624.00"/>
+<path d="M 2560 -1216.00 v 2624.00"/>
+<path d="M 2624 -1216.00 v 2624.00"/>
+<path d="M 2688 -1216.00 v 2624.00"/>
+<path d="M 2752 -1216.00 v 2624.00"/>
+<path d="M 2816 -1216.00 v 2624.00"/>
+<path d="M 2880 -1216.00 v 2624.00"/>
+<path d="M 2944 -1216.00 v 2624.00"/>
+<path d="M 3008 -1216.00 v 2624.00"/>
+<path d="M 3072 -1216.00 v 2624.00"/>
+<path d="M 3136 -1216.00 v 2624.00"/>
+<path d="M 3200 -1216.00 v 2624.00"/>
+<path d="M 3264 -1216.00 v 2624.00"/>
 <path d="M -128.00 -1216 h 3424.00"/>
 <path d="M -128.00 -1152 h 3424.00"/>
 <path d="M -128.00 -1088 h 3424.00"/>
@@ -89,6 +89,15 @@
 <path d="M -128.00 704 h 3424.00"/>
 <path d="M -128.00 768 h 3424.00"/>
 <path d="M -128.00 832 h 3424.00"/>
+<path d="M -128.00 896 h 3424.00"/>
+<path d="M -128.00 960 h 3424.00"/>
+<path d="M -128.00 1024 h 3424.00"/>
+<path d="M -128.00 1088 h 3424.00"/>
+<path d="M -128.00 1152 h 3424.00"/>
+<path d="M -128.00 1216 h 3424.00"/>
+<path d="M -128.00 1280 h 3424.00"/>
+<path d="M -128.00 1344 h 3424.00"/>
+<path d="M -128.00 1408 h 3424.00"/>
 </g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
 <path data-from="EB2746965E47F745" data-to="125225CC968ECEB1" d="M 27.40 0.00 L 260.00 0.00" marker-end="url(#nasledie_compass-before-arrow)"><title>EB2746965E47F745 → 125225CC968ECEB1</title></path>
 <path data-from="125225CC968ECEB1" data-to="12202D6F529C409B" d="M 313.00 0.00 L 548.00 0.00" marker-end="url(#nasledie_compass-before-arrow)"><title>125225CC968ECEB1 → 12202D6F529C409B</title></path>
@@ -129,9 +138,10 @@ ID: EB2746965E47F745
 Значок: explorerscompass:explorerscompass
 Форма: star
 x=0.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-24.40 7.60,-10.46 23.21,-7.54 12.30,4.00 14.34,19.74 0.00,12.93 -14.34,19.74 -12.30,4.00 -23.21,-7.54 -7.60,-10.46" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="0.00,-24.40 7.60,-10.46 23.21,-7.54 12.30,4.00 14.34,19.74 0.00,12.93 -14.34,19.74 -12.30,4.00 -23.21,-7.54 -7.60,-10.46" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
 <text class="quest-label" y="48.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Компасы искателя структур</text>
 </g>
@@ -141,9 +151,10 @@ ID: 125225CC968ECEB1
 Значок: explorerscompass:explorerscompass
 Форма: scroll
 x=4.5, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дозор среди деревьев</text>
 </g>
@@ -153,9 +164,10 @@ ID: 12202D6F529C409B
 Значок: explorerscompass:explorerscompass
 Форма: scroll
 x=9.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Шпиль Terralith</text>
 </g>
@@ -165,9 +177,10 @@ ID: 95734C53761E6456
 Значок: explorerscompass:explorerscompass
 Форма: scroll
 x=13.5, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сигнальная крепость</text>
 </g>
@@ -177,9 +190,10 @@ ID: 225B6CD9BBAC0F47
 Значок: explorerscompass:explorerscompass
 Форма: scroll
 x=18.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Таверна на границе</text>
 <text class="quest-label" y="62.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">джунглей</text>
@@ -190,9 +204,10 @@ ID: 0A349956329B7C72
 Значок: explorerscompass:explorerscompass
 Форма: scroll
 x=22.5, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Старая башня мага</text>
 </g>
@@ -202,9 +217,10 @@ ID: 0CE8AF2473DAB8AA
 Значок: explorerscompass:explorerscompass
 Форма: scroll
 x=22.5, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Аванпост шахтёров</text>
 </g>
@@ -214,9 +230,10 @@ ID: 59752216F591E945
 Значок: explorerscompass:explorerscompass
 Форма: scroll
 x=18.0, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Форт снежных скитальцев</text>
 </g>
@@ -226,9 +243,10 @@ ID: 52B457F0F3B0109A
 Значок: explorerscompass:explorerscompass
 Форма: star
 x=13.5, y=5.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="35.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="39.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-29.00 9.03,-12.43 27.58,-8.96 14.62,4.75 17.05,23.46 0.00,15.37 -17.05,23.46 -14.62,4.75 -27.58,-8.96 -9.03,-12.43" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="0.00,-29.00 9.03,-12.43 27.58,-8.96 14.62,4.75 17.05,23.46 0.00,15.37 -17.05,23.46 -14.62,4.75 -27.58,-8.96 -9.03,-12.43" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
 <text class="quest-label" y="53.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Техническая профилактика</text>
 <text class="quest-label" y="69.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">компаса</text>
@@ -239,9 +257,10 @@ ID: C98BCEC5872D8647
 Значок: explorerscompass:explorerscompass
 Форма: scroll
 x=0.0, y=-6.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Пограничный пункт</text>
 </g>
@@ -251,9 +270,10 @@ ID: E74BE19F5E31D304
 Значок: explorerscompass:explorerscompass
 Форма: scroll
 x=4.5, y=-6.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Укреплённое поселение</text>
 </g>
@@ -263,9 +283,10 @@ ID: BC793EEF82907B7E
 Значок: explorerscompass:explorerscompass
 Форма: scroll
 x=9.0, y=-6.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Тайное убежище</text>
 </g>
@@ -275,9 +296,10 @@ ID: 36816E6DCCAC9776
 Значок: explorerscompass:explorerscompass
 Форма: scroll
 x=13.5, y=11.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Торговый лагерь</text>
 </g>
@@ -287,9 +309,10 @@ ID: B1509620769451B8
 Значок: explorerscompass:explorerscompass
 Форма: scroll
 x=18.0, y=11.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дворец вдали</text>
 </g>
@@ -299,9 +322,10 @@ ID: 8C486E24C425E49B
 Значок: explorerscompass:explorerscompass
 Форма: scroll
 x=22.5, y=11.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Хижина под землёй</text>
 </g>
@@ -311,9 +335,10 @@ ID: 3BFF245E8A4EEBE2
 Значок: minecraft:iron_pickaxe
 Форма: scroll
 x=9.0, y=-12.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Система заброшенных шахт</text>
 </g>
@@ -323,9 +348,10 @@ ID: 4AD20583645F8C5F
 Значок: create:cogwheel
 Форма: scroll
 x=13.5, y=-12.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Гнездо механизмов</text>
 </g>
@@ -335,9 +361,10 @@ ID: 07C8419F1FE8738D
 Значок: minecraft:brewing_stand
 Форма: scroll
 x=18.0, y=-12.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Чумной приют</text>
 </g>
@@ -347,9 +374,10 @@ ID: CEBF8266AC205E60
 Значок: minecraft:shield
 Форма: shield
 x=22.5, y=-12.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">19</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Колизей забытой империи</text>
 </g>
@@ -359,9 +387,10 @@ ID: 5DB6F54ADA7C276F
 Значок: minecraft:red_mushroom
 Форма: scroll
 x=27.0, y=-12.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">20</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Обитель грибных шахт</text>
 </g>
@@ -371,9 +400,10 @@ ID: 34A240DB0D634249
 Значок: minecraft:enchanting_table
 Форма: shield
 x=27.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">21</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Комплекс мага</text>
 </g>
@@ -383,9 +413,10 @@ ID: A13990B38C18BF50
 Значок: minecraft:saddle
 Форма: scroll
 x=31.5, y=-12.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">22</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Испытание небесного</text>
 <text class="quest-label" y="62.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">всадника</text>
@@ -396,9 +427,10 @@ ID: 8E33F6A4EE9EECA6
 Значок: minecraft:crossbow
 Форма: scroll
 x=36.0, y=-12.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">23</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Забытый иллагерский форт</text>
 </g>
@@ -408,9 +440,10 @@ ID: 973E6DFEEE903031
 Значок: minecraft:shield
 Форма: scroll
 x=40.5, y=-12.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">24</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дворец Кайры</text>
 </g>
@@ -420,9 +453,10 @@ ID: C0194CADC20BB042
 Значок: minecraft:scaffolding
 Форма: scroll
 x=31.5, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">25</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дом высоко в джунглях</text>
 </g>
@@ -432,9 +466,10 @@ ID: 1B7D417FC2AD346C
 Значок: minecraft:torch
 Форма: scroll
 x=36.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">26</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Древний храм среди</text>
 <text class="quest-label" y="62.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">деревьев</text>
@@ -445,9 +480,10 @@ ID: BD1F1FA8837A8FC5
 Значок: minecraft:bell
 Форма: scroll
 x=27.0, y=11.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">27</text>
 <text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Монастырь странников</text>
 </g>
@@ -457,9 +493,10 @@ ID: 79B22217425743C5
 Значок: minecraft:paper
 Форма: scroll
 x=22.5, y=-4.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<rect x="-22.00" y="-22.00" width="44.00" height="44.00" rx="7.70" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">28</text>
 <text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Секретная записка</text>
 <text class="quest-label" y="62.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">трактирщика</text>
@@ -470,9 +507,10 @@ ID: EF5D057D0A543404
 Значок: minecraft:spyglass
 Форма: star
 x=45.0, y=-12.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">29</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Небесный претендент</text>
 </g>
@@ -482,9 +520,10 @@ ID: 9F4C744CFD45A276
 Значок: minecraft:elytra
 Форма: star
 x=49.5, y=-12.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">30</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Небесный завоеватель</text>
 </g>
@@ -494,9 +533,10 @@ ID: 8268BA06604DD7A2
 Значок: minecraft:filled_map
 Форма: shield
 x=31.5, y=11.5
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">31</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Тайник монастырского</text>
 <text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">картографа</text>
@@ -507,9 +547,10 @@ ID: FC2F522F0B5765F9
 Значок: minecraft:blast_furnace
 Форма: star
 x=40.5, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="0.00,-23.20 7.23,-9.95 22.06,-7.17 11.69,3.80 13.64,18.77 0.00,12.30 -13.64,18.77 -11.69,3.80 -22.06,-7.17 -7.23,-9.95" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">32</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Кузница забытой крепости</text>
 </g>
@@ -519,9 +560,10 @@ ID: D79F172C28F00556
 Значок: minecraft:crossbow
 Форма: shield
 x=36.0, y=-17.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<polygon points="-23.20,-23.20 23.20,-23.20 18.56,6.96 0.00,23.20 -18.56,6.96" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">33</text>
 <text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Штурм забытого форта</text>
 </g>
