@@ -1,0 +1,40 @@
+{
+  "baseline_commit": "f68124fb33597aa13b4b6a8dd8c6dde7c879b188",
+  "authorization": "2026-10-20: автор утвердил эталон и затем все предложенные исправления; баланс наград остаётся отдельным этапом.",
+  "presentation_chapters": [
+    "nasledie_prolog",
+    "nasledie_life",
+    "nasledie_create",
+    "nasledie_exploration",
+    "nasledie_village",
+    "nasledie_economy",
+    "nasledie_transport",
+    "nasledie_industry",
+    "nasledie_defense",
+    "nasledie_legends",
+    "nasledie_grand_projects",
+    "nasledie_guild",
+    "nasledie_cataclysm",
+    "nasledie_archeology",
+    "nasledie_relics",
+    "nasledie_netheritage",
+    "nasledie_ocean",
+    "nasledie_compass"
+  ],
+  "completed_chapters": [
+    "nasledie_defense"
+  ],
+  "file_fixes": {
+    "kubejs/data/nasledie/advancements/alpha39/mowzie/grove_watch.json": {
+      "before_sha256": "555867050c1a1a948d26d690b7ac5704c0b63edaae9f1a29c8d06138256020fa",
+      "after_sha256": "b577b0a4e81581ce70863652f8b317e545e207f838c50bb018665bd6428090ce",
+      "reason": "Автор одобрил исправления. Реальные типы Umvuthana с сохранённым полем mask: FURY=0 у раптора, FEAR=1 у обычного воина. Критерии и Task ID сохранены."
+    },
+    "kubejs/data/nasledie/advancements/alpha39/mowzie/grove_watch__fear.json": {
+      "before_sha256": "132831be00ed8ef45adc719369d8e5594e4002e80f17f281923ca9b4d3a3e018",
+      "after_sha256": "9bae3ed3ff018821890203ca94cf7323c03d886213b1ba0d4b8519433204b362",
+      "reason": "Автор одобрил исправления. Реальные типы Umvuthana с сохранённым полем mask: FURY=0 у раптора, FEAR=1 у обычного воина. Критерии и Task ID сохранены."
+    }
+  },
+  "quest_fixes": {}
+}

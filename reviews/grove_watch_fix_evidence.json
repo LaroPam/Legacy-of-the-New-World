@@ -1,0 +1,53 @@
+{
+  "source_jar": "mowziesmobs-1.8.2.jar",
+  "source_sha256": "e8ce1768cda6f1e1fadd2321c92921b473bd0cee45ba4b8387fb30f8326cb31c",
+  "files": {
+    "MaskType.java": {
+      "decompiled_sha256": "b535742292e8a80a9f8e9c2ddb446e981d57ba9612bfc7ce37805a573956d98d",
+      "excerpts": [
+        {
+          "line": 18,
+          "text": "FURY(MobEffects.f_19600_, 0.9f, 2.0f, true),"
+        },
+        {
+          "line": 19,
+          "text": "FEAR(MobEffects.f_19596_),"
+        }
+      ]
+    },
+    "EntityUmvuthana.java": {
+      "decompiled_sha256": "56417ec282aefbfd3a34cfa28ca98c683712cecf8044ffb096cfc85a34a0bfce",
+      "excerpts": [
+        {
+          "line": 249,
+          "text": "this.setMask(MaskType.from((int)Mth.m_216271_((RandomSource)this.f_19796_, (int)1, (int)4)));"
+        },
+        {
+          "line": 411,
+          "text": "this.setMask(MaskType.from((int)Mth.m_216271_((RandomSource)this.f_19796_, (int)1, (int)4)));"
+        },
+        {
+          "line": 575,
+          "text": "this.m_20088_().m_135381_(MASK, (Object)type.ordinal());"
+        },
+        {
+          "line": 608,
+          "text": "compound.m_128405_(\"mask\", this.getMaskType().ordinal());"
+        },
+        {
+          "line": 614,
+          "text": "this.setMask(MaskType.from((int)compound.m_128451_(\"mask\")));"
+        }
+      ]
+    },
+    "EntityUmvuthanaRaptor.java": {
+      "decompiled_sha256": "396713f99335e36c991de474f26ff013a4ff7ccf430bbb5f35579d9fa5c60124",
+      "excerpts": [
+        {
+          "line": 95,
+          "text": "this.setMask(MaskType.FURY);"
+        }
+      ]
+    }
+  }
+}

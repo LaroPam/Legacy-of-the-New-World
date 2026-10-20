@@ -55,6 +55,32 @@ class PreservationTests(unittest.TestCase):
         after = {**before, OTHER: before[OTHER].replace(b'Other', b'Changed')}
         self.assertIn('protected_file_changed', self.codes(quality.evaluate(after, before)))
 
+    def test_multi_chapter_scope_still_protects_rewards(self):
+        second = SOURCE.replace(b'000000000000000', b'000000000000001')
+        before = {REF: SOURCE, OTHER: second}
+        scope = {'presentation_chapters': ['nasledie_defense', 'other']}
+        after = {**before, OTHER: second.replace(b'First', b'Reviewed')}
+        self.assertEqual(quality.evaluate(after, before, scope=scope)['errors'], [])
+        after[OTHER] = after[OTHER].replace(b'xp: 10', b'xp: 11')
+        self.assertIn('mechanics_changed', self.codes(quality.evaluate(after, before, scope=scope)))
+
+    def test_exact_approved_file_fix_does_not_allow_further_change(self):
+        import hashlib
+        name = 'kubejs/data/test/advancements/a.json'
+        old = b'{"criteria":{"a":{"trigger":"minecraft:impossible"}}}'
+        new = b'{"criteria":{"a":{"trigger":"minecraft:tick"}}}'
+        before, after = {REF: SOURCE, name: old}, {REF: SOURCE, name: new}
+        scope = {'file_fixes': {name: {'before_sha256': hashlib.sha256(old).hexdigest(),
+                 'after_sha256': hashlib.sha256(new).hexdigest(), 'reason': 'Approved exact fix'}}}
+        self.assertEqual(quality.evaluate(after, before, scope=scope)['errors'], [])
+        after[name] = new + b'\n'
+        self.assertIn('protected_file_changed', self.codes(quality.evaluate(after, before, scope=scope)))
+
+    def test_completed_chapter_cannot_retain_technical_prose(self):
+        source = SOURCE.replace(b'Explore', b'Use minecraft:diamond')
+        scope = {'completed_chapters': ['nasledie_defense']}
+        self.assertIn('technical_prose', self.codes(quality.evaluate({REF:source}, {REF:source}, scope=scope)))
+
     def test_advancement_condition_change_is_protected(self):
         name = 'kubejs/data/test/advancements/a.json'
         before = {REF: SOURCE, name: b'{"criteria":{"a":{"trigger":"minecraft:tick"}}}'}

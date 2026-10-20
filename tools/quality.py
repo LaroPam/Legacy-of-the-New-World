@@ -166,8 +166,12 @@ def protected_body(chapter):
     return result
 
 
-def preservation(current_files, baseline_files, current, baseline, reference):
+def preservation(current_files, baseline_files, current, baseline, reference, scope=None):
     errors, changes = [], []
+    allowed = (scope or {}).get("presentation_chapters", [reference])
+    reference_files = {CHAPTER_ROOT + name + ".snbt" for name in allowed}
+    approved_files = (scope or {}).get("file_fixes", {})
+    approved_fields = (scope or {}).get("quest_fixes", {})
     reference_file = CHAPTER_ROOT + reference + ".snbt"
     if reference_file not in current or reference_file not in baseline:
         errors.append(problem("reference_missing", reference_file, "Reference chapter must exist in both snapshots"))
@@ -177,10 +181,26 @@ def preservation(current_files, baseline_files, current, baseline, reference):
             continue
         changes.append({"file": name, "baseline_sha256": hashlib.sha256(old).hexdigest() if old is not None else None,
                         "current_sha256": hashlib.sha256(new).hexdigest() if new is not None else None})
-        if name != reference_file:
-            errors.append(problem("protected_file_changed", name, "Only the selected chapter's presentation may change in this stage"))
-    if reference_file in current and reference_file in baseline:
-        old, new = baseline[reference_file], current[reference_file]
+        if name not in reference_files:
+            approved = approved_files.get(name, {})
+            if not (approved.get('reason') and old is not None and new is not None
+                    and hashlib.sha256(old).hexdigest() == approved.get('before_sha256')
+                    and hashlib.sha256(new).hexdigest() == approved.get('after_sha256')):
+                errors.append(problem("protected_file_changed", name, "Change is outside approved presentation scope or exact reviewed fix"))
+    for reference_file in sorted(reference_files):
+        if reference_file not in current or reference_file not in baseline:
+            errors.append(problem('approved_chapter_missing', reference_file, 'Approved chapter missing from snapshots'))
+            continue
+        old, new = deepcopy(baseline[reference_file]), deepcopy(current[reference_file])
+        for quest in new.get('quests', []):
+            previous = next((q for q in old.get('quests', []) if q.get('id') == quest.get('id')), {})
+            for key, fix in approved_fields.get(str(quest.get('id')), {}).items():
+                if (key not in {'dependencies'} or not fix.get('reason')
+                        or canonical(previous.get(key)) != canonical(fix.get('before'))
+                        or canonical(quest.get(key)) != canonical(fix.get('after'))):
+                    errors.append(problem('approved_fix_mismatch', reference_file, 'Reviewed field fix does not match exact before/after', quest=str(quest.get('id')), field=key))
+                else:
+                    quest[key] = previous[key]
         if canonical(protected_body(old)) != canonical(protected_body(new)):
             errors.append(problem("mechanics_changed", reference_file,
                                   "A protected field changed: IDs, tasks, rewards, dependencies, optional flags, chapter settings and quest order are immutable"))
@@ -355,16 +375,18 @@ def issue_key(issue):
     return json.dumps({k: v for k, v in issue.items() if k not in ("message", "magnitude")}, sort_keys=True, ensure_ascii=False)
 
 
-def classify_quality(current, baseline, reference):
+def classify_quality(current, baseline, reference, scope=None):
     previous = {issue_key(i): i for i in baseline}
     errors, warnings = [], []
-    reference_file = CHAPTER_ROOT + reference + ".snbt"
+    reference_files = {CHAPTER_ROOT + name + ".snbt" for name in (scope or {}).get("presentation_chapters", [reference])}
+    completed_files = {CHAPTER_ROOT + name + ".snbt" for name in (scope or {}).get("completed_chapters", [])}
     for issue in current:
         old = previous.get(issue_key(issue))
-        touches_reference = issue["location"].startswith(reference_file) or any(t.get("file") == reference_file for t in issue.get("tasks", []))
+        touches_reference = any(issue["location"].startswith(name) or any(t.get("file") == name for t in issue.get("tasks", [])) for name in reference_files)
+        completed = any(issue["location"].startswith(name) for name in completed_files)
         worse = old is None or issue.get("magnitude", 0) > old.get("magnitude", 0) + EPSILON
         item = {**issue, "baseline_status": "new_or_worsened" if worse else "pre_existing"}
-        if issue["code"] == "node_geometry_invalid" or (touches_reference and worse):
+        if issue["code"] == "node_geometry_invalid" or (touches_reference and worse) or (completed and issue["code"] != "duplicate_condition"):
             errors.append(item)
         else:
             warnings.append(item)
@@ -497,7 +519,7 @@ def static_entity_checks(parsed, evidence):
     return problems
 
 
-def evaluate(current_files, baseline_files, reference=REFERENCE, registry=None, reviews=None, baseline_commit=BASELINE, icon_evidence=None, entity_evidence=None):
+def evaluate(current_files, baseline_files, reference=REFERENCE, registry=None, reviews=None, baseline_commit=BASELINE, icon_evidence=None, entity_evidence=None, scope=None):
     current, parse_errors = parse_files(current_files)
     baseline, baseline_errors = parse_files(baseline_files)
     report = {"schema_version": 1, "baseline_commit": baseline_commit, "reference": reference,
@@ -507,7 +529,7 @@ def evaluate(current_files, baseline_files, reference=REFERENCE, registry=None, 
         return finish(report)
     report["counts"], report["baseline_counts"] = inventory(current), inventory(baseline)
     report["errors"].extend(integrity(current))
-    preservation_errors, report["changed_files"] = preservation(current_files, baseline_files, current, baseline, reference)
+    preservation_errors, report["changed_files"] = preservation(current_files, baseline_files, current, baseline, reference, scope)
     report["errors"].extend(preservation_errors)
     report["errors"].extend(resource_checks(current_files, current))
     report["errors"].extend(introduced_icons(current, baseline, icon_evidence))
@@ -522,7 +544,7 @@ def evaluate(current_files, baseline_files, reference=REFERENCE, registry=None, 
     old_geometry, report["baseline_geometry"] = geometry(baseline)
     current_quality = prose_issues(current) + duplicate_conditions(current) + geometry_issues
     baseline_quality = prose_issues(baseline) + duplicate_conditions(baseline) + old_geometry
-    errors, warnings = classify_quality(current_quality, baseline_quality, reference)
+    errors, warnings = classify_quality(current_quality, baseline_quality, reference, scope)
     report["errors"].extend(errors)
     report["warnings"].extend(warnings)
     errors, unknown, report["registry"] = registry_checks(current, registry)
@@ -587,7 +609,14 @@ def main(argv=None):
         icon_evidence = parse_json(icon_path.read_text()) if icon_path.exists() else None
         entity_path = root / 'reviews/mowzie_entity_evidence.json'
         entity_evidence = parse_json(entity_path.read_text()) if entity_path.exists() else None
-        report = evaluate(current, baseline, args.reference, registry, reviews, commit, icon_evidence, entity_evidence)
+        more_icons = root / 'reviews/polish_icon_evidence.json'
+        if more_icons.exists():
+            icon_evidence = {'items':{**(icon_evidence or {}).get('items', {}), **parse_json(more_icons.read_text())['items']}}
+        scope_path = root / 'reviews/polish_scope.json'
+        scope = parse_json(scope_path.read_text()) if scope_path.exists() else None
+        if scope and scope.get('baseline_commit') != commit:
+            raise ValueError('Approved scope baseline mismatch')
+        report = evaluate(current, baseline, args.reference, registry, reviews, commit, icon_evidence, entity_evidence, scope)
         report_path = args.report if args.report.is_absolute() else root / args.report
         # Never let a report path overwrite protected game input files.
         relative = report_path.resolve().relative_to(root) if report_path.resolve().is_relative_to(root) else None
