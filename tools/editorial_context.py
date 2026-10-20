@@ -22,7 +22,7 @@ for index, q in enumerate(rows[a.start:a.start+a.limit], a.start):
         print('CONDITION', name, json.dumps({k:body[k] for k in ('criteria','requirements') if k in body},ensure_ascii=False))
         display = body.get('display', {})
         print('MOD_ICON', display.get('icon'))
-        source = a.cache/evidence.get('source', '')
+        source = a.cache/(evidence.get('source') or '')
         if source.is_file():
             with zipfile.ZipFile(source) as z:
                 for lang in [n for n in z.namelist() if n.endswith('/lang/en_us.json')]:
@@ -33,5 +33,5 @@ for index, q in enumerate(rows[a.start:a.start+a.limit], a.start):
                     terms = [translations.get(display.get(k, {}).get('translate', '')) for k in ('title','description') if isinstance(display.get(k), dict)]
                     if any(terms): print('MOD_TEXT', json.dumps(terms,ensure_ascii=False))
     print('DEPS', q['dependencies'])
-    if not q['advancement_evidence']:
+    if not q['advancement_evidence'] or any(not e.get('body') for e in q['advancement_evidence'].values()):
         print('OLD_TEXT', ' / '.join(q['description']))

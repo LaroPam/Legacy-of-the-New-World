@@ -1,0 +1,20 @@
+[
+  {
+    "project": "better-archeology",
+    "catalog_file": "betterarcheology-1.2.1-1.20.1(1).jar",
+    "expected_sha256": "4180f72ec4b69690ec160ac50e48c087f0fe7c98681dcd1f70d82ed5cbfeec9e",
+    "status": "verified_exact",
+    "file": "betterarcheology-1.2.1-1.20.1.jar",
+    "url": "https://cdn.modrinth.com/data/zCh7omyG/versions/vsqxpUo3/betterarcheology-1.2.1-1.20.1.jar",
+    "sha256": "4180f72ec4b69690ec160ac50e48c087f0fe7c98681dcd1f70d82ed5cbfeec9e"
+  },
+  {
+    "project": "dungeons-and-taverns",
+    "catalog_file": "dungeons-and-taverns-3.0.3.f[Forge].jar",
+    "expected_sha256": "251b531ff2882c61a4c2eba3bd7b1683aa22b6c2d459e27bfde04a2948c99e1e",
+    "status": "verified_exact",
+    "file": "dungeons-and-taverns-3.0.3.f.jar",
+    "url": "https://cdn.modrinth.com/data/tpehi7ww/versions/ojHpWOrz/dungeons-and-taverns-3.0.3.f.jar",
+    "sha256": "251b531ff2882c61a4c2eba3bd7b1683aa22b6c2d459e27bfde04a2948c99e1e"
+  }
+]
