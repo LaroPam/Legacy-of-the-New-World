@@ -1,0 +1,189 @@
+{
+  "scope": "Introduced icons: exact static item registration/model/texture evidence; not game rendering.",
+  "items": {
+    "minecraft:iron_helmet": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in iron_helmet; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/iron_helmet.json",
+      "model_sha256": "4bb72c2d7a7bc999984354c8de7a4b943c1bdadc1c719f6e12f921d82b02dedd",
+      "model_chain": {
+        "assets/minecraft/models/item/iron_helmet.json": "4bb72c2d7a7bc999984354c8de7a4b943c1bdadc1c719f6e12f921d82b02dedd",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/iron_helmet.png",
+          "sha256": "db530074cf0a2b1e6d6958f66536625764f47e00e3c1cc9f558586c24a5cf9dc"
+        }
+      ]
+    },
+    "minecraft:emerald_block": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in emerald_block; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/emerald_block.json",
+      "model_sha256": "e97a3e59cc61a4db8dd9f519fab71e81c87d2cdbef35470c8abdd33b04a20adb",
+      "model_chain": {
+        "assets/minecraft/models/item/emerald_block.json": "e97a3e59cc61a4db8dd9f519fab71e81c87d2cdbef35470c8abdd33b04a20adb",
+        "assets/minecraft/models/block/emerald_block.json": "e3cf8b337fb70501ea8550b3a2f1e592436e8477e22c3761597604dde5eda064",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/emerald_block.png",
+          "sha256": "b5074f5fa844d6a9f895e11efb0db39b7a831456b36294f18afa01a2c9493063"
+        }
+      ]
+    },
+    "minecraft:acacia_fence": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in acacia_fence; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/acacia_fence.json",
+      "model_sha256": "d30e1a56ce9716fb63907a1d36f50d6dac0c369214a432d56236d0cefcb3271d",
+      "model_chain": {
+        "assets/minecraft/models/item/acacia_fence.json": "d30e1a56ce9716fb63907a1d36f50d6dac0c369214a432d56236d0cefcb3271d",
+        "assets/minecraft/models/block/acacia_fence_inventory.json": "69e0ecde3fa67c7a8cae387257f5145ddd3a6fae77c0c0e19e8e47d607e7c367",
+        "assets/minecraft/models/block/fence_inventory.json": "a8db71865730b78f54180b19abcac026474f44ec585567288a625f4f2e446aca",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/acacia_planks.png",
+          "sha256": "ada1d92bd15f6b1418f2b7648c5af377da8fed68d2ab02c376286821b8ea6301"
+        }
+      ]
+    },
+    "minecraft:pointed_dripstone": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in pointed_dripstone; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/pointed_dripstone.json",
+      "model_sha256": "56309634090a4c34541b3834de17b70761af48dcbfaf995bc199bc7843cc3d94",
+      "model_chain": {
+        "assets/minecraft/models/item/pointed_dripstone.json": "56309634090a4c34541b3834de17b70761af48dcbfaf995bc199bc7843cc3d94",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/pointed_dripstone.png",
+          "sha256": "cd7fcebdbfdedd3b43c0f3a9e91329de0944d41f199335d0a123a9a54d89b2fb"
+        }
+      ]
+    },
+    "farmersdelight:steak_and_potatoes": {
+      "kind": "forge_item_registration",
+      "source_file": "FarmersDelight-1.20.1-1.3.4.jar",
+      "source_sha256": "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce",
+      "registration_evidence": "public static final RegistryObject<Item> STEAK_AND_POTATOES = ModItems.registerWithTab(\"steak_and_potatoes\", () -> new ConsumableItem(ModItems.bowlFoodItem(FoodValues.STEAK_AND_POTATOES)));",
+      "model": "assets/farmersdelight/models/item/steak_and_potatoes.json",
+      "model_sha256": "1cf614af2fc0ca14fc5ca266b2f8f8b91571fdb92be97e4aa1ca7c3e59934558",
+      "model_chain": {
+        "assets/farmersdelight/models/item/steak_and_potatoes.json": "1cf614af2fc0ca14fc5ca266b2f8f8b91571fdb92be97e4aa1ca7c3e59934558"
+      },
+      "textures": [
+        {
+          "path": "assets/farmersdelight/textures/item/steak_and_potatoes.png",
+          "sha256": "e0a0bd431ee105acb543e826813ea6f5c32f53cb4a52d12886e61ffa8f6aff27"
+        }
+      ]
+    },
+    "minecraft:beehive": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in beehive; official item model and texture chain.",
+      "model": "assets/minecraft/models/item/beehive.json",
+      "model_sha256": "5f38e7828bb229ec1700b53249075803903c4f06e2b32c1ca7de50b96868fdab",
+      "model_chain": {
+        "assets/minecraft/models/item/beehive.json": "5f38e7828bb229ec1700b53249075803903c4f06e2b32c1ca7de50b96868fdab",
+        "assets/minecraft/models/block/beehive.json": "bac3a99cee4b65c9d7dfe0332555a5580527f9774725f09210ca4c13d3f11ef5",
+        "assets/minecraft/models/block/orientable_with_bottom.json": "8da2928f84a31c6986dc31a916b8be736e5b0afdce7b3fbe651ec42771dd7255",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/beehive_end.png",
+          "sha256": "90d541e791a5b8c342e90553b7639217ae16b2b1343ff52dede1e86a60732856"
+        },
+        {
+          "path": "assets/minecraft/textures/block/beehive_front.png",
+          "sha256": "3331c6504bebb7a841d23ae0a2e2208bfedcfa56eaa18b831f57e90a92f1df64"
+        },
+        {
+          "path": "assets/minecraft/textures/block/beehive_side.png",
+          "sha256": "b9a6297a32e45984744b887726955ede066fee4bf5f67465e1595e9d618fc6ab"
+        }
+      ]
+    },
+    "minecraft:cobblestone": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in cobblestone; official item model and texture chain.",
+      "model": "assets/minecraft/models/item/cobblestone.json",
+      "model_sha256": "8e74733929750f13c2e7f68776b51ee6629f3c87955d0f2636708a7b8e7510cc",
+      "model_chain": {
+        "assets/minecraft/models/item/cobblestone.json": "8e74733929750f13c2e7f68776b51ee6629f3c87955d0f2636708a7b8e7510cc",
+        "assets/minecraft/models/block/cobblestone.json": "dee026b80b7b77c5d540d75b91cfaec770245a2e7affb53555e9e4ad3ddb551f",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/cobblestone.png",
+          "sha256": "2431a28eaaf9a728a6bf6bfad515a2db74932d5091604c8c66c500734e21883a"
+        }
+      ]
+    },
+    "minecraft:rail": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in rail; official item model and texture chain.",
+      "model": "assets/minecraft/models/item/rail.json",
+      "model_sha256": "8df098e2348e23614c9a02eb919aa60ed984356a39a6e9ffb5d1124128e8c781",
+      "model_chain": {
+        "assets/minecraft/models/item/rail.json": "8df098e2348e23614c9a02eb919aa60ed984356a39a6e9ffb5d1124128e8c781",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/rail.png",
+          "sha256": "fe6a43cc03999fd1d342683c631e22d6df8713ee328f047e3c43f009d124a14f"
+        }
+      ]
+    },
+    "create:extendo_grip": {
+      "kind": "forge_item_registration",
+      "source_file": "create-1.20.1-6.0.8.jar",
+      "source_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+      "registration_evidence": "EXTENDO_GRIP = REGISTRATE.item(\"extendo_grip\", ExtendoGripItem::new).properties(p -> p.m_41497_(Rarity.UNCOMMON)).model(AssetLookup.itemModelWithPartials()).register();",
+      "model": "assets/create/models/item/extendo_grip.json",
+      "model_sha256": "b4bba9c9e26cc8aa4a0d7e5db34989a1194afba81168e564cd8e5e758a035f1a",
+      "model_chain": {
+        "assets/create/models/item/extendo_grip.json": "b4bba9c9e26cc8aa4a0d7e5db34989a1194afba81168e564cd8e5e758a035f1a",
+        "assets/create/models/item/extendo_grip/item.json": "15dc96ec5b89a5127bd9318b2435bf5c3475fc64faf87ec920e5ba7e2f3de5b0"
+      },
+      "textures": [
+        {
+          "path": "assets/create/textures/block/mechanical_press_pole.png",
+          "sha256": "a5521f3058eab3f5c8f2cffc2eed5052dc8311630e419c7332e3f992172dd54d"
+        },
+        {
+          "path": "assets/create/textures/item/extendo_grip.png",
+          "sha256": "73bad2390eab0f6fe49952fe77d7c89264473267ed395694d9bf511b31eb60a1"
+        }
+      ]
+    }
+  }
+}

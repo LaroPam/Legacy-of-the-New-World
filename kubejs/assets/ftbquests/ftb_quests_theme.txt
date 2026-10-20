@@ -1,5 +1,7 @@
-extra_quest_shapes: crown, laurel, scroll, shield, coin, star, ribbon
-# Visual foundation for Nasledie 2.0
+// Generated from reviews/chapter_palettes.json
+// FTB Quests 2001.4.22: [*] is required before global properties.
+[*]
+extra_quest_shapes: diamond, pentagon, hexagon, octagon, heart, gear, crown, laurel, scroll, shield, coin, star, ribbon
 background: color:transparent
 selected_chapter_highlight_1: #70A67C52
 selected_chapter_highlight_2: #307C5C3B
@@ -20,18 +22,324 @@ text_box: hollow_rectangle:#526C8C + color=#24374B
 quest_view_background: color:transparent
 quest_view_border: #4F6A86
 quest_view_title: #D9E8F9
-quest_started_color: #83C4ED
-quest_not_started_color: #A8BDD4
-quest_locked_color: #788395
+quest_started_color: #51E6FF
+quest_not_started_color: #FFB52E
+quest_locked_color: #9C8063
 dependency_line_completed_color: #63BE91
 dependency_line_uncompleted_color: #83B8E0
 dependency_line_requires_color: #DEB768
 dependency_line_required_for_color: #72B8D9
 quest_spacing: 1.05
-quest_completed_color: #4EAE7B
+quest_completed_color: #A1FFBC
 rewards_text_color: #80D4A7
 tasks_text_color: #9ACBF0
-symbol_in: #B9854B
-symbol_out: #4E3D31
+symbol_in: #E6FF92
+symbol_out: #40833B
 check_icon: builtin
 add_icon: builtin
+
+// nasledie_prolog — Первый рассвет
+[24C1CA6B47BF45C9]
+quest_locked_color: #9A8C4F
+quest_not_started_color: #FFD43B
+quest_started_color: #FF7B48
+quest_completed_color: #FFECA7
+dependency_line_completed_color: #FFECA7
+dependency_line_uncompleted_color: #FFD43B
+dependency_line_requires_color: #FF7B48
+dependency_line_required_for_color: #FFB091
+quest_view_border: #FFD43B
+quest_view_title: #FFECA7
+tasks_text_color: #FF7B48
+rewards_text_color: #FFECA7
+selected_chapter_highlight_1: #78FFD43B
+selected_chapter_highlight_2: #36FFD43B
+
+// nasledie_life — Зелёный сад
+[DC7EC49FBED1A9C6]
+quest_locked_color: #61954E
+quest_not_started_color: #88E638
+quest_started_color: #FFE35A
+quest_completed_color: #C9F4A5
+dependency_line_completed_color: #C9F4A5
+dependency_line_uncompleted_color: #88E638
+dependency_line_requires_color: #FFE35A
+dependency_line_required_for_color: #FFEE9C
+quest_view_border: #88E638
+quest_view_title: #C9F4A5
+tasks_text_color: #FFE35A
+rewards_text_color: #C9F4A5
+selected_chapter_highlight_1: #7888E638
+selected_chapter_highlight_2: #3688E638
+
+// nasledie_create — Латунь и огонь
+[9B72DF3BE0E6A5DE]
+quest_locked_color: #9A6E42
+quest_not_started_color: #FF961F
+quest_started_color: #4FE4E8
+quest_completed_color: #FFD09A
+dependency_line_completed_color: #FFD09A
+dependency_line_uncompleted_color: #FF961F
+dependency_line_requires_color: #4FE4E8
+dependency_line_required_for_color: #95EFF1
+quest_view_border: #FF961F
+quest_view_title: #FFD09A
+tasks_text_color: #4FE4E8
+rewards_text_color: #FFD09A
+selected_chapter_highlight_1: #78FF961F
+selected_chapter_highlight_2: #36FF961F
+
+// nasledie_exploration — Бирюза горизонта
+[67AB9D3E8CAB8CAC]
+quest_locked_color: #2B9593
+quest_not_started_color: #18E6C9
+quest_started_color: #F9B755
+quest_completed_color: #97F4E7
+dependency_line_completed_color: #97F4E7
+dependency_line_uncompleted_color: #18E6C9
+dependency_line_requires_color: #F9B755
+dependency_line_required_for_color: #FBD499
+quest_view_border: #18E6C9
+quest_view_title: #97F4E7
+tasks_text_color: #F9B755
+rewards_text_color: #97F4E7
+selected_chapter_highlight_1: #7818E6C9
+selected_chapter_highlight_2: #3618E6C9
+
+// nasledie_village — Тёплая терракота
+[30082B6F5380787E]
+quest_locked_color: #9A7A6D
+quest_not_started_color: #FFAF78
+quest_started_color: #E4F248
+quest_completed_color: #FFDBC2
+dependency_line_completed_color: #FFDBC2
+dependency_line_uncompleted_color: #FFAF78
+dependency_line_requires_color: #E4F248
+dependency_line_required_for_color: #EFF791
+quest_view_border: #FFAF78
+quest_view_title: #FFDBC2
+tasks_text_color: #E4F248
+rewards_text_color: #FFDBC2
+selected_chapter_highlight_1: #78FFAF78
+selected_chapter_highlight_2: #36FFAF78
+
+// nasledie_economy — Изумруд и золото
+[8F4597A009915275]
+quest_locked_color: #399B80
+quest_not_started_color: #35F2A0
+quest_started_color: #FFC83D
+quest_completed_color: #A4F9D4
+dependency_line_completed_color: #A4F9D4
+dependency_line_uncompleted_color: #35F2A0
+dependency_line_requires_color: #FFC83D
+dependency_line_required_for_color: #FFDE8B
+quest_view_border: #35F2A0
+quest_view_title: #A4F9D4
+tasks_text_color: #FFC83D
+rewards_text_color: #A4F9D4
+selected_chapter_highlight_1: #7835F2A0
+selected_chapter_highlight_2: #3635F2A0
+
+// nasledie_transport — Синий экспресс
+[D90DA6CC0E252361]
+quest_locked_color: #4470AD
+quest_not_started_color: #4C99FF
+quest_started_color: #FFE15A
+quest_completed_color: #AED1FF
+dependency_line_completed_color: #AED1FF
+dependency_line_uncompleted_color: #4C99FF
+dependency_line_requires_color: #FFE15A
+dependency_line_required_for_color: #FFED9C
+quest_view_border: #4C99FF
+quest_view_title: #AED1FF
+tasks_text_color: #FFE15A
+rewards_text_color: #AED1FF
+selected_chapter_highlight_1: #784C99FF
+selected_chapter_highlight_2: #364C99FF
+
+// nasledie_industry — Сера и электричество
+[21DEFD3CCFC622D0]
+quest_locked_color: #859844
+quest_not_started_color: #D4ED24
+quest_started_color: #30D8E6
+quest_completed_color: #ECF79C
+dependency_line_completed_color: #ECF79C
+dependency_line_uncompleted_color: #D4ED24
+dependency_line_requires_color: #30D8E6
+dependency_line_required_for_color: #83E8F0
+quest_view_border: #D4ED24
+quest_view_title: #ECF79C
+tasks_text_color: #30D8E6
+rewards_text_color: #ECF79C
+selected_chapter_highlight_1: #78D4ED24
+selected_chapter_highlight_2: #36D4ED24
+
+// nasledie_defense — Медь и алый щит
+[A1279E21532D7CDD]
+quest_locked_color: #9A5E56
+quest_not_started_color: #FF744A
+quest_started_color: #FFD650
+quest_completed_color: #FFC0AE
+dependency_line_completed_color: #FFC0AE
+dependency_line_uncompleted_color: #FF744A
+dependency_line_requires_color: #FFD650
+dependency_line_required_for_color: #FFE696
+quest_view_border: #FF744A
+quest_view_title: #FFC0AE
+tasks_text_color: #FFD650
+rewards_text_color: #FFC0AE
+selected_chapter_highlight_1: #78FF744A
+selected_chapter_highlight_2: #36FF744A
+
+// nasledie_legends — Фиолетовое свечение
+[2D3B7589DD553745]
+quest_locked_color: #7A5AAD
+quest_not_started_color: #BD6BFF
+quest_started_color: #62F4E3
+quest_completed_color: #E1BCFF
+dependency_line_completed_color: #E1BCFF
+dependency_line_uncompleted_color: #BD6BFF
+dependency_line_requires_color: #62F4E3
+dependency_line_required_for_color: #A1F8EE
+quest_view_border: #BD6BFF
+quest_view_title: #E1BCFF
+tasks_text_color: #62F4E3
+rewards_text_color: #E1BCFF
+selected_chapter_highlight_1: #78BD6BFF
+selected_chapter_highlight_2: #36BD6BFF
+
+// nasledie_grand_projects — Малиновая искра
+[73CB4E221EBED702]
+quest_locked_color: #944D8E
+quest_not_started_color: #F250BE
+quest_started_color: #76E8FF
+quest_completed_color: #F9B0E2
+dependency_line_completed_color: #F9B0E2
+dependency_line_uncompleted_color: #F250BE
+dependency_line_requires_color: #76E8FF
+dependency_line_required_for_color: #ADF1FF
+quest_view_border: #F250BE
+quest_view_title: #F9B0E2
+tasks_text_color: #76E8FF
+rewards_text_color: #F9B0E2
+selected_chapter_highlight_1: #78F250BE
+selected_chapter_highlight_2: #36F250BE
+
+// nasledie_guild — Дикая зелень
+[0ABE8126BB237195]
+quest_locked_color: #3B8F65
+quest_not_started_color: #38D968
+quest_started_color: #FFBC64
+quest_completed_color: #A5EEBB
+dependency_line_completed_color: #A5EEBB
+dependency_line_uncompleted_color: #38D968
+dependency_line_requires_color: #FFBC64
+dependency_line_required_for_color: #FFD7A2
+quest_view_border: #38D968
+quest_view_title: #A5EEBB
+tasks_text_color: #FFBC64
+rewards_text_color: #A5EEBB
+selected_chapter_highlight_1: #7838D968
+selected_chapter_highlight_2: #3638D968
+
+// nasledie_cataclysm — Багровая корона
+[C54798B08E30ED27]
+quest_locked_color: #9A3E5E
+quest_not_started_color: #FF315A
+quest_started_color: #F5CF56
+quest_completed_color: #FFA2B5
+dependency_line_completed_color: #FFA2B5
+dependency_line_uncompleted_color: #FF315A
+dependency_line_requires_color: #F5CF56
+dependency_line_required_for_color: #F9E29A
+quest_view_border: #FF315A
+quest_view_title: #FFA2B5
+tasks_text_color: #F5CF56
+rewards_text_color: #FFA2B5
+selected_chapter_highlight_1: #78FF315A
+selected_chapter_highlight_2: #36FF315A
+
+// nasledie_archeology — Янтарь раскопок
+[CF8AC0B0D69E3A34]
+quest_locked_color: #8A7C59
+quest_not_started_color: #DDB350
+quest_started_color: #70DACD
+quest_completed_color: #F0DDB0
+dependency_line_completed_color: #F0DDB0
+dependency_line_uncompleted_color: #DDB350
+dependency_line_requires_color: #70DACD
+dependency_line_required_for_color: #A9E9E1
+quest_view_border: #DDB350
+quest_view_title: #F0DDB0
+tasks_text_color: #70DACD
+rewards_text_color: #F0DDB0
+selected_chapter_highlight_1: #78DDB350
+selected_chapter_highlight_2: #36DDB350
+
+// nasledie_relics — Аметист и серебро
+[14127D019AF8A60A]
+quest_locked_color: #675AAD
+quest_not_started_color: #956BFF
+quest_started_color: #FABBEB
+quest_completed_color: #CFBCFF
+dependency_line_completed_color: #CFBCFF
+dependency_line_uncompleted_color: #956BFF
+dependency_line_requires_color: #FABBEB
+dependency_line_required_for_color: #FCD6F3
+quest_view_border: #956BFF
+quest_view_title: #CFBCFF
+tasks_text_color: #FABBEB
+rewards_text_color: #CFBCFF
+selected_chapter_highlight_1: #78956BFF
+selected_chapter_highlight_2: #36956BFF
+
+// nasledie_netheritage — Красная лава
+[BC5663C3D347C93F]
+quest_locked_color: #9A4642
+quest_not_started_color: #FF421F
+quest_started_color: #FFB82E
+quest_completed_color: #FFAA9A
+dependency_line_completed_color: #FFAA9A
+dependency_line_uncompleted_color: #FF421F
+dependency_line_requires_color: #FFB82E
+dependency_line_required_for_color: #FFD482
+quest_view_border: #FF421F
+quest_view_title: #FFAA9A
+tasks_text_color: #FFB82E
+rewards_text_color: #FFAA9A
+selected_chapter_highlight_1: #78FF421F
+selected_chapter_highlight_2: #36FF421F
+
+// nasledie_ocean — Голубая глубина
+[42E670E2D2E5798E]
+quest_locked_color: #368CAD
+quest_not_started_color: #2ED4FF
+quest_started_color: #60FFB9
+quest_completed_color: #A1ECFF
+dependency_line_completed_color: #A1ECFF
+dependency_line_uncompleted_color: #2ED4FF
+dependency_line_requires_color: #60FFB9
+dependency_line_required_for_color: #A0FFD5
+quest_view_border: #2ED4FF
+quest_view_title: #A1ECFF
+tasks_text_color: #60FFB9
+rewards_text_color: #A1ECFF
+selected_chapter_highlight_1: #782ED4FF
+selected_chapter_highlight_2: #362ED4FF
+
+// nasledie_compass — Индиго звёздных карт
+[9D8645FBEA4E9EC9]
+quest_locked_color: #5565AD
+quest_not_started_color: #6F83FF
+quest_started_color: #FFC978
+quest_completed_color: #BEC7FF
+dependency_line_completed_color: #BEC7FF
+dependency_line_uncompleted_color: #6F83FF
+dependency_line_requires_color: #FFC978
+dependency_line_required_for_color: #FFDFAE
+quest_view_border: #6F83FF
+quest_view_title: #BEC7FF
+tasks_text_color: #FFC978
+rewards_text_color: #BEC7FF
+selected_chapter_highlight_1: #786F83FF
+selected_chapter_highlight_2: #366F83FF

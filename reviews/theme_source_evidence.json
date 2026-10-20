@@ -1,0 +1,38 @@
+{
+  "jar": "ftb-quests-forge-2001.4.22.jar",
+  "sha256": "9ea9d159a78a2724cfe0457b024680fdb52a2126eff9cfa5280a30578f647a68",
+  "classes_sha256": {
+    "dev/ftb/mods/ftbquests/quest/theme/ThemeLoader.class": "fcb03140f47f53860fc10308b7c3b1eff900bcbde54d265f8cf1fae166976585",
+    "dev/ftb/mods/ftbquests/quest/theme/QuestTheme.class": "3d1b4e65b813d6a533c43e1bbf05ae5a6123c3ec783ce7aa66b6a1a33fae049e",
+    "dev/ftb/mods/ftbquests/quest/theme/selector/IDSelector.class": "d5d6d20982b90a6fe05ed95ba9f9a7292a42741552c0f6b87630cae16c123b72",
+    "dev/ftb/mods/ftbquests/client/gui/quests/QuestButton.class": "e9116a6f8d95904e9516e1aab48f7407c84cf12904d8affac78dd245240c9030"
+  },
+  "built_in_shape_textures": [
+    "assets/ftbquests/textures/shapes/diamond/shape.png",
+    "assets/ftbquests/textures/shapes/diamond/outline.png",
+    "assets/ftbquests/textures/shapes/diamond/background.png",
+    "assets/ftbquests/textures/shapes/pentagon/shape.png",
+    "assets/ftbquests/textures/shapes/pentagon/outline.png",
+    "assets/ftbquests/textures/shapes/pentagon/background.png",
+    "assets/ftbquests/textures/shapes/hexagon/shape.png",
+    "assets/ftbquests/textures/shapes/hexagon/outline.png",
+    "assets/ftbquests/textures/shapes/hexagon/background.png",
+    "assets/ftbquests/textures/shapes/octagon/shape.png",
+    "assets/ftbquests/textures/shapes/octagon/outline.png",
+    "assets/ftbquests/textures/shapes/octagon/background.png",
+    "assets/ftbquests/textures/shapes/heart/shape.png",
+    "assets/ftbquests/textures/shapes/heart/outline.png",
+    "assets/ftbquests/textures/shapes/heart/background.png",
+    "assets/ftbquests/textures/shapes/gear/shape.png",
+    "assets/ftbquests/textures/shapes/gear/outline.png",
+    "assets/ftbquests/textures/shapes/gear/background.png"
+  ],
+  "findings": [
+    "ThemeLoader.parse starts with empty current selectors and ignores property lines until a [selector] header. The original local theme had no header, so its properties were ignored.",
+    "ThemeLoader accepts [*] for defaults and raw hexadecimal [chapter ID] for IDSelector. # prefixes select tags, not IDs.",
+    "QuestTheme.get(property, object) tries the object and then getParentID until an ancestor provides the property.",
+    "QuestButton.draw passes the quest object to all four quest state color properties and tints the outline; it also draws status icons.",
+    "Default extra_quest_shapes must be included when overridden: lists replace, not append."
+  ],
+  "gameplay_test": "not run; selected/hovered overlays and texture tinting still require game inspection"
+}

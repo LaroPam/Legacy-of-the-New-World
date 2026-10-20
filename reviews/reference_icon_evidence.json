@@ -1,0 +1,61 @@
+{
+  "scope": "Only introduced reference icons. Static registration/model evidence; not game rendering.",
+  "items": {
+    "minecraft:diamond": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "model": "assets/minecraft/models/item/diamond.json",
+      "model_sha256": "4cd2c9a5a8181d7a133888b2ecafb04ea998b422ca48d2e4988af5e2c8dd31b7",
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/diamond.png",
+          "sha256": "39ab9821ee4cd7194372cbc88f2225959f51c114a64848fc099be6d90ed214ab"
+        }
+      ],
+      "registration_evidence": "Minecraft 1.20.1 built-in diamond; official item model and vanilla advancement references"
+    },
+    "mowziesmobs:captured_grottol": {
+      "kind": "forge_item_registration",
+      "source_file": "mowziesmobs-1.8.2.jar",
+      "source_sha256": "e8ce1768cda6f1e1fadd2321c92921b473bd0cee45ba4b8387fb30f8326cb31c",
+      "model": "assets/mowziesmobs/models/item/captured_grottol.json",
+      "model_sha256": "7db0e5e61a3d7634f3b1c1fdedd4a6f63ced00f3c1fecb99dd8cae545a69cb95",
+      "textures": [
+        {
+          "path": "assets/mowziesmobs/textures/item/captured_grottol.png",
+          "sha256": "43902a5be73b82e5f6800886c16923db5231f22a276e180bb907a8829fb66160"
+        }
+      ],
+      "registration_evidence": "public static final RegistryObject<ItemCapturedGrottol> CAPTURED_GROTTOL = REG.register(\"captured_grottol\", () -> new ItemCapturedGrottol(new Item.Properties().m_41487_(1)));"
+    },
+    "mowziesmobs:umvuthana_mask_fury": {
+      "kind": "forge_item_registration",
+      "source_file": "mowziesmobs-1.8.2.jar",
+      "source_sha256": "e8ce1768cda6f1e1fadd2321c92921b473bd0cee45ba4b8387fb30f8326cb31c",
+      "model": "assets/mowziesmobs/models/item/umvuthana_mask_fury.json",
+      "model_sha256": "5465ffe21ab7fe3d276455a1d7c6ff9b1b14b727de0b9fb3690dec6ad3bfa0ae",
+      "textures": [
+        {
+          "path": "assets/mowziesmobs/textures/item/umvuthana_mask_fury_icon.png",
+          "sha256": "fa1f2978a1a6759634e5ca15e7307a2a3b7689d4088a2928aa8d756a3e7eab70"
+        }
+      ],
+      "registration_evidence": "public static final RegistryObject<ItemUmvuthanaMask> UMVUTHANA_MASK_FURY = REG.register(\"umvuthana_mask_fury\", () -> new ItemUmvuthanaMask(MaskType.FURY, new Item.Properties()));"
+    },
+    "mowziesmobs:wrought_axe": {
+      "kind": "forge_item_registration",
+      "source_file": "mowziesmobs-1.8.2.jar",
+      "source_sha256": "e8ce1768cda6f1e1fadd2321c92921b473bd0cee45ba4b8387fb30f8326cb31c",
+      "model": "assets/mowziesmobs/models/item/wrought_axe.json",
+      "model_sha256": "da351f1f27c5342de38beee13b7a6e961aca93b559df68086b802b4ced0819a2",
+      "textures": [
+        {
+          "path": "assets/mowziesmobs/textures/item/wrought_axe_icon.png",
+          "sha256": "cd6e27fa705aee7c00d3445d2710ed9b3f20815ecf278bd175b7f0d88a55b0ea"
+        }
+      ],
+      "registration_evidence": "public static final RegistryObject<ItemWroughtAxe> WROUGHT_AXE = REG.register(\"wrought_axe\", () -> new ItemWroughtAxe(new Item.Properties().m_41497_(Rarity.UNCOMMON)));"
+    }
+  }
+}

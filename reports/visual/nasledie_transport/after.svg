@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -704.00 1408.00 1312.00" width="1408.00" height="1312.00" role="img" aria-labelledby="nasledie_transport-after-title" data-quest-count="18">
+<title id="nasledie_transport-after-title">Транспорт — дороги к новым землям — схема SNBT, не скриншот игры</title>
+<defs><marker id="nasledie_transport-after-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
+<g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
+<path d="M -128 -704.00 v 1312.00"/>
+<path d="M -64 -704.00 v 1312.00"/>
+<path d="M 0 -704.00 v 1312.00"/>
+<path d="M 64 -704.00 v 1312.00"/>
+<path d="M 128 -704.00 v 1312.00"/>
+<path d="M 192 -704.00 v 1312.00"/>
+<path d="M 256 -704.00 v 1312.00"/>
+<path d="M 320 -704.00 v 1312.00"/>
+<path d="M 384 -704.00 v 1312.00"/>
+<path d="M 448 -704.00 v 1312.00"/>
+<path d="M 512 -704.00 v 1312.00"/>
+<path d="M 576 -704.00 v 1312.00"/>
+<path d="M 640 -704.00 v 1312.00"/>
+<path d="M 704 -704.00 v 1312.00"/>
+<path d="M 768 -704.00 v 1312.00"/>
+<path d="M 832 -704.00 v 1312.00"/>
+<path d="M 896 -704.00 v 1312.00"/>
+<path d="M 960 -704.00 v 1312.00"/>
+<path d="M 1024 -704.00 v 1312.00"/>
+<path d="M 1088 -704.00 v 1312.00"/>
+<path d="M 1152 -704.00 v 1312.00"/>
+<path d="M 1216 -704.00 v 1312.00"/>
+<path d="M 1280 -704.00 v 1312.00"/>
+<path d="M -128.00 -704 h 1408.00"/>
+<path d="M -128.00 -640 h 1408.00"/>
+<path d="M -128.00 -576 h 1408.00"/>
+<path d="M -128.00 -512 h 1408.00"/>
+<path d="M -128.00 -448 h 1408.00"/>
+<path d="M -128.00 -384 h 1408.00"/>
+<path d="M -128.00 -320 h 1408.00"/>
+<path d="M -128.00 -256 h 1408.00"/>
+<path d="M -128.00 -192 h 1408.00"/>
+<path d="M -128.00 -128 h 1408.00"/>
+<path d="M -128.00 -64 h 1408.00"/>
+<path d="M -128.00 0 h 1408.00"/>
+<path d="M -128.00 64 h 1408.00"/>
+<path d="M -128.00 128 h 1408.00"/>
+<path d="M -128.00 192 h 1408.00"/>
+<path d="M -128.00 256 h 1408.00"/>
+<path d="M -128.00 320 h 1408.00"/>
+<path d="M -128.00 384 h 1408.00"/>
+<path d="M -128.00 448 h 1408.00"/>
+<path d="M -128.00 512 h 1408.00"/>
+<path d="M -128.00 576 h 1408.00"/>
+</g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
+<path data-from="C1772DE6B882A602" data-to="168FB859D289DA38" d="M 27.00 0.00 L 130.00 0.00" marker-end="url(#nasledie_transport-after-arrow)"><title>C1772DE6B882A602 → 168FB859D289DA38</title></path>
+<path data-from="168FB859D289DA38" data-to="0BE47753BC6BEF28" d="M 187.00 0.00 L 290.00 0.00" marker-end="url(#nasledie_transport-after-arrow)"><title>168FB859D289DA38 → 0BE47753BC6BEF28</title></path>
+<path data-from="0BE47753BC6BEF28" data-to="D727915E29A5F477" d="M 347.00 0.00 L 446.00 0.00" marker-end="url(#nasledie_transport-after-arrow)"><title>0BE47753BC6BEF28 → D727915E29A5F477</title></path>
+<path data-from="D727915E29A5F477" data-to="27A5DCA80F77C440" d="M 480.00 31.00 L 480.00 130.00" marker-end="url(#nasledie_transport-after-arrow)"><title>D727915E29A5F477 → 27A5DCA80F77C440</title></path>
+<path data-from="27A5DCA80F77C440" data-to="3DC5EEC5097BB375" d="M 507.00 160.00 L 610.00 160.00" marker-end="url(#nasledie_transport-after-arrow)"><title>27A5DCA80F77C440 → 3DC5EEC5097BB375</title></path>
+<path data-from="3DC5EEC5097BB375" data-to="57D8DDEFF1169558" d="M 667.00 160.00 L 766.00 160.00" marker-end="url(#nasledie_transport-after-arrow)"><title>3DC5EEC5097BB375 → 57D8DDEFF1169558</title></path>
+<path data-from="D727915E29A5F477" data-to="2CC98EB2E8824152" d="M 480.00 -31.00 L 480.00 -130.00" marker-end="url(#nasledie_transport-after-arrow)"><title>D727915E29A5F477 → 2CC98EB2E8824152</title></path>
+<path data-from="2CC98EB2E8824152" data-to="AB76CE2DB46422C6" d="M 507.00 -160.00 L 606.00 -160.00" marker-end="url(#nasledie_transport-after-arrow)"><title>2CC98EB2E8824152 → AB76CE2DB46422C6</title></path>
+<path data-from="3DC5EEC5097BB375" data-to="7B13E63BEA35FC61" d="M 640.00 187.00 L 640.00 290.00" marker-end="url(#nasledie_transport-after-arrow)"><title>3DC5EEC5097BB375 → 7B13E63BEA35FC61</title></path>
+<path data-from="D727915E29A5F477" data-to="3E14426D5444F75E" d="M 511.00 0.00 L 610.00 0.00" marker-end="url(#nasledie_transport-after-arrow)"><title>D727915E29A5F477 → 3E14426D5444F75E</title></path>
+<path data-from="3E14426D5444F75E" data-to="0A24638E79FF2418" d="M 667.00 0.00 L 770.00 0.00" marker-end="url(#nasledie_transport-after-arrow)"><title>3E14426D5444F75E → 0A24638E79FF2418</title></path>
+<path data-from="0A24638E79FF2418" data-to="B6EA6A2338C90595" d="M 827.00 0.00 L 926.00 0.00" marker-end="url(#nasledie_transport-after-arrow)"><title>0A24638E79FF2418 → B6EA6A2338C90595</title></path>
+<path data-from="168FB859D289DA38" data-to="B39341943A77E20B" d="M 160.00 27.00 L 160.00 126.00" marker-end="url(#nasledie_transport-after-arrow)"><title>168FB859D289DA38 → B39341943A77E20B</title></path>
+<path data-from="CABC4D7CB8FBE2B6" data-to="34F99F7AE0F5BD92" d="M 27.00 -320.00 L 126.00 -320.00" marker-end="url(#nasledie_transport-after-arrow)"><title>CABC4D7CB8FBE2B6 → 34F99F7AE0F5BD92</title></path>
+<path data-from="27A5DCA80F77C440" data-to="0C11F617809503C4" d="M 480.00 187.00 L 480.00 286.00" marker-end="url(#nasledie_transport-after-arrow)"><title>27A5DCA80F77C440 → 0C11F617809503C4</title></path>
+<path data-from="7B13E63BEA35FC61" data-to="6E3CC9D4F972BDBB" d="M 640.00 347.00 L 640.00 446.00" marker-end="url(#nasledie_transport-after-arrow)"><title>7B13E63BEA35FC61 → 6E3CC9D4F972BDBB</title></path>
+</g><g class="quests" font-family="system-ui, sans-serif" text-anchor="middle">
+<g data-quest-id="168FB859D289DA38" tabindex="0" role="button" aria-label="Путь между вашими поселениями" transform="translate(160.00,0.00)" style="cursor:pointer">
+<title>Путь между вашими поселениями
+ID: 168FB859D289DA38
+Значок: create:track
+Форма: gear
+x=2.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="24.00,0.00 23.18,6.21 16.21,9.36 16.97,16.97 12.00,20.78 4.85,18.08 0.00,24.00 -6.21,23.18 -9.36,16.21 -16.97,16.97 -20.78,12.00 -18.08,4.85 -24.00,0.00 -23.18,-6.21 -16.21,-9.36 -16.97,-16.97 -12.00,-20.78 -4.85,-18.08 -0.00,-24.00 6.21,-23.18 9.36,-16.21 16.97,-16.97 20.78,-12.00 18.08,-4.85" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Путь между вашими</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">поселениями</text>
+</g>
+<g data-quest-id="C1772DE6B882A602" tabindex="0" role="button" aria-label="Материал большого путешествия" transform="translate(0.00,0.00)" style="cursor:pointer">
+<title>Материал большого путешествия
+ID: C1772DE6B882A602
+Значок: create:sturdy_sheet
+Форма: gear
+x=0.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="24.00,0.00 23.18,6.21 16.21,9.36 16.97,16.97 12.00,20.78 4.85,18.08 0.00,24.00 -6.21,23.18 -9.36,16.21 -16.97,16.97 -20.78,12.00 -18.08,4.85 -24.00,0.00 -23.18,-6.21 -16.21,-9.36 -16.97,-16.97 -12.00,-20.78 -4.85,-18.08 -0.00,-24.00 6.21,-23.18 9.36,-16.21 16.97,-16.97 20.78,-12.00 18.08,-4.85" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Материал большого</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">путешествия</text>
+</g>
+<g data-quest-id="0BE47753BC6BEF28" tabindex="0" role="button" aria-label="Компоненты будущего состава" transform="translate(320.00,0.00)" style="cursor:pointer">
+<title>Компоненты будущего состава
+ID: 0BE47753BC6BEF28
+Значок: create:railway_casing
+Форма: gear
+x=5.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="24.00,0.00 23.18,6.21 16.21,9.36 16.97,16.97 12.00,20.78 4.85,18.08 0.00,24.00 -6.21,23.18 -9.36,16.21 -16.97,16.97 -20.78,12.00 -18.08,4.85 -24.00,0.00 -23.18,-6.21 -16.21,-9.36 -16.97,-16.97 -12.00,-20.78 -4.85,-18.08 -0.00,-24.00 6.21,-23.18 9.36,-16.21 16.97,-16.97 20.78,-12.00 18.08,-4.85" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Компоненты будущего</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">состава</text>
+</g>
+<g data-quest-id="D727915E29A5F477" tabindex="0" role="button" aria-label="Поезд готов к отправлению" transform="translate(480.00,0.00)" style="cursor:pointer">
+<title>Поезд готов к отправлению
+ID: D727915E29A5F477
+Значок: create:track_station
+Форма: star
+x=7.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Поезд готов к отправлению</text>
+</g>
+<g data-quest-id="27A5DCA80F77C440" tabindex="0" role="button" aria-label="Передать маршрут машинисту" transform="translate(480.00,160.00)" style="cursor:pointer">
+<title>Передать маршрут машинисту
+ID: 27A5DCA80F77C440
+Значок: create:schedule
+Форма: gear
+x=7.5, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="24.00,0.00 23.18,6.21 16.21,9.36 16.97,16.97 12.00,20.78 4.85,18.08 0.00,24.00 -6.21,23.18 -9.36,16.21 -16.97,16.97 -20.78,12.00 -18.08,4.85 -24.00,0.00 -23.18,-6.21 -16.21,-9.36 -16.97,-16.97 -12.00,-20.78 -4.85,-18.08 -0.00,-24.00 6.21,-23.18 9.36,-16.21 16.97,-16.97 20.78,-12.00 18.08,-4.85" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Передать маршрут</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">машинисту</text>
+</g>
+<g data-quest-id="3DC5EEC5097BB375" tabindex="0" role="button" aria-label="Сигналы для общей линии" transform="translate(640.00,160.00)" style="cursor:pointer">
+<title>Сигналы для общей линии
+ID: 3DC5EEC5097BB375
+Значок: create:track_signal
+Форма: gear
+x=10.0, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="24.00,0.00 23.18,6.21 16.21,9.36 16.97,16.97 12.00,20.78 4.85,18.08 0.00,24.00 -6.21,23.18 -9.36,16.21 -16.97,16.97 -20.78,12.00 -18.08,4.85 -24.00,0.00 -23.18,-6.21 -16.21,-9.36 -16.97,-16.97 -12.00,-20.78 -4.85,-18.08 -0.00,-24.00 6.21,-23.18 9.36,-16.21 16.97,-16.97 20.78,-12.00 18.08,-4.85" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сигналы для общей линии</text>
+</g>
+<g data-quest-id="57D8DDEFF1169558" tabindex="0" role="button" aria-label="Вокзал знает время прибытия" transform="translate(800.00,160.00)" style="cursor:pointer">
+<title>Вокзал знает время прибытия
+ID: 57D8DDEFF1169558
+Значок: create:display_board
+Форма: star
+x=12.5, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Вокзал знает время</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">прибытия</text>
+</g>
+<g data-quest-id="2CC98EB2E8824152" tabindex="0" role="button" aria-label="Свисток перед отправлением" transform="translate(480.00,-160.00)" style="cursor:pointer">
+<title>Свисток перед отправлением
+ID: 2CC98EB2E8824152
+Значок: create:steam_whistle
+Форма: gear
+x=7.5, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="24.00,0.00 23.18,6.21 16.21,9.36 16.97,16.97 12.00,20.78 4.85,18.08 0.00,24.00 -6.21,23.18 -9.36,16.21 -16.97,16.97 -20.78,12.00 -18.08,4.85 -24.00,0.00 -23.18,-6.21 -16.21,-9.36 -16.97,-16.97 -12.00,-20.78 -4.85,-18.08 -0.00,-24.00 6.21,-23.18 9.36,-16.21 16.97,-16.97 20.78,-12.00 18.08,-4.85" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Свисток перед</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">отправлением</text>
+</g>
+<g data-quest-id="AB76CE2DB46422C6" tabindex="0" role="button" aria-label="Рейс в другое измерение" transform="translate(640.00,-160.00)" style="cursor:pointer">
+<title>Рейс в другое измерение
+ID: AB76CE2DB46422C6
+Значок: minecraft:amethyst_block
+Форма: star
+x=10.0, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Рейс в другое измерение</text>
+</g>
+<g data-quest-id="7B13E63BEA35FC61" tabindex="0" role="button" aria-label="Максим, сигнал был красным" transform="translate(640.00,320.00)" style="cursor:pointer">
+<title>Максим, сигнал был красным
+ID: 7B13E63BEA35FC61
+Значок: create:track_signal
+Форма: gear
+x=10.0, y=5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="24.00,0.00 23.18,6.21 16.21,9.36 16.97,16.97 12.00,20.78 4.85,18.08 0.00,24.00 -6.21,23.18 -9.36,16.21 -16.97,16.97 -20.78,12.00 -18.08,4.85 -24.00,0.00 -23.18,-6.21 -16.21,-9.36 -16.97,-16.97 -12.00,-20.78 -4.85,-18.08 -0.00,-24.00 6.21,-23.18 9.36,-16.21 16.97,-16.97 20.78,-12.00 18.08,-4.85" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Максим, сигнал был</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">красным</text>
+</g>
+<g data-quest-id="3E14426D5444F75E" tabindex="0" role="button" aria-label="Собственная рельсовая фабрика" transform="translate(640.00,0.00)" style="cursor:pointer">
+<title>Собственная рельсовая фабрика
+ID: 3E14426D5444F75E
+Значок: create:mechanical_press
+Форма: gear
+x=10.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="24.00,0.00 23.18,6.21 16.21,9.36 16.97,16.97 12.00,20.78 4.85,18.08 0.00,24.00 -6.21,23.18 -9.36,16.21 -16.97,16.97 -20.78,12.00 -18.08,4.85 -24.00,0.00 -23.18,-6.21 -16.21,-9.36 -16.97,-16.97 -12.00,-20.78 -4.85,-18.08 -0.00,-24.00 6.21,-23.18 9.36,-16.21 16.97,-16.97 20.78,-12.00 18.08,-4.85" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Собственная рельсовая</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">фабрика</text>
+</g>
+<g data-quest-id="0A24638E79FF2418" tabindex="0" role="button" aria-label="Шесть вагонов для дальней дороги" transform="translate(800.00,0.00)" style="cursor:pointer">
+<title>Шесть вагонов для дальней дороги
+ID: 0A24638E79FF2418
+Значок: minecraft:minecart
+Форма: gear
+x=12.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="24.00,0.00 23.18,6.21 16.21,9.36 16.97,16.97 12.00,20.78 4.85,18.08 0.00,24.00 -6.21,23.18 -9.36,16.21 -16.97,16.97 -20.78,12.00 -18.08,4.85 -24.00,0.00 -23.18,-6.21 -16.21,-9.36 -16.97,-16.97 -12.00,-20.78 -4.85,-18.08 -0.00,-24.00 6.21,-23.18 9.36,-16.21 16.97,-16.97 20.78,-12.00 18.08,-4.85" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Шесть вагонов для дальней</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">дороги</text>
+</g>
+<g data-quest-id="B6EA6A2338C90595" tabindex="0" role="button" aria-label="Пять тысяч блоков от дома" transform="translate(960.00,0.00)" style="cursor:pointer">
+<title>Пять тысяч блоков от дома
+ID: B6EA6A2338C90595
+Значок: create:green_seat
+Форма: star
+x=15.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Пять тысяч блоков от дома</text>
+</g>
+<g data-quest-id="B39341943A77E20B" tabindex="0" role="button" aria-label="Дрезина для осмотра пути" transform="translate(160.00,160.00)" style="cursor:pointer">
+<title>Дрезина для осмотра пути
+ID: B39341943A77E20B
+Значок: railways:handcar
+Форма: star
+x=2.5, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дрезина для осмотра пути</text>
+</g>
+<g data-quest-id="CABC4D7CB8FBE2B6" tabindex="0" role="button" aria-label="Воздушная разведка" transform="translate(0.00,-320.00)" style="cursor:pointer">
+<title>Воздушная разведка
+ID: CABC4D7CB8FBE2B6
+Значок: immersive_aircraft:biplane
+Форма: gear
+x=0.0, y=-5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="24.00,0.00 23.18,6.21 16.21,9.36 16.97,16.97 12.00,20.78 4.85,18.08 0.00,24.00 -6.21,23.18 -9.36,16.21 -16.97,16.97 -20.78,12.00 -18.08,4.85 -24.00,0.00 -23.18,-6.21 -16.21,-9.36 -16.97,-16.97 -12.00,-20.78 -4.85,-18.08 -0.00,-24.00 6.21,-23.18 9.36,-16.21 16.97,-16.97 20.78,-12.00 18.08,-4.85" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Воздушная разведка</text>
+</g>
+<g data-quest-id="34F99F7AE0F5BD92" tabindex="0" role="button" aria-label="Борт для экспедиционных грузов" transform="translate(160.00,-320.00)" style="cursor:pointer">
+<title>Борт для экспедиционных грузов
+ID: 34F99F7AE0F5BD92
+Значок: immersive_aircraft:cargo_airship
+Форма: star
+x=2.5, y=-5.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Борт для экспедиционных</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">грузов</text>
+</g>
+<g data-quest-id="0C11F617809503C4" tabindex="0" role="button" aria-label="Фуражка дежурного по станции" transform="translate(480.00,320.00)" style="cursor:pointer">
+<title>Фуражка дежурного по станции
+ID: 0C11F617809503C4
+Значок: railways:conductor_cap
+Форма: star
+x=7.5, y=5.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Фуражка дежурного по</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">станции</text>
+</g>
+<g data-quest-id="6E3CC9D4F972BDBB" tabindex="0" role="button" aria-label="Задним ходом — прямо в историю" transform="translate(640.00,480.00)" style="cursor:pointer">
+<title>Задним ходом — прямо в историю
+ID: 6E3CC9D4F972BDBB
+Значок: create:railway_casing
+Форма: star
+x=10.0, y=7.5
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#4C99FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Задним ходом — прямо в</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">историю</text>
+</g>
+</g></svg>

@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -320.00 1216.00 640.00" width="1216.00" height="640.00" role="img" aria-labelledby="nasledie_economy-after-title" data-quest-count="9">
+<title id="nasledie_economy-after-title">Гильдия купцов — схема SNBT, не скриншот игры</title>
+<defs><marker id="nasledie_economy-after-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
+<g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
+<path d="M -128 -320.00 v 640.00"/>
+<path d="M -64 -320.00 v 640.00"/>
+<path d="M 0 -320.00 v 640.00"/>
+<path d="M 64 -320.00 v 640.00"/>
+<path d="M 128 -320.00 v 640.00"/>
+<path d="M 192 -320.00 v 640.00"/>
+<path d="M 256 -320.00 v 640.00"/>
+<path d="M 320 -320.00 v 640.00"/>
+<path d="M 384 -320.00 v 640.00"/>
+<path d="M 448 -320.00 v 640.00"/>
+<path d="M 512 -320.00 v 640.00"/>
+<path d="M 576 -320.00 v 640.00"/>
+<path d="M 640 -320.00 v 640.00"/>
+<path d="M 704 -320.00 v 640.00"/>
+<path d="M 768 -320.00 v 640.00"/>
+<path d="M 832 -320.00 v 640.00"/>
+<path d="M 896 -320.00 v 640.00"/>
+<path d="M 960 -320.00 v 640.00"/>
+<path d="M 1024 -320.00 v 640.00"/>
+<path d="M 1088 -320.00 v 640.00"/>
+<path d="M -128.00 -320 h 1216.00"/>
+<path d="M -128.00 -256 h 1216.00"/>
+<path d="M -128.00 -192 h 1216.00"/>
+<path d="M -128.00 -128 h 1216.00"/>
+<path d="M -128.00 -64 h 1216.00"/>
+<path d="M -128.00 0 h 1216.00"/>
+<path d="M -128.00 64 h 1216.00"/>
+<path d="M -128.00 128 h 1216.00"/>
+<path d="M -128.00 192 h 1216.00"/>
+<path d="M -128.00 256 h 1216.00"/>
+<path d="M -128.00 320 h 1216.00"/>
+</g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
+<path data-from="D49CAFA761D24CA4" data-to="B31BCA46216D2DC6" d="M 27.00 0.00 L 130.00 0.00" marker-end="url(#nasledie_economy-after-arrow)"><title>D49CAFA761D24CA4 → B31BCA46216D2DC6</title></path>
+<path data-from="B31BCA46216D2DC6" data-to="E03032475F008D4D" d="M 187.00 0.00 L 290.00 0.00" marker-end="url(#nasledie_economy-after-arrow)"><title>B31BCA46216D2DC6 → E03032475F008D4D</title></path>
+<path data-from="E03032475F008D4D" data-to="D15B25FAA41E05AE" d="M 347.00 0.00 L 450.00 0.00" marker-end="url(#nasledie_economy-after-arrow)"><title>E03032475F008D4D → D15B25FAA41E05AE</title></path>
+<path data-from="9CE7C2CFF54FECE4" data-to="FB634EE0C189A59B" d="M 640.00 27.00 L 640.00 130.00" marker-end="url(#nasledie_economy-after-arrow)"><title>9CE7C2CFF54FECE4 → FB634EE0C189A59B</title></path>
+<path data-from="FB634EE0C189A59B" data-to="F0C5DD6DFBF85A1C" d="M 613.00 160.00 L 510.00 160.00" marker-end="url(#nasledie_economy-after-arrow)"><title>FB634EE0C189A59B → F0C5DD6DFBF85A1C</title></path>
+<path data-from="D15B25FAA41E05AE" data-to="9CE7C2CFF54FECE4" d="M 507.00 0.00 L 610.00 0.00" marker-end="url(#nasledie_economy-after-arrow)"><title>D15B25FAA41E05AE → 9CE7C2CFF54FECE4</title></path>
+<path data-from="F0C5DD6DFBF85A1C" data-to="62F24C6158049C2F" d="M 453.00 160.00 L 350.00 160.00" marker-end="url(#nasledie_economy-after-arrow)"><title>F0C5DD6DFBF85A1C → 62F24C6158049C2F</title></path>
+<path data-from="62F24C6158049C2F" data-to="BE7C211A268C501D" d="M 293.00 160.00 L 190.00 160.00" marker-end="url(#nasledie_economy-after-arrow)"><title>62F24C6158049C2F → BE7C211A268C501D</title></path>
+</g><g class="quests" font-family="system-ui, sans-serif" text-anchor="middle">
+<g data-quest-id="D49CAFA761D24CA4" tabindex="0" role="button" aria-label="Первая прибыль" transform="translate(0.00,0.00)" style="cursor:pointer">
+<title>Первая прибыль
+ID: D49CAFA761D24CA4
+Значок: minecraft:emerald
+Форма: circle
+x=0.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#35F2A0" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первая прибыль</text>
+</g>
+<g data-quest-id="B31BCA46216D2DC6" tabindex="0" role="button" aria-label="Хлеб к дороге" transform="translate(160.00,0.00)" style="cursor:pointer">
+<title>Хлеб к дороге
+ID: B31BCA46216D2DC6
+Значок: minecraft:bread
+Форма: coin
+x=2.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#35F2A0" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Хлеб к дороге</text>
+</g>
+<g data-quest-id="E03032475F008D4D" tabindex="0" role="button" aria-label="Редстоун через рынок" transform="translate(320.00,0.00)" style="cursor:pointer">
+<title>Редстоун через рынок
+ID: E03032475F008D4D
+Значок: minecraft:redstone
+Форма: coin
+x=5.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#35F2A0" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Редстоун через рынок</text>
+</g>
+<g data-quest-id="D15B25FAA41E05AE" tabindex="0" role="button" aria-label="Стекло для стройки" transform="translate(480.00,0.00)" style="cursor:pointer">
+<title>Стекло для стройки
+ID: D15B25FAA41E05AE
+Значок: minecraft:glass
+Форма: coin
+x=7.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#35F2A0" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Стекло для стройки</text>
+</g>
+<g data-quest-id="FB634EE0C189A59B" tabindex="0" role="button" aria-label="Сделка знаний" transform="translate(640.00,160.00)" style="cursor:pointer">
+<title>Сделка знаний
+ID: FB634EE0C189A59B
+Значок: minecraft:enchanted_book
+Форма: coin
+x=10.0, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#35F2A0" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сделка знаний</text>
+</g>
+<g data-quest-id="F0C5DD6DFBF85A1C" tabindex="0" role="button" aria-label="Жемчуг на прилавке" transform="translate(480.00,160.00)" style="cursor:pointer">
+<title>Жемчуг на прилавке
+ID: F0C5DD6DFBF85A1C
+Значок: minecraft:ender_pearl
+Форма: coin
+x=7.5, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#35F2A0" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Жемчуг на прилавке</text>
+</g>
+<g data-quest-id="9CE7C2CFF54FECE4" tabindex="0" role="button" aria-label="Десять завершённых сделок" transform="translate(640.00,0.00)" style="cursor:pointer">
+<title>Десять завершённых сделок
+ID: 9CE7C2CFF54FECE4
+Значок: minecraft:emerald
+Форма: coin
+x=10.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" class="quest-frame" fill="#152532" stroke="#35F2A0" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Десять завершённых сделок</text>
+</g>
+<g data-quest-id="62F24C6158049C2F" tabindex="0" role="button" aria-label="Центр складского хозяйства" transform="translate(320.00,160.00)" style="cursor:pointer">
+<title>Центр складского хозяйства
+ID: 62F24C6158049C2F
+Значок: sophisticatedstorage:controller
+Форма: gear
+x=5.0, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="24.00,0.00 23.18,6.21 16.21,9.36 16.97,16.97 12.00,20.78 4.85,18.08 0.00,24.00 -6.21,23.18 -9.36,16.21 -16.97,16.97 -20.78,12.00 -18.08,4.85 -24.00,0.00 -23.18,-6.21 -16.21,-9.36 -16.97,-16.97 -12.00,-20.78 -4.85,-18.08 -0.00,-24.00 6.21,-23.18 9.36,-16.21 16.97,-16.97 20.78,-12.00 18.08,-4.85" class="quest-frame" fill="#152532" stroke="#35F2A0" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Центр складского</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">хозяйства</text>
+</g>
+<g data-quest-id="BE7C211A268C501D" tabindex="0" role="button" aria-label="Гильдия постоянных клиентов" transform="translate(160.00,160.00)" style="cursor:pointer">
+<title>Гильдия постоянных клиентов
+ID: BE7C211A268C501D
+Значок: minecraft:emerald
+Форма: star
+x=2.5, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" class="quest-frame" fill="#152532" stroke="#35F2A0" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Гильдия постоянных</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">клиентов</text>
+</g>
+</g></svg>

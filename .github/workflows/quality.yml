@@ -1,0 +1,22 @@
+name: Questbook static checks
+on: [push, pull_request]
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python tools/quality.py --report reports/quality-ci.json
+      - run: python tools/apply_polish.py --check
+      - run: python tools/apply_palettes.py --check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: static-quality-report
+          path: reports/quality-ci.json

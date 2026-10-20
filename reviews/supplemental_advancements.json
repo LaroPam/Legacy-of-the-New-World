@@ -1,0 +1,3101 @@
+{
+  "betterarcheology:fossil_found": {
+    "source": "betterarcheology-1.2.1-1.20.1.jar",
+    "sha256": "4180f72ec4b69690ec160ac50e48c087f0fe7c98681dcd1f70d82ed5cbfeec9e",
+    "body": {
+      "parent": "minecraft:adventure/root",
+      "criteria": {
+        "betterarcheology:fossil_found": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:villager_fossil_head",
+                  "betterarcheology:villager_fossil_body",
+                  "betterarcheology:ocelot_fossil_head",
+                  "betterarcheology:ocelot_fossil_body",
+                  "betterarcheology:sheep_fossil_head",
+                  "betterarcheology:sheep_fossil_body",
+                  "betterarcheology:chicken_fossil_head",
+                  "betterarcheology:chicken_fossil_body",
+                  "betterarcheology:creeper_fossil_head",
+                  "betterarcheology:creeper_fossil_body",
+                  "betterarcheology:wolf_fossil_head",
+                  "betterarcheology:wolf_fossil_body",
+                  "betterarcheology:guardian_fossil_head",
+                  "betterarcheology:guardian_fossil_body"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "display": {
+        "icon": {
+          "item": "betterarcheology:villager_fossil_head"
+        },
+        "title": {
+          "translate": "advancements.fossil_found"
+        },
+        "description": {
+          "translate": "advancements.fossil_found.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "requirements": [
+        [
+          "betterarcheology:fossil_found"
+        ]
+      ],
+      "sends_telemetry_event": true
+    }
+  },
+  "betterarcheology:all_fossils_found": {
+    "source": "betterarcheology-1.2.1-1.20.1.jar",
+    "sha256": "4180f72ec4b69690ec160ac50e48c087f0fe7c98681dcd1f70d82ed5cbfeec9e",
+    "body": {
+      "parent": "betterarcheology:fossil_found",
+      "criteria": {
+        "betterarcheology:villager_fossil_head": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:villager_fossil_head"
+                ]
+              }
+            ]
+          }
+        },
+        "betterarcheology:villager_fossil_body": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:villager_fossil_body"
+                ]
+              }
+            ]
+          }
+        },
+        "betterarcheology:ocelot_fossil_head": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:ocelot_fossil_head"
+                ]
+              }
+            ]
+          }
+        },
+        "betterarcheology:ocelot_fossil_body": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:ocelot_fossil_body"
+                ]
+              }
+            ]
+          }
+        },
+        "betterarcheology:sheep_fossil_body": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:sheep_fossil_body"
+                ]
+              }
+            ]
+          }
+        },
+        "betterarcheology:sheep_fossil_head": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:sheep_fossil_head"
+                ]
+              }
+            ]
+          }
+        },
+        "betterarcheology:chicken_fossil_head": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:chicken_fossil_head"
+                ]
+              }
+            ]
+          }
+        },
+        "betterarcheology:chicken_fossil_body": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:chicken_fossil_body"
+                ]
+              }
+            ]
+          }
+        },
+        "betterarcheology:creeper_fossil_head": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:creeper_fossil_head"
+                ]
+              }
+            ]
+          }
+        },
+        "betterarcheology:creeper_fossil_body": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:creeper_fossil_body"
+                ]
+              }
+            ]
+          }
+        },
+        "betterarcheology:wolf_fossil_body": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:wolf_fossil_body"
+                ]
+              }
+            ]
+          }
+        },
+        "betterarcheology:wolf_fossil_head": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:wolf_fossil_head"
+                ]
+              }
+            ]
+          }
+        },
+        "betterarcheology:guardian_fossil_body": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:guardian_fossil_body"
+                ]
+              }
+            ]
+          }
+        },
+        "betterarcheology:guardian_fossil_head": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "betterarcheology:guardian_fossil_head"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "display": {
+        "icon": {
+          "item": "betterarcheology:sheep_fossil"
+        },
+        "title": {
+          "translate": "advancements.all_fossils_found"
+        },
+        "description": {
+          "translate": "advancements.all_fossils_found.description"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "rewards": {
+        "experience": 100
+      },
+      "requirements": [
+        [
+          "betterarcheology:villager_fossil_head"
+        ],
+        [
+          "betterarcheology:villager_fossil_body"
+        ],
+        [
+          "betterarcheology:ocelot_fossil_head"
+        ],
+        [
+          "betterarcheology:ocelot_fossil_body"
+        ],
+        [
+          "betterarcheology:sheep_fossil_head"
+        ],
+        [
+          "betterarcheology:sheep_fossil_body"
+        ],
+        [
+          "betterarcheology:chicken_fossil_head"
+        ],
+        [
+          "betterarcheology:chicken_fossil_body"
+        ],
+        [
+          "betterarcheology:creeper_fossil_head"
+        ],
+        [
+          "betterarcheology:creeper_fossil_body"
+        ],
+        [
+          "betterarcheology:wolf_fossil_head"
+        ],
+        [
+          "betterarcheology:wolf_fossil_body"
+        ],
+        [
+          "betterarcheology:guardian_fossil_head"
+        ],
+        [
+          "betterarcheology:guardian_fossil_body"
+        ]
+      ],
+      "sends_telemetry_event": true
+    }
+  },
+  "nova_structures:nether/find_keep": {
+    "source": "dungeons-and-taverns-3.0.3.f.jar",
+    "sha256": "251b531ff2882c61a4c2eba3bd7b1683aa22b6c2d459e27bfde04a2948c99e1e",
+    "body": {
+      "parent": "nova_structures:nether/find_nether_skeleton",
+      "criteria": {
+        "minecraft:nether_keep": {
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "structure": "nova_structures:nether_keep"
+                  }
+                }
+              }
+            ]
+          },
+          "trigger": "minecraft:location"
+        }
+      },
+      "display": {
+        "announce_to_chat": true,
+        "description": {
+          "translate": "Stumble upon a Nether Keep"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+          "item": "minecraft:chiseled_nether_bricks"
+        },
+        "show_toast": true,
+        "title": {
+          "translate": "Concrete Halls"
+        }
+      },
+      "requirements": [
+        [
+          "minecraft:nether_keep"
+        ]
+      ],
+      "sends_telemetry_event": false
+    }
+  },
+  "nova_structures:nether/powder_snow_keep": {
+    "source": "dungeons-and-taverns-3.0.3.f.jar",
+    "sha256": "251b531ff2882c61a4c2eba3bd7b1683aa22b6c2d459e27bfde04a2948c99e1e",
+    "body": {
+      "parent": "nova_structures:nether/find_keep",
+      "criteria": {
+        "powder_snow_keep": {
+          "trigger": "minecraft:enter_block",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "structure": "nova_structures:nether_keep"
+                  }
+                }
+              }
+            ],
+            "block": "minecraft:powder_snow"
+          }
+        }
+      },
+      "display": {
+        "icon": {
+          "item": "minecraft:powder_snow_bucket"
+        },
+        "title": {
+          "translate": "Cool Off"
+        },
+        "description": {
+          "translate": "Bathe in powder snow while in a Nether Keep"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "requirements": [
+        [
+          "powder_snow_keep"
+        ]
+      ],
+      "rewards": {
+        "experience": 1000
+      },
+      "sends_telemetry_event": false
+    }
+  },
+  "nova_structures:adventure/tavern_quest": {
+    "source": "dungeons-and-taverns-3.0.3.f.jar",
+    "sha256": "251b531ff2882c61a4c2eba3bd7b1683aa22b6c2d459e27bfde04a2948c99e1e",
+    "body": {
+      "parent": "nova_structures:adventure/find_tavern",
+      "criteria": {
+        "open_tavern_chest": {
+          "trigger": "minecraft:player_generates_container_loot",
+          "conditions": {
+            "loot_table": "nova_structures:chests/tavern_quest"
+          }
+        }
+      },
+      "display": {
+        "icon": {
+          "item": "minecraft:map"
+        },
+        "title": "Call For Adventure",
+        "description": "Acquire a Tavern quest map",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "requirements": [
+        [
+          "open_tavern_chest"
+        ]
+      ],
+      "sends_telemetry_event": false
+    }
+  },
+  "alexscaves:alexscaves/cave_tablet": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:cave_tablet",
+          "nbt": "{Rainbow:1}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.cave_tablet.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.cave_tablet.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/root",
+      "criteria": {
+        "cave_tablet": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "alexscaves:cave_tablet"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/cave_book": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:cave_book"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.cave_book.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.cave_book.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/cave_tablet",
+      "criteria": {
+        "cave_book": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "alexscaves:cave_book"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/cave_codex": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:cave_codex",
+          "nbt": "{Rainbow:1}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.cave_codex.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.cave_codex.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/cave_tablet",
+      "criteria": {
+        "cave_codex": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "alexscaves:cave_codex"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/cave_map": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:cave_map",
+          "nbt": "{Filled:1}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.cave_map.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.cave_map.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/cave_codex",
+      "criteria": {
+        "cave_map": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "alexscaves:cave_map"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/neodymium": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:raw_scarlet_neodymium"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.neodymium.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.neodymium.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/discover_magnetic_caves",
+      "criteria": {
+        "azure": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "alexscaves:raw_azure_neodymium"
+                ]
+              }
+            ]
+          }
+        },
+        "scarlet": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "alexscaves:raw_scarlet_neodymium"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_boundroid": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:heavyweight"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_boundroid.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_boundroid.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/neodymium",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:boundroid"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/underzealot_sacrifice": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/underzealot_sacrifice.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.underzealot_sacrifice.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.underzealot_sacrifice.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/discover_underzealot",
+      "criteria": {
+        "underzealot_sacrifice": {
+          "trigger": "alexscaves:underzealot_sacrifice"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_forsaken": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/defeat_forsaken.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_forsaken.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_forsaken.desc"
+        },
+        "frame": "challenge"
+      },
+      "parent": "alexscaves:alexscaves/underzealot_sacrifice",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:forsaken"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/caramel": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:caramel"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.caramel.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.caramel.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/gelatin",
+      "criteria": {
+        "mussel": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "alexscaves:caramel"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/caramel_apple": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:caramel_apple"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.caramel_apple.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.caramel_apple.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/caramel",
+      "criteria": {
+        "mussel": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "alexscaves:caramel_apple"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_magnetron": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:heart_of_iron"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_magnetron.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_magnetron.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/neodymium_ingot",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:magnetron"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_big_dinosaur": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:heavy_bone"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_big_dinosaur.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_big_dinosaur.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/breed_grottoceratops",
+      "criteria": {
+        "killed_grottoceratops": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:grottoceratops"
+            }
+          }
+        },
+        "killed_tremorsaurus": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:tremorsaurus"
+            }
+          }
+        },
+        "killed_relicheirus": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:relicheirus"
+            }
+          }
+        },
+        "killed_luxtructosaurus": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:luxtructosaurus"
+            }
+          }
+        },
+        "killed_atlatitan": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:atlatitan"
+            }
+          }
+        }
+      },
+      "requirements": [
+        [
+          "killed_grottoceratops",
+          "killed_tremorsaurus",
+          "killed_relicheirus",
+          "killed_luxtructosaurus",
+          "killed_atlatitan"
+        ]
+      ]
+    }
+  },
+  "alexscaves:alexscaves/tame_subterranodon": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:subterranodon_egg"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.tame_subterranodon.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.tame_subterranodon.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/trilocaris_bucket",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:tame_animal",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:subterranodon"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/acid_create_rust": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:rusty_barrel"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.acid_create_rust.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.acid_create_rust.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/enter_acid_with_armor",
+      "criteria": {
+        "rust": {
+          "trigger": "alexscaves:acid_create_rust"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/deep_ones_become_neutral": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/deep_one_2.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.deep_ones_become_neutral.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.deep_ones_become_neutral.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/trade_with_deep_one",
+      "criteria": {
+        "stalked_by_deep_one": {
+          "trigger": "alexscaves:deep_one_neutral"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/trade_with_deep_one": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/deep_one_1.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.trade_with_deep_one.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.trade_with_deep_one.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/pearl_on_abyssal_altar",
+      "criteria": {
+        "stalked_by_deep_one": {
+          "trigger": "alexscaves:deep_one_trade"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/repair_submarine": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "minecraft:copper_ingot"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.repair_submarine.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.repair_submarine.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/ride_submarine",
+      "criteria": {
+        "interact": {
+          "trigger": "minecraft:player_interacted_with_entity",
+          "conditions": {
+            "item": {
+              "items": [
+                "minecraft:copper_ingot"
+              ]
+            },
+            "entity": {
+              "type": "alexscaves:submarine"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/discover_abyssal_ruins": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:metal_scaffolding"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.discover_abyssal_ruins.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.discover_abyssal_ruins.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/discover_abyssal_chasm",
+      "criteria": {
+        "abyssal_ruins": {
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "structure": "alexscaves:abyssal_ruins"
+                  }
+                }
+              }
+            ]
+          },
+          "trigger": "minecraft:location"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/feed_gummy_bear": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/feed_gummy_bear.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.feed_gummy_bear.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.feed_gummy_bear.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/gelatin",
+      "criteria": {
+        "interact": {
+          "trigger": "minecraft:player_interacted_with_entity",
+          "conditions": {
+            "item": {
+              "items": [
+                "minecraft:potion"
+              ]
+            },
+            "entity": {
+              "type": "alexscaves:gummy_bear"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/ride_gum_worm": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/ride_gum_worm.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.ride_gum_worm.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.ride_gum_worm.desc"
+        },
+        "frame": "challenge"
+      },
+      "parent": "alexscaves:alexscaves/gobthumper",
+      "criteria": {
+        "ride_gum_worm": {
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "vehicle": {
+                    "type": "alexscaves:gum_worm_segment"
+                  }
+                }
+              }
+            ]
+          },
+          "trigger": "minecraft:started_riding"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/licowitch_tower": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:licoroot_sprout"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.licowitch_tower.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.licowitch_tower.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/walk_on_rock_candy",
+      "criteria": {
+        "licowitch_tower": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "structure": "alexscaves:licowitch_tower"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_gloomoth": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/defeat_gloomoth.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_gloomoth.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_gloomoth.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/guano",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:gloomoth"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/galena_gauntlet_challenge": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:galena_gauntlet",
+          "nbt": "{UseTime:5,PrevUseTime:5}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.galena_gauntlet_challenge.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.galena_gauntlet_challenge.desc"
+        },
+        "frame": "challenge"
+      },
+      "parent": "alexscaves:alexscaves/telecore",
+      "criteria": {
+        "killed": {
+          "trigger": "alexscaves:kill_mob_with_galena_gauntlet"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/finished_quarry": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:quarry_smasher"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.finished_quarry.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.finished_quarry.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/quarry",
+      "criteria": {
+        "finished_quarry": {
+          "trigger": "alexscaves:finished_quarry"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/enter_acid_with_armor": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:acid_bucket"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.enter_acid_with_armor.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.enter_acid_with_armor.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/discover_toxic_caves",
+      "criteria": {
+        "enter_acid_with_armor": {
+          "trigger": "alexscaves:enter_acid_with_armor"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/stop_nuclear_furnace_meltdown": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:waste_drum"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.stop_nuclear_furnace_meltdown.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.stop_nuclear_furnace_meltdown.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/nuclear_furnace_component",
+      "criteria": {
+        "stop_nuclear_furnace_meltdown": {
+          "trigger": "alexscaves:stop_nuclear_furnace_meltdown"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/ride_submarine": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:submarine"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.ride_submarine.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.ride_submarine.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/discover_abyssal_ruins",
+      "criteria": {
+        "ride_a_boat_with_a_goat": {
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "vehicle": {
+                    "type": "alexscaves:submarine"
+                  }
+                }
+              }
+            ]
+          },
+          "trigger": "minecraft:started_riding"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/deep_ones_become_helpful": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/deep_one_3.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.deep_ones_become_helpful.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.deep_ones_become_helpful.desc"
+        },
+        "frame": "challenge"
+      },
+      "parent": "alexscaves:alexscaves/deep_ones_become_neutral",
+      "criteria": {
+        "stalked_by_deep_one": {
+          "trigger": "alexscaves:deep_one_helpful"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/cave_painting": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:cave_painting_tremorsaurus"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.cave_painting.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.cave_painting.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/limestone",
+      "criteria": {
+        "cave_painting": {
+          "trigger": "alexscaves:cave_painting"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/gingerbread_town": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/gingerbread_town.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.gingerbread_town.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.gingerbread_town.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/walk_on_rock_candy",
+      "criteria": {
+        "gingerbread_town": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "structure": "alexscaves:gingerbread_town"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/tame_candicorn": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/tame_candicorn.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.tame_candicorn.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.tame_candicorn.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/caramel_apple",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:tame_animal",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:candicorn"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/breed_grottoceratops": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:grottoceratops_egg"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.breed_grottoceratops.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.breed_grottoceratops.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/tree_star",
+      "criteria": {
+        "breed": {
+          "trigger": "minecraft:bred_animals",
+          "conditions": {
+            "parent": {
+              "type": "alexscaves:grottoceratops"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/mystery_cave_painting": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:limestone_chiseled"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.mystery_cave_painting.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.mystery_cave_painting.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/cave_painting",
+      "criteria": {
+        "mystery_cave_painting": {
+          "trigger": "alexscaves:mystery_cave_painting"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/stalked_by_deep_one": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/deep_one_0.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.stalked_by_deep_one.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.stalked_by_deep_one.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/pearl",
+      "criteria": {
+        "stalked_by_deep_one": {
+          "trigger": "alexscaves:stalked_by_deep_one"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/pearl_on_abyssal_altar": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:abyssal_altar"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.pearl_on_abyssal_altar.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.pearl_on_abyssal_altar.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/stalked_by_deep_one",
+      "criteria": {
+        "use_charcoal": {
+          "conditions": {
+            "location": [
+              {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "items": [
+                    "alexscaves:pearl"
+                  ]
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "blocks": [
+                      "alexscaves:abyssal_altar"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "trigger": "minecraft:item_used_on_block"
+        }
+      },
+      "requirements": [
+        [
+          "use_charcoal"
+        ]
+      ]
+    }
+  },
+  "alexscaves:alexscaves/defeat_mine_guardian": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:depth_charge"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_mine_guardian.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_mine_guardian.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/discover_abyssal_ruins",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:mine_guardian"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/tame_vallumraptor": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "minecraft:chest"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.tame_vallumraptor.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.tame_vallumraptor.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/dinosaur_nugget",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:tame_animal",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:vallumraptor"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/tame_tremorsaurus": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:cave_painting_footprint"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.tame_tremorsaurus.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.tame_tremorsaurus.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/primitive_club",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:tame_animal",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:tremorsaurus"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/dinosaurs_minecart": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:dinosaur_train"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.dinosaurs_minecart.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.dinosaurs_minecart.desc"
+        },
+        "frame": "challenge"
+      },
+      "parent": "alexscaves:alexscaves/discover_dinosaur",
+      "criteria": {
+        "dinosaurs_minecart": {
+          "trigger": "alexscaves:dinosaurs_minecart"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_nucleeper": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/defeat_nucleeper.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_nucleeper.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_nucleeper.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/uranium",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:nucleeper"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defuse_nuclear_bomb": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "minecraft:shears"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defuse_nuclear_bomb.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defuse_nuclear_bomb.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/nuclear_bomb",
+      "criteria": {
+        "interact": {
+          "trigger": "minecraft:player_interacted_with_entity",
+          "conditions": {
+            "item": {
+              "items": [
+                "minecraft:shears"
+              ]
+            },
+            "entity": {
+              "type": "alexscaves:nuclear_bomb"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/tame_raycat": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:radgill"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.tame_raycat.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.tame_raycat.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/radgill_bucket",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:tame_animal",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:raycat"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/remote_detonation": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:remote_detonator"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.remote_detonation.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.remote_detonation.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/polymer_plate",
+      "criteria": {
+        "stalked_by_deep_one": {
+          "trigger": "alexscaves:remote_detonation"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/ride_nuclear_bomb": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:nuclear_bomb"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.ride_nuclear_bomb.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.ride_nuclear_bomb.desc"
+        },
+        "frame": "challenge",
+        "hidden": true
+      },
+      "parent": "alexscaves:alexscaves/nuclear_bomb",
+      "criteria": {
+        "ride_a_boat_with_a_goat": {
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "vehicle": {
+                    "type": "alexscaves:nuclear_bomb"
+                  }
+                }
+              }
+            ]
+          },
+          "trigger": "minecraft:started_riding"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/summon_luxtructosaurus": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/summon_luxtructosaurus.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.summon_luxtructosaurus.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.summon_luxtructosaurus.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/ominous_catalyst",
+      "criteria": {
+        "summon_luxtructosaurus": {
+          "trigger": "alexscaves:summon_luxtructosaurus"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/atlatitan_stomp": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/atlatitan_stomp.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.atlatitan_stomp.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.atlatitan_stomp.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/defeat_luxtructosaurus",
+      "criteria": {
+        "atlatitan_stomp": {
+          "trigger": "alexscaves:atlatitan_stomp"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/beholder_far_away": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:beholder"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.beholder_far_away.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.beholder_far_away.desc"
+        },
+        "frame": "challenge"
+      },
+      "parent": "alexscaves:alexscaves/defeat_watcher",
+      "criteria": {
+        "beholder_far_away": {
+          "trigger": "alexscaves:beholder_far_away"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/tame_tremorzilla": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:waste_drum"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.tame_tremorzilla.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.tame_tremorzilla.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/hatch_tremorzilla_egg",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:tame_animal",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:tremorzilla"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/tremorzilla_kill_beam": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/tremorzilla_beam.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.tremorzilla_kill_beam.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.tremorzilla_kill_beam.desc"
+        },
+        "frame": "challenge"
+      },
+      "parent": "alexscaves:alexscaves/tame_tremorzilla",
+      "criteria": {
+        "tremorzilla_kill_beam": {
+          "trigger": "alexscaves:tremorzilla_kill_beam"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_luxtructosaurus": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:tectonic_shard"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_luxtructosaurus.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_luxtructosaurus.desc"
+        },
+        "frame": "challenge"
+      },
+      "parent": "alexscaves:alexscaves/summon_luxtructosaurus",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:luxtructosaurus"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_notor": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:notor_gizmo"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_notor.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_notor.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/discover_magnetic_caves",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:notor"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_corrodent": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:corrodent_teeth"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_corrodent.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_corrodent.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/discover_forlorn_hollows",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:corrodent"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/hatch_tremorzilla_egg": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/hatch_tremorzilla.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.hatch_tremorzilla_egg.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.hatch_tremorzilla_egg.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/tremorzilla_egg",
+      "criteria": {
+        "hatch_tremorzilla_egg": {
+          "trigger": "alexscaves:hatch_tremorzilla_egg"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/enter_purple_soda": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:purple_soda_bucket"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.enter_purple_soda.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.enter_purple_soda.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/walk_on_rock_candy",
+      "criteria": {
+        "in_purple_soda": {
+          "conditions": {
+            "block": "alexscaves:purple_soda"
+          },
+          "trigger": "minecraft:enter_block"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/walk_on_rock_candy": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:rock_candy_yellow"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.walk_on_rock_candy.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.walk_on_rock_candy.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/discover_candy_cavity",
+      "criteria": {
+        "cave_book": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "stepping_on": {
+                    "block": {
+                      "tag": "alexscaves:rock_candies"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/frostmint_explosion": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:frostmint"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.frostmint_explosion.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.frostmint_explosion.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/enter_purple_soda",
+      "criteria": {
+        "frostmint_explosion": {
+          "trigger": "alexscaves:frostmint_explosion"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/sugar_rush": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:effect_item",
+          "nbt": "{DisplayEffect:\"alexscaves:sugar_rush\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.sugar_rush.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.sugar_rush.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/eat_block_of_chocolate",
+      "criteria": {
+        "all_effects": {
+          "trigger": "minecraft:effects_changed",
+          "conditions": {
+            "effects": {
+              "alexscaves:sugar_rush": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_gum_worm": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:sweet_tooth"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_gum_worm.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_gum_worm.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/gobthumper",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:gum_worm"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_caniac": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:sharpened_candy_cane"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_caniac.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_caniac.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/eat_candy_cane",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:caniac"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_gumbeeper": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:gumball_pile"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_gumbeeper.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_gumbeeper.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/defeat_caniac",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:gumbeeper"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/eat_darkened_apple": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:darkened_apple"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.eat_darkened_apple.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.eat_darkened_apple.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/shadow_armor",
+      "criteria": {
+        "eat_darkened_apple": {
+          "trigger": "alexscaves:eat_darkened_apple"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_watcher": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/defeat_watcher.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_watcher.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_watcher.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/underzealot_sacrifice",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:watcher"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/feed_relicheirus": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:primordial_soup"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.feed_relicheirus.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.feed_relicheirus.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/trilocaris_bucket",
+      "criteria": {
+        "interact": {
+          "trigger": "minecraft:player_interacted_with_entity",
+          "conditions": {
+            "item": {
+              "items": [
+                "alexscaves:primordial_soup"
+              ]
+            },
+            "entity": {
+              "type": "alexscaves:relicheirus"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/deepsight": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:effect_item",
+          "nbt": "{DisplayEffect:\"alexscaves:deepsight\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.deepsight.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.deepsight.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/abyssal_bucket",
+      "criteria": {
+        "all_effects": {
+          "trigger": "minecraft:effects_changed",
+          "conditions": {
+            "effects": {
+              "alexscaves:deepsight": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/feed_gammaroach": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:spelunkie"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.feed_gammaroach.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.feed_gammaroach.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/eat_radiation_foods",
+      "criteria": {
+        "interact": {
+          "trigger": "minecraft:player_interacted_with_entity",
+          "conditions": {
+            "item": {
+              "items": [
+                "alexscaves:spelunkie"
+              ]
+            },
+            "entity": {
+              "type": "alexscaves:gammaroach"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/defeat_brainiac": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/defeat_brainiac.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.defeat_brainiac.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.defeat_brainiac.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/uranium_rod",
+      "criteria": {
+        "killed": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "alexscaves:brainiac"
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/convert_biome": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/convert_biome.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.convert_biome.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.convert_biome.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/conversion_crucible",
+      "criteria": {
+        "convert_biome": {
+          "trigger": "alexscaves:convert_biome"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/convert_nether_biome": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/convert_nether_biome.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.convert_nether_biome.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.convert_nether_biome.desc"
+        },
+        "frame": "challenge"
+      },
+      "parent": "alexscaves:alexscaves/convert_biome",
+      "criteria": {
+        "convert_biome": {
+          "trigger": "alexscaves:convert_nether_biome"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/eat_radiation_foods": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:slam"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.eat_radiation_foods.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.eat_radiation_foods.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/sulfur_dust",
+      "criteria": {
+        "spelunkie": {
+          "trigger": "minecraft:consume_item",
+          "conditions": {
+            "item": {
+              "items": [
+                "alexscaves:spelunkie"
+              ]
+            }
+          }
+        },
+        "slam": {
+          "trigger": "minecraft:consume_item",
+          "conditions": {
+            "item": {
+              "items": [
+                "alexscaves:slam"
+              ]
+            }
+          }
+        },
+        "green_soylent": {
+          "trigger": "minecraft:consume_item",
+          "conditions": {
+            "item": {
+              "items": [
+                "alexscaves:green_soylent"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/eat_block_of_chocolate": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "alexscaves:block_of_chocolate"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.eat_block_of_chocolate.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.eat_block_of_chocolate.desc"
+        }
+      },
+      "parent": "alexscaves:alexscaves/walk_on_rock_candy",
+      "criteria": {
+        "eat_block_of_chocolate": {
+          "trigger": "minecraft:consume_item",
+          "conditions": {
+            "item": {
+              "items": [
+                "alexscaves:block_of_chocolate"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/discover_magnetic_caves": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/magnetic_caves.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.discover_magnetic_caves.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.discover_magnetic_caves.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/cave_map",
+      "criteria": {
+        "discover": {
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "biome": "alexscaves:magnetic_caves"
+                  }
+                }
+              }
+            ]
+          },
+          "trigger": "minecraft:location"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/discover_primordial_caves": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/primordial_caves.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.discover_primordial_caves.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.discover_primordial_caves.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/cave_map",
+      "criteria": {
+        "discover": {
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "biome": "alexscaves:primordial_caves"
+                  }
+                }
+              }
+            ]
+          },
+          "trigger": "minecraft:location"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/discover_toxic_caves": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/toxic_caves.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.discover_toxic_caves.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.discover_toxic_caves.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/cave_map",
+      "criteria": {
+        "discover": {
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "biome": "alexscaves:toxic_caves"
+                  }
+                }
+              }
+            ]
+          },
+          "trigger": "minecraft:location"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/discover_abyssal_chasm": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/abyssal_chasm.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.discover_abyssal_chasm.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.discover_abyssal_chasm.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/cave_map",
+      "criteria": {
+        "discover": {
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "biome": "alexscaves:abyssal_chasm"
+                  }
+                }
+              }
+            ]
+          },
+          "trigger": "minecraft:location"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/discover_forlorn_hollows": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/forlorn_hollows.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.discover_forlorn_hollows.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.discover_forlorn_hollows.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/cave_map",
+      "criteria": {
+        "discover": {
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "biome": "alexscaves:forlorn_hollows"
+                  }
+                }
+              }
+            ]
+          },
+          "trigger": "minecraft:location"
+        }
+      }
+    }
+  },
+  "alexscaves:alexscaves/discover_candy_cavity": {
+    "source": "alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "citadel:icon_item",
+          "nbt": "{IconLocation:\"alexscaves:textures/misc/advancement/icon/candy_cavity.png\"}"
+        },
+        "title": {
+          "translate": "advancements.alexscaves.discover_candy_cavity.title"
+        },
+        "description": {
+          "translate": "advancements.alexscaves.discover_candy_cavity.desc"
+        },
+        "frame": "goal"
+      },
+      "parent": "alexscaves:alexscaves/cave_map",
+      "criteria": {
+        "discover": {
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "biome": "alexscaves:candy_cavity"
+                  }
+                }
+              }
+            ]
+          },
+          "trigger": "minecraft:location"
+        }
+      }
+    }
+  },
+  "dungeons_arise:find_heavenly_challenger": {
+    "source": "DungeonsArise-1.20.x-2.1.58-release.jar",
+    "sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+    "body": {
+      "display": {
+        "title": {
+          "translate": "advancement.dungeons_arise.find_heavenly_challenger.title",
+          "color": "gold"
+        },
+        "description": {
+          "translate": "advancement.dungeons_arise.find_heavenly_challenger.desc"
+        },
+        "icon": {
+          "item": "minecraft:netherite_chestplate"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "criteria": {
+        "location0": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "structure": "dungeons_arise:heavenly_challenger"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [
+        [
+          "location0"
+        ]
+      ],
+      "parent": "dungeons_arise:find_heavenly_conqueror"
+    }
+  },
+  "dungeons_arise:find_heavenly_conqueror": {
+    "source": "DungeonsArise-1.20.x-2.1.58-release.jar",
+    "sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+    "body": {
+      "display": {
+        "title": {
+          "translate": "advancement.dungeons_arise.find_heavenly_conqueror.title",
+          "color": "red"
+        },
+        "description": {
+          "translate": "advancement.dungeons_arise.find_heavenly_conqueror.desc"
+        },
+        "icon": {
+          "item": "minecraft:golden_chestplate"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "criteria": {
+        "location0": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "structure": "dungeons_arise:heavenly_conqueror"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [
+        [
+          "location0"
+        ]
+      ],
+      "parent": "dungeons_arise:find_heavenly_rider"
+    }
+  },
+  "dungeons_arise:find_infested_temple_map": {
+    "source": "DungeonsArise-1.20.x-2.1.58-release.jar",
+    "sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+    "body": {
+      "display": {
+        "icon": {
+          "item": "minecraft:filled_map"
+        },
+        "title": {
+          "translate": "advancement.dungeons_arise.find_infested_temple_map.title"
+        },
+        "description": {
+          "translate": "advancement.dungeons_arise.find_infested_temple_map.desc"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+      },
+      "parent": "dungeons_arise:find_monasteries",
+      "criteria": {
+        "find_map": {
+          "trigger": "minecraft:player_generates_container_loot",
+          "conditions": {
+            "loot_table": "dungeons_arise:chests/monastery/monastery_map"
+          }
+        }
+      },
+      "requirements": [
+        [
+          "find_map"
+        ]
+      ]
+    }
+  },
+  "dungeons_arise:find_foundry": {
+    "source": "DungeonsArise-1.20.x-2.1.58-release.jar",
+    "sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+    "body": {
+      "display": {
+        "title": {
+          "translate": "advancement.dungeons_arise.find_foundry.title",
+          "color": "dark_red"
+        },
+        "description": {
+          "translate": "advancement.dungeons_arise.find_foundry.desc"
+        },
+        "icon": {
+          "item": "minecraft:netherite_ingot"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "criteria": {
+        "location0": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "structure": "dungeons_arise:foundry"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [
+        [
+          "location0"
+        ]
+      ],
+      "parent": "dungeons_arise:find_scorched_mines"
+    }
+  },
+  "betterdungeons:small_dungeon": {
+    "source": "YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+    "sha256": "93c24e4075c51da0866f3fc92322bdb60e590ac2cd78dce275460839c54c36f5",
+    "body": {
+      "parent": "betterdungeons:root",
+      "display": {
+        "icon": {
+          "item": "minecraft:spawner"
+        },
+        "title": {
+          "translate": "Quite the Renovation"
+        },
+        "description": {
+          "translate": "Find an upgraded Monster Room"
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "criteria": {
+        "in_better_monster_room": {
+          "trigger": "yungsapi:structure_location",
+          "conditions": {
+            "feature": "betterdungeons:small_dungeon"
+          }
+        }
+      },
+      "requirements": [
+        [
+          "in_better_monster_room"
+        ]
+      ]
+    }
+  },
+  "betterdungeons:spider_dungeon": {
+    "source": "YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+    "sha256": "93c24e4075c51da0866f3fc92322bdb60e590ac2cd78dce275460839c54c36f5",
+    "body": {
+      "parent": "betterdungeons:root",
+      "display": {
+        "icon": {
+          "item": "minecraft:string"
+        },
+        "title": {
+          "translate": "Cobweb Entanglement"
+        },
+        "description": {
+          "translate": "Discover a Spider Cave"
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "criteria": {
+        "in_better_spider_dungeon": {
+          "trigger": "yungsapi:structure_location",
+          "conditions": {
+            "feature": "betterdungeons:spider_dungeon"
+          }
+        }
+      },
+      "requirements": [
+        [
+          "in_better_spider_dungeon"
+        ]
+      ]
+    }
+  },
+  "betterdungeons:zombie_dungeon": {
+    "source": "YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+    "sha256": "93c24e4075c51da0866f3fc92322bdb60e590ac2cd78dce275460839c54c36f5",
+    "body": {
+      "parent": "betterdungeons:root",
+      "display": {
+        "icon": {
+          "item": "minecraft:rotten_flesh"
+        },
+        "title": {
+          "translate": "When in Rome"
+        },
+        "description": {
+          "translate": "Set foot in a Catacomb"
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "criteria": {
+        "in_better_zombie_dungeon": {
+          "trigger": "yungsapi:structure_location",
+          "conditions": {
+            "feature": "betterdungeons:zombie_dungeon"
+          }
+        }
+      },
+      "requirements": [
+        [
+          "in_better_zombie_dungeon"
+        ]
+      ]
+    }
+  },
+  "betterdungeons:skeleton_dungeon": {
+    "source": "YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+    "sha256": "93c24e4075c51da0866f3fc92322bdb60e590ac2cd78dce275460839c54c36f5",
+    "body": {
+      "parent": "betterdungeons:root",
+      "display": {
+        "icon": {
+          "item": "minecraft:skeleton_skull"
+        },
+        "title": {
+          "translate": "A Bone to Pick"
+        },
+        "description": {
+          "translate": "Enter a Fortress of the Undead"
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "criteria": {
+        "in_better_skeleton_dungeon": {
+          "trigger": "yungsapi:structure_location",
+          "conditions": {
+            "feature": "betterdungeons:skeleton_dungeon"
+          }
+        }
+      },
+      "requirements": [
+        [
+          "in_better_skeleton_dungeon"
+        ]
+      ]
+    }
+  },
+  "betterdungeons:small_nether_dungeon": {
+    "source": "YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+    "sha256": "93c24e4075c51da0866f3fc92322bdb60e590ac2cd78dce275460839c54c36f5",
+    "body": {
+      "parent": "betterdungeons:root",
+      "display": {
+        "icon": {
+          "item": "minecraft:red_nether_bricks"
+        },
+        "title": {
+          "translate": "A Special Addition"
+        },
+        "description": {
+          "translate": "Find a Small Nether Dungeon"
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+      },
+      "criteria": {
+        "in_small_nether_dungeon": {
+          "trigger": "yungsapi:structure_location",
+          "conditions": {
+            "feature": "betterdungeons:small_nether_dungeon"
+          }
+        }
+      },
+      "requirements": [
+        [
+          "in_small_nether_dungeon"
+        ]
+      ]
+    }
+  }
+}

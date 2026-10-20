@@ -1,0 +1,29 @@
+[
+  {
+    "project": "alexs-caves",
+    "catalog_file": "alexscaves-2.0.2(1).jar",
+    "expected_sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+    "status": "verified_exact",
+    "file": "alexscaves-2.0.2.jar",
+    "url": "https://cdn.modrinth.com/data/U6GY0xp0/versions/lC8HHXOF/alexscaves-2.0.2.jar",
+    "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0"
+  },
+  {
+    "project": "when-dungeons-arise",
+    "catalog_file": "DungeonsArise-1.20.x-2.1.58-release.jar",
+    "expected_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+    "status": "verified_exact",
+    "file": "DungeonsArise-1.20.x-2.1.58-release.jar",
+    "url": "https://cdn.modrinth.com/data/8DfbfASn/versions/6hQpx5Tc/DungeonsArise-1.20.x-2.1.58-release.jar",
+    "sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90"
+  },
+  {
+    "project": "yungs-better-dungeons",
+    "catalog_file": "YungsBetterDungeons-1.20-Forge-4.0.4(2).jar",
+    "expected_sha256": "93c24e4075c51da0866f3fc92322bdb60e590ac2cd78dce275460839c54c36f5",
+    "status": "verified_exact",
+    "file": "YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+    "url": "https://cdn.modrinth.com/data/o1C1Dkj5/versions/kPiQ6v4q/YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+    "sha256": "93c24e4075c51da0866f3fc92322bdb60e590ac2cd78dce275460839c54c36f5"
+  }
+]

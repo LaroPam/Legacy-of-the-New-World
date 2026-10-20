@@ -38,11 +38,37 @@
           }
         ]
       }
+    },
+    "action_yung": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:wither_skeleton",
+          "location": {
+            "structure": "betterfortresses:fortress"
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:fire_resistance": {}
+              },
+              "location": {
+                "structure": "betterfortresses:fortress"
+              }
+            }
+          }
+        ]
+      }
     }
   },
   "requirements": [
     [
-      "action"
+      "action",
+      "action_yung"
     ]
   ]
 }

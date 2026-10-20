@@ -1,0 +1,11 @@
+{
+  "source_jar": "YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar",
+  "sha256": "12cffc99dccca69d294ba5bc39c331367794b339061572a6f3773620303a2f51",
+  "resource": "data/betterfortresses/worldgen/structure/fortress.json",
+  "facts": [
+    "Exact JAR defines betterfortresses:fortress and its spawn overrides include blaze and wither_skeleton.",
+    "Quest 9657C7068A9F33B4 requires this structure, while original assault predicates allowed only minecraft:fortress.",
+    "Retained vanilla criterion action; added OR alternative action_yung for both player and target. Existing earned criteria remain valid."
+  ],
+  "gameplay": "Not run; test both structures and effect expiration on a copied world."
+}

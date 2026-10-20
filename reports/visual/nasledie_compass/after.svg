@@ -1,0 +1,572 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -1216.00 3424.00 2624.00" width="3424.00" height="2624.00" role="img" aria-labelledby="nasledie_compass-after-title" data-quest-count="33">
+<title id="nasledie_compass-after-title">Картографы — выбрать свою экспедицию — схема SNBT, не скриншот игры</title>
+<defs><marker id="nasledie_compass-after-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
+<g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
+<path d="M -128 -1216.00 v 2624.00"/>
+<path d="M -64 -1216.00 v 2624.00"/>
+<path d="M 0 -1216.00 v 2624.00"/>
+<path d="M 64 -1216.00 v 2624.00"/>
+<path d="M 128 -1216.00 v 2624.00"/>
+<path d="M 192 -1216.00 v 2624.00"/>
+<path d="M 256 -1216.00 v 2624.00"/>
+<path d="M 320 -1216.00 v 2624.00"/>
+<path d="M 384 -1216.00 v 2624.00"/>
+<path d="M 448 -1216.00 v 2624.00"/>
+<path d="M 512 -1216.00 v 2624.00"/>
+<path d="M 576 -1216.00 v 2624.00"/>
+<path d="M 640 -1216.00 v 2624.00"/>
+<path d="M 704 -1216.00 v 2624.00"/>
+<path d="M 768 -1216.00 v 2624.00"/>
+<path d="M 832 -1216.00 v 2624.00"/>
+<path d="M 896 -1216.00 v 2624.00"/>
+<path d="M 960 -1216.00 v 2624.00"/>
+<path d="M 1024 -1216.00 v 2624.00"/>
+<path d="M 1088 -1216.00 v 2624.00"/>
+<path d="M 1152 -1216.00 v 2624.00"/>
+<path d="M 1216 -1216.00 v 2624.00"/>
+<path d="M 1280 -1216.00 v 2624.00"/>
+<path d="M 1344 -1216.00 v 2624.00"/>
+<path d="M 1408 -1216.00 v 2624.00"/>
+<path d="M 1472 -1216.00 v 2624.00"/>
+<path d="M 1536 -1216.00 v 2624.00"/>
+<path d="M 1600 -1216.00 v 2624.00"/>
+<path d="M 1664 -1216.00 v 2624.00"/>
+<path d="M 1728 -1216.00 v 2624.00"/>
+<path d="M 1792 -1216.00 v 2624.00"/>
+<path d="M 1856 -1216.00 v 2624.00"/>
+<path d="M 1920 -1216.00 v 2624.00"/>
+<path d="M 1984 -1216.00 v 2624.00"/>
+<path d="M 2048 -1216.00 v 2624.00"/>
+<path d="M 2112 -1216.00 v 2624.00"/>
+<path d="M 2176 -1216.00 v 2624.00"/>
+<path d="M 2240 -1216.00 v 2624.00"/>
+<path d="M 2304 -1216.00 v 2624.00"/>
+<path d="M 2368 -1216.00 v 2624.00"/>
+<path d="M 2432 -1216.00 v 2624.00"/>
+<path d="M 2496 -1216.00 v 2624.00"/>
+<path d="M 2560 -1216.00 v 2624.00"/>
+<path d="M 2624 -1216.00 v 2624.00"/>
+<path d="M 2688 -1216.00 v 2624.00"/>
+<path d="M 2752 -1216.00 v 2624.00"/>
+<path d="M 2816 -1216.00 v 2624.00"/>
+<path d="M 2880 -1216.00 v 2624.00"/>
+<path d="M 2944 -1216.00 v 2624.00"/>
+<path d="M 3008 -1216.00 v 2624.00"/>
+<path d="M 3072 -1216.00 v 2624.00"/>
+<path d="M 3136 -1216.00 v 2624.00"/>
+<path d="M 3200 -1216.00 v 2624.00"/>
+<path d="M 3264 -1216.00 v 2624.00"/>
+<path d="M -128.00 -1216 h 3424.00"/>
+<path d="M -128.00 -1152 h 3424.00"/>
+<path d="M -128.00 -1088 h 3424.00"/>
+<path d="M -128.00 -1024 h 3424.00"/>
+<path d="M -128.00 -960 h 3424.00"/>
+<path d="M -128.00 -896 h 3424.00"/>
+<path d="M -128.00 -832 h 3424.00"/>
+<path d="M -128.00 -768 h 3424.00"/>
+<path d="M -128.00 -704 h 3424.00"/>
+<path d="M -128.00 -640 h 3424.00"/>
+<path d="M -128.00 -576 h 3424.00"/>
+<path d="M -128.00 -512 h 3424.00"/>
+<path d="M -128.00 -448 h 3424.00"/>
+<path d="M -128.00 -384 h 3424.00"/>
+<path d="M -128.00 -320 h 3424.00"/>
+<path d="M -128.00 -256 h 3424.00"/>
+<path d="M -128.00 -192 h 3424.00"/>
+<path d="M -128.00 -128 h 3424.00"/>
+<path d="M -128.00 -64 h 3424.00"/>
+<path d="M -128.00 0 h 3424.00"/>
+<path d="M -128.00 64 h 3424.00"/>
+<path d="M -128.00 128 h 3424.00"/>
+<path d="M -128.00 192 h 3424.00"/>
+<path d="M -128.00 256 h 3424.00"/>
+<path d="M -128.00 320 h 3424.00"/>
+<path d="M -128.00 384 h 3424.00"/>
+<path d="M -128.00 448 h 3424.00"/>
+<path d="M -128.00 512 h 3424.00"/>
+<path d="M -128.00 576 h 3424.00"/>
+<path d="M -128.00 640 h 3424.00"/>
+<path d="M -128.00 704 h 3424.00"/>
+<path d="M -128.00 768 h 3424.00"/>
+<path d="M -128.00 832 h 3424.00"/>
+<path d="M -128.00 896 h 3424.00"/>
+<path d="M -128.00 960 h 3424.00"/>
+<path d="M -128.00 1024 h 3424.00"/>
+<path d="M -128.00 1088 h 3424.00"/>
+<path d="M -128.00 1152 h 3424.00"/>
+<path d="M -128.00 1216 h 3424.00"/>
+<path d="M -128.00 1280 h 3424.00"/>
+<path d="M -128.00 1344 h 3424.00"/>
+<path d="M -128.00 1408 h 3424.00"/>
+</g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
+<path data-from="52B457F0F3B0109A" data-to="125225CC968ECEB1" d="M 191.00 0.00 L 290.00 0.00" marker-end="url(#nasledie_compass-after-arrow)"><title>52B457F0F3B0109A → 125225CC968ECEB1</title></path>
+<path data-from="52B457F0F3B0109A" data-to="12202D6F529C409B" d="M 181.92 -21.92 L 298.79 -138.79" marker-end="url(#nasledie_compass-after-arrow)"><title>52B457F0F3B0109A → 12202D6F529C409B</title></path>
+<path data-from="125225CC968ECEB1" data-to="95734C53761E6456" d="M 347.00 0.00 L 450.00 0.00" marker-end="url(#nasledie_compass-after-arrow)"><title>125225CC968ECEB1 → 95734C53761E6456</title></path>
+<path data-from="52B457F0F3B0109A" data-to="225B6CD9BBAC0F47" d="M 160.00 -31.00 L 160.00 -130.00" marker-end="url(#nasledie_compass-after-arrow)"><title>52B457F0F3B0109A → 225B6CD9BBAC0F47</title></path>
+<path data-from="CEBF8266AC205E60" data-to="0A349956329B7C72" d="M 1139.09 979.09 L 1258.79 1098.79" marker-end="url(#nasledie_compass-after-arrow)"><title>CEBF8266AC205E60 → 0A349956329B7C72</title></path>
+<path data-from="52B457F0F3B0109A" data-to="0CE8AF2473DAB8AA" d="M 160.00 31.00 L 160.00 130.00" marker-end="url(#nasledie_compass-after-arrow)"><title>52B457F0F3B0109A → 0CE8AF2473DAB8AA</title></path>
+<path data-from="07C8419F1FE8738D" data-to="59752216F591E945" d="M 827.00 0.00 L 930.00 0.00" marker-end="url(#nasledie_compass-after-arrow)"><title>07C8419F1FE8738D → 59752216F591E945</title></path>
+<path data-from="EB2746965E47F745" data-to="52B457F0F3B0109A" d="M 27.00 0.00 L 126.00 0.00" marker-end="url(#nasledie_compass-after-arrow)"><title>EB2746965E47F745 → 52B457F0F3B0109A</title></path>
+<path data-from="52B457F0F3B0109A" data-to="C98BCEC5872D8647" d="M 181.92 21.92 L 298.79 138.79" marker-end="url(#nasledie_compass-after-arrow)"><title>52B457F0F3B0109A → C98BCEC5872D8647</title></path>
+<path data-from="C98BCEC5872D8647" data-to="E74BE19F5E31D304" d="M 339.09 179.09 L 458.79 298.79" marker-end="url(#nasledie_compass-after-arrow)"><title>C98BCEC5872D8647 → E74BE19F5E31D304</title></path>
+<path data-from="95734C53761E6456" data-to="BC793EEF82907B7E" d="M 507.00 0.00 L 610.00 0.00" marker-end="url(#nasledie_compass-after-arrow)"><title>95734C53761E6456 → BC793EEF82907B7E</title></path>
+<path data-from="E74BE19F5E31D304" data-to="36816E6DCCAC9776" d="M 499.09 339.09 L 618.79 458.79" marker-end="url(#nasledie_compass-after-arrow)"><title>E74BE19F5E31D304 → 36816E6DCCAC9776</title></path>
+<path data-from="36816E6DCCAC9776" data-to="B1509620769451B8" d="M 659.09 499.09 L 778.79 618.79" marker-end="url(#nasledie_compass-after-arrow)"><title>36816E6DCCAC9776 → B1509620769451B8</title></path>
+<path data-from="0CE8AF2473DAB8AA" data-to="8C486E24C425E49B" d="M 160.00 187.00 L 160.00 290.00" marker-end="url(#nasledie_compass-after-arrow)"><title>0CE8AF2473DAB8AA → 8C486E24C425E49B</title></path>
+<path data-from="8C486E24C425E49B" data-to="3BFF245E8A4EEBE2" d="M 160.00 347.00 L 160.00 450.00" marker-end="url(#nasledie_compass-after-arrow)"><title>8C486E24C425E49B → 3BFF245E8A4EEBE2</title></path>
+<path data-from="5DB6F54ADA7C276F" data-to="4AD20583645F8C5F" d="M 160.00 667.00 L 160.00 770.00" marker-end="url(#nasledie_compass-after-arrow)"><title>5DB6F54ADA7C276F → 4AD20583645F8C5F</title></path>
+<path data-from="BC793EEF82907B7E" data-to="07C8419F1FE8738D" d="M 667.00 0.00 L 770.00 0.00" marker-end="url(#nasledie_compass-after-arrow)"><title>BC793EEF82907B7E → 07C8419F1FE8738D</title></path>
+<path data-from="973E6DFEEE903031" data-to="CEBF8266AC205E60" d="M 979.09 819.09 L 1098.79 938.79" marker-end="url(#nasledie_compass-after-arrow)"><title>973E6DFEEE903031 → CEBF8266AC205E60</title></path>
+<path data-from="3BFF245E8A4EEBE2" data-to="5DB6F54ADA7C276F" d="M 160.00 507.00 L 160.00 610.00" marker-end="url(#nasledie_compass-after-arrow)"><title>3BFF245E8A4EEBE2 → 5DB6F54ADA7C276F</title></path>
+<path data-from="0A349956329B7C72" data-to="34A240DB0D634249" d="M 1299.09 1139.09 L 1415.96 1255.96" marker-end="url(#nasledie_compass-after-arrow)"><title>0A349956329B7C72 → 34A240DB0D634249</title></path>
+<path data-from="12202D6F529C409B" data-to="A13990B38C18BF50" d="M 339.09 -179.09 L 458.79 -298.79" marker-end="url(#nasledie_compass-after-arrow)"><title>12202D6F529C409B → A13990B38C18BF50</title></path>
+<path data-from="59752216F591E945" data-to="8E33F6A4EE9EECA6" d="M 987.00 0.00 L 1090.00 0.00" marker-end="url(#nasledie_compass-after-arrow)"><title>59752216F591E945 → 8E33F6A4EE9EECA6</title></path>
+<path data-from="B1509620769451B8" data-to="973E6DFEEE903031" d="M 819.09 659.09 L 938.79 778.79" marker-end="url(#nasledie_compass-after-arrow)"><title>B1509620769451B8 → 973E6DFEEE903031</title></path>
+<path data-from="79B22217425743C5" data-to="C0194CADC20BB042" d="M 160.00 -347.00 L 160.00 -450.00" marker-end="url(#nasledie_compass-after-arrow)"><title>79B22217425743C5 → C0194CADC20BB042</title></path>
+<path data-from="8268BA06604DD7A2" data-to="1B7D417FC2AD346C" d="M 160.00 -827.00 L 160.00 -926.00" marker-end="url(#nasledie_compass-after-arrow)"><title>8268BA06604DD7A2 → 1B7D417FC2AD346C</title></path>
+<path data-from="C0194CADC20BB042" data-to="BD1F1FA8837A8FC5" d="M 160.00 -507.00 L 160.00 -610.00" marker-end="url(#nasledie_compass-after-arrow)"><title>C0194CADC20BB042 → BD1F1FA8837A8FC5</title></path>
+<path data-from="225B6CD9BBAC0F47" data-to="79B22217425743C5" d="M 160.00 -187.00 L 160.00 -290.00" marker-end="url(#nasledie_compass-after-arrow)"><title>225B6CD9BBAC0F47 → 79B22217425743C5</title></path>
+<path data-from="A13990B38C18BF50" data-to="EF5D057D0A543404" d="M 499.09 -339.09 L 618.79 -458.79" marker-end="url(#nasledie_compass-after-arrow)"><title>A13990B38C18BF50 → EF5D057D0A543404</title></path>
+<path data-from="EF5D057D0A543404" data-to="9F4C744CFD45A276" d="M 659.09 -499.09 L 775.96 -615.96" marker-end="url(#nasledie_compass-after-arrow)"><title>EF5D057D0A543404 → 9F4C744CFD45A276</title></path>
+<path data-from="BD1F1FA8837A8FC5" data-to="8268BA06604DD7A2" d="M 160.00 -667.00 L 160.00 -770.00" marker-end="url(#nasledie_compass-after-arrow)"><title>BD1F1FA8837A8FC5 → 8268BA06604DD7A2</title></path>
+<path data-from="4AD20583645F8C5F" data-to="FC2F522F0B5765F9" d="M 160.00 827.00 L 160.00 926.00" marker-end="url(#nasledie_compass-after-arrow)"><title>4AD20583645F8C5F → FC2F522F0B5765F9</title></path>
+<path data-from="8E33F6A4EE9EECA6" data-to="D79F172C28F00556" d="M 1147.00 0.00 L 1246.00 0.00" marker-end="url(#nasledie_compass-after-arrow)"><title>8E33F6A4EE9EECA6 → D79F172C28F00556</title></path>
+</g><g class="quests" font-family="system-ui, sans-serif" text-anchor="middle">
+<g data-quest-id="EB2746965E47F745" tabindex="0" role="button" aria-label="Выбрать цель за горизонтом" transform="translate(0.00,0.00)" style="cursor:pointer">
+<title>Выбрать цель за горизонтом
+ID: EB2746965E47F745
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=0.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Выбрать цель за</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">горизонтом</text>
+</g>
+<g data-quest-id="125225CC968ECEB1" tabindex="0" role="button" aria-label="Лесной наблюдательный пост" transform="translate(320.00,0.00)" style="cursor:pointer">
+<title>Лесной наблюдательный пост
+ID: 125225CC968ECEB1
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=5.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Лесной наблюдательный</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">пост</text>
+</g>
+<g data-quest-id="12202D6F529C409B" tabindex="0" role="button" aria-label="Шпиль над ландшафтом" transform="translate(320.00,-160.00)" style="cursor:pointer">
+<title>Шпиль над ландшафтом
+ID: 12202D6F529C409B
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=5.0, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Шпиль над ландшафтом</text>
+</g>
+<g data-quest-id="95734C53761E6456" tabindex="0" role="button" aria-label="Башни на пути разведчиков" transform="translate(480.00,0.00)" style="cursor:pointer">
+<title>Башни на пути разведчиков
+ID: 95734C53761E6456
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=7.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Башни на пути разведчиков</text>
+</g>
+<g data-quest-id="225B6CD9BBAC0F47" tabindex="0" role="button" aria-label="Таверна в джунглях" transform="translate(160.00,-160.00)" style="cursor:pointer">
+<title>Таверна в джунглях
+ID: 225B6CD9BBAC0F47
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=2.5, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Таверна в джунглях</text>
+</g>
+<g data-quest-id="0A349956329B7C72" tabindex="0" role="button" aria-label="Башня старого мага" transform="translate(1280.00,1120.00)" style="cursor:pointer">
+<title>Башня старого мага
+ID: 0A349956329B7C72
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=20.0, y=17.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Башня старого мага</text>
+</g>
+<g data-quest-id="0CE8AF2473DAB8AA" tabindex="0" role="button" aria-label="Застава шахтёров" transform="translate(160.00,160.00)" style="cursor:pointer">
+<title>Застава шахтёров
+ID: 0CE8AF2473DAB8AA
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=2.5, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Застава шахтёров</text>
+</g>
+<g data-quest-id="59752216F591E945" tabindex="0" role="button" aria-label="Форт снежных скитальцев" transform="translate(960.00,0.00)" style="cursor:pointer">
+<title>Форт снежных скитальцев
+ID: 59752216F591E945
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=15.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Форт снежных скитальцев</text>
+</g>
+<g data-quest-id="52B457F0F3B0109A" tabindex="0" role="button" aria-label="Компас для большой экспедиции" transform="translate(160.00,0.00)" style="cursor:pointer">
+<title>Компас для большой экспедиции
+ID: 52B457F0F3B0109A
+Значок: explorerscompass:explorerscompass
+Форма: star
+x=2.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Компас для большой</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">экспедиции</text>
+</g>
+<g data-quest-id="C98BCEC5872D8647" tabindex="0" role="button" aria-label="Пустынная застава" transform="translate(320.00,160.00)" style="cursor:pointer">
+<title>Пустынная застава
+ID: C98BCEC5872D8647
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=5.0, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Пустынная застава</text>
+</g>
+<g data-quest-id="E74BE19F5E31D304" tabindex="0" role="button" aria-label="Поселение за стенами" transform="translate(480.00,320.00)" style="cursor:pointer">
+<title>Поселение за стенами
+ID: E74BE19F5E31D304
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=7.5, y=5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Поселение за стенами</text>
+</g>
+<g data-quest-id="BC793EEF82907B7E" tabindex="0" role="button" aria-label="Убежище чужого отряда" transform="translate(640.00,0.00)" style="cursor:pointer">
+<title>Убежище чужого отряда
+ID: BC793EEF82907B7E
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=10.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Убежище чужого отряда</text>
+</g>
+<g data-quest-id="36816E6DCCAC9776" tabindex="0" role="button" aria-label="Привал торгового каравана" transform="translate(640.00,480.00)" style="cursor:pointer">
+<title>Привал торгового каравана
+ID: 36816E6DCCAC9776
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=10.0, y=7.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Привал торгового каравана</text>
+</g>
+<g data-quest-id="B1509620769451B8" tabindex="0" role="button" aria-label="Дворец Шираз" transform="translate(800.00,640.00)" style="cursor:pointer">
+<title>Дворец Шираз
+ID: B1509620769451B8
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=12.5, y=10.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дворец Шираз</text>
+</g>
+<g data-quest-id="8C486E24C425E49B" tabindex="0" role="button" aria-label="Дом под толщей земли" transform="translate(160.00,320.00)" style="cursor:pointer">
+<title>Дом под толщей земли
+ID: 8C486E24C425E49B
+Значок: explorerscompass:explorerscompass
+Форма: scroll
+x=2.5, y=5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дом под толщей земли</text>
+</g>
+<g data-quest-id="3BFF245E8A4EEBE2" tabindex="0" role="button" aria-label="Большая шахтная система" transform="translate(160.00,480.00)" style="cursor:pointer">
+<title>Большая шахтная система
+ID: 3BFF245E8A4EEBE2
+Значок: minecraft:iron_pickaxe
+Форма: scroll
+x=2.5, y=7.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Большая шахтная система</text>
+</g>
+<g data-quest-id="4AD20583645F8C5F" tabindex="0" role="button" aria-label="Гнездо чужих механизмов" transform="translate(160.00,800.00)" style="cursor:pointer">
+<title>Гнездо чужих механизмов
+ID: 4AD20583645F8C5F
+Значок: create:cogwheel
+Форма: scroll
+x=2.5, y=12.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Гнездо чужих механизмов</text>
+</g>
+<g data-quest-id="07C8419F1FE8738D" tabindex="0" role="button" aria-label="Чумной приют" transform="translate(800.00,0.00)" style="cursor:pointer">
+<title>Чумной приют
+ID: 07C8419F1FE8738D
+Значок: minecraft:brewing_stand
+Форма: scroll
+x=12.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Чумной приют</text>
+</g>
+<g data-quest-id="CEBF8266AC205E60" tabindex="0" role="button" aria-label="Арена забытой империи" transform="translate(1120.00,960.00)" style="cursor:pointer">
+<title>Арена забытой империи
+ID: CEBF8266AC205E60
+Значок: minecraft:shield
+Форма: scroll
+x=17.5, y=15.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">19</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Арена забытой империи</text>
+</g>
+<g data-quest-id="5DB6F54ADA7C276F" tabindex="0" role="button" aria-label="Грибные шахты" transform="translate(160.00,640.00)" style="cursor:pointer">
+<title>Грибные шахты
+ID: 5DB6F54ADA7C276F
+Значок: minecraft:red_mushroom
+Форма: scroll
+x=2.5, y=10.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">20</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Грибные шахты</text>
+</g>
+<g data-quest-id="34A240DB0D634249" tabindex="0" role="button" aria-label="Наследие целой школы магов" transform="translate(1440.00,1280.00)" style="cursor:pointer">
+<title>Наследие целой школы магов
+ID: 34A240DB0D634249
+Значок: minecraft:enchanting_table
+Форма: star
+x=22.5, y=20.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">21</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Наследие целой школы</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">магов</text>
+</g>
+<g data-quest-id="A13990B38C18BF50" tabindex="0" role="button" aria-label="Небесный всадник" transform="translate(480.00,-320.00)" style="cursor:pointer">
+<title>Небесный всадник
+ID: A13990B38C18BF50
+Значок: minecraft:saddle
+Форма: scroll
+x=7.5, y=-5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">22</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Небесный всадник</text>
+</g>
+<g data-quest-id="8E33F6A4EE9EECA6" tabindex="0" role="button" aria-label="Разведка иллагерского форта" transform="translate(1120.00,0.00)" style="cursor:pointer">
+<title>Разведка иллагерского форта
+ID: 8E33F6A4EE9EECA6
+Значок: minecraft:crossbow
+Форма: scroll
+x=17.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">23</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Разведка иллагерского</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">форта</text>
+</g>
+<g data-quest-id="973E6DFEEE903031" tabindex="0" role="button" aria-label="Крепость Кайры" transform="translate(960.00,800.00)" style="cursor:pointer">
+<title>Крепость Кайры
+ID: 973E6DFEEE903031
+Значок: minecraft:shield
+Форма: scroll
+x=15.0, y=12.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">24</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Крепость Кайры</text>
+</g>
+<g data-quest-id="C0194CADC20BB042" tabindex="0" role="button" aria-label="Дом над листьями" transform="translate(160.00,-480.00)" style="cursor:pointer">
+<title>Дом над листьями
+ID: C0194CADC20BB042
+Значок: minecraft:scaffolding
+Форма: scroll
+x=2.5, y=-7.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">25</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дом над листьями</text>
+</g>
+<g data-quest-id="1B7D417FC2AD346C" tabindex="0" role="button" aria-label="Храм, к которому вели находки" transform="translate(160.00,-960.00)" style="cursor:pointer">
+<title>Храм, к которому вели находки
+ID: 1B7D417FC2AD346C
+Значок: minecraft:torch
+Форма: star
+x=2.5, y=-15.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">26</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Храм, к которому вели</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">находки</text>
+</g>
+<g data-quest-id="BD1F1FA8837A8FC5" tabindex="0" role="button" aria-label="Монастырь дальнего пути" transform="translate(160.00,-640.00)" style="cursor:pointer">
+<title>Монастырь дальнего пути
+ID: BD1F1FA8837A8FC5
+Значок: minecraft:bell
+Форма: scroll
+x=2.5, y=-10.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">27</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Монастырь дальнего пути</text>
+</g>
+<g data-quest-id="79B22217425743C5" tabindex="0" role="button" aria-label="Зацепка в таверне" transform="translate(160.00,-320.00)" style="cursor:pointer">
+<title>Зацепка в таверне
+ID: 79B22217425743C5
+Значок: minecraft:paper
+Форма: scroll
+x=2.5, y=-5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">28</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Зацепка в таверне</text>
+</g>
+<g data-quest-id="EF5D057D0A543404" tabindex="0" role="button" aria-label="Небесный претендент" transform="translate(640.00,-480.00)" style="cursor:pointer">
+<title>Небесный претендент
+ID: EF5D057D0A543404
+Значок: minecraft:spyglass
+Форма: scroll
+x=10.0, y=-7.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">29</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Небесный претендент</text>
+</g>
+<g data-quest-id="9F4C744CFD45A276" tabindex="0" role="button" aria-label="Небесный завоеватель" transform="translate(800.00,-640.00)" style="cursor:pointer">
+<title>Небесный завоеватель
+ID: 9F4C744CFD45A276
+Значок: minecraft:elytra
+Форма: star
+x=12.5, y=-10.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">30</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Небесный завоеватель</text>
+</g>
+<g data-quest-id="8268BA06604DD7A2" tabindex="0" role="button" aria-label="Карта из монастырского тайника" transform="translate(160.00,-800.00)" style="cursor:pointer">
+<title>Карта из монастырского тайника
+ID: 8268BA06604DD7A2
+Значок: minecraft:filled_map
+Форма: scroll
+x=2.5, y=-12.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">31</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Карта из монастырского</text>
+<text class="quest-label" y="64.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">тайника</text>
+</g>
+<g data-quest-id="FC2F522F0B5765F9" tabindex="0" role="button" aria-label="Кузница подземного маршрута" transform="translate(160.00,960.00)" style="cursor:pointer">
+<title>Кузница подземного маршрута
+ID: FC2F522F0B5765F9
+Значок: minecraft:blast_furnace
+Форма: star
+x=2.5, y=15.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">32</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Кузница подземного</text>
+<text class="quest-label" y="68.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">маршрута</text>
+</g>
+<g data-quest-id="D79F172C28F00556" tabindex="0" role="button" aria-label="Штурм забытого форта" transform="translate(1280.00,0.00)" style="cursor:pointer">
+<title>Штурм забытого форта
+ID: D79F172C28F00556
+Значок: minecraft:crossbow
+Форма: star
+x=20.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="34.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="38.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-28.00 8.72,-12.01 26.63,-8.65 14.11,4.59 16.46,22.65 0.00,14.84 -16.46,22.65 -14.11,4.59 -26.63,-8.65 -8.72,-12.01" class="quest-frame" fill="#152532" stroke="#6F83FF" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">33</text>
+<text class="quest-label" y="52.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Штурм забытого форта</text>
+</g>
+</g></svg>

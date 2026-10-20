@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -128.00 736.00 448.00" width="736.00" height="448.00" role="img" aria-labelledby="nasledie_prolog-before-title" data-quest-count="4">
+<title id="nasledie_prolog-before-title">Пролог — От убежища к будущему — схема SNBT, не скриншот игры</title>
+<defs><marker id="nasledie_prolog-before-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
+<g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
+<path d="M -128 -128.00 v 448.00"/>
+<path d="M -64 -128.00 v 448.00"/>
+<path d="M 0 -128.00 v 448.00"/>
+<path d="M 64 -128.00 v 448.00"/>
+<path d="M 128 -128.00 v 448.00"/>
+<path d="M 192 -128.00 v 448.00"/>
+<path d="M 256 -128.00 v 448.00"/>
+<path d="M 320 -128.00 v 448.00"/>
+<path d="M 384 -128.00 v 448.00"/>
+<path d="M 448 -128.00 v 448.00"/>
+<path d="M 512 -128.00 v 448.00"/>
+<path d="M 576 -128.00 v 448.00"/>
+<path d="M -128.00 -128 h 736.00"/>
+<path d="M -128.00 -64 h 736.00"/>
+<path d="M -128.00 0 h 736.00"/>
+<path d="M -128.00 64 h 736.00"/>
+<path d="M -128.00 128 h 736.00"/>
+<path d="M -128.00 192 h 736.00"/>
+<path d="M -128.00 256 h 736.00"/>
+<path d="M -128.00 320 h 736.00"/>
+</g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
+<path data-from="CA2CFD219A124357" data-to="C322668146484A1C" d="M 30.60 0.00 L 164.00 0.00" marker-end="url(#nasledie_prolog-before-arrow)"><title>CA2CFD219A124357 → C322668146484A1C</title></path>
+<path data-from="C322668146484A1C" data-to="42E5495CA00F5CC6" d="M 217.00 0.00 L 354.80 0.00" marker-end="url(#nasledie_prolog-before-arrow)"><title>C322668146484A1C → 42E5495CA00F5CC6</title></path>
+<path data-from="CA2CFD219A124357" data-to="69525CBD49DF5FDB" d="M 21.64 21.64 L 171.64 171.64" marker-end="url(#nasledie_prolog-before-arrow)"><title>CA2CFD219A124357 → 69525CBD49DF5FDB</title></path>
+</g><g class="quests" font-family="system-ui, sans-serif" text-anchor="middle">
+<g data-quest-id="CA2CFD219A124357" tabindex="0" role="button" aria-label="Начало летописи" transform="translate(0.00,0.00)" style="cursor:pointer">
+<title>Начало летописи
+ID: CA2CFD219A124357
+Значок: minecraft:book
+Форма: star
+x=0.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="33.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="37.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-27.60 8.60,-11.83 26.25,-8.53 13.91,4.52 16.22,22.33 0.00,14.63 -16.22,22.33 -13.91,4.52 -26.25,-8.53 -8.60,-11.83" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
+<text class="quest-label" y="51.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Начало летописи</text>
+</g>
+<g data-quest-id="C322668146484A1C" tabindex="0" role="button" aria-label="Первый инструмент повара" transform="translate(192.00,0.00)" style="cursor:pointer">
+<title>Первый инструмент повара
+ID: C322668146484A1C
+Значок: farmersdelight:flint_knife
+Форма: circle
+x=3.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="28.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="32.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="22.00" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
+<text class="quest-label" y="46.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первый инструмент повара</text>
+</g>
+<g data-quest-id="42E5495CA00F5CC6" tabindex="0" role="button" aria-label="Семена другого мира" transform="translate(384.00,0.00)" style="cursor:pointer">
+<title>Семена другого мира
+ID: 42E5495CA00F5CC6
+Значок: farmersdelight:cabbage_seeds
+Форма: heart
+x=6.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="23.20" class="quest-frame" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
+<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Семена другого мира</text>
+</g>
+<g data-quest-id="69525CBD49DF5FDB" tabindex="0" role="button" aria-label="Рюкзак за плечами" transform="translate(192.00,192.00)" style="cursor:pointer">
+<title>Рюкзак за плечами
+ID: 69525CBD49DF5FDB
+Значок: sophisticatedbackpacks:backpack
+Форма: square
+x=3.0, y=3.0
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" class="quest-frame" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+<text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
+<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Рюкзак за плечами</text>
+</g>
+</g></svg>

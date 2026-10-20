@@ -1,0 +1,22 @@
+{
+  "scope": "Browser report smoke test only; Minecraft not run",
+  "html_sha256": "99842ef9de89ab99702c53d2151a8cae2d02bc3dcc90c65bd16301512106d77a",
+  "chapters": 18,
+  "reference_nodes_per_side": 25,
+  "changed_quests": 25,
+  "checks": [
+    "default reference selection",
+    "all chapter options",
+    "both diagrams",
+    "quest detail",
+    "changed filter",
+    "label toggle",
+    "zoom",
+    "locate",
+    "all 18 chapter node counts",
+    "all 72 chapter/state palettes",
+    "Create roadmap"
+  ],
+  "javascript_errors": [],
+  "result": "passed"
+}
