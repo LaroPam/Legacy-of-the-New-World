@@ -726,341 +726,6 @@
     },
     {
       "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#1D1395D17D6238DB",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "resource_id",
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#F208B2429B83E7D8",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#013B127CA07E038A",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#82EB3ADD3D2CD6B9",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#1245D0A9CAC83D18",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#EA8154FB9A317740",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#C8C4ECA83D73BF63",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#F68B3CF3BC1979DB",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#26B8EA27D2BE22B9",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#2EBBB558E1A30F2F",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#CDAC640579002402",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#3FA8926603B35ADD",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#91C8A76B406CF0AF",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#37C2A96BD4EE0C5C",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#95DD2AD4CCAA7D90",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#CCF5C3CD6FF300E7",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#8D62D114AA053441",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#4C3AA9001AA8E8D5",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#49C8A0032E4C0E17",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#8F58E4E6C70518FE",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#F7E2465288E575FF",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#8EC3094B2671ABF2",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#1C477D2FE85FE89C",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#E151ABC26C849155",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#93F9199B68F09FF2",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#053070B7D8792A37",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#18ED8A27D511509E",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#46F430629A9DEE95",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#B20BCF3BF2BBE521",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "resource_id",
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#63D8F44C93AB9D80",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "resource_id",
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#82858847B7756EBF",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "implementation",
-        "resource_id",
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#1DCEBEFB5C85037B",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "resource_id",
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#5F239B4F41DD0E0C",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "resource_id",
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#098405E74DFFDA00",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "autocheck",
-        "resource_id"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#1DDBD113F023CE39",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "autocheck",
-        "resource_id"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
-      "location": "config/ftbquests/quests/chapters/nasledie_create.snbt#EC70D65F82B2FEF1",
-      "message": "Player-facing text contains implementation details or template labels",
-      "patterns": [
-        "autocheck",
-        "resource_id",
-        "template_label"
-      ],
-      "baseline_status": "pre_existing"
-    },
-    {
-      "code": "technical_prose",
       "location": "config/ftbquests/quests/chapters/nasledie_grand_projects.snbt#FD0417DEF7F45B46",
       "message": "Player-facing text contains implementation details or template labels",
       "patterns": [
@@ -3754,7 +3419,7 @@
       "code": "external_registry_unknown",
       "location": "items",
       "message": "Exact registry/data evidence was not supplied; identifier validity is not established",
-      "count": 621
+      "count": 622
     },
     {
       "code": "external_registry_unknown",
@@ -3830,6 +3495,11 @@
   },
   "changed_files": [
     {
+      "file": "config/ftbquests/quests/chapters/nasledie_create.snbt",
+      "baseline_sha256": "844b0a3e8b51b6cfcb1588082fc99189792a72ec58c0d1dda5c1632c1790ae58",
+      "current_sha256": "3658be035af5a157ac0de9dfedf07da2cfd7710bd2f33b12ecd9a9341260665a"
+    },
+    {
       "file": "config/ftbquests/quests/chapters/nasledie_defense.snbt",
       "baseline_sha256": "14c3539f872c00b3c971947fad2d4abe2d0236bd59ebc72caacc6e6d560201df",
       "current_sha256": "0c8eb4e8ce050740a5c01a2dc2e1f49140b66c309004661cd7de2cc3563ba6f8"
@@ -3837,27 +3507,27 @@
     {
       "file": "config/ftbquests/quests/chapters/nasledie_economy.snbt",
       "baseline_sha256": "3737b1d5c65bc927aabecc5140922d10df44503dcd913105c28dc61f16a9fc9b",
-      "current_sha256": "52e5ab1c54d81407c284cf1a1f4007693fdabaa9c3f886f5afa3201b3174f9df"
+      "current_sha256": "8b8b464cf037d5b7f8bf73ce0463ef82cc7fc38d27736f0fd5b3b53a82912e4d"
     },
     {
       "file": "config/ftbquests/quests/chapters/nasledie_exploration.snbt",
       "baseline_sha256": "3149be8aed0e48ed0841408ac4517bd12246570fa5c1f02c7fed1d94da9bd2a2",
-      "current_sha256": "9cc5cc3c0c475f502e6c526b9a74e22f1a06441ad9a314ca9d418749c9f19f99"
+      "current_sha256": "a210505de8242223a4dbc504f90202f66c235be089b53224abc5d1093703add4"
     },
     {
       "file": "config/ftbquests/quests/chapters/nasledie_life.snbt",
       "baseline_sha256": "216aa1a08a66a86caa217b77ec35f8f2a52de62bf22fd1364493d733c3737c70",
-      "current_sha256": "8aba646f844a2c9b7f670955ce79bb76eaa31b3b715f35ad6ec2484286fa9115"
+      "current_sha256": "34e51c217c7654e4c70fb2bd41d2fbb67e2a00dded337b95743123f987665ed5"
     },
     {
       "file": "config/ftbquests/quests/chapters/nasledie_prolog.snbt",
       "baseline_sha256": "1a7de5f6447f184eacfb33e4e5ced0aa00d91e9031a4ca486e20cee6bbab42cb",
-      "current_sha256": "3a83e15a2141621f7937012fbbd5a2a2d9791c367691c5dca4005f6d157187d1"
+      "current_sha256": "21a5e285ec624e8c16f53898511e6188c155916b54d2691458788867b42275eb"
     },
     {
       "file": "config/ftbquests/quests/chapters/nasledie_village.snbt",
       "baseline_sha256": "c597d3871deeee593791da359c511022f48448561888366ad5b2c2f607b0c5f9",
-      "current_sha256": "e36ad4d8d8cf0e9ff19977aa0e7924f646414c98c8de479f843759e3f10a6991"
+      "current_sha256": "8b6932400907bfb827388320272023f5da2fee815c704fbaf0d1d1b8ef69541e"
     },
     {
       "file": "kubejs/data/nasledie/advancements/alpha39/mowzie/grove_watch.json",
@@ -3896,9 +3566,9 @@
     "config/ftbquests/quests/chapters/nasledie_create.snbt": {
       "nodes": 41,
       "edges": 40,
-      "max_edge_length": 7.2111,
-      "width": 33.0,
-      "height": 30.0
+      "max_edge_length": 5.5902,
+      "width": 25.0,
+      "height": 15.0
     },
     "config/ftbquests/quests/chapters/nasledie_defense.snbt": {
       "nodes": 25,
@@ -3910,16 +3580,16 @@
     "config/ftbquests/quests/chapters/nasledie_economy.snbt": {
       "nodes": 9,
       "edges": 8,
-      "max_edge_length": 3.5355,
-      "width": 12.5,
-      "height": 5.0
+      "max_edge_length": 2.5,
+      "width": 10.0,
+      "height": 2.5
     },
     "config/ftbquests/quests/chapters/nasledie_exploration.snbt": {
       "nodes": 20,
       "edges": 19,
-      "max_edge_length": 5.5902,
-      "width": 10.0,
-      "height": 12.5
+      "max_edge_length": 3.5355,
+      "width": 22.5,
+      "height": 5.0
     },
     "config/ftbquests/quests/chapters/nasledie_grand_projects.snbt": {
       "nodes": 26,
@@ -3953,8 +3623,8 @@
       "nodes": 18,
       "edges": 17,
       "max_edge_length": 5.5902,
-      "width": 12.5,
-      "height": 10.0
+      "width": 20.0,
+      "height": 7.5
     },
     "config/ftbquests/quests/chapters/nasledie_netheritage.snbt": {
       "nodes": 20,
@@ -3973,9 +3643,9 @@
     "config/ftbquests/quests/chapters/nasledie_prolog.snbt": {
       "nodes": 4,
       "edges": 3,
-      "max_edge_length": 3.5355,
-      "width": 5.0,
-      "height": 2.5
+      "max_edge_length": 2.5,
+      "width": 7.5,
+      "height": 0.0
     },
     "config/ftbquests/quests/chapters/nasledie_relics.snbt": {
       "nodes": 21,
@@ -3994,9 +3664,9 @@
     "config/ftbquests/quests/chapters/nasledie_village.snbt": {
       "nodes": 10,
       "edges": 9,
-      "max_edge_length": 5.5902,
-      "width": 10.0,
-      "height": 7.5
+      "max_edge_length": 3.5355,
+      "width": 15.0,
+      "height": 2.5
     }
   },
   "baseline_geometry": {
@@ -4486,7 +4156,7 @@
         ]
       },
       "items": {
-        "required": 621,
+        "required": 622,
         "status": "unknown",
         "unverified": [
           "alexscaves:abyssal_altar",
@@ -4759,7 +4429,6 @@
           "create:mechanical_crafter",
           "create:mechanical_harvester",
           "create:mechanical_mixer",
-          "create:mechanical_piston",
           "create:mechanical_press",
           "create:mechanical_pump",
           "create:mechanical_saw",
@@ -4906,6 +4575,7 @@
           "minecraft:anvil",
           "minecraft:apple",
           "minecraft:beacon",
+          "minecraft:beehive",
           "minecraft:bell",
           "minecraft:blackstone",
           "minecraft:blast_furnace",
@@ -4922,6 +4592,7 @@
           "minecraft:chipped_anvil",
           "minecraft:chiseled_bookshelf",
           "minecraft:chiseled_stone_bricks",
+          "minecraft:cobblestone",
           "minecraft:compass",
           "minecraft:conduit",
           "minecraft:cookie",
@@ -5205,7 +4876,7 @@
   },
   "summary": {
     "errors": 0,
-    "warnings": 378,
+    "warnings": 342,
     "unknown": 9,
     "result": "pass_with_warnings_or_unknowns",
     "gameplay_blockers": 0,
@@ -5215,7 +4886,7 @@
     "errors": {},
     "warnings": {
       "edge_long": 20,
-      "technical_prose": 358
+      "technical_prose": 322
     },
     "unknown": {
       "external_registry_unknown": 6,

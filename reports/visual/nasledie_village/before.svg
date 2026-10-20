@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -320.00 1024.00 896.00" width="1024.00" height="896.00" role="img" aria-labelledby="nasledie_village-before-title" data-quest-count="10">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -320.00 1216.00 896.00" width="1216.00" height="896.00" role="img" aria-labelledby="nasledie_village-before-title" data-quest-count="10">
 <title id="nasledie_village-before-title">Живое поселение — путь общины — схема SNBT, не скриншот игры</title>
 <defs><marker id="nasledie_village-before-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
 <g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
@@ -19,21 +19,24 @@
 <path d="M 768 -320.00 v 896.00"/>
 <path d="M 832 -320.00 v 896.00"/>
 <path d="M 896 -320.00 v 896.00"/>
-<path d="M -128.00 -320 h 1024.00"/>
-<path d="M -128.00 -256 h 1024.00"/>
-<path d="M -128.00 -192 h 1024.00"/>
-<path d="M -128.00 -128 h 1024.00"/>
-<path d="M -128.00 -64 h 1024.00"/>
-<path d="M -128.00 0 h 1024.00"/>
-<path d="M -128.00 64 h 1024.00"/>
-<path d="M -128.00 128 h 1024.00"/>
-<path d="M -128.00 192 h 1024.00"/>
-<path d="M -128.00 256 h 1024.00"/>
-<path d="M -128.00 320 h 1024.00"/>
-<path d="M -128.00 384 h 1024.00"/>
-<path d="M -128.00 448 h 1024.00"/>
-<path d="M -128.00 512 h 1024.00"/>
-<path d="M -128.00 576 h 1024.00"/>
+<path d="M 960 -320.00 v 896.00"/>
+<path d="M 1024 -320.00 v 896.00"/>
+<path d="M 1088 -320.00 v 896.00"/>
+<path d="M -128.00 -320 h 1216.00"/>
+<path d="M -128.00 -256 h 1216.00"/>
+<path d="M -128.00 -192 h 1216.00"/>
+<path d="M -128.00 -128 h 1216.00"/>
+<path d="M -128.00 -64 h 1216.00"/>
+<path d="M -128.00 0 h 1216.00"/>
+<path d="M -128.00 64 h 1216.00"/>
+<path d="M -128.00 128 h 1216.00"/>
+<path d="M -128.00 192 h 1216.00"/>
+<path d="M -128.00 256 h 1216.00"/>
+<path d="M -128.00 320 h 1216.00"/>
+<path d="M -128.00 384 h 1216.00"/>
+<path d="M -128.00 448 h 1216.00"/>
+<path d="M -128.00 512 h 1216.00"/>
+<path d="M -128.00 576 h 1216.00"/>
 </g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
 <path data-from="C3524B3B7A1175C3" data-to="AFC6DEB96FAAF4A1" d="M 25.40 0.00 L 162.80 0.00" marker-end="url(#nasledie_village-before-arrow)"><title>C3524B3B7A1175C3 → AFC6DEB96FAAF4A1</title></path>
 <path data-from="AFC6DEB96FAAF4A1" data-to="7154299D354A1B07" d="M 210.53 -18.53 L 363.35 -171.35" marker-end="url(#nasledie_village-before-arrow)"><title>AFC6DEB96FAAF4A1 → 7154299D354A1B07</title></path>
@@ -51,7 +54,8 @@ ID: C3524B3B7A1175C3
 Значок: minecraft:bell
 Форма: scroll
 x=0.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
@@ -63,7 +67,8 @@ ID: AFC6DEB96FAAF4A1
 Значок: mca:bouquet
 Форма: heart
 x=3.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
@@ -75,7 +80,8 @@ ID: 7154299D354A1B07
 Значок: mca:bouquet
 Форма: heart
 x=6.0, y=-3.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
@@ -87,7 +93,8 @@ ID: 28708C663F59906A
 Значок: minecraft:emerald
 Форма: coin
 x=6.0, y=3.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="22.80" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
@@ -99,7 +106,8 @@ ID: 10E550A7AA6FE780
 Значок: mca:rose_gold_ingot
 Форма: heart
 x=9.0, y=3.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
@@ -111,7 +119,8 @@ ID: 2C75530B1A6E014E
 Значок: mca:wedding_ring
 Форма: heart
 x=9.0, y=-3.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
@@ -123,7 +132,8 @@ ID: E7B10EC3B6680953
 Значок: mca:rose_gold_ingot
 Форма: heart
 x=6.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
@@ -135,7 +145,8 @@ ID: C1275FDF3B2F99C1
 Значок: recruits:recruit_shield_block
 Форма: shield
 x=3.0, y=7.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
@@ -147,7 +158,8 @@ ID: 4F244541933746FE
 Значок: bountiful:bountyboard
 Форма: scroll
 x=6.0, y=7.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
@@ -159,7 +171,8 @@ ID: EF7C435DEE5C7F2A
 Значок: minecraft:bell
 Форма: laurel
 x=12.0, y=3.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="25.60" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>

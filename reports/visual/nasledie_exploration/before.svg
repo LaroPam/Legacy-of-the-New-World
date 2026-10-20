@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -512.00 1024.00 1280.00" width="1024.00" height="1280.00" role="img" aria-labelledby="nasledie_exploration-before-title" data-quest-count="20">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -512.00 1696.00 1280.00" width="1696.00" height="1280.00" role="img" aria-labelledby="nasledie_exploration-before-title" data-quest-count="20">
 <title id="nasledie_exploration-before-title">Путешественники — Полевая школа навигации — схема SNBT, не скриншот игры</title>
 <defs><marker id="nasledie_exploration-before-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
 <g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
@@ -19,27 +19,37 @@
 <path d="M 768 -512.00 v 1280.00"/>
 <path d="M 832 -512.00 v 1280.00"/>
 <path d="M 896 -512.00 v 1280.00"/>
-<path d="M -128.00 -512 h 1024.00"/>
-<path d="M -128.00 -448 h 1024.00"/>
-<path d="M -128.00 -384 h 1024.00"/>
-<path d="M -128.00 -320 h 1024.00"/>
-<path d="M -128.00 -256 h 1024.00"/>
-<path d="M -128.00 -192 h 1024.00"/>
-<path d="M -128.00 -128 h 1024.00"/>
-<path d="M -128.00 -64 h 1024.00"/>
-<path d="M -128.00 0 h 1024.00"/>
-<path d="M -128.00 64 h 1024.00"/>
-<path d="M -128.00 128 h 1024.00"/>
-<path d="M -128.00 192 h 1024.00"/>
-<path d="M -128.00 256 h 1024.00"/>
-<path d="M -128.00 320 h 1024.00"/>
-<path d="M -128.00 384 h 1024.00"/>
-<path d="M -128.00 448 h 1024.00"/>
-<path d="M -128.00 512 h 1024.00"/>
-<path d="M -128.00 576 h 1024.00"/>
-<path d="M -128.00 640 h 1024.00"/>
-<path d="M -128.00 704 h 1024.00"/>
-<path d="M -128.00 768 h 1024.00"/>
+<path d="M 960 -512.00 v 1280.00"/>
+<path d="M 1024 -512.00 v 1280.00"/>
+<path d="M 1088 -512.00 v 1280.00"/>
+<path d="M 1152 -512.00 v 1280.00"/>
+<path d="M 1216 -512.00 v 1280.00"/>
+<path d="M 1280 -512.00 v 1280.00"/>
+<path d="M 1344 -512.00 v 1280.00"/>
+<path d="M 1408 -512.00 v 1280.00"/>
+<path d="M 1472 -512.00 v 1280.00"/>
+<path d="M 1536 -512.00 v 1280.00"/>
+<path d="M -128.00 -512 h 1696.00"/>
+<path d="M -128.00 -448 h 1696.00"/>
+<path d="M -128.00 -384 h 1696.00"/>
+<path d="M -128.00 -320 h 1696.00"/>
+<path d="M -128.00 -256 h 1696.00"/>
+<path d="M -128.00 -192 h 1696.00"/>
+<path d="M -128.00 -128 h 1696.00"/>
+<path d="M -128.00 -64 h 1696.00"/>
+<path d="M -128.00 0 h 1696.00"/>
+<path d="M -128.00 64 h 1696.00"/>
+<path d="M -128.00 128 h 1696.00"/>
+<path d="M -128.00 192 h 1696.00"/>
+<path d="M -128.00 256 h 1696.00"/>
+<path d="M -128.00 320 h 1696.00"/>
+<path d="M -128.00 384 h 1696.00"/>
+<path d="M -128.00 448 h 1696.00"/>
+<path d="M -128.00 512 h 1696.00"/>
+<path d="M -128.00 576 h 1696.00"/>
+<path d="M -128.00 640 h 1696.00"/>
+<path d="M -128.00 704 h 1696.00"/>
+<path d="M -128.00 768 h 1696.00"/>
 </g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
 <path data-from="30000F5F1F069AFA" data-to="5DCFED353E2F543B" d="M 28.60 0.00 L 163.60 0.00" marker-end="url(#nasledie_exploration-before-arrow)"><title>30000F5F1F069AFA → 5DCFED353E2F543B</title></path>
 <path data-from="30000F5F1F069AFA" data-to="4654570D569F8AFB" d="M 20.22 -20.22 L 171.92 -171.92" marker-end="url(#nasledie_exploration-before-arrow)"><title>30000F5F1F069AFA → 4654570D569F8AFB</title></path>
@@ -67,7 +77,8 @@ ID: 30000F5F1F069AFA
 Значок: minecraft:leather_boots
 Форма: star
 x=0.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
@@ -79,7 +90,8 @@ ID: 5DCFED353E2F543B
 Значок: minecraft:leather_boots
 Форма: scroll
 x=3.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
@@ -91,7 +103,8 @@ ID: 4654570D569F8AFB
 Значок: minecraft:acacia_sapling
 Форма: scroll
 x=3.0, y=-3.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
@@ -103,7 +116,8 @@ ID: F740FB239378B229
 Значок: minecraft:flowering_azalea
 Форма: scroll
 x=6.0, y=-3.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
@@ -115,7 +129,8 @@ ID: 142D439350347E70
 Значок: minecraft:calcite
 Форма: scroll
 x=9.0, y=-3.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
@@ -127,7 +142,8 @@ ID: F17A293356CD1404
 Значок: minecraft:stone_bricks
 Форма: scroll
 x=3.0, y=3.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
@@ -139,7 +155,8 @@ ID: 28CBD873B6A9B3EA
 Значок: minecraft:bone
 Форма: scroll
 x=6.0, y=3.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
@@ -151,7 +168,8 @@ ID: B7BA27A969107D22
 Значок: minecraft:rail
 Форма: scroll
 x=9.0, y=3.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
@@ -163,7 +181,8 @@ ID: 07A63C78A1E0EFD4
 Значок: minecraft:spyglass
 Форма: star
 x=3.0, y=-6.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
@@ -175,7 +194,8 @@ ID: A91583B5B92C22EB
 Значок: minecraft:emerald
 Форма: scroll
 x=6.0, y=-6.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
@@ -187,7 +207,8 @@ ID: E6DC4A843BE1C287
 Значок: minecraft:elytra
 Форма: star
 x=9.0, y=-6.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
@@ -199,7 +220,8 @@ ID: D8325F832D406D1F
 Значок: minecraft:packed_ice
 Форма: scroll
 x=3.0, y=6.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
@@ -211,7 +233,8 @@ ID: CD62103DCF8B4FDA
 Значок: minecraft:blue_ice
 Форма: scroll
 x=6.0, y=6.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
@@ -223,7 +246,8 @@ ID: 4A366B92A0D4BDCD
 Значок: minecraft:vine
 Форма: scroll
 x=9.0, y=6.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
@@ -235,7 +259,8 @@ ID: EA048E705BEC8414
 Значок: minecraft:red_mushroom
 Форма: scroll
 x=12.0, y=3.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
@@ -247,7 +272,8 @@ ID: F09FD8875C97CD92
 Значок: minecraft:raw_gold
 Форма: scroll
 x=12.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
@@ -260,7 +286,8 @@ ID: 507F5E2261A499DA
 Значок: minecraft:honeycomb
 Форма: star
 x=12.0, y=9.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
@@ -272,7 +299,8 @@ ID: 2DCB2702FC5C1F31
 Значок: minecraft:prismarine_shard
 Форма: star
 x=12.0, y=6.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
@@ -284,7 +312,8 @@ ID: 57FD47EFC4E11601
 Значок: minecraft:enchanted_book
 Форма: scroll
 x=12.0, y=-6.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">19</text>
@@ -296,7 +325,8 @@ ID: C580A1C9022BB90F
 Значок: minecraft:blue_ice
 Форма: scroll
 x=3.0, y=10.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">20</text>

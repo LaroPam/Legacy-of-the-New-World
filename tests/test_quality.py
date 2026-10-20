@@ -81,6 +81,24 @@ class PreservationTests(unittest.TestCase):
         scope = {'completed_chapters': ['nasledie_defense']}
         self.assertIn('technical_prose', self.codes(quality.evaluate({REF:source}, {REF:source}, scope=scope)))
 
+    def test_reviewed_dependency_change_is_exact_and_still_checks_cycles(self):
+        scope = {'quest_fixes': {'0000000000000005': {'dependencies': {
+            'before':['0000000000000002'], 'after':[], 'reason':'Independent optional route'}}}}
+        new = SOURCE.replace(b'dependencies: ["0000000000000002"]', b'dependencies: []')
+        self.assertEqual(quality.evaluate({REF:new}, {REF:SOURCE}, scope=scope)['errors'], [])
+        cycle = SOURCE.replace(b'dependencies: ["0000000000000002"]', b'dependencies: ["0000000000000005"]')
+        self.assertIn('approved_fix_mismatch', self.codes(quality.evaluate({REF:cycle}, {REF:SOURCE}, scope=scope)))
+        scope['quest_fixes']['0000000000000005']['dependencies']['after'] = ['0000000000000005']
+        self.assertIn('dependency_cycle', self.codes(quality.evaluate({REF:cycle}, {REF:SOURCE}, scope=scope)))
+
+    def test_dependency_approval_cannot_exempt_reward_changes(self):
+        scope = {'quest_fixes': {'0000000000000002': {'rewards': {
+            'before':[], 'after':[], 'reason':'Invalid attempt to exempt rewards'}}}}
+        new = SOURCE.replace(b'xp: 10', b'xp: 11')
+        codes = self.codes(quality.evaluate({REF:new}, {REF:SOURCE}, scope=scope))
+        self.assertIn('approved_fix_mismatch', codes)
+        self.assertIn('mechanics_changed', codes)
+
     def test_advancement_condition_change_is_protected(self):
         name = 'kubejs/data/test/advancements/a.json'
         before = {REF: SOURCE, name: b'{"criteria":{"a":{"trigger":"minecraft:tick"}}}'}

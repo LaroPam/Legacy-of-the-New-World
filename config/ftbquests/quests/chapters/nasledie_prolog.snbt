@@ -112,14 +112,12 @@
             description: [
                 "Подготовьте обычный рюкзак Sophisticated Backpacks и наденьте его в слот нагрудной брони. На этом этапе нужен именно базовый рюкзак в нагрудном слоте; дополнительный слот аксессуаров для этой цели не подходит."
             ]
-            x: 2.50d
-            y: 2.50d
+            x: 7.50d
+            y: 0.00d
             icon: "sophisticatedbackpacks:backpack"
             shape: "circle"
             size: 1.20d
-            dependencies: [
-                "CA2CFD219A124357"
-        ]
+            dependencies: ["42E5495CA00F5CC6"]
             tasks: [
                 {
                     id: "6EB6532083976608"

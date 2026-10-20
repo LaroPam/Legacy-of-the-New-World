@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -640.00 1216.00 1280.00" width="1216.00" height="1280.00" role="img" aria-labelledby="nasledie_life-before-title" data-quest-count="18">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -640.00 1536.00 1280.00" width="1536.00" height="1280.00" role="img" aria-labelledby="nasledie_life-before-title" data-quest-count="18">
 <title id="nasledie_life-before-title">Дом и ремёсла — школа хозяйства — схема SNBT, не скриншот игры</title>
 <defs><marker id="nasledie_life-before-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
 <g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
@@ -22,27 +22,32 @@
 <path d="M 960 -640.00 v 1280.00"/>
 <path d="M 1024 -640.00 v 1280.00"/>
 <path d="M 1088 -640.00 v 1280.00"/>
-<path d="M -128.00 -640 h 1216.00"/>
-<path d="M -128.00 -576 h 1216.00"/>
-<path d="M -128.00 -512 h 1216.00"/>
-<path d="M -128.00 -448 h 1216.00"/>
-<path d="M -128.00 -384 h 1216.00"/>
-<path d="M -128.00 -320 h 1216.00"/>
-<path d="M -128.00 -256 h 1216.00"/>
-<path d="M -128.00 -192 h 1216.00"/>
-<path d="M -128.00 -128 h 1216.00"/>
-<path d="M -128.00 -64 h 1216.00"/>
-<path d="M -128.00 0 h 1216.00"/>
-<path d="M -128.00 64 h 1216.00"/>
-<path d="M -128.00 128 h 1216.00"/>
-<path d="M -128.00 192 h 1216.00"/>
-<path d="M -128.00 256 h 1216.00"/>
-<path d="M -128.00 320 h 1216.00"/>
-<path d="M -128.00 384 h 1216.00"/>
-<path d="M -128.00 448 h 1216.00"/>
-<path d="M -128.00 512 h 1216.00"/>
-<path d="M -128.00 576 h 1216.00"/>
-<path d="M -128.00 640 h 1216.00"/>
+<path d="M 1152 -640.00 v 1280.00"/>
+<path d="M 1216 -640.00 v 1280.00"/>
+<path d="M 1280 -640.00 v 1280.00"/>
+<path d="M 1344 -640.00 v 1280.00"/>
+<path d="M 1408 -640.00 v 1280.00"/>
+<path d="M -128.00 -640 h 1536.00"/>
+<path d="M -128.00 -576 h 1536.00"/>
+<path d="M -128.00 -512 h 1536.00"/>
+<path d="M -128.00 -448 h 1536.00"/>
+<path d="M -128.00 -384 h 1536.00"/>
+<path d="M -128.00 -320 h 1536.00"/>
+<path d="M -128.00 -256 h 1536.00"/>
+<path d="M -128.00 -192 h 1536.00"/>
+<path d="M -128.00 -128 h 1536.00"/>
+<path d="M -128.00 -64 h 1536.00"/>
+<path d="M -128.00 0 h 1536.00"/>
+<path d="M -128.00 64 h 1536.00"/>
+<path d="M -128.00 128 h 1536.00"/>
+<path d="M -128.00 192 h 1536.00"/>
+<path d="M -128.00 256 h 1536.00"/>
+<path d="M -128.00 320 h 1536.00"/>
+<path d="M -128.00 384 h 1536.00"/>
+<path d="M -128.00 448 h 1536.00"/>
+<path d="M -128.00 512 h 1536.00"/>
+<path d="M -128.00 576 h 1536.00"/>
+<path d="M -128.00 640 h 1536.00"/>
 </g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
 <path data-from="464A27B6AA037B37" data-to="6E42774EBA2B38FB" d="M 9.20 24.53 L 181.89 485.03" marker-end="url(#nasledie_life-before-arrow)"><title>464A27B6AA037B37 → 6E42774EBA2B38FB</title></path>
 <path data-from="464A27B6AA037B37" data-to="5B2F6F1B27706E1D" d="M 15.72 -20.96 L 174.96 -233.28" marker-end="url(#nasledie_life-before-arrow)"><title>464A27B6AA037B37 → 5B2F6F1B27706E1D</title></path>
@@ -68,7 +73,8 @@ ID: 464A27B6AA037B37
 Значок: farmersdelight:cutting_board
 Форма: heart
 x=0.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
@@ -80,7 +86,8 @@ ID: 6E42774EBA2B38FB
 Значок: sophisticatedstorage:filter_upgrade
 Форма: square
 x=3.0, y=8.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
@@ -93,7 +100,8 @@ ID: 5B2F6F1B27706E1D
 Значок: farmersdelight:rice
 Форма: scroll
 x=3.0, y=-4.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.40" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
@@ -105,7 +113,8 @@ ID: 9E550CA158EE0E76
 Значок: farmersdelight:tomato_seeds
 Форма: heart
 x=6.0, y=-4.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
@@ -117,7 +126,8 @@ ID: FE2674FC9E1DD748
 Значок: farmersdelight:straw
 Форма: heart
 x=9.0, y=-4.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
@@ -129,7 +139,8 @@ ID: C3D9E46E5C4B9DA5
 Значок: farmersdelight:organic_compost
 Форма: gear
 x=12.0, y=-4.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
@@ -142,7 +153,8 @@ ID: 0F10C8510B15A8C2
 Значок: farmersdelight:rich_soil
 Форма: heart
 x=15.0, y=-4.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
@@ -154,7 +166,8 @@ ID: 70BD314183AC1CDE
 Значок: farmersdelight:cooking_pot
 Форма: square
 x=3.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
@@ -166,7 +179,8 @@ ID: 4E740C0034B4382F
 Значок: farmersdelight:fruit_salad
 Форма: heart
 x=6.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
@@ -179,7 +193,8 @@ ID: 6D582231374D6FBB
 Значок: farmersdelight:brown_mushroom_colony
 Форма: gear
 x=6.0, y=-8.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
@@ -191,7 +206,8 @@ ID: E3867CE6EB276D6B
 Значок: farmersdelight:cabbage_seeds
 Форма: laurel
 x=9.0, y=-8.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="25.60" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
@@ -203,7 +219,8 @@ ID: 470CCDD13E8599DD
 Значок: minecraft:wheat
 Форма: heart
 x=3.0, y=-8.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
@@ -215,7 +232,8 @@ ID: 119A349F7B3DEF2E
 Значок: cold_sweat:hearth
 Форма: square
 x=6.0, y=4.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
@@ -227,7 +245,8 @@ ID: 85F72175E8F3882D
 Значок: cold_sweat:smokestack
 Форма: heart
 x=9.0, y=4.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
@@ -239,7 +258,8 @@ ID: C2A7FBADC6571244
 Значок: cold_sweat:goat_fur
 Форма: heart
 x=3.0, y=4.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="29.20" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
@@ -251,7 +271,8 @@ ID: 6BF257BC86E5F51D
 Значок: sophisticatedbackpacks:pickup_upgrade
 Форма: square
 x=6.0, y=8.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
@@ -264,7 +285,8 @@ ID: BCC7916DB9793560
 Значок: sophisticatedstorage:iron_chest
 Форма: square
 x=9.0, y=8.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="28.80" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
@@ -277,7 +299,8 @@ ID: 52659216F4F03E2C
 Значок: farmersdelight:roast_chicken_block
 Форма: star
 x=9.0, y=0.0
-Без изменений</title>
+Есть изменения</title>
+<circle class="change-ring" r="31.60" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>

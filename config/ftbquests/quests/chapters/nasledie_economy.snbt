@@ -150,12 +150,10 @@
             title: "Сделка знаний"
             icon: "minecraft:enchanted_book"
             x: 10.00d
-            y: 0.00d
+            y: 2.50d
             shape: "coin"
             size: 1.20d
-            dependencies: [
-                "D15B25FAA41E05AE"
-            ]
+            dependencies: ["9CE7C2CFF54FECE4"]
             description: [
                 "Купите зачарованную книгу у обычного жителя. Выбирайте чары под своё снаряжение: удачная покупка пригодится в следующей серьёзной вылазке."
             ]
@@ -183,8 +181,8 @@
             id: "F0C5DD6DFBF85A1C"
             title: "Жемчуг на прилавке"
             icon: "minecraft:ender_pearl"
-            x: 12.50d
-            y: 0.00d
+            x: 7.50d
+            y: 2.50d
             shape: "coin"
             size: 1.20d
             optional: true
@@ -218,14 +216,12 @@
             id: "9CE7C2CFF54FECE4"
             title: "Десять завершённых сделок"
             icon: "minecraft:emerald"
-            x: 2.50d
-            y: -2.50d
+            x: 10.00d
+            y: 0.00d
             shape: "coin"
             size: 1.20d
             optional: true
-            dependencies: [
-                "D49CAFA761D24CA4"
-            ]
+            dependencies: ["D15B25FAA41E05AE"]
             description: [
                 "Доведите личный счётчик сделок с жителями до 10. Подходят покупки и продажи; уже совершённые сделки входят в этот общий итог."
             ]
@@ -254,14 +250,12 @@
             id: "62F24C6158049C2F"
             title: "Центр складского хозяйства"
             icon: "sophisticatedstorage:controller"
-            x: 2.50d
+            x: 5.00d
             y: 2.50d
             shape: "gear"
             size: 1.20d
             optional: true
-            dependencies: [
-                "D49CAFA761D24CA4"
-            ]
+            dependencies: ["F0C5DD6DFBF85A1C"]
             description: [
                 "Установите контроллер Sophisticated Storage на будущем складе. Это место для управления хранилищами; подключение контейнеров станет вашей следующей хозяйственной задачей."
             ]
@@ -289,14 +283,12 @@
             id: "BE7C211A268C501D"
             title: "Гильдия постоянных клиентов"
             icon: "minecraft:emerald"
-            x: 5.00d
-            y: -2.50d
+            x: 2.50d
+            y: 2.50d
             shape: "star"
             size: 1.20d
             optional: true
-            dependencies: [
-                "9CE7C2CFF54FECE4"
-            ]
+            dependencies: ["62F24C6158049C2F"]
             description: [
                 "Совершите в общей сложности 25 сделок с жителями. Это продолжение прежнего счётчика, поэтому после рубежа в десять нужны ещё пятнадцать. Следите за запасами товаров и берегите надёжных поставщиков."
             ]

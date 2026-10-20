@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -320.00 1024.00 896.00" width="1024.00" height="896.00" role="img" aria-labelledby="nasledie_village-after-title" data-quest-count="10">
-<title id="nasledie_village-after-title">Живое поселение — путь общины — схема SNBT, не скриншот игры</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -320.00 1216.00 896.00" width="1216.00" height="896.00" role="img" aria-labelledby="nasledie_village-after-title" data-quest-count="10">
+<title id="nasledie_village-after-title">Люди нашего поселения — схема SNBT, не скриншот игры</title>
 <defs><marker id="nasledie_village-after-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
 <g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
 <path d="M -128 -320.00 v 896.00"/>
@@ -19,150 +19,163 @@
 <path d="M 768 -320.00 v 896.00"/>
 <path d="M 832 -320.00 v 896.00"/>
 <path d="M 896 -320.00 v 896.00"/>
-<path d="M -128.00 -320 h 1024.00"/>
-<path d="M -128.00 -256 h 1024.00"/>
-<path d="M -128.00 -192 h 1024.00"/>
-<path d="M -128.00 -128 h 1024.00"/>
-<path d="M -128.00 -64 h 1024.00"/>
-<path d="M -128.00 0 h 1024.00"/>
-<path d="M -128.00 64 h 1024.00"/>
-<path d="M -128.00 128 h 1024.00"/>
-<path d="M -128.00 192 h 1024.00"/>
-<path d="M -128.00 256 h 1024.00"/>
-<path d="M -128.00 320 h 1024.00"/>
-<path d="M -128.00 384 h 1024.00"/>
-<path d="M -128.00 448 h 1024.00"/>
-<path d="M -128.00 512 h 1024.00"/>
-<path d="M -128.00 576 h 1024.00"/>
+<path d="M 960 -320.00 v 896.00"/>
+<path d="M 1024 -320.00 v 896.00"/>
+<path d="M 1088 -320.00 v 896.00"/>
+<path d="M -128.00 -320 h 1216.00"/>
+<path d="M -128.00 -256 h 1216.00"/>
+<path d="M -128.00 -192 h 1216.00"/>
+<path d="M -128.00 -128 h 1216.00"/>
+<path d="M -128.00 -64 h 1216.00"/>
+<path d="M -128.00 0 h 1216.00"/>
+<path d="M -128.00 64 h 1216.00"/>
+<path d="M -128.00 128 h 1216.00"/>
+<path d="M -128.00 192 h 1216.00"/>
+<path d="M -128.00 256 h 1216.00"/>
+<path d="M -128.00 320 h 1216.00"/>
+<path d="M -128.00 384 h 1216.00"/>
+<path d="M -128.00 448 h 1216.00"/>
+<path d="M -128.00 512 h 1216.00"/>
+<path d="M -128.00 576 h 1216.00"/>
 </g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
-<path data-from="C3524B3B7A1175C3" data-to="AFC6DEB96FAAF4A1" d="M 25.40 0.00 L 162.80 0.00" marker-end="url(#nasledie_village-after-arrow)"><title>C3524B3B7A1175C3 → AFC6DEB96FAAF4A1</title></path>
-<path data-from="AFC6DEB96FAAF4A1" data-to="7154299D354A1B07" d="M 210.53 -18.53 L 363.35 -171.35" marker-end="url(#nasledie_village-after-arrow)"><title>AFC6DEB96FAAF4A1 → 7154299D354A1B07</title></path>
-<path data-from="AFC6DEB96FAAF4A1" data-to="28708C663F59906A" d="M 210.53 18.53 L 363.64 171.64" marker-end="url(#nasledie_village-after-arrow)"><title>AFC6DEB96FAAF4A1 → 28708C663F59906A</title></path>
-<path data-from="28708C663F59906A" data-to="10E550A7AA6FE780" d="M 409.80 192.00 L 546.80 192.00" marker-end="url(#nasledie_village-after-arrow)"><title>28708C663F59906A → 10E550A7AA6FE780</title></path>
-<path data-from="7154299D354A1B07" data-to="2C75530B1A6E014E" d="M 410.20 -192.00 L 546.80 -192.00" marker-end="url(#nasledie_village-after-arrow)"><title>7154299D354A1B07 → 2C75530B1A6E014E</title></path>
-<path data-from="AFC6DEB96FAAF4A1" data-to="E7B10EC3B6680953" d="M 218.20 0.00 L 354.80 0.00" marker-end="url(#nasledie_village-after-arrow)"><title>AFC6DEB96FAAF4A1 → E7B10EC3B6680953</title></path>
-<path data-from="C3524B3B7A1175C3" data-to="C1275FDF3B2F99C1" d="M 10.01 23.35 L 180.18 420.43" marker-end="url(#nasledie_village-after-arrow)"><title>C3524B3B7A1175C3 → C1275FDF3B2F99C1</title></path>
-<path data-from="C1275FDF3B2F99C1" data-to="4F244541933746FE" d="M 219.00 448.00 L 355.60 448.00" marker-end="url(#nasledie_village-after-arrow)"><title>C1275FDF3B2F99C1 → 4F244541933746FE</title></path>
-<path data-from="10E550A7AA6FE780" data-to="EF7C435DEE5C7F2A" d="M 602.20 192.00 L 736.40 192.00" marker-end="url(#nasledie_village-after-arrow)"><title>10E550A7AA6FE780 → EF7C435DEE5C7F2A</title></path>
+<path data-from="C3524B3B7A1175C3" data-to="AFC6DEB96FAAF4A1" d="M 27.00 0.00 L 130.00 0.00" marker-end="url(#nasledie_village-after-arrow)"><title>C3524B3B7A1175C3 → AFC6DEB96FAAF4A1</title></path>
+<path data-from="AFC6DEB96FAAF4A1" data-to="7154299D354A1B07" d="M 179.09 -19.09 L 298.79 -138.79" marker-end="url(#nasledie_village-after-arrow)"><title>AFC6DEB96FAAF4A1 → 7154299D354A1B07</title></path>
+<path data-from="AFC6DEB96FAAF4A1" data-to="28708C663F59906A" d="M 187.00 0.00 L 290.00 0.00" marker-end="url(#nasledie_village-after-arrow)"><title>AFC6DEB96FAAF4A1 → 28708C663F59906A</title></path>
+<path data-from="28708C663F59906A" data-to="10E550A7AA6FE780" d="M 347.00 0.00 L 450.00 0.00" marker-end="url(#nasledie_village-after-arrow)"><title>28708C663F59906A → 10E550A7AA6FE780</title></path>
+<path data-from="E7B10EC3B6680953" data-to="2C75530B1A6E014E" d="M 507.00 -160.00 L 610.00 -160.00" marker-end="url(#nasledie_village-after-arrow)"><title>E7B10EC3B6680953 → 2C75530B1A6E014E</title></path>
+<path data-from="7154299D354A1B07" data-to="E7B10EC3B6680953" d="M 347.00 -160.00 L 450.00 -160.00" marker-end="url(#nasledie_village-after-arrow)"><title>7154299D354A1B07 → E7B10EC3B6680953</title></path>
+<path data-from="10E550A7AA6FE780" data-to="C1275FDF3B2F99C1" d="M 507.00 0.00 L 610.00 0.00" marker-end="url(#nasledie_village-after-arrow)"><title>10E550A7AA6FE780 → C1275FDF3B2F99C1</title></path>
+<path data-from="C1275FDF3B2F99C1" data-to="4F244541933746FE" d="M 667.00 0.00 L 770.00 0.00" marker-end="url(#nasledie_village-after-arrow)"><title>C1275FDF3B2F99C1 → 4F244541933746FE</title></path>
+<path data-from="4F244541933746FE" data-to="EF7C435DEE5C7F2A" d="M 827.00 0.00 L 930.00 0.00" marker-end="url(#nasledie_village-after-arrow)"><title>4F244541933746FE → EF7C435DEE5C7F2A</title></path>
 </g><g class="quests" font-family="system-ui, sans-serif" text-anchor="middle">
-<g data-quest-id="C3524B3B7A1175C3" tabindex="0" role="button" aria-label="Найти поселение MCA" transform="translate(0.00,0.00)" style="cursor:pointer">
-<title>Найти поселение MCA
+<g data-quest-id="C3524B3B7A1175C3" tabindex="0" role="button" aria-label="Первые соседи" transform="translate(0.00,0.00)" style="cursor:pointer">
+<title>Первые соседи
 ID: C3524B3B7A1175C3
 Значок: minecraft:bell
 Форма: scroll
 x=0.0, y=0.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Найти поселение MCA</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первые соседи</text>
 </g>
-<g data-quest-id="AFC6DEB96FAAF4A1" tabindex="0" role="button" aria-label="Первое знакомство" transform="translate(192.00,0.00)" style="cursor:pointer">
-<title>Первое знакомство
+<g data-quest-id="AFC6DEB96FAAF4A1" tabindex="0" role="button" aria-label="Знакомые лица" transform="translate(160.00,0.00)" style="cursor:pointer">
+<title>Знакомые лица
 ID: AFC6DEB96FAAF4A1
 Значок: mca:bouquet
 Форма: heart
-x=3.0, y=0.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+x=2.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Первое знакомство</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Знакомые лица</text>
 </g>
-<g data-quest-id="7154299D354A1B07" tabindex="0" role="button" aria-label="Подарок с историей" transform="translate(384.00,-192.00)" style="cursor:pointer">
+<g data-quest-id="7154299D354A1B07" tabindex="0" role="button" aria-label="Подарок с историей" transform="translate(320.00,-160.00)" style="cursor:pointer">
 <title>Подарок с историей
 ID: 7154299D354A1B07
 Значок: mca:bouquet
 Форма: heart
-x=6.0, y=-3.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+x=5.0, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Подарок с историей</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Подарок с историей</text>
 </g>
-<g data-quest-id="28708C663F59906A" tabindex="0" role="button" aria-label="Сделка с жителем MCA" transform="translate(384.00,192.00)" style="cursor:pointer">
-<title>Сделка с жителем MCA
+<g data-quest-id="28708C663F59906A" tabindex="0" role="button" aria-label="Звание торговца" transform="translate(320.00,0.00)" style="cursor:pointer">
+<title>Звание торговца
 ID: 28708C663F59906A
 Значок: minecraft:emerald
-Форма: coin
-x=6.0, y=3.0
-Без изменений</title>
-<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="22.80" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: circle
+x=5.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
-<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сделка с жителем MCA</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Звание торговца</text>
 </g>
-<g data-quest-id="10E550A7AA6FE780" tabindex="0" role="button" aria-label="Признанный горожанин" transform="translate(576.00,192.00)" style="cursor:pointer">
-<title>Признанный горожанин
+<g data-quest-id="10E550A7AA6FE780" tabindex="0" role="button" aria-label="Дворянин поселения" transform="translate(480.00,0.00)" style="cursor:pointer">
+<title>Дворянин поселения
 ID: 10E550A7AA6FE780
-Значок: mca:rose_gold_ingot
-Форма: heart
-x=9.0, y=3.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Значок: minecraft:iron_helmet
+Форма: star
+x=7.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Признанный горожанин</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дворянин поселения</text>
 </g>
-<g data-quest-id="2C75530B1A6E014E" tabindex="0" role="button" aria-label="Семейная история" transform="translate(576.00,-192.00)" style="cursor:pointer">
+<g data-quest-id="2C75530B1A6E014E" tabindex="0" role="button" aria-label="Семейная история" transform="translate(640.00,-160.00)" style="cursor:pointer">
 <title>Семейная история
 ID: 2C75530B1A6E014E
 Значок: mca:wedding_ring
 Форма: heart
-x=9.0, y=-3.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+x=10.0, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Семейная история</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Семейная история</text>
 </g>
-<g data-quest-id="E7B10EC3B6680953" tabindex="0" role="button" aria-label="Доверие жителя" transform="translate(384.00,0.00)" style="cursor:pointer">
-<title>Доверие жителя
+<g data-quest-id="E7B10EC3B6680953" tabindex="0" role="button" aria-label="Близкий друг" transform="translate(480.00,-160.00)" style="cursor:pointer">
+<title>Близкий друг
 ID: E7B10EC3B6680953
-Значок: mca:rose_gold_ingot
+Значок: minecraft:emerald_block
 Форма: heart
-x=6.0, y=0.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+x=7.5, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Доверие жителя</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Близкий друг</text>
 </g>
-<g data-quest-id="C1275FDF3B2F99C1" tabindex="0" role="button" aria-label="Оборудовать пункт набора" transform="translate(192.00,448.00)" style="cursor:pointer">
+<g data-quest-id="C1275FDF3B2F99C1" tabindex="0" role="button" aria-label="Оборудовать пункт набора" transform="translate(640.00,0.00)" style="cursor:pointer">
 <title>Оборудовать пункт набора
 ID: C1275FDF3B2F99C1
 Значок: recruits:recruit_shield_block
 Форма: shield
-x=3.0, y=7.0
-Без изменений</title>
+x=10.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
 <circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
 <polygon points="-24.00,-24.00 24.00,-24.00 19.20,7.20 0.00,24.00 -19.20,7.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
 <text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Оборудовать пункт набора</text>
 </g>
-<g data-quest-id="4F244541933746FE" tabindex="0" role="button" aria-label="Установить доску заказов" transform="translate(384.00,448.00)" style="cursor:pointer">
+<g data-quest-id="4F244541933746FE" tabindex="0" role="button" aria-label="Установить доску заказов" transform="translate(800.00,0.00)" style="cursor:pointer">
 <title>Установить доску заказов
 ID: 4F244541933746FE
 Значок: bountiful:bountyboard
 Форма: scroll
-x=6.0, y=7.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+x=12.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="8.40" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Установить доску заказов</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Установить доску заказов</text>
 </g>
-<g data-quest-id="EF7C435DEE5C7F2A" tabindex="0" role="button" aria-label="Юра — мэр нашего города" transform="translate(768.00,192.00)" style="cursor:pointer">
-<title>Юра — мэр нашего города
+<g data-quest-id="EF7C435DEE5C7F2A" tabindex="0" role="button" aria-label="Юра — мэр города" transform="translate(960.00,0.00)" style="cursor:pointer">
+<title>Юра — мэр города
 ID: EF7C435DEE5C7F2A
 Значок: minecraft:bell
-Форма: laurel
-x=12.0, y=3.0
-Без изменений</title>
-<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="25.60" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: star
+x=15.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
-<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Юра — мэр нашего города</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Юра — мэр города</text>
 </g>
 </g></svg>

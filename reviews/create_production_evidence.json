@@ -1,0 +1,289 @@
+{
+  "source": "create-1.20.1-6.0.8.jar",
+  "sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+  "records": {
+    "data/create/recipes/milling/wheat.json": {
+      "sha256": "e37ccff88bacd46ecf7e8cf9e6fbe9e050e64463765f4c43eb56d946e959e53a",
+      "body": {
+        "type": "create:milling",
+        "ingredients": [
+          {
+            "item": "minecraft:wheat"
+          }
+        ],
+        "processingTime": 150,
+        "results": [
+          {
+            "item": "create:wheat_flour"
+          },
+          {
+            "chance": 0.25,
+            "count": 2,
+            "item": "create:wheat_flour"
+          },
+          {
+            "chance": 0.25,
+            "item": "minecraft:wheat_seeds"
+          }
+        ]
+      }
+    },
+    "data/create/recipes/splashing/wheat_flour.json": {
+      "sha256": "6db0edf86bb7fd8a3013f3693e817651ecfe897407adab4c7821d434e4c01548",
+      "body": {
+        "type": "create:splashing",
+        "ingredients": [
+          {
+            "tag": "forge:flour/wheat"
+          }
+        ],
+        "results": [
+          {
+            "item": "create:dough"
+          }
+        ]
+      }
+    },
+    "data/create/recipes/smoking/bread.json": {
+      "sha256": "0118b89dfb8e7ac40688e03e24eae62536744fdcf15230d649c373ed22cc930f",
+      "body": {
+        "type": "minecraft:smoking",
+        "category": "food",
+        "cookingtime": 100,
+        "experience": 0.0,
+        "ingredient": {
+          "item": "create:dough"
+        },
+        "result": "minecraft:bread"
+      }
+    },
+    "data/create/recipes/mixing/chocolate.json": {
+      "sha256": "af177cb9129ab6fe30c3099c30bc3aa475c7698a75d6def7a49695a26fd8e5c0",
+      "body": {
+        "type": "create:mixing",
+        "heatRequirement": "heated",
+        "ingredients": [
+          {
+            "item": "minecraft:sugar"
+          },
+          {
+            "item": "minecraft:cocoa_beans"
+          },
+          {
+            "amount": 250,
+            "fluidTag": "forge:milk"
+          }
+        ],
+        "results": [
+          {
+            "amount": 250,
+            "fluid": "create:chocolate"
+          }
+        ]
+      }
+    },
+    "data/create/recipes/filling/chocolate_glazed_berries.json": {
+      "sha256": "bcd73c7b3c9ad71048ff15288786258d7c6de43576f575a63c2ac2f00b204955",
+      "body": {
+        "type": "create:filling",
+        "ingredients": [
+          {
+            "item": "minecraft:sweet_berries"
+          },
+          {
+            "amount": 250,
+            "fluid": "create:chocolate",
+            "nbt": {}
+          }
+        ],
+        "results": [
+          {
+            "item": "create:chocolate_glazed_berries"
+          }
+        ]
+      }
+    },
+    "data/create/recipes/filling/honeyed_apple.json": {
+      "sha256": "c2955354e26d34710af3a5f78d9aafd336f5bd59e0bb8b95d01b85bf2241c7cf",
+      "body": {
+        "type": "create:filling",
+        "ingredients": [
+          {
+            "item": "minecraft:apple"
+          },
+          {
+            "amount": 250,
+            "fluidTag": "forge:honey"
+          }
+        ],
+        "results": [
+          {
+            "item": "create:honeyed_apple"
+          }
+        ]
+      }
+    },
+    "data/create/recipes/filling/sweet_roll.json": {
+      "sha256": "a8187d995d147a730c2693363f448556257fb772198d9b9aff0c0d7c7ccc5e34",
+      "body": {
+        "type": "create:filling",
+        "ingredients": [
+          {
+            "item": "minecraft:bread"
+          },
+          {
+            "amount": 250,
+            "fluidTag": "forge:milk"
+          }
+        ],
+        "results": [
+          {
+            "item": "create:sweet_roll"
+          }
+        ]
+      }
+    },
+    "data/create/advancements/foods.json": {
+      "sha256": "10a8aa21522b0359b7537b3c9e54eba818a01561fce6f17ea661c390a8b898b3",
+      "body": {
+        "parent": "create:steam_engine_maxed",
+        "criteria": {
+          "0": {
+            "conditions": {},
+            "trigger": "create:foods_builtin"
+          }
+        },
+        "display": {
+          "announce_to_chat": true,
+          "description": {
+            "color": "#DBA213",
+            "translate": "advancement.create.foods.desc"
+          },
+          "frame": "goal",
+          "hidden": false,
+          "icon": {
+            "item": "create:chocolate_glazed_berries"
+          },
+          "show_toast": true,
+          "title": {
+            "translate": "advancement.create.foods"
+          }
+        },
+        "requirements": [
+          [
+            "0"
+          ]
+        ],
+        "sends_telemetry_event": true
+      }
+    }
+  },
+  "code": {
+    "content/fluids/spout/SpoutBlockEntity.java": {
+      "decompiled_sha256": "8a402ae1257cc320db5bfb94e48078760a8346939429844dcc9379633d38dd95",
+      "excerpts": [
+        {
+          "line": 91,
+          "text": "private boolean createdSweetRoll;"
+        },
+        {
+          "line": 92,
+          "text": "private boolean createdHoneyApple;"
+        },
+        {
+          "line": 93,
+          "text": "private boolean createdChocolateBerries;"
+        },
+        {
+          "line": 109,
+          "text": "this.registerAwardables(behaviours, new CreateAdvancement[]{AllAdvancements.SPOUT, AllAdvancements.FOODS});"
+        },
+        {
+          "line": 166,
+          "text": "if (this.trackFoods()) {"
+        },
+        {
+          "line": 167,
+          "text": "this.createdChocolateBerries |= AllItems.CHOCOLATE_BERRIES.isIn(out);"
+        },
+        {
+          "line": 168,
+          "text": "this.createdHoneyApple |= AllItems.HONEYED_APPLE.isIn(out);"
+        },
+        {
+          "line": 169,
+          "text": "this.createdSweetRoll |= AllItems.SWEET_ROLL.isIn(out);"
+        },
+        {
+          "line": 170,
+          "text": "if (this.createdChocolateBerries && this.createdHoneyApple && this.createdSweetRoll) {"
+        },
+        {
+          "line": 171,
+          "text": "this.award(AllAdvancements.FOODS);"
+        },
+        {
+          "line": 191,
+          "text": "if (!this.trackFoods()) {"
+        },
+        {
+          "line": 194,
+          "text": "if (this.createdChocolateBerries) {"
+        },
+        {
+          "line": 197,
+          "text": "if (this.createdHoneyApple) {"
+        },
+        {
+          "line": 200,
+          "text": "if (this.createdSweetRoll) {"
+        },
+        {
+          "line": 205,
+          "text": "private boolean trackFoods() {"
+        },
+        {
+          "line": 206,
+          "text": "return ((AdvancementBehaviour)this.getBehaviour(AdvancementBehaviour.TYPE)).isOwnerPresent();"
+        },
+        {
+          "line": 212,
+          "text": "this.createdChocolateBerries = compound.m_128441_(\"ChocolateBerries\");"
+        },
+        {
+          "line": 213,
+          "text": "this.createdHoneyApple = compound.m_128441_(\"HoneyApple\");"
+        },
+        {
+          "line": 214,
+          "text": "this.createdSweetRoll = compound.m_128441_(\"SweetRoll\");"
+        }
+      ]
+    },
+    "foundation/advancement/AdvancementBehaviour.java": {
+      "decompiled_sha256": "aedc2312948fd3f4cc715ec50d14de61058b3b987546d24a498b15c34bf7527a",
+      "excerpts": [
+        {
+          "line": 28,
+          "text": "import java.util.UUID;"
+        },
+        {
+          "line": 43,
+          "text": "private UUID playerId;"
+        },
+        {
+          "line": 57,
+          "text": "public boolean isOwnerPresent() {"
+        },
+        {
+          "line": 58,
+          "text": "return this.playerId != null;"
+        },
+        {
+          "line": 61,
+          "text": "public void setPlayer(UUID id) {"
+        }
+      ]
+    }
+  }
+}

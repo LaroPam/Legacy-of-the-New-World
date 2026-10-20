@@ -302,14 +302,12 @@
             icon: "farmersdelight:brown_mushroom_colony"
             shape: "circle"
             size: 1.20d
-            x: 5.00d
-            y: -5.00d
+            x: 15.00d
+            y: -2.50d
             description: [
                 "Получите целую красную или коричневую грибную колонию Farmer’s Delight. Дайте грибам вырасти на плодородной почве и воспользуйтесь ножницами — обычный одиночный гриб не заменит колонию."
             ]
-            dependencies: [
-                "5B2F6F1B27706E1D"
-        ]
+            dependencies: ["0F10C8510B15A8C2"]
             tasks: [
                 {
                     id: "2BDA593B68C50CCB"
@@ -333,15 +331,13 @@
             icon: "farmersdelight:cabbage_seeds"
             shape: "star"
             size: 1.20d
-            x: 7.50d
-            y: -5.00d
+            x: 20.00d
+            y: -2.50d
             description: [
                 "Посадите все 19 пищевых культур из этого испытания: пшеницу, свёклу, морковь, картофель, капусту, томаты, лук, рис, арбуз, тыкву, сладкие ягоды, сахарный тростник, ламинарию, какао, адский нарост, цветок хоруса, красный и коричневый грибы, светящиеся ягоды."
                 "Собирайте коллекцию постепенно: за некоторыми растениями придётся отправиться далеко от дома."
             ]
-            dependencies: [
-                "6D582231374D6FBB"
-        ]
+            dependencies: ["470CCDD13E8599DD"]
             tasks: [
                 {
                     id: "F4DF31DFE52853E5"
@@ -365,14 +361,12 @@
             icon: "minecraft:wheat"
             shape: "circle"
             size: 1.20d
-            x: 2.50d
-            y: -5.00d
+            x: 17.50d
+            y: -2.50d
             description: [
                 "Разведите пару животных и получите детёныша. Начните с тех, кому сможете обеспечить корм и безопасное место рядом с домом."
             ]
-            dependencies: [
-                "5B2F6F1B27706E1D"
-        ]
+            dependencies: ["6D582231374D6FBB"]
             tasks: [
                 {
                     id: "6ABEE22EABA4B33B"
@@ -482,7 +476,7 @@
         {
             id: "6BF257BC86E5F51D"
             title: "Рюкзак подбирает находки"
-            x: 5.00d
+            x: 7.50d
             y: 5.00d
             icon: "sophisticatedbackpacks:pickup_upgrade"
             shape: "gear"
@@ -498,9 +492,7 @@
             description: [
                 "Изготовьте улучшение подбора для рюкзака Sophisticated Backpacks. После этого сможете настроить его для будущих походов, чтобы меньше времени тратить на сбор выпавших вещей."
             ]
-            dependencies: [
-                "6E42774EBA2B38FB"
-        ]
+            dependencies: ["BCC7916DB9793560"]
             optional: true
             tasks: [
                 {
@@ -525,14 +517,12 @@
             icon: "sophisticatedstorage:iron_chest"
             shape: "circle"
             size: 1.20d
-            x: 7.50d
+            x: 5.00d
             y: 5.00d
             description: [
                 "Установите железный сундук Sophisticated Storage. Выделите ему место на складе — туда скоро отправятся припасы, запасные инструменты и трофеи из вылазок."
             ]
-            dependencies: [
-                "6BF257BC86E5F51D"
-        ]
+            dependencies: ["6E42774EBA2B38FB"]
             optional: true
             tasks: [
                 {

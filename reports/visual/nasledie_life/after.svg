@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -640.00 1216.00 1280.00" width="1216.00" height="1280.00" role="img" aria-labelledby="nasledie_life-after-title" data-quest-count="18">
-<title id="nasledie_life-after-title">Дом и ремёсла — школа хозяйства — схема SNBT, не скриншот игры</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-128.00 -640.00 1536.00 1280.00" width="1536.00" height="1280.00" role="img" aria-labelledby="nasledie_life-after-title" data-quest-count="18">
+<title id="nasledie_life-after-title">Дом, к которому возвращаются — схема SNBT, не скриншот игры</title>
 <defs><marker id="nasledie_life-after-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#77939f" stroke-width="1.2"/></marker></defs>
 <g fill="none" stroke="#24404d" stroke-width="0.7" opacity="0.55" aria-hidden="true">
 <path d="M -128 -640.00 v 1280.00"/>
@@ -22,266 +22,283 @@
 <path d="M 960 -640.00 v 1280.00"/>
 <path d="M 1024 -640.00 v 1280.00"/>
 <path d="M 1088 -640.00 v 1280.00"/>
-<path d="M -128.00 -640 h 1216.00"/>
-<path d="M -128.00 -576 h 1216.00"/>
-<path d="M -128.00 -512 h 1216.00"/>
-<path d="M -128.00 -448 h 1216.00"/>
-<path d="M -128.00 -384 h 1216.00"/>
-<path d="M -128.00 -320 h 1216.00"/>
-<path d="M -128.00 -256 h 1216.00"/>
-<path d="M -128.00 -192 h 1216.00"/>
-<path d="M -128.00 -128 h 1216.00"/>
-<path d="M -128.00 -64 h 1216.00"/>
-<path d="M -128.00 0 h 1216.00"/>
-<path d="M -128.00 64 h 1216.00"/>
-<path d="M -128.00 128 h 1216.00"/>
-<path d="M -128.00 192 h 1216.00"/>
-<path d="M -128.00 256 h 1216.00"/>
-<path d="M -128.00 320 h 1216.00"/>
-<path d="M -128.00 384 h 1216.00"/>
-<path d="M -128.00 448 h 1216.00"/>
-<path d="M -128.00 512 h 1216.00"/>
-<path d="M -128.00 576 h 1216.00"/>
-<path d="M -128.00 640 h 1216.00"/>
+<path d="M 1152 -640.00 v 1280.00"/>
+<path d="M 1216 -640.00 v 1280.00"/>
+<path d="M 1280 -640.00 v 1280.00"/>
+<path d="M 1344 -640.00 v 1280.00"/>
+<path d="M 1408 -640.00 v 1280.00"/>
+<path d="M -128.00 -640 h 1536.00"/>
+<path d="M -128.00 -576 h 1536.00"/>
+<path d="M -128.00 -512 h 1536.00"/>
+<path d="M -128.00 -448 h 1536.00"/>
+<path d="M -128.00 -384 h 1536.00"/>
+<path d="M -128.00 -320 h 1536.00"/>
+<path d="M -128.00 -256 h 1536.00"/>
+<path d="M -128.00 -192 h 1536.00"/>
+<path d="M -128.00 -128 h 1536.00"/>
+<path d="M -128.00 -64 h 1536.00"/>
+<path d="M -128.00 0 h 1536.00"/>
+<path d="M -128.00 64 h 1536.00"/>
+<path d="M -128.00 128 h 1536.00"/>
+<path d="M -128.00 192 h 1536.00"/>
+<path d="M -128.00 256 h 1536.00"/>
+<path d="M -128.00 320 h 1536.00"/>
+<path d="M -128.00 384 h 1536.00"/>
+<path d="M -128.00 448 h 1536.00"/>
+<path d="M -128.00 512 h 1536.00"/>
+<path d="M -128.00 576 h 1536.00"/>
+<path d="M -128.00 640 h 1536.00"/>
 </g><g class="dependencies" fill="none" stroke="#77939f" stroke-width="1.6">
-<path data-from="464A27B6AA037B37" data-to="6E42774EBA2B38FB" d="M 9.20 24.53 L 181.89 485.03" marker-end="url(#nasledie_life-after-arrow)"><title>464A27B6AA037B37 → 6E42774EBA2B38FB</title></path>
-<path data-from="464A27B6AA037B37" data-to="5B2F6F1B27706E1D" d="M 15.72 -20.96 L 174.96 -233.28" marker-end="url(#nasledie_life-after-arrow)"><title>464A27B6AA037B37 → 5B2F6F1B27706E1D</title></path>
-<path data-from="5B2F6F1B27706E1D" data-to="9E550CA158EE0E76" d="M 217.40 -256.00 L 354.80 -256.00" marker-end="url(#nasledie_life-after-arrow)"><title>5B2F6F1B27706E1D → 9E550CA158EE0E76</title></path>
-<path data-from="9E550CA158EE0E76" data-to="FE2674FC9E1DD748" d="M 410.20 -256.00 L 546.80 -256.00" marker-end="url(#nasledie_life-after-arrow)"><title>9E550CA158EE0E76 → FE2674FC9E1DD748</title></path>
-<path data-from="FE2674FC9E1DD748" data-to="C3D9E46E5C4B9DA5" d="M 602.20 -256.00 L 738.80 -256.00" marker-end="url(#nasledie_life-after-arrow)"><title>FE2674FC9E1DD748 → C3D9E46E5C4B9DA5</title></path>
-<path data-from="C3D9E46E5C4B9DA5" data-to="0F10C8510B15A8C2" d="M 794.20 -256.00 L 930.80 -256.00" marker-end="url(#nasledie_life-after-arrow)"><title>C3D9E46E5C4B9DA5 → 0F10C8510B15A8C2</title></path>
-<path data-from="464A27B6AA037B37" data-to="70BD314183AC1CDE" d="M 26.20 0.00 L 163.20 0.00" marker-end="url(#nasledie_life-after-arrow)"><title>464A27B6AA037B37 → 70BD314183AC1CDE</title></path>
-<path data-from="70BD314183AC1CDE" data-to="4E740C0034B4382F" d="M 217.80 0.00 L 354.80 0.00" marker-end="url(#nasledie_life-after-arrow)"><title>70BD314183AC1CDE → 4E740C0034B4382F</title></path>
-<path data-from="5B2F6F1B27706E1D" data-to="6D582231374D6FBB" d="M 207.24 -276.32 L 366.48 -488.64" marker-end="url(#nasledie_life-after-arrow)"><title>5B2F6F1B27706E1D → 6D582231374D6FBB</title></path>
-<path data-from="6D582231374D6FBB" data-to="E3867CE6EB276D6B" d="M 410.20 -512.00 L 544.40 -512.00" marker-end="url(#nasledie_life-after-arrow)"><title>6D582231374D6FBB → E3867CE6EB276D6B</title></path>
-<path data-from="5B2F6F1B27706E1D" data-to="470CCDD13E8599DD" d="M 192.00 -281.40 L 192.00 -482.80" marker-end="url(#nasledie_life-after-arrow)"><title>5B2F6F1B27706E1D → 470CCDD13E8599DD</title></path>
-<path data-from="C2A7FBADC6571244" data-to="119A349F7B3DEF2E" d="M 218.20 256.00 L 355.20 256.00" marker-end="url(#nasledie_life-after-arrow)"><title>C2A7FBADC6571244 → 119A349F7B3DEF2E</title></path>
-<path data-from="119A349F7B3DEF2E" data-to="85F72175E8F3882D" d="M 409.80 256.00 L 546.80 256.00" marker-end="url(#nasledie_life-after-arrow)"><title>119A349F7B3DEF2E → 85F72175E8F3882D</title></path>
-<path data-from="464A27B6AA037B37" data-to="C2A7FBADC6571244" d="M 15.72 20.96 L 174.48 232.64" marker-end="url(#nasledie_life-after-arrow)"><title>464A27B6AA037B37 → C2A7FBADC6571244</title></path>
-<path data-from="6E42774EBA2B38FB" data-to="6BF257BC86E5F51D" d="M 217.80 512.00 L 355.20 512.00" marker-end="url(#nasledie_life-after-arrow)"><title>6E42774EBA2B38FB → 6BF257BC86E5F51D</title></path>
-<path data-from="6BF257BC86E5F51D" data-to="BCC7916DB9793560" d="M 409.80 512.00 L 547.20 512.00" marker-end="url(#nasledie_life-after-arrow)"><title>6BF257BC86E5F51D → BCC7916DB9793560</title></path>
-<path data-from="4E740C0034B4382F" data-to="52659216F4F03E2C" d="M 410.20 0.00 L 544.40 0.00" marker-end="url(#nasledie_life-after-arrow)"><title>4E740C0034B4382F → 52659216F4F03E2C</title></path>
+<path data-from="464A27B6AA037B37" data-to="6E42774EBA2B38FB" d="M 12.07 24.15 L 146.58 293.17" marker-end="url(#nasledie_life-after-arrow)"><title>464A27B6AA037B37 → 6E42774EBA2B38FB</title></path>
+<path data-from="464A27B6AA037B37" data-to="5B2F6F1B27706E1D" d="M 19.09 -19.09 L 138.79 -138.79" marker-end="url(#nasledie_life-after-arrow)"><title>464A27B6AA037B37 → 5B2F6F1B27706E1D</title></path>
+<path data-from="5B2F6F1B27706E1D" data-to="9E550CA158EE0E76" d="M 187.00 -160.00 L 290.00 -160.00" marker-end="url(#nasledie_life-after-arrow)"><title>5B2F6F1B27706E1D → 9E550CA158EE0E76</title></path>
+<path data-from="9E550CA158EE0E76" data-to="FE2674FC9E1DD748" d="M 347.00 -160.00 L 450.00 -160.00" marker-end="url(#nasledie_life-after-arrow)"><title>9E550CA158EE0E76 → FE2674FC9E1DD748</title></path>
+<path data-from="FE2674FC9E1DD748" data-to="C3D9E46E5C4B9DA5" d="M 507.00 -160.00 L 610.00 -160.00" marker-end="url(#nasledie_life-after-arrow)"><title>FE2674FC9E1DD748 → C3D9E46E5C4B9DA5</title></path>
+<path data-from="C3D9E46E5C4B9DA5" data-to="0F10C8510B15A8C2" d="M 667.00 -160.00 L 770.00 -160.00" marker-end="url(#nasledie_life-after-arrow)"><title>C3D9E46E5C4B9DA5 → 0F10C8510B15A8C2</title></path>
+<path data-from="464A27B6AA037B37" data-to="70BD314183AC1CDE" d="M 27.00 0.00 L 130.00 0.00" marker-end="url(#nasledie_life-after-arrow)"><title>464A27B6AA037B37 → 70BD314183AC1CDE</title></path>
+<path data-from="70BD314183AC1CDE" data-to="4E740C0034B4382F" d="M 187.00 0.00 L 290.00 0.00" marker-end="url(#nasledie_life-after-arrow)"><title>70BD314183AC1CDE → 4E740C0034B4382F</title></path>
+<path data-from="0F10C8510B15A8C2" data-to="6D582231374D6FBB" d="M 827.00 -160.00 L 930.00 -160.00" marker-end="url(#nasledie_life-after-arrow)"><title>0F10C8510B15A8C2 → 6D582231374D6FBB</title></path>
+<path data-from="470CCDD13E8599DD" data-to="E3867CE6EB276D6B" d="M 1147.00 -160.00 L 1250.00 -160.00" marker-end="url(#nasledie_life-after-arrow)"><title>470CCDD13E8599DD → E3867CE6EB276D6B</title></path>
+<path data-from="6D582231374D6FBB" data-to="470CCDD13E8599DD" d="M 987.00 -160.00 L 1090.00 -160.00" marker-end="url(#nasledie_life-after-arrow)"><title>6D582231374D6FBB → 470CCDD13E8599DD</title></path>
+<path data-from="C2A7FBADC6571244" data-to="119A349F7B3DEF2E" d="M 187.00 160.00 L 290.00 160.00" marker-end="url(#nasledie_life-after-arrow)"><title>C2A7FBADC6571244 → 119A349F7B3DEF2E</title></path>
+<path data-from="119A349F7B3DEF2E" data-to="85F72175E8F3882D" d="M 347.00 160.00 L 450.00 160.00" marker-end="url(#nasledie_life-after-arrow)"><title>119A349F7B3DEF2E → 85F72175E8F3882D</title></path>
+<path data-from="464A27B6AA037B37" data-to="C2A7FBADC6571244" d="M 19.09 19.09 L 138.79 138.79" marker-end="url(#nasledie_life-after-arrow)"><title>464A27B6AA037B37 → C2A7FBADC6571244</title></path>
+<path data-from="BCC7916DB9793560" data-to="6BF257BC86E5F51D" d="M 347.00 320.00 L 450.00 320.00" marker-end="url(#nasledie_life-after-arrow)"><title>BCC7916DB9793560 → 6BF257BC86E5F51D</title></path>
+<path data-from="6E42774EBA2B38FB" data-to="BCC7916DB9793560" d="M 187.00 320.00 L 290.00 320.00" marker-end="url(#nasledie_life-after-arrow)"><title>6E42774EBA2B38FB → BCC7916DB9793560</title></path>
+<path data-from="4E740C0034B4382F" data-to="52659216F4F03E2C" d="M 347.00 0.00 L 450.00 0.00" marker-end="url(#nasledie_life-after-arrow)"><title>4E740C0034B4382F → 52659216F4F03E2C</title></path>
 </g><g class="quests" font-family="system-ui, sans-serif" text-anchor="middle">
 <g data-quest-id="464A27B6AA037B37" tabindex="0" role="button" aria-label="Разделка на доске" transform="translate(0.00,0.00)" style="cursor:pointer">
 <title>Разделка на доске
 ID: 464A27B6AA037B37
 Значок: farmersdelight:cutting_board
-Форма: heart
+Форма: circle
 x=0.0, y=0.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">01</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Разделка на доске</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Разделка на доске</text>
 </g>
-<g data-quest-id="6E42774EBA2B38FB" tabindex="0" role="button" aria-label="Собрать фильтр для хранилища" transform="translate(192.00,512.00)" style="cursor:pointer">
-<title>Собрать фильтр для хранилища
+<g data-quest-id="6E42774EBA2B38FB" tabindex="0" role="button" aria-label="Порядок на складе" transform="translate(160.00,320.00)" style="cursor:pointer">
+<title>Порядок на складе
 ID: 6E42774EBA2B38FB
 Значок: sophisticatedstorage:filter_upgrade
 Форма: square
-x=3.0, y=8.0
-Без изменений</title>
-<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+x=2.5, y=5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<rect x="-24.00" y="-24.00" width="48.00" height="48.00" rx="2.40" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">02</text>
-<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Собрать фильтр для</text>
-<text class="quest-label" y="62.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">хранилища</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Порядок на складе</text>
 </g>
-<g data-quest-id="5B2F6F1B27706E1D" tabindex="0" role="button" aria-label="Рисовые поля" transform="translate(192.00,-256.00)" style="cursor:pointer">
+<g data-quest-id="5B2F6F1B27706E1D" tabindex="0" role="button" aria-label="Рисовые поля" transform="translate(160.00,-160.00)" style="cursor:pointer">
 <title>Рисовые поля
 ID: 5B2F6F1B27706E1D
 Значок: farmersdelight:rice
-Форма: scroll
-x=3.0, y=-4.0
-Без изменений</title>
-<circle class="selection-ring" r="32.40" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.40" y="-22.40" width="44.80" height="44.80" rx="7.84" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: circle
+x=2.5, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">03</text>
-<text class="quest-label" y="46.40" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Рисовые поля</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Рисовые поля</text>
 </g>
-<g data-quest-id="9E550CA158EE0E76" tabindex="0" role="button" aria-label="Томаты на подвязке" transform="translate(384.00,-256.00)" style="cursor:pointer">
+<g data-quest-id="9E550CA158EE0E76" tabindex="0" role="button" aria-label="Томаты на подвязке" transform="translate(320.00,-160.00)" style="cursor:pointer">
 <title>Томаты на подвязке
 ID: 9E550CA158EE0E76
 Значок: farmersdelight:tomato_seeds
-Форма: heart
-x=6.0, y=-4.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: circle
+x=5.0, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">04</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Томаты на подвязке</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Томаты на подвязке</text>
 </g>
-<g data-quest-id="FE2674FC9E1DD748" tabindex="0" role="button" aria-label="Солома из урожая" transform="translate(576.00,-256.00)" style="cursor:pointer">
+<g data-quest-id="FE2674FC9E1DD748" tabindex="0" role="button" aria-label="Солома из урожая" transform="translate(480.00,-160.00)" style="cursor:pointer">
 <title>Солома из урожая
 ID: FE2674FC9E1DD748
 Значок: farmersdelight:straw
-Форма: heart
-x=9.0, y=-4.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: circle
+x=7.5, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">05</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Солома из урожая</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Солома из урожая</text>
 </g>
-<g data-quest-id="C3D9E46E5C4B9DA5" tabindex="0" role="button" aria-label="Компост как производственный цикл" transform="translate(768.00,-256.00)" style="cursor:pointer">
-<title>Компост как производственный цикл
+<g data-quest-id="C3D9E46E5C4B9DA5" tabindex="0" role="button" aria-label="Из отходов в почву" transform="translate(640.00,-160.00)" style="cursor:pointer">
+<title>Из отходов в почву
 ID: C3D9E46E5C4B9DA5
 Значок: farmersdelight:organic_compost
-Форма: gear
-x=12.0, y=-4.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: circle
+x=10.0, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">06</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Компост как</text>
-<text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">производственный цикл</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Из отходов в почву</text>
 </g>
-<g data-quest-id="0F10C8510B15A8C2" tabindex="0" role="button" aria-label="Плодородная почва" transform="translate(960.00,-256.00)" style="cursor:pointer">
+<g data-quest-id="0F10C8510B15A8C2" tabindex="0" role="button" aria-label="Плодородная почва" transform="translate(800.00,-160.00)" style="cursor:pointer">
 <title>Плодородная почва
 ID: 0F10C8510B15A8C2
 Значок: farmersdelight:rich_soil
-Форма: heart
-x=15.0, y=-4.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: circle
+x=12.5, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">07</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Плодородная почва</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Плодородная почва</text>
 </g>
-<g data-quest-id="70BD314183AC1CDE" tabindex="0" role="button" aria-label="Котёл для настоящей кухни" transform="translate(192.00,0.00)" style="cursor:pointer">
-<title>Котёл для настоящей кухни
+<g data-quest-id="70BD314183AC1CDE" tabindex="0" role="button" aria-label="Котёл на кухне" transform="translate(160.00,0.00)" style="cursor:pointer">
+<title>Котёл на кухне
 ID: 70BD314183AC1CDE
 Значок: farmersdelight:cooking_pot
-Форма: square
-x=3.0, y=0.0
-Без изменений</title>
-<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: circle
+x=2.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">08</text>
-<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Котёл для настоящей кухни</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Котёл на кухне</text>
 </g>
-<g data-quest-id="4E740C0034B4382F" tabindex="0" role="button" aria-label="Питание с эффектом Nourishment" transform="translate(384.00,0.00)" style="cursor:pointer">
-<title>Питание с эффектом Nourishment
+<g data-quest-id="4E740C0034B4382F" tabindex="0" role="button" aria-label="Сытный обед" transform="translate(320.00,0.00)" style="cursor:pointer">
+<title>Сытный обед
 ID: 4E740C0034B4382F
-Значок: farmersdelight:fruit_salad
-Форма: heart
-x=6.0, y=0.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Значок: farmersdelight:steak_and_potatoes
+Форма: circle
+x=5.0, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">09</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Питание с эффектом</text>
-<text class="quest-label" y="63.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Nourishment</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Сытный обед</text>
 </g>
-<g data-quest-id="6D582231374D6FBB" tabindex="0" role="button" aria-label="Грибная ферма" transform="translate(384.00,-512.00)" style="cursor:pointer">
+<g data-quest-id="6D582231374D6FBB" tabindex="0" role="button" aria-label="Грибная ферма" transform="translate(960.00,-160.00)" style="cursor:pointer">
 <title>Грибная ферма
 ID: 6D582231374D6FBB
 Значок: farmersdelight:brown_mushroom_colony
-Форма: gear
-x=6.0, y=-8.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="23.20,0.00 22.41,6.00 15.67,9.05 16.40,16.40 11.60,20.09 4.68,17.48 0.00,23.20 -6.00,22.41 -9.05,15.67 -16.40,16.40 -20.09,11.60 -17.48,4.68 -23.20,0.00 -22.41,-6.00 -15.67,-9.05 -16.40,-16.40 -11.60,-20.09 -4.68,-17.48 -0.00,-23.20 6.00,-22.41 9.05,-15.67 16.40,-16.40 20.09,-11.60 17.48,-4.68" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: circle
+x=15.0, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">10</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Грибная ферма</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Грибная ферма</text>
 </g>
-<g data-quest-id="E3867CE6EB276D6B" tabindex="0" role="button" aria-label="Агроном-практик" transform="translate(576.00,-512.00)" style="cursor:pointer">
-<title>Агроном-практик
+<g data-quest-id="E3867CE6EB276D6B" tabindex="0" role="button" aria-label="Огород со всего света" transform="translate(1280.00,-160.00)" style="cursor:pointer">
+<title>Огород со всего света
 ID: E3867CE6EB276D6B
 Значок: farmersdelight:cabbage_seeds
-Форма: laurel
-x=9.0, y=-8.0
-Без изменений</title>
-<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="25.60" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: star
+x=20.0, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">11</text>
-<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Агроном-практик</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Огород со всего света</text>
 </g>
-<g data-quest-id="470CCDD13E8599DD" tabindex="0" role="button" aria-label="Племенное хозяйство" transform="translate(192.00,-512.00)" style="cursor:pointer">
+<g data-quest-id="470CCDD13E8599DD" tabindex="0" role="button" aria-label="Племенное хозяйство" transform="translate(1120.00,-160.00)" style="cursor:pointer">
 <title>Племенное хозяйство
 ID: 470CCDD13E8599DD
 Значок: minecraft:wheat
-Форма: heart
-x=3.0, y=-8.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
+Форма: circle
+x=17.5, y=-2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#e8c97d" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">12</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Племенное хозяйство</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Племенное хозяйство</text>
 </g>
-<g data-quest-id="119A349F7B3DEF2E" tabindex="0" role="button" aria-label="Отопление Hearth" transform="translate(384.00,256.00)" style="cursor:pointer">
-<title>Отопление Hearth
+<g data-quest-id="119A349F7B3DEF2E" tabindex="0" role="button" aria-label="Тепло родного очага" transform="translate(320.00,160.00)" style="cursor:pointer">
+<title>Тепло родного очага
 ID: 119A349F7B3DEF2E
 Значок: cold_sweat:hearth
-Форма: square
-x=6.0, y=4.0
-Без изменений</title>
-<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: circle
+x=5.0, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">13</text>
-<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Отопление Hearth</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Тепло родного очага</text>
 </g>
-<g data-quest-id="85F72175E8F3882D" tabindex="0" role="button" aria-label="Дымоход и отвод тепла" transform="translate(576.00,256.00)" style="cursor:pointer">
+<g data-quest-id="85F72175E8F3882D" tabindex="0" role="button" aria-label="Дымоход и отвод тепла" transform="translate(480.00,160.00)" style="cursor:pointer">
 <title>Дымоход и отвод тепла
 ID: 85F72175E8F3882D
 Значок: cold_sweat:smokestack
-Форма: heart
-x=9.0, y=4.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: circle
+x=7.5, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">14</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дымоход и отвод тепла</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Дымоход и отвод тепла</text>
 </g>
-<g data-quest-id="C2A7FBADC6571244" tabindex="0" role="button" aria-label="Утепление экипировки" transform="translate(192.00,256.00)" style="cursor:pointer">
-<title>Утепление экипировки
+<g data-quest-id="C2A7FBADC6571244" tabindex="0" role="button" aria-label="Одежда по погоде" transform="translate(160.00,160.00)" style="cursor:pointer">
+<title>Одежда по погоде
 ID: C2A7FBADC6571244
 Значок: cold_sweat:goat_fur
-Форма: heart
-x=3.0, y=4.0
-Без изменений</title>
-<circle class="selection-ring" r="33.20" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<circle r="23.20" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: circle
+x=2.5, y=2.5
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">15</text>
-<text class="quest-label" y="47.20" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Утепление экипировки</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Одежда по погоде</text>
 </g>
-<g data-quest-id="6BF257BC86E5F51D" tabindex="0" role="button" aria-label="Собрать модуль автоподбора" transform="translate(384.00,512.00)" style="cursor:pointer">
-<title>Собрать модуль автоподбора
+<g data-quest-id="6BF257BC86E5F51D" tabindex="0" role="button" aria-label="Рюкзак подбирает находки" transform="translate(480.00,320.00)" style="cursor:pointer">
+<title>Рюкзак подбирает находки
 ID: 6BF257BC86E5F51D
 Значок: sophisticatedbackpacks:pickup_upgrade
-Форма: square
-x=6.0, y=8.0
-Без изменений</title>
-<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: gear
+x=7.5, y=5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="24.00,0.00 23.18,6.21 16.21,9.36 16.97,16.97 12.00,20.78 4.85,18.08 0.00,24.00 -6.21,23.18 -9.36,16.21 -16.97,16.97 -20.78,12.00 -18.08,4.85 -24.00,0.00 -23.18,-6.21 -16.21,-9.36 -16.97,-16.97 -12.00,-20.78 -4.85,-18.08 -0.00,-24.00 6.21,-23.18 9.36,-16.21 16.97,-16.97 20.78,-12.00 18.08,-4.85" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">16</text>
-<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Собрать модуль</text>
-<text class="quest-label" y="62.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">автоподбора</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Рюкзак подбирает находки</text>
 </g>
-<g data-quest-id="BCC7916DB9793560" tabindex="0" role="button" aria-label="Установить железный сундук" transform="translate(576.00,512.00)" style="cursor:pointer">
-<title>Установить железный сундук
+<g data-quest-id="BCC7916DB9793560" tabindex="0" role="button" aria-label="Место для запасов" transform="translate(320.00,320.00)" style="cursor:pointer">
+<title>Место для запасов
 ID: BCC7916DB9793560
 Значок: sophisticatedstorage:iron_chest
-Форма: square
-x=9.0, y=8.0
-Без изменений</title>
-<circle class="selection-ring" r="32.80" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<rect x="-22.80" y="-22.80" width="45.60" height="45.60" rx="2.28" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+Форма: circle
+x=5.0, y=5.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<circle r="24.00" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">17</text>
-<text class="quest-label" y="46.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Установить железный</text>
-<text class="quest-label" y="62.80" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">сундук</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Место для запасов</text>
 </g>
-<g data-quest-id="52659216F4F03E2C" tabindex="0" role="button" aria-label="Максим: праздничный ужин на двоих" transform="translate(576.00,0.00)" style="cursor:pointer">
-<title>Максим: праздничный ужин на двоих
+<g data-quest-id="52659216F4F03E2C" tabindex="0" role="button" aria-label="Максим, ужин готов!" transform="translate(480.00,0.00)" style="cursor:pointer">
+<title>Максим, ужин готов!
 ID: 52659216F4F03E2C
 Значок: farmersdelight:roast_chicken_block
 Форма: star
-x=9.0, y=0.0
-Без изменений</title>
-<circle class="selection-ring" r="35.60" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
-<polygon points="0.00,-25.60 7.98,-10.98 24.35,-7.91 12.90,4.19 15.05,20.71 0.00,13.57 -15.05,20.71 -12.90,4.19 -24.35,-7.91 -7.98,-10.98" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
+x=7.5, y=0.0
+Есть изменения</title>
+<circle class="change-ring" r="30.00" fill="none" stroke="#ed9f69" stroke-width="1.6" stroke-dasharray="3 3"/>
+<circle class="selection-ring" r="34.00" fill="none" stroke="#f4f7fc" stroke-width="3" visibility="hidden"/>
+<polygon points="0.00,-24.00 7.48,-10.29 22.83,-7.42 12.10,3.93 14.11,19.42 0.00,12.72 -14.11,19.42 -12.10,3.93 -22.83,-7.42 -7.48,-10.29" fill="#152532" stroke="#83b8ca" stroke-width="2.4"/>
 <text y="4" font-size="11" fill="#edf2f5" pointer-events="none">18</text>
-<text class="quest-label" y="49.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Максим: праздничный ужин</text>
-<text class="quest-label" y="65.60" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">на двоих</text>
+<text class="quest-label" y="48.00" font-size="12" fill="#e2edf0" paint-order="stroke" stroke="#12202b" stroke-width="3" stroke-linejoin="round" pointer-events="none">Максим, ужин готов!</text>
 </g>
 </g></svg>

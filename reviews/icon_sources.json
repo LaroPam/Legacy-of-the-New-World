@@ -23,5 +23,25 @@
     "jar": "FarmersDelight-1.20.1-1.3.4.jar",
     "sha256": "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce",
     "registration": "public static final RegistryObject<Item> STEAK_AND_POTATOES = ModItems.registerWithTab(\"steak_and_potatoes\", () -> new ConsumableItem(ModItems.bowlFoodItem(FoodValues.STEAK_AND_POTATOES)));"
+  },
+  "minecraft:beehive": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in beehive; official item model and texture chain."
+  },
+  "minecraft:cobblestone": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in cobblestone; official item model and texture chain."
+  },
+  "minecraft:rail": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in rail; official item model and texture chain."
+  },
+  "create:extendo_grip": {
+    "jar": "create-1.20.1-6.0.8.jar",
+    "sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+    "registration": "EXTENDO_GRIP = REGISTRATE.item(\"extendo_grip\", ExtendoGripItem::new).properties(p -> p.m_41497_(Rarity.UNCOMMON)).model(AssetLookup.itemModelWithPartials()).register();"
   }
 }

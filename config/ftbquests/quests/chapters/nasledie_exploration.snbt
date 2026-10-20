@@ -82,14 +82,12 @@
             id: "4654570D569F8AFB"
             title: "Пепельная саванна"
             icon: "minecraft:acacia_sapling"
-            x: 2.50d
+            x: 5.00d
             y: -2.50d
             shape: "scroll"
             size: 1.20d
             optional: true
-            dependencies: [
-                "30000F5F1F069AFA"
-            ]
+            dependencies: ["5DCFED353E2F543B"]
             description: [
                 "Отыщите пепельную саванну Terralith и войдите в неё. Название биома на карте поможет отличить её от соседних тёплых земель."
             ]
@@ -117,7 +115,7 @@
             id: "F740FB239378B229"
             title: "Цветущая долина"
             icon: "minecraft:flowering_azalea"
-            x: 5.00d
+            x: 7.50d
             y: -2.50d
             shape: "scroll"
             size: 1.20d
@@ -152,14 +150,12 @@
             id: "142D439350347E70"
             title: "Белые утёсы"
             icon: "minecraft:calcite"
-            x: 7.50d
+            x: 12.50d
             y: -2.50d
             shape: "scroll"
             size: 1.20d
             optional: true
-            dependencies: [
-                "F740FB239378B229"
-            ]
+            dependencies: ["4A366B92A0D4BDCD"]
             description: [
                 "Найдите белые утёсы Terralith и зайдите в этот биом. Осмотрите обрывы прежде, чем искать дорогу вниз: красивый вид не всегда означает удобный спуск."
             ]
@@ -187,14 +183,12 @@
             id: "F17A293356CD1404"
             title: "Шахта под саванной"
             icon: "minecraft:acacia_fence"
-            x: 2.50d
-            y: 2.50d
+            x: 5.00d
+            y: 0.00d
             shape: "scroll"
             size: 1.20d
             optional: true
-            dependencies: [
-                "30000F5F1F069AFA"
-            ]
+            dependencies: ["5DCFED353E2F543B"]
             description: [
                 "Найдите акациевую разновидность шахты YUNG’s Better Mineshafts и войдите в её коридоры. Возьмите свет и оставьте заметный путь к выходу."
             ]
@@ -222,8 +216,8 @@
             id: "28CBD873B6A9B3EA"
             title: "Шахта среди капельников"
             icon: "minecraft:pointed_dripstone"
-            x: 5.00d
-            y: 2.50d
+            x: 7.50d
+            y: 0.00d
             shape: "scroll"
             size: 1.20d
             optional: true
@@ -257,8 +251,8 @@
             id: "B7BA27A969107D22"
             title: "Старая шахта"
             icon: "minecraft:rail"
-            x: 7.50d
-            y: 2.50d
+            x: 10.00d
+            y: 0.00d
             shape: "scroll"
             size: 1.20d
             optional: true
@@ -292,14 +286,12 @@
             id: "07A63C78A1E0EFD4"
             title: "Мираж над морем"
             icon: "minecraft:spyglass"
-            x: 2.50d
-            y: -5.00d
+            x: 15.00d
+            y: -2.50d
             shape: "scroll"
             size: 1.20d
             optional: true
-            dependencies: [
-                "30000F5F1F069AFA"
-            ]
+            dependencies: ["142D439350347E70"]
             description: [
                 "Доберитесь до островов миражей Terralith. Запаситесь провизией и отметьте обратный путь, прежде чем надолго уходить от знакомого берега."
             ]
@@ -327,8 +319,8 @@
             id: "A91583B5B92C22EB"
             title: "Изумрудные пики"
             icon: "minecraft:emerald"
-            x: 5.00d
-            y: -5.00d
+            x: 17.50d
+            y: -2.50d
             shape: "scroll"
             size: 1.20d
             optional: true
@@ -362,8 +354,8 @@
             id: "E6DC4A843BE1C287"
             title: "Осенние небесные острова"
             icon: "minecraft:elytra"
-            x: 7.50d
-            y: -5.00d
+            x: 20.00d
+            y: -2.50d
             shape: "scroll"
             size: 1.20d
             optional: true
@@ -397,14 +389,12 @@
             id: "D8325F832D406D1F"
             title: "Ледяное убежище"
             icon: "minecraft:packed_ice"
-            x: 2.50d
-            y: 5.00d
+            x: 5.00d
+            y: 2.50d
             shape: "scroll"
             size: 1.20d
             optional: true
-            dependencies: [
-                "30000F5F1F069AFA"
-            ]
+            dependencies: ["5DCFED353E2F543B"]
             description: [
                 "Найдите иглу и зайдите внутрь. Проверьте пол: у некоторых таких убежищ бывает подвал, но для этой вылазки достаточно обнаружить само иглу."
             ]
@@ -432,8 +422,8 @@
             id: "CD62103DCF8B4FDA"
             title: "Ледниковый разлом"
             icon: "minecraft:blue_ice"
-            x: 5.00d
-            y: 5.00d
+            x: 7.50d
+            y: 2.50d
             shape: "scroll"
             size: 1.20d
             optional: true
@@ -467,14 +457,12 @@
             id: "4A366B92A0D4BDCD"
             title: "Хижина среди болот"
             icon: "minecraft:vine"
-            x: 7.50d
-            y: 5.00d
+            x: 10.00d
+            y: -2.50d
             shape: "scroll"
             size: 1.20d
             optional: true
-            dependencies: [
-                "CD62103DCF8B4FDA"
-            ]
+            dependencies: ["F740FB239378B229"]
             description: [
                 "Отыщите болотную хижину и подойдите достаточно близко, чтобы войти в её пределы. Осмотритесь перед визитом: хозяева подобных мест редко рады гостям."
             ]
@@ -503,15 +491,13 @@
         {
             id: "EA048E705BEC8414"
             title: "Шахта грибников"
-            x: 10.00d
-            y: 2.50d
+            x: 15.00d
+            y: 0.00d
             icon: "minecraft:red_mushroom"
             shape: "scroll"
             size: 1.20d
             optional: true
-            dependencies: [
-                "B7BA27A969107D22"
-            ]
+            dependencies: ["F09FD8875C97CD92"]
             description: [
                 "Найдите грибную разновидность шахты YUNG’s Better Mineshafts. Пройдите внутрь, сравните её с прежними выработками и сохраните отметку на карте."
             ]
@@ -538,7 +524,7 @@
         {
             id: "F09FD8875C97CD92"
             title: "Шахта красных пустошей"
-            x: 10.00d
+            x: 12.50d
             y: 0.00d
             icon: "minecraft:raw_gold"
             shape: "scroll"
@@ -573,15 +559,13 @@
         {
             id: "507F5E2261A499DA"
             title: "Улей под землёй"
-            x: 10.00d
-            y: 7.50d
+            x: 17.50d
+            y: 0.00d
             icon: "minecraft:honeycomb"
             shape: "scroll"
             size: 1.20d
             optional: true
-            dependencies: [
-                "4A366B92A0D4BDCD"
-            ]
+            dependencies: ["EA048E705BEC8414"]
             description: [
                 "Отыщите гигантский подземный улей Terralith и войдите в его пределы. Возьмите достаточно света: под землёй легко потерять путь к той самой трещине, через которую вы пришли."
             ]
@@ -608,15 +592,13 @@
         {
             id: "2DCB2702FC5C1F31"
             title: "Башня, ушедшая в камень"
-            x: 10.00d
-            y: 5.00d
+            x: 20.00d
+            y: 0.00d
             icon: "minecraft:prismarine_shard"
             shape: "scroll"
             size: 1.20d
             optional: true
-            dependencies: [
-                "4A366B92A0D4BDCD"
-            ]
+            dependencies: ["507F5E2261A499DA"]
             description: [
                 "Найдите подземную затонувшую башню Terralith. Исследуйте саму структуру и отметьте выход; сбор призмарина не заменит этой находки."
             ]
@@ -643,8 +625,8 @@
         {
             id: "57FD47EFC4E11601"
             title: "Осенняя башня мага"
-            x: 10.00d
-            y: -5.00d
+            x: 22.50d
+            y: -2.50d
             icon: "minecraft:enchanted_book"
             shape: "scroll"
             size: 1.20d
@@ -678,15 +660,13 @@
         {
             id: "C580A1C9022BB90F"
             title: "Морозное подземелье"
-            x: 2.50d
-            y: 7.50d
+            x: 10.00d
+            y: 2.50d
             icon: "minecraft:blue_ice"
             shape: "scroll"
             size: 1.20d
             optional: true
-            dependencies: [
-                "D8325F832D406D1F"
-            ]
+            dependencies: ["CD62103DCF8B4FDA"]
             description: [
                 "Отыщите морозное подземелье Terralith и зайдите внутрь. Подготовьте тёплое снаряжение и свет для вылазки под ледяные земли."
             ]
