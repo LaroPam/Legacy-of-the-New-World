@@ -1,7 +1,7 @@
 {
   "purpose": "Full questbook test candidate; not a modpack or gameplay-validated release",
   "baseline_commit": "f68124fb33597aa13b4b6a8dd8c6dde7c879b188",
-  "source_commit": "7a1fb0d75f1597bd2dc6241bd70774db5dcde7a9",
+  "source_commit": "b935403c731c09cd3c2ca71ae7bc889d16ff95f5",
   "gameplay_test": "not run",
   "release_ready": false,
   "counts": {
@@ -41,7 +41,7 @@
     "config/ftbquests/quests/chapter_groups.snbt": "f3b24e9dcce8b626af1f5194e586bd9c281ee354a598733ab47e6e869cbe4cd9",
     "config/ftbquests/quests/chapters/nasledie_archeology.snbt": "987db494908ad53536585405fef455df55c9e1f16e00963af576075fa3249116",
     "config/ftbquests/quests/chapters/nasledie_cataclysm.snbt": "cb560353d9e0230e9746a0e2bde7b3ca15218d451918767c536bccdbe3fa282f",
-    "config/ftbquests/quests/chapters/nasledie_compass.snbt": "25d703f0da3af11bc67ae16acd83e1416067ef3bd5f490252de6419b90e0aa24",
+    "config/ftbquests/quests/chapters/nasledie_compass.snbt": "7cb38e6dd3a1a3df35ccbb6acb0648c459e0ce3ac21c3721b6f910f70e59ab34",
     "config/ftbquests/quests/chapters/nasledie_create.snbt": "1f2be262bcef4bae51a0ca025696ccfe20c691d1ea0ef7cb162621390e9e9e8e",
     "config/ftbquests/quests/chapters/nasledie_defense.snbt": "385d85fe2a99e5ce594d05c11a0306b0f414e93be93364834fb65609f1948cd6",
     "config/ftbquests/quests/chapters/nasledie_economy.snbt": "8b8b464cf037d5b7f8bf73ce0463ef82cc7fc38d27736f0fd5b3b53a82912e4d",
@@ -51,8 +51,8 @@
     "config/ftbquests/quests/chapters/nasledie_industry.snbt": "3a286992c9bd852ef8da833200e35509f956563653acde725c17a0cef85bf0db",
     "config/ftbquests/quests/chapters/nasledie_legends.snbt": "4fd399f4229dca53ba54de8fbfe18993a06a9344672d7c36037d84089c423838",
     "config/ftbquests/quests/chapters/nasledie_life.snbt": "34e51c217c7654e4c70fb2bd41d2fbb67e2a00dded337b95743123f987665ed5",
-    "config/ftbquests/quests/chapters/nasledie_netheritage.snbt": "9703068c50d85a9b445a32196e67d54f674b0d321fd03eb48779bac8ddcc0d3f",
-    "config/ftbquests/quests/chapters/nasledie_ocean.snbt": "0aaf42d8011f57555181e4424e16476f331090e2cdad8434172c5fdb95113350",
+    "config/ftbquests/quests/chapters/nasledie_netheritage.snbt": "924768a55af30db9dcda5347a10e9eaef72f253e38d4b128d62e55bfb3fa2709",
+    "config/ftbquests/quests/chapters/nasledie_ocean.snbt": "b0ad5d2705140b5e3a0e84cad27a5e72313a730a76f54033ced8986d7060d961",
     "config/ftbquests/quests/chapters/nasledie_prolog.snbt": "21a5e285ec624e8c16f53898511e6188c155916b54d2691458788867b42275eb",
     "config/ftbquests/quests/chapters/nasledie_relics.snbt": "212bb698b3814332bfda60d0675674c0aa1cd3d72e5a79024fffa7f477d116c0",
     "config/ftbquests/quests/chapters/nasledie_transport.snbt": "8a69d0c5602d96eab59e010078b2cecc69e9cd1439d8ce5c778eb703bdc61b4c",
@@ -154,8 +154,8 @@
     "kubejs/data/nasledie/advancements/setup/industry/rolling_mill.json": "a54ddac8878a421c149542d0887209f2f1f1f6405e45b62d11017df6e85230d0"
   },
   "patch_applied_to_baseline_and_compared": true,
-  "zip_sha256": "a08180f7fbbf1ec6072bac73a20633b4f7cac5e16de6a9d38507253462f200bc",
-  "patch_sha256": "818ea146bfa748e598f7e14b4a959f1c09e97f202aeae8d8bb75c75be074de6b",
-  "zip_entries": 119,
+  "zip_sha256": "2361867be9cb4477b607ffe31d5591a9c33b672c31c0a4f7267b6be5646a08ce",
+  "patch_sha256": "25d501e827a7b22e6be2e12d6db78297b60ca922a0dbb748f199dde5492918c8",
+  "zip_entries": 121,
   "zip_bytes_match_sources": true
 }
