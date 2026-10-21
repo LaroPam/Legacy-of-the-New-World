@@ -1,0 +1,176 @@
+{
+  "review_base": "09ea329",
+  "scope": "Exact cached resources and decompiled code; no game test.",
+  "facts": [
+    {
+      "claim": "Mechanical Nest begins at absolute Y=190, on the surface generation step, not underground.",
+      "evidence": {
+        "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+        "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+        "path": "data/dungeons_arise/worldgen/structure/mechanical_nest.json",
+        "entry_sha256": "e9700c59d3e0b91360c70c25a536776806d7e7a7dab3699869fd890d7145d803",
+        "body": {
+          "type": "minecraft:jigsaw",
+          "start_pool": "dungeons_arise:mechanical_nest/mechanical_nest_start",
+          "size": 7,
+          "biomes": "#dungeons_arise:has_structure/mechanical_nest_biomes",
+          "adapt_noise": false,
+          "spawn_overrides": {},
+          "max_distance_from_center": 125,
+          "step": "surface_structures",
+          "start_height": {
+            "absolute": 190
+          },
+          "use_expansion_hack": false
+        }
+      }
+    },
+    {
+      "claim": "Foundry begins at absolute Y=-10 on the underground structures step.",
+      "evidence": {
+        "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+        "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+        "path": "data/dungeons_arise/worldgen/structure/foundry.json",
+        "entry_sha256": "e6d56df957b655a6f40b4d23f9dc44a60a54f6a6b174eea1f84fdc052647a8a3",
+        "body": {
+          "type": "minecraft:jigsaw",
+          "start_pool": "dungeons_arise:underworld/foundry/foundry_start",
+          "size": 6,
+          "biomes": "#dungeons_arise:has_structure/foundry_biomes",
+          "adapt_noise": false,
+          "spawn_overrides": {},
+          "max_distance_from_center": 106,
+          "step": "underground_structures",
+          "start_height": {
+            "absolute": -10
+          },
+          "use_expansion_hack": false
+        }
+      }
+    },
+    {
+      "claim": "Monastery map chest can select either Infested Temple or Thornborn Towers.",
+      "evidence": {
+        "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+        "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+        "path": "data/dungeons_arise/loot_tables/chests/monastery/monastery_map.json",
+        "entry_sha256": "b34398c06b18c349b7202e99b120cc97f12701fd4980a2ec8a6ea3e43c267637",
+        "body": {
+          "type": "minecraft:chest",
+          "pools": [
+            {
+              "rolls": 1,
+              "entries": [
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:map",
+                  "functions": [
+                    {
+                      "function": "minecraft:exploration_map",
+                      "destination": "dungeons_arise:explorer_maps/infested_temple",
+                      "decoration": "target_x",
+                      "zoom": 2,
+                      "skip_existing_chunks": false
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:map",
+                  "functions": [
+                    {
+                      "function": "minecraft:exploration_map",
+                      "destination": "dungeons_arise:explorer_maps/thornborn_towers",
+                      "decoration": "target_x",
+                      "zoom": 2,
+                      "skip_existing_chunks": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rolls": 3,
+              "entries": [
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:compass"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:map"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:clock"
+                },
+                {
+                  "type": "minecraft:item",
+                  "weight": 20,
+                  "name": "minecraft:paper",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "min": 1,
+                        "max": 10
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "weight": 10,
+                  "name": "minecraft:wither_rose",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "min": 1,
+                        "max": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:book",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "min": 1,
+                        "max": 5
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "claim": "Search uses pretty displayed names; fallback strips namespace, replaces underscores and capitalizes. Localisation can change display names.",
+      "evidence": {
+        "jar": "ExplorersCompass-1.20.1-1.4.0-forge.jar",
+        "jar_sha256": "0d9a7705f39a9eac19c33e0fbe5422280048991a341dc0d9471bff32111c502c",
+        "path": "com/chaosthedude/explorerscompass/gui/ExplorersCompassScreen.class",
+        "entry_sha256": "4ba99b8a6f787fc5d3139619a79796b8c459005c598479ed373104d8f2d35043"
+      },
+      "decompiled_excerpt": "    public void processSearchTerm() {\n        this.structureKeysMatchingSearch = new ArrayList<ResourceLocation>();\n        String searchTerm = this.searchTextField.m_94155_().toLowerCase();\n        for (ResourceLocation key : this.allowedStructureKeys) {\n            if (searchTerm.startsWith(\"@\")) {\n                if (!StructureUtils.getPrettyStructureSource(key).toLowerCase().contains(searchTerm.substring(1))) continue;\n                this.structureKeysMatchingSearch.add(key);\n                continue;\n            }\n            if (!StructureUtils.getPrettyStructureName(key).toLowerCase().contains(searchTerm)) continue;\n            this.structureKeysMatchingSearch.add(key);\n        }\n        this.selectionList.refreshList(true);\n    }\n\n    public Player getPlayer() {\n        return this.player;\n    }"
+    },
+    {
+      "claim": "Search uses pretty displayed names; fallback strips namespace, replaces underscores and capitalizes. Localisation can change display names.",
+      "evidence": {
+        "jar": "ExplorersCompass-1.20.1-1.4.0-forge.jar",
+        "jar_sha256": "0d9a7705f39a9eac19c33e0fbe5422280048991a341dc0d9471bff32111c502c",
+        "path": "com/chaosthedude/explorerscompass/util/StructureUtils.class",
+        "entry_sha256": "98e4a706d2b5eada5f5318bd860c1a376b36039ce1070764eec65a6d2f05dc3e"
+      },
+      "decompiled_excerpt": "    public static String getPrettyStructureName(ResourceLocation key) {\n        if (key == null) {\n            return \"\";\n        }\n        String name = key.toString();\n        if (((Boolean)ConfigHandler.CLIENT.translateStructureNames.get()).booleanValue()) {\n            name = I18n.m_118938_((String)Util.m_137492_((String)\"structure\", (ResourceLocation)key), (Object[])new Object[0]);\n        }\n        if (name.equals(Util.m_137492_((String)\"structure\", (ResourceLocation)key)) || !((Boolean)ConfigHandler.CLIENT.translateStructureNames.get()).booleanValue()) {\n            name = key.toString();\n            if (name.contains(\":\")) {\n                name = name.substring(name.indexOf(\":\") + 1);\n            }\n            name = WordUtils.capitalize((String)name.replace('_', ' '));\n        }\n        return name;\n    }\n"
+    }
+  ]
+}

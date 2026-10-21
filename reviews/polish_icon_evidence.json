@@ -184,6 +184,1312 @@
           "sha256": "73bad2390eab0f6fe49952fe77d7c89264473267ed395694d9bf511b31eb60a1"
         }
       ]
+    },
+    "minecraft:water_bucket": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:water_bucket; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/water_bucket.json",
+      "model_sha256": "324fb08942aeee295ded08dca294481b7e484dd199bf8c8829639a3c088702c7",
+      "model_chain": {
+        "assets/minecraft/models/item/water_bucket.json": "324fb08942aeee295ded08dca294481b7e484dd199bf8c8829639a3c088702c7",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/water_bucket.png",
+          "sha256": "6e69a3f9319fc09a946a5e688d4e76781e3b0aaf9d4984589a52226f6d6dba55"
+        }
+      ]
+    },
+    "minecraft:oak_boat": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:oak_boat; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/oak_boat.json",
+      "model_sha256": "42cab0a48ba1fe469a88fee62c2681ab5fb4d6b9f1fd0907e26801e4be032af7",
+      "model_chain": {
+        "assets/minecraft/models/item/oak_boat.json": "42cab0a48ba1fe469a88fee62c2681ab5fb4d6b9f1fd0907e26801e4be032af7",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/oak_boat.png",
+          "sha256": "4ba9b3ef19bb85337bba0684109522c384838649eb79fb182c18287188fbaed6"
+        }
+      ]
+    },
+    "minecraft:rotten_flesh": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:rotten_flesh; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/rotten_flesh.json",
+      "model_sha256": "67e30b14092ccd4cb90a4ef2d2efebe215689ebc13f85e8a7456774b443f2691",
+      "model_chain": {
+        "assets/minecraft/models/item/rotten_flesh.json": "67e30b14092ccd4cb90a4ef2d2efebe215689ebc13f85e8a7456774b443f2691",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/rotten_flesh.png",
+          "sha256": "d83d0bf7bba8d47a6385673e50a18126c1ffe682f2308358b0231be1aee970a2"
+        }
+      ]
+    },
+    "minecraft:prismarine_bricks": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:prismarine_bricks; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/prismarine_bricks.json",
+      "model_sha256": "4e6bad1010f53caefa82c8fe25cd5a6303d9e9605e1b520474bf343b36828725",
+      "model_chain": {
+        "assets/minecraft/models/item/prismarine_bricks.json": "4e6bad1010f53caefa82c8fe25cd5a6303d9e9605e1b520474bf343b36828725",
+        "assets/minecraft/models/block/prismarine_bricks.json": "548fba7993afec94e63c0cb9c982e19f539dfe374640144795bb709e1a1ff098",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/prismarine_bricks.png",
+          "sha256": "feae2a391744ad837d0ecaa594126a5a9759d95e2e43814086dbf37a676e316e"
+        }
+      ]
+    },
+    "minecraft:prismarine_shard": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:prismarine_shard; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/prismarine_shard.json",
+      "model_sha256": "2b9b07553a7c511dd7b78ffdb224209b3ce33eec4300857fbbaef9cf6a16c4c9",
+      "model_chain": {
+        "assets/minecraft/models/item/prismarine_shard.json": "2b9b07553a7c511dd7b78ffdb224209b3ce33eec4300857fbbaef9cf6a16c4c9",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/prismarine_shard.png",
+          "sha256": "b33e10cad7a171f909ccd0ca73a9303a0eb3d1d7428d39f444d7a641a4c79e79"
+        }
+      ]
+    },
+    "minecraft:sponge": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:sponge; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/sponge.json",
+      "model_sha256": "45ea79ef97029ec32891cf214913a8ff348949b8cbde8f9fb29f505e17f7f570",
+      "model_chain": {
+        "assets/minecraft/models/item/sponge.json": "45ea79ef97029ec32891cf214913a8ff348949b8cbde8f9fb29f505e17f7f570",
+        "assets/minecraft/models/block/sponge.json": "35e827e5301ad3f6e3423f6eda229fad4e09f8c5160ec6daa96097fa1e16c10e",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/sponge.png",
+          "sha256": "d85db860245da22e75f66933f2a4aee0127ba1fc326bf84c01be42dda8cf9027"
+        }
+      ]
+    },
+    "minecraft:heart_of_the_sea": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:heart_of_the_sea; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/heart_of_the_sea.json",
+      "model_sha256": "c3e2c4cfbc07c95614abd2261f1315a1c8e2d75bc121b3f5cdb5d89580f3f984",
+      "model_chain": {
+        "assets/minecraft/models/item/heart_of_the_sea.json": "c3e2c4cfbc07c95614abd2261f1315a1c8e2d75bc121b3f5cdb5d89580f3f984",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/heart_of_the_sea.png",
+          "sha256": "2e683fab36ea9be3f84db167eac3d50a0729b2edd8add4967f970867d083bed1"
+        }
+      ]
+    },
+    "minecraft:conduit": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:conduit; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/conduit.json",
+      "model_sha256": "e86392a7e6c6dd2c16754140761c55070cd8b26de1834a4f298aaeb741542149",
+      "model_chain": {
+        "assets/minecraft/models/item/conduit.json": "e86392a7e6c6dd2c16754140761c55070cd8b26de1834a4f298aaeb741542149"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/conduit.png",
+          "sha256": "682acb9fdca2fbaff3efdba34dafabe21d708c8d06d1fad2fce100867de721d3"
+        }
+      ]
+    },
+    "minecraft:sea_lantern": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:sea_lantern; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/sea_lantern.json",
+      "model_sha256": "3c75ac696c017de83de34885169bded409050e11a9638f67e99acab52f6b5612",
+      "model_chain": {
+        "assets/minecraft/models/item/sea_lantern.json": "3c75ac696c017de83de34885169bded409050e11a9638f67e99acab52f6b5612",
+        "assets/minecraft/models/block/sea_lantern.json": "147925c1ef7c7fea3bc88806068e53395f742f519cdb9680f4eefe2eee98252f",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/sea_lantern.png",
+          "sha256": "03e76d619654f358accae08e8bc4273f6b745d1b0bf065dde59abb91925fe52c"
+        }
+      ]
+    },
+    "minecraft:blue_ice": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:blue_ice; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/blue_ice.json",
+      "model_sha256": "33d672098a335e498f9e5898a3319a84260944ab937fe8cfac261d92007c1031",
+      "model_chain": {
+        "assets/minecraft/models/item/blue_ice.json": "33d672098a335e498f9e5898a3319a84260944ab937fe8cfac261d92007c1031",
+        "assets/minecraft/models/block/blue_ice.json": "011323005077c0f7264a068eba992f4a2de64f39cd84bcd66ec673e42ab3bab9",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/blue_ice.png",
+          "sha256": "78f255b11a28e2d1c8cee128fcdbe57f3e75d2d563336586329fce21aeee020b"
+        }
+      ]
+    },
+    "minecraft:brain_coral_block": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:brain_coral_block; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/brain_coral_block.json",
+      "model_sha256": "121d37e3aecb821505d6e3945a5fa34155056bb45fa43c0bb197cae4c380c877",
+      "model_chain": {
+        "assets/minecraft/models/item/brain_coral_block.json": "121d37e3aecb821505d6e3945a5fa34155056bb45fa43c0bb197cae4c380c877",
+        "assets/minecraft/models/block/brain_coral_block.json": "5ca2958531d1735a6462ab27e061419e0b90caef5662ae27f059ae421bf90485",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/brain_coral_block.png",
+          "sha256": "3c0415c9e382db37be25e8ae7f7e2fc2796ca73dc50bddb54454aec4ba729430"
+        }
+      ]
+    },
+    "minecraft:stone_bricks": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:stone_bricks; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/stone_bricks.json",
+      "model_sha256": "6bf685d98c87ecc1d74cd903a88b256a36661e4c7aa914f48f1ec5b23134121d",
+      "model_chain": {
+        "assets/minecraft/models/item/stone_bricks.json": "6bf685d98c87ecc1d74cd903a88b256a36661e4c7aa914f48f1ec5b23134121d",
+        "assets/minecraft/models/block/stone_bricks.json": "5200aa1494af49c0bba0f96a1a01569d6b792cf7168e0a06c21ad0db94f0a101",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/stone_bricks.png",
+          "sha256": "3509bac331d1079a08a60082502f0cc9ccce1953dcea8dfc404501d31f9f0be2"
+        }
+      ]
+    },
+    "minecraft:sandstone": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:sandstone; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/sandstone.json",
+      "model_sha256": "fd2cf0caff672a45d0aa2a441c8b31b70afe35a6421334a9dda27ee7c643a84b",
+      "model_chain": {
+        "assets/minecraft/models/item/sandstone.json": "fd2cf0caff672a45d0aa2a441c8b31b70afe35a6421334a9dda27ee7c643a84b",
+        "assets/minecraft/models/block/sandstone.json": "23e676bb00dcb25c950416403976ad27a8b8d73cb6528f1c3d197ae293669427",
+        "assets/minecraft/models/block/cube_bottom_top.json": "14f8400761cfc0c5664d165a3602bd2bb25953ade361c77c43511147bfdd2a15",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/sandstone.png",
+          "sha256": "0b9288de5f054826d48894986cd16f5daea10a46533c7eb6d448bc9a2b94072a"
+        },
+        {
+          "path": "assets/minecraft/textures/block/sandstone_bottom.png",
+          "sha256": "acf3e6d2c3ddb23a76ce7fdb82939eda6e428ff037cbc7be6bd207128ba93bba"
+        },
+        {
+          "path": "assets/minecraft/textures/block/sandstone_top.png",
+          "sha256": "9b95bd77c36e7f3b1463b768eb83667d236885f19178015469955939b7cf971d"
+        }
+      ]
+    },
+    "minecraft:bone": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:bone; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/bone.json",
+      "model_sha256": "03900337605036f2bee3445adde2154ac5d066cc3f13ef7fca9c28d439daf046",
+      "model_chain": {
+        "assets/minecraft/models/item/bone.json": "03900337605036f2bee3445adde2154ac5d066cc3f13ef7fca9c28d439daf046",
+        "assets/minecraft/models/item/handheld.json": "8fe990d1c011429e27df2d49d35cf8571946370eac8d0fb7497aacede4ff20f5",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/bone.png",
+          "sha256": "5a975e7bb108733cfd3d8ba0173bf5a58f51f5898cd429a7dab519524259fbca"
+        }
+      ]
+    },
+    "minecraft:lantern": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:lantern; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/lantern.json",
+      "model_sha256": "574e0b14fe35ecc94bce537bf7e2016b3cfd4c9e3ab2b0c4120f739475012435",
+      "model_chain": {
+        "assets/minecraft/models/item/lantern.json": "574e0b14fe35ecc94bce537bf7e2016b3cfd4c9e3ab2b0c4120f739475012435",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/lantern.png",
+          "sha256": "ad3ff1ae9d2a3607ec393a9ec50637675e1d8a27846c6b06a04b7124bc8069f9"
+        }
+      ]
+    },
+    "minecraft:bell": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:bell; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/bell.json",
+      "model_sha256": "70b611ae9cb9aa0ae68ffa499c8641bd86067102d20fa1e7dcd4e13cd414df82",
+      "model_chain": {
+        "assets/minecraft/models/item/bell.json": "70b611ae9cb9aa0ae68ffa499c8641bd86067102d20fa1e7dcd4e13cd414df82",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/bell.png",
+          "sha256": "fb09c0937e7342ee858cece1ed9b7e33471e71f879fd596db2dd85c81462e339"
+        }
+      ]
+    },
+    "minecraft:soul_lantern": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:soul_lantern; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/soul_lantern.json",
+      "model_sha256": "2b911973dc48ecb61e0a9a24d8547c6da2c73dd0e2490af213bd726121f95ade",
+      "model_chain": {
+        "assets/minecraft/models/item/soul_lantern.json": "2b911973dc48ecb61e0a9a24d8547c6da2c73dd0e2490af213bd726121f95ade",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/soul_lantern.png",
+          "sha256": "2682042ace8c62c4d25ce8fcc3fd0d10d6e6fd31f79bff9ac70469bf81b82393"
+        }
+      ]
+    },
+    "minecraft:crossbow": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:crossbow; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/crossbow.json",
+      "model_sha256": "e56b623795d999e85a8bc070815d77a1b2064e936c7cb1519e63dcff03390850",
+      "model_chain": {
+        "assets/minecraft/models/item/crossbow.json": "e56b623795d999e85a8bc070815d77a1b2064e936c7cb1519e63dcff03390850",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/crossbow_standby.png",
+          "sha256": "e1bddad32a6ad647b08608b982ea509f424312ee41ce2558c5abd0387b0fd337"
+        }
+      ]
+    },
+    "minecraft:nautilus_shell": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:nautilus_shell; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/nautilus_shell.json",
+      "model_sha256": "a33d7816058635c1414f1bb54a615271483b901fc281baa5803adefaa38eb85c",
+      "model_chain": {
+        "assets/minecraft/models/item/nautilus_shell.json": "a33d7816058635c1414f1bb54a615271483b901fc281baa5803adefaa38eb85c",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/nautilus_shell.png",
+          "sha256": "852d4f35c4c833b8fe2bee8922ac1d9452f9222e8fc646b767ff2eaa5ac91a48"
+        }
+      ]
+    },
+    "minecraft:trident": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:trident; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/trident.json",
+      "model_sha256": "b90d9cca8fddf60cad75ab82a6a68a36082673fe6185c487c7392bac16468d68",
+      "model_chain": {
+        "assets/minecraft/models/item/trident.json": "b90d9cca8fddf60cad75ab82a6a68a36082673fe6185c487c7392bac16468d68",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/trident.png",
+          "sha256": "2bb1397727939c03c0c5c87307e91b41246e8ffd1b0ceddd73c7cc40bb9cf19d"
+        }
+      ]
+    },
+    "minecraft:compass": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:compass; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/compass.json",
+      "model_sha256": "18d09748af3dae3a35a13374435cba6dfd12b9aa4e16617adfb246997d6c9cef",
+      "model_chain": {
+        "assets/minecraft/models/item/compass.json": "18d09748af3dae3a35a13374435cba6dfd12b9aa4e16617adfb246997d6c9cef",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/compass_16.png",
+          "sha256": "0b14eabd82b84a1273057baac58cff50279329e15260b16b711e5a49ffdc56a4"
+        }
+      ]
+    },
+    "minecraft:spyglass": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:spyglass; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/spyglass.json",
+      "model_sha256": "28dc42fea0597f152e57b4ae4e0d89ad3827790db72a1eacdd9fd0d0ea3097ed",
+      "model_chain": {
+        "assets/minecraft/models/item/spyglass.json": "28dc42fea0597f152e57b4ae4e0d89ad3827790db72a1eacdd9fd0d0ea3097ed",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/spyglass.png",
+          "sha256": "dbd79fe07d2221385b200ddd596e7072950d55d5df02b7d2f8d575f5cf46200c"
+        }
+      ]
+    },
+    "minecraft:calcite": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:calcite; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/calcite.json",
+      "model_sha256": "539ae3978631e1289927662c366d328dfeada146b5f429d1508d39830cbfa75a",
+      "model_chain": {
+        "assets/minecraft/models/item/calcite.json": "539ae3978631e1289927662c366d328dfeada146b5f429d1508d39830cbfa75a",
+        "assets/minecraft/models/block/calcite.json": "317be7a42ca2515f9fba6bb4c68caac5199909cac263f9d4cceb3d3adbe75332",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/calcite.png",
+          "sha256": "efa1b62c77c00c1e8f33baa394eb028cc16fc170dc6dcf9abc3c70805f516979"
+        }
+      ]
+    },
+    "minecraft:cobblestone_wall": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:cobblestone_wall; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/cobblestone_wall.json",
+      "model_sha256": "0d5024f2dde9bfde9f26e0893cc1831ad0b72eb74567d3cda63a7ecb70200646",
+      "model_chain": {
+        "assets/minecraft/models/item/cobblestone_wall.json": "0d5024f2dde9bfde9f26e0893cc1831ad0b72eb74567d3cda63a7ecb70200646",
+        "assets/minecraft/models/block/cobblestone_wall_inventory.json": "d3f18afa875efca883e5acf6b59e522e400433e9fbde139e35d2134e104e1bd8",
+        "assets/minecraft/models/block/wall_inventory.json": "03f71fad9f1b45960f06d47ca4594b5ac610f83da1cdf7791c8972745f805dc6",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/cobblestone.png",
+          "sha256": "2431a28eaaf9a728a6bf6bfad515a2db74932d5091604c8c66c500734e21883a"
+        }
+      ]
+    },
+    "minecraft:bread": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:bread; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/bread.json",
+      "model_sha256": "b755accd96639ca564b7f1b446755353185ee174afd51e0255d826fc28646021",
+      "model_chain": {
+        "assets/minecraft/models/item/bread.json": "b755accd96639ca564b7f1b446755353185ee174afd51e0255d826fc28646021",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/bread.png",
+          "sha256": "2e266dd0bbc150f45e0e0307606dd519f8f18019202b49b0df315f8ecc1f5db5"
+        }
+      ]
+    },
+    "minecraft:enchanting_table": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:enchanting_table; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/enchanting_table.json",
+      "model_sha256": "c866c073ef2f22f0335f06bd72d300c737e61ed2a2e18ded9b3aa1d8041f711a",
+      "model_chain": {
+        "assets/minecraft/models/item/enchanting_table.json": "c866c073ef2f22f0335f06bd72d300c737e61ed2a2e18ded9b3aa1d8041f711a",
+        "assets/minecraft/models/block/enchanting_table.json": "d308d836feccce517b11acbc6ad20b2c230fb59b14df776fb54f1381f907060b",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/enchanting_table_bottom.png",
+          "sha256": "5a22e88553ec5a8aefc0804a157ce6881d74f593f03246994751a18a35160b29"
+        },
+        {
+          "path": "assets/minecraft/textures/block/enchanting_table_side.png",
+          "sha256": "c197b409a3646458a62e73b4252d85f2cfd0555a7c07b05a75e8a8d4f4d031b3"
+        },
+        {
+          "path": "assets/minecraft/textures/block/enchanting_table_top.png",
+          "sha256": "a5f93beffe647aab5735704b28e631cf7d98352595b9d5f3b6724788579c250d"
+        }
+      ]
+    },
+    "minecraft:iron_pickaxe": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:iron_pickaxe; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/iron_pickaxe.json",
+      "model_sha256": "64101677bf620826cf960580dcae163059367420cdc589f5579c0bdebd946557",
+      "model_chain": {
+        "assets/minecraft/models/item/iron_pickaxe.json": "64101677bf620826cf960580dcae163059367420cdc589f5579c0bdebd946557",
+        "assets/minecraft/models/item/handheld.json": "8fe990d1c011429e27df2d49d35cf8571946370eac8d0fb7497aacede4ff20f5",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/iron_pickaxe.png",
+          "sha256": "67305d8bd14e1d60633258f52055fce5aeaea7837c10e62d436fc16f163be627"
+        }
+      ]
+    },
+    "minecraft:powder_snow_bucket": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:powder_snow_bucket; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/powder_snow_bucket.json",
+      "model_sha256": "859389bc893ec7dbf50ad43cd1bec6f41e4201e453134f436e078371d49eca7e",
+      "model_chain": {
+        "assets/minecraft/models/item/powder_snow_bucket.json": "859389bc893ec7dbf50ad43cd1bec6f41e4201e453134f436e078371d49eca7e",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/powder_snow_bucket.png",
+          "sha256": "4c0a405f584fba1aedff2409de4e5a6fce16f22785168f4b419292f89db02450"
+        }
+      ]
+    },
+    "minecraft:shield": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:shield; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/shield.json",
+      "model_sha256": "619a4d34e2ebea521f300ead8b961aa4a275a291949823af8371da1d92eed13e",
+      "model_chain": {
+        "assets/minecraft/models/item/shield.json": "619a4d34e2ebea521f300ead8b961aa4a275a291949823af8371da1d92eed13e"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/dark_oak_planks.png",
+          "sha256": "3d04f576678df35491ccc43b0fafddce13e310fa5f363ca13193f8a2f55b285b"
+        }
+      ]
+    },
+    "minecraft:iron_axe": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:iron_axe; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/iron_axe.json",
+      "model_sha256": "d2f87e9cb80b95fa959f3955a8b76680a6f41adbfa0f821634f0a04a97d5181c",
+      "model_chain": {
+        "assets/minecraft/models/item/iron_axe.json": "d2f87e9cb80b95fa959f3955a8b76680a6f41adbfa0f821634f0a04a97d5181c",
+        "assets/minecraft/models/item/handheld.json": "8fe990d1c011429e27df2d49d35cf8571946370eac8d0fb7497aacede4ff20f5",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/iron_axe.png",
+          "sha256": "8dea40bac06c6f14bb0ad9e8b47de63250f6d6a46ae9439b85ddd1377f1edb49"
+        }
+      ]
+    },
+    "minecraft:campfire": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:campfire; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/campfire.json",
+      "model_sha256": "1fbe999ef89e8326c0fbc756cf939feaadb9c67ba3ab8e56ccf1ea51c136fb29",
+      "model_chain": {
+        "assets/minecraft/models/item/campfire.json": "1fbe999ef89e8326c0fbc756cf939feaadb9c67ba3ab8e56ccf1ea51c136fb29",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/campfire.png",
+          "sha256": "61934a2669aace656658e325a39b297f1eaa88e3c0a8da85c6d97c187dc4e4e5"
+        }
+      ]
+    },
+    "minecraft:quartz_pillar": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:quartz_pillar; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/quartz_pillar.json",
+      "model_sha256": "44166e2971d019381c70298bde04f8c5e47bfac7e212fdb9b98eddf8b1a05dc5",
+      "model_chain": {
+        "assets/minecraft/models/item/quartz_pillar.json": "44166e2971d019381c70298bde04f8c5e47bfac7e212fdb9b98eddf8b1a05dc5",
+        "assets/minecraft/models/block/quartz_pillar.json": "6207bacfc65d16247700ed9a75a0f23cf5070420f721e3571b63dbdeba35c563",
+        "assets/minecraft/models/block/cube_column.json": "4cc89841e64bfb9be33aef096675291b585d05bae81cbbd14bf977f89aa81a6b",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/quartz_pillar.png",
+          "sha256": "51afdd5ee0900eaaeaf469cca5b32dc5dc093b6b70f4b8b5a4cf2602fef50df9"
+        },
+        {
+          "path": "assets/minecraft/textures/block/quartz_pillar_top.png",
+          "sha256": "0f90fd5bbcdf26d3023222379ec6dfbd97e07189a599350008c39db3b9fe7c15"
+        }
+      ]
+    },
+    "minecraft:observer": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:observer; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/observer.json",
+      "model_sha256": "be65342097b6b5ea56e69e3d7a1c8baaf8939e975d07af98aa710e4b1a3586ed",
+      "model_chain": {
+        "assets/minecraft/models/item/observer.json": "be65342097b6b5ea56e69e3d7a1c8baaf8939e975d07af98aa710e4b1a3586ed",
+        "assets/minecraft/models/block/observer.json": "c2b2e116d6ef34f14415f6a1809da45204f121541cf47a2d20474f3adbca32ce",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/observer_back.png",
+          "sha256": "fba67e5afac02ffb66b715e0c1c54b157dd02f7c927bb80768a14abb739c5b7e"
+        },
+        {
+          "path": "assets/minecraft/textures/block/observer_front.png",
+          "sha256": "70a6f34d985bf2a15948e9c79adc1e2afe2aa05700abc96ba63d197201c9814f"
+        },
+        {
+          "path": "assets/minecraft/textures/block/observer_side.png",
+          "sha256": "2fbfd95eba0e9171e8771371b83777c740c1f6eea2af154ccca3ab5afa0aa0e8"
+        },
+        {
+          "path": "assets/minecraft/textures/block/observer_top.png",
+          "sha256": "bec81e9b548b59f912471ac7c3396f4d1e5bb2b768b47bdcc90f73104bbf3cd8"
+        }
+      ]
+    },
+    "minecraft:cauldron": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:cauldron; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/cauldron.json",
+      "model_sha256": "5a7786da9dadc1d2c33f2841bda45caad595aaba2f4cc7dd9aae52244c2fe080",
+      "model_chain": {
+        "assets/minecraft/models/item/cauldron.json": "5a7786da9dadc1d2c33f2841bda45caad595aaba2f4cc7dd9aae52244c2fe080",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/cauldron.png",
+          "sha256": "cd96945764dbd3b4e170f02ad29e43a97acd72c4f41ad90efa70869f2d6a68e8"
+        }
+      ]
+    },
+    "minecraft:iron_sword": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:iron_sword; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/iron_sword.json",
+      "model_sha256": "16a6c0e3cc569db43956801f5062ffaaa86f04c9be8166af46b9a60c1ffc49dd",
+      "model_chain": {
+        "assets/minecraft/models/item/iron_sword.json": "16a6c0e3cc569db43956801f5062ffaaa86f04c9be8166af46b9a60c1ffc49dd",
+        "assets/minecraft/models/item/handheld.json": "8fe990d1c011429e27df2d49d35cf8571946370eac8d0fb7497aacede4ff20f5",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/iron_sword.png",
+          "sha256": "ed1fa2f83955583e70a19791455d13989e8bd93b1d7240e775a57141022bed6b"
+        }
+      ]
+    },
+    "minecraft:red_mushroom": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:red_mushroom; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/red_mushroom.json",
+      "model_sha256": "3003e7ab5ff61b18ab55fbb3b3cb52c6148f44ae62e5caa65b00d0baa14e40dd",
+      "model_chain": {
+        "assets/minecraft/models/item/red_mushroom.json": "3003e7ab5ff61b18ab55fbb3b3cb52c6148f44ae62e5caa65b00d0baa14e40dd",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/red_mushroom.png",
+          "sha256": "abeb8b575f4217b5eefc058b9de14252ca07a8667da1d446f0c02bc7343e4350"
+        }
+      ]
+    },
+    "minecraft:bookshelf": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:bookshelf; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/bookshelf.json",
+      "model_sha256": "1354f2296f830bca5b4e957e37788a20efad39e1f7aef69955d59ddb93c67fb9",
+      "model_chain": {
+        "assets/minecraft/models/item/bookshelf.json": "1354f2296f830bca5b4e957e37788a20efad39e1f7aef69955d59ddb93c67fb9",
+        "assets/minecraft/models/block/bookshelf.json": "ca9f599c8d0e7e01f5020f6b506dbad3dd9c7ca43088ee4319a7814e9547d1cb",
+        "assets/minecraft/models/block/cube_column.json": "4cc89841e64bfb9be33aef096675291b585d05bae81cbbd14bf977f89aa81a6b",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/bookshelf.png",
+          "sha256": "614156e22b83b1b55b84c668a9f7fbd3e730fdc906730f10fed481a3a635c11a"
+        },
+        {
+          "path": "assets/minecraft/textures/block/oak_planks.png",
+          "sha256": "3b00412fec87bd07b83825b86de49bcb6c186ca7799f41721a36b04e5d8ed161"
+        }
+      ]
+    },
+    "minecraft:saddle": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:saddle; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/saddle.json",
+      "model_sha256": "96b2fb33c6d050551ad65ee078ecb888974d86ae2072508fd46f23b0c81f4512",
+      "model_chain": {
+        "assets/minecraft/models/item/saddle.json": "96b2fb33c6d050551ad65ee078ecb888974d86ae2072508fd46f23b0c81f4512",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/saddle.png",
+          "sha256": "19a6e3b399c4a75a02caefbc5eb9abdc631082fdb66b70c5a4bdcfdcfe075714"
+        }
+      ]
+    },
+    "minecraft:stone_brick_wall": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:stone_brick_wall; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/stone_brick_wall.json",
+      "model_sha256": "b620f29731e8d0fddbac577b5e00a27d9c52084b0963582c8fb35a708602f402",
+      "model_chain": {
+        "assets/minecraft/models/item/stone_brick_wall.json": "b620f29731e8d0fddbac577b5e00a27d9c52084b0963582c8fb35a708602f402",
+        "assets/minecraft/models/block/stone_brick_wall_inventory.json": "b305391585ad143e3d06ea30b127e0337d4c1f92c319c700636a6202efba53fb",
+        "assets/minecraft/models/block/wall_inventory.json": "03f71fad9f1b45960f06d47ca4594b5ac610f83da1cdf7791c8972745f805dc6",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/stone_bricks.png",
+          "sha256": "3509bac331d1079a08a60082502f0cc9ccce1953dcea8dfc404501d31f9f0be2"
+        }
+      ]
+    },
+    "minecraft:jungle_log": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:jungle_log; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/jungle_log.json",
+      "model_sha256": "032021f51c6222a42c9f6f8efd293d15901703fa9ceffe5692ee7d82b3d2b200",
+      "model_chain": {
+        "assets/minecraft/models/item/jungle_log.json": "032021f51c6222a42c9f6f8efd293d15901703fa9ceffe5692ee7d82b3d2b200",
+        "assets/minecraft/models/block/jungle_log.json": "09cb238aed168406671b12a35ddd4f903cce62ac8ebb64ca8b81eef42c6835ef",
+        "assets/minecraft/models/block/cube_column.json": "4cc89841e64bfb9be33aef096675291b585d05bae81cbbd14bf977f89aa81a6b",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/jungle_log.png",
+          "sha256": "881319c31659e6b6eac65515e5161c6321f34162f31d9be1984afe310b4039d4"
+        },
+        {
+          "path": "assets/minecraft/textures/block/jungle_log_top.png",
+          "sha256": "bf78950af0386b3da0cb9b25457753a31c4c762a0f62dde179fceeae683ec462"
+        }
+      ]
+    },
+    "minecraft:cobweb": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:cobweb; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/cobweb.json",
+      "model_sha256": "1f56faff47acbcc68a7ac3b4fb53e640251e2dc7154766e07e9cd7891b1124c6",
+      "model_chain": {
+        "assets/minecraft/models/item/cobweb.json": "1f56faff47acbcc68a7ac3b4fb53e640251e2dc7154766e07e9cd7891b1124c6",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/cobweb.png",
+          "sha256": "093f9c0362ff0b63fd2294ed2ea43bcec6029b3be3ea29cbc0b2405941370280"
+        }
+      ]
+    },
+    "minecraft:map": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:map; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/map.json",
+      "model_sha256": "e0d6d8bc5b242de610c3deec258d9e6ceab05fc26fd683a6603eda19871817e8",
+      "model_chain": {
+        "assets/minecraft/models/item/map.json": "e0d6d8bc5b242de610c3deec258d9e6ceab05fc26fd683a6603eda19871817e8",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/map.png",
+          "sha256": "22e0f1856b995aa6a3f71525bba330ec31e739506d5565f52c05a0c60f93db42"
+        }
+      ]
+    },
+    "minecraft:feather": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:feather; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/feather.json",
+      "model_sha256": "dba248ec5f2f94a82fd532dbf1b0dbad145ebad5c4d69a40df5cea209c51c834",
+      "model_chain": {
+        "assets/minecraft/models/item/feather.json": "dba248ec5f2f94a82fd532dbf1b0dbad145ebad5c4d69a40df5cea209c51c834",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/feather.png",
+          "sha256": "56513599c70b5da268ebf37e3245ef1f0fc9645a8b654aedd69069ec2f757513"
+        }
+      ]
+    },
+    "minecraft:elytra": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:elytra; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/elytra.json",
+      "model_sha256": "d2bfd2516388768a786f545311955606aabdd8b94c78a61f7892d0bc2faebe8e",
+      "model_chain": {
+        "assets/minecraft/models/item/elytra.json": "d2bfd2516388768a786f545311955606aabdd8b94c78a61f7892d0bc2faebe8e",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/elytra.png",
+          "sha256": "82a151de69a3540047868cbafde15ff67793520aeb855c790109007a027887ab"
+        }
+      ]
+    },
+    "minecraft:filled_map": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:filled_map; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/filled_map.json",
+      "model_sha256": "5a79888ff2d5518d6fd3bf62c3231167546faacfba411876070ba84a90075b70",
+      "model_chain": {
+        "assets/minecraft/models/item/filled_map.json": "5a79888ff2d5518d6fd3bf62c3231167546faacfba411876070ba84a90075b70",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/filled_map.png",
+          "sha256": "22e0f1856b995aa6a3f71525bba330ec31e739506d5565f52c05a0c60f93db42"
+        },
+        {
+          "path": "assets/minecraft/textures/item/filled_map_markings.png",
+          "sha256": "7e01cc208da72f12dc8b1cc30548874d3e984e8ca813e38f893ad092140ca3b0"
+        }
+      ]
+    },
+    "minecraft:blast_furnace": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:blast_furnace; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/blast_furnace.json",
+      "model_sha256": "2720e7b13830acb79874db29e460a9addfe9370ebade69f995a5d23dfcf952ec",
+      "model_chain": {
+        "assets/minecraft/models/item/blast_furnace.json": "2720e7b13830acb79874db29e460a9addfe9370ebade69f995a5d23dfcf952ec",
+        "assets/minecraft/models/block/blast_furnace.json": "9ad81be0a1639b2b1acb4459dc0e9d6f399c093a7d83f96485f95ed7db685cdd",
+        "assets/minecraft/models/block/orientable.json": "f3da11f14343fd2cb38fe196dc775d1f4c21284b0dfcf09314659da8f4b6fc79",
+        "assets/minecraft/models/block/orientable_with_bottom.json": "8da2928f84a31c6986dc31a916b8be736e5b0afdce7b3fbe651ec42771dd7255",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/blast_furnace_front.png",
+          "sha256": "0a56e82dbfd44b2f48de6343159f86f1d4215722b72843ea64971a47030bd62e"
+        },
+        {
+          "path": "assets/minecraft/textures/block/blast_furnace_side.png",
+          "sha256": "3330fe1de83a9a7ed58d871fa22c7e731ee81950341accc3aace787b82ca4e13"
+        },
+        {
+          "path": "assets/minecraft/textures/block/blast_furnace_top.png",
+          "sha256": "acbde30d4bc73e62b9f5ea871c78c3f50c4210d1833b8c22aab4a2af63b32e85"
+        }
+      ]
+    },
+    "minecraft:totem_of_undying": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:totem_of_undying; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/totem_of_undying.json",
+      "model_sha256": "92e85267ea42af852245806c64d4f63b926dc862bde550704076e4dfce24ea4b",
+      "model_chain": {
+        "assets/minecraft/models/item/totem_of_undying.json": "92e85267ea42af852245806c64d4f63b926dc862bde550704076e4dfce24ea4b",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/totem_of_undying.png",
+          "sha256": "1ed283d4a895c812b6aa74c24ea917765f112749338a3d6f5a77ec2cd7725c0a"
+        }
+      ]
+    },
+    "minecraft:obsidian": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:obsidian; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/obsidian.json",
+      "model_sha256": "065e5837b21bc0e7dbb230eafde6140466d3503e4516a2ae1c468b300e78ba43",
+      "model_chain": {
+        "assets/minecraft/models/item/obsidian.json": "065e5837b21bc0e7dbb230eafde6140466d3503e4516a2ae1c468b300e78ba43",
+        "assets/minecraft/models/block/obsidian.json": "947016d370d816f30eeb55b71ee3acec67d0ccbbd735e32f95b7680d9a5c60d7",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/obsidian.png",
+          "sha256": "5a22e88553ec5a8aefc0804a157ce6881d74f593f03246994751a18a35160b29"
+        }
+      ]
+    },
+    "minecraft:netherrack": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:netherrack; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/netherrack.json",
+      "model_sha256": "5b37d21f1244d5ec2179d3af58150777148b27b0e5d1ddcdd3d8883979dd028b",
+      "model_chain": {
+        "assets/minecraft/models/item/netherrack.json": "5b37d21f1244d5ec2179d3af58150777148b27b0e5d1ddcdd3d8883979dd028b",
+        "assets/minecraft/models/block/netherrack.json": "7866fd20aadf3bb344630d7bae743cda43c52402d6b1f96e424ee3d0033122e5",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/netherrack.png",
+          "sha256": "049ad49afec08357297f4248609d83e9bdfa973ec34a8c1fc25b7d8ed54698a8"
+        }
+      ]
+    },
+    "minecraft:nether_brick_fence": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:nether_brick_fence; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/nether_brick_fence.json",
+      "model_sha256": "c95bc9c6a0785450af308450732871754074385b30f67055a11a519179e7aded",
+      "model_chain": {
+        "assets/minecraft/models/item/nether_brick_fence.json": "c95bc9c6a0785450af308450732871754074385b30f67055a11a519179e7aded",
+        "assets/minecraft/models/block/nether_brick_fence_inventory.json": "00e4332df5584c5c7f35a9c4e33dff9ee1f7776932cec0f94caa85ed627ae91b",
+        "assets/minecraft/models/block/fence_inventory.json": "a8db71865730b78f54180b19abcac026474f44ec585567288a625f4f2e446aca",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/nether_bricks.png",
+          "sha256": "c7ca1056eaf57c739735eeb59dcd6c7b9cb559055a48307b13764a01813c16e8"
+        }
+      ]
+    },
+    "minecraft:blaze_rod": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:blaze_rod; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/blaze_rod.json",
+      "model_sha256": "65f0fcb833e878d2003cd0438dcf9ad2f421be86cd55a4bbf6a9170a1439d9fa",
+      "model_chain": {
+        "assets/minecraft/models/item/blaze_rod.json": "65f0fcb833e878d2003cd0438dcf9ad2f421be86cd55a4bbf6a9170a1439d9fa",
+        "assets/minecraft/models/item/handheld.json": "8fe990d1c011429e27df2d49d35cf8571946370eac8d0fb7497aacede4ff20f5",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/blaze_rod.png",
+          "sha256": "d402755c56b25d84ce73ba1f064252844b2ee9b2f6e3d17566450687a26d9c81"
+        }
+      ]
+    },
+    "minecraft:stone_sword": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:stone_sword; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/stone_sword.json",
+      "model_sha256": "47136464131ca7c3b6b97bd5d570b58ba887a5cc6dda055e921281fa72251c6b",
+      "model_chain": {
+        "assets/minecraft/models/item/stone_sword.json": "47136464131ca7c3b6b97bd5d570b58ba887a5cc6dda055e921281fa72251c6b",
+        "assets/minecraft/models/item/handheld.json": "8fe990d1c011429e27df2d49d35cf8571946370eac8d0fb7497aacede4ff20f5",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/stone_sword.png",
+          "sha256": "c95ae0782f408e32020dd53562c5ce9f4d2322dc8bf99ab6fbb5e6096fbae280"
+        }
+      ]
+    },
+    "minecraft:ghast_tear": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:ghast_tear; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/ghast_tear.json",
+      "model_sha256": "de4013195bee72180cef3b21264f4215ca453ad8108cc8c6045a68d18e239a69",
+      "model_chain": {
+        "assets/minecraft/models/item/ghast_tear.json": "de4013195bee72180cef3b21264f4215ca453ad8108cc8c6045a68d18e239a69",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/ghast_tear.png",
+          "sha256": "6f13587b4de52bb1d27d2b7e52ee0787984e30af86fb301615006395b934db06"
+        }
+      ]
+    },
+    "minecraft:basalt": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:basalt; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/basalt.json",
+      "model_sha256": "468c2dc6a767cd59f78015d9adc3728768c5dac6a0621a6c8806a88abd6579bc",
+      "model_chain": {
+        "assets/minecraft/models/item/basalt.json": "468c2dc6a767cd59f78015d9adc3728768c5dac6a0621a6c8806a88abd6579bc",
+        "assets/minecraft/models/block/basalt.json": "fe83fb039b3c9c43860c04ea9dbe3dd27207343e5acb30f4cfcee9b6292849df",
+        "assets/minecraft/models/block/cube_column.json": "4cc89841e64bfb9be33aef096675291b585d05bae81cbbd14bf977f89aa81a6b",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/basalt_side.png",
+          "sha256": "9ddba468118bd72d79e4e2b8ec74f010ac5a20f44fd3f4c9ae03b92fa8871414"
+        },
+        {
+          "path": "assets/minecraft/textures/block/basalt_top.png",
+          "sha256": "5b3579bc93b2ee90652000bdd66a8fbd3d49d5e211dace0c8d9dbe011e41f1a1"
+        }
+      ]
+    },
+    "minecraft:blackstone": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:blackstone; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/blackstone.json",
+      "model_sha256": "4c76367fe7b801cda19f75e7063dcf98d811942af3167823c4eb2e4e2b53a6a6",
+      "model_chain": {
+        "assets/minecraft/models/item/blackstone.json": "4c76367fe7b801cda19f75e7063dcf98d811942af3167823c4eb2e4e2b53a6a6",
+        "assets/minecraft/models/block/blackstone.json": "55808b401736758cfcef0bf0ced425e6ce34400ffc30c61a10aa0e19ebda0979",
+        "assets/minecraft/models/block/cube_column.json": "4cc89841e64bfb9be33aef096675291b585d05bae81cbbd14bf977f89aa81a6b",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/blackstone.png",
+          "sha256": "68e0434e86db5438da64f0dafbe01738fd867b140a2dea060ad25828aa814951"
+        },
+        {
+          "path": "assets/minecraft/textures/block/blackstone_top.png",
+          "sha256": "1e896e9595df4e7b08106c432d1eb0fe89cd5266aaef02d220f70b4fb1915047"
+        }
+      ]
+    },
+    "minecraft:warped_fence": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:warped_fence; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/warped_fence.json",
+      "model_sha256": "862fb1559441b5e650cbd397d6ed260674be23fc4b495e82eec7a1803f62b0d0",
+      "model_chain": {
+        "assets/minecraft/models/item/warped_fence.json": "862fb1559441b5e650cbd397d6ed260674be23fc4b495e82eec7a1803f62b0d0",
+        "assets/minecraft/models/block/warped_fence_inventory.json": "0aaa3acba5129f034bec49c1cbfb4b9ed47694b92bb740fbbed31202f242def1",
+        "assets/minecraft/models/block/fence_inventory.json": "a8db71865730b78f54180b19abcac026474f44ec585567288a625f4f2e446aca",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/warped_planks.png",
+          "sha256": "11740cf42a9ea02eca3a833e5b661eeb97fcc5585a2496181d82f6f7c1f188f5"
+        }
+      ]
+    },
+    "minecraft:golden_axe": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:golden_axe; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/golden_axe.json",
+      "model_sha256": "234c7e4bf1e46d244e9e80f0298d06ce1f59c00e3ee87d681973e014c93423fe",
+      "model_chain": {
+        "assets/minecraft/models/item/golden_axe.json": "234c7e4bf1e46d244e9e80f0298d06ce1f59c00e3ee87d681973e014c93423fe",
+        "assets/minecraft/models/item/handheld.json": "8fe990d1c011429e27df2d49d35cf8571946370eac8d0fb7497aacede4ff20f5",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/golden_axe.png",
+          "sha256": "af3797bac21957c03ad727fa46cfd62da15887d30c310184e33362a056afadd7"
+        }
+      ]
+    },
+    "minecraft:crimson_fungus": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:crimson_fungus; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/crimson_fungus.json",
+      "model_sha256": "a87c0c4e8a3b282ccea67ce3ea2569dd3e2b0c0987b6a92f076d2341936528fd",
+      "model_chain": {
+        "assets/minecraft/models/item/crimson_fungus.json": "a87c0c4e8a3b282ccea67ce3ea2569dd3e2b0c0987b6a92f076d2341936528fd",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/crimson_fungus.png",
+          "sha256": "2515da600e1a040ae4881ece023c948ff43907954c5243bc7556ecbdecd131ed"
+        }
+      ]
+    },
+    "minecraft:warped_fungus": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:warped_fungus; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/warped_fungus.json",
+      "model_sha256": "48354a951c6780544c818732e27d41465ce59e02f36f3862b157792bca6cef08",
+      "model_chain": {
+        "assets/minecraft/models/item/warped_fungus.json": "48354a951c6780544c818732e27d41465ce59e02f36f3862b157792bca6cef08",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/warped_fungus.png",
+          "sha256": "4f93fda71fa49b66512661bea9d32ec5ed4ecbf3281af45f0527d6fdb044a942"
+        }
+      ]
+    },
+    "minecraft:soul_sand": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:soul_sand; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/soul_sand.json",
+      "model_sha256": "654211633011e5f1ad9822348f8444ab2a2bd4577624d85e38d5b02d02fdfb47",
+      "model_chain": {
+        "assets/minecraft/models/item/soul_sand.json": "654211633011e5f1ad9822348f8444ab2a2bd4577624d85e38d5b02d02fdfb47",
+        "assets/minecraft/models/block/soul_sand.json": "740896d90c553af9cc3ca150c289a8e108a9e9ceadd988fae25d49f50f8eafe4",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/soul_sand.png",
+          "sha256": "3530d878540a036669bbab0e78abf6d6d245fc5fda102b872190e27c9dc0bd23"
+        }
+      ]
+    },
+    "minecraft:red_nether_bricks": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:red_nether_bricks; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/red_nether_bricks.json",
+      "model_sha256": "eea9bb64c6111973a699fc4e1870ff30ab3188109841118f7e771f4afab23ea3",
+      "model_chain": {
+        "assets/minecraft/models/item/red_nether_bricks.json": "eea9bb64c6111973a699fc4e1870ff30ab3188109841118f7e771f4afab23ea3",
+        "assets/minecraft/models/block/red_nether_bricks.json": "8d2ed0de1f22df497e8c19846c6f46a95b3db420a6f68b0bc549a46be7075ded",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/red_nether_bricks.png",
+          "sha256": "8ca17c8ed517ae0ace68007fa86b19679ecee3193b7406ae1b2a36d04975ea3f"
+        }
+      ]
+    },
+    "minecraft:nether_bricks": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:nether_bricks; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/nether_bricks.json",
+      "model_sha256": "36a3053ba1675e7f264a3755c1c6c98003462ae7b7c94613d0ca691a86c77a9f",
+      "model_chain": {
+        "assets/minecraft/models/item/nether_bricks.json": "36a3053ba1675e7f264a3755c1c6c98003462ae7b7c94613d0ca691a86c77a9f",
+        "assets/minecraft/models/block/nether_bricks.json": "eafa5815b84eec5f856e6a477e3db8e963cc369cbf756d33bb459af79d53ba5b",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/nether_bricks.png",
+          "sha256": "c7ca1056eaf57c739735eeb59dcd6c7b9cb559055a48307b13764a01813c16e8"
+        }
+      ]
+    },
+    "minecraft:soul_torch": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:soul_torch; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/soul_torch.json",
+      "model_sha256": "f2101e6a0e610019aa7438e5a4f53a514e307dbad3ca4c0e33ea0a2aef82a7ab",
+      "model_chain": {
+        "assets/minecraft/models/item/soul_torch.json": "f2101e6a0e610019aa7438e5a4f53a514e307dbad3ca4c0e33ea0a2aef82a7ab",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/soul_torch.png",
+          "sha256": "728b6cf0e86e190af2d9e069f9732686c9c96b03d0fceb6da17696305e6c5cd3"
+        }
+      ]
+    },
+    "minecraft:polished_blackstone_bricks": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:polished_blackstone_bricks; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/polished_blackstone_bricks.json",
+      "model_sha256": "3abcfee63434594bcc8375cbad8ba80cf69ef34f07bbefb97a3b36d5bf0e58fc",
+      "model_chain": {
+        "assets/minecraft/models/item/polished_blackstone_bricks.json": "3abcfee63434594bcc8375cbad8ba80cf69ef34f07bbefb97a3b36d5bf0e58fc",
+        "assets/minecraft/models/block/polished_blackstone_bricks.json": "2be522f0bd7080d695da06fb180d5890ed32554ce18590788e5ae4ccdd1d03fd",
+        "assets/minecraft/models/block/cube_all.json": "be3205d629ffb9e03834c3d1d083f8a2c62e9f9ae80820755129408634e9144a",
+        "assets/minecraft/models/block/cube.json": "3e4aacd02e816aeba38f83076596e18ded4cf49c01e17c62d1fce79850ffb84e",
+        "assets/minecraft/models/block/block.json": "3ef6c442f1ab55d2a57fa58e28bb831268159052659f12b453b637b31ded1da8"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/polished_blackstone_bricks.png",
+          "sha256": "f491807fe030f744eaf7e49b391ceba1efa2e05f786f29de6bea77712e340818"
+        }
+      ]
+    },
+    "minecraft:magma_cream": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:magma_cream; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/magma_cream.json",
+      "model_sha256": "173ffe4ba24976a4b94a2b57c8ef0fbc8374d894642aa26992ea73754dd2042b",
+      "model_chain": {
+        "assets/minecraft/models/item/magma_cream.json": "173ffe4ba24976a4b94a2b57c8ef0fbc8374d894642aa26992ea73754dd2042b",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/magma_cream.png",
+          "sha256": "ad3d0f9f2875e737741eb6b6f1605c93b2ddd60cef8e86ff29b77aff4245807a"
+        }
+      ]
     }
   }
 }

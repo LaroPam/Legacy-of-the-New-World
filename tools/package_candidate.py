@@ -49,7 +49,8 @@ def main():
     }
     files = dict(current)
     files['README_CANDIDATE.md'] = (root/'docs/CANDIDATE_INSTALL.md').read_bytes()
-    for name in ['docs/KNOWN_LIMITS.md', 'docs/CHAPTER_ROUTES_AND_COLORS.md', 'reports/quality.json']:
+    for name in ['docs/KNOWN_LIMITS.md', 'docs/CHAPTER_ROUTES_AND_COLORS.md',
+                 'docs/USABILITY_PASS.md', 'docs/REWARD_REVIEW.md', 'reports/quality.json']:
         files[name] = (root/name).read_bytes()
     files['SOURCE.json'] = (json.dumps(manifest, ensure_ascii=False, indent=2)+'\n').encode()
     target = root/'reports/questbook-candidate.zip'

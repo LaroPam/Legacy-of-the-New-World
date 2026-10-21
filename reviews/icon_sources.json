@@ -43,5 +43,330 @@
     "jar": "create-1.20.1-6.0.8.jar",
     "sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
     "registration": "EXTENDO_GRIP = REGISTRATE.item(\"extendo_grip\", ExtendoGripItem::new).properties(p -> p.m_41497_(Rarity.UNCOMMON)).model(AssetLookup.itemModelWithPartials()).register();"
+  },
+  "minecraft:water_bucket": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:water_bucket; official client item model and texture chain."
+  },
+  "minecraft:oak_boat": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:oak_boat; official client item model and texture chain."
+  },
+  "minecraft:rotten_flesh": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:rotten_flesh; official client item model and texture chain."
+  },
+  "minecraft:prismarine_bricks": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:prismarine_bricks; official client item model and texture chain."
+  },
+  "minecraft:prismarine_shard": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:prismarine_shard; official client item model and texture chain."
+  },
+  "minecraft:sponge": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:sponge; official client item model and texture chain."
+  },
+  "minecraft:heart_of_the_sea": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:heart_of_the_sea; official client item model and texture chain."
+  },
+  "minecraft:conduit": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:conduit; official client item model and texture chain."
+  },
+  "minecraft:sea_lantern": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:sea_lantern; official client item model and texture chain."
+  },
+  "minecraft:blue_ice": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:blue_ice; official client item model and texture chain."
+  },
+  "minecraft:brain_coral_block": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:brain_coral_block; official client item model and texture chain."
+  },
+  "minecraft:stone_bricks": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:stone_bricks; official client item model and texture chain."
+  },
+  "minecraft:sandstone": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:sandstone; official client item model and texture chain."
+  },
+  "minecraft:bone": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:bone; official client item model and texture chain."
+  },
+  "minecraft:lantern": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:lantern; official client item model and texture chain."
+  },
+  "minecraft:bell": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:bell; official client item model and texture chain."
+  },
+  "minecraft:soul_lantern": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:soul_lantern; official client item model and texture chain."
+  },
+  "minecraft:crossbow": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:crossbow; official client item model and texture chain."
+  },
+  "minecraft:nautilus_shell": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:nautilus_shell; official client item model and texture chain."
+  },
+  "minecraft:trident": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:trident; official client item model and texture chain."
+  },
+  "minecraft:compass": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:compass; official client item model and texture chain."
+  },
+  "minecraft:spyglass": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:spyglass; official client item model and texture chain."
+  },
+  "minecraft:calcite": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:calcite; official client item model and texture chain."
+  },
+  "minecraft:cobblestone_wall": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:cobblestone_wall; official client item model and texture chain."
+  },
+  "minecraft:bread": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:bread; official client item model and texture chain."
+  },
+  "minecraft:enchanting_table": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:enchanting_table; official client item model and texture chain."
+  },
+  "minecraft:iron_pickaxe": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:iron_pickaxe; official client item model and texture chain."
+  },
+  "minecraft:powder_snow_bucket": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:powder_snow_bucket; official client item model and texture chain."
+  },
+  "minecraft:shield": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:shield; official client item model and texture chain."
+  },
+  "minecraft:iron_axe": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:iron_axe; official client item model and texture chain."
+  },
+  "minecraft:campfire": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:campfire; official client item model and texture chain."
+  },
+  "minecraft:quartz_pillar": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:quartz_pillar; official client item model and texture chain."
+  },
+  "minecraft:observer": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:observer; official client item model and texture chain."
+  },
+  "minecraft:cauldron": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:cauldron; official client item model and texture chain."
+  },
+  "minecraft:iron_sword": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:iron_sword; official client item model and texture chain."
+  },
+  "minecraft:red_mushroom": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:red_mushroom; official client item model and texture chain."
+  },
+  "minecraft:bookshelf": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:bookshelf; official client item model and texture chain."
+  },
+  "minecraft:saddle": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:saddle; official client item model and texture chain."
+  },
+  "minecraft:stone_brick_wall": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:stone_brick_wall; official client item model and texture chain."
+  },
+  "minecraft:jungle_log": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:jungle_log; official client item model and texture chain."
+  },
+  "minecraft:cobweb": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:cobweb; official client item model and texture chain."
+  },
+  "minecraft:map": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:map; official client item model and texture chain."
+  },
+  "minecraft:feather": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:feather; official client item model and texture chain."
+  },
+  "minecraft:elytra": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:elytra; official client item model and texture chain."
+  },
+  "minecraft:filled_map": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:filled_map; official client item model and texture chain."
+  },
+  "minecraft:blast_furnace": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:blast_furnace; official client item model and texture chain."
+  },
+  "minecraft:totem_of_undying": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:totem_of_undying; official client item model and texture chain."
+  },
+  "minecraft:obsidian": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:obsidian; official client item model and texture chain."
+  },
+  "minecraft:netherrack": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:netherrack; official client item model and texture chain."
+  },
+  "minecraft:nether_brick_fence": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:nether_brick_fence; official client item model and texture chain."
+  },
+  "minecraft:blaze_rod": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:blaze_rod; official client item model and texture chain."
+  },
+  "minecraft:stone_sword": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:stone_sword; official client item model and texture chain."
+  },
+  "minecraft:ghast_tear": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:ghast_tear; official client item model and texture chain."
+  },
+  "minecraft:basalt": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:basalt; official client item model and texture chain."
+  },
+  "minecraft:blackstone": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:blackstone; official client item model and texture chain."
+  },
+  "minecraft:warped_fence": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:warped_fence; official client item model and texture chain."
+  },
+  "minecraft:golden_axe": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:golden_axe; official client item model and texture chain."
+  },
+  "minecraft:crimson_fungus": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:crimson_fungus; official client item model and texture chain."
+  },
+  "minecraft:warped_fungus": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:warped_fungus; official client item model and texture chain."
+  },
+  "minecraft:soul_sand": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:soul_sand; official client item model and texture chain."
+  },
+  "minecraft:red_nether_bricks": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:red_nether_bricks; official client item model and texture chain."
+  },
+  "minecraft:nether_bricks": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:nether_bricks; official client item model and texture chain."
+  },
+  "minecraft:soul_torch": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:soul_torch; official client item model and texture chain."
+  },
+  "minecraft:polished_blackstone_bricks": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:polished_blackstone_bricks; official client item model and texture chain."
+  },
+  "minecraft:magma_cream": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:magma_cream; official client item model and texture chain."
   }
 }

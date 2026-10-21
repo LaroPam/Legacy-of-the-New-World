@@ -1,0 +1,1283 @@
+{
+  "reviewed_commit": "09ea329",
+  "scope": "Read-only reward review; no gameplay tests or balance edits.",
+  "counts": {
+    "reward_records": 978,
+    "items": 495,
+    "xp": 479,
+    "stages": 4,
+    "unique_item_ids": 359,
+    "namespaces_including_minecraft": 21
+  },
+  "findings": [
+    {
+      "file": "config/ftbquests/quests/chapters/nasledie_create.snbt",
+      "id": "91C8A76B406CF0AF",
+      "title": "Ветряк для удалённой мастерской",
+      "xp": 140,
+      "items": [
+        {
+          "item": "create:rotation_speed_controller",
+          "count": 1,
+          "reward_id": "F28F99B61BFB07DE",
+          "other": {},
+          "nbt": null
+        }
+      ],
+      "tasks": [
+        {
+          "id": "708E0E91AC49CB3B",
+          "type": "advancement",
+          "advancement": "create:windmill"
+        }
+      ],
+      "finding": "Early gift can skip precision-mechanism/brass production."
+    },
+    {
+      "file": "config/ftbquests/quests/chapters/nasledie_grand_projects.snbt",
+      "id": "02E8F7C592478C40",
+      "title": "Воздух для выездных работ",
+      "xp": 150,
+      "items": [
+        {
+          "item": "create:netherite_backtank",
+          "count": 1,
+          "reward_id": "4D3DE90593CAE720",
+          "other": {},
+          "nbt": null
+        }
+      ],
+      "tasks": [
+        {
+          "id": "4229591BB1D324F4",
+          "type": "advancement",
+          "advancement": "create:backtank"
+        }
+      ],
+      "finding": "Charging a copper backtank gives its netherite upgrade."
+    },
+    {
+      "file": "config/ftbquests/quests/chapters/nasledie_grand_projects.snbt",
+      "id": "6555136BC726B91D",
+      "title": "У мастерской появился голос",
+      "xp": 100,
+      "items": [
+        {
+          "item": "sophisticatedbackpacks:stack_upgrade_tier_3",
+          "count": 1,
+          "reward_id": "43E2F42D0A8CF23B",
+          "other": {},
+          "nbt": null
+        }
+      ],
+      "tasks": [
+        {
+          "id": "0C288C5CE90E653A",
+          "type": "advancement",
+          "advancement": "create:steam_whistle"
+        }
+      ],
+      "finding": "A steam whistle gives a tier-3 stack upgrade; high recipe value for the action."
+    },
+    {
+      "file": "config/ftbquests/quests/chapters/nasledie_cataclysm.snbt",
+      "id": "AB0DB46C4BD473E2",
+      "title": "Деревня занята чужими",
+      "xp": 360,
+      "items": [
+        {
+          "item": "cataclysm:cursium_ingot",
+          "count": 2,
+          "reward_id": "17396B10579D4D48",
+          "other": {},
+          "nbt": null
+        }
+      ],
+      "tasks": [
+        {
+          "id": "AADD70CF5E1D4071",
+          "type": "structure",
+          "structure": "cataclysm:desert_occupied_village"
+        }
+      ],
+      "finding": "Structure visit gives material present in Maledictus boss loot."
+    },
+    {
+      "file": "config/ftbquests/quests/chapters/nasledie_ocean.snbt",
+      "id": "9BA296205688E999",
+      "title": "Забытая морская могила",
+      "xp": 75,
+      "items": [
+        {
+          "item": "alexscaves:enigmatic_engine",
+          "count": 1,
+          "reward_id": "786E39891868F0F9",
+          "other": {},
+          "nbt": null
+        }
+      ],
+      "tasks": [
+        {
+          "id": "2908D5A187F4D81C",
+          "type": "structure",
+          "structure": "tombstone:abandoned_grave_ocean"
+        }
+      ],
+      "finding": "Structure visit gives an engine present in Hullbreaker boss loot."
+    },
+    {
+      "file": "config/ftbquests/quests/chapters/nasledie_legends.snbt",
+      "id": "2A2A1ECDD23269E9",
+      "title": "Победа над Форсейкеном",
+      "xp": 480,
+      "items": [
+        {
+          "item": "alexscaves:archaic_vine",
+          "count": 1,
+          "reward_id": "261BF3059E736C63",
+          "other": {},
+          "nbt": null
+        }
+      ],
+      "tasks": [
+        {
+          "id": "98BA9EBED4B6F9C8",
+          "type": "advancement",
+          "advancement": "alexscaves:alexscaves/defeat_forsaken"
+        }
+      ],
+      "finding": "Boss reward is one vine and XP; weak commemorative value."
+    },
+    {
+      "file": "config/ftbquests/quests/chapters/nasledie_create.snbt",
+      "id": "18ED8A27D511509E",
+      "title": "Пар для растущего производства",
+      "xp": 275,
+      "items": [
+        {
+          "item": "create:andesite_encased_shaft",
+          "count": 1,
+          "reward_id": "FAE4FA38C95BC2CD",
+          "other": {},
+          "nbt": null
+        }
+      ],
+      "tasks": [
+        {
+          "id": "E9D5DAC80DCD8DF7",
+          "type": "advancement",
+          "advancement": "create:steam_engine"
+        }
+      ],
+      "finding": "Working steam engine reward is one encased shaft and XP."
+    },
+    {
+      "file": "config/ftbquests/quests/chapters/nasledie_relics.snbt",
+      "id": "95E67FB14F3417B2",
+      "title": "Священный медальон",
+      "xp": 150,
+      "items": [
+        {
+          "item": "createdeco:brass_bars",
+          "count": 3,
+          "reward_id": "AC01C02D94909B44",
+          "other": {},
+          "nbt": null
+        }
+      ],
+      "tasks": [
+        {
+          "id": "8F8D8404A1B4E27A",
+          "type": "item",
+          "item": "relics:holy_locket",
+          "count": 1,
+          "consume_items": 0
+        }
+      ],
+      "finding": "Holy locket collection rewards three decorative brass bars."
+    },
+    {
+      "file": "config/ftbquests/quests/chapters/nasledie_cataclysm.snbt",
+      "id": "1E822E9D64762351",
+      "title": "Первый страж цитадели",
+      "xp": 210,
+      "items": [
+        {
+          "item": "better_weaponry:iron_glaive",
+          "count": 1,
+          "reward_id": "8F63012B084558DA",
+          "other": {},
+          "nbt": null
+        },
+        {
+          "item": "better_weaponry:iron_glaive",
+          "count": 1,
+          "reward_id": "5760A4A7B2F4C7F0",
+          "other": {},
+          "nbt": null
+        },
+        {
+          "item": "better_weaponry:iron_glaive",
+          "count": 1,
+          "reward_id": "6988C7F55E8F5610",
+          "other": {},
+          "nbt": null
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6998871C80413ACD",
+          "type": "advancement",
+          "advancement": "cataclysm:kill_ender_golem"
+        }
+      ],
+      "finding": "Three separate identical glaive rewards."
+    },
+    {
+      "file": "config/ftbquests/quests/chapters/nasledie_cataclysm.snbt",
+      "id": "4E228116310381E8",
+      "title": "Падение Стража Края",
+      "xp": 650,
+      "items": [
+        {
+          "item": "better_weaponry:emerald_shield",
+          "count": 1,
+          "reward_id": "11FBC45A34506438",
+          "other": {},
+          "nbt": null
+        },
+        {
+          "item": "minecraft:diamond",
+          "count": 6,
+          "reward_id": "A65DB1729C92A92A",
+          "other": {},
+          "nbt": null
+        },
+        {
+          "item": "better_weaponry:emerald_shield",
+          "count": 1,
+          "reward_id": "229F66E73C2772C0",
+          "other": {},
+          "nbt": null
+        },
+        {
+          "item": "better_weaponry:emerald_shield",
+          "count": 1,
+          "reward_id": "73D788E089A4EC2D",
+          "other": {},
+          "nbt": null
+        }
+      ],
+      "tasks": [
+        {
+          "id": "B37DF3808ACCB06A",
+          "type": "advancement",
+          "advancement": "cataclysm:kill_ender_guardian"
+        }
+      ],
+      "finding": "Three separate identical shield rewards plus diamonds."
+    },
+    {
+      "file": "config/ftbquests/quests/chapters/nasledie_cataclysm.snbt",
+      "id": "FEE6E381AE1C38B7",
+      "title": "Арена раскалённого испытания",
+      "xp": 210,
+      "items": [
+        {
+          "item": "better_weaponry:iron_rapier",
+          "count": 1,
+          "reward_id": "A03F2EC21EDAADF5",
+          "other": {},
+          "nbt": null
+        },
+        {
+          "item": "better_weaponry:iron_rapier",
+          "count": 1,
+          "reward_id": "28E657D44E68CF6E",
+          "other": {},
+          "nbt": null
+        },
+        {
+          "item": "better_weaponry:iron_rapier",
+          "count": 1,
+          "reward_id": "F4997FD4AEEA0757",
+          "other": {},
+          "nbt": null
+        }
+      ],
+      "tasks": [
+        {
+          "id": "50690B7F840A4838",
+          "type": "advancement",
+          "advancement": "cataclysm:find_burning_arena"
+        }
+      ],
+      "finding": "Three separate identical rapier rewards."
+    }
+  ],
+  "recipe_evidence": {
+    "create:rotation_speed_controller": [
+      {
+        "jar": "create-1.20.1-6.0.8.jar",
+        "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+        "path": "data/create/recipes/crafting/kinetics/rotation_speed_controller.json",
+        "entry_sha256": "5e3f0108c15603c4c19a5d382f2b166e353284fbb60785b9436e7a85ef377ff2",
+        "body": {
+          "type": "minecraft:crafting_shaped",
+          "category": "misc",
+          "key": {
+            "B": {
+              "item": "create:precision_mechanism"
+            },
+            "C": {
+              "item": "create:brass_casing"
+            }
+          },
+          "pattern": [
+            "B",
+            "C"
+          ],
+          "result": {
+            "item": "create:rotation_speed_controller"
+          },
+          "show_notification": true
+        }
+      }
+    ],
+    "create:netherite_backtank": [
+      {
+        "jar": "create-1.20.1-6.0.8.jar",
+        "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+        "path": "data/create/recipes/crafting/appliances/netherite_backtank.json",
+        "entry_sha256": "5e63096bdfeeaae067e91e76ccd5c1ac0c10f8085e4b77f73548937dcfb6b458",
+        "body": {
+          "type": "minecraft:smithing_transform",
+          "addition": {
+            "tag": "forge:ingots/netherite"
+          },
+          "base": {
+            "item": "create:copper_backtank"
+          },
+          "result": {
+            "item": "create:netherite_backtank"
+          },
+          "template": {
+            "item": "minecraft:netherite_upgrade_smithing_template"
+          }
+        }
+      },
+      {
+        "jar": "create-1.20.1-6.0.8.jar",
+        "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+        "path": "data/create/recipes/crafting/appliances/netherite_backtank_from_netherite.json",
+        "entry_sha256": "1745e88df89aa0cd8b62e1e8cb1aae1b5cb1e8da46a846a3ad949d026d50bde1",
+        "body": {
+          "type": "minecraft:smithing_transform",
+          "addition": {
+            "item": "create:copper_backtank"
+          },
+          "base": {
+            "item": "minecraft:netherite_chestplate"
+          },
+          "result": {
+            "item": "create:netherite_backtank"
+          },
+          "template": {
+            "item": "minecraft:netherite_upgrade_smithing_template"
+          }
+        }
+      }
+    ],
+    "sophisticatedbackpacks:stack_upgrade_tier_3": [
+      {
+        "jar": "sophisticatedbackpacks-1.20.1-3.26.9.2194.jar",
+        "jar_sha256": "a597c6ae9442da5903cbfbd080c8503d71c41398fc6a34dd6e378d3d4b6a8136",
+        "path": "data/sophisticatedbackpacks/recipes/stack_upgrade_tier_3.json",
+        "entry_sha256": "a7f9ea926d6434d6973ce158940b1c007e9f02db7c704a5b434bb9b15c3dba08",
+        "body": {
+          "type": "minecraft:crafting_shaped",
+          "conditions": [
+            {
+              "type": "sophisticatedcore:item_enabled",
+              "itemRegistryName": "sophisticatedbackpacks:stack_upgrade_tier_3"
+            }
+          ],
+          "key": {
+            "D": {
+              "tag": "forge:storage_blocks/diamond"
+            },
+            "S": {
+              "item": "sophisticatedbackpacks:stack_upgrade_tier_2"
+            }
+          },
+          "pattern": [
+            "DDD",
+            "DSD",
+            "DDD"
+          ],
+          "result": {
+            "item": "sophisticatedbackpacks:stack_upgrade_tier_3"
+          }
+        }
+      },
+      {
+        "jar": "sophisticatedstorage-1.20.1-1.5.1.2158.jar",
+        "jar_sha256": "d9408b91e54189fe5d3217794e98cd1183dec5b31585671662c16f8e6b6c65d1",
+        "path": "data/sophisticatedstorage/recipes/backpack_stack_upgrade_tier_3_from_storage_stack_upgrade_tier_4.json",
+        "entry_sha256": "208355d2142f154fb7388795fd05ac6c4a6eac48cd73fffbb8aef85347c2127d",
+        "body": {
+          "type": "minecraft:crafting_shaped",
+          "conditions": [
+            {
+              "type": "forge:mod_loaded",
+              "modid": "sophisticatedbackpacks"
+            },
+            {
+              "type": "sophisticatedcore:item_enabled",
+              "itemRegistryName": "sophisticatedbackpacks:stack_upgrade_tier_3"
+            }
+          ],
+          "key": {
+            "L": {
+              "tag": "forge:leather"
+            },
+            "S": {
+              "item": "sophisticatedstorage:stack_upgrade_tier_4"
+            },
+            "T": {
+              "tag": "forge:string"
+            }
+          },
+          "pattern": [
+            "TST",
+            "SLS",
+            "T T"
+          ],
+          "result": {
+            "item": "sophisticatedbackpacks:stack_upgrade_tier_3"
+          }
+        }
+      }
+    ]
+  },
+  "boss_loot_evidence": [
+    {
+      "jar": "L_Enders_Cataclysm-3.31.jar",
+      "jar_sha256": "c29dcf940168208517b72f2d9965828b106a6b94cbea55d5001558c69a27b362",
+      "path": "data/cataclysm/loot_tables/entities/maledictus.json",
+      "entry_sha256": "ac41da9c48aff9e8ac2c12b9af8a3893f12e805148a64a912eebe9b7800701cf",
+      "body": {
+        "type": "minecraft:entity",
+        "pools": [
+          {
+            "name": "disc",
+            "conditions": [
+              {
+                "condition": "random_chance_with_looting",
+                "chance": 0.1,
+                "looting_multiplier": 0.1
+              }
+            ],
+            "rolls": 1,
+            "entries": [
+              {
+                "type": "minecraft:item",
+                "name": "cataclysm:music_disc_maledictus",
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "bonus_rolls": 0.0,
+            "entries": [
+              {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": {
+                      "type": "minecraft:uniform",
+                      "max": 4.0,
+                      "min": 3.0
+                    },
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "cataclysm:cursium_ingot"
+              }
+            ],
+            "rolls": 1.0
+          }
+        ],
+        "random_sequence": "cataclysm:entities/maledictus"
+      }
+    },
+    {
+      "jar": "alexscaves-2.0.2.jar",
+      "jar_sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0",
+      "path": "data/alexscaves/loot_tables/entities/hullbreaker.json",
+      "entry_sha256": "5a63650b1c5017ea108d511cdab9147fe2699b066ef8052cc8b28c43c5258677",
+      "body": {
+        "pools": [
+          {
+            "name": "hullbreaker_swallowed_engine",
+            "rolls": 1,
+            "entries": [
+              {
+                "type": "item",
+                "name": "alexscaves:enigmatic_engine",
+                "weight": 1,
+                "functions": []
+              }
+            ]
+          },
+          {
+            "name": "hullbreaker_embryo",
+            "rolls": 1,
+            "entries": [
+              {
+                "type": "item",
+                "name": "alexscaves:immortal_embryo",
+                "weight": 1,
+                "functions": []
+              }
+            ]
+          },
+          {
+            "name": "hullbreaker_sea_glass",
+            "rolls": 1,
+            "entries": [
+              {
+                "type": "item",
+                "name": "alexscaves:sea_glass_shards",
+                "weight": 1,
+                "functions": [
+                  {
+                    "function": "set_count",
+                    "count": {
+                      "min": 2,
+                      "max": 5
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "hullbreaker_copper",
+            "rolls": 1,
+            "entries": [
+              {
+                "type": "item",
+                "name": "minecraft:copper_ingot",
+                "weight": 1,
+                "functions": [
+                  {
+                    "function": "set_count",
+                    "count": {
+                      "min": 2,
+                      "max": 8
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "hullbreaker_scrap",
+            "rolls": 1,
+            "entries": [
+              {
+                "type": "item",
+                "name": "alexscaves:scrap_metal",
+                "weight": 1,
+                "functions": [
+                  {
+                    "function": "set_count",
+                    "count": {
+                      "min": 2,
+                      "max": 4
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "potential_inventory_completion_pairs": [
+    {
+      "reward_quest": "5B2F6F1B27706E1D",
+      "reward_chapter": "nasledie_life",
+      "target_quest": "FE2674FC9E1DD748",
+      "target_chapter": "nasledie_life",
+      "item": "farmersdelight:straw",
+      "target_evidence": [
+        {
+          "jar": "FarmersDelight-1.20.1-1.3.4.jar",
+          "jar_sha256": "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce",
+          "path": "data/farmersdelight/advancements/main/harvest_straw.json",
+          "entry_sha256": "9cd507fb471d3bd95a2cd9838a452d7103eb2b142f373caeff09e3dadf4073ef",
+          "body": {
+            "parent": "farmersdelight:main/craft_knife",
+            "criteria": {
+              "harvest_straw": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:straw"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              }
+            },
+            "display": {
+              "announce_to_chat": false,
+              "description": {
+                "translate": "advancements.farmersdelight.harvest_straw.description"
+              },
+              "frame": "task",
+              "hidden": false,
+              "icon": {
+                "item": "farmersdelight:straw"
+              },
+              "show_toast": true,
+              "title": {
+                "translate": "advancements.farmersdelight.harvest_straw.title"
+              }
+            },
+            "requirements": [
+              [
+                "harvest_straw"
+              ]
+            ],
+            "sends_telemetry_event": true
+          }
+        }
+      ],
+      "status": "Potential inventory-trigger completion; not observed in game."
+    },
+    {
+      "reward_quest": "9E550CA158EE0E76",
+      "reward_chapter": "nasledie_life",
+      "target_quest": "42E5495CA00F5CC6",
+      "target_chapter": "nasledie_prolog",
+      "item": "farmersdelight:tomato_seeds",
+      "target_evidence": [
+        {
+          "jar": "FarmersDelight-1.20.1-1.3.4.jar",
+          "jar_sha256": "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce",
+          "path": "data/farmersdelight/advancements/main/get_fd_seed.json",
+          "entry_sha256": "6ce5bf352ee1e09efe057eabe871ef5efee7cdc24cf63c4233bf8cb1c4a4fa5a",
+          "body": {
+            "parent": "farmersdelight:main/root",
+            "criteria": {
+              "cabbage_seeds": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:cabbage_seeds"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              },
+              "onion": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:onion"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              },
+              "rice": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:rice"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              },
+              "tomato_seeds": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:tomato_seeds"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              }
+            },
+            "display": {
+              "announce_to_chat": true,
+              "description": {
+                "translate": "advancements.farmersdelight.get_fd_seed.description"
+              },
+              "frame": "task",
+              "hidden": false,
+              "icon": {
+                "item": "farmersdelight:wild_onions"
+              },
+              "show_toast": true,
+              "title": {
+                "translate": "advancements.farmersdelight.get_fd_seed.title"
+              }
+            },
+            "requirements": [
+              [
+                "cabbage_seeds",
+                "tomato_seeds",
+                "onion",
+                "rice"
+              ]
+            ],
+            "sends_telemetry_event": true
+          }
+        }
+      ],
+      "status": "Potential inventory-trigger completion; not observed in game."
+    },
+    {
+      "reward_quest": "0F10C8510B15A8C2",
+      "reward_chapter": "nasledie_life",
+      "target_quest": "42E5495CA00F5CC6",
+      "target_chapter": "nasledie_prolog",
+      "item": "farmersdelight:rice",
+      "target_evidence": [
+        {
+          "jar": "FarmersDelight-1.20.1-1.3.4.jar",
+          "jar_sha256": "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce",
+          "path": "data/farmersdelight/advancements/main/get_fd_seed.json",
+          "entry_sha256": "6ce5bf352ee1e09efe057eabe871ef5efee7cdc24cf63c4233bf8cb1c4a4fa5a",
+          "body": {
+            "parent": "farmersdelight:main/root",
+            "criteria": {
+              "cabbage_seeds": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:cabbage_seeds"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              },
+              "onion": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:onion"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              },
+              "rice": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:rice"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              },
+              "tomato_seeds": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:tomato_seeds"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              }
+            },
+            "display": {
+              "announce_to_chat": true,
+              "description": {
+                "translate": "advancements.farmersdelight.get_fd_seed.description"
+              },
+              "frame": "task",
+              "hidden": false,
+              "icon": {
+                "item": "farmersdelight:wild_onions"
+              },
+              "show_toast": true,
+              "title": {
+                "translate": "advancements.farmersdelight.get_fd_seed.title"
+              }
+            },
+            "requirements": [
+              [
+                "cabbage_seeds",
+                "tomato_seeds",
+                "onion",
+                "rice"
+              ]
+            ],
+            "sends_telemetry_event": true
+          }
+        }
+      ],
+      "status": "Potential inventory-trigger completion; not observed in game."
+    },
+    {
+      "reward_quest": "70BD314183AC1CDE",
+      "reward_chapter": "nasledie_life",
+      "target_quest": "42E5495CA00F5CC6",
+      "target_chapter": "nasledie_prolog",
+      "item": "farmersdelight:tomato_seeds",
+      "target_evidence": [
+        {
+          "jar": "FarmersDelight-1.20.1-1.3.4.jar",
+          "jar_sha256": "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce",
+          "path": "data/farmersdelight/advancements/main/get_fd_seed.json",
+          "entry_sha256": "6ce5bf352ee1e09efe057eabe871ef5efee7cdc24cf63c4233bf8cb1c4a4fa5a",
+          "body": {
+            "parent": "farmersdelight:main/root",
+            "criteria": {
+              "cabbage_seeds": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:cabbage_seeds"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              },
+              "onion": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:onion"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              },
+              "rice": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:rice"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              },
+              "tomato_seeds": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:tomato_seeds"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              }
+            },
+            "display": {
+              "announce_to_chat": true,
+              "description": {
+                "translate": "advancements.farmersdelight.get_fd_seed.description"
+              },
+              "frame": "task",
+              "hidden": false,
+              "icon": {
+                "item": "farmersdelight:wild_onions"
+              },
+              "show_toast": true,
+              "title": {
+                "translate": "advancements.farmersdelight.get_fd_seed.title"
+              }
+            },
+            "requirements": [
+              [
+                "cabbage_seeds",
+                "tomato_seeds",
+                "onion",
+                "rice"
+              ]
+            ],
+            "sends_telemetry_event": true
+          }
+        }
+      ],
+      "status": "Potential inventory-trigger completion; not observed in game."
+    },
+    {
+      "reward_quest": "470CCDD13E8599DD",
+      "reward_chapter": "nasledie_life",
+      "target_quest": "C322668146484A1C",
+      "target_chapter": "nasledie_prolog",
+      "item": "farmersdelight:flint_knife",
+      "target_evidence": [
+        {
+          "jar": "FarmersDelight-1.20.1-1.3.4.jar",
+          "jar_sha256": "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce",
+          "path": "data/farmersdelight/advancements/main/craft_knife.json",
+          "entry_sha256": "a25a59770b151a0b8727f4122b3d6f072aed2f4bdb6b8ff499d7a709768de32a",
+          "body": {
+            "parent": "farmersdelight:main/root",
+            "criteria": {
+              "diamond_knife": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:diamond_knife"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              },
+              "flint_knife": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:flint_knife"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              },
+              "golden_knife": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:golden_knife"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              },
+              "iron_knife": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:iron_knife"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              },
+              "netherite_knife": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "farmersdelight:netherite_knife"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              }
+            },
+            "display": {
+              "announce_to_chat": true,
+              "description": {
+                "translate": "advancements.farmersdelight.craft_knife.description"
+              },
+              "frame": "task",
+              "hidden": false,
+              "icon": {
+                "item": "farmersdelight:flint_knife",
+                "nbt": "{Damage:0}"
+              },
+              "show_toast": true,
+              "title": {
+                "translate": "advancements.farmersdelight.craft_knife.title"
+              }
+            },
+            "requirements": [
+              [
+                "flint_knife",
+                "iron_knife",
+                "diamond_knife",
+                "golden_knife",
+                "netherite_knife"
+              ]
+            ],
+            "sends_telemetry_event": true
+          }
+        }
+      ],
+      "status": "Potential inventory-trigger completion; not observed in game."
+    },
+    {
+      "reward_quest": "549B77B92B0AFF7C",
+      "reward_chapter": "nasledie_create",
+      "target_quest": "9D86DEEFC75B8B99",
+      "target_chapter": "nasledie_industry",
+      "item": "create:polished_rose_quartz",
+      "target_evidence": [
+        {
+          "jar": "create-1.20.1-6.0.8.jar",
+          "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+          "path": "data/create/advancements/rose_quartz.json",
+          "entry_sha256": "5a50eda77aefdef2497a5d7eed674a1f0fd83b1e715c75dc49ce9134268ea6c5",
+          "body": {
+            "parent": "create:brass_casing",
+            "criteria": {
+              "0": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "create:polished_rose_quartz"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              }
+            },
+            "display": {
+              "announce_to_chat": false,
+              "description": {
+                "color": "#DBA213",
+                "translate": "advancement.create.rose_quartz.desc"
+              },
+              "frame": "task",
+              "hidden": false,
+              "icon": {
+                "item": "create:polished_rose_quartz"
+              },
+              "show_toast": true,
+              "title": {
+                "translate": "advancement.create.rose_quartz"
+              }
+            },
+            "requirements": [
+              [
+                "0"
+              ]
+            ],
+            "sends_telemetry_event": true
+          }
+        }
+      ],
+      "status": "Potential inventory-trigger completion; not observed in game."
+    },
+    {
+      "reward_quest": "2C5A509D463729FC",
+      "reward_chapter": "nasledie_industry",
+      "target_quest": "7902F08D734F15A4",
+      "target_chapter": "nasledie_industry",
+      "item": "createaddition:copper_spool",
+      "target_evidence": [
+        {
+          "path": "kubejs/data/nasledie/advancements/alpha34/actions/defea01a25b34722.json",
+          "sha256": "491d1abb3a47a7b9d9fa6f466d1b1856a092a0ab4e9bb115115fbff4d28ea684",
+          "body": {
+            "display": {
+              "icon": {
+                "item": "createaddition:copper_wire"
+              },
+              "title": {
+                "text": "Первая проводка"
+              },
+              "description": {
+                "text": "minecraft:item_used_on_block отслеживает успешное применение Copper Wire к блоку; передача мощности не доказывается."
+              },
+              "show_toast": false,
+              "announce_to_chat": false,
+              "hidden": true
+            },
+            "criteria": {
+              "action": {
+                "trigger": "minecraft:inventory_changed",
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "createaddition:copper_spool"
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            "requirements": [
+              [
+                "action"
+              ]
+            ]
+          }
+        }
+      ],
+      "status": "Potential inventory-trigger completion; not observed in game."
+    },
+    {
+      "reward_quest": "32AF726FDB0E97B5",
+      "reward_chapter": "nasledie_guild",
+      "target_quest": "E159D133BD51F992",
+      "target_chapter": "nasledie_guild",
+      "item": "alexsmobs:ambergris",
+      "target_evidence": [
+        {
+          "jar": "alexsmobs-1.22.9.jar",
+          "jar_sha256": "16bc5bcc19db9029c24f951346ec71098e6f5b0afef96e61894a2e9407aad37c",
+          "path": "data/alexsmobs/advancements/alexsmobs/save_cachalot_whale.json",
+          "entry_sha256": "6ed737596b15d4b40d54250e7c32b0cd50ac15e35a12f824f1083265b5fec1e1",
+          "body": {
+            "display": {
+              "icon": {
+                "item": "alexsmobs:tab_icon",
+                "nbt": "{DisplayEntityType:\"alexsmobs:cachalot_whale\", DisplayMobFlags:99}"
+              },
+              "title": {
+                "translate": "advancements.alexsmobs.save_cachalot_whale.title"
+              },
+              "description": {
+                "translate": "advancements.alexsmobs.save_cachalot_whale.desc"
+              },
+              "frame": "challenge"
+            },
+            "parent": "alexsmobs:alexsmobs/root",
+            "criteria": {
+              "ambergris": {
+                "trigger": "minecraft:inventory_changed",
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "alexsmobs:ambergris"
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "status": "Potential inventory-trigger completion; not observed in game."
+    },
+    {
+      "reward_quest": "4AD20583645F8C5F",
+      "reward_chapter": "nasledie_compass",
+      "target_quest": "027C7ABF4F61942F",
+      "target_chapter": "nasledie_industry",
+      "item": "create:precision_mechanism",
+      "target_evidence": [
+        {
+          "jar": "create-1.20.1-6.0.8.jar",
+          "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+          "path": "data/create/advancements/precision_mechanism.json",
+          "entry_sha256": "b9d3d0cd46518a62aae0b381e45635538c944b2dd6e37d93ba9ce9f2bf7ddb5b",
+          "body": {
+            "parent": "create:deployer",
+            "criteria": {
+              "0": {
+                "conditions": {
+                  "items": [
+                    {
+                      "items": [
+                        "create:precision_mechanism"
+                      ]
+                    }
+                  ]
+                },
+                "trigger": "minecraft:inventory_changed"
+              }
+            },
+            "display": {
+              "announce_to_chat": true,
+              "description": {
+                "color": "#DBA213",
+                "translate": "advancement.create.precision_mechanism.desc"
+              },
+              "frame": "task",
+              "hidden": false,
+              "icon": {
+                "item": "create:precision_mechanism"
+              },
+              "show_toast": true,
+              "title": {
+                "translate": "advancement.create.precision_mechanism"
+              }
+            },
+            "requirements": [
+              [
+                "0"
+              ]
+            ],
+            "sends_telemetry_event": true
+          }
+        }
+      ],
+      "status": "Potential inventory-trigger completion; not observed in game."
+    }
+  ],
+  "default_reward_sharing_evidence": [
+    {
+      "evidence": {
+        "jar": "ftb-quests-forge-2001.4.22.jar",
+        "jar_sha256": "9ea9d159a78a2724cfe0457b024680fdb52a2126eff9cfa5280a30578f647a68",
+        "path": "dev/ftb/mods/ftbquests/quest/BaseQuestFile.class",
+        "entry_sha256": "af2a1f9ce57862261ae3dcbd49d12d50e86b132545c77c6e658646d6971f65f1"
+      },
+      "decompiled_excerpt": "        this.chapterGroups.add((ChapterGroup)this.defaultChapterGroup);\n        this.rewardTables = new ArrayList<RewardTable>();\n        this.teamDataMap = new HashMap<UUID, TeamData>();\n        this.questObjectMap = new Long2ObjectOpenHashMap();\n        this.taskTypeIds = new Int2ObjectOpenHashMap();\n        this.rewardTypeIds = new Int2ObjectOpenHashMap();\n        this.emergencyItems = new ArrayList<ItemStack>();\n        this.emergencyItemsCooldown = 300;\n        this.defaultPerTeamReward = false;\n        this.defaultTeamConsumeItems = false;\n        this.defaultRewardAutoClaim = RewardAutoClaim.DISABLED;"
+    },
+    {
+      "evidence": {
+        "jar": "ftb-quests-forge-2001.4.22.jar",
+        "jar_sha256": "9ea9d159a78a2724cfe0457b024680fdb52a2126eff9cfa5280a30578f647a68",
+        "path": "dev/ftb/mods/ftbquests/quest/reward/Reward.class",
+        "entry_sha256": "5e5f3acb449567acbeb1d402cea27d33cf6d94f3cb5ed07dbb228ef40630b554"
+      },
+      "decompiled_excerpt": "        }\n    }\n\n    public void onCreated() {\n        this.quest.addReward(this);\n    }\n\n    public final boolean isTeamReward() {\n        return this.team.get(this.quest.getQuestFile().isDefaultPerTeamReward());\n    }\n\n    public final RewardAutoClaim getAutoClaimType() {\n        if (this.quest.getChapter().isAlwaysInvisible() && (this.autoclaim == RewardAutoClaim.DEFAULT || this.autoclaim == RewardAutoClaim.DISABLED)) {\n            return RewardAutoClaim.ENABLED;\n        }"
+    }
+  ],
+  "unknown": [
+    "92-row approval table absent from repository; approval history is not its contents.",
+    "Existing world reward-sharing override and FTB Teams behaviour untested.",
+    "Better Weaponry and Immersive Aircraft exact JAR evidence incomplete.",
+    "Inventory-trigger matches are partial static coverage, not a complete simulator."
+  ]
+}

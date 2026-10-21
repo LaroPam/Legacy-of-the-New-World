@@ -160,6 +160,32 @@ class PreservationTests(unittest.TestCase):
         self.assertIn('unregistered_entity_predicate', {i['code'] for i in report['warnings']})
 
 
+class IconNavigationTests(unittest.TestCase):
+    def chapter(self, icons):
+        return {REF: {'quests': [dict(id=str(i), **({'icon': icon} if icon is not None else {}))
+                                for i, icon in enumerate(icons)]}}
+
+    def test_dominant_icon_is_rejected_even_if_inherited_by_completed_chapter(self):
+        source = self.chapter(['minecraft:compass'] * 8)
+        issues = quality.icon_variety_issues(source)
+        self.assertEqual([i['code'] for i in issues], ['dominant_quest_icon'])
+        errors, warnings = quality.classify_quality(issues, issues, 'nasledie_defense',
+            {'completed_chapters': ['nasledie_defense']})
+        self.assertEqual(len(errors), 1)
+        self.assertEqual(warnings, [])
+
+    def test_small_thematic_group_and_task_derived_icons_are_allowed(self):
+        icons = ['minecraft:compass'] * 3 + [None] * 5
+        self.assertEqual(quality.icon_variety_issues(self.chapter(icons)), [])
+        self.assertEqual(quality.icon_variety_issues(self.chapter(['minecraft:compass'] * 4)), [])
+
+    def test_stack_count_variants_do_not_hide_dominant_item(self):
+        icons = [{'id': 'minecraft:compass', 'Count': i + 1} for i in range(8)]
+        issues = quality.icon_variety_issues(self.chapter(icons))
+        self.assertEqual(len(issues), 1)
+        self.assertEqual(issues[0]['count'], 8)
+
+
 class GeometryTests(unittest.TestCase):
     def test_intersection_not_just_exact_center(self):
         self.assertAlmostEqual(quality.distance_to_segment((2, .2), (0, 0), (4, 0)), .2)

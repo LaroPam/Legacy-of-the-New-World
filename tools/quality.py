@@ -239,6 +239,34 @@ def prose_issues(parsed):
     return result
 
 
+def icon_variety_issues(parsed):
+    """Flag a dominant explicit icon, not purposeful reuse in a short sequence.
+
+    This is a navigation heuristic, not proof that an icon fits its quest.
+    Missing icons use FTB's task-derived defaults and are not grouped together.
+    """
+    result = []
+    for name, chapter in chapters(parsed).items():
+        quests = chapter.get('quests', [])
+        if len(quests) < 8:
+            continue
+        groups = defaultdict(list)
+        for quest in quests:
+            icon = quest.get('icon')
+            if isinstance(icon, dict):
+                icon = icon.get('id')
+            if isinstance(icon, str) and icon:
+                groups[str(icon)].append(str(quest.get('id', '?')))
+        for icon, ids in sorted(groups.items()):
+            if len(ids) >= 4 and len(ids) / len(quests) > 0.4:
+                result.append(problem(
+                    'dominant_quest_icon', name,
+                    'One explicit item icon covers over 40% of a chapter with at least 8 quests; review navigation',
+                    icon=icon, quests=ids, count=len(ids), total=len(quests),
+                    magnitude=len(ids) / len(quests)))
+    return result
+
+
 def distance_to_segment(point, a, b):
     dx, dy = b[0] - a[0], b[1] - a[1]
     norm = dx * dx + dy * dy
@@ -549,8 +577,8 @@ def evaluate(current_files, baseline_files, reference=REFERENCE, registry=None, 
             report['errors'].append(item)
     geometry_issues, report["geometry"] = geometry(current)
     old_geometry, report["baseline_geometry"] = geometry(baseline)
-    current_quality = prose_issues(current) + duplicate_conditions(current) + geometry_issues
-    baseline_quality = prose_issues(baseline) + duplicate_conditions(baseline) + old_geometry
+    current_quality = prose_issues(current) + icon_variety_issues(current) + duplicate_conditions(current) + geometry_issues
+    baseline_quality = prose_issues(baseline) + icon_variety_issues(baseline) + duplicate_conditions(baseline) + old_geometry
     errors, warnings = classify_quality(current_quality, baseline_quality, reference, scope)
     report["errors"].extend(errors)
     report["warnings"].extend(warnings)
