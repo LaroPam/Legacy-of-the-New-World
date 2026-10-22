@@ -1,5 +1,5 @@
 // Exact API evidence and limitations: reviews/factory_trial_evidence.json.
-// Server-only, bounded observations. Never writes machine inventory or persistent world data.
+// Server-only, bounded observations. Reads machines; grants only the two named player advancements.
 var NasledieFactoryTrials = (function () {
     var registries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
     var recipes = {
