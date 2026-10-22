@@ -10,7 +10,7 @@
       "code": "external_registry_unknown",
       "location": "advancements",
       "message": "Exact registry/data evidence was not supplied; identifier validity is not established",
-      "count": 301
+      "count": 303
     },
     {
       "code": "external_registry_unknown",
@@ -34,7 +34,7 @@
       "code": "external_registry_unknown",
       "location": "items",
       "message": "Exact registry/data evidence was not supplied; identifier validity is not established",
-      "count": 649
+      "count": 653
     },
     {
       "code": "external_registry_unknown",
@@ -60,13 +60,13 @@
   ],
   "counts": {
     "chapters": 18,
-    "quests": 478,
-    "tasks": 504,
-    "rewards": 978,
-    "dependencies": 456,
-    "optional_quests": 310,
+    "quests": 483,
+    "tasks": 511,
+    "rewards": 988,
+    "dependencies": 461,
+    "optional_quests": 315,
     "task_types": {
-      "advancement": 373,
+      "advancement": 380,
       "biome": 21,
       "checkmark": 1,
       "dimension": 1,
@@ -76,11 +76,11 @@
       "structure": 74
     },
     "reward_types": {
-      "item": 495,
+      "item": 500,
       "stage": 4,
-      "xp": 479
+      "xp": 484
     },
-    "parsed_json": 73,
+    "parsed_json": 78,
     "parsed_snbt": 19
   },
   "baseline_counts": {
@@ -122,7 +122,7 @@
     {
       "file": "config/ftbquests/quests/chapters/nasledie_compass.snbt",
       "baseline_sha256": "254f650a92c057d8d3f6237e892c90d6147691573f6a9dc31d3f230230f54a0f",
-      "current_sha256": "7cb38e6dd3a1a3df35ccbb6acb0648c459e0ce3ac21c3721b6f910f70e59ab34"
+      "current_sha256": "b3475ee643a4ea204c1a0e6c5ddd2a59b8beab8bdb46ce9be78ad4cf40888658"
     },
     {
       "file": "config/ftbquests/quests/chapters/nasledie_create.snbt",
@@ -228,6 +228,31 @@
       "file": "kubejs/data/nasledie/advancements/alpha42/nether/fireproof_assault/wither.json",
       "baseline_sha256": "b69f4bcb2ac89a65288b8d1dc393e21adb43be0c3e7323691b76a669885c139d",
       "current_sha256": "fb90ffe0aac6ce16b09a1fcc55d3eed9304e891f9cc6574d16dc92721e7be640"
+    },
+    {
+      "file": "kubejs/data/nasledie/advancements/alpha43/expeditions/foundry_blaze.json",
+      "baseline_sha256": null,
+      "current_sha256": "238f11cfa8d87503d8824ec05d0069e51029eba95def6aacf06106dbbe465693"
+    },
+    {
+      "file": "kubejs/data/nasledie/advancements/alpha43/expeditions/foundry_treasure.json",
+      "baseline_sha256": null,
+      "current_sha256": "26ec792a5a86b60ab5b9ef2599e7e986be34beab78eaa682405deea8b55c476d"
+    },
+    {
+      "file": "kubejs/data/nasledie/advancements/alpha43/expeditions/nest_treasure.json",
+      "baseline_sha256": null,
+      "current_sha256": "3e861ed6332b79cf46fb83e95f72d7d6e387355d879f6aeb1e983d38834d3155"
+    },
+    {
+      "file": "kubejs/data/nasledie/advancements/alpha43/expeditions/temple_cave_spider.json",
+      "baseline_sha256": null,
+      "current_sha256": "7d5ef179c988e3696f00bd59cd39a96126112d3312c19b98a632dd13c3e1e04d"
+    },
+    {
+      "file": "kubejs/data/nasledie/advancements/alpha43/expeditions/temple_treasure.json",
+      "baseline_sha256": null,
+      "current_sha256": "82040a85bedc67126c50f2559bf816b7476cdc0c98de40cecafdf1a46a8a043a"
     }
   ],
   "gameplay_blockers": [],
@@ -247,8 +272,8 @@
       "height": 15.0
     },
     "config/ftbquests/quests/chapters/nasledie_compass.snbt": {
-      "nodes": 33,
-      "edges": 32,
+      "nodes": 38,
+      "edges": 37,
       "max_edge_length": 5.5902,
       "width": 25.0,
       "height": 10.0
@@ -488,11 +513,11 @@
     }
   },
   "registry": {
-    "local_advancements_resolved": 72,
+    "local_advancements_resolved": 77,
     "source": null,
     "categories": {
       "advancements": {
-        "required": 301,
+        "required": 303,
         "status": "unknown",
         "unverified": [
           "alexscaves:alexscaves/acid_create_rust",
@@ -793,6 +818,8 @@
           "mowziesmobs:sneak_grove",
           "mowziesmobs:steal_ice_crystal",
           "mowziesmobs:suns_blessing",
+          "nova_structures:adventure/conquer_miner_outpost",
+          "nova_structures:adventure/loot_illager_hideout",
           "nova_structures:adventure/tavern_quest",
           "nova_structures:nether/find_keep",
           "nova_structures:nether/powder_snow_keep"
@@ -846,7 +873,7 @@
         ]
       },
       "items": {
-        "required": 649,
+        "required": 653,
         "status": "unknown",
         "unverified": [
           "alexscaves:abyssal_altar",
@@ -1141,6 +1168,7 @@
           "create:rotation_speed_controller",
           "create:sail_frame",
           "create:schedule",
+          "create:schematicannon",
           "create:sequenced_gearshift",
           "create:smart_chute",
           "create:smart_fluid_pipe",
@@ -1283,6 +1311,7 @@
           "minecraft:calcite",
           "minecraft:campfire",
           "minecraft:cauldron",
+          "minecraft:chest",
           "minecraft:chipped_anvil",
           "minecraft:chiseled_bookshelf",
           "minecraft:chiseled_stone_bricks",
@@ -1308,6 +1337,7 @@
           "minecraft:ender_pearl",
           "minecraft:experience_bottle",
           "minecraft:feather",
+          "minecraft:fermented_spider_eye",
           "minecraft:filled_map",
           "minecraft:flowering_azalea",
           "minecraft:ghast_tear",
@@ -1383,6 +1413,7 @@
           "minecraft:tnt",
           "minecraft:totem_of_undying",
           "minecraft:trident",
+          "minecraft:tripwire_hook",
           "minecraft:vine",
           "minecraft:warped_fence",
           "minecraft:warped_fungus",
@@ -1613,7 +1644,7 @@
     "config/ftbquests/quests/chapter_groups.snbt": "f3b24e9dcce8b626af1f5194e586bd9c281ee354a598733ab47e6e869cbe4cd9",
     "config/ftbquests/quests/chapters/nasledie_archeology.snbt": "987db494908ad53536585405fef455df55c9e1f16e00963af576075fa3249116",
     "config/ftbquests/quests/chapters/nasledie_cataclysm.snbt": "cb560353d9e0230e9746a0e2bde7b3ca15218d451918767c536bccdbe3fa282f",
-    "config/ftbquests/quests/chapters/nasledie_compass.snbt": "7cb38e6dd3a1a3df35ccbb6acb0648c459e0ce3ac21c3721b6f910f70e59ab34",
+    "config/ftbquests/quests/chapters/nasledie_compass.snbt": "b3475ee643a4ea204c1a0e6c5ddd2a59b8beab8bdb46ce9be78ad4cf40888658",
     "config/ftbquests/quests/chapters/nasledie_create.snbt": "1f2be262bcef4bae51a0ca025696ccfe20c691d1ea0ef7cb162621390e9e9e8e",
     "config/ftbquests/quests/chapters/nasledie_defense.snbt": "385d85fe2a99e5ce594d05c11a0306b0f414e93be93364834fb65609f1948cd6",
     "config/ftbquests/quests/chapters/nasledie_economy.snbt": "8b8b464cf037d5b7f8bf73ce0463ef82cc7fc38d27736f0fd5b3b53a82912e4d",
@@ -1705,6 +1736,11 @@
     "kubejs/data/nasledie/advancements/alpha42/nether/fireproof_assault/wither.json": "fb90ffe0aac6ce16b09a1fcc55d3eed9304e891f9cc6574d16dc92721e7be640",
     "kubejs/data/nasledie/advancements/alpha42/ocean/conduit_duel/elder.json": "0bc0176941f39a97ec49a6480e4385134e5284f1af0d5708c3ca2127afa7531b",
     "kubejs/data/nasledie/advancements/alpha42/ocean/conduit_duel/guard.json": "1854ff7de725bf494da906cb43baf36230b5f28a83cfd6d493b1e6b752247208",
+    "kubejs/data/nasledie/advancements/alpha43/expeditions/foundry_blaze.json": "238f11cfa8d87503d8824ec05d0069e51029eba95def6aacf06106dbbe465693",
+    "kubejs/data/nasledie/advancements/alpha43/expeditions/foundry_treasure.json": "26ec792a5a86b60ab5b9ef2599e7e986be34beab78eaa682405deea8b55c476d",
+    "kubejs/data/nasledie/advancements/alpha43/expeditions/nest_treasure.json": "3e861ed6332b79cf46fb83e95f72d7d6e387355d879f6aeb1e983d38834d3155",
+    "kubejs/data/nasledie/advancements/alpha43/expeditions/temple_cave_spider.json": "7d5ef179c988e3696f00bd59cd39a96126112d3312c19b98a632dd13c3e1e04d",
+    "kubejs/data/nasledie/advancements/alpha43/expeditions/temple_treasure.json": "82040a85bedc67126c50f2559bf816b7476cdc0c98de40cecafdf1a46a8a043a",
     "kubejs/data/nasledie/advancements/economy/bought_bread.json": "5764a810f9aeffcbb2fac2bb4999d311d79845c659dfdf895cfef3d666f98857",
     "kubejs/data/nasledie/advancements/economy/bought_enchanted_book.json": "ea23c097a2a6cafdd2b51cfe80bec8a905b3267dca57bc00e28671b044518db1",
     "kubejs/data/nasledie/advancements/economy/bought_ender_pearl.json": "a3be8874ce72187dbe32a82c653b9f1bf2f76be01db929bc1e542486c2af6a08",

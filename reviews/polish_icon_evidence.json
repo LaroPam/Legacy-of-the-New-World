@@ -1490,6 +1490,95 @@
           "sha256": "ad3d0f9f2875e737741eb6b6f1605c93b2ddd60cef8e86ff29b77aff4245807a"
         }
       ]
+    },
+    "minecraft:golden_apple": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:golden_apple; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/golden_apple.json",
+      "model_sha256": "ad88270379b346247c11bffb08f761383cc9d687b82800e3f381bcb965ced437",
+      "model_chain": {
+        "assets/minecraft/models/item/golden_apple.json": "ad88270379b346247c11bffb08f761383cc9d687b82800e3f381bcb965ced437",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/golden_apple.png",
+          "sha256": "b9629677050325f9363375705254674375f5e00a06f2dfb1f96b332df1e68ffd"
+        }
+      ]
+    },
+    "minecraft:tripwire_hook": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:tripwire_hook; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/tripwire_hook.json",
+      "model_sha256": "cae56d8a5d4990186552dde5b4f6e95c1cb33faa2b35be9fe6f179b17ca58059",
+      "model_chain": {
+        "assets/minecraft/models/item/tripwire_hook.json": "cae56d8a5d4990186552dde5b4f6e95c1cb33faa2b35be9fe6f179b17ca58059",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/tripwire_hook.png",
+          "sha256": "a3a8cb9d5c9e6e6a248114e71965ecff024bac6d08aedb37ee0613eef8c3b325"
+        }
+      ]
+    },
+    "minecraft:blaze_powder": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:blaze_powder; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/blaze_powder.json",
+      "model_sha256": "3520dd0bccd2dd9d0e3351a25b3e75f2395d3bb1bbeb63c8c2b64911673404d8",
+      "model_chain": {
+        "assets/minecraft/models/item/blaze_powder.json": "3520dd0bccd2dd9d0e3351a25b3e75f2395d3bb1bbeb63c8c2b64911673404d8",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/blaze_powder.png",
+          "sha256": "be1d8c93bbff955c94c194bb944b200d884d30fcc7e221fff739881d6ed5eca2"
+        }
+      ]
+    },
+    "minecraft:chest": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:chest; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/chest.json",
+      "model_sha256": "fa3eb06cb45487c475f0ac0e7014e74da74daebef788c1b6a5e9a9f7a568c423",
+      "model_chain": {
+        "assets/minecraft/models/item/chest.json": "fa3eb06cb45487c475f0ac0e7014e74da74daebef788c1b6a5e9a9f7a568c423"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/block/oak_planks.png",
+          "sha256": "3b00412fec87bd07b83825b86de49bcb6c186ca7799f41721a36b04e5d8ed161"
+        }
+      ]
+    },
+    "minecraft:fermented_spider_eye": {
+      "kind": "minecraft_builtin",
+      "source_file": "minecraft-client-1.20.1.jar",
+      "source_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "registration_evidence": "Minecraft 1.20.1 built-in minecraft:fermented_spider_eye; official client item model and texture chain.",
+      "model": "assets/minecraft/models/item/fermented_spider_eye.json",
+      "model_sha256": "37c7565e323968c2530492ccd00a9c1adec7dde990316bf51d8d049f773cc294",
+      "model_chain": {
+        "assets/minecraft/models/item/fermented_spider_eye.json": "37c7565e323968c2530492ccd00a9c1adec7dde990316bf51d8d049f773cc294",
+        "assets/minecraft/models/item/generated.json": "63190611202e75ad7b812bc9a4b31bd53f3e186895d7b53e5e280b0d1e30a67a"
+      },
+      "textures": [
+        {
+          "path": "assets/minecraft/textures/item/fermented_spider_eye.png",
+          "sha256": "4b878d9cc6d8e73e7c80fb34612d69e5aa3fe205da2d6b56f811033dac2d2074"
+        }
+      ]
     }
   }
 }

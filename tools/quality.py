@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only static audit and presentation-only change guard for the questbook."""
+"""Static audit, original-data preservation and exact content-addition guard."""
 from __future__ import annotations
 
 import argparse
@@ -166,12 +166,57 @@ def protected_body(chapter):
     return result
 
 
+def quest_additions(scope):
+    """Read exact, typed new quest bodies; never treat this as an edit exemption."""
+    result = {}
+    for chapter, entries in (scope or {}).get('quest_additions', {}).items():
+        if not re.fullmatch(r'[A-Za-z0-9_-]+', chapter) or not isinstance(entries, list):
+            raise ValueError('Invalid quest addition chapter or list')
+        quests = []
+        for entry in entries:
+            if not entry.get('reason') or not isinstance(entry.get('snbt'), str):
+                raise ValueError('New quest needs a reason and an exact SNBT body')
+            quest = snbt.loads(entry['snbt'])
+            if not isinstance(quest, dict) or not quest.get('id') or not quest.get('tasks') or not quest.get('rewards'):
+                raise ValueError('New quest must contain an ID, tasks and rewards')
+            quests.append(quest)
+        result[CHAPTER_ROOT + chapter + '.snbt'] = quests
+    return result
+
+
 def preservation(current_files, baseline_files, current, baseline, reference, scope=None):
     errors, changes = [], []
     allowed = (scope or {}).get("presentation_chapters", [reference])
     reference_files = {CHAPTER_ROOT + name + ".snbt" for name in allowed}
     approved_files = (scope or {}).get("file_fixes", {})
     approved_fields = (scope or {}).get("quest_fixes", {})
+    try:
+        additions = quest_additions(scope)
+    except (ValueError, TypeError, KeyError) as exc:
+        return [problem('quest_addition_invalid', QUEST_ROOT, str(exc))], []
+    original_ids = {str(e.get('id')).upper() for _, _, e in entities(baseline)}
+    added_ids = set()
+    added_inventory = Counter()
+    for name, quests in additions.items():
+        if name not in reference_files:
+            errors.append(problem('quest_addition_invalid', name, 'New quests require an approved existing chapter'))
+        for category, location, entity in entities({name: {'quests': quests}}):
+            if category == 'chapter':
+                continue
+            ident = str(entity.get('id', ''))
+            if ident.upper() in original_ids or ident.upper() in added_ids:
+                errors.append(problem('quest_addition_reused_id', location, 'Addition reuses an existing or another new ID', id=ident))
+            added_ids.add(ident.upper())
+            added_inventory[category, ident] += 1
+    new_files = (scope or {}).get('file_additions', {})
+    for name, spec in new_files.items():
+        # This stage adds data-pack advancements only, never executable code or replacements.
+        approved = (re.fullmatch(r'kubejs/data/nasledie/advancements/[a-z0-9_/]+\.json', name)
+                    and spec.get('reason') and name not in baseline_files
+                    and name in current_files
+                    and hashlib.sha256(current_files[name]).hexdigest() == spec.get('sha256'))
+        if not approved:
+            errors.append(problem('file_addition_mismatch', name, 'New advancement does not match its exact declaration, or replaces an existing file'))
     reference_file = CHAPTER_ROOT + reference + ".snbt"
     if reference_file not in current or reference_file not in baseline:
         errors.append(problem("reference_missing", reference_file, "Reference chapter must exist in both snapshots"))
@@ -182,6 +227,8 @@ def preservation(current_files, baseline_files, current, baseline, reference, sc
         changes.append({"file": name, "baseline_sha256": hashlib.sha256(old).hexdigest() if old is not None else None,
                         "current_sha256": hashlib.sha256(new).hexdigest() if new is not None else None})
         if name not in reference_files:
+            if name in new_files and old is None:
+                continue  # Checked independently above, including missing/altered files.
             approved = approved_files.get(name, {})
             if not (approved.get('reason') and old is not None and new is not None
                     and hashlib.sha256(old).hexdigest() == approved.get('before_sha256')
@@ -192,6 +239,13 @@ def preservation(current_files, baseline_files, current, baseline, reference, sc
             errors.append(problem('approved_chapter_missing', reference_file, 'Approved chapter missing from snapshots'))
             continue
         old, new = deepcopy(baseline[reference_file]), deepcopy(current[reference_file])
+        declared = additions.get(reference_file, [])
+        old_ids = {str(q.get('id')).upper() for q in old.get('quests', [])}
+        actual_new = [q for q in new.get('quests', []) if str(q.get('id')).upper() not in old_ids]
+        if canonical(protected_body({'quests': actual_new})) != canonical(protected_body({'quests': declared})):
+            errors.append(problem('quest_addition_mismatch', reference_file, 'New quest mechanics/order differ from exact declarations'))
+        # Existing quests keep the same protection, even if a declaration tried to reuse their ID.
+        new['quests'] = [q for q in new.get('quests', []) if str(q.get('id')).upper() in old_ids]
         for quest in new.get('quests', []):
             previous = next((q for q in old.get('quests', []) if q.get('id') == quest.get('id')), {})
             for key, fix in approved_fields.get(str(quest.get('id')), {}).items():
@@ -217,9 +271,10 @@ def preservation(current_files, baseline_files, current, baseline, reference, sc
                         errors.append(problem("protected_quest_field", f"{reference_file}#{ident}", f"Protected field changed: {key}", field=key))
     before = Counter((kind, str(e.get("id"))) for kind, _, e in entities(baseline))
     after = Counter((kind, str(e.get("id"))) for kind, _, e in entities(current))
-    if before != after:
+    expected = before + added_inventory
+    if expected != after:
         errors.append(problem("id_inventory_changed", QUEST_ROOT, "Entity IDs or their categories were added, removed or reused",
-                              removed=[list(key) for key in (before - after).elements()], added=[list(key) for key in (after - before).elements()]))
+                              removed=[list(key) for key in (expected - after).elements()], added=[list(key) for key in (after - expected).elements()]))
     return errors, changes
 
 

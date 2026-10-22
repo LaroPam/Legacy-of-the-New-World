@@ -368,5 +368,30 @@
     "jar": "minecraft-client-1.20.1.jar",
     "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
     "registration": "Minecraft 1.20.1 built-in minecraft:magma_cream; official client item model and texture chain."
+  },
+  "minecraft:golden_apple": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:golden_apple; official client item model and texture chain."
+  },
+  "minecraft:tripwire_hook": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:tripwire_hook; official client item model and texture chain."
+  },
+  "minecraft:blaze_powder": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:blaze_powder; official client item model and texture chain."
+  },
+  "minecraft:chest": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:chest; official client item model and texture chain."
+  },
+  "minecraft:fermented_spider_eye": {
+    "jar": "minecraft-client-1.20.1.jar",
+    "sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+    "registration": "Minecraft 1.20.1 built-in minecraft:fermented_spider_eye; official client item model and texture chain."
   }
 }

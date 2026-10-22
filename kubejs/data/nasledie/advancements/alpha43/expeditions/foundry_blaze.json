@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "success": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:blaze",
+          "location": {
+            "structure": "dungeons_arise:foundry"
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "dungeons_arise:foundry"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "success"
+    ]
+  ]
+}
