@@ -12,64 +12,31 @@
 	quests: [
 		{
 			id: "FD0417DEF7F45B46"
-			title: "Выбрать большой проект"
-			description: [
-				"Прочитайте точные показания измерителя нагрузки в инженерных очках. Перед крупной стройкой нужно знать, сколько мощности остаётся у вашей сети."
-				"Дальше три направления: склад с автоматическими заказами, механическая сцена с часами и органом, экспедиционная техника для глубины и переносных сооружений. Короткие инженерные шутки остаются отдельными ответвлениями."
-			]
+			title: "Пульт главного инженера"
+			description: ["Большая база начинается с понимания, сколько силы у вас есть. Поставьте измеритель нагрузки и посмотрите на сеть в инженерных очках."]
 			x: 0.0d
 			y: 0.0d
 			icon: "create:stressometer"
 			shape: "star"
-			size: 1.4d
+			size: 1.7d
+			dependencies: ["027C7ABF4F61942F"]
 			tasks: [{
-				id: "4006D4E7DEAB4E98"
+				id: "87C06B0B0D8D7958"
 				type: "advancement"
 				advancement: "create:stressometer"
 			}]
 			rewards: [
 				{
-					id: "D0628625FB004217"
+					id: "5413C8EF1A85C377"
 					type: "xp"
-					xp: 100
+					xp: 150
 				}
 				{
-					id: "1F245405A16BAFDE"
+					id: "E21FB0133272AC58"
 					type: "item"
 					item: {
-						Count: 1b
+						Count: 8b
 						id: "create:brass_casing"
-					}
-				}
-			]
-		}
-		{
-			id: "A54DE6FD7E31FCAD"
-			title: "Часы для площади"
-			description: ["Соберите конструкцию на часовом подшипнике. Сделайте различимые стрелки и выберите место, откуда вы оба сможете читать время. Это основа будущей механической сцены."]
-			x: 0.0d
-			y: -2.5d
-			icon: "create:clockwork_bearing"
-			shape: "gear"
-			size: 1.2d
-			dependencies: ["FD0417DEF7F45B46"]
-			tasks: [{
-				id: "2F12037E5257FA81"
-				type: "advancement"
-				advancement: "create:clockwork_bearing"
-			}]
-			rewards: [
-				{
-					id: "83E82C8C6B464C70"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "4E8FAF533E2EF0C5"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "create:brass_scaffolding"
 					}
 				}
 			]
@@ -77,30 +44,28 @@
 		{
 			id: "001DB3A2FEAEBBD6"
 			title: "Склад показывает свои данные"
-			description: ["Выведите информацию с помощью передатчика данных. Выберите показатель, который полезен на складе: он станет первым видимым элементом будущего диспетчерского места."]
-			x: 2.5d
+			description: ["Дисплейная связь выводит на табло что угодно — запасы склада, скорость станков, время."]
+			x: 3.5d
 			y: 0.0d
 			icon: "create:display_link"
-			shape: "gear"
-			size: 1.2d
 			dependencies: ["FD0417DEF7F45B46"]
 			tasks: [{
-				id: "137128574F437A85"
+				id: "75A9BF81C60C7F45"
 				type: "advancement"
 				advancement: "create:display_link"
 			}]
 			rewards: [
 				{
-					id: "E2C50E62324D0806"
+					id: "FB1E390A3C06685C"
 					type: "xp"
-					xp: 100
+					xp: 120
 				}
 				{
-					id: "F1DE02418B265E94"
+					id: "9B614B3FF65CC578"
 					type: "item"
 					item: {
-						Count: 1b
-						id: "create:industrial_iron_block"
+						Count: 4b
+						id: "create:nixie_tube"
 					}
 				}
 			]
@@ -108,29 +73,27 @@
 		{
 			id: "33706B9F6B93BA33"
 			title: "Первая упакованная поставка"
-			description: ["Упакуйте предметы из хранилища упаковщиком. Выберите понятный набор припасов, который часто требуется вашей мастерской: дальше будем заказывать и доставлять такие посылки."]
-			x: 5.0d
-			y: 0.0d
+			description: ["Упаковщик заворачивает предметы в коробку с адресом. С этого начинается почта между цехами."]
+			x: 6.0d
+			y: 0.5d
 			icon: "create:packager"
-			shape: "gear"
-			size: 1.2d
 			dependencies: ["001DB3A2FEAEBBD6"]
 			tasks: [{
-				id: "8749B6EB4A17AB4E"
+				id: "8AEBA15CA1F9AC62"
 				type: "advancement"
 				advancement: "create:packager"
 			}]
 			rewards: [
 				{
-					id: "4FCB415F0949662D"
+					id: "BA1433E0093B63EF"
 					type: "xp"
-					xp: 100
+					xp: 150
 				}
 				{
-					id: "A61D0D0E8865B445"
+					id: "2A715B5452F41957"
 					type: "item"
 					item: {
-						Count: 2b
+						Count: 4b
 						id: "createdeco:industrial_iron_catwalk"
 					}
 				}
@@ -139,26 +102,24 @@
 		{
 			id: "C32715AF6479C057"
 			title: "Заказ через складскую стойку"
-			description: ["Назначьте моба работником складской стойки и сделайте первые запросы. Теперь вы задаёте потребность через систему заказов, а не каждый раз перебираете сундуки."]
-			x: 7.5d
-			y: 0.0d
+			description: ["Складская стойка принимает заказы — выберите, что нужно, и склад сам соберёт посылку."]
+			x: 8.5d
+			y: 1.0d
 			icon: "create:stock_ticker"
-			shape: "gear"
-			size: 1.2d
 			dependencies: ["33706B9F6B93BA33"]
 			tasks: [{
-				id: "EB3787743523E73E"
+				id: "1FB810E3748BF51C"
 				type: "advancement"
 				advancement: "create:stock_ticker"
 			}]
 			rewards: [
 				{
-					id: "75A0DEE711FBAB9E"
+					id: "37CFFBA80F180DE8"
 					type: "xp"
-					xp: 100
+					xp: 180
 				}
 				{
-					id: "1526CAEB8A873285"
+					id: "B3D6E8609771F4EC"
 					type: "item"
 					item: {
 						Count: 1b
@@ -170,91 +131,55 @@
 		{
 			id: "9401D666941DF3EB"
 			title: "Посылка сходит с цепного конвейера"
-			description: ["Добейтесь, чтобы лягушачий порт поймал посылку с цепного конвейера. Подготовьте путь и приёмник: именно перехват посылки завершает этот этап."]
-			x: 10.0d
-			y: 0.0d
+			description: ["Лягушка-порт ловит посылки с цепного конвейера и отправляет свои. Протяните цепь между цехами."]
+			x: 11.0d
+			y: 1.5d
 			icon: "create:package_frogport"
-			shape: "gear"
-			size: 1.2d
 			dependencies: ["C32715AF6479C057"]
 			tasks: [{
-				id: "C4CD2B9992BF168F"
+				id: "90A13638311A103A"
 				type: "advancement"
 				advancement: "create:frogport"
 			}]
 			rewards: [
 				{
-					id: "1EA8C662CF6BD867"
+					id: "79E29A2D16A0E5F3"
 					type: "xp"
-					xp: 100
+					xp: 180
 				}
 				{
-					id: "100A7AC3574D12A7"
+					id: "FB6C21D72634672B"
 					type: "item"
 					item: {
-						Count: 1b
-						id: "create:large_water_wheel"
-					}
-				}
-			]
-		}
-		{
-			id: "6F6CBC1AF7ABE154"
-			title: "Припасы выходят на прилавок"
-			description: ["Выставьте предметы на продажу с помощью торговой скатерти. Это ответвление складского проекта: часть запасов получает собственную витрину. Совершённая покупка для этого шага не требуется."]
-			x: 7.5d
-			y: 2.5d
-			icon: "create:red_table_cloth"
-			shape: "gear"
-			size: 1.2d
-			dependencies: ["C32715AF6479C057"]
-			tasks: [{
-				id: "D57960BC1FB56EDC"
-				type: "advancement"
-				advancement: "create:table_cloth_shop"
-			}]
-			rewards: [
-				{
-					id: "78468277A0C15BD7"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "90B2E24D1A5E6B16"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "create:clockwork_bearing"
+						Count: 4b
+						id: "create:chain_conveyor"
 					}
 				}
 			]
 		}
 		{
 			id: "9B721B53DDC184D8"
-			title: "Склад сам запрашивает пополнение"
-			description: [
-				"Вызовите автоматический запрос посылки с помощью заводских индикаторов. Настройте потребность и дождитесь запроса."
-				"Это финал складской ветки: от ручной упаковки вы дошли до системы, которая сама замечает необходимость пополнить запасы. Доставку и поведение всей вашей сети проверьте на выбранном рабочем участке."
-			]
-			x: 12.5d
-			y: 0.0d
+			title: "Склад сам просит пополнения"
+			description: ["Заводской датчик следит за запасом и сам заказывает недостающее. Мастерская думает за вас."]
+			x: 13.5d
+			y: 2.0d
 			icon: "create:factory_gauge"
 			shape: "star"
 			size: 1.4d
 			dependencies: ["9401D666941DF3EB"]
 			tasks: [{
-				id: "768E2D057F6D8BA1"
+				id: "B1C784E9725BCCC5"
 				type: "advancement"
 				advancement: "create:factory_gauge"
 			}]
 			rewards: [
 				{
-					id: "EA364F85E41A2D7A"
+					id: "669D794E68FC05DD"
 					type: "xp"
-					xp: 100
+					xp: 300
 				}
 				{
-					id: "3F5D78971D1BB371"
+					id: "7D56F62141D13E7B"
 					type: "item"
 					item: {
 						Count: 1b
@@ -264,542 +189,28 @@
 			]
 		}
 		{
-			id: "13293A60CC292DB9"
-			title: "Одна рука — десять направлений"
-			description: ["Запрограммируйте механическую руку как минимум на десять мест выдачи. Подберите реальные рабочие места, чтобы настройка имела смысл для мастерской. Здесь отмечается назначение адресов, а не доставка в каждый из них."]
-			x: 5.0d
-			y: -2.5d
-			icon: "create:mechanical_arm"
-			shape: "gear"
-			size: 1.2d
-			dependencies: ["F24A5CA9571CE25A"]
-			tasks: [{
-				id: "3B8515B132DD4C85"
-				type: "advancement"
-				advancement: "create:arm_many_targets"
-			}]
-			rewards: [
-				{
-					id: "B62FB56A58B949C8"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "4536A5887B2E8D9F"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "createdieselgenerators:large_diesel_engine"
-					}
-				}
-			]
-		}
-		{
-			id: "F24A5CA9571CE25A"
-			title: "Пульт для мастерской"
-			description: ["Активируйте беспроводной передатчик редстоуна с помощью связанного контроллера. Подключите к этому каналу полезное управление в мастерской и проверьте отклик рядом с устройством."]
-			x: 2.5d
-			y: -2.5d
-			icon: "create:linked_controller"
-			shape: "gear"
-			size: 1.2d
-			dependencies: ["001DB3A2FEAEBBD6"]
-			tasks: [{
-				id: "7D777800F58B073B"
-				type: "advancement"
-				advancement: "create:linked_controller"
-			}]
-			rewards: [
-				{
-					id: "C708377FA4EB98F2"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "F86B563201DBE628"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedbackpacks:battery_upgrade"
-					}
-				}
-			]
-		}
-		{
-			id: "545EE0ABAC59400C"
-			title: "Предмет проходит сливную линию"
-			description: ["Проведите предмет через ряд сливов Create. Этот опыт показывает движение предметов по такой линии; настраивать общий поток жидкости для зачёта не требуется."]
-			x: -2.5d
-			y: -5.0d
-			icon: "create:item_drain"
-			shape: "gear"
-			size: 1.2d
-			dependencies: ["2D51B2D4E3D0E0DF"]
-			tasks: [{
-				id: "248E430EAC9DEFB6"
-				type: "advancement"
-				advancement: "create:chained_drain"
-			}]
-			rewards: [
-				{
-					id: "66E665900A10FCCC"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "D6DA86EC5DB05A5E"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "createdieselgenerators:huge_diesel_engine"
-					}
-				}
-			]
-		}
-		{
-			id: "6555136BC726B91D"
-			title: "У мастерской появился голос"
-			description: ["Активируйте паровой свисток. Подготовьте подачу пара и управление, затем подберите звучание. Один сигнал — начало будущего органа."]
-			x: 0.0d
-			y: -7.5d
-			icon: "create:steam_whistle"
-			shape: "gear"
-			size: 1.2d
-			dependencies: ["481A6638D3700BB6"]
-			tasks: [{
-				id: "0C288C5CE90E653A"
-				type: "advancement"
-				advancement: "create:steam_whistle"
-			}]
-			rewards: [
-				{
-					id: "0B21B65434A95650"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "43E2F42D0A8CF23B"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedbackpacks:stack_upgrade_tier_3"
-					}
-				}
-			]
-		}
-		{
-			id: "D21A9F7F45B8BAA3"
-			title: "Юра летит дальше тридцати"
-			description: ["Пусть утяжелённый выбрасыватель запустит вас более чем на 30 блоков. Подготовьте безопасную площадку приземления и испытайте траекторию. Это аттракцион для инженерного двора."]
-			x: -2.5d
-			y: -7.5d
-			icon: "create:weighted_ejector"
-			shape: "gear"
-			size: 1.2d
-			dependencies: ["545EE0ABAC59400C"]
-			tasks: [{
-				id: "D737432CDDD3622D"
-				type: "advancement"
-				advancement: "create:ejector_maxed"
-			}]
-			rewards: [
-				{
-					id: "99125BA57D9608C6"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "695D2183CEC256C1"
-					type: "item"
-					item: {
-						Count: 2b
-						id: "createdeco:blue_brass_lamp"
-					}
-				}
-			]
-		}
-		{
-			id: "481A6638D3700BB6"
-			title: "Кукушка объявляет вечер"
-			description: ["Дождитесь, когда часы с кукушкой объявят время сна. Добавьте их к часовой площади: у места встречи появится собственный вечерний ритуал."]
-			x: 0.0d
-			y: -5.0d
-			icon: "create:cuckoo_clock"
-			shape: "gear"
-			size: 1.2d
-			optional: true
-			dependencies: ["A54DE6FD7E31FCAD"]
-			tasks: [{
-				id: "F065016900D6A866"
-				type: "advancement"
-				advancement: "create:cuckoo_clock"
-			}]
-			rewards: [
-				{
-					id: "C0BA2E6434BA54E5"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "F8BE30390BF5B790"
-					type: "item"
-					item: {
-						Count: 2b
-						id: "createdeco:brass_support"
-					}
-				}
-			]
-		}
-		{
-			id: "D1E72065750CAA2D"
-			title: "Орган для вашей площади"
-			description: [
-				"Присоедините к одному жидкостному резервуару двенадцать паровых свистков с разной высотой звука. Повторяющаяся нота не заменяет новую."
-				"Это финальный инструмент механической сцены. Теперь можно придумать короткий сигнал прибытия, открытия праздника или возвращения из экспедиции."
-			]
-			x: 0.0d
-			y: -15.0d
-			icon: "create:steam_whistle"
-			shape: "star"
-			size: 1.4d
-			optional: true
-			dependencies: ["18D464DFE627EAFF"]
-			tasks: [{
-				id: "C743043DC592D5B6"
-				type: "advancement"
-				advancement: "create:pipe_organ"
-			}]
-			rewards: [
-				{
-					id: "E5CEB2EE95AADCBA"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "EE9342E3AB2B18E8"
-					type: "item"
-					item: {
-						Count: 2b
-						id: "createdeco:yellow_brass_lamp"
-					}
-				}
-			]
-		}
-		{
-			id: "18D464DFE627EAFF"
-			title: "Музыкальный автомат"
-			description: ["Добейтесь, чтобы механическая рука обслужила проигрыватель. Подготовьте пластинки и места передачи, затем проследите за действием. Ваша сцена получает автоматического музыканта."]
-			x: 0.0d
-			y: -12.5d
-			icon: "minecraft:jukebox"
-			shape: "gear"
-			size: 1.2d
-			optional: true
-			dependencies: ["ADF4DE4021A4DDD2"]
-			tasks: [{
-				id: "90680A970861DE42"
-				type: "advancement"
-				advancement: "create:musical_arm"
-			}]
-			rewards: [
-				{
-					id: "843C8ED544C8EE88"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "BA628CBCF39E9237"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "create:green_toolbox"
-					}
-				}
-			]
-		}
-		{
-			id: "ADF4DE4021A4DDD2"
-			title: "Звон с другой стороны"
-			description: ["Позвоните в призрачный колокол. Выберите для него место рядом с механической сценой и сравните впечатление с обычным паровым сигналом."]
-			x: 0.0d
-			y: -10.0d
-			icon: "create:haunted_bell"
-			shape: "gear"
-			size: 1.2d
-			optional: true
-			dependencies: ["6555136BC726B91D"]
-			tasks: [{
-				id: "E7EAECA64016B553"
-				type: "advancement"
-				advancement: "create:haunted_bell"
-			}]
-			rewards: [
-				{
-					id: "4ED062B714545D10"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "8F8C2B50803A4FAF"
-					type: "item"
-					item: {
-						Count: 2b
-						id: "createdeco:industrial_iron_window"
-					}
-				}
-			]
-		}
-		{
-			id: "6318A6A61AD56A13"
-			title: "Двести блоков в дорогу"
-			description: [
-				"Поднимите вагонеточную конструкцию, к которой прикреплено не менее 200 блоков. Продумайте, какую полезную мастерскую или экспедиционную постройку вы хотите перевозить целиком."
-				"Это итог проекта переносных сооружений: большую собранную конструкцию можно забрать с собой. Задание не проверяет выгрузку предметов из её сундуков."
-			]
-			x: -7.5d
-			y: 0.0d
-			icon: "create:chest_minecart_contraption"
-			shape: "star"
-			size: 1.4d
-			optional: true
-			dependencies: ["9310EF94F77C64F4"]
-			tasks: [{
-				id: "C7697E0DF278E48F"
-				type: "advancement"
-				advancement: "create:cart_pickup"
-			}]
-			rewards: [
-				{
-					id: "B42470CCF9B40FD4"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "9E614F83959BC3BD"
-					type: "item"
-					item: {
-						Count: 2b
-						id: "createdeco:locked_brass_door"
-					}
-				}
-			]
-		}
-		{
-			id: "167ACBD7508350FA"
-			title: "Кузнечная артиллерия"
-			description: ["Запустите наковальню механическими плугами. Выберите отдельную площадку для эксперимента: получилось необычное применение движения конструкции, а не способ чинить железнодорожные пути."]
-			x: -2.5d
-			y: -10.0d
-			icon: "minecraft:chipped_anvil"
-			shape: "gear"
-			size: 1.2d
-			optional: true
-			dependencies: ["D21A9F7F45B8BAA3"]
-			tasks: [{
-				id: "B8173B126597829D"
-				type: "advancement"
-				advancement: "create:anvil_plough"
-			}]
-			rewards: [
-				{
-					id: "104D3C12941D974C"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "C70D9C818D4D3BD9"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "createdieselgenerators:wire_cutters"
-					}
-				}
-			]
-		}
-		{
-			id: "2D51B2D4E3D0E0DF"
-			title: "Колесо в раскалённом потоке"
-			description: ["Заставьте водяное колесо вращаться от лавы и получите скрытое достижение Create. Это необычный опыт с источником вращения; сначала выделите ему отдельное место в мастерской."]
-			x: -2.5d
-			y: -2.5d
-			icon: "create:water_wheel"
-			shape: "gear"
-			size: 1.2d
-			optional: true
-			dependencies: ["02E8F7C592478C40"]
-			tasks: [{
-				id: "A242E4619BC54F92"
-				type: "advancement"
-				advancement: "create:lava_wheel_00000"
-			}]
-			rewards: [
-				{
-					id: "41F7CAC30887F6AA"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "D88920B0381505B6"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "create:purple_toolbox"
-					}
-				}
-			]
-		}
-		{
-			id: "35271CE5B6428CAF"
-			title: "Максим и Юра передают привет"
-			description: ["Добейтесь дружеского удара кулаками двух механических рук-исполнителей. Настройте их навстречу друг другу: в этот раз поздороваться должны машины."]
-			x: -2.5d
-			y: -12.5d
-			icon: "create:deployer"
-			shape: "star"
-			size: 1.4d
-			optional: true
-			dependencies: ["167ACBD7508350FA"]
-			tasks: [{
-				id: "80CE919DA7A5FB1B"
-				type: "advancement"
-				advancement: "create:fist_bump"
-			}]
-			rewards: [
-				{
-					id: "94EF9612F051D41A"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "EF6E56C21CA267DD"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "createdieselgenerators:track_layers_bag_filled"
-					}
-				}
-			]
-		}
-		{
-			id: "02E8F7C592478C40"
-			title: "Воздух для выездных работ"
-			description: ["Создайте медный воздушный баллон и заставьте его накапливать сжатый воздух. Подайте вращение и наблюдайте наполнение. Запас пригодится инженерному снаряжению во время работ вне базы."]
-			x: -2.5d
-			y: 0.0d
-			icon: "create:copper_backtank"
-			shape: "gear"
-			size: 1.2d
-			optional: true
-			dependencies: ["FD0417DEF7F45B46"]
-			tasks: [{
-				id: "4229591BB1D324F4"
-				type: "advancement"
-				advancement: "create:backtank"
-			}]
-			rewards: [
-				{
-					id: "873FBE98DC3A9B72"
-					type: "xp"
-					xp: 150
-				}
-				{
-					id: "4D3DE90593CAE720"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "create:netherite_backtank"
-					}
-				}
-			]
-		}
-		{
-			id: "C3F2CF43CEF0F671"
-			title: "Горелка получает топливо сама"
-			description: ["Научите механическую руку подавать топливо горелке и добейтесь соответствующего достижения. Это самостоятельный полезный итог: обслуживание нагрева становится частью вашей линии."]
-			x: 7.5d
-			y: -2.5d
-			icon: "create:mechanical_arm"
-			shape: "star"
-			size: 1.4d
-			optional: true
-			dependencies: ["13293A60CC292DB9"]
-			tasks: [{
-				id: "7BA1A9282A0C3525"
-				type: "advancement"
-				advancement: "create:arm_blaze_burner"
-			}]
-			rewards: [
-				{
-					id: "98B325B621C34980"
-					type: "xp"
-					xp: 180
-				}
-				{
-					id: "6F28DF4578E229C7"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "create:mechanical_arm"
-					}
-				}
-			]
-		}
-		{
-			id: "EAD9E4891242F10A"
-			title: "Вся мастерская меня не видит"
-			description: ["Наденьте полный картонный комплект и передвигайтесь крадучись. Небольшая маскировочная миссия после знакомства с упаковкой — Максим может оценить убедительность образа."]
-			x: 12.5d
-			y: 2.5d
-			icon: "create:cardboard_chestplate"
-			shape: "star"
-			size: 1.4d
-			optional: true
-			dependencies: ["E7F2853B8418F46D"]
-			tasks: [{
-				id: "7CF8591E095AE5AD"
-				type: "advancement"
-				advancement: "create:cardboard_armor"
-			}]
-			rewards: [
-				{
-					id: "E5B236EA8B8270D0"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "BD4358609F4864B1"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "create:package_filter"
-					}
-				}
-			]
-		}
-		{
 			id: "E7F2853B8418F46D"
 			title: "Посылка с точным попаданием"
-			description: ["Бросьте картонную посылку так, чтобы она попала в жёлоб. Это отдельное испытание меткости рядом с системой доставки."]
-			x: 10.0d
-			y: 2.5d
-			icon: "create:chute"
-			shape: "gear"
-			size: 1.2d
+			description: ["Пусть желоб швырнёт посылку прямо в цель. Трёхочковый!"]
+			x: 9.5d
+			y: 3.5d
+			icon: "create:cardboard_block"
+			shape: "circle"
 			optional: true
-			dependencies: ["6F6CBC1AF7ABE154"]
+			dependencies: ["C32715AF6479C057"]
 			tasks: [{
-				id: "F48BF2A69486B178"
+				id: "CE1CC82FA1225FCB"
 				type: "advancement"
 				advancement: "create:package_chute_throw"
 			}]
 			rewards: [
 				{
-					id: "DF1DB5B7156AFBC1"
+					id: "2AD2A7AACC156900"
 					type: "xp"
 					xp: 135
 				}
 				{
-					id: "E0BD12E62C631C61"
+					id: "372D41F37837F56C"
 					type: "item"
 					item: {
 						Count: 2b
@@ -809,33 +220,547 @@
 			]
 		}
 		{
+			id: "EAD9E4891242F10A"
+			title: "Вся мастерская меня не видит"
+			description: ["Наденьте полный комплект картонной брони и спрячьтесь среди коробок. Юра, ты где?"]
+			x: 12.0d
+			y: 4.5d
+			icon: "create:cardboard_helmet"
+			shape: "circle"
+			optional: true
+			dependencies: ["E7F2853B8418F46D"]
+			tasks: [{
+				id: "F87DAE3960A64CED"
+				type: "advancement"
+				advancement: "create:cardboard_armor"
+			}]
+			rewards: [
+				{
+					id: "2A0DCDDBCE874C57"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "823E730649D6DD50"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "create:package_filter"
+					}
+				}
+			]
+		}
+		{
+			id: "F24A5CA9571CE25A"
+			title: "Пульт для мастерской"
+			description: ["Связанный пульт управляет механизмами по радио. Ворота, лифты и пушки — всё с одной руки."]
+			x: 0.0d
+			y: -3.5d
+			icon: "create:linked_controller"
+			dependencies: ["FD0417DEF7F45B46"]
+			tasks: [{
+				id: "DCF301F24EA7708C"
+				type: "advancement"
+				advancement: "create:linked_controller"
+			}]
+			rewards: [
+				{
+					id: "24DE17AC83A58012"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "103CCCF8432C0D08"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "create:redstone_link"
+					}
+				}
+			]
+		}
+		{
+			id: "13293A60CC292DB9"
+			title: "Одна рука — десять направлений"
+			description: ["Настройте одной механической руке десять целей. Сортировочный цех готов."]
+			x: 0.5d
+			y: -6.0d
+			icon: "create:mechanical_arm"
+			dependencies: ["F24A5CA9571CE25A"]
+			tasks: [{
+				id: "E02C5B1BD2639689"
+				type: "advancement"
+				advancement: "create:arm_many_targets"
+			}]
+			rewards: [
+				{
+					id: "19A2DB255EC7E17C"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "3D791352A49422B6"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "createdieselgenerators:large_diesel_engine"
+					}
+				}
+			]
+		}
+		{
+			id: "C3F2CF43CEF0F671"
+			title: "Горелка получает топливо сама"
+			description: ["Пусть механическая рука сама подкладывает топливо в горелку. Больше никаких походов за углём."]
+			x: 1.0d
+			y: -8.5d
+			icon: "create:blaze_burner"
+			dependencies: ["13293A60CC292DB9"]
+			tasks: [{
+				id: "F9C4CB5F38ED7E63"
+				type: "advancement"
+				advancement: "create:arm_blaze_burner"
+			}]
+			rewards: [
+				{
+					id: "659C01B04E5524E8"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "1DF9FD2C1D8F2071"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "create:blaze_cake"
+					}
+				}
+			]
+		}
+		{
+			id: "545EE0ABAC59400C"
+			title: "Предмет проходит сливную линию"
+			description: ["Протащите предмет по цепочке сливов — каждый заберёт свою жидкость."]
+			x: -2.5d
+			y: -7.0d
+			icon: "create:item_drain"
+			shape: "circle"
+			optional: true
+			dependencies: ["13293A60CC292DB9"]
+			tasks: [{
+				id: "0EC437AAA5363AEF"
+				type: "advancement"
+				advancement: "create:chained_drain"
+			}]
+			rewards: [
+				{
+					id: "D5B5DB88B09054C4"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "EA6A089115B1437E"
+					type: "item"
+					item: {
+						Count: 16b
+						id: "copycats:copycat_block"
+					}
+				}
+			]
+		}
+		{
+			id: "D21A9F7F45B8BAA3"
+			title: "Юра летит дальше тридцати"
+			description: ["Катапульта Create бросает предметы — и людей. Отправьте Юру в полёт на тридцать блоков. Максим поймает. Наверное."]
+			x: 3.5d
+			y: -7.5d
+			icon: "create:weighted_ejector"
+			shape: "circle"
+			optional: true
+			dependencies: ["13293A60CC292DB9"]
+			tasks: [{
+				id: "B39667B50B0FF79B"
+				type: "advancement"
+				advancement: "create:ejector_maxed"
+			}]
+			rewards: [
+				{
+					id: "5CD1CE05FC5BC1FC"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "CB7A2EE790773944"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:bunny_hoppers"
+					}
+				}
+			]
+		}
+		{
+			id: "A54DE6FD7E31FCAD"
+			title: "Часы для площади"
+			description: ["Часовой подшипник крутит стрелки по настоящему игровому времени. Поставьте часы на ратушу."]
+			x: -3.5d
+			y: 0.0d
+			icon: "create:clockwork_bearing"
+			dependencies: ["FD0417DEF7F45B46"]
+			tasks: [{
+				id: "931E29071D1A8A89"
+				type: "advancement"
+				advancement: "create:clockwork_bearing"
+			}]
+			rewards: [
+				{
+					id: "574898C1D192D681"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "A3FE4734811C07CF"
+					type: "item"
+					item: {
+						Count: 16b
+						id: "create:brass_scaffolding"
+					}
+				}
+			]
+		}
+		{
+			id: "481A6638D3700BB6"
+			title: "Кукушка объявляет вечер"
+			description: ["Часы с кукушкой предупредят, когда пора домой — до того, как выйдут монстры."]
+			x: -6.0d
+			y: 0.5d
+			icon: "create:cuckoo_clock"
+			dependencies: ["A54DE6FD7E31FCAD"]
+			tasks: [{
+				id: "FDAB1B92657540FA"
+				type: "advancement"
+				advancement: "create:cuckoo_clock"
+			}]
+			rewards: [
+				{
+					id: "1C2CE66D4B6F776C"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "01A9D02A144E7175"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "interiors:brown_chair"
+					}
+				}
+			]
+		}
+		{
+			id: "6555136BC726B91D"
+			title: "У мастерской появился голос"
+			description: ["Паровой свисток гудит на весь посёлок. Обед, тревога, конец смены — у каждого гудка свой смысл."]
+			x: -8.5d
+			y: 1.0d
+			icon: "create:steam_whistle"
+			dependencies: ["481A6638D3700BB6"]
+			tasks: [{
+				id: "DDAFEDDFD6A8DF5D"
+				type: "advancement"
+				advancement: "create:steam_whistle"
+			}]
+			rewards: [
+				{
+					id: "62D44F6490A9E49F"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "9887B3AF15869308"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "createdeco:blue_brass_lamp"
+					}
+				}
+			]
+		}
+		{
+			id: "ADF4DE4021A4DDD2"
+			title: "Колокол с другой стороны"
+			description: ["Проклятый колокол показывает, где ночью появятся монстры. Жутко, но полезно для обороны."]
+			x: -11.0d
+			y: 1.5d
+			icon: "create:haunted_bell"
+			dependencies: ["6555136BC726B91D"]
+			tasks: [{
+				id: "5339F6C30295878C"
+				type: "advancement"
+				advancement: "create:haunted_bell"
+			}]
+			rewards: [
+				{
+					id: "A59F636987721318"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "409F3A81E86E717D"
+					type: "item"
+					item: {
+						Count: 6b
+						id: "minecraft:soul_lantern"
+					}
+				}
+			]
+		}
+		{
+			id: "18D464DFE627EAFF"
+			title: "Музыкальный автомат"
+			description: ["Механическая рука ставит пластинки в проигрыватель. Музыка на площади весь вечер."]
+			x: -13.5d
+			y: 2.0d
+			icon: "minecraft:jukebox"
+			dependencies: ["ADF4DE4021A4DDD2"]
+			tasks: [{
+				id: "0E92F99A7CDC4864"
+				type: "advancement"
+				advancement: "create:musical_arm"
+			}]
+			rewards: [
+				{
+					id: "F4B630186536F109"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "C331CBC183D8E37A"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:music_disc_pigstep"
+					}
+				}
+			]
+		}
+		{
+			id: "D1E72065750CAA2D"
+			title: "Орган для вашей площади"
+			description: ["Соберите из свистков настоящий орган. Сыграйте что-нибудь торжественное — база заслужила."]
+			x: -16.0d
+			y: 2.5d
+			icon: "create:steam_whistle"
+			shape: "star"
+			size: 1.4d
+			dependencies: ["18D464DFE627EAFF"]
+			tasks: [{
+				id: "30D3F818E6FA0F7B"
+				type: "advancement"
+				advancement: "create:pipe_organ"
+			}]
+			rewards: [
+				{
+					id: "079605218B7FAD81"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "CF652BE61D0F709F"
+					type: "item"
+					item: {
+						Count: 6b
+						id: "interiors:white_chair"
+					}
+				}
+				{
+					id: "2A27C5B52541A79E"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "createdeco:yellow_brass_lamp"
+					}
+				}
+			]
+		}
+		{
+			id: "02E8F7C592478C40"
+			title: "Воздух для выездных работ"
+			description: ["Медный баллон с воздухом питает инструменты и даёт дышать под водой. Зарядите его от вращения."]
+			x: 0.0d
+			y: 3.5d
+			icon: "create:copper_backtank"
+			dependencies: ["FD0417DEF7F45B46"]
+			tasks: [{
+				id: "C8F478E34A0D9C34"
+				type: "advancement"
+				advancement: "create:backtank"
+			}]
+			rewards: [
+				{
+					id: "F06D4E66CA15733B"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "88CCAABB8CA0D70E"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "create:copper_diving_boots"
+					}
+				}
+			]
+		}
+		{
 			id: "9310EF94F77C64F4"
 			title: "Спуск глубже двухсот блоков"
-			description: ["Опустите канатный шкив более чем на 200 блоков. Найдите подходящую высоту для такой глубины и продумайте возврат платформы. Ровно 200 блоков недостаточно для этого достижения."]
-			x: -5.0d
-			y: 0.0d
+			description: ["Растяните верёвочный блок на максимальную длину. Лифт в самую глубокую шахту готов."]
+			x: -0.5d
+			y: 6.0d
 			icon: "create:rope_pulley"
-			shape: "gear"
-			size: 1.2d
-			optional: true
 			dependencies: ["02E8F7C592478C40"]
 			tasks: [{
-				id: "90DF4183A3AEC466"
+				id: "EE9B236650C9C06E"
 				type: "advancement"
 				advancement: "create:pulley_maxed"
 			}]
 			rewards: [
 				{
-					id: "1CC8785FE8569FF4"
+					id: "87801B183ACE2CE9"
 					type: "xp"
 					xp: 250
 				}
 				{
-					id: "B875EF5435892A1E"
+					id: "368BD3726714F767"
 					type: "item"
 					item: {
-						Count: 3b
+						Count: 6b
 						id: "create:controller_rail"
+					}
+				}
+			]
+		}
+		{
+			id: "6318A6A61AD56A13"
+			title: "Двести блоков в дорогу"
+			description: ["Протащите вагонетку с грузом двести блоков. Тяжело, но для дальних шахт пригодится."]
+			x: -1.0d
+			y: 8.5d
+			icon: "minecraft:minecart"
+			shape: "circle"
+			optional: true
+			dependencies: ["9310EF94F77C64F4"]
+			tasks: [{
+				id: "E4825F864F062692"
+				type: "advancement"
+				advancement: "create:cart_pickup"
+			}]
+			rewards: [
+				{
+					id: "69FC9C8A4C56AC8D"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "9A4890955E9F4200"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "createdeco:locked_brass_door"
+					}
+				}
+			]
+		}
+		{
+			id: "2D51B2D4E3D0E0DF"
+			title: "Колесо в раскалённом потоке"
+			description: ["Поставьте водяное колесо в поток лавы. Работает! Только не трогайте."]
+			x: 2.5d
+			y: 5.0d
+			icon: "create:water_wheel"
+			shape: "circle"
+			optional: true
+			dependencies: ["02E8F7C592478C40"]
+			tasks: [{
+				id: "C9A3E699511F9F94"
+				type: "advancement"
+				advancement: "create:lava_wheel_00000"
+			}]
+			rewards: [
+				{
+					id: "63B2EF8E27F2F3EB"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "68B9F0AFD4CA4A8B"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "create:purple_toolbox"
+					}
+				}
+			]
+		}
+		{
+			id: "167ACBD7508350FA"
+			title: "Кузнечная артиллерия"
+			description: ["Сбросьте наковальню с машины-плуга. Это не оружие. Наверное."]
+			x: 3.5d
+			y: 7.5d
+			icon: "minecraft:anvil"
+			shape: "circle"
+			optional: true
+			dependencies: ["2D51B2D4E3D0E0DF"]
+			tasks: [{
+				id: "64C477D8576A5F59"
+				type: "advancement"
+				advancement: "create:anvil_plough"
+			}]
+			rewards: [
+				{
+					id: "6FFB29B2BF0EFB6C"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "0B50AB6D1E6CDCD9"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "createdieselgenerators:wire_cutters"
+					}
+				}
+			]
+		}
+		{
+			id: "35271CE5B6428CAF"
+			title: "Максим и Юра передают привет"
+			description: ["Пусть два механических исполнителя стукнутся кулаками. А потом вы — по-настоящему."]
+			x: 4.0d
+			y: 10.0d
+			icon: "create:deployer"
+			shape: "heart"
+			optional: true
+			dependencies: ["167ACBD7508350FA"]
+			tasks: [{
+				id: "8090D7D82AD2510A"
+				type: "advancement"
+				advancement: "create:fist_bump"
+			}]
+			rewards: [
+				{
+					id: "AF252E55FEB31F9E"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "2DC78B2C97A65F7F"
+					type: "item"
+					item: {
+						Count: 6b
+						id: "farmersdelight:cake_slice"
 					}
 				}
 			]

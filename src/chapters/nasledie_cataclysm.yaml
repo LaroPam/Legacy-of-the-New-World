@@ -216,49 +216,6 @@ quests:
     type: item
     item: minecraft:golden_apple
     count: 4
-- id: 391F9987F1F32442
-  title: Фабрика древнего оружия
-  x: 5.0
-  y: -5.0
-  icon: cataclysm:emp
-  shape: scroll
-  size: 1.2
-  description:
-  - Найдите Древнюю фабрику Cataclysm. Осмотрите помещения и пути отхода, прежде чем пробуждать её главную угрозу.
-  tasks:
-  - id: 2EB8EC2622C9F900
-    type: advancement
-    advancement: cataclysm:find_ancient_factory
-  rewards:
-  - id: 8DCF7D4B17B2DE25
-    type: xp
-    xp: 210
-  - id: 85A5C15CE51A9C5E
-    type: item
-    item: better_weaponry:diamond_glaive
-- id: 8792C39846E0D49E
-  title: Последний сигнал Предвестника
-  x: 2.5
-  y: -2.5
-  icon: cataclysm:witherite_ingot
-  shape: star
-  size: 1.4
-  description:
-  - Победите Предвестника. Финал фабричной экспедиции требует настоящей победы над древней машиной, а не только
-    посещения её комплекса.
-  deps:
-  - 391F9987F1F32442
-  tasks:
-  - id: D77F8BEAE7104B28
-    type: advancement
-    advancement: cataclysm:kill_harbinger
-  rewards:
-  - id: FCD4B09B2EB19911
-    type: xp
-    xp: 790
-  - id: B165D87C318BE4C5
-    type: item
-    item: better_weaponry:emerald_claymore
 - id: DE6173A11D04779E
   title: Восемь побед Катаклизма
   x: 0.0
@@ -370,30 +327,6 @@ quests:
   - id: 3C7A11BE5DB8B244
     type: item
     item: better_weaponry:amethyst_rapier
-- id: 52813202FFECF301
-  title: Сломать незеритовую машину
-  x: 2.5
-  y: 2.5
-  icon: cataclysm:infernal_forge
-  shape: star
-  size: 1.4
-  optional: true
-  description:
-  - Победите Незеритовое чудовище. Это главный итог похода в Кузницу душ; сохраните силы на бой, а не только на
-    дорогу к арене.
-  deps:
-  - 0A9ACE48F5328D23
-  tasks:
-  - id: 61D66741699F3400
-    type: advancement
-    advancement: cataclysm:kill_monstrosity
-  rewards:
-  - id: E0E0FD04924D12B5
-    type: xp
-    xp: 820
-  - id: 169FE3FC00D98431
-    type: item
-    item: better_weaponry:emerald_battleaxe
 - id: F2FD5EEB117B3119
   title: Акрополь в небесах
   x: 0.0

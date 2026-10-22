@@ -280,6 +280,14 @@ def dependency(ref, chapter, names):
     return target
 
 
+def sentence(line):
+    """An unquoted YAML line containing ": " parses as a one-key mapping; restore the sentence."""
+    if isinstance(line, dict) and len(line) == 1:
+        key, value = next(iter(line.items()))
+        return f'{key}: {value}'
+    return line
+
+
 def build_chapter(name, data, names, generated):
     chapter = {k: tag(v, k) for k, v in data['chapter'].items()}
     links = []
@@ -296,6 +304,8 @@ def build_chapter(name, data, names, generated):
     for quest in data['quests']:
         ident = quest['_id']
         text = quest.get('description', [])
+        if isinstance(text, list):
+            text = quest['description'] = [sentence(line) for line in text]
         if not isinstance(quest.get('title', ''), str) or not isinstance(text, list) or not all(isinstance(s, str) for s in text):
             raise ValueError(f'{name}/{quest.get("key") or ident}: title and description lines must be plain strings '
                              '(quote YAML lines that contain ": ")')

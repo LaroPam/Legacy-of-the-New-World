@@ -2,212 +2,23 @@
 	filename: "nasledie_economy"
 	id: "8F4597A009915275"
 	group: "C513A3C540C2F7E2"
-	title: "Гильдия купцов"
+	title: "Торговый дом"
 	icon: "minecraft:emerald"
 	order_index: 12
 	default_hide_dependency_lines: false
-	default_quest_shape: "square"
-	default_quest_size: 1.28d
+	default_quest_shape: "coin"
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
-			id: "D49CAFA761D24CA4"
-			title: "Первая прибыль"
-			description: ["Продайте товар обычному жителю и получите изумруд за завершённую сделку. Так у ваших припасов впервые появится цена на местном рынке."]
+			id: "9CE7C2CFF54FECE4"
+			title: "Десять сделок"
+			description: ["Торговля — дело привычки. Совершите десять сделок с жителями — Максим и Юра могут торговать каждый в своём углу рынка."]
 			x: 0.0d
 			y: 0.0d
 			icon: "minecraft:emerald"
-			shape: "circle"
-			size: 1.2d
-			tasks: [{
-				id: "B2593BF864CE4073"
-				type: "advancement"
-				advancement: "nasledie:economy/earned_emerald"
-			}]
-			rewards: [
-				{
-					id: "78B677B2934FDA7B"
-					type: "xp"
-					xp: 45
-				}
-				{
-					id: "65D6BE213DAF3367"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedstorage:upgrade_base"
-					}
-				}
-			]
-		}
-		{
-			id: "B31BCA46216D2DC6"
-			title: "Хлеб к дороге"
-			description: ["Купите хлеб у обычного жителя за изумруды. Фермер поможет пополнить дорожные запасы, когда на выпечку уже не хватает времени."]
-			x: 2.5d
-			y: 0.0d
-			icon: "minecraft:bread"
-			shape: "coin"
-			size: 1.2d
-			dependencies: ["D49CAFA761D24CA4"]
-			tasks: [{
-				id: "4DF70D881910B93B"
-				type: "advancement"
-				advancement: "nasledie:economy/bought_bread"
-			}]
-			rewards: [
-				{
-					id: "C94F4E4BAA92FEF4"
-					type: "xp"
-					xp: 55
-				}
-				{
-					id: "7E88BE618FB3ABC9"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedstorage:hopper_upgrade"
-					}
-				}
-			]
-		}
-		{
-			id: "E03032475F008D4D"
-			title: "Редстоун через рынок"
-			description: ["Купите красную пыль у обычного жителя. Ищите её у священника: рынок может снабжать мастерскую даже между походами в шахту."]
-			x: 5.0d
-			y: 0.0d
-			icon: "minecraft:redstone"
-			shape: "coin"
-			size: 1.2d
-			dependencies: ["B31BCA46216D2DC6"]
-			tasks: [{
-				id: "4D784565D336F2A0"
-				type: "advancement"
-				advancement: "nasledie:economy/bought_redstone"
-			}]
-			rewards: [
-				{
-					id: "41FD5C2A16F8D504"
-					type: "xp"
-					xp: 70
-				}
-				{
-					id: "2BE24198D860870B"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "create:content_observer"
-					}
-				}
-			]
-		}
-		{
-			id: "D15B25FAA41E05AE"
-			title: "Стекло для стройки"
-			description: ["Приобретите стекло в торговом окне обычного жителя. Загляните к библиотекарю и развивайте торговлю, пока нужное предложение не появится."]
-			x: 7.5d
-			y: 0.0d
-			icon: "minecraft:glass"
-			shape: "coin"
-			size: 1.2d
-			dependencies: ["E03032475F008D4D"]
-			tasks: [{
-				id: "09D7871336A8BE50"
-				type: "advancement"
-				advancement: "nasledie:economy/bought_glass"
-			}]
-			rewards: [
-				{
-					id: "1FA3BBC64D94AB59"
-					type: "xp"
-					xp: 85
-				}
-				{
-					id: "42D74E4A3A5C1262"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedstorage:advanced_filter_upgrade"
-					}
-				}
-			]
-		}
-		{
-			id: "FB634EE0C189A59B"
-			title: "Сделка знаний"
-			description: ["Купите зачарованную книгу у обычного жителя. Выбирайте чары под своё снаряжение: удачная покупка пригодится в следующей серьёзной вылазке."]
-			x: 10.0d
-			y: 2.5d
-			icon: "minecraft:enchanted_book"
-			shape: "coin"
-			size: 1.2d
-			dependencies: ["9CE7C2CFF54FECE4"]
-			tasks: [{
-				id: "B5A0C19DDE23ADF0"
-				type: "advancement"
-				advancement: "nasledie:economy/bought_enchanted_book"
-			}]
-			rewards: [
-				{
-					id: "95FEB160E83B095C"
-					type: "xp"
-					xp: 115
-				}
-				{
-					id: "9B84E6772B07E792"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedbackpacks:restock_upgrade"
-					}
-				}
-			]
-		}
-		{
-			id: "F0C5DD6DFBF85A1C"
-			title: "Жемчуг на прилавке"
-			description: ["Купите жемчуг Края у обычного жителя. У опытного священника бывают редкие товары, ради которых стоит поддерживать торговые связи."]
-			x: 7.5d
-			y: 2.5d
-			icon: "minecraft:ender_pearl"
-			shape: "coin"
-			size: 1.2d
-			optional: true
-			dependencies: ["FB634EE0C189A59B"]
-			tasks: [{
-				id: "18EDD1C01190CE24"
-				type: "advancement"
-				advancement: "nasledie:economy/bought_ender_pearl"
-			}]
-			rewards: [
-				{
-					id: "0EFADF676D60E4E8"
-					type: "xp"
-					xp: 135
-				}
-				{
-					id: "289EC8F032B99EDF"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedstorage:stack_upgrade_tier_2"
-					}
-				}
-			]
-		}
-		{
-			id: "9CE7C2CFF54FECE4"
-			title: "Десять завершённых сделок"
-			description: ["Доведите личный счётчик сделок с жителями до 10. Подходят покупки и продажи; уже совершённые сделки входят в этот общий итог."]
-			x: 10.0d
-			y: 0.0d
-			icon: "minecraft:emerald"
-			shape: "coin"
-			size: 1.2d
-			optional: true
-			dependencies: ["D15B25FAA41E05AE"]
+			size: 1.5d
+			dependencies: ["7380B6B164146847"]
 			tasks: [{
 				id: "BEB88D215C2F506B"
 				type: "stat"
@@ -216,12 +27,12 @@
 			}]
 			rewards: [
 				{
-					id: "7D78B24357D2EC6C"
+					id: "8A106A78117C694A"
 					type: "xp"
-					xp: 80
+					xp: 100
 				}
 				{
-					id: "6AA065C6C331D036"
+					id: "3E313CD773BB6FE7"
 					type: "item"
 					item: {
 						Count: 1b
@@ -231,48 +42,137 @@
 			]
 		}
 		{
-			id: "62F24C6158049C2F"
-			title: "Центр складского хозяйства"
-			description: ["Установите контроллер Sophisticated Storage на будущем складе. Это место для управления хранилищами; подключение контейнеров станет вашей следующей хозяйственной задачей."]
-			x: 5.0d
-			y: 2.5d
-			icon: "sophisticatedstorage:controller"
-			shape: "gear"
-			size: 1.2d
-			optional: true
-			dependencies: ["F0C5DD6DFBF85A1C"]
+			id: "FB634EE0C189A59B"
+			title: "Сделка знаний"
+			description: ["Библиотекари продают зачарованные книги. Купите одну — и узнайте, у кого какие чары в запасе."]
+			x: 3.0d
+			y: -2.0d
+			icon: "minecraft:enchanted_book"
+			dependencies: ["9CE7C2CFF54FECE4"]
 			tasks: [{
-				id: "9CE891DE2960CDE8"
+				id: "FAEB1F81F6139688"
 				type: "advancement"
-				advancement: "nasledie:setup/economy/controller"
+				advancement: "nasledie:economy/bought_enchanted_book"
+				title: "Купить зачарованную книгу"
 			}]
 			rewards: [
 				{
-					id: "1A573ED982AF51AF"
+					id: "70A66EA869156C99"
 					type: "xp"
-					xp: 60
+					xp: 120
 				}
 				{
-					id: "109BCCFAF90E6E8A"
+					id: "E703872737EEA8CD"
+					type: "item"
+					item: {
+						Count: 6b
+						id: "minecraft:bookshelf"
+					}
+				}
+			]
+		}
+		{
+			id: "F0C5DD6DFBF85A1C"
+			title: "Жемчуг для очей"
+			description: ["Жрецы продают жемчуг Края — основу ока Края, а значит, и всех очей Зодчих. Купите у них жемчужину."]
+			x: 6.0d
+			y: -2.0d
+			icon: "minecraft:ender_pearl"
+			dependencies: ["FB634EE0C189A59B"]
+			tasks: [{
+				id: "7B67F8C9067305F8"
+				type: "advancement"
+				advancement: "nasledie:economy/bought_ender_pearl"
+				title: "Купить жемчуг Края"
+			}]
+			rewards: [
+				{
+					id: "F8B1935DFB31AC3D"
+					type: "xp"
+					xp: 135
+				}
+				{
+					id: "884342EB25698587"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:blaze_powder"
+					}
+				}
+			]
+		}
+		{
+			id: "467B6833737A892E"
+			title: "Странствующий торговец"
+			description: ["Иногда к дому приходит торговец с ламами и редкими товарами. Купите у него хоть что-нибудь, пока он не исчез."]
+			x: 3.0d
+			y: 2.0d
+			icon: "minecraft:lead"
+			dependencies: ["9CE7C2CFF54FECE4"]
+			tasks: [{
+				id: "DD64EEC7736A8417"
+				type: "advancement"
+				title: "Сделка со странствующим торговцем"
+				advancement: "nasledie:q/economy/wandering"
+			}]
+			rewards: [
+				{
+					id: "A173F7A6767DF3A0"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "8FE5B802B83CCC87"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:emerald"
+					}
+				}
+			]
+		}
+		{
+			id: "8E5524C7DD99D7F7"
+			title: "Сделка под облаками"
+			description: ["Заведите жителя на самую вершину мира и поторгуйтесь там. Зачем? Потому что так интереснее."]
+			x: 6.0d
+			y: 2.0d
+			icon: "minecraft:feather"
+			optional: true
+			dependencies: ["467B6833737A892E"]
+			tasks: [{
+				id: "B53ED4E5A5BA8777"
+				type: "advancement"
+				advancement: "minecraft:adventure/trade_at_world_height"
+			}]
+			rewards: [
+				{
+					id: "4F9344EC2A444784"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "778736DE3363D337"
 					type: "item"
 					item: {
 						Count: 1b
-						id: "sophisticatedbackpacks:deposit_upgrade"
+						id: "artifacts:cloud_in_a_bottle"
 					}
 				}
 			]
 		}
 		{
 			id: "BE7C211A268C501D"
-			title: "Гильдия постоянных клиентов"
-			description: ["Совершите в общей сложности 25 сделок с жителями. Это продолжение прежнего счётчика, поэтому после рубежа в десять нужны ещё пятнадцать. Следите за запасами товаров и берегите надёжных поставщиков."]
-			x: 2.5d
-			y: 2.5d
-			icon: "minecraft:emerald"
+			title: "Постоянный клиент"
+			description: ["Двадцать пять сделок — и в деревне вас встречают по имени. Цены стали мягче, а товары — интереснее."]
+			x: 9.0d
+			y: 0.0d
+			icon: "minecraft:emerald_block"
 			shape: "star"
-			size: 1.2d
-			optional: true
-			dependencies: ["62F24C6158049C2F"]
+			dependencies: [
+				"F0C5DD6DFBF85A1C"
+				"467B6833737A892E"
+			]
 			tasks: [{
 				id: "0B4DDDAE184A446C"
 				type: "stat"
@@ -281,16 +181,116 @@
 			}]
 			rewards: [
 				{
-					id: "E88C418242D04FDE"
+					id: "30ED33445F8968B4"
 					type: "xp"
-					xp: 160
+					xp: 300
 				}
 				{
-					id: "C0EDCA44769C74A3"
+					id: "19BDF1040884AF5F"
 					type: "item"
 					item: {
 						Count: 1b
 						id: "sophisticatedbackpacks:advanced_magnet_upgrade"
+					}
+				}
+			]
+		}
+		{
+			id: "97AEA3ED48BDE6AA"
+			title: "Свой торговец"
+			description: ["Наймите работника-торговца. Он продаёт ваши товары, пока вы в экспедиции, — излишки мастерской превращаются в изумруды."]
+			x: 12.0d
+			y: -2.0d
+			icon: "workers:merchant_spawn_egg"
+			dependencies: [
+				"BE7C211A268C501D"
+				"B7852ACAEF9733ED"
+			]
+			tasks: [{
+				id: "E4F9ABE61F62E43D"
+				type: "advancement"
+				advancement: "nasledie:events/hired/workers/merchant"
+				title: "Нанять торговца"
+			}]
+			rewards: [
+				{
+					id: "9CC90AD798EF7371"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "0A9D382F3DCC2CE4"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "interiors:green_chair"
+					}
+				}
+			]
+		}
+		{
+			id: "6F6CBC1AF7ABE154"
+			title: "Мы открыты!"
+			description: ["Скатерть-лавка Create продаёт товары со склада сама. Откройте магазин — Максим за прилавком, Юра первый покупатель."]
+			x: 12.0d
+			y: 2.0d
+			icon: "create:white_table_cloth"
+			dependencies: [
+				"BE7C211A268C501D"
+				"C32715AF6479C057"
+			]
+			tasks: [{
+				id: "925D72EF87FFED1E"
+				type: "advancement"
+				advancement: "create:table_cloth_shop"
+			}]
+			rewards: [
+				{
+					id: "8D1221B41D0D8740"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "97D38086B2410C48"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "createdeco:yellow_brass_lamp"
+					}
+				}
+			]
+		}
+		{
+			id: "62F24C6158049C2F"
+			title: "Склад торгового дома"
+			description: ["Контроллер хранилища объединяет сундуки в одну сеть — весь склад торгового дома в одном окне."]
+			x: 15.0d
+			y: 0.0d
+			icon: "sophisticatedstorage:controller"
+			shape: "star"
+			size: 1.4d
+			dependencies: [
+				"97AEA3ED48BDE6AA"
+				"6F6CBC1AF7ABE154"
+			]
+			tasks: [{
+				id: "7F4FBE0BCC7D9808"
+				type: "advancement"
+				advancement: "nasledie:setup/economy/controller"
+				title: "Поставить контроллер хранилища"
+			}]
+			rewards: [
+				{
+					id: "3B3347A544DE9F55"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "3B0D7B369ABC5B54"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "sophisticatedstorage:stack_upgrade_tier_2"
 					}
 				}
 			]

@@ -1,859 +1,555 @@
+# Акт III. Промышленность: латунь и точные машины, электросеть, дизель, котельная и артиллерия.
+# Производственные опыты с часами — kubejs/server_scripts/nasledie_factory_trials.js;
+# артиллерийские победы — kubejs/server_scripts/nasledie_artillery.js.
 chapter:
   filename: nasledie_industry
   id: 21DEFD3CCFC622D0
   group: act3
-  title: Промышленность — фабрика с результатом
+  title: Промышленность и артиллерия
   icon: create:precision_mechanism
   order_index: 10
-  progression_mode: flexible
   default_hide_dependency_lines: false
   default_quest_shape: gear
+  progression_mode: flexible
+
+links:
+  - {quest: nasledie_chronicle/strand_notes, x: -3.5, y: -3.5, shape: star, size: 1.4}
+  - {quest: nasledie_chronicle/harbinger, x: -6.5, y: -3.5, shape: crown, size: 1.5}
+
 quests:
-- id: 9A09307A8AC167F1
-  title: Латунь для самостоятельной фабрики
-  x: 0.0
-  y: 0.0
-  icon: create:brass_ingot
-  shape: gear
-  size: 1.2
-  description:
-  - 'Получите латунный слиток: смешайте медь и цинк в чаше под миксером с нагревом от горелки. Латунь открывает
-    точные механизмы, механические руки и более сложную сборку.'
-  - 'В этой главе цель — освободить ваши руки: собрать точный механизм, научить руку переносить материалы и запустить
-    мощную дробилку. Дополнительные маршруты ведут к проволоке на электроприводе, муке от дизельной мельницы и большой
-    котельной. Выберите полезный для вашей базы результат и двигайтесь по его ветке.'
-  tasks:
-  - id: 8A72E65DD3CF79C5
-    type: advancement
-    advancement: create:brass
-  rewards:
-  - id: E581D85438CDD01D
-    type: xp
-    xp: 75
-  - id: 2CABC3B9CC32114B
-    type: item
-    item: createaddition:multimeter
-- id: 2C5A509D463729FC
-  title: Корпус точных машин
-  x: 2.5
-  y: 0.0
-  icon: create:brass_casing
-  shape: gear
-  size: 1.2
-  description:
-  - Примените латунь к обтёсанному бревну. Этот корпус понадобится для устройств, которые смогут выполнять повторяющиеся
-    операции в вашей мастерской.
-  deps:
-  - 9A09307A8AC167F1
-  tasks:
-  - id: DD6E7086E1ACE04F
-    type: advancement
-    advancement: create:brass_casing
-  rewards:
-  - id: 2F4CCA74C378A5E2
-    type: xp
-    xp: 75
-  - id: DBE028A98D40EE19
-    type: item
-    item: createaddition:copper_spool
-- id: 9D86DEEFC75B8B99
-  title: Кварц для управляющих деталей
-  x: 5.0
-  y: 0.0
-  icon: create:polished_rose_quartz
-  shape: gear
-  size: 1.2
-  description:
-  - 'Получите отполированный розовый кварц. Подготовьте розовый кварц и обработайте его наждачной бумагой по рецепту:
-    следующий шаг — механическая рука-исполнитель.'
-  deps:
-  - 2C5A509D463729FC
-  tasks:
-  - id: 033E54B9A7F3C0E0
-    type: advancement
-    advancement: create:rose_quartz
-  rewards:
-  - id: 192C2183B557018E
-    type: xp
-    xp: 75
-  - id: 7CF4E9A2FBB61093
-    type: item
-    item: createaddition:capacitor
-- id: 190D1B7281918ABB
-  title: Исполнитель берёт работу на себя
-  x: 7.5
-  y: 0.0
-  icon: create:deployer
-  shape: gear
-  size: 1.2
-  description:
-  - Установите и запитайте вращением механическую руку-исполнитель. Она умеет применять предметы к деталям — это
-    основа последовательной сборки точного механизма.
-  - Сначала разберитесь с одной операцией на депо. Подачу заготовок по ленте можно добавить, когда станет понятен
-    порядок обработки.
-  deps:
-  - 9D86DEEFC75B8B99
-  tasks:
-  - id: B8813D5F6FEEC239
-    type: advancement
-    advancement: create:deployer
-  rewards:
-  - id: E5FC9AF91832DDA3
-    type: xp
-    xp: 75
-  - id: E4BE26B7961DF6B3
-    type: item
-    item: createaddition:electrum_ingot
-- id: 027C7ABF4F61942F
-  title: Точный механизм для новой ступени
-  x: 10.0
-  y: 0.0
-  icon: create:precision_mechanism
-  shape: gear
-  size: 1.2
-  description:
-  - 'Получите точный механизм. Заготовка проходит последовательную сборку: золотой лист, затем операции с малой
-    шестернёй, большой шестернёй и железным самородком; последовательность повторяется пять раз.'
-  - Сборка может дать побочный результат, поэтому подготовьте запас материалов. Успешный механизм откроет регулятор
-    скорости и механическую руку — инструменты управляемой фабрики.
-  deps:
-  - 190D1B7281918ABB
-  tasks:
-  - id: 8C91236BA3FAB740
-    type: advancement
-    advancement: create:precision_mechanism
-  rewards:
-  - id: FBD34A6E33E7237B
-    type: xp
-    xp: 75
-  - id: 3FB5C8A7D1A9F7BB
-    type: item
-    item: createaddition:electrum_wire
-- id: D994CE2C8A394112
-  title: Настроить станок под задачу
-  x: 12.5
-  y: 0.0
-  icon: create:rotation_speed_controller
-  shape: gear
-  size: 1.2
-  description:
-  - Отрегулируйте вращение контроллером скорости. Теперь можно подобрать темп конкретной машины без длинной цепочки
-    ускоряющих передач. Следите также за запасом мощности.
-  deps:
-  - 027C7ABF4F61942F
-  tasks:
-  - id: 0AC0C8202464F892
-    type: advancement
-    advancement: create:speed_controller
-  rewards:
-  - id: E50EC7CE155EE48B
-    type: xp
-    xp: 75
-  - id: 2314F68B4869E79C
-    type: item
-    item: createaddition:large_connector
-- id: 1D168F928F039193
-  title: Рука действительно переносит груз
-  x: 15.0
-  y: 0.0
-  icon: create:mechanical_arm
-  shape: star
-  size: 1.4
-  description:
-  - Добейтесь первой передачи предмета механической рукой. До её установки назначьте места забора и выдачи взаимодействием
-    с нужными блоками, затем установите руку и подайте вращение.
-  - 'Это первый законченный проект точной мастерской: материалы перемещаются между выбранными вами устройствами.
-    В великих проектах такой принцип пригодится для снабжения горелок и нескольких рабочих мест.'
-  deps:
-  - D994CE2C8A394112
-  tasks:
-  - id: E1878BD4D6DD0319
-    type: advancement
-    advancement: create:mechanical_arm
-  rewards:
-  - id: D9688AD3FED0CC5E
-    type: xp
-    xp: 75
-  - id: D0CC9CCEE0F0F78A
-    type: item
-    item: createaddition:digital_adapter
-- id: 0DC509B56847083F
-  title: Сборочный стенд для больших рецептов
-  x: 10.0
-  y: -2.5
-  icon: create:mechanical_crafter
-  shape: gear
-  size: 1.2
-  description:
-  - Установите и запитайте механические сборщики. Разложите их по схеме нужного рецепта и настройте направление
-    передачи к выходу; встроенная анимация покажет принцип соединения.
-  - Первой большой целью станут дробящие колёса. Зачёт этого этапа подтверждает подключённые сборщики; изготовление
-    и запуск колёс идут дальше.
-  deps:
-  - 027C7ABF4F61942F
-  tasks:
-  - id: D6600544BA04DAD7
-    type: advancement
-    advancement: create:mechanical_crafter
-  rewards:
-  - id: 4C7A65DB80916C18
-    type: xp
-    xp: 180
-  - id: 87A3AD0447AA54DF
-    type: item
-    item: createaddition:portable_energy_interface
-  - id: FB8C8DCACEAC30F2
-    type: stage
-    stage: nasledie_mechanical
-    add: true
-    team_reward: false
-- id: B69AB097B2252286
-  title: Дробилка начинает вращаться
-  x: 12.5
-  y: -2.5
-  icon: create:crushing_wheel
-  shape: gear
-  size: 1.2
-  description:
-  - Поставьте и запитайте пару дробящих колёс. Организуйте подачу материала между ними и сбор результата снизу.
-    Здесь вы получите установку для глубокой переработки ресурсов.
-  deps:
-  - 0DC509B56847083F
-  tasks:
-  - id: 18BB1F3514FC9109
-    type: advancement
-    advancement: create:crushing_wheel
-  rewards:
-  - id: 735592912EF40DCA
-    type: xp
-    xp: 120
-  - id: 3751DA395B0C4BD5
-    type: item
-    item: createaddition:heater
-- id: 11C8B2178B32ACA1
-  title: Стан для будущей электросети
-  x: 10.0
-  y: 2.5
-  icon: createaddition:rolling_mill
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - 'Установите прокатный стан: он превращает металлические слитки в стержни, а листы — в проволоку. Сначала дайте
-    ему вращение от уже освоенного механического привода и подготовьте детали для первой проводки.'
-  - Цель этой ветки — перевести стан на электродвигатель и выпускать новую проволоку вдали от исходного привода.
-    Дальше вы поставите разъёмы, получите катушку, генератор и накопитель; в финале линия выполнит контрольный заказ.
-  deps:
-  - 027C7ABF4F61942F
-  tasks:
-  - id: F2942C0D358F53CE
-    type: advancement
-    advancement: nasledie:setup/industry/rolling_mill
-  rewards:
-  - id: EC188655E622ECD4
-    type: xp
-    xp: 75
-  - id: A4D9D800E50ECB11
-    type: item
-    item: createaddition:biomass_pellet
-- id: 7902F08D734F15A4
-  title: Катушка для первой линии
-  x: 15.0
-  y: 2.5
-  icon: createaddition:copper_wire
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Получите медную катушку Create Crafts & Additions. Проволока — материал для изготовления; соединять электрические
-    узлы нужно именно катушкой.
-  - Подготовив разъёмы, последовательно выберите катушкой два совместимых узла. После этого сможете связать генератор,
-    накопитель и электродвигатель. Этот шаг отмечает наличие катушки, а не завершение всей сети.
-  deps:
-  - 6FCBB312002617A1
-  tasks:
-  - id: DEFEA01A25B34722
-    type: advancement
-    advancement: nasledie:alpha34/actions/defea01a25b34722
-  rewards:
-  - id: 0CA594C2CB8B3ECD
-    type: xp
-    xp: 75
-  - id: 7C538D8B6E94AA0C
-    type: item
-    item: createaddition:redstone_relay
-- id: 6FCBB312002617A1
-  title: Точки подключения
-  x: 12.5
-  y: 2.5
-  icon: createaddition:connector
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - 'Поставьте электрический разъём. Продумайте короткую линию между будущим генератором, накопителем и потребителем:
-    разъёмы нужны для организации проводов, а не для выработки энергии.'
-  deps:
-  - 11C8B2178B32ACA1
-  tasks:
-  - id: 21FD0D567859EF0E
-    type: advancement
-    advancement: nasledie:setup/industry/connector
-  rewards:
-  - id: 4CDDAAB852006341
-    type: xp
-    xp: 75
-  - id: B6D7A0DB9629E044
-    type: item
-    item: createaddition:iron_rod
-- id: 00CCE8A0C6DB132B
-  title: От вращения к электричеству
-  x: 17.5
-  y: 2.5
-  icon: createaddition:alternator
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Поставьте генератор переменного тока. Его назначение — превращать механическое вращение в электрическую энергию
-    для вашей линии. Подведите вал от подготовленного источника и соедините выход катушкой.
-  - Сейчас отмечается установка генератора; фактическую выработку смотрите по показателям оборудования.
-  deps:
-  - 7902F08D734F15A4
-  tasks:
-  - id: 3FA4351B2BD8DC98
-    type: advancement
-    advancement: nasledie:setup/industry/alternator
-  rewards:
-  - id: B91F9D7522B8F8B4
-    type: xp
-    xp: 75
-  - id: 810148289CE66B37
-    type: item
-    item: createaddition:brass_rod
-- id: 6B646181101275F1
-  title: Запас для электрической линии
-  x: 20.0
-  y: 2.5
-  icon: createaddition:modular_accumulator
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Поставьте модульный накопитель. Он нужен между выработкой энергии и её потреблением, чтобы запасать электричество.
-    Проверьте направления соединений и показатели заряда перед подключением двигателя.
-  deps:
-  - 00CCE8A0C6DB132B
-  tasks:
-  - id: 023729190D0BF4C2
-    type: advancement
-    advancement: nasledie:setup/industry/modular_accumulator
-  rewards:
-  - id: 53EC757670348A5E
-    type: xp
-    xp: 75
-  - id: A5B0B39B1704BEE0
-    type: item
-    item: createdieselgenerators:engine_silencer
-- id: C90C2277CD8D5A1A
-  title: Электропривод у рабочего места
-  x: 22.5
-  y: 2.5
-  icon: createaddition:electric_motor
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - 'Поставьте электродвигатель у прокатного стана. Генератор превращает вращение в электричество, а этот двигатель
-    выполняет обратную работу: позволяет доставить энергию проводами и получить вращение у потребителя.'
-  - Соедините разъёмы катушкой, подайте энергию на двигатель и передайте его вращение стану. Проверьте заряд, соединения
-    и нагрузку. Следующий шаг — выпустить медную проволоку на собранном приводе; одного монтажа для производственного
-    финала недостаточно.
-  deps:
-  - 6B646181101275F1
-  tasks:
-  - id: 5E9BB87B9EFC37A5
-    type: advancement
-    advancement: nasledie:setup/industry/electric_motor
-  rewards:
-  - id: 1B9DE80EE3D6ACF3
-    type: xp
-    xp: 170
-  - id: 7499B3D932924D2B
-    type: item
-    item: createdieselgenerators:canister
-  - id: 7C6988D2C90929F6
-    type: stage
-    stage: nasledie_electric
-    add: true
-    team_reward: false
-- id: DBE167F5106C0134
-  title: Разведка нефтяного участка
-  x: 10.0
-  y: -5.0
-  icon: createdieselgenerators:oil_scanner
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Держите в основной руке нефтяной сканер с показанием типа 2 или 3. Найдите участок с подходящим сигналом и отметьте
-    его для возвращения с оборудованием.
-  - 'Нефтяная ветка ведёт к компактной мельнице на дизеле: топливо позволит обустроить производство у дальней базы.
-    Первое измерение помогает выбрать место; затем предстоят добыча, переработка и запуск двигателя.'
-  deps:
-  - 0DC509B56847083F
-  tasks:
-  - id: 2B6B454C5A6480E5
-    type: advancement
-    advancement: nasledie:alpha35/engineering/dbe167f5106c0134
-  rewards:
-  - id: 8C92467722583019
-    type: xp
-    xp: 75
-  - id: FB37178403961785
-    type: item
-    item: createdieselgenerators:hammer
-- id: DF4913690DFB0B64
-  title: Место для перегонки
-  x: 12.5
-  y: -5.0
-  icon: createdieselgenerators:distillation_controller
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Примените контроллер перегонной установки к блоку при её монтаже. Разберитесь с устройством колонны по внутриигровой
-    инструкции мода и оставьте место для труб и продуктов переработки.
-  - Этот этап фиксирует применение контроллера. Полноту колонны он не подтверждает; следующим осязаемым результатом
-    станет ведро дизельного топлива.
-  deps:
-  - DBE167F5106C0134
-  tasks:
-  - id: F9CFED8252A6B4A4
-    type: advancement
-    advancement: nasledie:alpha34/actions/f9cfed8252a6b4a4
-  rewards:
-  - id: 97E4D623EB7C78FE
-    type: xp
-    xp: 75
-  - id: 74C149CDAA56155A
-    type: item
-    item: createdieselgenerators:sheet_metal_panel
-- id: DC984DF9A7FB8BA2
-  title: Топливо для экспедиционной базы
-  x: 15.0
-  y: -5.0
-  icon: createdieselgenerators:diesel_bucket
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - 'Получите ведро дизельного топлива. Сырая нефть и готовое топливо — разные материалы: сверяйте рецепт переработки.
-    Ведро останется у вас для дальнейшего использования.'
-  deps:
-  - DF4913690DFB0B64
-  tasks:
-  - id: 9CE67EBEB573AC11
-    type: item
-    item: createdieselgenerators:diesel_bucket
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 7C3C23D369DB6BE5
-    type: xp
-    xp: 75
-  - id: 843814ADDF436DB8
-    type: item
-    item: createdieselgenerators:asphalt_block
-- id: 6185039BCD7BBF2F
-  title: Двигатель для походной мельницы
-  x: 17.5
-  y: -5.0
-  icon: createdieselgenerators:diesel_engine
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - 'Установите обычный дизельный двигатель рядом с жерновами Create. Это отдельный источник вращения для мест,
-    куда неудобно тянуть длинный вал: подготовьте бак с дизелем и соедините вращающийся выход с жерновами.'
-  - Сейчас требуется монтаж. После знакомства с турбонаддувом ветка завершится контрольным помолом пшеницы на этом
-    приводе.
-  deps:
-  - DC984DF9A7FB8BA2
-  tasks:
-  - id: 0439A5462CE90EDF
-    type: advancement
-    advancement: nasledie:setup/industry/diesel_engine
-  rewards:
-  - id: B7300046387F6098
-    type: xp
-    xp: 170
-  - id: CCBFB7AC78AC42F5
-    type: item
-    item: createdieselgenerators:chemical_sprayer
-  - id: DAF103A5D9DAD986
-    type: stage
-    stage: nasledie_diesel
-    add: true
-    team_reward: false
-- id: 01A997FB916A7F84
-  title: Турбонаддув для двигателя
-  x: 20.0
-  y: -5.0
-  icon: createdieselgenerators:engine_turbocharger
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Примените турбонагнетатель к дизельному двигателю. Взаимодействие знакомит с дополнением; успешную установку
-    и изменение характеристик проверьте на самом двигателе.
-  - 'Оборудование готово к полезной работе. Следующий шаг — жернова на дизельном приводе: смелите пшеницу и получите
-    муку для будущих походных припасов.'
-  deps:
-  - 6185039BCD7BBF2F
-  tasks:
-  - id: 6A62BC56D5E2388A
-    type: advancement
-    advancement: nasledie:alpha35/engineering/01a997fb916a7f84
-  rewards:
-  - id: 551FECB60FF91F0C
-    type: xp
-    xp: 75
-  - id: 6F6EFF457528DE10
-    type: item
-    item: createdieselgenerators:kelp_handle
-- id: A7CEF6292A89B0A2
-  title: Топливный резерв котельной
-  x: 0.0
-  y: 5.0
-  icon: create:hose_pulley
-  shape: gear
-  size: 1.2
-  description:
-  - Откачивайте лаву из водоёма, который Create признаёт бесконечным источником. Выберите удобный доступ для шланга
-    и продумайте дальнейшую доставку топлива.
-  - Это самостоятельный проект мощной котельной. Опыт с обычным паровым двигателем из главы Create поможет связать
-    воду, нагрев и требуемую нагрузку.
-  tasks:
-  - id: 75486B0EF382F940
-    type: advancement
-    advancement: create:hose_pulley_lava
-  rewards:
-  - id: 6448CE0A0DBB99B3
-    type: xp
-    xp: 150
-  - id: A01B8BE9D4B39DBD
-    type: item
-    item: create:stock_ticker
-- id: 41102025AA038BF1
-  title: Котельная полной мощности
-  x: 2.5
-  y: 5.0
-  icon: create:steam_engine
-  shape: gear
-  size: 1.2
-  description:
-  - 'Запустите котёл на максимальном уровне мощности. Проверьте три ограничения: размеры резервуара, достаточную
-    подачу воды и нагрев.'
-  - Такой источник рассчитан на большой производственный узел. Подключайте станки постепенно и наблюдайте запас
-    нагрузки; дальше можно испытать сеть на точном пределе.
-  deps:
-  - A7CEF6292A89B0A2
-  tasks:
-  - id: FECC2C5691AD3F4F
-    type: advancement
-    advancement: create:steam_engine_maxed
-  rewards:
-  - id: E26D3CC8521F314F
-    type: xp
-    xp: 240
-  - id: DF189615722E87F1
-    type: item
-    item: create:steam_whistle
-  - id: 6905F21F482DE359
-    type: stage
-    stage: nasledie_industrial
-    add: true
-    team_reward: false
-- id: D6494B4749F6037E
-  title: Юра на границе перегрузки
-  x: 5.0
-  y: 5.0
-  icon: create:stressometer
-  shape: star
-  size: 1.4
-  optional: true
-  description:
-  - Добейтесь показания ровно 100% на измерителе нагрузки. Юра подбирает подключённые станки, Максим следит за шкалой.
-    Это отдельное испытание точной настройки, а не требование постоянно держать фабрику на пределе.
-  deps:
-  - 41102025AA038BF1
-  tasks:
-  - id: D4C9C14DC24FA669
-    type: advancement
-    advancement: create:stressometer_maxed
-  rewards:
-  - id: 31F862036AAA5669
-    type: xp
-    xp: 160
-  - id: BA94AAEE21E799C7
-    type: item
-    item: create:brass_hand
-- id: B5E6A417D0B2682F
-  title: Сборщик никуда не спешит
-  x: 7.5
-  y: -2.5
-  icon: create:mechanical_crafter
-  shape: star
-  size: 1.4
-  optional: true
-  description:
-  - Сильно замедлите работающий механический сборщик, чтобы получить скрытое достижение Create. Небольшой опыт показывает,
-    почему доступная скорость важна для большой сборочной линии.
-  deps:
-  - 0DC509B56847083F
-  tasks:
-  - id: 3307EAB3DEADF532
-    type: advancement
-    advancement: create:crafter_lazy_000
-  rewards:
-  - id: 8166A00114DF1F33
-    type: xp
-    xp: 125
-  - id: 97B9CCBCCFFC88A3
-    type: item
-    item: create:chain_conveyor
-    count: 2
-- id: 4CE999FF8FB4E62F
-  title: Дробильный цех на полной скорости
-  x: 15.0
-  y: -2.5
-  icon: create:crushing_wheel
-  shape: star
-  size: 1.4
-  optional: true
-  description:
-  - Запустите пару дробящих колёс на максимальной скорости. Обеспечьте достаточную мощность и понятную подачу материала.
-    Это финал маршрута от латуни и сборочного стенда к высокоскоростной переработке.
-  deps:
-  - B69AB097B2252286
-  tasks:
-  - id: 7FC171C3FF0969FE
-    type: advancement
-    advancement: create:crusher_maxed_0000
-  rewards:
-  - id: 856825421171F226
-    type: xp
-    xp: 180
-  - id: A2E53BE6BE5CF1DE
-    type: item
-    item: create:smart_chute
-    count: 2
-- id: 43927DB0D42A5F58
-  title: Проволока от электропривода
-  x: 25.0
-  y: 2.5
-  icon: createaddition:copper_wire
-  shape: star
-  size: 1.5
-  optional: true
-  description:
-  - 'Запустите прокатный стан от электродвигателя и превратите один медный лист Create в две медные проволоки. Теперь
-    ваша электрическая линия делает материал для собственного расширения: из проволоки собираются катушки для новых
-    соединений.'
-  - Подведите электричество к двигателю через разъём и катушку, затем соедините его вращающийся выход со станом
-    напрямую или валами и шестернями. Генератору нужен отдельный механический привод; накопитель позволяет использовать
-    запас заряда. Замкнутый круг «двигатель → генератор → тот же двигатель» не создаёт энергию.
-  - Медный лист получается из медного слитка под прессом. В стане слиток даст стержни, а для этой цели нужна именно
-    проволока из листа. При необходимости смотрите рецепт предмета и встроенные сцены с устройством станков.
-  - 'Для зачёта сделайте контрольный выпуск: освободите выход стана, временно отключите автоматическую подачу и
-    выгрузку. Возьмите обычные часы в основную руку и нажмите ими правой кнопкой по вращающемуся стану. Затем в
-    течение минуты положите на вход ровно один медный лист; часы можно убрать, чтобы открыть стан.'
-  - Дождитесь сообщения об успешном выпуске, прежде чем забирать проволоку. Оставайтесь не дальше 16 блоков; для
-    опыта используйте короткий привод до 32 звеньев. Максим может наблюдать, а Юра — подавать лист. После выхода
-    из игры незаконченный опыт нужно начать часами заново.
-  - 'Четыре латунные воронки из награды помогут превратить контрольный стан в постоянную линию: настройте подачу
-    листов и выдачу проволоки, затем добавляйте новые рабочие места по мере необходимости.'
-  deps:
-  - C90C2277CD8D5A1A
-  tasks:
-  - id: 43DA5FE12471C262
-    type: advancement
-    advancement: nasledie:alpha43/industry/electric_wire
-    title: Прокатать медный лист на электроприводе
-  rewards:
-  - id: 43609D0BB3655592
-    type: xp
-    xp: 300
-  - id: 43830694594B33E9
-    type: item
-    item: create:brass_funnel
-    count: 4
-- id: 43CE9DDCB2EF166C
-  title: Походная мельница на дизеле
-  x: 22.5
-  y: -5.0
-  icon: create:wheat_flour
-  shape: star
-  size: 1.5
-  optional: true
-  description:
-  - 'Запустите жернова Create от обычного дизельного двигателя и смелите одну пшеницу в муку. Такой компактный привод
-    пригодится для мастерской у дальней базы: вы сами выбираете место и привозите запас топлива.'
-  - Залейте дизель в бак двигателя и передайте вращение жерновам напрямую или валами и шестернями. Проверьте, что
-    источник действительно работает и нагрузка не остановила линию. В этом опыте используется обычный одноблочный
-    двигатель и именно дизельное топливо.
-  - Для зачёта освободите выход жерновов и временно отключите автоматическую подачу и выгрузку. Возьмите обычные
-    часы в основную руку и нажмите ими правой кнопкой по вращающимся жерновам. Затем в течение минуты подайте ровно
-    одну пшеницу; часы можно убрать, чтобы открыть жернова.
-  - Дождитесь сообщения об успешном помоле, прежде чем забирать муку. Оставайтесь не дальше 16 блоков и используйте
-    короткий привод до 32 звеньев. Иногда жернова дают дополнительную муку или семена — такой результат тоже подходит.
-    После выхода из игры незаконченный опыт нужно начать часами заново.
-  - Дальше превращайте муку в тесто и хлеб знакомым способом из главы Create, верните автоматическую подачу и готовьте
-    припасы для новых вылазок. Восемь порций мяса с картофелем из награды накормят вас, пока вы обустраиваете производство.
-  deps:
-  - 01A997FB916A7F84
-  tasks:
-  - id: 43D5DC583A7E887D
-    type: advancement
-    advancement: nasledie:alpha43/industry/diesel_flour
-    title: Смолоть пшеницу от дизельного двигателя
-  rewards:
-  - id: 43A69B423A4DE45F
-    type: xp
-    xp: 300
-  - id: 430ACBBAEF2DDB2B
-    type: item
-    item: farmersdelight:steak_and_potatoes
-    count: 8
-- id: 0EF67FFF73E6D383
-  title: Песок будущих орудий
-  x: 0.0
-  y: 10.0
-  icon: createbigcannons:casting_sand
-  shape: circle
-  size: 1.05
-  optional: true
-  description:
-  - §fПолучите одну единицу литейного песка Create Big Cannons. Он понадобится для знакомства с артиллерийным литьём.
-  - §7Для этого шага достаточно песка в инвентаре; он останется у вас.
-  tasks:
-  - id: 3B9C2FC4D514178B
-    type: item
-    item: createbigcannons:casting_sand
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 9D653146B6ED43B5
-    type: xp
-    xp: 80
-  - id: 590A667B79E4289F
-    type: item
-    item: createbigcannons:cannon_welder
-  note: 'Act III: artillery; moved from defense, layout pending'
-- id: 35AB582E2E08DF86
-  title: Место для сборки стволов
-  x: 2.5
-  y: 10.0
-  icon: createbigcannons:cannon_builder
-  shape: gear
-  size: 1.05
-  optional: true
-  description:
-  - §fУстановите сборщик стволов Create Big Cannons на подготовленной площадке.
-  - §7Сейчас нужно разместить сам станок. Обустройство привода и выпуск деталей можно продолжить после монтажа.
-  deps:
-  - 0EF67FFF73E6D383
-  tasks:
-  - id: 71A787824B72E7B7
-    type: advancement
-    advancement: nasledie:setup/defense/cannon_builder
-  rewards:
-  - id: 5ADACCED338520E7
-    type: xp
-    xp: 80
-  - id: A62FB32A558D3B1C
-    type: item
-    item: createbigcannons:gas_mask
-  note: 'Act III: artillery; moved from defense, layout pending'
-- id: 35D125C19D556E7A
-  title: Сверлильный станок
-  x: 5.0
-  y: 10.0
-  icon: createbigcannons:cannon_drill
-  shape: gear
-  size: 1.05
-  optional: true
-  description:
-  - §fУстановите орудийный сверлильный станок Create Big Cannons.
-  - §7Оставьте место для заготовки и привода. Этот шаг посвящён монтажу; сверлить ствол для его завершения не требуется.
-  deps:
-  - 35AB582E2E08DF86
-  tasks:
-  - id: E0E22FE62612CCB3
-    type: advancement
-    advancement: nasledie:setup/defense/cannon_drill
-  rewards:
-  - id: 4ACB08C83499CEED
-    type: xp
-    xp: 80
-  - id: 19D23436CC8529D3
-    type: item
-    item: mowziesmobs:dart
-    count: 2
-  note: 'Act III: artillery; moved from defense, layout pending'
-- id: 17FE2073432FC7E0
-  title: Основание орудия
-  x: 7.5
-  y: 10.0
-  icon: createbigcannons:fixed_cannon_mount
-  shape: gear
-  size: 1.05
-  optional: true
-  description:
-  - §fУстановите неподвижную орудийную станину Create Big Cannons.
-  - §7Выберите направление будущего орудия и свободный сектор перед ним. На этом этапе достаточно самой установленной
-    станины.
-  deps:
-  - 35D125C19D556E7A
-  tasks:
-  - id: 16A1085F05EB2E6F
-    type: advancement
-    advancement: nasledie:setup/defense/fixed_cannon_mount
-  rewards:
-  - id: 6D592BE78118D9DC
-    type: xp
-    xp: 80
-  - id: 050F3FEAE0725F8C
-    type: item
-    item: mowziesmobs:blowgun
-  note: 'Act III: artillery; moved from defense, layout pending'
-- id: 8EC3B7E438EA800A
-  title: Механизм заряжания
-  x: 10.0
-  y: 10.0
-  icon: createbigcannons:cannon_loader
-  shape: gear
-  size: 1.05
-  optional: true
-  description:
-  - §fУстановите механизм заряжания Create Big Cannons.
-  - §7Продумайте пространство для подачи боеприпасов. Для завершения этого шага достаточно монтажа; заряжать и стрелять
-    пока не нужно.
-  - Монтажный маршрут подготовил рабочие места и механизм заряжания. Дальше изучите во встроенных анимациях Create
-    Big Cannons сборку ствола, боеприпасы и порядок стрельбы. Установка этих блоков ещё не является испытанием готового
-    орудия.
-  deps:
-  - 17FE2073432FC7E0
-  tasks:
-  - id: BBFC51AD08E029FE
-    type: advancement
-    advancement: nasledie:setup/defense/cannon_loader
-  rewards:
-  - id: A2E894377B0C3D26
-    type: xp
-    xp: 80
-  - id: 1635AF1A87BE11E8
-    type: item
-    item: mowziesmobs:glowing_jelly
-  note: 'Act III: artillery; moved from defense, layout pending'
+  - key: brass
+    id: 9A09307A8AC167F1
+    title: Латунь для самостоятельной фабрики
+    description:
+      - Медь и цинк, смешанные в нагретой чаше, дают латунь — металл второй ступени. Из неё делают механизмы, которые думают сами.
+    x: 0
+    y: 0
+    icon: create:brass_ingot
+    shape: star
+    size: 1.7
+    deps: [nasledie_create/burner]
+    tasks:
+      - {type: advancement, advancement: create:brass}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: createaddition:multimeter}
+
+  # ── Точные машины ──
+  - key: brass_casing
+    id: 2C5A509D463729FC
+    title: Корпус точных машин
+    description:
+      - Латунный корпус — основа для умных станков: роботов-исполнителей, механических рук и сборщиков.
+    x: 0
+    y: -3
+    icon: create:brass_casing
+    deps: [brass]
+    tasks:
+      - {type: advancement, advancement: create:brass_casing}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: create:brass_hand, count: 2}
+
+  - key: rose_quartz
+    id: 9D86DEEFC75B8B99
+    title: Кварц для управляющих деталей
+    description:
+      - Розовый кварц, отполированный на ленте с наждаком, проводит сигналы. Без него не собрать точный механизм.
+    x: 0
+    y: -5.5
+    icon: create:polished_rose_quartz
+    deps: [brass_casing]
+    tasks:
+      - {type: advancement, advancement: create:rose_quartz}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: createaddition:capacitor, count: 2}
+
+  - key: deployer
+    id: 190D1B7281918ABB
+    title: Исполнитель берёт работу на себя
+    description:
+      - Механический исполнитель держит предмет и применяет его, как игрок. Ставит, бьёт, жмёт кнопки — без вас.
+    x: 0
+    y: -8
+    icon: create:deployer
+    deps: [rose_quartz]
+    tasks:
+      - {type: advancement, advancement: create:deployer}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: createaddition:electrum_ingot, count: 4}
+
+  - key: precision
+    id: 027C7ABF4F61942F
+    title: Точный механизм
+    description:
+      - Соберите точный механизм на линии сборки. Это ключ ко всем машинам третьей ступени — и к поездам.
+    x: 0
+    y: -10.5
+    icon: create:precision_mechanism
+    shape: star
+    size: 1.4
+    deps: [deployer]
+    tasks:
+      - {type: advancement, advancement: create:precision_mechanism}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: createaddition:electrum_wire, count: 8}
+
+  - key: arm
+    id: 1D168F928F039193
+    title: Рука переносит груз
+    description:
+      - Механическая рука берёт предметы из одного места и кладёт в другое. Настройте ей вход и выход.
+    x: 2.5
+    y: -12
+    icon: create:mechanical_arm
+    deps: [precision]
+    tasks:
+      - {type: advancement, advancement: create:mechanical_arm}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: createaddition:digital_adapter}
+
+  - key: speed_controller
+    id: D994CE2C8A394112
+    title: Настроить станок под задачу
+    description:
+      - Регулятор скорости задаёт точные обороты. Одним станкам нужно медленно, другим — быстро.
+    x: -2.5
+    y: -12
+    icon: create:rotation_speed_controller
+    deps: [precision]
+    tasks:
+      - {type: advancement, advancement: create:speed_controller}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: createaddition:large_connector, count: 4}
+
+  - key: crafter
+    id: 0DC509B56847083F
+    title: Сборочный стенд для больших рецептов
+    description:
+      - Механические сборщики складывают рецепты больше верстака. Соедините несколько в решётку.
+    x: 0
+    y: -13.5
+    icon: create:mechanical_crafter
+    deps: [precision]
+    tasks:
+      - {type: advancement, advancement: create:mechanical_crafter}
+    rewards:
+      - {type: xp, xp: 180}
+      - {type: item, item: createaddition:portable_energy_interface}
+
+  - key: lazy_crafter
+    id: B5E6A417D0B2682F
+    title: Сборщик никуда не спешит
+    description:
+      - Запустите сборщиков на самой низкой скорости и посмотрите, как они справляются. Медленно, зато верно.
+    x: -2.5
+    y: -15
+    icon: create:mechanical_crafter
+    shape: circle
+    optional: true
+    deps: [crafter]
+    tasks:
+      - {type: advancement, advancement: create:crafter_lazy_000}
+    rewards:
+      - {type: xp, xp: 125}
+      - {type: item, item: create:chain_conveyor, count: 2}
+
+  - key: crushing
+    id: B69AB097B2252286
+    title: Дробилка начинает вращаться
+    description:
+      - Пара дробильных колёс перемалывает руду в крошку — из неё выходит больше металла.
+    x: 0
+    y: -16.5
+    icon: create:crushing_wheel
+    deps: [crafter]
+    tasks:
+      - {type: advancement, advancement: create:crushing_wheel}
+    rewards:
+      - {type: xp, xp: 160}
+      - {type: item, item: createaddition:heater}
+
+  - key: crusher_maxed
+    id: 4CE999FF8FB4E62F
+    title: Дробильный цех на полной скорости
+    description:
+      - Разгоните дробилку до максимума. Руда превращается в крошку быстрее, чем вы её подносите.
+    x: 2.5
+    y: -18
+    icon: create:crushed_raw_iron
+    shape: circle
+    optional: true
+    deps: [crushing]
+    tasks:
+      - {type: advancement, advancement: create:crusher_maxed_0000}
+    rewards:
+      - {type: xp, xp: 180}
+      - {type: item, item: create:smart_chute, count: 2}
+
+  # ── Электросеть ──
+  - key: rolling_mill
+    id: 11C8B2178B32ACA1
+    title: Стан для будущей электросети
+    description:
+      - Прокатный стан делает из листов проволоку, а из слитков — стержни. Начало всей электрической ветки.
+    x: 3.5
+    y: 0
+    icon: createaddition:rolling_mill
+    deps: [brass]
+    tasks:
+      - {type: advancement, advancement: nasledie:setup/industry/rolling_mill, title: Поставить прокатный стан}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: createaddition:biomass_pellet, count: 8}
+
+  - key: connector
+    id: 6FCBB312002617A1
+    title: Точки подключения
+    description:
+      - Коннекторы — опоры для проводов. Поставьте первый у будущего генератора.
+    x: 6
+    y: 0
+    icon: createaddition:connector
+    deps: [rolling_mill]
+    tasks:
+      - {type: advancement, advancement: nasledie:setup/industry/connector, title: Поставить коннектор}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: createaddition:iron_rod, count: 4}
+
+  - key: spool
+    id: 7902F08D734F15A4
+    title: Катушка для первой линии
+    description:
+      - Намотайте медную проволоку на катушку. Ею соединяют коннекторы.
+    x: 8.5
+    y: 0
+    icon: createaddition:copper_spool
+    deps: [connector]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha34/actions/defea01a25b34722, title: Получить медную катушку}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: createaddition:redstone_relay}
+
+  - key: alternator
+    id: 00CCE8A0C6DB132B
+    title: От вращения к электричеству
+    description:
+      - Генератор превращает вращение в электричество. Подведите к нему вал от колеса или пара.
+    x: 11
+    y: 0
+    icon: createaddition:alternator
+    deps: [spool]
+    tasks:
+      - {type: advancement, advancement: nasledie:setup/industry/alternator, title: Поставить генератор}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: createaddition:brass_rod, count: 4}
+
+  - key: accumulator
+    id: 6B646181101275F1
+    title: Запас для электросети
+    description:
+      - Аккумулятор копит энергию между выработкой и расходом. Без него станки встают, как только стихнет ветер.
+    x: 13.5
+    y: 0
+    icon: createaddition:modular_accumulator
+    deps: [alternator]
+    tasks:
+      - {type: advancement, advancement: nasledie:setup/industry/modular_accumulator, title: Поставить аккумулятор}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: createaddition:tesla_coil}
+
+  - key: motor
+    id: C90C2277CD8D5A1A
+    title: Электропривод у станка
+    description:
+      - Электромотор даёт вращение там, куда дотянулся провод. Поставьте его у рабочего места.
+    x: 16
+    y: 0
+    icon: createaddition:electric_motor
+    deps: [accumulator]
+    tasks:
+      - {type: advancement, advancement: nasledie:setup/industry/electric_motor, title: Поставить электромотор}
+    rewards:
+      - {type: xp, xp: 170}
+      - {type: item, item: createaddition:electrum_spool, count: 2}
+
+  - key: wire_trial
+    id: 43927DB0D42A5F58
+    title: Проволока от электропривода
+    description:
+      - Пусть прокатный стан на электромоторе превратит медный лист в проволоку. Ударьте вращающийся стан обычными часами и в течение минуты
+        положите на вход один лист — сервер проследит, что работает именно электропривод.
+    x: 18.5
+    y: 0
+    icon: createaddition:copper_wire
+    shape: star
+    size: 1.4
+    deps: [motor]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha43/industry/electric_wire, title: Контрольный выпуск проволоки}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: create:brass_funnel, count: 4}
+
+  # ── Дизель ──
+  - key: oil_scan
+    id: DBE167F5106C0134
+    title: Разведка нефтяного участка
+    description:
+      - Нефтяной сканер в руке показывает, есть ли под ногами нефть. Найдите участок с хорошим сигналом.
+    x: 0
+    y: 3.5
+    icon: createdieselgenerators:oil_scanner
+    deps: [brass]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha35/engineering/dbe167f5106c0134, title: Найти нефть сканером}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: createdieselgenerators:hammer}
+
+  - key: distillation
+    id: DF4913690DFB0B64
+    title: Место для перегонки
+    description:
+      - Перегонная колонна разделяет нефть на топливо. Поставьте её контроллер и соберите колонну.
+    x: 0
+    y: 6
+    icon: createdieselgenerators:distillation_controller
+    deps: [oil_scan]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha34/actions/f9cfed8252a6b4a4, title: Применить контроллер перегонки}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: createdieselgenerators:sheet_metal_panel, count: 8}
+
+  - key: diesel
+    id: DC984DF9A7FB8BA2
+    title: Топливо для дальней базы
+    description:
+      - Наберите ведро дизеля. Топливо можно возить с собой — мастерская больше не привязана к реке.
+    x: 0
+    y: 8.5
+    icon: createdieselgenerators:diesel_bucket
+    deps: [distillation]
+    tasks:
+      - {type: item, item: createdieselgenerators:diesel_bucket}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: createdieselgenerators:canister}
+
+  - key: diesel_engine
+    id: 6185039BCD7BBF2F
+    title: Двигатель для походной мельницы
+    description:
+      - Дизельный генератор крутит валы на топливе. Поставьте его — дальше он смелет пшеницу где угодно.
+    x: 0
+    y: 11
+    icon: createdieselgenerators:diesel_engine
+    deps: [diesel]
+    tasks:
+      - {type: advancement, advancement: nasledie:setup/industry/diesel_engine, title: Поставить дизельный генератор}
+    rewards:
+      - {type: xp, xp: 170}
+      - {type: item, item: createdieselgenerators:engine_silencer}
+
+  - key: turbo
+    id: 01A997FB916A7F84
+    title: Турбонаддув
+    description:
+      - Турбонагнетатель на двигателе прибавляет мощности. Примените его к генератору.
+    x: 2.5
+    y: 12.5
+    icon: createdieselgenerators:engine_turbocharger
+    shape: circle
+    optional: true
+    deps: [diesel_engine]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha35/engineering/01a997fb916a7f84, title: Применить турбонагнетатель}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: createdieselgenerators:chemical_sprayer}
+
+  - key: flour_trial
+    id: 43CE9DDCB2EF166C
+    title: Походная мельница на дизеле
+    description:
+      - Пусть жернова на дизельном генераторе смелют пшеницу. Ударьте вращающиеся жернова часами и в течение минуты подайте одну пшеницу —
+        сервер проверит, что работает именно дизель.
+    x: 0
+    y: 13.5
+    icon: create:wheat_flour
+    shape: star
+    size: 1.4
+    deps: [diesel_engine]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha43/industry/diesel_flour, title: Контрольный помол на дизеле}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: farmersdelight:steak_and_potatoes, count: 8}
+
+  # ── Котельная ──
+  - key: lava_pump
+    id: A7CEF6292A89B0A2
+    title: Топливный резерв котельной
+    description:
+      - Шланговый насос в бесконечном лавовом озере качает топливо без конца. Котельная скажет спасибо.
+    x: -3
+    y: 3
+    icon: create:hose_pulley
+    deps: [brass]
+    tasks:
+      - {type: advancement, advancement: create:hose_pulley_lava}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: create:fluid_tank, count: 8}
+
+  - key: steam_maxed
+    id: 41102025AA038BF1
+    title: Котельная полной мощности
+    description:
+      - Разгоните бойлер до восемнадцатого уровня — паровые двигатели вокруг него потянут целый завод.
+    x: -5
+    y: 5
+    icon: create:steam_engine
+    shape: star
+    deps: [lava_pump]
+    tasks:
+      - {type: advancement, advancement: create:steam_engine_maxed}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: create:steam_whistle}
+
+  - key: stress_maxed
+    id: D6494B4749F6037E
+    title: Юра на границе перегрузки
+    description:
+      - Нагрузите сеть ровно до предела. Ещё одна шестерня — и всё встанет. Юра уверен, что не встанет.
+    x: -7
+    y: 7
+    icon: create:stressometer
+    shape: circle
+    optional: true
+    deps: [steam_maxed]
+    tasks:
+      - {type: advancement, advancement: create:stressometer_maxed}
+    rewards:
+      - {type: xp, xp: 160}
+      - {type: item, item: interiors:yellow_chair}
+
+  # ── Артиллерия ──
+  - key: casting_sand
+    id: 0EF67FFF73E6D383
+    title: Песок будущих орудий
+    description:
+      - Странд оставил чертежи пушек. Стволы отливают в формах из литейного песка. Раздобудьте его.
+    x: -3.5
+    y: 0
+    icon: createbigcannons:casting_sand
+    deps: [brass, nasledie_chronicle/strand_notes]
+    tasks:
+      - {type: item, item: createbigcannons:casting_sand}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: createbigcannons:gas_mask}
+
+  - key: cannon_builder
+    id: 35AB582E2E08DF86
+    title: Наращиватель стволов
+    description:
+      - Наращиватель собирает ствол слой за слоем. Поставьте его — пушка начинается здесь.
+    x: -6
+    y: 0
+    icon: createbigcannons:cannon_builder
+    deps: [casting_sand]
+    tasks:
+      - {type: advancement, advancement: nasledie:setup/defense/cannon_builder, title: Поставить наращиватель}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: createbigcannons:impact_fuze, count: 4}
+
+  - key: cannon_drill
+    id: 35D125C19D556E7A
+    title: Сверлильный станок
+    description:
+      - Отлитый ствол нужно рассверлить. Без этого снаряду некуда лететь.
+    x: -8.5
+    y: 0
+    icon: createbigcannons:cannon_drill
+    deps: [cannon_builder]
+    tasks:
+      - {type: advancement, advancement: nasledie:setup/defense/cannon_drill, title: Поставить сверлильный станок}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: createbigcannons:empty_powder_charge, count: 8}
+
+  - key: cannon_mount
+    id: 17FE2073432FC7E0
+    title: Основание орудия
+    description:
+      - Пушке нужен лафет. Неподвижное крепление держит ствол и наводит его по вращению вала.
+    x: -11
+    y: 0
+    icon: createbigcannons:fixed_cannon_mount
+    deps: [cannon_drill]
+    tasks:
+      - {type: advancement, advancement: nasledie:setup/defense/fixed_cannon_mount, title: Поставить крепление пушки}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: createbigcannons:solid_shot, count: 8}
+
+  - key: cannon_loader
+    id: 8EC3B7E438EA800A
+    title: Механизм заряжания
+    description:
+      - Заряжатель толкает снаряд и порох в ствол сам. Стрелять можно чаще, а стоять рядом — безопаснее.
+    x: -13.5
+    y: 0
+    icon: createbigcannons:cannon_loader
+    deps: [cannon_mount]
+    tasks:
+      - {type: advancement, advancement: nasledie:setup/defense/cannon_loader, title: Поставить заряжатель}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: createbigcannons:he_shell, count: 4}
+
+  - key: first_shot
+    title: Первый залп
+    description:
+      - Наведите орудие и уничтожьте любое существо выстрелом. Засчитывается всем, кто стоял неподалёку, — пушкарю и корректировщику.
+    x: -16
+    y: 0
+    icon: createbigcannons:solid_shot
+    shape: shield
+    deps: [cannon_loader]
+    tasks:
+      - {type: advancement, advancement: nasledie:events/artillery/kill, title: Победа выстрелом из орудия}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: createbigcannons:shrapnel_shell, count: 4}
+
+  - key: boss_artillery
+    title: Артиллерия против стражей
+    description:
+      - Добейте большого босса — стража Катаклизма, зверя Mowzie или чудище глубин — выстрелом из своего орудия. Странд был бы доволен.
+    x: -18.5
+    y: 0
+    icon: createbigcannons:he_shell
+    shape: star
+    size: 1.5
+    optional: true
+    deps: [first_shot]
+    tasks:
+      - {type: advancement, advancement: nasledie:events/artillery/boss, title: Босс повержен выстрелом}
+    rewards:
+      - {type: xp, xp: 1000}
+      - {type: item, item: createbigcannons:ap_shell, count: 8}
+      - {type: item, item: minecraft:enchanted_golden_apple}

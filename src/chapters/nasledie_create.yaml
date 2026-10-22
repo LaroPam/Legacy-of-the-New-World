@@ -1,1042 +1,589 @@
+# Акт III. Create — мастерская: четыре проекта лучами от андезитового сплава.
+# Раскладка — src/layouts/create.yaml (tools/layout.py).
 chapter:
   filename: nasledie_create
   id: 9B72DF3BE0E6A5DE
   group: act3
-  title: Create — мастерская полезных машин
+  title: Мастерская — первые машины
   icon: create:cogwheel
   order_index: 9
-  progression_mode: flexible
   default_hide_dependency_lines: false
   default_quest_shape: gear
-  default_quest_size: 1.28
+  progression_mode: flexible
+
 quests:
-- id: 1D1395D17D6238DB
-  title: Четыре проекта мастерской
-  x: 0.0
-  y: 0.0
-  icon: create:andesite_alloy
-  shape: gear
-  size: 1.2
-  description:
-  - 'Начните с андезитового сплава. Create превращает вращение в работу: станки обрабатывают материалы, ленты возят
-    грузы, а подвижные машины работают на выезде.'
-  - Первая цель — небольшая пекарня. Колесо вращает станки → пресс делает детали → жернова мелют пшеницу → потоки
-    воды и дыма превращают муку в тесто и хлеб. Это уже полезные припасы для ваших экспедиций.
-  - 'Дальше выбирайте проект: расширить пекарню до трёх десертов; собрать подвижную мастерскую с выгрузкой; построить
-    источник мощности для большой фабрики; испытать необычные инструменты. Эти направления можно развивать параллельно.'
-  - 'После первых машин путь продолжается в главах промышленности, транспорта и великих проектов: точные механизмы,
-    поезд между поселениями и склад, который сам запрашивает припасы.'
-  - Если устройство непонятно, откройте его рецепт во внутриигровом просмотрщике и встроенную анимацию Create из
-    подсказки предмета. Она показывает расположение блоков и подключение; после установки сборки интернет для этого
-    не нужен.
-  tasks:
-  - id: 19E60BDF80E3F2D7
-    type: advancement
-    advancement: create:andesite_alloy
-  rewards:
-  - id: 2B1FBDB5261E2C28
-    type: xp
-    xp: 100
-  - id: DB40DC297B3CCBFC
-    type: item
-    item: create:builders_tea
-    count: 4
-- id: F208B2429B83E7D8
-  title: Основа станков
-  x: 2.5
-  y: 0.0
-  icon: create:andesite_casing
-  shape: gear
-  size: 1.2
-  description:
-  - Примените андезитовый сплав к обтёсанному бревну и получите корпус Create. На его основе вы соберёте пресс,
-    вентилятор и миксер — первые части будущей пекарни.
-  - 'Заранее оставьте место для линии: источник вращения сбоку, станки рядом, место подачи и сбора предметов под
-    ними. Начать можно с ручной подачи; конвейеры добавите позже.'
-  deps:
-  - 1D1395D17D6238DB
-  tasks:
-  - id: E3D7397E1575AB91
-    type: advancement
-    advancement: create:andesite_casing
-  rewards:
-  - id: 30EBE28C1B31E045
-    type: xp
-    xp: 110
-  - id: E1E7D9F7C612174F
-    type: item
-    item: create:clipboard
-- id: 013B127CA07E038A
-  title: Пресс открывает новые машины
-  x: 10.0
-  y: 0.0
-  icon: create:mechanical_press
-  shape: gear
-  size: 1.2
-  description:
-  - Обработайте металл механическим прессом. Подведите вращение к его валу, поставьте под прессом депо и положите
-    на него слиток по рецепту металлического листа.
-  - Железные листы нужны для пропеллера вентилятора и венчика миксера. Поэтому пресс — ваш переход от простого вращения
-    к обработке еды и смешиванию материалов. Приготовьте запас листов для обоих устройств.
-  deps:
-  - 37C2A96BD4EE0C5C
-  tasks:
-  - id: 5E0CBC1F12029523
-    type: advancement
-    advancement: create:mechanical_press
-  rewards:
-  - id: 6F6D5C3C019D1BB6
-    type: xp
-    xp: 145
-  - id: D701BDE428EB1530
-    type: item
-    item: create:blue_toolbox
-- id: 82EB3ADD3D2CD6B9
-  title: Вентилятор вместо ручной печи
-  x: 17.5
-  y: 0.0
-  icon: create:encased_fan
-  shape: gear
-  size: 1.2
-  description:
-  - Поставьте вентилятор Create и подайте вращение. Сам по себе он перемещает воздух и предметы; для обработки материала
-    поток должен пройти через подходящую среду.
-  - 'Для пекарни приготовьте два участка: вода на пути потока для промывки муки и зажжённый костёр для копчения
-    теста. Предметы размещайте дальше по потоку, на депо. Направление воздуха зависит от направления вращения.'
-  deps:
-  - 95DD2AD4CCAA7D90
-  tasks:
-  - id: 271C27A5780C7688
-    type: advancement
-    advancement: create:encased_fan
-  rewards:
-  - id: DF0053F6E28E970A
-    type: xp
-    xp: 120
-  - id: 4A5CA5F4E96C051C
-    type: item
-    item: create:goggles
-- id: 1245D0A9CAC83D18
-  title: Из муки — тесто и хлеб
-  x: 20.0
-  y: 0.0
-  icon: create:propeller
-  shape: gear
-  size: 1.2
-  description:
-  - 'Обработайте материал воздушным потоком. Полезный первый опыт — промыть пшеничную муку потоком через воду: получится
-    тесто. Затем обработайте тесто потоком через зажжённый костёр и получите хлеб.'
-  - Так ваша мастерская начинает снабжать вылазки едой. Дальше освоим смешивание и жидкости, чтобы расширить ассортимент.
-    Само достижение этого шага засчитывает обработку потоком, а не весь маршрут выпечки.
-  deps:
-  - 82EB3ADD3D2CD6B9
-  tasks:
-  - id: 3B94C74FCBF2893C
-    type: advancement
-    advancement: create:fan_processing
-  rewards:
-  - id: C881B1638C549609
-    type: xp
-    xp: 135
-  - id: 16D49370002A53E0
-    type: item
-    item: create:wrench
-- id: EA8154FB9A317740
-  title: Детали для подвижной машины
-  x: 12.5
-  y: -2.5
-  icon: create:mechanical_saw
-  shape: gear
-  size: 1.2
-  description:
-  - 'Обработайте материал вертикально установленной механической пилой. Подайте вращение и выберите рецепт распила:
-    запас деревянных деталей пригодится для подвижной мастерской.'
-  deps:
-  - C8C4ECA83D73BF63
-  tasks:
-  - id: F7FB05F2621AF0EB
-    type: advancement
-    advancement: create:saw_processing
-  rewards:
-  - id: 79A52029E0143092
-    type: xp
-    xp: 135
-  - id: F7BD4686B7B29720
-    type: item
-    item: create:attribute_filter
-- id: C8C4ECA83D73BF63
-  title: Один пресс — два способа работы
-  x: 12.5
-  y: 0.0
-  icon: minecraft:iron_block
-  shape: gear
-  size: 1.2
-  description:
-  - Сожмите ингредиенты прессом над чашей по подходящему рецепту. Депо удобно для листов из отдельных слитков, а
-    чаша позволяет прессу работать с набором ингредиентов.
-  - Теперь у вас есть основа мастерской. Пищевая ветка поведёт к пекарне и десертам, грузовая — к мобильной машине.
-    Можно выбрать один проект на сегодняшнюю сессию.
-  deps:
-  - 013B127CA07E038A
-  tasks:
-  - id: 51F720FFB7DC0FE5
-    type: advancement
-    advancement: create:compacting
-  rewards:
-  - id: 390EA805B80222D8
-    type: xp
-    xp: 145
-  - id: 948F8C80760DB189
-    type: item
-    item: create:filter
-    count: 2
-- id: F68B3CF3BC1979DB
-  title: Дорога для материалов
-  x: 12.5
-  y: -5.0
-  icon: create:belt_connector
-  shape: gear
-  size: 1.2
-  description:
-  - 'Соедините два вала механическим ремнём. Подберите трассу будущей подачи материалов и обеспечьте вращение: следующими
-    шагами вы свяжете её с контейнерами и вертикальными участками.'
-  deps:
-  - EA8154FB9A317740
-  tasks:
-  - id: D63F4FEBC924D4F1
-    type: advancement
-    advancement: create:belt
-  rewards:
-  - id: 590976DFF7E6E9E3
-    type: xp
-    xp: 150
-  - id: BEEA09EC114AFD46
-    type: item
-    item: create:brass_tunnel
-- id: 26B8EA27D2BE22B9
-  title: Лента встречает склад
-  x: 15.0
-  y: -5.0
-  icon: create:andesite_funnel
-  shape: gear
-  size: 1.2
-  description:
-  - Передайте предмет в контейнер или заберите его оттуда с помощью воронки Create. На будущем складе это будет
-    точка, где груз покидает ленту или возвращается на неё.
-  deps:
-  - F68B3CF3BC1979DB
-  tasks:
-  - id: 507B21131F96807E
-    type: advancement
-    advancement: create:funnel
-  rewards:
-  - id: A1B8DBEA39D15F93
-    type: xp
-    xp: 145
-  - id: B13D812B7949F964
-    type: item
-    item: create:andesite_tunnel
-    count: 2
-- id: 2EBBB558E1A30F2F
-  title: Груз меняет этаж
-  x: 17.5
-  y: -5.0
-  icon: create:chute
-  shape: gear
-  size: 1.2
-  description:
-  - Переместите предмет через жёлоб Create. Теперь вы можете соединить участки разной высоты и подготовить место
-    для приёма груза от подвижной конструкции.
-  deps:
-  - 26B8EA27D2BE22B9
-  tasks:
-  - id: 3A2663716F512069
-    type: advancement
-    advancement: create:chute
-  rewards:
-  - id: 536ADDC8E984E8F5
-    type: xp
-    xp: 150
-  - id: 0E3AA4417FF0D73C
-    type: item
-    item: create:andesite_funnel
-    count: 2
-- id: CDAC640579002402
-  title: Миксер расширяет ассортимент
-  x: 22.5
-  y: 0.0
-  icon: create:mechanical_mixer
-  shape: gear
-  size: 1.2
-  description:
-  - Запустите миксер над чашей. Между корпусом миксера и чашей оставьте место, куда опускается венчик; расположение
-    показано во встроенной анимации устройства.
-  - Миксер смешивает ингредиенты, а с нагревом открывает шоколад и сплавы. Если вал крутится, но венчик не работает,
-    проверьте рецепт, расположение чаши, требуемый нагрев и достаточную скорость. Медленного колеса напрямую может
-    быть недостаточно — используйте передачу.
-  deps:
-  - 1245D0A9CAC83D18
-  tasks:
-  - id: 6E1D33F6A97FA968
-    type: advancement
-    advancement: create:mechanical_mixer
-  rewards:
-  - id: 8E4E53AAC58F3289
-    type: xp
-    xp: 220
-  - id: E78A003701425C24
-    type: item
-    item: create:mechanical_bearing
-- id: 3FA8926603B35ADD
-  title: Колесо работает вместо вас
-  x: 5.0
-  y: 0.0
-  icon: create:water_wheel
-  shape: gear
-  size: 1.2
-  description:
-  - 'Запустите водяное колесо потоком воды. Это ваш первый постоянный привод: подключите вал, затем передайте вращение
-    к прессу. В отличие от ручной рукоятки, колесо не требует вашего участия.'
-  - Скорость определяет, насколько быстро работает станок; запас мощности — сколько станков можно к нему подключить.
-    Ускоряющая передача не создаёт дополнительную мощность. Если вся сеть остановилась под нагрузкой, уменьшите
-    нагрузку или добавьте источник вращения.
-  - Для первых опытов достаточно небольшой мастерской. Ветряк понадобится, когда захотите больше станков или вынесете
-    производство далеко от воды.
-  deps:
-  - F208B2429B83E7D8
-  tasks:
-  - id: C9CD51A3B87F5F54
-    type: advancement
-    advancement: create:water_wheel
-  rewards:
-  - id: FEC896192890425A
-    type: xp
-    xp: 115
-  - id: E20AE565A0EFFE42
-    type: item
-    item: create:smart_fluid_pipe
-- id: 91C8A76B406CF0AF
-  title: Ветряк для удалённой мастерской
-  x: 5.0
-  y: 2.5
-  icon: create:sail_frame
-  shape: gear
-  size: 1.2
-  description:
-  - Соберите и запустите ветряк на ветряном подшипнике. Он пригодится для мельницы, лесной мастерской и других установок,
-    где неудобно подводить воду. Это альтернативный источник вращения, а не обязательный способ заставить пресс
-    работать.
-  - Прикрепите к подшипнику конструкцию с парусами и соберите её взаимодействием с подшипником. От его неподвижной
-    стороны передайте вращение валом к станкам. Чем больше действующих парусов, тем больше доступный запас мощности
-    — расширяйте установку по потребностям производства.
-  deps:
-  - 3FA8926603B35ADD
-  tasks:
-  - id: 708E0E91AC49CB3B
-    type: advancement
-    advancement: create:windmill
-  rewards:
-  - id: 6AE850DB6FF1C479
-    type: xp
-    xp: 140
-  - id: F28F99B61BFB07DE
-    type: item
-    item: create:rotation_speed_controller
-- id: 37C2A96BD4EE0C5C
-  title: Скорость под задачу
-  x: 7.5
-  y: 0.0
-  icon: create:cogwheel
-  shape: gear
-  size: 1.2
-  description:
-  - Измените скорость передачей между большой и малой шестернями. Когда большая вращает малую, выход ускоряется;
-    обратное расположение замедляет его.
-  - Сначала добейтесь понятного вращения одного станка, затем добавляйте остальные. Инженерные очки помогут читать
-    показатели оборудования; ключ — поворачивать и разбирать детали. Их рецепты доступны прямо в игре.
-  - Ускорение повышает требования станков к мощности. Быстрая шестерня без достаточного привода не спасёт перегруженную
-    фабрику.
-  deps:
-  - 3FA8926603B35ADD
-  tasks:
-  - id: 2DDD5A19DEF85A46
-    type: advancement
-    advancement: create:shifting_gears
-  rewards:
-  - id: 0C1012057562018E
-    type: xp
-    xp: 155
-  - id: 12DD275E97656EDB
-    type: item
-    item: create:display_link
-- id: 95DD2AD4CCAA7D90
-  title: Жернова для походного хлеба
-  x: 15.0
-  y: 0.0
-  icon: create:millstone
-  shape: gear
-  size: 1.2
-  description:
-  - 'Измельчите материал в жерновах. Для нашего проекта подайте пшеницу и соберите муку: она станет тестом после
-    промывки, а затем хлебом после копчения.'
-  - Это первый станок самой пищевой линии. Подайте вращение и начните с небольшой порции, чтобы разобраться с загрузкой
-    и извлечением результата до подключения лент.
-  deps:
-  - C8C4ECA83D73BF63
-  tasks:
-  - id: 85070721FB6C64A5
-    type: advancement
-    advancement: create:millstone
-  rewards:
-  - id: F03932FD6EEF594B
-    type: xp
-    xp: 125
-  - id: C66C8AB23BFBEF6A
-    type: item
-    item: create:stock_link
-- id: CCF5C3CD6FF300E7
-  title: Собрать машину воедино
-  x: 20.0
-  y: -5.0
-  icon: create:super_glue
-  shape: gear
-  size: 1.2
-  description:
-  - 'Объедините блоки суперклеем в одну конструкцию. Продумайте, где будут инструменты и груз: склеенные части скоро
-    отправятся в движение вместе.'
-  deps:
-  - 2EBBB558E1A30F2F
-  tasks:
-  - id: 85675FFC14C65E45
-    type: advancement
-    advancement: create:super_glue
-  rewards:
-  - id: 2694F870B74901A3
-    type: xp
-    xp: 135
-  - id: 02B477CC82A406DB
-    type: item
-    item: create:package_frogport
-- id: 8D62D114AA053441
-  title: Машина отправляется на работу
-  x: 22.5
-  y: -5.0
-  icon: create:mechanical_harvester
-  shape: gear
-  size: 1.2
-  description:
-  - Соберите подвижную конструкцию с буром, пилой или комбайном. Для хозяйственной машины удобен комбайн с хранилищем
-    урожая; следующим шагом вы устроите обмен грузом со стационарной частью.
-  deps:
-  - CCF5C3CD6FF300E7
-  tasks:
-  - id: F842D047590284C6
-    type: advancement
-    advancement: create:contraption_actors
-  rewards:
-  - id: AD9C7871E706E212
-    type: xp
-    xp: 180
-  - id: 2B0A057373A598A2
-    type: item
-    item: create:water_wheel
-- id: 4C3AA9001AA8E8D5
-  title: Вернуться и выгрузить
-  x: 25.0
-  y: -5.0
-  icon: create:portable_storage_interface
-  shape: gear
-  size: 1.2
-  description:
-  - 'Передайте предметы между подвижной конструкцией и стационарной сетью через пару переносных интерфейсов хранения.
-    Настройте место их встречи: именно обмен грузом завершит сборку узла выгрузки.'
-  deps:
-  - 8D62D114AA053441
-  tasks:
-  - id: FE793AB3B143DFDA
-    type: advancement
-    advancement: create:portable_storage_interface
-  rewards:
-  - id: 7806B80292C45E5B
-    type: xp
-    xp: 180
-  - id: 2F9A45621E064720
-    type: item
-    item: create:fluid_pipe
-- id: 49C8A0032E4C0E17
-  title: Жар для шоколада и латуни
-  x: 25.0
-  y: 0.0
-  icon: create:blaze_burner
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Получите горелку с пойманным ифритом. Пустую горелку предстоит взять с собой в Незер, найти ифрита и поймать
-    его взаимодействием.
-  - Поставьте заполненную горелку под чашей и обеспечьте нужный рецепту нагрев топливом. Она откроет горячий шоколад
-    для этой ветки и латунь для главы промышленности. Зачёт этого шага относится к получению заполненной горелки.
-  deps:
-  - CDAC640579002402
-  tasks:
-  - id: 1D64353AC1AF8D30
-    type: advancement
-    advancement: create:burner
-  rewards:
-  - id: CD56C8364C457311
-    type: xp
-    xp: 120
-  - id: D4486C141609C92C
-    type: item
-    item: create:encased_fan
-- id: 8F58E4E6C70518FE
-  title: Медь для пищевой линии
-  x: 25.0
-  y: 2.5
-  icon: create:copper_casing
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Примените медный слиток к обтёсанному бревну и создайте медный корпус. С ним начинается оборудование для работы
-    с жидкостями.
-  - Молоко, шоколад и мёд понадобятся дозатору. Следующие шаги помогут доставлять их к месту обработки и видеть,
-    где поток остановился.
-  deps:
-  - 49C8A0032E4C0E17
-  tasks:
-  - id: 1AAE1E23056F0F90
-    type: advancement
-    advancement: create:copper_casing
-  rewards:
-  - id: 7E54AE46A5938224
-    type: xp
-    xp: 120
-  - id: 34C55C6BF3008F24
-    type: item
-    item: create:speedometer
-- id: F7E2465288E575FF
-  title: Насос доставляет ингредиенты
-  x: 22.5
-  y: 2.5
-  icon: create:mechanical_pump
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - 'Поставьте механический насос и подключите вращение. Насос задаёт направление перекачки по трубам: проверьте
-    его прежде, чем присоединять чашу с шоколадом.'
-  - Начните с воды и короткой видимой линии. Освоив её, повторите принцип для жидких ингредиентов кондитерской.
-  deps:
-  - 8F58E4E6C70518FE
-  tasks:
-  - id: CA4B8FC486EB487E
-    type: advancement
-    advancement: create:mechanical_pump_0
-  rewards:
-  - id: BF94D074277715B5
-    type: xp
-    xp: 165
-  - id: 29DFA9E30C0F65C3
-    type: item
-    item: create:stressometer
-- id: 8EC3094B2671ABF2
-  title: Увидеть поток
-  x: 17.5
-  y: 2.5
-  icon: create:fluid_pipe
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Примените гаечный ключ к трубе, внутри которой есть жидкость. Прозрачный участок поможет видеть, что движется
-    к чаше или дозатору, и вовремя заметить неверное подключение.
-  deps:
-  - 1C477D2FE85FE89C
-  tasks:
-  - id: 52F5CA098142BA9F
-    type: advancement
-    advancement: create:glass_pipe
-  rewards:
-  - id: C5A5DE27AEF2A9EE
-    type: xp
-    xp: 125
-  - id: 6F31A3271DE74C21
-    type: item
-    item: create:adjustable_chain_gearshift
-- id: 1C477D2FE85FE89C
-  title: Вода в мастерской
-  x: 20.0
-  y: 2.5
-  icon: minecraft:water_bucket
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Заберите воду всасывающим концом трубы или механической помпы. Подведите водопровод к рабочему месту, где готовите
-    тесто и обслуживаете жидкостные узлы.
-  deps:
-  - F7E2465288E575FF
-  tasks:
-  - id: 09EF4F4DFB94BBB8
-    type: advancement
-    advancement: create:water_supply
-  rewards:
-  - id: F197DD1E55590808
-    type: xp
-    xp: 200
-  - id: CC0F7F35E50AD200
-    type: item
-    item: create:clutch
-- id: E151ABC26C849155
-  title: Обслуживание больших запасов
-  x: 7.5
-  y: 5.0
-  icon: create:hose_pulley
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Опустите шланг и с его помощью осушите либо заполните объём жидкости. Такой способ пригодится для обслуживания
-    крупных запасов перед переходом к паровой установке.
-  deps:
-  - 91C8A76B406CF0AF
-  tasks:
-  - id: 5D610852F1E036E0
-    type: advancement
-    advancement: create:hose_pulley
-  rewards:
-  - id: 4DC262DE3D8A4653
-    type: xp
-    xp: 180
-  - id: C8BF6E7819198E30
-    type: item
-    item: create:flywheel
-- id: 93F9199B68F09FF2
-  title: Дозатор завершает рецепт
-  x: 15.0
-  y: 2.5
-  icon: create:spout
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Наполните предмет жидкостью с помощью дозатора. Подайте подходящую жидкость трубой сверху или сбоку и положите
-    предмет под дозатор по выбранному рецепту.
-  - 'Дозатору не нужен отдельный вращающийся вал: работу здесь делает подача жидкости. Дальше именно этот способ
-    соединит хлеб с молоком, ягоды с шоколадом и яблоко с мёдом.'
-  deps:
-  - 8EC3094B2671ABF2
-  tasks:
-  - id: B0A7EC56FE937A39
-    type: advancement
-    advancement: create:spout
-  rewards:
-  - id: 18494468ECA01463
-    type: xp
-    xp: 175
-  - id: 06B4B00AD5FDAC4D
-    type: item
-    item: create:brass_encased_shaft
-- id: 053070B7D8792A37
-  title: Из ведра в трубопровод
-  x: 10.0
-  y: 5.0
-  icon: create:item_drain
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - 'Опустошите ёмкость с жидкостью на сливе Create. Подготовьте отвод в трубы или резервуар: так привезённые в
-    вёдрах запасы смогут попасть в жидкостную сеть.'
-  deps:
-  - E151ABC26C849155
-  tasks:
-  - id: 38FEDC6794055042
-    type: advancement
-    advancement: create:drain
-  rewards:
-  - id: 8A72ABADF141B6B0
-    type: xp
-    xp: 155
-  - id: 43D20AD71B244CD7
-    type: item
-    item: create:copper_valve_handle
-- id: 18ED8A27D511509E
-  title: Пар для растущего производства
-  x: 10.0
-  y: 7.5
-  icon: create:steam_engine
-  shape: star
-  size: 1.4
-  optional: true
-  description:
-  - Добейтесь, чтобы паровой двигатель начал выдавать вращение. Соберите котёл из резервуаров, обеспечьте воду и
-    нагрев, прикрепите двигатель и подключите его к валу. Сверьтесь со встроенной анимацией двигателя.
-  - 'Это цель энергетического проекта: новый источник мощности для станков, которые перестали помещаться на прежний
-    привод. Дальше в промышленной главе вы разовьёте котёл до полной мощности, а здесь уже можете снабжать им вашу
-    мастерскую.'
-  deps:
-  - 053070B7D8792A37
-  tasks:
-  - id: E9D5DAC80DCD8DF7
-    type: advancement
-    advancement: create:steam_engine
-  rewards:
-  - id: 42EF280DA9AF574B
-    type: xp
-    xp: 275
-  - id: FAE4FA38C95BC2CD
-    type: item
-    item: create:andesite_encased_shaft
-- id: 46F430629A9DEE95
-  title: Юра и ручной привод
-  x: 2.5
-  y: 2.5
-  icon: create:hand_crank
-  shape: circle
-  size: 1.2
-  optional: true
-  description:
-  - Юра, у ручного привода тоже есть предел. Крутите рукоятку до полного изнеможения, как требует это испытание
-    Create. После такой смены особенно приятно вернуться к водяному колесу.
-  deps:
-  - 3FA8926603B35ADD
-  tasks:
-  - id: 0637E489D1A05438
-    type: advancement
-    advancement: create:hand_crank_000
-  rewards:
-  - id: 12ACD175C07CF5EE
-    type: xp
-    xp: 160
-  - id: F03D70B8D5D4E762
-    type: item
-    item: create:brass_sheet
-- id: B20BCF3BF2BBE521
-  title: Ветряк с запасом мощности
-  x: 2.5
-  y: 5.0
-  icon: create:windmill_bearing
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - 'Соберите ветряк максимальной мощности: расширяйте парусную часть, пока не получите соответствующее достижение
-    Create.'
-  - Такой запас пригодится нескольким станкам и ускоренным передачам. Сам максимум — дополнительная инженерная цель;
-    для небольшой пекарни вполне можно пользоваться более скромным приводом.
-  deps:
-  - 91C8A76B406CF0AF
-  tasks:
-  - id: 766712F9948ECE22
-    type: advancement
-    advancement: create:windmill_maxed
-  rewards:
-  - id: 2945E3C2892CFECB
-    type: xp
-    xp: 240
-  - id: ED97BA1D7A1FA5C9
-    type: item
-    item: create:windmill_bearing
-    count: 2
-- id: 63D8F44C93AB9D80
-  title: Поцелуй воронок
-  x: 15.0
-  y: -7.5
-  icon: create:brass_funnel
-  shape: circle
-  size: 1.2
-  optional: true
-  description:
-  - 'Устройте «поцелуй» двух воронок Create, установленных на конвейерах: расположите их навстречу друг другу. Это
-    небольшой опыт с устройством передачи предметов, отдельный от основной грузовой линии.'
-  deps:
-  - 26B8EA27D2BE22B9
-  tasks:
-  - id: 96E68FF624F61567
-    type: advancement
-    advancement: create:belt_funnel_kiss
-  rewards:
-  - id: 5547E35AF13969C5
-    type: xp
-    xp: 180
-  - id: DE60995A4745424D
-    type: item
-    item: create:brass_funnel
-- id: 82858847B7756EBF
-  title: Горячий шоколад
-  x: 15.0
-  y: 5.0
-  icon: create:chocolate_bucket
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Получите ведро жидкого шоколада Create. Для его производства смешайте сахар, какао и молоко в подогреваемой
-    чаше. Сохраните шоколад для дозатора — скоро он понадобится для первого десерта.
-  deps:
-  - 93F9199B68F09FF2
-  tasks:
-  - id: 74B3824154D5338F
-    type: advancement
-    advancement: create:chocolate_bucket
-  rewards:
-  - id: FA92DE5B0D9E5440
-    type: xp
-    xp: 160
-  - id: 042AEE26C9CBF1AE
-    type: item
-    item: createaddition:chocolate_cake
-    count: 4
-- id: 1DCEBEFB5C85037B
-  title: Мёд поступает по трубам
-  x: 17.5
-  y: 5.0
-  icon: minecraft:beehive
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Откачайте мёд трубами из улья или пчелиного гнезда. Этот способ даст пищевой линии второй сладкий ингредиент;
-    заранее подготовьте место, куда он будет поступать.
-  deps:
-  - 82858847B7756EBF
-  tasks:
-  - id: F10B472CDCC11380
-    type: advancement
-    advancement: create:honey_drain
-  rewards:
-  - id: 99562F5D37BF99A0
-    type: xp
-    xp: 220
-  - id: 6B21F5266D009489
-    type: item
-    item: create:fluid_tank
-    count: 4
-- id: 5F239B4F41DD0E0C
-  title: Встреча двух жидкостей
-  x: 22.5
-  y: 5.0
-  icon: minecraft:cobblestone
-  shape: circle
-  size: 1.2
-  optional: true
-  description:
-  - 'Добейтесь встречи двух разных жидкостей в одной трубной сети. Соберите для этого отдельный опытный участок:
-    в линии с пищевыми ингредиентами смешивать потоки без плана неудобно.'
-  deps:
-  - 8EC3094B2671ABF2
-  tasks:
-  - id: 6932B7BEC57CD89E
-    type: advancement
-    advancement: create:cross_streams
-  rewards:
-  - id: E414770D7AA531A2
-    type: xp
-    xp: 225
-  - id: 6642D86172FE39CF
-    type: item
-    item: create:sequenced_gearshift
-- id: 51AECF619A98596B
-  title: Овощной фейерверк
-  x: 2.5
-  y: -2.5
-  icon: create:potato_cannon
-  shape: star
-  size: 1.4
-  description:
-  - Столкните в полёте два разных вида снарядов картофельной пушки. Максим и Юра могут выбрать разную еду и синхронизировать
-    выстрелы. Получится финальное испытание вашей мастерской необычных инструментов.
-  optional: true
-  deps:
-  - 078DEE5AC16D0721
-  tasks:
-  - id: F0A6E84A614A9DC4
-    type: advancement
-    advancement: create:potato_cannon_collide
-  rewards:
-  - id: DE91A3FDA063BD35
-    type: xp
-    xp: 200
-  - id: DC15781FE37EDD39
-    type: item
-    item: create:blaze_cake
-    count: 3
-- id: 0F8DAD91D9AEBBB3
-  title: Самоукладывающаяся колея
-  x: 25.0
-  y: -7.5
-  icon: minecraft:rail
-  shape: star
-  size: 1.4
-  description:
-  - 'Соберите вагонеточную конструкцию, которая сама укладывает перед собой рельсы. Добавьте запас пути и размещающие
-    его механизмы: у вашей мобильной машины появится собственная дорога вперёд.'
-  optional: true
-  deps:
-  - 4C3AA9001AA8E8D5
-  tasks:
-  - id: FCEFA56934AFB766
-    type: advancement
-    advancement: create:self_deploying
-  rewards:
-  - id: 28E4BF677058A532
-    type: xp
-    xp: 275
-  - id: 6F934055E9297E67
-    type: item
-    item: create:railway_casing
-    count: 4
-- id: 549B77B92B0AFF7C
-  title: Две выдвижные руки
-  x: 7.5
-  y: -2.5
-  icon: create:extendo_grip
-  shape: gear
-  size: 1.2
-  description:
-  - Возьмите по выдвижной хватке в каждую руку и добейтесь увеличенной дальности взаимодействия. Теперь можно работать
-    с труднодоступными частями крупных конструкций.
-  optional: true
-  deps:
-  - EC70D65F82B2FEF1
-  tasks:
-  - id: 230511641E221C05
-    type: advancement
-    advancement: create:extendo_grip_dual
-  rewards:
-  - id: ACD92161FCB59C32
-    type: xp
-    xp: 225
-  - id: 3642D2A65841E1BA
-    type: item
-    item: create:polished_rose_quartz
-    count: 8
-- id: 078DEE5AC16D0721
-  title: Картон с гербом
-  x: 5.0
-  y: -2.5
-  icon: create:cardboard_chestplate
-  shape: circle
-  size: 1.2
-  description:
-  - 'Нанесите кузнечную отделку на картонное снаряжение Create. Подберите узор и материал: у выставки необычных
-    инженерных вещей появится собственный герб.'
-  optional: true
-  deps:
-  - 549B77B92B0AFF7C
-  tasks:
-  - id: AC25D8DC76AB1A1E
-    type: advancement
-    advancement: create:cardboard_armor_trim
-  rewards:
-  - id: 56C41F4BCC1577A7
-    type: xp
-    xp: 200
-  - id: D6433363A88A23A7
-    type: item
-    item: create:brass_sheet
-    count: 8
-- id: F7BBC141C944B0BA
-  title: Кондитерская выпускает три десерта
-  x: 20.0
-  y: 5.0
-  icon: create:chocolate_glazed_berries
-  shape: star
-  size: 1.4
-  description:
-  - 'Изготовьте одним и тем же дозатором три разных десерта: ягоды в шоколаде, медовое яблоко и сладкую булочку.'
-  - 'Подготовьте сладкие ягоды с шоколадом, яблоко с мёдом и хлеб с молоком. Меняйте жидкость в выбранном дозаторе,
-    сохраняя сам блок: это итог пищевой ветки — три продукта из освоенных вами процессов.'
-  - Дозатор должен установить один из вас. Во время выпуска пусть этот игрок остаётся в том же измерении, чтобы
-    получить достижение.
-  optional: true
-  deps:
-  - 1DCEBEFB5C85037B
-  tasks:
-  - id: DBEC0C74EBB62C33
-    type: advancement
-    advancement: create:foods
-  rewards:
-  - id: 6593827A716A953B
-    type: xp
-    xp: 275
-  - id: 56E0B44DB1628514
-    type: item
-    item: create:honeyed_apple
-    count: 6
-- id: 098405E74DFFDA00
-  title: Рельсовое происшествие
-  x: 22.5
-  y: -7.5
-  icon: create:track
-  shape: circle
-  size: 1.2
-  optional: true
-  description:
-  - Сбейте враждебного моба поездом Create. Нужен именно поезд, а не вагонеточная машина из предыдущего проекта.
-    Подготовка настоящего состава описана в железнодорожной главе.
-  deps:
-  - 0F8DAD91D9AEBBB3
-  tasks:
-  - id: 496D7317CD061314
-    type: advancement
-    advancement: create:train_roadkill
-  rewards:
-  - id: 25A36D3851DA057C
-    type: xp
-    xp: 330
-  - id: CD26F73278431496
-    type: item
-    item: create:railway_casing
-    count: 12
-- id: 1DDBD113F023CE39
-  title: Водолаз лавового озера
-  x: 7.5
-  y: 7.5
-  icon: create:netherite_diving_helmet
-  shape: circle
-  size: 1.2
-  optional: true
-  description:
-  - 'Погрузитесь в лаву в незеритовом водолазном снаряжении Create. Подготовьте полный комплект и запас воздуха:
-    это отдельное применение инженерной экипировки за пределами мастерской.'
-  deps:
-  - 18ED8A27D511509E
-  tasks:
-  - id: 6E485A6DF31910E5
-    type: advancement
-    advancement: create:diving_suit_lava
-  rewards:
-  - id: 5A0340E2EEDAF194
-    type: xp
-    xp: 400
-  - id: C83555A6C779F8E2
-    type: item
-    item: create:netherite_diving_boots
-- id: EC70D65F82B2FEF1
-  title: Работа на расстоянии
-  x: 10.0
-  y: -2.5
-  icon: create:extendo_grip
-  shape: gear
-  size: 1.2
-  optional: true
-  description:
-  - Обзаведитесь выдвижной хваткой Create. Она пригодится для работы на расстоянии; дальше вы испытаете пару таких
-    инструментов и другие необычные изобретения.
-  deps:
-  - 013B127CA07E038A
-  tasks:
-  - id: E637DD4C05A00340
-    type: advancement
-    advancement: create:extendo_grip
-  rewards:
-  - id: 5E8244CA45F7F309
-    type: xp
-    xp: 210
-  - id: EF5953124213F569
-    type: item
-    item: minecraft:iron_ingot
-    count: 32
+  - key: alloy
+    id: 1D1395D17D6238DB
+    title: Четыре проекта мастерской
+    description:
+      - Странд писал, что против машин Зодчих нужны свои машины. Начните с андезитового сплава — из него собирают почти всё в мастерской.
+      - Дальше четыре направления — энергия, кухонный конвейер, подвижные машины и трубы. Берите любое.
+    x: 0
+    y: 0
+    icon: create:andesite_alloy
+    shape: star
+    size: 1.8
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: advancement, advancement: create:andesite_alloy}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: create:goggles}
+      - {type: item, item: create:wrench}
+
+  # ── Энергия ──
+  - key: water_wheel
+    id: 3FA8926603B35ADD
+    title: Колесо работает вместо вас
+    description:
+      - Водяное колесо у ручья даёт вращение бесплатно и навсегда. Поставьте его — это сердце первой мастерской.
+    x: 0
+    y: -3.5
+    icon: create:water_wheel
+    deps: [alloy]
+    tasks:
+      - {type: advancement, advancement: create:water_wheel}
+    rewards:
+      - {type: xp, xp: 115}
+      - {type: item, item: create:large_cogwheel, count: 4}
+
+  - key: hand_crank
+    id: 46F430629A9DEE95
+    title: Юра и ручной привод
+    description:
+      - Пока колесо не готово, вращение можно дать руками. Юра, крути. Максим проверит, сколько ты продержишься.
+    x: -2
+    y: -5.5
+    icon: create:hand_crank
+    shape: circle
+    optional: true
+    deps: [water_wheel]
+    tasks:
+      - {type: advancement, advancement: create:hand_crank_000}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: farmersdelight:hot_cocoa, count: 3}
+
+  - key: shifting_gears
+    id: 37C2A96BD4EE0C5C
+    title: Скорость под задачу
+    description:
+      - Большая и малая шестерни меняют скорость. Медленно — для тяжёлой работы, быстро — для лёгкой.
+    x: 0.5
+    y: -6
+    icon: create:large_cogwheel
+    deps: [water_wheel]
+    tasks:
+      - {type: advancement, advancement: create:shifting_gears}
+    rewards:
+      - {type: xp, xp: 155}
+      - {type: item, item: create:gearbox, count: 2}
+
+  - key: windmill
+    id: 91C8A76B406CF0AF
+    title: Ветряк для дальней мастерской
+    description:
+      - Ветряку не нужна река — только простор и паруса. Соберите его там, где вода далеко.
+    x: 1
+    y: -8.5
+    icon: create:windmill_bearing
+    deps: [shifting_gears]
+    tasks:
+      - {type: advancement, advancement: create:windmill}
+    rewards:
+      - {type: xp, xp: 140}
+      - {type: item, item: create:white_sail, count: 16}
+
+  - key: windmill_maxed
+    id: B20BCF3BF2BBE521
+    title: Ветер крепчает
+    description:
+      - Соберите ветряк максимального размера. Такого хватит на целую улицу станков.
+    x: 1.5
+    y: -11
+    icon: create:white_sail
+    shape: star
+    optional: true
+    deps: [windmill]
+    tasks:
+      - {type: advancement, advancement: create:windmill_maxed}
+    rewards:
+      - {type: xp, xp: 240}
+      - {type: item, item: create:speedometer}
+      - {type: item, item: createdeco:yellow_brass_lamp, count: 4}
+
+  # ── Кухонный конвейер ──
+  - key: casing
+    id: F208B2429B83E7D8
+    title: Основа станков
+    description:
+      - Андезитовый корпус защищает механизмы и превращает вал в аккуратную машину. Обшейте первый блок.
+    x: 3.5
+    y: 0
+    icon: create:andesite_casing
+    deps: [alloy]
+    tasks:
+      - {type: advancement, advancement: create:andesite_casing}
+    rewards:
+      - {type: xp, xp: 110}
+      - {type: item, item: create:clipboard}
+
+  - key: press
+    id: 013B127CA07E038A
+    title: Пресс открывает новые машины
+    description:
+      - Механический пресс плющит слитки в листы. Без листов не собрать ни латунь, ни водолазный шлем, ни поезд.
+    x: 6
+    y: 0.5
+    icon: create:mechanical_press
+    deps: [casing]
+    tasks:
+      - {type: advancement, advancement: create:mechanical_press}
+    rewards:
+      - {type: xp, xp: 145}
+      - {type: item, item: create:blue_toolbox}
+
+  - key: compacting
+    id: C8C4ECA83D73BF63
+    title: Один пресс — два способа работы
+    description:
+      - Поставьте пресс над чашей — он начнёт спрессовывать предметы. Так делают блоки, слитки и прочее «из многого — одно».
+    x: 8.5
+    y: 1
+    icon: create:basin
+    deps: [press]
+    tasks:
+      - {type: advancement, advancement: create:compacting}
+    rewards:
+      - {type: xp, xp: 145}
+      - {type: item, item: create:filter, count: 2}
+
+  - key: millstone
+    id: 95DD2AD4CCAA7D90
+    title: Жернова для походного хлеба
+    description:
+      - Жернова мелют пшеницу в муку и руду в крошку. Первый шаг к хлебной линии.
+    x: 11
+    y: 1.5
+    icon: create:millstone
+    deps: [compacting]
+    tasks:
+      - {type: advancement, advancement: create:millstone}
+    rewards:
+      - {type: xp, xp: 125}
+      - {type: item, item: sliceanddice:slicer}
+
+  - key: fan
+    id: 82EB3ADD3D2CD6B9
+    title: Вентилятор вместо печи
+    description:
+      - Вентилятор, дующий сквозь огонь, печёт всё, что пролетает мимо. Сквозь воду — моет, сквозь лаву — плавит.
+    x: 13.5
+    y: 2
+    icon: create:encased_fan
+    deps: [millstone]
+    tasks:
+      - {type: advancement, advancement: create:encased_fan}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: create:empty_blaze_burner}
+
+  - key: fan_processing
+    id: 1245D0A9CAC83D18
+    title: Из муки — тесто и хлеб
+    description:
+      - Обработайте предмет потоком воздуха — например, испеките тесто в хлеб на лету.
+    x: 16
+    y: 2.5
+    icon: minecraft:bread
+    deps: [fan]
+    tasks:
+      - {type: advancement, advancement: create:fan_processing}
+    rewards:
+      - {type: xp, xp: 135}
+      - {type: item, item: create:sweet_roll, count: 6}
+
+  - key: mixer
+    id: CDAC640579002402
+    title: Миксер расширяет ассортимент
+    description:
+      - Миксер над чашей смешивает ингредиенты — так получаются тесто, сплавы и сладости.
+    x: 7
+    y: 3.5
+    icon: create:mechanical_mixer
+    deps: [press]
+    tasks:
+      - {type: advancement, advancement: create:mechanical_mixer}
+    rewards:
+      - {type: xp, xp: 220}
+      - {type: item, item: sliceanddice:sprinkler}
+
+  - key: burner
+    id: 49C8A0032E4C0E17
+    title: Жар для шоколада и латуни
+    description:
+      - Поймайте ифрита в пустую горелку. Нагретая чаша нужна для латуни — главного металла второй ступени.
+    x: 9.5
+    y: 4.5
+    icon: create:blaze_burner
+    deps: [mixer]
+    tasks:
+      - {type: advancement, advancement: create:burner}
+    rewards:
+      - {type: xp, xp: 180}
+      - {type: item, item: create:blaze_cake, count: 2}
+
+  - key: foods
+    id: F7BBC141C944B0BA
+    title: Кондитерская выпускает три десерта
+    description:
+      - Сделайте на машинах три разных лакомства Create. Пусть мастерская кормит экспедицию.
+    x: 12
+    y: 5.5
+    icon: create:honeyed_apple
+    shape: star
+    optional: true
+    deps: [burner]
+    tasks:
+      - {type: advancement, advancement: create:foods}
+    rewards:
+      - {type: xp, xp: 275}
+      - {type: item, item: farmersdelight:honey_glazed_ham_block}
+
+  # ── Подвижные машины ──
+  - key: saw
+    id: EA8154FB9A317740
+    title: Пила в мастерской
+    description:
+      - Механическая пила распиливает брёвна на доски и сама валит деревья, если поставить её на машину.
+    x: 0
+    y: 3.5
+    icon: create:mechanical_saw
+    deps: [alloy]
+    tasks:
+      - {type: advancement, advancement: create:saw_processing}
+    rewards:
+      - {type: xp, xp: 135}
+      - {type: item, item: create:shaft, count: 16}
+
+  - key: belt
+    id: F68B3CF3BC1979DB
+    title: Дорога для материалов
+    description:
+      - Лента перевозит предметы от станка к станку. Протяните первую.
+    x: -0.5
+    y: 6
+    icon: create:belt_connector
+    deps: [saw]
+    tasks:
+      - {type: advancement, advancement: create:belt}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: create:andesite_tunnel, count: 2}
+
+  - key: funnel
+    id: 26B8EA27D2BE22B9
+    title: Лента встречает склад
+    description:
+      - Воронка снимает предметы с ленты прямо в сундук — или кладёт их на ленту из него.
+    x: -1
+    y: 8.5
+    icon: create:andesite_funnel
+    deps: [belt]
+    tasks:
+      - {type: advancement, advancement: create:funnel}
+    rewards:
+      - {type: xp, xp: 145}
+      - {type: item, item: create:depot, count: 4}
+
+  - key: funnel_kiss
+    id: 63D8F44C93AB9D80
+    title: Поцелуй воронок
+    description:
+      - Сведите две воронки нос к носу через ленту. Зачем? Потому что Create умеет и такое.
+    x: 1.5
+    y: 9
+    icon: create:brass_funnel
+    shape: circle
+    optional: true
+    deps: [funnel]
+    tasks:
+      - {type: advancement, advancement: create:belt_funnel_kiss}
+    rewards:
+      - {type: xp, xp: 180}
+      - {type: item, item: create:brass_funnel, count: 2}
+
+  - key: chute
+    id: 2EBBB558E1A30F2F
+    title: Груз меняет этаж
+    description:
+      - Желоб опускает и поднимает предметы между этажами мастерской.
+    x: -1.5
+    y: 11
+    icon: create:chute
+    deps: [funnel]
+    tasks:
+      - {type: advancement, advancement: create:chute}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: create:item_vault, count: 4}
+
+  - key: super_glue
+    id: CCF5C3CD6FF300E7
+    title: Собрать машину воедино
+    description:
+      - Суперклей скрепляет блоки в одну подвижную конструкцию. С ним собирают дрели, комбайны и лифты.
+    x: -2
+    y: 13.5
+    icon: create:super_glue
+    deps: [chute]
+    tasks:
+      - {type: advancement, advancement: create:super_glue}
+    rewards:
+      - {type: xp, xp: 135}
+      - {type: item, item: create:mechanical_drill}
+      - {type: item, item: create:mechanical_harvester}
+
+  - key: actors
+    id: 8D62D114AA053441
+    title: Машина отправляется на работу
+    description:
+      - Поставьте на движущуюся конструкцию бур, плуг или комбайн — и пусть работает, пока вы заняты другим.
+    x: -2.5
+    y: 16
+    icon: create:mechanical_drill
+    deps: [super_glue]
+    tasks:
+      - {type: advancement, advancement: create:contraption_actors}
+    rewards:
+      - {type: xp, xp: 180}
+      - {type: item, item: create:linear_chassis, count: 8}
+
+  - key: psi
+    id: 4C3AA9001AA8E8D5
+    title: Вернуться и выгрузить
+    description:
+      - Переносной интерфейс хранилища выгружает добычу машины на остановке. Без него комбайн привезёт всё в карманах.
+    x: -3
+    y: 18.5
+    icon: create:portable_storage_interface
+    deps: [actors]
+    tasks:
+      - {type: advancement, advancement: create:portable_storage_interface}
+    rewards:
+      - {type: xp, xp: 180}
+      - {type: item, item: create:mechanical_roller}
+
+  - key: self_deploying
+    id: 0F8DAD91D9AEBBB3
+    title: Самоукладывающаяся колея
+    description:
+      - Машина на вагонетке, которая сама кладёт перед собой рельсы. Вот это мастерская!
+    x: -3.5
+    y: 21
+    icon: create:railway_casing
+    shape: star
+    optional: true
+    deps: [psi]
+    tasks:
+      - {type: advancement, advancement: create:self_deploying}
+    rewards:
+      - {type: xp, xp: 275}
+      - {type: item, item: create:railway_casing, count: 4}
+
+  - key: extendo
+    id: EC70D65F82B2FEF1
+    title: Работа на расстоянии
+    description:
+      - Выдвижная рука достаёт блоки издалека. Строить под потолком станет проще.
+    x: 2.5
+    y: 5
+    icon: create:extendo_grip
+    shape: circle
+    optional: true
+    deps: [saw]
+    tasks:
+      - {type: advancement, advancement: create:extendo_grip}
+    rewards:
+      - {type: xp, xp: 210}
+      - {type: item, item: minecraft:iron_ingot, count: 32}
+
+  - key: extendo_dual
+    id: 549B77B92B0AFF7C
+    title: Две выдвижные руки
+    description:
+      - По выдвижной руке в каждой — и вы почти великан. Юра уже придумал, как этим пугать соседей.
+    x: 4.5
+    y: 6.5
+    icon: create:extendo_grip
+    shape: circle
+    optional: true
+    deps: [extendo]
+    tasks:
+      - {type: advancement, advancement: create:extendo_grip_dual}
+    rewards:
+      - {type: xp, xp: 225}
+      - {type: item, item: artifacts:pocket_piston}
+
+  - key: potato_cannon
+    id: 51AECF619A98596B
+    title: Овощной фейерверк
+    description:
+      - Картофельная пушка стреляет всем съедобным. Попадите снарядом в снаряд — выйдет салют.
+    x: 4
+    y: 9
+    icon: create:potato_cannon
+    shape: circle
+    optional: true
+    deps: [extendo_dual]
+    tasks:
+      - {type: advancement, advancement: create:potato_cannon_collide}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:potato, count: 32}
+
+  # ── Трубы и жидкости ──
+  - key: copper_casing
+    id: 8F58E4E6C70518FE
+    title: Медь для трубопровода
+    description:
+      - Медный корпус — основа всего, что связано с жидкостями. Обшейте первый блок.
+    x: -3.5
+    y: 0
+    icon: create:copper_casing
+    deps: [alloy]
+    tasks:
+      - {type: advancement, advancement: create:copper_casing}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: create:fluid_pipe, count: 16}
+
+  - key: pump
+    id: F7E2465288E575FF
+    title: Насос доставляет жидкость
+    description:
+      - Механический насос гонит воду, лаву и мёд по трубам. Направление потока — по стрелке.
+    x: -6
+    y: -0.5
+    icon: create:mechanical_pump
+    deps: [copper_casing]
+    tasks:
+      - {type: advancement, advancement: create:mechanical_pump_0}
+    rewards:
+      - {type: xp, xp: 165}
+      - {type: item, item: create:fluid_tank, count: 4}
+
+  - key: spout
+    id: 93F9199B68F09FF2
+    title: Дозатор завершает рецепт
+    description:
+      - Дозатор наливает жидкость прямо в предмет — заполняет бутылки, поливает торты, делает зелья.
+    x: -8.5
+    y: -1
+    icon: create:spout
+    deps: [pump]
+    tasks:
+      - {type: advancement, advancement: create:spout}
+    rewards:
+      - {type: xp, xp: 175}
+      - {type: item, item: create:builders_tea, count: 4}
+
+  - key: drain
+    id: 053070B7D8792A37
+    title: Из ведра в трубопровод
+    description:
+      - Слив забирает жидкость из предметов — вёдер, бутылок и всего, что можно вылить.
+    x: -11
+    y: -1.5
+    icon: create:item_drain
+    deps: [spout]
+    tasks:
+      - {type: advancement, advancement: create:drain}
+    rewards:
+      - {type: xp, xp: 155}
+      - {type: item, item: create:copper_valve_handle}
+
+  - key: steam_engine
+    id: 18ED8A27D511509E
+    title: Пар для растущего производства
+    description:
+      - Бойлер из баков, вода и горелка — и паровой двигатель даст столько силы, сколько не даст ни одно колесо.
+    x: -13.5
+    y: -2
+    icon: create:steam_engine
+    shape: star
+    size: 1.4
+    deps: [drain]
+    tasks:
+      - {type: advancement, advancement: create:steam_engine}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: create:fluid_tank, count: 8}
+
+  - key: chocolate
+    id: 82858847B7756EBF
+    title: Горячий шоколад
+    description:
+      - Шоколад в Create — жидкость. Наберите ведро шоколада. Максим, это для дела, не для тебя.
+    x: -7.5
+    y: 1.5
+    icon: create:chocolate_bucket
+    shape: circle
+    optional: true
+    deps: [spout]
+    tasks:
+      - {type: advancement, advancement: create:chocolate_bucket}
+    rewards:
+      - {type: xp, xp: 160}
+      - {type: item, item: createaddition:chocolate_cake, count: 4}
+
+  - key: honey
+    id: 1DCEBEFB5C85037B
+    title: Мёд поступает по трубам
+    description:
+      - Подведите трубу к улью и откачайте мёд. Пчёлы недовольны, кондитерская счастлива.
+    x: -10
+    y: 1
+    icon: minecraft:honey_bottle
+    shape: circle
+    optional: true
+    deps: [drain]
+    tasks:
+      - {type: advancement, advancement: create:honey_drain}
+    rewards:
+      - {type: xp, xp: 220}
+      - {type: item, item: farmersdelight:honey_cookie, count: 8}
+
+  - key: cross_streams
+    id: 5F239B4F41DD0E0C
+    title: Не скрещивайте потоки
+    description:
+      - Сведите в трубах воду и лаву. Получится камень — и урок, почему так делать не стоит.
+    x: -12.5
+    y: 0.5
+    icon: minecraft:obsidian
+    shape: circle
+    optional: true
+    deps: [honey]
+    tasks:
+      - {type: advancement, advancement: create:cross_streams}
+    rewards:
+      - {type: xp, xp: 225}
+      - {type: item, item: create:sequenced_gearshift}
+
+  - key: lava_diving
+    id: 1DDBD113F023CE39
+    title: Водолаз лавового озера
+    description:
+      - Незеритовый водолазный костюм держит даже лаву. Окунитесь — Юра подержит верёвку.
+    x: -16
+    y: -2.5
+    icon: create:netherite_diving_helmet
+    shape: circle
+    optional: true
+    deps: [steam_engine]
+    tasks:
+      - {type: advancement, advancement: create:diving_suit_lava}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:netherite_scrap, count: 2}

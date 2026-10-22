@@ -329,67 +329,6 @@
 			]
 		}
 		{
-			id: "391F9987F1F32442"
-			title: "Фабрика древнего оружия"
-			description: ["Найдите Древнюю фабрику Cataclysm. Осмотрите помещения и пути отхода, прежде чем пробуждать её главную угрозу."]
-			x: 5.0d
-			y: -5.0d
-			icon: "cataclysm:emp"
-			shape: "scroll"
-			size: 1.2d
-			tasks: [{
-				id: "2EB8EC2622C9F900"
-				type: "advancement"
-				advancement: "cataclysm:find_ancient_factory"
-			}]
-			rewards: [
-				{
-					id: "8DCF7D4B17B2DE25"
-					type: "xp"
-					xp: 210
-				}
-				{
-					id: "85A5C15CE51A9C5E"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "better_weaponry:diamond_glaive"
-					}
-				}
-			]
-		}
-		{
-			id: "8792C39846E0D49E"
-			title: "Последний сигнал Предвестника"
-			description: ["Победите Предвестника. Финал фабричной экспедиции требует настоящей победы над древней машиной, а не только посещения её комплекса."]
-			x: 2.5d
-			y: -2.5d
-			icon: "cataclysm:witherite_ingot"
-			shape: "star"
-			size: 1.4d
-			dependencies: ["391F9987F1F32442"]
-			tasks: [{
-				id: "D77F8BEAE7104B28"
-				type: "advancement"
-				advancement: "cataclysm:kill_harbinger"
-			}]
-			rewards: [
-				{
-					id: "FCD4B09B2EB19911"
-					type: "xp"
-					xp: 790
-				}
-				{
-					id: "B165D87C318BE4C5"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "better_weaponry:emerald_claymore"
-					}
-				}
-			]
-		}
-		{
 			id: "DE6173A11D04779E"
 			title: "Восемь побед Катаклизма"
 			description: [
@@ -543,38 +482,6 @@
 					item: {
 						Count: 1b
 						id: "better_weaponry:amethyst_rapier"
-					}
-				}
-			]
-		}
-		{
-			id: "52813202FFECF301"
-			title: "Сломать незеритовую машину"
-			description: ["Победите Незеритовое чудовище. Это главный итог похода в Кузницу душ; сохраните силы на бой, а не только на дорогу к арене."]
-			x: 2.5d
-			y: 2.5d
-			icon: "cataclysm:infernal_forge"
-			shape: "star"
-			size: 1.4d
-			optional: true
-			dependencies: ["0A9ACE48F5328D23"]
-			tasks: [{
-				id: "61D66741699F3400"
-				type: "advancement"
-				advancement: "cataclysm:kill_monstrosity"
-			}]
-			rewards: [
-				{
-					id: "E0E0FD04924D12B5"
-					type: "xp"
-					xp: 820
-				}
-				{
-					id: "169FE3FC00D98431"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "better_weaponry:emerald_battleaxe"
 					}
 				}
 			]

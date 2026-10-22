@@ -25,6 +25,9 @@ python tools/questbook.py check   # SNBT совпадает со свежей с
 События модов без достижений (найм в Recruits/Workers) засчитывает
 `kubejs/startup_scripts/nasledie_events.js`: он выдаёт достижения `nasledie:events/...`.
 Стартовые скрипты KubeJS загружаются только при запуске игры — после обновления нужен полный перезапуск.
+Победы артиллерией Create Big Cannons засчитывает `kubejs/server_scripts/nasledie_artillery.js`: у снарядов
+нет владельца-игрока, поэтому смерть от урона `createbigcannons.*` засчитывается игрокам в радиусе 128 блоков
+(`nasledie:events/artillery/kill`, для боссов — ещё `.../boss`).
 
 Схемы глав для проверки раскладки: `python tools/preview.py ПАПКА [глава ...] --jars ПАПКА_С_JAR`
 (положение, формы, значки и линии реальные; шрифты и рамки — нет).

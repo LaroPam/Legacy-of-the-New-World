@@ -502,6 +502,175 @@
 				}
 			]
 		}
+		{
+			id: "391F9987F1F32442"
+			title: "Фабрика Странда"
+			description: ["Око меха указывает на древнюю фабрику. Там погиб Улоф Странд. Найдите её — и его последние чертежи."]
+			x: 15.0d
+			y: 2.5d
+			icon: "cataclysm:mech_eye"
+			dependencies: ["B433E7FAF2F51B45"]
+			tasks: [{
+				id: "78715FFBE94F12D2"
+				type: "advancement"
+				advancement: "cataclysm:find_ancient_factory"
+			}]
+			rewards: [
+				{
+					id: "ED414473875F773F"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "C95387047ABA531C"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "create:schematic_and_quill"
+					}
+				}
+				{
+					id: "78A1015DDE675294"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "create:empty_schematic"
+					}
+				}
+				{
+					id: "35DF5F76AAF8418F"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Улофа Странда, II"
+							author: "Улоф Странд, инженер"
+							pages: [
+								"{\"text\": \"Фабрика. Внутри всё ещё работает: трубы гудят, ленты ползут, а в центре зала спит машина размером с дом.\"}"
+								"{\"text\": \"Это не страж. Это мастер Зодчих, который отказался от тела и собрал себя из железа. Он не забыл ремесло — он забыл, зачем.\"}"
+								"{\"text\": \"Оставляю чертежи: против машины нужна машина. Пушки, броня, своя мастерская.\\n\\nЭклунд торопит. Говорит, у нас нет времени. У кого — у нас?\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "8792C39846E0D49E"
+			title: "Машина, которая помнит"
+			description: ["В сердце фабрики спит Предвестник — мастер Зодчих в железном теле. Разбудите его и победите. Пушки, о которых писал Странд, здесь очень пригодятся."]
+			x: 18.0d
+			y: 1.0d
+			icon: "cataclysm:wither_assault_shoulder_weapon"
+			shape: "crown"
+			size: 1.7d
+			dependencies: ["391F9987F1F32442"]
+			tasks: [{
+				id: "89774D9F3E3C6DE6"
+				type: "advancement"
+				advancement: "cataclysm:kill_harbinger"
+			}]
+			rewards: [
+				{
+					id: "3DBECCB006E5A4A2"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					id: "D358740B1CA63A0E"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:music_disc_the_harbinger"
+					}
+				}
+				{
+					id: "CDD5A4AD0BDD9336"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:sticky_gloves"
+					}
+				}
+				{
+					id: "09873DB0F23EBB7D"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Улофа Странда, III"
+							author: "Улоф Странд, инженер"
+							pages: [
+								"{\"text\": \"Если вы это нашли — я не вышел. Машина проснулась, когда Эклунд коснулся пульта. Я видел: он сделал это нарочно.\"}"
+								"{\"text\": \"Предвестник не нападал на него. Только на нас.\"}"
+								"{\"text\": \"Берг уводит раненых. Линд рисует выход. Я держу дверь.\\n\\nПростите, что пишу криво — рука уже не моя.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "52813202FFECF301"
+			title: "Кузнец, ставший молотом"
+			description: ["Око чудовища ведёт в Нижний мир, к кузне душ. Её последний мастер давно стал частью наковальни. Победите незеритовое чудище."]
+			x: 15.5d
+			y: 8.8d
+			icon: "cataclysm:monstrous_helm"
+			shape: "crown"
+			size: 1.7d
+			dependencies: [
+				"B433E7FAF2F51B45"
+				"0A9ACE48F5328D23"
+			]
+			tasks: [{
+				id: "8875F4EDDF8E0219"
+				type: "advancement"
+				advancement: "cataclysm:kill_monstrosity"
+			}]
+			rewards: [
+				{
+					id: "CAB7BB572E49F59A"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					id: "1A7244D3457A8623"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:music_disc_netherite_monstrosity"
+					}
+				}
+				{
+					id: "6820114BFA49F1BA"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:sturdy_boots"
+					}
+				}
+				{
+					id: "D511C0567A842ADC"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Торвальда Эклунда, II"
+							author: "Торвальд Эклунд"
+							pages: [
+								"{\"text\": \"Кузня душ. Здесь Зодчие сплавляли металл и волю. Чудище у наковальни — их последний кузнец, ставший собственным молотом.\"}"
+								"{\"text\": \"Странд погиб глупо. Он не понимал: стража нельзя победить и оставить как есть. Сила ищет хозяина.\"}"
+								"{\"text\": \"Когда чудище упало, жар вошёл мне в руки. Я почти не чувствую боли.\\n\\nОстальным знать не нужно.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
 	]
 }
 

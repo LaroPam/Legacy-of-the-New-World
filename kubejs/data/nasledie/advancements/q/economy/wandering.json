@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "trade": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "type": "minecraft:wandering_trader"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "trade"
+    ]
+  ]
+}
