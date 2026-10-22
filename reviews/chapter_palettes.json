@@ -41,9 +41,9 @@
     "add_icon": "builtin"
   },
   "chapters": {
-    "nasledie_prolog": {
+    "nasledie_chronicle": {
       "id": "24C1CA6B47BF45C9",
-      "name": "Первый рассвет",
+      "name": "Летопись",
       "properties": {
         "quest_locked_color": "#9A8C4F",
         "quest_not_started_color": "#FFD43B",

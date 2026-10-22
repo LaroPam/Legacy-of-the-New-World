@@ -1,10 +1,10 @@
 chapter:
   filename: nasledie_netheritage
   id: BC5663C3D347C93F
-  group: 842B4DB4DBD349A0
+  group: act2
   title: Нижний мир — подготовить рейд в крепость
   icon: minecraft:nether_bricks
-  order_index: 16
+  order_index: 8
   progression_mode: flexible
   default_hide_dependency_lines: false
   default_quest_shape: circle

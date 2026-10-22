@@ -20,6 +20,9 @@ PATTERNS = {
     'advancement': r'data/([^/]+)/advancements/(.+)\.json$',
     'structures': r'data/([^/]+)/worldgen/structure/(.+)\.json$',
     'biomes': r'data/([^/]+)/worldgen/biome/(.+)\.json$',
+    'blocks': r'assets/([^/]+)/blockstates/(.+)\.json$',
+    'loot_tables': r'data/([^/]+)/loot_tables/(.+)\.json$',
+    'recipes': r'data/([^/]+)/recipes/(.+)\.json$',
 }
 LANG = r'assets/([^/]+)/lang/(en_us|ru_ru)\.json$'
 
@@ -83,7 +86,9 @@ def main():
         langs['ru_ru'].update(json.loads(args.vanilla_ru.read_text(encoding='utf-8')))
     out['entities'] = {f'{m[1]}:{m[2]}' for lang in langs.values() for key in lang
                        for m in [re.match(r'entity\.([a-z0-9_]+)\.([a-z0-9_]+)$', key)] if m}
-    kinds = ('items', 'entities', 'structures', 'biomes', 'advancement')
+    out['effects'] = {f'{m[1]}:{m[2]}' for lang in langs.values() for key in lang
+                      for m in [re.match(r'effect\.([a-z0-9_]+)\.([a-z0-9_]+)$', key)] if m}
+    kinds = ('items', 'entities', 'structures', 'biomes', 'advancement', 'blocks', 'loot_tables', 'recipes', 'effects')
     registry = {kind: sorted(out[kind]) for kind in kinds}
     registry['namespaces'] = {kind: sorted({i.split(':')[0] for i in out[kind]}) for kind in kinds}
     registry['advancement_items'] = out['advancement_items']

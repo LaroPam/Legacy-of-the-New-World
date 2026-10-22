@@ -44,7 +44,8 @@ def build(*sources):
         for i, text in enumerate(sources):
             name = 'test_a' if i == 0 else 'test_b'
             (Path(tmp) / (name + '.yaml')).write_text(text, encoding='utf-8')
-        return {n: snbt.loads(t) for n, t in questbook.build_all(Path(tmp)).items()}
+        built = questbook.build_all(Path(tmp), Path(tmp) / 'no_groups.yaml')
+        return {p.stem: snbt.loads(t) for p, t in built.items() if p.suffix == '.snbt'}
 
 
 class QuestbookBuild(unittest.TestCase):
@@ -77,6 +78,40 @@ class QuestbookBuild(unittest.TestCase):
     def test_duplicate_key_fails(self):
         with self.assertRaises(ValueError):
             build(CHAPTER.replace('key: next', 'key: start'))
+
+
+class CriteriaTasks(unittest.TestCase):
+    SOURCE = CHAPTER.replace('tasks: [{type: item, item: minecraft:diamond}]',
+                             'tasks: [{type: criteria, title: Победить, kill: minecraft:zombie, in_structure: minecraft:fortress}]')
+
+    def test_generates_advancement(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / 'test_a.yaml').write_text(self.SOURCE, encoding='utf-8')
+            built = questbook.build_all(Path(tmp), Path(tmp) / 'none.yaml')
+        adv = [json.loads(t) for p, t in built.items() if p.suffix == '.json']
+        self.assertEqual(len(adv), 1)
+        crit = adv[0]['criteria']['done']
+        self.assertEqual(crit['trigger'], 'minecraft:player_killed_entity')
+        self.assertEqual(crit['conditions']['entity']['location'], {'structure': 'minecraft:fortress'})
+        chapter = snbt.loads(next(t for p, t in built.items() if p.suffix == '.snbt'))
+        task = chapter['quests'][1]['tasks'][0]
+        self.assertEqual(str(task['advancement']), 'nasledie:q/test_a/next')
+        self.assertEqual(str(task['title']), 'Победить')
+
+    def test_title_required(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / 'test_a.yaml').write_text(self.SOURCE.replace('title: Победить, ', ''), encoding='utf-8')
+            with self.assertRaises(ValueError):
+                questbook.build_all(Path(tmp), Path(tmp) / 'none.yaml')
+
+    def test_any_of(self):
+        source = CHAPTER.replace('tasks: [{type: item, item: minecraft:diamond}]',
+                                 'tasks: [{type: criteria, title: Т, any_of: [{placed: minecraft:stone}, {bred: minecraft:cow}]}]')
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / 'test_a.yaml').write_text(source, encoding='utf-8')
+            built = questbook.build_all(Path(tmp), Path(tmp) / 'none.yaml')
+        adv = next(json.loads(t) for p, t in built.items() if p.suffix == '.json')
+        self.assertEqual(adv['requirements'], [['c0', 'c1']])
 
 
 class Validation(unittest.TestCase):

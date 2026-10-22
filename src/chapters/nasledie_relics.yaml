@@ -1,10 +1,10 @@
 chapter:
   filename: nasledie_relics
   id: 14127D019AF8A60A
-  group: 842B4DB4DBD349A0
+  group: free
   title: Реликвии — коллекции для приключений
   icon: relics:researching_table
-  order_index: 15
+  order_index: 17
   progression_mode: flexible
   default_hide_dependency_lines: false
   default_quest_shape: circle

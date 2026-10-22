@@ -15,6 +15,20 @@ python tools/questbook.py check   # SNBT совпадает со свежей с
 наград генерируются детерминированно из ключа. Старые квесты хранят свой прежний `id`.
 Награда `type: book` создаёт подписанную книгу (`minecraft:written_book`) с текстом страниц.
 
+Нестандартные условия пишутся прямо в квесте: задача `type: criteria` с одним из сокращений
+(`kill`, `placed`, `bred`, `tamed`, `trade`, `loot`, `ride`, `effect`, `used_item`, `used_on_block`,
+`crafted`, `obtain`, `consumed`, `in_structure_tick`, `granted`) или с `any_of`/`all_of`/`criteria`.
+Сборка создаёт достижение `kubejs/data/nasledie/advancements/q/<глава>/<ключ>.json`; эта папка
+целиком генерируется. Группы глав — `src/chapter_groups.yaml`, ссылки на квесты других глав —
+`links:` в главе. Теги структур и биомов лежат в `kubejs/data/nasledie/tags/`.
+
+События модов без достижений (найм в Recruits/Workers) засчитывает
+`kubejs/startup_scripts/nasledie_events.js`: он выдаёт достижения `nasledie:events/...`.
+Стартовые скрипты KubeJS загружаются только при запуске игры — после обновления нужен полный перезапуск.
+
+Схемы глав для проверки раскладки: `python tools/preview.py ПАПКА [глава ...] --jars ПАПКА_С_JAR`
+(положение, формы, значки и линии реальные; шрифты и рамки — нет).
+
 Если квесты правились в игре через режим редактирования FTB Quests, такие правки нужно
 перенести в YAML, иначе следующая сборка их затрёт.
 

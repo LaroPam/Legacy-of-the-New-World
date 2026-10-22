@@ -1,10 +1,10 @@
 chapter:
   filename: nasledie_archeology
   id: CF8AC0B0D69E3A34
-  group: 842B4DB4DBD349A0
+  group: act2
   title: Археология — от раскопа к музею
   icon: minecraft:brush
-  order_index: 14
+  order_index: 4
   progression_mode: flexible
   default_hide_dependency_lines: false
   default_quest_shape: circle
@@ -33,29 +33,6 @@ quests:
     type: item
     item: betterarcheology:rotten_planks
     count: 3
-- id: 79C6E9FC12713C40
-  title: Следы предыдущей экспедиции
-  x: 2.5
-  y: 0.0
-  icon: minecraft:spyglass
-  shape: scroll
-  size: 1.2
-  description:
-  - Найдите археологический лагерь Better Archeology в травянистой местности. Осмотрите его как отправную точку
-    полевой работы и выберите удобный район для первых поисков.
-  deps:
-  - D224CC946496E3DE
-  tasks:
-  - id: F5F6C315ED6C3CA9
-    type: structure
-    structure: betterarcheology:archeologist_camp_grassy
-  rewards:
-  - id: 1E6A01C97181A30C
-    type: xp
-    xp: 210
-  - id: 4FF11CE67871C19E
-    type: item
-    item: betterarcheology:rotten_log
 - id: A39CCB33A472D0AD
   title: Первая часть древнего существа
   x: 5.0
@@ -67,7 +44,7 @@ quests:
   - Получите голову или тело одной из окаменелостей Better Archeology. Достижение отмечает находку фрагмента в инвентаре;
     целый собранный скелет пока не требуется.
   deps:
-  - 79C6E9FC12713C40
+  - D224CC946496E3DE
   tasks:
   - id: 4A2E602529B5A8EC
     type: advancement
@@ -186,7 +163,7 @@ quests:
   - 'Найдите древнюю могилу жителя Better Archeology. Этот маршрут посвящён следам прежних поселений: после отдельных
     захоронений вы доберётесь до большого подземного архива.'
   deps:
-  - 79C6E9FC12713C40
+  - D224CC946496E3DE
   tasks:
   - id: 71E08DD88201475F
     type: structure

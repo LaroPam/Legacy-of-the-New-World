@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "terralith:skylands",
+    "terralith:skylands_autumn",
+    "terralith:skylands_spring",
+    "terralith:skylands_summer",
+    "terralith:skylands_winter"
+  ]
+}

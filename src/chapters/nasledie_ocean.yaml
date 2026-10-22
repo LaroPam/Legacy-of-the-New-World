@@ -1,10 +1,10 @@
 chapter:
   filename: nasledie_ocean
   id: 42E670E2D2E5798E
-  group: 842B4DB4DBD349A0
+  group: act2
   title: Океан — проводник и штурм монумента
   icon: minecraft:heart_of_the_sea
-  order_index: 17
+  order_index: 7
   progression_mode: flexible
   default_hide_dependency_lines: false
   default_quest_shape: circle

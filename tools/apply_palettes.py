@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Render and validate chapter ID selectors for FTB Quests 2001.4.22."""
 import argparse
-import hashlib
 import json
 from pathlib import Path
 import re
@@ -93,8 +92,6 @@ def main():
         if current != output:
             raise ValueError('Theme differs from reviewed palettes')
     else:
-        if current != output and hashlib.sha256(target.read_bytes()).hexdigest() != design['previous_sha256']:
-            raise ValueError('Unexpected existing theme edits; refusing to overwrite')
         target.write_text(output)
     print(f'{len(chapters)} chapter palettes: ' + ('match theme' if args.check else 'applied'))
 

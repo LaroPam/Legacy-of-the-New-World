@@ -1,10 +1,10 @@
 {
 	filename: "nasledie_legends"
 	id: "2D3B7589DD553745"
-	group: "842B4DB4DBD349A0"
+	group: "771A560C3B3370A6"
 	title: "Легенды глубин — шесть потерянных миров"
 	icon: "minecraft:filled_map"
-	order_index: 9
+	order_index: 14
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	progression_mode: "flexible"

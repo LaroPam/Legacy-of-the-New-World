@@ -20,6 +20,14 @@ Source format (one YAML file per chapter):
                 {type: book, title: ..., pages: [...]}]
 
 Task/reward ids are generated from the quest id and position unless given explicitly.
+
+Custom conditions live next to the quest: a task `{type: criteria, title: ..., kill: entity}` (or placed,
+bred, tamed, trade, loot, ride, effect, used_item, used_on_block, crafted, obtain, granted, criteria)
+generates kubejs/data/nasledie/advancements/q/<chapter>/<key>.json and an advancement task for it.
+`any_of: [...]` combines several shorthands with OR. `granted: true` is for script-granted goals.
+
+Chapter `links: [{quest: ref, x, y, shape, size}]` shows a quest of another chapter in this one.
+src/chapter_groups.yaml lists chapter groups.
 """
 import argparse
 import hashlib
@@ -33,7 +41,10 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / 'src' / 'chapters'
+GROUPS = ROOT / 'src' / 'chapter_groups.yaml'
 OUT = ROOT / 'config' / 'ftbquests' / 'quests' / 'chapters'
+GROUP_FILE = OUT.parent / 'chapter_groups.snbt'
+ADV_DIR = ROOT / 'kubejs' / 'data' / 'nasledie' / 'advancements' / 'q'
 HEX = re.compile(r'^[0-9A-F]{16}$')
 BOOK_AUTHOR = 'Первая экспедиция'
 
@@ -92,7 +103,90 @@ def ordered(data, order):
     return {k: data[k] for k in keys}
 
 
-def build_task(task, seed):
+def location(structure):
+    return {'structure': structure}
+
+
+def criterion(spec):
+    """One shorthand condition -> advancement criterion."""
+    kinds = [k for k in SHORTHANDS if k in spec]
+    if len(kinds) != 1:
+        raise ValueError(f'Criteria task needs exactly one condition, got {sorted(spec)}')
+    kind, value = kinds[0], spec[kinds[0]]
+    if kind == 'kill':
+        entity = {'type': value}
+        if spec.get('in_structure'):
+            entity['location'] = location(spec['in_structure'])
+        conditions = {'entity': entity}
+        if spec.get('player_effect'):
+            conditions['player'] = [{'condition': 'minecraft:entity_properties', 'entity': 'this',
+                                     'predicate': {'effects': {spec['player_effect']: {}}}}]
+        return {'trigger': 'minecraft:player_killed_entity', 'conditions': conditions}
+    if kind == 'placed':
+        return {'trigger': 'minecraft:placed_block', 'conditions': {'location': [
+            {'condition': 'minecraft:block_state_property', 'block': value}]}}
+    if kind == 'bred':
+        return {'trigger': 'minecraft:bred_animals', 'conditions': {'child': {'type': value}}}
+    if kind == 'tamed':
+        return {'trigger': 'minecraft:tame_animal', 'conditions': {'entity': {'type': value}}}
+    if kind == 'trade':
+        return {'trigger': 'minecraft:villager_trade', 'conditions': {'item': {'items': [value]}}}
+    if kind == 'loot':
+        return {'trigger': 'minecraft:player_generates_container_loot', 'conditions': {'loot_table': value}}
+    if kind == 'ride':
+        return {'trigger': 'minecraft:started_riding', 'conditions': {'player': [
+            {'condition': 'minecraft:entity_properties', 'entity': 'this', 'predicate': {'vehicle': {'type': value}}}]}}
+    if kind == 'effect':
+        return {'trigger': 'minecraft:effects_changed', 'conditions': {'effects': {value: {}}}}
+    if kind == 'used_item':
+        return {'trigger': 'minecraft:using_item', 'conditions': {'item': {'items': [value]}}}
+    if kind == 'used_on_block':
+        return {'trigger': 'minecraft:item_used_on_block', 'conditions': {'location': [
+            {'condition': 'minecraft:match_tool', 'predicate': {'items': [value]}}]}}
+    if kind == 'crafted':
+        return {'trigger': 'minecraft:recipe_crafted', 'conditions': {'recipe_id': value}}
+    if kind == 'obtain':
+        items = value if isinstance(value, list) else [value]
+        return {'trigger': 'minecraft:inventory_changed', 'conditions': {'items': [{'items': items}]}}
+    if kind == 'consumed':
+        return {'trigger': 'minecraft:consume_item', 'conditions': {'item': {'items': [value]}}}
+    if kind == 'in_structure_tick':
+        return {'trigger': 'minecraft:location', 'conditions': {'player': [
+            {'condition': 'minecraft:entity_properties', 'entity': 'this', 'predicate': {'location': location(value)}}]}}
+    if kind == 'granted':
+        return {'trigger': 'minecraft:impossible'}
+    raise AssertionError(kind)
+
+
+SHORTHANDS = ('kill', 'placed', 'bred', 'tamed', 'trade', 'loot', 'ride', 'effect', 'used_item', 'used_on_block',
+              'crafted', 'obtain', 'consumed', 'in_structure_tick', 'granted')
+
+
+def advancement_body(task):
+    if 'criteria' in task:
+        criteria = task['criteria']
+        requirements = task.get('requirements') or [[name] for name in criteria]
+    elif 'any_of' in task:
+        criteria = {f'c{i}': criterion(spec) for i, spec in enumerate(task['any_of'])}
+        requirements = [list(criteria)]
+    elif 'all_of' in task:
+        criteria = {f'c{i}': criterion(spec) for i, spec in enumerate(task['all_of'])}
+        requirements = [[name] for name in criteria]
+    else:
+        criteria = {'done': criterion(task)}
+        requirements = [['done']]
+    return {'criteria': criteria, 'requirements': requirements}
+
+
+def build_task(task, seed, generated=None, path=None):
+    if task.get('type') == 'criteria':
+        if not task.get('title'):
+            raise ValueError(f'{path}: criteria task needs a title')
+        rel = f'q/{path}'
+        generated[ADV_DIR.parent / (rel + '.json')] = json.dumps(advancement_body(task), ensure_ascii=False, indent=2) + '\n'
+        task = {k: v for k, v in task.items() if k in ('id', 'title')}
+        task.update({'type': 'advancement', 'advancement': f'nasledie:{rel}'})
+
     task = dict(task)
     ident = task.pop('id', None) or make_id(seed)
     kind = task.pop('type')
@@ -186,12 +280,25 @@ def dependency(ref, chapter, names):
     return target
 
 
-def build_chapter(name, data, names):
+def build_chapter(name, data, names, generated):
     chapter = {k: tag(v, k) for k, v in data['chapter'].items()}
-    chapter.setdefault('quest_links', snbt.List([]))
+    links = []
+    for i, link in enumerate(data.get('links', [])):
+        body = {'id': snbt.String(link.get('id') or make_id(f'{name}/link/{link["quest"]}')),
+                'linked_quest': snbt.String(dependency(link['quest'], name, names)),
+                'x': snbt.Double(float(link['x'])), 'y': snbt.Double(float(link['y']))}
+        for key in ('shape', 'size'):
+            if key in link:
+                body[key] = tag(link[key], key)
+        links.append(snbt.Compound(body))
+    chapter['quest_links'] = snbt.List(links)
     quests = []
     for quest in data['quests']:
         ident = quest['_id']
+        text = quest.get('description', [])
+        if not isinstance(quest.get('title', ''), str) or not isinstance(text, list) or not all(isinstance(s, str) for s in text):
+            raise ValueError(f'{name}/{quest.get("key") or ident}: title and description lines must be plain strings '
+                             '(quote YAML lines that contain ": ")')
         body = {'id': snbt.String(ident)}
         for key, value in quest.items():
             if key in ('key', 'id', '_id', 'deps', 'tasks', 'rewards', 'note'):
@@ -200,17 +307,48 @@ def build_chapter(name, data, names):
         body.setdefault('description', snbt.List([]))
         if quest.get('deps'):
             body['dependencies'] = snbt.List([snbt.String(dependency(d, name, names)) for d in quest['deps']])
-        body['tasks'] = snbt.List([build_task(t, f'{ident}/task/{i}') for i, t in enumerate(quest.get('tasks', []))])
+        stem = (quest.get('key') or ident.lower()).replace('-', '_')
+        tasks = quest.get('tasks', [])
+        body['tasks'] = snbt.List([
+            build_task(t, f'{ident}/task/{i}', generated,
+                       f'{name.removeprefix("nasledie_")}/{stem}' + (f'_{i + 1}' if len(tasks) > 1 else ''))
+            for i, t in enumerate(tasks)])
         body['rewards'] = snbt.List([build_reward(r, f'{ident}/reward/{i}') for i, r in enumerate(quest.get('rewards', []))])
         quests.append(snbt.Compound(ordered(body, QUEST_ORDER)))
     chapter['quests'] = snbt.List(quests)
     return snbt.Compound(ordered(chapter, CHAPTER_ORDER + ('quest_links', 'quests')))
 
 
-def build_all(src=SRC):
+def build_all(src=SRC, groups=GROUPS):
+    """Return {path: text} for every generated file."""
     chapters = load_sources(src)
     names = resolve_ids(chapters)
-    return {name: snbt.dumps(build_chapter(name, data, names)) + '\n' for name, data in chapters.items()}
+    generated = {}
+    entries = yaml.safe_load(groups.read_text(encoding='utf-8')) if groups.exists() else []
+    group_ids = {}
+    for entry in entries:
+        entry['id'] = entry.get('id') or make_id('group/' + entry['key'])
+        group_ids[entry.pop('key')] = entry['id']
+    for data in chapters.values():
+        group = data['chapter'].get('group')
+        if group and not HEX.match(str(group)):
+            if group not in group_ids:
+                raise ValueError(f'Unknown chapter group {group}')
+            data['chapter']['group'] = group_ids[group]
+    for name, data in chapters.items():
+        generated[OUT / (name + '.snbt')] = snbt.dumps(build_chapter(name, data, names, generated)) + '\n'
+    if groups.exists():
+        generated[GROUP_FILE] = snbt.dumps(snbt.Compound({'chapter_groups': tag(entries)})) + '\n'
+    return generated
+
+
+def managed(path):
+    return path.parent == OUT or path == GROUP_FILE or ADV_DIR in path.parents
+
+
+def existing_files():
+    files = set(OUT.glob('*.snbt')) | (set(ADV_DIR.rglob('*.json')) if ADV_DIR.exists() else set())
+    return files | ({GROUP_FILE} if GROUP_FILE.exists() and GROUPS.exists() else set())
 
 
 def import_sources():
@@ -252,22 +390,24 @@ def main(argv=None):
         import_sources()
         return 0
     built = build_all()
-    existing = {p.stem for p in OUT.glob('*.snbt')}
+    existing = existing_files()
     if args.command == 'check':
-        bad = sorted(n for n, text in built.items() if (OUT / (n + '.snbt')).read_text(encoding='utf-8') != text
-                     if (OUT / (n + '.snbt')).exists()) + sorted((existing ^ set(built)))
+        bad = [p for p, text in built.items() if not p.exists() or p.read_text(encoding='utf-8') != text]
+        bad += sorted(existing - set(built))
         if bad:
-            print('Out of date or unexpected SNBT (run tools/questbook.py build):', ', '.join(bad))
+            print('Out of date or unexpected generated files (run tools/questbook.py build):',
+                  ', '.join(str(p.relative_to(ROOT)) for p in bad))
             return 1
-        print('SNBT matches sources:', len(built), 'chapters')
+        print('Generated files match sources:', len(built))
         return 0
-    OUT.mkdir(parents=True, exist_ok=True)
     for stale in existing - set(built):
-        (OUT / (stale + '.snbt')).unlink()
-        print('removed', stale)
-    for name, text in built.items():
-        (OUT / (name + '.snbt')).write_text(text, encoding='utf-8')
-    print('built', len(built), 'chapters')
+        stale.unlink()
+        print('removed', stale.relative_to(ROOT))
+    for path, text in built.items():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        if not path.exists() or path.read_text(encoding='utf-8') != text:
+            path.write_text(text, encoding='utf-8')
+    print('built', sum(p.parent == OUT for p in built), 'chapters,', len(built), 'files')
     return 0
 
 

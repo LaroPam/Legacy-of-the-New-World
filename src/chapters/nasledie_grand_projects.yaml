@@ -1,10 +1,10 @@
 chapter:
   filename: nasledie_grand_projects
   id: 73CB4E221EBED702
-  group: 842B4DB4DBD349A0
+  group: act3
   title: Великие проекты — база оживает
   icon: minecraft:beacon
-  order_index: 10
+  order_index: 13
   progression_mode: flexible
   default_hide_dependency_lines: false
   default_quest_shape: square

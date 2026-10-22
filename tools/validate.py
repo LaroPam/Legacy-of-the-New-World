@@ -51,9 +51,30 @@ def known(kind, ident, registry, local_advancements):
     return ident in entries
 
 
+TAG_DIRS = {'structures': 'worldgen/structure', 'items': 'items', 'entities': 'entity_types', 'biomes': 'worldgen/biome'}
+
+
+def tag_issues(parsed, registry):
+    """Local tags must list ids that exist."""
+    errors = []
+    for name, body in parsed.items():
+        for kind, folder in TAG_DIRS.items():
+            if name.startswith('kubejs/data/') and f'/tags/{folder}/' in name:
+                for value in body.get('values', []):
+                    value = value.get('id') if isinstance(value, dict) else value
+                    if known(kind, value, registry, set()) is False:
+                        errors.append(problem('unknown_' + kind, name, 'Tag member is not in the installed mods', id=value))
+    return errors
+
+
 def registry_issues(parsed, registry, local_advancements):
     errors, unknown = [], Counter()
     def check(kind, ident, location):
+        if str(ident).startswith('#nasledie:'):
+            ns, path = str(ident)[1:].split(':', 1)
+            if f'kubejs/data/{ns}/tags/{TAG_DIRS[kind]}/{path}.json' not in parsed:
+                errors.append(problem('unknown_tag', location, 'Local tag file is missing', id=str(ident)))
+            return
         result = known(kind, ident, registry, local_advancements)
         if result is False:
             errors.append(problem('unknown_' + kind, location, f'{kind} id is not in the installed mods', id=str(ident)))
@@ -76,6 +97,46 @@ def registry_issues(parsed, registry, local_advancements):
             if str(reward.get('type')) == 'item':
                 check('items', reward['item'].get('id'), location + '/reward')
     return errors, unknown
+
+
+ADV_KEYS = {'type': 'entities', 'block': 'blocks', 'structure': 'structures', 'loot_table': 'loot_tables',
+            'recipe_id': 'recipes', 'parent': 'advancement'}
+
+
+def advancement_issues(parsed, registry, local_advancements):
+    """Check ids referenced inside local KubeJS advancements."""
+    errors = []
+    def walk(value, location, key=None):
+        if isinstance(value, dict):
+            for k, v in value.items():
+                if k == 'items' and isinstance(v, list) and all(isinstance(i, str) for i in v):
+                    for item in v:
+                        check('items', item, location)
+                elif k == 'effects' and isinstance(v, dict):
+                    for effect in v:
+                        check('effects', effect, location)
+                    walk(v, location, k)
+                elif k in ADV_KEYS and isinstance(v, str) and ':' in v:
+                    check(ADV_KEYS[k], v, location)
+                else:
+                    walk(v, location, k)
+        elif isinstance(value, list):
+            for v in value:
+                walk(v, location, key)
+    def check(kind, ident, location):
+        if known(kind, ident, registry, local_advancements) is False:
+            errors.append(problem('unknown_' + kind, location, f'{kind} id inside advancement is not in the installed mods', id=ident))
+    for name, body in parsed.items():
+        if name.startswith('kubejs/data/') and '/advancements/' in name:
+            walk(body, name)
+    return errors
+
+
+def unused_advancements(parsed, local_advancements, files):
+    used = {str(t.get('advancement')) for _, _, q in quality.quest_rows(parsed) for t in q.get('tasks', [])}
+    scripts = '\n'.join(v.decode('utf-8', 'replace') for k, v in files.items() if k.endswith('.js'))
+    return [problem('unused_advancement', a, 'Local advancement is not used by any quest or script')
+            for a in sorted(local_advancements) if a not in used and a not in scripts]
 
 
 def reward_conflicts(parsed, registry):
@@ -157,9 +218,12 @@ def evaluate(files, registry):
     local = {f"{p.split('/')[2]}:{p.split('/advancements/', 1)[1][:-5]}" for p in parsed
              if p.startswith('kubejs/data/') and '/advancements/' in p}
     unknown = Counter()
+    warnings += unused_advancements(parsed, local, files)
     if registry:
         r_errors, unknown = registry_issues(parsed, registry, local)
         errors += r_errors
+        errors += advancement_issues(parsed, registry, local)
+        errors += tag_issues(parsed, registry)
         errors += reward_conflicts(parsed, registry)
     return {'counts': quality.inventory(parsed), 'errors': errors, 'warnings': warnings,
             'unknown_registry_namespaces': dict(unknown), 'geometry': metrics,

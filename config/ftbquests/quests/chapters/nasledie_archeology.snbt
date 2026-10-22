@@ -1,10 +1,10 @@
 {
 	filename: "nasledie_archeology"
 	id: "CF8AC0B0D69E3A34"
-	group: "842B4DB4DBD349A0"
+	group: "EF93B76DFA48CC13"
 	title: "Археология — от раскопа к музею"
 	icon: "minecraft:brush"
-	order_index: 14
+	order_index: 4
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	progression_mode: "flexible"
@@ -44,37 +44,6 @@
 			]
 		}
 		{
-			id: "79C6E9FC12713C40"
-			title: "Следы предыдущей экспедиции"
-			description: ["Найдите археологический лагерь Better Archeology в травянистой местности. Осмотрите его как отправную точку полевой работы и выберите удобный район для первых поисков."]
-			x: 2.5d
-			y: 0.0d
-			icon: "minecraft:spyglass"
-			shape: "scroll"
-			size: 1.2d
-			dependencies: ["D224CC946496E3DE"]
-			tasks: [{
-				id: "F5F6C315ED6C3CA9"
-				type: "structure"
-				structure: "betterarcheology:archeologist_camp_grassy"
-			}]
-			rewards: [
-				{
-					id: "1E6A01C97181A30C"
-					type: "xp"
-					xp: 210
-				}
-				{
-					id: "4FF11CE67871C19E"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "betterarcheology:rotten_log"
-					}
-				}
-			]
-		}
-		{
 			id: "A39CCB33A472D0AD"
 			title: "Первая часть древнего существа"
 			description: ["Получите голову или тело одной из окаменелостей Better Archeology. Достижение отмечает находку фрагмента в инвентаре; целый собранный скелет пока не требуется."]
@@ -83,7 +52,7 @@
 			icon: "betterarcheology:villager_fossil_head"
 			shape: "scroll"
 			size: 1.2d
-			dependencies: ["79C6E9FC12713C40"]
+			dependencies: ["D224CC946496E3DE"]
 			tasks: [{
 				id: "4A2E602529B5A8EC"
 				type: "advancement"
@@ -242,7 +211,7 @@
 			shape: "scroll"
 			size: 1.2d
 			optional: true
-			dependencies: ["79C6E9FC12713C40"]
+			dependencies: ["D224CC946496E3DE"]
 			tasks: [{
 				id: "71E08DD88201475F"
 				type: "structure"

@@ -1,10 +1,10 @@
 chapter:
   filename: nasledie_transport
   id: D90DA6CC0E252361
-  group: 842B4DB4DBD349A0
+  group: act3
   title: Транспорт — дороги к новым землям
   icon: create:track_station
-  order_index: 6
+  order_index: 11
   progression_mode: flexible
   default_hide_dependency_lines: false
   default_quest_shape: gear

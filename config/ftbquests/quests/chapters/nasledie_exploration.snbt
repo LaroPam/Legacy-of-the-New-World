@@ -13,410 +13,124 @@
 		{
 			id: "30000F5F1F069AFA"
 			title: "Первая тысяча метров"
-			description: ["Пройдите пешком в общей сложности тысячу блоков. Отмечайте интересные места по пути: первая прогулка легко становится началом большой экспедиции. Бег, плавание и поездки учитываются отдельными счётчиками и сюда не входят."]
+			description: ["Пройдите пешком первый километр. За ближайшим холмом всегда оказывается ещё один — а за ним что-то, ради чего стоило идти."]
 			x: 0.0d
 			y: 0.0d
 			icon: "minecraft:leather_boots"
-			shape: "circle"
-			size: 1.2d
+			size: 1.4d
 			tasks: [{
-				id: "6DAFC3737DCD53B2"
+				id: "F2F2E8EF2D9E942A"
 				type: "stat"
 				stat: "minecraft:walk_one_cm"
 				value: 100000
 			}]
 			rewards: [
 				{
-					id: "DFF6C4CC8D271E5C"
+					id: "34FD6BBD3F8F4E85"
 					type: "xp"
 					xp: 45
 				}
 				{
-					id: "528681BE45EA0650"
+					id: "307A9B6C849AF18D"
 					type: "item"
 					item: {
 						Count: 1b
-						id: "sophisticatedbackpacks:magnet_upgrade"
+						id: "minecraft:saddle"
 					}
 				}
 			]
 		}
 		{
 			id: "5DCFED353E2F543B"
-			title: "Проверенный маршрут"
-			description: ["Доведите расстояние обычной ходьбы до 2500 блоков. Первая тысяча уже входит в этот итог. Вернитесь к прежним находкам или выберите новое направление от дома."]
-			x: 2.5d
+			title: "Десять километров пути"
+			description: ["Пешком, не верхом. Десять километров — столько экспедиция проходила за неделю, нагруженная ящиками и картами."]
+			x: 3.0d
 			y: 0.0d
-			icon: "minecraft:leather_boots"
-			shape: "star"
-			size: 1.2d
+			icon: "minecraft:diamond_boots"
+			optional: true
 			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
-				id: "ECCBE2392F49F900"
+				id: "D6191E3D3E53CC98"
 				type: "stat"
 				stat: "minecraft:walk_one_cm"
-				value: 250000
+				value: 1000000
 			}]
 			rewards: [
 				{
-					id: "5B1DBB1D370C4BC6"
+					id: "D72CFFDF6BB1FC08"
 					type: "xp"
-					xp: 75
+					xp: 300
 				}
 				{
-					id: "4D9113921EDFF73D"
+					id: "1D4CB541E5DAD9DF"
 					type: "item"
 					item: {
-						Count: 1b
-						id: "sophisticatedbackpacks:advanced_pickup_upgrade"
+						Count: 4b
+						id: "waystones:return_scroll"
+					}
+				}
+				{
+					id: "B26FFD502C69FCAC"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:golden_carrot"
 					}
 				}
 			]
 		}
 		{
-			id: "4654570D569F8AFB"
-			title: "Пепельная саванна"
-			description: ["Отыщите пепельную саванну Terralith и войдите в неё. Название биома на карте поможет отличить её от соседних тёплых земель."]
-			x: 5.0d
-			y: -2.5d
-			icon: "minecraft:acacia_sapling"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["5DCFED353E2F543B"]
+			id: "2C2F436A72535E22"
+			title: "Путевой обелиск"
+			description: ["В мире стоят древние обелиски. Активируйте первый — потом к нему можно вернуться из любого другого."]
+			x: 3.0d
+			y: -3.0d
+			icon: "waystones:waystone"
+			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
-				id: "1F5360CCD8CE458A"
-				type: "biome"
-				biome: "terralith:ashen_savanna"
+				id: "B0EEC846023B85EB"
+				type: "stat"
+				stat: "waystones:waystone_activated"
+				value: 1
 			}]
 			rewards: [
 				{
-					id: "17C0E874928AACF3"
+					id: "072C4CA9DDCBA6B0"
 					type: "xp"
-					xp: 75
+					xp: 80
 				}
 				{
-					id: "CB5BA404C4A0DF6F"
+					id: "B038D5B4F29B85E7"
 					type: "item"
 					item: {
-						Count: 6b
+						Count: 8b
 						id: "waystones:warp_dust"
 					}
 				}
 			]
 		}
 		{
-			id: "F740FB239378B229"
-			title: "Цветущая долина"
-			description: ["Доберитесь до цветущей долины Terralith. Если место понравится, отметьте его на карте: будущая усадьба или привал могут однажды появиться именно здесь."]
-			x: 7.5d
-			y: -2.5d
-			icon: "minecraft:flowering_azalea"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["4654570D569F8AFB"]
+			id: "A6CC2B362439ACAB"
+			title: "Сеть обелисков"
+			description: ["Десять активированных обелисков связывают мир в сеть. Теперь дорога назад занимает секунду, а не вечер."]
+			x: 6.0d
+			y: -3.0d
+			icon: "waystones:warp_stone"
+			dependencies: ["2C2F436A72535E22"]
 			tasks: [{
-				id: "C55A48C157E28D15"
-				type: "biome"
-				biome: "terralith:blooming_valley"
+				id: "276ACD183CE90CFA"
+				type: "stat"
+				stat: "waystones:waystone_activated"
+				value: 10
 			}]
 			rewards: [
 				{
-					id: "BD35D85AF39DB97A"
+					id: "E0F77134816B60CE"
 					type: "xp"
-					xp: 95
+					xp: 300
 				}
 				{
-					id: "71DF945B7CCCE31E"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedbackpacks:refill_upgrade"
-					}
-				}
-			]
-		}
-		{
-			id: "142D439350347E70"
-			title: "Белые утёсы"
-			description: ["Найдите белые утёсы Terralith и зайдите в этот биом. Осмотрите обрывы прежде, чем искать дорогу вниз: красивый вид не всегда означает удобный спуск."]
-			x: 12.5d
-			y: -2.5d
-			icon: "minecraft:calcite"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["4A366B92A0D4BDCD"]
-			tasks: [{
-				id: "713D7FB28D6AD2FD"
-				type: "biome"
-				biome: "terralith:white_cliffs"
-			}]
-			rewards: [
-				{
-					id: "8D8DC5F54CA7B78D"
-					type: "xp"
-					xp: 105
-				}
-				{
-					id: "947CE5CFC8D5D112"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedbackpacks:filter_upgrade"
-					}
-				}
-			]
-		}
-		{
-			id: "F17A293356CD1404"
-			title: "Шахта под саванной"
-			description: ["Найдите акациевую разновидность шахты YUNG’s Better Mineshafts и войдите в её коридоры. Возьмите свет и оставьте заметный путь к выходу."]
-			x: 5.0d
-			y: 0.0d
-			icon: "minecraft:acacia_fence"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["5DCFED353E2F543B"]
-			tasks: [{
-				id: "96C5B34A113E7F96"
-				type: "structure"
-				structure: "bettermineshafts:mineshaft_acacia"
-			}]
-			rewards: [
-				{
-					id: "8E557FF7AA47112B"
-					type: "xp"
-					xp: 95
-				}
-				{
-					id: "27ACE1076C426FBB"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedbackpacks:smelting_upgrade"
-					}
-				}
-			]
-		}
-		{
-			id: "28CBD873B6A9B3EA"
-			title: "Шахта среди капельников"
-			description: ["Исследуйте капельниковую разновидность шахты YUNG’s Better Mineshafts. Здесь нужна именно шахта среди натёчных камней; обычная капельниковая пещера — только начало поисков."]
-			x: 7.5d
-			y: 0.0d
-			icon: "minecraft:pointed_dripstone"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["F17A293356CD1404"]
-			tasks: [{
-				id: "E1B87B2889B2EA7D"
-				type: "structure"
-				structure: "bettermineshafts:mineshaft_dripstone"
-			}]
-			rewards: [
-				{
-					id: "2E261DC27ACDEBDA"
-					type: "xp"
-					xp: 120
-				}
-				{
-					id: "7AEC9902C37CF31B"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedbackpacks:anvil_upgrade"
-					}
-				}
-			]
-		}
-		{
-			id: "B7BA27A969107D22"
-			title: "Старая шахта"
-			description: ["Отыщите дубовую разновидность шахты YUNG’s Better Mineshafts. Пройдите внутрь и присмотритесь к её устройству: старые выработки заслуживают внимательной разведки."]
-			x: 10.0d
-			y: 0.0d
-			icon: "minecraft:rail"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["28CBD873B6A9B3EA"]
-			tasks: [{
-				id: "D1B2EA43994AFCFC"
-				type: "structure"
-				structure: "bettermineshafts:mineshaft_oak"
-			}]
-			rewards: [
-				{
-					id: "B26B59C84C17F3A4"
-					type: "xp"
-					xp: 130
-				}
-				{
-					id: "8EAC64A2E41986DA"
-					type: "item"
-					item: {
-						Count: 3b
-						id: "immersive_aircraft:industrial_gears"
-					}
-				}
-			]
-		}
-		{
-			id: "07A63C78A1E0EFD4"
-			title: "Мираж над морем"
-			description: ["Доберитесь до островов миражей Terralith. Запаситесь провизией и отметьте обратный путь, прежде чем надолго уходить от знакомого берега."]
-			x: 15.0d
-			y: -2.5d
-			icon: "minecraft:spyglass"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["142D439350347E70"]
-			tasks: [{
-				id: "2518A9B103A1E106"
-				type: "biome"
-				biome: "terralith:mirage_isles"
-			}]
-			rewards: [
-				{
-					id: "EF2810C3B87F754E"
-					type: "xp"
-					xp: 140
-				}
-				{
-					id: "FBFB8C038AAD5667"
-					type: "item"
-					item: {
-						Count: 2b
-						id: "waystones:warp_scroll"
-					}
-				}
-			]
-		}
-		{
-			id: "A91583B5B92C22EB"
-			title: "Изумрудные пики"
-			description: ["Найдите Изумрудные пики Terralith и войдите в этот горный биом. Заранее продумайте маршрут через высоты — особенно если возвращаться придётся в темноте."]
-			x: 17.5d
-			y: -2.5d
-			icon: "minecraft:emerald"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["07A63C78A1E0EFD4"]
-			tasks: [{
-				id: "52B225211590B893"
-				type: "biome"
-				biome: "terralith:emerald_peaks"
-			}]
-			rewards: [
-				{
-					id: "8483DB252E6F8986"
-					type: "xp"
-					xp: 160
-				}
-				{
-					id: "E338BB9C458BE06E"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "immersive_aircraft:improved_landing_gear"
-					}
-				}
-			]
-		}
-		{
-			id: "E6DC4A843BE1C287"
-			title: "Осенние небесные острова"
-			description: ["Посетите осенние небесные острова Terralith. Подготовьте безопасный подъём и спуск: ваша цель — добраться до самого биома, а не просто увидеть его издалека."]
-			x: 20.0d
-			y: -2.5d
-			icon: "minecraft:elytra"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["A91583B5B92C22EB"]
-			tasks: [{
-				id: "8A8B547AB7CFEE1B"
-				type: "biome"
-				biome: "terralith:skylands_autumn"
-			}]
-			rewards: [
-				{
-					id: "6B304218B6BC25E1"
-					type: "xp"
-					xp: 175
-				}
-				{
-					id: "1F384F63D1846B4B"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "immersive_aircraft:engine"
-					}
-				}
-			]
-		}
-		{
-			id: "D8325F832D406D1F"
-			title: "Ледяное убежище"
-			description: ["Найдите иглу и зайдите внутрь. Проверьте пол: у некоторых таких убежищ бывает подвал, но для этой вылазки достаточно обнаружить само иглу."]
-			x: 5.0d
-			y: 2.5d
-			icon: "minecraft:packed_ice"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["5DCFED353E2F543B"]
-			tasks: [{
-				id: "08C1B94EFFCF234D"
-				type: "structure"
-				structure: "minecraft:igloo"
-			}]
-			rewards: [
-				{
-					id: "8A55F783AF09C940"
-					type: "xp"
-					xp: 95
-				}
-				{
-					id: "15E3A184AF1A8C4F"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedbackpacks:feeding_upgrade"
-					}
-				}
-			]
-		}
-		{
-			id: "CD62103DCF8B4FDA"
-			title: "Ледниковый разлом"
-			description: ["Посетите ледниковый разлом Terralith. Отметьте место спуска и позаботьтесь о защите от холода — выбраться наверх важнее, чем быстро добраться до дна."]
-			x: 7.5d
-			y: 2.5d
-			icon: "minecraft:blue_ice"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["D8325F832D406D1F"]
-			tasks: [{
-				id: "A927988A3E0C4354"
-				type: "biome"
-				biome: "terralith:glacial_chasm"
-			}]
-			rewards: [
-				{
-					id: "F71A37C1C1E76209"
-					type: "xp"
-					xp: 150
-				}
-				{
-					id: "DCFB2DD7AA48045E"
+					id: "EBA0BCAD6C26AD5B"
 					type: "item"
 					item: {
 						Count: 1b
@@ -426,96 +140,148 @@
 			]
 		}
 		{
-			id: "4A366B92A0D4BDCD"
-			title: "Хижина среди болот"
-			description: ["Отыщите болотную хижину и подойдите достаточно близко, чтобы войти в её пределы. Осмотритесь перед визитом: хозяева подобных мест редко рады гостям."]
-			x: 10.0d
-			y: -2.5d
-			icon: "minecraft:vine"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["F740FB239378B229"]
+			id: "1FB71B915FE0B5F5"
+			title: "Сундук для каждого"
+			description: ["Сундуки в постройках этого мира помнят каждого гостя — Максим и Юра находят в одном сундуке каждый свою добычу. Откройте первый."]
+			x: 3.0d
+			y: 3.0d
+			icon: "minecraft:chest"
+			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
-				id: "2CB9C560350D89DF"
-				type: "structure"
-				structure: "minecraft:swamp_hut"
+				id: "C8C40A18758637E4"
+				type: "advancement"
+				advancement: "lootr:1chest"
 			}]
 			rewards: [
 				{
-					id: "E7541E569CC8C6FA"
+					id: "064C3DC1FBF180D4"
 					type: "xp"
-					xp: 110
+					xp: 60
 				}
 				{
-					id: "FEE05CC7C8C75CF7"
+					id: "F07763F925486C79"
 					type: "item"
 					item: {
-						Count: 1b
-						id: "sophisticatedbackpacks:advanced_filter_upgrade"
+						Count: 6b
+						id: "minecraft:iron_ingot"
 					}
 				}
 			]
 		}
 		{
-			id: "EA048E705BEC8414"
-			title: "Шахта грибников"
-			description: ["Найдите грибную разновидность шахты YUNG’s Better Mineshafts. Пройдите внутрь, сравните её с прежними выработками и сохраните отметку на карте."]
-			x: 15.0d
-			y: 0.0d
-			icon: "minecraft:red_mushroom"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["F09FD8875C97CD92"]
+			id: "697CA3BF8AE957E1"
+			title: "Двадцать пять тайников"
+			description: ["Откройте двадцать пять сундуков в чужих постройках. Сокровища редко лежат у дороги — придётся заглянуть в башни, шахты и подвалы."]
+			x: 6.0d
+			y: 3.0d
+			icon: "minecraft:barrel"
+			dependencies: ["1FB71B915FE0B5F5"]
 			tasks: [{
-				id: "2F654D4AA501904E"
-				type: "structure"
-				structure: "bettermineshafts:mineshaft_mushroom"
+				id: "4B254ABA62FCD5AA"
+				type: "advancement"
+				advancement: "lootr:25loot"
 			}]
 			rewards: [
 				{
-					id: "D5DEEDEE2B2FEEBD"
+					id: "A46B9C92161F0390"
 					type: "xp"
-					xp: 240
+					xp: 200
 				}
 				{
-					id: "FB5ED438C46672D4"
+					id: "56AF67DE051B18B2"
 					type: "item"
 					item: {
-						Count: 3b
+						Count: 2b
 						id: "minecraft:diamond"
 					}
 				}
 			]
 		}
 		{
-			id: "F09FD8875C97CD92"
-			title: "Шахта красных пустошей"
-			description: ["Исследуйте шахту YUNG’s Better Mineshafts в красных пустошах. Цель — разновидность шахты в месах; добывать определённую руду для этой экспедиции не требуется."]
-			x: 12.5d
-			y: 0.0d
-			icon: "minecraft:raw_gold"
-			shape: "scroll"
-			size: 1.2d
+			id: "20F56C8C55CE5185"
+			title: "Сто сундуков"
+			description: ["Сотня открытых тайников — это уже профессия. Награда — рюкзак побольше, чтобы было куда складывать находки."]
+			x: 9.0d
+			y: 3.0d
+			icon: "sophisticatedbackpacks:iron_backpack"
+			shape: "star"
 			optional: true
-			dependencies: ["B7BA27A969107D22"]
+			dependencies: ["697CA3BF8AE957E1"]
 			tasks: [{
-				id: "57D7410A9A94CCC6"
-				type: "structure"
-				structure: "bettermineshafts:mineshaft_mesa"
+				id: "A0E0AC72F9031D80"
+				type: "advancement"
+				advancement: "lootr:100loot"
 			}]
 			rewards: [
 				{
-					id: "A68C553D9D479CD1"
+					id: "14F1850081F7413B"
 					type: "xp"
-					xp: 230
+					xp: 600
 				}
 				{
-					id: "B4FB6E7190A43EB8"
+					id: "53C79FF43F9FDE42"
 					type: "item"
 					item: {
-						Count: 2b
+						Count: 1b
+						id: "sophisticatedbackpacks:iron_backpack"
+					}
+				}
+			]
+		}
+		{
+			id: "F17A293356CD1404"
+			title: "Заброшенная шахта"
+			description: ["Старые шахты тянутся под землёй на сотни метров. Найдите одну — в любом биоме они выглядят по-своему."]
+			x: 3.0d
+			y: 6.0d
+			icon: "minecraft:rail"
+			shape: "scroll"
+			dependencies: ["30000F5F1F069AFA"]
+			tasks: [{
+				id: "10E0CA599CC298EF"
+				type: "structure"
+				structure: "#nasledie:mineshafts"
+			}]
+			rewards: [
+				{
+					id: "7593FC8E75C219B2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "53013D4C0F7870C5"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:iron_ingot"
+					}
+				}
+			]
+		}
+		{
+			id: "62AE15E5827FE50A"
+			title: "Вагонетка с добычей"
+			description: ["В шахтах стоят брошенные вагонетки с припасами. Откройте одну — кто-то оставил её здесь очень давно."]
+			x: 6.0d
+			y: 6.0d
+			icon: "minecraft:chest_minecart"
+			dependencies: ["F17A293356CD1404"]
+			tasks: [{
+				id: "65F188D2DF04E46E"
+				type: "advancement"
+				advancement: "lootr:1cart"
+			}]
+			rewards: [
+				{
+					id: "F0532250847DA096"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "6899B95BBBE7CB6E"
+					type: "item"
+					item: {
+						Count: 1b
 						id: "minecraft:golden_apple"
 					}
 				}
@@ -524,27 +290,26 @@
 		{
 			id: "507F5E2261A499DA"
 			title: "Улей под землёй"
-			description: ["Отыщите гигантский подземный улей Terralith и войдите в его пределы. Возьмите достаточно света: под землёй легко потерять путь к той самой трещине, через которую вы пришли."]
-			x: 17.5d
-			y: 0.0d
+			description: ["Глубоко под землёй встречаются ульи размером с дом. Найдите такой — и берегитесь хозяев."]
+			x: 9.0d
+			y: 6.0d
 			icon: "minecraft:honeycomb"
 			shape: "scroll"
-			size: 1.2d
 			optional: true
-			dependencies: ["EA048E705BEC8414"]
+			dependencies: ["62AE15E5827FE50A"]
 			tasks: [{
-				id: "44D83CDB34470CDA"
+				id: "173DBC5C91461B36"
 				type: "structure"
 				structure: "terralith:underground/giant_bee_hive"
 			}]
 			rewards: [
 				{
-					id: "A247C9BA3501908C"
+					id: "84AF1289B44EA199"
 					type: "xp"
-					xp: 250
+					xp: 150
 				}
 				{
-					id: "0CAD4D5C9204D709"
+					id: "C84BA66F597E5F7B"
 					type: "item"
 					item: {
 						Count: 8b
@@ -556,63 +321,30 @@
 		{
 			id: "2DCB2702FC5C1F31"
 			title: "Башня, ушедшая в камень"
-			description: ["Найдите подземную затонувшую башню Terralith. Исследуйте саму структуру и отметьте выход; сбор призмарина не заменит этой находки."]
-			x: 20.0d
-			y: 0.0d
-			icon: "minecraft:prismarine_shard"
+			description: ["Кто-то построил башню, а земля её проглотила. Найдите её в глубине — внутри до сих пор стоят полки и сундуки."]
+			x: 12.0d
+			y: 6.0d
+			icon: "minecraft:mossy_stone_bricks"
 			shape: "scroll"
-			size: 1.2d
 			optional: true
 			dependencies: ["507F5E2261A499DA"]
 			tasks: [{
-				id: "43FE86FB8CFCC773"
+				id: "3F61E79B824F7595"
 				type: "structure"
 				structure: "terralith:underground/sunken_tower"
 			}]
 			rewards: [
 				{
-					id: "FFDCD29FD0545B07"
+					id: "C248F66A808D56D7"
 					type: "xp"
-					xp: 270
+					xp: 150
 				}
 				{
-					id: "B90541ED7203CA29"
+					id: "9964E7478E784665"
 					type: "item"
 					item: {
-						Count: 8b
+						Count: 4b
 						id: "minecraft:ender_pearl"
-					}
-				}
-			]
-		}
-		{
-			id: "57FD47EFC4E11601"
-			title: "Осенняя башня мага"
-			description: ["Посетите осеннюю башню мага Terralith. Нужна именно её осенняя разновидность — отдельная остановка в вашей коллекции необычных мест."]
-			x: 22.5d
-			y: -2.5d
-			icon: "minecraft:enchanted_book"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["E6DC4A843BE1C287"]
-			tasks: [{
-				id: "7FA354D437F303AE"
-				type: "structure"
-				structure: "terralith:mage_tower_autumn"
-			}]
-			rewards: [
-				{
-					id: "FB4C8AE09F7B95CD"
-					type: "xp"
-					xp: 230
-				}
-				{
-					id: "097BE5CBDFB16E6F"
-					type: "item"
-					item: {
-						Count: 16b
-						id: "minecraft:experience_bottle"
 					}
 				}
 			]
@@ -620,31 +352,459 @@
 		{
 			id: "C580A1C9022BB90F"
 			title: "Морозное подземелье"
-			description: ["Отыщите морозное подземелье Terralith и зайдите внутрь. Подготовьте тёплое снаряжение и свет для вылазки под ледяные земли."]
-			x: 10.0d
-			y: 2.5d
+			description: ["Подо льдом скрыто подземелье, где холод держит своих стражей. Тёплая одежда здесь не роскошь."]
+			x: 15.0d
+			y: 6.0d
 			icon: "minecraft:blue_ice"
 			shape: "scroll"
-			size: 1.2d
 			optional: true
-			dependencies: ["CD62103DCF8B4FDA"]
+			dependencies: ["2DCB2702FC5C1F31"]
 			tasks: [{
-				id: "5A311BB8254199E4"
+				id: "6DF6B5E1B764D4DD"
 				type: "structure"
 				structure: "terralith:underground/frosted_dungeon"
 			}]
 			rewards: [
 				{
-					id: "51A6D9571C34976C"
+					id: "46B33F55781F17BF"
 					type: "xp"
-					xp: 280
+					xp: 200
 				}
 				{
-					id: "4E1505818E030DE8"
+					id: "16A71B035D0ECA6D"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "minecraft:diamond"
+					}
+				}
+			]
+		}
+		{
+			id: "B4C64200C1AF50B8"
+			title: "Потерянная табличка"
+			description: ["В шахтах, руинах и сундуках попадаются древние таблички. Прочитайте одну — она укажет путь к далёкому месту."]
+			x: 3.0d
+			y: 9.0d
+			icon: "minecraft:paper"
+			dependencies: ["F17A293356CD1404"]
+			tasks: [{
+				id: "6F3319DE4A2CDB86"
+				type: "advancement"
+				advancement: "tombstone:adventure/find_lost_tablet"
+			}]
+			rewards: [
+				{
+					id: "FFA19109412AA1BE"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7DB7EC13834CE6D5"
+					type: "item"
+					item: {
+						Count: 3b
+						id: "minecraft:map"
+					}
+				}
+			]
+		}
+		{
+			id: "5F8CEAF644533833"
+			title: "Сокровище по табличке"
+			description: ["Найдите табличку, которая ведёт к спрятанному сокровищу. Дорога может оказаться длинной, но таблички не врут."]
+			x: 6.0d
+			y: 9.0d
+			icon: "minecraft:gold_ingot"
+			optional: true
+			dependencies: ["B4C64200C1AF50B8"]
+			tasks: [{
+				id: "9636267EE703CB69"
+				type: "advancement"
+				advancement: "tombstone:adventure/find_lost_tablet_treasure"
+			}]
+			rewards: [
+				{
+					id: "5A35B02B1030292B"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "F28B38557D038DB1"
+					type: "item"
+					item: {
+						Count: 3b
+						id: "minecraft:diamond"
+					}
+				}
+			]
+		}
+		{
+			id: "287623914CB5D09C"
+			title: "Могилы у обочины"
+			description: ["Не все путники вернулись домой. Заброшенные могилы прячут их последние вещи. Заберите их — мёртвым они уже не нужны. Наверное."]
+			x: 9.0d
+			y: 9.0d
+			icon: "minecraft:skeleton_skull"
+			optional: true
+			dependencies: ["5F8CEAF644533833"]
+			tasks: [{
+				id: "975B8C59C1829377"
+				type: "advancement"
+				advancement: "tombstone:adventure/funeral_theft"
+			}]
+			rewards: [
+				{
+					id: "85531B888D3D07BE"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "F87E9F2CA31A5EA7"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "minecraft:soul_lantern"
+					}
+				}
+			]
+		}
+		{
+			id: "120CFADBF5186FAA"
+			title: "Хамелеон-проводник"
+			description: ["В тёплых краях живут хамелеоны. Приручите одного — он умеет менять цвет и, что важнее, чует дорогу к другим краям."]
+			x: -3.0d
+			y: 0.0d
+			icon: "cold_sweat:chameleon_molt"
+			optional: true
+			dependencies: ["30000F5F1F069AFA"]
+			tasks: [{
+				id: "5412220A637C657E"
+				type: "advancement"
+				advancement: "cold_sweat:tame_chameleon"
+			}]
+			rewards: [
+				{
+					id: "41B0BC80CA46C844"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "3ED1D2DB020C55F4"
 					type: "item"
 					item: {
 						Count: 4b
-						id: "minecraft:diamond"
+						id: "minecraft:golden_carrot"
+					}
+				}
+			]
+		}
+		{
+			id: "26D85A9E31B251BF"
+			title: "За хвостом хамелеона"
+			description: ["Попросите хамелеона показать новый биом и идите за ним. Возможно, он знает этот мир лучше вас."]
+			x: -6.0d
+			y: 0.0d
+			icon: "minecraft:spyglass"
+			optional: true
+			dependencies: ["120CFADBF5186FAA"]
+			tasks: [{
+				id: "4AC9C67D9FA870E6"
+				type: "advancement"
+				advancement: "cold_sweat:chameleon_find_biome"
+			}]
+			rewards: [
+				{
+					id: "EF4FB724C57C3F86"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "1923448296592552"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:experience_bottle"
+					}
+				}
+			]
+		}
+		{
+			id: "E6DC4A843BE1C287"
+			title: "Острова в небе"
+			description: ["Где-то над землёй висят острова с лесами и водопадами. Доберитесь до них — по лестнице, на крыльях или на самолёте."]
+			x: 3.0d
+			y: -6.0d
+			icon: "minecraft:feather"
+			shape: "scroll"
+			optional: true
+			dependencies: ["30000F5F1F069AFA"]
+			tasks: [{
+				id: "7A3EC7758EDDC017"
+				type: "biome"
+				biome: "#nasledie:skylands"
+			}]
+			rewards: [
+				{
+					id: "B3117746FFCBA24D"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "348E50784D79502B"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:ender_pearl"
+					}
+				}
+			]
+		}
+		{
+			id: "07A63C78A1E0EFD4"
+			title: "Мираж над морем"
+			description: ["Над тёплым морем поднимаются острова-миражи. Найдите их — и убедитесь, что они настоящие."]
+			x: 6.0d
+			y: -6.0d
+			icon: "minecraft:sand"
+			shape: "scroll"
+			optional: true
+			dependencies: ["E6DC4A843BE1C287"]
+			tasks: [{
+				id: "3666E49DA48D84E4"
+				type: "biome"
+				biome: "terralith:mirage_isles"
+			}]
+			rewards: [
+				{
+					id: "D5E7FBCC126DF4F2"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "E15BBB19A1EF9C6E"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "minecraft:nautilus_shell"
+					}
+				}
+			]
+		}
+		{
+			id: "A91583B5B92C22EB"
+			title: "Изумрудные пики"
+			description: ["Горы, где изумруды выходят прямо на склоны. Красиво, высоко и очень холодно."]
+			x: 9.0d
+			y: -6.0d
+			icon: "minecraft:emerald_ore"
+			shape: "scroll"
+			optional: true
+			dependencies: ["07A63C78A1E0EFD4"]
+			tasks: [{
+				id: "9DAE08DB0A70A45F"
+				type: "biome"
+				biome: "terralith:emerald_peaks"
+			}]
+			rewards: [
+				{
+					id: "A534A9DB5B02306D"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "B4E856D415717950"
+					type: "item"
+					item: {
+						Count: 6b
+						id: "minecraft:emerald"
+					}
+				}
+			]
+		}
+		{
+			id: "CD62103DCF8B4FDA"
+			title: "Ледниковый разлом"
+			description: ["Трещина в леднике уходит глубоко вниз. Спуститесь, если хватит тёплой одежды и смелости."]
+			x: 12.0d
+			y: -6.0d
+			icon: "minecraft:packed_ice"
+			shape: "scroll"
+			optional: true
+			dependencies: ["A91583B5B92C22EB"]
+			tasks: [{
+				id: "D79DE9773F075310"
+				type: "biome"
+				biome: "terralith:glacial_chasm"
+			}]
+			rewards: [
+				{
+					id: "4560D2AACA6C1843"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "194B6A324EFC649D"
+					type: "item"
+					item: {
+						Count: 6b
+						id: "cold_sweat:goat_fur"
+					}
+				}
+			]
+		}
+		{
+			id: "876B03B26967B3F5"
+			title: "Горячие источники"
+			description: ["Земля здесь дышит паром, а вода в озёрах цвета радуги. Говорят, источники лечат. Проверять, пожалуй, не стоит."]
+			x: 12.0d
+			y: -8.5d
+			icon: "minecraft:magma_block"
+			shape: "scroll"
+			optional: true
+			dependencies: ["CD62103DCF8B4FDA"]
+			tasks: [{
+				id: "74F007605FCD7405"
+				type: "biome"
+				biome: "terralith:yellowstone"
+			}]
+			rewards: [
+				{
+					id: "EAEA5508B5CA00CB"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "E0991AE7B296BE2C"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:experience_bottle"
+					}
+				}
+			]
+		}
+		{
+			id: "251BB178FDF89518"
+			title: "Аметистовый каньон"
+			description: ["Стены каньона усыпаны аметистом. Отличное место для вылазки за кристаллами — и для красивого снимка на память."]
+			x: 9.0d
+			y: -8.5d
+			icon: "minecraft:amethyst_shard"
+			shape: "scroll"
+			optional: true
+			dependencies: ["876B03B26967B3F5"]
+			tasks: [{
+				id: "BAE9653D57C938E0"
+				type: "biome"
+				biome: "terralith:amethyst_canyon"
+			}]
+			rewards: [
+				{
+					id: "0C694591DBC60729"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "3CA0FA4C155EBB63"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:amethyst_shard"
+					}
+				}
+			]
+		}
+		{
+			id: "FA97E4175F142993"
+			title: "Лунная роща"
+			description: ["В этой роще ночью светлее, чем днём в других лесах. Приходите после заката."]
+			x: 6.0d
+			y: -8.5d
+			icon: "minecraft:glow_berries"
+			shape: "scroll"
+			optional: true
+			dependencies: ["251BB178FDF89518"]
+			tasks: [{
+				id: "6B2F954EB96BE2B1"
+				type: "biome"
+				biome: "terralith:moonlight_grove"
+			}]
+			rewards: [
+				{
+					id: "023CA85B1227C98B"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "90934CD6DFD17DA1"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:experience_bottle"
+					}
+				}
+			]
+		}
+		{
+			id: "64E54CA8C96B8110"
+			title: "Кратер вулкана"
+			description: ["Чёрный камень, лава и запах серы. Здесь мир ещё помнит, каким он был до людей."]
+			x: 3.0d
+			y: -8.5d
+			icon: "minecraft:basalt"
+			shape: "scroll"
+			optional: true
+			dependencies: ["FA97E4175F142993"]
+			tasks: [{
+				id: "FA065A1D037AF470"
+				type: "biome"
+				biome: "terralith:volcanic_crater"
+			}]
+			rewards: [
+				{
+					id: "74D722C4A6F3F7E5"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "364F9B4A0896D40A"
+					type: "item"
+					item: {
+						Count: 6b
+						id: "minecraft:magma_cream"
+					}
+				}
+			]
+		}
+		{
+			id: "DEE4BCDF015E9D94"
+			title: "Время приключений"
+			description: ["Побывайте во всех обычных биомах Верхнего мира. Это долгий путь на много сессий — карта мира после него будет выглядеть совсем иначе."]
+			x: 0.0d
+			y: -8.5d
+			icon: "minecraft:filled_map"
+			shape: "star"
+			size: 1.4d
+			optional: true
+			dependencies: ["64E54CA8C96B8110"]
+			tasks: [{
+				id: "25DA1A7DB14E30CF"
+				type: "advancement"
+				advancement: "minecraft:adventure/adventuring_time"
+			}]
+			rewards: [
+				{
+					id: "0A5CFBA2E010458C"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "CB8D9884ACA6C0C0"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "sophisticatedbackpacks:gold_backpack"
 					}
 				}
 			]

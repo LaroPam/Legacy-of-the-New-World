@@ -1,10 +1,10 @@
 chapter:
   filename: nasledie_defense
   id: A1279E21532D7CDD
-  group: 842B4DB4DBD349A0
+  group: act2
   title: Охота и артиллерия — мастерство в действии
   icon: minecraft:shield
-  order_index: 8
+  order_index: 6
   progression_mode: flexible
   default_hide_dependency_lines: false
   default_quest_shape: shield

@@ -1,10 +1,10 @@
 chapter:
   filename: nasledie_create
   id: 9B72DF3BE0E6A5DE
-  group: 842B4DB4DBD349A0
+  group: act3
   title: Create — мастерская полезных машин
   icon: create:cogwheel
-  order_index: 2
+  order_index: 9
   progression_mode: flexible
   default_hide_dependency_lines: false
   default_quest_shape: gear

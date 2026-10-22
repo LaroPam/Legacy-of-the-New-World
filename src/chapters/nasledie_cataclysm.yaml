@@ -1,10 +1,10 @@
 chapter:
   filename: nasledie_cataclysm
   id: C54798B08E30ED27
-  group: 842B4DB4DBD349A0
+  group: act4
   title: Катаклизм — восемь великих побед
   icon: cataclysm:bulwark_of_the_flame
-  order_index: 12
+  order_index: 15
   progression_mode: flexible
   default_hide_dependency_lines: false
   default_quest_shape: circle
