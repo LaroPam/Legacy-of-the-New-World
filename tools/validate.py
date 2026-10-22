@@ -201,13 +201,16 @@ def with_links(parsed):
     """Treat quest links as nodes for layout checks."""
     # FTB draws dependency lines to and from a link exactly as for the linked quest, so a link node
     # carries the linked quest's id and dependencies.
+    # Quests with hide_dependency_lines draw no lines, so their dependencies are left out of the layout check.
     view = dict(parsed)
     every = {str(q.get('id')): q for _, _, q in quality.quest_rows(parsed)}
     for name, chapter in quality.chapters(parsed).items():
         links = chapter.get('quest_links', [])
-        if links:
+        hidden = any(q.get('hide_dependency_lines') for q in chapter.get('quests', []))
+        if links or hidden:
             copy = dict(chapter)
-            copy['quests'] = list(chapter.get('quests', [])) + [
+            copy['quests'] = [dict(q, dependencies=[]) if q.get('hide_dependency_lines') else q
+                              for q in chapter.get('quests', [])] + [
                 {'id': str(link.get('linked_quest')), 'x': link.get('x'), 'y': link.get('y'), 'size': link.get('size', 1),
                  'dependencies': every.get(str(link.get('linked_quest')), {}).get('dependencies', [])} for link in links]
             view[name] = copy

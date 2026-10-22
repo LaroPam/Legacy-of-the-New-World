@@ -671,6 +671,543 @@
 				}
 			]
 		}
+		{
+			id: "1175C66EAEDBF91E"
+			title: "Пробуждённые"
+			description: ["После фабрики и кузни стражи начали просыпаться сами. Их слуги выходят навстречу — ревенанты, драугры, глубинники. Победите любого из младших стражей Катаклизма."]
+			x: 21.0d
+			y: 2.5d
+			icon: "cataclysm:ignited_revenant_spawn_egg"
+			shape: "shield"
+			size: 1.5d
+			dependencies: [
+				"8792C39846E0D49E"
+				"52813202FFECF301"
+			]
+			tasks: [{
+				id: "CD0D4E5859AEB4DC"
+				type: "advancement"
+				title: "Победить младшего стража Катаклизма"
+				advancement: "nasledie:q/chronicle/awakened"
+			}]
+			rewards: [
+				{
+					id: "7C5B4AC70EA91701"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "9B427F19B8C25D10"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:belt_of_beginner"
+					}
+				}
+			]
+			min_required_dependencies: 1
+		}
+		{
+			id: "92B1754C45756107"
+			title: "Рыцарь, принявший огонь"
+			description: ["На пылающей арене горит рыцарь Зодчих. Он до сих пор помнит присягу. Победите Игниса."]
+			x: 24.5d
+			y: -3.5d
+			icon: "cataclysm:flame_eye"
+			shape: "crown"
+			size: 1.7d
+			dependencies: [
+				"1175C66EAEDBF91E"
+				"FEE6E381AE1C38B7"
+			]
+			tasks: [{
+				id: "8846161F0DA4EECA"
+				type: "advancement"
+				advancement: "cataclysm:kill_ignis"
+			}]
+			rewards: [
+				{
+					id: "1BA3AA673D42037C"
+					type: "xp"
+					xp: 1400
+				}
+				{
+					id: "9ED21AD4C03F1D0C"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:music_disc_ignis"
+					}
+				}
+				{
+					id: "E3952EE086035385"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:berserker_soul_amulet"
+					}
+				}
+				{
+					id: "1E51C0FBC66C1B76"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Присяга на стене арены"
+							author: "Неизвестный Зодчий"
+							pages: [
+								"{\"text\": \"Мы, рыцари огня, приняли пламя в себя, чтобы оно не сожгло мир.\\n\\nПусть горит в нас, а не в полях.\"}"
+								"{\"text\": \"Если придёт тот, кто погасит нас, — пусть знает: огонь не исчезнет. Он ищет новый сосуд.\\n\\nНе будь им.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "64338CFBA5C5B699"
+			title: "Ключ всегда идёт первым"
+			description: ["Под проклятой пирамидой спит правитель пустынных Зодчих. Здесь погиб Эйнар Холм. Разбудите древние останки и победите их."]
+			x: 24.5d
+			y: -0.5d
+			icon: "cataclysm:desert_eye"
+			shape: "crown"
+			size: 1.7d
+			dependencies: [
+				"1175C66EAEDBF91E"
+				"0B35EC876DCDE6DC"
+			]
+			tasks: [{
+				id: "3392DD1B17B17980"
+				type: "advancement"
+				advancement: "cataclysm:kill_remnant"
+			}]
+			rewards: [
+				{
+					id: "64C434AC803AB750"
+					type: "xp"
+					xp: 1400
+				}
+				{
+					id: "44BCB9E31959D60B"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:music_disc_ancient_remnant"
+					}
+				}
+				{
+					id: "935BA7AA86405F85"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:sandstorm_in_a_bottle"
+					}
+				}
+				{
+					id: "BBD591C8A5238A20"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Эйнара Холма, II"
+							author: "Эйнар Холм, археолог"
+							pages: [
+								"{\"text\": \"Пирамида. Песок здесь шепчет. Эклунд нашёл ожерелье и надел его мне на шею — сказал, оно откроет дверь.\"}"
+								"{\"text\": \"Дверь открылась. Из-под песка поднялся правитель, сухой, как сама пустыня. Он смотрел не на Эклунда — на меня. На ожерелье.\"}"
+								"{\"text\": \"Песок поднимается.\\n\\nЯ понял, зачем меня взяли. Ключ всегда идёт первым.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "A13ADF5DA222DA68"
+			title: "Король во льду"
+			description: ["Король Зодчих запер себя в ледяной тюрьме вместе со стражей, чтобы не выпустить проклятие. Драугры до сих пор несут караул. Победите Маледиктуса."]
+			x: 24.5d
+			y: 2.5d
+			icon: "cataclysm:cursed_eye"
+			shape: "crown"
+			size: 1.7d
+			dependencies: [
+				"1175C66EAEDBF91E"
+				"9648CF8E2A62BFAF"
+			]
+			tasks: [{
+				id: "5ED9A7559CDF7465"
+				type: "advancement"
+				advancement: "cataclysm:kill_maledictus"
+			}]
+			rewards: [
+				{
+					id: "B96B0C4C77D96095"
+					type: "xp"
+					xp: 1400
+				}
+				{
+					id: "F02A85D1508D692E"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:music_disc_maledictus"
+					}
+				}
+				{
+					id: "F481B30B29228704"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:ring_of_grudged"
+					}
+				}
+				{
+					id: "E8BFBA3C0477A9AF"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Торвальда Эклунда, III"
+							author: "Торвальд Эклунд"
+							pages: [
+								"{\"text\": \"Ледяная тюрьма. Король заперся здесь со своей стражей, чтобы не выпустить проклятие. Его драугры до сих пор несут караул.\"}"
+								"{\"text\": \"Он почти человек. Он говорил со мной. Просил закрыть дверь снаружи и уйти.\"}"
+								"{\"text\": \"Я не ушёл.\\n\\nХолод теперь живёт в моих пальцах рядом с жаром. Они уживаются. Я — уживаюсь.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "A0BE4189EEE72883"
+			title: "Боль, ушедшая в глубину"
+			description: ["В затонувшем городе спит Левиафан — единственный сосуд, в который Зодчие поместили не себя, а свою боль. Победите его."]
+			x: 24.5d
+			y: 5.5d
+			icon: "cataclysm:abyss_eye"
+			shape: "crown"
+			size: 1.7d
+			dependencies: [
+				"1175C66EAEDBF91E"
+				"A96277A6BE605D32"
+			]
+			tasks: [{
+				id: "1EBDB9643D7EB505"
+				type: "advancement"
+				advancement: "cataclysm:kill_leviathan"
+			}]
+			rewards: [
+				{
+					id: "5DEE238113349FA8"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					id: "91689FD078AEAA6A"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:music_disc_the_leviathan"
+					}
+				}
+				{
+					id: "E84F73A18BECAAC1"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:the_baby_leviathan_bucket"
+					}
+				}
+				{
+					id: "FF288AA40E37E3B0"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Песня глубинников"
+							author: "Народ глубин"
+							pages: [
+								"{\"text\": \"Строители дали нам море и дали морю зверя. Зверь — их боль, ушедшая в глубину, чтобы не тревожить землю.\"}"
+								"{\"text\": \"Мы пели ему, чтобы он спал.\\n\\nЧужаки пришли без песни. Теперь мы молчим, и он не спит.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "E3651E9F6E43FAEB"
+			title: "Последняя запись Линд"
+			description: ["Над облаками стоит акрополь, где жрица бури сторожит небо. У её подножия Сигрид Линд оставила последнюю запись. Победите Сциллу."]
+			x: 24.5d
+			y: 8.5d
+			icon: "cataclysm:storm_eye"
+			shape: "crown"
+			size: 1.7d
+			dependencies: [
+				"1175C66EAEDBF91E"
+				"F2FD5EEB117B3119"
+			]
+			tasks: [{
+				id: "047FE3B060B829FF"
+				type: "advancement"
+				advancement: "cataclysm:kill_scylla"
+			}]
+			rewards: [
+				{
+					id: "E16D2458A7B9A348"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					id: "F3285A51EE4988DA"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:music_disc_scylla"
+					}
+				}
+				{
+					id: "B89AA4710B247A08"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:vitality_ankh"
+					}
+				}
+				{
+					id: "2D57A528FCF89ED5"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Сигрид Линд, IV"
+							author: "Сигрид Линд, картограф"
+							pages: [
+								"{\"text\": \"Сегодня я нашла в сумке Эклунда пачку листов. Наших листов — Холма, Странда, Берг. Он их не терял. Он их раскладывал.\"}"
+								"{\"text\": \"Он оставляет их там, где найдут. Ему нужны следующие — те, кто пройдёт путь до конца и разобьёт оставшиеся сосуды за него.\"}"
+								"{\"text\": \"Если вы это читаете — вы уже на его тропе. Остановитесь.\\n\\nИли дойдите до конца, но не отдавайте ему того, что освободите.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "A80C23723A869A8B"
+			title: "Он жив"
+			description: ["Стражи падают один за другим. Когда падут хотя бы четверо из пяти пробуждённых, в крепости, где спит портал в Край, вас ждёт свежая страница — подписанная человеком, который «погиб» двадцать лет назад. Найдите крепость."]
+			x: 28.5d
+			y: 2.5d
+			icon: "minecraft:ender_eye"
+			shape: "star"
+			size: 1.7d
+			dependencies: [
+				"92B1754C45756107"
+				"64338CFBA5C5B699"
+				"A13ADF5DA222DA68"
+				"A0BE4189EEE72883"
+				"E3651E9F6E43FAEB"
+			]
+			tasks: [{
+				id: "AB1B7CC5D05DFAED"
+				type: "structure"
+				structure: "betterstrongholds:stronghold"
+			}]
+			rewards: [
+				{
+					id: "678FFC9F3A92D692"
+					type: "xp"
+					xp: 800
+				}
+				{
+					id: "CA2BDC2C1C8E3DC9"
+					type: "item"
+					item: {
+						Count: 12b
+						id: "minecraft:ender_eye"
+					}
+				}
+				{
+					id: "ED6BFF0FAD3E7EA0"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Торвальда Эклунда, IV"
+							author: "Торвальд Эклунд"
+							pages: [
+								"{\"text\": \"Линд думала, что успеет предупредить. Она не учла: я знаю, где лежит каждый лист.\\n\\nЭтот я оставил сам.\"}"
+								"{\"text\": \"Двадцать лет. Огонь, холод, буря, машина — всё во мне. Не хватает пустоты. Её стережёт последний доспех в цитадели Края.\"}"
+								"{\"text\": \"Вы сильны, раз дочитали.\\n\\nПриходите. Я покажу вам, что такое наследие.\"}"
+							]
+						}
+					}
+				}
+			]
+			min_required_dependencies: 4
+		}
+		{
+			id: "367C7D7E1F81D391"
+			title: "Печать на краю мира"
+			description: ["Дракон Края — первая и самая древняя печать Зодчих. Без победы над ним к дальним островам не пройти. Сразите дракона."]
+			x: 32.0d
+			y: 2.5d
+			icon: "minecraft:dragon_head"
+			shape: "crown"
+			size: 1.8d
+			dependencies: ["A80C23723A869A8B"]
+			tasks: [{
+				id: "EBD62E9EA214E97C"
+				type: "advancement"
+				advancement: "minecraft:end/kill_dragon"
+			}]
+			rewards: [
+				{
+					id: "9002185FCFB299B9"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					id: "03BBEB80C227E34E"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:elytra"
+					}
+				}
+			]
+		}
+		{
+			id: "4E228116310381E8"
+			title: "Последний доспех"
+			description: ["В разрушенной цитадели на дальних островах стоит доспех Эндер-хранителя. Внутри — Торвальд Эклунд. Победите его."]
+			x: 35.5d
+			y: 2.5d
+			icon: "cataclysm:void_eye"
+			shape: "crown"
+			size: 2.2d
+			dependencies: [
+				"367C7D7E1F81D391"
+				"8B22878BF8763415"
+			]
+			tasks: [{
+				id: "0FB2E313BC492326"
+				type: "advancement"
+				advancement: "cataclysm:kill_ender_guardian"
+			}]
+			rewards: [
+				{
+					id: "75D388756B6FE23B"
+					type: "xp"
+					xp: 3000
+				}
+				{
+					id: "4EB18859EFF9BE5C"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:music_disc_ender_guardian"
+					}
+				}
+				{
+					id: "9EAE7768FFBD513A"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:void_core"
+					}
+				}
+				{
+					id: "C49BC8F3BF525C22"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Последняя запись Торвальда Эклунда"
+							author: "Торвальд Эклунд"
+							pages: [
+								"{\"text\": \"Если вы читаете это, доспех пуст. Значит, сила ушла не ко мне.\"}"
+								"{\"text\": \"Зодчие отдали себя, чтобы держать мир. Я хотел взять, ничего не отдав. Пустота знает разницу.\"}"
+								"{\"text\": \"Куда она ушла? Посмотрите вокруг себя. На то, что вы построили.\\n\\nВидимо, мир выбрал не меня.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "F691DA83D3708164"
+			title: "Наследие нового мира"
+			description: ["Сосуды разбиты, а мир не рассыпался. Его держит теперь то, что построили вы, — деревня, которую вы защитили, дороги, мастерская, которая работает сама. Зажгите маяк на полную мощь — из звезды, что когда-то держала три души."]
+			x: 39.5d
+			y: 2.5d
+			icon: "minecraft:beacon"
+			shape: "star"
+			size: 2.4d
+			dependencies: [
+				"4E228116310381E8"
+				"A86CDB4787747C32"
+				"D727915E29A5F477"
+				"9B721B53DDC184D8"
+			]
+			tasks: [{
+				id: "4338F76ACBEA2574"
+				type: "advancement"
+				advancement: "minecraft:nether/create_full_beacon"
+			}]
+			rewards: [
+				{
+					id: "1E1DB4EDD09B2A7E"
+					type: "xp"
+					xp: 5000
+				}
+				{
+					id: "C946AC55DF371FA8"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cataclysm:music_disc_the_cataclysmfarer"
+					}
+				}
+				{
+					id: "D53E75B0EC9A47FF"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:enchanted_golden_apple"
+					}
+				}
+				{
+					id: "CDAA1CDCBD696096"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "minecraft:netherite_ingot"
+					}
+				}
+				{
+					id: "72B5ABFA8514D6FD"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:writable_book"
+						tag: {
+							pages: ["Летопись Максима и Юры.\\n\\nНаследие нового мира — то, что мы построили. Дальше пишем сами:"]
+						}
+					}
+				}
+			]
+		}
 	]
 }
 

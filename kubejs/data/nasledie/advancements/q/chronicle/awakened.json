@@ -1,0 +1,89 @@
+{
+  "criteria": {
+    "c0": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "cataclysm:ignited_revenant"
+        }
+      }
+    },
+    "c1": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "cataclysm:clawdian"
+        }
+      }
+    },
+    "c2": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "cataclysm:the_prowler"
+        }
+      }
+    },
+    "c3": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "cataclysm:kobolediator"
+        }
+      }
+    },
+    "c4": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "cataclysm:wadjet"
+        }
+      }
+    },
+    "c5": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "cataclysm:aptrgangr"
+        }
+      }
+    },
+    "c6": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "cataclysm:coralssus"
+        }
+      }
+    },
+    "c7": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "cataclysm:ender_golem"
+        }
+      }
+    },
+    "c8": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "cataclysm:netherite_ministrosity"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "c0",
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8"
+    ]
+  ]
+}

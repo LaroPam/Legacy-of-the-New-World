@@ -82,6 +82,8 @@ def render(name, data, ids, icons, out, every):
     nodes = dict(by_id, **linked)
     for target_id, q in list(by_id.items()) + [(i, every[i]) for i in linked]:
         here = nodes[target_id]
+        if q.get('hide_dependency_lines'):
+            continue
         for dep in q.get('deps', []):
             other = nodes.get(questbook.dependency(dep, q['_chapter'], ids))
             if other:
