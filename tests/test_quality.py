@@ -256,6 +256,64 @@ class ContentAdditionTests(unittest.TestCase):
         self.assertIn('file_addition_mismatch', self.codes(quality.evaluate(old, old, scope=scope)))
 
 
+class AdvancementConditionTests(unittest.TestCase):
+    def duplicates(self, criteria, second='second'):
+        parsed = {REF: {'id': '1', 'quests': [
+            {'id': '2', 'tasks': [{'id': '3', 'type': 'advancement', 'advancement': 'test:first'}]},
+            {'id': '4', 'tasks': [{'id': '5', 'type': 'advancement', 'advancement': 'test:'+second}]},
+        ]}}
+        for name in ['first', 'second']:
+            parsed['kubejs/data/test/advancements/'+name+'.json'] = {'criteria': criteria}
+        return quality.duplicate_conditions(parsed)
+
+    def test_separately_granted_impossible_targets_are_distinct(self):
+        self.assertEqual(self.duplicates({'done': {'trigger': 'minecraft:impossible'}}), [])
+
+    def test_repeated_impossible_target_still_collides(self):
+        self.assertEqual(len(self.duplicates({'done': {'trigger': 'minecraft:impossible'}}, 'first')), 1)
+
+    def test_natural_or_mixed_identical_conditions_still_collide(self):
+        natural = {'obtained': {'trigger': 'minecraft:inventory_changed', 'conditions': {'items': [{'items': ['minecraft:clock']}]}}}
+        for criteria in [natural, {**natural, 'manual': {'trigger': 'minecraft:impossible'}}]:
+            with self.subTest(criteria=criteria):
+                self.assertEqual(len(self.duplicates(criteria)), 1)
+
+
+class ScriptAdditionTests(unittest.TestCase):
+    NAME = 'kubejs/server_scripts/nasledie_factory_trials.js'
+    RAW = b'ServerEvents.tick(function(event) {});'
+
+    def report(self, current=None, baseline=None, name=None, fields=None):
+        import hashlib
+        declaration = {'sha256': hashlib.sha256(self.RAW).hexdigest(), 'reason': 'Observed production cycle',
+                       'evidence': 'reviews/factory_trial_evidence.json', 'tests': 'tests/factory_trials.test.cjs'}
+        declaration.update(fields or {})
+        return quality.evaluate(current if current is not None else {REF: SOURCE, self.NAME: self.RAW},
+                                baseline if baseline is not None else {REF: SOURCE},
+                                scope={'script_additions': {name or self.NAME: declaration}})
+
+    def test_exact_reviewed_script_is_allowed(self):
+        self.assertEqual(self.report()['errors'], [])
+
+    def test_missing_changed_or_existing_script_is_rejected(self):
+        for current, baseline in [({REF: SOURCE}, None),
+                                  ({REF: SOURCE, self.NAME: self.RAW+b'\n'}, None),
+                                  ({REF: SOURCE, self.NAME: self.RAW}, {REF: SOURCE, self.NAME: self.RAW})]:
+            with self.subTest(current=current, baseline=baseline):
+                codes = {e['code'] for e in self.report(current, baseline)['errors']}
+                self.assertIn('script_addition_mismatch', codes)
+
+    def test_arbitrary_code_or_missing_review_metadata_is_rejected(self):
+        for name, fields in [('kubejs/startup_scripts/unrelated.js', {}),
+                             (self.NAME, {'tests': ''}), (self.NAME, {'evidence': ''}), (self.NAME, {'reason': ''})]:
+            with self.subTest(name=name, fields=fields):
+                self.assertIn('script_addition_mismatch', {e['code'] for e in self.report(name=name, fields=fields)['errors']})
+
+    def test_undeclared_script_is_rejected(self):
+        r = quality.evaluate({REF: SOURCE, self.NAME: self.RAW}, {REF: SOURCE})
+        self.assertIn('protected_file_changed', {e['code'] for e in r['errors']})
+
+
 class GeometryTests(unittest.TestCase):
     def test_intersection_not_just_exact_center(self):
         self.assertAlmostEqual(quality.distance_to_segment((2, .2), (0, 0), (4, 0)), .2)
