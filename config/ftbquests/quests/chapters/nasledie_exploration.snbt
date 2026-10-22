@@ -809,6 +809,160 @@
 				}
 			]
 		}
+		{
+			id: "898102A102A9739A"
+			title: "Первое подземелье"
+			description: ["Под землёй прячутся маленькие подземелья с клетками-спаунерами и сундуками. Найдите первое."]
+			x: 3.0d
+			y: 12.0d
+			icon: "minecraft:mossy_cobblestone"
+			shape: "scroll"
+			dependencies: ["B4C64200C1AF50B8"]
+			tasks: [{
+				id: "84A6EB8DBC208040"
+				type: "advancement"
+				advancement: "betterdungeons:small_dungeon"
+			}]
+			rewards: [
+				{
+					id: "4760121B4D28D791"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "D299EA4271E907C9"
+					type: "item"
+					item: {
+						Count: 32b
+						id: "minecraft:torch"
+					}
+				}
+			]
+		}
+		{
+			id: "5086797B05BC7619"
+			title: "Паучья пещера"
+			description: ["Пещера, затянутая паутиной от пола до потолка. Ножницы и факелы — лучшие друзья."]
+			x: 6.0d
+			y: 12.0d
+			icon: "minecraft:cobweb"
+			shape: "scroll"
+			optional: true
+			dependencies: ["898102A102A9739A"]
+			tasks: [{
+				id: "6854F45934D34C2B"
+				type: "advancement"
+				advancement: "betterdungeons:spider_dungeon"
+			}]
+			rewards: [
+				{
+					id: "BAAEF0B6653E516D"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "602F2E70C3216A8B"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:shears"
+					}
+				}
+			]
+		}
+		{
+			id: "5386AE04902DA4BF"
+			title: "Катакомбы беспокойных мертвецов"
+			description: ["Склепы, где мёртвые не лежат спокойно. Спуститесь в катакомбы."]
+			x: 9.0d
+			y: 12.0d
+			icon: "minecraft:zombie_head"
+			shape: "scroll"
+			optional: true
+			dependencies: ["5086797B05BC7619"]
+			tasks: [{
+				id: "B571FF257E541C7B"
+				type: "advancement"
+				advancement: "betterdungeons:zombie_dungeon"
+			}]
+			rewards: [
+				{
+					id: "58D27EB457619D23"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "DEABC1057634C218"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:golden_apple"
+					}
+				}
+			]
+		}
+		{
+			id: "93EA4AC90BB6F5E7"
+			title: "Крепость нежити"
+			description: ["Подземная крепость скелетов-стрелков. Щит в руки — и вперёд."]
+			x: 12.0d
+			y: 12.0d
+			icon: "minecraft:skeleton_skull"
+			shape: "scroll"
+			optional: true
+			dependencies: ["5386AE04902DA4BF"]
+			tasks: [{
+				id: "82479D395DB8886D"
+				type: "advancement"
+				advancement: "betterdungeons:skeleton_dungeon"
+			}]
+			rewards: [
+				{
+					id: "77A8FEEBEEFE82BC"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "2325C60DD38C43C8"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:shield"
+					}
+				}
+			]
+		}
+		{
+			id: "E0B32143847E9AF0"
+			title: "Все сокровищницы YUNG"
+			description: ["Побывайте во всех видах подземелий, включая незерскую сокровищницу. Профессиональный подземельщик."]
+			x: 15.0d
+			y: 12.0d
+			icon: "minecraft:spawner"
+			shape: "star"
+			optional: true
+			dependencies: ["93EA4AC90BB6F5E7"]
+			tasks: [{
+				id: "20358355EA81D54D"
+				type: "advancement"
+				advancement: "betterdungeons:all_dungeons"
+			}]
+			rewards: [
+				{
+					id: "BA5B095A880F9171"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "3CB0F15803E71C9E"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:diamond"
+					}
+				}
+			]
+		}
 	]
 }
 

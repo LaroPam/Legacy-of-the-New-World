@@ -518,7 +518,8 @@ quests:
       - {type: advancement, advancement: minecraft:end/kill_dragon}
     rewards:
       - {type: xp, xp: 2000}
-      - {type: item, item: minecraft:elytra}
+      - {type: item, item: minecraft:dragon_head}
+      - {type: item, item: artifacts:chorus_totem}
 
   - key: ender_guardian
     id: 4E228116310381E8

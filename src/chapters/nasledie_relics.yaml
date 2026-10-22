@@ -1,558 +1,228 @@
+# Свободная глава «Кабинет редкостей» (Relics + Artifacts): первая реликвия в центре, восемь коллекций лучами по краям мира.
+# Где лежит каждая реликвия — по коду Relics 0.8.0.13 (LootCollections: шаблоны путей сундуков). Раскладка — src/layouts/relics.yaml.
 chapter:
   filename: nasledie_relics
   id: 14127D019AF8A60A
   group: free
-  title: Реликвии — коллекции для приключений
+  title: Кабинет редкостей
   icon: relics:researching_table
-  order_index: 17
-  progression_mode: flexible
+  order_index: 18
   default_hide_dependency_lines: false
-  default_quest_shape: circle
+  default_quest_shape: scroll
+  progression_mode: flexible
+
 quests:
-- id: BF8C1895E9D7830E
-  title: Начало коллекции странностей
-  x: 0.0
-  y: 0.0
-  icon: artifacts:flame_pendant
-  shape: scroll
-  size: 1.2
-  description:
-  - 'Получите любой артефакт Artifacts. Дальше выбирайте коллекцию под будущие приключения: снаряжение для воды,
-    дороги или опасных вылазок.'
-  - Здесь цель — сами редкие находки. Полученные вещи остаются у вас; задания на владение не требуют активации способности.
-    Свойства и ограничения каждого предмета изучайте в его подсказке.
-  tasks:
-  - id: 2C4263E8E03E95D9
-    type: advancement
-    advancement: artifacts:amateur_archaeologist
-  rewards:
-  - id: 3C13A5C314A0BFF6
-    type: xp
-    xp: 210
-  - id: 6BC0A03AF2879F54
-    type: item
-    item: sophisticatedbackpacks:advanced_pickup_upgrade
-- id: 43496821860704D3
-  title: Пояс коллекционера
-  x: 2.5
-  y: 0.0
-  icon: relics:leather_belt
-  shape: scroll
-  size: 1.2
-  optional: true
-  description:
-  - 'Получите кожаный пояс Relics. Изучите его возможности экипировки: это отправная точка коллекции вещей, которые
-    пригодятся в разных маршрутах.'
-  deps:
-  - BF8C1895E9D7830E
-  tasks:
-  - id: 0F267E026F300146
-    type: item
-    item: relics:leather_belt
-    count: 1
-    consume_items: false
-  rewards:
-  - id: B23598EDB4ADD9BE
-    type: xp
-    xp: 150
-  - id: 50A47B2C46AE5A15
-    type: item
-    item: sophisticatedbackpacks:tool_swapper_upgrade
-- id: C59D7785BCFC682D
-  title: Знак пройденного пути
-  x: 2.5
-  y: -15.0
-  icon: relics:spatial_sign
-  shape: star
-  size: 1.4
-  optional: true
-  description:
-  - Получите пространственный знак Relics. Откройте его описание и изучите условия возвращения по своему маршруту.
-    Эта находка завершает набор странника вместе с зеркалом, обувью и средством полёта.
-  deps:
-  - AF5426942D7C2622
-  tasks:
-  - id: 84772FCF368100DC
-    type: item
-    item: relics:spatial_sign
-    count: 1
-    consume_items: false
-  rewards:
-  - id: F76E3C3B68A43220
-    type: xp
-    xp: 150
-  - id: 29CA4DCA9ED22AC9
-    type: item
-    item: sophisticatedbackpacks:xp_pump_upgrade
-- id: 2CB6F19A77F3D3C0
-  title: Опыт, который можно хранить
-  x: 5.0
-  y: 0.0
-  icon: relics:relic_experience_bottle
-  shape: star
-  size: 1.4
-  optional: true
-  description:
-  - Получите бутылку опыта реликвий. Изучите её применение к вашей коллекции, прежде чем расходовать. Это отдельный
-    шаг знакомства с развитием найденного снаряжения.
-  deps:
-  - 43496821860704D3
-  tasks:
-  - id: 44972725B5632111
-    type: item
-    item: relics:relic_experience_bottle
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 886EC5AC684ED7CA
-    type: xp
-    xp: 150
-  - id: 68713E21E5861195
-    type: item
-    item: sophisticatedbackpacks:anvil_upgrade
-- id: F5D8F4D63F925F92
-  title: Сундук оказался голодным
-  x: 0.0
-  y: 2.5
-  icon: artifacts:mimic_spawn_egg
-  shape: scroll
-  size: 1.2
-  description:
-  - Победите мимика Artifacts. Оставьте себе пространство для отхода, когда находка внезапно окажется противником.
-    Такое знакомство делает следующие сундуки гораздо интереснее.
-  deps:
-  - BF8C1895E9D7830E
-  tasks:
-  - id: 9252B7D24A80B6D8
-    type: advancement
-    advancement: artifacts:chest_slayer
-  rewards:
-  - id: 45C7BDC7455E2423
-    type: xp
-    xp: 210
-  - id: F93D3E4AEC0B7907
-    type: item
-    item: sophisticatedbackpacks:advanced_magnet_upgrade
-- id: 71351EBD4433810D
-  title: Юра, это точно украшение?
-  x: 0.0
-  y: 5.0
-  icon: artifacts:onion_ring
-  shape: star
-  size: 1.4
-  description:
-  - Съешьте луковое кольцо Artifacts. Для этого испытания требуется именно употребление артефакта; предмет будет
-    съеден, поэтому сначала решите, готовы ли расстаться с этой находкой.
-  deps:
-  - F5D8F4D63F925F92
-  tasks:
-  - id: 3B6DDF4018DD7C8A
-    type: advancement
-    advancement: artifacts:adventurous_eater
-  rewards:
-  - id: 4EC3D1E9962E0012
-    type: xp
-    xp: 210
-  - id: CCC40C6F7D274092
-    type: item
-    item: sophisticatedstorage:advanced_hopper_upgrade
-- id: 6CD091542ED7E77D
-  title: Обувь морского странника
-  x: 2.5
-  y: 2.5
-  icon: relics:aqua_walker
-  shape: scroll
-  size: 1.2
-  optional: true
-  description:
-  - Получите реликвию Aqua Walker — обувь для движения по воде. Прочитайте ограничения её действия перед испытанием
-    в открытом море. Это начало коллекции для водных экспедиций.
-  deps:
-  - 43496821860704D3
-  tasks:
-  - id: 2EA5CC15589369D7
-    type: item
-    item: relics:aqua_walker
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 81CED0F2CD6DAC32
-    type: xp
-    xp: 150
-  - id: 4580ED4334778484
-    type: item
-    item: sophisticatedstorage:compression_upgrade
-- id: 0068C3492D5FEF60
-  title: Находка для долгого заплыва
-  x: 2.5
-  y: 5.0
-  icon: relics:amphibian_boot
-  shape: scroll
-  size: 1.2
-  optional: true
-  description:
-  - 'Получите сапоги амфибии Relics. Сравните их описание с обувью для поверхности воды: выбирайте снаряжение под
-    плавание или передвижение над волнами.'
-  deps:
-  - 6CD091542ED7E77D
-  tasks:
-  - id: 5F61D6DAB8C204F2
-    type: item
-    item: relics:amphibian_boot
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 8617814CB21D0301
-    type: xp
-    xp: 150
-  - id: 799BC338229CA0A5
-    type: item
-    item: sophisticatedstorage:jukebox_upgrade
-- id: 2783FBF67E012E66
-  title: Пояс из затонувшей истории
-  x: 2.5
-  y: 7.5
-  icon: relics:drowned_belt
-  shape: scroll
-  size: 1.2
-  optional: true
-  description:
-  - Получите пояс утопленника Relics. Добавьте его к морской коллекции и проверьте доступный слот экипировки во
-    внутриигровой подсказке.
-  deps:
-  - 0068C3492D5FEF60
-  tasks:
-  - id: DFFBA392093D8C17
-    type: item
-    item: relics:drowned_belt
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 88D28C9C2D494B40
-    type: xp
-    xp: 150
-  - id: 6982F643E5238F64
-    type: item
-    item: sophisticatedstorage:crafting_upgrade
-- id: 6E2FE392089D97DF
-  title: Ожерелье медузы
-  x: 2.5
-  y: 10.0
-  icon: relics:jellyfish_necklace
-  shape: star
-  size: 1.4
-  optional: true
-  description:
-  - Получите ожерелье медузы Relics. Оно завершает набор морских находок этой ветки. Перед следующей экспедицией
-    сравните свойства всех четырёх реликвий и выберите подходящие.
-  deps:
-  - 2783FBF67E012E66
-  tasks:
-  - id: 1E794951499EA59D
-    type: item
-    item: relics:jellyfish_necklace
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 63EFAC84036F1411
-    type: xp
-    xp: 150
-  - id: 63D95F69550751D2
-    type: item
-    item: sophisticatedstorage:smoking_upgrade
-- id: CC5ABE356CD75C8E
-  title: Шаг над раскалённым озером
-  x: -2.5
-  y: 0.0
-  icon: relics:magma_walker
-  shape: scroll
-  size: 1.2
-  optional: true
-  description:
-  - Получите Magma Walker — обувь для лавовых маршрутов. До испытания над лавой внимательно прочитайте время действия
-    и ограничения в описании реликвии.
-  deps:
-  - BF8C1895E9D7830E
-  tasks:
-  - id: 040924D896345338
-    type: item
-    item: relics:magma_walker
-    count: 1
-    consume_items: false
-  rewards:
-  - id: F451F9F66EA3B074
-    type: xp
-    xp: 150
-  - id: 178D7CDE43C4FFE9
-    type: item
-    item: createdeco:brass_coin
-    count: 3
-- id: FC18B444C7E1629F
-  title: Коньки для ледяного пути
-  x: 2.5
-  y: -2.5
-  icon: relics:ice_skates
-  shape: scroll
-  size: 1.2
-  optional: true
-  description:
-  - 'Получите ледяные коньки Relics. Сохраните их для экспедиций по замёрзшим водоёмам: дорожная коллекция начинается
-    с поиска необычной обуви.'
-  deps:
-  - 43496821860704D3
-  tasks:
-  - id: 41EAF76F41688C0E
-    type: item
-    item: relics:ice_skates
-    count: 1
-    consume_items: false
-  rewards:
-  - id: CE0B3D592576F0A6
-    type: xp
-    xp: 150
-  - id: 379C9FA2159B07A7
-    type: item
-    item: createdeco:brass_coinstack
-    count: 3
-- id: C3620DEF30C9A9E2
-  title: Ролики для длинной дороги
-  x: 2.5
-  y: -5.0
-  icon: relics:roller_skates
-  shape: scroll
-  size: 1.2
-  optional: true
-  description:
-  - Получите роликовые коньки Relics. Сравните их с ледяными и продумайте маршрут по поверхности, где эта находка
-    будет уместна.
-  deps:
-  - FC18B444C7E1629F
-  tasks:
-  - id: 1AF887A0DABB4721
-    type: item
-    item: relics:roller_skates
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 2154430DDB342057
-    type: xp
-    xp: 150
-  - id: 0E2B5402D903960F
-    type: item
-    item: createdeco:copper_coin
-    count: 3
-- id: 37A42269B00D8373
-  title: Зеркало возвращения
-  x: 2.5
-  y: -10.0
-  icon: relics:magic_mirror
-  shape: scroll
-  size: 1.2
-  optional: true
-  description:
-  - Получите волшебное зеркало Relics. Изучите его условия использования, прежде чем рассчитывать на него в дальней
-    дороге. У коллекции странника появляется способ возвращения.
-  deps:
-  - 7A6DE62914ABF934
-  tasks:
-  - id: FDADE971D09A2879
-    type: item
-    item: relics:magic_mirror
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 4003DE3F6E08999B
-    type: xp
-    xp: 150
-  - id: 3339A3BB75D0024B
-    type: item
-    item: createdeco:copper_coinstack
-    count: 3
-- id: 7A6DE62914ABF934
-  title: Лошадь отправляется с вами
-  x: 2.5
-  y: -7.5
-  icon: relics:horse_flute
-  shape: scroll
-  size: 1.2
-  optional: true
-  description:
-  - 'Получите конскую флейту Relics. Прочитайте правила её применения к лошади: эта находка предназначена для путешествий
-    вместе с вашим ездовым спутником.'
-  deps:
-  - C3620DEF30C9A9E2
-  tasks:
-  - id: EED1A8D58C24AF0E
-    type: item
-    item: relics:horse_flute
-    count: 1
-    consume_items: false
-  rewards:
-  - id: A33B16A04B68050B
-    type: xp
-    xp: 150
-  - id: 82D1DF408BE7E1EE
-    type: item
-    item: createdeco:iron_coin
-    count: 3
-- id: 02183638E5416B5E
-  title: Стрелы в одном месте
-  x: 7.5
-  y: 0.0
-  icon: relics:arrow_quiver
-  shape: scroll
-  size: 1.2
-  optional: true
-  description:
-  - Получите колчан Relics. Разберитесь с размещением стрел во внутреннем хранилище; такой предмет пригодится в
-    охотничьем наборе.
-  deps:
-  - 2CB6F19A77F3D3C0
-  tasks:
-  - id: 8012384127A61C3A
-    type: item
-    item: relics:arrow_quiver
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 6039E984E70B9F0B
-    type: xp
-    xp: 150
-  - id: FE9118E2A9518B6A
-    type: item
-    item: createdeco:iron_coinstack
-    count: 3
-- id: E3EA2CF97420E989
-  title: Пояс дальнего дозора
-  x: 10.0
-  y: 0.0
-  icon: relics:hunter_belt
-  shape: scroll
-  size: 1.2
-  optional: true
-  description:
-  - Получите пояс охотника Relics. Подберите ему место среди других вещей для боевых вылазок; наличие пояса завершает
-    этот этап коллекции.
-  deps:
-  - 02183638E5416B5E
-  tasks:
-  - id: 388A327432DBFF12
-    type: item
-    item: relics:hunter_belt
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 722FF3D6D72C64C8
-    type: xp
-    xp: 150
-  - id: 35A8466D05B2B607
-    type: item
-    item: createdeco:zinc_coin
-    count: 3
-- id: B4210CAE7916EC4B
-  title: Кольцо для чужого бастиона
-  x: -5.0
-  y: 0.0
-  icon: relics:bastion_ring
-  shape: star
-  size: 1.4
-  optional: true
-  description:
-  - Получите кольцо бастиона Relics. Изучите его взаимодействие с пиглинами, не перенося обещание мирного поведения
-    на всех обитателей Незера. Это вторая находка набора для лавовых маршрутов.
-  deps:
-  - CC5ABE356CD75C8E
-  tasks:
-  - id: A0E206C553FB9B9D
-    type: item
-    item: relics:bastion_ring
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 7E44526AA4C853A7
-    type: xp
-    xp: 150
-  - id: 66DCEBBE2DAF050F
-    type: item
-    item: createdeco:zinc_coinstack
-    count: 3
-- id: 95E67FB14F3417B2
-  title: Священный медальон
-  x: 12.5
-  y: 0.0
-  icon: relics:holy_locket
-  shape: scroll
-  size: 1.2
-  optional: true
-  description:
-  - Получите священный медальон Relics. Сравните условия его лечебного действия с вашими обычными припасами. Реликвия
-    дополняет охотничий набор, но не заменяет подготовку к бою.
-  deps:
-  - E3EA2CF97420E989
-  tasks:
-  - id: 8F8D8404A1B4E27A
-    type: item
-    item: relics:holy_locket
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 33BB57BA36D6BEDF
-    type: xp
-    xp: 150
-  - id: AC01C02D94909B44
-    type: item
-    item: createdeco:brass_bars
-    count: 3
-- id: AF5426942D7C2622
-  title: Ускоритель дальнего полёта
-  x: 2.5
-  y: -12.5
-  icon: relics:elytra_booster
-  shape: scroll
-  size: 1.2
-  optional: true
-  description:
-  - Получите ускоритель элитр Relics. Прочитайте правила заправки и применения. Это одна из последних находок дорожной
-    коллекции — для этапа, когда путешествия выходят далеко за пределы троп.
-  deps:
-  - 37A42269B00D8373
-  tasks:
-  - id: CFF1B2F44710173E
-    type: item
-    item: relics:elytra_booster
-    count: 1
-    consume_items: false
-  rewards:
-  - id: A50E9721F6BF54BB
-    type: xp
-    xp: 150
-  - id: BC1D4F110BFDBA48
-    type: item
-    item: createdeco:brass_catwalk
-- id: B80C987F9AB03683
-  title: Ответ лесной находки
-  x: 15.0
-  y: 0.0
-  icon: relics:spore_sack
-  shape: star
-  size: 1.4
-  optional: true
-  description:
-  - Получите споровый мешочек Relics. Изучите его защитное действие и завершите коллекцию для опасных вылазок. Сам
-    предмет остаётся у вас для дальнейших экспериментов.
-  deps:
-  - 95E67FB14F3417B2
-  tasks:
-  - id: 325EC61A0C837974
-    type: item
-    item: relics:spore_sack
-    count: 1
-    consume_items: false
-  rewards:
-  - id: 536AEF68E19CC635
-    type: xp
-    xp: 150
-  - id: F306F7DEC77D9A93
-    type: item
-    item: createdeco:copper_bars
-    count: 3
+  - key: first_relic
+    title: Первая реликвия
+    description:
+      - Реликвии — вещи с характером. Они растут в уровне вместе с хозяином и тратят на это его опыт. Лежат в сундуках по всему миру, у каждой
+        свой край. Найдите любую.
+    x: 0.0
+    y: 0.0
+    icon: relics:leather_belt
+    shape: star
+    size: 1.6
+    tasks:
+      - type: criteria
+        title: Найти любую реликвию
+        obtain: [relics:leather_belt, relics:arrow_quiver, relics:hunter_belt, relics:infinity_ham, relics:roller_skates, relics:horse_flute,
+                 relics:magic_mirror, relics:midnight_robe, relics:spatial_sign, relics:aqua_walker, relics:amphibian_boot, relics:drowned_belt,
+                 relics:jellyfish_necklace, relics:ice_skates, relics:ice_breaker, relics:wool_mitten, relics:holy_locket, relics:spore_sack,
+                 relics:blazing_flask, relics:magma_walker, relics:rage_glove, relics:reflection_necklace, relics:space_dissector,
+                 relics:bastion_ring, relics:chorus_inhibitor, relics:elytra_booster, relics:enders_hand, relics:shadow_glaive]
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: relics:researching_table}
+      - {type: item, item: relics:relic_experience_bottle, count: 2}
+
+  - key: village
+    title: Деревенские сундуки
+    description:
+      - Кожаный пояс, колчан, пояс охотника и бесконечный окорок лежат в деревенских сундуках. Жители не заметят. Наверное.
+    x: -4.0
+    y: 0.0
+    icon: relics:infinity_ham
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:leather_belt}
+      - {type: item, item: relics:arrow_quiver}
+      - {type: item, item: relics:hunter_belt}
+      - {type: item, item: relics:infinity_ham}
+    rewards:
+      - {type: xp, xp: 600}
+      - {type: item, item: relics:relic_experience_bottle, count: 3}
+      - {type: item, item: farmersdelight:honey_glazed_ham_block}
+
+  - key: road
+    title: Дорожный набор
+    description:
+      - Роликовые коньки и лошадиная флейта попадаются в деревнях, шахтах и крепостях. Флейта прячет лошадь в себе и выпускает там, где
+        она нужна.
+    x: -2.83
+    y: -2.83
+    icon: relics:horse_flute
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:roller_skates}
+      - {type: item, item: relics:horse_flute}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: relics:relic_experience_bottle, count: 2}
+      - {type: item, item: minecraft:diamond_horse_armor}
+
+  - key: dungeons
+    title: Тайники подземелий
+    description:
+      - Волшебное зеркало, полуночная мантия и пространственная печать прячутся в заброшенных шахтах, крепостях и подземных городах.
+        Зеркало вернёт домой, печать — по собственным следам.
+    x: -2.83
+    y: 2.83
+    icon: relics:magic_mirror
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:magic_mirror}
+      - {type: item, item: relics:midnight_robe}
+      - {type: item, item: relics:spatial_sign}
+    rewards:
+      - {type: xp, xp: 600}
+      - {type: item, item: relics:relic_experience_bottle, count: 3}
+      - {type: item, item: sophisticatedbackpacks:xp_pump_upgrade}
+
+  - key: sea
+    title: Морская коллекция
+    description:
+      - Водоходы, ботинок амфибии, пояс утопленника и ожерелье медузы — добыча затонувших кораблей, подводных руин и зарытых кладов.
+    x: 4.0
+    y: 0.0
+    icon: relics:jellyfish_necklace
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:aqua_walker}
+      - {type: item, item: relics:amphibian_boot}
+      - {type: item, item: relics:drowned_belt}
+      - {type: item, item: relics:jellyfish_necklace}
+    rewards:
+      - {type: xp, xp: 600}
+      - {type: item, item: relics:relic_experience_bottle, count: 3}
+      - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_water_breathing"}', count: 3}
+      - {type: item, item: sophisticatedbackpacks:pump_upgrade}
+
+  - key: north
+    title: Северная коллекция
+    description:
+      - Ледовые коньки, ледоколы и шерстяная рукавица ждут в иглу, снежных и таёжных деревнях. Рукавица лепит снежки, от которых враги
+        замерзают.
+    x: 0.0
+    y: -4.0
+    icon: relics:ice_skates
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:ice_skates}
+      - {type: item, item: relics:ice_breaker}
+      - {type: item, item: relics:wool_mitten}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: relics:relic_experience_bottle, count: 3}
+      - {type: item, item: minecraft:blue_ice, count: 32}
+
+  - key: south
+    title: Храмы юга
+    description:
+      - Священный медальон лежит в пустынных пирамидах и домах, мешок со спорами — в храмах джунглей. Медальон выжигает нежить вокруг
+        хозяина.
+    x: 2.83
+    y: 2.83
+    icon: relics:holy_locket
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:holy_locket}
+      - {type: item, item: relics:spore_sack}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: relics:relic_experience_bottle, count: 2}
+      - {type: item, item: artifacts:umbrella}
+
+  - key: nether
+    title: Огненная коллекция
+    description:
+      - Пылающий флакон, лаваходы, перчатка ярости, отражающий амулет и рассекатель пространства — из крепостей Нижнего мира и разрушенных
+        порталов. Кольцо бастиона, как ни странно, в бастионах.
+    x: 0.0
+    y: 4.0
+    icon: relics:blazing_flask
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:blazing_flask}
+      - {type: item, item: relics:magma_walker}
+      - {type: item, item: relics:rage_glove}
+      - {type: item, item: relics:reflection_necklace}
+      - {type: item, item: relics:space_dissector}
+      - {type: item, item: relics:bastion_ring}
+    rewards:
+      - {type: xp, xp: 1200}
+      - {type: item, item: relics:relic_experience_bottle, count: 5}
+      - {type: item, item: minecraft:gold_block, count: 4}
+
+  - key: end
+    title: Реликвии Края
+    description:
+      - Рука Края, хорусовый ингибитор, ускоритель элитр и теневая глефа лежат в городах Края. Глефа встречается и в древних городах — если
+        хватит смелости.
+    x: 2.83
+    y: -2.83
+    icon: relics:enders_hand
+    shape: star
+    size: 1.4
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:enders_hand}
+      - {type: item, item: relics:chorus_inhibitor}
+      - {type: item, item: relics:elytra_booster}
+      - {type: item, item: relics:shadow_glaive}
+    rewards:
+      - {type: xp, xp: 1500}
+      - {type: item, item: relics:relic_experience_bottle, count: 6}
+      - {type: item, item: sophisticatedbackpacks:netherite_backpack}
+
+  # ── Artifacts: сундуки, которые кусаются ──
+  - key: mimic
+    id: F5D8F4D63F925F92
+    title: Сундук оказался голодным
+    description:
+      - Не каждый сундук — сундук. Мимик кусается, зато внутри у него артефакт. Победите одного.
+    x: -6.01
+    y: 2.49
+    icon: artifacts:mimic_spawn_egg
+    shape: shield
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {id: 9252B7D24A80B6D8, type: advancement, advancement: artifacts:chest_slayer}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: sophisticatedbackpacks:advanced_pickup_upgrade}
+
+  - key: onion
+    id: 71351EBD4433810D
+    title: Юра, это точно украшение?
+    description:
+      - Луковое кольцо из Artifacts носят на пальце. Но его можно и съесть. Юра, не надо… Ладно, надо.
+    x: -8.31
+    y: 3.44
+    icon: artifacts:onion_ring
+    shape: circle
+    optional: true
+    deps: [mimic]
+    tasks:
+      - {id: 3B6DDF4018DD7C8A, type: advancement, advancement: artifacts:adventurous_eater}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: farmersdelight:onion_soup, count: 4}
+      - {type: item, item: sophisticatedstorage:advanced_hopper_upgrade}

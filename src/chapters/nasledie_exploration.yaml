@@ -425,3 +425,88 @@ quests:
     rewards:
       - {type: xp, xp: 1000}
       - {type: item, item: sophisticatedbackpacks:gold_backpack}
+
+  # ── Подземелья YUNG ──
+  - key: small_dungeon
+    id: 898102A102A9739A
+    title: Первое подземелье
+    description:
+      - Под землёй прячутся маленькие подземелья с клетками-спаунерами и сундуками. Найдите первое.
+    x: 3
+    y: 12
+    icon: minecraft:mossy_cobblestone
+    shape: scroll
+    deps: [lost_tablet]
+    tasks:
+      - {type: advancement, advancement: betterdungeons:small_dungeon}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: minecraft:torch, count: 32}
+
+  - key: spider_dungeon
+    id: 5086797B05BC7619
+    title: Паучья пещера
+    description:
+      - Пещера, затянутая паутиной от пола до потолка. Ножницы и факелы — лучшие друзья.
+    x: 6
+    y: 12
+    icon: minecraft:cobweb
+    shape: scroll
+    optional: true
+    deps: [small_dungeon]
+    tasks:
+      - {type: advancement, advancement: betterdungeons:spider_dungeon}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:shears}
+
+  - key: zombie_dungeon
+    id: 5386AE04902DA4BF
+    title: Катакомбы беспокойных мертвецов
+    description:
+      - Склепы, где мёртвые не лежат спокойно. Спуститесь в катакомбы.
+    x: 9
+    y: 12
+    icon: minecraft:zombie_head
+    shape: scroll
+    optional: true
+    deps: [spider_dungeon]
+    tasks:
+      - {type: advancement, advancement: betterdungeons:zombie_dungeon}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:golden_apple}
+
+  - key: skeleton_dungeon
+    id: 93EA4AC90BB6F5E7
+    title: Крепость нежити
+    description:
+      - Подземная крепость скелетов-стрелков. Щит в руки — и вперёд.
+    x: 12
+    y: 12
+    icon: minecraft:skeleton_skull
+    shape: scroll
+    optional: true
+    deps: [zombie_dungeon]
+    tasks:
+      - {type: advancement, advancement: betterdungeons:skeleton_dungeon}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:shield}
+
+  - key: all_dungeons
+    id: E0B32143847E9AF0
+    title: Все сокровищницы YUNG
+    description:
+      - Побывайте во всех видах подземелий, включая незерскую сокровищницу. Профессиональный подземельщик.
+    x: 15
+    y: 12
+    icon: minecraft:spawner
+    shape: star
+    optional: true
+    deps: [skeleton_dungeon]
+    tasks:
+      - {type: advancement, advancement: betterdungeons:all_dungeons}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: minecraft:diamond, count: 4}

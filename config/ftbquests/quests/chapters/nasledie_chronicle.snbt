@@ -1081,7 +1081,15 @@
 					type: "item"
 					item: {
 						Count: 1b
-						id: "minecraft:elytra"
+						id: "minecraft:dragon_head"
+					}
+				}
+				{
+					id: "9C046519268D530B"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:chorus_totem"
 					}
 				}
 			]

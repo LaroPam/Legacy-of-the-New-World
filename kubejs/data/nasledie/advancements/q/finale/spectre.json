@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "leash": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:lead"
+          ]
+        },
+        "entity": {
+          "type": "alexsmobs:spectre"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "leash"
+    ]
+  ]
+}
