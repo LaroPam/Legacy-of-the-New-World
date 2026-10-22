@@ -34,7 +34,7 @@
       "code": "external_registry_unknown",
       "location": "items",
       "message": "Exact registry/data evidence was not supplied; identifier validity is not established",
-      "count": 653
+      "count": 654
     },
     {
       "code": "external_registry_unknown",
@@ -56,17 +56,22 @@
       "code": "semantics_unverified",
       "location": "automation",
       "message": "Parsing and resource resolution do not prove that advancement conditions match the promised action, or that rewards respect recipes and progression"
+    },
+    {
+      "code": "factory_trials_runtime_unverified",
+      "location": "kubejs/server_scripts/nasledie_factory_trials.js",
+      "message": "Model tests do not exercise the Rhino Java bridge, mod tick ordering or FTB team credit in Minecraft"
     }
   ],
   "counts": {
     "chapters": 18,
-    "quests": 483,
-    "tasks": 511,
-    "rewards": 988,
-    "dependencies": 461,
-    "optional_quests": 315,
+    "quests": 485,
+    "tasks": 513,
+    "rewards": 992,
+    "dependencies": 463,
+    "optional_quests": 317,
     "task_types": {
-      "advancement": 380,
+      "advancement": 382,
       "biome": 21,
       "checkmark": 1,
       "dimension": 1,
@@ -76,11 +81,11 @@
       "structure": 74
     },
     "reward_types": {
-      "item": 500,
+      "item": 502,
       "stage": 4,
-      "xp": 484
+      "xp": 486
     },
-    "parsed_json": 78,
+    "parsed_json": 80,
     "parsed_snbt": 19
   },
   "baseline_counts": {
@@ -157,7 +162,7 @@
     {
       "file": "config/ftbquests/quests/chapters/nasledie_industry.snbt",
       "baseline_sha256": "327be73b82360abd006bc8f77b7ea112110650cb69eb77d24638d6e3826b4ec6",
-      "current_sha256": "3a286992c9bd852ef8da833200e35509f956563653acde725c17a0cef85bf0db"
+      "current_sha256": "9fe8872ef0f6d90cc2ca3aa589768ce14c58df0aeb3c071cb0f2315da308c716"
     },
     {
       "file": "config/ftbquests/quests/chapters/nasledie_legends.snbt",
@@ -253,6 +258,21 @@
       "file": "kubejs/data/nasledie/advancements/alpha43/expeditions/temple_treasure.json",
       "baseline_sha256": null,
       "current_sha256": "82040a85bedc67126c50f2559bf816b7476cdc0c98de40cecafdf1a46a8a043a"
+    },
+    {
+      "file": "kubejs/data/nasledie/advancements/alpha43/industry/diesel_flour.json",
+      "baseline_sha256": null,
+      "current_sha256": "af349d43183d3a1497b1577e91c199453a18acdc7e5305cf6024093b816da6c3"
+    },
+    {
+      "file": "kubejs/data/nasledie/advancements/alpha43/industry/electric_wire.json",
+      "baseline_sha256": null,
+      "current_sha256": "af349d43183d3a1497b1577e91c199453a18acdc7e5305cf6024093b816da6c3"
+    },
+    {
+      "file": "kubejs/server_scripts/nasledie_factory_trials.js",
+      "baseline_sha256": null,
+      "current_sha256": "e83abcea30d014415386d11de8834c0e4df67ed5a4fc383ec18e9c4b5f17a931"
     }
   ],
   "gameplay_blockers": [],
@@ -321,10 +341,10 @@
       "height": 30.0
     },
     "config/ftbquests/quests/chapters/nasledie_industry.snbt": {
-      "nodes": 25,
-      "edges": 23,
+      "nodes": 27,
+      "edges": 25,
       "max_edge_length": 2.5,
-      "width": 22.5,
+      "width": 25.0,
       "height": 10.0
     },
     "config/ftbquests/quests/chapters/nasledie_legends.snbt": {
@@ -513,7 +533,7 @@
     }
   },
   "registry": {
-    "local_advancements_resolved": 77,
+    "local_advancements_resolved": 79,
     "source": null,
     "categories": {
       "advancements": {
@@ -873,7 +893,7 @@
         ]
       },
       "items": {
-        "required": 653,
+        "required": 654,
         "status": "unknown",
         "unverified": [
           "alexscaves:abyssal_altar",
@@ -1187,6 +1207,7 @@
           "create:track_station",
           "create:water_wheel",
           "create:weighted_ejector",
+          "create:wheat_flour",
           "create:windmill_bearing",
           "create:wrench",
           "createaddition:alternator",
@@ -1625,7 +1646,7 @@
   "summary": {
     "errors": 0,
     "warnings": 0,
-    "unknown": 9,
+    "unknown": 10,
     "result": "pass_with_warnings_or_unknowns",
     "gameplay_blockers": 0,
     "release_ready": false
@@ -1635,6 +1656,7 @@
     "warnings": {},
     "unknown": {
       "external_registry_unknown": 6,
+      "factory_trials_runtime_unverified": 1,
       "gameplay_unverified": 1,
       "rendering_unverified": 1,
       "semantics_unverified": 1
@@ -1651,7 +1673,7 @@
     "config/ftbquests/quests/chapters/nasledie_exploration.snbt": "a210505de8242223a4dbc504f90202f66c235be089b53224abc5d1093703add4",
     "config/ftbquests/quests/chapters/nasledie_grand_projects.snbt": "ea23039114467f5a07fb4a10c0906df956ab7cfb3f87c108e2a47acdaec87706",
     "config/ftbquests/quests/chapters/nasledie_guild.snbt": "c1243109a1e963d6165ef9923c1ed9f7f80cbce33443534d9b1f3813cbc45112",
-    "config/ftbquests/quests/chapters/nasledie_industry.snbt": "3a286992c9bd852ef8da833200e35509f956563653acde725c17a0cef85bf0db",
+    "config/ftbquests/quests/chapters/nasledie_industry.snbt": "9fe8872ef0f6d90cc2ca3aa589768ce14c58df0aeb3c071cb0f2315da308c716",
     "config/ftbquests/quests/chapters/nasledie_legends.snbt": "4fd399f4229dca53ba54de8fbfe18993a06a9344672d7c36037d84089c423838",
     "config/ftbquests/quests/chapters/nasledie_life.snbt": "34e51c217c7654e4c70fb2bd41d2fbb67e2a00dded337b95743123f987665ed5",
     "config/ftbquests/quests/chapters/nasledie_netheritage.snbt": "924768a55af30db9dcda5347a10e9eaef72f253e38d4b128d62e55bfb3fa2709",
@@ -1741,6 +1763,8 @@
     "kubejs/data/nasledie/advancements/alpha43/expeditions/nest_treasure.json": "3e861ed6332b79cf46fb83e95f72d7d6e387355d879f6aeb1e983d38834d3155",
     "kubejs/data/nasledie/advancements/alpha43/expeditions/temple_cave_spider.json": "7d5ef179c988e3696f00bd59cd39a96126112d3312c19b98a632dd13c3e1e04d",
     "kubejs/data/nasledie/advancements/alpha43/expeditions/temple_treasure.json": "82040a85bedc67126c50f2559bf816b7476cdc0c98de40cecafdf1a46a8a043a",
+    "kubejs/data/nasledie/advancements/alpha43/industry/diesel_flour.json": "af349d43183d3a1497b1577e91c199453a18acdc7e5305cf6024093b816da6c3",
+    "kubejs/data/nasledie/advancements/alpha43/industry/electric_wire.json": "af349d43183d3a1497b1577e91c199453a18acdc7e5305cf6024093b816da6c3",
     "kubejs/data/nasledie/advancements/economy/bought_bread.json": "5764a810f9aeffcbb2fac2bb4999d311d79845c659dfdf895cfef3d666f98857",
     "kubejs/data/nasledie/advancements/economy/bought_enchanted_book.json": "ea23c097a2a6cafdd2b51cfe80bec8a905b3267dca57bc00e28671b044518db1",
     "kubejs/data/nasledie/advancements/economy/bought_ender_pearl.json": "a3be8874ce72187dbe32a82c653b9f1bf2f76be01db929bc1e542486c2af6a08",
@@ -1759,6 +1783,7 @@
     "kubejs/data/nasledie/advancements/setup/industry/diesel_engine.json": "b4f8a4d8b8a7a304c05dea6fba646afe0dd11b319024b98fb9f4873905c9d974",
     "kubejs/data/nasledie/advancements/setup/industry/electric_motor.json": "f98db34e40c5404942b8c930613e781eb2053240fc7cdb0ee1bbdb31262fe1a7",
     "kubejs/data/nasledie/advancements/setup/industry/modular_accumulator.json": "35c0e2056d78cfab813dc730b320346d4970f02ce8274614b54254f20784cb27",
-    "kubejs/data/nasledie/advancements/setup/industry/rolling_mill.json": "a54ddac8878a421c149542d0887209f2f1f1f6405e45b62d11017df6e85230d0"
+    "kubejs/data/nasledie/advancements/setup/industry/rolling_mill.json": "a54ddac8878a421c149542d0887209f2f1f1f6405e45b62d11017df6e85230d0",
+    "kubejs/server_scripts/nasledie_factory_trials.js": "e83abcea30d014415386d11de8834c0e4df67ed5a4fc383ec18e9c4b5f17a931"
   }
 }

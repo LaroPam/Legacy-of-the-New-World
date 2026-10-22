@@ -1,0 +1,1092 @@
+{
+  "scope": "Exact cached JAR/source/recipe evidence for two production trials; no Minecraft client/server execution.",
+  "base_commit": "0dd55899d750ef738fe9210ee9835849bd292854",
+  "decompiler": "CFR 0.152, selected classes only; obfuscated Minecraft method names retained.",
+  "classes": [
+    {
+      "jar": "createaddition-1.20.1-1.3.3.jar",
+      "jar_sha256": "9bf3ae15d86ec95d128542caf10e4b5498e49ca02f725b9302d6daecd5eae1db",
+      "path": "com/mrh0/createaddition/blocks/rolling_mill/RollingMillBlockEntity.class",
+      "sha256": "92fd48503afe8c3eb6e8bcd7c807ae253c00268e187d126863d88bbc9069ddc7",
+      "claim": "Input/output inventory and timer are public. Tick decrements timer; process consumes one input, inserts the recipe output and returns before the next export tick.",
+      "decompiled_sha256": "0777ed557f47e91ec4892f20f191b139879e3ffe3c81f14d41b88667a28a12d0",
+      "excerpts": [
+        {
+          "start_line": 88,
+          "end_line": 96,
+          "text": "    public ItemStackHandler inputInv = new ItemStackHandler(1);\n    public ItemStackHandler outputInv = new ItemStackHandler(9);\n    public LazyOptional<IItemHandler> capability = LazyOptional.of(() -> new RollingMillInventoryHandler(this));\n    public int timer;\n    private RollingRecipe lastRecipe;\n\n    public RollingMillBlockEntity(BlockEntityType<? extends RollingMillBlockEntity> type, BlockPos pos, BlockState state) {\n        super(type, pos, state);\n    }"
+        },
+        {
+          "start_line": 89,
+          "end_line": 97,
+          "text": "    public ItemStackHandler outputInv = new ItemStackHandler(9);\n    public LazyOptional<IItemHandler> capability = LazyOptional.of(() -> new RollingMillInventoryHandler(this));\n    public int timer;\n    private RollingRecipe lastRecipe;\n\n    public RollingMillBlockEntity(BlockEntityType<? extends RollingMillBlockEntity> type, BlockPos pos, BlockState state) {\n        super(type, pos, state);\n    }\n"
+        },
+        {
+          "start_line": 91,
+          "end_line": 99,
+          "text": "    public int timer;\n    private RollingRecipe lastRecipe;\n\n    public RollingMillBlockEntity(BlockEntityType<? extends RollingMillBlockEntity> type, BlockPos pos, BlockState state) {\n        super(type, pos, state);\n    }\n\n    @Override\n    public void addBehaviours(List<BlockEntityBehaviour> behaviours) {"
+        },
+        {
+          "start_line": 105,
+          "end_line": 136,
+          "text": "    public void tick() {\n        super.tick();\n        if (this.getSpeed() == 0.0f) {\n            return;\n        }\n        for (int i = 0; i < this.outputInv.getSlots(); ++i) {\n            if (this.outputInv.getStackInSlot(i).m_41613_() != this.outputInv.getSlotLimit(i)) continue;\n            return;\n        }\n        if (this.timer > 0) {\n            this.timer -= this.getProcessingSpeed();\n            if (this.f_58857_.f_46443_) {\n                this.spawnParticles();\n                return;\n            }\n            if (this.timer <= 0) {\n                this.process();\n            }\n            return;\n        }\n        Direction ejectDirection = this.getEjectDirection();\n        for (int slot = 0; slot < this.outputInv.getSlots(); ++slot) {\n            ItemStack tryExport;\n            ItemStack stack = this.outputInv.getStackInSlot(slot);\n            if (stack.m_41619_() || (tryExport = ((DirectBeltInputBehaviour)this.getBehaviour(DirectBeltInputBehaviour.TYPE)).tryExportingToBeltFunnel(stack, ejectDirection, false)) == null || tryExport.m_41613_() == stack.m_41613_()) continue;\n            this.outputInv.setStackInSlot(slot, tryExport);\n            this.m_6596_();\n            this.sendData();\n        }\n        Vec3i step = new Vec3i(ejectDirection.m_122429_(), ejectDirection.m_122430_(), ejectDirection.m_122431_());\n        BlockPos nextPos = this.m_58899_().m_121955_(step);\n        DirectBeltInputBehaviour behaviour = (DirectBeltInputBehaviour)BlockEntityBehaviour.get((BlockGetter)this.f_58857_, (BlockPos)nextPos, (BehaviourType)DirectBeltInputBehaviour.TYPE);"
+        },
+        {
+          "start_line": 197,
+          "end_line": 228,
+          "text": "    private void process() {\n        Object recipe;\n        List results;\n        if (this.m_58904_() == null) {\n            return;\n        }\n        RecipeWrapper inventoryIn = new RecipeWrapper((IItemHandlerModifiable)this.inputInv);\n        Optional sequenced = SequencedAssemblyRecipe.getRecipe((Level)this.f_58857_, (ItemStack)inventoryIn.m_8020_(0), (RecipeType)((RecipeType)CARecipes.ROLLING_TYPE.get()), RollingRecipe.class);\n        if (sequenced.isPresent() && !(results = (recipe = (RollingRecipe)sequenced.get()).rollResults()).isEmpty()) {\n            ItemStack result = (ItemStack)results.get(0);\n            ItemHandlerHelper.insertItemStacked((IItemHandler)this.outputInv, (ItemStack)result, (boolean)false);\n            ItemStack stackInSlot = this.inputInv.getStackInSlot(0);\n            stackInSlot.m_41774_(1);\n            this.inputInv.setStackInSlot(0, stackInSlot);\n            this.sendData();\n            this.m_6596_();\n            return;\n        }\n        if (this.lastRecipe == null || !this.lastRecipe.matches(inventoryIn, this.f_58857_)) {\n            recipe = this.find(inventoryIn, this.f_58857_);\n            if (((Optional)recipe).isEmpty()) {\n                return;\n            }\n            this.lastRecipe = (RollingRecipe)((Optional)recipe).get();\n        }\n        ItemStack result = this.lastRecipe.assemble(inventoryIn, this.m_58904_().m_9598_()).m_41777_();\n        ItemHandlerHelper.insertItemStacked((IItemHandler)this.outputInv, (ItemStack)result, (boolean)false);\n        ItemStack stackInSlot = this.inputInv.getStackInSlot(0);\n        stackInSlot.m_41774_(1);\n        this.inputInv.setStackInSlot(0, stackInSlot);\n        this.sendData();\n        this.m_6596_();"
+        },
+        {
+          "start_line": 262,
+          "end_line": 270,
+          "text": "    public int getProcessingSpeed() {\n        return Mth.m_14045_((int)((int)Math.abs(this.getSpeed() / 16.0f)), (int)1, (int)512);\n    }\n\n    public <T> LazyOptional<T> getCapability(Capability<T> cap, Direction side) {\n        if (this.isItemHandlerCap(cap)) {\n            return this.capability.cast();\n        }\n        return super.getCapability(cap, side);"
+        }
+      ]
+    },
+    {
+      "jar": "create-1.20.1-6.0.8.jar",
+      "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+      "path": "com/simibubi/create/content/kinetics/millstone/MillstoneBlockEntity.class",
+      "sha256": "fa0a6cab0e3f1335c48305ce09c0ac79777ba2e437c3822fe4d79b4f054d3840",
+      "claim": "One input is consumed by milling; outputs may include random bonuses. Public timer and inventories permit observation.",
+      "decompiled_sha256": "7d2f6aa8da0e7246e57666bd31d7691d664306ed9bc9a5a87a52bce60a6739d0",
+      "excerpts": [
+        {
+          "start_line": 88,
+          "end_line": 96,
+          "text": "    public ItemStackHandler inputInv = new ItemStackHandler(1);\n    public ItemStackHandler outputInv = new ItemStackHandler(9);\n    public LazyOptional<IItemHandler> capability = LazyOptional.of(() -> new MillstoneInventoryHandler(this));\n    public int timer;\n    private MillingRecipe lastRecipe;\n\n    public MillstoneBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {\n        super(type, pos, state);\n    }"
+        },
+        {
+          "start_line": 89,
+          "end_line": 97,
+          "text": "    public ItemStackHandler outputInv = new ItemStackHandler(9);\n    public LazyOptional<IItemHandler> capability = LazyOptional.of(() -> new MillstoneInventoryHandler(this));\n    public int timer;\n    private MillingRecipe lastRecipe;\n\n    public MillstoneBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {\n        super(type, pos, state);\n    }\n"
+        },
+        {
+          "start_line": 91,
+          "end_line": 99,
+          "text": "    public int timer;\n    private MillingRecipe lastRecipe;\n\n    public MillstoneBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {\n        super(type, pos, state);\n    }\n\n    @Override\n    public void addBehaviours(List<BlockEntityBehaviour> behaviours) {"
+        },
+        {
+          "start_line": 120,
+          "end_line": 151,
+          "text": "    public void tick() {\n        super.tick();\n        if (this.getSpeed() == 0.0f) {\n            return;\n        }\n        for (int i = 0; i < this.outputInv.getSlots(); ++i) {\n            if (this.outputInv.getStackInSlot(i).m_41613_() != this.outputInv.getSlotLimit(i)) continue;\n            return;\n        }\n        if (this.timer > 0) {\n            this.timer -= this.getProcessingSpeed();\n            if (this.f_58857_.f_46443_) {\n                this.spawnParticles();\n                return;\n            }\n            if (this.timer <= 0) {\n                this.process();\n            }\n            return;\n        }\n        if (this.inputInv.getStackInSlot(0).m_41619_()) {\n            return;\n        }\n        RecipeWrapper inventoryIn = new RecipeWrapper((IItemHandlerModifiable)this.inputInv);\n        if (this.lastRecipe == null || !this.lastRecipe.matches(inventoryIn, this.f_58857_)) {\n            Optional recipe = AllRecipeTypes.MILLING.find((Container)inventoryIn, this.f_58857_);\n            if (!recipe.isPresent()) {\n                this.timer = 100;\n                this.sendData();\n            } else {\n                this.lastRecipe = (MillingRecipe)recipe.get();\n                this.timer = this.lastRecipe.getProcessingDuration();"
+        },
+        {
+          "start_line": 171,
+          "end_line": 202,
+          "text": "    private void process() {\n        RecipeWrapper inventoryIn = new RecipeWrapper((IItemHandlerModifiable)this.inputInv);\n        if (this.lastRecipe == null || !this.lastRecipe.matches(inventoryIn, this.f_58857_)) {\n            Optional recipe = AllRecipeTypes.MILLING.find((Container)inventoryIn, this.f_58857_);\n            if (!recipe.isPresent()) {\n                return;\n            }\n            this.lastRecipe = (MillingRecipe)recipe.get();\n        }\n        ItemStack stackInSlot = this.inputInv.getStackInSlot(0);\n        ItemStack craftingRemainingItem = stackInSlot.getCraftingRemainingItem();\n        stackInSlot.m_41774_(1);\n        this.inputInv.setStackInSlot(0, stackInSlot);\n        this.lastRecipe.rollResults().forEach(stack -> ItemHandlerHelper.insertItemStacked((IItemHandler)this.outputInv, (ItemStack)stack, (boolean)false));\n        if (!craftingRemainingItem.m_41619_()) {\n            ItemHandlerHelper.insertItemStacked((IItemHandler)this.outputInv, (ItemStack)craftingRemainingItem, (boolean)false);\n        }\n        this.award(AllAdvancements.MILLSTONE);\n        this.sendData();\n        this.m_6596_();\n    }\n\n    public void spawnParticles() {\n        ItemStack stackInSlot = this.inputInv.getStackInSlot(0);\n        if (stackInSlot.m_41619_()) {\n            return;\n        }\n        ItemParticleOption data = new ItemParticleOption(ParticleTypes.f_123752_, stackInSlot);\n        float angle = this.f_58857_.f_46441_.m_188501_() * 360.0f;\n        Vec3 offset = new Vec3(0.0, 0.0, 0.5);\n        offset = VecHelper.rotate((Vec3)offset, (double)angle, (Direction.Axis)Direction.Axis.Y);\n        Vec3 target = VecHelper.rotate((Vec3)offset, (double)(this.getSpeed() > 0.0f ? 25.0 : -25.0), (Direction.Axis)Direction.Axis.Y);"
+        }
+      ]
+    },
+    {
+      "jar": "create-1.20.1-6.0.8.jar",
+      "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+      "path": "com/simibubi/create/content/kinetics/base/KineticBlockEntity.class",
+      "sha256": "4f7856394c1fbf5cff1a16794b3b24ac7d5d41ac71ee0eb15ed2e9eea19e301c",
+      "claim": "Kinetic source traversal uses public source/network fields and methods; getSpeed() returns zero when overstressed.",
+      "decompiled_sha256": "9b44310b97974c42fa981098505dd726cf7bfaa7f02b851d59580dcb9d52f610",
+      "excerpts": [
+        {
+          "start_line": 104,
+          "end_line": 112,
+          "text": "    public Long network;\n    @Nullable\n    public BlockPos source;\n    public boolean networkDirty;\n    public boolean updateSpeed = true;\n    public int preventSpeedUpdate;\n    protected KineticEffectHandler effects = new KineticEffectHandler(this);\n    protected float speed;\n    protected float capacity;"
+        },
+        {
+          "start_line": 106,
+          "end_line": 114,
+          "text": "    public BlockPos source;\n    public boolean networkDirty;\n    public boolean updateSpeed = true;\n    public int preventSpeedUpdate;\n    protected KineticEffectHandler effects = new KineticEffectHandler(this);\n    protected float speed;\n    protected float capacity;\n    protected float stress;\n    protected boolean overStressed;"
+        },
+        {
+          "start_line": 306,
+          "end_line": 314,
+          "text": "    public float getGeneratedSpeed() {\n        return 0.0f;\n    }\n\n    public boolean isSource() {\n        return this.getGeneratedSpeed() != 0.0f;\n    }\n\n    public float getSpeed() {"
+        },
+        {
+          "start_line": 314,
+          "end_line": 322,
+          "text": "    public float getSpeed() {\n        if (this.overStressed) {\n            return 0.0f;\n        }\n        return this.getTheoreticalSpeed();\n    }\n\n    public float getTheoreticalSpeed() {\n        return this.speed;"
+        },
+        {
+          "start_line": 329,
+          "end_line": 337,
+          "text": "    public boolean hasSource() {\n        return this.source != null;\n    }\n\n    public void setSource(BlockPos source) {\n        this.source = source;\n        if (this.f_58857_ == null || this.f_58857_.f_46443_) {\n            return;\n        }"
+        },
+        {
+          "start_line": 333,
+          "end_line": 341,
+          "text": "    public void setSource(BlockPos source) {\n        this.source = source;\n        if (this.f_58857_ == null || this.f_58857_.f_46443_) {\n            return;\n        }\n        BlockEntity blockEntity = this.f_58857_.m_7702_(source);\n        if (!(blockEntity instanceof KineticBlockEntity)) {\n            this.removeSource();\n            return;"
+        }
+      ]
+    },
+    {
+      "jar": "createaddition-1.20.1-1.3.3.jar",
+      "jar_sha256": "9bf3ae15d86ec95d128542caf10e4b5498e49ca02f725b9302d6daecd5eae1db",
+      "path": "com/mrh0/createaddition/blocks/electric_motor/ElectricMotorBlockEntity.class",
+      "sha256": "fe72288e658881faae65088d2d1227f8470257f3dcf2f3df84bd9bbe8f66e547",
+      "claim": "Generated speed depends on active motor state; tick consumes FE and updates activity. A motor merely located nearby does not qualify.",
+      "decompiled_sha256": "aa3a4247d51f2add4af4ef1291e15fcfce48b04e7aa14e3a24c4ced44473094a",
+      "excerpts": [
+        {
+          "start_line": 149,
+          "end_line": 157,
+          "text": "    public float getGeneratedSpeed() {\n        if (!CABlocks.ELECTRIC_MOTOR.has(this.m_58900_())) {\n            return 0.0f;\n        }\n        return ElectricMotorBlockEntity.convertToDirection((float)(this.active ? this.motorSpeed : 0.0f), (Direction)((Direction)this.m_58900_().m_61143_((Property)ElectricMotorBlock.FACING)));\n    }\n\n    protected Block getStressConfigKey() {\n        return (Block)AllBlocks.WATER_WHEEL.get();"
+        },
+        {
+          "start_line": 210,
+          "end_line": 241,
+          "text": "    public void tick() {\n        super.tick();\n        if (this.first) {\n            this.motorSpeed = this.generatedSpeed.getValue();\n            this.updateGeneratedRotation();\n            this.first = false;\n        }\n        if (this.cc_update_rpm) {\n            this.generatedSpeed.setValue(Math.round(this.cc_new_rpm));\n            this.motorSpeed = this.cc_new_rpm;\n            this.cc_update_rpm = false;\n            this.updateGeneratedRotation();\n        }\n        if (this.f_58857_.m_5776_()) {\n            return;\n        }\n        int con = ElectricMotorBlockEntity.getEnergyConsumptionRate(this.motorSpeed);\n        if (!this.active) {\n            if (this.energy.getEnergyStored() > con * 2 && !((Boolean)this.m_58900_().m_61143_((Property)ElectricMotorBlock.POWERED)).booleanValue()) {\n                this.active = true;\n                this.updateGeneratedRotation();\n            }\n        } else {\n            int ext = this.energy.internalConsumeEnergy(con);\n            if (ext < con || ((Boolean)this.m_58900_().m_61143_((Property)ElectricMotorBlock.POWERED)).booleanValue()) {\n                this.active = false;\n                this.updateGeneratedRotation();\n            }\n        }\n    }\n\n    public void tickAudio() {"
+        }
+      ]
+    },
+    {
+      "jar": "createdieselgenerators-1.20.1-1.3.12.jar",
+      "jar_sha256": "808e87b98ea9d42a43096a113a7fa1a89c65bee95608855c6cfe2914d6f1f642",
+      "path": "com/jesz/createdieselgenerators/content/diesel_engine/normal/DieselEngineBlockEntity.class",
+      "sha256": "aae7bc922875ce5d90395cf3ded4d34f96b8ca8299948b73f12cc9504d1df011",
+      "claim": "Normal engine exposes tank and generated speed; active tick burns fuel. Observer also requires the diesel fluid registry ID.",
+      "decompiled_sha256": "ee75a6415410df384faa987f634651adf6900329b79689d851e1558219e85d3f",
+      "excerpts": [
+        {
+          "start_line": 134,
+          "end_line": 142,
+          "text": "    public float getGeneratedSpeed() {\n        if (!this.enabled()) {\n            return 0.0f;\n        }\n        return DieselEngineBlockEntity.convertToDirection((float)((float)(this.movementDirection.getValue() == 1 ? -1 : 1) * this.upgrade.getSpeed(this.getFuelSpeed(), (IEngine)this)), (Direction)((Direction)this.m_58900_().m_61143_((Property)DieselEngineBlock.FACING)));\n    }\n\n    public boolean addToGoggleTooltip(List<Component> tooltip, boolean isPlayerSneaking) {\n        if (this.getGeneratedSpeed() == 0.0f) {"
+        },
+        {
+          "start_line": 150,
+          "end_line": 181,
+          "text": "    public void tick() {\n        super.tick();\n        float fuelCapacity = this.upgrade.getCapacity(this.getFuelCapacity() * (1.0f / this.upgrade.getSpeed(this.getFuelSpeed(), (IEngine)this)) * this.getFuelSpeed(), (IEngine)this);\n        if (!(this.f_58857_.f_46443_ || this.lastSpeed == this.getGeneratedSpeed() && this.lastCapacity == fuelCapacity)) {\n            this.reActivateSource = true;\n            this.lastSpeed = this.getGeneratedSpeed();\n            this.lastCapacity = fuelCapacity;\n        }\n        if (this.enabled()) {\n            if (this.remainingTicks < 2.0f) {\n                this.remainingTicks += 1.0f / this.getFuelBurnRate();\n                this.tank.getPrimaryHandler().drain(1, IFluidHandler.FluidAction.EXECUTE);\n            }\n            if (this.remainingTicks >= 0.0f) {\n                this.remainingTicks -= 1.0f;\n            }\n        }\n        if (this.f_58857_.f_46443_) {\n            DistExecutor.unsafeRunWhenOn((Dist)Dist.CLIENT, () -> this::tickClient);\n        }\n    }\n\n    @OnlyIn(value=Dist.CLIENT)\n    protected void tickClient() {\n        if (this.enabled()) {\n            if (this.soundInstance == null || this.soundInstance.m_7801_()) {\n                this.soundInstance = this.upgrade.createSoundInstance((SmartBlockEntity)this, Vec3.m_82512_((Vec3i)this.m_58899_()));\n                Minecraft.m_91087_().m_91106_().m_120367_((SoundInstance)this.soundInstance);\n            } else if (this.soundInstance.active()) {\n                this.soundInstance.keepAlive();\n                this.soundInstance.setPitch(this.upgrade.getPitchMultiplier((SmartBlockEntity)this) * this.getFuelSoundPitch());\n                this.soundInstance.setVolume(this.upgrade.getVolume((SmartBlockEntity)this));"
+        },
+        {
+          "start_line": 197,
+          "end_line": 205,
+          "text": "    public FluidTank getTank() {\n        return this.tank.getPrimaryHandler();\n    }\n\n    public EngineUpgrades getUpgrade() {\n        return this.upgrade;\n    }\n\n    public void setUpgrade(EngineUpgrades upgrade) {"
+        }
+      ]
+    },
+    {
+      "jar": "createdieselgenerators-1.20.1-1.3.12.jar",
+      "jar_sha256": "808e87b98ea9d42a43096a113a7fa1a89c65bee95608855c6cfe2914d6f1f642",
+      "path": "com/jesz/createdieselgenerators/content/diesel_engine/IEngine.class",
+      "sha256": "ae1bfcbb33617380bf02524913aee0552640981cb883689cedf502abb3fb9c2a",
+      "claim": "Fuel validity, redstone control and fuel-specific speed determine engine activity.",
+      "decompiled_sha256": "26b36609236e83976aaded79988dca754d715c16c4b3aa4b5a307c8f6fdd43fa",
+      "excerpts": [
+        {
+          "start_line": 34,
+          "end_line": 42,
+          "text": "    default public boolean enabled() {\n        if (this.validFS()) {\n            return (Boolean)CDGConfig.ENGINES_DISABLED_WITH_REDSTONE.get() == false || (Boolean)this.self().m_58900_().m_61143_((Property)DieselEngineBlock.POWERED) == false;\n        }\n        return false;\n    }\n\n    default public boolean validFS() {\n        if (this.fs().isEmpty()) {"
+        },
+        {
+          "start_line": 41,
+          "end_line": 49,
+          "text": "    default public boolean validFS() {\n        if (this.fs().isEmpty()) {\n            return false;\n        }\n        return FuelType.getTypeFor((HolderLookup.RegistryLookup)this.self().m_58904_().m_9598_().m_255025_(CDGRegistries.FUEL_TYPE), (Fluid)this.fs().getFluid()) != FuelType.EMPTY;\n    }\n\n    default public FluidStack fs() {\n        return this.getTank().getFluid();"
+        },
+        {
+          "start_line": 52,
+          "end_line": 60,
+          "text": "    default public float getFuelSpeed() {\n        return FuelType.getTypeFor((HolderLookup.RegistryLookup)this.self().m_58904_().m_9598_().m_255025_(CDGRegistries.FUEL_TYPE), (Fluid)this.fs().getFluid()).getGenerated((BlockEntity)this.self()).speed();\n    }\n\n    default public float getFuelCapacity() {\n        float speed = this.getFuelSpeed();\n        if (speed == 0.0f) {\n            return speed;\n        }"
+        }
+      ]
+    },
+    {
+      "jar": "kubejs-forge-2001.6.5-build.26.jar",
+      "jar_sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+      "path": "dev/latvian/mods/kubejs/level/BlockContainerJS.class",
+      "sha256": "c80949c5b140fe9a42f588399a2110e95b20655c90f46ed24d7cec95d1e30acf",
+      "claim": "KubeJS block wrapper exposes ID, entity and position. getEntity accesses world state; script checks hasChunkAt before accessing it.",
+      "decompiled_sha256": "f45ba552f5d6e0c0b2ed2c2824242fce04d2c26a7e567d093cb88f32905634f7",
+      "excerpts": [
+        {
+          "start_line": 180,
+          "end_line": 188,
+          "text": "    public String getId() {\n        return RegistryInfo.BLOCK.getId((Object)this.getBlockState().m_60734_()).toString();\n    }\n\n    public Collection<ResourceLocation> getTags() {\n        return Tags.byBlockState((BlockState)this.getBlockState()).map(TagKey::f_203868_).collect(Collectors.toSet());\n    }\n\n    public boolean hasTag(ResourceLocation tag) {"
+        },
+        {
+          "start_line": 227,
+          "end_line": 235,
+          "text": "    public BlockEntity getEntity() {\n        if (this.cachedEntity == null || this.cachedEntity.m_58901_()) {\n            this.cachedEntity = this.minecraftLevel.m_7702_(this.pos);\n        }\n        return this.cachedEntity;\n    }\n\n    public String getEntityId() {\n        BlockEntity entity = this.getEntity();"
+        },
+        {
+          "start_line": 111,
+          "end_line": 119,
+          "text": "    public BlockPos getPos() {\n        return this.pos;\n    }\n\n    public ResourceLocation getDimension() {\n        return this.minecraftLevel.m_46472_().m_135782_();\n    }\n\n    public int getX() {"
+        },
+        {
+          "start_line": 119,
+          "end_line": 127,
+          "text": "    public int getX() {\n        return this.getPos().m_123341_();\n    }\n\n    public int getY() {\n        return this.getPos().m_123342_();\n    }\n\n    public int getZ() {"
+        }
+      ]
+    },
+    {
+      "jar": "kubejs-forge-2001.6.5-build.26.jar",
+      "jar_sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+      "path": "dev/latvian/mods/kubejs/core/LevelKJS.class",
+      "sha256": "d1bd14f5124d5f81bb1332015fc7a7a1885f6503a065d1040c4f45600bb62e5d",
+      "claim": "Level wrapper exposes dimension and block wrappers; native mapped Level.hasChunkAt still needs an actual runtime bridge test.",
+      "decompiled_sha256": "7c223d67f98579d7a7a7b782a43e9c0cb3e1e2a9a2d579b72a809a5aafa90977",
+      "excerpts": [
+        {
+          "start_line": 68,
+          "end_line": 76,
+          "text": "        return Component.m_237113_((String)this.kjs$getDimension().toString());\n    }\n\n    default public void kjs$tell(Component message) {\n        for (Player entity : this.kjs$self().m_6907_()) {\n            entity.kjs$tell(message);\n        }\n    }\n"
+        },
+        {
+          "start_line": 99,
+          "end_line": 107,
+          "text": "    default public ResourceLocation kjs$getDimension() {\n        return this.kjs$self().m_46472_().m_135782_();\n    }\n\n    default public boolean kjs$isOverworld() {\n        return this.kjs$self().m_46472_() == Level.f_46428_;\n    }\n\n    default public BlockContainerJS kjs$getBlock(int x, int y, int z) {"
+        },
+        {
+          "start_line": 107,
+          "end_line": 115,
+          "text": "    default public BlockContainerJS kjs$getBlock(int x, int y, int z) {\n        return this.kjs$getBlock(new BlockPos(x, y, z));\n    }\n\n    default public BlockContainerJS kjs$getBlock(BlockPos pos) {\n        return new BlockContainerJS(this.kjs$self(), pos);\n    }\n\n    default public BlockContainerJS kjs$getBlock(BlockEntity blockEntity) {"
+        },
+        {
+          "start_line": 108,
+          "end_line": 116,
+          "text": "        return this.kjs$getBlock(new BlockPos(x, y, z));\n    }\n\n    default public BlockContainerJS kjs$getBlock(BlockPos pos) {\n        return new BlockContainerJS(this.kjs$self(), pos);\n    }\n\n    default public BlockContainerJS kjs$getBlock(BlockEntity blockEntity) {\n        return new BlockContainerJS(blockEntity);"
+        },
+        {
+          "start_line": 111,
+          "end_line": 119,
+          "text": "    default public BlockContainerJS kjs$getBlock(BlockPos pos) {\n        return new BlockContainerJS(this.kjs$self(), pos);\n    }\n\n    default public BlockContainerJS kjs$getBlock(BlockEntity blockEntity) {\n        return new BlockContainerJS(blockEntity);\n    }\n\n    default public EntityArrayList kjs$createEntityList(Collection<? extends Entity> entities) {"
+        },
+        {
+          "start_line": 115,
+          "end_line": 123,
+          "text": "    default public BlockContainerJS kjs$getBlock(BlockEntity blockEntity) {\n        return new BlockContainerJS(blockEntity);\n    }\n\n    default public EntityArrayList kjs$createEntityList(Collection<? extends Entity> entities) {\n        return new EntityArrayList(this.kjs$self(), entities);\n    }\n\n    default public EntityArrayList kjs$getPlayers() {"
+        }
+      ]
+    },
+    {
+      "jar": "kubejs-forge-2001.6.5-build.26.jar",
+      "jar_sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+      "path": "dev/latvian/mods/kubejs/core/MinecraftServerKJS.class",
+      "sha256": "aa5f321f4709f2fa6b98101b6d5ebcb255af5e69923703dd1f744d225cefe2cf",
+      "claim": "Use server command authority, not player authority. getPlayer accepts a PlayerSelector.",
+      "decompiled_sha256": "2d33b8a04b461665964ef7e630930ec64a30d7d11bc214f6818143d4123d5b8a",
+      "excerpts": [
+        {
+          "start_line": 103,
+          "end_line": 111,
+          "text": "    default public int kjs$runCommandSilent(String command) {\n        return this.kjs$self().m_129892_().m_230957_(this.kjs$self().m_129893_().m_81324_(), command);\n    }\n\n    default public ServerLevel kjs$getLevel(ResourceLocation dimension) {\n        return this.kjs$self().m_129880_(ResourceKey.m_135785_((ResourceKey)Registries.f_256858_, (ResourceLocation)dimension));\n    }\n\n    @Nullable"
+        },
+        {
+          "start_line": 112,
+          "end_line": 120,
+          "text": "    default public ServerPlayer kjs$getPlayer(PlayerSelector selector) {\n        return selector.getPlayer(this.kjs$self());\n    }\n\n    default public EntityArrayList kjs$getPlayers() {\n        return new EntityArrayList((Level)this.kjs$self().m_129783_(), (Iterable)this.kjs$self().m_6846_().m_11314_());\n    }\n\n    default public EntityArrayList kjs$getEntities() {"
+        },
+        {
+          "start_line": 116,
+          "end_line": 124,
+          "text": "    default public EntityArrayList kjs$getPlayers() {\n        return new EntityArrayList((Level)this.kjs$self().m_129783_(), (Iterable)this.kjs$self().m_6846_().m_11314_());\n    }\n\n    default public EntityArrayList kjs$getEntities() {\n        EntityArrayList list = new EntityArrayList((Level)this.kjs$self().m_129783_(), 10);\n        for (ServerLevel level : this.kjs$self().m_129785_()) {\n            list.addAllIterable(level.m_8583_());\n        }"
+        }
+      ]
+    },
+    {
+      "jar": "kubejs-forge-2001.6.5-build.26.jar",
+      "jar_sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+      "path": "dev/latvian/mods/kubejs/core/PlayerSelector.class",
+      "sha256": "f814b6248bc8b968fc72ddd5bae90995602f3bd31271913aeacd56b98fe87a05",
+      "claim": "UUID strings convert to a selector for the exact online player; script restricts command targets with a UUID regex.",
+      "decompiled_sha256": "d871d377cc8bf7df5e63b621c2b1c461fc12a9fae93f183f7af73128798cc7c3",
+      "excerpts": [
+        {
+          "start_line": 49,
+          "end_line": 57,
+          "text": "    public static PlayerSelector uuid(UUID uuid) {\n        return server -> server.m_6846_().m_11259_(uuid);\n    }\n\n    public static PlayerSelector name(String name) {\n        return server -> server.m_6846_().m_11255_(name);\n    }\n\n    public static PlayerSelector fuzzyName(String name) {"
+        },
+        {
+          "start_line": 22,
+          "end_line": 30,
+          "text": "    public static PlayerSelector of(Object o) {\n        if (o instanceof ServerPlayer) {\n            ServerPlayer sp = (ServerPlayer)o;\n            return PlayerSelector.identity(sp);\n        }\n        if (o instanceof UUID) {\n            UUID uuid = (UUID)o;\n            return PlayerSelector.uuid(uuid);\n        }"
+        },
+        {
+          "start_line": 5,
+          "end_line": 13,
+          "text": " *  dev.latvian.mods.rhino.mod.wrapper.UUIDWrapper\n *  net.minecraft.server.MinecraftServer\n *  net.minecraft.server.level.ServerPlayer\n *  org.jetbrains.annotations.Nullable\n */\npackage dev.latvian.mods.kubejs.core;\n\nimport dev.latvian.mods.rhino.mod.wrapper.UUIDWrapper;\nimport java.util.Locale;"
+        },
+        {
+          "start_line": 12,
+          "end_line": 20,
+          "text": "import dev.latvian.mods.rhino.mod.wrapper.UUIDWrapper;\nimport java.util.Locale;\nimport java.util.Objects;\nimport java.util.UUID;\nimport net.minecraft.server.MinecraftServer;\nimport net.minecraft.server.level.ServerPlayer;\nimport org.jetbrains.annotations.Nullable;\n\n@FunctionalInterface"
+        },
+        {
+          "start_line": 35,
+          "end_line": 43,
+          "text": "        UUID uuid = UUIDWrapper.fromString((Object)name);\n        if (uuid != null) {\n            return PlayerSelector.uuid(uuid);\n        }\n        return PlayerSelector.name(name).or(PlayerSelector.fuzzyName(name));\n    }\n\n    @Nullable\n    public ServerPlayer getPlayer(MinecraftServer var1);"
+        }
+      ]
+    },
+    {
+      "jar": "kubejs-forge-2001.6.5-build.26.jar",
+      "jar_sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+      "path": "dev/latvian/mods/kubejs/core/ItemStackKJS.class",
+      "sha256": "ca66a8f46dd3a48c5165799e750d956992542aefe95de6b7d32f28b3280937d5",
+      "claim": "ItemStack exposes the item registry ID; count remains the normal stack count property.",
+      "decompiled_sha256": "a121113e2e50bd69fef0897ca186e5cb81dbcaabf1785107c1510ed8e8d3730d",
+      "excerpts": [
+        {
+          "start_line": 98,
+          "end_line": 106,
+          "text": "            return this.kjs$getId().equals(UtilsJS.getID((String)o.toString()));\n        }\n        if (o instanceof ItemStack) {\n            ItemStack s = (ItemStack)o;\n            return this.kjs$equalsIgnoringCount(s);\n        }\n        return this.kjs$equalsIgnoringCount(ItemStackJS.of((Object)o));\n    }\n"
+        },
+        {
+          "start_line": 122,
+          "end_line": 130,
+          "text": "    default public String kjs$getId() {\n        return this.kjs$self().m_41720_().kjs$getId();\n    }\n\n    default public Collection<ResourceLocation> kjs$getTags() {\n        return Tags.byItem((Item)this.kjs$self().m_41720_()).map(TagKey::f_203868_).collect(Collectors.toSet());\n    }\n\n    default public boolean kjs$hasTag(ResourceLocation tag) {"
+        },
+        {
+          "start_line": 123,
+          "end_line": 131,
+          "text": "        return this.kjs$self().m_41720_().kjs$getId();\n    }\n\n    default public Collection<ResourceLocation> kjs$getTags() {\n        return Tags.byItem((Item)this.kjs$self().m_41720_()).map(TagKey::f_203868_).collect(Collectors.toSet());\n    }\n\n    default public boolean kjs$hasTag(ResourceLocation tag) {\n        return this.kjs$self().m_204117_(Tags.item((ResourceLocation)tag));"
+        },
+        {
+          "start_line": 272,
+          "end_line": 280,
+          "text": "            builder.append(this.kjs$getId());\n            builder.append('\\'');\n        } else if (hasNbt) {\n            CompoundTag t;\n            builder.append(\"Item.of('\");\n            builder.append(is.kjs$getId());\n            builder.append('\\'');\n            ArrayList<Pair> enchants = null;\n            if (count > 1) {"
+        },
+        {
+          "start_line": 277,
+          "end_line": 285,
+          "text": "            builder.append(is.kjs$getId());\n            builder.append('\\'');\n            ArrayList<Pair> enchants = null;\n            if (count > 1) {\n                builder.append(\", \");\n                builder.append(count);\n            }\n            if ((t = is.m_41783_()) != null && !t.m_128456_()) {\n                String key;"
+        },
+        {
+          "start_line": 317,
+          "end_line": 325,
+          "text": "            builder.append(this.kjs$getId());\n            builder.append('\\'');\n        }\n        return builder.toString();\n    }\n\n    default public Ingredient kjs$asIngredient() {\n        return this.kjs$self().m_41720_().kjs$asIngredient();\n    }"
+        },
+        {
+          "start_line": 329,
+          "end_line": 337,
+          "text": "        json.addProperty(\"item\", this.kjs$getId());\n        json.addProperty(\"count\", (Number)this.kjs$self().m_41613_());\n        CompoundTag tag = this.kjs$self().m_41783_();\n        if (tag != null) {\n            json.addProperty(\"nbt\", tag.toString());\n        }\n        return json;\n    }\n"
+        }
+      ]
+    },
+    {
+      "jar": "kubejs-forge-2001.6.5-build.26.jar",
+      "jar_sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+      "path": "dev/latvian/mods/kubejs/core/mixin/common/MinecraftServerMixin.class",
+      "sha256": "44c3d9c5dd00982da96243906acbacb4a823dab5c06f0c7cb2d3e7b07a87431c",
+      "claim": "ServerEvents.TICK is posted at RETURN from tickServer, after world/block-entity ticks. Other mods can still affect runtime ordering.",
+      "decompiled_sha256": "c570b70ae64c70222054444d98f26f80ba43c17da1da1d0caa0e8ec3801df72e",
+      "excerpts": [
+        {
+          "start_line": 121,
+          "end_line": 152,
+          "text": "    @Inject(method={\"tickServer\"}, at={@At(value=\"RETURN\")})\n    private void kjs$postTickServer(BooleanSupplier booleanSupplier, CallbackInfo ci) {\n        if (this.kjs$scheduledEvents != null) {\n            this.kjs$scheduledEvents.tickAll(this.kjs$getOverworld().m_46467_());\n        }\n        if (!this.kjs$restoreInventories.isEmpty()) {\n            for (ServerPlayer player : this.kjs$self().m_6846_().m_11314_()) {\n                Map<Integer, ItemStack> map = this.kjs$restoreInventories.get(player.m_20148_());\n                if (map == null || !player.m_6084_() || player.m_9232_() || player.f_36096_ instanceof CustomChestMenu) continue;\n                this.kjs$restoreInventories.remove(player.m_20148_());\n                NonNullList playerItems = player.m_150109_().f_35974_;\n                for (int i = 0; i < playerItems.size(); ++i) {\n                    playerItems.set(i, (Object)map.getOrDefault(i, ItemStack.f_41583_));\n                }\n            }\n        }\n        if (ServerEvents.TICK.hasListeners()) {\n            ServerEvents.TICK.post((ScriptTypeHolder)ScriptType.SERVER, (EventJS)new ServerEventJS(this.kjs$self()));\n        }\n    }\n\n    public ScheduledEvents kjs$getScheduledEvents() {\n        if (this.kjs$scheduledEvents == null) {\n            this.kjs$scheduledEvents = ScheduledServerEvent.make((MinecraftServer)this.kjs$self());\n        }\n        return this.kjs$scheduledEvents;\n    }\n\n    @Override\n    public Map<UUID, Map<Integer, ItemStack>> kjs$restoreInventories() {\n        return this.kjs$restoreInventories;\n    }"
+        }
+      ]
+    },
+    {
+      "jar": "createaddition-1.20.1-1.3.3.jar",
+      "jar_sha256": "9bf3ae15d86ec95d128542caf10e4b5498e49ca02f725b9302d6daecd5eae1db",
+      "path": "com/mrh0/createaddition/index/CAItems.class",
+      "sha256": "807cab8cf3ab940ca1a90fceecfeaa1257abe6c32aa82c4056a29bd1d3cdcb83",
+      "claim": "Copper wire is a registered item. No multimeter registration or recipe in this exact JAR.",
+      "decompiled_sha256": "074c083b52ac0f7f59c435452b5782ad3a5c42d1e053889b418d3ce559e02755",
+      "excerpts": [
+        {
+          "start_line": 74,
+          "end_line": 82,
+          "text": "        COPPER_WIRE = CreateAddition.REGISTRATE.item(\"copper_wire\", Item::new).register();\n        IRON_WIRE = CreateAddition.REGISTRATE.item(\"iron_wire\", Item::new).register();\n        GOLD_WIRE = CreateAddition.REGISTRATE.item(\"gold_wire\", Item::new).register();\n        ELECTRUM_WIRE = CreateAddition.REGISTRATE.item(\"electrum_wire\", Item::new).register();\n        SPOOL = CreateAddition.REGISTRATE.item(\"spool\", WireSpool::new).register();\n        COPPER_SPOOL = CreateAddition.REGISTRATE.item(\"copper_spool\", WireSpool::new).register();\n        GOLD_SPOOL = CreateAddition.REGISTRATE.item(\"gold_spool\", WireSpool::new).register();\n        ELECTRUM_SPOOL = CreateAddition.REGISTRATE.item(\"electrum_spool\", WireSpool::new).register();\n        FESTIVE_SPOOL = CreateAddition.REGISTRATE.item(\"festive_spool\", WireSpool::new).register();"
+        }
+      ]
+    },
+    {
+      "jar": "create-1.20.1-6.0.8.jar",
+      "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+      "path": "com/simibubi/create/AllItems.class",
+      "sha256": "245e17ba1cce5f067203c6e66c4d728d924036bb1f87e25f36d95eab3e1c76c0",
+      "claim": "Flour is a registered item.",
+      "decompiled_sha256": "4c733c179c6c4b54aa9923118e8591bd7ca383be80ac176499499d85f9738494",
+      "excerpts": [
+        {
+          "start_line": 274,
+          "end_line": 282,
+          "text": "        WHEAT_FLOUR = AllItems.taggedIngredient(\"wheat_flour\", AllTags.AllItemTags.WHEAT_FLOUR.tag, AllTags.AllItemTags.FLOUR.tag);\n        DOUGH = AllItems.taggedIngredient(\"dough\", AllTags.AllItemTags.DOUGH.tag, AllTags.AllItemTags.WHEAT_DOUGH.tag);\n        CINDER_FLOUR = AllItems.ingredient(\"cinder_flour\");\n        ROSE_QUARTZ = AllItems.ingredient(\"rose_quartz\");\n        POLISHED_ROSE_QUARTZ = AllItems.ingredient(\"polished_rose_quartz\");\n        POWDERED_OBSIDIAN = AllItems.ingredient(\"powdered_obsidian\");\n        STURDY_SHEET = AllItems.taggedIngredient(\"sturdy_sheet\", AllTags.AllItemTags.OBSIDIAN_PLATES.tag, AllTags.AllItemTags.PLATES.tag);\n        PROPELLER = AllItems.ingredient(\"propeller\");\n        WHISK = AllItems.ingredient(\"whisk\");"
+        }
+      ]
+    },
+    {
+      "jar": "FarmersDelight-1.20.1-1.3.4.jar",
+      "jar_sha256": "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce",
+      "path": "vectorwing/farmersdelight/common/registry/ModItems.class",
+      "sha256": "4b364ddc661a56f1e6f26ce95799a5782afc389b3c4fa9873996e750afb108f0",
+      "claim": "Registered meal reward; eating can introduce the nourishment mechanic, holding it is not a quest completion event.",
+      "decompiled_sha256": "2a8d365fec9663bcd16a456850cc36adac23ec62b9022d7bc16c1b2b4e3e35f6",
+      "excerpts": [
+        {
+          "start_line": 263,
+          "end_line": 271,
+          "text": "    public static final RegistryObject<Item> STEAK_AND_POTATOES = ModItems.registerWithTab(\"steak_and_potatoes\", () -> new ConsumableItem(ModItems.bowlFoodItem(FoodValues.STEAK_AND_POTATOES)));\n    public static final RegistryObject<Item> RATATOUILLE = ModItems.registerWithTab(\"ratatouille\", () -> new ConsumableItem(ModItems.bowlFoodItem(FoodValues.RATATOUILLE)));\n    public static final RegistryObject<Item> SQUID_INK_PASTA = ModItems.registerWithTab(\"squid_ink_pasta\", () -> new ConsumableItem(ModItems.bowlFoodItem(FoodValues.SQUID_INK_PASTA)));\n    public static final RegistryObject<Item> GRILLED_SALMON = ModItems.registerWithTab(\"grilled_salmon\", () -> new ConsumableItem(ModItems.bowlFoodItem(FoodValues.GRILLED_SALMON)));\n    public static final RegistryObject<Item> ROAST_CHICKEN_BLOCK = ModItems.registerWithTab(\"roast_chicken_block\", () -> new PlaceableItem((Block)ModBlocks.ROAST_CHICKEN_BLOCK.get(), ModItems.basicItem().m_41487_(1)));\n    public static final RegistryObject<Item> ROAST_CHICKEN = ModItems.registerWithTab(\"roast_chicken\", () -> new ConsumableItem(ModItems.bowlFoodItem(FoodValues.ROAST_CHICKEN)));\n    public static final RegistryObject<Item> STUFFED_PUMPKIN_BLOCK = ModItems.registerWithTab(\"stuffed_pumpkin_block\", () -> new PlaceableItem((Block)ModBlocks.STUFFED_PUMPKIN_BLOCK.get(), ModItems.basicItem().m_41487_(1)));\n    public static final RegistryObject<Item> STUFFED_PUMPKIN = ModItems.registerWithTab(\"stuffed_pumpkin\", () -> new ConsumableItem(ModItems.bowlFoodItem(FoodValues.STUFFED_PUMPKIN)));\n    public static final RegistryObject<Item> HONEY_GLAZED_HAM_BLOCK = ModItems.registerWithTab(\"honey_glazed_ham_block\", () -> new PlaceableItem((Block)ModBlocks.HONEY_GLAZED_HAM_BLOCK.get(), ModItems.basicItem().m_41487_(1)));"
+        }
+      ]
+    }
+  ],
+  "data": [
+    {
+      "jar": "createaddition-1.20.1-1.3.3.jar",
+      "jar_sha256": "9bf3ae15d86ec95d128542caf10e4b5498e49ca02f725b9302d6daecd5eae1db",
+      "path": "data/createaddition/recipes/rolling/copper_plate.json",
+      "sha256": "db8cca0329b86cb6f499bcd38d4daf2cf68542af06608268fb6e90ecb29b515b",
+      "body": {
+        "type": "createaddition:rolling",
+        "input": {
+          "tag": "forge:plates/copper"
+        },
+        "result": {
+          "item": "createaddition:copper_wire",
+          "count": 2
+        }
+      }
+    },
+    {
+      "jar": "createaddition-1.20.1-1.3.3.jar",
+      "jar_sha256": "9bf3ae15d86ec95d128542caf10e4b5498e49ca02f725b9302d6daecd5eae1db",
+      "path": "data/createaddition/recipes/rolling/copper_ingot.json",
+      "sha256": "1ccc766e1a5598ca5c872cd500509120c377a9a2476c0fd737c806c74daf9279",
+      "body": {
+        "type": "createaddition:rolling",
+        "input": {
+          "item": "minecraft:copper_ingot"
+        },
+        "result": {
+          "item": "createaddition:copper_rod",
+          "count": 2
+        }
+      }
+    },
+    {
+      "jar": "create-1.20.1-6.0.8.jar",
+      "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+      "path": "data/create/recipes/milling/wheat.json",
+      "sha256": "e37ccff88bacd46ecf7e8cf9e6fbe9e050e64463765f4c43eb56d946e959e53a",
+      "body": {
+        "type": "create:milling",
+        "ingredients": [
+          {
+            "item": "minecraft:wheat"
+          }
+        ],
+        "processingTime": 150,
+        "results": [
+          {
+            "item": "create:wheat_flour"
+          },
+          {
+            "chance": 0.25,
+            "count": 2,
+            "item": "create:wheat_flour"
+          },
+          {
+            "chance": 0.25,
+            "item": "minecraft:wheat_seeds"
+          }
+        ]
+      }
+    },
+    {
+      "jar": "create-1.20.1-6.0.8.jar",
+      "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+      "path": "data/forge/tags/items/plates/copper.json",
+      "sha256": "3f797d66bc937fbda67c4cbcec0ede242004aad24be38e92bca7ea62ecc3c839",
+      "body": {
+        "values": [
+          "create:copper_sheet"
+        ]
+      }
+    },
+    {
+      "jar": "create-1.20.1-6.0.8.jar",
+      "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+      "path": "data/create/recipes/crafting/logistics/brass_funnel.json",
+      "sha256": "9392897631547ce148a6a24476a85b4d8469bf5125789d5c35f18db444b5834a",
+      "body": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "A": {
+            "tag": "forge:ingots/brass"
+          },
+          "E": {
+            "item": "create:electron_tube"
+          },
+          "K": {
+            "item": "minecraft:dried_kelp"
+          }
+        },
+        "pattern": [
+          "E",
+          "A",
+          "K"
+        ],
+        "result": {
+          "count": 2,
+          "item": "create:brass_funnel"
+        },
+        "show_notification": true
+      }
+    },
+    {
+      "jar": "create-1.20.1-6.0.8.jar",
+      "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+      "path": "data/create/loot_tables/blocks/brass_funnel.json",
+      "sha256": "9463d13083d298fe1400593d36a3e0f268cb0e45d550ee0be4a271f5a8127f27",
+      "body": {
+        "type": "minecraft:block",
+        "pools": [
+          {
+            "bonus_rolls": 0.0,
+            "conditions": [
+              {
+                "condition": "minecraft:survives_explosion"
+              }
+            ],
+            "entries": [
+              {
+                "type": "minecraft:item",
+                "name": "create:brass_funnel"
+              }
+            ],
+            "rolls": 1.0
+          }
+        ],
+        "random_sequence": "create:blocks/brass_funnel"
+      }
+    },
+    {
+      "jar": "FarmersDelight-1.20.1-1.3.4.jar",
+      "jar_sha256": "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce",
+      "path": "data/farmersdelight/advancements/main/eat_nourishing_food.json",
+      "sha256": "e63945c936fb37c5e9d21db826b5645d9844e737d1387fcac9e4f52ad23f9956",
+      "body": {
+        "parent": "farmersdelight:main/place_cooking_pot",
+        "criteria": {
+          "nourishment": {
+            "conditions": {
+              "effects": {
+                "farmersdelight:nourishment": {}
+              }
+            },
+            "trigger": "minecraft:effects_changed"
+          }
+        },
+        "display": {
+          "announce_to_chat": false,
+          "description": {
+            "translate": "advancements.farmersdelight.eat_nourishing_food.description"
+          },
+          "frame": "task",
+          "hidden": false,
+          "icon": {
+            "item": "farmersdelight:steak_and_potatoes"
+          },
+          "show_toast": true,
+          "title": {
+            "translate": "advancements.farmersdelight.eat_nourishing_food.title"
+          }
+        },
+        "requirements": [
+          [
+            "nourishment"
+          ]
+        ],
+        "sends_telemetry_event": true
+      }
+    },
+    {
+      "jar": "minecraft-client-1.20.1.jar",
+      "jar_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "path": "assets/minecraft/models/item/clock.json",
+      "sha256": "70f0879caabdb0bf8ba50a2a176da7c5e92e06cfcdfd11653aa9c8303579f549",
+      "body": {
+        "parent": "item/generated",
+        "textures": {
+          "layer0": "item/clock_00"
+        },
+        "overrides": [
+          {
+            "predicate": {
+              "time": 0.0
+            },
+            "model": "item/clock"
+          },
+          {
+            "predicate": {
+              "time": 0.0078125
+            },
+            "model": "item/clock_01"
+          },
+          {
+            "predicate": {
+              "time": 0.0234375
+            },
+            "model": "item/clock_02"
+          },
+          {
+            "predicate": {
+              "time": 0.0390625
+            },
+            "model": "item/clock_03"
+          },
+          {
+            "predicate": {
+              "time": 0.0546875
+            },
+            "model": "item/clock_04"
+          },
+          {
+            "predicate": {
+              "time": 0.0703125
+            },
+            "model": "item/clock_05"
+          },
+          {
+            "predicate": {
+              "time": 0.0859375
+            },
+            "model": "item/clock_06"
+          },
+          {
+            "predicate": {
+              "time": 0.1015625
+            },
+            "model": "item/clock_07"
+          },
+          {
+            "predicate": {
+              "time": 0.1171875
+            },
+            "model": "item/clock_08"
+          },
+          {
+            "predicate": {
+              "time": 0.1328125
+            },
+            "model": "item/clock_09"
+          },
+          {
+            "predicate": {
+              "time": 0.1484375
+            },
+            "model": "item/clock_10"
+          },
+          {
+            "predicate": {
+              "time": 0.1640625
+            },
+            "model": "item/clock_11"
+          },
+          {
+            "predicate": {
+              "time": 0.1796875
+            },
+            "model": "item/clock_12"
+          },
+          {
+            "predicate": {
+              "time": 0.1953125
+            },
+            "model": "item/clock_13"
+          },
+          {
+            "predicate": {
+              "time": 0.2109375
+            },
+            "model": "item/clock_14"
+          },
+          {
+            "predicate": {
+              "time": 0.2265625
+            },
+            "model": "item/clock_15"
+          },
+          {
+            "predicate": {
+              "time": 0.2421875
+            },
+            "model": "item/clock_16"
+          },
+          {
+            "predicate": {
+              "time": 0.2578125
+            },
+            "model": "item/clock_17"
+          },
+          {
+            "predicate": {
+              "time": 0.2734375
+            },
+            "model": "item/clock_18"
+          },
+          {
+            "predicate": {
+              "time": 0.2890625
+            },
+            "model": "item/clock_19"
+          },
+          {
+            "predicate": {
+              "time": 0.3046875
+            },
+            "model": "item/clock_20"
+          },
+          {
+            "predicate": {
+              "time": 0.3203125
+            },
+            "model": "item/clock_21"
+          },
+          {
+            "predicate": {
+              "time": 0.3359375
+            },
+            "model": "item/clock_22"
+          },
+          {
+            "predicate": {
+              "time": 0.3515625
+            },
+            "model": "item/clock_23"
+          },
+          {
+            "predicate": {
+              "time": 0.3671875
+            },
+            "model": "item/clock_24"
+          },
+          {
+            "predicate": {
+              "time": 0.3828125
+            },
+            "model": "item/clock_25"
+          },
+          {
+            "predicate": {
+              "time": 0.3984375
+            },
+            "model": "item/clock_26"
+          },
+          {
+            "predicate": {
+              "time": 0.4140625
+            },
+            "model": "item/clock_27"
+          },
+          {
+            "predicate": {
+              "time": 0.4296875
+            },
+            "model": "item/clock_28"
+          },
+          {
+            "predicate": {
+              "time": 0.4453125
+            },
+            "model": "item/clock_29"
+          },
+          {
+            "predicate": {
+              "time": 0.4609375
+            },
+            "model": "item/clock_30"
+          },
+          {
+            "predicate": {
+              "time": 0.4765625
+            },
+            "model": "item/clock_31"
+          },
+          {
+            "predicate": {
+              "time": 0.4921875
+            },
+            "model": "item/clock_32"
+          },
+          {
+            "predicate": {
+              "time": 0.5078125
+            },
+            "model": "item/clock_33"
+          },
+          {
+            "predicate": {
+              "time": 0.5234375
+            },
+            "model": "item/clock_34"
+          },
+          {
+            "predicate": {
+              "time": 0.5390625
+            },
+            "model": "item/clock_35"
+          },
+          {
+            "predicate": {
+              "time": 0.5546875
+            },
+            "model": "item/clock_36"
+          },
+          {
+            "predicate": {
+              "time": 0.5703125
+            },
+            "model": "item/clock_37"
+          },
+          {
+            "predicate": {
+              "time": 0.5859375
+            },
+            "model": "item/clock_38"
+          },
+          {
+            "predicate": {
+              "time": 0.6015625
+            },
+            "model": "item/clock_39"
+          },
+          {
+            "predicate": {
+              "time": 0.6171875
+            },
+            "model": "item/clock_40"
+          },
+          {
+            "predicate": {
+              "time": 0.6328125
+            },
+            "model": "item/clock_41"
+          },
+          {
+            "predicate": {
+              "time": 0.6484375
+            },
+            "model": "item/clock_42"
+          },
+          {
+            "predicate": {
+              "time": 0.6640625
+            },
+            "model": "item/clock_43"
+          },
+          {
+            "predicate": {
+              "time": 0.6796875
+            },
+            "model": "item/clock_44"
+          },
+          {
+            "predicate": {
+              "time": 0.6953125
+            },
+            "model": "item/clock_45"
+          },
+          {
+            "predicate": {
+              "time": 0.7109375
+            },
+            "model": "item/clock_46"
+          },
+          {
+            "predicate": {
+              "time": 0.7265625
+            },
+            "model": "item/clock_47"
+          },
+          {
+            "predicate": {
+              "time": 0.7421875
+            },
+            "model": "item/clock_48"
+          },
+          {
+            "predicate": {
+              "time": 0.7578125
+            },
+            "model": "item/clock_49"
+          },
+          {
+            "predicate": {
+              "time": 0.7734375
+            },
+            "model": "item/clock_50"
+          },
+          {
+            "predicate": {
+              "time": 0.7890625
+            },
+            "model": "item/clock_51"
+          },
+          {
+            "predicate": {
+              "time": 0.8046875
+            },
+            "model": "item/clock_52"
+          },
+          {
+            "predicate": {
+              "time": 0.8203125
+            },
+            "model": "item/clock_53"
+          },
+          {
+            "predicate": {
+              "time": 0.8359375
+            },
+            "model": "item/clock_54"
+          },
+          {
+            "predicate": {
+              "time": 0.8515625
+            },
+            "model": "item/clock_55"
+          },
+          {
+            "predicate": {
+              "time": 0.8671875
+            },
+            "model": "item/clock_56"
+          },
+          {
+            "predicate": {
+              "time": 0.8828125
+            },
+            "model": "item/clock_57"
+          },
+          {
+            "predicate": {
+              "time": 0.8984375
+            },
+            "model": "item/clock_58"
+          },
+          {
+            "predicate": {
+              "time": 0.9140625
+            },
+            "model": "item/clock_59"
+          },
+          {
+            "predicate": {
+              "time": 0.9296875
+            },
+            "model": "item/clock_60"
+          },
+          {
+            "predicate": {
+              "time": 0.9453125
+            },
+            "model": "item/clock_61"
+          },
+          {
+            "predicate": {
+              "time": 0.9609375
+            },
+            "model": "item/clock_62"
+          },
+          {
+            "predicate": {
+              "time": 0.9765625
+            },
+            "model": "item/clock_63"
+          },
+          {
+            "predicate": {
+              "time": 0.9921875
+            },
+            "model": "item/clock"
+          }
+        ]
+      }
+    },
+    {
+      "jar": "minecraft-client-1.20.1.jar",
+      "jar_sha256": "56b71336d2b4fdffd197f56595b0da93e32a946f78f382a299b8f4b92758bb0f",
+      "path": "data/minecraft/recipes/clock.json",
+      "sha256": "ce70bc01bd6d06b6fc56dd0a909aed2bd614ce01c223cbbc39e0eb4eda4d71f3",
+      "body": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": {
+            "item": "minecraft:gold_ingot"
+          },
+          "X": {
+            "item": "minecraft:redstone"
+          }
+        },
+        "pattern": [
+          " # ",
+          "#X#",
+          " # "
+        ],
+        "result": {
+          "item": "minecraft:clock"
+        },
+        "show_notification": true
+      }
+    }
+  ],
+  "activation_tool": {
+    "item": "minecraft:clock",
+    "reason": "Ordinary registered vanilla survival item; the proposed multimeter has orphan assets only in this version.",
+    "rejected_item": "createaddition:multimeter",
+    "checked_jar_sha256": "9bf3ae15d86ec95d128542caf10e4b5498e49ca02f725b9302d6daecd5eae1db",
+    "multimeter_class_references": [],
+    "multimeter_recipe_paths": [],
+    "remaining_asset_paths": [
+      "assets/createaddition/models/item/multimeter.json",
+      "assets/createaddition/textures/item/multimeter.png"
+    ]
+  },
+  "new_quests": [
+    {
+      "key": "electric_wire",
+      "title": "Проволока от электропривода",
+      "task": "Прокатать медный лист на электроприводе",
+      "parent": "C90C2277CD8D5A1A",
+      "icon": "createaddition:copper_wire",
+      "gift": "create:brass_funnel",
+      "count": 4,
+      "quest_id": "43927DB0D42A5F58",
+      "task_id": "43DA5FE12471C262",
+      "reward_ids": [
+        "43609D0BB3655592",
+        "43830694594B33E9"
+      ],
+      "advancement": "nasledie:alpha43/industry/electric_wire"
+    },
+    {
+      "key": "diesel_flour",
+      "title": "Походная мельница на дизеле",
+      "task": "Смолоть пшеницу от дизельного двигателя",
+      "parent": "01A997FB916A7F84",
+      "icon": "create:wheat_flour",
+      "gift": "farmersdelight:steak_and_potatoes",
+      "count": 8,
+      "quest_id": "43CE9DDCB2EF166C",
+      "task_id": "43D5DC583A7E887D",
+      "reward_ids": [
+        "43A69B423A4DE45F",
+        "430ACBBAEF2DDB2B"
+      ],
+      "advancement": "nasledie:alpha43/industry/diesel_flour"
+    }
+  ],
+  "new_reward_review": {
+    "scope": "Two new reward items only; exact item matches in existing Item Tasks and inventory_changed criteria, using retained native advancement cache. Tag/custom-trigger closures and runtime team delivery remain unproven.",
+    "checked_advancement_tasks": 373,
+    "unresolved_native_advancements": [],
+    "exact_inventory_completion_matches": [],
+    "electric_wire": "4 brass funnels + 300 XP. Brass tier already reached; supports feed/output logistics. Belt-funnel challenge requires a real interaction, not possession.",
+    "diesel_flour": "8 steak-and-potatoes meals + 300 XP. Consumable expedition supplies; nourishment requires eating, so reward can invite use of that mechanic without automatically completing it on receipt."
+  },
+  "runtime_limits": [
+    "No actual Minecraft or Rhino Java bridge execution. Node tests use explicit API models.",
+    "Only ordinary diesel engine with diesel fluid; electrical source is a live motor, not a proof of how its FE was generated.",
+    "Observer must stay within 16 blocks, machine and source path must be loaded and stable; max 32 links, 1200 server ticks, 8 observers.",
+    "Disable automated feeding/extraction for the one-input control batch. Immediate extraction can prevent credit.",
+    "Only the observing UUID receives the advancement; FTB team sharing, reload and saved-world migration untested.",
+    "Unfinished observations reset on server unload, disconnect or timeout. Earned advancement uses normal Minecraft persistence, not separately verified here."
+  ]
+}

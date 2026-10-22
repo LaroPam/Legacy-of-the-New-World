@@ -1579,6 +1579,40 @@
           "sha256": "4b878d9cc6d8e73e7c80fb34612d69e5aa3fe205da2d6b56f811033dac2d2074"
         }
       ]
+    },
+    "createaddition:copper_wire": {
+      "kind": "forge_item_registration",
+      "source_file": "createaddition-1.20.1-1.3.3.jar",
+      "source_sha256": "9bf3ae15d86ec95d128542caf10e4b5498e49ca02f725b9302d6daecd5eae1db",
+      "registration_evidence": "CAItems: COPPER_WIRE = CreateAddition.REGISTRATE.item(\"copper_wire\", Item::new).register();",
+      "model": "assets/createaddition/models/item/copper_wire.json",
+      "model_sha256": "b65bdc0b86f64d26b198f240ffaa4249465f02cee5996f10ea24d91fb41e330b",
+      "model_chain": {
+        "assets/createaddition/models/item/copper_wire.json": "b65bdc0b86f64d26b198f240ffaa4249465f02cee5996f10ea24d91fb41e330b"
+      },
+      "textures": [
+        {
+          "path": "assets/createaddition/textures/item/copper_wire.png",
+          "sha256": "4ac60b5deece6ffe0c9e45d09c6a42466657f5db52e24d14d7b092ab3e520223"
+        }
+      ]
+    },
+    "create:wheat_flour": {
+      "kind": "forge_item_registration",
+      "source_file": "create-1.20.1-6.0.8.jar",
+      "source_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+      "registration_evidence": "AllItems: WHEAT_FLOUR = AllItems.taggedIngredient(\"wheat_flour\", AllTags.AllItemTags.WHEAT_FLOUR.tag, AllTags.AllItemTags.FLOUR.tag);",
+      "model": "assets/create/models/item/wheat_flour.json",
+      "model_sha256": "326d73d5388417b27797274fa25ad183aa3a55ae2c6578fa5b24e58539e28413",
+      "model_chain": {
+        "assets/create/models/item/wheat_flour.json": "326d73d5388417b27797274fa25ad183aa3a55ae2c6578fa5b24e58539e28413"
+      },
+      "textures": [
+        {
+          "path": "assets/create/textures/item/wheat_flour.png",
+          "sha256": "bf182ca0f8647fc26462d1c1d1b1f9de1a84a2a62dbbe13b6f7ace0eace98d41"
+        }
+      ]
     }
   }
 }

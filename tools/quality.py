@@ -217,6 +217,17 @@ def preservation(current_files, baseline_files, current, baseline, reference, sc
                     and hashlib.sha256(current_files[name]).hexdigest() == spec.get('sha256'))
         if not approved:
             errors.append(problem('file_addition_mismatch', name, 'New advancement does not match its exact declaration, or replaces an existing file'))
+    new_scripts = (scope or {}).get('script_additions', {})
+    for name, spec in new_scripts.items():
+        # Deliberately narrow: this is not an exemption for arbitrary executable code.
+        approved = (name == 'kubejs/server_scripts/nasledie_factory_trials.js'
+                    and spec.get('reason')
+                    and spec.get('evidence') == 'reviews/factory_trial_evidence.json'
+                    and spec.get('tests') == 'tests/factory_trials.test.cjs'
+                    and name not in baseline_files and name in current_files
+                    and hashlib.sha256(current_files[name]).hexdigest() == spec.get('sha256'))
+        if not approved:
+            errors.append(problem('script_addition_mismatch', name, 'New production observer does not match its exact declaration, or replaces an existing file'))
     reference_file = CHAPTER_ROOT + reference + ".snbt"
     if reference_file not in current or reference_file not in baseline:
         errors.append(problem("reference_missing", reference_file, "Reference chapter must exist in both snapshots"))
@@ -227,7 +238,7 @@ def preservation(current_files, baseline_files, current, baseline, reference, sc
         changes.append({"file": name, "baseline_sha256": hashlib.sha256(old).hexdigest() if old is not None else None,
                         "current_sha256": hashlib.sha256(new).hexdigest() if new is not None else None})
         if name not in reference_files:
-            if name in new_files and old is None:
+            if (name in new_files or name in new_scripts) and old is None:
                 continue  # Checked independently above, including missing/altered files.
             approved = approved_files.get(name, {})
             if not (approved.get('reason') and old is not None and new is not None
@@ -409,7 +420,14 @@ def duplicate_conditions(parsed):
             if task.get("type") == "advancement":
                 advancement = local_advancement(task.get("advancement"), parsed)
                 if advancement is not None:
-                    condition["advancement"] = {k: v for k, v in advancement.items() if k in ("criteria", "requirements")}
+                    criteria = advancement.get('criteria', {})
+                    externally_granted = (isinstance(criteria, dict) and bool(criteria)
+                                          and all(isinstance(c, dict) and c.get('trigger') == 'minecraft:impossible'
+                                                  for c in criteria.values()))
+                    # Impossible criteria have no natural event; their identity is the
+                    # command/API target. Two tasks targeting the same ID still collide.
+                    if not externally_granted:
+                        condition["advancement"] = {k: v for k, v in advancement.items() if k in ("criteria", "requirements")}
             grouped[digest(condition)].append({"quest": str(quest.get("id")), "task": str(task.get("id")), "file": name})
     return [problem("duplicate_condition", QUEST_ROOT, "Tasks have identical normalized conditions; review whether one action credits unrelated quests", tasks=tasks)
             for tasks in grouped.values() if len(tasks) > 1]
@@ -648,6 +666,9 @@ def evaluate(current_files, baseline_files, reference=REFERENCE, registry=None, 
         problem("rendering_unverified", reference, "Disk and straight-line geometry is an approximation, not a screenshot; actual FTB Quests rendering, labels and clipping require in-game inspection"),
         problem("semantics_unverified", "automation", "Parsing and resource resolution do not prove that advancement conditions match the promised action, or that rewards respect recipes and progression"),
     ])
+    if (scope or {}).get('script_additions'):
+        report['unknown'].append(problem('factory_trials_runtime_unverified', 'kubejs/server_scripts/nasledie_factory_trials.js',
+                                         'Model tests do not exercise the Rhino Java bridge, mod tick ordering or FTB team credit in Minecraft'))
     return finish(report)
 
 
