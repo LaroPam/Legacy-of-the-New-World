@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_treasure"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

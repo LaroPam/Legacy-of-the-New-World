@@ -197,6 +197,23 @@ def quest_issues(parsed):
     return errors, warnings
 
 
+def with_links(parsed):
+    """Treat quest links as nodes for layout checks."""
+    # FTB draws dependency lines to and from a link exactly as for the linked quest, so a link node
+    # carries the linked quest's id and dependencies.
+    view = dict(parsed)
+    every = {str(q.get('id')): q for _, _, q in quality.quest_rows(parsed)}
+    for name, chapter in quality.chapters(parsed).items():
+        links = chapter.get('quest_links', [])
+        if links:
+            copy = dict(chapter)
+            copy['quests'] = list(chapter.get('quests', [])) + [
+                {'id': str(link.get('linked_quest')), 'x': link.get('x'), 'y': link.get('y'), 'size': link.get('size', 1),
+                 'dependencies': every.get(str(link.get('linked_quest')), {}).get('dependencies', [])} for link in links]
+            view[name] = copy
+    return view
+
+
 def issue_key(issue):
     return (issue['code'], issue['location'], str(issue.get('id', issue.get('item', ''))))
 
@@ -206,7 +223,7 @@ def evaluate(files, registry):
     warnings = []
     errors += quality.integrity(parsed)
     errors += quality.resource_checks(files, parsed)
-    geometry, metrics = quality.geometry(parsed)
+    geometry, metrics = quality.geometry(with_links(parsed))
     errors += [g for g in geometry if g['code'] != 'edge_long']
     warnings += [g for g in geometry if g['code'] == 'edge_long']
     warnings += quality.duplicate_conditions(parsed)

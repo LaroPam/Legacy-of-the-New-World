@@ -2,40 +2,73 @@
 	filename: "nasledie_ocean"
 	id: "42E670E2D2E5798E"
 	group: "EF93B76DFA48CC13"
-	title: "Океан — проводник и штурм монумента"
-	icon: "minecraft:heart_of_the_sea"
+	title: "Океан — проводник и монумент"
+	icon: "minecraft:conduit"
 	order_index: 7
 	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
+	default_quest_shape: "scroll"
 	progression_mode: "flexible"
-	quest_links: [ ]
+	quest_links: [{
+		id: "E4285DB7A4C70029"
+		linked_quest: "7561C2A49CE25872"
+		x: 18.0d
+		y: 0.0d
+		shape: "crown"
+		size: 1.5d
+	}]
 	quests: [
 		{
 			id: "A68C40E37C45E3BF"
 			title: "Выйти в глубокий океан"
-			description: [
-				"Доберитесь до глубокого океана. Главный проект этой главы — подводный плацдарм: найдите сердце моря, включите проводник возле монумента и победите обоих стражей под его защитой."
-				"Начните с затонувшего корабля. Его карта клада поможет искать сердце моря; раковины понадобятся для проводника. Боковая ветка кораблей тоже награждает раковинами."
-				"Руины двух морей и поход к галере — отдельные экспедиции. Водолазный комплект Create удобен для работы под водой, но не обязателен для основного маршрута."
-			]
+			description: ["Где дно уходит в темноту, начинается настоящее море. Выйдите в глубокий океан — лодка, запас еды и путь назад по звёздам."]
 			x: 0.0d
 			y: 0.0d
-			icon: "minecraft:water_bucket"
-			shape: "scroll"
-			size: 1.5d
+			icon: "minecraft:oak_boat"
+			size: 1.4d
+			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
-				id: "2FEBEB75DA38988A"
+				id: "6C8774B246065D7A"
 				type: "biome"
 				biome: "minecraft:deep_ocean"
 			}]
 			rewards: [
 				{
-					id: "2628A3EB0042C12E"
+					id: "E97BE8A756EBDB64"
 					type: "xp"
 					xp: 100
 				}
 				{
-					id: "62AF445078F2DCE7"
+					id: "47AB1B8C339EEFE3"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:flippers"
+					}
+				}
+			]
+		}
+		{
+			id: "D5B701274F41916E"
+			title: "Затонувший корабль"
+			description: ["Корабли тонули здесь и до экспедиции. В капитанском сундуке обычно лежит карта к зарытому кладу. Откройте его."]
+			x: 3.0d
+			y: 0.0d
+			icon: "minecraft:oak_planks"
+			dependencies: ["A68C40E37C45E3BF"]
+			tasks: [{
+				id: "F343CF7A642AC78D"
+				type: "advancement"
+				title: "Открыть сундук с сокровищами корабля"
+				advancement: "nasledie:q/ocean/shipwreck"
+			}]
+			rewards: [
+				{
+					id: "BF1D37352E39DC10"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "520B257F06188DC2"
 					type: "item"
 					item: {
 						Count: 1b
@@ -45,664 +78,27 @@
 			]
 		}
 		{
-			id: "D5B701274F41916E"
-			title: "Найти затонувший корабль"
-			description: [
-				"Найдите кораблекрушение. Ищите сундук с картой клада: она укажет место поиска сердца моря. Сундук и нужная карта есть не в каждом обломке."
-				"Возьмите лодку и еду, осматривайте отсеки короткими погружениями. После разведки переходите к добыче сердца моря."
-			]
-			x: 2.5d
-			y: 0.0d
-			icon: "minecraft:oak_boat"
-			shape: "scroll"
-			size: 1.2d
-			dependencies: ["A68C40E37C45E3BF"]
-			tasks: [{
-				id: "96FFB4E0BF7E16C8"
-				type: "structure"
-				structure: "minecraft:shipwreck"
-			}]
-			rewards: [
-				{
-					id: "DFACFA2012B5192D"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "31FD27AACB5A8B9F"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "create:copper_diving_boots"
-					}
-				}
-			]
-		}
-		{
-			id: "F805A24AC6136435"
-			title: "Победить утопленника"
-			description: [
-				"Победите одного утопленника. Для проводника нужны раковины наутилуса: присматривайтесь к тем, кто держит раковину в руке."
-				"Зачтётся любой утопленник; раковина не гарантирована каждому противнику. Ещё её можно получить рыбалкой или за морские экспедиции этой главы."
-			]
-			x: 5.0d
-			y: 0.0d
-			icon: "minecraft:rotten_flesh"
-			shape: "shield"
-			size: 1.2d
-			dependencies: ["D5B701274F41916E"]
-			tasks: [{
-				id: "91E4302CE482E518"
-				type: "kill"
-				entity: "minecraft:drowned"
-			}]
-			rewards: [
-				{
-					id: "C92C8C015AB1F010"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "C61EC06F34F434EF"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedbackpacks:pump_upgrade"
-					}
-				}
-			]
-		}
-		{
-			id: "76F24423146B2BF8"
-			title: "Найти монумент для плацдарма"
-			description: [
-				"Найдите океанский монумент YUNG и выберите место для проводника снаружи. Ищите Ocean Monument в списке компаса, если прямой поиск в море затянулся."
-				"Для рамки пригодятся призмарин, призмариновые кирпичи, тёмный призмарин или морские фонари. Их можно собрать и в руинах проводника из боковой ветки. Не рассчитывайте легко добывать блоки рядом со старшими стражами: они накладывают утомление."
-			]
-			x: 10.0d
-			y: 0.0d
-			icon: "minecraft:prismarine_bricks"
-			shape: "scroll"
-			size: 1.2d
-			dependencies: ["F70436662909AF80"]
-			tasks: [{
-				id: "7FAE7D04F05EBF32"
-				type: "structure"
-				structure: "betteroceanmonuments:ocean_monument"
-			}]
-			rewards: [
-				{
-					id: "94C1E04D29502E44"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "0DD8A2610AA1FBE3"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "alexscaves:diving_helmet"
-					}
-				}
-			]
-		}
-		{
-			id: "D8C373CD97382003"
-			title: "Победить обычного стража"
-			description: [
-				"Убейте обычного стража. Теперь испытайте выбранное укрытие и расстояние, на котором луч перестаёт вас доставать."
-				"Если проводник уже работает, держите бой внутри его действия. Эта же подготовка понадобится против старшего стража."
-			]
-			x: 15.0d
-			y: 0.0d
-			icon: "minecraft:prismarine_shard"
-			shape: "shield"
-			size: 1.2d
-			dependencies: ["A6C3DFEC8B6B5AA3"]
-			tasks: [{
-				id: "F5FCD11F985346EA"
-				type: "kill"
-				entity: "minecraft:guardian"
-			}]
-			rewards: [
-				{
-					id: "7248B9D0D2866C1C"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "C9D9D580938F6A9D"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "alexscaves:diving_chestplate"
-					}
-				}
-			]
-		}
-		{
-			id: "7561C2A49CE25872"
-			title: "Победить старшего стража"
-			description: [
-				"Убейте старшего стража в монументе. Заранее оставьте проход для отхода и запас воздуха; молоко снимет утомление, но одновременно уберёт и полезные эффекты."
-				"Заключительное испытание потребует обеих побед под морской силой. Проверьте эффект перед последним ударом, если хотите выполнить его в этом же походе."
-			]
-			x: 17.5d
-			y: 0.0d
-			icon: "minecraft:sponge"
-			shape: "shield"
-			size: 1.2d
-			dependencies: ["D8C373CD97382003"]
-			tasks: [{
-				id: "2343095445B562A1"
-				type: "kill"
-				entity: "minecraft:elder_guardian"
-			}]
-			rewards: [
-				{
-					id: "BAE5D3A17655E0CE"
-					type: "xp"
-					xp: 550
-				}
-				{
-					id: "C1CB416E297D364C"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "alexscaves:diving_leggings"
-					}
-				}
-				{
-					id: "60BA4F308062A89D"
-					type: "item"
-					item: {
-						Count: 24b
-						id: "minecraft:prismarine_crystals"
-					}
-				}
-			]
-		}
-		{
 			id: "F70436662909AF80"
-			title: "Добыть сердце моря"
-			description: [
-				"Получите одно сердце моря. Самый понятный путь — карта клада из затонувшего корабля и поиски сундука на отмеченном берегу."
-				"Сохраните сердце: вместе с восемью раковинами наутилуса оно превращается в проводник. Следующая цель — выбрать место у монумента и запустить подводное убежище."
-			]
-			x: 7.5d
+			title: "Клад по карте"
+			description: ["Карта ведёт к кладу на берегу. Копайте под крестом — внутри всегда лежит сердце моря, главная деталь проводника."]
+			x: 6.0d
 			y: 0.0d
 			icon: "minecraft:heart_of_the_sea"
-			shape: "scroll"
-			size: 1.2d
-			dependencies: ["F805A24AC6136435"]
-			tasks: [{
-				id: "46935A4A7AA97DE2"
-				type: "item"
-				item: "minecraft:heart_of_the_sea"
-				count: 1L
-				consume_items: false
-			}]
-			rewards: [
-				{
-					id: "45BD6BAC9C418838"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "200C736EA942D80A"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "alexscaves:lanternfish_bucket"
-					}
-				}
-			]
-		}
-		{
-			id: "A6C3DFEC8B6B5AA3"
-			title: "Запустить проводник у монумента"
-			description: [
-				"Активируйте проводник и получите эффект морской силы. Сердце моря и восемь раковин дают сам блок, но для работы нужны вода и рамка."
-				"Окружите проводник водой в области три на три на три. На расстоянии двух блоков от него соберите квадратную рамку пять на пять из 16 призмариновых блоков: это минимальный рабочий контур. Сам проводник находится в центре рамки."
-				"Под водой рядом должен появиться эффект. Он даёт дыхание и помогает работать в глубине; после запуска переходите к боям со стражами. Место у монумента — полезный выбор для проекта, а зачёт даёт сам эффект."
-			]
-			x: 12.5d
-			y: 0.0d
-			icon: "minecraft:conduit"
-			shape: "gear"
-			size: 1.2d
-			dependencies: ["76F24423146B2BF8"]
-			tasks: [{
-				id: "9CCE0E71193A443D"
-				type: "advancement"
-				advancement: "nasledie:ocean/conduit_power"
-			}]
-			rewards: [
-				{
-					id: "778F19895AF62730"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "719CF31B7C8E053A"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "create:copper_backtank"
-					}
-				}
-			]
-		}
-		{
-			id: "E89F59FCDCE5619F"
-			title: "Найти руины проводника"
-			description: [
-				"Найдите руины проводника Dungeons and Taverns — Conduit Ruin в списке компаса."
-				"После осмотра проверьте, есть ли здесь блоки для рамки вашего проводника. Эта вылазка может помочь основному проекту ещё до похода к монументу."
-			]
-			x: 10.0d
-			y: 2.5d
-			icon: "minecraft:sea_lantern"
-			shape: "scroll"
-			size: 1.2d
-			dependencies: ["6FD514AB841DF820"]
-			tasks: [{
-				id: "9282645F52182867"
-				type: "structure"
-				structure: "nova_structures:conduit_ruin"
-			}]
-			rewards: [
-				{
-					id: "D9E3815AA3D51911"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "1367A9060B099D21"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedstorage:pump_upgrade"
-					}
-				}
-			]
-		}
-		{
-			id: "CA1FCBC43099A918"
-			title: "Испытать водолазный комплект"
-			description: [
-				"Наденьте водолазный шлем Create и медный воздушный баллон, затем войдите в воду. Сначала наполните баллон воздухом от вращения в мастерской."
-				"Это дополнительная подготовка для долгих погружений. Если вы ещё не освоили Create, продолжайте поиск сердца и сборку проводника другим способом."
-			]
-			x: 2.5d
-			y: -2.5d
-			icon: "create:copper_diving_helmet"
-			shape: "gear"
-			size: 1.2d
 			dependencies: ["D5B701274F41916E"]
 			tasks: [{
-				id: "B40BA970509B22CC"
+				id: "89D5DBCFA2FDA85E"
 				type: "advancement"
-				advancement: "create:diving_suit"
+				title: "Откопать зарытый клад"
+				advancement: "nasledie:q/ocean/buried_treasure"
 			}]
 			rewards: [
 				{
-					id: "17C88AE406281C5D"
+					id: "0634C9D6D1AAB548"
 					type: "xp"
-					xp: 100
+					xp: 150
 				}
 				{
-					id: "40A05AF5CA038739"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "alexscaves:sea_glass_shards"
-					}
-				}
-			]
-		}
-		{
-			id: "5D6F6A8D9A89C57C"
-			title: "Найти океан среди айсбергов"
-			description: [
-				"Посетите замёрзший океан: его выдадут лёд и айсберги. Найдите открытый участок воды, чтобы не оказаться под сплошной ледяной крышей."
-				"Отсюда начинается сравнение холодных и тёплых руин. Для следующего погружения возьмите кисть, если хотите попробовать подводную археологию."
-			]
-			x: 0.0d
-			y: 2.5d
-			icon: "minecraft:blue_ice"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["A68C40E37C45E3BF"]
-			tasks: [{
-				id: "BF75EF717FD6F51E"
-				type: "biome"
-				biome: "minecraft:frozen_ocean"
-			}]
-			rewards: [
-				{
-					id: "298BB7E9902C9B36"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "788FA68424BDF647"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "sophisticatedbackpacks:advanced_deposit_upgrade"
-					}
-				}
-			]
-		}
-		{
-			id: "A303D9CBF0C8194D"
-			title: "Добраться до кораллового моря"
-			description: [
-				"Посетите тёплый океан. Кораллы и яркие рифы помогут узнать нужное море."
-				"Следующая остановка — тёплые руины с песком. Кисть позволит извлечь находки из подозрительных блоков, которые легко уничтожить киркой."
-			]
-			x: 5.0d
-			y: 2.5d
-			icon: "minecraft:brain_coral_block"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["A19C3A7B7AF63B80"]
-			tasks: [{
-				id: "BA021C9A5BA89AB7"
-				type: "biome"
-				biome: "minecraft:warm_ocean"
-			}]
-			rewards: [
-				{
-					id: "EE2A11B1E6AF4A9D"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "C5AC426171018149"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "better_weaponry:diamond_cutlass"
-					}
-				}
-			]
-		}
-		{
-			id: "A19C3A7B7AF63B80"
-			title: "Найти холодные океанские руины"
-			description: [
-				"Найдите холодные океанские руины — Ocean Ruin Cold. Это каменные остатки подводных поселений."
-				"Осмотрите подозрительный гравий с кистью, если он встретится. Чтобы пройти сам шаг маршрута, достаточно обнаружить руины; затем отправляйтесь в тёплое море."
-			]
-			x: 2.5d
-			y: 2.5d
-			icon: "minecraft:stone_bricks"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["5D6F6A8D9A89C57C"]
-			tasks: [{
-				id: "5508A100E3FBDE09"
-				type: "structure"
-				structure: "minecraft:ocean_ruin_cold"
-			}]
-			rewards: [
-				{
-					id: "1AFA372E293E4ABB"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "44382E5BAF7D142F"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "alexscaves:magnetic_light"
-					}
-				}
-			]
-		}
-		{
-			id: "6FD514AB841DF820"
-			title: "Найти тёплые океанские руины"
-			description: [
-				"Найдите тёплые океанские руины — Ocean Ruin Warm. Здесь стоит внимательно проверить подозрительный песок: среди его редких находок бывает яйцо нюхача."
-				"Добыча необязательна для зачёта посещения. Если яйцо найдётся, оно даст повод вернуться домой и заняться разведением необычного помощника."
-			]
-			x: 7.5d
-			y: 2.5d
-			icon: "minecraft:sandstone"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["A303D9CBF0C8194D"]
-			tasks: [{
-				id: "9FAC1C9141ADFDF0"
-				type: "structure"
-				structure: "minecraft:ocean_ruin_warm"
-			}]
-			rewards: [
-				{
-					id: "23AF29A1C6E458E2"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "B227AB2618D95735"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "alexscaves:lanternfish"
-					}
-				}
-			]
-		}
-		{
-			id: "75934B268BAE9806"
-			title: "Разведать корабль нежити"
-			description: [
-				"Найдите корабль нежити When Dungeons Arise — Undead Pirate Ship. Подойдите на лодке с той стороны, где сможете быстро отступить."
-				"Это разведка судна. Зачистка всей команды не требуется; продолжение морского маршрута ведёт к кораблям иллагеров и наградам для проводника."
-			]
-			x: 5.0d
-			y: -5.0d
-			icon: "minecraft:bone"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["362F963DF6A6BCFE"]
-			tasks: [{
-				id: "27162C92A28E4C58"
-				type: "structure"
-				structure: "dungeons_arise:undead_pirate_ship"
-			}]
-			rewards: [
-				{
-					id: "4DB061B4556EE9C3"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "9269AC46DC9B2C87"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "alexscaves:tripodfish_bucket"
-					}
-				}
-			]
-		}
-		{
-			id: "42CDC43E1DFBDB97"
-			title: "Найти береговой маяк"
-			description: [
-				"Найдите маяк When Dungeons Arise — Lighthouse. Это первая цель самостоятельного морского похода к галере."
-				"По пути вы посетите деревню и три разных судна. За обнаружение корсара и галеры можно получить раковины наутилуса для основного подводного проекта."
-			]
-			x: 0.0d
-			y: -5.0d
-			icon: "minecraft:lantern"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["A68C40E37C45E3BF"]
-			tasks: [{
-				id: "A83C203425FBD8C3"
-				type: "structure"
-				structure: "dungeons_arise:lighthouse"
-			}]
-			rewards: [
-				{
-					id: "3643110C1F14A100"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "0DA0B7A80AA44297"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "alexscaves:magnetic_activator"
-					}
-				}
-			]
-		}
-		{
-			id: "362F963DF6A6BCFE"
-			title: "Найти деревню на воде"
-			description: [
-				"Найдите океанскую деревню Towns and Towers — Village Ocean. Осмотрите доступные причалы и выберите место, где удобно пополнить припасы."
-				"Впереди опасные суда. Запасная лодка, еда и средство дальнего боя полезнее попытки взять весь груз в один рюкзак."
-			]
-			x: 2.5d
-			y: -5.0d
-			icon: "minecraft:bell"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["42CDC43E1DFBDB97"]
-			tasks: [{
-				id: "2F2EDC9E4E0967C5"
-				type: "structure"
-				structure: "towns_and_towers:village_ocean"
-			}]
-			rewards: [
-				{
-					id: "824B9142D55780EC"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "797236A82A13B28A"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "alexscaves:copper_valve"
-					}
-				}
-			]
-		}
-		{
-			id: "9BA296205688E999"
-			title: "Найти затопленную могилу"
-			description: [
-				"Найдите заброшенную океанскую могилу Corail Tombstone — Abandoned Grave Ocean."
-				"Это последняя точка маршрута морских руин. Перед спуском обеспечьте дыхание: цель — добраться до самой структуры, а дальнейший осмотр и добычу выбирайте по готовности."
-			]
-			x: 12.5d
-			y: 2.5d
-			icon: "minecraft:soul_lantern"
-			shape: "star"
-			size: 1.5d
-			optional: true
-			dependencies: ["E89F59FCDCE5619F"]
-			tasks: [{
-				id: "2908D5A187F4D81C"
-				type: "structure"
-				structure: "tombstone:abandoned_grave_ocean"
-			}]
-			rewards: [
-				{
-					id: "EC6D879922AC52EC"
-					type: "xp"
-					xp: 75
-				}
-				{
-					id: "786E39891868F0F9"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "alexscaves:enigmatic_engine"
-					}
-				}
-			]
-		}
-		{
-			id: "99935D46EBDDE471"
-			title: "Найти корсарский корабль"
-			description: [
-				"Найдите корсарский корабль иллагеров — Illager Corsair из When Dungeons Arise. Он отличается от судна нежити и от галеры следующего шага."
-				"Награда содержит десять раковин наутилуса: их уже достаточно для одного проводника. Если сердце моря найдено, можно вернуться к основному проекту, а галеру оставить на следующую сессию."
-			]
-			x: 7.5d
-			y: -5.0d
-			icon: "minecraft:crossbow"
-			shape: "scroll"
-			size: 1.2d
-			optional: true
-			dependencies: ["75934B268BAE9806"]
-			tasks: [{
-				id: "A5B7D9C7CDEDE248"
-				type: "structure"
-				structure: "dungeons_arise:illager_corsair"
-			}]
-			rewards: [
-				{
-					id: "33769E468058933E"
-					type: "xp"
-					xp: 390
-				}
-				{
-					id: "6762FE3AA633DF17"
-					type: "item"
-					item: {
-						Count: 10b
-						id: "minecraft:nautilus_shell"
-					}
-				}
-			]
-		}
-		{
-			id: "27C6A5C2087489CC"
-			title: "Добраться до галеры иллагеров"
-			description: [
-				"Найдите галеру иллагеров — Illager Galley из When Dungeons Arise. Это конечная цель морской экспедиции через маяк, деревню и другие суда."
-				"Зачёт даёт обнаружение галеры. Дополнительные раковины можно оставить для второго проводника: один у монумента, другой у выбранного вами места раскопок."
-			]
-			x: 10.0d
-			y: -5.0d
-			icon: "minecraft:nautilus_shell"
-			shape: "star"
-			size: 1.5d
-			optional: true
-			dependencies: ["99935D46EBDDE471"]
-			tasks: [{
-				id: "A7D23292CEF13F73"
-				type: "structure"
-				structure: "dungeons_arise:illager_galley"
-			}]
-			rewards: [
-				{
-					id: "19C9B3DEF6AD9473"
-					type: "xp"
-					xp: 450
-				}
-				{
-					id: "D2CAC2A6F5CA05CD"
+					id: "C49BF608FFC48A72"
 					type: "item"
 					item: {
 						Count: 4b
@@ -712,43 +108,476 @@
 			]
 		}
 		{
+			id: "76F24423146B2BF8"
+			title: "Монумент на дне"
+			description: ["На дне стоит монумент, сложенный той же кладкой, что кованый зал. Найдите его и присмотрите место для плацдарма рядом."]
+			x: 9.0d
+			y: 0.0d
+			icon: "minecraft:prismarine_bricks"
+			dependencies: ["F70436662909AF80"]
+			tasks: [{
+				id: "18EACFBBC34C012C"
+				type: "structure"
+				structure: "betteroceanmonuments:ocean_monument"
+			}]
+			rewards: [
+				{
+					id: "C3BA5551327DC08F"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "C391569CC381C2E1"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "create:copper_backtank"
+					}
+				}
+			]
+		}
+		{
+			id: "A6C3DFEC8B6B5AA3"
+			title: "Проводник у монумента"
+			description: ["Сердце моря и восемь раковин наутилуса — и проводник даст дыхание под водой, ночное зрение и скорость копания. Окружите его рамкой из призмарина и встаньте рядом."]
+			x: 12.0d
+			y: 0.0d
+			icon: "minecraft:conduit"
+			shape: "gear"
+			dependencies: ["76F24423146B2BF8"]
+			tasks: [{
+				id: "7FE494621040FF5A"
+				type: "advancement"
+				advancement: "nasledie:ocean/conduit_power"
+				title: "Получить силу проводника"
+			}]
+			rewards: [
+				{
+					id: "409FB215DBF8B981"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "47A186910B5E86AA"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:charm_of_sinking"
+					}
+				}
+			]
+		}
+		{
+			id: "D8C373CD97382003"
+			title: "Страж монумента"
+			description: ["Обычные стражи стреляют лучом издалека. Победите одного — и поймёте, почему старший так опасен."]
+			x: 15.0d
+			y: 0.0d
+			icon: "minecraft:prismarine_shard"
+			shape: "shield"
+			dependencies: ["A6C3DFEC8B6B5AA3"]
+			tasks: [{
+				id: "B90AAD256C51EF2C"
+				type: "kill"
+				entity: "minecraft:guardian"
+			}]
+			rewards: [
+				{
+					id: "1A97FD3156E405ED"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "577B925A3839312B"
+					type: "item"
+					item: {
+						Count: 16b
+						id: "alexsmobs:shark_tooth_arrow"
+					}
+				}
+			]
+		}
+		{
 			id: "D1FC6F90AE011A99"
 			title: "Две победы под морской силой"
-			description: [
-				"Убейте обычного и старшего стража, находясь под морской силой в момент каждой победы. В карточке две отдельные цели — проверьте обе."
-				"Финал основного проекта: найденное сердце стало рабочим проводником, а тот помог захватить подводный плацдарм. Если эффект пропал за пределами рамки, вернитесь в его радиус перед решающим ударом."
-			]
-			x: 20.0d
+			description: ["Под силой проводника победите обычного и старшего стража. Монумент станет вашим, а море — чуть менее чужим."]
+			x: 21.0d
 			y: 0.0d
 			icon: "minecraft:trident"
-			shape: "shield"
-			size: 1.5d
+			shape: "star"
+			size: 1.4d
 			optional: true
 			dependencies: ["7561C2A49CE25872"]
 			tasks: [
 				{
-					id: "9E205F89BE5431DE"
+					id: "A5898FD29B9EE113"
 					type: "advancement"
 					advancement: "nasledie:alpha42/ocean/conduit_duel/guard"
+					title: "Страж под силой проводника"
 				}
 				{
-					id: "AA1806CEFCB9C9F8"
+					id: "54BA26BC52701A3A"
 					type: "advancement"
 					advancement: "nasledie:alpha42/ocean/conduit_duel/elder"
+					title: "Старший страж под силой проводника"
 				}
 			]
 			rewards: [
 				{
-					id: "FE91B9EE5FB9C130"
+					id: "88E044B48B415BAD"
 					type: "xp"
 					xp: 700
 				}
 				{
-					id: "5DB57503B22AEE75"
+					id: "A4BB557111527934"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:trident"
+					}
+				}
+				{
+					id: "1688DBC2D4504BC7"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:diamond"
+					}
+				}
+			]
+		}
+		{
+			id: "42CDC43E1DFBDB97"
+			title: "Береговой маяк"
+			description: ["Маяки строят там, где корабли бьются о скалы. Поднимитесь на вершину маяка и откройте сундук смотрителя."]
+			x: 0.0d
+			y: -3.0d
+			icon: "minecraft:lantern"
+			dependencies: ["A68C40E37C45E3BF"]
+			tasks: [{
+				id: "ED983007EE04939D"
+				type: "advancement"
+				title: "Открыть сундук на вершине маяка"
+				advancement: "nasledie:q/ocean/lighthouse"
+			}]
+			rewards: [
+				{
+					id: "DDA27DCE6EC07F9E"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "3030C17A3F4965DD"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:spyglass"
+					}
+				}
+			]
+		}
+		{
+			id: "75934B268BAE9806"
+			title: "Корабль нежити"
+			description: ["Пиратский корабль, где команда давно умерла, но службу не бросила. Доберитесь до его сокровищ."]
+			x: 3.0d
+			y: -3.0d
+			icon: "minecraft:skeleton_skull"
+			shape: "shield"
+			dependencies: ["42CDC43E1DFBDB97"]
+			tasks: [{
+				id: "6232A6C44EAE614D"
+				type: "advancement"
+				title: "Открыть сокровищницу корабля нежити"
+				advancement: "nasledie:q/ocean/pirate_ship"
+			}]
+			rewards: [
+				{
+					id: "878D96EDCE6C0BCD"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "23DAC107B2C72000"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "better_weaponry:diamond_cutlass"
+					}
+				}
+			]
+		}
+		{
+			id: "99935D46EBDDE471"
+			title: "Корсарский корабль"
+			description: ["Иллагеры тоже ходят в море. Возьмите на абордаж их корсарский корабль."]
+			x: 6.0d
+			y: -3.0d
+			icon: "minecraft:crossbow"
+			shape: "shield"
+			optional: true
+			dependencies: ["75934B268BAE9806"]
+			tasks: [{
+				id: "1AD5B1714B390A51"
+				type: "advancement"
+				title: "Открыть сокровищницу корсаров"
+				advancement: "nasledie:q/ocean/corsair"
+			}]
+			rewards: [
+				{
+					id: "F1103CA94618B794"
+					type: "xp"
+					xp: 390
+				}
+				{
+					id: "BD450B166955BB27"
+					type: "item"
+					item: {
+						Count: 6b
+						id: "minecraft:nautilus_shell"
+					}
+				}
+			]
+		}
+		{
+			id: "27C6A5C2087489CC"
+			title: "Галера иллагеров"
+			description: ["Галера — флагман морских иллагеров, с вёслами и пушечной палубой. Её казна — лучшая добыча на воде."]
+			x: 9.0d
+			y: -3.0d
+			icon: "minecraft:dark_oak_planks"
+			shape: "star"
+			optional: true
+			dependencies: ["99935D46EBDDE471"]
+			tasks: [{
+				id: "C9F038CDF818276A"
+				type: "advancement"
+				title: "Открыть казну галеры"
+				advancement: "nasledie:q/ocean/galley"
+			}]
+			rewards: [
+				{
+					id: "1FE5BB486B1CE61D"
+					type: "xp"
+					xp: 450
+				}
+				{
+					id: "C6DEE954FEB1D02A"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:shock_pendant"
+					}
+				}
+			]
+		}
+		{
+			id: "5D6F6A8D9A89C57C"
+			title: "Океан среди айсбергов"
+			description: ["На севере море замерзает айсбергами. Доплывите туда в тёплой одежде."]
+			x: 0.0d
+			y: 3.0d
+			icon: "minecraft:packed_ice"
+			optional: true
+			dependencies: ["A68C40E37C45E3BF"]
+			tasks: [{
+				id: "9B58FDF40B7AD3F2"
+				type: "biome"
+				biome: "minecraft:frozen_ocean"
+			}]
+			rewards: [
+				{
+					id: "8B5B2E36D9F89126"
+					type: "xp"
+					xp: 75
+				}
+				{
+					id: "28E720630740C411"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "cold_sweat:goat_fur"
+					}
+				}
+			]
+		}
+		{
+			id: "A303D9CBF0C8194D"
+			title: "Коралловое море"
+			description: ["В тёплых водах растут кораллы всех цветов. Красиво — и полно рыбы."]
+			x: 3.0d
+			y: 3.0d
+			icon: "minecraft:brain_coral"
+			optional: true
+			dependencies: ["5D6F6A8D9A89C57C"]
+			tasks: [{
+				id: "B95E89F8A393F1CE"
+				type: "biome"
+				biome: "minecraft:warm_ocean"
+			}]
+			rewards: [
+				{
+					id: "BBFA9C81B5B88F5B"
+					type: "xp"
+					xp: 75
+				}
+				{
+					id: "67EE2C9B2E67AB28"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "alexsmobs:lobster_tail"
+					}
+				}
+			]
+		}
+		{
+			id: "6FD514AB841DF820"
+			title: "Сундук подводных руин"
+			description: ["На дне лежат руины старых поселений. Найдите среди них сундук — водолазный шлем здесь очень кстати."]
+			x: 6.0d
+			y: 3.0d
+			icon: "minecraft:cracked_stone_bricks"
+			dependencies: ["A303D9CBF0C8194D"]
+			tasks: [{
+				id: "2A30E4738A455F55"
+				type: "advancement"
+				title: "Открыть сундук подводных руин"
+				advancement: "nasledie:q/ocean/ruin_chest"
+			}]
+			rewards: [
+				{
+					id: "84F62DB94434AFA9"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "8E38C14E613740F3"
+					type: "item"
+					item: {
+						Count: 6b
+						id: "alexscaves:sea_glass_shards"
+					}
+				}
+			]
+		}
+		{
+			id: "E89F59FCDCE5619F"
+			title: "Руины проводника"
+			description: ["Кто-то уже строил проводник до вас — и не уберёг. Найдите его руины и главный сундук."]
+			x: 9.0d
+			y: 3.0d
+			icon: "minecraft:prismarine"
+			dependencies: ["6FD514AB841DF820"]
+			tasks: [{
+				id: "CC5FFE7BF3D2A1EE"
+				type: "advancement"
+				title: "Открыть главный сундук руин проводника"
+				advancement: "nasledie:q/ocean/conduit_ruin"
+			}]
+			rewards: [
+				{
+					id: "7E8EC4306B3B8610"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "0E434EAE873F56DB"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:nautilus_shell"
+					}
+				}
+			]
+		}
+		{
+			id: "9BA296205688E999"
+			title: "Затопленная могила"
+			description: ["Чья-то могила ушла под воду вместе с берегом. Найдите её. Говорят, одну такую экспедиция оставила сама."]
+			x: 12.0d
+			y: 3.0d
+			icon: "minecraft:skeleton_skull"
+			optional: true
+			dependencies: ["E89F59FCDCE5619F"]
+			tasks: [{
+				id: "E731FAB0382FB1FC"
+				type: "structure"
+				structure: "tombstone:abandoned_grave_ocean"
+			}]
+			rewards: [
+				{
+					id: "8FF688A33DAECA26"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "FFC98F44C3483B6D"
 					type: "item"
 					item: {
 						Count: 8b
-						id: "minecraft:diamond"
+						id: "minecraft:experience_bottle"
+					}
+				}
+			]
+		}
+		{
+			id: "362F963DF6A6BCFE"
+			title: "Деревня на воде"
+			description: ["Целая деревня на сваях посреди моря. Хорошее место для привала и торговли рыбой."]
+			x: 0.0d
+			y: 6.0d
+			icon: "minecraft:oak_fence"
+			optional: true
+			dependencies: ["5D6F6A8D9A89C57C"]
+			tasks: [{
+				id: "45164954D2AF16ED"
+				type: "structure"
+				structure: "towns_and_towers:village_ocean"
+			}]
+			rewards: [
+				{
+					id: "B39ADE1C88B77AD0"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "615373BCD2FED031"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:emerald"
+					}
+				}
+			]
+		}
+		{
+			id: "CA1FCBC43099A918"
+			title: "Водолазный костюм"
+			description: ["Шлем, баллон с воздухом и тяжёлые ботинки — и можно ходить по дну. Баллон заряжается от вращения в мастерской."]
+			x: 3.0d
+			y: 6.0d
+			icon: "create:copper_diving_helmet"
+			shape: "gear"
+			optional: true
+			dependencies: ["362F963DF6A6BCFE"]
+			tasks: [{
+				id: "F02B3534DB87DAF4"
+				type: "advancement"
+				advancement: "create:diving_suit"
+			}]
+			rewards: [
+				{
+					id: "5EB777F67BA21C44"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "80D86D543689A3BD"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "create:copper_diving_boots"
 					}
 				}
 			]

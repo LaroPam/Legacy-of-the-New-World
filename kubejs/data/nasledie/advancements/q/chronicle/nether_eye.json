@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cataclysm:flame_eye",
+              "cataclysm:abyss_eye",
+              "cataclysm:storm_eye",
+              "cataclysm:cursed_eye",
+              "cataclysm:desert_eye",
+              "cataclysm:mech_eye",
+              "cataclysm:monstrous_eye",
+              "cataclysm:void_eye"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

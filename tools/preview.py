@@ -64,7 +64,7 @@ def shape_points(kind, cx, cy, r):
     return None
 
 
-def render(name, data, ids, icons, out):
+def render(name, data, ids, icons, out, every):
     quests = data['quests']
     links = data.get('links', [])
     xs = [float(q.get('x', 0)) for q in quests] + [float(l['x']) for l in links]
@@ -76,12 +76,16 @@ def render(name, data, ids, icons, out):
     font, small = ImageFont.truetype(FONT, 13), ImageFont.truetype(FONT, 10)
     pos = lambda x, y: ((float(x) - minx) * UNIT, (float(y) - miny) * UNIT + 40)
     draw.text((10, 8), f"{data['chapter']['title']}  ({len(quests)} кв.)", fill=(230, 230, 230), font=font)
+    # Links stand in for the linked quest: FTB draws dependency lines to and from them.
     by_id = {q['_id']: q for q in quests}
-    for q in quests:
+    linked = {questbook.dependency(l['quest'], name, ids): l for l in links}
+    nodes = dict(by_id, **linked)
+    for target_id, q in list(by_id.items()) + [(i, every[i]) for i in linked]:
+        here = nodes[target_id]
         for dep in q.get('deps', []):
-            target = by_id.get(questbook.dependency(dep, name, ids))
-            if target:
-                draw.line([pos(target['x'], target['y']), pos(q['x'], q['y'])], fill=LINE, width=2)
+            other = nodes.get(questbook.dependency(dep, q['_chapter'], ids))
+            if other:
+                draw.line([pos(other['x'], other['y']), pos(here['x'], here['y'])], fill=LINE, width=2)
     entries = [(q, False) for q in quests] + [(dict(l, title='→ ' + str(l['quest'])), True) for l in links]
     for q, is_link in entries:
         cx, cy = pos(q['x'], q['y'])
@@ -127,10 +131,15 @@ def main():
     args.out.mkdir(parents=True, exist_ok=True)
     chapters = questbook.load_sources()
     ids = questbook.resolve_ids(chapters)
+    every = {}
+    for chapter, data in chapters.items():
+        for quest in data['quests']:
+            quest['_chapter'] = chapter
+            every[quest['_id']] = quest
     icons = Icons(args.jars)
     for name, data in chapters.items():
         if not args.chapters or name.removeprefix('nasledie_') in args.chapters:
-            render(name, data, ids, icons, args.out)
+            render(name, data, ids, icons, args.out, every)
             print('rendered', name)
 
 

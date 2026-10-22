@@ -141,6 +141,367 @@
 				}
 			]
 		}
+		{
+			id: "4843AED5CE824450"
+			title: "Пустой доспех"
+			description: [
+				"Первая отметка на маршруте Эклунда — «кованый зал под горой». Внутри стоит доспех, который сражается сам. Победите кованого стража."
+				"Целиться нужно в спину, когда он застрянет после удара. Подсказка от Странда, оплаченная синяками."
+			]
+			x: 10.0d
+			y: -6.0d
+			icon: "mowziesmobs:wrought_helmet"
+			shape: "crown"
+			dependencies: [
+				"00C7DAA7BBBE1ABD"
+				"06BF2A4D15D6CD27"
+			]
+			tasks: [{
+				id: "BE99A474C277AE61"
+				type: "advancement"
+				advancement: "mowziesmobs:kill_ferrous_wroughtnaut"
+			}]
+			rewards: [
+				{
+					id: "9DDE1A58E145C375"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "ADBD9DC120FF057E"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:power_glove"
+					}
+				}
+				{
+					id: "7ABCA565E65251A2"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Улофа Странда, I"
+							author: "Улоф Странд, инженер"
+							pages: [
+								"{\"text\": \"Под горой — зал, кованый целиком. В центре стоял доспех. Пустой: я заглянул в забрало и увидел темноту.\\n\\nПотом доспех повернул голову.\"}"
+								"{\"text\": \"Мы отбились. Эклунд записал: «пробный сосуд». Я спросил — пробный для чего? Он не ответил.\\n\\nЖелезо не должно ненавидеть. Кто-то его научил.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "A378D8F13118FF97"
+			title: "Птица из солнца"
+			description: ["Солнечный народ кормит свою птицу уже тысячу лет. Экспедиция пришла к ним с подарками, а ушла, оставив за собой пепел. Победите Умвути."]
+			x: 10.0d
+			y: -3.6d
+			icon: "mowziesmobs:sol_visage"
+			shape: "crown"
+			dependencies: [
+				"00C7DAA7BBBE1ABD"
+				"72C49E809D227970"
+			]
+			tasks: [{
+				id: "64D38AAD1604EB3D"
+				type: "advancement"
+				advancement: "mowziesmobs:kill_umvuthi"
+			}]
+			rewards: [
+				{
+					id: "DC40F96AB684B565"
+					type: "xp"
+					xp: 700
+				}
+				{
+					id: "635E386D097EF9D2"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:flame_pendant"
+					}
+				}
+				{
+					id: "013782BAE0C4B6B4"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Эйнара Холма, I"
+							author: "Эйнар Холм, археолог"
+							pages: [
+								"{\"text\": \"Солнечный народ носит маски. Меня пустили в рощу в маске — я выменял её на нож и два слитка.\"}"
+								"{\"text\": \"Жрец рассказал: давным-давно строители зажгли птицу из солнца и велели её кормить. Они кормят до сих пор. Если птица голодна, огонь уходит из мира.\"}"
+								"{\"text\": \"Эклунд велел её убить — сказал, это проверка. Птица горела ещё долго после смерти.\\n\\nЭклунд стоял к огню ближе всех.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "DF85EFBB8E452760"
+			title: "Слово отшельника"
+			description: ["На вершине над монастырём живёт отшельник, который лепит камень как глину. Он пускает к себе только тех, кто пройдёт его испытание. Поднимитесь по ожившей скале и не сорвитесь."]
+			x: 10.0d
+			y: -1.2d
+			icon: "mowziesmobs:sculptor_staff"
+			shape: "crown"
+			dependencies: [
+				"00C7DAA7BBBE1ABD"
+				"D49B46DD723548E4"
+			]
+			tasks: [{
+				id: "4E1DB51376C7FB15"
+				type: "advancement"
+				advancement: "mowziesmobs:sculptor_challenge"
+			}]
+			rewards: [
+				{
+					id: "97D8A240475C876D"
+					type: "xp"
+					xp: 800
+				}
+				{
+					id: "EC0D4FC5D10A2854"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:cloud_in_a_bottle"
+					}
+				}
+				{
+					id: "B1035FD95CFCE815"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Сигрид Линд, II"
+							author: "Сигрид Линд, картограф"
+							pages: [
+								"{\"text\": \"Отшельник не назвал имени. Он испытывает каждого, кто поднимается. Я прошла.\"}"
+								"{\"text\": \"Он сказал: «Зодчие отдали себя сосудам, чтобы мир не рассыпался. Кто разбивает сосуд, берёт на себя их ношу — или их силу».\\n\\nЯ спросила: что выберет человек?\"}"
+								"{\"text\": \"Он посмотрел вниз, туда, где ждал Эклунд, и ничего не ответил.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "92AF3238F7B8776E"
+			title: "Зверь зимы"
+			description: ["В снегах спит морозная пасть — зверь, рядом с которым снег не тает веками. Разбудите её и победите. Ледяной кристалл у неё на шее стоит того, чтобы рискнуть."]
+			x: 10.0d
+			y: 1.2d
+			icon: "mowziesmobs:ice_crystal"
+			shape: "crown"
+			dependencies: [
+				"00C7DAA7BBBE1ABD"
+				"43488E4931E0F280"
+			]
+			tasks: [{
+				id: "1565813706E2BE4A"
+				type: "advancement"
+				advancement: "mowziesmobs:kill_frostmaw"
+			}]
+			rewards: [
+				{
+					id: "31BC913C0B9527F9"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "73EE29CB112F1B68"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:snowshoes"
+					}
+				}
+				{
+					id: "860B0832FD78ED99"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Ингрид Берг, I"
+							author: "Ингрид Берг, врач"
+							pages: [
+								"{\"text\": \"Звери у швов мира меняются. Морозная пасть спала у старого обрыва, и снег вокруг неё не таял сотни лет.\"}"
+								"{\"text\": \"Она не страж и не сосуд. Просто зверь, который вырос рядом с чужой силой и стал на неё похож.\\n\\nКак и мы, если задержимся здесь надолго.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "7561C2A49CE25872"
+			title: "Дозорный монумента"
+			description: ["Подводные монументы сложены той же кладкой, что и кованый зал. Старший страж сторожит их тысячи лет. Спуститесь к нему и победите."]
+			x: 10.0d
+			y: 3.6d
+			icon: "minecraft:prismarine_shard"
+			shape: "crown"
+			dependencies: [
+				"00C7DAA7BBBE1ABD"
+				"D8C373CD97382003"
+			]
+			tasks: [{
+				id: "D78CB589108A8AC9"
+				type: "kill"
+				entity: "minecraft:elder_guardian"
+			}]
+			rewards: [
+				{
+					id: "0A0530C8A698B5DC"
+					type: "xp"
+					xp: 550
+				}
+				{
+					id: "889AF9953926B7C0"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:snorkel"
+					}
+				}
+				{
+					id: "89ACF2BA032F7D73"
+					type: "item"
+					item: {
+						Count: 24b
+						id: "minecraft:prismarine_crystals"
+					}
+				}
+				{
+					id: "F445716680CD6384"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Сигрид Линд, III"
+							author: "Сигрид Линд, картограф"
+							pages: [
+								"{\"text\": \"Монументы строили не рыбы. Странд говорит, кладка та же, что в кованом зале.\"}"
+								"{\"text\": \"Старшие стражи сторожат пустые залы. Эклунд сказал: они охраняют дорогу, а не то, что в конце.\\n\\nЗначит, конец дороги где-то ещё.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "B433E7FAF2F51B45"
+			title: "Очи Зодчих"
+			description: ["Эклунд писал об «очах», что ведут к сосудам. Соберите любое око Катаклизма — у каждого свой рецепт, и все начинаются с ока Края. Брошенное око летит к своему логову."]
+			x: 10.0d
+			y: 6.0d
+			icon: "cataclysm:flame_eye"
+			shape: "star"
+			dependencies: [
+				"00C7DAA7BBBE1ABD"
+				"F627CCC35580E95F"
+			]
+			tasks: [{
+				id: "D9B3E63B0171B3D4"
+				type: "advancement"
+				title: "Получить любое око Катаклизма"
+				advancement: "nasledie:q/chronicle/nether_eye"
+			}]
+			rewards: [
+				{
+					id: "DB1DCD4BDD87AB7E"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "6BF9C1918775DBE0"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:ender_eye"
+					}
+				}
+				{
+					id: "82DBAE31EE90683C"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Торвальда Эклунда, I"
+							author: "Торвальд Эклунд"
+							pages: [
+								"{\"text\": \"Око Края смотрит туда, где мир тоньше. Зодчие делали свои очи — каждое смотрит на один сосуд.\"}"
+								"{\"text\": \"Огонь, бездна, буря, проклятие, пустыня, машина, чудовище, пустота. Восемь. Одного глаза хватит, чтобы найти дверь.\"}"
+								"{\"text\": \"Странд спрашивает, зачем нам двери. Я сказал — чтобы закрыть их.\\n\\nОн поверил. Пока.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "88304673F4543996"
+			title: "Три души в одной"
+			description: ["В стене крепости Эклунд нашёл обряд — песок душ и три черепа. Проведите его сами и победите то, что поднимется из песка. Лучше подальше от дома."]
+			x: 13.0d
+			y: 6.0d
+			icon: "minecraft:wither_skeleton_skull"
+			shape: "crown"
+			size: 1.7d
+			dependencies: [
+				"B433E7FAF2F51B45"
+				"E41D15990FE74505"
+			]
+			tasks: [{
+				id: "1592AE1D05E0A4EB"
+				type: "advancement"
+				title: "Победить Визера"
+				advancement: "nasledie:q/chronicle/wither"
+			}]
+			rewards: [
+				{
+					id: "0838711EB361371C"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "97AD441F46D10154"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:cross_necklace"
+					}
+				}
+				{
+					id: "AC98ED0F150CA845"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Ингрид Берг, II"
+							author: "Ингрид Берг, врач"
+							pages: [
+								"{\"text\": \"Эклунд нашёл рецепт в стене крепости: песок душ и три черепа. Сказал, это обряд Зодчих. Мы провели его ночью.\"}"
+								"{\"text\": \"Из песка поднялись три головы на одном хребте. Три души, сплавленные силой. Оно кричало тремя голосами, пока мы его убивали.\"}"
+								"{\"text\": \"Звезда, что осталась, тёплая. Эклунд держал её в руке очень долго.\\n\\nЯ больше не верю, что мы здесь, чтобы что-то закрывать.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
 	]
 }
 

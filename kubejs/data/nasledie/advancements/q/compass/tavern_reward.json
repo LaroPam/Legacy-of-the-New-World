@@ -1,0 +1,92 @@
+{
+  "criteria": {
+    "c0": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "nova_structures:chests/tavern_quest/undead_crypt"
+      }
+    },
+    "c1": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "nova_structures:chests/tavern_quest/illager_hideout"
+      }
+    },
+    "c2": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "nova_structures:chests/tavern_quest/conduit_ruin"
+      }
+    },
+    "c3": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "nova_structures:chests/tavern_quest/ancient_city"
+      }
+    },
+    "c4": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "nova_structures:chests/tavern_quest/illager_manor"
+      }
+    },
+    "c5": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "nova_structures:chests/tavern_quest/desert_ruin"
+      }
+    },
+    "c6": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "nova_structures:chests/tavern_quest/badlands_miner_outpost"
+      }
+    },
+    "c7": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "nova_structures:chests/tavern_quest/stray_fort"
+      }
+    },
+    "c8": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "nova_structures:chests/tavern_quest/ruin_town"
+      }
+    },
+    "c9": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "nova_structures:chests/tavern_quest/witch_villa"
+      }
+    },
+    "c10": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "nova_structures:chests/tavern_quest/creeping_crypt"
+      }
+    },
+    "c11": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "nova_structures:chests/tavern_quest/jungle_ruin"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "c0",
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8",
+      "c9",
+      "c10",
+      "c11"
+    ]
+  ]
+}

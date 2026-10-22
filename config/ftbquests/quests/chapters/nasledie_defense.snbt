@@ -2,258 +2,89 @@
 	filename: "nasledie_defense"
 	id: "A1279E21532D7CDD"
 	group: "EF93B76DFA48CC13"
-	title: "Охота и артиллерия — мастерство в действии"
-	icon: "minecraft:shield"
+	title: "Звери и стражи старого мира"
+	icon: "mowziesmobs:wrought_helmet"
 	order_index: 6
 	default_hide_dependency_lines: false
 	default_quest_shape: "shield"
 	progression_mode: "flexible"
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "75DBB43E7EFB083C"
+			linked_quest: "00C7DAA7BBBE1ABD"
+			x: 0.0d
+			y: 0.0d
+			shape: "star"
+			size: 1.8d
+		}
+		{
+			id: "CBE175DC6942F002"
+			linked_quest: "A378D8F13118FF97"
+			x: -7.01d
+			y: -14.38d
+			shape: "crown"
+			size: 1.5d
+		}
+		{
+			id: "39EAE576209133ED"
+			linked_quest: "DF85EFBB8E452760"
+			x: 6.25d
+			y: -6.47d
+			shape: "crown"
+			size: 1.5d
+		}
+		{
+			id: "3FAD7A7E565715F8"
+			linked_quest: "4843AED5CE824450"
+			x: 6.31d
+			y: 1.57d
+			shape: "crown"
+			size: 1.5d
+		}
+		{
+			id: "603D972C1ED79C4F"
+			linked_quest: "92AF3238F7B8776E"
+			x: -3.63d
+			y: 5.39d
+			shape: "crown"
+			size: 1.5d
+		}
+	]
 	quests: [
 		{
-			id: "A33D4E94573F3BD4"
-			title: "Хищник среди листвы"
-			description: [
-				"§7Не всякая неподвижная зелень безобидна."
-				"§fНайдите и убейте Пастецвета (Foliaath). Следите за его выпадами и не спешите подходить вплотную."
-				"Выберите дальнейшую цель: победить железного воителя и испытать его топор, исследовать солнечную рощу, пройти испытание Скульптора или оснастить артиллерийную мастерскую. Эти маршруты самостоятельны."
-			]
-			x: 0.0d
-			y: 0.0d
-			icon: "mowziesmobs:foliaath_seed"
-			shape: "shield"
-			size: 1.1d
+			id: "B704072AA3306667"
+			title: "Роща солнечного племени"
+			description: ["В джунглях и саваннах живёт народ в масках — умвутана. Их роща окружена частоколом, а в центре горит то, что они охраняют. Найдите её, но не спешите внутрь."]
+			x: -2.25d
+			y: -2.68d
+			icon: "mowziesmobs:umvuthana_mask_fury"
+			shape: "scroll"
+			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
-				id: "2AC585CD48AE540C"
-				type: "advancement"
-				advancement: "mowziesmobs:kill_foliaath"
+				id: "3AF3E69EB9C3B4D3"
+				type: "structure"
+				structure: "mowziesmobs:umvuthana_grove"
 			}]
 			rewards: [
 				{
-					id: "071C7F1FB19DAD7E"
+					id: "09231E9657546590"
 					type: "xp"
-					xp: 120
+					xp: 240
 				}
 				{
-					id: "A38D068DD2668743"
+					id: "F26CD3C5E1613406"
 					type: "item"
 					item: {
 						Count: 1b
-						id: "better_weaponry:iron_rapier"
-					}
-				}
-			]
-		}
-		{
-			id: "FF7561483C27E289"
-			title: "Нага над головой"
-			description: [
-				"§fПобедите летающую Нагу (Naga). Выберите место, где сможете видеть её заходы на атаку и свободно двигаться."
-				"§7Смотрите вверх: хороший обзор здесь полезнее тесного укрытия."
-			]
-			x: 2.5d
-			y: 0.0d
-			icon: "mowziesmobs:naga_fang"
-			shape: "shield"
-			size: 1.1d
-			dependencies: ["A33D4E94573F3BD4"]
-			tasks: [{
-				id: "CDC030E307026F75"
-				type: "advancement"
-				advancement: "mowziesmobs:kill_naga"
-			}]
-			rewards: [
-				{
-					id: "5F68AFDAA4817906"
-					type: "xp"
-					xp: 120
-				}
-				{
-					id: "AA399F2BF91DDC9A"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "better_weaponry:iron_glaive"
-					}
-				}
-			]
-		}
-		{
-			id: "4843AED5CE824450"
-			title: "Окно в железной броне"
-			description: [
-				"§7Кованый страж не уступит тому, кто просто машет оружием."
-				"§fУбейте Ferrous Wroughtnaut. Понаблюдайте за сериями его ударов и найдите момент, когда можно ответить."
-			]
-			x: 7.5d
-			y: 0.0d
-			icon: "mowziesmobs:wrought_helmet"
-			shape: "crown"
-			size: 1.3d
-			dependencies: ["06BF2A4D15D6CD27"]
-			tasks: [{
-				id: "122EB5284B0C49F9"
-				type: "advancement"
-				advancement: "mowziesmobs:kill_ferrous_wroughtnaut"
-			}]
-			rewards: [
-				{
-					id: "800E451366EC4DE4"
-					type: "xp"
-					xp: 430
-				}
-				{
-					id: "4BD691D8722ED500"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "better_weaponry:iron_dagger"
-					}
-				}
-			]
-		}
-		{
-			id: "92AF3238F7B8776E"
-			title: "Морозный охотник"
-			description: [
-				"§fОдержите победу над Морозной Пастью (Frostmaw). Оставьте себе пространство для отхода от ледяных атак."
-				"§7Цель этой охоты — убить великана. Кража его кристалла будет отдельным приключением."
-			]
-			x: 5.0d
-			y: -2.5d
-			icon: "mowziesmobs:ice_crystal"
-			shape: "crown"
-			size: 1.3d
-			dependencies: ["1E7E546AB7203A0B"]
-			tasks: [{
-				id: "108B6BC0929EADED"
-				type: "advancement"
-				advancement: "mowziesmobs:kill_frostmaw"
-			}]
-			rewards: [
-				{
-					id: "DC877DB36958D61B"
-					type: "xp"
-					xp: 470
-				}
-				{
-					id: "30C5D55AEEE6C96C"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "better_weaponry:iron_spear"
-					}
-				}
-			]
-		}
-		{
-			id: "A378D8F13118FF97"
-			title: "Владыка солнечной маски"
-			description: [
-				"§7Солнечная роща хранит больше опасностей, чем кажется с опушки."
-				"§fНайдите и убейте Умвути (Umvuthi). Изучите его атаки и заранее выберите пути отхода."
-			]
-			x: 5.0d
-			y: 5.0d
-			icon: "mowziesmobs:sol_visage"
-			shape: "crown"
-			size: 1.3d
-			dependencies: ["0EA51C1EFC97CF87"]
-			tasks: [{
-				id: "C8B4A970644DEB80"
-				type: "advancement"
-				advancement: "mowziesmobs:kill_umvuthi"
-			}]
-			rewards: [
-				{
-					id: "118FDEE47349AE31"
-					type: "xp"
-					xp: 680
-				}
-				{
-					id: "E94494FEE399E886"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "better_weaponry:iron_broadsword"
+						id: "mowziesmobs:blowgun"
 					}
 				}
 				{
-					id: "8A9381716BF62BE8"
+					id: "BD56AFF102157D91"
 					type: "item"
 					item: {
-						Count: 4b
-						id: "minecraft:golden_apple"
-					}
-				}
-			]
-		}
-		{
-			id: "216A8A3EE5B58D96"
-			title: "Каменная засада"
-			description: [
-				"§7Иногда первым нападает сам пейзаж."
-				"§fНайдите и убейте каменного Утёса (Bluff). Дайте себе место для манёвра, прежде чем вступать в бой."
-			]
-			x: 0.0d
-			y: -2.5d
-			icon: "mowziesmobs:bluff_rod"
-			shape: "shield"
-			size: 1.05d
-			optional: true
-			dependencies: ["A33D4E94573F3BD4"]
-			tasks: [{
-				id: "4DDEEE579CE5F2DB"
-				type: "advancement"
-				advancement: "mowziesmobs:kill_bluff"
-			}]
-			rewards: [
-				{
-					id: "A0D7E21276F8AF2B"
-					type: "xp"
-					xp: 80
-				}
-				{
-					id: "28A29F4055668579"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "better_weaponry:amethyst_rapier"
-					}
-				}
-			]
-		}
-		{
-			id: "5C3BCCAC46517EDE"
-			title: "Сокровище умеет убегать"
-			description: [
-				"§fВыследите и убейте Гроттола — маленькое подвижное сокровище подземелий."
-				"§7Здесь важна сама охота на существо; запас алмазов в сундуке её не заменит."
-			]
-			x: 0.0d
-			y: -5.0d
-			icon: "minecraft:diamond"
-			shape: "circle"
-			size: 1.05d
-			optional: true
-			dependencies: ["216A8A3EE5B58D96"]
-			tasks: [{
-				id: "DFB81C420271AD35"
-				type: "advancement"
-				advancement: "mowziesmobs:kill_grottol"
-			}]
-			rewards: [
-				{
-					id: "212492A056EFDA3B"
-					type: "xp"
-					xp: 80
-				}
-				{
-					id: "8901B1692773F258"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "better_weaponry:amethyst_glaive"
+						Count: 16b
+						id: "mowziesmobs:dart"
 					}
 				}
 			]
@@ -261,565 +92,28 @@
 		{
 			id: "1AA2F1D6F60E9FDB"
 			title: "Воин в маске"
-			description: [
-				"§fПобедите Умвутану-Ястреба (Umvuthana Raptor). Ищите именно этого воина солнечного племени."
-				"§7Наблюдайте за его движениями: знакомая маска ещё не означает знакомую тактику."
-			]
-			x: 0.0d
-			y: 5.0d
-			icon: "mowziesmobs:umvuthana_mask_fury"
-			shape: "shield"
-			size: 1.05d
-			optional: true
+			description: ["Раптор — вожак отряда умвутана. Победите его, и маски остальных потеряют уверенность."]
+			x: -3.86d
+			y: -4.6d
+			icon: "mowziesmobs:umvuthana_mask_rage"
 			dependencies: ["B704072AA3306667"]
 			tasks: [{
-				id: "C67FEB9782F3A330"
+				id: "64515B8014B5D927"
 				type: "advancement"
 				advancement: "mowziesmobs:kill_umvuthana_raptor"
 			}]
 			rewards: [
 				{
-					id: "EBD43B3B7948F7AA"
+					id: "70B0DBE65977A348"
 					type: "xp"
-					xp: 80
+					xp: 150
 				}
 				{
-					id: "FE9A78F7CD9E4096"
+					id: "FDF7E5972A4AD79B"
 					type: "item"
 					item: {
 						Count: 1b
-						id: "better_weaponry:amethyst_shield"
-					}
-				}
-			]
-		}
-		{
-			id: "667FADB4630B1FBC"
-			title: "Свой среди чужих"
-			description: [
-				"§fНаденьте маску Умвутаны и подойдите к живому Умвути ближе чем на 15 блоков."
-				"§7Оставайтесь рядом несколько секунд, пока он не считает вас своей целью. Маскировка позволяет побывать среди племени мирным гостем."
-			]
-			x: 0.0d
-			y: 7.5d
-			icon: "mowziesmobs:umvuthana_mask_fear"
-			shape: "scroll"
-			size: 1.05d
-			optional: true
-			dependencies: ["1AA2F1D6F60E9FDB"]
-			tasks: [{
-				id: "DD5CC3BCCBF95FCD"
-				type: "advancement"
-				advancement: "mowziesmobs:sneak_grove"
-			}]
-			rewards: [
-				{
-					id: "9054D997D6B39559"
-					type: "xp"
-					xp: 80
-				}
-				{
-					id: "A5E7964A2440D4F6"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "better_weaponry:emerald_shield"
-					}
-				}
-			]
-		}
-		{
-			id: "62D20856FFA016C3"
-			title: "Благословение Солнца"
-			description: [
-				"§fПолучите эффект «Благословение Солнца» из Mowzie’s Mobs."
-				"§7Маска открывает путь к знакомству с племенем; теперь добейтесь самого благословения и попробуйте его силу."
-			]
-			x: 0.0d
-			y: 10.0d
-			icon: "mowziesmobs:grant_suns_blessing"
-			shape: "star"
-			size: 1.15d
-			optional: true
-			dependencies: ["667FADB4630B1FBC"]
-			tasks: [{
-				id: "DE2D5ECE493360C8"
-				type: "advancement"
-				advancement: "mowziesmobs:suns_blessing"
-			}]
-			rewards: [
-				{
-					id: "A8222F5A26639C50"
-					type: "xp"
-					xp: 80
-				}
-				{
-					id: "C1A4565277B178BD"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "better_weaponry:amethyst_katana"
-					}
-				}
-			]
-		}
-		{
-			id: "0EF67FFF73E6D383"
-			title: "Песок будущих орудий"
-			description: [
-				"§fПолучите одну единицу литейного песка Create Big Cannons. Он понадобится для знакомства с артиллерийным литьём."
-				"§7Для этого шага достаточно песка в инвентаре; он останется у вас."
-			]
-			x: 5.0d
-			y: 10.0d
-			icon: "createbigcannons:casting_sand"
-			shape: "circle"
-			size: 1.05d
-			optional: true
-			tasks: [{
-				id: "3B9C2FC4D514178B"
-				type: "item"
-				item: "createbigcannons:casting_sand"
-				count: 1L
-				consume_items: false
-			}]
-			rewards: [
-				{
-					id: "9D653146B6ED43B5"
-					type: "xp"
-					xp: 80
-				}
-				{
-					id: "590A667B79E4289F"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "createbigcannons:cannon_welder"
-					}
-				}
-			]
-		}
-		{
-			id: "35AB582E2E08DF86"
-			title: "Место для сборки стволов"
-			description: [
-				"§fУстановите сборщик стволов Create Big Cannons на подготовленной площадке."
-				"§7Сейчас нужно разместить сам станок. Обустройство привода и выпуск деталей можно продолжить после монтажа."
-			]
-			x: 7.5d
-			y: 10.0d
-			icon: "createbigcannons:cannon_builder"
-			shape: "gear"
-			size: 1.05d
-			optional: true
-			dependencies: ["0EF67FFF73E6D383"]
-			tasks: [{
-				id: "71A787824B72E7B7"
-				type: "advancement"
-				advancement: "nasledie:setup/defense/cannon_builder"
-			}]
-			rewards: [
-				{
-					id: "5ADACCED338520E7"
-					type: "xp"
-					xp: 80
-				}
-				{
-					id: "A62FB32A558D3B1C"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "createbigcannons:gas_mask"
-					}
-				}
-			]
-		}
-		{
-			id: "35D125C19D556E7A"
-			title: "Сверлильный станок"
-			description: [
-				"§fУстановите орудийный сверлильный станок Create Big Cannons."
-				"§7Оставьте место для заготовки и привода. Этот шаг посвящён монтажу; сверлить ствол для его завершения не требуется."
-			]
-			x: 10.0d
-			y: 10.0d
-			icon: "createbigcannons:cannon_drill"
-			shape: "gear"
-			size: 1.05d
-			optional: true
-			dependencies: ["35AB582E2E08DF86"]
-			tasks: [{
-				id: "E0E22FE62612CCB3"
-				type: "advancement"
-				advancement: "nasledie:setup/defense/cannon_drill"
-			}]
-			rewards: [
-				{
-					id: "4ACB08C83499CEED"
-					type: "xp"
-					xp: 80
-				}
-				{
-					id: "19D23436CC8529D3"
-					type: "item"
-					item: {
-						Count: 2b
-						id: "mowziesmobs:dart"
-					}
-				}
-			]
-		}
-		{
-			id: "17FE2073432FC7E0"
-			title: "Основание орудия"
-			description: [
-				"§fУстановите неподвижную орудийную станину Create Big Cannons."
-				"§7Выберите направление будущего орудия и свободный сектор перед ним. На этом этапе достаточно самой установленной станины."
-			]
-			x: 12.5d
-			y: 10.0d
-			icon: "createbigcannons:fixed_cannon_mount"
-			shape: "gear"
-			size: 1.05d
-			optional: true
-			dependencies: ["35D125C19D556E7A"]
-			tasks: [{
-				id: "16A1085F05EB2E6F"
-				type: "advancement"
-				advancement: "nasledie:setup/defense/fixed_cannon_mount"
-			}]
-			rewards: [
-				{
-					id: "6D592BE78118D9DC"
-					type: "xp"
-					xp: 80
-				}
-				{
-					id: "050F3FEAE0725F8C"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "mowziesmobs:blowgun"
-					}
-				}
-			]
-		}
-		{
-			id: "8EC3B7E438EA800A"
-			title: "Механизм заряжания"
-			description: [
-				"§fУстановите механизм заряжания Create Big Cannons."
-				"§7Продумайте пространство для подачи боеприпасов. Для завершения этого шага достаточно монтажа; заряжать и стрелять пока не нужно."
-				"Монтажный маршрут подготовил рабочие места и механизм заряжания. Дальше изучите во встроенных анимациях Create Big Cannons сборку ствола, боеприпасы и порядок стрельбы. Установка этих блоков ещё не является испытанием готового орудия."
-			]
-			x: 15.0d
-			y: 10.0d
-			icon: "createbigcannons:cannon_loader"
-			shape: "gear"
-			size: 1.05d
-			optional: true
-			dependencies: ["17FE2073432FC7E0"]
-			tasks: [{
-				id: "BBFC51AD08E029FE"
-				type: "advancement"
-				advancement: "nasledie:setup/defense/cannon_loader"
-			}]
-			rewards: [
-				{
-					id: "A2E894377B0C3D26"
-					type: "xp"
-					xp: 80
-				}
-				{
-					id: "1635AF1A87BE11E8"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "mowziesmobs:glowing_jelly"
-					}
-				}
-			]
-		}
-		{
-			id: "1E7E546AB7203A0B"
-			title: "Кристалл без поединка"
-			description: [
-				"§fПохитьте ледяной кристалл у живой Морозной Пасти (Frostmaw)."
-				"§7Это вылазка за кристаллом, а не награда за победу над великаном. Приготовьте путь отступления."
-			]
-			x: 2.5d
-			y: -2.5d
-			icon: "mowziesmobs:ice_crystal"
-			shape: "star"
-			size: 1.15d
-			dependencies: ["FF7561483C27E289"]
-			tasks: [{
-				id: "367F0386357C1D90"
-				type: "advancement"
-				advancement: "mowziesmobs:steal_ice_crystal"
-			}]
-			rewards: [
-				{
-					id: "888438102750DE8B"
-					type: "xp"
-					xp: 390
-				}
-				{
-					id: "77555500508BF1C9"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "mowziesmobs:ice_crystal"
-					}
-				}
-			]
-		}
-		{
-			id: "B89ADDCBCB295F18"
-			title: "Тропа к монастырю"
-			description: [
-				"§fНайдите монастырь Скульптора (Monastery) из Mowzie’s Mobs и войдите на его территорию."
-				"§7Осмотритесь и найдите дорогу к хозяину. Само испытание ждёт в следующем задании."
-			]
-			x: -2.5d
-			y: 0.0d
-			icon: "minecraft:chiseled_stone_bricks"
-			shape: "scroll"
-			size: 1.05d
-			dependencies: ["A33D4E94573F3BD4"]
-			tasks: [{
-				id: "00730F93FACE1FC6"
-				type: "structure"
-				structure: "mowziesmobs:monastery"
-			}]
-			rewards: [
-				{
-					id: "68C1B0BAF202E0E4"
-					type: "xp"
-					xp: 280
-				}
-				{
-					id: "B7970D42064CAE81"
-					type: "item"
-					item: {
-						Count: 4b
-						id: "mowziesmobs:geomancer_beads"
-					}
-				}
-			]
-		}
-		{
-			id: "DF85EFBB8E452760"
-			title: "Вершина Скульптора"
-			description: [
-				"§fУспешно завершите испытание Скульптора в монастыре."
-				"§7Здесь важен путь до вершины: наблюдайте за площадками и берегите высоту каждого прыжка."
-			]
-			x: -5.0d
-			y: 0.0d
-			icon: "mowziesmobs:earthrend_gauntlet"
-			shape: "crown"
-			size: 1.25d
-			dependencies: ["B89ADDCBCB295F18"]
-			tasks: [{
-				id: "A2ACFF4EFDF10E4B"
-				type: "advancement"
-				advancement: "mowziesmobs:sculptor_challenge"
-			}]
-			rewards: [
-				{
-					id: "5E1CC50DD33E36BC"
-					type: "xp"
-					xp: 900
-				}
-				{
-					id: "DF627600D416A5BD"
-					type: "item"
-					item: {
-						Count: 1b
-						id: "mowziesmobs:geomancer_belt"
-					}
-				}
-				{
-					id: "7EE4F1B1A2C73F68"
-					type: "item"
-					item: {
-						Count: 7b
-						id: "minecraft:diamond"
-					}
-				}
-			]
-		}
-		{
-			id: "B704072AA3306667"
-			title: "Роща солнечного племени"
-			description: [
-				"§fОтыщите рощу Умвутаны (Umvuthana Grove) и войдите в неё."
-				"§7Разведайте входы и безопасные выходы. Для этой экспедиции достаточно обнаружить само поселение."
-			]
-			x: 0.0d
-			y: 2.5d
-			icon: "minecraft:acacia_log"
-			shape: "scroll"
-			size: 1.05d
-			dependencies: ["A33D4E94573F3BD4"]
-			tasks: [{
-				id: "FC5D1E7B9801B73A"
-				type: "structure"
-				structure: "mowziesmobs:umvuthana_grove"
-			}]
-			rewards: [
-				{
-					id: "E259103D308BEB81"
-					type: "xp"
-					xp: 240
-				}
-				{
-					id: "BAC3462A1F1170AE"
-					type: "item"
-					item: {
-						Count: 4b
-						id: "mowziesmobs:foliaath_seed"
-					}
-				}
-			]
-		}
-		{
-			id: "06BF2A4D15D6CD27"
-			title: "Зал кованого стража"
-			description: [
-				"§fНайдите подземный зал Кованого стража (Wrought Chamber) и войдите внутрь."
-				"§7Осмотрите арену, прежде чем решать, готовы ли вы к бою. Победа над её хозяином здесь не требуется."
-			]
-			x: 5.0d
-			y: 0.0d
-			icon: "minecraft:anvil"
-			shape: "scroll"
-			size: 1.05d
-			dependencies: ["FF7561483C27E289"]
-			tasks: [{
-				id: "5BBAC2DB65AB3E78"
-				type: "structure"
-				structure: "mowziesmobs:wrought_chamber"
-			}]
-			rewards: [
-				{
-					id: "2859491B8BFAC019"
-					type: "xp"
-					xp: 300
-				}
-				{
-					id: "80A93380C9A3252A"
-					type: "item"
-					item: {
-						Count: 10b
-						id: "mowziesmobs:glowing_jelly"
-					}
-				}
-			]
-		}
-		{
-			id: "0DA6143558A570BF"
-			title: "Гроттол и удача"
-			description: [
-				"§fУбейте Гроттола киркой с зачарованием «Удача»."
-				"§7Подготовьте именно зачарованную кирку до встречи с проворной добычей."
-			]
-			x: 0.0d
-			y: -7.5d
-			icon: "minecraft:golden_pickaxe"
-			shape: "star"
-			size: 1.1d
-			optional: true
-			dependencies: ["5C3BCCAC46517EDE"]
-			tasks: [{
-				id: "874A4D265FD20B8B"
-				type: "advancement"
-				advancement: "mowziesmobs:kill_grottol_fortune"
-			}]
-			rewards: [
-				{
-					id: "1FE1BE8620BED875"
-					type: "xp"
-					xp: 340
-				}
-				{
-					id: "9A1B4C79AA45FBD4"
-					type: "item"
-					item: {
-						Count: 12b
-						id: "minecraft:emerald"
-					}
-				}
-			]
-		}
-		{
-			id: "A3EDE771A3D3FAE9"
-			title: "Гроттол в сохранности"
-			description: [
-				"§fДобудьте Гроттола киркой с «Шёлковым касанием», чтобы забрать существо целиком."
-				"§7Для этой охоты нужна другая кирка: «Удача» относится к предыдущему испытанию."
-			]
-			x: 0.0d
-			y: -10.0d
-			icon: "mowziesmobs:captured_grottol"
-			shape: "star"
-			size: 1.1d
-			optional: true
-			dependencies: ["0DA6143558A570BF"]
-			tasks: [{
-				id: "424B3E60069B0790"
-				type: "advancement"
-				advancement: "mowziesmobs:kill_grottol_silk_touch"
-			}]
-			rewards: [
-				{
-					id: "DD33BD380BBE6F76"
-					type: "xp"
-					xp: 350
-				}
-				{
-					id: "6CA611CE7F09F9DB"
-					type: "item"
-					item: {
-						Count: 10b
-						id: "minecraft:diamond"
-					}
-				}
-			]
-		}
-		{
-			id: "4CE1E389229E6BFE"
-			title: "Цена неверного шага"
-			description: [
-				"§7Даже после удачного восхождения высота остаётся опасной."
-				"§fЭтот отдельный вызов засчитывается при гибели от падения во время испытания Скульптора."
-				"§7Перед новой попыткой оставьте ценные вещи в безопасном месте."
-			]
-			x: -2.5d
-			y: -2.5d
-			icon: "minecraft:feather"
-			shape: "circle"
-			size: 1.05d
-			optional: true
-			dependencies: ["B89ADDCBCB295F18"]
-			tasks: [{
-				id: "444E0765693B0FD0"
-				type: "advancement"
-				advancement: "mowziesmobs:sculptor_failure"
-			}]
-			rewards: [
-				{
-					id: "4D667552B3DAA6E3"
-					type: "xp"
-					xp: 160
-				}
-				{
-					id: "96CB0FB6631A5C98"
-					type: "item"
-					item: {
-						Count: 5b
-						id: "mowziesmobs:geomancer_beads"
+						id: "better_weaponry:diamond_spear"
 					}
 				}
 			]
@@ -827,39 +121,33 @@
 		{
 			id: "0EA51C1EFC97CF87"
 			title: "Караул солнечной рощи"
-			description: [
-				"§fПобедите двух разных воинов солнечного племени:"
-				"§f• Умвутану Ярости;"
-				"§f• Умвутану Страха."
-				"§7В этом задании нужны обе победы; порядок охоты выбирайте сами."
-			]
-			x: 2.5d
-			y: 5.0d
-			icon: "mowziesmobs:umvuthana_mask_fury"
-			shape: "shield"
-			size: 1.1d
-			optional: true
+			description: ["Победите двух разных воинов племени — в маске Ярости и в маске Страха. Порядок охоты выбирайте сами."]
+			x: -5.46d
+			y: -6.51d
+			icon: "mowziesmobs:umvuthana_mask_fear"
 			dependencies: ["1AA2F1D6F60E9FDB"]
 			tasks: [
 				{
-					id: "448F6A93723378AF"
+					id: "559462D56428911F"
 					type: "advancement"
 					advancement: "nasledie:alpha39/mowzie/grove_watch"
+					title: "Умвутана в маске Ярости"
 				}
 				{
-					id: "CF070C6BAB247D3D"
+					id: "6054B4A712EEB776"
 					type: "advancement"
 					advancement: "nasledie:alpha39/mowzie/grove_watch__fear"
+					title: "Умвутана в маске Страха"
 				}
 			]
 			rewards: [
 				{
-					id: "0D9C63BEE6D7DD9A"
+					id: "C7F5D1C8D1F5CCB2"
 					type: "xp"
 					xp: 230
 				}
 				{
-					id: "8BE7C9F823C076B4"
+					id: "AC013AEFEE628DD6"
 					type: "item"
 					item: {
 						Count: 6b
@@ -869,55 +157,518 @@
 			]
 		}
 		{
-			id: "9B6EFB1C669C7CFA"
-			title: "Четыре испытания топора"
-			description: [
-				"§7Трофей Кованого стража пора взять в новую экспедицию."
-				"§fПобедите разорителя, призывателя, пиглина-брута и визер-скелета."
-				"§fУсловие для каждой из четырёх побед — держать Топор Тысячи Металлов (Wrought Axe) в основной руке в момент убийства."
-				"§7Все четыре цели учитываются отдельно; их можно выполнить в любом порядке."
+			id: "667FADB4630B1FBC"
+			title: "Свой среди чужих"
+			description: ["Холм входил в рощу в маске. Повторите его трюк — проберитесь внутрь, переодевшись умвутана, и вас не тронут."]
+			x: -7.07d
+			y: -8.43d
+			icon: "mowziesmobs:umvuthana_mask_bliss"
+			shape: "scroll"
+			optional: true
+			dependencies: ["0EA51C1EFC97CF87"]
+			tasks: [{
+				id: "1996150EE2DCCCA6"
+				type: "advancement"
+				advancement: "mowziesmobs:sneak_grove"
+			}]
+			rewards: [
+				{
+					id: "B216B1C16C84F521"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "C7EAB297AA34C1C5"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:feral_claws"
+					}
+				}
 			]
-			x: 10.0d
+		}
+		{
+			id: "72C49E809D227970"
+			title: "Дары солнцу"
+			description: ["Племя хранит подношения в сундуках у святилища. Откройте один — Максим и Юра найдут каждый своё."]
+			x: -8.68d
+			y: -10.34d
+			icon: "minecraft:chest"
+			shape: "circle"
+			dependencies: ["667FADB4630B1FBC"]
+			tasks: [{
+				id: "EC36C440C9E50AD1"
+				type: "advancement"
+				title: "Открыть сундук рощи"
+				advancement: "nasledie:q/defense/grove_chest"
+			}]
+			rewards: [
+				{
+					id: "85CA0F2D5A53F4DE"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "46770C2E7A94CD7E"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "minecraft:golden_apple"
+					}
+				}
+			]
+		}
+		{
+			id: "A33D4E94573F3BD4"
+			title: "Хищник среди листвы"
+			description: ["В джунглях растут цветы, которые едят неосторожных. Победите фолиаата — до того, как он закроет пасть."]
+			x: -5.2d
+			y: -3.38d
+			icon: "mowziesmobs:foliaath_seed"
+			optional: true
+			dependencies: ["B704072AA3306667"]
+			tasks: [{
+				id: "F02C87180F33D1EE"
+				type: "advancement"
+				advancement: "mowziesmobs:kill_foliaath"
+			}]
+			rewards: [
+				{
+					id: "4FE0E283F263D184"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "BC689D49B31E0527"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "better_weaponry:emerald_sickle"
+					}
+				}
+			]
+		}
+		{
+			id: "62D20856FFA016C3"
+			title: "Благословение солнца"
+			description: ["Сила птицы не исчезла вместе с ней. Получите благословение солнца — и почувствуйте, как огонь слушается вас."]
+			x: -6.97d
+			y: -17.25d
+			icon: "mowziesmobs:sol_visage"
+			shape: "star"
+			optional: true
+			dependencies: ["A378D8F13118FF97"]
+			tasks: [{
+				id: "7E6D47F401B51B50"
+				type: "advancement"
+				advancement: "mowziesmobs:suns_blessing"
+			}]
+			rewards: [
+				{
+					id: "6791F2381F107B7D"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "DF151438EE4356F2"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:fire_gauntlet"
+					}
+				}
+			]
+		}
+		{
+			id: "B89ADDCBCB295F18"
+			title: "Тропа к монастырю"
+			description: ["Высоко в горах стоит монастырь, а над ним — скала, где живёт отшельник. Поднимитесь к монастырю и осмотритесь."]
+			x: 1.75d
+			y: -3.03d
+			icon: "mowziesmobs:geomancer_robe"
+			shape: "scroll"
+			dependencies: ["00C7DAA7BBBE1ABD"]
+			tasks: [{
+				id: "DDE3F82BAF61B3E1"
+				type: "structure"
+				structure: "mowziesmobs:monastery"
+			}]
+			rewards: [
+				{
+					id: "CCB161BEAC4E57AC"
+					type: "xp"
+					xp: 280
+				}
+				{
+					id: "C50CA383D52C7856"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "mowziesmobs:geomancer_beads"
+					}
+				}
+			]
+		}
+		{
+			id: "D49B46DD723548E4"
+			title: "Кладовая монахов"
+			description: ["Монахи давно ушли, но кладовая цела. Откройте её сундук — припасы для подъёма к вершине."]
+			x: 3.0d
+			y: -5.2d
+			icon: "minecraft:barrel"
+			shape: "circle"
+			dependencies: ["B89ADDCBCB295F18"]
+			tasks: [{
+				id: "E88A49715B71EED9"
+				type: "advancement"
+				title: "Открыть сундук монастыря"
+				advancement: "nasledie:q/defense/monastery_chest"
+			}]
+			rewards: [
+				{
+					id: "0F991A14D983D7BC"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "08F9896BF5B57F03"
+					type: "item"
+					item: {
+						Count: 12b
+						id: "minecraft:experience_bottle"
+					}
+				}
+			]
+		}
+		{
+			id: "4CE1E389229E6BFE"
+			title: "Цена неверного шага"
+			description: ["Испытание отшельника — это подъём по движущимся камням. Кто-то из вас обязательно сорвётся. Лучше сейчас, чем на последнем уступе."]
+			x: 1.55d
+			y: -6.21d
+			icon: "minecraft:feather"
+			shape: "circle"
+			optional: true
+			dependencies: ["D49B46DD723548E4"]
+			tasks: [{
+				id: "62E4ACC6E391C391"
+				type: "advancement"
+				advancement: "mowziesmobs:sculptor_failure"
+			}]
+			rewards: [
+				{
+					id: "1BD6FF4F906BCA8C"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "F993D6125E8AF5B5"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 4s
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "06BF2A4D15D6CD27"
+			title: "Зал кованого стража"
+			description: ["Глубоко под землёй есть зал, выкованный целиком. Там ждёт первая отметка с маршрута Эклунда. Найдите вход."]
+			x: 3.5d
 			y: 0.0d
 			icon: "mowziesmobs:wrought_axe"
+			shape: "scroll"
+			dependencies: ["00C7DAA7BBBE1ABD"]
+			tasks: [{
+				id: "90690160BD928BAA"
+				type: "structure"
+				structure: "mowziesmobs:wrought_chamber"
+			}]
+			rewards: [
+				{
+					id: "B7C489670C3906B6"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "A4279B387324BFAA"
+					type: "item"
+					item: {
+						Count: 10b
+						id: "mowziesmobs:glowing_jelly"
+					}
+				}
+			]
+		}
+		{
+			id: "9B6EFB1C669C7CFA"
+			title: "Четыре испытания топора"
+			description: ["Топор тысячи металлов, взятый у кованого стража, рубит как живой. Испытайте его на четырёх противниках — разорителе, призывателе, пиглине-бруте и визер-скелете. Топор должен быть в руке в момент победы."]
+			x: 9.04d
+			y: 2.94d
+			icon: "mowziesmobs:wrought_axe"
 			shape: "star"
-			size: 1.3d
 			optional: true
 			dependencies: ["4843AED5CE824450"]
 			tasks: [
 				{
-					id: "E843B6B59654DC48"
+					id: "A974A6687579527B"
 					type: "advancement"
 					advancement: "nasledie:alpha41_qa2/warrior/1_ravager"
+					title: "Разоритель"
 				}
 				{
-					id: "B2FAEDC85043BEE5"
+					id: "CF96AAB527485D6A"
 					type: "advancement"
 					advancement: "nasledie:alpha41_qa2/warrior/2_evoker"
+					title: "Призыватель"
 				}
 				{
-					id: "1E123CD8FDFCCC36"
+					id: "1372F4FD58C0B936"
 					type: "advancement"
 					advancement: "nasledie:alpha41_qa2/warrior/3_piglin_brute"
+					title: "Пиглин-брут"
 				}
 				{
-					id: "C3C44679039989CE"
+					id: "1B2976F789B1EE5F"
 					type: "advancement"
 					advancement: "nasledie:alpha41_qa2/warrior/4_wither_skeleton"
+					title: "Визер-скелет"
 				}
 			]
 			rewards: [
 				{
-					id: "0260BFDDB1D80C39"
+					id: "F6048A28FCA3B750"
 					type: "xp"
 					xp: 950
 				}
 				{
-					id: "847949EC8AB7219D"
+					id: "309BF5DCF95EA7C7"
 					type: "item"
 					item: {
 						Count: 1b
 						id: "minecraft:totem_of_undying"
+					}
+				}
+			]
+		}
+		{
+			id: "5C3BCCAC46517EDE"
+			title: "Сокровище умеет убегать"
+			description: ["Гроттол — каменный жучок с алмазами на спине. Он быстро бегает и ещё быстрее прячется. Догоните."]
+			x: 2.25d
+			y: 2.68d
+			icon: "minecraft:diamond_ore"
+			shape: "circle"
+			optional: true
+			dependencies: ["00C7DAA7BBBE1ABD"]
+			tasks: [{
+				id: "50CC8199D503EEB3"
+				type: "advancement"
+				advancement: "mowziesmobs:kill_grottol"
+			}]
+			rewards: [
+				{
+					id: "70734CBCFA4C8DED"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "C9B048362F6AEEA8"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:diamond"
+					}
+				}
+			]
+		}
+		{
+			id: "0DA6143558A570BF"
+			title: "Гроттол и удача"
+			description: ["Если ударить гроттола киркой с удачей, алмазов будет больше. Проверьте."]
+			x: 3.86d
+			y: 4.6d
+			icon: "minecraft:diamond"
+			shape: "star"
+			optional: true
+			dependencies: ["5C3BCCAC46517EDE"]
+			tasks: [{
+				id: "BE96030A3AFD20DC"
+				type: "advancement"
+				advancement: "mowziesmobs:kill_grottol_fortune"
+			}]
+			rewards: [
+				{
+					id: "4C10F4FB6E67928D"
+					type: "xp"
+					xp: 340
+				}
+				{
+					id: "7CA027C3CAF7FDC6"
+					type: "item"
+					item: {
+						Count: 3b
+						id: "minecraft:diamond"
+					}
+				}
+			]
+		}
+		{
+			id: "A3EDE771A3D3FAE9"
+			title: "Гроттол в сохранности"
+			description: ["А кирка с шёлковым касанием забирает гроттола целиком. Юра давно хотел питомца, который не ест."]
+			x: 5.46d
+			y: 6.51d
+			icon: "minecraft:deepslate_diamond_ore"
+			shape: "star"
+			optional: true
+			dependencies: ["0DA6143558A570BF"]
+			tasks: [{
+				id: "62297C8E22846319"
+				type: "advancement"
+				advancement: "mowziesmobs:kill_grottol_silk_touch"
+			}]
+			rewards: [
+				{
+					id: "AC1C9EA83C9B21A5"
+					type: "xp"
+					xp: 350
+				}
+				{
+					id: "14048BD908A62100"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:digging_claws"
+					}
+				}
+			]
+		}
+		{
+			id: "216A8A3EE5B58D96"
+			title: "Каменная засада"
+			description: ["В пустынях на песке лежат «камни», которые иногда моргают. Победите блафа, пока он не притворился снова."]
+			x: 2.76d
+			y: 5.66d
+			icon: "minecraft:sandstone"
+			optional: true
+			dependencies: ["5C3BCCAC46517EDE"]
+			tasks: [{
+				id: "4A55B5F4ECDAEC14"
+				type: "advancement"
+				advancement: "mowziesmobs:kill_bluff"
+			}]
+			rewards: [
+				{
+					id: "B911F5B5732E3CD9"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "A76EBF3DC9348811"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "better_weaponry:amethyst_rapier"
+					}
+				}
+			]
+		}
+		{
+			id: "43488E4931E0F280"
+			title: "Лёжка морозной пасти"
+			description: ["В снежных краях спит огромный зверь. Найдите его лёжку — и решите, будить ли его сразу."]
+			x: -1.2d
+			y: 3.29d
+			icon: "minecraft:snow_block"
+			shape: "scroll"
+			dependencies: ["00C7DAA7BBBE1ABD"]
+			tasks: [{
+				id: "4718756ED99A6966"
+				type: "structure"
+				structure: "mowziesmobs:frostmaw_spawn"
+			}]
+			rewards: [
+				{
+					id: "7EF43D7E0E04EE2E"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "C4F417D858F84F46"
+					type: "item"
+					item: {
+						Count: 6b
+						id: "cold_sweat:goat_fur"
+					}
+				}
+			]
+		}
+		{
+			id: "1E7E546AB7203A0B"
+			title: "Кристалл без поединка"
+			description: ["Ледяной кристалл можно не отбирать в бою, а стянуть, пока зверь спит. Нужны ловкость и путь отступления."]
+			x: -0.86d
+			y: 6.14d
+			icon: "mowziesmobs:ice_crystal"
+			shape: "star"
+			optional: true
+			dependencies: ["43488E4931E0F280"]
+			tasks: [{
+				id: "8638999EE1F7CB15"
+				type: "advancement"
+				advancement: "mowziesmobs:steal_ice_crystal"
+			}]
+			rewards: [
+				{
+					id: "B76256D3515B597E"
+					type: "xp"
+					xp: 390
+				}
+				{
+					id: "671D8965A77D257E"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:steadfast_spikes"
+					}
+				}
+			]
+		}
+		{
+			id: "FF7561483C27E289"
+			title: "Нага над головой"
+			description: ["Над морскими скалами кружат наги и плюются кислотой. Собьёте одну — получите клык, из которого выходит отличный кинжал."]
+			x: -3.38d
+			y: 0.91d
+			icon: "mowziesmobs:naga_fang"
+			optional: true
+			dependencies: ["00C7DAA7BBBE1ABD"]
+			tasks: [{
+				id: "0E68DE4C0E4AB6B5"
+				type: "advancement"
+				advancement: "mowziesmobs:kill_naga"
+			}]
+			rewards: [
+				{
+					id: "548B9F8D4F90B1DB"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "571D2DD88C4210F9"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:helium_flamingo"
 					}
 				}
 			]

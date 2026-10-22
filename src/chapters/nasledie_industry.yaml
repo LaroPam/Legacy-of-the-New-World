@@ -726,3 +726,134 @@ quests:
     type: item
     item: farmersdelight:steak_and_potatoes
     count: 8
+- id: 0EF67FFF73E6D383
+  title: Песок будущих орудий
+  x: 0.0
+  y: 10.0
+  icon: createbigcannons:casting_sand
+  shape: circle
+  size: 1.05
+  optional: true
+  description:
+  - §fПолучите одну единицу литейного песка Create Big Cannons. Он понадобится для знакомства с артиллерийным литьём.
+  - §7Для этого шага достаточно песка в инвентаре; он останется у вас.
+  tasks:
+  - id: 3B9C2FC4D514178B
+    type: item
+    item: createbigcannons:casting_sand
+    count: 1
+    consume_items: false
+  rewards:
+  - id: 9D653146B6ED43B5
+    type: xp
+    xp: 80
+  - id: 590A667B79E4289F
+    type: item
+    item: createbigcannons:cannon_welder
+  note: 'Act III: artillery; moved from defense, layout pending'
+- id: 35AB582E2E08DF86
+  title: Место для сборки стволов
+  x: 2.5
+  y: 10.0
+  icon: createbigcannons:cannon_builder
+  shape: gear
+  size: 1.05
+  optional: true
+  description:
+  - §fУстановите сборщик стволов Create Big Cannons на подготовленной площадке.
+  - §7Сейчас нужно разместить сам станок. Обустройство привода и выпуск деталей можно продолжить после монтажа.
+  deps:
+  - 0EF67FFF73E6D383
+  tasks:
+  - id: 71A787824B72E7B7
+    type: advancement
+    advancement: nasledie:setup/defense/cannon_builder
+  rewards:
+  - id: 5ADACCED338520E7
+    type: xp
+    xp: 80
+  - id: A62FB32A558D3B1C
+    type: item
+    item: createbigcannons:gas_mask
+  note: 'Act III: artillery; moved from defense, layout pending'
+- id: 35D125C19D556E7A
+  title: Сверлильный станок
+  x: 5.0
+  y: 10.0
+  icon: createbigcannons:cannon_drill
+  shape: gear
+  size: 1.05
+  optional: true
+  description:
+  - §fУстановите орудийный сверлильный станок Create Big Cannons.
+  - §7Оставьте место для заготовки и привода. Этот шаг посвящён монтажу; сверлить ствол для его завершения не требуется.
+  deps:
+  - 35AB582E2E08DF86
+  tasks:
+  - id: E0E22FE62612CCB3
+    type: advancement
+    advancement: nasledie:setup/defense/cannon_drill
+  rewards:
+  - id: 4ACB08C83499CEED
+    type: xp
+    xp: 80
+  - id: 19D23436CC8529D3
+    type: item
+    item: mowziesmobs:dart
+    count: 2
+  note: 'Act III: artillery; moved from defense, layout pending'
+- id: 17FE2073432FC7E0
+  title: Основание орудия
+  x: 7.5
+  y: 10.0
+  icon: createbigcannons:fixed_cannon_mount
+  shape: gear
+  size: 1.05
+  optional: true
+  description:
+  - §fУстановите неподвижную орудийную станину Create Big Cannons.
+  - §7Выберите направление будущего орудия и свободный сектор перед ним. На этом этапе достаточно самой установленной
+    станины.
+  deps:
+  - 35D125C19D556E7A
+  tasks:
+  - id: 16A1085F05EB2E6F
+    type: advancement
+    advancement: nasledie:setup/defense/fixed_cannon_mount
+  rewards:
+  - id: 6D592BE78118D9DC
+    type: xp
+    xp: 80
+  - id: 050F3FEAE0725F8C
+    type: item
+    item: mowziesmobs:blowgun
+  note: 'Act III: artillery; moved from defense, layout pending'
+- id: 8EC3B7E438EA800A
+  title: Механизм заряжания
+  x: 10.0
+  y: 10.0
+  icon: createbigcannons:cannon_loader
+  shape: gear
+  size: 1.05
+  optional: true
+  description:
+  - §fУстановите механизм заряжания Create Big Cannons.
+  - §7Продумайте пространство для подачи боеприпасов. Для завершения этого шага достаточно монтажа; заряжать и стрелять
+    пока не нужно.
+  - Монтажный маршрут подготовил рабочие места и механизм заряжания. Дальше изучите во встроенных анимациях Create
+    Big Cannons сборку ствола, боеприпасы и порядок стрельбы. Установка этих блоков ещё не является испытанием готового
+    орудия.
+  deps:
+  - 17FE2073432FC7E0
+  tasks:
+  - id: BBFC51AD08E029FE
+    type: advancement
+    advancement: nasledie:setup/defense/cannon_loader
+  rewards:
+  - id: A2E894377B0C3D26
+    type: xp
+    xp: 80
+  - id: 1635AF1A87BE11E8
+    type: item
+    item: mowziesmobs:glowing_jelly
+  note: 'Act III: artillery; moved from defense, layout pending'

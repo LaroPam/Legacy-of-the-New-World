@@ -80,3 +80,171 @@ quests:
         pages:
           - "Маршрут.\n\n1. Кованый зал под горой — «пустой доспех».\n2. Роща солнечного культа.\n3. Монастырь на вершине — спросить отшельника."
           - "4. Нижний мир: крепость, огненные стержни — для очей.\n5. Дальше — по очам.\n\nОстальным не показывать до перевала."
+
+  # ── Акт II. По следам экспедиции ──────────────────────────────────
+  # Шесть стражей в любом порядке; в тематических главах эти квесты показаны ссылками.
+  - key: wroughtnaut
+    id: 4843AED5CE824450
+    title: Пустой доспех
+    description:
+      - Первая отметка на маршруте Эклунда — «кованый зал под горой». Внутри стоит доспех, который сражается сам. Победите кованого стража.
+      - Целиться нужно в спину, когда он застрянет после удара. Подсказка от Странда, оплаченная синяками.
+    x: 10
+    y: -6
+    icon: mowziesmobs:wrought_helmet
+    shape: crown
+    deps: [route, nasledie_defense/wrought_chamber]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:kill_ferrous_wroughtnaut}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: artifacts:power_glove}
+      - type: book
+        title: Запись Улофа Странда, I
+        author: Улоф Странд, инженер
+        pages:
+          - "Под горой — зал, кованый целиком. В центре стоял доспех. Пустой: я заглянул в забрало и увидел темноту.\n\nПотом доспех повернул голову."
+          - "Мы отбились. Эклунд записал: «пробный сосуд». Я спросил — пробный для чего? Он не ответил.\n\nЖелезо не должно ненавидеть. Кто-то его научил."
+
+  - key: umvuthi
+    id: A378D8F13118FF97
+    title: Птица из солнца
+    description:
+      - Солнечный народ кормит свою птицу уже тысячу лет. Экспедиция пришла к ним с подарками, а ушла, оставив за собой пепел. Победите Умвути.
+    x: 10
+    y: -3.6
+    icon: mowziesmobs:sol_visage
+    shape: crown
+    deps: [route, nasledie_defense/grove_chest]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:kill_umvuthi}
+    rewards:
+      - {type: xp, xp: 700}
+      - {type: item, item: artifacts:flame_pendant}
+      - type: book
+        title: Запись Эйнара Холма, I
+        author: Эйнар Холм, археолог
+        pages:
+          - "Солнечный народ носит маски. Меня пустили в рощу в маске — я выменял её на нож и два слитка."
+          - "Жрец рассказал: давным-давно строители зажгли птицу из солнца и велели её кормить. Они кормят до сих пор. Если птица голодна, огонь уходит из мира."
+          - "Эклунд велел её убить — сказал, это проверка. Птица горела ещё долго после смерти.\n\nЭклунд стоял к огню ближе всех."
+
+  - key: sculptor
+    id: DF85EFBB8E452760
+    title: Слово отшельника
+    description:
+      - На вершине над монастырём живёт отшельник, который лепит камень как глину. Он пускает к себе только тех, кто пройдёт его испытание.
+        Поднимитесь по ожившей скале и не сорвитесь.
+    x: 10
+    y: -1.2
+    icon: mowziesmobs:sculptor_staff
+    shape: crown
+    deps: [route, nasledie_defense/monastery_chest]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:sculptor_challenge}
+    rewards:
+      - {type: xp, xp: 800}
+      - {type: item, item: artifacts:cloud_in_a_bottle}
+      - type: book
+        title: Запись Сигрид Линд, II
+        author: Сигрид Линд, картограф
+        pages:
+          - "Отшельник не назвал имени. Он испытывает каждого, кто поднимается. Я прошла."
+          - "Он сказал: «Зодчие отдали себя сосудам, чтобы мир не рассыпался. Кто разбивает сосуд, берёт на себя их ношу — или их силу».\n\nЯ спросила: что выберет человек?"
+          - "Он посмотрел вниз, туда, где ждал Эклунд, и ничего не ответил."
+
+  - key: frostmaw
+    id: 92AF3238F7B8776E
+    title: Зверь зимы
+    description:
+      - В снегах спит морозная пасть — зверь, рядом с которым снег не тает веками. Разбудите её и победите. Ледяной кристалл у неё на шее
+        стоит того, чтобы рискнуть.
+    x: 10
+    y: 1.2
+    icon: mowziesmobs:ice_crystal
+    shape: crown
+    deps: [route, nasledie_defense/frostmaw_lair]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:kill_frostmaw}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: artifacts:snowshoes}
+      - type: book
+        title: Запись Ингрид Берг, I
+        author: Ингрид Берг, врач
+        pages:
+          - "Звери у швов мира меняются. Морозная пасть спала у старого обрыва, и снег вокруг неё не таял сотни лет."
+          - "Она не страж и не сосуд. Просто зверь, который вырос рядом с чужой силой и стал на неё похож.\n\nКак и мы, если задержимся здесь надолго."
+
+  - key: elder_guardian
+    id: 7561C2A49CE25872
+    title: Дозорный монумента
+    description:
+      - Подводные монументы сложены той же кладкой, что и кованый зал. Старший страж сторожит их тысячи лет. Спуститесь к нему и победите.
+    x: 10
+    y: 3.6
+    icon: minecraft:prismarine_shard
+    shape: crown
+    deps: [route, nasledie_ocean/guardian]
+    tasks:
+      - {type: kill, entity: minecraft:elder_guardian}
+    rewards:
+      - {type: xp, xp: 550}
+      - {type: item, item: artifacts:snorkel}
+      - {type: item, item: minecraft:prismarine_crystals, count: 24}
+      - type: book
+        title: Запись Сигрид Линд, III
+        author: Сигрид Линд, картограф
+        pages:
+          - "Монументы строили не рыбы. Странд говорит, кладка та же, что в кованом зале."
+          - "Старшие стражи сторожат пустые залы. Эклунд сказал: они охраняют дорогу, а не то, что в конце.\n\nЗначит, конец дороги где-то ещё."
+
+  - key: nether_eye
+    title: Очи Зодчих
+    description:
+      - Эклунд писал об «очах», что ведут к сосудам. Соберите любое око Катаклизма — у каждого свой рецепт, и все начинаются с ока Края. Брошенное
+        око летит к своему логову.
+    x: 10
+    y: 6
+    icon: cataclysm:flame_eye
+    shape: star
+    deps: [route, nasledie_netheritage/blaze_rod]
+    tasks:
+      - type: criteria
+        title: Получить любое око Катаклизма
+        obtain: [cataclysm:flame_eye, cataclysm:abyss_eye, cataclysm:storm_eye, cataclysm:cursed_eye, cataclysm:desert_eye,
+                 cataclysm:mech_eye, cataclysm:monstrous_eye, cataclysm:void_eye]
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:ender_eye, count: 4}
+      - type: book
+        title: Запись Торвальда Эклунда, I
+        author: Торвальд Эклунд
+        pages:
+          - "Око Края смотрит туда, где мир тоньше. Зодчие делали свои очи — каждое смотрит на один сосуд."
+          - "Огонь, бездна, буря, проклятие, пустыня, машина, чудовище, пустота. Восемь. Одного глаза хватит, чтобы найти дверь."
+          - "Странд спрашивает, зачем нам двери. Я сказал — чтобы закрыть их.\n\nОн поверил. Пока."
+
+  - key: wither
+    title: Три души в одной
+    description:
+      - В стене крепости Эклунд нашёл обряд — песок душ и три черепа. Проведите его сами и победите то, что поднимется из песка. Лучше
+        подальше от дома.
+    x: 13
+    y: 6
+    icon: minecraft:wither_skeleton_skull
+    shape: crown
+    size: 1.7
+    deps: [nether_eye, nasledie_netheritage/skull]
+    tasks:
+      - {type: criteria, title: Победить Визера, kill: minecraft:wither}
+    rewards:
+      - {type: xp, xp: 1000}
+      - {type: item, item: artifacts:cross_necklace}
+      - type: book
+        title: Запись Ингрид Берг, II
+        author: Ингрид Берг, врач
+        pages:
+          - "Эклунд нашёл рецепт в стене крепости: песок душ и три черепа. Сказал, это обряд Зодчих. Мы провели его ночью."
+          - "Из песка поднялись три головы на одном хребте. Три души, сплавленные силой. Оно кричало тремя голосами, пока мы его убивали."
+          - "Звезда, что осталась, тёплая. Эклунд держал её в руке очень долго.\n\nЯ больше не верю, что мы здесь, чтобы что-то закрывать."
