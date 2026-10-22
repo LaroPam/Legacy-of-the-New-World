@@ -564,3 +564,137 @@ quests:
       - {type: item, item: minecraft:enchanted_golden_apple, count: 4}
       - {type: item, item: minecraft:netherite_ingot, count: 2}
       - {type: item, item: minecraft:writable_book, nbt: '{pages:["Летопись Максима и Юры.\n\nНаследие нового мира — то, что мы построили. Дальше пишем сами:"]}'}
+
+  # ── Глубины: подземные стражи (подготовка — «Легенды глубин»); вход — Древний город ──
+  - key: forsaken
+    id: 2A2A1ECDD23269E9
+    title: Что пришло из темноты
+    description:
+      - В заброшенных пустотах Ингрид Берг повторила обряд подзектантов. Из темноты пришло что-то голодное. Призовите его снова и победите
+        Забытого.
+    x: 19.5
+    y: 16.5
+    icon: alexscaves:shadow_silk
+    shape: crown
+    size: 1.7
+    deps: [ancient_city, nasledie_legends/watcher]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/defeat_forsaken}
+    rewards:
+      - {type: xp, xp: 1400}
+      - {type: item, item: alexscaves:dreadbow}
+      - type: book
+        title: Запись Ингрид Берг, III
+        author: Ингрид Берг, врач
+        pages:
+          - "Подзектанты поют в темноте. Говорят, тьма — тоже сосуд, только его никто не запечатал. Я хочу увидеть то, что видят они."
+          - "Ритуал начался. Из пустоты пришло что-то большое и голодное. Оно смотрит на меня. Оно смотрит на меня. Оно"
+          - "\n\n\n\n            не смотрите вниз"
+
+  - key: hullbreaker
+    title: Страж расщелины
+    description:
+      - Вход в дом глубинников сторожит Кораблекрушитель — огромный зверь, который не пускает сухопутных. Победите его.
+    x: 22.5
+    y: 16.5
+    icon: alexscaves:submarine
+    shape: crown
+    size: 1.7
+    deps: [ancient_city, nasledie_legends/abyssal_ruins]
+    tasks:
+      - {type: criteria, title: Победить Кораблекрушителя, kill: alexscaves:hullbreaker}
+    rewards:
+      - {type: xp, xp: 1400}
+      - {type: item, item: alexscaves:ortholance}
+      - type: book
+        title: Слово стража
+        author: Народ глубин
+        pages:
+          - "Кораблекрушитель стережёт вход в наш дом. Строители велели ему не пускать сухопутных."
+          - "Он помнит приказ лучше нас. Мы давно забыли, от кого он нас бережёт. Может быть, от вас."
+
+  - key: luxtructosaurus
+    id: 3E03C21C1C3001DF
+    title: Мир до Зодчих
+    description:
+      - В жерле вулкана первобытных пещер спит титан, которого никто никогда не запирал. Призовите люкстрактозавра и победите его.
+    x: 25.5
+    y: 15.5
+    icon: alexscaves:tectonic_shard
+    shape: crown
+    size: 1.7
+    deps: [ancient_city, nasledie_legends/summon_titan]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/defeat_luxtructosaurus}
+    rewards:
+      - {type: xp, xp: 1500}
+      - {type: item, item: alexscaves:extinction_spear}
+      - type: book
+        title: Заметка на полях атласа
+        author: Сигрид Линд, картограф
+        pages:
+          - "Под вулканом сила ни в чём не заперта. Она просто есть — дикая, древняя, ничья."
+          - "Может, Зодчие ошиблись. Не всё нужно заковывать. Кое-что достаточно оставить в покое."
+
+  - key: tremorzilla
+    id: FED39CE9F2148371
+    title: Сосуд, который выбрал сам
+    description:
+      - Сотрясозилла вылупилась из ядерного огня — неудачный опыт Зодчих с чистой энергией. Её не нужно побеждать. Накормите её и приручите.
+    x: 27.5
+    y: 13
+    icon: alexscaves:tremorzilla_egg
+    shape: heart
+    size: 1.7
+    deps: [ancient_city, nasledie_legends/hatch_tremorzilla]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/tame_tremorzilla}
+    rewards:
+      - {type: xp, xp: 1500}
+      - {type: item, item: alexscaves:raygun}
+      - type: book
+        title: Неотправленное письмо
+        author: Ингрид Берг, врач
+        pages:
+          - "Если найдётся существо, которое примет силу и не сойдёт с ума, — значит, дело не в силе, а в том, кто её держит."
+          - "Позаботьтесь о нём. Мы не смогли позаботиться друг о друге."
+
+  - key: ancient_city
+    title: Город, отдавший голос
+    description:
+      - Глубоко под землёй лежит последний город Зодчих. Тише — здесь слушают. Проберитесь в город и откройте сундук, не разбудив его стража.
+    x: 21
+    y: 12
+    icon: minecraft:sculk_shrieker
+    shape: star
+    size: 1.6
+    deps: [awakened, nasledie_legends/cave_codex]
+    tasks:
+      - {type: criteria, title: Открыть сундук древнего города, loot: minecraft:chests/ancient_city}
+    rewards:
+      - {type: xp, xp: 1000}
+      - {type: item, item: minecraft:recovery_compass}
+      - type: book
+        title: Табличка Зодчих
+        author: Неизвестный Зодчий
+        pages:
+          - "Мы собрались в последнем городе и решили: мир держится, только если кто-то держит его изнутри."
+          - "Каждый, кто уходит в сосуд, оставляет здесь свой голос. Город замолчал, когда ушёл последний."
+          - "Тот, кто слушает, охраняет тишину — чтобы никто не услышал, как нас звали."
+
+  - key: warden
+    title: Тот, кто слушает
+    description:
+      - Хранитель охраняет тишину древнего города. Он слеп, но слышит каждый шаг. Победите его — если решитесь.
+    x: 17
+    y: 14.5
+    icon: minecraft:echo_shard
+    shape: crown
+    size: 1.7
+    deps: [ancient_city]
+    tasks:
+      - {type: criteria, title: Победить Хранителя, kill: minecraft:warden}
+    rewards:
+      - {type: xp, xp: 2000}
+      - {type: item, item: minecraft:music_disc_otherside}
+      - {type: item, item: minecraft:echo_shard, count: 8}

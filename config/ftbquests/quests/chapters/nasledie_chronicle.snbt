@@ -1208,6 +1208,300 @@
 				}
 			]
 		}
+		{
+			id: "2A2A1ECDD23269E9"
+			title: "Что пришло из темноты"
+			description: ["В заброшенных пустотах Ингрид Берг повторила обряд подзектантов. Из темноты пришло что-то голодное. Призовите его снова и победите Забытого."]
+			x: 19.5d
+			y: 16.5d
+			icon: "alexscaves:shadow_silk"
+			shape: "crown"
+			size: 1.7d
+			dependencies: [
+				"0DD7A99E440FC3DA"
+				"1C4B8279C22D289B"
+			]
+			tasks: [{
+				id: "8A2444928B3F870C"
+				type: "advancement"
+				advancement: "alexscaves:alexscaves/defeat_forsaken"
+			}]
+			rewards: [
+				{
+					id: "81D28718EBFF5557"
+					type: "xp"
+					xp: 1400
+				}
+				{
+					id: "48C8A1E583591BE4"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "alexscaves:dreadbow"
+					}
+				}
+				{
+					id: "7DA98CF8F24EA01F"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Запись Ингрид Берг, III"
+							author: "Ингрид Берг, врач"
+							pages: [
+								"{\"text\": \"Подзектанты поют в темноте. Говорят, тьма — тоже сосуд, только его никто не запечатал. Я хочу увидеть то, что видят они.\"}"
+								"{\"text\": \"Ритуал начался. Из пустоты пришло что-то большое и голодное. Оно смотрит на меня. Оно смотрит на меня. Оно\"}"
+								"{\"text\": \"\\n\\n\\n\\n            не смотрите вниз\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "11FEF88ADA0D7632"
+			title: "Страж расщелины"
+			description: ["Вход в дом глубинников сторожит Кораблекрушитель — огромный зверь, который не пускает сухопутных. Победите его."]
+			x: 22.5d
+			y: 16.5d
+			icon: "alexscaves:submarine"
+			shape: "crown"
+			size: 1.7d
+			dependencies: [
+				"0DD7A99E440FC3DA"
+				"DD30229DC0039862"
+			]
+			tasks: [{
+				id: "8F29C9862B5FC946"
+				type: "advancement"
+				title: "Победить Кораблекрушителя"
+				advancement: "nasledie:q/chronicle/hullbreaker"
+			}]
+			rewards: [
+				{
+					id: "6CBB45593C184271"
+					type: "xp"
+					xp: 1400
+				}
+				{
+					id: "75D9B79FB06FB5FB"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "alexscaves:ortholance"
+					}
+				}
+				{
+					id: "4444AEEE9E3A3C53"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Слово стража"
+							author: "Народ глубин"
+							pages: [
+								"{\"text\": \"Кораблекрушитель стережёт вход в наш дом. Строители велели ему не пускать сухопутных.\"}"
+								"{\"text\": \"Он помнит приказ лучше нас. Мы давно забыли, от кого он нас бережёт. Может быть, от вас.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "3E03C21C1C3001DF"
+			title: "Мир до Зодчих"
+			description: ["В жерле вулкана первобытных пещер спит титан, которого никто никогда не запирал. Призовите люкстрактозавра и победите его."]
+			x: 25.5d
+			y: 15.5d
+			icon: "alexscaves:tectonic_shard"
+			shape: "crown"
+			size: 1.7d
+			dependencies: [
+				"0DD7A99E440FC3DA"
+				"3FCB8D7FF82745AF"
+			]
+			tasks: [{
+				id: "2FFB4E442FA01800"
+				type: "advancement"
+				advancement: "alexscaves:alexscaves/defeat_luxtructosaurus"
+			}]
+			rewards: [
+				{
+					id: "167285D1C12CB812"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					id: "983E3FB46F05AD57"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "alexscaves:extinction_spear"
+					}
+				}
+				{
+					id: "7C9C353D91101789"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Заметка на полях атласа"
+							author: "Сигрид Линд, картограф"
+							pages: [
+								"{\"text\": \"Под вулканом сила ни в чём не заперта. Она просто есть — дикая, древняя, ничья.\"}"
+								"{\"text\": \"Может, Зодчие ошиблись. Не всё нужно заковывать. Кое-что достаточно оставить в покое.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "FED39CE9F2148371"
+			title: "Сосуд, который выбрал сам"
+			description: ["Сотрясозилла вылупилась из ядерного огня — неудачный опыт Зодчих с чистой энергией. Её не нужно побеждать. Накормите её и приручите."]
+			x: 27.5d
+			y: 13.0d
+			icon: "alexscaves:tremorzilla_egg"
+			shape: "heart"
+			size: 1.7d
+			dependencies: [
+				"0DD7A99E440FC3DA"
+				"7AF2CF003133B836"
+			]
+			tasks: [{
+				id: "8333D96D7CC28801"
+				type: "advancement"
+				advancement: "alexscaves:alexscaves/tame_tremorzilla"
+			}]
+			rewards: [
+				{
+					id: "DFADBA7DC31D6CD5"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					id: "1A8CB29E78C70A27"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "alexscaves:raygun"
+					}
+				}
+				{
+					id: "9077090579E77E07"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Неотправленное письмо"
+							author: "Ингрид Берг, врач"
+							pages: [
+								"{\"text\": \"Если найдётся существо, которое примет силу и не сойдёт с ума, — значит, дело не в силе, а в том, кто её держит.\"}"
+								"{\"text\": \"Позаботьтесь о нём. Мы не смогли позаботиться друг о друге.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "0DD7A99E440FC3DA"
+			title: "Город, отдавший голос"
+			description: ["Глубоко под землёй лежит последний город Зодчих. Тише — здесь слушают. Проберитесь в город и откройте сундук, не разбудив его стража."]
+			x: 21.0d
+			y: 12.0d
+			icon: "minecraft:sculk_shrieker"
+			shape: "star"
+			size: 1.6d
+			dependencies: [
+				"1175C66EAEDBF91E"
+				"8B88E55204890F85"
+			]
+			tasks: [{
+				id: "EDE789ECA5624831"
+				type: "advancement"
+				title: "Открыть сундук древнего города"
+				advancement: "nasledie:q/chronicle/ancient_city"
+			}]
+			rewards: [
+				{
+					id: "38CDBE3649FDE9AF"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "D16053981E370393"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:recovery_compass"
+					}
+				}
+				{
+					id: "6440EB678D148182"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Табличка Зодчих"
+							author: "Неизвестный Зодчий"
+							pages: [
+								"{\"text\": \"Мы собрались в последнем городе и решили: мир держится, только если кто-то держит его изнутри.\"}"
+								"{\"text\": \"Каждый, кто уходит в сосуд, оставляет здесь свой голос. Город замолчал, когда ушёл последний.\"}"
+								"{\"text\": \"Тот, кто слушает, охраняет тишину — чтобы никто не услышал, как нас звали.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "9B9C44FAB8D12B42"
+			title: "Тот, кто слушает"
+			description: ["Хранитель охраняет тишину древнего города. Он слеп, но слышит каждый шаг. Победите его — если решитесь."]
+			x: 17.0d
+			y: 14.5d
+			icon: "minecraft:echo_shard"
+			shape: "crown"
+			size: 1.7d
+			dependencies: ["0DD7A99E440FC3DA"]
+			tasks: [{
+				id: "5267239FF99CF20D"
+				type: "advancement"
+				title: "Победить Хранителя"
+				advancement: "nasledie:q/chronicle/warden"
+			}]
+			rewards: [
+				{
+					id: "331F537EFC76EDF5"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					id: "F91B255B618C306F"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:music_disc_otherside"
+					}
+				}
+				{
+					id: "687DA5F36E0B1A5E"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:echo_shard"
+					}
+				}
+			]
+		}
 	]
 }
 
