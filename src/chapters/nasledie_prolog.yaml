@@ -1,0 +1,100 @@
+chapter:
+  filename: nasledie_prolog
+  id: 24C1CA6B47BF45C9
+  group: 842B4DB4DBD349A0
+  title: Первые страницы
+  icon: minecraft:campfire
+  order_index: 0
+  default_hide_dependency_lines: false
+  default_quest_shape: circle
+  default_quest_size: 1.25
+quests:
+- id: CA2CFD219A124357
+  title: Начало летописи
+  description:
+  - 'Максим, Юра, впереди мир, в котором хочется задержаться. Выберите первое дело: обжить убежище, собрать припасы
+    или отправиться за горизонт.'
+  - Эта книга хранит направления для ваших вылазок и больших замыслов. Прочитайте вступление и отметьте «Начать
+    приключение», когда будете готовы.
+  x: 0.0
+  y: 0.0
+  icon: minecraft:book
+  shape: star
+  size: 1.2
+  tasks:
+  - id: D76F95A1EE1A40A8
+    type: checkmark
+    title: Начать приключение
+  rewards: []
+- id: C322668146484A1C
+  title: Первый инструмент повара
+  description:
+  - Даже дальняя экспедиция начинается с хорошего ужина. Обзаведитесь любым кухонным ножом Farmer’s Delight — кремнёвый
+    вполне подойдёт. На разделочной доске он пригодится для подготовки продуктов.
+  x: 2.5
+  y: 0.0
+  icon: farmersdelight:flint_knife
+  shape: circle
+  size: 1.2
+  deps:
+  - CA2CFD219A124357
+  tasks:
+  - id: 477EAE38055AFECF
+    type: advancement
+    advancement: farmersdelight:main/craft_knife
+  rewards:
+  - id: DC2CEFB27380022A
+    type: xp
+    xp: 34
+  - id: DB89E64677AC3B74
+    type: item
+    item: farmersdelight:rope
+    count: 3
+- id: 42E5495CA00F5CC6
+  title: Семена другого мира
+  description:
+  - 'Принесите домой одну новую культуру: семена капусты, семена томатов, лук или рис. Одна находка уже может стать
+    началом огорода, который прокормит вас между экспедициями.'
+  x: 5.0
+  y: 0.0
+  icon: farmersdelight:cabbage_seeds
+  shape: circle
+  size: 1.2
+  optional: true
+  deps:
+  - C322668146484A1C
+  tasks:
+  - id: DA407032247C7A03
+    type: advancement
+    advancement: farmersdelight:main/get_fd_seed
+  rewards:
+  - id: 266E0006AE14F939
+    type: xp
+    xp: 37
+  - id: BA5A35D7E959EE12
+    type: item
+    item: farmersdelight:rope
+    count: 4
+- id: 69525CBD49DF5FDB
+  title: Рюкзак за плечами
+  description:
+  - Подготовьте обычный рюкзак Sophisticated Backpacks и наденьте его в слот нагрудной брони. На этом этапе нужен
+    именно базовый рюкзак в нагрудном слоте; дополнительный слот аксессуаров для этой цели не подходит.
+  x: 7.5
+  y: 0.0
+  icon: sophisticatedbackpacks:backpack
+  shape: circle
+  size: 1.2
+  deps:
+  - 42E5495CA00F5CC6
+  tasks:
+  - id: 6EB6532083976608
+    type: advancement
+    advancement: nasledie:alpha35/engineering/69525cbd49df5fdb
+  rewards:
+  - id: DB478A995FFA5042
+    type: xp
+    xp: 67
+  - id: 5171D320535CAC28
+    type: item
+    item: sophisticatedbackpacks:upgrade_base

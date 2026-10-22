@@ -1,0 +1,1018 @@
+chapter:
+  filename: nasledie_compass
+  id: 9D8645FBEA4E9EC9
+  group: 842B4DB4DBD349A0
+  title: Картографы — выбрать цель экспедиции
+  icon: minecraft:compass
+  order_index: 18
+  progression_mode: flexible
+  default_hide_dependency_lines: false
+  default_quest_shape: circle
+quests:
+- id: EB2746965E47F745
+  title: Подготовить обычный компас
+  x: 0.0
+  y: 0.0
+  icon: minecraft:compass
+  shape: circle
+  size: 1.5
+  description:
+  - Получите обычный компас или откройте рецепт компаса исследователя. Следующий шаг поможет превратить его в инструмент
+    поиска конкретных мест.
+  - 'Выберите цель похода: штурм иллагерского форта; верхняя сокровищница заражённого храма; испытание ифрита и
+    сокровища кузницы; сокровищница механического гнезда в небе; комплекс мага. Пять линий начинаются от компаса.'
+  - 'В крепостях и подземельях отметка обнаружения теперь ведёт к действию: победе над защитником или открытию особого
+    тайника. Архитектурный маршрут к комплексу мага остаётся свободной экспедицией по достопримечательностям.'
+  tasks:
+  - id: 2328EBD7A28DF61B
+    type: advancement
+    advancement: explorerscompass:explorers_compass
+  rewards:
+  - id: FED06116F509EA58
+    type: xp
+    xp: 100
+  - id: FDC723AC81F66457
+    type: item
+    item: immersive_aircraft:telescope
+- id: 125225CC968ECEB1
+  title: Найти лесную смотровую башню
+  x: 5.0
+  y: 0.0
+  icon: minecraft:spyglass
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите пожарную башню Dungeons and Taverns в лесу.
+  - 'Ориентир в списке компаса: Firewatch Tower Forest.'
+  - Следующая цель этой экспедиции — разведать башни бандитов.
+  deps:
+  - 52B457F0F3B0109A
+  tasks:
+  - id: 8F59176B3B6D69C7
+    type: structure
+    structure: nova_structures:firewatch_tower_forest
+  rewards:
+  - id: 0072783AE024993A
+    type: xp
+    xp: 100
+  - id: A48E6BA31B379E00
+    type: item
+    item: waystones:scoped_sharestone
+- id: 12202D6F529C409B
+  title: Найти шпиль Terralith
+  x: 5.0
+  y: -5.0
+  icon: minecraft:calcite
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите шпиль Terralith.
+  - 'Ориентир в списке компаса: Spire.'
+  - Следующая цель этой экспедиции — найти небесного всадника.
+  deps:
+  - 52B457F0F3B0109A
+  tasks:
+  - id: 941E51CF23EED674
+    type: structure
+    structure: terralith:spire
+  rewards:
+  - id: B040F0F1A46DFEC8
+    type: xp
+    xp: 100
+  - id: 9377244A8C05FFCB
+    type: item
+    item: sophisticatedbackpacks:tool_swapper_upgrade
+- id: 95734C53761E6456
+  title: Разведать башни бандитов
+  x: 7.5
+  y: 0.0
+  icon: minecraft:cobblestone_wall
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите башни бандитов When Dungeons Arise.
+  - 'Ориентир в списке компаса: Bandit Towers.'
+  - Следующая цель этой экспедиции — разведать убежище иллагеров.
+  deps:
+  - 125225CC968ECEB1
+  tasks:
+  - id: D2F86C01E63045E3
+    type: structure
+    structure: dungeons_arise:bandit_towers
+  rewards:
+  - id: 5B8944021AAFCB9B
+    type: xp
+    xp: 100
+  - id: 646381E9A6327C9E
+    type: item
+    item: sophisticatedstorage:advanced_pickup_upgrade
+- id: 225B6CD9BBAC0F47
+  title: Найти таверну в джунглях
+  x: 5.0
+  y: 2.5
+  icon: minecraft:bread
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите таверну Dungeons and Taverns в джунглях.
+  - 'Ориентир в списке компаса: Tavern Jungle.'
+  - Следующая цель этой экспедиции — открыть тайник с картой таверны.
+  deps:
+  - 52B457F0F3B0109A
+  tasks:
+  - id: 0260B55C44DAEEDB
+    type: structure
+    structure: nova_structures:tavern_jungle
+  rewards:
+  - id: D94D4217B4B24B7A
+    type: xp
+    xp: 100
+  - id: 172B9C9720670098
+    type: item
+    item: create:blue_toolbox
+- id: 0A349956329B7C72
+  title: Найти башню мага
+  x: 22.5
+  y: 5.0
+  icon: minecraft:enchanting_table
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите башню мага Terralith.
+  - 'Ориентир в списке компаса: Mage Tower.'
+  - Следующая цель этой экспедиции — найти комплекс мага.
+  deps:
+  - 07C8419F1FE8738D
+  tasks:
+  - id: B9BFE4846CF24F80
+    type: structure
+    structure: terralith:mage_tower
+  rewards:
+  - id: 8052AD7F5FFB5CE2
+    type: xp
+    xp: 100
+  - id: 37DB883834337A3A
+    type: item
+    item: immersive_aircraft:propeller
+- id: 0CE8AF2473DAB8AA
+  title: Найти аванпост шахтёров
+  x: 5.0
+  y: -2.5
+  icon: minecraft:iron_pickaxe
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите шахтёрский аванпост Dungeons and Taverns в бедлендах.
+  - 'Ориентир в списке компаса: Badlands Miner Outpost.'
+  - Перед спуском в большие шахты найдите и победите заклинателя этого аванпоста. Следующее задание отмечает победу
+    над ним.
+  deps:
+  - 52B457F0F3B0109A
+  tasks:
+  - id: B7DD248EFDB307AE
+    type: structure
+    structure: nova_structures:badlands_miner_outpost
+  rewards:
+  - id: 3238E2B47D778EE1
+    type: xp
+    xp: 100
+  - id: 9A940417A2B44B4A
+    type: item
+    item: sophisticatedbackpacks:advanced_tool_swapper_upgrade
+- id: 59752216F591E945
+  title: Найти снежный форт
+  x: 10.0
+  y: 2.5
+  icon: minecraft:powder_snow_bucket
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите заснеженный форт Dungeons and Taverns.
+  - 'Ориентир в списке компаса: Stray Fort.'
+  - Следующая цель этой экспедиции — найти дом над джунглями.
+  deps:
+  - 79B22217425743C5
+  tasks:
+  - id: DD21B13522820F32
+    type: structure
+    structure: nova_structures:stray_fort
+  rewards:
+  - id: 0AB3EDD101D09964
+    type: xp
+    xp: 100
+  - id: D47DE7FF2BD08B68
+    type: item
+    item: waystones:portstone
+- id: 52B457F0F3B0109A
+  title: Освоить поиск компасом
+  x: 2.5
+  y: 0.0
+  icon: explorerscompass:explorerscompass
+  shape: circle
+  size: 1.2
+  description:
+  - Получите компас исследователя либо откройте рецепт его ремонта. Для дальнейшего поиска сам инструмент всё равно
+    понадобится.
+  - Откройте его меню, введите часть названия сооружения, выберите результат и начните поиск. Ниже в заданиях приведены
+    английские названия из списка; при включённом переводе они могут отображаться по-русски.
+  - 'Проверяйте мод-источник и высоту места: одинаковые слова в названии не делают две структуры одной целью. Компас
+    указывает направление к сооружению, но не прокладывает безопасный путь. Если ничего не нашлось, смените район
+    поиска.'
+  deps:
+  - EB2746965E47F745
+  tasks:
+  - id: 16EAAB4C340A124E
+    type: advancement
+    advancement: explorerscompass:repair_explorers_compass
+  rewards:
+  - id: D988B095E79137E7
+    type: xp
+    xp: 100
+  - id: A25CA1B8E1BC97C3
+    type: item
+    item: create:cyan_toolbox
+- id: C98BCEC5872D8647
+  title: Найти пустынную заставу
+  x: 5.0
+  y: 5.0
+  icon: minecraft:sandstone
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите пустынный аванпост Terralith.
+  - 'Ориентир в списке компаса: Desert Outpost.'
+  - Следующая цель этой экспедиции — найти укреплённую деревню.
+  deps:
+  - 52B457F0F3B0109A
+  tasks:
+  - id: 5CF8DAC4F4138CBC
+    type: structure
+    structure: terralith:desert_outpost
+  rewards:
+  - id: 7005D45EC27EB0CB
+    type: xp
+    xp: 75
+  - id: C17E905B3AA44CFD
+    type: item
+    item: sophisticatedbackpacks:stonecutter_upgrade
+- id: E74BE19F5E31D304
+  title: Найти укреплённую деревню
+  x: 7.5
+  y: 5.0
+  icon: minecraft:shield
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите укреплённую деревню Terralith.
+  - 'Ориентир в списке компаса: Fortified Village.'
+  - Следующая цель этой экспедиции — найти лагерь торговцев.
+  deps:
+  - C98BCEC5872D8647
+  tasks:
+  - id: 022AB79B133AD5D0
+    type: structure
+    structure: terralith:fortified_village
+  rewards:
+  - id: BBD5176860EABA52
+    type: xp
+    xp: 75
+  - id: B1C46E71E35E0E85
+    type: item
+    item: sophisticatedstorage:compacting_upgrade
+- id: BC793EEF82907B7E
+  title: Разведать убежище иллагеров
+  x: 10.0
+  y: 0.0
+  icon: minecraft:iron_axe
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите убежище иллагеров Dungeons and Taverns.
+  - 'Ориентир в списке компаса: Illager Hideout.'
+  - Следующий шаг — добраться до главного тайника внутри убежища. После этой вылазки можно готовиться к штурму форта.
+  deps:
+  - 95734C53761E6456
+  tasks:
+  - id: B3E86B80EE8981C4
+    type: structure
+    structure: nova_structures:illager_hideout
+  rewards:
+  - id: E718A8327EC7F706
+    type: xp
+    xp: 75
+  - id: 429DAD4F5249B0E9
+    type: item
+    item: waystones:warp_plate
+- id: 36816E6DCCAC9776
+  title: Найти лагерь торговцев
+  x: 10.0
+  y: 5.0
+  icon: minecraft:campfire
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите торговый лагерь When Dungeons Arise.
+  - 'Ориентир в списке компаса: Merchant Campsite.'
+  - Следующая цель этой экспедиции — добраться до дворца шираз.
+  deps:
+  - E74BE19F5E31D304
+  tasks:
+  - id: 5B42B64673540FB1
+    type: structure
+    structure: dungeons_arise:merchant_campsite
+  rewards:
+  - id: ACD41E0E6289D1EA
+    type: xp
+    xp: 75
+  - id: 5294F094759D64D9
+    type: item
+    item: createdeco:iron_ladder
+    count: 2
+- id: B1509620769451B8
+  title: Добраться до дворца Шираз
+  x: 12.5
+  y: 5.0
+  icon: minecraft:quartz_pillar
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите дворец Шираз When Dungeons Arise.
+  - 'Ориентир в списке компаса: Shiraz Palace.'
+  - Следующая цель этой экспедиции — добраться до крепости кайры.
+  deps:
+  - 36816E6DCCAC9776
+  tasks:
+  - id: 094B728D627B8F2A
+    type: structure
+    structure: dungeons_arise:shiraz_palace
+  rewards:
+  - id: FBDE019FAFA71056
+    type: xp
+    xp: 75
+  - id: 0302CBB1879C4465
+    type: item
+    item: waystones:blackstone_waystone
+- id: 8C486E24C425E49B
+  title: Найти подземную хижину
+  x: 10.0
+  y: -2.5
+  icon: minecraft:lantern
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите подземную хижину Terralith.
+  - 'Ориентир в списке компаса: Underground Cabin.'
+  - Следующая цель этой экспедиции — найти большую шахтную систему.
+  deps:
+  - 430EC24EEA0B18E4
+  tasks:
+  - id: 0849188CF45D6F63
+    type: structure
+    structure: terralith:underground_cabin
+  rewards:
+  - id: 08166227FA0695F7
+    type: xp
+    xp: 75
+  - id: AAF749CBBDDA820F
+    type: item
+    item: waystones:deepslate_waystone
+- id: 3BFF245E8A4EEBE2
+  title: Найти большую шахтную систему
+  x: 12.5
+  y: -2.5
+  icon: minecraft:rail
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите систему шахт When Dungeons Arise.
+  - 'Ориентир в списке компаса: Mining System.'
+  - Следующая цель этой экспедиции — найти грибные шахты.
+  deps:
+  - 8C486E24C425E49B
+  tasks:
+  - id: A3B92F91A7D0955F
+    type: structure
+    structure: dungeons_arise:mining_system
+  rewards:
+  - id: 64366A5F8B4B0C9D
+    type: xp
+    xp: 340
+  - id: 72CB46B1CC6BBDFC
+    type: item
+    item: minecraft:diamond
+    count: 8
+- id: 4AD20583645F8C5F
+  title: Подняться к механическому гнезду
+  x: 15.0
+  y: -5.0
+  icon: minecraft:observer
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите механическое гнездо When Dungeons Arise — Mechanical Nest. Это огромное сооружение высоко в небе; поиск
+    под землёй здесь не поможет.
+  - 'Подготовьте подъём и возвращение: воздушное судно или безопасная строительная площадка пригодятся больше тоннеля.
+    Начальная точка генерации находится на высоте около 190 блоков.'
+  - 'Подъём завершает разведку, а новый финал зовёт внутрь: найдите нетронутый сокровищный сундук. За эту вылазку
+    вы получите схемопушку для собственных строительных проектов Create.'
+  deps:
+  - 9F4C744CFD45A276
+  tasks:
+  - id: 54EB9DD4A6367C5C
+    type: structure
+    structure: dungeons_arise:mechanical_nest
+  rewards:
+  - id: 0100802363AB95ED
+    type: xp
+    xp: 370
+  - id: 79717EAACA65D4C0
+    type: item
+    item: create:precision_mechanism
+    count: 3
+- id: 07C8419F1FE8738D
+  title: Найти чумной приют
+  x: 20.0
+  y: 5.0
+  icon: minecraft:cauldron
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите чумной приют When Dungeons Arise.
+  - 'Ориентир в списке компаса: Plague Asylum.'
+  - Следующая цель этой экспедиции — найти башню мага.
+  deps:
+  - CEBF8266AC205E60
+  tasks:
+  - id: 948AAB8C4305A155
+    type: structure
+    structure: dungeons_arise:plague_asylum
+  rewards:
+  - id: A1D64FFBA7CE28AD
+    type: xp
+    xp: 380
+  - id: 7FF9D907C9491436
+    type: item
+    item: minecraft:golden_apple
+    count: 6
+- id: CEBF8266AC205E60
+  title: Добраться до колизея
+  x: 17.5
+  y: 5.0
+  icon: minecraft:iron_sword
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите колизей When Dungeons Arise.
+  - 'Ориентир в списке компаса: Coliseum.'
+  - Следующая цель этой экспедиции — найти чумной приют.
+  deps:
+  - 973E6DFEEE903031
+  tasks:
+  - id: 365F93B66ADD30F2
+    type: structure
+    structure: dungeons_arise:coliseum
+  rewards:
+  - id: B04DD2DE2E809163
+    type: xp
+    xp: 390
+  - id: 76E31028FB99404E
+    type: item
+    item: minecraft:netherite_scrap
+    count: 2
+- id: 5DB6F54ADA7C276F
+  title: Найти грибные шахты
+  x: 15.0
+  y: -2.5
+  icon: minecraft:red_mushroom
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите грибные шахты When Dungeons Arise.
+  - 'Ориентир в списке компаса: Mushroom Mines.'
+  - Следующая цель этой экспедиции — спуститься в древнюю кузницу.
+  deps:
+  - 3BFF245E8A4EEBE2
+  tasks:
+  - id: A88CABEA9AFDB969
+    type: structure
+    structure: dungeons_arise:mushroom_mines
+  rewards:
+  - id: 3FD8CEE6F601DA46
+    type: xp
+    xp: 330
+  - id: AF4373DCEE47E9CC
+    type: item
+    item: minecraft:experience_bottle
+    count: 32
+- id: 34A240DB0D634249
+  title: Найти комплекс мага
+  x: 25.0
+  y: 5.0
+  icon: minecraft:bookshelf
+  shape: star
+  size: 1.5
+  description:
+  - Найдите комплекс мага Terralith — Mage Complex. Отдельная башня Mage Tower не заменяет этот комплекс.
+  - Эта цель завершает маршрут больших сооружений. Подготовьте свободные места для находок и выход с территории;
+    за посещение вы получите жемчуг Края для дальнейших путешествий.
+  deps:
+  - 0A349956329B7C72
+  tasks:
+  - id: 2A5CA6AD3E14A770
+    type: structure
+    structure: terralith:mage_complex
+  rewards:
+  - id: E8A8F1B3922029CD
+    type: xp
+    xp: 410
+  - id: 4D6EF920E19399F3
+    type: item
+    item: minecraft:ender_pearl
+    count: 12
+- id: A13990B38C18BF50
+  title: Найти Небесного всадника
+  x: 7.5
+  y: -5.0
+  icon: minecraft:saddle
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите сооружение «Небесный всадник» When Dungeons Arise.
+  - 'Ориентир в списке компаса: Heavenly Rider.'
+  - Следующая цель этой экспедиции — найти небесного претендента.
+  deps:
+  - 12202D6F529C409B
+  tasks:
+  - id: 666955DBE54D61E0
+    type: structure
+    structure: dungeons_arise:heavenly_rider
+  rewards:
+  - id: 2F19A0A1927980D5
+    type: xp
+    xp: 470
+  - id: 43A5B9D6CE271345
+    type: item
+    item: minecraft:ender_pearl
+    count: 12
+- id: 8E33F6A4EE9EECA6
+  title: Найти иллагерский форт
+  x: 15.0
+  y: 0.0
+  icon: minecraft:crossbow
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите иллагерский форт When Dungeons Arise.
+  - 'Ориентир в списке компаса: Illager Fort.'
+  - Следующая цель этой экспедиции — победить двух защитников форта.
+  deps:
+  - 4344AC4C44AE8AB1
+  tasks:
+  - id: D3F3CDB7FE7088A4
+    type: structure
+    structure: dungeons_arise:illager_fort
+  rewards:
+  - id: 820D4474C6DB377A
+    type: xp
+    xp: 425
+  - id: D5AE9BE80D3A56AA
+    type: item
+    item: minecraft:golden_apple
+    count: 6
+- id: 973E6DFEEE903031
+  title: Добраться до крепости Кайры
+  x: 15.0
+  y: 5.0
+  icon: minecraft:stone_brick_wall
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите крепость Кайры When Dungeons Arise.
+  - 'Ориентир в списке компаса: Keep Kayra.'
+  - Следующая цель этой экспедиции — добраться до колизея.
+  deps:
+  - B1509620769451B8
+  tasks:
+  - id: EF9BA62F9F428A53
+    type: structure
+    structure: dungeons_arise:keep_kayra
+  rewards:
+  - id: B611160AC81DEC18
+    type: xp
+    xp: 490
+  - id: A165F165CE7D0F29
+    type: item
+    item: minecraft:netherite_scrap
+    count: 2
+- id: C0194CADC20BB042
+  title: Найти дом над джунглями
+  x: 12.5
+  y: 2.5
+  icon: minecraft:jungle_log
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите дом на дереве в джунглях When Dungeons Arise.
+  - 'Ориентир в списке компаса: Jungle Tree House.'
+  - Следующая цель этой экспедиции — найти монастырь с картами.
+  deps:
+  - 59752216F591E945
+  tasks:
+  - id: DAABA6A411E477E7
+    type: structure
+    structure: dungeons_arise:jungle_tree_house
+  rewards:
+  - id: 14939022E9C1E1D9
+    type: xp
+    xp: 280
+  - id: 8727E8A2AE03E8A8
+    type: item
+    item: minecraft:emerald
+    count: 18
+- id: 1B7D417FC2AD346C
+  title: Найти заражённый храм
+  x: 20.0
+  y: 2.5
+  icon: minecraft:cobweb
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите заражённый храм When Dungeons Arise — Infested Temple. Используйте подходящую карту из монастыря или
+    выберите храм в компасе исследователя.
+  - 'Теперь путь ведёт внутрь: победите пещерного паука и найдите верхнюю сокровищницу. Подготовьте защиту от яда,
+    еду и обратный путь.'
+  deps:
+  - 8268BA06604DD7A2
+  tasks:
+  - id: 98957766DBDB51A0
+    type: structure
+    structure: dungeons_arise:infested_temple
+  rewards:
+  - id: 2C0FBC1B87E63CAE
+    type: xp
+    xp: 410
+  - id: 752F723BC0C99D6C
+    type: item
+    item: minecraft:diamond
+    count: 15
+- id: BD1F1FA8837A8FC5
+  title: Найти монастырь с картами
+  x: 15.0
+  y: 2.5
+  icon: minecraft:bell
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите монастырь When Dungeons Arise.
+  - 'Ориентир в списке компаса: Monastery.'
+  - Следующая цель этой экспедиции — открыть монастырский тайник.
+  deps:
+  - C0194CADC20BB042
+  tasks:
+  - id: E5AEAEB40E24B062
+    type: structure
+    structure: dungeons_arise:monastery
+  rewards:
+  - id: 9D5D3D2F15BC4B10
+    type: xp
+    xp: 385
+  - id: A930F821D0AE6CBE
+    type: item
+    item: minecraft:experience_bottle
+    count: 24
+- id: 79B22217425743C5
+  title: Открыть тайник с картой таверны
+  x: 7.5
+  y: 2.5
+  icon: minecraft:map
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - 'Откройте ещё не исследованный тайник с особой картой в таверне Dungeons and Taverns. Нужен именно этот сундук:
+    покупка или передача готовой карты между игроками не заменяет его открытие.'
+  - Карты таверны ведут к разным местам. Если попадётся карта снежного форта, используйте её в следующем поиске;
+    другая карта может стать вашей самостоятельной вылазкой. Она не обязана указывать монастырь или заражённый храм.
+  deps:
+  - 225B6CD9BBAC0F47
+  tasks:
+  - id: E6721674E4EB9DE4
+    type: advancement
+    advancement: nova_structures:adventure/tavern_quest
+  rewards:
+  - id: 29983A7B151E09FA
+    type: xp
+    xp: 300
+  - id: B21B10548F674E91
+    type: item
+    item: minecraft:emerald
+    count: 20
+- id: EF5D057D0A543404
+  title: Найти Небесного претендента
+  x: 10.0
+  y: -5.0
+  icon: minecraft:feather
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Посетите сооружение «Небесный претендент» When Dungeons Arise.
+  - Следующая цель этой экспедиции — найти небесного завоевателя.
+  deps:
+  - A13990B38C18BF50
+  tasks:
+  - id: 711145DA19CFEFC6
+    type: advancement
+    advancement: dungeons_arise:find_heavenly_challenger
+  rewards:
+  - id: E39D3368A870948C
+    type: xp
+    xp: 450
+  - id: A878BAC34BE2AF54
+    type: item
+    item: minecraft:golden_apple
+    count: 3
+- id: 9F4C744CFD45A276
+  title: Найти Небесного завоевателя
+  x: 12.5
+  y: -5.0
+  icon: minecraft:elytra
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Посетите сооружение «Небесный завоеватель» When Dungeons Arise.
+  - Следующая цель этой экспедиции — подняться к механическому гнезду.
+  deps:
+  - EF5D057D0A543404
+  tasks:
+  - id: 648A65E3AE5C5398
+    type: advancement
+    advancement: dungeons_arise:find_heavenly_conqueror
+  rewards:
+  - id: FE95A9B01A333221
+    type: xp
+    xp: 520
+  - id: BE1A02832EAF8EFB
+    type: item
+    item: minecraft:diamond
+    count: 8
+- id: 8268BA06604DD7A2
+  title: Открыть монастырский тайник
+  x: 17.5
+  y: 2.5
+  icon: minecraft:filled_map
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Откройте специальное монастырское хранилище карт When Dungeons Arise. Обычный сундук и получение чужой карты
+    этого условия не заменяют.
+  - В таком тайнике может оказаться карта заражённого храма или башен Торнборн. Проверьте название находки. Если
+    выпали другие башни, храм всё равно можно искать компасом; охота за нужной картой не должна останавливать экспедицию.
+  deps:
+  - BD1F1FA8837A8FC5
+  tasks:
+  - id: A178783D72C49ABB
+    type: advancement
+    advancement: dungeons_arise:find_infested_temple_map
+  rewards:
+  - id: BF9BC0215F069876
+    type: xp
+    xp: 380
+  - id: 9C268FFE86A769AA
+    type: item
+    item: minecraft:emerald
+    count: 20
+- id: FC2F522F0B5765F9
+  title: Спуститься в древнюю кузницу
+  x: 17.5
+  y: -2.5
+  icon: minecraft:blast_furnace
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите древнюю кузницу When Dungeons Arise — Foundry. Она начинается глубоко под землёй, около высоты минус
+    десять; не путайте её с механическим гнездом в небе.
+  - 'Разведка открывает заключительное испытание: победите ифрита внутри кузницы и найдите её нетронутую сокровищницу.
+    Огнестойкость и отмеченный обратный путь пригодятся в глубине.'
+  deps:
+  - 5DB6F54ADA7C276F
+  tasks:
+  - id: 2D9F0B3797E81C20
+    type: advancement
+    advancement: dungeons_arise:find_foundry
+  rewards:
+  - id: 95002E5C84E111B8
+    type: xp
+    xp: 420
+  - id: AFA44BB13ADCD410
+    type: item
+    item: minecraft:iron_block
+    count: 8
+- id: D79F172C28F00556
+  title: Победить двух защитников форта
+  x: 17.5
+  y: 0.0
+  icon: minecraft:totem_of_undying
+  shape: shield
+  size: 1.5
+  optional: true
+  description:
+  - 'Внутри иллагерского форта When Dungeons Arise победите двух разных врагов: разбойника с арбалетом и поборника
+    с топором. И вы, и противник должны оставаться в границах форта при убийстве.'
+  - Это финал боевой разведки. Максим может держать проход, Юра — прикрывать с расстояния; проверяйте две отдельные
+    цели в карточке. Перед штурмом оставьте снаружи точку отхода.
+  deps:
+  - 8E33F6A4EE9EECA6
+  tasks:
+  - id: 34A49AB6F09BC7D3
+    type: advancement
+    advancement: nasledie:alpha41/fort_assault/pillager_inside_fort
+  - id: D7ED0C831178C781
+    type: advancement
+    advancement: nasledie:alpha41/fort_assault/vindicator_inside_fort
+  rewards:
+  - id: 78B53CCFE54D2760
+    type: xp
+    xp: 750
+  - id: 3CC8A7F6C709580F
+    type: item
+    item: minecraft:totem_of_undying
+  - id: BFB27DA2430E6379
+    type: item
+    item: minecraft:emerald
+    count: 12
+- id: 430EC24EEA0B18E4
+  title: Победить заклинателя аванпоста
+  x: 7.5
+  y: -2.5
+  icon: minecraft:golden_apple
+  shape: shield
+  size: 1.2
+  optional: true
+  description:
+  - 'Победите заклинателя внутри шахтёрского аванпоста в бесплодных землях. Само обнаружение аванпоста не завершает
+    эту вылазку: найдите его опасного хозяина.'
+  - Припасите щит, еду и путь отхода. Призываемые вредины проходят сквозь стены, поэтому тесная каменная нора не
+    гарантирует безопасности. Решающий удар должен прийтись по заклинателю, который находится внутри аванпоста.
+  - После победы продолжайте путь через шахты к древней кузнице. Золотые яблоки пригодятся в следующей подземной
+    схватке.
+  deps:
+  - 0CE8AF2473DAB8AA
+  tasks:
+  - id: 43D3C1A07081D58B
+    type: advancement
+    advancement: nova_structures:adventure/conquer_miner_outpost
+    title: Победить заклинателя аванпоста
+  rewards:
+  - id: 434D972F3ADE56A6
+    type: xp
+    xp: 220
+  - id: 43B0BDFE93E91967
+    type: item
+    item: minecraft:golden_apple
+    count: 4
+- id: 4344AC4C44AE8AB1
+  title: Открыть главный тайник убежища
+  x: 12.5
+  y: 0.0
+  icon: minecraft:tripwire_hook
+  shape: star
+  size: 1.2
+  optional: true
+  description:
+  - 'Доберитесь до особого тайника в сердце убежища иллагеров и откройте его. У входа ещё рано разворачиваться:
+    обычные сундуки не заменяют главное хранилище.'
+  - Ищите ещё не открытый тайник. Если убежище уже полностью разграблено, отправляйтесь в другое; повторное открытие
+    пустого сундука не создаёт новое открытие.
+  - Это вылазка за добычей перед штурмом большого форта. Пузырьки опыта помогут восстановить запас для зачарований
+    и подготовки снаряжения.
+  deps:
+  - BC793EEF82907B7E
+  tasks:
+  - id: 43C4922CE011FD8D
+    type: advancement
+    advancement: nova_structures:adventure/loot_illager_hideout
+    title: Открыть тайник сердца убежища
+  rewards:
+  - id: 43B8E14920BAD3F0
+    type: xp
+    xp: 220
+  - id: 43A6B541646EF308
+    type: item
+    item: minecraft:experience_bottle
+    count: 16
+- id: 43FEC71E36DEB59A
+  title: Открыть сокровищницу кузницы
+  x: 20.0
+  y: -2.5
+  icon: minecraft:blaze_powder
+  shape: shield
+  size: 1.5
+  optional: true
+  description:
+  - Победите ифрита внутри древней кузницы и откройте ещё не тронутый сундук её сокровищницы. Это два отдельных
+    результата похода; проверяйте обе цели в карточке.
+  - Подготовьте огнестойкость, щит и обратный путь. Во время решающего удара и вы, и ифрит должны находиться внутри
+    кузницы. За сокровищами осматривайте развилки коридоров; сундуки обычных проходов и лавовых ям не подходят.
+  - 'Приз — четыре пламенных пирожных Create. Они дают горелке с ифритом сверхнагрев для особых рецептов: это повод
+    вернуться в мастерскую с новым опытом. Для обычного нагрева такой дорогой запас лучше поберечь.'
+  - 'Сокровищница, открытая до появления этого задания, повторно не засчитается: понадобится нетронутый сундук нужного
+    вида, возможно в другой кузнице.'
+  deps:
+  - FC2F522F0B5765F9
+  tasks:
+  - id: 43BCF460A121D592
+    type: advancement
+    advancement: nasledie:alpha43/expeditions/foundry_blaze
+    title: Победить ифрита внутри кузницы
+  - id: 4375F52DFFB15A8B
+    type: advancement
+    advancement: nasledie:alpha43/expeditions/foundry_treasure
+    title: Впервые открыть сокровищницу кузницы
+  rewards:
+  - id: '4319053824753868'
+    type: xp
+    xp: 350
+  - id: 4326325C2C79DDB7
+    type: item
+    item: create:blaze_cake
+    count: 4
+- id: 437A23B0113CA26B
+  title: Открыть сокровищницу гнезда
+  x: 17.5
+  y: -5.0
+  icon: minecraft:chest
+  shape: star
+  size: 1.5
+  optional: true
+  description:
+  - 'Откройте ещё не тронутый сокровищный сундук механического гнезда. Одного подъёма на платформу недостаточно:
+    теперь исследуйте внутренние помещения.'
+  - Осматривайте комнаты, переходы и верхние части сооружения. Сундуки с обычными припасами или снаряжением не подходят
+    — нужна именно сокровищница. Если всё уже открыто, ищите другой нетронутый сундук этой категории.
+  - 'Награда — схемопушка Create для строительных проектов дома. Она воспроизводит сохранённую схему из ваших блоков:
+    подготовьте схему, материалы в соседнем сундуке и порох. Начните с копии небольшой собственной постройки — например,
+    опоры моста или секции склада.'
+  deps:
+  - 4AD20583645F8C5F
+  tasks:
+  - id: 43B552E83FE5189B
+    type: advancement
+    advancement: nasledie:alpha43/expeditions/nest_treasure
+    title: Впервые открыть сокровищницу гнезда
+  rewards:
+  - id: 438A2CBFDEE5A939
+    type: xp
+    xp: 350
+  - id: 43D9A1A3AA01A351
+    type: item
+    item: create:schematicannon
+- id: 43B6739A38C338FD
+  title: Открыть сокровищницу храма
+  x: 22.5
+  y: 2.5
+  icon: minecraft:fermented_spider_eye
+  shape: shield
+  size: 1.5
+  optional: true
+  description:
+  - Победите пещерного паука внутри заражённого храма и доберитесь до ещё не открытого сокровищного сундука в верхней
+    внутренней части сооружения.
+  - Возьмите средство против яда, еду и блоки для безопасного отхода. В решающий момент и вы, и паук должны находиться
+    внутри храма; обычный паук не заменяет пещерного.
+  - Две цели завершают поход, начатый поиском монастырской карты. Сундуки библиотеки, сада, кузницы и складов не
+    считаются верхней сокровищницей. Уже открытый до появления задания сундук повторно не засчитается.
+  - Зачарованное золотое яблоко — редкий запас для следующей опасной экспедиции.
+  deps:
+  - 1B7D417FC2AD346C
+  tasks:
+  - id: 43E15D9CC3647A36
+    type: advancement
+    advancement: nasledie:alpha43/expeditions/temple_cave_spider
+    title: Победить пещерного паука в храме
+  - id: 438C7870B2463450
+    type: advancement
+    advancement: nasledie:alpha43/expeditions/temple_treasure
+    title: Впервые открыть верхнюю сокровищницу
+  rewards:
+  - id: 43DB952F3AFEDD7C
+    type: xp
+    xp: 350
+  - id: 4317CEE35620CB12
+    type: item
+    item: minecraft:enchanted_golden_apple

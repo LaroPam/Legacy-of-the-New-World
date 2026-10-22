@@ -1,0 +1,584 @@
+chapter:
+  filename: nasledie_archeology
+  id: CF8AC0B0D69E3A34
+  group: 842B4DB4DBD349A0
+  title: Археология — от раскопа к музею
+  icon: minecraft:brush
+  order_index: 14
+  progression_mode: flexible
+  default_hide_dependency_lines: false
+  default_quest_shape: circle
+quests:
+- id: D224CC946496E3DE
+  title: Кисть вместо кирки
+  x: 0.0
+  y: 0.0
+  icon: betterarcheology:iron_brush
+  shape: scroll
+  size: 1.2
+  description:
+  - 'Начните использовать железную кисть Better Archeology. На раскопках важна аккуратная работа: разрушить подозрительный
+    блок проще, чем сохранить его находку.'
+  - Цель этой главы — пройти от первого полевого лагеря до коллекции окаменелостей и собственной экспозиции. Отдельные
+    маршруты приведут к катакомбам, древним храмам и загадочному артефакту.
+  tasks:
+  - id: 54DDF0BE9F60D7B6
+    type: advancement
+    advancement: nasledie:alpha34/actions/54ddf0be9f60d7b6
+  rewards:
+  - id: 2B50CF65033A0E31
+    type: xp
+    xp: 210
+  - id: 3AE01F5658BD5503
+    type: item
+    item: betterarcheology:rotten_planks
+    count: 3
+- id: 79C6E9FC12713C40
+  title: Следы предыдущей экспедиции
+  x: 2.5
+  y: 0.0
+  icon: minecraft:spyglass
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите археологический лагерь Better Archeology в травянистой местности. Осмотрите его как отправную точку
+    полевой работы и выберите удобный район для первых поисков.
+  deps:
+  - D224CC946496E3DE
+  tasks:
+  - id: F5F6C315ED6C3CA9
+    type: structure
+    structure: betterarcheology:archeologist_camp_grassy
+  rewards:
+  - id: 1E6A01C97181A30C
+    type: xp
+    xp: 210
+  - id: 4FF11CE67871C19E
+    type: item
+    item: betterarcheology:rotten_log
+- id: A39CCB33A472D0AD
+  title: Первая часть древнего существа
+  x: 5.0
+  y: 0.0
+  icon: betterarcheology:villager_fossil_head
+  shape: scroll
+  size: 1.2
+  description:
+  - Получите голову или тело одной из окаменелостей Better Archeology. Достижение отмечает находку фрагмента в инвентаре;
+    целый собранный скелет пока не требуется.
+  deps:
+  - 79C6E9FC12713C40
+  tasks:
+  - id: 4A2E602529B5A8EC
+    type: advancement
+    advancement: betterarcheology:fossil_found
+  rewards:
+  - id: 5D5E2FA366760A7E
+    type: xp
+    xp: 210
+  - id: 25762383A80A9B2D
+    type: item
+    item: betterarcheology:cracked_mud_bricks
+    count: 3
+- id: C4248A7F0011AAF7
+  title: Место для исследования находок
+  x: 7.5
+  y: 0.0
+  icon: betterarcheology:archeology_table
+  shape: scroll
+  size: 1.2
+  description:
+  - 'Установите археологический стол. Подготовьте рядом место для хранения разных фрагментов: дальше коллекция будет
+    расти, а часть находок отправится в экспозицию.'
+  deps:
+  - A39CCB33A472D0AD
+  tasks:
+  - id: A349A9F5AB79511B
+    type: advancement
+    advancement: nasledie:setup/archeology/archeology_table
+  rewards:
+  - id: 151AEC4900B0FAD5
+    type: xp
+    xp: 210
+  - id: B6471648BF3E5074
+    type: item
+    item: betterarcheology:vase
+- id: FBF1AAEFC633EC9F
+  title: Руины под песком
+  x: 10.0
+  y: 0.0
+  icon: minecraft:spyglass
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите погребённые песчаные руины Better Archeology. Отметьте границы раскопа и осматривайте подозрительные
+    блоки до того, как расширять проходы.
+  deps:
+  - C4248A7F0011AAF7
+  tasks:
+  - id: B0992F425677C665
+    type: structure
+    structure: betterarcheology:buried_ruins_sand
+  rewards:
+  - id: 208AE9E72BBFFC0C
+    type: xp
+    xp: 210
+  - id: AE208D09C989DCEF
+    type: item
+    item: betterarcheology:chiseled_bone_block
+- id: 08AC8A56B7F8989F
+  title: Более прочный инструмент
+  x: 12.5
+  y: 0.0
+  icon: betterarcheology:diamond_brush
+  shape: scroll
+  size: 1.2
+  description:
+  - Начните использовать алмазную кисть Better Archeology. Возьмите её на большую серию раскопок, чтобы продолжить
+    сбор недостающих фрагментов.
+  deps:
+  - FBF1AAEFC633EC9F
+  tasks:
+  - id: 74FE1D1F8AF47A14
+    type: advancement
+    advancement: nasledie:alpha34/actions/74fe1d1f8af47a14
+  rewards:
+  - id: 87D014FEC9444F2D
+    type: xp
+    xp: 210
+  - id: 6952BF6C6A142467
+    type: item
+    item: betterarcheology:evoker_trap
+- id: F4DBD3E2D7478445
+  title: Четырнадцать фрагментов прошлого
+  x: 15.0
+  y: 0.0
+  icon: betterarcheology:sheep_fossil
+  shape: star
+  size: 1.4
+  description:
+  - 'Соберите головы и тела семи видов окаменелостей: жителя, оцелота, овцы, курицы, крипера, волка и стража. Каждый
+    из четырнадцати фрагментов нужен для достижения.'
+  - Это коллекционный итог полевой работы. Найденное не расходуется заданием; из частей можно готовить экспонаты
+    для музея.
+  deps:
+  - 08AC8A56B7F8989F
+  tasks:
+  - id: 99D79EE77BC0C7C0
+    type: advancement
+    advancement: betterarcheology:all_fossils_found
+  rewards:
+  - id: B528449BA18D2623
+    type: xp
+    xp: 210
+  - id: 4DCD5949B8133B9C
+    type: item
+    item: betterarcheology:radiance_totem
+- id: D69937827610767B
+  title: Забытая могила жителя
+  x: 2.5
+  y: 2.5
+  icon: minecraft:spyglass
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - 'Найдите древнюю могилу жителя Better Archeology. Этот маршрут посвящён следам прежних поселений: после отдельных
+    захоронений вы доберётесь до большого подземного архива.'
+  deps:
+  - 79C6E9FC12713C40
+  tasks:
+  - id: 71E08DD88201475F
+    type: structure
+    structure: betterarcheology:villager_grave
+  rewards:
+  - id: EBA9B72C89E18A0D
+    type: xp
+    xp: 150
+  - id: FDD7BFA3DEEF43F3
+    type: item
+    item: betterarcheology:vase_green
+- id: 88ABBD5262DB0432
+  title: Обелиск среди песков
+  x: 0.0
+  y: -5.0
+  icon: minecraft:spyglass
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите пустынный обелиск Better Archeology. Осмотрите окрестности памятника и продолжите поиски руин в другом
+    сухом ландшафте — месах.
+  deps:
+  - C71D778A13B77EBF
+  tasks:
+  - id: 7162D2337F999930
+    type: structure
+    structure: betterarcheology:desert_obelisk
+  rewards:
+  - id: 62C67FB5952C0257
+    type: xp
+    xp: 150
+  - id: D5DC6CE6501A10BE
+    type: item
+    item: betterarcheology:rotten_door
+- id: 718927C2E9263AAC
+  title: Курган на зелёном холме
+  x: 2.5
+  y: 5.0
+  icon: minecraft:spyglass
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите курган Better Archeology в травянистой местности. Сравните устройство погребения с одиночной могилой;
+    следующая экспедиция уводит под землю.
+  deps:
+  - D69937827610767B
+  tasks:
+  - id: A1964531E1759C62
+    type: structure
+    structure: betterarcheology:tumulus_grassy
+  rewards:
+  - id: C1132786D0C48A2B
+    type: xp
+    xp: 150
+  - id: A1AE20A6FD3D53FA
+    type: item
+    item: betterarcheology:vase_creeper
+    count: 3
+- id: A387D38D6E080261
+  title: Катакомбы забытых жителей
+  x: 2.5
+  y: 7.5
+  icon: minecraft:spyglass
+  shape: star
+  size: 1.4
+  optional: true
+  description:
+  - Найдите катакомбы Better Archeology. Это крупная остановка погребального маршрута. Подготовьте свет и ориентиры,
+    если решите пройти дальше входа.
+  deps:
+  - 718927C2E9263AAC
+  tasks:
+  - id: 31AFCFF76090E895
+    type: structure
+    structure: betterarcheology:catacombs
+  rewards:
+  - id: E4A410FC06B57BF6
+    type: xp
+    xp: 150
+  - id: 8828D810B8E1DD92
+    type: item
+    item: betterarcheology:growth_totem
+    count: 3
+- id: 2BA185CBF139E3AF
+  title: Осколок с неизвестной историей
+  x: 5.0
+  y: -2.5
+  icon: betterarcheology:artifact_shards
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - 'Получите осколки артефакта Better Archeology. Отложите их отдельно от обычного лута и посмотрите доступные
+    рецепты: эти находки ведут к неопознанному артефакту.'
+  deps:
+  - A39CCB33A472D0AD
+  tasks:
+  - id: 3055389E8E834EE1
+    type: item
+    item: betterarcheology:artifact_shards
+    count: 1
+    consume_items: false
+  rewards:
+  - id: 7253AAB5952D6647
+    type: xp
+    xp: 150
+  - id: 85D443559057AA42
+    type: item
+    item: betterarcheology:rotten_pressure_plate
+- id: 01C584DB0BC6D1D4
+  title: Артефакт ждёт исследователя
+  x: 7.5
+  y: -2.5
+  icon: betterarcheology:unidentified_artifact
+  shape: star
+  size: 1.4
+  optional: true
+  description:
+  - 'Получите неопознанный артефакт Better Archeology. Это итог небольшой собирательской ветки: у вас в руках предмет
+    для дальнейшего исследования, а не просто строительный материал.'
+  - Способы работы с ним смотрите у археологического стола и во внутриигровых рецептах. Задание отмечает получение;
+    результат исследования оно не подменяет.
+  deps:
+  - 2BA185CBF139E3AF
+  tasks:
+  - id: 64EC69BF8556F3B7
+    type: item
+    item: betterarcheology:unidentified_artifact
+    count: 1
+    consume_items: false
+  rewards:
+  - id: 553F8473C6191EB5
+    type: xp
+    xp: 150
+  - id: E4032195D9A0952E
+    type: item
+    item: betterarcheology:soul_totem
+- id: D97CBEDC468A5108
+  title: Первый музейный экспонат
+  x: 7.5
+  y: 2.5
+  icon: betterarcheology:chicken_fossil
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - 'Разместите собранную окаменелость курицы. Выберите место, где её можно рассмотреть: музей начинается с выставленной
+    находки, а не сундука с фрагментами.'
+  deps:
+  - C4248A7F0011AAF7
+  tasks:
+  - id: 4F9E8A7B479C731C
+    type: advancement
+    advancement: nasledie:alpha34/actions/4f9e8a7b479c731c
+  rewards:
+  - id: 049D98E09980B588
+    type: xp
+    xp: 150
+  - id: BB27A556AABD22C6
+    type: item
+    item: betterarcheology:rotten_fence
+- id: FCDA95A50F3EBC9F
+  title: Доисторический крипер
+  x: 7.5
+  y: 5.0
+  icon: betterarcheology:creeper_fossil
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Разместите собранную окаменелость крипера. Добавьте её к экспозиции и придумайте подпись, которая объяснит,
+    чем этот экспонат отличается от предыдущего.
+  deps:
+  - D97CBEDC468A5108
+  tasks:
+  - id: FBCD803ABB48C000
+    type: advancement
+    advancement: nasledie:alpha34/actions/fbcd803abb48c000
+  rewards:
+  - id: 652F520BCD132483
+    type: xp
+    xp: 150
+  - id: 06B2A81608D6348E
+    type: item
+    item: betterarcheology:cracked_mud_brick_stairs
+- id: 72A2A054CFCAC69D
+  title: Жизнь древних вод
+  x: 7.5
+  y: 7.5
+  icon: betterarcheology:guardian_fossil
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Разместите собранную окаменелость стража. У вашей экспозиции появляется морская часть; оставьте достаточно места,
+    чтобы рассматривать её со всех сторон.
+  deps:
+  - FCDA95A50F3EBC9F
+  tasks:
+  - id: 955B5CC01AEDE53D
+    type: advancement
+    advancement: nasledie:alpha34/actions/955b5cc01aede53d
+  rewards:
+  - id: CB12A21E4904CAAC
+    type: xp
+    xp: 150
+  - id: A9C499AB445B7D30
+    type: item
+    item: betterarcheology:cracked_mud_brick_slab
+- id: 9F662B92CD52ECF4
+  title: След древнего хищника
+  x: 7.5
+  y: 10.0
+  icon: betterarcheology:wolf_fossil
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Разместите собранную окаменелость волка. Четвёртый экспонат завершает этот выставочный маршрут; осталось подготовить
+    музей для посещения.
+  deps:
+  - 72A2A054CFCAC69D
+  tasks:
+  - id: 609E3AD404EF3D43
+    type: advancement
+    advancement: nasledie:alpha34/actions/609e3ad404ef3d43
+  rewards:
+  - id: 16068EBE3BAD0BAC
+    type: xp
+    xp: 150
+  - id: CFECD7F5F8FE9A7F
+    type: item
+    item: betterarcheology:torrent_totem
+- id: C71D778A13B77EBF
+  title: Каменный круг
+  x: 0.0
+  y: -2.5
+  icon: minecraft:mossy_cobblestone
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите древний каменный круг Better Archeology в травянистой местности. С него начинается путешествие к разным
+    памятникам — от открытого неба до подводных руин.
+  deps:
+  - D224CC946496E3DE
+  tasks:
+  - id: 47C44CF07C0D84AE
+    type: structure
+    structure: betterarcheology:stonehenge_grassy
+  rewards:
+  - id: 1DFDF7797A5837A2
+    type: xp
+    xp: 230
+  - id: D33404FC5D91E7C2
+    type: item
+    item: minecraft:emerald
+    count: 16
+- id: 938F14F75C60045E
+  title: Руины красной земли
+  x: 0.0
+  y: -7.5
+  icon: minecraft:terracotta
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите руины Better Archeology в месах. Сравните их с песчаным обелиском и подготовьтесь к поиску светлого
+    храма.
+  deps:
+  - 88ABBD5262DB0432
+  tasks:
+  - id: EFEFAB18D8F695C7
+    type: structure
+    structure: betterarcheology:mesa_ruins
+  rewards:
+  - id: 2A32C6212E1978C8
+    type: xp
+    xp: 240
+  - id: 57922ACA0D5A3F7B
+    type: item
+    item: minecraft:diamond
+    count: 3
+- id: 19745F0470E73C17
+  title: Зал древних светильников
+  x: 0.0
+  y: -10.0
+  icon: minecraft:sea_lantern
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - 'Найдите светлый храм Better Archeology. Осмотрите сохранившееся устройство помещений: следующая остановка храмового
+    маршрута скрыта в джунглях.'
+  deps:
+  - 938F14F75C60045E
+  tasks:
+  - id: E498277AE23F986C
+    type: structure
+    structure: betterarcheology:light_temple
+  rewards:
+  - id: 70AC2B6C57023654
+    type: xp
+    xp: 290
+  - id: 5F694D7F47D739FD
+    type: item
+    item: minecraft:glowstone
+    count: 24
+- id: 316AFB9A561BE01E
+  title: Храм под джунглями
+  x: 0.0
+  y: -12.5
+  icon: minecraft:vine
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите подземный храм Better Archeology в джунглях. Подготовьте освещение и путь возвращения, если решите исследовать
+    его помещения.
+  deps:
+  - 19745F0470E73C17
+  tasks:
+  - id: 8E6EF6072E198A63
+    type: structure
+    structure: betterarcheology:temple_jungle
+  rewards:
+  - id: 1C944A12805955B6
+    type: xp
+    xp: 300
+  - id: D000F3340870298E
+    type: item
+    item: minecraft:golden_apple
+    count: 3
+- id: 88352D47820D40B4
+  title: Последний зал — под водой
+  x: 0.0
+  y: -15.0
+  icon: minecraft:nautilus_shell
+  shape: star
+  size: 1.4
+  optional: true
+  description:
+  - Найдите подводный археологический объект Better Archeology, указанный в задании. Подготовьте дыхание и место
+    всплытия. Это финал путешествия по древним памятникам суши и моря.
+  deps:
+  - 316AFB9A561BE01E
+  tasks:
+  - id: 543108187032305E
+    type: structure
+    structure: betterarcheology:underwater_0
+  rewards:
+  - id: 25C288F3D34334CB
+    type: xp
+    xp: 350
+  - id: 23EDDCDE05F6BD1E
+    type: item
+    item: minecraft:prismarine_crystals
+    count: 24
+- id: 8F6CAF327167B0A5
+  title: Открыть двери музея
+  x: 7.5
+  y: 12.5
+  icon: minecraft:chiseled_bookshelf
+  shape: star
+  size: 1.4
+  optional: true
+  description:
+  - Установите кафедру, резную книжную полку, украшенный горшок и фонарь. Четыре действия отмечаются отдельно.
+  - 'Разместите их возле подготовленных экспонатов: на кафедре можно оставить историю раскопок, на полке — записи
+    экспедиций. Задание проверяет эти четыре размещения; общий вид музея остаётся вашим авторским проектом.'
+  deps:
+  - 9F662B92CD52ECF4
+  tasks:
+  - id: 30E6662CF6244C50
+    type: advancement
+    advancement: nasledie:alpha41_qa2/museum/1_lectern
+  - id: D625969196DCC507
+    type: advancement
+    advancement: nasledie:alpha41_qa2/museum/2_chiseled_bookshelf
+  - id: 326C70EB8D4659DA
+    type: advancement
+    advancement: nasledie:alpha41_qa2/museum/3_decorated_pot
+  - id: AC78608977F9C6B6
+    type: advancement
+    advancement: nasledie:alpha41_qa2/museum/4_lantern
+  rewards:
+  - id: 25F0FBEF2D083CDB
+    type: xp
+    xp: 700
+  - id: 73CCE48212A2268C
+    type: item
+    item: minecraft:experience_bottle
+    count: 24

@@ -1,0 +1,719 @@
+chapter:
+  filename: nasledie_cataclysm
+  id: C54798B08E30ED27
+  group: 842B4DB4DBD349A0
+  title: Катаклизм — восемь великих побед
+  icon: cataclysm:bulwark_of_the_flame
+  order_index: 12
+  progression_mode: flexible
+  default_hide_dependency_lines: false
+  default_quest_shape: circle
+quests:
+- id: 8B22878BF8763415
+  title: Руины на краю Бездны
+  x: -7.5
+  y: 0.0
+  icon: cataclysm:chiseled_end_stone_bricks
+  shape: scroll
+  size: 1.2
+  description:
+  - 'Найдите разрушенную цитадель Cataclysm. Эта экспедиция ведёт от внешнего стража к Стражу Края. Другие арены
+    главы можно искать независимо: общий долгий замысел — восемь побед над главными боссами.'
+  deps:
+  - 28A645C41091FB06
+  tasks:
+  - id: A388C1C1F6E840A0
+    type: advancement
+    advancement: cataclysm:find_ruined_citadel
+  rewards:
+  - id: B60BD9DD8DF72611
+    type: xp
+    xp: 210
+  - id: D236EE96AFEAD996
+    type: item
+    item: better_weaponry:iron_shield
+- id: 1E822E9D64762351
+  title: Первый страж цитадели
+  x: -5.0
+  y: 0.0
+  icon: cataclysm:void_core
+  shape: scroll
+  size: 1.2
+  description:
+  - Победите эндер-голема. Изучите его атаки и используйте бой как подготовку перед встречей с хозяином цитадели.
+  deps:
+  - 8B22878BF8763415
+  tasks:
+  - id: 6998871C80413ACD
+    type: advancement
+    advancement: cataclysm:kill_ender_golem
+  rewards:
+  - id: BDCE433695ECFA41
+    type: xp
+    xp: 210
+  - id: 8F63012B084558DA
+    type: item
+    item: better_weaponry:iron_glaive
+  - id: 5760A4A7B2F4C7F0
+    type: item
+    item: better_weaponry:iron_glaive
+  - id: 6988C7F55E8F5610
+    type: item
+    item: better_weaponry:iron_glaive
+- id: 4E228116310381E8
+  title: Падение Стража Края
+  x: -2.5
+  y: 0.0
+  icon: cataclysm:gauntlet_of_guard
+  shape: star
+  size: 1.4
+  description:
+  - Победите Стража Края. Подготовьте снаряжение и пространство для отхода. Эта победа завершает экспедицию к цитадели
+    и входит в общий список восьми главных боссов.
+  deps:
+  - 1E822E9D64762351
+  tasks:
+  - id: B37DF3808ACCB06A
+    type: advancement
+    advancement: cataclysm:kill_ender_guardian
+  rewards:
+  - id: 687B8B99E045111B
+    type: xp
+    xp: 650
+  - id: 11FBC45A34506438
+    type: item
+    item: better_weaponry:emerald_shield
+  - id: A65DB1729C92A92A
+    type: item
+    item: minecraft:diamond
+    count: 6
+  - id: 229F66E73C2772C0
+    type: item
+    item: better_weaponry:emerald_shield
+  - id: 73D788E089A4EC2D
+    type: item
+    item: better_weaponry:emerald_shield
+- id: FEE6E381AE1C38B7
+  title: Арена раскалённого испытания
+  x: -7.5
+  y: -7.5
+  icon: cataclysm:altar_of_fire
+  shape: scroll
+  size: 1.2
+  description:
+  - 'Найдите Пылающую арену Cataclysm. Осмотрите её до начала главного боя: этот маршрут завершится встречей с Игнисом.'
+  tasks:
+  - id: 50690B7F840A4838
+    type: advancement
+    advancement: cataclysm:find_burning_arena
+  rewards:
+  - id: 8434CB0F15FD1CB2
+    type: xp
+    xp: 210
+  - id: A03F2EC21EDAADF5
+    type: item
+    item: better_weaponry:iron_rapier
+  - id: 28E657D44E68CF6E
+    type: item
+    item: better_weaponry:iron_rapier
+  - id: F4997FD4AEEA0757
+    type: item
+    item: better_weaponry:iron_rapier
+- id: 11CA5BADA78F67A2
+  title: Тот, кто восстал из жара
+  x: -5.0
+  y: -5.0
+  icon: cataclysm:burning_ashes
+  shape: scroll
+  size: 1.2
+  description:
+  - Победите воспламенённого ревенанта. Перед следующим противником восстановите припасы и разберитесь с условиями
+    призыва Игниса у алтаря.
+  deps:
+  - FEE6E381AE1C38B7
+  tasks:
+  - id: 99105EAEEED1838C
+    type: advancement
+    advancement: cataclysm:kill_revenant
+  rewards:
+  - id: F8F80EDB2185B30F
+    type: xp
+    xp: 210
+  - id: 54A0AEFAE4B00CA7
+    type: item
+    item: better_weaponry:amethyst_dagger
+- id: 92B1754C45756107
+  title: Игнис — погасить пламя
+  x: -2.5
+  y: -2.5
+  icon: cataclysm:bulwark_of_the_flame
+  shape: star
+  size: 1.4
+  description:
+  - Победите Игниса. Согласуйте, кто держит внимание противника, а кто использует возможность для атаки. Это финальная
+    победа маршрута Пылающей арены.
+  deps:
+  - 11CA5BADA78F67A2
+  tasks:
+  - id: 02EE1B3AB2A63661
+    type: advancement
+    advancement: cataclysm:kill_ignis
+  rewards:
+  - id: E50A03C14EBC37E0
+    type: xp
+    xp: 880
+  - id: 03347BCFA19376EE
+    type: item
+    item: better_weaponry:amethyst_katana
+  - id: 97391DB434B57DD0
+    type: item
+    item: minecraft:netherite_scrap
+    count: 3
+- id: 9648CF8E2A62BFAF
+  title: За дверью ледяной тюрьмы
+  x: 0.0
+  y: -5.0
+  icon: cataclysm:door_of_seal
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите Морозную тюрьму Cataclysm. Разведайте место предстоящего боя и подготовьтесь к встрече с Маледиктусом.
+  tasks:
+  - id: E9737E31B69B8EC3
+    type: advancement
+    advancement: cataclysm:find_frosted_prison
+  rewards:
+  - id: 21985A215DCCD1A4
+    type: xp
+    xp: 210
+  - id: 0720303D62077041
+    type: item
+    item: better_weaponry:amethyst_shield
+- id: A13ADF5DA222DA68
+  title: Разорвать проклятие
+  x: 0.0
+  y: -2.5
+  icon: cataclysm:cursed_tombstone
+  shape: star
+  size: 1.4
+  description:
+  - Победите Маледиктуса. Это кульминация экспедиции в Морозную тюрьму и одна из восьми отметок большого испытания
+    Катаклизма.
+  deps:
+  - 9648CF8E2A62BFAF
+  tasks:
+  - id: 57FF0429F655E22A
+    type: advancement
+    advancement: cataclysm:kill_maledictus
+  rewards:
+  - id: 346C2459265E39BB
+    type: xp
+    xp: 760
+  - id: 3B41C9036729910D
+    type: item
+    item: better_weaponry:diamond_broadsword
+  - id: E7F4E752019BA25C
+    type: item
+    item: minecraft:golden_apple
+    count: 4
+- id: 391F9987F1F32442
+  title: Фабрика древнего оружия
+  x: 5.0
+  y: -5.0
+  icon: cataclysm:emp
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите Древнюю фабрику Cataclysm. Осмотрите помещения и пути отхода, прежде чем пробуждать её главную угрозу.
+  tasks:
+  - id: 2EB8EC2622C9F900
+    type: advancement
+    advancement: cataclysm:find_ancient_factory
+  rewards:
+  - id: 8DCF7D4B17B2DE25
+    type: xp
+    xp: 210
+  - id: 85A5C15CE51A9C5E
+    type: item
+    item: better_weaponry:diamond_glaive
+- id: 8792C39846E0D49E
+  title: Последний сигнал Предвестника
+  x: 2.5
+  y: -2.5
+  icon: cataclysm:witherite_ingot
+  shape: star
+  size: 1.4
+  description:
+  - Победите Предвестника. Финал фабричной экспедиции требует настоящей победы над древней машиной, а не только
+    посещения её комплекса.
+  deps:
+  - 391F9987F1F32442
+  tasks:
+  - id: D77F8BEAE7104B28
+    type: advancement
+    advancement: cataclysm:kill_harbinger
+  rewards:
+  - id: FCD4B09B2EB19911
+    type: xp
+    xp: 790
+  - id: B165D87C318BE4C5
+    type: item
+    item: better_weaponry:emerald_claymore
+- id: DE6173A11D04779E
+  title: Восемь побед Катаклизма
+  x: 0.0
+  y: 0.0
+  icon: cataclysm:music_disc_the_cataclysmfarer
+  shape: star
+  size: 1.4
+  description:
+  - Получите итоговое достижение за победы над Игнисом, Левиафаном, Предвестником, Стражем Края, Маледиктусом, Древним
+    останком, Незеритовым чудовищем и Сциллой.
+  - 'Каждая арена — самостоятельная экспедиция. Для этого итогового достижения все восемь отметок должны накопиться
+    в личном списке одного из вас: заранее выберите, кто собирает полный набор побед.'
+  optional: true
+  deps:
+  - 4E228116310381E8
+  - 92B1754C45756107
+  - A13ADF5DA222DA68
+  - 8792C39846E0D49E
+  - 64338CFBA5C5B699
+  - 52813202FFECF301
+  - E3651E9F6E43FAEB
+  - A0BE4189EEE72883
+  tasks:
+  - id: C49D634BFB1615BA
+    type: advancement
+    advancement: cataclysm:kill_all_bosses
+  rewards:
+  - id: 2B6301937CC39AA6
+    type: xp
+    xp: 1650
+  - id: 3C8F053DB60D679B
+    type: item
+    item: cataclysm:bulwark_of_the_flame
+  - id: 532C4D6909201EE1
+    type: item
+    item: minecraft:enchanted_golden_apple
+- id: 0B35EC876DCDE6DC
+  title: Пирамида под проклятием
+  x: 5.0
+  y: 0.0
+  icon: cataclysm:sandstone_poison_dart_trap
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите Проклятую пирамиду Cataclysm. Исследование пустынных поселений привело вас к главной арене песков; осмотрите
+    её и подготовьте работу с подозрительным песком.
+  deps:
+  - CC6AECEDA32DA758
+  tasks:
+  - id: 11C317BEE41EB6C2
+    type: advancement
+    advancement: cataclysm:find_cursed_pyramid
+  rewards:
+  - id: DD89F32C3D8A8940
+    type: xp
+    xp: 150
+  - id: F46DD74DCDFEB0C3
+    type: item
+    item: better_weaponry:iron_dagger
+- id: 64338CFBA5C5B699
+  title: Древний останок пробуждён
+  x: 2.5
+  y: 0.0
+  icon: cataclysm:remnant_skull
+  shape: star
+  size: 1.4
+  optional: true
+  description:
+  - Победите Древнего останка. Подсказка Cataclysm связывает его пробуждение с находками из подозрительного песка
+    пирамиды — изучите доступные предметы и место призыва.
+  - Победа завершает пустынную экспедицию. Сам поиск пирамиды не заменяет этот бой.
+  deps:
+  - 0B35EC876DCDE6DC
+  tasks:
+  - id: EC2D1852E6AA9328
+    type: advancement
+    advancement: cataclysm:kill_remnant
+  rewards:
+  - id: 951CAFB963707FF3
+    type: xp
+    xp: 930
+  - id: F1C0DAD98DB54846
+    type: item
+    item: better_weaponry:amethyst_spear
+  - id: B68CA06185551D5F
+    type: item
+    item: minecraft:emerald_block
+    count: 2
+- id: 0A9ACE48F5328D23
+  title: Кузница душ
+  x: 5.0
+  y: 5.0
+  icon: minecraft:blackstone
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Найдите Кузницу душ Cataclysm. Приготовьтесь к встрече с Незеритовым чудовищем и заранее наметьте пространство
+    для манёвра.
+  tasks:
+  - id: 7CD152B1588A0B8D
+    type: advancement
+    advancement: cataclysm:find_soul_black_smith
+  rewards:
+  - id: E8D234A0AC79EBA1
+    type: xp
+    xp: 150
+  - id: 3C7A11BE5DB8B244
+    type: item
+    item: better_weaponry:amethyst_rapier
+- id: 52813202FFECF301
+  title: Сломать незеритовую машину
+  x: 2.5
+  y: 2.5
+  icon: cataclysm:infernal_forge
+  shape: star
+  size: 1.4
+  optional: true
+  description:
+  - Победите Незеритовое чудовище. Это главный итог похода в Кузницу душ; сохраните силы на бой, а не только на
+    дорогу к арене.
+  deps:
+  - 0A9ACE48F5328D23
+  tasks:
+  - id: 61D66741699F3400
+    type: advancement
+    advancement: cataclysm:kill_monstrosity
+  rewards:
+  - id: E0E0FD04924D12B5
+    type: xp
+    xp: 820
+  - id: 169FE3FC00D98431
+    type: item
+    item: better_weaponry:emerald_battleaxe
+- id: F2FD5EEB117B3119
+  title: Акрополь в небесах
+  x: 0.0
+  y: 7.5
+  icon: cataclysm:lacrima
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - 'Найдите Акрополь Cataclysm. Он относится к небесной экспедиции: готовьте подъём и возвращение, а не подводный
+    поиск. Цель этой ветки — встреча со Сциллой.'
+  tasks:
+  - id: 5B7505306FBBE929
+    type: advancement
+    advancement: cataclysm:find_acropolis
+  rewards:
+  - id: 1F894065B7B28498
+    type: xp
+    xp: 150
+  - id: A69426158E5F0C42
+    type: item
+    item: better_weaponry:iron_cutlass
+- id: 43C293DB6BB1573F
+  title: Клешни на пути к буре
+  x: 0.0
+  y: 5.0
+  icon: cataclysm:chitin_claw
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Победите Клавдиана. Это отдельный противник на пути к финальному испытанию ветки; после боя восстановите запас
+    припасов.
+  deps:
+  - F2FD5EEB117B3119
+  tasks:
+  - id: C387BE2EAD7E901A
+    type: advancement
+    advancement: cataclysm:kill_clawdian
+  rewards:
+  - id: 1476BC9EFFBAAA6E
+    type: xp
+    xp: 150
+  - id: 637E96CD8340FE4A
+    type: item
+    item: better_weaponry:diamond_claymore
+- id: E3651E9F6E43FAEB
+  title: Тишина после Сциллы
+  x: 0.0
+  y: 2.5
+  icon: cataclysm:essence_of_the_storm
+  shape: star
+  size: 1.4
+  optional: true
+  description:
+  - Победите Сциллу, императрицу бури. Эта победа завершает небесный маршрут и входит в общий итог Катаклизма.
+  deps:
+  - 43C293DB6BB1573F
+  tasks:
+  - id: CAC18A295462F077
+    type: advancement
+    advancement: cataclysm:kill_scylla
+  rewards:
+  - id: CA71E441049E6E63
+    type: xp
+    xp: 150
+  - id: 59A6118AF4874BD4
+    type: item
+    item: better_weaponry:diamond_scythe
+- id: A96277A6BE605D32
+  title: Город под толщей воды
+  x: -7.5
+  y: 7.5
+  icon: cataclysm:stone_tiles
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - 'Найдите Затонувший город Cataclysm. Подготовьте длительное пребывание под водой и место отступления: впереди
+    обитатели глубин и Левиафан.'
+  tasks:
+  - id: 7D7BCA46A46147AF
+    type: advancement
+    advancement: cataclysm:find_sunken_city
+  rewards:
+  - id: 1B404DED685B7DA3
+    type: xp
+    xp: 150
+  - id: 73B061D6A5DE32C8
+    type: item
+    item: better_weaponry:emerald_broadsword
+- id: A0BE4189EEE72883
+  title: Левиафан морских глубин
+  x: -2.5
+  y: 2.5
+  icon: cataclysm:tidal_claws
+  shape: star
+  size: 1.4
+  optional: true
+  description:
+  - 'Победите Левиафана. Завершите подготовку и согласуйте действия перед призывом: это кульминация экспедиции в
+    Затонувший город.'
+  deps:
+  - F21761F49BC3DC1D
+  tasks:
+  - id: 3DD443B075791183
+    type: advancement
+    advancement: cataclysm:kill_leviathan
+  rewards:
+  - id: 029BE0CB1C444D22
+    type: xp
+    xp: 950
+  - id: A9CBC04C72B490E9
+    type: item
+    item: better_weaponry:emerald_glaive
+  - id: C64E97CC861E944E
+    type: item
+    item: minecraft:nautilus_shell
+    count: 8
+- id: 1CB249497EF14D92
+  title: Храм за пределами пирамиды
+  x: 7.5
+  y: 2.5
+  icon: cataclysm:chiseled_obsidian_bricks
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите заброшенный храм Cataclysm. Это самостоятельная исследовательская остановка пустынного маршрута; Проклятая
+    пирамида не заменяет её.
+  optional: true
+  deps:
+  - 0B35EC876DCDE6DC
+  tasks:
+  - id: B5C41EE9B56E59EF
+    type: structure
+    structure: cataclysm:abandoned_temple
+  rewards:
+  - id: F62908158A9993D0
+    type: xp
+    xp: 280
+  - id: EEAE011C52D87AF5
+    type: item
+    item: cataclysm:ancient_metal_nugget
+    count: 16
+- id: 28A645C41091FB06
+  title: Шпиль перед Бездной
+  x: -10.0
+  y: 0.0
+  icon: cataclysm:chiseled_end_stone_bricks
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите заброшенный шпиль Cataclysm. Эта остановка открывает путь исследования руин перед большой экспедицией
+    к цитадели.
+  optional: true
+  tasks:
+  - id: 3C1C354CFF2FD7D0
+    type: structure
+    structure: cataclysm:abandoned_spire
+  rewards:
+  - id: 8ACB9D187FF0760E
+    type: xp
+    xp: 370
+  - id: 4E098678BC6E99D3
+    type: item
+    item: cataclysm:ancient_metal_block
+- id: B2584C9F3E1DF7E2
+  title: Аметистовое гнездо
+  x: 10.0
+  y: 5.0
+  icon: cataclysm:amethyst_crab_shell
+  shape: star
+  size: 1.4
+  description:
+  - Найдите аметистовое гнездо Cataclysm. Завершите небольшой побочный маршрут осмотром необычного места; убивать
+    его обитателей для зачёта посещения не требуется.
+  optional: true
+  deps:
+  - 1CB249497EF14D92
+  tasks:
+  - id: DE5A3901FF13C18F
+    type: structure
+    structure: cataclysm:amethyst_nest
+  rewards:
+  - id: 08BF23836133E6E1
+    type: xp
+    xp: 310
+  - id: 2BC889E2DCC27CB8
+    type: item
+    item: cataclysm:amethyst_crab_shell
+    count: 4
+- id: A0D9B1BC47B0A927
+  title: Поселение после катастрофы
+  x: 12.5
+  y: 0.0
+  icon: cataclysm:ancient_metal_ingot
+  shape: scroll
+  size: 1.2
+  description:
+  - 'Найдите заброшенную деревню Cataclysm. С неё начинается пустынная экспедиция: следы поселений, древние раскопки
+    и Проклятая пирамида.'
+  optional: true
+  tasks:
+  - id: 9E51FCA0DEC4D392
+    type: structure
+    structure: cataclysm:abandoned_village
+  rewards:
+  - id: 8C5580DCAF9530CE
+    type: xp
+    xp: 230
+  - id: 8D375A173932949B
+    type: item
+    item: cataclysm:black_steel_ingot
+    count: 3
+- id: AB0DB46C4BD473E2
+  title: Деревня занята чужими
+  x: 10.0
+  y: 0.0
+  icon: cataclysm:chiseled_obsidian_bricks
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите захваченную пустынную деревню Cataclysm. Разведайте подходы снаружи, прежде чем выбирать глубину исследования.
+    Зачёт относится к обнаружению поселения.
+  optional: true
+  deps:
+  - A0D9B1BC47B0A927
+  tasks:
+  - id: AADD70CF5E1D4071
+    type: structure
+    structure: cataclysm:desert_occupied_village
+  rewards:
+  - id: 47F0678F15B4D317
+    type: xp
+    xp: 360
+  - id: 17396B10579D4D48
+    type: item
+    item: cataclysm:cursium_ingot
+    count: 2
+- id: CC6AECEDA32DA758
+  title: Раскоп древнего мира
+  x: 7.5
+  y: 0.0
+  icon: cataclysm:ancient_metal_ingot
+  shape: scroll
+  size: 1.2
+  description:
+  - Найдите пустынный участок раскопок Cataclysm. Осмотрите следы прошлого и подготовьте кисть для дальнейшего пути
+    к пирамиде.
+  optional: true
+  deps:
+  - AB0DB46C4BD473E2
+  tasks:
+  - id: 31C017234D1E36A0
+    type: structure
+    structure: cataclysm:desert_site
+  rewards:
+  - id: 593283F55102413D
+    type: xp
+    xp: 300
+  - id: 8F5FF9D53901BB2C
+    type: item
+    item: cataclysm:ancient_metal_ingot
+    count: 6
+- id: BBA92955F4AA2D1F
+  title: Пепельный караул
+  x: -2.5
+  y: -5.0
+  icon: cataclysm:burning_ashes
+  shape: star
+  size: 1.4
+  optional: true
+  description:
+  - Победите воспламенённого берсерка и малое незеритовое чудовище. Оба вида отмечаются отдельно. Это дополнительная
+    охота огненной ветки; победа над Игнисом не заменяет ни одного условия.
+  deps:
+  - 92B1754C45756107
+  tasks:
+  - id: D6491487471A24D1
+    type: advancement
+    advancement: nasledie:alpha39/cataclysm/ash_vanguard
+  - id: A10CF780888BCB94
+    type: advancement
+    advancement: nasledie:alpha39/cataclysm/ash_vanguard__ministrosity
+  rewards:
+  - id: A6E64DBC97744540
+    type: xp
+    xp: 350
+  - id: CA4EF2538E590947
+    type: item
+    item: minecraft:netherite_scrap
+    count: 2
+- id: F21761F49BC3DC1D
+  title: Охрана морской пучины
+  x: -5.0
+  y: 5.0
+  icon: cataclysm:chitin_claw
+  shape: scroll
+  size: 1.2
+  optional: true
+  description:
+  - Победите брута-глубинника, колдуна-глубинника и кораллового колосса. Все три противника отмечаются отдельно.
+    После этой охоты подготовьтесь к главной цели морского маршрута — Левиафану.
+  deps:
+  - A96277A6BE605D32
+  tasks:
+  - id: 63F436E8B8DC5FB3
+    type: advancement
+    advancement: nasledie:alpha39/cataclysm/deep_patrol
+  - id: 8142594984D3923F
+    type: advancement
+    advancement: nasledie:alpha39/cataclysm/deep_patrol__warlock
+  - id: D61F32D36926189F
+    type: advancement
+    advancement: nasledie:alpha39/cataclysm/deep_patrol__coralssus
+  rewards:
+  - id: 9166D158313770C1
+    type: xp
+    xp: 450
+  - id: 3FF99E96F08A5705
+    type: item
+    item: minecraft:diamond
+    count: 3
