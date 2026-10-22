@@ -1,18 +1,18 @@
 {
   "purpose": "Full questbook test candidate; not a modpack or gameplay-validated release",
   "baseline_commit": "f68124fb33597aa13b4b6a8dd8c6dde7c879b188",
-  "source_commit": "78ef953e6367cc19df15edf0b03f6eba3a4a7aa9",
+  "source_commit": "f79784178dc123a0e0db34fbe81743246062b2cd",
   "gameplay_test": "not run",
   "release_ready": false,
   "counts": {
     "chapters": 18,
-    "quests": 483,
-    "tasks": 511,
-    "rewards": 988,
-    "dependencies": 461,
-    "optional_quests": 315,
+    "quests": 485,
+    "tasks": 513,
+    "rewards": 992,
+    "dependencies": 463,
+    "optional_quests": 317,
     "task_types": {
-      "advancement": 380,
+      "advancement": 382,
       "biome": 21,
       "checkmark": 1,
       "dimension": 1,
@@ -22,17 +22,17 @@
       "structure": 74
     },
     "reward_types": {
-      "item": 500,
+      "item": 502,
       "stage": 4,
-      "xp": 484
+      "xp": 486
     },
-    "parsed_json": 78,
+    "parsed_json": 80,
     "parsed_snbt": 19
   },
   "static_summary": {
     "errors": 0,
     "warnings": 0,
-    "unknown": 9,
+    "unknown": 10,
     "result": "pass_with_warnings_or_unknowns",
     "gameplay_blockers": 0,
     "release_ready": false
@@ -48,7 +48,7 @@
     "config/ftbquests/quests/chapters/nasledie_exploration.snbt": "a210505de8242223a4dbc504f90202f66c235be089b53224abc5d1093703add4",
     "config/ftbquests/quests/chapters/nasledie_grand_projects.snbt": "ea23039114467f5a07fb4a10c0906df956ab7cfb3f87c108e2a47acdaec87706",
     "config/ftbquests/quests/chapters/nasledie_guild.snbt": "c1243109a1e963d6165ef9923c1ed9f7f80cbce33443534d9b1f3813cbc45112",
-    "config/ftbquests/quests/chapters/nasledie_industry.snbt": "3a286992c9bd852ef8da833200e35509f956563653acde725c17a0cef85bf0db",
+    "config/ftbquests/quests/chapters/nasledie_industry.snbt": "9fe8872ef0f6d90cc2ca3aa589768ce14c58df0aeb3c071cb0f2315da308c716",
     "config/ftbquests/quests/chapters/nasledie_legends.snbt": "4fd399f4229dca53ba54de8fbfe18993a06a9344672d7c36037d84089c423838",
     "config/ftbquests/quests/chapters/nasledie_life.snbt": "34e51c217c7654e4c70fb2bd41d2fbb67e2a00dded337b95743123f987665ed5",
     "config/ftbquests/quests/chapters/nasledie_netheritage.snbt": "924768a55af30db9dcda5347a10e9eaef72f253e38d4b128d62e55bfb3fa2709",
@@ -138,6 +138,8 @@
     "kubejs/data/nasledie/advancements/alpha43/expeditions/nest_treasure.json": "3e861ed6332b79cf46fb83e95f72d7d6e387355d879f6aeb1e983d38834d3155",
     "kubejs/data/nasledie/advancements/alpha43/expeditions/temple_cave_spider.json": "7d5ef179c988e3696f00bd59cd39a96126112d3312c19b98a632dd13c3e1e04d",
     "kubejs/data/nasledie/advancements/alpha43/expeditions/temple_treasure.json": "82040a85bedc67126c50f2559bf816b7476cdc0c98de40cecafdf1a46a8a043a",
+    "kubejs/data/nasledie/advancements/alpha43/industry/diesel_flour.json": "af349d43183d3a1497b1577e91c199453a18acdc7e5305cf6024093b816da6c3",
+    "kubejs/data/nasledie/advancements/alpha43/industry/electric_wire.json": "af349d43183d3a1497b1577e91c199453a18acdc7e5305cf6024093b816da6c3",
     "kubejs/data/nasledie/advancements/economy/bought_bread.json": "5764a810f9aeffcbb2fac2bb4999d311d79845c659dfdf895cfef3d666f98857",
     "kubejs/data/nasledie/advancements/economy/bought_enchanted_book.json": "ea23c097a2a6cafdd2b51cfe80bec8a905b3267dca57bc00e28671b044518db1",
     "kubejs/data/nasledie/advancements/economy/bought_ender_pearl.json": "a3be8874ce72187dbe32a82c653b9f1bf2f76be01db929bc1e542486c2af6a08",
@@ -156,11 +158,12 @@
     "kubejs/data/nasledie/advancements/setup/industry/diesel_engine.json": "b4f8a4d8b8a7a304c05dea6fba646afe0dd11b319024b98fb9f4873905c9d974",
     "kubejs/data/nasledie/advancements/setup/industry/electric_motor.json": "f98db34e40c5404942b8c930613e781eb2053240fc7cdb0ee1bbdb31262fe1a7",
     "kubejs/data/nasledie/advancements/setup/industry/modular_accumulator.json": "35c0e2056d78cfab813dc730b320346d4970f02ce8274614b54254f20784cb27",
-    "kubejs/data/nasledie/advancements/setup/industry/rolling_mill.json": "a54ddac8878a421c149542d0887209f2f1f1f6405e45b62d11017df6e85230d0"
+    "kubejs/data/nasledie/advancements/setup/industry/rolling_mill.json": "a54ddac8878a421c149542d0887209f2f1f1f6405e45b62d11017df6e85230d0",
+    "kubejs/server_scripts/nasledie_factory_trials.js": "e83abcea30d014415386d11de8834c0e4df67ed5a4fc383ec18e9c4b5f17a931"
   },
   "patch_applied_to_baseline_and_compared": true,
-  "zip_sha256": "5a5fc1aedfb99c674fdc76bb58ab703b958457278cd030df02a9c7dc0438e403",
-  "patch_sha256": "0ae3754f48789ae63f270369ad98267f10794af14db60b2070d0b103d9d62da9",
-  "zip_entries": 127,
+  "zip_sha256": "626a2f5aeb364a6ed2838db3fe63dfc7c404023b973daa46ace10babf4f04631",
+  "patch_sha256": "a50cb7b814983d88a69446c8f19a9716fc18160311af18c1cfd710cf6afee1a5",
+  "zip_entries": 131,
   "zip_bytes_match_sources": true
 }

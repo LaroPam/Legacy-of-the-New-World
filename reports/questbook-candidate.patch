@@ -7590,7 +7590,7 @@ index f9a9e45..7228c5f 100644
              tasks: [
                  {
 diff --git a/config/ftbquests/quests/chapters/nasledie_industry.snbt b/config/ftbquests/quests/chapters/nasledie_industry.snbt
-index d55b3cd..21d3977 100644
+index d55b3cd..f456b49 100644
 --- a/config/ftbquests/quests/chapters/nasledie_industry.snbt
 +++ b/config/ftbquests/quests/chapters/nasledie_industry.snbt
 @@ -2,7 +2,7 @@
@@ -7621,7 +7621,7 @@ index d55b3cd..21d3977 100644
 -                "§bПрактика: §fПодготовьте Brass и изучите необходимость нагрева."
 -                "§aЧто реально проверяется: §fВстроенное достижение Create за получение латуни; автоматическая плавка отдельно не доказывается."
 +                "Получите латунный слиток: смешайте медь и цинк в чаше под миксером с нагревом от горелки. Латунь открывает точные механизмы, механические руки и более сложную сборку."
-+                "В этой главе цель — освободить ваши руки: собрать точный механизм, научить руку переносить материалы и запустить мощную дробилку. Отдельные проекты подготовят электрический привод, дизельную мастерскую и большую котельную."
++                "В этой главе цель — освободить ваши руки: собрать точный механизм, научить руку переносить материалы и запустить мощную дробилку. Дополнительные маршруты ведут к проволоке на электроприводе, муке от дизельной мельницы и большой котельной. Выберите полезный для вашей базы результат и двигайтесь по его ветке."
              ]
              tasks: [
                  {
@@ -7854,14 +7854,14 @@ index d55b3cd..21d3977 100644
              tasks: [
                  {
                      id: "18BB1F3514FC9109"
-@@ -360,21 +326,16 @@
+@@ -360,21 +326,17 @@
          }
          {
              id: "11C8B2178B32ACA1"
 -            title: "Монтаж прокатного стана"
 -            x: 32.00d
 -            y: 5.00d
-+            title: "Стан для будущей проводки"
++            title: "Стан для будущей электросети"
 +            x: 10.00d
 +            y: 2.50d
              icon: "createaddition:rolling_mill"
@@ -7878,11 +7878,12 @@ index d55b3cd..21d3977 100644
 -                "§eЗачем: §fRolling Mill из Create Crafts & Additions вытягивает материалы."
 -                "§bПрактика: §fИзучите привод прокатного стана и рецепты проволоки в JEI; изготовьте собственный стан."
 -                "§aАвтозачёт: §fУстановите createaddition:rolling_mill в мире. Это подтверждает монтаж блока, но НЕ производство, передачу энергии или работу станка."
-+                "Поставьте прокатный стан. Он станет началом электрического проекта: изучите рецепты проволоки и подготовьте материалы для катушек. Этот этап посвящён монтажу станка."
++                "Установите прокатный стан: он превращает металлические слитки в стержни, а листы — в проволоку. Сначала дайте ему вращение от уже освоенного механического привода и подготовьте детали для первой проводки."
++                "Цель этой ветки — перевести стан на электродвигатель и выпускать новую проволоку вдали от исходного привода. Дальше вы поставите разъёмы, получите катушку, генератор и накопитель; в финале линия выполнит контрольный заказ."
              ]
              tasks: [
                  {
-@@ -398,20 +359,17 @@
+@@ -398,20 +360,17 @@
          }
          {
              id: "7902F08D734F15A4"
@@ -7910,7 +7911,7 @@ index d55b3cd..21d3977 100644
              ]
              tasks: [
                  {
-@@ -435,21 +393,16 @@
+@@ -435,21 +394,16 @@
          }
          {
              id: "6FCBB312002617A1"
@@ -7938,7 +7939,7 @@ index d55b3cd..21d3977 100644
              ]
              tasks: [
                  {
-@@ -473,21 +426,17 @@
+@@ -473,21 +427,17 @@
          }
          {
              id: "00CCE8A0C6DB132B"
@@ -7967,7 +7968,7 @@ index d55b3cd..21d3977 100644
              ]
              tasks: [
                  {
-@@ -511,21 +460,18 @@
+@@ -511,21 +461,18 @@
          }
          {
              id: "6B646181101275F1"
@@ -7994,7 +7995,7 @@ index d55b3cd..21d3977 100644
              ]
              tasks: [
                  {
-@@ -549,21 +495,19 @@
+@@ -549,21 +496,19 @@
          }
          {
              id: "C90C2277CD8D5A1A"
@@ -8005,9 +8006,10 @@ index d55b3cd..21d3977 100644
 +            x: 22.50d
 +            y: 2.50d
              icon: "createaddition:electric_motor"
-             shape: "star"
+-            shape: "star"
 -            size: 1.28d
-+            size: 1.40d
++            shape: "gear"
++            size: 1.20d
              optional: true
              dependencies: [
                  "6B646181101275F1"
@@ -8017,12 +8019,12 @@ index d55b3cd..21d3977 100644
 -                "§eЗачем: §fЭлектрический двигатель возвращает энергию в механическое вращение."
 -                "§bПрактика: §fСоедините Alternator, накопитель и Electric Motor в контур. Измерьте показатели мультиметром."
 -                "§aАвтозачёт: §fУстановите createaddition:electric_motor в мире. Это подтверждает монтаж блока, но НЕ производство, передачу энергии или работу станка."
-+                "Поставьте электродвигатель у станка, который хотите питать через электрическую сеть. Генератор превращает вращение в электричество, а этот двигатель выполняет обратную работу."
-+                "Монтажный маршрут закончен: у вас есть стан, катушка, разъёмы, генератор, накопитель и потребитель. Соедините их и проверьте заряд, направление и скорость; установка двигателя сама по себе ещё не подтверждает работу всей линии."
++                "Поставьте электродвигатель у прокатного стана. Генератор превращает вращение в электричество, а этот двигатель выполняет обратную работу: позволяет доставить энергию проводами и получить вращение у потребителя."
++                "Соедините разъёмы катушкой, подайте энергию на двигатель и передайте его вращение стану. Проверьте заряд, соединения и нагрузку. Следующий шаг — выпустить медную проволоку на собранном приводе; одного монтажа для производственного финала недостаточно."
              ]
              tasks: [
                  {
-@@ -594,21 +538,19 @@
+@@ -594,21 +539,19 @@
          }
          {
              id: "DBE167F5106C0134"
@@ -8046,11 +8048,11 @@ index d55b3cd..21d3977 100644
 -                "§aАвтопроверка: §fСканер должен находиться в основной руке с результатом Type 2 или Type 3 после завершённого сканирования."
 -                "§7Проверяется записанный в NBT результат сканера, а не фактическая добыча нефти."
 +                "Держите в основной руке нефтяной сканер с показанием типа 2 или 3. Найдите участок с подходящим сигналом и отметьте его для возвращения с оборудованием."
-+                "Нефтяная ветка ведёт к запасу дизеля и оснащённому двигателю. Первое измерение помогает выбрать место, но не заменяет добычу и переработку."
++                "Нефтяная ветка ведёт к компактной мельнице на дизеле: топливо позволит обустроить производство у дальней базы. Первое измерение помогает выбрать место; затем предстоят добыча, переработка и запуск двигателя."
              ]
              tasks: [
                  {
-@@ -632,20 +574,19 @@
+@@ -632,20 +575,19 @@
          }
          {
              id: "DF4913690DFB0B64"
@@ -8076,7 +8078,7 @@ index d55b3cd..21d3977 100644
              ]
              tasks: [
                  {
-@@ -669,21 +610,18 @@
+@@ -669,21 +611,18 @@
          }
          {
              id: "DC984DF9A7FB8BA2"
@@ -8102,13 +8104,13 @@ index d55b3cd..21d3977 100644
              ]
              tasks: [
                  {
-@@ -709,21 +647,18 @@
+@@ -709,21 +648,19 @@
          }
          {
              id: "6185039BCD7BBF2F"
 -            title: "Монтаж дизельного двигателя"
 -            x: 44.00d
-+            title: "Двигатель возле станков"
++            title: "Двигатель для походной мельницы"
 +            x: 17.50d
              y: -5.00d
              icon: "createdieselgenerators:diesel_engine"
@@ -8125,11 +8127,12 @@ index d55b3cd..21d3977 100644
 -                "§eЗачем: §fDiesel Engine создаёт кинетическую мощность за счёт топлива."
 -                "§bПрактика: §fУстановите двигатель и попробуйте соединить его с кинетической сетью."
 -                "§aАвтозачёт: §fУстановите createdieselgenerators:diesel_engine в мире. Это подтверждает монтаж блока, но НЕ производство, передачу энергии или работу станка."
-+                "Установите дизельный двигатель. Разместите его там, где нужен отдельный источник вращения, и подготовьте подачу подходящего топлива. Сейчас требуется монтаж; запуск проверьте по вращению и показателям самого устройства."
++                "Установите обычный дизельный двигатель рядом с жерновами Create. Это отдельный источник вращения для мест, куда неудобно тянуть длинный вал: подготовьте бак с дизелем и соедините вращающийся выход с жерновами."
++                "Сейчас требуется монтаж. После знакомства с турбонаддувом ветка завершится контрольным помолом пшеницы на этом приводе."
              ]
              tasks: [
                  {
-@@ -754,21 +689,19 @@
+@@ -754,21 +691,19 @@
          }
          {
              id: "01A997FB916A7F84"
@@ -8139,10 +8142,9 @@ index d55b3cd..21d3977 100644
 +            x: 20.00d
              y: -5.00d
              icon: "createdieselgenerators:engine_turbocharger"
--            shape: "gear"
+             shape: "gear"
 -            size: 1.16d
-+            shape: "star"
-+            size: 1.40d
++            size: 1.20d
              optional: true
              dependencies: [
                  "6185039BCD7BBF2F"
@@ -8152,12 +8154,12 @@ index d55b3cd..21d3977 100644
 -                "§eЗадача: §fПодготовьте дизельный двигатель и попробуйте применить Engine Turbocharger к его корпусу."
 -                "§aАвтопроверка: §fОтслеживается применение турбокомпрессора к блоку Diesel Engine."
 -                "§7Внимание: это проверка взаимодействия, а НЕ доказательство успешной установки или увеличения мощности."
-+                "Примените турбонагнетатель к дизельному двигателю. Это завершает маршрут оснащения нефтяной мастерской: найден участок, получено топливо, установлен двигатель и опробовано его дополнение."
-+                "Успешную работу и изменение характеристик проверьте на самом двигателе — взаимодействие с дополнением не измеряет его производительность."
++                "Примените турбонагнетатель к дизельному двигателю. Взаимодействие знакомит с дополнением; успешную установку и изменение характеристик проверьте на самом двигателе."
++                "Оборудование готово к полезной работе. Следующий шаг — жернова на дизельном приводе: смелите пшеницу и получите муку для будущих походных припасов."
              ]
              tasks: [
                  {
-@@ -792,20 +725,16 @@
+@@ -792,20 +727,16 @@
          }
          {
              id: "A7CEF6292A89B0A2"
@@ -8185,7 +8187,7 @@ index d55b3cd..21d3977 100644
              ]
              tasks: [
                  {
-@@ -829,20 +758,18 @@
+@@ -829,20 +760,18 @@
          }
          {
              id: "41102025AA038BF1"
@@ -8213,7 +8215,7 @@ index d55b3cd..21d3977 100644
              ]
              tasks: [
                  {
-@@ -873,21 +800,18 @@
+@@ -873,21 +802,18 @@
          }
          {
              id: "D6494B4749F6037E"
@@ -8241,7 +8243,7 @@ index d55b3cd..21d3977 100644
              ]
              tasks: [
                  {
-@@ -913,22 +837,18 @@
+@@ -913,22 +839,18 @@
  
          {
              id: "B5E6A417D0B2682F"
@@ -8270,7 +8272,7 @@ index d55b3cd..21d3977 100644
              ]
              tasks: [
                  {
-@@ -952,22 +872,18 @@
+@@ -952,22 +874,18 @@
          }
          {
              id: "4CE999FF8FB4E62F"
@@ -8299,6 +8301,63 @@ index d55b3cd..21d3977 100644
              ]
              tasks: [
                  {
+@@ -989,5 +907,56 @@
+                 }
+             ]
+         }
++        {
++            id: "43927DB0D42A5F58"
++            title: "Проволока от электропривода"
++            x: 25.00d
++            y: 2.50d
++            icon: "createaddition:copper_wire"
++            shape: "star"
++            size: 1.50d
++            optional: true
++            dependencies: ["C90C2277CD8D5A1A"]
++            description: [
++                "Запустите прокатный стан от электродвигателя и превратите один медный лист Create в две медные проволоки. Теперь ваша электрическая линия делает материал для собственного расширения: из проволоки собираются катушки для новых соединений."
++                "Подведите электричество к двигателю через разъём и катушку, затем соедините его вращающийся выход со станом напрямую или валами и шестернями. Генератору нужен отдельный механический привод; накопитель позволяет использовать запас заряда. Замкнутый круг «двигатель → генератор → тот же двигатель» не создаёт энергию."
++                "Медный лист получается из медного слитка под прессом. В стане слиток даст стержни, а для этой цели нужна именно проволока из листа. При необходимости смотрите рецепт предмета и встроенные сцены с устройством станков."
++                "Для зачёта сделайте контрольный выпуск: освободите выход стана, временно отключите автоматическую подачу и выгрузку. Возьмите обычные часы в основную руку и нажмите ими правой кнопкой по вращающемуся стану. Затем в течение минуты положите на вход ровно один медный лист; часы можно убрать, чтобы открыть стан."
++                "Дождитесь сообщения об успешном выпуске, прежде чем забирать проволоку. Оставайтесь не дальше 16 блоков; для опыта используйте короткий привод до 32 звеньев. Максим может наблюдать, а Юра — подавать лист. После выхода из игры незаконченный опыт нужно начать часами заново."
++                "Четыре латунные воронки из награды помогут превратить контрольный стан в постоянную линию: настройте подачу листов и выдачу проволоки, затем добавляйте новые рабочие места по мере необходимости."
++            ]
++            tasks: [
++                {"id": "43DA5FE12471C262", "type": "advancement", "advancement": "nasledie:alpha43/industry/electric_wire", "title": "Прокатать медный лист на электроприводе"}
++            ]
++            rewards: [
++                { id: "43609D0BB3655592" type: "xp" xp: 300 }
++                { id: "43830694594B33E9" type: "item" item: { id: "create:brass_funnel" Count: 4b } }
++            ]
++        }
++        {
++            id: "43CE9DDCB2EF166C"
++            title: "Походная мельница на дизеле"
++            x: 22.50d
++            y: -5.00d
++            icon: "create:wheat_flour"
++            shape: "star"
++            size: 1.50d
++            optional: true
++            dependencies: ["01A997FB916A7F84"]
++            description: [
++                "Запустите жернова Create от обычного дизельного двигателя и смелите одну пшеницу в муку. Такой компактный привод пригодится для мастерской у дальней базы: вы сами выбираете место и привозите запас топлива."
++                "Залейте дизель в бак двигателя и передайте вращение жерновам напрямую или валами и шестернями. Проверьте, что источник действительно работает и нагрузка не остановила линию. В этом опыте используется обычный одноблочный двигатель и именно дизельное топливо."
++                "Для зачёта освободите выход жерновов и временно отключите автоматическую подачу и выгрузку. Возьмите обычные часы в основную руку и нажмите ими правой кнопкой по вращающимся жерновам. Затем в течение минуты подайте ровно одну пшеницу; часы можно убрать, чтобы открыть жернова."
++                "Дождитесь сообщения об успешном помоле, прежде чем забирать муку. Оставайтесь не дальше 16 блоков и используйте короткий привод до 32 звеньев. Иногда жернова дают дополнительную муку или семена — такой результат тоже подходит. После выхода из игры незаконченный опыт нужно начать часами заново."
++                "Дальше превращайте муку в тесто и хлеб знакомым способом из главы Create, верните автоматическую подачу и готовьте припасы для новых вылазок. Восемь порций мяса с картофелем из награды накормят вас, пока вы обустраиваете производство."
++            ]
++            tasks: [
++                {"id": "43D5DC583A7E887D", "type": "advancement", "advancement": "nasledie:alpha43/industry/diesel_flour", "title": "Смолоть пшеницу от дизельного двигателя"}
++            ]
++            rewards: [
++                { id: "43A69B423A4DE45F" type: "xp" xp: 300 }
++                { id: "430ACBBAEF2DDB2B" type: "item" item: { id: "farmersdelight:steak_and_potatoes" Count: 8b } }
++            ]
++        }
+ ]
+ }
 diff --git a/config/ftbquests/quests/chapters/nasledie_legends.snbt b/config/ftbquests/quests/chapters/nasledie_legends.snbt
 index c56168d..cd28dd2 100644
 --- a/config/ftbquests/quests/chapters/nasledie_legends.snbt
@@ -14286,3 +14345,226 @@ index 0000000..75266b3
 +    ]
 +  ]
 +}
+diff --git a/kubejs/data/nasledie/advancements/alpha43/industry/diesel_flour.json b/kubejs/data/nasledie/advancements/alpha43/industry/diesel_flour.json
+new file mode 100644
+index 0000000..55819d6
+--- /dev/null
++++ b/kubejs/data/nasledie/advancements/alpha43/industry/diesel_flour.json
+@@ -0,0 +1,12 @@
++{
++  "criteria": {
++    "success": {
++      "trigger": "minecraft:impossible"
++    }
++  },
++  "requirements": [
++    [
++      "success"
++    ]
++  ]
++}
+diff --git a/kubejs/data/nasledie/advancements/alpha43/industry/electric_wire.json b/kubejs/data/nasledie/advancements/alpha43/industry/electric_wire.json
+new file mode 100644
+index 0000000..55819d6
+--- /dev/null
++++ b/kubejs/data/nasledie/advancements/alpha43/industry/electric_wire.json
+@@ -0,0 +1,12 @@
++{
++  "criteria": {
++    "success": {
++      "trigger": "minecraft:impossible"
++    }
++  },
++  "requirements": [
++    [
++      "success"
++    ]
++  ]
++}
+diff --git a/kubejs/server_scripts/nasledie_factory_trials.js b/kubejs/server_scripts/nasledie_factory_trials.js
+new file mode 100644
+index 0000000..1baac4e
+--- /dev/null
++++ b/kubejs/server_scripts/nasledie_factory_trials.js
+@@ -0,0 +1,181 @@
++// Exact API evidence and limitations: reviews/factory_trial_evidence.json.
++// Server-only, bounded observations. Reads machines; grants only the two named player advancements.
++var NasledieFactoryTrials = (function () {
++    var registries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
++    var recipes = {
++        'createaddition:rolling_mill': {
++            driver: 'createaddition:electric_motor', input: 'create:copper_sheet',
++            product: 'createaddition:copper_wire', outputs: [2], extra: '',
++            advancement: 'nasledie:alpha43/industry/electric_wire',
++            prompt: 'Подайте один медный лист Create. Стан должен выпустить две проволоки.'
++        },
++        'create:millstone': {
++            driver: 'createdieselgenerators:diesel_engine', input: 'minecraft:wheat',
++            product: 'create:wheat_flour', outputs: [1, 3], extra: 'minecraft:wheat_seeds',
++            advancement: 'nasledie:alpha43/industry/diesel_flour',
++            prompt: 'Подайте одну пшеницу. Жернова должны выпустить муку на дизельном приводе.'
++        }
++    };
++    var watches = {};
++    var ticks = 0;
++    var uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
++
++    function key(block) { return block.x + ',' + block.y + ',' + block.z; }
++    function equalEntity(a, b) { return a != null && b != null && a.equals(b); }
++    function fail(message) { return {error: message}; }
++
++    function trace(level, block, recipe) {
++        var seen = {};
++        var route = [];
++        var network = null;
++        for (var step = 0; step < 32; step++) {
++            var posKey = key(block);
++            if (seen[posKey]) return fail('В приводе обнаружен замкнутый путь. Дайте линии перестроиться и повторите измерение.');
++            seen[posKey] = true;
++            var entity = block.entity;
++            if (!entity || typeof entity.getSpeed !== 'function' ||
++                    !isFinite(Number(entity.getSpeed())) || Number(entity.getSpeed()) === 0 || entity.network == null) {
++                return fail('Станок или его привод не вращается. Проверьте питание, соединения и перегрузку.');
++            }
++            var currentNetwork = String(entity.network);
++            if (network == null) network = currentNetwork;
++            if (network !== currentNetwork) return fail('Соединения привода ещё перестраиваются. Повторите измерение.');
++            route.push(posKey);
++            if (!entity.hasSource()) {
++                var generated = Number(entity.getGeneratedSpeed());
++                if (String(block.id) !== recipe.driver || !isFinite(generated) || generated === 0) {
++                    return fail('Этот станок получает вращение от другого источника. Подключите привод, указанный в задании.');
++                }
++                if (recipe.driver === 'createdieselgenerators:diesel_engine') {
++                    var fluid = entity.getTank().getFluid();
++                    if (fluid.isEmpty() || String(registries.FLUIDS.getKey(fluid.getFluid())) !== 'createdieselgenerators:diesel') {
++                        return fail('Для этого испытания нужен дизель в баке обычного дизельного двигателя.');
++                    }
++                }
++                return {signature: network + '|' + route.join(';'), entity: entity};
++            }
++            var source = entity.source;
++            // Check before getBlock/entity: an observation must never load a remote chunk.
++            if (source == null || !level.hasChunkAt(source)) return fail('Часть привода сейчас не загружена. Для опыта соберите короткую линию рядом.');
++            block = level.getBlock(source);
++        }
++        return fail('Привод слишком длинный для контрольного опыта. Используйте линию до 32 звеньев.');
++    }
++
++    function sample(level, block, recipe) {
++        if (!level.hasChunkAt(block.pos)) return fail('Станок сейчас не загружен.');
++        var entity = block.entity;
++        if (String(block.id) !== recipe.station || !entity) return fail('Станок убран или заменён.');
++        var origin = trace(level, block, recipe);
++        if (origin.error) return origin;
++        var input = entity.inputInv.getStackInSlot(0);
++        var output = {product: 0, extra: 0, total: 0, unknown: false};
++        for (var slot = 0; slot < entity.outputInv.getSlots(); slot++) {
++            var stack = entity.outputInv.getStackInSlot(slot);
++            var count = Number(stack.count);
++            if (count <= 0) continue;
++            output.total += count;
++            if (String(stack.id) === recipe.product) output.product += count;
++            else if (recipe.extra && String(stack.id) === recipe.extra) output.extra += count;
++            else output.unknown = true;
++        }
++        return {machine: entity, origin: origin, timer: Number(entity.timer),
++            input: String(input.id), count: Number(input.count), output: output};
++    }
++
++    function completed(previous, current, recipe) {
++        return previous.timer > 0 && current.timer <= 0 &&
++            previous.input === recipe.input && previous.count === 1 && current.count === 0 &&
++            previous.output.total === 0 && !current.output.unknown &&
++            recipe.outputs.indexOf(current.output.product) !== -1 &&
++            current.output.extra >= 0 && current.output.extra <= 1;
++    }
++
++    function start(event, station) {
++        if (String(event.hand) !== 'MAIN_HAND' || String(event.item.id) !== 'minecraft:clock') return;
++        var player = event.player;
++        if (!player.server) return;
++        var uuid = String(player.uuid);
++        if (!uuidPattern.test(uuid)) return;
++        delete watches[uuid];
++        try {
++            var recipe = recipes[station];
++            recipe.station = station;
++            var current = sample(player.level, event.block, recipe);
++            if (current.error) player.tell(current.error);
++            else if (Object.keys(watches).length >= 8) player.tell('Все измерители заняты. Повторите немного позже.');
++            else if (current.output.total !== 0 || current.count > 1 || (current.count === 1 && current.input !== recipe.input)) {
++                player.tell('Освободите выход станка. Для контрольного опыта оставьте на входе одну нужную заготовку или пустой слот.');
++            } else {
++                watches[uuid] = {recipe: recipe, x: event.block.x, y: event.block.y, z: event.block.z,
++                    pos: event.block.pos, dimension: String(player.level.dimension), until: ticks + 1200, previous: current};
++                player.tell('Измерение начато на одну минуту. Отключите автоподачу и выгрузку, оставайтесь рядом. ' + recipe.prompt);
++            }
++        } catch (error) {
++            console.error('[Nasledie factory trials] Cannot start: ' + error);
++            player.tell('Не удалось начать измерение. Подробности есть в журнале сервера.');
++        }
++        // Keep the station GUI closed during the clock's measurement interaction.
++        event.cancel();
++    }
++
++    function tick(server) {
++        ticks++;
++        Object.keys(watches).forEach(function (uuid) {
++            var watch = watches[uuid];
++            var player = server.getPlayer(uuid);
++            if (!player) { delete watches[uuid]; return; }
++            try {
++                var dx = Number(player.x) - (watch.x + 0.5);
++                var dy = Number(player.y) - (watch.y + 0.5);
++                var dz = Number(player.z) - (watch.z + 0.5);
++                if (ticks >= watch.until || !player.isAlive() || String(player.level.dimension) !== watch.dimension || dx * dx + dy * dy + dz * dz > 256) {
++                    delete watches[uuid];
++                    player.tell('Измерение завершено без зачёта. Вернитесь к станку и начните новый контрольный опыт.');
++                    return;
++                }
++                if (!player.level.hasChunkAt(watch.pos)) {
++                    delete watches[uuid];
++                    player.tell('Станок сейчас не загружен. Начните новый опыт после возвращения.');
++                    return;
++                }
++                var block = player.level.getBlock(watch.x, watch.y, watch.z);
++                var current = sample(player.level, block, watch.recipe);
++                var previous = watch.previous;
++                if (current.error || !equalEntity(current.machine, previous.machine) ||
++                        !equalEntity(current.origin.entity, previous.origin.entity) || current.origin.signature !== previous.origin.signature) {
++                    delete watches[uuid];
++                    player.tell(current.error || 'Во время измерения изменился привод или станок. Начните новый опыт.');
++                    return;
++                }
++                if (completed(previous, current, watch.recipe)) {
++                    delete watches[uuid];
++                    // Server command source: no operator rights are required from the player.
++                    // Target is a validated UUID and advancement is a constant from recipes above.
++                    server.runCommandSilent('advancement grant ' + uuid + ' only ' + watch.recipe.advancement);
++                    player.tell('Готово: станок обработал заготовку от нужного привода. Производственный цикл подтверждён.');
++                    return;
++                }
++                if (current.output.total !== 0 || current.count > 1 ||
++                        (current.count === 1 && current.input !== watch.recipe.input) ||
++                        (previous.count === 1 && current.count === 0)) {
++                    delete watches[uuid];
++                    player.tell('Контрольная партия изменилась или продукт забрали слишком рано. Освободите выход, отключите автоматику и повторите опыт с одной заготовкой.');
++                    return;
++                }
++                watch.previous = current;
++            } catch (error) {
++                delete watches[uuid];
++                console.error('[Nasledie factory trials] Observation stopped: ' + error);
++                player.tell('Измерение прервано без зачёта. Подробности есть в журнале сервера.');
++            }
++        });
++    }
++
++    Object.keys(recipes).forEach(function (station) {
++        BlockEvents.rightClicked(station, function (event) { start(event, station); });
++    });
++    ServerEvents.tick(function (event) { tick(event.server); });
++    ServerEvents.unloaded(function () { watches = {}; });
++    return {completed: completed};
++})();
