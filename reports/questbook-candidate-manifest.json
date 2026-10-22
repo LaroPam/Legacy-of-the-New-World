@@ -1,18 +1,18 @@
 {
   "purpose": "Full questbook test candidate; not a modpack or gameplay-validated release",
   "baseline_commit": "f68124fb33597aa13b4b6a8dd8c6dde7c879b188",
-  "source_commit": "7a1fb0d75f1597bd2dc6241bd70774db5dcde7a9",
+  "source_commit": "78ef953e6367cc19df15edf0b03f6eba3a4a7aa9",
   "gameplay_test": "not run",
   "release_ready": false,
   "counts": {
     "chapters": 18,
-    "quests": 478,
-    "tasks": 504,
-    "rewards": 978,
-    "dependencies": 456,
-    "optional_quests": 310,
+    "quests": 483,
+    "tasks": 511,
+    "rewards": 988,
+    "dependencies": 461,
+    "optional_quests": 315,
     "task_types": {
-      "advancement": 373,
+      "advancement": 380,
       "biome": 21,
       "checkmark": 1,
       "dimension": 1,
@@ -22,11 +22,11 @@
       "structure": 74
     },
     "reward_types": {
-      "item": 495,
+      "item": 500,
       "stage": 4,
-      "xp": 479
+      "xp": 484
     },
-    "parsed_json": 73,
+    "parsed_json": 78,
     "parsed_snbt": 19
   },
   "static_summary": {
@@ -41,7 +41,7 @@
     "config/ftbquests/quests/chapter_groups.snbt": "f3b24e9dcce8b626af1f5194e586bd9c281ee354a598733ab47e6e869cbe4cd9",
     "config/ftbquests/quests/chapters/nasledie_archeology.snbt": "987db494908ad53536585405fef455df55c9e1f16e00963af576075fa3249116",
     "config/ftbquests/quests/chapters/nasledie_cataclysm.snbt": "cb560353d9e0230e9746a0e2bde7b3ca15218d451918767c536bccdbe3fa282f",
-    "config/ftbquests/quests/chapters/nasledie_compass.snbt": "25d703f0da3af11bc67ae16acd83e1416067ef3bd5f490252de6419b90e0aa24",
+    "config/ftbquests/quests/chapters/nasledie_compass.snbt": "b3475ee643a4ea204c1a0e6c5ddd2a59b8beab8bdb46ce9be78ad4cf40888658",
     "config/ftbquests/quests/chapters/nasledie_create.snbt": "1f2be262bcef4bae51a0ca025696ccfe20c691d1ea0ef7cb162621390e9e9e8e",
     "config/ftbquests/quests/chapters/nasledie_defense.snbt": "385d85fe2a99e5ce594d05c11a0306b0f414e93be93364834fb65609f1948cd6",
     "config/ftbquests/quests/chapters/nasledie_economy.snbt": "8b8b464cf037d5b7f8bf73ce0463ef82cc7fc38d27736f0fd5b3b53a82912e4d",
@@ -51,8 +51,8 @@
     "config/ftbquests/quests/chapters/nasledie_industry.snbt": "3a286992c9bd852ef8da833200e35509f956563653acde725c17a0cef85bf0db",
     "config/ftbquests/quests/chapters/nasledie_legends.snbt": "4fd399f4229dca53ba54de8fbfe18993a06a9344672d7c36037d84089c423838",
     "config/ftbquests/quests/chapters/nasledie_life.snbt": "34e51c217c7654e4c70fb2bd41d2fbb67e2a00dded337b95743123f987665ed5",
-    "config/ftbquests/quests/chapters/nasledie_netheritage.snbt": "9703068c50d85a9b445a32196e67d54f674b0d321fd03eb48779bac8ddcc0d3f",
-    "config/ftbquests/quests/chapters/nasledie_ocean.snbt": "0aaf42d8011f57555181e4424e16476f331090e2cdad8434172c5fdb95113350",
+    "config/ftbquests/quests/chapters/nasledie_netheritage.snbt": "924768a55af30db9dcda5347a10e9eaef72f253e38d4b128d62e55bfb3fa2709",
+    "config/ftbquests/quests/chapters/nasledie_ocean.snbt": "b0ad5d2705140b5e3a0e84cad27a5e72313a730a76f54033ced8986d7060d961",
     "config/ftbquests/quests/chapters/nasledie_prolog.snbt": "21a5e285ec624e8c16f53898511e6188c155916b54d2691458788867b42275eb",
     "config/ftbquests/quests/chapters/nasledie_relics.snbt": "212bb698b3814332bfda60d0675674c0aa1cd3d72e5a79024fffa7f477d116c0",
     "config/ftbquests/quests/chapters/nasledie_transport.snbt": "8a69d0c5602d96eab59e010078b2cecc69e9cd1439d8ce5c778eb703bdc61b4c",
@@ -133,6 +133,11 @@
     "kubejs/data/nasledie/advancements/alpha42/nether/fireproof_assault/wither.json": "fb90ffe0aac6ce16b09a1fcc55d3eed9304e891f9cc6574d16dc92721e7be640",
     "kubejs/data/nasledie/advancements/alpha42/ocean/conduit_duel/elder.json": "0bc0176941f39a97ec49a6480e4385134e5284f1af0d5708c3ca2127afa7531b",
     "kubejs/data/nasledie/advancements/alpha42/ocean/conduit_duel/guard.json": "1854ff7de725bf494da906cb43baf36230b5f28a83cfd6d493b1e6b752247208",
+    "kubejs/data/nasledie/advancements/alpha43/expeditions/foundry_blaze.json": "238f11cfa8d87503d8824ec05d0069e51029eba95def6aacf06106dbbe465693",
+    "kubejs/data/nasledie/advancements/alpha43/expeditions/foundry_treasure.json": "26ec792a5a86b60ab5b9ef2599e7e986be34beab78eaa682405deea8b55c476d",
+    "kubejs/data/nasledie/advancements/alpha43/expeditions/nest_treasure.json": "3e861ed6332b79cf46fb83e95f72d7d6e387355d879f6aeb1e983d38834d3155",
+    "kubejs/data/nasledie/advancements/alpha43/expeditions/temple_cave_spider.json": "7d5ef179c988e3696f00bd59cd39a96126112d3312c19b98a632dd13c3e1e04d",
+    "kubejs/data/nasledie/advancements/alpha43/expeditions/temple_treasure.json": "82040a85bedc67126c50f2559bf816b7476cdc0c98de40cecafdf1a46a8a043a",
     "kubejs/data/nasledie/advancements/economy/bought_bread.json": "5764a810f9aeffcbb2fac2bb4999d311d79845c659dfdf895cfef3d666f98857",
     "kubejs/data/nasledie/advancements/economy/bought_enchanted_book.json": "ea23c097a2a6cafdd2b51cfe80bec8a905b3267dca57bc00e28671b044518db1",
     "kubejs/data/nasledie/advancements/economy/bought_ender_pearl.json": "a3be8874ce72187dbe32a82c653b9f1bf2f76be01db929bc1e542486c2af6a08",
@@ -154,8 +159,8 @@
     "kubejs/data/nasledie/advancements/setup/industry/rolling_mill.json": "a54ddac8878a421c149542d0887209f2f1f1f6405e45b62d11017df6e85230d0"
   },
   "patch_applied_to_baseline_and_compared": true,
-  "zip_sha256": "a08180f7fbbf1ec6072bac73a20633b4f7cac5e16de6a9d38507253462f200bc",
-  "patch_sha256": "818ea146bfa748e598f7e14b4a959f1c09e97f202aeae8d8bb75c75be074de6b",
-  "zip_entries": 119,
+  "zip_sha256": "5a5fc1aedfb99c674fdc76bb58ab703b958457278cd030df02a9c7dc0438e403",
+  "patch_sha256": "0ae3754f48789ae63f270369ad98267f10794af14db60b2070d0b103d9d62da9",
+  "zip_entries": 127,
   "zip_bytes_match_sources": true
 }

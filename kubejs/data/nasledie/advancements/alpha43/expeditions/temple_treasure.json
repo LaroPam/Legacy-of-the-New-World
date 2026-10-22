@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "success": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "success"
+    ]
+  ]
+}

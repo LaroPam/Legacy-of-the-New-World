@@ -160,6 +160,102 @@ class PreservationTests(unittest.TestCase):
         self.assertIn('unregistered_entity_predicate', {i['code'] for i in report['warnings']})
 
 
+class IconNavigationTests(unittest.TestCase):
+    def chapter(self, icons):
+        return {REF: {'quests': [dict(id=str(i), **({'icon': icon} if icon is not None else {}))
+                                for i, icon in enumerate(icons)]}}
+
+    def test_dominant_icon_is_rejected_even_if_inherited_by_completed_chapter(self):
+        source = self.chapter(['minecraft:compass'] * 8)
+        issues = quality.icon_variety_issues(source)
+        self.assertEqual([i['code'] for i in issues], ['dominant_quest_icon'])
+        errors, warnings = quality.classify_quality(issues, issues, 'nasledie_defense',
+            {'completed_chapters': ['nasledie_defense']})
+        self.assertEqual(len(errors), 1)
+        self.assertEqual(warnings, [])
+
+    def test_small_thematic_group_and_task_derived_icons_are_allowed(self):
+        icons = ['minecraft:compass'] * 3 + [None] * 5
+        self.assertEqual(quality.icon_variety_issues(self.chapter(icons)), [])
+        self.assertEqual(quality.icon_variety_issues(self.chapter(['minecraft:compass'] * 4)), [])
+
+    def test_stack_count_variants_do_not_hide_dominant_item(self):
+        icons = [{'id': 'minecraft:compass', 'Count': i + 1} for i in range(8)]
+        issues = quality.icon_variety_issues(self.chapter(icons))
+        self.assertEqual(len(issues), 1)
+        self.assertEqual(issues[0]['count'], 8)
+
+
+class ContentAdditionTests(unittest.TestCase):
+    ADDITION = '''{id:"0000000000000010" title:"Expedition" description:["Explore the vault"]
+      x:6d y:0d size:1d dependencies:["0000000000000005"]
+      tasks:[{id:"0000000000000011" type:"advancement" advancement:"test:treasure"}]
+      rewards:[{id:"0000000000000012" type:"xp" xp:200}]}'''
+
+    def scope(self, body=None):
+        return {'quest_additions': {'nasledie_defense': [
+            {'snbt': body or self.ADDITION, 'reason': 'Continue an expedition with a new action'}]}}
+
+    def report(self, extra=None, source=SOURCE, scope=None):
+        import apply_polish
+        current = apply_polish.append_quests(source.decode(), [extra or self.ADDITION]).encode()
+        return quality.evaluate({REF: current}, {REF: SOURCE}, scope=scope or self.scope())
+
+    def codes(self, report):
+        return {e['code'] for e in report['errors']}
+
+    def test_exact_addition_passes_and_reproduces_with_new_design(self):
+        import apply_polish
+        design = {'chapter': {}, 'quests': {'0000000000000010': {'values': {'title': 'Open the vault'}}}}
+        output = apply_polish.render(SOURCE.decode(), design, {}, [self.ADDITION]).encode()
+        result = quality.evaluate({REF: output}, {REF: SOURCE}, scope=self.scope())
+        self.assertEqual(result['errors'], [])
+        self.assertEqual(result['counts']['quests'], 3)
+        self.assertFalse(result['summary']['release_ready'])
+
+    def test_addition_cannot_weaken_original_reward_guard(self):
+        r = self.report(source=SOURCE.replace(b'xp: 10', b'xp: 11'))
+        self.assertIn('mechanics_changed', self.codes(r))
+
+    def test_changed_new_task_or_reward_is_not_an_allowed_addition(self):
+        for old, new in [('xp:200', 'xp:999'), ('test:treasure', 'test:unrelated'),
+                         ('0000000000000005', '0000000000000002')]:
+            with self.subTest(old=old):
+                self.assertIn('quest_addition_mismatch', self.codes(self.report(extra=self.ADDITION.replace(old, new))))
+
+    def test_new_quest_cannot_reuse_an_existing_task_id(self):
+        invalid = self.ADDITION.replace('0000000000000011', '0000000000000003')
+        self.assertIn('quest_addition_reused_id', self.codes(self.report(extra=invalid, scope=self.scope(invalid))))
+
+    def test_old_quest_cannot_be_redeclared_as_an_addition(self):
+        invalid = self.ADDITION.replace('0000000000000010', '0000000000000002')
+        result = quality.evaluate({REF: SOURCE}, {REF: SOURCE}, scope=self.scope(invalid))
+        self.assertIn('quest_addition_reused_id', self.codes(result))
+
+    def test_missing_new_quest_is_detected(self):
+        result = quality.evaluate({REF: SOURCE}, {REF: SOURCE}, scope=self.scope())
+        self.assertIn('quest_addition_mismatch', self.codes(result))
+        self.assertIn('id_inventory_changed', self.codes(result))
+
+    def test_undeclared_added_quest_is_rejected(self):
+        import apply_polish
+        current = apply_polish.append_quests(SOURCE.decode(), [self.ADDITION]).encode()
+        result = quality.evaluate({REF: current}, {REF: SOURCE})
+        self.assertIn('quest_addition_mismatch', self.codes(result))
+
+    def test_new_advancement_requires_exact_hash_and_cannot_replace_old_data(self):
+        import hashlib
+        name = 'kubejs/data/nasledie/advancements/alpha43/treasure.json'
+        raw = b'{"criteria":{"loot":{"trigger":"minecraft:player_generates_container_loot","conditions":{"loot_table":"test:treasure"}}}}'
+        scope = {'file_additions': {name: {'sha256': hashlib.sha256(raw).hexdigest(), 'reason': 'Specific new loot action'}}}
+        before = {REF: SOURCE}
+        self.assertEqual(quality.evaluate({**before, name: raw}, before, scope=scope)['errors'], [])
+        self.assertIn('file_addition_mismatch', self.codes(quality.evaluate({**before, name: raw+b'\n'}, before, scope=scope)))
+        self.assertIn('file_addition_mismatch', self.codes(quality.evaluate(before, before, scope=scope)))
+        old = {**before, name: raw}
+        self.assertIn('file_addition_mismatch', self.codes(quality.evaluate(old, old, scope=scope)))
+
+
 class GeometryTests(unittest.TestCase):
     def test_intersection_not_just_exact_center(self):
         self.assertAlmostEqual(quality.distance_to_segment((2, .2), (0, 0), (4, 0)), .2)

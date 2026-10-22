@@ -10,7 +10,27 @@ import apply_reference
 import quality
 
 
-def render(source, design, fixes):
+def append_quests(source, additions):
+    if not additions:
+        return source
+    original = snbt.loads(source)
+    ids = {str(q['id']).upper() for q in original['quests']}
+    for body in additions:
+        ident = str(snbt.loads(body)['id']).upper()
+        if ident in ids:
+            raise ValueError('New quest reuses an existing ID')
+        ids.add(ident)
+    spans = apply_reference.field_spans(source, apply_reference.whitespace(source, 0))
+    end = spans['quests'][1] - 1
+    start = source.rfind('\n', 0, end) + 1
+    if source[start:end].strip():
+        start = end
+    inserted = '\n'.join('        ' + line for body in additions for line in body.splitlines()) + '\n'
+    return source[:start] + inserted + source[start:]
+
+
+def render(source, design, fixes, additions=()):
+    source = append_quests(source, additions)
     result = apply_reference.transform(source, design)
     fields = apply_reference.field_spans(result, apply_reference.whitespace(result, 0))
     pos = apply_reference.whitespace(result, fields['quests'][0] + 1)
@@ -46,6 +66,7 @@ def main():
     args = p.parse_args()
     root = Path(__file__).resolve().parents[1]
     scope = json.loads((root/'reviews/polish_scope.json').read_text())
+    quality.quest_additions(scope)  # Validate declarations before any writes.
     designs = root/'reviews/chapters'
     paths = [designs/('nasledie_'+name+'.json') for name in args.chapters] if args.chapters else sorted(designs.glob('*.json'))
     for path in paths:
@@ -54,8 +75,10 @@ def main():
             raise ValueError('Design baseline mismatch')
         name = quality.CHAPTER_ROOT + path.stem + '.snbt'
         source = quality.git(root, 'show', f'{scope["baseline_commit"]}:{name}').decode()
-        output = render(source, design, scope['quest_fixes'])
+        additions = [entry['snbt'] for entry in scope.get('quest_additions', {}).get(path.stem, [])]
+        output = render(source, design, scope['quest_fixes'], additions)
         before, after = snbt.loads(source), snbt.loads(output)
+        expected = snbt.loads(append_quests(source, additions))
         guarded = deepcopy(after)
         for q in guarded['quests']:
             for key, fix in scope['quest_fixes'].get(str(q['id']), {}).items():
@@ -63,7 +86,7 @@ def main():
                     q.pop(key, None)
                 else:
                     q[key] = fix['before']
-        if quality.canonical(quality.protected_body(before)) != quality.canonical(quality.protected_body(guarded)):
+        if quality.canonical(quality.protected_body(expected)) != quality.canonical(quality.protected_body(guarded)):
             raise ValueError('Protected data changed outside exact approved fixes')
         target = root/name
         if args.check:
@@ -78,7 +101,7 @@ def main():
             old_quests = {str(q['id']):q for q in before['quests']}
             changes = []
             for q in after['quests']:
-                old = old_quests[str(q['id'])]
+                old = old_quests.get(str(q['id']), {})
                 fields = {k:{'before':old.get(k),'after':q.get(k)} for k in sorted(set(old)|set(q)) if old.get(k)!=q.get(k)}
                 changes.append({'id':str(q['id']), 'title':str(q['title']), 'fields':fields,
                                 'review':design['quests'][str(q['id'])]['reason']})

@@ -1,0 +1,940 @@
+{
+  "scope": "Exact static JAR/NBT/code evidence. No Minecraft test.",
+  "base_commit": "9e0c06f5ff9b988d24c0ba471457288e74e20364",
+  "method": "NBT decoded with nbtlib 2.0.4; proof retains original JAR and entry SHA256, relevant paths and pool references.",
+  "native_advancements": [
+    {
+      "jar": "dungeons-and-taverns-3.0.3.f.jar",
+      "jar_sha256": "251b531ff2882c61a4c2eba3bd7b1683aa22b6c2d459e27bfde04a2948c99e1e",
+      "path": "data/nova_structures/advancements/adventure/conquer_miner_outpost.json",
+      "sha256": "26abc282bdca082e95f9a9e9399791535de53d8680e0f16e8b2636476c2f08e5",
+      "body": {
+        "parent": "nova_structures:adventure/find_all_illager_structures",
+        "criteria": {
+          "kill_outpost_evoker": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+              "entity": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:evoker",
+                    "location": {
+                      "structure": "nova_structures:badlands_miner_outpost"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "display": {
+          "announce_to_chat": true,
+          "description": {
+            "translate": "Conquer a Badlands Miner Outpost"
+          },
+          "frame": "task",
+          "hidden": false,
+          "icon": {
+            "item": "minecraft:iron_pickaxe"
+          },
+          "show_toast": true,
+          "title": {
+            "translate": "Miner Inconvenience"
+          }
+        },
+        "requirements": [
+          [
+            "kill_outpost_evoker"
+          ]
+        ],
+        "sends_telemetry_event": false
+      }
+    },
+    {
+      "jar": "dungeons-and-taverns-3.0.3.f.jar",
+      "jar_sha256": "251b531ff2882c61a4c2eba3bd7b1683aa22b6c2d459e27bfde04a2948c99e1e",
+      "path": "data/nova_structures/advancements/adventure/loot_illager_hideout.json",
+      "sha256": "9996ad867ef84fea4e950402a0b65503530b91fb0483bb3eced61b03ef721ac2",
+      "body": {
+        "parent": "nova_structures:adventure/find_all_illager_structures",
+        "criteria": {
+          "loot_illager_hideout_heart_loot": {
+            "trigger": "minecraft:player_generates_container_loot",
+            "conditions": {
+              "loot_table": "nova_structures:chests/illager_hideout_heart_loot"
+            }
+          }
+        },
+        "display": {
+          "announce_to_chat": true,
+          "description": {
+            "translate": "Relieve an Illager Hideout of its loot"
+          },
+          "frame": "task",
+          "hidden": false,
+          "icon": {
+            "item": "minecraft:deepslate_emerald_ore"
+          },
+          "show_toast": true,
+          "title": {
+            "translate": "Hide and Seek"
+          }
+        },
+        "requirements": [
+          [
+            "loot_illager_hideout_heart_loot"
+          ]
+        ],
+        "sends_telemetry_event": false
+      }
+    }
+  ],
+  "structures": [
+    {
+      "definition": {
+        "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+        "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+        "path": "data/dungeons_arise/worldgen/structure/foundry.json",
+        "sha256": "e6d56df957b655a6f40b4d23f9dc44a60a54f6a6b174eea1f84fdc052647a8a3",
+        "body": {
+          "type": "minecraft:jigsaw",
+          "start_pool": "dungeons_arise:underworld/foundry/foundry_start",
+          "size": 6,
+          "biomes": "#dungeons_arise:has_structure/foundry_biomes",
+          "adapt_noise": false,
+          "spawn_overrides": {},
+          "max_distance_from_center": 106,
+          "step": "underground_structures",
+          "start_height": {
+            "absolute": -10
+          },
+          "use_expansion_hack": false
+        }
+      },
+      "pieces": [
+        {
+          "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+          "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+          "path": "data/dungeons_arise/structures/foundry/foundry_blaze_0.nbt",
+          "sha256": "1ba31f5a4e51a2f91b6caa94dbbc4b796429a1c53743a6d597a67d31e8c8a8d5",
+          "matches": [
+            {
+              "nbt_path": "blocks[0].nbt.SpawnData.entity.id",
+              "value": "minecraft:blaze"
+            },
+            {
+              "nbt_path": "blocks[0].nbt.SpawnPotentials[0].data.entity.id",
+              "value": "minecraft:blaze"
+            }
+          ],
+          "template_pool_references": [
+            {
+              "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+              "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+              "path": "data/dungeons_arise/worldgen/template_pool/underworld/foundry/foundry_spawners.json",
+              "sha256": "2944d0ab64eba18706fd2e18a948c1403b66393e6fbbad829431f1864ded4e92"
+            }
+          ]
+        },
+        {
+          "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+          "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+          "path": "data/dungeons_arise/structures/foundry/foundry_corridor_crossing_2.nbt",
+          "sha256": "0b6c292b3811b5f6394b354acbeae475514d8c238a59e07ac52b87b74d927c51",
+          "matches": [
+            {
+              "nbt_path": "blocks[29765].nbt.LootTable",
+              "value": "dungeons_arise:chests/foundry/foundry_treasure"
+            }
+          ],
+          "template_pool_references": [
+            {
+              "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+              "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+              "path": "data/dungeons_arise/worldgen/template_pool/underworld/foundry/foundry_corridors.json",
+              "sha256": "f83a62f570c95b40598bab3105700e912bece05ed542d70146ee4cb83c4264d4"
+            }
+          ]
+        }
+      ],
+      "loot_tables": {
+        "dungeons_arise:chests/foundry/foundry_treasure": {
+          "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+          "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+          "path": "data/dungeons_arise/loot_tables/chests/foundry/foundry_treasure.json",
+          "sha256": "9bc765d6d76fa4aa48590d77d80e28bad2935e9ecfddfc01d513288837e1a3d6",
+          "body": {
+            "type": "minecraft:chest",
+            "pools": [
+              {
+                "rolls": {
+                  "min": 2,
+                  "max": 4
+                },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_block",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 2,
+                          "max": 4
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald_block"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:book",
+                    "functions": [
+                      {
+                        "function": "minecraft:enchant_with_levels",
+                        "levels": {
+                          "min": 20,
+                          "max": 39
+                        },
+                        "treasure": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_scrap",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 4,
+                          "max": 12
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 8,
+                          "max": 32
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ingot",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 4,
+                          "max": 48
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:loot_table",
+                    "name": "minecraft:chests/bastion_treasure"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "definition": {
+        "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+        "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+        "path": "data/dungeons_arise/worldgen/structure/infested_temple.json",
+        "sha256": "051c32e1d16790dbd7a9e20fb9d22364150170edf9abf3db6a7ddcbfa5f16cb5",
+        "body": {
+          "type": "minecraft:jigsaw",
+          "start_pool": "dungeons_arise:haunted/infested_temple/infested_temple_start",
+          "size": 7,
+          "biomes": "#dungeons_arise:has_structure/infested_temple_biomes",
+          "adapt_noise": false,
+          "spawn_overrides": {},
+          "max_distance_from_center": 104,
+          "step": "surface_structures",
+          "start_height": {
+            "absolute": 54
+          },
+          "project_start_to_heightmap": "WORLD_SURFACE_WG",
+          "use_expansion_hack": false
+        }
+      },
+      "pieces": [
+        {
+          "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+          "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+          "path": "data/dungeons_arise/structures/infested_temple/infested_temple_cave_spider_0.nbt",
+          "sha256": "4ae215d5d8505f27962f962766b37a50fbe033e818abb8acf2f81c0cbc7f2f81",
+          "matches": [
+            {
+              "nbt_path": "blocks[0].nbt.SpawnData.entity.id",
+              "value": "minecraft:cave_spider"
+            },
+            {
+              "nbt_path": "blocks[0].nbt.SpawnPotentials[0].data.entity.id",
+              "value": "minecraft:cave_spider"
+            }
+          ],
+          "template_pool_references": [
+            {
+              "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+              "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+              "path": "data/dungeons_arise/worldgen/template_pool/haunted/infested_temple/infested_temple_spawners.json",
+              "sha256": "d9223829370272c28bccc2d19f1c8f38bb84f083e5ca5f1ea3d4d559dfd9929c"
+            }
+          ]
+        },
+        {
+          "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+          "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+          "path": "data/dungeons_arise/structures/infested_temple/infested_temple_inner_top_0.nbt",
+          "sha256": "313cd9bf8c9845d9282c053613be76074b6a2a7619746be6e83c39180db99184",
+          "matches": [
+            {
+              "nbt_path": "blocks[48652].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48653].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48654].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48655].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48657].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48658].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48659].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48660].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48663].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48664].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48665].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48666].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48668].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48669].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48670].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            },
+            {
+              "nbt_path": "blocks[48671].nbt.LootTable",
+              "value": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+            }
+          ],
+          "template_pool_references": [
+            {
+              "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+              "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+              "path": "data/dungeons_arise/worldgen/template_pool/haunted/infested_temple/infested_temple_top.json",
+              "sha256": "26c8e9377b77286bdb3817d3935b22abb8fa6b8bfeae6e7b135e12313c0f4117"
+            }
+          ]
+        }
+      ],
+      "loot_tables": {
+        "dungeons_arise:chests/infested_temple/infested_temple_top_treasure": {
+          "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+          "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+          "path": "data/dungeons_arise/loot_tables/chests/infested_temple/infested_temple_top_treasure.json",
+          "sha256": "8915a8185667629d5ccace94f5bfc3ac8815d97bf54e6895532574f1953c1cf2",
+          "body": {
+            "type": "minecraft:chest",
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:book",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 3,
+                          "max": 6
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:book",
+                    "functions": [
+                      {
+                        "function": "minecraft:enchant_with_levels",
+                        "levels": 20
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:experience_bottle",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 24,
+                          "max": 32
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:empty",
+                    "weight": 3
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_leggings",
+                    "functions": [
+                      {
+                        "function": "minecraft:enchant_with_levels",
+                        "levels": 10
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_boots",
+                    "functions": [
+                      {
+                        "function": "minecraft:enchant_with_levels",
+                        "levels": 10
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_chestplate",
+                    "functions": [
+                      {
+                        "function": "minecraft:enchant_with_levels",
+                        "levels": 10
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_sword",
+                    "functions": [
+                      {
+                        "function": "minecraft:enchant_with_levels",
+                        "levels": 10
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_ingot",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 4,
+                          "max": 16
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_block",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 1,
+                          "max": 2
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_block",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 1,
+                          "max": 2
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:diamond",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 2,
+                          "max": 6
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "rolls": {
+                  "min": 2,
+                  "max": 3
+                },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "weight": 80,
+                    "name": "minecraft:golden_apple",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 1,
+                          "max": 3
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "weight": 250,
+                    "name": "minecraft:golden_carrot",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 1,
+                          "max": 4
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "weight": 250,
+                    "name": "minecraft:cooked_porkchop",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 1,
+                          "max": 3
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_golden_apple"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "definition": {
+        "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+        "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+        "path": "data/dungeons_arise/worldgen/structure/mechanical_nest.json",
+        "sha256": "e9700c59d3e0b91360c70c25a536776806d7e7a7dab3699869fd890d7145d803",
+        "body": {
+          "type": "minecraft:jigsaw",
+          "start_pool": "dungeons_arise:mechanical_nest/mechanical_nest_start",
+          "size": 7,
+          "biomes": "#dungeons_arise:has_structure/mechanical_nest_biomes",
+          "adapt_noise": false,
+          "spawn_overrides": {},
+          "max_distance_from_center": 125,
+          "step": "surface_structures",
+          "start_height": {
+            "absolute": 190
+          },
+          "use_expansion_hack": false
+        }
+      },
+      "pieces": [
+        {
+          "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+          "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+          "path": "data/dungeons_arise/structures/mechanical_nest/mechanical_nest_roof_0.nbt",
+          "sha256": "d693424528592c306e5ad6e7c46699b466ae991ab78e9059240139512816622c",
+          "matches": [
+            {
+              "nbt_path": "blocks[16335].nbt.LootTable",
+              "value": "dungeons_arise:chests/mechanical_nest/mechanical_nest_treasure"
+            }
+          ],
+          "template_pool_references": [
+            {
+              "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+              "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+              "path": "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_terminators.json",
+              "sha256": "907717243d3e1226586b0c7cb92aaf1bd985f0ff418c25c20dd3d312f7aefeb3"
+            }
+          ]
+        },
+        {
+          "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+          "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+          "path": "data/dungeons_arise/structures/mechanical_nest/mechanical_nest_rooms_0.nbt",
+          "sha256": "d43ee1cf165d2ab3cff7ef199cdbfaba33882590f07ab82e482d884453684a33",
+          "matches": [
+            {
+              "nbt_path": "blocks[5906].nbt.LootTable",
+              "value": "dungeons_arise:chests/mechanical_nest/mechanical_nest_treasure"
+            }
+          ],
+          "template_pool_references": [
+            {
+              "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+              "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+              "path": "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_rooms.json",
+              "sha256": "30761fc20e1c77e19b2999a50d07be0fd9a2a7042ec29c150894a6cd162a7a36"
+            }
+          ]
+        }
+      ],
+      "loot_tables": {
+        "dungeons_arise:chests/mechanical_nest/mechanical_nest_treasure": {
+          "jar": "DungeonsArise-1.20.x-2.1.58-release.jar",
+          "jar_sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+          "path": "data/dungeons_arise/loot_tables/chests/mechanical_nest/mechanical_nest_treasure.json",
+          "sha256": "349f81e3aeff1b08cd49c0c63b5f81202b67dd110ebe90ae4c850b8d4abcd89b",
+          "body": {
+            "type": "minecraft:chest",
+            "pools": [
+              {
+                "rolls": {
+                  "min": 2,
+                  "max": 4
+                },
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_block",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 2,
+                          "max": 8
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald_block",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 2,
+                          "max": 8
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_scrap",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 4,
+                          "max": 12
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 8,
+                          "max": 32
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ingot",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 4,
+                          "max": 50
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:raw_iron_block",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 8,
+                          "max": 12
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_block",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 2,
+                          "max": 8
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "weight": 50,
+                    "name": "minecraft:golden_apple",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 2,
+                          "max": 14
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_golden_apple"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "weight": 20,
+                    "name": "minecraft:splash_potion",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{display:{Name:'{\"text\":\"Hero Potion\",\"bold\":true,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}'},CustomPotionEffects:[{Id:1,Amplifier:0b,Duration:1200},{Id:5,Amplifier:1b,Duration:1200},{Id:11,Amplifier:2b,Duration:1200}],CustomPotionColor:16777001}"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "reward_items": [
+    {
+      "item": "create:blaze_cake",
+      "registration_class": {
+        "jar": "create-1.20.1-6.0.8.jar",
+        "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+        "path": "com/simibubi/create/AllItems.class",
+        "sha256": "245e17ba1cce5f067203c6e66c4d728d924036bb1f87e25f36d95eab3e1c76c0"
+      },
+      "decompiled_registration": "        BLAZE_CAKE_BASE = REGISTRATE.item(\"blaze_cake_base\", Item::new).tag(new TagKey[]{AllTags.AllItemTags.UPRIGHT_ON_BELT.tag}).register();\n        BLAZE_CAKE = ((ItemBuilder)REGISTRATE.item(\"blaze_cake\", CombustibleItem::new).tag(new TagKey[]{AllTags.AllItemTags.BLAZE_BURNER_FUEL_SPECIAL.tag, AllTags.AllItemTags.UPRIGHT_ON_BELT.tag}).onRegister(i -> i.setBurnTime(6400))).register();\n        CREATIVE_BLAZE_CAKE = ((ItemBuilder)REGISTRATE.item(\"creative_blaze_cake\", CombustibleItem::new).properties(p -> p.m_41497_(Rarity.EPIC)).tag(new TagKey[]{AllTags.AllItemTags.UPRIGHT_ON_BELT.tag}).onRegister(i -> i.setBurnTime(Integer.MAX_VALUE))).register();",
+      "recipes": [
+        {
+          "jar": "create-1.20.1-6.0.8.jar",
+          "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+          "path": "data/create/recipes/compacting/blaze_cake.json",
+          "sha256": "862c0e71211e87b1cf2f8e380ac4627c73d4af72ac3c55e316447365ac9e2144",
+          "body": {
+            "type": "create:compacting",
+            "ingredients": [
+              {
+                "tag": "forge:eggs"
+              },
+              {
+                "item": "minecraft:sugar"
+              },
+              {
+                "item": "create:cinder_flour"
+              }
+            ],
+            "results": [
+              {
+                "item": "create:blaze_cake_base"
+              }
+            ]
+          }
+        },
+        {
+          "jar": "create-1.20.1-6.0.8.jar",
+          "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+          "path": "data/create/recipes/filling/blaze_cake.json",
+          "sha256": "1665ad52c0bed0e49c9f848820b6c5a60e290ec8b0a7dee63a3665ab6352c5c7",
+          "body": {
+            "type": "create:filling",
+            "ingredients": [
+              {
+                "item": "create:blaze_cake_base"
+              },
+              {
+                "amount": 250,
+                "fluid": "minecraft:lava",
+                "nbt": {}
+              }
+            ],
+            "results": [
+              {
+                "item": "create:blaze_cake"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "item": "create:schematicannon",
+      "registration_class": {
+        "jar": "create-1.20.1-6.0.8.jar",
+        "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+        "path": "com/simibubi/create/AllBlocks.class",
+        "sha256": "614d29c4b2dd444e9b192916204146a659fa8031d4fb1811192f712e2dc1a7be"
+      },
+      "decompiled_registration": "        SCHEMATICANNON = ((BlockBuilder)((BlockBuilder)REGISTRATE.block(\"schematicannon\", SchematicannonBlock::new).initialProperties(() -> Blocks.f_50061_).properties(p -> p.m_284180_(MapColor.f_283818_)).transform(TagGen.pickaxeOnly())).blockstate((ctx, prov) -> prov.simpleBlock((Block)ctx.getEntry(), AssetLookup.partialBaseModel((DataGenContext)ctx, (RegistrateBlockstateProvider)prov, (String[])new String[0]))).loot((lt, block) -> {\n            LootTable.Builder builder = LootTable.m_79147_();\n            LootItemCondition.Builder survivesExplosion = ExplosionCondition.m_81661_();\n            lt.m_247577_((Block)block, builder.m_79161_(LootPool.m_79043_().m_79080_(survivesExplosion).m_165133_((NumberProvider)ConstantValue.m_165692_((float)1.0f)).m_79076_((LootPoolEntryContainer.Builder)LootItem.m_79579_((ItemLike)((SchematicannonBlock)SCHEMATICANNON.get()).m_5456_()).m_79078_((LootItemFunction.Builder)CopyNbtFunction.m_165180_((NbtProvider)ContextNbtProvider.f_165562_).m_80279_(\"Options\", \"BlockEntityTag.Options\")))));\n        }).item().transform(ModelGen.customItemModel())).register();\n        SCHEMATIC_TABLE = ((BlockBuilder)REGISTRATE.block(\"schematic_table\", SchematicTableBlock::new).initialProperties(() -> Blocks.f_50624_).properties(p -> p.m_284180_(MapColor.f_283819_).m_280606_()).transform(TagGen.axeOrPickaxe())).blockstate((ctx, prov) -> prov.horizontalBlock((Block)ctx.getEntry(), (ModelFile)prov.models().getExistingFile(ctx.getId()), 0)).simpleItem().register();",
+      "recipes": [
+        {
+          "jar": "create-1.20.1-6.0.8.jar",
+          "jar_sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+          "path": "data/create/recipes/crafting/schematics/schematicannon.json",
+          "sha256": "bba50c5e43a36f0261a6047cec82b5e1bfea206a73e5575685f6a6bab2729bc6",
+          "body": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "D": {
+                "item": "minecraft:dispenser"
+              },
+              "I": {
+                "item": "minecraft:iron_block"
+              },
+              "L": {
+                "tag": "minecraft:logs"
+              },
+              "S": {
+                "item": "minecraft:smooth_stone"
+              }
+            },
+            "pattern": [
+              " I ",
+              "LIL",
+              "SDS"
+            ],
+            "result": {
+              "item": "create:schematicannon"
+            },
+            "show_notification": true
+          }
+        }
+      ]
+    }
+  ],
+  "new_reward_screen": {
+    "items": [
+      "create:blaze_cake",
+      "create:schematicannon",
+      "minecraft:enchanted_golden_apple",
+      "minecraft:experience_bottle",
+      "minecraft:golden_apple"
+    ],
+    "inventory_criteria_examined": 54,
+    "explicit_matches": [],
+    "limits": "Checks direct item IDs in Item Tasks and inventory_changed; not tag expansion, arbitrary code or runtime completion."
+  }
+}
