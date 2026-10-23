@@ -17,7 +17,8 @@ python tools/questbook.py check   # SNBT совпадает со свежей с
 
 Нестандартные условия пишутся прямо в квесте: задача `type: criteria` с одним из сокращений
 (`kill`, `placed`, `bred`, `tamed`, `trade`, `loot`, `ride`, `effect`, `used_item`, `used_on_block`,
-`crafted`, `obtain`, `consumed`, `in_structure_tick`, `granted`) или с `any_of`/`all_of`/`criteria`.
+`crafted`, `obtain`, `consumed`, `in_structure_tick`, `trade_in` (торговля внутри постройки, можно
+`villager:`), `slept_in` (сон внутри постройки), `granted`) или с `any_of`/`all_of`/`criteria`.
 Сборка создаёт достижение `kubejs/data/nasledie/advancements/q/<глава>/<ключ>.json`; эта папка
 целиком генерируется. Группы глав — `src/chapter_groups.yaml`, ссылки на квесты других глав —
 `links:` в главе. Теги структур и биомов лежат в `kubejs/data/nasledie/tags/`.

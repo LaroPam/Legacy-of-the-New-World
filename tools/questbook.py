@@ -22,7 +22,8 @@ Source format (one YAML file per chapter):
 Task/reward ids are generated from the quest id and position unless given explicitly.
 
 Custom conditions live next to the quest: a task `{type: criteria, title: ..., kill: entity}` (or placed,
-bred, tamed, trade, loot, ride, effect, used_item, used_on_block, crafted, obtain, granted, criteria)
+bred, tamed, trade, loot, ride, effect, used_item, used_on_block, crafted, obtain, in_structure_tick,
+trade_in, slept_in, granted, criteria)
 generates kubejs/data/nasledie/advancements/q/<chapter>/<key>.json and an advancement task for it.
 `any_of: [...]` combines several shorthands with OR. `granted: true` is for script-granted goals.
 
@@ -150,6 +151,16 @@ def criterion(spec):
         return {'trigger': 'minecraft:inventory_changed', 'conditions': {'items': [{'items': items}]}}
     if kind == 'consumed':
         return {'trigger': 'minecraft:consume_item', 'conditions': {'item': {'items': [value]}}}
+    if kind == 'trade_in':
+        # The trading player stands inside a piece of the structure; `villager:` narrows the trader type.
+        conditions = {'player': [{'condition': 'minecraft:entity_properties', 'entity': 'this',
+                                  'predicate': {'location': location(value)}}]}
+        if spec.get('villager'):
+            conditions['villager'] = {'type': spec['villager']}
+        return {'trigger': 'minecraft:villager_trade', 'conditions': conditions}
+    if kind == 'slept_in':
+        return {'trigger': 'minecraft:slept_in_bed', 'conditions': {'player': [
+            {'condition': 'minecraft:entity_properties', 'entity': 'this', 'predicate': {'location': location(value)}}]}}
     if kind == 'in_structure_tick':
         return {'trigger': 'minecraft:location', 'conditions': {'player': [
             {'condition': 'minecraft:entity_properties', 'entity': 'this', 'predicate': {'location': location(value)}}]}}
@@ -159,7 +170,7 @@ def criterion(spec):
 
 
 SHORTHANDS = ('kill', 'placed', 'bred', 'tamed', 'trade', 'loot', 'ride', 'effect', 'used_item', 'used_on_block',
-              'crafted', 'obtain', 'consumed', 'in_structure_tick', 'granted')
+              'crafted', 'obtain', 'consumed', 'in_structure_tick', 'trade_in', 'slept_in', 'granted')
 
 
 def advancement_body(task):

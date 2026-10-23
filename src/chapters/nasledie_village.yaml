@@ -1,4 +1,5 @@
-# Акт I. Деревня: соседи (MCA), заказы (Bountiful), ополчение (Recruits) и работники (Workers).
+# Акт I. Деревня: соседи (MCA), заказы (Bountiful), ополчение (Recruits), работники (Workers)
+# и чужие деревни: CTOV (веер от «Города за холмами») и Towns and Towers (веер от «Деревень другого уклада»).
 # Найм засчитывает kubejs/startup_scripts/nasledie_events.js через достижения nasledie:events/...
 chapter:
   filename: nasledie_village
@@ -45,6 +46,81 @@ quests:
     rewards:
       - {type: xp, xp: 120}
       - {type: item, item: waystones:warp_scroll, count: 2}
+
+  # ── Деревни разных краёв (ChoiceTheorem's Overhauled Village) ──
+  - key: tree_village
+    title: Деревня в кронах
+    description:
+      - В джунглях встречаются деревни, построенные прямо на деревьях, — мостки, лестницы и дома среди листвы. Поднимитесь туда и поторгуйтесь
+        с жителями. Вниз лучше не смотреть.
+    x: -3.45
+    y: -3.61
+    icon: minecraft:jungle_log
+    shape: scroll
+    optional: true
+    deps: [big_village]
+    tasks:
+      - type: criteria
+        title: Поторговать в деревне на деревьях
+        any_of: [{trade_in: ctov:small/village_jungle_tree}, {trade_in: ctov:medium/village_jungle_tree}, {trade_in: ctov:large/village_jungle_tree}]
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: alexsmobs:banana, count: 12}
+
+  - key: christmas_village
+    title: Юра встречает Новый год
+    description:
+      - Среди снегов стоят деревни, где круглый год ёлки и гирлянды. Юра уверен, что сейчас декабрь. Поторгуйтесь там — и не разубеждайте его.
+    x: -2.47
+    y: -5.47
+    icon: minecraft:spruce_sapling
+    shape: scroll
+    optional: true
+    deps: [big_village]
+    tasks:
+      - type: criteria
+        title: Поторговать в праздничной деревне
+        any_of: [{trade_in: ctov:small/village_christmas}, {trade_in: ctov:medium/village_christmas}, {trade_in: ctov:large/village_christmas}]
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: minecraft:cake}
+      - {type: item, item: farmersdelight:sweet_berry_cookie, count: 16}
+
+  - key: fortified_village
+    title: Ночь за крепостной стеной
+    description:
+      - На равнинах, в бэдлендах, на болотах и в тайге попадаются деревни, обнесённые стенами. Переночуйте в такой — впервые за долгое время
+        можно спать спокойно.
+    x: -0.61
+    y: -6.45
+    icon: minecraft:stone_brick_wall
+    shape: scroll
+    optional: true
+    deps: [big_village]
+    tasks:
+      - type: criteria
+        title: Уснуть в укреплённой деревне
+        any_of: [{slept_in: ctov:small/village_plains_fortified}, {slept_in: ctov:medium/village_plains_fortified}, {slept_in: ctov:large/village_plains_fortified}, {slept_in: ctov:small/village_mesa_fortified}, {slept_in: ctov:medium/village_mesa_fortified}, {slept_in: ctov:large/village_mesa_fortified}, {slept_in: ctov:small/village_swamp_fortified}, {slept_in: ctov:medium/village_swamp_fortified}, {slept_in: ctov:large/village_swamp_fortified}, {slept_in: ctov:small/village_taiga_fortified}, {slept_in: ctov:medium/village_taiga_fortified}, {slept_in: ctov:large/village_taiga_fortified}]
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:spyglass}
+
+  - key: mushroom_village
+    title: Грибная кладовая
+    description:
+      - На грибных островах тоже живут люди, и дома у них — грибы. Загляните в сундук такого дома — что едят те, у кого вместо огорода мицелий?
+    x: 1.48
+    y: -6.17
+    icon: minecraft:red_mushroom_block
+    shape: scroll
+    optional: true
+    deps: [big_village]
+    tasks:
+      - {type: criteria, title: Открыть сундук грибного дома, loot: ctov:chests/village/village_mushroom_house}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: farmersdelight:mushroom_rice, count: 4}
+      - {type: item, item: minecraft:mycelium, count: 8}
 
   # ── Дружба ──
   - key: friend
@@ -347,6 +423,149 @@ quests:
     rewards:
       - {type: xp, xp: 300}
       - {type: item, item: minecraft:emerald_block, count: 2}
+
+  # ── Деревни другого уклада (Towns and Towers) ──
+  - key: other_ways
+    title: Деревни другого уклада
+    description:
+      - Не все деревни похожи на вашу. Где-то строят пуэбло из глины, где-то — дома на сваях или ворота с фонарями. Найдите поселение совсем
+        другого уклада.
+    x: -3
+    y: 3
+    icon: minecraft:decorated_pot
+    shape: scroll
+    size: 1.2
+    optional: true
+    deps: [first_village]
+    tasks:
+      - {type: structure, structure: '#nasledie:tt_villages'}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: waystones:return_scroll, count: 2}
+
+  - key: swamp_village
+    title: Дом на сваях
+    description:
+      - На болотах деревни стоят на сваях и лодках. Загляните в сундук такого дома — что хранят те, у кого под полом вода?
+    x: -1.96
+    y: 6.86
+    icon: minecraft:mangrove_roots
+    shape: scroll
+    optional: true
+    deps: [other_ways]
+    tasks:
+      - {type: criteria, title: Открыть сундук свайного дома, loot: kaisyn:village/village_swamp_house}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:mangrove_chest_boat}
+      - {type: item, item: farmersdelight:fish_stew, count: 3}
+
+  - key: sakura_village
+    title: Деревня под сакурой
+    description:
+      - Среди цветущих деревьев стоит деревня с воротами и фонарями. Поторгуйтесь с жителями и унесите с собой немного весны.
+    x: -4.04
+    y: 6.86
+    icon: minecraft:cherry_sapling
+    shape: scroll
+    optional: true
+    deps: [other_ways]
+    tasks:
+      - type: criteria
+        title: Поторговать в деревне под сакурой
+        any_of: [{trade_in: towns_and_towers:village_flower_forest}]
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:cherry_sapling, count: 4}
+      - {type: item, item: minecraft:pink_petals, count: 16}
+
+  - key: pueblo_village
+    title: Юра, тебе идёт
+    description:
+      - В красных скалах бэдлендов стоят пуэбло и типи. Откройте сундук в одном из домов, а Юра пока примерит шляпу.
+    x: -5.83
+    y: 5.83
+    icon: artifacts:cowboy_hat
+    shape: scroll
+    optional: true
+    deps: [other_ways]
+    tasks:
+      - {type: criteria, title: Открыть сундук в пуэбло или типи, loot: kaisyn:village/village_badlands_house}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: artifacts:cowboy_hat}
+
+  - key: trader_camp
+    title: Лагерь странствующих торговцев
+    description:
+      - В оазисах пустыни встречается лагерь странствующих торговцев с загонами для лам. Загляните в сундук их хижины — торговцы всегда
+        везут что-то необычное.
+    x: -6.86
+    y: 4.04
+    icon: minecraft:lead
+    shape: scroll
+    optional: true
+    deps: [other_ways]
+    tasks:
+      - {type: criteria, title: Открыть сундук хижины торговцев, loot: kaisyn:village/exclusives/village_wandering_trader_hut}
+    rewards:
+      - {type: xp, xp: 350}
+      - {type: item, item: minecraft:emerald, count: 12}
+      - {type: item, item: minecraft:lead, count: 2}
+
+  - key: viking_village
+    title: Торг у северян
+    description:
+      - В снежной тайге живут северяне. Поторгуйтесь с ними — Максиму давно нужен топор посерьёзнее.
+    x: -6.86
+    y: 1.96
+    icon: minecraft:spruce_log
+    shape: scroll
+    optional: true
+    deps: [other_ways]
+    tasks:
+      - type: criteria
+        title: Поторговать в северной деревне
+        any_of: [{trade_in: towns_and_towers:village_snowy_taiga}]
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: better_weaponry:iron_battleaxe}
+
+  - key: mountain_inn
+    title: Ночь в горном трактире
+    description:
+      - На снежных склонах стоит трактир для путников. Переночуйте в нём — утром будет что рассказать.
+    x: -5.83
+    y: 0.17
+    icon: minecraft:campfire
+    shape: scroll
+    optional: true
+    deps: [other_ways]
+    tasks:
+      - type: criteria
+        title: Уснуть в горном трактире
+        any_of: [{slept_in: towns_and_towers:village_snowy_slopes}]
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: farmersdelight:beef_stew, count: 3}
+      - {type: item, item: farmersdelight:hot_cocoa, count: 3}
+
+  - key: bandit_armory
+    title: Арсенал разбойников
+    description:
+      - Разбойники ставят лагеря на побережьях, в снегах у моря, на плато саванн и в редких джунглях. Захватите их арсенал — лучший арбалет
+        капитана теперь ваш.
+    x: 8
+    y: 8.25
+    icon: minecraft:crossbow
+    shape: shield
+    optional: true
+    deps: [hero]
+    tasks:
+      - {type: criteria, title: Открыть арсенал лагеря разбойников, loot: kaisyn:outpost/common/armory}
+    rewards:
+      - {type: xp, xp: 450}
+      - {type: item, item: minecraft:crossbow, nbt: '{Enchantments:[{id:"minecraft:quick_charge",lvl:2s}]}'}
 
   # ── Работники ──
   - key: hire_worker

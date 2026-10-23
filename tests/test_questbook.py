@@ -114,6 +114,23 @@ class CriteriaTasks(unittest.TestCase):
         self.assertEqual(adv['requirements'], [['c0', 'c1']])
 
 
+    def test_trade_and_sleep_inside_structure(self):
+        source = CHAPTER.replace('tasks: [{type: item, item: minecraft:diamond}]',
+                                 'tasks: [{type: criteria, title: Т, any_of: [{trade_in: ctov:small/village_christmas, '
+                                 'villager: minecraft:wandering_trader}, {slept_in: towns_and_towers:village_snowy_slopes}]}]')
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / 'test_a.yaml').write_text(source, encoding='utf-8')
+            built = questbook.build_all(Path(tmp), Path(tmp) / 'none.yaml')
+        adv = next(json.loads(t) for p, t in built.items() if p.suffix == '.json')
+        trade, sleep = adv['criteria']['c0'], adv['criteria']['c1']
+        self.assertEqual(trade['trigger'], 'minecraft:villager_trade')
+        self.assertEqual(trade['conditions']['player'][0]['predicate']['location'], {'structure': 'ctov:small/village_christmas'})
+        self.assertEqual(trade['conditions']['villager'], {'type': 'minecraft:wandering_trader'})
+        self.assertEqual(sleep['trigger'], 'minecraft:slept_in_bed')
+        self.assertEqual(sleep['conditions']['player'][0]['predicate']['location'],
+                         {'structure': 'towns_and_towers:village_snowy_slopes'})
+
+
 class Validation(unittest.TestCase):
     def files(self, *sources):
         out = build(*sources)

@@ -72,6 +72,150 @@
 			]
 		}
 		{
+			id: "61A27DD45708092E"
+			title: "Деревня в кронах"
+			description: ["В джунглях встречаются деревни, построенные прямо на деревьях, — мостки, лестницы и дома среди листвы. Поднимитесь туда и поторгуйтесь с жителями. Вниз лучше не смотреть."]
+			x: -3.45d
+			y: -3.61d
+			icon: "minecraft:jungle_log"
+			shape: "scroll"
+			optional: true
+			dependencies: ["9E8EACC187073285"]
+			tasks: [{
+				id: "DBFC51CCDF4AF507"
+				type: "advancement"
+				title: "Поторговать в деревне на деревьях"
+				advancement: "nasledie:q/village/tree_village"
+			}]
+			rewards: [
+				{
+					id: "145BBDA0575E16FE"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "38CDFE7165AFF173"
+					type: "item"
+					item: {
+						Count: 12b
+						id: "alexsmobs:banana"
+					}
+				}
+			]
+		}
+		{
+			id: "1D78C33928B611DC"
+			title: "Юра встречает Новый год"
+			description: ["Среди снегов стоят деревни, где круглый год ёлки и гирлянды. Юра уверен, что сейчас декабрь. Поторгуйтесь там — и не разубеждайте его."]
+			x: -2.47d
+			y: -5.47d
+			icon: "minecraft:spruce_sapling"
+			shape: "scroll"
+			optional: true
+			dependencies: ["9E8EACC187073285"]
+			tasks: [{
+				id: "77E347B7141E0CB5"
+				type: "advancement"
+				title: "Поторговать в праздничной деревне"
+				advancement: "nasledie:q/village/christmas_village"
+			}]
+			rewards: [
+				{
+					id: "3111D80390CAD7CE"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "80C5224B96A1CE31"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:cake"
+					}
+				}
+				{
+					id: "4F2056A3D1037595"
+					type: "item"
+					item: {
+						Count: 16b
+						id: "farmersdelight:sweet_berry_cookie"
+					}
+				}
+			]
+		}
+		{
+			id: "885716627A8EF0FF"
+			title: "Ночь за крепостной стеной"
+			description: ["На равнинах, в бэдлендах, на болотах и в тайге попадаются деревни, обнесённые стенами. Переночуйте в такой — впервые за долгое время можно спать спокойно."]
+			x: -0.61d
+			y: -6.45d
+			icon: "minecraft:stone_brick_wall"
+			shape: "scroll"
+			optional: true
+			dependencies: ["9E8EACC187073285"]
+			tasks: [{
+				id: "7BE26B539F8A6568"
+				type: "advancement"
+				title: "Уснуть в укреплённой деревне"
+				advancement: "nasledie:q/village/fortified_village"
+			}]
+			rewards: [
+				{
+					id: "354A0220B2B36A1D"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "38DE6CC7A55C848D"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:spyglass"
+					}
+				}
+			]
+		}
+		{
+			id: "83DB7C0D5B211193"
+			title: "Грибная кладовая"
+			description: ["На грибных островах тоже живут люди, и дома у них — грибы. Загляните в сундук такого дома — что едят те, у кого вместо огорода мицелий?"]
+			x: 1.48d
+			y: -6.17d
+			icon: "minecraft:red_mushroom_block"
+			shape: "scroll"
+			optional: true
+			dependencies: ["9E8EACC187073285"]
+			tasks: [{
+				id: "72E5B85F7BB0AFB5"
+				type: "advancement"
+				title: "Открыть сундук грибного дома"
+				advancement: "nasledie:q/village/mushroom_village"
+			}]
+			rewards: [
+				{
+					id: "2219FD2F07E477CC"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "B100315259D43FCB"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "farmersdelight:mushroom_rice"
+					}
+				}
+				{
+					id: "4DD3B45A433C3311"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:mycelium"
+					}
+				}
+			]
+		}
+		{
 			id: "AFC6DEB96FAAF4A1"
 			title: "Знакомые лица"
 			description: ["Поговорите, пошутите, помогите. Когда отношения с кем-то дойдут до 50 сердец, у вас появится первый настоящий друг в этом мире."]
@@ -670,6 +814,300 @@
 					item: {
 						Count: 2b
 						id: "minecraft:emerald_block"
+					}
+				}
+			]
+		}
+		{
+			id: "F524CCC3EC797596"
+			title: "Деревни другого уклада"
+			description: ["Не все деревни похожи на вашу. Где-то строят пуэбло из глины, где-то — дома на сваях или ворота с фонарями. Найдите поселение совсем другого уклада."]
+			x: -3.0d
+			y: 3.0d
+			icon: "minecraft:decorated_pot"
+			shape: "scroll"
+			size: 1.2d
+			optional: true
+			dependencies: ["C3524B3B7A1175C3"]
+			tasks: [{
+				id: "7FD52FD8B0379EA8"
+				type: "structure"
+				structure: "#nasledie:tt_villages"
+			}]
+			rewards: [
+				{
+					id: "938C986B9E3DB19B"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "660023675C43E711"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "waystones:return_scroll"
+					}
+				}
+			]
+		}
+		{
+			id: "A258D9BAC95F159C"
+			title: "Дом на сваях"
+			description: ["На болотах деревни стоят на сваях и лодках. Загляните в сундук такого дома — что хранят те, у кого под полом вода?"]
+			x: -1.96d
+			y: 6.86d
+			icon: "minecraft:mangrove_roots"
+			shape: "scroll"
+			optional: true
+			dependencies: ["F524CCC3EC797596"]
+			tasks: [{
+				id: "3A69A2CA52971125"
+				type: "advancement"
+				title: "Открыть сундук свайного дома"
+				advancement: "nasledie:q/village/swamp_village"
+			}]
+			rewards: [
+				{
+					id: "BBB87EB5C7225036"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "578E7DF87AE4307F"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:mangrove_chest_boat"
+					}
+				}
+				{
+					id: "D2EBDD8013633774"
+					type: "item"
+					item: {
+						Count: 3b
+						id: "farmersdelight:fish_stew"
+					}
+				}
+			]
+		}
+		{
+			id: "ADBF88C9EFD89754"
+			title: "Деревня под сакурой"
+			description: ["Среди цветущих деревьев стоит деревня с воротами и фонарями. Поторгуйтесь с жителями и унесите с собой немного весны."]
+			x: -4.04d
+			y: 6.86d
+			icon: "minecraft:cherry_sapling"
+			shape: "scroll"
+			optional: true
+			dependencies: ["F524CCC3EC797596"]
+			tasks: [{
+				id: "9A5E28D776A59347"
+				type: "advancement"
+				title: "Поторговать в деревне под сакурой"
+				advancement: "nasledie:q/village/sakura_village"
+			}]
+			rewards: [
+				{
+					id: "5E6B4BB1163CD725"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "8B67AAC43CDFFBC2"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:cherry_sapling"
+					}
+				}
+				{
+					id: "7F80886F8F909EE8"
+					type: "item"
+					item: {
+						Count: 16b
+						id: "minecraft:pink_petals"
+					}
+				}
+			]
+		}
+		{
+			id: "3DD93C9348F9DD60"
+			title: "Юра, тебе идёт"
+			description: ["В красных скалах бэдлендов стоят пуэбло и типи. Откройте сундук в одном из домов, а Юра пока примерит шляпу."]
+			x: -5.83d
+			y: 5.83d
+			icon: "artifacts:cowboy_hat"
+			shape: "scroll"
+			optional: true
+			dependencies: ["F524CCC3EC797596"]
+			tasks: [{
+				id: "529EC95431E95DBC"
+				type: "advancement"
+				title: "Открыть сундук в пуэбло или типи"
+				advancement: "nasledie:q/village/pueblo_village"
+			}]
+			rewards: [
+				{
+					id: "7C2F5C3B19BCFFE8"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "F0CF3FF5BA85DC95"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "artifacts:cowboy_hat"
+					}
+				}
+			]
+		}
+		{
+			id: "D63147A3EA7E2A55"
+			title: "Лагерь странствующих торговцев"
+			description: ["В оазисах пустыни встречается лагерь странствующих торговцев с загонами для лам. Загляните в сундук их хижины — торговцы всегда везут что-то необычное."]
+			x: -6.86d
+			y: 4.04d
+			icon: "minecraft:lead"
+			shape: "scroll"
+			optional: true
+			dependencies: ["F524CCC3EC797596"]
+			tasks: [{
+				id: "DEA007DD25EE042B"
+				type: "advancement"
+				title: "Открыть сундук хижины торговцев"
+				advancement: "nasledie:q/village/trader_camp"
+			}]
+			rewards: [
+				{
+					id: "76F213E89A8C8F23"
+					type: "xp"
+					xp: 350
+				}
+				{
+					id: "CE71AEAD50FD22A8"
+					type: "item"
+					item: {
+						Count: 12b
+						id: "minecraft:emerald"
+					}
+				}
+				{
+					id: "3C3069258DE8CCB1"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "minecraft:lead"
+					}
+				}
+			]
+		}
+		{
+			id: "271164556FCA81BE"
+			title: "Торг у северян"
+			description: ["В снежной тайге живут северяне. Поторгуйтесь с ними — Максиму давно нужен топор посерьёзнее."]
+			x: -6.86d
+			y: 1.96d
+			icon: "minecraft:spruce_log"
+			shape: "scroll"
+			optional: true
+			dependencies: ["F524CCC3EC797596"]
+			tasks: [{
+				id: "1054A1B83C6FDBBB"
+				type: "advancement"
+				title: "Поторговать в северной деревне"
+				advancement: "nasledie:q/village/viking_village"
+			}]
+			rewards: [
+				{
+					id: "D5200DB68A3D8F51"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "F1EBC078AE6B090A"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "better_weaponry:iron_battleaxe"
+					}
+				}
+			]
+		}
+		{
+			id: "92197E64B2DE482C"
+			title: "Ночь в горном трактире"
+			description: ["На снежных склонах стоит трактир для путников. Переночуйте в нём — утром будет что рассказать."]
+			x: -5.83d
+			y: 0.17d
+			icon: "minecraft:campfire"
+			shape: "scroll"
+			optional: true
+			dependencies: ["F524CCC3EC797596"]
+			tasks: [{
+				id: "43400876CD79E17E"
+				type: "advancement"
+				title: "Уснуть в горном трактире"
+				advancement: "nasledie:q/village/mountain_inn"
+			}]
+			rewards: [
+				{
+					id: "1793DFF0E5BFDEF2"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "313D1CE4A4502FBE"
+					type: "item"
+					item: {
+						Count: 3b
+						id: "farmersdelight:beef_stew"
+					}
+				}
+				{
+					id: "F16B0AA5EA27C1D6"
+					type: "item"
+					item: {
+						Count: 3b
+						id: "farmersdelight:hot_cocoa"
+					}
+				}
+			]
+		}
+		{
+			id: "53E438388100C716"
+			title: "Арсенал разбойников"
+			description: ["Разбойники ставят лагеря на побережьях, в снегах у моря, на плато саванн и в редких джунглях. Захватите их арсенал — лучший арбалет капитана теперь ваш."]
+			x: 8.0d
+			y: 8.25d
+			icon: "minecraft:crossbow"
+			shape: "shield"
+			optional: true
+			dependencies: ["A86CDB4787747C32"]
+			tasks: [{
+				id: "2F8AA3DB66F3BC07"
+				type: "advancement"
+				title: "Открыть арсенал лагеря разбойников"
+				advancement: "nasledie:q/village/bandit_armory"
+			}]
+			rewards: [
+				{
+					id: "9020CB26B11DF899"
+					type: "xp"
+					xp: 450
+				}
+				{
+					id: "756213D452165F0F"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:crossbow"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:quick_charge"
+								lvl: 2s
+							}]
+						}
 					}
 				}
 			]

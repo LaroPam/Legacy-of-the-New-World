@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "kaisyn:village/village_swamp_house"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}
