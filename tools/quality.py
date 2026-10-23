@@ -365,9 +365,10 @@ def geometry(parsed):
     for name, chapter in chapters(parsed).items():
         positions, radii = {}, {}
         quests = {str(q.get("id")): q for q in chapter.get("quests", [])}
+        default_size = chapter.get("default_quest_size", 1)  # Quest.getSize(): the chapter default when unset
         for ident, q in quests.items():
             try:
-                x, y, size = float(q.get("x", 0)), float(q.get("y", 0)), float(q.get("size", 1))
+                x, y, size = float(q.get("x", 0)), float(q.get("y", 0)), float(q.get("size", default_size))
                 if not all(map(math.isfinite, (x, y, size))) or size <= 0:
                     raise ValueError("Coordinates must be finite and size positive")
                 positions[ident], radii[ident] = (x, y), size / 2
