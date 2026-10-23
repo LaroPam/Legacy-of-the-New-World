@@ -494,19 +494,31 @@ def resource_checks(files, parsed):
                     # FTB falls back to the default shape for a name missing from extra_quest_shapes.
                     errors.append(problem("shape_undeclared", f"{name}#{where}", "Quest shape is not declared in the theme", shape=shape))
     quest_ids = {str(quest.get("id")) for _, _, quest in quest_rows(parsed)}
+    namespaces = asset_namespaces(files)
     for name, body in chapters(parsed).items():
         for index, image in enumerate(body.get("images", [])):
             # Curves and quest frames are chapter images: a missing texture shows as FTB's purple square,
             # a dependency that is not a quest leaves the image hidden for good.
-            namespace, _, path = str(image.get("image", "")).partition(":")
-            local = f"kubejs/assets/{namespace}/{path}"
-            if any(f.startswith(f"kubejs/assets/{namespace}/") for f in files) and local not in files:
+            local = missing_local_texture(files, namespaces, str(image.get("image", "")))
+            if local:
                 errors.append(problem("chapter_image_missing", f"{name}#images[{index}]", "Chapter image texture is missing", texture=local))
             dependency = image.get("dependency")
             if dependency is not None and str(dependency) not in quest_ids:
                 errors.append(problem("chapter_image_dependency", f"{name}#images[{index}]", "Chapter image depends on an unknown quest", dependency=str(dependency)))
     errors += theme_icon_problems(theme, files, theme_name)
     return errors
+
+
+def asset_namespaces(files):
+    return {f.split("/")[2] for f in files if f.startswith("kubejs/assets/") and f.count("/") > 2}
+
+
+def missing_local_texture(files, namespaces, location):
+    """The kubejs path of a texture that should ship in kubejs/assets but does not, else None. Only namespaces the
+    pack ships itself are checked: a texture of a namespace kubejs does not provide comes from a mod JAR."""
+    namespace, _, path = location.partition(":")
+    local = f"kubejs/assets/{namespace}/{path}"
+    return local if namespace in namespaces and local not in files else None
 
 
 def png_has_alpha(data):
@@ -526,6 +538,7 @@ def theme_icon_problems(theme, files, theme_name):
     """Icon values as FTB Library 2001 parses them: parts joined by ' + ', each 'icon; key=value; ...'.
     Anything else in the icon slot is read as a resource location, which throws on characters like '=' or '#'."""
     errors = []
+    namespaces = asset_namespaces(files)
     for line in theme.splitlines():
         match = re.match(r"\s*([a-z_0-9]+):\s*(.+)$", line)
         if not match or not (match[1] in THEME_ICON_KEYS or match[1].endswith("_icon")):
@@ -537,9 +550,8 @@ def theme_icon_problems(theme, files, theme_name):
             if not re.fullmatch(r"[a-z0-9_.-]+:[a-z0-9_./-]+", icon):
                 errors.append(problem("theme_icon_invalid", theme_name, "Theme icon is neither a color nor a resource location", property=match[1], icon=icon))
                 continue
-            namespace, path = icon.split(":", 1)
-            local = f"kubejs/assets/{namespace}/{path}"
-            if path.endswith(".png") and any(name.startswith(f"kubejs/assets/{namespace}/") for name in files) and local not in files:
+            local = missing_local_texture(files, namespaces, icon)
+            if local and local.endswith(".png"):
                 errors.append(problem("theme_texture_missing", theme_name, "Theme texture is missing", property=match[1], texture=local))
     return errors
 

@@ -531,6 +531,18 @@
 			alpha: 255
 			image: "nasledie:textures/frames/trial.png"
 			order: 1
+			dependency: "0792C39846E0D49E"
+		}
+		{
+			x: 21.0d
+			y: 2.5d
+			width: 1.5d
+			height: 1.5d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial.png"
+			order: 1
 			dependency: "52813202FFECF301"
 		}
 		{
@@ -658,6 +670,54 @@
 			alpha: 255
 			image: "nasledie:textures/frames/milestone_dim.png"
 			order: 0
+		}
+		{
+			x: 28.5d
+			y: 2.5d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "12B1754C45756107"
+		}
+		{
+			x: 28.5d
+			y: 2.5d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "20BE4189EEE72883"
+		}
+		{
+			x: 28.5d
+			y: 2.5d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "213ADF5DA222DA68"
+		}
+		{
+			x: 28.5d
+			y: 2.5d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "63651E9F6E43FAEB"
 		}
 		{
 			x: 28.5d

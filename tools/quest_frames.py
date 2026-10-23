@@ -134,8 +134,12 @@ def render(picture, glow):
     frame_alpha = np.maximum(alpha, inside) * (1 - fill)
     outline = Image.new('RGBA', (SIZE, SIZE), (255, 255, 255, 0))
     outline.putalpha(ring(share * 2, RIM))
-    shapes = {'shape.png': texture(white, np.maximum(fill, inside * CLICKABLE)),
-              'background.png': texture(lens, fill), 'outline.png': outline}
+    shape = texture(white, np.maximum(fill, inside * CLICKABLE))
+    # LANCZOS rings below CLICKABLE next to the opaque recess and at the rim: hold the floor where the medallion is.
+    covered = np.asarray(Image.fromarray((inside * 255).astype('uint8')).resize((SIZE, SIZE), Image.BILINEAR)) >= 128
+    mask = np.asarray(shape.getchannel('A'))
+    shape.putalpha(Image.fromarray(np.where(covered, np.maximum(mask, round(CLICKABLE * 255)), mask).astype('uint8')))
+    shapes = {'shape.png': shape, 'background.png': texture(lens, fill), 'outline.png': outline}
     frames = {'': texture(art, frame_alpha), '_dim': texture(art * DIM, frame_alpha)}
     return shapes, frames, share * 2
 
@@ -146,15 +150,24 @@ def node_type(quest, data, link=None):
 
 def frame_images(name, data, dependency, every, chapters):
     """Chapter image entries for the frames of a chapter's quests and links: dimmed always, bright once the quest's
-    prerequisite is completed (the deepest one when there are several: likely the last to be done)."""
+    prerequisite is completed (the deepest one when all are needed: likely the last to be done; each of them when
+    fewer are enough, so the frame never stays dim because of a prerequisite the players skipped)."""
     depth = {}
+
+    def prerequisites(quest):
+        return [p for p in (dependency(d, quest['_chapter']) for d in quest.get('deps', [])) if p in every]
 
     def deep(ident, seen=()):
         if ident not in depth:
-            quest = every[ident]
-            prereqs = [dependency(d, quest['_chapter']) for d in quest.get('deps', [])]
-            depth[ident] = 1 + max((deep(p, seen + (ident,)) for p in prereqs if p in every and p not in seen), default=-1)
+            depth[ident] = 1 + max((deep(p, seen + (ident,)) for p in prerequisites(every[ident]) if p not in seen),
+                                   default=-1)
         return depth[ident]
+
+    def brighten_after(quest, prereqs):
+        needed = int(quest.get('min_required_dependencies', 0) or 0)
+        if str(quest.get('dependency_requirement', '')).startswith('one_') or 0 < needed < len(prereqs):
+            return sorted(set(prereqs))
+        return [max(prereqs, key=lambda p: (deep(p), p))]
 
     nodes = [(q, q, None) for q in data['quests']]
     nodes += [(every[dependency(l['quest'], name)], None, l) for l in data.get('links', [])]
@@ -164,15 +177,14 @@ def frame_images(name, data, dependency, every, chapters):
         kind = node_type(quest, chapters[quest['_chapter']], link)
         if kind not in TYPES:
             continue
-        prereqs = [dependency(d, quest['_chapter']) for d in quest.get('deps', [])]
-        prereqs = [p for p in prereqs if p in every]
+        prereqs = prerequisites(quest)
         size = float(place.get('size', data['chapter'].get('default_quest_size', 1)))
         base = {'x': float(place.get('x', 0)), 'y': float(place.get('y', 0)), 'width': size, 'height': size,
                 'rotation': 0.0, 'color': 0xFFFFFF, 'alpha': 255}
         if prereqs:
             entries.append(dict(base, image=f'nasledie:textures/frames/{kind}_dim.png', order=0))
-            entries.append(dict(base, image=f'nasledie:textures/frames/{kind}.png', order=1,
-                                dependency=max(prereqs, key=lambda p: (deep(p), p))))
+            entries += [dict(base, image=f'nasledie:textures/frames/{kind}.png', order=1, dependency=p)
+                        for p in brighten_after(quest, prereqs)]
         else:
             entries.append(dict(base, image=f'nasledie:textures/frames/{kind}.png', order=1))
     return entries
