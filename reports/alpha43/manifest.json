@@ -1,30 +1,30 @@
 {
   "name": "alpha43",
-  "source_commit": "f6427ad493c64da74c8fcec9b4de7db89835f1c7",
+  "source_commit": "c1e0bf72cec740f405ec08637922cc77a070c87e",
   "base_commit": "bf2a0d99e8a4930de48cd1d5febb85efcbe77351",
   "gameplay_test": "not run",
   "counts": {
     "chapters": 19,
-    "quests": 498,
-    "tasks": 554,
-    "rewards": 1077,
-    "dependencies": 531,
-    "optional_quests": 178,
+    "quests": 510,
+    "tasks": 566,
+    "rewards": 1107,
+    "dependencies": 543,
+    "optional_quests": 190,
     "task_types": {
-      "advancement": 443,
+      "advancement": 454,
       "biome": 20,
       "checkmark": 1,
       "dimension": 1,
       "item": 38,
       "kill": 13,
       "stat": 10,
-      "structure": 28
+      "structure": 29
     },
     "reward_types": {
-      "item": 580,
-      "xp": 497
+      "item": 598,
+      "xp": 509
     },
-    "parsed_json": 150,
+    "parsed_json": 162,
     "parsed_snbt": 20
   },
   "validator": {
@@ -55,7 +55,7 @@
     "config/ftbquests/quests/chapters/nasledie_ocean.snbt": "1f15fb9509236fa1a5482946c73214b73857e9ffc35910f4ae0019cdad1bf646",
     "config/ftbquests/quests/chapters/nasledie_relics.snbt": "a74a931b9adc3a09297bf463ab69449f37f478aad663178fca5388dcd214e23f",
     "config/ftbquests/quests/chapters/nasledie_transport.snbt": "ac6792081287ead98f73516caa999c527c15486ea0f3c1bd9bff21430a2aa647",
-    "config/ftbquests/quests/chapters/nasledie_village.snbt": "0b1d18141df7babbd17e29900a6aee9827737c224b054ea25def5e69e4f608ce",
+    "config/ftbquests/quests/chapters/nasledie_village.snbt": "bac8c826d293f329fdc6818af70d9825291025d5eb3a35c7a8e3549fc8e4c78b",
     "kubejs/assets/cataclysm/lang/ru_ru.json": "aff61ab10f719cb8257b2aa02e6396f28f3d56dcdb5cd5991f87ff4c58e45259",
     "kubejs/assets/ftbquests/ftb_quests_theme.txt": "dfb50ae8554976ea00f83a3d3aaa31cdcde0bc3d0c4df60fca92fe0fd66580fd",
     "kubejs/assets/ftbquests/lang/ru_ru.json": "1b69a581df91c1f112b1be9e701a0bbc4481c9992a90b63c554185ebd23a93cc",
@@ -213,6 +213,17 @@
     "kubejs/data/nasledie/advancements/q/transport/gyrodyne.json": "767dfbdc021b6cf8f687d176ae6cc2dcdbdbe2b51f6ff9209c8eeb4548d4fe7b",
     "kubejs/data/nasledie/advancements/q/transport/quadrocopter.json": "149be756f704192bbe3227763db6c81ebfed62be329b621727fdf3ce4070088f",
     "kubejs/data/nasledie/advancements/q/transport/warship.json": "712754dc8f971817d61d0bd5b362f840ac73dfba93b01d89634a9fcf4129e6c5",
+    "kubejs/data/nasledie/advancements/q/village/bandit_armory.json": "1a9c0674eea7b38c06cc242f26d2fdce4ec0554cbdd382c5f070df2d59038c4f",
+    "kubejs/data/nasledie/advancements/q/village/christmas_village.json": "98b4cf9a12e0b6c3123b1a357ba2a4d0b35ef34c50ebd1b2e08011878b3d32fc",
+    "kubejs/data/nasledie/advancements/q/village/fortified_village.json": "eb60df12a4014a564a90e6cf29889462564ed7baa70e350c05611c57e9a92d9e",
+    "kubejs/data/nasledie/advancements/q/village/mountain_inn.json": "ab7890040424144bdb40230f3ad48244864845ca858a48c058e3cdf950fb3b81",
+    "kubejs/data/nasledie/advancements/q/village/mushroom_village.json": "87e1f47d7132ef73dd3cc694147e09ae3f58d36b763920da3698b939606df296",
+    "kubejs/data/nasledie/advancements/q/village/pueblo_village.json": "193e4b696511140a111e108cfbada5582c172e7ad76ef4f15f42f03490ee9254",
+    "kubejs/data/nasledie/advancements/q/village/sakura_village.json": "8d7d92ce3b2cee72f3df60b29324f222f756961be68862f59116ccf63c925a69",
+    "kubejs/data/nasledie/advancements/q/village/swamp_village.json": "296704d3aa3fa5d391cae41bda68cb97d53f241c14d30a0d264718a9926180bb",
+    "kubejs/data/nasledie/advancements/q/village/trader_camp.json": "ad659504d8ca1f843db8b6c2d4114e2b00582d0dacf1bb5d00cd94bc35d36ed9",
+    "kubejs/data/nasledie/advancements/q/village/tree_village.json": "fd7201d7f5a7af56b31fdf4ca7e54edc68d6a621e4232853420080882f9351fe",
+    "kubejs/data/nasledie/advancements/q/village/viking_village.json": "741e05b1c44953644fa2f56a6559d1d7c6355a0dd14cbfe264e13f4ca7a95595",
     "kubejs/data/nasledie/advancements/setup/archeology/archeology_table.json": "4b004abc21671759961d8483ad017cabe533f66989249a2f6ea3ddbbde8b824e",
     "kubejs/data/nasledie/advancements/setup/defense/cannon_builder.json": "d0e699d69753f9a55d5ea876b486f4209217dd7c893823a6b39add2106ea8ff6",
     "kubejs/data/nasledie/advancements/setup/defense/cannon_drill.json": "1d3e855eaf923583b7ef41d82a36093a4fccf86a98198cecc9b537afad21ccba",
@@ -229,11 +240,12 @@
     "kubejs/data/nasledie/tags/worldgen/structure/archeologist_camps.json": "6c9607a394e8f47b76d5edc981c5b28f939959ec84aefb0efe252b674ba838fc",
     "kubejs/data/nasledie/tags/worldgen/structure/large_villages.json": "ee60f3aa532c681459bec04e1dd6abb64b1d03759949a231e5141fc244d8c9a8",
     "kubejs/data/nasledie/tags/worldgen/structure/mineshafts.json": "a3732ccf62116a751549317edcb121da5c7c3bfd0a68f8146b7e2014a615b4f5",
+    "kubejs/data/nasledie/tags/worldgen/structure/tt_villages.json": "8f49d26e9817dfd7522d66002b9046e1366cb0ad1478ba6c8467d7f9d069503a",
     "kubejs/server_scripts/nasledie_artillery.js": "c3e5bfcb28f298938f65392e25a77852f88cfcae8b0fdaa730d478455965ea98",
     "kubejs/server_scripts/nasledie_factory_trials.js": "e83abcea30d014415386d11de8834c0e4df67ed5a4fc383ec18e9c4b5f17a931",
     "kubejs/server_scripts/nasledie_notes.js": "b757168f3e3bf0009b81d315b4baa0336059fc181dce01b5cf92ef99c8ffffcd",
     "kubejs/startup_scripts/nasledie_events.js": "7b6b5356fe62447cc16f2ac1e5577a0998010f80251d6eb0fe0632d3b41eedda"
   },
-  "archive_sha256": "fe0834ce18aa7ea0934fa7d80b18933052e5eade9973c3e57227e0638905f330",
-  "patch_sha256": "6294904a95d501186ff4ae265095592f15de42290cd20db74b0e7b8cbb237c3f"
+  "archive_sha256": "6e6b55309907971ff8729f8254fe73ff58d9d335aead3529b02c6f10e486cda0",
+  "patch_sha256": "0ac9fc293837e171d0fd29b2e30ad0314daf1a59b411f8263f58a6bba6b46114"
 }
