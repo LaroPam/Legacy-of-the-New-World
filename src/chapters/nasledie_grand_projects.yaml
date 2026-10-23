@@ -7,7 +7,7 @@ chapter:
   title: Великие проекты — база оживает
   icon: minecraft:beacon
   order_index: 13
-  default_hide_dependency_lines: false
+  default_hide_dependency_lines: true
   default_quest_shape: tech
   progression_mode: flexible
 

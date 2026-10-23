@@ -5,9 +5,202 @@
 	title: "Океан — проводник и монумент"
 	icon: "minecraft:conduit"
 	order_index: 7
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "expedition"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: 10.2667d
+			y: 1.5d
+			width: 25.7403d
+			height: 11.092d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/base.png"
+			color: 3069183
+			alpha: 255
+			order: -2
+		}
+		{
+			x: 7.5d
+			y: -3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/19935d46ebdde471.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "19935D46EBDDE471"
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/2303d9cbf0c8194d.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "2303D9CBF0C8194D"
+		}
+		{
+			x: 1.2667d
+			y: 0.0d
+			width: 4.5903d
+			height: 7.567d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/268c40e37c45e3bf.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "268C40E37C45E3BF"
+		}
+		{
+			x: 13.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/26c3dfec8b6b5aa3.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "26C3DFEC8B6B5AA3"
+		}
+		{
+			x: 1.5d
+			y: 6.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/362f963df6a6bcfe.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "362F963DF6A6BCFE"
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/42cdc43e1dfbdb97.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "42CDC43E1DFBDB97"
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/55b701274f41916e.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "55B701274F41916E"
+		}
+		{
+			x: 16.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/58c373cd97382003.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "58C373CD97382003"
+		}
+		{
+			x: 1.2667d
+			y: 4.5d
+			width: 4.5903d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/5d6f6a8d9a89c57c.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "5D6F6A8D9A89C57C"
+		}
+		{
+			x: 10.5d
+			y: 3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/689f59fcdce5619f.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "689F59FCDCE5619F"
+		}
+		{
+			x: 7.5d
+			y: 3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/6fd514ab841df820.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "6FD514AB841DF820"
+		}
+		{
+			x: 19.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/7561c2a49ce25872.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "7561C2A49CE25872"
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/75934b268bae9806.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "75934B268BAE9806"
+		}
+		{
+			x: 10.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/76f24423146b2bf8.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "76F24423146B2BF8"
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/ocean/770436662909af80.png"
+			color: 10611967
+			alpha: 255
+			order: -1
+			dependency: "770436662909AF80"
+		}
+	]
 	quest_links: [{
 		id: "64285DB7A4C70029"
 		linked_quest: "7561C2A49CE25872"
@@ -24,7 +217,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "minecraft:oak_boat"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			size: 1.4d
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
@@ -47,6 +240,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "55B701274F41916E"
@@ -55,7 +249,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:oak_planks"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["268C40E37C45E3BF"]
 			tasks: [{
 				id: "4C3E8F0C021CCF8D"
@@ -78,6 +272,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "770436662909AF80"
@@ -86,7 +281,7 @@
 			x: 6.0d
 			y: 0.0d
 			icon: "minecraft:heart_of_the_sea"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["55B701274F41916E"]
 			tasks: [{
 				id: "3B6E9998B072321D"
@@ -109,6 +304,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "76F24423146B2BF8"
@@ -117,7 +313,7 @@
 			x: 9.0d
 			y: 0.0d
 			icon: "minecraft:prismarine_bricks"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["770436662909AF80"]
 			tasks: [{
 				id: "18EACFBBC34C012C"
@@ -139,6 +335,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "26C3DFEC8B6B5AA3"
@@ -147,7 +344,7 @@
 			x: 12.0d
 			y: 0.0d
 			icon: "minecraft:conduit"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "tech"
 			dependencies: ["76F24423146B2BF8"]
 			tasks: [{
@@ -171,6 +368,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "58C373CD97382003"
@@ -179,7 +377,7 @@
 			x: 15.0d
 			y: 0.0d
 			icon: "minecraft:prismarine_shard"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			dependencies: ["26C3DFEC8B6B5AA3"]
 			tasks: [{
@@ -203,6 +401,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "51FC6F90AE011A99"
@@ -211,7 +410,7 @@
 			x: 21.0d
 			y: 0.0d
 			icon: "minecraft:trident"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.4d
 			optional: true
@@ -253,6 +452,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "42CDC43E1DFBDB97"
@@ -261,7 +461,7 @@
 			x: 0.0d
 			y: -3.0d
 			icon: "minecraft:lantern"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["268C40E37C45E3BF"]
 			tasks: [{
 				id: "6D983007EE04939D"
@@ -284,6 +484,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "75934B268BAE9806"
@@ -292,7 +493,7 @@
 			x: 3.0d
 			y: -3.0d
 			icon: "minecraft:skeleton_skull"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			dependencies: ["42CDC43E1DFBDB97"]
 			tasks: [{
@@ -316,6 +517,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "19935D46EBDDE471"
@@ -324,7 +526,7 @@
 			x: 6.0d
 			y: -3.0d
 			icon: "minecraft:crossbow"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			optional: true
 			dependencies: ["75934B268BAE9806"]
@@ -349,6 +551,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "27C6A5C2087489CC"
@@ -357,7 +560,7 @@
 			x: 9.0d
 			y: -3.0d
 			icon: "minecraft:dark_oak_planks"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["19935D46EBDDE471"]
@@ -382,6 +585,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "5D6F6A8D9A89C57C"
@@ -390,7 +594,7 @@
 			x: 0.0d
 			y: 3.0d
 			icon: "minecraft:packed_ice"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["268C40E37C45E3BF"]
 			tasks: [{
@@ -413,6 +617,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "2303D9CBF0C8194D"
@@ -421,7 +626,7 @@
 			x: 3.0d
 			y: 3.0d
 			icon: "minecraft:brain_coral"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["5D6F6A8D9A89C57C"]
 			tasks: [{
@@ -444,6 +649,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "6FD514AB841DF820"
@@ -452,7 +658,7 @@
 			x: 6.0d
 			y: 3.0d
 			icon: "minecraft:cracked_stone_bricks"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["2303D9CBF0C8194D"]
 			tasks: [{
 				id: "2A30E4738A455F55"
@@ -475,6 +681,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "689F59FCDCE5619F"
@@ -483,7 +690,7 @@
 			x: 9.0d
 			y: 3.0d
 			icon: "minecraft:prismarine"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["6FD514AB841DF820"]
 			tasks: [{
 				id: "1224D718BE6C8414"
@@ -506,6 +713,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "1BA296205688E999"
@@ -514,7 +722,7 @@
 			x: 12.0d
 			y: 3.0d
 			icon: "minecraft:skeleton_skull"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["689F59FCDCE5619F"]
 			tasks: [{
@@ -537,6 +745,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "362F963DF6A6BCFE"
@@ -545,7 +754,7 @@
 			x: 0.0d
 			y: 6.0d
 			icon: "minecraft:oak_fence"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["5D6F6A8D9A89C57C"]
 			tasks: [{
@@ -568,6 +777,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 		{
 			id: "4A1FCBC43099A918"
@@ -576,7 +786,7 @@
 			x: 3.0d
 			y: 6.0d
 			icon: "create:copper_diving_helmet"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "tech"
 			optional: true
 			dependencies: ["362F963DF6A6BCFE"]
@@ -600,6 +810,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_ocean"
 		}
 	]
 }

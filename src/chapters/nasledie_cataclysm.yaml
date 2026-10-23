@@ -7,7 +7,7 @@ chapter:
   title: Восемь очей Зодчих
   icon: cataclysm:flame_eye
   order_index: 15
-  default_hide_dependency_lines: false
+  default_hide_dependency_lines: true
   default_quest_shape: step
   progression_mode: flexible
 

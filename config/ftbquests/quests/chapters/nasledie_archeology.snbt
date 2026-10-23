@@ -5,9 +5,238 @@
 	title: "Археология — по следам Холма"
 	icon: "minecraft:brush"
 	order_index: 4
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "step"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: 6.0d
+			y: 1.75d
+			width: 21.667d
+			height: 17.5545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/base.png"
+			color: 14529360
+			alpha: 255
+			order: -2
+		}
+		{
+			x: 13.5d
+			y: -3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/01c584db0bc6d1d4.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "01C584DB0BC6D1D4"
+		}
+		{
+			x: 7.5d
+			y: 9.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/08352d47820d40b4.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "08352D47820D40B4"
+		}
+		{
+			x: 1.5d
+			y: 9.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/19745f0470e73c17.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "19745F0470E73C17"
+		}
+		{
+			x: 13.5d
+			y: 3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/1f662b92cd52ecf4.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "1F662B92CD52ECF4"
+		}
+		{
+			x: 7.5d
+			y: 6.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/2387d38d6e080261.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "2387D38D6E080261"
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/239ccb33a472d0ad.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "239CCB33A472D0AD"
+		}
+		{
+			x: 10.5d
+			y: -3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/2ba185cbf139e3af.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "2BA185CBF139E3AF"
+		}
+		{
+			x: 4.5d
+			y: 9.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/316afb9a561be01e.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "316AFB9A561BE01E"
+		}
+		{
+			x: 7.5d
+			y: -4.25d
+			width: 4.042d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/44248a7f0011aaf7.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "44248A7F0011AAF7"
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			width: 7.567d
+			height: 11.092d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/5224cc946496e3de.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "5224CC946496E3DE"
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/597cbedc468a5108.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "597CBEDC468A5108"
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/60a0af61e08c5a2d.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "60A0AF61E08C5A2D"
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/6c1b1b7c67f46419.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "6C1B1B7C67F46419"
+		}
+		{
+			x: 4.5d
+			y: 6.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/718927c2e9263aac.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "718927C2E9263AAC"
+		}
+		{
+			x: 10.5d
+			y: 3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/72a2a054cfcac69d.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "72A2A054CFCAC69D"
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/79c6e9fc12713c40.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "79C6E9FC12713C40"
+		}
+		{
+			x: 1.2667d
+			y: 7.5d
+			width: 4.5903d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/7bf1aaefc633ec9f.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "7BF1AAEFC633EC9F"
+		}
+		{
+			x: 7.5d
+			y: 3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/archeology/7cda95a50f3ebc9f.png"
+			color: 15785392
+			alpha: 255
+			order: -1
+			dependency: "7CDA95A50F3EBC9F"
+		}
+	]
 	quest_links: [{
 		id: "65DD46998E5DC870"
 		linked_quest: "79C6E9FC12713C40"
@@ -24,7 +253,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "betterarcheology:iron_brush"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			size: 1.4d
 			dependencies: ["79C6E9FC12713C40"]
 			tasks: [{
@@ -48,6 +277,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "6C1B1B7C67F46419"
@@ -56,7 +286,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:archer_pottery_sherd"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["5224CC946496E3DE"]
 			tasks: [{
 				id: "72A747690ACD9DDA"
@@ -78,6 +308,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "60A0AF61E08C5A2D"
@@ -86,7 +317,7 @@
 			x: 6.0d
 			y: 0.0d
 			icon: "minecraft:decorated_pot"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["6C1B1B7C67F46419"]
 			tasks: [{
@@ -109,6 +340,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "067104F631B643F9"
@@ -117,7 +349,7 @@
 			x: 9.0d
 			y: 0.0d
 			icon: "betterarcheology:loot_vase"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["60A0AF61E08C5A2D"]
 			tasks: [{
@@ -140,6 +372,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "239CCB33A472D0AD"
@@ -148,7 +381,7 @@
 			x: 3.0d
 			y: -3.0d
 			icon: "betterarcheology:villager_fossil_head"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["5224CC946496E3DE"]
 			tasks: [{
 				id: "4A2E602529B5A8EC"
@@ -170,6 +403,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "44248A7F0011AAF7"
@@ -178,7 +412,7 @@
 			x: 6.0d
 			y: -3.0d
 			icon: "betterarcheology:archeology_table"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["239CCB33A472D0AD"]
 			tasks: [{
 				id: "1C3899A83D5C171C"
@@ -201,6 +435,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "2BA185CBF139E3AF"
@@ -209,7 +444,7 @@
 			x: 9.0d
 			y: -3.0d
 			icon: "betterarcheology:artifact_shards"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["44248A7F0011AAF7"]
 			tasks: [{
 				id: "04F5001BCE36C45C"
@@ -231,6 +466,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "01C584DB0BC6D1D4"
@@ -239,7 +475,7 @@
 			x: 12.0d
 			y: -3.0d
 			icon: "betterarcheology:unidentified_artifact"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			dependencies: ["2BA185CBF139E3AF"]
 			tasks: [{
@@ -262,6 +498,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "08AC8A56B7F8989F"
@@ -270,7 +507,7 @@
 			x: 9.0d
 			y: -5.5d
 			icon: "betterarcheology:diamond_brush"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["44248A7F0011AAF7"]
 			tasks: [{
@@ -294,6 +531,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "74DBD3E2D7478445"
@@ -302,7 +540,7 @@
 			x: 15.0d
 			y: -3.0d
 			icon: "betterarcheology:guardian_fossil_head"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.4d
 			optional: true
@@ -335,6 +573,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "597CBEDC468A5108"
@@ -343,7 +582,7 @@
 			x: 3.0d
 			y: 3.0d
 			icon: "betterarcheology:chicken_fossil"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["5224CC946496E3DE"]
 			tasks: [{
 				id: "191A9C168E1CF05C"
@@ -366,6 +605,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "7CDA95A50F3EBC9F"
@@ -374,7 +614,7 @@
 			x: 6.0d
 			y: 3.0d
 			icon: "betterarcheology:creeper_fossil"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["597CBEDC468A5108"]
 			tasks: [{
@@ -398,6 +638,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "72A2A054CFCAC69D"
@@ -406,7 +647,7 @@
 			x: 9.0d
 			y: 3.0d
 			icon: "betterarcheology:guardian_fossil"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["7CDA95A50F3EBC9F"]
 			tasks: [{
@@ -430,6 +671,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "1F662B92CD52ECF4"
@@ -438,7 +680,7 @@
 			x: 12.0d
 			y: 3.0d
 			icon: "betterarcheology:wolf_fossil"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["72A2A054CFCAC69D"]
 			tasks: [{
@@ -462,6 +704,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "0F6CAF327167B0A5"
@@ -470,7 +713,7 @@
 			x: 15.0d
 			y: 3.0d
 			icon: "minecraft:chiseled_bookshelf"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.4d
 			optional: true
@@ -524,6 +767,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "7BF1AAEFC633EC9F"
@@ -532,7 +776,7 @@
 			x: 0.0d
 			y: 6.0d
 			icon: "minecraft:suspicious_sand"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			dependencies: ["5224CC946496E3DE"]
 			tasks: [{
@@ -556,6 +800,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "718927C2E9263AAC"
@@ -564,7 +809,7 @@
 			x: 3.0d
 			y: 6.0d
 			icon: "minecraft:grass_block"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["7BF1AAEFC633EC9F"]
@@ -589,6 +834,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "2387D38D6E080261"
@@ -597,7 +843,7 @@
 			x: 6.0d
 			y: 6.0d
 			icon: "minecraft:skeleton_skull"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			optional: true
 			dependencies: ["718927C2E9263AAC"]
@@ -622,6 +868,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "138F14F75C60045E"
@@ -630,7 +877,7 @@
 			x: 9.0d
 			y: 6.0d
 			icon: "minecraft:red_sand"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["2387D38D6E080261"]
@@ -655,6 +902,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "19745F0470E73C17"
@@ -663,7 +911,7 @@
 			x: 0.0d
 			y: 9.0d
 			icon: "minecraft:glowstone"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			optional: true
 			dependencies: ["7BF1AAEFC633EC9F"]
@@ -688,6 +936,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "316AFB9A561BE01E"
@@ -696,7 +945,7 @@
 			x: 3.0d
 			y: 9.0d
 			icon: "minecraft:mossy_cobblestone"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			optional: true
 			dependencies: ["19745F0470E73C17"]
@@ -721,6 +970,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "08352D47820D40B4"
@@ -729,7 +979,7 @@
 			x: 6.0d
 			y: 9.0d
 			icon: "minecraft:prismarine_bricks"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["316AFB9A561BE01E"]
@@ -754,6 +1004,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "471D778A13B77EBF"
@@ -762,7 +1013,7 @@
 			x: 9.0d
 			y: 9.0d
 			icon: "minecraft:stone"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["08352D47820D40B4"]
@@ -786,6 +1037,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 		{
 			id: "569937827610767B"
@@ -794,7 +1046,7 @@
 			x: -3.0d
 			y: 3.0d
 			icon: "minecraft:cobblestone_wall"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["5224CC946496E3DE"]
@@ -818,6 +1070,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_archeology"
 		}
 	]
 }

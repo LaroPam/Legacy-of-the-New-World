@@ -7,7 +7,7 @@ chapter:
   title: Кабинет редкостей
   icon: relics:researching_table
   order_index: 18
-  default_hide_dependency_lines: false
+  default_hide_dependency_lines: true
   default_quest_shape: expedition
   progression_mode: flexible
 

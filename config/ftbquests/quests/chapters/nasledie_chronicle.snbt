@@ -4,9 +4,226 @@
 	title: "Летопись Первой экспедиции"
 	icon: "minecraft:writable_book"
 	order_index: 0
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "milestone"
 	default_quest_size: 1.5d
+	images: [
+		{
+			x: 19.75d
+			y: 5.25d
+			width: 46.9295d
+			height: 26.9545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/base.png"
+			color: 16766011
+			alpha: 255
+			order: -2
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			width: 5.217d
+			height: 14.617d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/00c7daa7bbbe1abd.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "00C7DAA7BBBE1ABD"
+		}
+		{
+			x: 19.5d
+			y: 1.75d
+			width: 4.042d
+			height: 2.2795d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/0792c39846e0d49e.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "0792C39846E0D49E"
+		}
+		{
+			x: 22.25d
+			y: 14.25d
+			width: 12.8545d
+			height: 5.8045d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/0dd7a99e440fc3da.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "0DD7A99E440FC3DA"
+		}
+		{
+			x: 22.75d
+			y: 4.25d
+			width: 4.6295d
+			height: 18.7295d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/1175c66eaedbf91e.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "1175C66EAEDBF91E"
+		}
+		{
+			x: 26.5d
+			y: -0.5d
+			width: 5.217d
+			height: 7.567d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/12b1754c45756107.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "12B1754C45756107"
+		}
+		{
+			x: 26.5d
+			y: 4.0d
+			width: 5.217d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/20be4189eee72883.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "20BE4189EEE72883"
+		}
+		{
+			x: 26.5d
+			y: 2.5d
+			width: 5.217d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/213adf5da222da68.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "213ADF5DA222DA68"
+		}
+		{
+			x: 30.25d
+			y: 2.5d
+			width: 4.6295d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/280c23723a869a8b.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "280C23723A869A8B"
+		}
+		{
+			x: 12.75d
+			y: 5.8839d
+			width: 6.9795d
+			height: 8.4691d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/3433e7faf2f51b45.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "3433E7FAF2F51B45"
+		}
+		{
+			x: 33.75d
+			y: 2.5d
+			width: 4.6295d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/367c7d7e1f81d391.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "367C7D7E1F81D391"
+		}
+		{
+			x: 16.5d
+			y: 1.6884d
+			width: 4.042d
+			height: 2.4243d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/391f9987f1f32442.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "391F9987F1F32442"
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/4a2cfd219a124357.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "4A2CFD219A124357"
+		}
+		{
+			x: 37.5d
+			y: 2.5d
+			width: 5.217d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/4e228116310381e8.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "4E228116310381E8"
+		}
+		{
+			x: 18.25d
+			y: 5.65d
+			width: 6.9795d
+			height: 7.9195d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/52813202ffecf301.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "52813202FFECF301"
+		}
+		{
+			x: 26.5d
+			y: 5.5d
+			width: 5.217d
+			height: 7.567d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/63651e9f6e43faeb.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "63651E9F6E43FAEB"
+		}
+		{
+			x: 26.5d
+			y: 1.0d
+			width: 5.217d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/64338cfba5c5b699.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "64338CFBA5C5B699"
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/chronicle/79c6e9fc12713c40.png"
+			color: 16772263
+			alpha: 255
+			order: -1
+			dependency: "79C6E9FC12713C40"
+		}
+	]
 	quest_links: [ ]
 	quests: [
 		{
@@ -19,7 +236,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "minecraft:writable_book"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.6d
 			tasks: [{
@@ -43,6 +260,7 @@
 					}
 				}
 			}]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "79C6E9FC12713C40"
@@ -54,7 +272,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:spyglass"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["4A2CFD219A124357"]
 			tasks: [{
 				id: "75F6C315ED6C3CA9"
@@ -93,6 +311,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "00C7DAA7BBBE1ABD"
@@ -104,7 +323,7 @@
 			x: 6.0d
 			y: 0.0d
 			icon: "explorerscompass:explorerscompass"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["79C6E9FC12713C40"]
 			tasks: [{
 				id: "4981B18151863395"
@@ -143,6 +362,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "4843AED5CE824450"
@@ -154,7 +374,7 @@
 			x: 10.0d
 			y: -6.0d
 			icon: "mowziesmobs:wrought_helmet"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
@@ -196,6 +416,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "2378D8F13118FF97"
@@ -204,7 +425,7 @@
 			x: 10.0d
 			y: -3.6d
 			icon: "mowziesmobs:sol_visage"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
@@ -247,6 +468,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "5F85EFBB8E452760"
@@ -255,7 +477,7 @@
 			x: 10.0d
 			y: -1.2d
 			icon: "mowziesmobs:sculptor_staff"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
@@ -298,6 +520,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "12AF3238F7B8776E"
@@ -306,7 +529,7 @@
 			x: 10.0d
 			y: 1.2d
 			icon: "mowziesmobs:ice_crystal"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
@@ -348,6 +571,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "7561C2A49CE25872"
@@ -356,7 +580,7 @@
 			x: 10.0d
 			y: 3.6d
 			icon: "minecraft:prismarine_shard"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
@@ -407,6 +631,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "3433E7FAF2F51B45"
@@ -415,7 +640,7 @@
 			x: 10.0d
 			y: 6.0d
 			icon: "cataclysm:flame_eye"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
@@ -459,6 +684,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "08304673F4543996"
@@ -467,7 +693,7 @@
 			x: 13.0d
 			y: 6.0d
 			icon: "minecraft:wither_skeleton_skull"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.7d
 			dependencies: [
@@ -512,6 +738,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "391F9987F1F32442"
@@ -520,7 +747,7 @@
 			x: 15.0d
 			y: 2.5d
 			icon: "cataclysm:mech_eye"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "78715FFBE94F12D2"
@@ -567,6 +794,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "0792C39846E0D49E"
@@ -575,7 +803,7 @@
 			x: 18.0d
 			y: 1.0d
 			icon: "cataclysm:wither_assault_shoulder_weapon"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.7d
 			dependencies: ["391F9987F1F32442"]
@@ -624,6 +852,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "52813202FFECF301"
@@ -632,7 +861,7 @@
 			x: 15.5d
 			y: 8.8d
 			icon: "cataclysm:monstrous_helm"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.7d
 			dependencies: [
@@ -684,6 +913,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "1175C66EAEDBF91E"
@@ -692,7 +922,7 @@
 			x: 21.0d
 			y: 2.5d
 			icon: "cataclysm:ignited_revenant_spawn_egg"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			size: 1.5d
 			dependencies: [
@@ -721,6 +951,7 @@
 				}
 			]
 			min_required_dependencies: 1
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "12B1754C45756107"
@@ -729,7 +960,7 @@
 			x: 24.5d
 			y: -3.5d
 			icon: "cataclysm:flame_eye"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.7d
 			dependencies: [
@@ -780,6 +1011,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "64338CFBA5C5B699"
@@ -788,7 +1020,7 @@
 			x: 24.5d
 			y: -0.5d
 			icon: "cataclysm:desert_eye"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.7d
 			dependencies: [
@@ -840,6 +1072,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "213ADF5DA222DA68"
@@ -848,7 +1081,7 @@
 			x: 24.5d
 			y: 2.5d
 			icon: "cataclysm:cursed_eye"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.7d
 			dependencies: [
@@ -900,6 +1133,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "20BE4189EEE72883"
@@ -908,7 +1142,7 @@
 			x: 24.5d
 			y: 5.5d
 			icon: "cataclysm:abyss_eye"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.7d
 			dependencies: [
@@ -959,6 +1193,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "63651E9F6E43FAEB"
@@ -967,7 +1202,7 @@
 			x: 24.5d
 			y: 8.5d
 			icon: "cataclysm:storm_eye"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.7d
 			dependencies: [
@@ -1019,6 +1254,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "280C23723A869A8B"
@@ -1027,7 +1263,7 @@
 			x: 28.5d
 			y: 2.5d
 			icon: "minecraft:ender_eye"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.7d
 			dependencies: [
@@ -1075,6 +1311,7 @@
 				}
 			]
 			min_required_dependencies: 4
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "367C7D7E1F81D391"
@@ -1083,7 +1320,7 @@
 			x: 32.0d
 			y: 2.5d
 			icon: "minecraft:dragon_head"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.8d
 			dependencies: ["280C23723A869A8B"]
@@ -1115,6 +1352,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "4E228116310381E8"
@@ -1123,7 +1361,7 @@
 			x: 35.5d
 			y: 2.5d
 			icon: "cataclysm:void_eye"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 2.2d
 			dependencies: [
@@ -1175,6 +1413,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "7691DA83D3708164"
@@ -1183,7 +1422,7 @@
 			x: 39.5d
 			y: 2.5d
 			icon: "minecraft:beacon"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 2.4d
 			dependencies: [
@@ -1239,6 +1478,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "2A2A1ECDD23269E9"
@@ -1247,7 +1487,7 @@
 			x: 19.5d
 			y: 16.5d
 			icon: "alexscaves:shadow_silk"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.7d
 			dependencies: [
@@ -1291,6 +1531,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "11FEF88ADA0D7632"
@@ -1299,7 +1540,7 @@
 			x: 22.5d
 			y: 16.5d
 			icon: "alexscaves:submarine"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.7d
 			dependencies: [
@@ -1343,6 +1584,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "3E03C21C1C3001DF"
@@ -1351,7 +1593,7 @@
 			x: 25.5d
 			y: 15.5d
 			icon: "alexscaves:tectonic_shard"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.7d
 			dependencies: [
@@ -1394,6 +1636,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "7ED39CE9F2148371"
@@ -1402,7 +1645,7 @@
 			x: 27.5d
 			y: 13.0d
 			icon: "alexscaves:tremorzilla_egg"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "home"
 			size: 1.7d
 			dependencies: [
@@ -1445,6 +1688,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "0DD7A99E440FC3DA"
@@ -1453,7 +1697,7 @@
 			x: 21.0d
 			y: 12.0d
 			icon: "minecraft:sculk_shrieker"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.6d
 			dependencies: [
@@ -1498,6 +1742,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 		{
 			id: "1B9C44FAB8D12B42"
@@ -1506,7 +1751,7 @@
 			x: 17.0d
 			y: 14.5d
 			icon: "minecraft:echo_shard"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.7d
 			dependencies: ["0DD7A99E440FC3DA"]
@@ -1539,6 +1784,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_chronicle"
 		}
 	]
 }

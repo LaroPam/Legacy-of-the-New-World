@@ -6,7 +6,7 @@ chapter:
   title: Летопись Первой экспедиции
   icon: minecraft:writable_book
   order_index: 0
-  default_hide_dependency_lines: false
+  default_hide_dependency_lines: true
   default_quest_shape: milestone
   default_quest_size: 1.5
 

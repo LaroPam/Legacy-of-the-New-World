@@ -5,9 +5,190 @@
 	title: "Дороги нового мира — рельсы и крылья"
 	icon: "create:track"
 	order_index: 11
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "step"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: 9.0d
+			y: -2.0d
+			width: 21.667d
+			height: 19.317d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/base.png"
+			color: 5020159
+			alpha: 255
+			order: -2
+		}
+		{
+			x: 6.0d
+			y: -5.5d
+			width: 0.517d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/0a185710bafa698a.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "0A185710BAFA698A"
+		}
+		{
+			x: 13.5d
+			y: -6.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/0a24638e79ff2418.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "0A24638E79FF2418"
+		}
+		{
+			x: 7.5d
+			y: 1.5d
+			width: 4.042d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/0be47753bc6bef28.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "0BE47753BC6BEF28"
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			width: 4.042d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/168fb859d289da38.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "168FB859D289DA38"
+		}
+		{
+			x: 13.5d
+			y: 0.0d
+			width: 4.042d
+			height: 7.567d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/27a5dca80f77c440.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "27A5DCA80F77C440"
+		}
+		{
+			x: 6.0d
+			y: -8.5d
+			width: 0.517d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/34f99f7ae0f5bd92.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "34F99F7AE0F5BD92"
+		}
+		{
+			x: 16.5d
+			y: 1.5d
+			width: 4.042d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/3dc5eec5097bb375.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "3DC5EEC5097BB375"
+		}
+		{
+			x: 11.7667d
+			y: -4.5d
+			width: 1.0653d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/3e14426d5444f75e.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "3E14426D5444F75E"
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/41772de6b882a602.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "41772DE6B882A602"
+		}
+		{
+			x: 4.5d
+			y: -5.2667d
+			width: 4.042d
+			height: 4.5903d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/4abc4d7cb8fbe2b6.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "4ABC4D7CB8FBE2B6"
+		}
+		{
+			x: 10.5d
+			y: -1.5d
+			width: 4.042d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/5727915e29a5f477.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "5727915E29A5F477"
+		}
+		{
+			x: 18.0d
+			y: -1.5d
+			width: 0.517d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/57d8ddeff1169558.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "57D8DDEFF1169558"
+		}
+		{
+			x: 1.5d
+			y: -4.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/65a85c57e7511720.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "65A85C57E7511720"
+		}
+		{
+			x: 15.0d
+			y: 4.5d
+			width: 0.517d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/transport/7b13e63bea35fc61.png"
+			color: 11457023
+			alpha: 255
+			order: -1
+			dependency: "7B13E63BEA35FC61"
+		}
+	]
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,7 +198,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "create:sturdy_sheet"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			size: 1.4d
 			dependencies: ["027C7ABF4F61942F"]
 			tasks: [{
@@ -40,6 +221,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "168FB859D289DA38"
@@ -48,7 +230,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "create:track"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["41772DE6B882A602"]
 			tasks: [{
 				id: "6E2A7BA814C6A78C"
@@ -70,6 +252,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "0BE47753BC6BEF28"
@@ -78,7 +261,7 @@
 			x: 6.0d
 			y: 0.0d
 			icon: "create:railway_casing"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["168FB859D289DA38"]
 			tasks: [{
 				id: "13D965A9565E5462"
@@ -100,6 +283,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "5727915E29A5F477"
@@ -108,7 +292,7 @@
 			x: 9.0d
 			y: 0.0d
 			icon: "create:controls"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.5d
 			dependencies: ["0BE47753BC6BEF28"]
@@ -132,6 +316,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "2CC98EB2E8824152"
@@ -140,7 +325,7 @@
 			x: 9.0d
 			y: -3.0d
 			icon: "create:steam_whistle"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["5727915E29A5F477"]
 			tasks: [{
@@ -163,6 +348,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "27A5DCA80F77C440"
@@ -171,7 +357,7 @@
 			x: 12.0d
 			y: 0.0d
 			icon: "create:schedule"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["5727915E29A5F477"]
 			tasks: [{
 				id: "32C88DE4AE203ABA"
@@ -193,6 +379,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "3DC5EEC5097BB375"
@@ -201,7 +388,7 @@
 			x: 15.0d
 			y: 0.0d
 			icon: "create:track_signal"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["27A5DCA80F77C440"]
 			tasks: [{
 				id: "62B09FDF5F878F1B"
@@ -223,6 +410,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "7B13E63BEA35FC61"
@@ -231,7 +419,7 @@
 			x: 15.0d
 			y: 3.0d
 			icon: "minecraft:redstone_torch"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["3DC5EEC5097BB375"]
 			tasks: [{
@@ -254,6 +442,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "6E3CC9D4F972BDBB"
@@ -262,7 +451,7 @@
 			x: 15.0d
 			y: 6.0d
 			icon: "create:railway_casing"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["7B13E63BEA35FC61"]
 			tasks: [{
@@ -285,6 +474,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "57D8DDEFF1169558"
@@ -293,7 +483,7 @@
 			x: 18.0d
 			y: 0.0d
 			icon: "create:display_board"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["3DC5EEC5097BB375"]
 			tasks: [{
 				id: "564E0F4D8380E8E2"
@@ -315,6 +505,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "3E14426D5444F75E"
@@ -323,7 +514,7 @@
 			x: 12.0d
 			y: -3.0d
 			icon: "create:track"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["27A5DCA80F77C440"]
 			tasks: [{
@@ -346,6 +537,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "0A24638E79FF2418"
@@ -354,7 +546,7 @@
 			x: 12.0d
 			y: -6.0d
 			icon: "create:minecart_coupling"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["3E14426D5444F75E"]
 			tasks: [{
@@ -377,6 +569,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "36EA6A2338C90595"
@@ -385,7 +578,7 @@
 			x: 15.0d
 			y: -6.0d
 			icon: "minecraft:compass"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.4d
 			optional: true
@@ -410,6 +603,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "2B76CE2DB46422C6"
@@ -418,7 +612,7 @@
 			x: 18.0d
 			y: -3.0d
 			icon: "minecraft:obsidian"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["57D8DDEFF1169558"]
@@ -442,6 +636,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "098405E74DFFDA00"
@@ -450,7 +645,7 @@
 			x: 6.0d
 			y: 3.0d
 			icon: "minecraft:rotten_flesh"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["0BE47753BC6BEF28"]
 			tasks: [{
@@ -473,6 +668,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "339341943A77E20B"
@@ -481,7 +677,7 @@
 			x: 3.0d
 			y: 3.0d
 			icon: "railways:handcar"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["168FB859D289DA38"]
 			tasks: [{
@@ -505,6 +701,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "0C11F617809503C4"
@@ -513,7 +710,7 @@
 			x: 12.0d
 			y: 3.0d
 			icon: "railways:red_conductor_cap"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["27A5DCA80F77C440"]
 			tasks: [{
@@ -537,6 +734,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "65A85C57E7511720"
@@ -545,7 +743,7 @@
 			x: 0.0d
 			y: -4.0d
 			icon: "immersive_aircraft:gyrodyne"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["1D1395D17D6238DB"]
 			tasks: [{
 				id: "17A1C11F4E962544"
@@ -568,6 +766,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "4ABC4D7CB8FBE2B6"
@@ -576,7 +775,7 @@
 			x: 3.0d
 			y: -4.0d
 			icon: "immersive_aircraft:biplane"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["65A85C57E7511720"]
 			tasks: [{
 				id: "357B61E283AA8D27"
@@ -599,6 +798,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "78B0CB9F88378AFC"
@@ -607,7 +807,7 @@
 			x: 3.0d
 			y: -7.0d
 			icon: "immersive_aircraft:quadrocopter"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["4ABC4D7CB8FBE2B6"]
 			tasks: [{
@@ -631,6 +831,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "0A185710BAFA698A"
@@ -639,7 +840,7 @@
 			x: 6.0d
 			y: -4.0d
 			icon: "immersive_aircraft:airship"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["4ABC4D7CB8FBE2B6"]
 			tasks: [{
 				id: "54813CFDB6430EAF"
@@ -662,6 +863,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "34F99F7AE0F5BD92"
@@ -670,7 +872,7 @@
 			x: 6.0d
 			y: -7.0d
 			icon: "immersive_aircraft:cargo_airship"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["0A185710BAFA698A"]
 			tasks: [{
 				id: "762D58F4A6D0B9FD"
@@ -693,6 +895,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 		{
 			id: "647BC9A7C706F2A8"
@@ -701,7 +904,7 @@
 			x: 6.0d
 			y: -10.0d
 			icon: "immersive_aircraft:warship"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.4d
 			optional: true
@@ -727,6 +930,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_transport"
 		}
 	]
 }

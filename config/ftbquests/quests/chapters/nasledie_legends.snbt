@@ -5,9 +5,502 @@
 	title: "Легенды глубин — шесть потерянных миров"
 	icon: "alexscaves:cave_map"
 	order_index: 14
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "step"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: -0.6d
+			y: 2.5d
+			width: 41.8535d
+			height: 38.117d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/base.png"
+			color: 12413951
+			alpha: 255
+			order: -2
+		}
+		{
+			x: 1.125d
+			y: -9.75d
+			width: 3.1608d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/054e760f5d9b1153.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "054E760F5D9B1153"
+		}
+		{
+			x: 6.425d
+			y: -6.65d
+			width: 2.5497d
+			height: 2.632d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/06a53594ec209d3a.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "06A53594EC209D3A"
+		}
+		{
+			x: -0.875d
+			y: -1.515d
+			width: 2.5732d
+			height: 4.0773d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/0b88e55204890f85.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "0B88E55204890F85"
+		}
+		{
+			x: -12.775d
+			y: -7.375d
+			width: 3.0668d
+			height: 1.9858d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/1be92c03bdbb686a.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "1BE92C03BDBB686A"
+		}
+		{
+			x: -11.42d
+			y: 5.54d
+			width: 4.9585d
+			height: 3.3605d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/1c4b8279c22d289b.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "1C4B8279C22D289B"
+		}
+		{
+			x: 0.0d
+			y: 0.85d
+			width: 7.6375d
+			height: 10.7395d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/1e0319e7396c1af2.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "1E0319E7396C1AF2"
+		}
+		{
+			x: 12.775d
+			y: 7.375d
+			width: 3.0668d
+			height: 1.9858d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/1fcd3892785e34ca.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "1FCD3892785E34CA"
+		}
+		{
+			x: 10.1166d
+			y: 7.17d
+			width: 4.2145d
+			height: 4.4415d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/2070afc86412d9cf.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "2070AFC86412D9CF"
+		}
+		{
+			x: 0.0d
+			y: 14.75d
+			width: 0.517d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/20bb4bb6d059b828.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "20BB4BB6D059B828"
+		}
+		{
+			x: 4.115d
+			y: -2.375d
+			width: 3.0668d
+			height: 1.9858d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/2682a9c8cbe99bb1.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "2682A9C8CBE99BB1"
+		}
+		{
+			x: 8.445d
+			y: 4.875d
+			width: 3.0667d
+			height: 1.9857d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/28820c6f7944a6f3.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "28820C6F7944A6F3"
+		}
+		{
+			x: -10.61d
+			y: -6.125d
+			width: 3.055d
+			height: 1.9857d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/29fda172cb9a8629.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "29FDA172CB9A8629"
+		}
+		{
+			x: 11.49d
+			y: 11.49d
+			width: 2.585d
+			height: 2.585d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/2c100a1c72c67c78.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "2C100A1C72C67C78"
+		}
+		{
+			x: -6.28d
+			y: -3.625d
+			width: 3.055d
+			height: 1.9857d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/2c50224379627b14.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "2C50224379627B14"
+		}
+		{
+			x: -4.655d
+			y: -3.14d
+			width: 4.3358d
+			height: 3.948d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/338e0b562bf293d5.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "338E0B562BF293D5"
+		}
+		{
+			x: 9.725d
+			y: 9.725d
+			width: 2.5968d
+			height: 2.5968d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/35a20348aabd6323.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "35A20348AABD6323"
+		}
+		{
+			x: 6.2762d
+			y: -4.375d
+			width: 3.064d
+			height: 3.7483d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/3658222bc6aab8b9.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "3658222BC6AAB8B9"
+		}
+		{
+			x: 14.6d
+			y: -9.175d
+			width: 2.256d
+			height: 3.2783d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/3fcb8d7ff82745af.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "3FCB8D7FF82745AF"
+		}
+		{
+			x: -8.445d
+			y: 4.875d
+			width: 3.0667d
+			height: 1.9857d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/423ddd9daad5eab7.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "423DDD9DAAD5EAB7"
+		}
+		{
+			x: 4.115d
+			y: 2.375d
+			width: 3.0668d
+			height: 1.9858d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/454ceaedcfa1f140.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "454CEAEDCFA1F140"
+		}
+		{
+			x: 6.28d
+			y: 3.625d
+			width: 3.055d
+			height: 1.9857d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/4d890c4519d39302.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "4D890C4519D39302"
+		}
+		{
+			x: 1.07d
+			y: 9.75d
+			width: 3.0315d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/4f6ffe76f5f9e33c.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "4F6FFE76F5F9E33C"
+		}
+		{
+			x: -14.94d
+			y: -8.625d
+			width: 3.055d
+			height: 1.9858d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/51155def31997adb.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "51155DEF31997ADB"
+		}
+		{
+			x: 8.445d
+			y: -4.875d
+			width: 3.0667d
+			height: 1.9857d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/52cdc1eee3086a8d.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "52CDC1EEE3086A8D"
+		}
+		{
+			x: -1.455d
+			y: 12.345d
+			width: 3.9363d
+			height: 3.6778d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/5d30229dc0039862.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "5D30229DC0039862"
+		}
+		{
+			x: 0.845d
+			y: -7.25d
+			width: 2.5027d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/5eee4a0183e3245f.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "5EEE4A0183E3245F"
+		}
+		{
+			x: 0.0d
+			y: -4.75d
+			width: 0.517d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/60d9315769c4e578.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "60D9315769C4E578"
+		}
+		{
+			x: -3.0d
+			y: -5.195d
+			width: 3.4545d
+			height: 5.6048d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/65cdbe2cb81cbffc.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "65CDBE2CB81CBFFC"
+		}
+		{
+			x: -8.445d
+			y: -4.875d
+			width: 3.0667d
+			height: 1.9857d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/66097831a964fdd6.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "66097831A964FDD6"
+		}
+		{
+			x: -4.115d
+			y: 2.375d
+			width: 3.0668d
+			height: 1.9858d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/664ed6625a930a36.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "664ED6625A930A36"
+		}
+		{
+			x: 0.73d
+			y: 4.915d
+			width: 2.2325d
+			height: 3.8423d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/6f811cde1bfbabe2.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "6F811CDE1BFBABE2"
+		}
+		{
+			x: -17.105d
+			y: -9.875d
+			width: 3.0668d
+			height: 1.9858d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/7169b6525412b860.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "7169B6525412B860"
+		}
+		{
+			x: -6.28d
+			y: 3.625d
+			width: 3.055d
+			height: 1.9857d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/7204791e23cff9e5.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "7204791E23CFF9E5"
+		}
+		{
+			x: 10.61d
+			y: -6.125d
+			width: 3.055d
+			height: 1.9857d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/7727ffa6871b87b6.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "7727FFA6871B87B6"
+		}
+		{
+			x: 0.0d
+			y: 17.25d
+			width: 0.517d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/783bdd5302cab271.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "783BDD5302CAB271"
+		}
+		{
+			x: 14.415d
+			y: 9.435d
+			width: 1.8213d
+			height: 3.8892d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/7af2cf003133b836.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "7AF2CF003133B836"
+		}
+		{
+			x: 0.0d
+			y: -12.25d
+			width: 0.517d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/7ce22e10d39bca44.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "7CE22E10D39BCA44"
+		}
+		{
+			x: 12.775d
+			y: -7.375d
+			width: 3.0668d
+			height: 1.9858d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/7df8f9fb47383497.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "7DF8F9FB47383497"
+		}
+		{
+			x: 15.98d
+			y: 11.605d
+			width: 2.8905d
+			height: 2.2443d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/7ed39ce9f2148371.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "7ED39CE9F2148371"
+		}
+		{
+			x: 0.0d
+			y: 7.25d
+			width: 0.517d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/legends/7f39c1ff3a9c0c7e.png"
+			color: 14793983
+			alpha: 255
+			order: -1
+			dependency: "7F39C1FF3A9C0C7E"
+		}
+	]
 	quest_links: [
 		{
 			id: "46AD06DD157BC6F9"
@@ -50,7 +543,7 @@
 			x: -3.0d
 			y: -5.2d
 			icon: "alexscaves:cave_tablet"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
 				id: "34790D23F2650AA5"
@@ -72,6 +565,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "0B88E55204890F85"
@@ -80,7 +574,7 @@
 			x: -1.75d
 			y: -3.03d
 			icon: "alexscaves:cave_codex"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["65CDBE2CB81CBFFC"]
 			tasks: [{
 				id: "189CCB34674EC1FC"
@@ -102,6 +596,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "1E0319E7396C1AF2"
@@ -110,7 +605,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "alexscaves:cave_map"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 2.0d
 			dependencies: ["0B88E55204890F85"]
@@ -134,6 +629,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "3C74408B2EA9F8D7"
@@ -142,7 +638,7 @@
 			x: -4.25d
 			y: -7.36d
 			icon: "alexscaves:cave_book"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["65CDBE2CB81CBFFC"]
 			tasks: [{
@@ -165,6 +661,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "69BA2C6E0A89756A"
@@ -173,7 +670,7 @@
 			x: -3.0d
 			y: 5.2d
 			icon: "minecraft:filled_map"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.6d
 			optional: true
@@ -231,6 +728,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "60D9315769C4E578"
@@ -239,7 +737,7 @@
 			x: 0.0d
 			y: -3.5d
 			icon: "alexscaves:azure_magnet"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["1E0319E7396C1AF2"]
 			tasks: [{
 				id: "30A8B68DCE23D907"
@@ -261,6 +759,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "5EEE4A0183E3245F"
@@ -269,7 +768,7 @@
 			x: 0.0d
 			y: -6.0d
 			icon: "alexscaves:raw_azure_neodymium"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["60D9315769C4E578"]
 			tasks: [{
 				id: "0EDE2736E74130F5"
@@ -291,6 +790,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "054E760F5D9B1153"
@@ -299,7 +799,7 @@
 			x: 0.0d
 			y: -8.5d
 			icon: "alexscaves:ferrouslime_ball"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			dependencies: ["5EEE4A0183E3245F"]
 			tasks: [{
@@ -322,6 +822,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "7CE22E10D39BCA44"
@@ -330,7 +831,7 @@
 			x: 0.0d
 			y: -11.0d
 			icon: "minecraft:chain"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			dependencies: ["054E760F5D9B1153"]
 			tasks: [{
@@ -353,6 +854,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "6F2F3D36A0C60B9E"
@@ -361,7 +863,7 @@
 			x: 0.0d
 			y: -13.5d
 			icon: "alexscaves:quarry"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["7CE22E10D39BCA44"]
@@ -385,6 +887,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "7D6B3DB0A377F701"
@@ -393,7 +896,7 @@
 			x: 2.25d
 			y: -9.74d
 			icon: "alexscaves:galena_gauntlet"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["054E760F5D9B1153"]
 			tasks: [{
@@ -416,6 +919,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "5DA969509DFEF44B"
@@ -424,7 +928,7 @@
 			x: 1.69d
 			y: -7.31d
 			icon: "minecraft:observer"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["5EEE4A0183E3245F"]
 			tasks: [{
@@ -447,6 +951,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "2682A9C8CBE99BB1"
@@ -455,7 +960,7 @@
 			x: 3.03d
 			y: -1.75d
 			icon: "alexscaves:tree_star"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["1E0319E7396C1AF2"]
 			tasks: [{
 				id: "5BBD980C17B21F9C"
@@ -477,6 +982,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "3658222BC6AAB8B9"
@@ -485,7 +991,7 @@
 			x: 5.2d
 			y: -3.0d
 			icon: "alexscaves:subterranodon_egg"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["2682A9C8CBE99BB1"]
 			tasks: [{
 				id: "7D45D23E806DA371"
@@ -507,6 +1013,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "52CDC1EEE3086A8D"
@@ -515,7 +1022,7 @@
 			x: 7.36d
 			y: -4.25d
 			icon: "minecraft:spyglass"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["3658222BC6AAB8B9"]
 			tasks: [
 				{
@@ -552,6 +1059,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "7727FFA6871B87B6"
@@ -560,7 +1068,7 @@
 			x: 9.53d
 			y: -5.5d
 			icon: "alexscaves:dinosaur_nugget"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["52CDC1EEE3086A8D"]
 			tasks: [{
 				id: "1FCA575FB2040CEA"
@@ -582,6 +1090,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "7DF8F9FB47383497"
@@ -590,7 +1099,7 @@
 			x: 11.69d
 			y: -6.75d
 			icon: "alexscaves:serene_salad"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			dependencies: ["7727FFA6871B87B6"]
 			tasks: [{
@@ -613,6 +1122,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "3FCB8D7FF82745AF"
@@ -621,7 +1131,7 @@
 			x: 13.86d
 			y: -8.0d
 			icon: "alexscaves:ominous_catalyst"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			dependencies: ["7DF8F9FB47383497"]
 			tasks: [{
@@ -647,6 +1157,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "06A53594EC209D3A"
@@ -655,7 +1166,7 @@
 			x: 5.56d
 			y: -5.75d
 			icon: "alexscaves:atlatitan_egg"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["3658222BC6AAB8B9"]
 			tasks: [{
@@ -678,6 +1189,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "176790254CA17C3C"
@@ -686,7 +1198,7 @@
 			x: 7.29d
 			y: -7.55d
 			icon: "alexscaves:conversion_crucible"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["06A53594EC209D3A"]
@@ -710,6 +1222,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "454CEAEDCFA1F140"
@@ -718,7 +1231,7 @@
 			x: 3.03d
 			y: 1.75d
 			icon: "alexscaves:uranium"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["1E0319E7396C1AF2"]
 			tasks: [{
 				id: "3B7C3AF28D82BF74"
@@ -740,6 +1253,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "4D890C4519D39302"
@@ -748,7 +1262,7 @@
 			x: 5.2d
 			y: 3.0d
 			icon: "alexscaves:metal_swarf"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["454CEAEDCFA1F140"]
 			tasks: [{
 				id: "4F878814452808FB"
@@ -770,6 +1284,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "28820C6F7944A6F3"
@@ -778,7 +1293,7 @@
 			x: 7.36d
 			y: 4.25d
 			icon: "alexscaves:hazmat_chestplate"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["4D890C4519D39302"]
 			tasks: [{
 				id: "32E207B32E391C5E"
@@ -800,6 +1315,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "2070AFC86412D9CF"
@@ -808,7 +1324,7 @@
 			x: 9.53d
 			y: 5.5d
 			icon: "alexscaves:radgill"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["28820C6F7944A6F3"]
 			tasks: [{
 				id: "089CE126A99516D0"
@@ -830,6 +1346,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "1FCD3892785E34CA"
@@ -838,7 +1355,7 @@
 			x: 11.69d
 			y: 6.75d
 			icon: "alexscaves:nuclear_bomb"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			dependencies: ["2070AFC86412D9CF"]
 			tasks: [{
@@ -861,6 +1378,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "35A20348AABD6323"
@@ -869,7 +1387,7 @@
 			x: 8.84d
 			y: 8.84d
 			icon: "alexscaves:nuclear_furnace_component"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["2070AFC86412D9CF"]
 			tasks: [{
@@ -892,6 +1410,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "2C100A1C72C67C78"
@@ -900,7 +1419,7 @@
 			x: 10.61d
 			y: 10.61d
 			icon: "minecraft:shears"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["35A20348AABD6323"]
 			tasks: [{
@@ -923,6 +1442,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "273A0D05D74B7984"
@@ -931,7 +1451,7 @@
 			x: 12.37d
 			y: 12.37d
 			icon: "minecraft:saddle"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "home"
 			optional: true
 			dependencies: ["2C100A1C72C67C78"]
@@ -955,6 +1475,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "7AF2CF003133B836"
@@ -963,7 +1484,7 @@
 			x: 13.86d
 			y: 8.0d
 			icon: "alexscaves:tremorzilla_egg"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			dependencies: ["1FCD3892785E34CA"]
 			tasks: [{
@@ -986,6 +1507,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "26AF0FFF36488B07"
@@ -994,7 +1516,7 @@
 			x: 16.99d
 			y: 12.34d
 			icon: "minecraft:beacon"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["7ED39CE9F2148371"]
@@ -1018,6 +1540,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "6F811CDE1BFBABE2"
@@ -1026,7 +1549,7 @@
 			x: 0.0d
 			y: 3.5d
 			icon: "alexscaves:diving_helmet"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["1E0319E7396C1AF2"]
 			tasks: [{
 				id: "1AE0F93310922352"
@@ -1048,6 +1571,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "7F39C1FF3A9C0C7E"
@@ -1056,7 +1580,7 @@
 			x: 0.0d
 			y: 6.0d
 			icon: "minecraft:copper_ingot"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["6F811CDE1BFBABE2"]
 			tasks: [{
 				id: "58F537302AB79F36"
@@ -1078,6 +1602,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "4F6FFE76F5F9E33C"
@@ -1086,7 +1611,7 @@
 			x: 0.0d
 			y: 8.5d
 			icon: "alexscaves:submarine"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["7F39C1FF3A9C0C7E"]
 			tasks: [{
 				id: "14ABE59CF4BC9C4A"
@@ -1108,6 +1633,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "5D30229DC0039862"
@@ -1116,7 +1642,7 @@
 			x: 0.0d
 			y: 11.0d
 			icon: "alexscaves:abyssmarine"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["4F6FFE76F5F9E33C"]
 			tasks: [{
 				id: "7E9C11DA98F6BB93"
@@ -1138,6 +1664,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "20BB4BB6D059B828"
@@ -1146,7 +1673,7 @@
 			x: 0.0d
 			y: 13.5d
 			icon: "alexscaves:pearl"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["5D30229DC0039862"]
 			tasks: [{
 				id: "7AEF56F6FEF0C917"
@@ -1168,6 +1695,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "783BDD5302CAB271"
@@ -1176,7 +1704,7 @@
 			x: 0.0d
 			y: 16.0d
 			icon: "alexscaves:marine_snow"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["20BB4BB6D059B828"]
 			tasks: [{
 				id: "3932BE39A65403CF"
@@ -1198,6 +1726,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "035B28BFA782D516"
@@ -1206,7 +1735,7 @@
 			x: 0.0d
 			y: 18.5d
 			icon: "alexscaves:abyssal_altar"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["783BDD5302CAB271"]
@@ -1230,6 +1759,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "1FDE61E7AC73CF59"
@@ -1238,7 +1768,7 @@
 			x: 1.46d
 			y: 6.33d
 			icon: "minecraft:ender_eye"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["6F811CDE1BFBABE2"]
 			tasks: [{
@@ -1264,6 +1794,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "1AD4F36AEE69BAE9"
@@ -1272,7 +1803,7 @@
 			x: 2.14d
 			y: 9.26d
 			icon: "alexscaves:depth_charge"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			optional: true
 			dependencies: ["4F6FFE76F5F9E33C"]
@@ -1296,6 +1827,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "664ED6625A930A36"
@@ -1304,7 +1836,7 @@
 			x: -3.03d
 			y: 1.75d
 			icon: "alexscaves:dark_tatters"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["1E0319E7396C1AF2"]
 			tasks: [{
 				id: "57758EF258CD59FF"
@@ -1326,6 +1858,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "7204791E23CFF9E5"
@@ -1334,7 +1867,7 @@
 			x: -5.2d
 			y: 3.0d
 			icon: "alexscaves:moth_ball"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["664ED6625A930A36"]
 			tasks: [{
 				id: "40FC92DB519354D4"
@@ -1356,6 +1889,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "423DDD9DAAD5EAB7"
@@ -1364,7 +1898,7 @@
 			x: -7.36d
 			y: 4.25d
 			icon: "alexscaves:desolate_dagger"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["7204791E23CFF9E5"]
 			tasks: [{
 				id: "5DBB0EDB5F29E748"
@@ -1386,6 +1920,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "1C4B8279C22D289B"
@@ -1394,7 +1929,7 @@
 			x: -9.53d
 			y: 5.5d
 			icon: "minecraft:ender_eye"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			dependencies: ["423DDD9DAAD5EAB7"]
 			tasks: [{
@@ -1417,6 +1952,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "680C2889E6EF571F"
@@ -1425,7 +1961,7 @@
 			x: -11.69d
 			y: 6.75d
 			icon: "minecraft:apple"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["1C4B8279C22D289B"]
 			tasks: [{
@@ -1448,6 +1984,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "338E0B562BF293D5"
@@ -1456,7 +1993,7 @@
 			x: -3.03d
 			y: -1.75d
 			icon: "alexscaves:candy_cane"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["1E0319E7396C1AF2"]
 			tasks: [{
 				id: "57D8564C230F7A45"
@@ -1478,6 +2015,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "2C50224379627B14"
@@ -1486,7 +2024,7 @@
 			x: -5.2d
 			y: -3.0d
 			icon: "alexscaves:caramel"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["338E0B562BF293D5"]
 			tasks: [{
 				id: "56F59CF63ECBE7C4"
@@ -1508,6 +2046,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "66097831A964FDD6"
@@ -1516,7 +2055,7 @@
 			x: -7.36d
 			y: -4.25d
 			icon: "alexscaves:caramel_apple"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["2C50224379627B14"]
 			tasks: [{
 				id: "40138D9E6602FC92"
@@ -1538,6 +2077,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "29FDA172CB9A8629"
@@ -1546,7 +2086,7 @@
 			x: -9.53d
 			y: -5.5d
 			icon: "alexscaves:gummy_ring_pink"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["66097831A964FDD6"]
 			tasks: [{
 				id: "58960C52187E72F7"
@@ -1568,6 +2108,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "1BE92C03BDBB686A"
@@ -1576,7 +2117,7 @@
 			x: -11.69d
 			y: -6.75d
 			icon: "alexscaves:gingerbread_block"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["29FDA172CB9A8629"]
 			tasks: [{
 				id: "2EE5C83BF9D8CFAB"
@@ -1598,6 +2139,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "51155DEF31997ADB"
@@ -1606,7 +2148,7 @@
 			x: -13.86d
 			y: -8.0d
 			icon: "alexscaves:licoroot"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["1BE92C03BDBB686A"]
 			tasks: [{
 				id: "2A68E852F8ABD46A"
@@ -1628,6 +2170,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "7169B6525412B860"
@@ -1636,7 +2179,7 @@
 			x: -16.02d
 			y: -9.25d
 			icon: "alexscaves:candy_cane_hook"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			dependencies: ["51155DEF31997ADB"]
 			tasks: [{
@@ -1659,6 +2202,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "5302C3B080472681"
@@ -1667,7 +2211,7 @@
 			x: -18.19d
 			y: -10.5d
 			icon: "alexscaves:shot_gum"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			optional: true
 			dependencies: ["7169B6525412B860"]
@@ -1691,6 +2235,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "605FA347740DE9A7"
@@ -1699,7 +2244,7 @@
 			x: -6.28d
 			y: -1.68d
 			icon: "alexscaves:frostmint"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["338E0B562BF293D5"]
 			tasks: [{
@@ -1722,6 +2267,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 		{
 			id: "662E9E2A4828CD48"
@@ -1730,7 +2276,7 @@
 			x: -4.6d
 			y: -4.6d
 			icon: "alexscaves:block_of_chocolate"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "home"
 			optional: true
 			dependencies: ["338E0B562BF293D5"]
@@ -1754,6 +2300,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_legends"
 		}
 	]
 }

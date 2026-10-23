@@ -7,7 +7,7 @@ chapter:
   title: Атлас Линд — дальние экспедиции
   icon: explorerscompass:explorerscompass
   order_index: 5
-  default_hide_dependency_lines: false
+  default_hide_dependency_lines: true
   default_quest_shape: expedition
   progression_mode: flexible
 

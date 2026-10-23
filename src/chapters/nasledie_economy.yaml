@@ -6,7 +6,7 @@ chapter:
   title: Торговый дом
   icon: minecraft:emerald
   order_index: 12
-  default_hide_dependency_lines: false
+  default_hide_dependency_lines: true
   default_quest_shape: home
   progression_mode: flexible
 

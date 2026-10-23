@@ -5,9 +5,118 @@
 	title: "Край — конец пути"
 	icon: "minecraft:end_portal_frame"
 	order_index: 16
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "step"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: 6.0d
+			y: -1.125d
+			width: 14.617d
+			height: 16.0858d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/finale/base.png"
+			color: 13073919
+			alpha: 255
+			order: -2
+		}
+		{
+			x: 6.75d
+			y: 3.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/finale/04ea8a84e185e1c3.png"
+			color: 15324671
+			alpha: 255
+			order: -1
+			dependency: "04EA8A84E185E1C3"
+		}
+		{
+			x: 8.0d
+			y: 4.25d
+			width: 6.392d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/finale/1a559a6bb038ef61.png"
+			color: 15324671
+			alpha: 255
+			order: -1
+			dependency: "1A559A6BB038EF61"
+		}
+		{
+			x: 1.75d
+			y: -1.375d
+			width: 4.6295d
+			height: 3.7483d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/finale/280c23723a869a8b.png"
+			color: 15324671
+			alpha: 255
+			order: -1
+			dependency: "280C23723A869A8B"
+		}
+		{
+			x: 2.25d
+			y: -4.0d
+			width: 5.8045d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/finale/34b69b58c4015c3f.png"
+			color: 15324671
+			alpha: 255
+			order: -1
+			dependency: "34B69B58C4015C3F"
+		}
+		{
+			x: 4.875d
+			y: 1.5d
+			width: 7.8608d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/finale/367c7d7e1f81d391.png"
+			color: 15324671
+			alpha: 255
+			order: -1
+			dependency: "367C7D7E1F81D391"
+		}
+		{
+			x: 7.625d
+			y: -6.5d
+			width: 3.7483d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/finale/45769170ebdd1a02.png"
+			color: 15324671
+			alpha: 255
+			order: -1
+			dependency: "45769170EBDD1A02"
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			width: 5.217d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/finale/4e228116310381e8.png"
+			color: 15324671
+			alpha: 255
+			order: -1
+			dependency: "4E228116310381E8"
+		}
+		{
+			x: 5.25d
+			y: -4.0d
+			width: 4.6295d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/finale/548db0a9a973a90d.png"
+			color: 15324671
+			alpha: 255
+			order: -1
+			dependency: "548DB0A9A973A90D"
+		}
+	]
 	quest_links: [
 		{
 			id: "5DBFD07979C5CFF3"
@@ -50,7 +159,7 @@
 			x: 1.75d
 			y: -2.75d
 			icon: "minecraft:end_portal_frame"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			size: 1.2d
 			dependencies: ["280C23723A869A8B"]
@@ -82,6 +191,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "418BF87D0F99A324"
@@ -90,7 +200,7 @@
 			x: 0.0d
 			y: -5.25d
 			icon: "alexsmobs:soul_heart"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["34B69B58C4015C3F"]
 			tasks: [{
@@ -122,6 +232,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "548DB0A9A973A90D"
@@ -130,7 +241,7 @@
 			x: 4.5d
 			y: -2.75d
 			icon: "alexsmobs:capsid"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["34B69B58C4015C3F"]
 			tasks: [{
 				id: "47E973A7F9D2E058"
@@ -153,6 +264,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "50F2011C089DD095"
@@ -161,7 +273,7 @@
 			x: 3.5d
 			y: -5.25d
 			icon: "minecraft:chorus_fruit"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["548DB0A9A973A90D"]
 			tasks: [{
@@ -192,6 +304,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "3C2AA39C0E1FDEF8"
@@ -200,7 +313,7 @@
 			x: 7.0d
 			y: -2.75d
 			icon: "alexsmobs:cosmic_cod"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["548DB0A9A973A90D"]
 			tasks: [{
 				id: "2E1702787FA1C576"
@@ -230,6 +343,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "45769170EBDD1A02"
@@ -238,7 +352,7 @@
 			x: 6.25d
 			y: -5.25d
 			icon: "alexsmobs:mysterious_worm"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			size: 1.3d
 			dependencies: ["548DB0A9A973A90D"]
@@ -273,6 +387,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "7C9F211F3C3FEE27"
@@ -281,7 +396,7 @@
 			x: 6.25d
 			y: -7.75d
 			icon: "alexsmobs:void_worm_mandible"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["45769170EBDD1A02"]
@@ -305,6 +420,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "2DAF49A8C5352825"
@@ -313,7 +429,7 @@
 			x: 9.0d
 			y: -5.25d
 			icon: "alexsmobs:void_worm_eye"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.8d
 			dependencies: ["45769170EBDD1A02"]
@@ -354,6 +470,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "6A480F8148BFE375"
@@ -362,7 +479,7 @@
 			x: 1.75d
 			y: 2.75d
 			icon: "minecraft:end_crystal"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["367C7D7E1F81D391"]
@@ -394,6 +511,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "04EA8A84E185E1C3"
@@ -402,7 +520,7 @@
 			x: 5.5d
 			y: 3.0d
 			icon: "minecraft:ender_pearl"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			size: 1.2d
 			dependencies: ["367C7D7E1F81D391"]
@@ -426,6 +544,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "1A559A6BB038EF61"
@@ -434,7 +553,7 @@
 			x: 8.0d
 			y: 3.0d
 			icon: "minecraft:purpur_block"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			size: 1.2d
 			dependencies: ["04EA8A84E185E1C3"]
 			tasks: [{
@@ -457,6 +576,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "60AD7180FDDD9EDA"
@@ -465,7 +585,7 @@
 			x: 10.5d
 			y: 3.0d
 			icon: "minecraft:chest"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["1A559A6BB038EF61"]
 			tasks: [{
 				id: "3B38010DA1F3016E"
@@ -496,6 +616,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "5CA34D31A998F7C1"
@@ -504,7 +625,7 @@
 			x: 10.5d
 			y: 5.5d
 			icon: "minecraft:elytra"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.5d
 			dependencies: ["1A559A6BB038EF61"]
@@ -536,6 +657,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "02B4461D69F73E9A"
@@ -544,7 +666,7 @@
 			x: 8.0d
 			y: 5.5d
 			icon: "minecraft:shulker_shell"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["1A559A6BB038EF61"]
 			tasks: [{
@@ -578,6 +700,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 		{
 			id: "5827675D74CF8E0E"
@@ -586,7 +709,7 @@
 			x: 5.5d
 			y: 5.5d
 			icon: "minecraft:purple_shulker_box"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["1A559A6BB038EF61"]
 			tasks: [{
 				id: "2B037429BD505CC0"
@@ -609,6 +732,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_finale"
 		}
 	]
 }

@@ -7,7 +7,7 @@ chapter:
   title: Океан — проводник и монумент
   icon: minecraft:conduit
   order_index: 7
-  default_hide_dependency_lines: false
+  default_hide_dependency_lines: true
   default_quest_shape: expedition
   progression_mode: flexible
 

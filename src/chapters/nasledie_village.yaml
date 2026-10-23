@@ -8,7 +8,7 @@ chapter:
   title: Люди нашего поселения
   icon: minecraft:bell
   order_index: 2
-  default_hide_dependency_lines: false
+  default_hide_dependency_lines: true
   default_quest_shape: step
   progression_mode: flexible
 

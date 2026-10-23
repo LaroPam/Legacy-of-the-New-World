@@ -7,7 +7,7 @@ chapter:
   title: Край — конец пути
   icon: minecraft:end_portal_frame
   order_index: 16
-  default_hide_dependency_lines: false
+  default_hide_dependency_lines: true
   default_quest_shape: step
   progression_mode: flexible
 

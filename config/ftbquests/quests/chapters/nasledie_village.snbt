@@ -5,9 +5,262 @@
 	title: "Люди нашего поселения"
 	icon: "minecraft:bell"
 	order_index: 2
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "step"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: 4.32d
+			y: 2.025d
+			width: 26.79d
+			height: 20.4333d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/base.png"
+			color: 16756600
+			alpha: 255
+			order: -2
+		}
+		{
+			x: 3.9d
+			y: 8.25d
+			width: 4.277d
+			height: 5.8045d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/04776c066000292e.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "04776C066000292E"
+		}
+		{
+			x: 6.75d
+			y: 0.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/10e550a7aa6fe780.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "10E550A7AA6FE780"
+		}
+		{
+			x: -0.985d
+			y: -4.725d
+			width: 6.3098d
+			height: 4.5708d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/1e8eacc187073285.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "1E8EACC187073285"
+		}
+		{
+			x: 9.25d
+			y: 6.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/280598e732d70769.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "280598E732D70769"
+		}
+		{
+			x: 6.75d
+			y: 8.25d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/286cdb4787747c32.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "286CDB4787747C32"
+		}
+		{
+			x: 4.25d
+			y: 0.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/28708c663f59906a.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "28708C663F59906A"
+		}
+		{
+			x: 11.75d
+			y: 3.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/2cf4920c2bfb611e.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "2CF4920C2BFB611E"
+		}
+		{
+			x: 4.25d
+			y: -3.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/2fc6deb96faaf4a1.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "2FC6DEB96FAAF4A1"
+		}
+		{
+			x: 14.25d
+			y: 3.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/376536ec66d67276.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "376536EC66D67276"
+		}
+		{
+			x: 4.25d
+			y: 10.5d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/37852acaef9733ed.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "37852ACAEF9733ED"
+		}
+		{
+			x: 9.25d
+			y: 3.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/415331510ebf4afe.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "415331510EBF4AFE"
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			width: 7.567d
+			height: 11.092d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/43524b3b7a1175c3.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "43524B3B7A1175C3"
+		}
+		{
+			x: 6.6301d
+			y: 7.125d
+			width: 3.7362d
+			height: 3.1608d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/49f37baa4db94210.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "49F37BAA4DB94210"
+		}
+		{
+			x: 6.75d
+			y: 3.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/4f244541933746fe.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "4F244541933746FE"
+		}
+		{
+			x: 9.25d
+			y: -3.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/67b10ec3b6680953.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "67B10EC3B6680953"
+		}
+		{
+			x: 9.25d
+			y: 0.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/6f7c435dee5c7f2a.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "6F7C435DEE5C7F2A"
+		}
+		{
+			x: 6.75d
+			y: -3.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/7154299d354a1b07.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "7154299D354A1B07"
+		}
+		{
+			x: 4.25d
+			y: 3.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/7380b6b164146847.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "7380B6B164146847"
+		}
+		{
+			x: -4.41d
+			y: 3.515d
+			width: 6.2745d
+			height: 8.3778d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/7524ccc3ec797596.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "7524CCC3EC797596"
+		}
+		{
+			x: 6.75d
+			y: 10.5d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/village/76a06c9205bab223.png"
+			color: 16767938
+			alpha: 255
+			order: -1
+			dependency: "76A06C9205BAB223"
+		}
+	]
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,7 +270,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "minecraft:bell"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "home"
 			size: 1.4d
 			tasks: [{
@@ -40,6 +293,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "1E8EACC187073285"
@@ -48,7 +302,7 @@
 			x: 0.0d
 			y: -3.0d
 			icon: "minecraft:cartography_table"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["43524B3B7A1175C3"]
@@ -72,6 +326,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "61A27DD45708092E"
@@ -80,7 +335,7 @@
 			x: -3.45d
 			y: -3.61d
 			icon: "minecraft:jungle_log"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["1E8EACC187073285"]
@@ -105,6 +360,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "1D78C33928B611DC"
@@ -113,7 +369,7 @@
 			x: -2.47d
 			y: -5.47d
 			icon: "minecraft:spruce_sapling"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["1E8EACC187073285"]
@@ -146,6 +402,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "085716627A8EF0FF"
@@ -154,7 +411,7 @@
 			x: -0.61d
 			y: -6.45d
 			icon: "minecraft:stone_brick_wall"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["1E8EACC187073285"]
@@ -179,6 +436,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "03DB7C0D5B211193"
@@ -187,7 +445,7 @@
 			x: 1.48d
 			y: -6.17d
 			icon: "minecraft:red_mushroom_block"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["1E8EACC187073285"]
@@ -220,6 +478,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "2FC6DEB96FAAF4A1"
@@ -228,7 +487,7 @@
 			x: 3.0d
 			y: -3.0d
 			icon: "mca:bouquet"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "home"
 			dependencies: ["43524B3B7A1175C3"]
 			tasks: [{
@@ -251,6 +510,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "7154299D354A1B07"
@@ -259,7 +519,7 @@
 			x: 5.5d
 			y: -3.0d
 			icon: "mca:bouquet"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "home"
 			dependencies: ["2FC6DEB96FAAF4A1"]
 			tasks: [{
@@ -282,6 +542,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "67B10EC3B6680953"
@@ -290,7 +551,7 @@
 			x: 8.0d
 			y: -3.0d
 			icon: "mca:engagement_ring"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "home"
 			optional: true
 			dependencies: ["7154299D354A1B07"]
@@ -314,6 +575,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "2C75530B1A6E014E"
@@ -322,7 +584,7 @@
 			x: 10.5d
 			y: -3.0d
 			icon: "mca:wedding_ring"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "home"
 			optional: true
 			dependencies: ["67B10EC3B6680953"]
@@ -354,6 +616,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "28708C663F59906A"
@@ -362,7 +625,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:emerald"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["43524B3B7A1175C3"]
 			tasks: [{
 				id: "0657C76CA1A27F0A"
@@ -384,6 +647,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "10E550A7AA6FE780"
@@ -392,7 +656,7 @@
 			x: 5.5d
 			y: 0.0d
 			icon: "minecraft:golden_helmet"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["28708C663F59906A"]
 			tasks: [{
 				id: "45081030B3832A8B"
@@ -414,6 +678,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "6F7C435DEE5C7F2A"
@@ -422,7 +687,7 @@
 			x: 8.0d
 			y: 0.0d
 			icon: "minecraft:bell"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			dependencies: ["10E550A7AA6FE780"]
 			tasks: [{
@@ -445,6 +710,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "46D5C058BF1AA935"
@@ -453,7 +719,7 @@
 			x: 10.5d
 			y: 0.0d
 			icon: "minecraft:golden_helmet"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["6F7C435DEE5C7F2A"]
@@ -477,6 +743,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "7380B6B164146847"
@@ -485,7 +752,7 @@
 			x: 3.0d
 			y: 3.0d
 			icon: "minecraft:emerald"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["43524B3B7A1175C3"]
 			tasks: [{
 				id: "22BF366F0562FA8C"
@@ -507,6 +774,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "4F244541933746FE"
@@ -515,7 +783,7 @@
 			x: 5.5d
 			y: 3.0d
 			icon: "bountiful:bountyboard"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["7380B6B164146847"]
 			tasks: [{
 				id: "211AB18C95F75E9C"
@@ -537,6 +805,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "415331510EBF4AFE"
@@ -545,7 +814,7 @@
 			x: 8.0d
 			y: 3.0d
 			icon: "minecraft:paper"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["4F244541933746FE"]
 			tasks: [{
 				id: "5BA690674B4874AC"
@@ -568,6 +837,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "2CF4920C2BFB611E"
@@ -576,7 +846,7 @@
 			x: 10.5d
 			y: 3.0d
 			icon: "minecraft:writable_book"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["415331510EBF4AFE"]
 			tasks: [{
 				id: "4AF724D2E564E2BC"
@@ -599,6 +869,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "376536EC66D67276"
@@ -607,7 +878,7 @@
 			x: 13.0d
 			y: 3.0d
 			icon: "minecraft:map"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["2CF4920C2BFB611E"]
 			tasks: [{
@@ -631,6 +902,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "25F4B0042B923092"
@@ -639,7 +911,7 @@
 			x: 15.5d
 			y: 3.0d
 			icon: "minecraft:nether_star"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["376536EC66D67276"]
@@ -664,6 +936,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "04776C066000292E"
@@ -672,7 +945,7 @@
 			x: 3.0d
 			y: 6.0d
 			icon: "recruits:recruit_block"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			dependencies: ["43524B3B7A1175C3"]
 			tasks: [{
@@ -704,6 +977,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "49F37BAA4DB94210"
@@ -712,7 +986,7 @@
 			x: 5.5d
 			y: 6.0d
 			icon: "recruits:bowman_block"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			dependencies: ["04776C066000292E"]
 			tasks: [{
@@ -736,6 +1010,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "280598E732D70769"
@@ -744,7 +1019,7 @@
 			x: 8.0d
 			y: 6.0d
 			icon: "minecraft:iron_helmet"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			optional: true
 			dependencies: ["49F37BAA4DB94210"]
@@ -769,6 +1044,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "65E748A554F2F9EC"
@@ -777,7 +1053,7 @@
 			x: 10.5d
 			y: 6.0d
 			icon: "minecraft:iron_chestplate"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			optional: true
 			dependencies: ["280598E732D70769"]
@@ -810,6 +1086,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "286CDB4787747C32"
@@ -818,7 +1095,7 @@
 			x: 5.5d
 			y: 8.25d
 			icon: "minecraft:crossbow"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			size: 1.3d
 			dependencies: ["49F37BAA4DB94210"]
@@ -842,6 +1119,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "7524CCC3EC797596"
@@ -850,7 +1128,7 @@
 			x: -3.0d
 			y: 3.0d
 			icon: "minecraft:decorated_pot"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			size: 1.2d
 			optional: true
@@ -875,6 +1153,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "2258D9BAC95F159C"
@@ -883,7 +1162,7 @@
 			x: -1.96d
 			y: 6.86d
 			icon: "minecraft:mangrove_roots"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["7524CCC3EC797596"]
@@ -916,6 +1195,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "2DBF88C9EFD89754"
@@ -924,7 +1204,7 @@
 			x: -4.04d
 			y: 6.86d
 			icon: "minecraft:cherry_sapling"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["7524CCC3EC797596"]
@@ -957,6 +1237,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "3DD93C9348F9DD60"
@@ -965,7 +1246,7 @@
 			x: -5.83d
 			y: 5.83d
 			icon: "artifacts:cowboy_hat"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["7524CCC3EC797596"]
@@ -990,6 +1271,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "563147A3EA7E2A55"
@@ -998,7 +1280,7 @@
 			x: -6.86d
 			y: 4.04d
 			icon: "minecraft:lead"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["7524CCC3EC797596"]
@@ -1031,6 +1313,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "271164556FCA81BE"
@@ -1039,7 +1322,7 @@
 			x: -6.86d
 			y: 1.96d
 			icon: "minecraft:spruce_log"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["7524CCC3EC797596"]
@@ -1064,6 +1347,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "12197E64B2DE482C"
@@ -1072,7 +1356,7 @@
 			x: -5.83d
 			y: 0.17d
 			icon: "minecraft:campfire"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "expedition"
 			optional: true
 			dependencies: ["7524CCC3EC797596"]
@@ -1105,6 +1389,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "53E438388100C716"
@@ -1113,7 +1398,7 @@
 			x: 8.0d
 			y: 8.25d
 			icon: "minecraft:crossbow"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			optional: true
 			dependencies: ["286CDB4787747C32"]
@@ -1144,6 +1429,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "37852ACAEF9733ED"
@@ -1152,7 +1438,7 @@
 			x: 3.0d
 			y: 10.5d
 			icon: "minecraft:iron_hoe"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["04776C066000292E"]
 			tasks: [{
 				id: "6EFB09273F6CA4D7"
@@ -1175,6 +1461,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "76A06C9205BAB223"
@@ -1183,7 +1470,7 @@
 			x: 5.5d
 			y: 10.5d
 			icon: "minecraft:wheat"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["37852ACAEF9733ED"]
 			tasks: [{
 				id: "5BE10687E3B2DAC3"
@@ -1206,6 +1493,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 		{
 			id: "3C7D15E376D65E6A"
@@ -1214,7 +1502,7 @@
 			x: 8.0d
 			y: 10.5d
 			icon: "minecraft:iron_axe"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["76A06C9205BAB223"]
 			tasks: [
@@ -1254,6 +1542,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_village"
 		}
 	]
 }

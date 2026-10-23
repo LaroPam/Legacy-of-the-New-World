@@ -5,9 +5,46 @@
 	title: "Кабинет редкостей"
 	icon: "relics:researching_table"
 	order_index: 18
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "expedition"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: -2.155d
+			y: 0.0d
+			width: 14.9813d
+			height: 9.917d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/relics/base.png"
+			color: 9792511
+			alpha: 255
+			order: -2
+		}
+		{
+			x: -1.005d
+			y: 0.0d
+			width: 12.2788d
+			height: 9.917d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/relics/717680ddfa2aac5e.png"
+			color: 13614335
+			alpha: 255
+			order: -1
+			dependency: "717680DDFA2AAC5E"
+		}
+		{
+			x: -7.16d
+			y: 2.965d
+			width: 3.2195d
+			height: 1.6333d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/relics/75d8f4d63f925f92.png"
+			color: 13614335
+			alpha: 255
+			order: -1
+			dependency: "75D8F4D63F925F92"
+		}
+	]
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,7 +54,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "relics:leather_belt"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.6d
 			tasks: [{
@@ -49,6 +86,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_relics"
 		}
 		{
 			id: "18BF171A54EE246E"
@@ -57,7 +95,7 @@
 			x: -4.0d
 			y: 0.0d
 			icon: "relics:infinity_ham"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -113,6 +151,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_relics"
 		}
 		{
 			id: "390415D4DBCA873B"
@@ -121,7 +160,7 @@
 			x: -2.83d
 			y: -2.83d
 			icon: "relics:horse_flute"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -163,6 +202,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_relics"
 		}
 		{
 			id: "3D35FEC30FF182E4"
@@ -171,7 +211,7 @@
 			x: -2.83d
 			y: 2.83d
 			icon: "relics:magic_mirror"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -220,6 +260,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_relics"
 		}
 		{
 			id: "4984B5E091D37A3A"
@@ -228,7 +269,7 @@
 			x: 4.0d
 			y: 0.0d
 			icon: "relics:jellyfish_necklace"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -295,6 +336,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_relics"
 		}
 		{
 			id: "12A9886ECC0A9357"
@@ -303,7 +345,7 @@
 			x: 0.0d
 			y: -4.0d
 			icon: "relics:ice_skates"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -352,6 +394,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_relics"
 		}
 		{
 			id: "402B756CB2934067"
@@ -360,7 +403,7 @@
 			x: 2.83d
 			y: 2.83d
 			icon: "relics:holy_locket"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -402,6 +445,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_relics"
 		}
 		{
 			id: "2A4E02B807986AC6"
@@ -410,7 +454,7 @@
 			x: 0.0d
 			y: 4.0d
 			icon: "relics:blazing_flask"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -480,6 +524,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_relics"
 		}
 		{
 			id: "73E1BCDBF47C2670"
@@ -488,7 +533,7 @@
 			x: 2.83d
 			y: -2.83d
 			icon: "relics:enders_hand"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.4d
 			dependencies: ["717680DDFA2AAC5E"]
@@ -545,6 +590,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_relics"
 		}
 		{
 			id: "75D8F4D63F925F92"
@@ -553,7 +599,7 @@
 			x: -6.01d
 			y: 2.49d
 			icon: "artifacts:mimic_spawn_egg"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
@@ -577,6 +623,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_relics"
 		}
 		{
 			id: "71351EBD4433810D"
@@ -585,7 +632,7 @@
 			x: -8.31d
 			y: 3.44d
 			icon: "artifacts:onion_ring"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "step"
 			optional: true
 			dependencies: ["75D8F4D63F925F92"]
@@ -617,6 +664,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_relics"
 		}
 	]
 }

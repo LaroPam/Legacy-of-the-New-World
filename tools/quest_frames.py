@@ -7,10 +7,11 @@
 FTB Quests 2001.4.22 draws a quest button from three textures of its shape: shape.png filled with #212121,
 background.png on top at alpha 150/255, outline.png tinted with the quest state colour (locked, available,
 started, completed), then the item icon in the middle 2/3 of the button times the quest's icon_scale.
-Every type uses the same round medallion. The picture is cut out of its black background (ornaments that stick
-out of the ring stay), the dark recess in its middle is found and centred, and darkened a little more so the icon
-reads; the outline is a thin white ring around the recess that FTB colours by quest state. Quests get
-icon_scale ICON_SCALE, so the icon stays inside the recess. Preparing needs numpy; --check needs only Pillow.
+Every type uses the same round medallion. The whole picture is fitted into the button, ornaments that stick out
+of the ring included, and cut out of its black background. The empty recess in its middle is filled with a glow in
+the type's colour (violet for milestones, red for trials...); the outline is a thin white ring around the recess
+that FTB colours by quest state. Quests get questbook.ICON_SCALE, small enough for the icon to stay inside every
+recess. Preparing needs numpy; --check needs only Pillow.
 """
 import argparse
 import json
@@ -19,31 +20,32 @@ import sys
 
 from PIL import Image, ImageDraw
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from questbook import ICON_SCALE  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'art/frames'
 TARGET = ROOT / 'kubejs/assets/ftbquests/textures/shapes'
-TYPES = {  # shape name: (picture, what it marks)
-    'step': ('frame_step.png', 'обычный шаг'),
-    'expedition': ('frame_expedition.png', 'экспедиция'),
-    'milestone': ('frame_milestone.png', 'веха, особое достижение'),
-    'trial': ('frame_trial.png', 'опасное испытание'),
-    'tech': ('frame_tech.png', 'техника и стройка'),
-    'boss': ('frame_boss.png', 'босс, кульминация'),
-    'home': ('frame_home.png', 'дом, люди, торговля'),
+TYPES = {  # shape name: (picture, what it marks, glow colour of the recess)
+    'step': ('frame_step.png', 'обычный шаг', (120, 170, 255)),
+    'expedition': ('frame_expedition.png', 'экспедиция', (255, 165, 60)),
+    'milestone': ('frame_milestone.png', 'веха, особое достижение', (185, 105, 255)),
+    'trial': ('frame_trial.png', 'опасное испытание', (255, 55, 45)),
+    'tech': ('frame_tech.png', 'техника и стройка', (60, 220, 255)),
+    'boss': ('frame_boss.png', 'босс, кульминация', (255, 125, 40)),
+    'home': ('frame_home.png', 'дом, люди, торговля', (95, 230, 120)),
 }
 SIZE = 256
 WORK = 1024            # pictures are cut at this size, then scaled down for smooth edges
-ICON_SCALE = 0.75
-RECESS = 0.72          # every picture is scaled so its dark recess spans this share of the button
-# a square icon's corners reach 2/3 * ICON_SCALE * sqrt(2) of the button: 0.71 < RECESS, so icons stay inside
-RECESS_SHADE = 0.6     # brightness kept in the middle of the recess, where the icon sits
+ICON_REACH = 2 / 3 * ICON_SCALE * 2 ** 0.5  # diameter a square icon's corners span, share of the button
+GLOW_CORE, GLOW_EDGE = 0.30, 0.62  # glow brightness on screen (FTB caps the background near 0.64) in the middle, at the rim
 RIM = 0.03             # state rim width around the recess, share of the button
 BLEND, FILL = 150 / 255, 0x21 / 255  # FTB: background alpha, shape fill (Color4I.DARK_GRAY)
 MCMETA = {'texture': {'blur': True}}
 
 
 def measure(picture):
-    """Centre and radius of the dark recess, in pixels."""
+    """Centre and radius of the dark recess and how far the medallion reaches, ornaments included, in pixels."""
     import numpy as np  # needed only to prepare pictures, not for --check
     lum = np.asarray(picture.convert('L'), dtype=np.float32) / 255
     ys, xs = np.nonzero(lum > 0.12)
@@ -66,7 +68,9 @@ def measure(picture):
         yy, xx = np.mgrid[0:lum.shape[0], 0:lum.shape[1]]
         dark = ((yy - cy) ** 2 + (xx - cx) ** 2 < (0.9 * recess) ** 2) & (lum < 0.3)
         cy, cx = yy[dark].mean(), xx[dark].mean()
-    return cx, cy, edge(*profile(cx, cy))
+    lit_y, lit_x = np.nonzero(lum > 0.05)
+    reach = np.sqrt((lit_y - cy) ** 2 + (lit_x - cx) ** 2).max()
+    return cx, cy, edge(*profile(cx, cy)), reach
 
 
 def silhouette(lum):
@@ -93,39 +97,41 @@ def ring(diameter_share, width_share):
     return mask.resize((SIZE, SIZE), Image.LANCZOS)
 
 
-def render(picture):
-    """shape, background and outline textures of one medallion."""
+def render(picture, glow):
+    """shape, background and outline textures of one medallion and its recess diameter as a share of the button."""
     import numpy as np
     picture = picture.convert('RGB')
-    cx, cy, recess = measure(picture)
-    half = recess / RECESS  # ornaments beyond the button are cut softly along its circle
+    cx, cy, recess, reach = measure(picture)
+    half = reach * 1.02  # the whole medallion fits, nothing is cut
     work = picture.crop((round(cx - half), round(cy - half), round(cx + half), round(cy + half))).resize((WORK, WORK), Image.LANCZOS)
     rgb = np.asarray(work, dtype=np.float32) / 255
     lum = rgb @ np.array([0.2126, 0.7152, 0.0722], dtype=np.float32)
     alpha, inside = silhouette(lum)
-    share = RECESS / 2  # recess radius as a share of the button width
+    share = recess / half / 2  # recess radius as a share of the button width
     yy, xx = np.mgrid[0:WORK, 0:WORK]
-    r = np.sqrt((yy - WORK / 2) ** 2 + (xx - WORK / 2) ** 2) / WORK
-    edge = np.clip((0.5 - r) / 0.015, 0, 1)
-    alpha, inside = alpha * edge, inside * edge
-    shade = RECESS_SHADE + (1 - RECESS_SHADE) * np.clip((r - share * 0.55) / (share * 0.45), 0, 1)
-    rgb = rgb * shade[..., None]
-    # FTB draws the background at alpha 150/255 over the #212121 fill: undo that blend so the frame keeps its colours.
+    r = np.sqrt((yy - WORK / 2) ** 2 + (xx - WORK / 2) ** 2) / WORK / share  # 1 at the recess edge
+    # The recess becomes a glow in the type's colour: a soft core, brighter towards the rim like light inside a lens.
+    t = np.clip((r - 0.55) / 0.45, 0, 1)
+    light = GLOW_CORE + (GLOW_EDGE - GLOW_CORE) * t * t * (3 - 2 * t)
+    lens = light[..., None] * (np.array(glow, dtype=np.float32) / 255)[None, None, :]
+    fill = np.clip((1.0 - r) / 0.06, 0, 1)[..., None]  # recess fully glow, blending into the ring at its edge
+    # FTB draws the background at alpha 150/255 over the #212121 fill: undo that blend so colours stay as drawn.
+    rgb = rgb * (1 - fill) + lens * fill
     rgb = (rgb - (1 - BLEND) * FILL) / BLEND
     def texture(rgb, a):
         data = np.dstack([np.clip(rgb, 0, 1) * 255, a * 255]).astype('uint8')
         return Image.fromarray(data, 'RGBA').resize((SIZE, SIZE), Image.LANCZOS)
     white = np.ones_like(rgb)
-    background = texture(rgb, alpha)
-    shape = texture(white, inside)
+    background = texture(rgb, np.maximum(alpha, fill[..., 0]))
+    shape = texture(white, np.maximum(inside, fill[..., 0]))
     outline = Image.new('RGBA', (SIZE, SIZE), (255, 255, 255, 0))
     outline.putalpha(ring(share * 2, RIM))
-    return {'shape.png': shape, 'background.png': background, 'outline.png': outline}
+    return {'shape.png': shape, 'background.png': background, 'outline.png': outline}, share * 2
 
 
 def check():
     problems = []
-    for name, (picture, _) in TYPES.items():
+    for name, (picture, _, _) in TYPES.items():
         if not (SOURCE / picture).exists():
             problems.append(f'{name}: picture art/frames/{picture} is missing')
         for part in ('shape.png', 'background.png', 'outline.png'):
@@ -151,17 +157,19 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if args.check:
         return check()
-    for name, (picture, _) in TYPES.items():
+    for name, (picture, _, glow) in TYPES.items():
         source = SOURCE / picture
         if not source.exists():
             print(f'skip {name}: no art/frames/{picture}')
             continue
         (TARGET / name).mkdir(parents=True, exist_ok=True)
-        parts = render(Image.open(source))
+        parts, recess = render(Image.open(source), glow)
+        if recess < ICON_REACH:
+            print(f'ERROR {name}: recess {recess:.2f} of the button, a square icon needs {ICON_REACH:.2f}')
         for part, image in parts.items():
             image.save(TARGET / name / part, optimize=True)
             (TARGET / name / (part + '.mcmeta')).write_text(json.dumps(MCMETA, indent=2) + '\n')
-        print('prepared', name)
+        print(f'prepared {name}: recess {recess:.2f} of the button, icon needs {ICON_REACH:.2f}')
     return check()
 
 

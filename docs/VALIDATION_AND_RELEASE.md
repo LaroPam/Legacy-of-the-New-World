@@ -43,16 +43,21 @@ python tools/questbook.py check   # SNBT совпадает со свежей с
 карта главы поверх её фона, размеры и цвета значков и линий как в FTB Quests 2001.4.22.
 
 Фоны глав: исходники автора — `art/backgrounds/`, готовые текстуры — `kubejs/assets/nasledie/textures/backgrounds/`
-(`python tools/backgrounds.py`, нужны Pillow и numpy; подробности — `docs/BACKGROUND_PROMPTS.md`).
+(`python tools/backgrounds.py`: исходное разрешение, только равномерное затемнение; подробности — `docs/BACKGROUND_PROMPTS.md`).
 Какой фон у какой главы, задаёт `reviews/chapter_palettes.json`; тему собирает `python tools/apply_palettes.py`.
 Значки квестов — круглые медальоны семи типов (`docs/QUEST_FRAME_PROMPTS.md`): рисунки автора `art/frames/`
 превращает в формы FTB `python tools/quest_frames.py` (нужны Pillow и numpy; `--check` — только Pillow).
 Типы перечислены в `tools/quest_frames.py` (`TYPES`), валидатор берёт список форм оттуда и требует, чтобы каждая
 использованная форма была объявлена в теме (`extra_quest_shapes`): иначе FTB молча рисует стандартную.
-Генератор ставит каждому квесту `icon_scale: 0.75`, чтобы значок помещался в рамку.
+Генератор ставит каждому квесту `icon_scale: 0.6`, чтобы значок помещался в рамку.
 
-Линии связей рисует `kubejs/assets/nasledie/textures/gui/dependency_soft.png` (тема: `dependency_line_texture`,
-толщина `dependency_line_thickness: 0.24`) вместо стрелок FTB; текстуру создаёт `python tools/ui_textures.py`.
+Связи — плавные кривые (`tools/curves.py`): FTB рисует только прямые, поэтому генератор книги строит кривые Безье
+и кладёт их картинками главы под квестами (`kubejs/assets/nasledie/textures/curves/<глава>/`): одна картинка
+со всеми связями в цвете «не пройдено» и по картинке на каждый квест-условие в цвете «пройдено», которая
+появляется после его выполнения (`dependency`). У глав `default_hide_dependency_lines: true`, а тема делает
+прозрачными линии, которые FTB всё равно показывает при наведении. Сгенерированные PNG `questbook.py check`
+сравнивает по пикселям. Валидатор отвергает кривую, проходящую сквозь чужой квест (`curve_through_quest`).
+Текстура `dependency_soft.png` (`python tools/ui_textures.py`) осталась для этих скрытых линий.
 Minecraft читает любую текстуру как RGBA: маска формы квеста (`shape.png`) без альфа-канала
 превращается в непрозрачный квадрат под значком.
 

@@ -7,7 +7,7 @@ chapter:
   title: Звери и стражи старого мира
   icon: mowziesmobs:wrought_helmet
   order_index: 6
-  default_hide_dependency_lines: false
+  default_hide_dependency_lines: true
   default_quest_shape: trial
   progression_mode: flexible
 

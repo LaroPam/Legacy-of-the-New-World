@@ -5,9 +5,226 @@
 	title: "Бестиарий Ингрид Берг"
 	icon: "alexsmobs:animal_dictionary"
 	order_index: 17
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "step"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: 1.275d
+			y: 0.48d
+			width: 22.9713d
+			height: 21.62d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/base.png"
+			color: 3725672
+			alpha: 255
+			order: -2
+		}
+		{
+			x: 2.325d
+			y: 4.4d
+			width: 2.1033d
+			height: 3.7365d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/15c85bf47da01d26.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "15C85BF47DA01D26"
+		}
+		{
+			x: -1.1d
+			y: -7.25d
+			width: 3.102d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/16a5a07ea384e3e1.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "16A5A07EA384E3E1"
+		}
+		{
+			x: -2.63d
+			y: 4.25d
+			width: 1.974d
+			height: 3.76d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/19429b59ee71cda8.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "19429B59EE71CDA8"
+		}
+		{
+			x: 9.6d
+			y: 1.695d
+			width: 3.4075d
+			height: 1.0222d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/19fca77eb16a1e4a.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "19FCA77EB16A1E4A"
+		}
+		{
+			x: 7.47d
+			y: -6.265d
+			width: 2.773d
+			height: 2.4087d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/1ac57df4745395a2.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "1AC57DF4745395A2"
+		}
+		{
+			x: 5.555d
+			y: -4.66d
+			width: 2.7612d
+			height: 2.397d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/252a21a892e4e5a0.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "252A21A892E4E5A0"
+		}
+		{
+			x: 7.14d
+			y: 2.25d
+			width: 3.4075d
+			height: 3.3605d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/269880141c867bb1.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "269880141C867BB1"
+		}
+		{
+			x: -7.06d
+			y: -4.08d
+			width: 3.384d
+			height: 3.4075d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/2ce2bbcb182d3bf5.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "2CE2BBCB182D3BF5"
+		}
+		{
+			x: -4.635d
+			y: 6.71d
+			width: 3.7717d
+			height: 3.055d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/3949c4277618fec3.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "3949C4277618FEC3"
+		}
+		{
+			x: -4.465d
+			y: -2.905d
+			width: 3.7483d
+			height: 3.4897d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/39c5e7f638070495.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "39C5E7F638070495"
+		}
+		{
+			x: -0.72d
+			y: 8.215d
+			width: 0.7755d
+			height: 3.4428d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/3c70087f08bb9172.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "3C70087F08BB9172"
+		}
+		{
+			x: -0.5d
+			y: 5.725d
+			width: 0.7755d
+			height: 3.4427d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/427cd312ae0eb773.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "427CD312AE0EB773"
+		}
+		{
+			x: 4.72d
+			y: 0.31d
+			width: 3.5015d
+			height: 2.2325d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/4b932485b3983e85.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "4B932485B3983E85"
+		}
+		{
+			x: 0.775d
+			y: -4.75d
+			width: 2.3382d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/59be881a23fa5362.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "59BE881A23FA5362"
+		}
+		{
+			x: 3.64d
+			y: -3.055d
+			width: 2.773d
+			height: 2.4088d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/64d66b92c822d527.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "64D66B92C822D527"
+		}
+		{
+			x: -4.115d
+			y: 2.375d
+			width: 3.0668d
+			height: 1.9858d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/757181dbda992f0b.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "757181DBDA992F0B"
+		}
+		{
+			x: -1.185d
+			y: 0.49d
+			width: 11.4093d
+			height: 9.8935d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/guild/7e2ecdc313839529.png"
+			color: 10874555
+			alpha: 255
+			order: -1
+			dependency: "7E2ECDC313839529"
+		}
+	]
 	quest_links: [{
 		id: "6035792C37A284FA"
 		linked_quest: "12AF3238F7B8776E"
@@ -24,7 +241,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "alexsmobs:animal_dictionary"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			size: 1.8d
 			tasks: [{
@@ -48,6 +265,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "757181DBDA992F0B"
@@ -56,7 +274,7 @@
 			x: -3.03d
 			y: 1.75d
 			icon: "minecraft:writable_book"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [
 				{
@@ -93,6 +311,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "6901B3595877A394"
@@ -101,7 +320,7 @@
 			x: -3.5d
 			y: 0.0d
 			icon: "alexsmobs:maraca"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "home"
 			optional: true
 			dependencies: ["7E2ECDC313839529"]
@@ -125,6 +344,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "32AF726FDB0E97B5"
@@ -133,7 +353,7 @@
 			x: -5.82d
 			y: 1.45d
 			icon: "alexsmobs:transmutation_table"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["7E2ECDC313839529"]
@@ -157,6 +377,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "59BE881A23FA5362"
@@ -165,7 +386,7 @@
 			x: 0.0d
 			y: -3.5d
 			icon: "minecraft:spyglass"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
 				id: "1F864CD314D0747E"
@@ -187,6 +408,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "16A5A07EA384E3E1"
@@ -195,7 +417,7 @@
 			x: 0.0d
 			y: -6.0d
 			icon: "alexsmobs:bear_fur"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["59BE881A23FA5362"]
 			tasks: [{
 				id: "587864688609C05D"
@@ -217,6 +439,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "237F60330304F23A"
@@ -225,7 +448,7 @@
 			x: 1.55d
 			y: -5.8d
 			icon: "minecraft:apple"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["59BE881A23FA5362"]
 			tasks: [{
@@ -248,6 +471,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "0EC4540A9E0B729E"
@@ -256,7 +480,7 @@
 			x: 0.0d
 			y: -8.5d
 			icon: "alexsmobs:stink_bottle"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "home"
 			optional: true
 			dependencies: ["16A5A07EA384E3E1"]
@@ -280,6 +504,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "211B0DC1744B593F"
@@ -288,7 +513,7 @@
 			x: -2.2d
 			y: -8.21d
 			icon: "alexsmobs:ghostly_pickaxe"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["16A5A07EA384E3E1"]
 			tasks: [{
@@ -311,6 +536,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "64D66B92C822D527"
@@ -319,7 +545,7 @@
 			x: 2.68d
 			y: -2.25d
 			icon: "alexsmobs:fish_oil"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
 				id: "628499842EACBFFA"
@@ -341,6 +567,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "252A21A892E4E5A0"
@@ -349,7 +576,7 @@
 			x: 4.6d
 			y: -3.86d
 			icon: "alexsmobs:falconry_glove"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["64D66B92C822D527"]
 			tasks: [{
 				id: "6F5F50A93BF1D08E"
@@ -371,6 +598,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "1AC57DF4745395A2"
@@ -379,7 +607,7 @@
 			x: 6.51d
 			y: -5.46d
 			icon: "alexsmobs:falconry_hood"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["252A21A892E4E5A0"]
 			tasks: [{
 				id: "15EE6E3B9B7E7852"
@@ -401,6 +629,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "16E3403FB5591B32"
@@ -409,7 +638,7 @@
 			x: 8.43d
 			y: -7.07d
 			icon: "minecraft:feather"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			dependencies: ["1AC57DF4745395A2"]
 			tasks: [{
@@ -432,6 +661,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "4B932485B3983E85"
@@ -440,7 +670,7 @@
 			x: 3.45d
 			y: 0.61d
 			icon: "alexsmobs:banana"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
 				id: "4F499F5711FC1389"
@@ -462,6 +692,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "269880141C867BB1"
@@ -470,7 +701,7 @@
 			x: 5.91d
 			y: 1.04d
 			icon: "alexsmobs:banana"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["4B932485B3983E85"]
 			tasks: [{
 				id: "516D10F4D859A619"
@@ -492,6 +723,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "19FCA77EB16A1E4A"
@@ -500,7 +732,7 @@
 			x: 8.37d
 			y: 1.48d
 			icon: "minecraft:poppy"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["269880141C867BB1"]
 			tasks: [{
 				id: "11C482CE8355E14F"
@@ -522,6 +754,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "7187AE5CE52E38D9"
@@ -530,7 +763,7 @@
 			x: 10.83d
 			y: 1.91d
 			icon: "minecraft:allium"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["19FCA77EB16A1E4A"]
 			tasks: [{
@@ -553,6 +786,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "136D71E0D75C5CFD"
@@ -561,7 +795,7 @@
 			x: 5.99d
 			y: -0.42d
 			icon: "alexsmobs:leafcutter_ant_pupa"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["4B932485B3983E85"]
 			tasks: [{
@@ -584,6 +818,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "1ED723F7F76497AD"
@@ -592,7 +827,7 @@
 			x: 7.77d
 			y: 3.46d
 			icon: "minecraft:porkchop"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["269880141C867BB1"]
@@ -616,6 +851,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "15C85BF47DA01D26"
@@ -624,7 +860,7 @@
 			x: 1.75d
 			y: 3.03d
 			icon: "alexsmobs:acacia_blossom"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
 				id: "53D2A594FD348510"
@@ -646,6 +882,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "4BCEC123A1B35749"
@@ -654,7 +891,7 @@
 			x: 3.0d
 			y: 5.2d
 			icon: "minecraft:red_carpet"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "home"
 			optional: true
 			dependencies: ["15C85BF47DA01D26"]
@@ -678,6 +915,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "63D42711634C8471"
@@ -686,7 +924,7 @@
 			x: 1.65d
 			y: 5.77d
 			icon: "minecraft:bone"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["15C85BF47DA01D26"]
@@ -710,6 +948,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "427CD312AE0EB773"
@@ -718,7 +957,7 @@
 			x: -0.39d
 			y: 4.48d
 			icon: "alexsmobs:crocodile_egg"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
 				id: "3EEFE319AF7D09C6"
@@ -740,6 +979,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "3C70087F08BB9172"
@@ -748,7 +988,7 @@
 			x: -0.61d
 			y: 6.97d
 			icon: "minecraft:spider_eye"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["427CD312AE0EB773"]
 			tasks: [{
 				id: "39D1B19111118BE5"
@@ -770,6 +1010,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "0D963EB7C6BEE5F5"
@@ -778,7 +1019,7 @@
 			x: -0.83d
 			y: 9.46d
 			icon: "alexsmobs:soul_heart"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "trial"
 			optional: true
 			dependencies: ["3C70087F08BB9172"]
@@ -817,6 +1058,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "19429B59EE71CDA8"
@@ -825,7 +1067,7 @@
 			x: -2.01d
 			y: 2.87d
 			icon: "minecraft:cod"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "home"
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
@@ -848,6 +1090,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "3949C4277618FEC3"
@@ -856,7 +1099,7 @@
 			x: -3.25d
 			y: 5.63d
 			icon: "minecraft:tropical_fish"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["19429B59EE71CDA8"]
 			tasks: [{
 				id: "016649403388BC7C"
@@ -878,6 +1121,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "6159D133BD51F992"
@@ -886,7 +1130,7 @@
 			x: -4.5d
 			y: 7.79d
 			icon: "alexsmobs:ambergris"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["3949C4277618FEC3"]
@@ -910,6 +1154,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "1F1BD6529A7A9340"
@@ -918,7 +1163,7 @@
 			x: -6.02d
 			y: 6.69d
 			icon: "minecraft:nautilus_shell"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["3949C4277618FEC3"]
 			tasks: [{
@@ -941,6 +1186,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "39C5E7F638070495"
@@ -949,7 +1195,7 @@
 			x: -3.09d
 			y: -1.64d
 			icon: "alexsmobs:stradpole_bucket"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
 				id: "6511488F59080B91"
@@ -971,6 +1217,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "7A5B99FCC0910E12"
@@ -979,7 +1226,7 @@
 			x: -4.32d
 			y: -4.17d
 			icon: "minecraft:warped_fungus"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["39C5E7F638070495"]
 			tasks: [{
@@ -1002,6 +1249,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "2CE2BBCB182D3BF5"
@@ -1010,7 +1258,7 @@
 			x: -5.84d
 			y: -2.85d
 			icon: "minecraft:spyglass"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			dependencies: ["39C5E7F638070495"]
 			tasks: [{
 				id: "2D7ACF415EE5B6A0"
@@ -1035,6 +1283,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "1DAF34828799DEB2"
@@ -1043,7 +1292,7 @@
 			x: -8.28d
 			y: -3.52d
 			icon: "minecraft:saddle"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["2CE2BBCB182D3BF5"]
@@ -1067,6 +1316,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "23CBB2323447F658"
@@ -1075,7 +1325,7 @@
 			x: -7.88d
 			y: -5.31d
 			icon: "alexsmobs:hemolymph_sac"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "boss"
 			size: 1.5d
 			optional: true
@@ -1100,6 +1350,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 		{
 			id: "1B3BBB54EE27AC7B"
@@ -1108,7 +1359,7 @@
 			x: -5.2d
 			y: 3.0d
 			icon: "minecraft:sweet_berries"
-			icon_scale: 0.75d
+			icon_scale: 0.6d
 			shape: "milestone"
 			optional: true
 			dependencies: ["757181DBDA992F0B"]
@@ -1155,6 +1406,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_guild"
 		}
 	]
 }

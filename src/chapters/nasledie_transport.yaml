@@ -6,7 +6,7 @@ chapter:
   title: Дороги нового мира — рельсы и крылья
   icon: create:track
   order_index: 11
-  default_hide_dependency_lines: false
+  default_hide_dependency_lines: true
   default_quest_shape: step
   progression_mode: flexible
 
