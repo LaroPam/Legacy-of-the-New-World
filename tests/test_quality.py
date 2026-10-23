@@ -145,6 +145,30 @@ class PreservationTests(unittest.TestCase):
         r = self.report(extra={'kubejs/assets/ftbquests/ftb_quests_theme.txt': b'extra_quest_shapes: crown'})
         self.assertIn('shape_texture_missing', self.codes(r))
 
+    def test_shape_mask_without_alpha_is_detected(self):
+        import io
+        from PIL import Image
+        grey, rgba = io.BytesIO(), io.BytesIO()
+        Image.new('L', (4, 4), 255).save(grey, 'PNG')
+        Image.new('RGBA', (4, 4), (255, 255, 255, 0)).save(rgba, 'PNG')
+        shapes = {f'kubejs/assets/ftbquests/textures/shapes/crown/{part}.png': rgba.getvalue()
+                  for part in ('shape', 'outline', 'background')}
+        theme = {'kubejs/assets/ftbquests/ftb_quests_theme.txt': b'extra_quest_shapes: crown'}
+        self.assertNotIn('shape_texture_opaque', self.codes(self.report(extra={**theme, **shapes})))
+        shapes['kubejs/assets/ftbquests/textures/shapes/crown/shape.png'] = grey.getvalue()
+        self.assertIn('shape_texture_opaque', self.codes(self.report(extra={**theme, **shapes})))
+
+    def test_theme_icon_that_is_not_a_resource_location_is_detected(self):
+        theme = b'[*]\ncontainer_slot: hollow_rectangle:#526C8C + color=#24374B\n'
+        r = self.report(extra={'kubejs/assets/ftbquests/ftb_quests_theme.txt': theme})
+        self.assertIn('theme_icon_invalid', self.codes(r))
+
+    def test_missing_theme_background_is_detected(self):
+        theme = b'[*]\nbackground: nasledie:textures/backgrounds/bg_missing.png\n'
+        r = self.report(extra={'kubejs/assets/ftbquests/ftb_quests_theme.txt': theme,
+                               'kubejs/assets/nasledie/textures/backgrounds/bg_other.png': b''})
+        self.assertIn('theme_texture_missing', self.codes(r))
+
     def test_duplicate_json_keys_are_rejected(self):
         r = self.report(extra={'kubejs/data/test/advancements/a.json': b'{"criteria":{},"criteria":{}}'})
         self.assertIn('parse', self.codes(r))

@@ -205,13 +205,26 @@ Dawn at a naturalist field station on a wooden deck where savanna meets jungle. 
 Interior of a cabinet of curiosities lit by candles. Tall shelves on the left and right hold strange trinkets, item frames, glass display cases, ice skates, a quiver and a glowing magic mirror. Palette: dark violet, deep blue and candle gold. The middle is a dark, velvet-like back wall — the quest map sits mostly there, but it can be dragged over any part of the picture, so keep the whole image calm and not busy. Minecraft-style voxel art: everything is made of cubic blocks with crisp 16x16 pixel textures. Keep the colors subdued, low-contrast and slightly desaturated so the picture works as a background behind small icons. No text, no letters, no logos, no game interface (no hotbar, crosshair, inventory or health bar), no player character, no border, no watermark. Aspect ratio: 16:9 (wide horizontal image).
 ```
 
-## Что я сделаю с готовыми картинками
+## Как готовые картинки попадают в книгу
 
-- приведу к 16:9 (если вышло чуть иначе) и уменьшу до 1920×1080;
-- измерю яркость и при необходимости затемню: снижу экспозицию, контраст и насыщенность, усилю виньетку;
-- слегка размою мелкие пиксельные детали, чтобы они не спорили со значками квестов;
-- соберу превью «граф главы поверх своего фона» для каждой главы и покажу его до подключения;
-- подключу: в теме книги каждой главе её фон (`kubejs/assets/nasledie/textures/backgrounds/`),
-  запасной фон — всем остальным экранам.
+Исходники автора лежат в `art/backgrounds/` и не меняются. `python tools/backgrounds.py` готовит из них
+фоны в `kubejs/assets/nasledie/textures/backgrounds/` (имена те же):
 
-Как это выглядит в настоящем интерфейсе FTB, нужно будет посмотреть в игре.
+- уменьшает до 1600×900 (16:9; на экране FTB растягивает фон на всё окно, `.png.mcmeta` включает сглаживание);
+- приводит среднюю яркость к 0.14: гамма по яркости с сохранением оттенка, мягкий потолок для бликов;
+- дневные сцены, которые пришлось сильно затемнить, получают коррекцию «день в ночь» — больше насыщенности
+  и холодные тени, иначе они становятся серыми;
+- слегка размывает мелкие детали (в середине сильнее), добавляет виньетку;
+- дополнительно притемняет середину, если она осталась светлой или слишком насыщенной (лава, закат):
+  туда по умолчанию попадает карта квестов.
+
+`python tools/backgrounds.py --check` (в CI) проверяет, что у каждого исходника есть готовый фон нужного размера
+и яркости. Фон главы задан в `reviews/chapter_palettes.json` (`background`) и попадает в тему через
+`python tools/apply_palettes.py`; `bg_global.png` — запасной фон для остальных экранов.
+
+Как карта главы ляжет на фон, показывает `python tools/preview.py ПАПКА --screen --jars ПАПКА_С_JAR`:
+экран 1920×1080, размеры значков и линий как в FTB, цвета из темы. Настоящий вид в игре нужно посмотреть
+в игровом тесте.
+
+Чтобы заменить фон: положите новую картинку с тем же именем в `art/backgrounds/`, запустите
+`python tools/backgrounds.py` и `python tools/preview.py … --screen`, посмотрите превью.

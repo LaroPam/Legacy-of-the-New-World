@@ -18,6 +18,7 @@ jobs:
       - run: node --test tests/factory_trials.test.cjs tests/events.test.cjs tests/artillery.test.cjs tests/notes.test.cjs tests/tooltips.test.cjs
       - run: python tools/validate.py --report reports/quality-ci.json
       - run: python tools/apply_palettes.py --check
+      - run: python tools/backgrounds.py --check
       - uses: actions/upload-artifact@v4
         if: always()
         with:

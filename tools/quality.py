@@ -476,6 +476,44 @@ def resource_checks(files, parsed):
             name = f"kubejs/assets/ftbquests/textures/shapes/{shape}/{texture}.png"
             if name not in files:
                 errors.append(problem("shape_texture_missing", name, "Declared custom quest shape has a missing texture"))
+            elif not png_has_alpha(files[name]):
+                # Minecraft loads every texture as RGBA: a grey mask without alpha becomes an opaque square.
+                errors.append(problem("shape_texture_opaque", name, "Quest shape texture has no alpha channel"))
+    errors += theme_icon_problems(theme, files, theme_name)
+    return errors
+
+
+def png_has_alpha(data):
+    """PNG colour type from IHDR: grey+alpha (4), RGBA (6) or a palette with transparency."""
+    if data[:8] != b"\x89PNG\r\n\x1a\n" or len(data) < 26:
+        return False
+    return data[25] in (4, 6) or (data[25] == 3 and b"tRNS" in data)
+
+
+THEME_ICON_KEYS = {"background", "button", "panel", "disabled_button", "hover_button", "context_menu",
+                   "scroll_bar_background", "scroll_bar", "container_slot", "text_box", "quest_view_background"}
+THEME_ICON_PREFIXES = ("#", "{{", "color:", "hollow_rectangle:", "part:", "item:", "bullet", "http:", "https:", "file:")
+
+
+def theme_icon_problems(theme, files, theme_name):
+    """Icon values as FTB Library 2001 parses them: parts joined by ' + ', each 'icon; key=value; ...'.
+    Anything else in the icon slot is read as a resource location, which throws on characters like '=' or '#'."""
+    errors = []
+    for line in theme.splitlines():
+        match = re.match(r"\s*([a-z_0-9]+):\s*(.+)$", line)
+        if not match or not (match[1] in THEME_ICON_KEYS or match[1].endswith("_icon")):
+            continue
+        for part in re.split(r" \+ ", match[2]):
+            icon = part.split(";")[0].strip()
+            if icon in ("none", "builtin", "") or icon.startswith(THEME_ICON_PREFIXES):
+                continue
+            if not re.fullmatch(r"[a-z0-9_.-]+:[a-z0-9_./-]+", icon):
+                errors.append(problem("theme_icon_invalid", theme_name, "Theme icon is neither a color nor a resource location", property=match[1], icon=icon))
+                continue
+            namespace, path = icon.split(":", 1)
+            local = f"kubejs/assets/{namespace}/{path}"
+            if path.endswith(".png") and any(name.startswith(f"kubejs/assets/{namespace}/") for name in files) and local not in files:
+                errors.append(problem("theme_texture_missing", theme_name, "Theme texture is missing", property=match[1], texture=local))
     return errors
 
 
