@@ -37,6 +37,8 @@ symbol_in: #E6FF92
 symbol_out: #40833B
 check_icon: builtin
 add_icon: builtin
+dependency_line_texture: nasledie:textures/gui/dependency_soft.png
+dependency_line_thickness: 0.24
 
 // nasledie_chronicle — Летопись
 [24C1CA6B47BF45C9]

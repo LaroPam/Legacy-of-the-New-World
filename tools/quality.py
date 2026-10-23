@@ -495,7 +495,8 @@ def png_has_alpha(data):
 
 
 THEME_ICON_KEYS = {"background", "button", "panel", "disabled_button", "hover_button", "context_menu",
-                   "scroll_bar_background", "scroll_bar", "container_slot", "text_box", "quest_view_background"}
+                   "scroll_bar_background", "scroll_bar", "container_slot", "text_box", "quest_view_background",
+                   "dependency_line_texture"}
 THEME_ICON_PREFIXES = ("#", "{{", "color:", "hollow_rectangle:", "part:", "item:", "bullet", "http:", "https:", "file:")
 
 

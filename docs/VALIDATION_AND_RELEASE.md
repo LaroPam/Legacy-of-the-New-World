@@ -45,6 +45,8 @@ python tools/questbook.py check   # SNBT совпадает со свежей с
 Фоны глав: исходники автора — `art/backgrounds/`, готовые текстуры — `kubejs/assets/nasledie/textures/backgrounds/`
 (`python tools/backgrounds.py`, нужны Pillow и numpy; подробности — `docs/BACKGROUND_PROMPTS.md`).
 Какой фон у какой главы, задаёт `reviews/chapter_palettes.json`; тему собирает `python tools/apply_palettes.py`.
+Линии связей рисует `kubejs/assets/nasledie/textures/gui/dependency_soft.png` (тема: `dependency_line_texture`,
+толщина `dependency_line_thickness: 0.24`) вместо стрелок FTB; текстуру создаёт `python tools/ui_textures.py`.
 Minecraft читает любую текстуру как RGBA: маска формы квеста (`shape.png`) без альфа-канала
 превращается в непрозрачный квадрат под значком.
 
@@ -102,7 +104,7 @@ python tools/build_registry.py ПАПКА_С_JAR --vanilla-ru ru_ru.json
 
 1. `python -m unittest discover -s tests`, `node --test tests/*.cjs`, `python tools/validate.py`
    (0 ошибок; предупреждения просмотрены и перечислены в отчёте), `python tools/apply_palettes.py --check`,
-   `python tools/backgrounds.py --check`.
+   `python tools/backgrounds.py --check`, `python tools/ui_textures.py --check`.
 2. Журнал ID относительно базы: `python tools/book_diff.py <распакованная база>` → приложение к журналу изменений.
 3. Архив для установки: `python tools/package_release.py` — папки `config/ftbquests/` и `kubejs/`
    ровно в состоянии коммита, плюс `SHA256SUMS` и инструкция.

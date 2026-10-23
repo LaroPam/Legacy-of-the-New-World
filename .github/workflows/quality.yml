@@ -19,6 +19,7 @@ jobs:
       - run: python tools/validate.py --report reports/quality-ci.json
       - run: python tools/apply_palettes.py --check
       - run: python tools/backgrounds.py --check
+      - run: python tools/ui_textures.py --check
       - uses: actions/upload-artifact@v4
         if: always()
         with:
