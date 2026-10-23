@@ -46,7 +46,10 @@ python tools/questbook.py check   # SNBT совпадает со свежей с
 (`python tools/backgrounds.py`: исходное разрешение, только равномерное затемнение; подробности — `docs/BACKGROUND_PROMPTS.md`).
 Какой фон у какой главы, задаёт `reviews/chapter_palettes.json`; тему собирает `python tools/apply_palettes.py`.
 Значки квестов — круглые медальоны семи типов (`docs/QUEST_FRAME_PROMPTS.md`): рисунки автора `art/frames/`
-превращает в формы FTB `python tools/quest_frames.py` (нужны Pillow и numpy; `--check` — только Pillow).
+превращает в формы FTB и картинки рамок `python tools/quest_frames.py` (нужны Pillow и numpy; `--check` — только Pillow).
+Сама рамка — картинка главы под кнопкой (`kubejs/assets/nasledie/textures/frames/`): FTB рисует фон формы
+с прозрачностью 150/255, ярче ~64 % он не бывает. Генератор книги кладёт под каждый квест приглушённую рамку
+и поверх — яркую с условием `dependency` (самое глубокое из условий квеста), у квестов без условий — только яркую.
 Типы перечислены в `tools/quest_frames.py` (`TYPES`), валидатор берёт список форм оттуда и требует, чтобы каждая
 использованная форма была объявлена в теме (`extra_quest_shapes`): иначе FTB молча рисует стандартную.
 Генератор ставит каждому квесту `icon_scale: 0.6`, чтобы значок помещался в рамку.

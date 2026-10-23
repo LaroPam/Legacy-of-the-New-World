@@ -42,6 +42,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import curves  # noqa: E402
+import quest_frames  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / 'src' / 'chapters'
@@ -58,7 +59,7 @@ CHAPTER_ORDER = ('filename', 'id', 'group', 'title', 'icon', 'order_index', 'def
 QUEST_ORDER = ('id', 'title', 'subtitle', 'description', 'x', 'y', 'icon', 'icon_scale', 'shape', 'size', 'optional',
                'dependencies', 'dependency_requirement', 'hide_dependency_lines', 'tasks', 'rewards')
 DOUBLE_KEYS = {'x', 'y', 'size', 'default_quest_size', 'icon_scale'}
-ICON_SCALE = 0.6  # the item icon stays inside the medallion's recess (tools/quest_frames.py)
+ICON_SCALE = quest_frames.ICON_SCALE  # the item icon stays inside the medallion's recess
 
 
 def make_id(seed):
@@ -311,7 +312,7 @@ def sentence(line):
     return line
 
 
-def build_chapter(name, data, names, generated, every=None, palettes=None):
+def build_chapter(name, data, names, generated, every=None, palettes=None, chapters=None):
     chapter = {k: tag(v, k) for k, v in data['chapter'].items() if k != 'curves'}
     links = []
     for i, link in enumerate(data.get('links', [])):
@@ -350,13 +351,19 @@ def build_chapter(name, data, names, generated, every=None, palettes=None):
         body['rewards'] = snbt.List([build_reward(r, f'{ident}/reward/{i}') for i, r in enumerate(quest.get('rewards', []))])
         quests.append(snbt.Compound(ordered(body, QUEST_ORDER)))
     chapter['quests'] = snbt.List(quests)
+    images = []
+    resolve = lambda ref, chapter: dependency(ref, chapter, names)  # noqa: E731
     if every is not None and data['chapter'].get('curves', True):
         # Smooth curves replace FTB's straight lines (tools/curves.py).
-        entries, files = curves.chapter_images(name, data, lambda ref, chapter: dependency(ref, chapter, names),
-                                               every, palettes[0].get(name, palettes[1]), palettes[2])
+        entries, files = curves.chapter_images(name, data, resolve, every, palettes[0].get(name, palettes[1]), palettes[2])
         chapter['default_hide_dependency_lines'] = snbt.Bool(True)
-        chapter['images'] = tag([{k: round(v, 4) if isinstance(v, float) else v for k, v in e.items()} for e in entries])
+        images += entries
         generated.update(files)
+    if every is not None and chapters is not None:
+        # Medallion frames at full brightness under the quest buttons (tools/quest_frames.py).
+        images += quest_frames.frame_images(name, data, resolve, every, chapters)
+    if images:
+        chapter['images'] = tag([{k: round(v, 4) if isinstance(v, float) else v for k, v in e.items()} for e in images])
     return snbt.Compound(ordered(chapter, CHAPTER_ORDER + ('quest_links', 'quests')))
 
 
@@ -383,7 +390,7 @@ def build_all(src=SRC, groups=GROUPS):
             every[quest['_id']] = quest
     palettes = curves.palettes()
     for name, data in chapters.items():
-        generated[OUT / (name + '.snbt')] = snbt.dumps(build_chapter(name, data, names, generated, every, palettes)) + '\n'
+        generated[OUT / (name + '.snbt')] = snbt.dumps(build_chapter(name, data, names, generated, every, palettes, chapters)) + '\n'
     if groups.exists():
         generated[GROUP_FILE] = snbt.dumps(snbt.Compound({'chapter_groups': tag(entries)})) + '\n'
     return generated

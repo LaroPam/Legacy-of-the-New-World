@@ -493,6 +493,18 @@ def resource_checks(files, parsed):
                 if shape not in builtin and shape not in custom_shapes:
                     # FTB falls back to the default shape for a name missing from extra_quest_shapes.
                     errors.append(problem("shape_undeclared", f"{name}#{where}", "Quest shape is not declared in the theme", shape=shape))
+    quest_ids = {str(quest.get("id")) for _, _, quest in quest_rows(parsed)}
+    for name, body in chapters(parsed).items():
+        for index, image in enumerate(body.get("images", [])):
+            # Curves and quest frames are chapter images: a missing texture shows as FTB's purple square,
+            # a dependency that is not a quest leaves the image hidden for good.
+            namespace, _, path = str(image.get("image", "")).partition(":")
+            local = f"kubejs/assets/{namespace}/{path}"
+            if any(f.startswith(f"kubejs/assets/{namespace}/") for f in files) and local not in files:
+                errors.append(problem("chapter_image_missing", f"{name}#images[{index}]", "Chapter image texture is missing", texture=local))
+            dependency = image.get("dependency")
+            if dependency is not None and str(dependency) not in quest_ids:
+                errors.append(problem("chapter_image_dependency", f"{name}#images[{index}]", "Chapter image depends on an unknown quest", dependency=str(dependency)))
     errors += theme_icon_problems(theme, files, theme_name)
     return errors
 

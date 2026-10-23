@@ -180,6 +180,17 @@ class PreservationTests(unittest.TestCase):
                                'kubejs/assets/nasledie/textures/backgrounds/bg_other.png': b''})
         self.assertIn('theme_texture_missing', self.codes(r))
 
+    def test_chapter_image_texture_and_dependency_are_checked(self):
+        frame = b'nasledie:textures/frames/boss.png'
+        source = SOURCE.replace(b'\n quests: [', b'\n images: [{ image: "' + frame + b'" dependency: "0000000000000002" }]\n quests: [')
+        present = {'kubejs/assets/nasledie/textures/frames/boss.png': b''}
+        self.assertFalse({'chapter_image_missing', 'chapter_image_dependency'}
+                         & self.codes(quality.evaluate({REF: source, **present}, {REF: SOURCE, **present})))
+        other = {'kubejs/assets/nasledie/textures/frames/step.png': b''}
+        self.assertIn('chapter_image_missing', self.codes(quality.evaluate({REF: source, **other}, {REF: SOURCE, **other})))
+        unknown = source.replace(b'dependency: "0000000000000002"', b'dependency: "0000000000000099"')
+        self.assertIn('chapter_image_dependency', self.codes(quality.evaluate({REF: unknown, **present}, {REF: SOURCE, **present})))
+
     def test_duplicate_json_keys_are_rejected(self):
         r = self.report(extra={'kubejs/data/test/advancements/a.json': b'{"criteria":{},"criteria":{}}'})
         self.assertIn('parse', self.codes(r))
