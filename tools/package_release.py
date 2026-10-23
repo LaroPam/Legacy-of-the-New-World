@@ -96,7 +96,10 @@ def main(argv=None):
     archive = out/f'nasledie-{args.name}.zip'
     with zipfile.ZipFile(archive, 'w', compression=zipfile.ZIP_DEFLATED) as z:
         for name, data in sorted(files.items()):
-            z.writestr(zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0)), data)
+            info = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED  # the ZipFile default does not apply to an explicit ZipInfo
+            info.external_attr = 0o644 << 16
+            z.writestr(info, data)
     with zipfile.ZipFile(archive) as z:
         if any(z.read(name) != data for name, data in files.items()):
             raise SystemExit('ZIP contents differ from the packaged files')

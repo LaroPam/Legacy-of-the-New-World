@@ -331,7 +331,9 @@ def render_screen(name, data, ids, icons, out, every, screen):
     default_shape = data['chapter'].get('default_quest_shape', 'circle')
     for ident, node in nodes.items():
         quest = every[ident]
-        size = round(button * float(quest.get('size', data['chapter'].get('default_quest_size', 1))))
+        # A link has its own size (QuestLink: 1 when unset), a quest falls back to the chapter default.
+        default = 1 if ident in linked else data['chapter'].get('default_quest_size', 1)
+        size = round(button * float(node.get('size', default)))
         x, y = pos(node)
         corner = (round(x - size / 2), round(y - size / 2))
         kind = node.get('shape') or quest.get('shape') or default_shape
