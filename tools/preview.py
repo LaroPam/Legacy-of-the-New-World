@@ -307,7 +307,7 @@ def render_screen(name, data, ids, icons, out, every, screen):
             image.alpha_composite(tinted(screen.shape(kind, 'outline'), color, size), corner)
         icon = icons.get(quest.get('icon', ''))
         if icon:
-            side = round(size * 2 / 3)
+            side = round(size * 2 / 3 * float(quest.get('icon_scale', 1)))
             image.alpha_composite(icon.resize((side, side), Image.NEAREST), (round(x - side / 2), round(y - side / 2)))
     caption = ImageDraw.Draw(image)
     caption.text((12, SCREEN[1] - 24), f"{data['chapter']['title']} — zoom {zoom}, GUI 3, 1920x1080",
