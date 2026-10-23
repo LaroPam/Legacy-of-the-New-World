@@ -1,7 +1,7 @@
 {
 	filename: "nasledie_village"
 	id: "30082B6F5380787E"
-	group: "842B4DB4DBD349A0"
+	group: "042B4DB4DBD349A0"
 	title: "Люди нашего поселения"
 	icon: "minecraft:bell"
 	order_index: 2
@@ -11,7 +11,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "C3524B3B7A1175C3"
+			id: "43524B3B7A1175C3"
 			title: "Первые соседи"
 			description: ["В этом мире у жителей есть имена, характеры и семьи. Зайдите в деревню и познакомьтесь — здесь можно найти друзей, торговцев и тех, кто однажды встанет с вами на стены."]
 			x: 0.0d
@@ -20,18 +20,18 @@
 			shape: "heart"
 			size: 1.4d
 			tasks: [{
-				id: "162AA6E9FED88273"
+				id: "029CC9D31DED7CCC"
 				type: "advancement"
 				advancement: "mca:root"
 			}]
 			rewards: [
 				{
-					id: "831B418BB52509A3"
+					id: "62FBDAD437985C82"
 					type: "xp"
 					xp: 50
 				}
 				{
-					id: "EF61A001C9CCDC4C"
+					id: "23718C3FB0759C44"
 					type: "item"
 					item: {
 						Count: 1b
@@ -41,7 +41,7 @@
 			]
 		}
 		{
-			id: "9E8EACC187073285"
+			id: "1E8EACC187073285"
 			title: "Город за холмами"
 			description: ["Кроме хуторов, в мире встречаются большие поселения с рынками, укреплениями и десятками домов. Найдите такое — там лучшие торговцы и больше всего работы."]
 			x: 0.0d
@@ -49,20 +49,20 @@
 			icon: "minecraft:cartography_table"
 			shape: "scroll"
 			optional: true
-			dependencies: ["C3524B3B7A1175C3"]
+			dependencies: ["43524B3B7A1175C3"]
 			tasks: [{
-				id: "4338FA3422893BDF"
+				id: "07D5DA01B96F34C4"
 				type: "structure"
 				structure: "#nasledie:large_villages"
 			}]
 			rewards: [
 				{
-					id: "6653A331881C5AC0"
+					id: "5B11FA0D3BA37B94"
 					type: "xp"
 					xp: 120
 				}
 				{
-					id: "77203C31454B7327"
+					id: "5349225ABB67BC21"
 					type: "item"
 					item: {
 						Count: 2b
@@ -80,9 +80,9 @@
 			icon: "minecraft:jungle_log"
 			shape: "scroll"
 			optional: true
-			dependencies: ["9E8EACC187073285"]
+			dependencies: ["1E8EACC187073285"]
 			tasks: [{
-				id: "DBFC51CCDF4AF507"
+				id: "5BFC51CCDF4AF507"
 				type: "advancement"
 				title: "Поторговать в деревне на деревьях"
 				advancement: "nasledie:q/village/tree_village"
@@ -112,7 +112,7 @@
 			icon: "minecraft:spruce_sapling"
 			shape: "scroll"
 			optional: true
-			dependencies: ["9E8EACC187073285"]
+			dependencies: ["1E8EACC187073285"]
 			tasks: [{
 				id: "77E347B7141E0CB5"
 				type: "advancement"
@@ -126,7 +126,7 @@
 					xp: 250
 				}
 				{
-					id: "80C5224B96A1CE31"
+					id: "00C5224B96A1CE31"
 					type: "item"
 					item: {
 						Count: 1b
@@ -144,7 +144,7 @@
 			]
 		}
 		{
-			id: "885716627A8EF0FF"
+			id: "085716627A8EF0FF"
 			title: "Ночь за крепостной стеной"
 			description: ["На равнинах, в бэдлендах, на болотах и в тайге попадаются деревни, обнесённые стенами. Переночуйте в такой — впервые за долгое время можно спать спокойно."]
 			x: -0.61d
@@ -152,21 +152,21 @@
 			icon: "minecraft:stone_brick_wall"
 			shape: "scroll"
 			optional: true
-			dependencies: ["9E8EACC187073285"]
+			dependencies: ["1E8EACC187073285"]
 			tasks: [{
-				id: "7BE26B539F8A6568"
+				id: "205E626FC55FE6D1"
 				type: "advancement"
 				title: "Уснуть в укреплённой деревне"
 				advancement: "nasledie:q/village/fortified_village"
 			}]
 			rewards: [
 				{
-					id: "354A0220B2B36A1D"
+					id: "2354DF63E2411DF7"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "38DE6CC7A55C848D"
+					id: "2A99921450DB5A3E"
 					type: "item"
 					item: {
 						Count: 1b
@@ -176,7 +176,7 @@
 			]
 		}
 		{
-			id: "83DB7C0D5B211193"
+			id: "03DB7C0D5B211193"
 			title: "Грибная кладовая"
 			description: ["На грибных островах тоже живут люди, и дома у них — грибы. Загляните в сундук такого дома — что едят те, у кого вместо огорода мицелий?"]
 			x: 1.48d
@@ -184,21 +184,21 @@
 			icon: "minecraft:red_mushroom_block"
 			shape: "scroll"
 			optional: true
-			dependencies: ["9E8EACC187073285"]
+			dependencies: ["1E8EACC187073285"]
 			tasks: [{
-				id: "72E5B85F7BB0AFB5"
+				id: "73C15AFBBE375E8B"
 				type: "advancement"
 				title: "Открыть сундук грибного дома"
 				advancement: "nasledie:q/village/mushroom_village"
 			}]
 			rewards: [
 				{
-					id: "2219FD2F07E477CC"
+					id: "1941B7AD09097D23"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "B100315259D43FCB"
+					id: "75BB15B10C8E2D1D"
 					type: "item"
 					item: {
 						Count: 4b
@@ -206,7 +206,7 @@
 					}
 				}
 				{
-					id: "4DD3B45A433C3311"
+					id: "20B8B853FD57AB56"
 					type: "item"
 					item: {
 						Count: 8b
@@ -216,27 +216,27 @@
 			]
 		}
 		{
-			id: "AFC6DEB96FAAF4A1"
+			id: "2FC6DEB96FAAF4A1"
 			title: "Знакомые лица"
 			description: ["Поговорите, пошутите, помогите. Когда отношения с кем-то дойдут до 50 сердец, у вас появится первый настоящий друг в этом мире."]
 			x: 3.0d
 			y: -3.0d
 			icon: "mca:bouquet"
 			shape: "heart"
-			dependencies: ["C3524B3B7A1175C3"]
+			dependencies: ["43524B3B7A1175C3"]
 			tasks: [{
-				id: "B40F2EBA7E33D74D"
+				id: "603A8D8C56949774"
 				type: "advancement"
 				advancement: "mca:friend"
 			}]
 			rewards: [
 				{
-					id: "F2AF320449BF2264"
+					id: "3341D1F664281EA5"
 					type: "xp"
 					xp: 60
 				}
 				{
-					id: "C1A8A0BCC61212A7"
+					id: "60E0E9587E27D1A8"
 					type: "item"
 					item: {
 						Count: 2b
@@ -253,9 +253,9 @@
 			y: -3.0d
 			icon: "mca:bouquet"
 			shape: "heart"
-			dependencies: ["AFC6DEB96FAAF4A1"]
+			dependencies: ["2FC6DEB96FAAF4A1"]
 			tasks: [{
-				id: "B52C26F168E709C2"
+				id: "352C26F168E709C2"
 				type: "advancement"
 				advancement: "mca:excellent_gift"
 			}]
@@ -276,7 +276,7 @@
 			]
 		}
 		{
-			id: "E7B10EC3B6680953"
+			id: "67B10EC3B6680953"
 			title: "Близкий друг"
 			description: ["Двести сердец — это уже не знакомство, а дружба на годы. Такой житель будет рад вам в любое время."]
 			x: 8.0d
@@ -286,18 +286,18 @@
 			optional: true
 			dependencies: ["7154299D354A1B07"]
 			tasks: [{
-				id: "924A4075DF979E7D"
+				id: "1AAFB5CF74600C27"
 				type: "advancement"
 				advancement: "mca:best_friend"
 			}]
 			rewards: [
 				{
-					id: "4B32A0899C42676E"
+					id: "33647E94E0788E0D"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "2D1465DB108DEAA1"
+					id: "64DDF12F9CA1BF71"
 					type: "item"
 					item: {
 						Count: 3b
@@ -315,7 +315,7 @@
 			icon: "mca:wedding_ring"
 			shape: "heart"
 			optional: true
-			dependencies: ["E7B10EC3B6680953"]
+			dependencies: ["67B10EC3B6680953"]
 			tasks: [{
 				id: "62D842A883828EA5"
 				type: "advancement"
@@ -328,7 +328,7 @@
 					xp: 200
 				}
 				{
-					id: "A47F3FE5191927B1"
+					id: "247F3FE5191927B1"
 					type: "item"
 					item: {
 						Count: 1b
@@ -336,7 +336,7 @@
 					}
 				}
 				{
-					id: "B63D69CDA2FE3288"
+					id: "363D69CDA2FE3288"
 					type: "item"
 					item: {
 						Count: 2b
@@ -352,7 +352,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:emerald"
-			dependencies: ["C3524B3B7A1175C3"]
+			dependencies: ["43524B3B7A1175C3"]
 			tasks: [{
 				id: "0657C76CA1A27F0A"
 				type: "advancement"
@@ -360,12 +360,12 @@
 			}]
 			rewards: [
 				{
-					id: "E4665F8B9D82F71C"
+					id: "64665F8B9D82F71C"
 					type: "xp"
 					xp: 80
 				}
 				{
-					id: "8CA0E35024D1EC35"
+					id: "0CA0E35024D1EC35"
 					type: "item"
 					item: {
 						Count: 6b
@@ -389,12 +389,12 @@
 			}]
 			rewards: [
 				{
-					id: "8374C1C945191AE6"
+					id: "0374C1C945191AE6"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "8846D5C1AF30C3C9"
+					id: "0846D5C1AF30C3C9"
 					type: "item"
 					item: {
 						Count: 12b
@@ -404,7 +404,7 @@
 			]
 		}
 		{
-			id: "EF7C435DEE5C7F2A"
+			id: "6F7C435DEE5C7F2A"
 			title: "Юра — мэр города"
 			description: ["Мэр отвечает за всё — от новых домов до праздников. Юра давно хотел власти, вот и пусть разбирается с жалобами на соседских кур."]
 			x: 8.0d
@@ -413,18 +413,18 @@
 			shape: "star"
 			dependencies: ["10E550A7AA6FE780"]
 			tasks: [{
-				id: "2F127F8DC4FD9C0C"
+				id: "16F52EC6B99A81B1"
 				type: "advancement"
 				advancement: "mca:mayor"
 			}]
 			rewards: [
 				{
-					id: "039303088B7C23D8"
+					id: "2AE57D56178CB59E"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "CD67866CBF046821"
+					id: "1A2958C6FADAD311"
 					type: "item"
 					item: {
 						Count: 3b
@@ -442,9 +442,9 @@
 			icon: "minecraft:golden_helmet"
 			shape: "star"
 			optional: true
-			dependencies: ["EF7C435DEE5C7F2A"]
+			dependencies: ["6F7C435DEE5C7F2A"]
 			tasks: [{
-				id: "99765E5BD0B78212"
+				id: "19765E5BD0B78212"
 				type: "advancement"
 				advancement: "mca:monarch"
 			}]
@@ -471,7 +471,7 @@
 			x: 3.0d
 			y: 3.0d
 			icon: "minecraft:emerald"
-			dependencies: ["C3524B3B7A1175C3"]
+			dependencies: ["43524B3B7A1175C3"]
 			tasks: [{
 				id: "22BF366F0562FA8C"
 				type: "advancement"
@@ -508,7 +508,7 @@
 			}]
 			rewards: [
 				{
-					id: "C1F8884E2AE6280F"
+					id: "41F8884E2AE6280F"
 					type: "xp"
 					xp: 80
 				}
@@ -531,7 +531,7 @@
 			icon: "minecraft:paper"
 			dependencies: ["4F244541933746FE"]
 			tasks: [{
-				id: "DBA690674B4874AC"
+				id: "5BA690674B4874AC"
 				type: "stat"
 				stat: "bountiful:bounties_done"
 				value: 1
@@ -573,7 +573,7 @@
 					xp: 250
 				}
 				{
-					id: "85287422DAF2C2D8"
+					id: "05287422DAF2C2D8"
 					type: "item"
 					item: {
 						Count: 2b
@@ -592,19 +592,19 @@
 			optional: true
 			dependencies: ["2CF4920C2BFB611E"]
 			tasks: [{
-				id: "925235F3D766428F"
+				id: "125235F3D766428F"
 				type: "stat"
 				stat: "bountiful:bounties_done_2"
 				value: 1
 			}]
 			rewards: [
 				{
-					id: "931431FE8041CF1A"
+					id: "131431FE8041CF1A"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "8C4120844B8AF76A"
+					id: "0C4120844B8AF76A"
 					type: "item"
 					item: {
 						Count: 2b
@@ -614,7 +614,7 @@
 			]
 		}
 		{
-			id: "A5F4B0042B923092"
+			id: "25F4B0042B923092"
 			title: "Эпический заказ"
 			description: ["Самые трудные заказы приходят редко и требуют настоящей подготовки. Выполните эпический заказ — о таком будут рассказывать в таверне."]
 			x: 15.5d
@@ -624,19 +624,19 @@
 			optional: true
 			dependencies: ["376536EC66D67276"]
 			tasks: [{
-				id: "32C52B4B1761C417"
+				id: "4B47B3472513D055"
 				type: "stat"
 				stat: "bountiful:bounties_done_3"
 				value: 1
 			}]
 			rewards: [
 				{
-					id: "2422EC6E7C4CFEBC"
+					id: "429414E4CFA3C994"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "CCDAFE877790B051"
+					id: "3C6B9D43C20C9362"
 					type: "item"
 					item: {
 						Count: 1b
@@ -646,28 +646,28 @@
 			]
 		}
 		{
-			id: "84776C066000292E"
+			id: "04776C066000292E"
 			title: "Первый наёмник"
 			description: ["Жители соглашаются стать рекрутами за плату. Поставьте у деревни стол рекрута, дождитесь добровольца и наймите его. Не забывайте кормить свой отряд."]
 			x: 3.0d
 			y: 6.0d
 			icon: "recruits:recruit_block"
 			shape: "shield"
-			dependencies: ["C3524B3B7A1175C3"]
+			dependencies: ["43524B3B7A1175C3"]
 			tasks: [{
-				id: "29BE844E435A19CC"
+				id: "41DA0CB197C44511"
 				type: "advancement"
 				advancement: "nasledie:events/hired/recruits"
 				title: "Нанять рекрута"
 			}]
 			rewards: [
 				{
-					id: "5007E5E76A98273C"
+					id: "209EBD7A537C1364"
 					type: "xp"
 					xp: 80
 				}
 				{
-					id: "377E337583CDB902"
+					id: "4ABCFE3A503A82F3"
 					type: "item"
 					item: {
 						Count: 1b
@@ -675,7 +675,7 @@
 					}
 				}
 				{
-					id: "60FB46CDEFFC4ACD"
+					id: "28FD419EA1AEAE2C"
 					type: "item"
 					item: {
 						Count: 16b
@@ -692,16 +692,16 @@
 			y: 6.0d
 			icon: "recruits:bowman_block"
 			shape: "shield"
-			dependencies: ["84776C066000292E"]
+			dependencies: ["04776C066000292E"]
 			tasks: [{
-				id: "C42B3D43A873560A"
+				id: "442B3D43A873560A"
 				type: "advancement"
 				advancement: "nasledie:events/hired/recruits/bowman"
 				title: "Нанять лучника"
 			}]
 			rewards: [
 				{
-					id: "EC46728C00AED762"
+					id: "6C46728C00AED762"
 					type: "xp"
 					xp: 80
 				}
@@ -726,14 +726,14 @@
 			optional: true
 			dependencies: ["49F37BAA4DB94210"]
 			tasks: [{
-				id: "F960DD7AA5CD93BC"
+				id: "7960DD7AA5CD93BC"
 				type: "advancement"
 				advancement: "nasledie:events/recruits/promoted"
 				title: "Повысить рекрута"
 			}]
 			rewards: [
 				{
-					id: "ED8ADB2060520379"
+					id: "6D8ADB2060520379"
 					type: "xp"
 					xp: 150
 				}
@@ -748,7 +748,7 @@
 			]
 		}
 		{
-			id: "E5E748A554F2F9EC"
+			id: "65E748A554F2F9EC"
 			title: "Ветеран"
 			description: ["Рекруты растут в боях. Доведите одного из своих до пятого уровня — с таким бойцом не страшно и в подземелье."]
 			x: 10.5d
@@ -758,19 +758,19 @@
 			optional: true
 			dependencies: ["280598E732D70769"]
 			tasks: [{
-				id: "0AD99E6606D08171"
+				id: "17CCC3363782E6EA"
 				type: "advancement"
 				advancement: "nasledie:events/recruits/level_5"
 				title: "Рекрут пятого уровня"
 			}]
 			rewards: [
 				{
-					id: "06B2B7A359B49C04"
+					id: "715BEA73F71C1CB8"
 					type: "xp"
 					xp: 250
 				}
 				{
-					id: "3068FDBE1440E6C3"
+					id: "3DF37F02E0C787D4"
 					type: "item"
 					item: {
 						Count: 2b
@@ -778,7 +778,7 @@
 					}
 				}
 				{
-					id: "31C9B0864711B0D1"
+					id: "55D872390DE4DAD8"
 					type: "item"
 					item: {
 						Count: 1b
@@ -788,7 +788,7 @@
 			]
 		}
 		{
-			id: "A86CDB4787747C32"
+			id: "286CDB4787747C32"
 			title: "Защитники деревни"
 			description: ["Однажды к деревне придёт налёт разбойников. Отбейте его вместе с ополчением — жители этого не забудут."]
 			x: 5.5d
@@ -798,18 +798,18 @@
 			size: 1.3d
 			dependencies: ["49F37BAA4DB94210"]
 			tasks: [{
-				id: "C2719651867BD817"
+				id: "68AB8A379B84BE2E"
 				type: "advancement"
 				advancement: "minecraft:adventure/hero_of_the_village"
 			}]
 			rewards: [
 				{
-					id: "2BCC156B0908A3CE"
+					id: "57EA138059233547"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "A0D0F544A01ED76D"
+					id: "22FD027B280F8D47"
 					type: "item"
 					item: {
 						Count: 2b
@@ -819,7 +819,7 @@
 			]
 		}
 		{
-			id: "F524CCC3EC797596"
+			id: "7524CCC3EC797596"
 			title: "Деревни другого уклада"
 			description: ["Не все деревни похожи на вашу. Где-то строят пуэбло из глины, где-то — дома на сваях или ворота с фонарями. Найдите поселение совсем другого уклада."]
 			x: -3.0d
@@ -828,20 +828,20 @@
 			shape: "scroll"
 			size: 1.2d
 			optional: true
-			dependencies: ["C3524B3B7A1175C3"]
+			dependencies: ["43524B3B7A1175C3"]
 			tasks: [{
-				id: "7FD52FD8B0379EA8"
+				id: "27970FBA632B9CB6"
 				type: "structure"
 				structure: "#nasledie:tt_villages"
 			}]
 			rewards: [
 				{
-					id: "938C986B9E3DB19B"
+					id: "628F24C300E94518"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "660023675C43E711"
+					id: "61AB0D81C7959DDE"
 					type: "item"
 					item: {
 						Count: 2b
@@ -851,7 +851,7 @@
 			]
 		}
 		{
-			id: "A258D9BAC95F159C"
+			id: "2258D9BAC95F159C"
 			title: "Дом на сваях"
 			description: ["На болотах деревни стоят на сваях и лодках. Загляните в сундук такого дома — что хранят те, у кого под полом вода?"]
 			x: -1.96d
@@ -859,21 +859,21 @@
 			icon: "minecraft:mangrove_roots"
 			shape: "scroll"
 			optional: true
-			dependencies: ["F524CCC3EC797596"]
+			dependencies: ["7524CCC3EC797596"]
 			tasks: [{
-				id: "3A69A2CA52971125"
+				id: "4DC2AB195EDA46C6"
 				type: "advancement"
 				title: "Открыть сундук свайного дома"
 				advancement: "nasledie:q/village/swamp_village"
 			}]
 			rewards: [
 				{
-					id: "BBB87EB5C7225036"
+					id: "725F799B6EFF32BC"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "578E7DF87AE4307F"
+					id: "44DB724452C824D9"
 					type: "item"
 					item: {
 						Count: 1b
@@ -881,7 +881,7 @@
 					}
 				}
 				{
-					id: "D2EBDD8013633774"
+					id: "6E81890CC86F52CD"
 					type: "item"
 					item: {
 						Count: 3b
@@ -891,7 +891,7 @@
 			]
 		}
 		{
-			id: "ADBF88C9EFD89754"
+			id: "2DBF88C9EFD89754"
 			title: "Деревня под сакурой"
 			description: ["Среди цветущих деревьев стоит деревня с воротами и фонарями. Поторгуйтесь с жителями и унесите с собой немного весны."]
 			x: -4.04d
@@ -899,21 +899,21 @@
 			icon: "minecraft:cherry_sapling"
 			shape: "scroll"
 			optional: true
-			dependencies: ["F524CCC3EC797596"]
+			dependencies: ["7524CCC3EC797596"]
 			tasks: [{
-				id: "9A5E28D776A59347"
+				id: "257482110EB89B1C"
 				type: "advancement"
 				title: "Поторговать в деревне под сакурой"
 				advancement: "nasledie:q/village/sakura_village"
 			}]
 			rewards: [
 				{
-					id: "5E6B4BB1163CD725"
+					id: "409085533EA20600"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "8B67AAC43CDFFBC2"
+					id: "2D21D76EB40E1063"
 					type: "item"
 					item: {
 						Count: 4b
@@ -921,7 +921,7 @@
 					}
 				}
 				{
-					id: "7F80886F8F909EE8"
+					id: "234BF8BA0D3DA5A8"
 					type: "item"
 					item: {
 						Count: 16b
@@ -939,7 +939,7 @@
 			icon: "artifacts:cowboy_hat"
 			shape: "scroll"
 			optional: true
-			dependencies: ["F524CCC3EC797596"]
+			dependencies: ["7524CCC3EC797596"]
 			tasks: [{
 				id: "529EC95431E95DBC"
 				type: "advancement"
@@ -953,7 +953,7 @@
 					xp: 300
 				}
 				{
-					id: "F0CF3FF5BA85DC95"
+					id: "70CF3FF5BA85DC95"
 					type: "item"
 					item: {
 						Count: 1b
@@ -963,7 +963,7 @@
 			]
 		}
 		{
-			id: "D63147A3EA7E2A55"
+			id: "563147A3EA7E2A55"
 			title: "Лагерь странствующих торговцев"
 			description: ["В оазисах пустыни встречается лагерь странствующих торговцев с загонами для лам. Загляните в сундук их хижины — торговцы всегда везут что-то необычное."]
 			x: -6.86d
@@ -971,21 +971,21 @@
 			icon: "minecraft:lead"
 			shape: "scroll"
 			optional: true
-			dependencies: ["F524CCC3EC797596"]
+			dependencies: ["7524CCC3EC797596"]
 			tasks: [{
-				id: "DEA007DD25EE042B"
+				id: "05A1CC65CDCDFB3C"
 				type: "advancement"
 				title: "Открыть сундук хижины торговцев"
 				advancement: "nasledie:q/village/trader_camp"
 			}]
 			rewards: [
 				{
-					id: "76F213E89A8C8F23"
+					id: "3530EDF52072A651"
 					type: "xp"
 					xp: 350
 				}
 				{
-					id: "CE71AEAD50FD22A8"
+					id: "2EDF2F9278D016FF"
 					type: "item"
 					item: {
 						Count: 12b
@@ -993,7 +993,7 @@
 					}
 				}
 				{
-					id: "3C3069258DE8CCB1"
+					id: "0DAE49B565319DBA"
 					type: "item"
 					item: {
 						Count: 2b
@@ -1011,7 +1011,7 @@
 			icon: "minecraft:spruce_log"
 			shape: "scroll"
 			optional: true
-			dependencies: ["F524CCC3EC797596"]
+			dependencies: ["7524CCC3EC797596"]
 			tasks: [{
 				id: "1054A1B83C6FDBBB"
 				type: "advancement"
@@ -1020,12 +1020,12 @@
 			}]
 			rewards: [
 				{
-					id: "D5200DB68A3D8F51"
+					id: "55200DB68A3D8F51"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "F1EBC078AE6B090A"
+					id: "71EBC078AE6B090A"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1035,7 +1035,7 @@
 			]
 		}
 		{
-			id: "92197E64B2DE482C"
+			id: "12197E64B2DE482C"
 			title: "Ночь в горном трактире"
 			description: ["На снежных склонах стоит трактир для путников. Переночуйте в нём — утром будет что рассказать."]
 			x: -5.83d
@@ -1043,21 +1043,21 @@
 			icon: "minecraft:campfire"
 			shape: "scroll"
 			optional: true
-			dependencies: ["F524CCC3EC797596"]
+			dependencies: ["7524CCC3EC797596"]
 			tasks: [{
-				id: "43400876CD79E17E"
+				id: "6AFE6629DF124F50"
 				type: "advancement"
 				title: "Уснуть в горном трактире"
 				advancement: "nasledie:q/village/mountain_inn"
 			}]
 			rewards: [
 				{
-					id: "1793DFF0E5BFDEF2"
+					id: "1960D9E39133612D"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "313D1CE4A4502FBE"
+					id: "4E3080D16256CEC8"
 					type: "item"
 					item: {
 						Count: 3b
@@ -1065,7 +1065,7 @@
 					}
 				}
 				{
-					id: "F16B0AA5EA27C1D6"
+					id: "0703F9C89792D2E8"
 					type: "item"
 					item: {
 						Count: 3b
@@ -1083,7 +1083,7 @@
 			icon: "minecraft:crossbow"
 			shape: "shield"
 			optional: true
-			dependencies: ["A86CDB4787747C32"]
+			dependencies: ["286CDB4787747C32"]
 			tasks: [{
 				id: "2F8AA3DB66F3BC07"
 				type: "advancement"
@@ -1092,7 +1092,7 @@
 			}]
 			rewards: [
 				{
-					id: "9020CB26B11DF899"
+					id: "1020CB26B11DF899"
 					type: "xp"
 					xp: 450
 				}
@@ -1113,27 +1113,27 @@
 			]
 		}
 		{
-			id: "B7852ACAEF9733ED"
+			id: "37852ACAEF9733ED"
 			title: "Рабочие руки"
 			description: ["Наёмный работник трудится сам, пока вы в походе. Наймите первого — фермера, лесоруба, шахтёра или рыбака — и отведите ему участок."]
 			x: 3.0d
 			y: 10.5d
 			icon: "minecraft:iron_hoe"
-			dependencies: ["84776C066000292E"]
+			dependencies: ["04776C066000292E"]
 			tasks: [{
-				id: "CA00782B9475D924"
+				id: "6EFB09273F6CA4D7"
 				type: "advancement"
 				advancement: "nasledie:events/hired/workers"
 				title: "Нанять работника"
 			}]
 			rewards: [
 				{
-					id: "207DD254F3C3622C"
+					id: "3D439349B94AB34A"
 					type: "xp"
 					xp: 80
 				}
 				{
-					id: "39BFAECA9BB79617"
+					id: "45E9CB767384A36A"
 					type: "item"
 					item: {
 						Count: 16b
@@ -1149,7 +1149,7 @@
 			x: 5.5d
 			y: 10.5d
 			icon: "minecraft:wheat"
-			dependencies: ["B7852ACAEF9733ED"]
+			dependencies: ["37852ACAEF9733ED"]
 			tasks: [{
 				id: "5BE10687E3B2DAC3"
 				type: "advancement"
@@ -1158,7 +1158,7 @@
 			}]
 			rewards: [
 				{
-					id: "B4025C5C1A8D306D"
+					id: "34025C5C1A8D306D"
 					type: "xp"
 					xp: 80
 				}
@@ -1183,7 +1183,7 @@
 			dependencies: ["76A06C9205BAB223"]
 			tasks: [
 				{
-					id: "8DAC00FB69DA9F8A"
+					id: "0DAC00FB69DA9F8A"
 					type: "advancement"
 					advancement: "nasledie:events/hired/workers/lumberjack"
 					title: "Нанять лесоруба"

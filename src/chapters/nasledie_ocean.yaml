@@ -17,7 +17,7 @@ links:
 quests:
   # ── К монументу ──
   - key: deep_ocean
-    id: A68C40E37C45E3BF
+    id: 268C40E37C45E3BF
     title: Выйти в глубокий океан
     description:
       - Где дно уходит в темноту, начинается настоящее море. Выйдите в глубокий океан — лодка, запас еды и путь назад по звёздам.
@@ -33,7 +33,7 @@ quests:
       - {type: item, item: artifacts:flippers}
 
   - key: shipwreck
-    id: D5B701274F41916E
+    id: 55B701274F41916E
     title: Затонувший корабль
     description:
       - Корабли тонули здесь и до экспедиции. В капитанском сундуке обычно лежит карта к зарытому кладу. Откройте его.
@@ -48,7 +48,7 @@ quests:
       - {type: item, item: create:copper_diving_helmet}
 
   - key: buried_treasure
-    id: F70436662909AF80
+    id: 770436662909AF80
     title: Клад по карте
     description:
       - Карта ведёт к кладу на берегу. Копайте под крестом — внутри всегда лежит сердце моря, главная деталь проводника.
@@ -78,7 +78,7 @@ quests:
       - {type: item, item: create:copper_backtank}
 
   - key: conduit
-    id: A6C3DFEC8B6B5AA3
+    id: 26C3DFEC8B6B5AA3
     title: Проводник у монумента
     description:
       - Сердце моря и восемь раковин наутилуса — и проводник даст дыхание под водой, ночное зрение и скорость копания. Окружите его рамкой из
@@ -95,7 +95,7 @@ quests:
       - {type: item, item: artifacts:charm_of_sinking}
 
   - key: guardian
-    id: D8C373CD97382003
+    id: 58C373CD97382003
     title: Страж монумента
     description:
       - Обычные стражи стреляют лучом издалека. Победите одного — и поймёте, почему старший так опасен.
@@ -111,7 +111,7 @@ quests:
       - {type: item, item: alexsmobs:shark_tooth_arrow, count: 16}
 
   - key: conduit_duel
-    id: D1FC6F90AE011A99
+    id: 51FC6F90AE011A99
     title: Две победы под морской силой
     description:
       - Под силой проводника победите обычного и старшего стража. Монумент станет вашим, а море — чуть менее чужим.
@@ -163,7 +163,7 @@ quests:
       - {type: item, item: better_weaponry:diamond_cutlass}
 
   - key: corsair
-    id: 99935D46EBDDE471
+    id: 19935D46EBDDE471
     title: Корсарский корабль
     description:
       - Иллагеры тоже ходят в море. Возьмите на абордаж их корсарский корабль.
@@ -214,7 +214,7 @@ quests:
       - {type: item, item: cold_sweat:goat_fur, count: 4}
 
   - key: warm_ocean
-    id: A303D9CBF0C8194D
+    id: 2303D9CBF0C8194D
     title: Коралловое море
     description:
       - В тёплых водах растут кораллы всех цветов. Красиво — и полно рыбы.
@@ -249,7 +249,7 @@ quests:
       - {type: item, item: alexscaves:sea_glass_shards, count: 6}
 
   - key: conduit_ruin
-    id: E89F59FCDCE5619F
+    id: 689F59FCDCE5619F
     title: Руины проводника
     description:
       - Кто-то уже строил проводник до вас — и не уберёг. Найдите его руины и главный сундук.
@@ -264,7 +264,7 @@ quests:
       - {type: item, item: minecraft:nautilus_shell, count: 4}
 
   - key: ocean_grave
-    id: 9BA296205688E999
+    id: 1BA296205688E999
     title: Затопленная могила
     description:
       - Чья-то могила ушла под воду вместе с берегом. Найдите её. Говорят, одну такую экспедиция оставила сама.
@@ -297,7 +297,7 @@ quests:
       - {type: item, item: minecraft:emerald, count: 8}
 
   - key: diving_suit
-    id: CA1FCBC43099A918
+    id: 4A1FCBC43099A918
     title: Водолазный костюм
     description:
       - Шлем, баллон с воздухом и тяжёлые ботинки — и можно ходить по дну. Баллон заряжается от вращения в мастерской.

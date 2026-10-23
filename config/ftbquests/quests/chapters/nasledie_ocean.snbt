@@ -1,7 +1,7 @@
 {
 	filename: "nasledie_ocean"
 	id: "42E670E2D2E5798E"
-	group: "EF93B76DFA48CC13"
+	group: "6F93B76DFA48CC13"
 	title: "Океан — проводник и монумент"
 	icon: "minecraft:conduit"
 	order_index: 7
@@ -9,7 +9,7 @@
 	default_quest_shape: "scroll"
 	progression_mode: "flexible"
 	quest_links: [{
-		id: "E4285DB7A4C70029"
+		id: "64285DB7A4C70029"
 		linked_quest: "7561C2A49CE25872"
 		x: 18.0d
 		y: 0.0d
@@ -18,7 +18,7 @@
 	}]
 	quests: [
 		{
-			id: "A68C40E37C45E3BF"
+			id: "268C40E37C45E3BF"
 			title: "Выйти в глубокий океан"
 			description: ["Где дно уходит в темноту, начинается настоящее море. Выйдите в глубокий океан — лодка, запас еды и путь назад по звёздам."]
 			x: 0.0d
@@ -27,18 +27,18 @@
 			size: 1.4d
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
-				id: "6C8774B246065D7A"
+				id: "55740A280B316AEA"
 				type: "biome"
 				biome: "minecraft:deep_ocean"
 			}]
 			rewards: [
 				{
-					id: "E97BE8A756EBDB64"
+					id: "2954959987EB0910"
 					type: "xp"
 					xp: 100
 				}
 				{
-					id: "47AB1B8C339EEFE3"
+					id: "04D2FD31C177F230"
 					type: "item"
 					item: {
 						Count: 1b
@@ -48,27 +48,27 @@
 			]
 		}
 		{
-			id: "D5B701274F41916E"
+			id: "55B701274F41916E"
 			title: "Затонувший корабль"
 			description: ["Корабли тонули здесь и до экспедиции. В капитанском сундуке обычно лежит карта к зарытому кладу. Откройте его."]
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:oak_planks"
-			dependencies: ["A68C40E37C45E3BF"]
+			dependencies: ["268C40E37C45E3BF"]
 			tasks: [{
-				id: "F343CF7A642AC78D"
+				id: "4C3E8F0C021CCF8D"
 				type: "advancement"
 				title: "Открыть сундук с сокровищами корабля"
 				advancement: "nasledie:q/ocean/shipwreck"
 			}]
 			rewards: [
 				{
-					id: "BF1D37352E39DC10"
+					id: "5B358B8F032DD2BD"
 					type: "xp"
 					xp: 120
 				}
 				{
-					id: "520B257F06188DC2"
+					id: "536C55F7E6CD0DB8"
 					type: "item"
 					item: {
 						Count: 1b
@@ -78,27 +78,27 @@
 			]
 		}
 		{
-			id: "F70436662909AF80"
+			id: "770436662909AF80"
 			title: "Клад по карте"
 			description: ["Карта ведёт к кладу на берегу. Копайте под крестом — внутри всегда лежит сердце моря, главная деталь проводника."]
 			x: 6.0d
 			y: 0.0d
 			icon: "minecraft:heart_of_the_sea"
-			dependencies: ["D5B701274F41916E"]
+			dependencies: ["55B701274F41916E"]
 			tasks: [{
-				id: "89D5DBCFA2FDA85E"
+				id: "3B6E9998B072321D"
 				type: "advancement"
 				title: "Откопать зарытый клад"
 				advancement: "nasledie:q/ocean/buried_treasure"
 			}]
 			rewards: [
 				{
-					id: "0634C9D6D1AAB548"
+					id: "591BB29C920F623F"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "C49BF608FFC48A72"
+					id: "766BA7FC1DB09978"
 					type: "item"
 					item: {
 						Count: 4b
@@ -114,7 +114,7 @@
 			x: 9.0d
 			y: 0.0d
 			icon: "minecraft:prismarine_bricks"
-			dependencies: ["F70436662909AF80"]
+			dependencies: ["770436662909AF80"]
 			tasks: [{
 				id: "18EACFBBC34C012C"
 				type: "structure"
@@ -122,12 +122,12 @@
 			}]
 			rewards: [
 				{
-					id: "C3BA5551327DC08F"
+					id: "43BA5551327DC08F"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "C391569CC381C2E1"
+					id: "4391569CC381C2E1"
 					type: "item"
 					item: {
 						Count: 1b
@@ -137,7 +137,7 @@
 			]
 		}
 		{
-			id: "A6C3DFEC8B6B5AA3"
+			id: "26C3DFEC8B6B5AA3"
 			title: "Проводник у монумента"
 			description: ["Сердце моря и восемь раковин наутилуса — и проводник даст дыхание под водой, ночное зрение и скорость копания. Окружите его рамкой из призмарина и встаньте рядом."]
 			x: 12.0d
@@ -146,19 +146,19 @@
 			shape: "gear"
 			dependencies: ["76F24423146B2BF8"]
 			tasks: [{
-				id: "7FE494621040FF5A"
+				id: "55892B4ED78C57E1"
 				type: "advancement"
 				advancement: "nasledie:ocean/conduit_power"
 				title: "Получить силу проводника"
 			}]
 			rewards: [
 				{
-					id: "409FB215DBF8B981"
+					id: "553140BC2B728958"
 					type: "xp"
 					xp: 250
 				}
 				{
-					id: "47A186910B5E86AA"
+					id: "2B6EB9CE766489E0"
 					type: "item"
 					item: {
 						Count: 1b
@@ -168,28 +168,28 @@
 			]
 		}
 		{
-			id: "D8C373CD97382003"
+			id: "58C373CD97382003"
 			title: "Страж монумента"
 			description: ["Обычные стражи стреляют лучом издалека. Победите одного — и поймёте, почему старший так опасен."]
 			x: 15.0d
 			y: 0.0d
 			icon: "minecraft:prismarine_shard"
 			shape: "shield"
-			dependencies: ["A6C3DFEC8B6B5AA3"]
+			dependencies: ["26C3DFEC8B6B5AA3"]
 			tasks: [{
-				id: "B90AAD256C51EF2C"
+				id: "7898FCB2E8A60219"
 				type: "kill"
 				entity: "minecraft:guardian"
 				value: 1
 			}]
 			rewards: [
 				{
-					id: "1A97FD3156E405ED"
+					id: "33F012A7EC7E0C7E"
 					type: "xp"
 					xp: 120
 				}
 				{
-					id: "577B925A3839312B"
+					id: "275877FA3253A018"
 					type: "item"
 					item: {
 						Count: 16b
@@ -199,7 +199,7 @@
 			]
 		}
 		{
-			id: "D1FC6F90AE011A99"
+			id: "51FC6F90AE011A99"
 			title: "Две победы под морской силой"
 			description: ["Под силой проводника победите обычного и старшего стража. Монумент станет вашим, а море — чуть менее чужим."]
 			x: 21.0d
@@ -211,13 +211,13 @@
 			dependencies: ["7561C2A49CE25872"]
 			tasks: [
 				{
-					id: "A5898FD29B9EE113"
+					id: "5445F4D01968CDF2"
 					type: "advancement"
 					advancement: "nasledie:alpha42/ocean/conduit_duel/guard"
 					title: "Страж под силой проводника"
 				}
 				{
-					id: "54BA26BC52701A3A"
+					id: "0E6AF3D527CB26DD"
 					type: "advancement"
 					advancement: "nasledie:alpha42/ocean/conduit_duel/elder"
 					title: "Старший страж под силой проводника"
@@ -225,12 +225,12 @@
 			]
 			rewards: [
 				{
-					id: "88E044B48B415BAD"
+					id: "2B1317084F8B7802"
 					type: "xp"
 					xp: 700
 				}
 				{
-					id: "A4BB557111527934"
+					id: "16F3303E8AF462FC"
 					type: "item"
 					item: {
 						Count: 1b
@@ -238,7 +238,7 @@
 					}
 				}
 				{
-					id: "1688DBC2D4504BC7"
+					id: "59C7C4C91E41D890"
 					type: "item"
 					item: {
 						Count: 4b
@@ -254,16 +254,16 @@
 			x: 0.0d
 			y: -3.0d
 			icon: "minecraft:lantern"
-			dependencies: ["A68C40E37C45E3BF"]
+			dependencies: ["268C40E37C45E3BF"]
 			tasks: [{
-				id: "ED983007EE04939D"
+				id: "6D983007EE04939D"
 				type: "advancement"
 				title: "Открыть сундук на вершине маяка"
 				advancement: "nasledie:q/ocean/lighthouse"
 			}]
 			rewards: [
 				{
-					id: "DDA27DCE6EC07F9E"
+					id: "5DA27DCE6EC07F9E"
 					type: "xp"
 					xp: 150
 				}
@@ -294,7 +294,7 @@
 			}]
 			rewards: [
 				{
-					id: "878D96EDCE6C0BCD"
+					id: "078D96EDCE6C0BCD"
 					type: "xp"
 					xp: 300
 				}
@@ -309,7 +309,7 @@
 			]
 		}
 		{
-			id: "99935D46EBDDE471"
+			id: "19935D46EBDDE471"
 			title: "Корсарский корабль"
 			description: ["Иллагеры тоже ходят в море. Возьмите на абордаж их корсарский корабль."]
 			x: 6.0d
@@ -319,19 +319,19 @@
 			optional: true
 			dependencies: ["75934B268BAE9806"]
 			tasks: [{
-				id: "1AD5B1714B390A51"
+				id: "1F8A0F829DF5A6D7"
 				type: "advancement"
 				title: "Открыть сокровищницу корсаров"
 				advancement: "nasledie:q/ocean/corsair"
 			}]
 			rewards: [
 				{
-					id: "F1103CA94618B794"
+					id: "428A988E143242F0"
 					type: "xp"
 					xp: 390
 				}
 				{
-					id: "BD450B166955BB27"
+					id: "236C7A62B5A35E81"
 					type: "item"
 					item: {
 						Count: 6b
@@ -349,9 +349,9 @@
 			icon: "minecraft:dark_oak_planks"
 			shape: "star"
 			optional: true
-			dependencies: ["99935D46EBDDE471"]
+			dependencies: ["19935D46EBDDE471"]
 			tasks: [{
-				id: "C9F038CDF818276A"
+				id: "49F038CDF818276A"
 				type: "advancement"
 				title: "Открыть казну галеры"
 				advancement: "nasledie:q/ocean/galley"
@@ -363,7 +363,7 @@
 					xp: 450
 				}
 				{
-					id: "C6DEE954FEB1D02A"
+					id: "46DEE954FEB1D02A"
 					type: "item"
 					item: {
 						Count: 1b
@@ -380,15 +380,15 @@
 			y: 3.0d
 			icon: "minecraft:packed_ice"
 			optional: true
-			dependencies: ["A68C40E37C45E3BF"]
+			dependencies: ["268C40E37C45E3BF"]
 			tasks: [{
-				id: "9B58FDF40B7AD3F2"
+				id: "1B58FDF40B7AD3F2"
 				type: "biome"
 				biome: "minecraft:frozen_ocean"
 			}]
 			rewards: [
 				{
-					id: "8B5B2E36D9F89126"
+					id: "0B5B2E36D9F89126"
 					type: "xp"
 					xp: 75
 				}
@@ -403,7 +403,7 @@
 			]
 		}
 		{
-			id: "A303D9CBF0C8194D"
+			id: "2303D9CBF0C8194D"
 			title: "Коралловое море"
 			description: ["В тёплых водах растут кораллы всех цветов. Красиво — и полно рыбы."]
 			x: 3.0d
@@ -412,18 +412,18 @@
 			optional: true
 			dependencies: ["5D6F6A8D9A89C57C"]
 			tasks: [{
-				id: "B95E89F8A393F1CE"
+				id: "445451354101DADC"
 				type: "biome"
 				biome: "minecraft:warm_ocean"
 			}]
 			rewards: [
 				{
-					id: "BBFA9C81B5B88F5B"
+					id: "0FD3E2FEA2728E6C"
 					type: "xp"
 					xp: 75
 				}
 				{
-					id: "67EE2C9B2E67AB28"
+					id: "39D5AE7228B683FD"
 					type: "item"
 					item: {
 						Count: 4b
@@ -439,7 +439,7 @@
 			x: 6.0d
 			y: 3.0d
 			icon: "minecraft:cracked_stone_bricks"
-			dependencies: ["A303D9CBF0C8194D"]
+			dependencies: ["2303D9CBF0C8194D"]
 			tasks: [{
 				id: "2A30E4738A455F55"
 				type: "advancement"
@@ -448,12 +448,12 @@
 			}]
 			rewards: [
 				{
-					id: "84F62DB94434AFA9"
+					id: "04F62DB94434AFA9"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "8E38C14E613740F3"
+					id: "0E38C14E613740F3"
 					type: "item"
 					item: {
 						Count: 6b
@@ -463,7 +463,7 @@
 			]
 		}
 		{
-			id: "E89F59FCDCE5619F"
+			id: "689F59FCDCE5619F"
 			title: "Руины проводника"
 			description: ["Кто-то уже строил проводник до вас — и не уберёг. Найдите его руины и главный сундук."]
 			x: 9.0d
@@ -471,19 +471,19 @@
 			icon: "minecraft:prismarine"
 			dependencies: ["6FD514AB841DF820"]
 			tasks: [{
-				id: "CC5FFE7BF3D2A1EE"
+				id: "1224D718BE6C8414"
 				type: "advancement"
 				title: "Открыть главный сундук руин проводника"
 				advancement: "nasledie:q/ocean/conduit_ruin"
 			}]
 			rewards: [
 				{
-					id: "7E8EC4306B3B8610"
+					id: "19CB03145B74FF74"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "0E434EAE873F56DB"
+					id: "7BDFDC586F11D77D"
 					type: "item"
 					item: {
 						Count: 4b
@@ -493,27 +493,27 @@
 			]
 		}
 		{
-			id: "9BA296205688E999"
+			id: "1BA296205688E999"
 			title: "Затопленная могила"
 			description: ["Чья-то могила ушла под воду вместе с берегом. Найдите её. Говорят, одну такую экспедиция оставила сама."]
 			x: 12.0d
 			y: 3.0d
 			icon: "minecraft:skeleton_skull"
 			optional: true
-			dependencies: ["E89F59FCDCE5619F"]
+			dependencies: ["689F59FCDCE5619F"]
 			tasks: [{
-				id: "E731FAB0382FB1FC"
+				id: "2ACA0627B624F65F"
 				type: "structure"
 				structure: "tombstone:abandoned_grave_ocean"
 			}]
 			rewards: [
 				{
-					id: "8FF688A33DAECA26"
+					id: "1E5D248C6F26B086"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "FFC98F44C3483B6D"
+					id: "05BEE00B68DE2348"
 					type: "item"
 					item: {
 						Count: 8b
@@ -538,7 +538,7 @@
 			}]
 			rewards: [
 				{
-					id: "B39ADE1C88B77AD0"
+					id: "339ADE1C88B77AD0"
 					type: "xp"
 					xp: 100
 				}
@@ -553,7 +553,7 @@
 			]
 		}
 		{
-			id: "CA1FCBC43099A918"
+			id: "4A1FCBC43099A918"
 			title: "Водолазный костюм"
 			description: ["Шлем, баллон с воздухом и тяжёлые ботинки — и можно ходить по дну. Баллон заряжается от вращения в мастерской."]
 			x: 3.0d
@@ -563,18 +563,18 @@
 			optional: true
 			dependencies: ["362F963DF6A6BCFE"]
 			tasks: [{
-				id: "F02B3534DB87DAF4"
+				id: "75F7F25C4440DD7A"
 				type: "advancement"
 				advancement: "create:diving_suit"
 			}]
 			rewards: [
 				{
-					id: "5EB777F67BA21C44"
+					id: "5596E68E867A3705"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "80D86D543689A3BD"
+					id: "4A287D2BB807330C"
 					type: "item"
 					item: {
 						Count: 1b

@@ -1,7 +1,7 @@
 {
 	filename: "nasledie_life"
-	id: "DC7EC49FBED1A9C6"
-	group: "842B4DB4DBD349A0"
+	id: "5C7EC49FBED1A9C6"
+	group: "042B4DB4DBD349A0"
 	title: "Дом, к которому возвращаются"
 	icon: "farmersdelight:cooking_pot"
 	order_index: 1
@@ -11,7 +11,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "B05D6F5E90BFA385"
+			id: "305D6F5E90BFA385"
 			title: "Ночлег"
 			description: ["Экспедиция начинается не с карты, а с места, куда хочется вернуться. Поставьте кровать и переночуйте — так мир запомнит, где ваш дом."]
 			x: 0.0d
@@ -20,18 +20,18 @@
 			shape: "heart"
 			size: 1.4d
 			tasks: [{
-				id: "DFA2704E8BB44475"
+				id: "7944B037D07AD8DA"
 				type: "advancement"
 				advancement: "minecraft:adventure/sleep_in_bed"
 			}]
 			rewards: [
 				{
-					id: "9AEDB022F5EAE4DC"
+					id: "05D21FC8959FD412"
 					type: "xp"
 					xp: 40
 				}
 				{
-					id: "4535FAAC26325A95"
+					id: "5D42B2D3EBB0ED5A"
 					type: "item"
 					item: {
 						Count: 4b
@@ -41,13 +41,13 @@
 			]
 		}
 		{
-			id: "C322668146484A1C"
+			id: "4322668146484A1C"
 			title: "Нож повара"
 			description: ["Даже дальняя вылазка начинается с хорошего ужина. Сделайте кухонный нож — кремнёвого вполне хватит. Им режут продукты на доске и срезают солому с травы."]
 			x: 3.0d
 			y: 0.0d
 			icon: "farmersdelight:flint_knife"
-			dependencies: ["B05D6F5E90BFA385"]
+			dependencies: ["305D6F5E90BFA385"]
 			tasks: [{
 				id: "477EAE38055AFECF"
 				type: "advancement"
@@ -55,12 +55,12 @@
 			}]
 			rewards: [
 				{
-					id: "DC2CEFB27380022A"
+					id: "5C2CEFB27380022A"
 					type: "xp"
 					xp: 40
 				}
 				{
-					id: "473F630BFCA3E0E3"
+					id: "08A5D28F61B8C74D"
 					type: "item"
 					item: {
 						Count: 1b
@@ -76,20 +76,20 @@
 			x: 5.5d
 			y: 0.0d
 			icon: "farmersdelight:cutting_board"
-			dependencies: ["C322668146484A1C"]
+			dependencies: ["4322668146484A1C"]
 			tasks: [{
-				id: "C5A1FF1C485C204C"
+				id: "45A1FF1C485C204C"
 				type: "advancement"
 				advancement: "farmersdelight:main/use_cutting_board"
 			}]
 			rewards: [
 				{
-					id: "A4096B2176209939"
+					id: "24096B2176209939"
 					type: "xp"
 					xp: 50
 				}
 				{
-					id: "B3CD27AB347BC682"
+					id: "33CD27AB347BC682"
 					type: "item"
 					item: {
 						Count: 4b
@@ -118,7 +118,7 @@
 					xp: 60
 				}
 				{
-					id: "DD941313DF4B26BA"
+					id: "5D941313DF4B26BA"
 					type: "item"
 					item: {
 						Count: 1b
@@ -142,12 +142,12 @@
 			}]
 			rewards: [
 				{
-					id: "B4578FCE65150DAA"
+					id: "34578FCE65150DAA"
 					type: "xp"
 					xp: 70
 				}
 				{
-					id: "C679A0AB0D0FDD16"
+					id: "4679A0AB0D0FDD16"
 					type: "item"
 					item: {
 						Count: 2b
@@ -167,13 +167,13 @@
 			optional: true
 			dependencies: ["4E740C0034B4382F"]
 			tasks: [{
-				id: "C3E73BCEA67AD04F"
+				id: "43E73BCEA67AD04F"
 				type: "advancement"
 				advancement: "farmersdelight:main/place_feast"
 			}]
 			rewards: [
 				{
-					id: "BDD19353D5B27533"
+					id: "3DD19353D5B27533"
 					type: "xp"
 					xp: 140
 				}
@@ -188,7 +188,7 @@
 			]
 		}
 		{
-			id: "B134069526544AEA"
+			id: "3134069526544AEA"
 			title: "Шеф-повар нового мира"
 			description: ["Попробуйте все блюда, какие умеет ваша кухня. Это долгая цель на много вечеров — зато в награду рюкзак научится сам кормить вас в пути."]
 			x: 15.5d
@@ -199,18 +199,18 @@
 			optional: true
 			dependencies: ["52659216F4F03E2C"]
 			tasks: [{
-				id: "EC8DE64E843B7E58"
+				id: "7E8BA380E915F575"
 				type: "advancement"
 				advancement: "farmersdelight:main/master_chef"
 			}]
 			rewards: [
 				{
-					id: "411F4A8DA16AE48A"
+					id: "2FB80162DF4B23A3"
 					type: "xp"
 					xp: 600
 				}
 				{
-					id: "19A3AE47F0C82352"
+					id: "7443B3AAF8B0C439"
 					type: "item"
 					item: {
 						Count: 1b
@@ -226,9 +226,9 @@
 			x: 3.0d
 			y: -3.0d
 			icon: "farmersdelight:cabbage_seeds"
-			dependencies: ["B05D6F5E90BFA385"]
+			dependencies: ["305D6F5E90BFA385"]
 			tasks: [{
-				id: "DA407032247C7A03"
+				id: "5A407032247C7A03"
 				type: "advancement"
 				advancement: "farmersdelight:main/get_fd_seed"
 			}]
@@ -239,7 +239,7 @@
 					xp: 40
 				}
 				{
-					id: "BDD97E44FD446355"
+					id: "3DD97E44FD446355"
 					type: "item"
 					item: {
 						Count: 8b
@@ -263,12 +263,12 @@
 			}]
 			rewards: [
 				{
-					id: "B9E09836EB55332F"
+					id: "39E09836EB55332F"
 					type: "xp"
 					xp: 50
 				}
 				{
-					id: "CDC168157C6E63D3"
+					id: "4DC168157C6E63D3"
 					type: "item"
 					item: {
 						Count: 16b
@@ -278,7 +278,7 @@
 			]
 		}
 		{
-			id: "9E550CA158EE0E76"
+			id: "1E550CA158EE0E76"
 			title: "Томаты на верёвке"
 			description: ["Томатная лоза ползёт вверх по верёвке над грядкой. Подвяжите её и соберите урожай с высокого куста."]
 			x: 8.0d
@@ -286,18 +286,18 @@
 			icon: "farmersdelight:tomato"
 			dependencies: ["5B2F6F1B27706E1D"]
 			tasks: [{
-				id: "3B757C0F1E9EDD3E"
+				id: "3494089F31F3BD4A"
 				type: "advancement"
 				advancement: "farmersdelight:main/harvest_ropelogged_tomato"
 			}]
 			rewards: [
 				{
-					id: "63F8ADC65E162DAB"
+					id: "202767DB4A028314"
 					type: "xp"
 					xp: 55
 				}
 				{
-					id: "1F835033C10D6A82"
+					id: "45F75EA88BD93B8D"
 					type: "item"
 					item: {
 						Count: 3b
@@ -313,7 +313,7 @@
 			x: 10.5d
 			y: -3.0d
 			icon: "farmersdelight:rich_soil"
-			dependencies: ["9E550CA158EE0E76"]
+			dependencies: ["1E550CA158EE0E76"]
 			tasks: [{
 				id: "278FB9DC9A9352F6"
 				type: "advancement"
@@ -326,7 +326,7 @@
 					xp: 70
 				}
 				{
-					id: "DB443A27063D2CE8"
+					id: "5B443A27063D2CE8"
 					type: "item"
 					item: {
 						Count: 4b
@@ -334,7 +334,7 @@
 					}
 				}
 				{
-					id: "CF2F33AD45B3DF89"
+					id: "4F2F33AD45B3DF89"
 					type: "item"
 					item: {
 						Count: 4b
@@ -353,7 +353,7 @@
 			optional: true
 			dependencies: ["0F10C8510B15A8C2"]
 			tasks: [{
-				id: "DEFC78290F2564A5"
+				id: "5EFC78290F2564A5"
 				type: "advancement"
 				advancement: "farmersdelight:main/get_mushroom_colony"
 			}]
@@ -374,7 +374,7 @@
 			]
 		}
 		{
-			id: "E3867CE6EB276D6B"
+			id: "63867CE6EB276D6B"
 			title: "Огород со всего света"
 			description: ["Вырастите все культуры, какие найдёте в этом мире. Для этого придётся заглянуть в разные климаты — повод для пары неторопливых путешествий."]
 			x: 15.5d
@@ -385,18 +385,18 @@
 			optional: true
 			dependencies: ["6D582231374D6FBB"]
 			tasks: [{
-				id: "8C3BEA5F20657A93"
+				id: "5881309BDB7CB7CD"
 				type: "advancement"
 				advancement: "farmersdelight:main/plant_all_crops"
 			}]
 			rewards: [
 				{
-					id: "BCFC21605065B3EA"
+					id: "2E8A9B8FE8D90AA2"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "B67548E1EC7AC0AE"
+					id: "462BAEE5FB22359F"
 					type: "item"
 					item: {
 						Count: 16b
@@ -404,7 +404,7 @@
 					}
 				}
 				{
-					id: "9E22E7EDD450691E"
+					id: "5013FAAC550D81AD"
 					type: "item"
 					item: {
 						Count: 4b
@@ -421,7 +421,7 @@
 			y: -3.0d
 			icon: "minecraft:wheat"
 			optional: true
-			dependencies: ["B05D6F5E90BFA385"]
+			dependencies: ["305D6F5E90BFA385"]
 			tasks: [{
 				id: "2326B4EA97A0B0C4"
 				type: "advancement"
@@ -429,7 +429,7 @@
 			}]
 			rewards: [
 				{
-					id: "A7609A7AE8550355"
+					id: "27609A7AE8550355"
 					type: "xp"
 					xp: 60
 				}
@@ -442,7 +442,7 @@
 					}
 				}
 				{
-					id: "B205B2E49228B1B5"
+					id: "3205B2E49228B1B5"
 					type: "item"
 					item: {
 						Count: 1b
@@ -452,26 +452,26 @@
 			]
 		}
 		{
-			id: "C2A7FBADC6571244"
+			id: "42A7FBADC6571244"
 			title: "Одежда по погоде"
 			description: ["В этом мире холод и жара опасны всерьёз. На швейном столе к броне пришивают утеплитель — козий мех от холода, хоглинью шкуру от жары."]
 			x: 3.0d
 			y: 3.0d
 			icon: "cold_sweat:goat_fur_chestplate"
-			dependencies: ["B05D6F5E90BFA385"]
+			dependencies: ["305D6F5E90BFA385"]
 			tasks: [{
-				id: "4C60D258EC32E49D"
+				id: "1B8D871046AC33A4"
 				type: "advancement"
 				advancement: "cold_sweat:insulate_armor"
 			}]
 			rewards: [
 				{
-					id: "01BBB3D9424B03FE"
+					id: "42DCB1B7E91E9C3A"
 					type: "xp"
 					xp: 80
 				}
 				{
-					id: "9B07ED26429303DA"
+					id: "69BA2056246B084C"
 					type: "item"
 					item: {
 						Count: 1b
@@ -488,7 +488,7 @@
 			y: 3.0d
 			icon: "cold_sweat:hearth"
 			shape: "heart"
-			dependencies: ["C2A7FBADC6571244"]
+			dependencies: ["42A7FBADC6571244"]
 			tasks: [{
 				id: "2C909DA0B3D8F72F"
 				type: "advancement"
@@ -511,7 +511,7 @@
 			]
 		}
 		{
-			id: "85F72175E8F3882D"
+			id: "05F72175E8F3882D"
 			title: "Дымоход"
 			description: ["Поставьте дымоход на бойлер или холодильник — устройство начнёт прогревать или охлаждать не только себя, но и всю комнату."]
 			x: 8.0d
@@ -520,18 +520,18 @@
 			optional: true
 			dependencies: ["119A349F7B3DEF2E"]
 			tasks: [{
-				id: "C06038416320FAD9"
+				id: "54E36801A0A20909"
 				type: "advancement"
 				advancement: "cold_sweat:use_smokestack"
 			}]
 			rewards: [
 				{
-					id: "A69B237AB8A21761"
+					id: "4EFE8DFB504DDB68"
 					type: "xp"
 					xp: 100
 				}
 				{
-					id: "D477C341D6352C58"
+					id: "19D9EE3FAA7873E9"
 					type: "item"
 					item: {
 						Count: 4b
@@ -541,7 +541,7 @@
 			]
 		}
 		{
-			id: "86F885604312EEAC"
+			id: "06F885604312EEAC"
 			title: "Одет по сезону"
 			description: ["Утеплите полный комплект брони. В горах и пустынях, куда уходила экспедиция, без этого долго не продержаться."]
 			x: 8.0d
@@ -549,18 +549,18 @@
 			icon: "cold_sweat:goat_fur_helmet"
 			dependencies: ["119A349F7B3DEF2E"]
 			tasks: [{
-				id: "C45053498A239386"
+				id: "23C28200FB42C442"
 				type: "advancement"
 				advancement: "cold_sweat:full_insulation"
 			}]
 			rewards: [
 				{
-					id: "04BB0F7F531D29A4"
+					id: "097535AAF0367EE7"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "EC5EF0AF2E5445E9"
+					id: "0A4CCD0B8E2DDF83"
 					type: "item"
 					item: {
 						Count: 4b
@@ -570,27 +570,27 @@
 			]
 		}
 		{
-			id: "ECB99D5FF6B575D6"
+			id: "6CB99D5FF6B575D6"
 			title: "Юра, где твои вещи?"
 			description: ["Рано или поздно кто-то из вас упадёт в лаву или встретит крипера. Вещи не пропадут — на месте гибели появится могила. Найдите её и заберите своё."]
 			x: 0.0d
 			y: 3.0d
 			icon: "minecraft:skeleton_skull"
 			optional: true
-			dependencies: ["B05D6F5E90BFA385"]
+			dependencies: ["305D6F5E90BFA385"]
 			tasks: [{
-				id: "66D77B6CF9506E24"
+				id: "53BA6788FC61A32B"
 				type: "advancement"
 				advancement: "tombstone:adventure/first_grave"
 			}]
 			rewards: [
 				{
-					id: "5AE5A043BFBD6062"
+					id: "1B0896A95DFA394F"
 					type: "xp"
 					xp: 30
 				}
 				{
-					id: "E91AA3089C1692C6"
+					id: "4014EF131B79896B"
 					type: "item"
 					item: {
 						Count: 4b
@@ -606,7 +606,7 @@
 			x: 3.0d
 			y: 7.0d
 			icon: "sophisticatedbackpacks:backpack"
-			dependencies: ["B05D6F5E90BFA385"]
+			dependencies: ["305D6F5E90BFA385"]
 			tasks: [{
 				id: "6EB6532083976608"
 				type: "advancement"
@@ -614,7 +614,7 @@
 			}]
 			rewards: [
 				{
-					id: "DB478A995FFA5042"
+					id: "5B478A995FFA5042"
 					type: "xp"
 					xp: 60
 				}
@@ -637,7 +637,7 @@
 			icon: "sophisticatedbackpacks:pickup_upgrade"
 			dependencies: ["69525CBD49DF5FDB"]
 			tasks: [{
-				id: "D711FACB7CAA789A"
+				id: "5711FACB7CAA789A"
 				type: "advancement"
 				advancement: "nasledie:alpha35/engineering/6bf257bc86e5f51d"
 			}]
@@ -648,7 +648,7 @@
 					xp: 90
 				}
 				{
-					id: "CFD3877669478DDB"
+					id: "4FD3877669478DDB"
 					type: "item"
 					item: {
 						Count: 1b
@@ -658,7 +658,7 @@
 			]
 		}
 		{
-			id: "BCC7916DB9793560"
+			id: "3CC7916DB9793560"
 			title: "Место для запасов"
 			description: ["Обычных сундуков скоро станет мало. Поставьте железный сундук — его можно улучшать дальше, а в кладовой появится порядок."]
 			x: 8.0d
@@ -667,18 +667,18 @@
 			optional: true
 			dependencies: ["6BF257BC86E5F51D"]
 			tasks: [{
-				id: "E43F90915EC24942"
+				id: "729839339D22EC88"
 				type: "advancement"
 				advancement: "nasledie:alpha34/actions/bdc7f410e273570a"
 			}]
 			rewards: [
 				{
-					id: "483CA3381F9A46EA"
+					id: "1D698CAE4448BD08"
 					type: "xp"
 					xp: 80
 				}
 				{
-					id: "9808718C60B6E648"
+					id: "232D5B602175FF76"
 					type: "item"
 					item: {
 						Count: 1b

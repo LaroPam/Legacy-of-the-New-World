@@ -1,7 +1,7 @@
 {
 	filename: "nasledie_economy"
-	id: "8F4597A009915275"
-	group: "C513A3C540C2F7E2"
+	id: "0F4597A009915275"
+	group: "4513A3C540C2F7E2"
 	title: "Торговый дом"
 	icon: "minecraft:emerald"
 	order_index: 12
@@ -11,7 +11,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "9CE7C2CFF54FECE4"
+			id: "1CE7C2CFF54FECE4"
 			title: "Десять сделок"
 			description: ["Торговля — дело привычки. Совершите десять сделок с жителями — Максим и Юра могут торговать каждый в своём углу рынка."]
 			x: 0.0d
@@ -20,19 +20,19 @@
 			size: 1.5d
 			dependencies: ["7380B6B164146847"]
 			tasks: [{
-				id: "BEB88D215C2F506B"
+				id: "3EB88D215C2F506B"
 				type: "stat"
 				stat: "minecraft:traded_with_villager"
 				value: 10
 			}]
 			rewards: [
 				{
-					id: "8A106A78117C694A"
+					id: "3625A15075C21CAD"
 					type: "xp"
 					xp: 100
 				}
 				{
-					id: "3E313CD773BB6FE7"
+					id: "32E74F445AFDF742"
 					type: "item"
 					item: {
 						Count: 1b
@@ -42,27 +42,27 @@
 			]
 		}
 		{
-			id: "FB634EE0C189A59B"
+			id: "7B634EE0C189A59B"
 			title: "Сделка знаний"
 			description: ["Библиотекари продают зачарованные книги. Купите одну — и узнайте, у кого какие чары в запасе."]
 			x: 3.0d
 			y: -2.0d
 			icon: "minecraft:enchanted_book"
-			dependencies: ["9CE7C2CFF54FECE4"]
+			dependencies: ["1CE7C2CFF54FECE4"]
 			tasks: [{
-				id: "FAEB1F81F6139688"
+				id: "390A7DC935CF3877"
 				type: "advancement"
 				advancement: "nasledie:economy/bought_enchanted_book"
 				title: "Купить зачарованную книгу"
 			}]
 			rewards: [
 				{
-					id: "70A66EA869156C99"
+					id: "0EDE352C922D74BE"
 					type: "xp"
 					xp: 120
 				}
 				{
-					id: "E703872737EEA8CD"
+					id: "311FAA3109749CAF"
 					type: "item"
 					item: {
 						Count: 6b
@@ -72,27 +72,27 @@
 			]
 		}
 		{
-			id: "F0C5DD6DFBF85A1C"
+			id: "70C5DD6DFBF85A1C"
 			title: "Жемчуг для очей"
 			description: ["Жрецы продают жемчуг Края — основу ока Края, а значит, и всех очей Зодчих. Купите у них жемчужину."]
 			x: 6.0d
 			y: -2.0d
 			icon: "minecraft:ender_pearl"
-			dependencies: ["FB634EE0C189A59B"]
+			dependencies: ["7B634EE0C189A59B"]
 			tasks: [{
-				id: "7B67F8C9067305F8"
+				id: "48BB545046C71871"
 				type: "advancement"
 				advancement: "nasledie:economy/bought_ender_pearl"
 				title: "Купить жемчуг Края"
 			}]
 			rewards: [
 				{
-					id: "F8B1935DFB31AC3D"
+					id: "1733840D9EC6D192"
 					type: "xp"
 					xp: 135
 				}
 				{
-					id: "884342EB25698587"
+					id: "24B9176DA63CB0DB"
 					type: "item"
 					item: {
 						Count: 8b
@@ -108,21 +108,21 @@
 			x: 3.0d
 			y: 2.0d
 			icon: "minecraft:lead"
-			dependencies: ["9CE7C2CFF54FECE4"]
+			dependencies: ["1CE7C2CFF54FECE4"]
 			tasks: [{
-				id: "DD64EEC7736A8417"
+				id: "5D64EEC7736A8417"
 				type: "advancement"
 				title: "Сделка со странствующим торговцем"
 				advancement: "nasledie:q/economy/wandering"
 			}]
 			rewards: [
 				{
-					id: "A173F7A6767DF3A0"
+					id: "2173F7A6767DF3A0"
 					type: "xp"
 					xp: 120
 				}
 				{
-					id: "8FE5B802B83CCC87"
+					id: "0FE5B802B83CCC87"
 					type: "item"
 					item: {
 						Count: 8b
@@ -132,7 +132,7 @@
 			]
 		}
 		{
-			id: "8E5524C7DD99D7F7"
+			id: "0E5524C7DD99D7F7"
 			title: "Сделка под облаками"
 			description: ["Заведите жителя на самую вершину мира и поторгуйтесь там. Зачем? Потому что так интереснее."]
 			x: 6.0d
@@ -141,18 +141,18 @@
 			optional: true
 			dependencies: ["467B6833737A892E"]
 			tasks: [{
-				id: "B53ED4E5A5BA8777"
+				id: "20E873421B0C99D7"
 				type: "advancement"
 				advancement: "minecraft:adventure/trade_at_world_height"
 			}]
 			rewards: [
 				{
-					id: "4F9344EC2A444784"
+					id: "5FC017B70F0BF049"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "778736DE3363D337"
+					id: "45E59AD9C7F96790"
 					type: "item"
 					item: {
 						Count: 1b
@@ -162,7 +162,7 @@
 			]
 		}
 		{
-			id: "BE7C211A268C501D"
+			id: "3E7C211A268C501D"
 			title: "Постоянный клиент"
 			description: ["Двадцать пять сделок — и в деревне вас встречают по имени. Цены стали мягче, а товары — интереснее."]
 			x: 9.0d
@@ -170,7 +170,7 @@
 			icon: "minecraft:emerald_block"
 			shape: "star"
 			dependencies: [
-				"F0C5DD6DFBF85A1C"
+				"70C5DD6DFBF85A1C"
 				"467B6833737A892E"
 			]
 			tasks: [{
@@ -181,12 +181,12 @@
 			}]
 			rewards: [
 				{
-					id: "30ED33445F8968B4"
+					id: "01A36B9132F53209"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "19BDF1040884AF5F"
+					id: "258FF4F0B67FE51D"
 					type: "item"
 					item: {
 						Count: 1b
@@ -196,30 +196,30 @@
 			]
 		}
 		{
-			id: "97AEA3ED48BDE6AA"
+			id: "17AEA3ED48BDE6AA"
 			title: "Свой торговец"
 			description: ["Наймите работника-торговца. Он продаёт ваши товары, пока вы в экспедиции, — излишки мастерской превращаются в изумруды."]
 			x: 12.0d
 			y: -2.0d
 			icon: "workers:merchant_spawn_egg"
 			dependencies: [
-				"BE7C211A268C501D"
-				"B7852ACAEF9733ED"
+				"3E7C211A268C501D"
+				"37852ACAEF9733ED"
 			]
 			tasks: [{
-				id: "E4F9ABE61F62E43D"
+				id: "6BAFA8B477C70E92"
 				type: "advancement"
 				advancement: "nasledie:events/hired/workers/merchant"
 				title: "Нанять торговца"
 			}]
 			rewards: [
 				{
-					id: "9CC90AD798EF7371"
+					id: "4BF9B7FAE38EF8EE"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "0A9D382F3DCC2CE4"
+					id: "5504AAB94F60B413"
 					type: "item"
 					item: {
 						Count: 2b
@@ -236,22 +236,22 @@
 			y: 2.0d
 			icon: "create:white_table_cloth"
 			dependencies: [
-				"BE7C211A268C501D"
-				"C32715AF6479C057"
+				"3E7C211A268C501D"
+				"432715AF6479C057"
 			]
 			tasks: [{
-				id: "925D72EF87FFED1E"
+				id: "125D72EF87FFED1E"
 				type: "advancement"
 				advancement: "create:table_cloth_shop"
 			}]
 			rewards: [
 				{
-					id: "8D1221B41D0D8740"
+					id: "0D1221B41D0D8740"
 					type: "xp"
 					xp: 250
 				}
 				{
-					id: "97D38086B2410C48"
+					id: "17D38086B2410C48"
 					type: "item"
 					item: {
 						Count: 4b
@@ -270,7 +270,7 @@
 			shape: "star"
 			size: 1.4d
 			dependencies: [
-				"97AEA3ED48BDE6AA"
+				"17AEA3ED48BDE6AA"
 				"6F6CBC1AF7ABE154"
 			]
 			tasks: [{

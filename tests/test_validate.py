@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'tools'))
 import quality
-from validate import quest_issues
+from validate import quest_issues, registry_issues
 
 
 def book(task):
@@ -41,6 +41,23 @@ class WrittenBookTests(unittest.TestCase):
 
     def test_valid_book_passes(self):
         self.assertNotIn('book_invalid', self.codes({'title': 'Я' * 32, 'author': 'Линд', 'pages': ['{"text":"x"}']}))
+
+
+class UnconfirmedItemTests(unittest.TestCase):
+    REGISTRY = {'items': ['railways:conductor_cap', 'railways:red_conductor_cap'],
+                'namespaces': {'items': ['railways']}, 'items_without_name': ['railways:conductor_cap']}
+
+    def codes(self, item):
+        data = book({'id': 'B', 'type': 'checkmark'})
+        next(iter(data.values()))['quests'][0]['rewards'] = [{'id': 'R', 'type': 'item', 'item': {'id': item, 'Count': 1}}]
+        return [e['code'] for e in registry_issues(data, self.REGISTRY, set())[0]]
+
+    def test_model_only_item_is_rejected(self):
+        # Steam Rails 1.7.3 has a conductor_cap model but registers only the 16 coloured caps.
+        self.assertIn('item_unconfirmed', self.codes('railways:conductor_cap'))
+
+    def test_registered_item_passes(self):
+        self.assertEqual(self.codes('railways:red_conductor_cap'), [])
 
 
 if __name__ == '__main__':

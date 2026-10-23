@@ -1,7 +1,7 @@
 {
 	filename: "nasledie_compass"
-	id: "9D8645FBEA4E9EC9"
-	group: "EF93B76DFA48CC13"
+	id: "1D8645FBEA4E9EC9"
+	group: "6F93B76DFA48CC13"
 	title: "Атлас Линд — дальние экспедиции"
 	icon: "explorerscompass:explorerscompass"
 	order_index: 5
@@ -9,7 +9,7 @@
 	default_quest_shape: "scroll"
 	progression_mode: "flexible"
 	quest_links: [{
-		id: "8A322CCF4C7C8D0B"
+		id: "0A322CCF4C7C8D0B"
 		linked_quest: "00C7DAA7BBBE1ABD"
 		x: 0.0d
 		y: 0.0d
@@ -18,7 +18,7 @@
 	}]
 	quests: [
 		{
-			id: "BC793EEF82907B7E"
+			id: "3C793EEF82907B7E"
 			title: "Убежище иллагеров"
 			description: ["Линд отметила на полях — «здесь прячутся те, кто грабит караваны». Найдите убежище иллагеров в лесу."]
 			x: 0.0d
@@ -26,18 +26,18 @@
 			icon: "minecraft:iron_axe"
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
-				id: "989603636211029A"
+				id: "6CF360B85081D978"
 				type: "structure"
 				structure: "nova_structures:illager_hideout"
 			}]
 			rewards: [
 				{
-					id: "FB8FB4FA04DFEE7B"
+					id: "6458691728B546BC"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "9A6DD2A97BA14A99"
+					id: "678340B8686BD663"
 					type: "item"
 					item: {
 						Count: 32b
@@ -54,15 +54,15 @@
 			y: -5.68d
 			icon: "minecraft:chest"
 			shape: "shield"
-			dependencies: ["BC793EEF82907B7E"]
+			dependencies: ["3C793EEF82907B7E"]
 			tasks: [{
-				id: "9BC3C82A630A7354"
+				id: "1BC3C82A630A7354"
 				type: "advancement"
 				advancement: "nova_structures:adventure/loot_illager_hideout"
 			}]
 			rewards: [
 				{
-					id: "C217E3A063F7D175"
+					id: "4217E3A063F7D175"
 					type: "xp"
 					xp: 250
 				}
@@ -77,7 +77,7 @@
 			]
 		}
 		{
-			id: "8E33F6A4EE9EECA6"
+			id: "0E33F6A4EE9EECA6"
 			title: "Иллагерский форт"
 			description: ["Настоящая крепость с башнями и гарнизоном. Найдите её и решите, идёте ли вы на штурм вдвоём или с отрядом рекрутов."]
 			x: 1.42d
@@ -85,18 +85,18 @@
 			icon: "minecraft:crossbow"
 			dependencies: ["4344AC4C44AE8AB1"]
 			tasks: [{
-				id: "0C150EB0DD85D91E"
+				id: "5E53461A2033F8D6"
 				type: "structure"
 				structure: "dungeons_arise:illager_fort"
 			}]
 			rewards: [
 				{
-					id: "7D24EF17E4D32A8A"
+					id: "6FC6A364271EC824"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "D154FB44C1B6E298"
+					id: "3F89C34815E75A28"
 					type: "item"
 					item: {
 						Count: 2b
@@ -106,23 +106,23 @@
 			]
 		}
 		{
-			id: "D79F172C28F00556"
+			id: "579F172C28F00556"
 			title: "Защитники форта"
 			description: ["Победите разбойника и поборника внутри стен форта. Снаружи не считается — нужно войти."]
 			x: 2.77d
 			y: -10.34d
 			icon: "minecraft:iron_axe"
 			shape: "shield"
-			dependencies: ["8E33F6A4EE9EECA6"]
+			dependencies: ["0E33F6A4EE9EECA6"]
 			tasks: [
 				{
-					id: "017858C341099ADC"
+					id: "1259702BF0654888"
 					type: "advancement"
 					advancement: "nasledie:alpha41/fort_assault/pillager_inside_fort"
 					title: "Разбойник внутри форта"
 				}
 				{
-					id: "433A29E55D2524A8"
+					id: "00E81B9CD5B8CF00"
 					type: "advancement"
 					advancement: "nasledie:alpha41/fort_assault/vindicator_inside_fort"
 					title: "Поборник внутри форта"
@@ -130,12 +130,12 @@
 			]
 			rewards: [
 				{
-					id: "C8D9E16FE4D1E01D"
+					id: "6047FF350EC818B0"
 					type: "xp"
 					xp: 500
 				}
 				{
-					id: "CCD223340F55A699"
+					id: "166480214D316BC4"
 					type: "item"
 					item: {
 						Count: 1b
@@ -145,28 +145,28 @@
 			]
 		}
 		{
-			id: "FA0615279F1E7C8F"
+			id: "7A0615279F1E7C8F"
 			title: "Казна форта"
 			description: ["Главная казна форта спрятана за последней дверью. Доберитесь до неё."]
 			x: 4.51d
 			y: -12.4d
 			icon: "minecraft:emerald_block"
 			shape: "shield"
-			dependencies: ["D79F172C28F00556"]
+			dependencies: ["579F172C28F00556"]
 			tasks: [{
-				id: "8CD7835B74F2D074"
+				id: "351E62D16077919C"
 				type: "advancement"
 				title: "Открыть казну форта"
 				advancement: "nasledie:q/compass/fort_treasure"
 			}]
 			rewards: [
 				{
-					id: "C22DCE207BB58075"
+					id: "7715AE7D346706D2"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "B3F575EDFF8DC938"
+					id: "603811CFFE707DFC"
 					type: "item"
 					item: {
 						Count: 1b
@@ -176,7 +176,7 @@
 			]
 		}
 		{
-			id: "AB62584EC814B728"
+			id: "2B62584EC814B728"
 			title: "Гроза разбойников"
 			description: ["Побывайте во всех логовах иллагеров и ведьм — от лагеря до особняка. Линд отмечала их красным, чтобы обходить стороной. Вы — не обходите."]
 			x: 6.64d
@@ -184,20 +184,20 @@
 			icon: "minecraft:white_banner"
 			shape: "star"
 			optional: true
-			dependencies: ["FA0615279F1E7C8F"]
+			dependencies: ["7A0615279F1E7C8F"]
 			tasks: [{
-				id: "7F1FCDD3B63AE0EB"
+				id: "252DF60545562237"
 				type: "advancement"
 				advancement: "nova_structures:adventure/find_all_illager_structures"
 			}]
 			rewards: [
 				{
-					id: "618096CDF0785926"
+					id: "64252846E8A818DD"
 					type: "xp"
 					xp: 800
 				}
 				{
-					id: "511904FE47C74361"
+					id: "2A8178BB20EF8A29"
 					type: "item"
 					item: {
 						Count: 1b
@@ -207,7 +207,7 @@
 			]
 		}
 		{
-			id: "A13990B38C18BF50"
+			id: "213990B38C18BF50"
 			title: "Небесный всадник"
 			description: ["Над облаками дрейфует корабль. Как туда попасть — ваша забота. Найдите его сокровищницу."]
 			x: 2.5d
@@ -215,19 +215,19 @@
 			icon: "immersive_aircraft:propeller"
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
-				id: "4F50E3B8DA6F313A"
+				id: "5C0CAE170E926A62"
 				type: "advancement"
 				title: "Открыть сокровищницу Небесного всадника"
 				advancement: "nasledie:q/compass/heavenly_rider"
 			}]
 			rewards: [
 				{
-					id: "A6E9826834DF4A2E"
+					id: "7CC498B49E16CD2D"
 					type: "xp"
 					xp: 450
 				}
 				{
-					id: "1591C6CBD40498A1"
+					id: "66288649275D3CB6"
 					type: "item"
 					item: {
 						Count: 1b
@@ -237,27 +237,27 @@
 			]
 		}
 		{
-			id: "EF5D057D0A543404"
+			id: "6F5D057D0A543404"
 			title: "Небесный претендент"
 			description: ["Корабль побольше и с охраной на палубе. Его сокровищница — в трюме."]
 			x: 4.75d
 			y: -3.15d
 			icon: "immersive_aircraft:hull"
-			dependencies: ["A13990B38C18BF50"]
+			dependencies: ["213990B38C18BF50"]
 			tasks: [{
-				id: "1397662373A32089"
+				id: "56728C3D4AE7363D"
 				type: "advancement"
 				title: "Открыть сокровищницу Небесного претендента"
 				advancement: "nasledie:q/compass/heavenly_challenger"
 			}]
 			rewards: [
 				{
-					id: "BD44976EB115AE21"
+					id: "4F3A53A52C48FEFC"
 					type: "xp"
 					xp: 500
 				}
 				{
-					id: "FEAC9BA33AB116ED"
+					id: "67F3FD9827F9EE31"
 					type: "item"
 					item: {
 						Count: 1b
@@ -267,7 +267,7 @@
 			]
 		}
 		{
-			id: "9F4C744CFD45A276"
+			id: "1F4C744CFD45A276"
 			title: "Небесный завоеватель"
 			description: ["Флагман небесного флота. Взять его казну — повод для рассказов на годы вперёд."]
 			x: 7.2d
@@ -275,21 +275,21 @@
 			icon: "immersive_aircraft:gyroscope"
 			shape: "star"
 			optional: true
-			dependencies: ["EF5D057D0A543404"]
+			dependencies: ["6F5D057D0A543404"]
 			tasks: [{
-				id: "41272BDBA43EF655"
+				id: "5C0D57C82A238B1B"
 				type: "advancement"
 				title: "Открыть сокровищницу Небесного завоевателя"
 				advancement: "nasledie:q/compass/heavenly_conqueror"
 			}]
 			rewards: [
 				{
-					id: "4A61266A781359B7"
+					id: "3E780992D46F14EF"
 					type: "xp"
 					xp: 600
 				}
 				{
-					id: "79A0961BB0CF2308"
+					id: "18B920C519E128A8"
 					type: "item"
 					item: {
 						Count: 1b
@@ -297,7 +297,7 @@
 					}
 				}
 				{
-					id: "2C66C879CBBDA493"
+					id: "414EE928B6558CA0"
 					type: "item"
 					item: {
 						Count: 6b
@@ -313,7 +313,7 @@
 			x: 9.81d
 			y: -4.28d
 			icon: "create:cogwheel"
-			dependencies: ["9F4C744CFD45A276"]
+			dependencies: ["1F4C744CFD45A276"]
 			tasks: [{
 				id: "2095A6A2DBA07A6E"
 				type: "structure"
@@ -321,12 +321,12 @@
 			}]
 			rewards: [
 				{
-					id: "9BCF6563E2A8A24B"
+					id: "1BCF6563E2A8A24B"
 					type: "xp"
 					xp: 370
 				}
 				{
-					id: "CE6C827EAE35C8EC"
+					id: "4E6C827EAE35C8EC"
 					type: "item"
 					item: {
 						Count: 3b
@@ -345,14 +345,14 @@
 			shape: "star"
 			dependencies: ["4AD20583645F8C5F"]
 			tasks: [{
-				id: "B8E2EF3099AF531D"
+				id: "38E2EF3099AF531D"
 				type: "advancement"
 				advancement: "nasledie:alpha43/expeditions/nest_treasure"
 				title: "Открыть сокровищницу гнезда"
 			}]
 			rewards: [
 				{
-					id: "9CDFCEEDBC64C780"
+					id: "1CDFCEEDBC64C780"
 					type: "xp"
 					xp: 350
 				}
@@ -375,14 +375,14 @@
 			icon: "minecraft:iron_pickaxe"
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
-				id: "83779BA4C767628B"
+				id: "03779BA4C767628B"
 				type: "advancement"
 				title: "Открыть сокровищницу шахт"
 				advancement: "nasledie:q/compass/mining_system"
 			}]
 			rewards: [
 				{
-					id: "813CF56ADB93B9AD"
+					id: "013CF56ADB93B9AD"
 					type: "xp"
 					xp: 340
 				}
@@ -412,7 +412,7 @@
 			}]
 			rewards: [
 				{
-					id: "F9D874B10FD3AA59"
+					id: "79D874B10FD3AA59"
 					type: "xp"
 					xp: 330
 				}
@@ -427,7 +427,7 @@
 			]
 		}
 		{
-			id: "FC2F522F0B5765F9"
+			id: "7C2F522F0B5765F9"
 			title: "Древняя кузница"
 			description: ["Под землёй, на глубине около десяти блоков ниже нуля, стоит кузница со своими огненными стражами. Найдите её."]
 			x: 7.56d
@@ -435,18 +435,18 @@
 			icon: "minecraft:blast_furnace"
 			dependencies: ["5DB6F54ADA7C276F"]
 			tasks: [{
-				id: "9D4985FB46EEA2D4"
+				id: "548EBA25644B196E"
 				type: "advancement"
 				advancement: "dungeons_arise:find_foundry"
 			}]
 			rewards: [
 				{
-					id: "82EEBAE6DD92C5D5"
+					id: "30BCBA23494A1B06"
 					type: "xp"
 					xp: 420
 				}
 				{
-					id: "24044DFAE15E3F03"
+					id: "37D32938553FB262"
 					type: "item"
 					item: {
 						Count: 8b
@@ -463,7 +463,7 @@
 			y: 5.0d
 			icon: "minecraft:blaze_rod"
 			shape: "shield"
-			dependencies: ["FC2F522F0B5765F9"]
+			dependencies: ["7C2F522F0B5765F9"]
 			tasks: [
 				{
 					id: "099E7A6A569AF0B8"
@@ -472,7 +472,7 @@
 					title: "Ифрит в кузнице"
 				}
 				{
-					id: "EF61BA5EDE5B9842"
+					id: "6F61BA5EDE5B9842"
 					type: "advancement"
 					advancement: "nasledie:alpha43/expeditions/foundry_treasure"
 					title: "Сокровищница кузницы"
@@ -485,7 +485,7 @@
 					xp: 350
 				}
 				{
-					id: "DBC380A5737A74F7"
+					id: "5BC380A5737A74F7"
 					type: "item"
 					item: {
 						Count: 4b
@@ -495,7 +495,7 @@
 			]
 		}
 		{
-			id: "86B6C5D09E1C2D74"
+			id: "06B6C5D09E1C2D74"
 			title: "Выжженные шахты"
 			description: ["В бесплодных землях есть шахты, где земля всё ещё тлеет. Найдите их сокровищницу."]
 			x: 11.09d
@@ -504,19 +504,19 @@
 			optional: true
 			dependencies: ["43FEC71E36DEB59A"]
 			tasks: [{
-				id: "334E1B5297C4D38F"
+				id: "698F79360C5A60BE"
 				type: "advancement"
 				title: "Открыть сокровищницу выжженных шахт"
 				advancement: "nasledie:q/compass/scorched_mines"
 			}]
 			rewards: [
 				{
-					id: "7F2F851EE4243C63"
+					id: "0DFDC22004FAC029"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "02338E60C8EB8CFA"
+					id: "1E8F2DF04B18135B"
 					type: "item"
 					item: {
 						Count: 1b
@@ -526,7 +526,7 @@
 			]
 		}
 		{
-			id: "95734C53761E6456"
+			id: "15734C53761E6456"
 			title: "Башни бандитов"
 			description: ["Бандиты устроили логово в старых башнях на перевале. Их казна — на самом верху."]
 			x: 1.39d
@@ -534,19 +534,19 @@
 			icon: "minecraft:stone_bricks"
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
-				id: "125178A0C02EF85E"
+				id: "21277CB815EFFAD8"
 				type: "advancement"
 				title: "Открыть казну башен бандитов"
 				advancement: "nasledie:q/compass/bandit_towers"
 			}]
 			rewards: [
 				{
-					id: "02CD0E3B9BAC166A"
+					id: "6FAFC69A3E21BC36"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "7EAFB139E9190B34"
+					id: "38015B6322A0AC48"
 					type: "item"
 					item: {
 						Count: 1b
@@ -556,27 +556,27 @@
 			]
 		}
 		{
-			id: "B1509620769451B8"
+			id: "31509620769451B8"
 			title: "Дворец Шираз"
 			description: ["Пустынный дворец с садами и библиотекой. Хозяева давно ушли, а сокровищница осталась."]
 			x: 2.02d
 			y: 5.33d
 			icon: "minecraft:chiseled_sandstone"
-			dependencies: ["95734C53761E6456"]
+			dependencies: ["15734C53761E6456"]
 			tasks: [{
-				id: "20DB23F8A4FF0309"
+				id: "75F6B5D460917093"
 				type: "advancement"
 				title: "Открыть сокровищницу дворца"
 				advancement: "nasledie:q/compass/shiraz_palace"
 			}]
 			rewards: [
 				{
-					id: "F58BCCF3324A4B10"
+					id: "42AD72E3DBD5C324"
 					type: "xp"
 					xp: 450
 				}
 				{
-					id: "ACA74E33029C547A"
+					id: "1C41A1E13B121CAC"
 					type: "item"
 					item: {
 						Count: 1b
@@ -586,27 +586,27 @@
 			]
 		}
 		{
-			id: "973E6DFEEE903031"
+			id: "173E6DFEEE903031"
 			title: "Крепость Кайры"
 			description: ["Горная крепость с садом и библиотекой. Кайра, кем бы она ни была, умела строить. Найдите её главную казну."]
 			x: 2.22d
 			y: 7.89d
 			icon: "minecraft:polished_deepslate"
-			dependencies: ["B1509620769451B8"]
+			dependencies: ["31509620769451B8"]
 			tasks: [{
-				id: "CAD8D57C68CF11D4"
+				id: "38F05D8667D9DFFD"
 				type: "advancement"
 				title: "Открыть казну крепости Кайры"
 				advancement: "nasledie:q/compass/keep_kayra"
 			}]
 			rewards: [
 				{
-					id: "EBD8BD559370B5BE"
+					id: "096F464C5F601448"
 					type: "xp"
 					xp: 500
 				}
 				{
-					id: "9EE0EF550E262F17"
+					id: "4DE1D8C8E47AF0B2"
 					type: "item"
 					item: {
 						Count: 2b
@@ -623,21 +623,21 @@
 			y: 10.51d
 			icon: "minecraft:fermented_spider_eye"
 			shape: "shield"
-			dependencies: ["973E6DFEEE903031"]
+			dependencies: ["173E6DFEEE903031"]
 			tasks: [{
-				id: "8418AE1AF418FBFB"
+				id: "0418AE1AF418FBFB"
 				type: "advancement"
 				title: "Открыть сокровищницу приюта"
 				advancement: "nasledie:q/compass/plague_asylum"
 			}]
 			rewards: [
 				{
-					id: "AC7B1498868C38DB"
+					id: "2C7B1498868C38DB"
 					type: "xp"
 					xp: 420
 				}
 				{
-					id: "DAE383525611CF18"
+					id: "5AE383525611CF18"
 					type: "item"
 					item: {
 						Count: 1b
@@ -647,7 +647,7 @@
 			]
 		}
 		{
-			id: "CEBF8266AC205E60"
+			id: "4EBF8266AC205E60"
 			title: "Колизей"
 			description: ["Огромная арена, где когда-то сражались ради зрителей. Сейчас зрители — вы. Найдите колизей."]
 			x: 1.31d
@@ -656,18 +656,18 @@
 			optional: true
 			dependencies: ["07C8419F1FE8738D"]
 			tasks: [{
-				id: "C5A504E7B23D2BFA"
+				id: "73F056BFE831DFB2"
 				type: "advancement"
 				advancement: "dungeons_arise:find_coliseum"
 			}]
 			rewards: [
 				{
-					id: "CB121526D692767B"
+					id: "0C1FEC1F3FF49947"
 					type: "xp"
 					xp: 390
 				}
 				{
-					id: "C0733776C603F8DA"
+					id: "307806D664174187"
 					type: "item"
 					item: {
 						Count: 1b
@@ -677,7 +677,7 @@
 			]
 		}
 		{
-			id: "BD1F1FA8837A8FC5"
+			id: "3D1F1FA8837A8FC5"
 			title: "Монастырь с картами"
 			description: ["В монастыре хранят карты окрестных земель. Найдите его — Линд провела здесь неделю."]
 			x: -1.39d
@@ -685,18 +685,18 @@
 			icon: "minecraft:map"
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
-				id: "2B2D8833882C73E1"
+				id: "268DFB6C89FCF763"
 				type: "advancement"
 				advancement: "dungeons_arise:find_monasteries"
 			}]
 			rewards: [
 				{
-					id: "7D4904589047C4D5"
+					id: "0CD52D0484D103C6"
 					type: "xp"
 					xp: 385
 				}
 				{
-					id: "B498CC647849AA1D"
+					id: "3235A6086F3D1A84"
 					type: "item"
 					item: {
 						Count: 16b
@@ -706,26 +706,26 @@
 			]
 		}
 		{
-			id: "8268BA06604DD7A2"
+			id: "0268BA06604DD7A2"
 			title: "Карта к заражённому храму"
 			description: ["В монастырском тайнике бывает карта к заражённому храму. Найдите её — повезёт не с первого сундука."]
 			x: -2.91d
 			y: 4.9d
 			icon: "minecraft:filled_map"
-			dependencies: ["BD1F1FA8837A8FC5"]
+			dependencies: ["3D1F1FA8837A8FC5"]
 			tasks: [{
-				id: "14D9AEAF3D8940BF"
+				id: "2F904BA652C4738D"
 				type: "advancement"
 				advancement: "dungeons_arise:find_infested_temple_map"
 			}]
 			rewards: [
 				{
-					id: "81CC4D69F5CF2C1C"
+					id: "583ACC03AE8F9451"
 					type: "xp"
 					xp: 380
 				}
 				{
-					id: "573AA885FECBA3F5"
+					id: "49AC0FB57E85775E"
 					type: "item"
 					item: {
 						Count: 12b
@@ -741,9 +741,9 @@
 			x: -4.79d
 			y: 6.66d
 			icon: "minecraft:cobweb"
-			dependencies: ["8268BA06604DD7A2"]
+			dependencies: ["0268BA06604DD7A2"]
 			tasks: [{
-				id: "C3BE7784A749281A"
+				id: "43BE7784A749281A"
 				type: "advancement"
 				advancement: "dungeons_arise:find_infested_temple"
 			}]
@@ -774,13 +774,13 @@
 			dependencies: ["1B7D417FC2AD346C"]
 			tasks: [
 				{
-					id: "B431D7F8752BC0F2"
+					id: "3431D7F8752BC0F2"
 					type: "advancement"
 					advancement: "nasledie:alpha43/expeditions/temple_cave_spider"
 					title: "Пещерный паук в храме"
 				}
 				{
-					id: "F3363FE21D782C40"
+					id: "73363FE21D782C40"
 					type: "advancement"
 					advancement: "nasledie:alpha43/expeditions/temple_treasure"
 					title: "Сокровищница на вершине"
@@ -788,7 +788,7 @@
 			]
 			rewards: [
 				{
-					id: "E2B69239797B66B4"
+					id: "62B69239797B66B4"
 					type: "xp"
 					xp: 400
 				}
@@ -861,7 +861,7 @@
 			]
 		}
 		{
-			id: "EE0CAA1280D33E75"
+			id: "6E0CAA1280D33E75"
 			title: "Задание выполнено"
 			description: ["Дойдите по карте до цели и откройте тайник с наградой. Хозяин таверны будет доволен."]
 			x: -8.19d
@@ -870,19 +870,19 @@
 			shape: "star"
 			dependencies: ["79B22217425743C5"]
 			tasks: [{
-				id: "A2E83DB128F470F7"
+				id: "2114162470C9DB3A"
 				type: "advancement"
 				title: "Открыть тайник по карте таверны"
 				advancement: "nasledie:q/compass/tavern_reward"
 			}]
 			rewards: [
 				{
-					id: "C37C4838359B3FE4"
+					id: "1B30203A0BCA909E"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "802B56157F107E4D"
+					id: "68942C740391F0E4"
 					type: "item"
 					item: {
 						Count: 1b
@@ -898,15 +898,15 @@
 			x: -10.69d
 			y: -0.4d
 			icon: "minecraft:terracotta"
-			dependencies: ["EE0CAA1280D33E75"]
+			dependencies: ["6E0CAA1280D33E75"]
 			tasks: [{
-				id: "B1FAE8003A7C6E62"
+				id: "31FAE8003A7C6E62"
 				type: "structure"
 				structure: "nova_structures:badlands_miner_outpost"
 			}]
 			rewards: [
 				{
-					id: "A7721E174D47D5D5"
+					id: "27721E174D47D5D5"
 					type: "xp"
 					xp: 150
 				}
@@ -936,7 +936,7 @@
 			}]
 			rewards: [
 				{
-					id: "90B6F8D15C2B8CC1"
+					id: "10B6F8D15C2B8CC1"
 					type: "xp"
 					xp: 300
 				}
@@ -966,12 +966,12 @@
 			}]
 			rewards: [
 				{
-					id: "FEEBFABF35747672"
+					id: "7EEBFABF35747672"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "DBE52D3F6AD2BEF4"
+					id: "5BE52D3F6AD2BEF4"
 					type: "item"
 					item: {
 						Count: 1b
@@ -981,7 +981,7 @@
 			]
 		}
 		{
-			id: "C0194CADC20BB042"
+			id: "40194CADC20BB042"
 			title: "Дом над джунглями"
 			description: ["Кто-то построил дом на самой высокой кроне джунглей. Поднимитесь и найдите сундук хозяина."]
 			x: -4.13d
@@ -990,19 +990,19 @@
 			optional: true
 			dependencies: ["59752216F591E945"]
 			tasks: [{
-				id: "428A19099896CC31"
+				id: "019AEBC9658C6067"
 				type: "advancement"
 				title: "Открыть тайник дома над джунглями"
 				advancement: "nasledie:q/compass/tree_house"
 			}]
 			rewards: [
 				{
-					id: "314741E8F2A80178"
+					id: "50B56A9452A149BB"
 					type: "xp"
 					xp: 280
 				}
 				{
-					id: "B27BB081346DE057"
+					id: "54CF44708EB1927E"
 					type: "item"
 					item: {
 						Count: 18b
@@ -1012,28 +1012,28 @@
 			]
 		}
 		{
-			id: "BF8E03C856083FE1"
+			id: "3F8E03C856083FE1"
 			title: "Башни Торнборн"
 			description: ["Иногда монастырская карта ведёт не к храму, а к башням Торнборн. Если такая попалась — поднимитесь на вершину."]
 			x: -5.43d
 			y: -6.15d
 			icon: "minecraft:rose_bush"
 			optional: true
-			dependencies: ["C0194CADC20BB042"]
+			dependencies: ["40194CADC20BB042"]
 			tasks: [{
-				id: "3F664FE4460BCF2C"
+				id: "60AF2EFE28FC2F6D"
 				type: "advancement"
 				title: "Открыть сокровищницу на вершине башен"
 				advancement: "nasledie:q/compass/thornborn"
 			}]
 			rewards: [
 				{
-					id: "2FFDC30602B1FF71"
+					id: "1BB6C3D3FC1F7234"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "5751A5D50E9416AA"
+					id: "141E760A703BA509"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1049,9 +1049,9 @@
 			x: -6.35d
 			y: -8.61d
 			icon: "minecraft:enchanting_table"
-			dependencies: ["BF8E03C856083FE1"]
+			dependencies: ["3F8E03C856083FE1"]
 			tasks: [{
-				id: "E47011AC8867D852"
+				id: "647011AC8867D852"
 				type: "structure"
 				structure: "terralith:mage_tower"
 			}]
@@ -1062,7 +1062,7 @@
 					xp: 200
 				}
 				{
-					id: "B3BC62BF839C8936"
+					id: "33BC62BF839C8936"
 					type: "item"
 					item: {
 						Count: 24b
@@ -1093,7 +1093,7 @@
 					xp: 410
 				}
 				{
-					id: "F3F07976719ED29A"
+					id: "73F07976719ED29A"
 					type: "item"
 					item: {
 						Count: 12b

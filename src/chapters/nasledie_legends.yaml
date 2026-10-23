@@ -21,7 +21,7 @@ links:
 quests:
   # ── Вход в глубины ──
   - key: cave_tablet
-    id: E5CDBE2CB81CBFFC
+    id: 65CDBE2CB81CBFFC
     title: Табличка зовёт под землю
     description:
       - В подземных хижинах лежат пещерные таблички с рисунками далёких глубин. Найдите одну — с неё начинается путь вниз.
@@ -36,7 +36,7 @@ quests:
       - {type: item, item: alexscaves:bioluminescent_torch, count: 16}
 
   - key: cave_codex
-    id: 8B88E55204890F85
+    id: 0B88E55204890F85
     title: Прочитать древнюю табличку
     description:
       - Переведите табличку на столе спелеолога. Письмена старше любой деревни — возможно, их писали Зодчие.
@@ -84,7 +84,7 @@ quests:
       - {type: item, item: alexscaves:sack_of_sating}
 
   - key: atlas
-    id: E9BA2C6E0A89756A
+    id: 69BA2C6E0A89756A
     title: Атлас шести глубин
     description:
       - Побывайте во всех шести затерянных мирах. Таких атласов не было даже у Линд.
@@ -154,7 +154,7 @@ quests:
       - {type: item, item: alexscaves:magnetic_levitation_rail, count: 16}
 
   - key: boundroid
-    id: FCE22E10D39BCA44
+    id: 7CE22E10D39BCA44
     title: Страж на тяжёлой цепи
     description:
       - Связиборг висит на цепи и бьёт сверху. Победите его.
@@ -187,7 +187,7 @@ quests:
       - {type: item, item: minecraft:diamond, count: 6}
 
   - key: galena
-    id: FD6B3DB0A377F701
+    id: 7D6B3DB0A377F701
     title: Магнитный удар издалека
     description:
       - Галенитовая перчатка бросает металл как снаряд. Сразите ею моба с двадцати блоков.
@@ -220,7 +220,7 @@ quests:
 
   # ── Первобытные пещеры ──
   - key: primordial
-    id: A682A9C8CBE99BB1
+    id: 2682A9C8CBE99BB1
     title: Мир, забывший о времени
     description:
       - Под землёй живут динозавры, а над ними светит подземное солнце. Спуститесь в первобытные пещеры.
@@ -235,7 +235,7 @@ quests:
       - {type: item, item: alexscaves:cooked_dinosaur_chop, count: 8}
 
   - key: subterranodon
-    id: B658222BC6AAB8B9
+    id: 3658222BC6AAB8B9
     title: Крылья первобытной пещеры
     description:
       - Подтерранодон любит хвосты трилокарисов. Приручите его — и летайте под каменным небом.
@@ -282,7 +282,7 @@ quests:
       - {type: item, item: alexscaves:primitive_club}
 
   - key: tremorsaurus
-    id: FDF8F9FB47383497
+    id: 7DF8F9FB47383497
     title: Союз с грозой пещер
     description:
       - Оглушите сотрясозавра и накормите салатом спокойствия. Самый страшный хищник глубин станет вашим.
@@ -348,7 +348,7 @@ quests:
 
   # ── Токсичные пещеры ──
   - key: toxic
-    id: C54CEAEDCFA1F140
+    id: 454CEAEDCFA1F140
     title: Лаборатория токсичных глубин
     description:
       - Кислотные озёра, ржавые бочки и радиация. Кто-то здесь уже экспериментировал. Спуститесь — в защите.
@@ -363,7 +363,7 @@ quests:
       - {type: item, item: alexscaves:hazmat_mask}
 
   - key: acid_rust
-    id: CD890C4519D39302
+    id: 4D890C4519D39302
     title: Кислота меняет металл
     description:
       - Металлолом рядом с кислотой ржавеет на глазах. Окислите блок.
@@ -393,7 +393,7 @@ quests:
       - {type: item, item: alexscaves:hazmat_leggings}
 
   - key: raycat
-    id: A070AFC86412D9CF
+    id: 2070AFC86412D9CF
     title: Спутник против радиации
     description:
       - Лучекот любит радиабров и вычищает радиацию из хозяина. Приручите его — пригодится.
@@ -408,7 +408,7 @@ quests:
       - {type: item, item: alexscaves:hazmat_boots}
 
   - key: nucleeper
-    id: 9FCD3892785E34CA
+    id: 1FCD3892785E34CA
     title: Остановить ядрипера
     description:
       - Ядрипер — крипер с ядерным зарядом. Победите его до того, как над пещерой вырастет гриб.
@@ -440,7 +440,7 @@ quests:
       - {type: item, item: alexscaves:uranium_rod, count: 2}
 
   - key: defuse
-    id: AC100A1C72C67C78
+    id: 2C100A1C72C67C78
     title: Красный провод
     description:
       - Обезвредьте ядерную бомбу ножницами. Какой провод резать — решайте вместе. Быстро.
@@ -489,7 +489,7 @@ quests:
       - {type: item, item: alexscaves:primordial_soup, count: 2}
 
   - key: tremorzilla_beam
-    id: A6AF0FFF36488B07
+    id: 26AF0FFF36488B07
     title: Один луч — двадцать чудовищ
     description:
       - Верхом на сотрясозилле сожгите двадцать монстров одним лучом. Король монстров на вашей стороне.
@@ -507,7 +507,7 @@ quests:
 
   # ── Бездонная расщелина ──
   - key: abyssal
-    id: EF811CDE1BFBABE2
+    id: 6F811CDE1BFBABE2
     title: У входа в бездну
     description:
       - Под океаном открывается расщелина без дна, где живут глубинники. Спуститесь — с поплавком и запасом воздуха.
@@ -522,7 +522,7 @@ quests:
       - {type: item, item: alexscaves:diving_boots}
 
   - key: repair_submarine
-    id: FF39C1FF3A9C0C7E
+    id: 7F39C1FF3A9C0C7E
     title: Медь для подводного корпуса
     description:
       - Субмарина — лучший способ ходить по дну бездны. Почините её медью.
@@ -537,7 +537,7 @@ quests:
       - {type: item, item: minecraft:copper_block, count: 8}
 
   - key: ride_submarine
-    id: CF6FFE76F5F9E33C
+    id: 4F6FFE76F5F9E33C
     title: Место капитана подлодки
     description:
       - Займите место капитана и опуститесь на дно. Юра — штурман.
@@ -552,7 +552,7 @@ quests:
       - {type: item, item: alexscaves:deep_sea_sushi_roll, count: 6}
 
   - key: abyssal_ruins
-    id: DD30229DC0039862
+    id: 5D30229DC0039862
     title: Воздух в затонувших руинах
     description:
       - В бездне есть место, где можно дышать, — руины глубинников. Найдите их.
@@ -582,7 +582,7 @@ quests:
       - {type: item, item: alexscaves:magic_conch}
 
   - key: deep_neutral
-    id: F83BDD5302CAB271
+    id: 783BDD5302CAB271
     title: Глубинники перестали бояться
     description:
       - Торгуйте с глубинниками раз за разом, пока они не перестанут прятаться при виде вас.
@@ -597,7 +597,7 @@ quests:
       - {type: item, item: alexscaves:sea_staff}
 
   - key: deep_helpful
-    id: 835B28BFA782D516
+    id: 035B28BFA782D516
     title: Союзники Бездонной расщелины
     description:
       - Заслужите такое доверие глубинников, что они придут на помощь в бою.
@@ -648,7 +648,7 @@ quests:
 
   # ── Заброшенные пустоты ──
   - key: forlorn
-    id: E64ED6625A930A36
+    id: 664ED6625A930A36
     title: Коридоры забытого мрака
     description:
       - Тёмные пустоты, где живут подзектанты и злые мотыльки. Ингрид Берг ушла сюда и не вернулась. Спуститесь за ней.
@@ -663,7 +663,7 @@ quests:
       - {type: item, item: alexscaves:bioluminescent_torch, count: 16}
 
   - key: gloomoth
-    id: F204791E23CFF9E5
+    id: 7204791E23CFF9E5
     title: Мотылёк сумрачных полостей
     description:
       - Злотыльки летят на свет и кусаются. Сбейте одного.
@@ -678,7 +678,7 @@ quests:
       - {type: item, item: alexscaves:moth_ball, count: 4}
 
   - key: sacrifice
-    id: C23DDD9DAAD5EAB7
+    id: 423DDD9DAAD5EAB7
     title: Увидеть запретный ритуал
     description:
       - Подзектанты приносят жертвы тьме. Станьте свидетелями ритуала — так же, как Берг.
@@ -771,7 +771,7 @@ quests:
       - {type: item, item: alexscaves:jelly_bean, count: 4}
 
   - key: candicorn
-    id: A9FDA172CB9A8629
+    id: 29FDA172CB9A8629
     title: Сладкий скакун
     description:
       - Приручите леденорога карамельными яблоками. Радуга прилагается.
@@ -801,7 +801,7 @@ quests:
       - {type: item, item: alexscaves:gobthumper}
 
   - key: licowitch
-    id: D1155DEF31997ADB
+    id: 51155DEF31997ADB
     title: Башня на лакричном дереве
     description:
       - На вершине огромного конфетного корня стоит башня конфедьмы. Поднимитесь к ней.
@@ -816,7 +816,7 @@ quests:
       - {type: item, item: alexscaves:confection_oven}
 
   - key: ride_gum_worm
-    id: F169B6525412B860
+    id: 7169B6525412B860
     title: Всадник сладкой бури
     description:
       - Зацепите мармеладного червя двумя леденцовыми крюками и правьте им. Самая сладкая поездка в мире.

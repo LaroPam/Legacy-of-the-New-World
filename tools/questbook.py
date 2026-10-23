@@ -47,6 +47,7 @@ OUT = ROOT / 'config' / 'ftbquests' / 'quests' / 'chapters'
 GROUP_FILE = OUT.parent / 'chapter_groups.snbt'
 ADV_DIR = ROOT / 'kubejs' / 'data' / 'nasledie' / 'advancements' / 'q'
 HEX = re.compile(r'^[0-9A-F]{16}$')
+MAX_ID = (1 << 63) - 1  # an ID with the top bit set fails FTB's signed parse and is replaced at every load
 BOOK_AUTHOR = 'Первая экспедиция'
 
 CHAPTER_ORDER = ('filename', 'id', 'group', 'title', 'icon', 'order_index', 'default_hide_dependency_lines',
@@ -57,8 +58,9 @@ DOUBLE_KEYS = {'x', 'y', 'size', 'default_quest_size'}
 
 
 def make_id(seed):
-    value = hashlib.sha256(('nasledie:' + seed).encode()).hexdigest()[:16].upper()
-    return value if value.strip('0') else '1' + value[1:]
+    """FTB Quests 2001 reads IDs with Long.parseLong(hex, 16): only 0000000000000002..7FFFFFFFFFFFFFFF work."""
+    value = int(hashlib.sha256(('nasledie:' + seed).encode()).hexdigest()[:16], 16) & MAX_ID
+    return f'{max(value, 2):016X}'
 
 
 def tag(value, key=None):

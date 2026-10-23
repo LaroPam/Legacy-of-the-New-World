@@ -1,6 +1,6 @@
 {
 	filename: "nasledie_cataclysm"
-	id: "C54798B08E30ED27"
+	id: "454798B08E30ED27"
 	group: "771A560C3B3370A6"
 	title: "Восемь очей Зодчих"
 	icon: "cataclysm:flame_eye"
@@ -10,15 +10,15 @@
 	progression_mode: "flexible"
 	quest_links: [
 		{
-			id: "F2566FF137A6C250"
-			linked_quest: "B433E7FAF2F51B45"
+			id: "72566FF137A6C250"
+			linked_quest: "3433E7FAF2F51B45"
 			x: 0.0d
 			y: 0.0d
 			shape: "star"
 			size: 2.2d
 		}
 		{
-			id: "FE087F3E3C968562"
+			id: "7E087F3E3C968562"
 			linked_quest: "4E228116310381E8"
 			x: 3.31d
 			y: -11.54d
@@ -27,14 +27,14 @@
 		}
 		{
 			id: "73B9B70342F55BAA"
-			linked_quest: "E3651E9F6E43FAEB"
+			linked_quest: "63651E9F6E43FAEB"
 			x: 10.5d
 			y: -5.82d
 			shape: "crown"
 			size: 1.7d
 		}
 		{
-			id: "FB26C968E7EACDF2"
+			id: "7B26C968E7EACDF2"
 			linked_quest: "391F9987F1F32442"
 			x: 6.5d
 			y: 0.0d
@@ -42,15 +42,15 @@
 			size: 1.4d
 		}
 		{
-			id: "FBE13F46553E9215"
-			linked_quest: "8792C39846E0D49E"
+			id: "7BE13F46553E9215"
+			linked_quest: "0792C39846E0D49E"
 			x: 11.54d
 			y: 3.31d
 			shape: "crown"
 			size: 1.7d
 		}
 		{
-			id: "BD249ABEDCFD82A7"
+			id: "3D249ABEDCFD82A7"
 			linked_quest: "52813202FFECF301"
 			x: 5.82d
 			y: 10.5d
@@ -58,16 +58,16 @@
 			size: 1.7d
 		}
 		{
-			id: "CCAC78A27A2FC62C"
-			linked_quest: "92B1754C45756107"
+			id: "4CAC78A27A2FC62C"
+			linked_quest: "12B1754C45756107"
 			x: -3.31d
 			y: 11.54d
 			shape: "crown"
 			size: 1.7d
 		}
 		{
-			id: "9A9CEC068400A927"
-			linked_quest: "A0BE4189EEE72883"
+			id: "1A9CEC068400A927"
+			linked_quest: "20BE4189EEE72883"
 			x: -10.5d
 			y: 5.82d
 			shape: "crown"
@@ -82,8 +82,8 @@
 			size: 1.7d
 		}
 		{
-			id: "C33A0EE44B63EFC8"
-			linked_quest: "A13ADF5DA222DA68"
+			id: "433A0EE44B63EFC8"
+			linked_quest: "213ADF5DA222DA68"
 			x: -5.82d
 			y: -10.5d
 			shape: "crown"
@@ -92,7 +92,7 @@
 	]
 	quests: [
 		{
-			id: "DE6173A11D04779E"
+			id: "5E6173A11D04779E"
 			title: "Восемь побед Катаклизма"
 			description: ["Победите всех восьмерых — огонь, бездну, бурю, проклятие, пустыню, машину, чудовище и пустоту. Мир, который держали сосуды, теперь держите вы. Победы считаются на команду — неважно, чей удар был последним."]
 			x: 13.44d
@@ -101,61 +101,61 @@
 			shape: "crown"
 			size: 2.0d
 			dependencies: [
-				"92B1754C45756107"
-				"A0BE4189EEE72883"
-				"8792C39846E0D49E"
+				"12B1754C45756107"
+				"20BE4189EEE72883"
+				"0792C39846E0D49E"
 				"4E228116310381E8"
-				"A13ADF5DA222DA68"
+				"213ADF5DA222DA68"
 				"64338CFBA5C5B699"
 				"52813202FFECF301"
-				"E3651E9F6E43FAEB"
+				"63651E9F6E43FAEB"
 			]
 			hide_dependency_lines: true
 			tasks: [
 				{
-					id: "BC5391EF2420BE93"
+					id: "126957A1A92311AF"
 					type: "kill"
 					entity: "cataclysm:ignis"
 					value: 1
 				}
 				{
-					id: "E78927BFA57E6C90"
+					id: "7B300A31126C8087"
 					type: "kill"
 					entity: "cataclysm:the_leviathan"
 					value: 1
 				}
 				{
-					id: "80DB19257E49D7A9"
+					id: "4D9FF2C5085BB4F9"
 					type: "kill"
 					entity: "cataclysm:the_harbinger"
 					value: 1
 				}
 				{
-					id: "5496E79A3A9AD1EE"
+					id: "69E22ADB4BD582D3"
 					type: "kill"
 					entity: "cataclysm:ender_guardian"
 					value: 1
 				}
 				{
-					id: "5BE92059235F2041"
+					id: "2370A1225769D46A"
 					type: "kill"
 					entity: "cataclysm:maledictus"
 					value: 1
 				}
 				{
-					id: "DAC5F00566683C48"
+					id: "479BDA5A3A376DE7"
 					type: "kill"
 					entity: "cataclysm:ancient_remnant"
 					value: 1
 				}
 				{
-					id: "4010DF3BA0B18485"
+					id: "434C16911B774C17"
 					type: "kill"
 					entity: "cataclysm:netherite_monstrosity"
 					value: 1
 				}
 				{
-					id: "01C83F43E9E669E5"
+					id: "6132116BFE089C54"
 					type: "kill"
 					entity: "cataclysm:scylla"
 					value: 1
@@ -163,12 +163,12 @@
 			]
 			rewards: [
 				{
-					id: "FD8748EE8222261B"
+					id: "3E8FFB53AE5A610A"
 					type: "xp"
 					xp: 3000
 				}
 				{
-					id: "70CD35C4EE95E00D"
+					id: "178A6320265E4BE6"
 					type: "item"
 					item: {
 						Count: 1b
@@ -176,7 +176,7 @@
 					}
 				}
 				{
-					id: "B2DDD8BB26E5DEFC"
+					id: "220D788B9F2CE4C7"
 					type: "item"
 					item: {
 						Count: 2b
@@ -192,9 +192,9 @@
 			x: 0.0d
 			y: -3.5d
 			icon: "cataclysm:void_eye"
-			dependencies: ["B433E7FAF2F51B45"]
+			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
-				id: "A432A68BD33BA208"
+				id: "2432A68BD33BA208"
 				type: "item"
 				item: "cataclysm:void_eye"
 				count: 1L
@@ -202,7 +202,7 @@
 			}]
 			rewards: [
 				{
-					id: "9B7DE6E47C6779FC"
+					id: "1B7DE6E47C6779FC"
 					type: "xp"
 					xp: 300
 				}
@@ -220,7 +220,7 @@
 			]
 		}
 		{
-			id: "8B22878BF8763415"
+			id: "0B22878BF8763415"
 			title: "Руины на краю Бездны"
 			description: ["На дальних островах Края стоит разрушенная цитадель. Найдите её — здесь закончится путь Эклунда."]
 			x: 0.0d
@@ -229,18 +229,18 @@
 			shape: "scroll"
 			dependencies: ["3F01C0BC0DF00B8F"]
 			tasks: [{
-				id: "EB04396359FF0EF3"
+				id: "5FBB94DD4E9FA384"
 				type: "advancement"
 				advancement: "cataclysm:find_ruined_citadel"
 			}]
 			rewards: [
 				{
-					id: "3ADBC8A6C9F1A746"
+					id: "6F355F4A47B58276"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "DE7F46F9BA224E77"
+					id: "75820ED388A6352E"
 					type: "item"
 					item: {
 						Count: 4b
@@ -257,7 +257,7 @@
 			y: -9.5d
 			icon: "minecraft:end_stone_bricks"
 			shape: "shield"
-			dependencies: ["8B22878BF8763415"]
+			dependencies: ["0B22878BF8763415"]
 			tasks: [{
 				id: "116586B63BFEF568"
 				type: "advancement"
@@ -265,7 +265,7 @@
 			}]
 			rewards: [
 				{
-					id: "D24D415B3E673C24"
+					id: "524D415B3E673C24"
 					type: "xp"
 					xp: 500
 				}
@@ -309,7 +309,7 @@
 					xp: 300
 				}
 				{
-					id: "B89640C5792F3C1C"
+					id: "389640C5792F3C1C"
 					type: "item"
 					item: {
 						Count: 8b
@@ -325,9 +325,9 @@
 			x: 2.47d
 			y: -2.47d
 			icon: "cataclysm:storm_eye"
-			dependencies: ["B433E7FAF2F51B45"]
+			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
-				id: "96CB9604D9DBDF5D"
+				id: "16CB9604D9DBDF5D"
 				type: "item"
 				item: "cataclysm:storm_eye"
 				count: 1L
@@ -353,7 +353,7 @@
 			]
 		}
 		{
-			id: "F2FD5EEB117B3119"
+			id: "72FD5EEB117B3119"
 			title: "Акрополь в небесах"
 			description: ["Акрополь парит в грозовых облаках. Подъём — отдельное приключение; дирижабль или эндер-жемчуг вам в помощь."]
 			x: 4.6d
@@ -362,18 +362,18 @@
 			shape: "scroll"
 			dependencies: ["7EA7999BB80D322B"]
 			tasks: [{
-				id: "89150EA93D739BDF"
+				id: "563989E28E83E431"
 				type: "advancement"
 				advancement: "cataclysm:find_acropolis"
 			}]
 			rewards: [
 				{
-					id: "18270DB265530B8A"
+					id: "25B8474FA307B41D"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "7EF29A1B8ACBC0C9"
+					id: "343FDDA3B473CBC4"
 					type: "item"
 					item: {
 						Count: 1b
@@ -389,7 +389,7 @@
 			x: 6.72d
 			y: -6.72d
 			icon: "minecraft:gold_block"
-			dependencies: ["F2FD5EEB117B3119"]
+			dependencies: ["72FD5EEB117B3119"]
 			tasks: [{
 				id: "1F9529F85683B4C3"
 				type: "advancement"
@@ -398,7 +398,7 @@
 			}]
 			rewards: [
 				{
-					id: "897DE7A0A63B7AF6"
+					id: "097DE7A0A63B7AF6"
 					type: "xp"
 					xp: 400
 				}
@@ -422,18 +422,18 @@
 			shape: "shield"
 			dependencies: ["51B93F857CAD59F0"]
 			tasks: [{
-				id: "BCE1D862BBA24697"
+				id: "3CE1D862BBA24697"
 				type: "advancement"
 				advancement: "cataclysm:kill_clawdian"
 			}]
 			rewards: [
 				{
-					id: "EA452956279588ED"
+					id: "6A452956279588ED"
 					type: "xp"
 					xp: 500
 				}
 				{
-					id: "ABF0E21C910D8922"
+					id: "2BF0E21C910D8922"
 					type: "item"
 					item: {
 						Count: 3b
@@ -449,7 +449,7 @@
 			x: 3.4d
 			y: -0.85d
 			icon: "cataclysm:mech_eye"
-			dependencies: ["B433E7FAF2F51B45"]
+			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "0B4290EAE62BD41B"
 				type: "item"
@@ -459,7 +459,7 @@
 			}]
 			rewards: [
 				{
-					id: "E870AD88D7DBAB51"
+					id: "6870AD88D7DBAB51"
 					type: "xp"
 					xp: 300
 				}
@@ -483,19 +483,19 @@
 			shape: "shield"
 			dependencies: ["391F9987F1F32442"]
 			tasks: [{
-				id: "A477D5EA6F8693C9"
+				id: "2477D5EA6F8693C9"
 				type: "advancement"
 				title: "Победить Провожатого"
 				advancement: "nasledie:q/cataclysm/prowler"
 			}]
 			rewards: [
 				{
-					id: "C949AB615F48061B"
+					id: "4949AB615F48061B"
 					type: "xp"
 					xp: 500
 				}
 				{
-					id: "A7042937C3D47445"
+					id: "27042937C3D47445"
 					type: "item"
 					item: {
 						Count: 6b
@@ -511,7 +511,7 @@
 			x: 2.47d
 			y: 2.47d
 			icon: "cataclysm:monstrous_eye"
-			dependencies: ["B433E7FAF2F51B45"]
+			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "4F686C6568571D98"
 				type: "item"
@@ -521,7 +521,7 @@
 			}]
 			rewards: [
 				{
-					id: "F6C7F8AA913F4F05"
+					id: "76C7F8AA913F4F05"
 					type: "xp"
 					xp: 300
 				}
@@ -559,7 +559,7 @@
 					xp: 400
 				}
 				{
-					id: "894F7299A34F407A"
+					id: "094F7299A34F407A"
 					type: "item"
 					item: {
 						Count: 1b
@@ -569,7 +569,7 @@
 			]
 		}
 		{
-			id: "BBA92955F4AA2D1F"
+			id: "3BA92955F4AA2D1F"
 			title: "Пепельный караул"
 			description: ["У кузни дежурят огненный берсерк и малое незеритовое чудище. Победите обоих — порядок не важен."]
 			x: 6.72d
@@ -579,13 +579,13 @@
 			dependencies: ["0A9ACE48F5328D23"]
 			tasks: [
 				{
-					id: "CCE2EF3121E2C6E2"
+					id: "313DB52082A33D37"
 					type: "advancement"
 					advancement: "nasledie:alpha39/cataclysm/ash_vanguard"
 					title: "Огненный берсерк"
 				}
 				{
-					id: "AE9B33F6CAE6E836"
+					id: "050358D2951C1AE7"
 					type: "advancement"
 					advancement: "nasledie:alpha39/cataclysm/ash_vanguard__ministrosity"
 					title: "Малое незеритовое чудище"
@@ -593,12 +593,12 @@
 			]
 			rewards: [
 				{
-					id: "212380D7D94FC786"
+					id: "03E2538A973B4AF8"
 					type: "xp"
 					xp: 500
 				}
 				{
-					id: "6AED3BD33FF78933"
+					id: "3803ABCF0DE95927"
 					type: "item"
 					item: {
 						Count: 1b
@@ -614,9 +614,9 @@
 			x: 0.0d
 			y: 3.5d
 			icon: "cataclysm:flame_eye"
-			dependencies: ["B433E7FAF2F51B45"]
+			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
-				id: "DF568C4339DB266C"
+				id: "5F568C4339DB266C"
 				type: "item"
 				item: "cataclysm:flame_eye"
 				count: 1L
@@ -642,7 +642,7 @@
 			]
 		}
 		{
-			id: "FEE6E381AE1C38B7"
+			id: "7EE6E381AE1C38B7"
 			title: "Пылающая арена"
 			description: ["Арена в глубинах Нижнего мира, где рыцарь Зодчих ждёт соперника. Найдите её и осмотритесь до боя."]
 			x: 0.0d
@@ -651,18 +651,18 @@
 			shape: "scroll"
 			dependencies: ["1F7F25CE4EBE950F"]
 			tasks: [{
-				id: "7127B6ABA462BE67"
+				id: "51EA7E4D0D2CEF7A"
 				type: "advancement"
 				advancement: "cataclysm:find_burning_arena"
 			}]
 			rewards: [
 				{
-					id: "FDF2C022D311890B"
+					id: "76DC6364E9FFEAB5"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "D96DF964B26553BA"
+					id: "4E5A73C00AD587BA"
 					type: "item"
 					item: {
 						Count: 2b
@@ -679,9 +679,9 @@
 			y: 9.5d
 			icon: "minecraft:blaze_powder"
 			shape: "shield"
-			dependencies: ["FEE6E381AE1C38B7"]
+			dependencies: ["7EE6E381AE1C38B7"]
 			tasks: [{
-				id: "CFCF2EC2DB828C02"
+				id: "4FCF2EC2DB828C02"
 				type: "advancement"
 				advancement: "cataclysm:kill_revenant"
 			}]
@@ -692,7 +692,7 @@
 					xp: 500
 				}
 				{
-					id: "8E4A78A7F10173BF"
+					id: "0E4A78A7F10173BF"
 					type: "item"
 					item: {
 						Count: 1b
@@ -702,15 +702,15 @@
 			]
 		}
 		{
-			id: "EE51E5EBB7E57BDF"
+			id: "6E51E5EBB7E57BDF"
 			title: "Око глубины"
 			description: ["Око глубины — из обсидиана и плачущего обсидиана. Оно тянет вниз, в затонувший город глубинников."]
 			x: -2.47d
 			y: 2.47d
 			icon: "cataclysm:abyss_eye"
-			dependencies: ["B433E7FAF2F51B45"]
+			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
-				id: "022E84A9A9F2A7FB"
+				id: "21542B2EE94E2043"
 				type: "item"
 				item: "cataclysm:abyss_eye"
 				count: 1L
@@ -718,12 +718,12 @@
 			}]
 			rewards: [
 				{
-					id: "27D9623BE9B251B3"
+					id: "1A980BE96C13AB34"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "960C6407A3860AD9"
+					id: "350859F8E11B8F76"
 					type: "item"
 					item: {
 						Count: 3b
@@ -736,27 +736,27 @@
 			]
 		}
 		{
-			id: "A96277A6BE605D32"
+			id: "296277A6BE605D32"
 			title: "Город под толщей воды"
 			description: ["Город глубинников лежит на самом дне. Проводник и водолазный костюм здесь не роскошь."]
 			x: -4.6d
 			y: 4.6d
 			icon: "minecraft:prismarine_bricks"
 			shape: "scroll"
-			dependencies: ["EE51E5EBB7E57BDF"]
+			dependencies: ["6E51E5EBB7E57BDF"]
 			tasks: [{
-				id: "4A3E18FDEDC55E7C"
+				id: "6181054428C56979"
 				type: "advancement"
 				advancement: "cataclysm:find_sunken_city"
 			}]
 			rewards: [
 				{
-					id: "489A6281184146D8"
+					id: "6E13E1662BD29FD0"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "3F27574EFCBA7190"
+					id: "0FF96588E4E965DC"
 					type: "item"
 					item: {
 						Count: 1b
@@ -766,29 +766,29 @@
 			]
 		}
 		{
-			id: "F21761F49BC3DC1D"
+			id: "721761F49BC3DC1D"
 			title: "Охрана морской пучины"
 			description: ["Город охраняют глубинники — брут, колдун и коралловый колосс. Победите всех троих."]
 			x: -6.72d
 			y: 6.72d
 			icon: "minecraft:tube_coral_block"
 			shape: "shield"
-			dependencies: ["A96277A6BE605D32"]
+			dependencies: ["296277A6BE605D32"]
 			tasks: [
 				{
-					id: "79DB19FA51129D43"
+					id: "3D7E7B7EDCD6F256"
 					type: "advancement"
 					advancement: "nasledie:alpha39/cataclysm/deep_patrol"
 					title: "Брут-глубинник"
 				}
 				{
-					id: "DCAE168D7B8829B7"
+					id: "3E0FCDA6A88491C2"
 					type: "advancement"
 					advancement: "nasledie:alpha39/cataclysm/deep_patrol__warlock"
 					title: "Колдун-глубинник"
 				}
 				{
-					id: "5959F64C5D6B51CA"
+					id: "552CD9984E6A6FD6"
 					type: "advancement"
 					advancement: "nasledie:alpha39/cataclysm/deep_patrol__coralssus"
 					title: "Коралловый колосс"
@@ -796,12 +796,12 @@
 			]
 			rewards: [
 				{
-					id: "F0B6A98174C89D14"
+					id: "6B316FB46D206B60"
 					type: "xp"
 					xp: 600
 				}
 				{
-					id: "EEF1876AF5F42D0C"
+					id: "71A8BA3F80AE5753"
 					type: "item"
 					item: {
 						Count: 1b
@@ -809,7 +809,7 @@
 					}
 				}
 				{
-					id: "FB72F22EB699BED3"
+					id: "16E72C3B93342738"
 					type: "item"
 					item: {
 						Count: 4b
@@ -819,15 +819,15 @@
 			]
 		}
 		{
-			id: "B853C84668190895"
+			id: "3853C84668190895"
 			title: "Око пустыни"
 			description: ["Око пустыни собирают из золота, кактусов, костей и песчаника. Оно смотрит на пирамиду, где погиб Холм."]
 			x: -3.5d
 			y: 0.0d
 			icon: "cataclysm:desert_eye"
-			dependencies: ["B433E7FAF2F51B45"]
+			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
-				id: "B0FBFEA79B9049F2"
+				id: "41030CD4BB74AE93"
 				type: "item"
 				item: "cataclysm:desert_eye"
 				count: 1L
@@ -835,12 +835,12 @@
 			}]
 			rewards: [
 				{
-					id: "CF46B5EA467008BE"
+					id: "1223DC104B14692A"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "8BCADD0C92D9AD8C"
+					id: "0BB65DDCC1A7D8D1"
 					type: "item"
 					item: {
 						Count: 16b
@@ -857,9 +857,9 @@
 			y: 0.0d
 			icon: "minecraft:chiseled_sandstone"
 			shape: "scroll"
-			dependencies: ["B853C84668190895"]
+			dependencies: ["3853C84668190895"]
 			tasks: [{
-				id: "A64E9B5219D893B9"
+				id: "264E9B5219D893B9"
 				type: "advancement"
 				advancement: "cataclysm:find_cursed_pyramid"
 			}]
@@ -880,7 +880,7 @@
 			]
 		}
 		{
-			id: "FFAC9890E47B2038"
+			id: "7FAC9890E47B2038"
 			title: "Стражи песков"
 			description: ["Пирамиду охраняют коболедатор и уаджет. Победите одного из них — второй сам вас найдёт."]
 			x: -9.5d
@@ -889,19 +889,19 @@
 			shape: "shield"
 			dependencies: ["0B35EC876DCDE6DC"]
 			tasks: [{
-				id: "136F1CDE5668AC49"
+				id: "5FF3DDF42766CB78"
 				type: "advancement"
 				title: "Победить коболедатора или уаджета"
 				advancement: "nasledie:q/cataclysm/pyramid_guards"
 			}]
 			rewards: [
 				{
-					id: "B80CDC2EEA0AC7D4"
+					id: "46C938A03A51E162"
 					type: "xp"
 					xp: 500
 				}
 				{
-					id: "8C623C0C7E512AFA"
+					id: "3694F6F20838F4B3"
 					type: "item"
 					item: {
 						Count: 1b
@@ -911,7 +911,7 @@
 			]
 		}
 		{
-			id: "89ECBBE772E8674C"
+			id: "09ECBBE772E8674C"
 			title: "Сокровища пустыни"
 			description: ["В пустынных руинах Катаклизма спрятаны сундуки с древними дарами. Откройте один."]
 			x: -6.22d
@@ -920,19 +920,19 @@
 			optional: true
 			dependencies: ["0B35EC876DCDE6DC"]
 			tasks: [{
-				id: "50140B8DFEC52459"
+				id: "5C94A662D5C610EC"
 				type: "advancement"
 				title: "Открыть сокровищницу пустыни"
 				advancement: "nasledie:q/cataclysm/desert_treasure"
 			}]
 			rewards: [
 				{
-					id: "2A640F7CC168F41D"
+					id: "7B3DDC40B65471A2"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "297EE729C0C340D2"
+					id: "1E1C9B4ED2DDFF1E"
 					type: "item"
 					item: {
 						Count: 2b
@@ -942,7 +942,7 @@
 			]
 		}
 		{
-			id: "A0D9B1BC47B0A927"
+			id: "20D9B1BC47B0A927"
 			title: "Поселение после катастрофы"
 			description: ["Деревня, которую покинули в спешке. Здесь жили люди, пока Катаклизм не проснулся впервые."]
 			x: -5.75d
@@ -950,20 +950,20 @@
 			icon: "minecraft:cobweb"
 			shape: "scroll"
 			optional: true
-			dependencies: ["B853C84668190895"]
+			dependencies: ["3853C84668190895"]
 			tasks: [{
-				id: "2010C5F02A58EE55"
+				id: "6CA6CBFA25021B57"
 				type: "structure"
 				structure: "cataclysm:abandoned_village"
 			}]
 			rewards: [
 				{
-					id: "0C2317F59BC254CE"
+					id: "67500789D3CF6924"
 					type: "xp"
 					xp: 230
 				}
 				{
-					id: "461CB3CA41E151CB"
+					id: "4BDA8F37AE88687C"
 					type: "item"
 					item: {
 						Count: 4b
@@ -973,7 +973,7 @@
 			]
 		}
 		{
-			id: "AB0DB46C4BD473E2"
+			id: "2B0DB46C4BD473E2"
 			title: "Деревня занята чужими"
 			description: ["Пустынную деревню заняли слуги пирамиды. Разведайте её снаружи, прежде чем лезть внутрь."]
 			x: -8.07d
@@ -981,20 +981,20 @@
 			icon: "minecraft:sandstone"
 			shape: "scroll"
 			optional: true
-			dependencies: ["A0D9B1BC47B0A927"]
+			dependencies: ["20D9B1BC47B0A927"]
 			tasks: [{
-				id: "437D196BAC030EAC"
+				id: "4C4783D89F71499D"
 				type: "structure"
 				structure: "cataclysm:desert_occupied_village"
 			}]
 			rewards: [
 				{
-					id: "0BD47A2E3452CB43"
+					id: "501BD6BB3EFE019E"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "7FFDE232D0D5D93B"
+					id: "1E955968816CAD78"
 					type: "item"
 					item: {
 						Count: 32b
@@ -1004,7 +1004,7 @@
 			]
 		}
 		{
-			id: "CC6AECEDA32DA758"
+			id: "4C6AECEDA32DA758"
 			title: "Раскоп древнего мира"
 			description: ["Кто-то копал здесь до вас. Возможно, Холм. Осмотрите раскоп — кисть пригодится."]
 			x: -10.38d
@@ -1012,20 +1012,20 @@
 			icon: "minecraft:brush"
 			shape: "scroll"
 			optional: true
-			dependencies: ["AB0DB46C4BD473E2"]
+			dependencies: ["2B0DB46C4BD473E2"]
 			tasks: [{
-				id: "ABDD059E7D670FE7"
+				id: "57E96F48CBDBE7A7"
 				type: "structure"
 				structure: "cataclysm:desert_site"
 			}]
 			rewards: [
 				{
-					id: "6AA2F417878189C9"
+					id: "1D58DBA2194F7E14"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "8CDC95A5B315E15D"
+					id: "6D0D11E676DD1A1E"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1043,7 +1043,7 @@
 			icon: "minecraft:cut_sandstone"
 			shape: "scroll"
 			optional: true
-			dependencies: ["FFAC9890E47B2038"]
+			dependencies: ["7FAC9890E47B2038"]
 			tasks: [{
 				id: "3F2972AA565731C1"
 				type: "advancement"
@@ -1057,7 +1057,7 @@
 					xp: 300
 				}
 				{
-					id: "FAF97C362C254441"
+					id: "7AF97C362C254441"
 					type: "item"
 					item: {
 						Count: 3b
@@ -1067,7 +1067,7 @@
 			]
 		}
 		{
-			id: "B2584C9F3E1DF7E2"
+			id: "32584C9F3E1DF7E2"
 			title: "Аметистовое гнездо"
 			description: ["Пещера, заросшая аметистом, где живут аметистовые крабы. Найдите гнездо и его сундук."]
 			x: -17.0d
@@ -1077,19 +1077,19 @@
 			optional: true
 			dependencies: ["1CB249497EF14D92"]
 			tasks: [{
-				id: "D7229E161161398C"
+				id: "19D66AFDBA69288F"
 				type: "advancement"
 				title: "Открыть сундук аметистового гнезда"
 				advancement: "nasledie:q/cataclysm/amethyst_nest"
 			}]
 			rewards: [
 				{
-					id: "DEC9E98A7483D1D6"
+					id: "2B6767FAF002F7C8"
 					type: "xp"
 					xp: 310
 				}
 				{
-					id: "CD3A7392B03D5832"
+					id: "7AA7AD34FAC14989"
 					type: "item"
 					item: {
 						Count: 3b
@@ -1105,9 +1105,9 @@
 			x: -2.47d
 			y: -2.47d
 			icon: "cataclysm:cursed_eye"
-			dependencies: ["B433E7FAF2F51B45"]
+			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
-				id: "D9CBCC67E9E2E8C1"
+				id: "59CBCC67E9E2E8C1"
 				type: "item"
 				item: "cataclysm:cursed_eye"
 				count: 1L
@@ -1115,7 +1115,7 @@
 			}]
 			rewards: [
 				{
-					id: "BCCF7F80153ACE2A"
+					id: "3CCF7F80153ACE2A"
 					type: "xp"
 					xp: 300
 				}
@@ -1130,7 +1130,7 @@
 			]
 		}
 		{
-			id: "9648CF8E2A62BFAF"
+			id: "1648CF8E2A62BFAF"
 			title: "За дверью ледяной тюрьмы"
 			description: ["Ледяная тюрьма стоит в снегах, и дверь у неё до сих пор заперта изнутри. Найдите её."]
 			x: -4.6d
@@ -1139,18 +1139,18 @@
 			shape: "scroll"
 			dependencies: ["0A06C98F48B2324F"]
 			tasks: [{
-				id: "6B6A8EF84B3FFB9F"
+				id: "61E76F09EA1D9D08"
 				type: "advancement"
 				advancement: "cataclysm:find_frosted_prison"
 			}]
 			rewards: [
 				{
-					id: "E7DAAD779E64F3B2"
+					id: "7AF2A53F583D0CE2"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "04B902D590DF9FDC"
+					id: "7F9F8AEA7EE74192"
 					type: "item"
 					item: {
 						Count: 2b
@@ -1169,9 +1169,9 @@
 			x: -6.72d
 			y: -6.72d
 			icon: "minecraft:blue_ice"
-			dependencies: ["9648CF8E2A62BFAF"]
+			dependencies: ["1648CF8E2A62BFAF"]
 			tasks: [{
-				id: "FB3AA5E20F5DE431"
+				id: "7B3AA5E20F5DE431"
 				type: "advancement"
 				title: "Открыть казну ледяной тюрьмы"
 				advancement: "nasledie:q/cataclysm/prison_treasure"
@@ -1183,7 +1183,7 @@
 					xp: 400
 				}
 				{
-					id: "AF579A9F31BDA879"
+					id: "2F579A9F31BDA879"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1209,7 +1209,7 @@
 			}]
 			rewards: [
 				{
-					id: "ACEA4D3FCE336C86"
+					id: "2CEA4D3FCE336C86"
 					type: "xp"
 					xp: 500
 				}

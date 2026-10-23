@@ -2,7 +2,7 @@
 # Раскладка — src/layouts/create.yaml (tools/layout.py).
 chapter:
   filename: nasledie_create
-  id: 9B72DF3BE0E6A5DE
+  id: 1B72DF3BE0E6A5DE
   group: act3
   title: Мастерская — первые машины
   icon: create:cogwheel
@@ -80,7 +80,7 @@ quests:
       - {type: item, item: create:gearbox, count: 2}
 
   - key: windmill
-    id: 91C8A76B406CF0AF
+    id: 11C8A76B406CF0AF
     title: Ветряк для дальней мастерской
     description:
       - Ветряку не нужна река — только простор и паруса. Соберите его там, где вода далеко.
@@ -95,7 +95,7 @@ quests:
       - {type: item, item: create:white_sail, count: 16}
 
   - key: windmill_maxed
-    id: B20BCF3BF2BBE521
+    id: 320BCF3BF2BBE521
     title: Ветер крепчает
     description:
       - Соберите ветряк максимального размера. Такого хватит на целую улицу станков.
@@ -114,7 +114,7 @@ quests:
 
   # ── Кухонный конвейер ──
   - key: casing
-    id: F208B2429B83E7D8
+    id: 7208B2429B83E7D8
     title: Основа станков
     description:
       - Андезитовый корпус защищает механизмы и превращает вал в аккуратную машину. Обшейте первый блок.
@@ -144,7 +144,7 @@ quests:
       - {type: item, item: create:blue_toolbox}
 
   - key: compacting
-    id: C8C4ECA83D73BF63
+    id: 48C4ECA83D73BF63
     title: Один пресс — два способа работы
     description:
       - Поставьте пресс над чашей — он начнёт спрессовывать предметы. Так делают блоки, слитки и прочее «из многого — одно».
@@ -159,7 +159,7 @@ quests:
       - {type: item, item: create:filter, count: 2}
 
   - key: millstone
-    id: 95DD2AD4CCAA7D90
+    id: 15DD2AD4CCAA7D90
     title: Жернова для походного хлеба
     description:
       - Жернова мелют пшеницу в муку и руду в крошку. Первый шаг к хлебной линии.
@@ -174,7 +174,7 @@ quests:
       - {type: item, item: sliceanddice:slicer}
 
   - key: fan
-    id: 82EB3ADD3D2CD6B9
+    id: 02EB3ADD3D2CD6B9
     title: Вентилятор вместо печи
     description:
       - Вентилятор, дующий сквозь огонь, печёт всё, что пролетает мимо. Сквозь воду — моет, сквозь лаву — плавит.
@@ -204,7 +204,7 @@ quests:
       - {type: item, item: create:sweet_roll, count: 6}
 
   - key: mixer
-    id: CDAC640579002402
+    id: 4DAC640579002402
     title: Миксер расширяет ассортимент
     description:
       - Миксер над чашей смешивает ингредиенты — так получаются тесто, сплавы и сладости.
@@ -234,7 +234,7 @@ quests:
       - {type: item, item: create:blaze_cake, count: 2}
 
   - key: foods
-    id: F7BBC141C944B0BA
+    id: 77BBC141C944B0BA
     title: Кондитерская выпускает три десерта
     description:
       - Сделайте на машинах три разных лакомства Create. Пусть мастерская кормит экспедицию.
@@ -252,7 +252,7 @@ quests:
 
   # ── Подвижные машины ──
   - key: saw
-    id: EA8154FB9A317740
+    id: 6A8154FB9A317740
     title: Пила в мастерской
     description:
       - Механическая пила распиливает брёвна на доски и сама валит деревья, если поставить её на машину.
@@ -267,7 +267,7 @@ quests:
       - {type: item, item: create:shaft, count: 16}
 
   - key: belt
-    id: F68B3CF3BC1979DB
+    id: 768B3CF3BC1979DB
     title: Дорога для материалов
     description:
       - Лента перевозит предметы от станка к станку. Протяните первую.
@@ -329,7 +329,7 @@ quests:
       - {type: item, item: create:item_vault, count: 4}
 
   - key: super_glue
-    id: CCF5C3CD6FF300E7
+    id: 4CF5C3CD6FF300E7
     title: Собрать машину воедино
     description:
       - Суперклей скрепляет блоки в одну подвижную конструкцию. С ним собирают дрели, комбайны и лифты.
@@ -345,7 +345,7 @@ quests:
       - {type: item, item: create:mechanical_harvester}
 
   - key: actors
-    id: 8D62D114AA053441
+    id: 0D62D114AA053441
     title: Машина отправляется на работу
     description:
       - Поставьте на движущуюся конструкцию бур, плуг или комбайн — и пусть работает, пока вы заняты другим.
@@ -392,7 +392,7 @@ quests:
       - {type: item, item: create:railway_casing, count: 4}
 
   - key: extendo
-    id: EC70D65F82B2FEF1
+    id: 6C70D65F82B2FEF1
     title: Работа на расстоянии
     description:
       - Выдвижная рука достаёт блоки издалека. Строить под потолком станет проще.
@@ -444,7 +444,7 @@ quests:
 
   # ── Трубы и жидкости ──
   - key: copper_casing
-    id: 8F58E4E6C70518FE
+    id: 0F58E4E6C70518FE
     title: Медь для трубопровода
     description:
       - Медный корпус — основа всего, что связано с жидкостями. Обшейте первый блок.
@@ -459,7 +459,7 @@ quests:
       - {type: item, item: create:fluid_pipe, count: 16}
 
   - key: pump
-    id: F7E2465288E575FF
+    id: 77E2465288E575FF
     title: Насос доставляет жидкость
     description:
       - Механический насос гонит воду, лаву и мёд по трубам. Направление потока — по стрелке.
@@ -474,7 +474,7 @@ quests:
       - {type: item, item: create:fluid_tank, count: 4}
 
   - key: spout
-    id: 93F9199B68F09FF2
+    id: 13F9199B68F09FF2
     title: Дозатор завершает рецепт
     description:
       - Дозатор наливает жидкость прямо в предмет — заполняет бутылки, поливает торты, делает зелья.
@@ -521,7 +521,7 @@ quests:
       - {type: item, item: create:fluid_tank, count: 8}
 
   - key: chocolate
-    id: 82858847B7756EBF
+    id: 02858847B7756EBF
     title: Горячий шоколад
     description:
       - Шоколад в Create — жидкость. Наберите ведро шоколада. Максим, это для дела, не для тебя.

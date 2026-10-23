@@ -51,6 +51,11 @@ def known(kind, ident, registry, local_advancements):
     return ident in entries
 
 
+def unconfirmed_item(ident, registry):
+    """Only a model exists: no name in any language and no recipe, loot table or advancement mentions it."""
+    return str(ident) in registry.get('items_without_name', [])
+
+
 TAG_DIRS = {'structures': 'worldgen/structure', 'items': 'items', 'entities': 'entity_types', 'biomes': 'worldgen/biome'}
 
 
@@ -80,6 +85,8 @@ def registry_issues(parsed, registry, local_advancements):
             errors.append(problem('unknown_' + kind, location, f'{kind} id is not in the installed mods', id=str(ident)))
         elif result is None:
             unknown[kind] += 1
+        elif kind == 'items' and unconfirmed_item(ident, registry):
+            errors.append(problem('item_unconfirmed', location, 'Only a model exists for this item; it is probably not registered', id=str(ident)))
     for name, _, quest in quality.quest_rows(parsed):
         location = f"{name}#{quest.get('id')}"
         icon = quest.get('icon')
@@ -124,8 +131,11 @@ def advancement_issues(parsed, registry, local_advancements):
             for v in value:
                 walk(v, location, key)
     def check(kind, ident, location):
-        if known(kind, ident, registry, local_advancements) is False:
+        result = known(kind, ident, registry, local_advancements)
+        if result is False:
             errors.append(problem('unknown_' + kind, location, f'{kind} id inside advancement is not in the installed mods', id=ident))
+        elif result and kind == 'items' and unconfirmed_item(ident, registry):
+            errors.append(problem('item_unconfirmed', location, 'Only a model exists for this item; it is probably not registered', id=ident))
     for name, body in parsed.items():
         if name.startswith('kubejs/data/') and '/advancements/' in name:
             walk(body, name)

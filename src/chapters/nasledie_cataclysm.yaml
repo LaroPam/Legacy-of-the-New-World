@@ -2,7 +2,7 @@
 # бой со стражем. Бои — сюжетные квесты летописи, здесь показаны ссылками. Раскладка — src/layouts/cataclysm.yaml.
 chapter:
   filename: nasledie_cataclysm
-  id: C54798B08E30ED27
+  id: 454798B08E30ED27
   group: act4
   title: Восемь очей Зодчих
   icon: cataclysm:flame_eye
@@ -25,7 +25,7 @@ links:
 
 quests:
   - key: eight_victories
-    id: DE6173A11D04779E
+    id: 5E6173A11D04779E
     title: Восемь побед Катаклизма
     description:
       - Победите всех восьмерых — огонь, бездну, бурю, проклятие, пустыню, машину, чудовище и пустоту. Мир, который держали сосуды, теперь
@@ -68,7 +68,7 @@ quests:
       - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_slow_falling"}', count: 2}
 
   - key: citadel
-    id: 8B22878BF8763415
+    id: 0B22878BF8763415
     title: Руины на краю Бездны
     description:
       - На дальних островах Края стоит разрушенная цитадель. Найдите её — здесь закончится путь Эклунда.
@@ -133,7 +133,7 @@ quests:
       - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_slow_falling"}', count: 2}
 
   - key: acropolis
-    id: F2FD5EEB117B3119
+    id: 72FD5EEB117B3119
     title: Акрополь в небесах
     description:
       - Акрополь парит в грозовых облаках. Подъём — отдельное приключение; дирижабль или эндер-жемчуг вам в помощь.
@@ -240,7 +240,7 @@ quests:
       - {type: item, item: minecraft:netherite_scrap}
 
   - key: ash_guard
-    id: BBA92955F4AA2D1F
+    id: 3BA92955F4AA2D1F
     title: Пепельный караул
     description:
       - У кузни дежурят огненный берсерк и малое незеритовое чудище. Победите обоих — порядок не важен.
@@ -272,7 +272,7 @@ quests:
       - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_fire_resistance"}', count: 2}
 
   - key: arena
-    id: FEE6E381AE1C38B7
+    id: 7EE6E381AE1C38B7
     title: Пылающая арена
     description:
       - Арена в глубинах Нижнего мира, где рыцарь Зодчих ждёт соперника. Найдите её и осмотритесь до боя.
@@ -319,7 +319,7 @@ quests:
       - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_water_breathing"}', count: 3}
 
   - key: sunken_city
-    id: A96277A6BE605D32
+    id: 296277A6BE605D32
     title: Город под толщей воды
     description:
       - Город глубинников лежит на самом дне. Проводник и водолазный костюм здесь не роскошь.
@@ -335,7 +335,7 @@ quests:
       - {type: item, item: minecraft:heart_of_the_sea}
 
   - key: deep_patrol
-    id: F21761F49BC3DC1D
+    id: 721761F49BC3DC1D
     title: Охрана морской пучины
     description:
       - Город охраняют глубинники — брут, колдун и коралловый колосс. Победите всех троих.
@@ -419,7 +419,7 @@ quests:
       - {type: item, item: minecraft:emerald_block, count: 2}
 
   - key: ruined_village
-    id: A0D9B1BC47B0A927
+    id: 20D9B1BC47B0A927
     title: Поселение после катастрофы
     description:
       - Деревня, которую покинули в спешке. Здесь жили люди, пока Катаклизм не проснулся впервые.
@@ -436,7 +436,7 @@ quests:
       - {type: item, item: minecraft:hay_block, count: 4}
 
   - key: occupied_village
-    id: AB0DB46C4BD473E2
+    id: 2B0DB46C4BD473E2
     title: Деревня занята чужими
     description:
       - Пустынную деревню заняли слуги пирамиды. Разведайте её снаружи, прежде чем лезть внутрь.
@@ -453,7 +453,7 @@ quests:
       - {type: item, item: minecraft:arrow, count: 32}
 
   - key: desert_site
-    id: CC6AECEDA32DA758
+    id: 4C6AECEDA32DA758
     title: Раскоп древнего мира
     description:
       - Кто-то копал здесь до вас. Возможно, Холм. Осмотрите раскоп — кисть пригодится.
@@ -487,7 +487,7 @@ quests:
       - {type: item, item: minecraft:diamond, count: 3}
 
   - key: amethyst_nest
-    id: B2584C9F3E1DF7E2
+    id: 32584C9F3E1DF7E2
     title: Аметистовое гнездо
     description:
       - Пещера, заросшая аметистом, где живут аметистовые крабы. Найдите гнездо и его сундук.
@@ -519,7 +519,7 @@ quests:
       - {type: item, item: cold_sweat:goat_fur, count: 6}
 
   - key: prison
-    id: 9648CF8E2A62BFAF
+    id: 1648CF8E2A62BFAF
     title: За дверью ледяной тюрьмы
     description:
       - Ледяная тюрьма стоит в снегах, и дверь у неё до сих пор заперта изнутри. Найдите её.

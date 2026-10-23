@@ -57,7 +57,7 @@ selected_chapter_highlight_2: #36FFD43B
 background: nasledie:textures/backgrounds/bg_chronicle.png
 
 // nasledie_life — Зелёный сад
-[DC7EC49FBED1A9C6]
+[5C7EC49FBED1A9C6]
 quest_locked_color: #61954E
 quest_not_started_color: #88E638
 quest_started_color: #FFE35A
@@ -75,7 +75,7 @@ selected_chapter_highlight_2: #3688E638
 background: nasledie:textures/backgrounds/bg_life.png
 
 // nasledie_create — Латунь и огонь
-[9B72DF3BE0E6A5DE]
+[1B72DF3BE0E6A5DE]
 quest_locked_color: #9A6E42
 quest_not_started_color: #FF961F
 quest_started_color: #4FE4E8
@@ -129,7 +129,7 @@ selected_chapter_highlight_2: #36FFAF78
 background: nasledie:textures/backgrounds/bg_village.png
 
 // nasledie_economy — Изумруд и золото
-[8F4597A009915275]
+[0F4597A009915275]
 quest_locked_color: #399B80
 quest_not_started_color: #35F2A0
 quest_started_color: #FFC83D
@@ -147,7 +147,7 @@ selected_chapter_highlight_2: #3635F2A0
 background: nasledie:textures/backgrounds/bg_economy.png
 
 // nasledie_transport — Синий экспресс
-[D90DA6CC0E252361]
+[590DA6CC0E252361]
 quest_locked_color: #4470AD
 quest_not_started_color: #4C99FF
 quest_started_color: #FFE15A
@@ -183,7 +183,7 @@ selected_chapter_highlight_2: #36D4ED24
 background: nasledie:textures/backgrounds/bg_industry.png
 
 // nasledie_defense — Медь и алый щит
-[A1279E21532D7CDD]
+[21279E21532D7CDD]
 quest_locked_color: #9A5E56
 quest_not_started_color: #FF744A
 quest_started_color: #FFD650
@@ -255,7 +255,7 @@ selected_chapter_highlight_2: #3638D968
 background: nasledie:textures/backgrounds/bg_guild.png
 
 // nasledie_cataclysm — Багровая корона
-[C54798B08E30ED27]
+[454798B08E30ED27]
 quest_locked_color: #9A3E5E
 quest_not_started_color: #FF315A
 quest_started_color: #F5CF56
@@ -273,7 +273,7 @@ selected_chapter_highlight_2: #36FF315A
 background: nasledie:textures/backgrounds/bg_cataclysm.png
 
 // nasledie_archeology — Янтарь раскопок
-[CF8AC0B0D69E3A34]
+[4F8AC0B0D69E3A34]
 quest_locked_color: #8A7C59
 quest_not_started_color: #DDB350
 quest_started_color: #70DACD
@@ -309,7 +309,7 @@ selected_chapter_highlight_2: #36956BFF
 background: nasledie:textures/backgrounds/bg_relics.png
 
 // nasledie_netheritage — Красная лава
-[BC5663C3D347C93F]
+[3C5663C3D347C93F]
 quest_locked_color: #9A4642
 quest_not_started_color: #FF421F
 quest_started_color: #FFB82E
@@ -345,7 +345,7 @@ selected_chapter_highlight_2: #362ED4FF
 background: nasledie:textures/backgrounds/bg_ocean.png
 
 // nasledie_compass — Индиго звёздных карт
-[9D8645FBEA4E9EC9]
+[1D8645FBEA4E9EC9]
 quest_locked_color: #5565AD
 quest_not_started_color: #6F83FF
 quest_started_color: #FFC978

@@ -38,8 +38,9 @@ def install_text(name, head, base, counts):
 
 ## Установка (на обоих компьютерах)
 
-1. Сделайте копию мира, если он дорог.
-2. Удалите папки `.minecraft/config/ftbquests/quests/chapters/` и `.minecraft/kubejs/data/nasledie/`.
+1. Сделайте копию мира, если он дорог. Для проверки лучше новый мир.
+2. Удалите папки `.minecraft/config/ftbquests/quests/` (целиком: FTB перезаписывает её при сохранении)
+   и `.minecraft/kubejs/data/nasledie/`.
 3. Скопируйте `config/` и `kubejs/` из архива в `.minecraft/` с заменой.
 4. Полностью перезапустите игру.
 

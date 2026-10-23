@@ -11,7 +11,7 @@ spec.loader.exec_module(quality)
 REF = quality.CHAPTER_ROOT + 'nasledie_defense.snbt'
 OTHER = quality.CHAPTER_ROOT + 'other.snbt'
 SOURCE = b'''{
- id: "0000000000000001"
+ id: "0000000000000007"
  quests: [
   { id: "0000000000000002" title: "First" description: ["Explore"] x: 0d y: 0d size: 1d
     tasks: [{id: "0000000000000003" type: "item" item: "minecraft:diamond" count: 1L consume_items: false}]
@@ -144,6 +144,11 @@ class PreservationTests(unittest.TestCase):
     def test_missing_shape_resource_is_detected(self):
         r = self.report(extra={'kubejs/assets/ftbquests/ftb_quests_theme.txt': b'extra_quest_shapes: crown'})
         self.assertIn('shape_texture_missing', self.codes(r))
+
+    def test_id_with_top_bit_is_rejected(self):
+        source = SOURCE.replace(b'"0000000000000002"', b'"A0BE4189EEE72883"')
+        self.assertIn('id_unreadable', self.codes(quality.evaluate({REF: source}, {REF: source})))
+        self.assertNotIn('id_unreadable', self.codes(quality.evaluate({REF: SOURCE}, {REF: SOURCE})))
 
     def test_shape_mask_without_alpha_is_detected(self):
         import io

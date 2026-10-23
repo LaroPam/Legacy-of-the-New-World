@@ -1,7 +1,7 @@
 # Акт II. Археология: полевая работа Холма, окаменелости, музей и руины с тайниками.
 chapter:
   filename: nasledie_archeology
-  id: CF8AC0B0D69E3A34
+  id: 4F8AC0B0D69E3A34
   group: act2
   title: Археология — по следам Холма
   icon: minecraft:brush
@@ -16,7 +16,7 @@ links:
 quests:
   # ── Полевая работа ──
   - key: brush
-    id: D224CC946496E3DE
+    id: 5224CC946496E3DE
     title: Кисть вместо кирки
     description:
       - Холм говорил, что кирка уничтожает историю, а кисть её открывает. Сделайте железную кисть и расчистите ею что-нибудь.
@@ -77,7 +77,7 @@ quests:
 
   # ── Окаменелости ──
   - key: fossil
-    id: A39CCB33A472D0AD
+    id: 239CCB33A472D0AD
     title: Первая часть древнего существа
     description:
       - В земле с окаменелостями попадаются кости давно вымерших животных. Найдите первую — голову или тело.
@@ -92,7 +92,7 @@ quests:
       - {type: item, item: betterarcheology:fossiliferous_dirt, count: 2}
 
   - key: archeology_table
-    id: C4248A7F0011AAF7
+    id: 44248A7F0011AAF7
     title: Стол археолога
     description:
       - На столе археолога находки разбирают и изучают. Поставьте его — здесь будут рождаться артефакты.
@@ -154,7 +154,7 @@ quests:
       - {type: item, item: betterarcheology:bomb, count: 3}
 
   - key: all_fossils
-    id: F4DBD3E2D7478445
+    id: 74DBD3E2D7478445
     title: Четырнадцать фрагментов прошлого
     description:
       - Соберите головы и тела всех семи окаменелостей — от курицы до стража. Это работа на много вылазок, но и коллекция будет единственной
@@ -167,7 +167,7 @@ quests:
     optional: true
     deps: [unidentified]
     tasks:
-      - {id: 99D79EE77BC0C7C0, type: advancement, advancement: betterarcheology:all_fossils_found}
+      - {id: 19D79EE77BC0C7C0, type: advancement, advancement: betterarcheology:all_fossils_found}
     rewards:
       - {type: xp, xp: 800}
       - {type: item, item: betterarcheology:radiance_totem}
@@ -175,7 +175,7 @@ quests:
 
   # ── Музей ──
   - key: exhibit_chicken
-    id: D97CBEDC468A5108
+    id: 597CBEDC468A5108
     title: Первый экспонат
     description:
       - Соберите из найденных частей и поставьте окаменелость курицы. Музей начинается с первой находки на постаменте, а не с сундука костей.
@@ -190,7 +190,7 @@ quests:
       - {type: item, item: minecraft:lantern, count: 4}
 
   - key: exhibit_creeper
-    id: FCDA95A50F3EBC9F
+    id: 7CDA95A50F3EBC9F
     title: Доисторический крипер
     description:
       - Окаменелый крипер выглядит так же недружелюбно, как живой. Поставьте его рядом с первым экспонатом.
@@ -222,7 +222,7 @@ quests:
       - {type: item, item: minecraft:prismarine_crystals, count: 12}
 
   - key: exhibit_wolf
-    id: 9F662B92CD52ECF4
+    id: 1F662B92CD52ECF4
     title: След древнего хищника
     description:
       - Окаменелый волк — гордость любой коллекции. Поставьте его в центре зала.
@@ -238,7 +238,7 @@ quests:
       - {type: item, item: minecraft:bone_block, count: 8}
 
   - key: museum
-    id: 8F6CAF327167B0A5
+    id: 0F6CAF327167B0A5
     title: Открыть двери музея
     description:
       - Обставьте зал — кафедра для истории раскопок, резная полка для записей экспедиции, ваза и свет. Пусть у находок будет дом.
@@ -251,9 +251,9 @@ quests:
     deps: [exhibit_wolf]
     tasks:
       - {id: 30E6662CF6244C50, type: advancement, advancement: nasledie:alpha41_qa2/museum/1_lectern, title: Кафедра}
-      - {id: D625969196DCC507, type: advancement, advancement: nasledie:alpha41_qa2/museum/2_chiseled_bookshelf, title: Резная книжная полка}
+      - {id: 5625969196DCC507, type: advancement, advancement: nasledie:alpha41_qa2/museum/2_chiseled_bookshelf, title: Резная книжная полка}
       - {id: 326C70EB8D4659DA, type: advancement, advancement: nasledie:alpha41_qa2/museum/3_decorated_pot, title: Украшенная ваза}
-      - {id: AC78608977F9C6B6, type: advancement, advancement: nasledie:alpha41_qa2/museum/4_lantern, title: Фонарь}
+      - {id: 2C78608977F9C6B6, type: advancement, advancement: nasledie:alpha41_qa2/museum/4_lantern, title: Фонарь}
     rewards:
       - {type: xp, xp: 700}
       - {type: item, item: betterarcheology:torrent_totem}
@@ -261,7 +261,7 @@ quests:
 
   # ── Руины и их тайники ──
   - key: buried_ruins
-    id: FBF1AAEFC633EC9F
+    id: 7BF1AAEFC633EC9F
     title: Руины под песком
     description:
       - Пустыня прячет засыпанные дома. Найдите руины и откройте их сундук — песок сохранил его лучше, чем стены.
@@ -294,7 +294,7 @@ quests:
       - {type: item, item: better_weaponry:golden_claymore}
 
   - key: catacombs
-    id: A387D38D6E080261
+    id: 2387D38D6E080261
     title: Катакомбы забытых жителей
     description:
       - Под землёй тянутся коридоры с нишами для мёртвых. В катакомбах есть сундуки — и есть те, кто их сторожит.
@@ -318,7 +318,7 @@ quests:
       - {type: item, item: artifacts:crystal_heart}
 
   - key: mesa_ruins
-    id: 938F14F75C60045E
+    id: 138F14F75C60045E
     title: Руины красной земли
     description:
       - На красных песках стоят остатки древних стен. Найдите их тайник.
@@ -369,7 +369,7 @@ quests:
       - {type: item, item: minecraft:golden_apple, count: 3}
 
   - key: underwater
-    id: 88352D47820D40B4
+    id: 08352D47820D40B4
     title: Последний зал — под водой
     description:
       - Часть древних построек ушла под воду. Найдите затопленные руины и откройте их сундук, не утонув по дороге.
@@ -386,7 +386,7 @@ quests:
       - {type: item, item: artifacts:aqua_dashers}
 
   - key: stonehenge
-    id: C71D778A13B77EBF
+    id: 471D778A13B77EBF
     title: Каменный круг
     description:
       - Огромные камни, поставленные в круг. Зачем — не знал даже Холм. Найдите круг и постойте в центре на закате.
@@ -403,7 +403,7 @@ quests:
       - {type: item, item: minecraft:emerald, count: 16}
 
   - key: villager_grave
-    id: D69937827610767B
+    id: 569937827610767B
     title: Забытая могила жителя
     description:
       - Одинокая могила на пустыре. Чья она — неизвестно. Найдите её; иногда под надгробием есть что-то кроме костей.

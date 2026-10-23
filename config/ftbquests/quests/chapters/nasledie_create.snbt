@@ -1,7 +1,7 @@
 {
 	filename: "nasledie_create"
-	id: "9B72DF3BE0E6A5DE"
-	group: "C513A3C540C2F7E2"
+	id: "1B72DF3BE0E6A5DE"
+	group: "4513A3C540C2F7E2"
 	title: "Мастерская — первые машины"
 	icon: "create:cogwheel"
 	order_index: 9
@@ -67,12 +67,12 @@
 			}]
 			rewards: [
 				{
-					id: "A7276AE699536785"
+					id: "27276AE699536785"
 					type: "xp"
 					xp: 115
 				}
 				{
-					id: "98D597C0354C48DC"
+					id: "18D597C0354C48DC"
 					type: "item"
 					item: {
 						Count: 4b
@@ -142,7 +142,7 @@
 			]
 		}
 		{
-			id: "91C8A76B406CF0AF"
+			id: "11C8A76B406CF0AF"
 			title: "Ветряк для дальней мастерской"
 			description: ["Ветряку не нужна река — только простор и паруса. Соберите его там, где вода далеко."]
 			x: 1.0d
@@ -150,18 +150,18 @@
 			icon: "create:windmill_bearing"
 			dependencies: ["37C2A96BD4EE0C5C"]
 			tasks: [{
-				id: "2B7EF90C6AD3AAA1"
+				id: "18072D681FECB3A2"
 				type: "advancement"
 				advancement: "create:windmill"
 			}]
 			rewards: [
 				{
-					id: "5326A97B18E9C139"
+					id: "7375885F39BB8394"
 					type: "xp"
 					xp: 140
 				}
 				{
-					id: "48501B4A051C539C"
+					id: "7C1D9CEE8377ACDA"
 					type: "item"
 					item: {
 						Count: 16b
@@ -171,7 +171,7 @@
 			]
 		}
 		{
-			id: "B20BCF3BF2BBE521"
+			id: "320BCF3BF2BBE521"
 			title: "Ветер крепчает"
 			description: ["Соберите ветряк максимального размера. Такого хватит на целую улицу станков."]
 			x: 1.5d
@@ -179,20 +179,20 @@
 			icon: "create:white_sail"
 			shape: "star"
 			optional: true
-			dependencies: ["91C8A76B406CF0AF"]
+			dependencies: ["11C8A76B406CF0AF"]
 			tasks: [{
-				id: "EFA0866830A15CDB"
+				id: "3E65A600C86F6F82"
 				type: "advancement"
 				advancement: "create:windmill_maxed"
 			}]
 			rewards: [
 				{
-					id: "3B45A1CD4AC8A032"
+					id: "62DAEB9CDB2B037D"
 					type: "xp"
 					xp: 240
 				}
 				{
-					id: "363362BC7BC96A23"
+					id: "503CF34C1D269FA0"
 					type: "item"
 					item: {
 						Count: 1b
@@ -200,7 +200,7 @@
 					}
 				}
 				{
-					id: "1813F760328E7802"
+					id: "5426330B989F4F5D"
 					type: "item"
 					item: {
 						Count: 4b
@@ -210,7 +210,7 @@
 			]
 		}
 		{
-			id: "F208B2429B83E7D8"
+			id: "7208B2429B83E7D8"
 			title: "Основа станков"
 			description: ["Андезитовый корпус защищает механизмы и превращает вал в аккуратную машину. Обшейте первый блок."]
 			x: 3.5d
@@ -218,18 +218,18 @@
 			icon: "create:andesite_casing"
 			dependencies: ["1D1395D17D6238DB"]
 			tasks: [{
-				id: "CE301230DBED4034"
+				id: "0C0E2608E7B2C67F"
 				type: "advancement"
 				advancement: "create:andesite_casing"
 			}]
 			rewards: [
 				{
-					id: "A854A1A6C8429D8C"
+					id: "4136D29443FF5E1B"
 					type: "xp"
 					xp: 110
 				}
 				{
-					id: "42CB3B4BEE2306D0"
+					id: "6506E89AEFA8E17A"
 					type: "item"
 					item: {
 						Count: 1b
@@ -245,7 +245,7 @@
 			x: 6.0d
 			y: 0.5d
 			icon: "create:mechanical_press"
-			dependencies: ["F208B2429B83E7D8"]
+			dependencies: ["7208B2429B83E7D8"]
 			tasks: [{
 				id: "4B7BF0C3893723DD"
 				type: "advancement"
@@ -253,12 +253,12 @@
 			}]
 			rewards: [
 				{
-					id: "F3BF207FB4864510"
+					id: "73BF207FB4864510"
 					type: "xp"
 					xp: 145
 				}
 				{
-					id: "DFD1F7E02EA3B9C0"
+					id: "5FD1F7E02EA3B9C0"
 					type: "item"
 					item: {
 						Count: 1b
@@ -268,7 +268,7 @@
 			]
 		}
 		{
-			id: "C8C4ECA83D73BF63"
+			id: "48C4ECA83D73BF63"
 			title: "Один пресс — два способа работы"
 			description: ["Поставьте пресс над чашей — он начнёт спрессовывать предметы. Так делают блоки, слитки и прочее «из многого — одно»."]
 			x: 8.5d
@@ -276,18 +276,18 @@
 			icon: "create:basin"
 			dependencies: ["013B127CA07E038A"]
 			tasks: [{
-				id: "8ED1139BCF2C2CF6"
+				id: "273BA82D03EB50BC"
 				type: "advancement"
 				advancement: "create:compacting"
 			}]
 			rewards: [
 				{
-					id: "B6A6DC58789EADAD"
+					id: "32251A34D0FE9082"
 					type: "xp"
 					xp: 145
 				}
 				{
-					id: "3983014AB66D6DAE"
+					id: "6311621EC9699A2E"
 					type: "item"
 					item: {
 						Count: 2b
@@ -297,26 +297,26 @@
 			]
 		}
 		{
-			id: "95DD2AD4CCAA7D90"
+			id: "15DD2AD4CCAA7D90"
 			title: "Жернова для походного хлеба"
 			description: ["Жернова мелют пшеницу в муку и руду в крошку. Первый шаг к хлебной линии."]
 			x: 11.0d
 			y: 1.5d
 			icon: "create:millstone"
-			dependencies: ["C8C4ECA83D73BF63"]
+			dependencies: ["48C4ECA83D73BF63"]
 			tasks: [{
-				id: "1556078A6580C888"
+				id: "41F30B6A0E22F15D"
 				type: "advancement"
 				advancement: "create:millstone"
 			}]
 			rewards: [
 				{
-					id: "2E6A0D2E10333F53"
+					id: "3345FF4C33B313C6"
 					type: "xp"
 					xp: 125
 				}
 				{
-					id: "ED347DE190C6A096"
+					id: "040FBA7DBC91BC2E"
 					type: "item"
 					item: {
 						Count: 1b
@@ -326,26 +326,26 @@
 			]
 		}
 		{
-			id: "82EB3ADD3D2CD6B9"
+			id: "02EB3ADD3D2CD6B9"
 			title: "Вентилятор вместо печи"
 			description: ["Вентилятор, дующий сквозь огонь, печёт всё, что пролетает мимо. Сквозь воду — моет, сквозь лаву — плавит."]
 			x: 13.5d
 			y: 2.0d
 			icon: "create:encased_fan"
-			dependencies: ["95DD2AD4CCAA7D90"]
+			dependencies: ["15DD2AD4CCAA7D90"]
 			tasks: [{
-				id: "0593DD1F48FC05A5"
+				id: "75063F102903D4D3"
 				type: "advancement"
 				advancement: "create:encased_fan"
 			}]
 			rewards: [
 				{
-					id: "B91222E9411F1BE8"
+					id: "7C3AC98FDE7CBA0C"
 					type: "xp"
 					xp: 120
 				}
 				{
-					id: "088FA3C8BA336B9E"
+					id: "36C7065ED2DA985F"
 					type: "item"
 					item: {
 						Count: 1b
@@ -361,15 +361,15 @@
 			x: 16.0d
 			y: 2.5d
 			icon: "minecraft:bread"
-			dependencies: ["82EB3ADD3D2CD6B9"]
+			dependencies: ["02EB3ADD3D2CD6B9"]
 			tasks: [{
-				id: "972B930D57499638"
+				id: "172B930D57499638"
 				type: "advancement"
 				advancement: "create:fan_processing"
 			}]
 			rewards: [
 				{
-					id: "E083D67704E847E4"
+					id: "6083D67704E847E4"
 					type: "xp"
 					xp: 135
 				}
@@ -384,7 +384,7 @@
 			]
 		}
 		{
-			id: "CDAC640579002402"
+			id: "4DAC640579002402"
 			title: "Миксер расширяет ассортимент"
 			description: ["Миксер над чашей смешивает ингредиенты — так получаются тесто, сплавы и сладости."]
 			x: 7.0d
@@ -392,18 +392,18 @@
 			icon: "create:mechanical_mixer"
 			dependencies: ["013B127CA07E038A"]
 			tasks: [{
-				id: "618F8C3FE2A9804C"
+				id: "7924868EFA6D8CE6"
 				type: "advancement"
 				advancement: "create:mechanical_mixer"
 			}]
 			rewards: [
 				{
-					id: "C4D74D31ECBDD3DC"
+					id: "575A4FA983D3D461"
 					type: "xp"
 					xp: 220
 				}
 				{
-					id: "5059CFF503D23E7E"
+					id: "7A72AFF5ABAB6B9C"
 					type: "item"
 					item: {
 						Count: 1b
@@ -419,15 +419,15 @@
 			x: 9.5d
 			y: 4.5d
 			icon: "create:blaze_burner"
-			dependencies: ["CDAC640579002402"]
+			dependencies: ["4DAC640579002402"]
 			tasks: [{
-				id: "DC5AD1CEB841D70E"
+				id: "5C5AD1CEB841D70E"
 				type: "advancement"
 				advancement: "create:burner"
 			}]
 			rewards: [
 				{
-					id: "8D41901AD5CCAE34"
+					id: "0D41901AD5CCAE34"
 					type: "xp"
 					xp: 180
 				}
@@ -442,7 +442,7 @@
 			]
 		}
 		{
-			id: "F7BBC141C944B0BA"
+			id: "77BBC141C944B0BA"
 			title: "Кондитерская выпускает три десерта"
 			description: ["Сделайте на машинах три разных лакомства Create. Пусть мастерская кормит экспедицию."]
 			x: 12.0d
@@ -452,18 +452,18 @@
 			optional: true
 			dependencies: ["49C8A0032E4C0E17"]
 			tasks: [{
-				id: "95F9CA1FEDBBC71E"
+				id: "52A8415C2820AF29"
 				type: "advancement"
 				advancement: "create:foods"
 			}]
 			rewards: [
 				{
-					id: "1F33A0CF0FCFD736"
+					id: "5D4E60E28CF7D1C9"
 					type: "xp"
 					xp: 275
 				}
 				{
-					id: "C298E2B2FA880198"
+					id: "4F534CF124F86F43"
 					type: "item"
 					item: {
 						Count: 1b
@@ -473,7 +473,7 @@
 			]
 		}
 		{
-			id: "EA8154FB9A317740"
+			id: "6A8154FB9A317740"
 			title: "Пила в мастерской"
 			description: ["Механическая пила распиливает брёвна на доски и сама валит деревья, если поставить её на машину."]
 			x: 0.0d
@@ -481,18 +481,18 @@
 			icon: "create:mechanical_saw"
 			dependencies: ["1D1395D17D6238DB"]
 			tasks: [{
-				id: "77F959FB14DC1DCA"
+				id: "570B7FBBE1FFFA98"
 				type: "advancement"
 				advancement: "create:saw_processing"
 			}]
 			rewards: [
 				{
-					id: "BA64A3997ED29141"
+					id: "08649A0D4B2C06FC"
 					type: "xp"
 					xp: 135
 				}
 				{
-					id: "D065404C3EBB56D2"
+					id: "4FD375B0147E6C0F"
 					type: "item"
 					item: {
 						Count: 16b
@@ -502,26 +502,26 @@
 			]
 		}
 		{
-			id: "F68B3CF3BC1979DB"
+			id: "768B3CF3BC1979DB"
 			title: "Дорога для материалов"
 			description: ["Лента перевозит предметы от станка к станку. Протяните первую."]
 			x: -0.5d
 			y: 6.0d
 			icon: "create:belt_connector"
-			dependencies: ["EA8154FB9A317740"]
+			dependencies: ["6A8154FB9A317740"]
 			tasks: [{
-				id: "EFB0044B77420624"
+				id: "7D6BE7B548BBC4AC"
 				type: "advancement"
 				advancement: "create:belt"
 			}]
 			rewards: [
 				{
-					id: "4FCEDA4B17D7FD14"
+					id: "1BED5BB210525C29"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "2558C9349905C6C2"
+					id: "7E41DAAEE4C33891"
 					type: "item"
 					item: {
 						Count: 2b
@@ -537,9 +537,9 @@
 			x: -1.0d
 			y: 8.5d
 			icon: "create:andesite_funnel"
-			dependencies: ["F68B3CF3BC1979DB"]
+			dependencies: ["768B3CF3BC1979DB"]
 			tasks: [{
-				id: "C7C1327BAEB9394E"
+				id: "47C1327BAEB9394E"
 				type: "advancement"
 				advancement: "create:funnel"
 			}]
@@ -576,7 +576,7 @@
 			}]
 			rewards: [
 				{
-					id: "8C76FE8FCA57A587"
+					id: "0C76FE8FCA57A587"
 					type: "xp"
 					xp: 180
 				}
@@ -605,12 +605,12 @@
 			}]
 			rewards: [
 				{
-					id: "9C8D8520DD40EF16"
+					id: "1C8D8520DD40EF16"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "F290942E3EF41969"
+					id: "7290942E3EF41969"
 					type: "item"
 					item: {
 						Count: 4b
@@ -620,7 +620,7 @@
 			]
 		}
 		{
-			id: "CCF5C3CD6FF300E7"
+			id: "4CF5C3CD6FF300E7"
 			title: "Собрать машину воедино"
 			description: ["Суперклей скрепляет блоки в одну подвижную конструкцию. С ним собирают дрели, комбайны и лифты."]
 			x: -2.0d
@@ -628,18 +628,18 @@
 			icon: "create:super_glue"
 			dependencies: ["2EBBB558E1A30F2F"]
 			tasks: [{
-				id: "D4F14882DEE4BE6F"
+				id: "51DD003C04C45F7C"
 				type: "advancement"
 				advancement: "create:super_glue"
 			}]
 			rewards: [
 				{
-					id: "3F8D787F2EEF22FB"
+					id: "45C5073E20633D76"
 					type: "xp"
 					xp: 135
 				}
 				{
-					id: "332B8FC2FF503697"
+					id: "1204814AF06BF19C"
 					type: "item"
 					item: {
 						Count: 1b
@@ -647,7 +647,7 @@
 					}
 				}
 				{
-					id: "EAF482AD2AAD0409"
+					id: "4FF1F5FAC4401E50"
 					type: "item"
 					item: {
 						Count: 1b
@@ -657,26 +657,26 @@
 			]
 		}
 		{
-			id: "8D62D114AA053441"
+			id: "0D62D114AA053441"
 			title: "Машина отправляется на работу"
 			description: ["Поставьте на движущуюся конструкцию бур, плуг или комбайн — и пусть работает, пока вы заняты другим."]
 			x: -2.5d
 			y: 16.0d
 			icon: "create:mechanical_drill"
-			dependencies: ["CCF5C3CD6FF300E7"]
+			dependencies: ["4CF5C3CD6FF300E7"]
 			tasks: [{
-				id: "A06CD7DB30B3DAD1"
+				id: "5517DC51568A26EE"
 				type: "advancement"
 				advancement: "create:contraption_actors"
 			}]
 			rewards: [
 				{
-					id: "4C8817FF0BC99CDB"
+					id: "629E8ABA3354D964"
 					type: "xp"
 					xp: 180
 				}
 				{
-					id: "68D2F46726EA12F2"
+					id: "26655FEB7489AC13"
 					type: "item"
 					item: {
 						Count: 8b
@@ -692,9 +692,9 @@
 			x: -3.0d
 			y: 18.5d
 			icon: "create:portable_storage_interface"
-			dependencies: ["8D62D114AA053441"]
+			dependencies: ["0D62D114AA053441"]
 			tasks: [{
-				id: "FA22F7DC537856F0"
+				id: "7A22F7DC537856F0"
 				type: "advancement"
 				advancement: "create:portable_storage_interface"
 			}]
@@ -725,18 +725,18 @@
 			optional: true
 			dependencies: ["4C3AA9001AA8E8D5"]
 			tasks: [{
-				id: "FE631A1017E07DD8"
+				id: "7E631A1017E07DD8"
 				type: "advancement"
 				advancement: "create:self_deploying"
 			}]
 			rewards: [
 				{
-					id: "B3287B9A2CC6EE47"
+					id: "33287B9A2CC6EE47"
 					type: "xp"
 					xp: 275
 				}
 				{
-					id: "A013004802BB5768"
+					id: "2013004802BB5768"
 					type: "item"
 					item: {
 						Count: 4b
@@ -746,7 +746,7 @@
 			]
 		}
 		{
-			id: "EC70D65F82B2FEF1"
+			id: "6C70D65F82B2FEF1"
 			title: "Работа на расстоянии"
 			description: ["Выдвижная рука достаёт блоки издалека. Строить под потолком станет проще."]
 			x: 2.5d
@@ -754,20 +754,20 @@
 			icon: "create:extendo_grip"
 			shape: "circle"
 			optional: true
-			dependencies: ["EA8154FB9A317740"]
+			dependencies: ["6A8154FB9A317740"]
 			tasks: [{
-				id: "54DFEE1FB430C93F"
+				id: "6349F34708E0EEED"
 				type: "advancement"
 				advancement: "create:extendo_grip"
 			}]
 			rewards: [
 				{
-					id: "5657753E365F650F"
+					id: "56DB7531B2838C75"
 					type: "xp"
 					xp: 210
 				}
 				{
-					id: "C7EED96914948DF5"
+					id: "3D07E9BB54CBA8BA"
 					type: "item"
 					item: {
 						Count: 32b
@@ -785,7 +785,7 @@
 			icon: "create:extendo_grip"
 			shape: "circle"
 			optional: true
-			dependencies: ["EC70D65F82B2FEF1"]
+			dependencies: ["6C70D65F82B2FEF1"]
 			tasks: [{
 				id: "337AB4BCCB1D17F4"
 				type: "advancement"
@@ -798,7 +798,7 @@
 					xp: 225
 				}
 				{
-					id: "A6D5F7ED827BCD80"
+					id: "26D5F7ED827BCD80"
 					type: "item"
 					item: {
 						Count: 1b
@@ -818,18 +818,18 @@
 			optional: true
 			dependencies: ["549B77B92B0AFF7C"]
 			tasks: [{
-				id: "DF9D8C4B4BB45F0B"
+				id: "5F9D8C4B4BB45F0B"
 				type: "advancement"
 				advancement: "create:potato_cannon_collide"
 			}]
 			rewards: [
 				{
-					id: "D3D798CDA490E41E"
+					id: "53D798CDA490E41E"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "FBB79A375F9E9B61"
+					id: "7BB79A375F9E9B61"
 					type: "item"
 					item: {
 						Count: 32b
@@ -839,7 +839,7 @@
 			]
 		}
 		{
-			id: "8F58E4E6C70518FE"
+			id: "0F58E4E6C70518FE"
 			title: "Медь для трубопровода"
 			description: ["Медный корпус — основа всего, что связано с жидкостями. Обшейте первый блок."]
 			x: -3.5d
@@ -847,18 +847,18 @@
 			icon: "create:copper_casing"
 			dependencies: ["1D1395D17D6238DB"]
 			tasks: [{
-				id: "2B50F37CF71DDD12"
+				id: "60CE8BF1224442CB"
 				type: "advancement"
 				advancement: "create:copper_casing"
 			}]
 			rewards: [
 				{
-					id: "A13F83873D7D41F9"
+					id: "3FF5042D899AA3E7"
 					type: "xp"
 					xp: 120
 				}
 				{
-					id: "7BFE406610113982"
+					id: "2CC48718EB4F7DEF"
 					type: "item"
 					item: {
 						Count: 16b
@@ -868,26 +868,26 @@
 			]
 		}
 		{
-			id: "F7E2465288E575FF"
+			id: "77E2465288E575FF"
 			title: "Насос доставляет жидкость"
 			description: ["Механический насос гонит воду, лаву и мёд по трубам. Направление потока — по стрелке."]
 			x: -6.0d
 			y: -0.5d
 			icon: "create:mechanical_pump"
-			dependencies: ["8F58E4E6C70518FE"]
+			dependencies: ["0F58E4E6C70518FE"]
 			tasks: [{
-				id: "58317C85B655BCF4"
+				id: "37CCC981DBA21A57"
 				type: "advancement"
 				advancement: "create:mechanical_pump_0"
 			}]
 			rewards: [
 				{
-					id: "682E451E6EF6CF9F"
+					id: "52762AE9C959A221"
 					type: "xp"
 					xp: 165
 				}
 				{
-					id: "DA25657F9CB03BC7"
+					id: "21D9AAF897DDCE94"
 					type: "item"
 					item: {
 						Count: 4b
@@ -897,26 +897,26 @@
 			]
 		}
 		{
-			id: "93F9199B68F09FF2"
+			id: "13F9199B68F09FF2"
 			title: "Дозатор завершает рецепт"
 			description: ["Дозатор наливает жидкость прямо в предмет — заполняет бутылки, поливает торты, делает зелья."]
 			x: -8.5d
 			y: -1.0d
 			icon: "create:spout"
-			dependencies: ["F7E2465288E575FF"]
+			dependencies: ["77E2465288E575FF"]
 			tasks: [{
-				id: "E42572D550EA390A"
+				id: "4AF3F458C1059530"
 				type: "advancement"
 				advancement: "create:spout"
 			}]
 			rewards: [
 				{
-					id: "390EA02D527736A8"
+					id: "07B06C5128A9314A"
 					type: "xp"
 					xp: 175
 				}
 				{
-					id: "74A0C8B26F6DBDAE"
+					id: "4CAE92228170410B"
 					type: "item"
 					item: {
 						Count: 4b
@@ -932,20 +932,20 @@
 			x: -11.0d
 			y: -1.5d
 			icon: "create:item_drain"
-			dependencies: ["93F9199B68F09FF2"]
+			dependencies: ["13F9199B68F09FF2"]
 			tasks: [{
-				id: "F04B367DEF779CB8"
+				id: "704B367DEF779CB8"
 				type: "advancement"
 				advancement: "create:drain"
 			}]
 			rewards: [
 				{
-					id: "E49029B5DF520409"
+					id: "649029B5DF520409"
 					type: "xp"
 					xp: 155
 				}
 				{
-					id: "88010519060DD84E"
+					id: "08010519060DD84E"
 					type: "item"
 					item: {
 						Count: 1b
@@ -971,7 +971,7 @@
 			}]
 			rewards: [
 				{
-					id: "D8417A4E479963D6"
+					id: "58417A4E479963D6"
 					type: "xp"
 					xp: 300
 				}
@@ -986,7 +986,7 @@
 			]
 		}
 		{
-			id: "82858847B7756EBF"
+			id: "02858847B7756EBF"
 			title: "Горячий шоколад"
 			description: ["Шоколад в Create — жидкость. Наберите ведро шоколада. Максим, это для дела, не для тебя."]
 			x: -7.5d
@@ -994,20 +994,20 @@
 			icon: "create:chocolate_bucket"
 			shape: "circle"
 			optional: true
-			dependencies: ["93F9199B68F09FF2"]
+			dependencies: ["13F9199B68F09FF2"]
 			tasks: [{
-				id: "DFE39E85C0686B97"
+				id: "318EBC3D864F8906"
 				type: "advancement"
 				advancement: "create:chocolate_bucket"
 			}]
 			rewards: [
 				{
-					id: "F5BD5C3FDAC567D0"
+					id: "4477EB89BAC68D8A"
 					type: "xp"
 					xp: 160
 				}
 				{
-					id: "78CE0E61917492D4"
+					id: "10B0715EE5D294F1"
 					type: "item"
 					item: {
 						Count: 4b
@@ -1027,13 +1027,13 @@
 			optional: true
 			dependencies: ["053070B7D8792A37"]
 			tasks: [{
-				id: "8F10D5F88550BCF9"
+				id: "0F10D5F88550BCF9"
 				type: "advancement"
 				advancement: "create:honey_drain"
 			}]
 			rewards: [
 				{
-					id: "C77FC74D16371323"
+					id: "477FC74D16371323"
 					type: "xp"
 					xp: 220
 				}
@@ -1058,18 +1058,18 @@
 			optional: true
 			dependencies: ["1DCEBEFB5C85037B"]
 			tasks: [{
-				id: "A55BEBAEB33B9F59"
+				id: "255BEBAEB33B9F59"
 				type: "advancement"
 				advancement: "create:cross_streams"
 			}]
 			rewards: [
 				{
-					id: "964C73B681B808E5"
+					id: "164C73B681B808E5"
 					type: "xp"
 					xp: 225
 				}
 				{
-					id: "8980A18D5402DB47"
+					id: "0980A18D5402DB47"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1089,7 +1089,7 @@
 			optional: true
 			dependencies: ["18ED8A27D511509E"]
 			tasks: [{
-				id: "EA6E430E336732E2"
+				id: "6A6E430E336732E2"
 				type: "advancement"
 				advancement: "create:diving_suit_lava"
 			}]
@@ -1100,7 +1100,7 @@
 					xp: 400
 				}
 				{
-					id: "EB881284A2BBB308"
+					id: "6B881284A2BBB308"
 					type: "item"
 					item: {
 						Count: 2b

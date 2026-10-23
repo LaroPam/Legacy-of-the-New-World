@@ -119,6 +119,10 @@ def integrity(parsed):
         ident = str(entity.get("id", ""))
         if not re.fullmatch(r"[0-9A-Fa-f]{16}", ident):
             errors.append(problem("id_format", location, "Missing or malformed 16-digit hexadecimal ID", id=ident, category=category))
+        elif not 2 <= int(ident, 16) < 1 << 63:
+            # FTB Quests 2001 parses IDs with the signed Long.parseLong(hex, 16): an ID with the top bit set is
+            # replaced by a random one at every load (progress and dependencies lost), in a quest link it crashes.
+            errors.append(problem("id_unreadable", location, "FTB Quests reads only IDs 0000000000000002..7FFFFFFFFFFFFFFF", id=ident, category=category))
         # Hexadecimal case must not create two identities for the same number.
         key = ident.upper()
         if key in seen:

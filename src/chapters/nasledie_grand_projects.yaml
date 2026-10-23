@@ -13,7 +13,7 @@ chapter:
 
 quests:
   - key: chief_engineer
-    id: FD0417DEF7F45B46
+    id: 7D0417DEF7F45B46
     title: Пульт главного инженера
     description:
       - Большая база начинается с понимания, сколько силы у вас есть. Поставьте измеритель нагрузки и посмотрите на сеть в инженерных очках.
@@ -61,7 +61,7 @@ quests:
       - {type: item, item: createdeco:industrial_iron_catwalk, count: 4}
 
   - key: stock_ticker
-    id: C32715AF6479C057
+    id: 432715AF6479C057
     title: Заказ через складскую стойку
     description:
       - Складская стойка принимает заказы — выберите, что нужно, и склад сам соберёт посылку.
@@ -76,7 +76,7 @@ quests:
       - {type: item, item: sophisticatedstorage:advanced_compacting_upgrade}
 
   - key: frogport
-    id: 9401D666941DF3EB
+    id: 1401D666941DF3EB
     title: Посылка сходит с цепного конвейера
     description:
       - Лягушка-порт ловит посылки с цепного конвейера и отправляет свои. Протяните цепь между цехами.
@@ -91,7 +91,7 @@ quests:
       - {type: item, item: create:chain_conveyor, count: 4}
 
   - key: factory_gauge
-    id: 9B721B53DDC184D8
+    id: 1B721B53DDC184D8
     title: Склад сам просит пополнения
     description:
       - Заводской датчик следит за запасом и сам заказывает недостающее. Мастерская думает за вас.
@@ -108,7 +108,7 @@ quests:
       - {type: item, item: sophisticatedstorage:advanced_alchemy_upgrade}
 
   - key: package_throw
-    id: E7F2853B8418F46D
+    id: 67F2853B8418F46D
     title: Посылка с точным попаданием
     description:
       - Пусть желоб швырнёт посылку прямо в цель. Трёхочковый!
@@ -125,7 +125,7 @@ quests:
       - {type: item, item: create:stockpile_switch, count: 2}
 
   - key: cardboard_armor
-    id: EAD9E4891242F10A
+    id: 6AD9E4891242F10A
     title: Вся мастерская меня не видит
     description:
       - Наденьте полный комплект картонной брони и спрячьтесь среди коробок. Юра, ты где?
@@ -143,7 +143,7 @@ quests:
 
   # ── Автоматизация ──
   - key: linked_controller
-    id: F24A5CA9571CE25A
+    id: 724A5CA9571CE25A
     title: Пульт для мастерской
     description:
       - Связанный пульт управляет механизмами по радио. Ворота, лифты и пушки — всё с одной руки.
@@ -173,7 +173,7 @@ quests:
       - {type: item, item: createdieselgenerators:large_diesel_engine}
 
   - key: arm_burner
-    id: C3F2CF43CEF0F671
+    id: 43F2CF43CEF0F671
     title: Горелка получает топливо сама
     description:
       - Пусть механическая рука сама подкладывает топливо в горелку. Больше никаких походов за углём.
@@ -205,7 +205,7 @@ quests:
       - {type: item, item: copycats:copycat_block, count: 16}
 
   - key: ejector
-    id: D21A9F7F45B8BAA3
+    id: 521A9F7F45B8BAA3
     title: Юра летит дальше тридцати
     description:
       - Катапульта Create бросает предметы — и людей. Отправьте Юру в полёт на тридцать блоков. Максим поймает. Наверное.
@@ -223,7 +223,7 @@ quests:
 
   # ── Площадь ──
   - key: clockwork
-    id: A54DE6FD7E31FCAD
+    id: 254DE6FD7E31FCAD
     title: Часы для площади
     description:
       - Часовой подшипник крутит стрелки по настоящему игровому времени. Поставьте часы на ратушу.
@@ -268,7 +268,7 @@ quests:
       - {type: item, item: createdeco:blue_brass_lamp, count: 4}
 
   - key: haunted_bell
-    id: ADF4DE4021A4DDD2
+    id: 2DF4DE4021A4DDD2
     title: Колокол с другой стороны
     description:
       - Проклятый колокол показывает, где ночью появятся монстры. Жутко, но полезно для обороны.
@@ -298,7 +298,7 @@ quests:
       - {type: item, item: minecraft:music_disc_pigstep}
 
   - key: pipe_organ
-    id: D1E72065750CAA2D
+    id: 51E72065750CAA2D
     title: Орган для вашей площади
     description:
       - Соберите из свистков настоящий орган. Сыграйте что-нибудь торжественное — база заслужила.
@@ -332,7 +332,7 @@ quests:
       - {type: item, item: create:copper_diving_boots}
 
   - key: pulley_maxed
-    id: 9310EF94F77C64F4
+    id: 1310EF94F77C64F4
     title: Спуск глубже двухсот блоков
     description:
       - Растяните верёвочный блок на максимальную длину. Лифт в самую глубокую шахту готов.

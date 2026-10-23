@@ -10,7 +10,7 @@
 	progression_mode: "flexible"
 	quest_links: [
 		{
-			id: "C6AD06DD157BC6F9"
+			id: "46AD06DD157BC6F9"
 			linked_quest: "3E03C21C1C3001DF"
 			x: 15.34d
 			y: -10.35d
@@ -18,8 +18,8 @@
 			size: 1.7d
 		}
 		{
-			id: "E3CC3F3ADA92B6E9"
-			linked_quest: "FED39CE9F2148371"
+			id: "63CC3F3ADA92B6E9"
+			linked_quest: "7ED39CE9F2148371"
 			x: 14.97d
 			y: 10.87d
 			shape: "heart"
@@ -34,7 +34,7 @@
 			size: 1.7d
 		}
 		{
-			id: "CA331B4F5CD4A24F"
+			id: "4A331B4F5CD4A24F"
 			linked_quest: "2A2A1ECDD23269E9"
 			x: -13.31d
 			y: 4.33d
@@ -44,7 +44,7 @@
 	]
 	quests: [
 		{
-			id: "E5CDBE2CB81CBFFC"
+			id: "65CDBE2CB81CBFFC"
 			title: "Табличка зовёт под землю"
 			description: ["В подземных хижинах лежат пещерные таблички с рисунками далёких глубин. Найдите одну — с неё начинается путь вниз."]
 			x: -3.0d
@@ -52,18 +52,18 @@
 			icon: "alexscaves:cave_tablet"
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
-				id: "51AD2E243FC0FE42"
+				id: "34790D23F2650AA5"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/cave_tablet"
 			}]
 			rewards: [
 				{
-					id: "D0BB73763777D9A8"
+					id: "6DF6BA07A8EF9AAA"
 					type: "xp"
 					xp: 120
 				}
 				{
-					id: "75BEDEB4F3AC89FC"
+					id: "186059FD170022D1"
 					type: "item"
 					item: {
 						Count: 16b
@@ -73,26 +73,26 @@
 			]
 		}
 		{
-			id: "8B88E55204890F85"
+			id: "0B88E55204890F85"
 			title: "Прочитать древнюю табличку"
 			description: ["Переведите табличку на столе спелеолога. Письмена старше любой деревни — возможно, их писали Зодчие."]
 			x: -1.75d
 			y: -3.03d
 			icon: "alexscaves:cave_codex"
-			dependencies: ["E5CDBE2CB81CBFFC"]
+			dependencies: ["65CDBE2CB81CBFFC"]
 			tasks: [{
-				id: "C50A3F8E3A620068"
+				id: "189CCB34674EC1FC"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/cave_codex"
 			}]
 			rewards: [
 				{
-					id: "D87ABD780625056A"
+					id: "6D35C26D7B97C3E5"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "2D5EC830417BEC13"
+					id: "1AAC24ABA8DB661B"
 					type: "item"
 					item: {
 						Count: 4b
@@ -110,15 +110,15 @@
 			icon: "alexscaves:cave_map"
 			shape: "star"
 			size: 2.0d
-			dependencies: ["8B88E55204890F85"]
+			dependencies: ["0B88E55204890F85"]
 			tasks: [{
-				id: "F17DDA5FCEC007AA"
+				id: "717DDA5FCEC007AA"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/cave_map"
 			}]
 			rewards: [
 				{
-					id: "C8C97D3F844E6A44"
+					id: "48C97D3F844E6A44"
 					type: "xp"
 					xp: 200
 				}
@@ -140,7 +140,7 @@
 			y: -7.36d
 			icon: "alexscaves:cave_book"
 			optional: true
-			dependencies: ["E5CDBE2CB81CBFFC"]
+			dependencies: ["65CDBE2CB81CBFFC"]
 			tasks: [{
 				id: "2CE2DE397F801F1C"
 				type: "advancement"
@@ -148,12 +148,12 @@
 			}]
 			rewards: [
 				{
-					id: "9A87A97941C40CF1"
+					id: "1A87A97941C40CF1"
 					type: "xp"
 					xp: 120
 				}
 				{
-					id: "895A2F38F6CB766E"
+					id: "095A2F38F6CB766E"
 					type: "item"
 					item: {
 						Count: 1b
@@ -163,7 +163,7 @@
 			]
 		}
 		{
-			id: "E9BA2C6E0A89756A"
+			id: "69BA2C6E0A89756A"
 			title: "Атлас шести глубин"
 			description: ["Побывайте во всех шести затерянных мирах. Таких атласов не было даже у Линд."]
 			x: -3.0d
@@ -175,37 +175,37 @@
 			dependencies: ["1E0319E7396C1AF2"]
 			tasks: [
 				{
-					id: "DFB9AFE00F72A43B"
+					id: "2EE611F3FC616EF5"
 					type: "advancement"
 					advancement: "alexscaves:alexscaves/discover_magnetic_caves"
 					title: "Магнитные пещеры"
 				}
 				{
-					id: "7CA4736BD07497D9"
+					id: "6156F92FEDDD98B3"
 					type: "advancement"
 					advancement: "alexscaves:alexscaves/discover_primordial_caves"
 					title: "Первобытные пещеры"
 				}
 				{
-					id: "FC5A2EB89E0C02AD"
+					id: "7E72F574EB0A79D5"
 					type: "advancement"
 					advancement: "alexscaves:alexscaves/discover_toxic_caves"
 					title: "Токсичные пещеры"
 				}
 				{
-					id: "CDD42EDA3CF1AB8B"
+					id: "0C2B2191A26E4229"
 					type: "advancement"
 					advancement: "alexscaves:alexscaves/discover_abyssal_chasm"
 					title: "Бездонная расщелина"
 				}
 				{
-					id: "A5C74C2551387BE7"
+					id: "15A6D9C737CA6768"
 					type: "advancement"
 					advancement: "alexscaves:alexscaves/discover_forlorn_hollows"
 					title: "Заброшенные пустоты"
 				}
 				{
-					id: "33F78B85409E90E5"
+					id: "48DAF48ABF8D14FA"
 					type: "advancement"
 					advancement: "alexscaves:alexscaves/discover_candy_cavity"
 					title: "Конфетный котлован"
@@ -213,12 +213,12 @@
 			]
 			rewards: [
 				{
-					id: "9D35233E40E48A81"
+					id: "042C6C00A5B04748"
 					type: "xp"
 					xp: 1100
 				}
 				{
-					id: "C05828C685DBB580"
+					id: "64EEF52347CA6A36"
 					type: "item"
 					item: {
 						Count: 1b
@@ -236,7 +236,7 @@
 			icon: "alexscaves:azure_magnet"
 			dependencies: ["1E0319E7396C1AF2"]
 			tasks: [{
-				id: "B0A8B68DCE23D907"
+				id: "30A8B68DCE23D907"
 				type: "biome"
 				biome: "alexscaves:magnetic_caves"
 			}]
@@ -247,7 +247,7 @@
 					xp: 150
 				}
 				{
-					id: "B39B2483DF326A8E"
+					id: "339B2483DF326A8E"
 					type: "item"
 					item: {
 						Count: 12b
@@ -265,7 +265,7 @@
 			icon: "alexscaves:raw_azure_neodymium"
 			dependencies: ["60D9315769C4E578"]
 			tasks: [{
-				id: "8EDE2736E74130F5"
+				id: "0EDE2736E74130F5"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/neodymium"
 			}]
@@ -276,7 +276,7 @@
 					xp: 200
 				}
 				{
-					id: "C3D03DFBD2A4CEF5"
+					id: "43D03DFBD2A4CEF5"
 					type: "item"
 					item: {
 						Count: 1b
@@ -295,18 +295,18 @@
 			shape: "shield"
 			dependencies: ["5EEE4A0183E3245F"]
 			tasks: [{
-				id: "BCE1C2F86724695E"
+				id: "3CE1C2F86724695E"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/defeat_magnetron"
 			}]
 			rewards: [
 				{
-					id: "876191AB14711FB1"
+					id: "076191AB14711FB1"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "CA54E62F074517FC"
+					id: "4A54E62F074517FC"
 					type: "item"
 					item: {
 						Count: 16b
@@ -316,7 +316,7 @@
 			]
 		}
 		{
-			id: "FCE22E10D39BCA44"
+			id: "7CE22E10D39BCA44"
 			title: "Страж на тяжёлой цепи"
 			description: ["Связиборг висит на цепи и бьёт сверху. Победите его."]
 			x: 0.0d
@@ -325,18 +325,18 @@
 			shape: "shield"
 			dependencies: ["054E760F5D9B1153"]
 			tasks: [{
-				id: "7492D553C8B7D139"
+				id: "174608F80780BF72"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/defeat_boundroid"
 			}]
 			rewards: [
 				{
-					id: "2761755F186E1550"
+					id: "20241F8F55FCCB87"
 					type: "xp"
 					xp: 350
 				}
 				{
-					id: "4A0970D6312CE1E7"
+					id: "6918A4ED3CC6591F"
 					type: "item"
 					item: {
 						Count: 16b
@@ -354,9 +354,9 @@
 			icon: "alexscaves:quarry"
 			shape: "star"
 			optional: true
-			dependencies: ["FCE22E10D39BCA44"]
+			dependencies: ["7CE22E10D39BCA44"]
 			tasks: [{
-				id: "C1B69760B3710196"
+				id: "41B69760B3710196"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/finished_quarry"
 			}]
@@ -367,7 +367,7 @@
 					xp: 450
 				}
 				{
-					id: "BED383007E5CB5BA"
+					id: "3ED383007E5CB5BA"
 					type: "item"
 					item: {
 						Count: 6b
@@ -377,7 +377,7 @@
 			]
 		}
 		{
-			id: "FD6B3DB0A377F701"
+			id: "7D6B3DB0A377F701"
 			title: "Магнитный удар издалека"
 			description: ["Галенитовая перчатка бросает металл как снаряд. Сразите ею моба с двадцати блоков."]
 			x: 2.25d
@@ -386,18 +386,18 @@
 			optional: true
 			dependencies: ["054E760F5D9B1153"]
 			tasks: [{
-				id: "65DD4A850B519DF0"
+				id: "6DA7BB6B8AA9093D"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/galena_gauntlet_challenge"
 			}]
 			rewards: [
 				{
-					id: "2E9C565414EEE3C6"
+					id: "1885D202B519ACD9"
 					type: "xp"
 					xp: 380
 				}
 				{
-					id: "8D8517D8BBABAF78"
+					id: "46B40D7CD1EB0027"
 					type: "item"
 					item: {
 						Count: 4b
@@ -416,7 +416,7 @@
 			optional: true
 			dependencies: ["5EEE4A0183E3245F"]
 			tasks: [{
-				id: "E6096497F1E2E4DC"
+				id: "66096497F1E2E4DC"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/defeat_notor"
 			}]
@@ -437,7 +437,7 @@
 			]
 		}
 		{
-			id: "A682A9C8CBE99BB1"
+			id: "2682A9C8CBE99BB1"
 			title: "Мир, забывший о времени"
 			description: ["Под землёй живут динозавры, а над ними светит подземное солнце. Спуститесь в первобытные пещеры."]
 			x: 3.03d
@@ -445,18 +445,18 @@
 			icon: "alexscaves:tree_star"
 			dependencies: ["1E0319E7396C1AF2"]
 			tasks: [{
-				id: "50C30C55619AFD4E"
+				id: "5BBD980C17B21F9C"
 				type: "biome"
 				biome: "alexscaves:primordial_caves"
 			}]
 			rewards: [
 				{
-					id: "EF5A5378622425DE"
+					id: "4C1C1B6EB515ED5C"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "4F73E57D6C2600F3"
+					id: "1800A02904580A62"
 					type: "item"
 					item: {
 						Count: 8b
@@ -466,26 +466,26 @@
 			]
 		}
 		{
-			id: "B658222BC6AAB8B9"
+			id: "3658222BC6AAB8B9"
 			title: "Крылья первобытной пещеры"
 			description: ["Подтерранодон любит хвосты трилокарисов. Приручите его — и летайте под каменным небом."]
 			x: 5.2d
 			y: -3.0d
 			icon: "alexscaves:subterranodon_egg"
-			dependencies: ["A682A9C8CBE99BB1"]
+			dependencies: ["2682A9C8CBE99BB1"]
 			tasks: [{
-				id: "A5C1DB837786F730"
+				id: "7D45D23E806DA371"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/tame_subterranodon"
 			}]
 			rewards: [
 				{
-					id: "FE7FA89DB4A873D5"
+					id: "666315A384B51294"
 					type: "xp"
 					xp: 280
 				}
 				{
-					id: "83A71E58F739D88C"
+					id: "13B0D318C6B8D00A"
 					type: "item"
 					item: {
 						Count: 2b
@@ -501,10 +501,10 @@
 			x: 7.36d
 			y: -4.25d
 			icon: "minecraft:spyglass"
-			dependencies: ["B658222BC6AAB8B9"]
+			dependencies: ["3658222BC6AAB8B9"]
 			tasks: [
 				{
-					id: "DF3898035B55ACD5"
+					id: "5F3898035B55ACD5"
 					type: "advancement"
 					advancement: "nasledie:alpha39/caves/paleo_fieldwork"
 					title: "Гротоцератопс"
@@ -529,7 +529,7 @@
 					xp: 300
 				}
 				{
-					id: "F54128983D09DD73"
+					id: "754128983D09DD73"
 					type: "item"
 					item: {
 						Count: 6b
@@ -553,7 +553,7 @@
 			}]
 			rewards: [
 				{
-					id: "C2908296867B0FF3"
+					id: "42908296867B0FF3"
 					type: "xp"
 					xp: 380
 				}
@@ -568,7 +568,7 @@
 			]
 		}
 		{
-			id: "FDF8F9FB47383497"
+			id: "7DF8F9FB47383497"
 			title: "Союз с грозой пещер"
 			description: ["Оглушите сотрясозавра и накормите салатом спокойствия. Самый страшный хищник глубин станет вашим."]
 			x: 11.69d
@@ -577,18 +577,18 @@
 			shape: "star"
 			dependencies: ["7727FFA6871B87B6"]
 			tasks: [{
-				id: "3A5E3003E8B186BC"
+				id: "61F8D7610ED1BE8F"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/tame_tremorsaurus"
 			}]
 			rewards: [
 				{
-					id: "A158B24129551124"
+					id: "7E4BAF5DDDB59940"
 					type: "xp"
 					xp: 530
 				}
 				{
-					id: "AD0DAC773D09F53E"
+					id: "5F1F35E519BD4656"
 					type: "item"
 					item: {
 						Count: 3b
@@ -605,9 +605,9 @@
 			y: -8.0d
 			icon: "alexscaves:ominous_catalyst"
 			shape: "shield"
-			dependencies: ["FDF8F9FB47383497"]
+			dependencies: ["7DF8F9FB47383497"]
 			tasks: [{
-				id: "E707288D5257F559"
+				id: "6707288D5257F559"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/summon_luxtructosaurus"
 			}]
@@ -618,7 +618,7 @@
 					xp: 400
 				}
 				{
-					id: "A89791EFE5399B76"
+					id: "289791EFE5399B76"
 					type: "item"
 					item: {
 						Count: 3b
@@ -638,9 +638,9 @@
 			y: -5.75d
 			icon: "alexscaves:atlatitan_egg"
 			optional: true
-			dependencies: ["B658222BC6AAB8B9"]
+			dependencies: ["3658222BC6AAB8B9"]
 			tasks: [{
-				id: "AB1942230940A48F"
+				id: "2B1942230940A48F"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/atlatitan_stomp"
 			}]
@@ -651,7 +651,7 @@
 					xp: 340
 				}
 				{
-					id: "EE34EE630AFC17BC"
+					id: "6E34EE630AFC17BC"
 					type: "item"
 					item: {
 						Count: 6b
@@ -682,7 +682,7 @@
 					xp: 600
 				}
 				{
-					id: "86C2030BCC62A6D3"
+					id: "06C2030BCC62A6D3"
 					type: "item"
 					item: {
 						Count: 4b
@@ -692,7 +692,7 @@
 			]
 		}
 		{
-			id: "C54CEAEDCFA1F140"
+			id: "454CEAEDCFA1F140"
 			title: "Лаборатория токсичных глубин"
 			description: ["Кислотные озёра, ржавые бочки и радиация. Кто-то здесь уже экспериментировал. Спуститесь — в защите."]
 			x: 3.03d
@@ -700,18 +700,18 @@
 			icon: "alexscaves:uranium"
 			dependencies: ["1E0319E7396C1AF2"]
 			tasks: [{
-				id: "3F448A577B13880C"
+				id: "3B7C3AF28D82BF74"
 				type: "biome"
 				biome: "alexscaves:toxic_caves"
 			}]
 			rewards: [
 				{
-					id: "D544F8102C8C5455"
+					id: "746CC7F8E7EA50B6"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "5CDA03435662A96D"
+					id: "05BBD37C9C99A74F"
 					type: "item"
 					item: {
 						Count: 1b
@@ -721,26 +721,26 @@
 			]
 		}
 		{
-			id: "CD890C4519D39302"
+			id: "4D890C4519D39302"
 			title: "Кислота меняет металл"
 			description: ["Металлолом рядом с кислотой ржавеет на глазах. Окислите блок."]
 			x: 5.2d
 			y: 3.0d
 			icon: "alexscaves:metal_swarf"
-			dependencies: ["C54CEAEDCFA1F140"]
+			dependencies: ["454CEAEDCFA1F140"]
 			tasks: [{
-				id: "D2A9551F32A4918E"
+				id: "4F878814452808FB"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/acid_create_rust"
 			}]
 			rewards: [
 				{
-					id: "CAC5901302582D2A"
+					id: "207326F9A94CF962"
 					type: "xp"
 					xp: 250
 				}
 				{
-					id: "0D6828A95587A5FA"
+					id: "78E33F1F2527E8E8"
 					type: "item"
 					item: {
 						Count: 2b
@@ -756,9 +756,9 @@
 			x: 7.36d
 			y: 4.25d
 			icon: "alexscaves:hazmat_chestplate"
-			dependencies: ["CD890C4519D39302"]
+			dependencies: ["4D890C4519D39302"]
 			tasks: [{
-				id: "B2E207B32E391C5E"
+				id: "32E207B32E391C5E"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/enter_acid_with_armor"
 			}]
@@ -769,7 +769,7 @@
 					xp: 330
 				}
 				{
-					id: "D44796AC840A4812"
+					id: "544796AC840A4812"
 					type: "item"
 					item: {
 						Count: 1b
@@ -779,7 +779,7 @@
 			]
 		}
 		{
-			id: "A070AFC86412D9CF"
+			id: "2070AFC86412D9CF"
 			title: "Спутник против радиации"
 			description: ["Лучекот любит радиабров и вычищает радиацию из хозяина. Приручите его — пригодится."]
 			x: 9.53d
@@ -787,18 +787,18 @@
 			icon: "alexscaves:radgill"
 			dependencies: ["28820C6F7944A6F3"]
 			tasks: [{
-				id: "A57212208AC965D8"
+				id: "089CE126A99516D0"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/tame_raycat"
 			}]
 			rewards: [
 				{
-					id: "6F239FC97A45D99D"
+					id: "2A0C35B0397419A6"
 					type: "xp"
 					xp: 345
 				}
 				{
-					id: "301FA21AC36D4ED0"
+					id: "188719770054DB44"
 					type: "item"
 					item: {
 						Count: 1b
@@ -808,27 +808,27 @@
 			]
 		}
 		{
-			id: "9FCD3892785E34CA"
+			id: "1FCD3892785E34CA"
 			title: "Остановить ядрипера"
 			description: ["Ядрипер — крипер с ядерным зарядом. Победите его до того, как над пещерой вырастет гриб."]
 			x: 11.69d
 			y: 6.75d
 			icon: "alexscaves:nuclear_bomb"
 			shape: "shield"
-			dependencies: ["A070AFC86412D9CF"]
+			dependencies: ["2070AFC86412D9CF"]
 			tasks: [{
-				id: "51D3DA98DD64501F"
+				id: "49214D3FA18B5523"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/defeat_nucleeper"
 			}]
 			rewards: [
 				{
-					id: "04BB61662D5479A2"
+					id: "0E5C80B0CD4FC79B"
 					type: "xp"
 					xp: 480
 				}
 				{
-					id: "59289B3FC07FA1C9"
+					id: "10FF12574E575537"
 					type: "item"
 					item: {
 						Count: 1b
@@ -845,15 +845,15 @@
 			y: 8.84d
 			icon: "alexscaves:nuclear_furnace_component"
 			optional: true
-			dependencies: ["A070AFC86412D9CF"]
+			dependencies: ["2070AFC86412D9CF"]
 			tasks: [{
-				id: "CF41008479988E7C"
+				id: "4F41008479988E7C"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/stop_nuclear_furnace_meltdown"
 			}]
 			rewards: [
 				{
-					id: "B33953B9EC670E04"
+					id: "333953B9EC670E04"
 					type: "xp"
 					xp: 600
 				}
@@ -868,7 +868,7 @@
 			]
 		}
 		{
-			id: "AC100A1C72C67C78"
+			id: "2C100A1C72C67C78"
 			title: "Красный провод"
 			description: ["Обезвредьте ядерную бомбу ножницами. Какой провод резать — решайте вместе. Быстро."]
 			x: 10.61d
@@ -877,18 +877,18 @@
 			optional: true
 			dependencies: ["35A20348AABD6323"]
 			tasks: [{
-				id: "DB428EF5750192AE"
+				id: "12935C5A2FECD8ED"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/defuse_nuclear_bomb"
 			}]
 			rewards: [
 				{
-					id: "E988C301A79FCA7C"
+					id: "7FFA514D8E395B30"
 					type: "xp"
 					xp: 700
 				}
 				{
-					id: "5967F55D495F491C"
+					id: "63B3FEC71E0BE993"
 					type: "item"
 					item: {
 						Count: 1b
@@ -906,7 +906,7 @@
 			icon: "minecraft:saddle"
 			shape: "heart"
 			optional: true
-			dependencies: ["AC100A1C72C67C78"]
+			dependencies: ["2C100A1C72C67C78"]
 			tasks: [{
 				id: "74CDCC5E260A20DA"
 				type: "advancement"
@@ -919,7 +919,7 @@
 					xp: 320
 				}
 				{
-					id: "AE5D86B5D924C27E"
+					id: "2E5D86B5D924C27E"
 					type: "item"
 					item: {
 						Count: 1b
@@ -936,9 +936,9 @@
 			y: 8.0d
 			icon: "alexscaves:tremorzilla_egg"
 			shape: "star"
-			dependencies: ["9FCD3892785E34CA"]
+			dependencies: ["1FCD3892785E34CA"]
 			tasks: [{
-				id: "AE09EE14DB45EDFA"
+				id: "2E09EE14DB45EDFA"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/hatch_tremorzilla_egg"
 			}]
@@ -949,7 +949,7 @@
 					xp: 460
 				}
 				{
-					id: "B8302862D650FB63"
+					id: "38302862D650FB63"
 					type: "item"
 					item: {
 						Count: 2b
@@ -959,7 +959,7 @@
 			]
 		}
 		{
-			id: "A6AF0FFF36488B07"
+			id: "26AF0FFF36488B07"
 			title: "Один луч — двадцать чудовищ"
 			description: ["Верхом на сотрясозилле сожгите двадцать монстров одним лучом. Король монстров на вашей стороне."]
 			x: 16.99d
@@ -967,20 +967,20 @@
 			icon: "minecraft:beacon"
 			shape: "star"
 			optional: true
-			dependencies: ["FED39CE9F2148371"]
+			dependencies: ["7ED39CE9F2148371"]
 			tasks: [{
-				id: "6F76830BCC2D101A"
+				id: "6B9F282682CFA925"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/tremorzilla_kill_beam"
 			}]
 			rewards: [
 				{
-					id: "736CBEAC965EE232"
+					id: "0FD94925C40FE665"
 					type: "xp"
 					xp: 800
 				}
 				{
-					id: "AD16C13B9D5A8F2A"
+					id: "6E97B54582F3DB6B"
 					type: "item"
 					item: {
 						Count: 2b
@@ -990,7 +990,7 @@
 			]
 		}
 		{
-			id: "EF811CDE1BFBABE2"
+			id: "6F811CDE1BFBABE2"
 			title: "У входа в бездну"
 			description: ["Под океаном открывается расщелина без дна, где живут глубинники. Спуститесь — с поплавком и запасом воздуха."]
 			x: 0.0d
@@ -998,18 +998,18 @@
 			icon: "alexscaves:diving_helmet"
 			dependencies: ["1E0319E7396C1AF2"]
 			tasks: [{
-				id: "EE66C9487D204797"
+				id: "1AE0F93310922352"
 				type: "biome"
 				biome: "alexscaves:abyssal_chasm"
 			}]
 			rewards: [
 				{
-					id: "A7A7944518AC572A"
+					id: "5B1ABB79DF4412DC"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "8AF012D71A71EE42"
+					id: "4D453815A00BE958"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1019,26 +1019,26 @@
 			]
 		}
 		{
-			id: "FF39C1FF3A9C0C7E"
+			id: "7F39C1FF3A9C0C7E"
 			title: "Медь для подводного корпуса"
 			description: ["Субмарина — лучший способ ходить по дну бездны. Почините её медью."]
 			x: 0.0d
 			y: 6.0d
 			icon: "minecraft:copper_ingot"
-			dependencies: ["EF811CDE1BFBABE2"]
+			dependencies: ["6F811CDE1BFBABE2"]
 			tasks: [{
-				id: "CCC6A3BD39EC0A6E"
+				id: "58F537302AB79F36"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/repair_submarine"
 			}]
 			rewards: [
 				{
-					id: "2945AD8C67531330"
+					id: "5A95B04D1A5C30D3"
 					type: "xp"
 					xp: 330
 				}
 				{
-					id: "5611EB4BD99ED7E1"
+					id: "305FFFDC1DE063C4"
 					type: "item"
 					item: {
 						Count: 8b
@@ -1048,26 +1048,26 @@
 			]
 		}
 		{
-			id: "CF6FFE76F5F9E33C"
+			id: "4F6FFE76F5F9E33C"
 			title: "Место капитана подлодки"
 			description: ["Займите место капитана и опуститесь на дно. Юра — штурман."]
 			x: 0.0d
 			y: 8.5d
 			icon: "alexscaves:submarine"
-			dependencies: ["FF39C1FF3A9C0C7E"]
+			dependencies: ["7F39C1FF3A9C0C7E"]
 			tasks: [{
-				id: "ED6BBD9201F6A76E"
+				id: "14ABE59CF4BC9C4A"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/ride_submarine"
 			}]
 			rewards: [
 				{
-					id: "C8224FA3A165DF26"
+					id: "6819522FD639537A"
 					type: "xp"
 					xp: 260
 				}
 				{
-					id: "D91AE3CF69AD8104"
+					id: "28E027EFE0282FB4"
 					type: "item"
 					item: {
 						Count: 6b
@@ -1077,26 +1077,26 @@
 			]
 		}
 		{
-			id: "DD30229DC0039862"
+			id: "5D30229DC0039862"
 			title: "Воздух в затонувших руинах"
 			description: ["В бездне есть место, где можно дышать, — руины глубинников. Найдите их."]
 			x: 0.0d
 			y: 11.0d
 			icon: "alexscaves:abyssmarine"
-			dependencies: ["CF6FFE76F5F9E33C"]
+			dependencies: ["4F6FFE76F5F9E33C"]
 			tasks: [{
-				id: "D10EF4AEBA245E7B"
+				id: "7E9C11DA98F6BB93"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/discover_abyssal_ruins"
 			}]
 			rewards: [
 				{
-					id: "F890FD6683078959"
+					id: "5F5C83E7F8FD9418"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "756DFA3D134CDC3F"
+					id: "38ABDDED245A004E"
 					type: "item"
 					item: {
 						Count: 2b
@@ -1112,9 +1112,9 @@
 			x: 0.0d
 			y: 13.5d
 			icon: "alexscaves:pearl"
-			dependencies: ["DD30229DC0039862"]
+			dependencies: ["5D30229DC0039862"]
 			tasks: [{
-				id: "FAEF56F6FEF0C917"
+				id: "7AEF56F6FEF0C917"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/trade_with_deep_one"
 			}]
@@ -1135,7 +1135,7 @@
 			]
 		}
 		{
-			id: "F83BDD5302CAB271"
+			id: "783BDD5302CAB271"
 			title: "Глубинники перестали бояться"
 			description: ["Торгуйте с глубинниками раз за разом, пока они не перестанут прятаться при виде вас."]
 			x: 0.0d
@@ -1143,18 +1143,18 @@
 			icon: "alexscaves:marine_snow"
 			dependencies: ["20BB4BB6D059B828"]
 			tasks: [{
-				id: "CF3E3BD2902597A9"
+				id: "3932BE39A65403CF"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/deep_ones_become_neutral"
 			}]
 			rewards: [
 				{
-					id: "8E47AD522C1A5C88"
+					id: "082C88A15BDA7759"
 					type: "xp"
 					xp: 350
 				}
 				{
-					id: "D8CF35CD4A97AE39"
+					id: "25799997D8292252"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1164,7 +1164,7 @@
 			]
 		}
 		{
-			id: "835B28BFA782D516"
+			id: "035B28BFA782D516"
 			title: "Союзники Бездонной расщелины"
 			description: ["Заслужите такое доверие глубинников, что они придут на помощь в бою."]
 			x: 0.0d
@@ -1172,20 +1172,20 @@
 			icon: "alexscaves:abyssal_altar"
 			shape: "star"
 			optional: true
-			dependencies: ["F83BDD5302CAB271"]
+			dependencies: ["783BDD5302CAB271"]
 			tasks: [{
-				id: "8FABF2AB00559769"
+				id: "15408319ACBBF2EC"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/deep_ones_become_helpful"
 			}]
 			rewards: [
 				{
-					id: "5EE4A9C9332BD838"
+					id: "51CE885646DB5D07"
 					type: "xp"
 					xp: 500
 				}
 				{
-					id: "5A5333DFECDED89E"
+					id: "5D932E84BFCB1829"
 					type: "item"
 					item: {
 						Count: 4b
@@ -1202,7 +1202,7 @@
 			y: 6.33d
 			icon: "minecraft:ender_eye"
 			optional: true
-			dependencies: ["EF811CDE1BFBABE2"]
+			dependencies: ["6F811CDE1BFBABE2"]
 			tasks: [{
 				id: "0950449A830A2F70"
 				type: "advancement"
@@ -1210,12 +1210,12 @@
 			}]
 			rewards: [
 				{
-					id: "AD2E017935D11773"
+					id: "2D2E017935D11773"
 					type: "xp"
 					xp: 295
 				}
 				{
-					id: "96A124ECD871A6FE"
+					id: "16A124ECD871A6FE"
 					type: "item"
 					item: {
 						Count: 3b
@@ -1236,7 +1236,7 @@
 			icon: "alexscaves:depth_charge"
 			shape: "shield"
 			optional: true
-			dependencies: ["CF6FFE76F5F9E33C"]
+			dependencies: ["4F6FFE76F5F9E33C"]
 			tasks: [{
 				id: "287BDB4F72F9677A"
 				type: "advancement"
@@ -1244,12 +1244,12 @@
 			}]
 			rewards: [
 				{
-					id: "C06163339638FE42"
+					id: "406163339638FE42"
 					type: "xp"
 					xp: 440
 				}
 				{
-					id: "D4E2E1B35AF3E960"
+					id: "54E2E1B35AF3E960"
 					type: "item"
 					item: {
 						Count: 4b
@@ -1259,7 +1259,7 @@
 			]
 		}
 		{
-			id: "E64ED6625A930A36"
+			id: "664ED6625A930A36"
 			title: "Коридоры забытого мрака"
 			description: ["Тёмные пустоты, где живут подзектанты и злые мотыльки. Ингрид Берг ушла сюда и не вернулась. Спуститесь за ней."]
 			x: -3.03d
@@ -1267,18 +1267,18 @@
 			icon: "alexscaves:dark_tatters"
 			dependencies: ["1E0319E7396C1AF2"]
 			tasks: [{
-				id: "45F3C95015133698"
+				id: "57758EF258CD59FF"
 				type: "biome"
 				biome: "alexscaves:forlorn_hollows"
 			}]
 			rewards: [
 				{
-					id: "93F25FCCC4ED05B9"
+					id: "0F86778E9CB7FD8C"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "8DF262C36803975D"
+					id: "614AAB19F0622871"
 					type: "item"
 					item: {
 						Count: 16b
@@ -1288,26 +1288,26 @@
 			]
 		}
 		{
-			id: "F204791E23CFF9E5"
+			id: "7204791E23CFF9E5"
 			title: "Мотылёк сумрачных полостей"
 			description: ["Злотыльки летят на свет и кусаются. Сбейте одного."]
 			x: -5.2d
 			y: 3.0d
 			icon: "alexscaves:moth_ball"
-			dependencies: ["E64ED6625A930A36"]
+			dependencies: ["664ED6625A930A36"]
 			tasks: [{
-				id: "9638E487181F1CA8"
+				id: "40FC92DB519354D4"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/defeat_gloomoth"
 			}]
 			rewards: [
 				{
-					id: "FEA60DEF7A9AC9AA"
+					id: "368342921B28E144"
 					type: "xp"
 					xp: 260
 				}
 				{
-					id: "3FF2A6F51EDBF741"
+					id: "296240969EF8135C"
 					type: "item"
 					item: {
 						Count: 4b
@@ -1317,26 +1317,26 @@
 			]
 		}
 		{
-			id: "C23DDD9DAAD5EAB7"
+			id: "423DDD9DAAD5EAB7"
 			title: "Увидеть запретный ритуал"
 			description: ["Подзектанты приносят жертвы тьме. Станьте свидетелями ритуала — так же, как Берг."]
 			x: -7.36d
 			y: 4.25d
 			icon: "alexscaves:desolate_dagger"
-			dependencies: ["F204791E23CFF9E5"]
+			dependencies: ["7204791E23CFF9E5"]
 			tasks: [{
-				id: "52BFBF0BEF111DB5"
+				id: "5DBB0EDB5F29E748"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/underzealot_sacrifice"
 			}]
 			rewards: [
 				{
-					id: "1343370D574A4290"
+					id: "1039F553A43D3006"
 					type: "xp"
 					xp: 350
 				}
 				{
-					id: "3B8C47547178A527"
+					id: "30DE1A3A85A61657"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1353,7 +1353,7 @@
 			y: 5.5d
 			icon: "minecraft:ender_eye"
 			shape: "shield"
-			dependencies: ["C23DDD9DAAD5EAB7"]
+			dependencies: ["423DDD9DAAD5EAB7"]
 			tasks: [{
 				id: "436372463286196E"
 				type: "advancement"
@@ -1361,7 +1361,7 @@
 			}]
 			rewards: [
 				{
-					id: "CCEB80DD8A7C6A62"
+					id: "4CEB80DD8A7C6A62"
 					type: "xp"
 					xp: 420
 				}
@@ -1385,13 +1385,13 @@
 			optional: true
 			dependencies: ["1C4B8279C22D289B"]
 			tasks: [{
-				id: "9118F13F4B801E6C"
+				id: "1118F13F4B801E6C"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/eat_darkened_apple"
 			}]
 			rewards: [
 				{
-					id: "D9C5FFD663D4A20C"
+					id: "59C5FFD663D4A20C"
 					type: "xp"
 					xp: 330
 				}
@@ -1414,7 +1414,7 @@
 			icon: "alexscaves:candy_cane"
 			dependencies: ["1E0319E7396C1AF2"]
 			tasks: [{
-				id: "D7D8564C230F7A45"
+				id: "57D8564C230F7A45"
 				type: "biome"
 				biome: "alexscaves:candy_cavity"
 			}]
@@ -1454,7 +1454,7 @@
 					xp: 120
 				}
 				{
-					id: "ECF19F66EB150BE8"
+					id: "6CF19F66EB150BE8"
 					type: "item"
 					item: {
 						Count: 8b
@@ -1472,13 +1472,13 @@
 			icon: "alexscaves:caramel_apple"
 			dependencies: ["2C50224379627B14"]
 			tasks: [{
-				id: "C0138D9E6602FC92"
+				id: "40138D9E6602FC92"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/caramel_apple"
 			}]
 			rewards: [
 				{
-					id: "BD534C48FD777078"
+					id: "3D534C48FD777078"
 					type: "xp"
 					xp: 150
 				}
@@ -1493,7 +1493,7 @@
 			]
 		}
 		{
-			id: "A9FDA172CB9A8629"
+			id: "29FDA172CB9A8629"
 			title: "Сладкий скакун"
 			description: ["Приручите леденорога карамельными яблоками. Радуга прилагается."]
 			x: -9.53d
@@ -1501,18 +1501,18 @@
 			icon: "alexscaves:gummy_ring_pink"
 			dependencies: ["66097831A964FDD6"]
 			tasks: [{
-				id: "CCD791F51A1B5E92"
+				id: "58960C52187E72F7"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/tame_candicorn"
 			}]
 			rewards: [
 				{
-					id: "9223808EEC280AE7"
+					id: "43EFC61214755600"
 					type: "xp"
 					xp: 330
 				}
 				{
-					id: "9B913ACA3272C80D"
+					id: "1BB2CB3D6FC427AC"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1528,7 +1528,7 @@
 			x: -11.69d
 			y: -6.75d
 			icon: "alexscaves:gingerbread_block"
-			dependencies: ["A9FDA172CB9A8629"]
+			dependencies: ["29FDA172CB9A8629"]
 			tasks: [{
 				id: "2EE5C83BF9D8CFAB"
 				type: "advancement"
@@ -1541,7 +1541,7 @@
 					xp: 340
 				}
 				{
-					id: "BEDF938A98ED0F65"
+					id: "3EDF938A98ED0F65"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1551,7 +1551,7 @@
 			]
 		}
 		{
-			id: "D1155DEF31997ADB"
+			id: "51155DEF31997ADB"
 			title: "Башня на лакричном дереве"
 			description: ["На вершине огромного конфетного корня стоит башня конфедьмы. Поднимитесь к ней."]
 			x: -13.86d
@@ -1559,18 +1559,18 @@
 			icon: "alexscaves:licoroot"
 			dependencies: ["1BE92C03BDBB686A"]
 			tasks: [{
-				id: "55B40CB5D674D2CB"
+				id: "2A68E852F8ABD46A"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/licowitch_tower"
 			}]
 			rewards: [
 				{
-					id: "8660239D386B5A4D"
+					id: "6050625FC2FE8FCA"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "C4BDB6A77C81A8B9"
+					id: "3FB62A7E4CDFD926"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1580,27 +1580,27 @@
 			]
 		}
 		{
-			id: "F169B6525412B860"
+			id: "7169B6525412B860"
 			title: "Всадник сладкой бури"
 			description: ["Зацепите мармеладного червя двумя леденцовыми крюками и правьте им. Самая сладкая поездка в мире."]
 			x: -16.02d
 			y: -9.25d
 			icon: "alexscaves:candy_cane_hook"
 			shape: "star"
-			dependencies: ["D1155DEF31997ADB"]
+			dependencies: ["51155DEF31997ADB"]
 			tasks: [{
-				id: "10E7E95EDB96AC60"
+				id: "31AD93945E7C3502"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/ride_gum_worm"
 			}]
 			rewards: [
 				{
-					id: "B294B96CCA9393FE"
+					id: "52E485B72FBC9E1B"
 					type: "xp"
 					xp: 450
 				}
 				{
-					id: "1594697B00CE8E8D"
+					id: "2C6E87BA50B5AB26"
 					type: "item"
 					item: {
 						Count: 4b
@@ -1618,7 +1618,7 @@
 			icon: "alexscaves:shot_gum"
 			shape: "shield"
 			optional: true
-			dependencies: ["F169B6525412B860"]
+			dependencies: ["7169B6525412B860"]
 			tasks: [{
 				id: "07E5016FF5757B03"
 				type: "advancement"
@@ -1626,12 +1626,12 @@
 			}]
 			rewards: [
 				{
-					id: "F19326FC3F06511B"
+					id: "719326FC3F06511B"
 					type: "xp"
 					xp: 440
 				}
 				{
-					id: "84230539590FA362"
+					id: "04230539590FA362"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1650,7 +1650,7 @@
 			optional: true
 			dependencies: ["338E0B562BF293D5"]
 			tasks: [{
-				id: "B16246C5FD39ED13"
+				id: "316246C5FD39ED13"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/frostmint_explosion"
 			}]
@@ -1661,7 +1661,7 @@
 					xp: 350
 				}
 				{
-					id: "E9DD8A949323A842"
+					id: "69DD8A949323A842"
 					type: "item"
 					item: {
 						Count: 2b
@@ -1681,18 +1681,18 @@
 			optional: true
 			dependencies: ["338E0B562BF293D5"]
 			tasks: [{
-				id: "CAE0019452B56E2D"
+				id: "4AE0019452B56E2D"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/eat_block_of_chocolate"
 			}]
 			rewards: [
 				{
-					id: "FEAE262A4A0A4E1A"
+					id: "7EAE262A4A0A4E1A"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "A2B9401146D451BD"
+					id: "22B9401146D451BD"
 					type: "item"
 					item: {
 						Count: 2b

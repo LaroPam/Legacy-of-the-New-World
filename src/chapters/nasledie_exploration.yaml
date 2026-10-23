@@ -120,7 +120,7 @@ quests:
 
   # ── Под землёй ──
   - key: mineshaft
-    id: F17A293356CD1404
+    id: 717A293356CD1404
     title: Заброшенная шахта
     description:
       - Старые шахты тянутся под землёй на сотни метров. Найдите одну — в любом биоме они выглядят по-своему.
@@ -184,7 +184,7 @@ quests:
       - {type: item, item: minecraft:ender_pearl, count: 4}
 
   - key: frosted_dungeon
-    id: C580A1C9022BB90F
+    id: 4580A1C9022BB90F
     title: Морозное подземелье
     description:
       - Подо льдом скрыто подземелье, где холод держит своих стражей. Тёплая одежда здесь не роскошь.
@@ -278,7 +278,7 @@ quests:
 
   # ── Чудеса нового мира ──
   - key: skylands
-    id: E6DC4A843BE1C287
+    id: 66DC4A843BE1C287
     title: Острова в небе
     description:
       - Где-то над землёй висят острова с лесами и водопадами. Доберитесь до них — по лестнице, на крыльях или на самолёте.
@@ -312,7 +312,7 @@ quests:
       - {type: item, item: minecraft:nautilus_shell, count: 2}
 
   - key: emerald_peaks
-    id: A91583B5B92C22EB
+    id: 291583B5B92C22EB
     title: Изумрудные пики
     description:
       - Горы, где изумруды выходят прямо на склоны. Красиво, высоко и очень холодно.
@@ -329,7 +329,7 @@ quests:
       - {type: item, item: minecraft:emerald, count: 6}
 
   - key: glacial_chasm
-    id: CD62103DCF8B4FDA
+    id: 4D62103DCF8B4FDA
     title: Ледниковый разлом
     description:
       - Трещина в леднике уходит глубоко вниз. Спуститесь, если хватит тёплой одежды и смелости.
@@ -428,7 +428,7 @@ quests:
 
   # ── Подземелья YUNG ──
   - key: small_dungeon
-    id: 898102A102A9739A
+    id: 098102A102A9739A
     title: Первое подземелье
     description:
       - Под землёй прячутся маленькие подземелья с клетками-спаунерами и сундуками. Найдите первое.
@@ -478,7 +478,7 @@ quests:
       - {type: item, item: minecraft:golden_apple}
 
   - key: skeleton_dungeon
-    id: 93EA4AC90BB6F5E7
+    id: 13EA4AC90BB6F5E7
     title: Крепость нежити
     description:
       - Подземная крепость скелетов-стрелков. Щит в руки — и вперёд.
