@@ -181,6 +181,17 @@ class Screen:
             return Image.new('RGB', SCREEN, BG)
         return Image.open(self.root / 'kubejs/assets' / ns / path).convert('RGB').resize(SCREEN, Image.BILINEAR)
 
+    def texture(self, value):
+        """A theme texture like ftbquests:textures/gui/dependency.png from kubejs or the FTB Quests JAR."""
+        ns, _, path = value.split(';')[0].strip().partition(':')
+        local = self.root / 'kubejs/assets' / ns / path
+        if local.exists():
+            return Image.open(local).convert('RGBA')
+        entry = f'assets/{ns}/{path}'
+        if self.ftbq and entry in self.ftbq.namelist():
+            return Image.open(io.BytesIO(self.ftbq.read(entry))).convert('RGBA')
+        return Image.new('RGBA', (1, 1), (255, 255, 255, 255))
+
     def shape(self, name, part):
         if (name, part) not in self.shapes:
             local = self.root / f'kubejs/assets/ftbquests/textures/shapes/{name}/{part}.png'
@@ -197,10 +208,26 @@ class Screen:
 
 def tinted(image, color, size, alpha=255):
     """ImageIcon.withColor: multiply the texture by a colour, then scale it to the button."""
-    image = image.resize((size, size), Image.BILINEAR)
+    if size:
+        image = image.resize((size, size), Image.BILINEAR)
     r, g, b, a = image.split()
     channels = [c.point(lambda v, k=k: v * k // 255) for c, k in zip((r, g, b), color)]
     return Image.merge('RGBA', (*channels, a.point(lambda v: v * alpha // 255)))
+
+
+def line_strip(texture, start, end, width, color):
+    """A dependency line as FTB draws it: one texture width per two line widths along it, v across it."""
+    import math
+    length = math.dist(start, end)
+    tile = texture.resize((max(1, round(2 * width)), max(1, round(width))), Image.BILINEAR)
+    strip = Image.new('RGBA', (max(1, round(length)), tile.height))
+    for x in range(0, strip.width, tile.width):
+        strip.paste(tile, (x, 0))
+    strip = tinted(strip, color[:3], None, color[3] if len(color) > 3 else 255)
+    angle = math.degrees(math.atan2(end[1] - start[1], end[0] - start[0]))
+    strip = strip.rotate(-angle, resample=Image.BICUBIC, expand=True)
+    middle = ((start[0] + end[0]) / 2, (start[1] + end[1]) / 2)
+    return strip, (round(middle[0] - strip.width / 2), round(middle[1] - strip.height / 2))
 
 
 def progress(quests, ids, name):
@@ -245,9 +272,11 @@ def render_screen(name, data, ids, icons, out, every, screen):
 
     image = screen.background(chapter_id).convert('RGBA')
     state = progress(quests, ids, name)
-    lines = Image.new('RGBA', SCREEN, (0, 0, 0, 0))
-    draw = ImageDraw.Draw(lines)
-    width = max(1, round(zoom * float(screen.prop(chapter_id, 'dependency_line_thickness') or 0.17) * 0.75 * GUI_SCALE))
+    hi = 2  # lines are drawn at double resolution and scaled down, like a smooth GPU quad
+    lines = Image.new('RGBA', (SCREEN[0] * hi, SCREEN[1] * hi), (0, 0, 0, 0))
+    texture = screen.texture(screen.prop(chapter_id, 'dependency_line_texture') or 'ftbquests:textures/gui/dependency.png')
+    thickness = float(screen.prop(chapter_id, 'dependency_line_thickness') or 0.17)
+    width = zoom * thickness * 0.75 * GUI_SCALE * hi
     for ident, node in nodes.items():
         quest = every[ident]
         if quest.get('hide_dependency_lines'):
@@ -257,8 +286,11 @@ def render_screen(name, data, ids, icons, out, every, screen):
             if other:
                 done = state.get(questbook.dependency(dep, quest['_chapter'], ids)) == 'completed'
                 key = 'dependency_line_completed_color' if done else 'dependency_line_uncompleted_color'
-                color = tuple(int(c * 0.75) for c in screen.color(chapter_id, key))  # dependency.png averages ~3/4
-                draw.line([pos(other), pos(node)], fill=color + (255,), width=width)
+                a, b = pos(other), pos(node)
+                strip, at = line_strip(texture, (a[0] * hi, a[1] * hi), (b[0] * hi, b[1] * hi), width,
+                                       screen.color(chapter_id, key) + (255,))
+                lines.alpha_composite(strip, (max(at[0], 0), max(at[1], 0)), (max(-at[0], 0), max(-at[1], 0)))
+    lines = lines.resize(SCREEN, Image.LANCZOS)
     image.alpha_composite(lines)
 
     default_shape = data['chapter'].get('default_quest_shape', 'circle')
@@ -275,7 +307,7 @@ def render_screen(name, data, ids, icons, out, every, screen):
             image.alpha_composite(tinted(screen.shape(kind, 'outline'), color, size), corner)
         icon = icons.get(quest.get('icon', ''))
         if icon:
-            side = round(size * 2 / 3)
+            side = round(size * 2 / 3 * float(quest.get('icon_scale', 1)))
             image.alpha_composite(icon.resize((side, side), Image.NEAREST), (round(x - side / 2), round(y - side / 2)))
     caption = ImageDraw.Draw(image)
     caption.text((12, SCREEN[1] - 24), f"{data['chapter']['title']} — zoom {zoom}, GUI 3, 1920x1080",
