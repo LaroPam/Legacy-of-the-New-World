@@ -19,6 +19,9 @@ COLORS = (*STATES, 'dependency_line_completed_color',
           'dependency_line_required_for_color', 'quest_view_border', 'quest_view_title',
           'tasks_text_color', 'rewards_text_color',
           'selected_chapter_highlight_1', 'selected_chapter_highlight_2')
+# Chapters with smooth curves (tools/curves.py, chapter images) hide FTB's straight lines; FTB still draws them on
+# hover in these two colours, so the theme makes them transparent there. The palette keeps the colours for the curves.
+CURVE_LINES = ('dependency_line_completed_color', 'dependency_line_uncompleted_color')
 TEXTURE = re.compile(r'([a-z0-9_.-]+):(textures/[a-z0-9_./-]+\.png)')
 
 
@@ -87,12 +90,19 @@ def render(design, chapters):
         raise ValueError('Palette chapter filenames do not match current chapters')
     lines = ['// Generated from reviews/chapter_palettes.json',
              '// FTB Quests 2001.4.22: [*] is required before global properties.', '[*]']
-    lines += [f'{key}: {value}' for key, value in design['global'].items()]
+    def curved(name):
+        return bool(chapters[name].get('images')) and bool(chapters[name].get('default_hide_dependency_lines'))
+
+    def value(key, colour, hidden):
+        return '#00' + colour.lstrip('#')[-6:] if hidden and key in CURVE_LINES else colour
+
+    everywhere = all(curved(name) for name in chapters)
+    lines += [f'{key}: {value(key, v, everywhere)}' for key, v in design['global'].items()]
     for name, entry in design['chapters'].items():
         if entry['id'] != chapters[name]['id']:
             raise ValueError(f'Palette targets a different chapter ID: {name}')
         lines += ['', '// ' + name + ' — ' + entry['name'], '[' + entry['id'] + ']']
-        lines += [f'{key}: {value}' for key, value in entry['properties'].items()]
+        lines += [f'{key}: {value(key, v, curved(name))}' for key, v in entry['properties'].items()]
         if 'background' in entry:
             lines.append(f"background: {entry['background']}")
     text = '\n'.join(lines) + '\n'

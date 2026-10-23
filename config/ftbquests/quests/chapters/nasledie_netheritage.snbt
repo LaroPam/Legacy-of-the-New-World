@@ -5,16 +5,233 @@
 	title: "Нижний мир — огонь и черепа"
 	icon: "minecraft:wither_skeleton_skull"
 	order_index: 8
-	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
+	default_hide_dependency_lines: true
+	default_quest_shape: "step"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: 7.3056d
+			y: -1.5d
+			width: 18.5989d
+			height: 15.792d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/base.png"
+			color: 16728607
+			alpha: 255
+			order: -2
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/031cd896cbc3b75d.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "031CD896CBC3B75D"
+		}
+		{
+			x: 10.5d
+			y: 4.0d
+			width: 4.042d
+			height: 2.867d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/057308b8365632f8.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "057308B8365632F8"
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			width: 4.042d
+			height: 7.567d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/060ba736ef32e9f5.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "060BA736EF32E9F5"
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/1657c7068a9f33b4.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "1657C7068A9F33B4"
+		}
+		{
+			x: 4.5d
+			y: -2.7667d
+			width: 4.042d
+			height: 1.0653d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/29d440bf0b39fbfa.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "29D440BF0B39FBFA"
+		}
+		{
+			x: 12.0d
+			y: -1.25d
+			width: 7.567d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/3433e7faf2f51b45.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "3433E7FAF2F51B45"
+		}
+		{
+			x: 7.5d
+			y: -1.2974d
+			width: 4.042d
+			height: 3.5659d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/3d03e0efd6fa3386.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "3D03E0EFD6FA3386"
+		}
+		{
+			x: 7.5d
+			y: -8.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/43bfb23bb3de07a6.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "43BFB23BB3DE07A6"
+		}
+		{
+			x: 7.5d
+			y: 2.8706d
+			width: 4.042d
+			height: 0.8212d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/63f2ce1b298ff952.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "63F2CE1B298FF952"
+		}
+		{
+			x: 13.5d
+			y: 1.25d
+			width: 4.042d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/641d15990fe74505.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "641D15990FE74505"
+		}
+		{
+			x: 5.8056d
+			y: -4.25d
+			width: 0.9739d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/66955f8a5da7600d.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "66955F8A5DA7600D"
+		}
+		{
+			x: -0.1944d
+			y: -6.75d
+			width: 0.9739d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/6b5133ed763e8fec.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "6B5133ED763E8FEC"
+		}
+		{
+			x: 10.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/6fb70b1de8310b79.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "6FB70B1DE8310B79"
+		}
+		{
+			x: 1.5d
+			y: -8.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/70decf35c46f0180.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "70DECF35C46F0180"
+		}
+		{
+			x: 7.5d
+			y: -5.5d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/74193582fa970ad9.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "74193582FA970AD9"
+		}
+		{
+			x: 4.5d
+			y: -8.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/79e3ff74b36fc7e6.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "79E3FF74B36FC7E6"
+		}
+		{
+			x: 0.0d
+			y: -4.25d
+			width: 0.517d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/netheritage/7dc38ad8ef13ed6b.png"
+			color: 16755354
+			alpha: 255
+			order: -1
+			dependency: "7DC38AD8EF13ED6B"
+		}
+	]
 	quest_links: [
 		{
 			id: "334F9230767F52DF"
 			linked_quest: "3433E7FAF2F51B45"
 			x: 9.0d
 			y: -2.5d
-			shape: "star"
+			shape: "milestone"
 			size: 1.4d
 		}
 		{
@@ -22,7 +239,7 @@
 			linked_quest: "08304673F4543996"
 			x: 15.0d
 			y: 0.0d
-			shape: "crown"
+			shape: "boss"
 			size: 1.6d
 		}
 	]
@@ -34,7 +251,8 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "minecraft:obsidian"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			size: 1.4d
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
@@ -60,6 +278,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "1F3B94588E4D3BF0"
@@ -68,7 +287,8 @@
 			x: 0.0d
 			y: 3.0d
 			icon: "cold_sweat:soulspring_lamp"
-			shape: "gear"
+			icon_scale: 0.6d
+			shape: "tech"
 			dependencies: ["060BA736EF32E9F5"]
 			tasks: [{
 				id: "438AE08839BEF3E3"
@@ -90,6 +310,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "1657C7068A9F33B4"
@@ -98,7 +319,8 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:nether_bricks"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["060BA736EF32E9F5"]
 			tasks: [{
 				id: "6D1AAA671982F01C"
@@ -120,6 +342,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "3D03E0EFD6FA3386"
@@ -128,7 +351,8 @@
 			x: 6.0d
 			y: 0.0d
 			icon: "minecraft:blaze_rod"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			dependencies: ["1657C7068A9F33B4"]
 			tasks: [{
 				id: "70CD00CF2B50D889"
@@ -150,6 +374,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "6FB70B1DE8310B79"
@@ -158,7 +383,8 @@
 			x: 9.0d
 			y: 0.0d
 			icon: "minecraft:stone_sword"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			dependencies: ["3D03E0EFD6FA3386"]
 			tasks: [{
 				id: "72BAA1AFF23E4479"
@@ -181,6 +407,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "641D15990FE74505"
@@ -189,7 +416,8 @@
 			x: 12.0d
 			y: 0.0d
 			icon: "minecraft:wither_skeleton_skull"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			dependencies: ["6FB70B1DE8310B79"]
 			tasks: [{
 				id: "240A85B3C39B6050"
@@ -217,6 +445,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "16246ABD1F6A02BF"
@@ -225,7 +454,8 @@
 			x: 12.0d
 			y: 2.5d
 			icon: "minecraft:magma_cream"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			optional: true
 			dependencies: ["641D15990FE74505"]
 			tasks: [
@@ -257,6 +487,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "29D440BF0B39FBFA"
@@ -265,7 +496,8 @@
 			x: 3.0d
 			y: -3.0d
 			icon: "minecraft:golden_axe"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			dependencies: ["060BA736EF32E9F5"]
 			tasks: [{
 				id: "55D24E7EDBAD6D60"
@@ -288,6 +520,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "66955F8A5DA7600D"
@@ -296,7 +529,8 @@
 			x: 6.0d
 			y: -3.0d
 			icon: "minecraft:gilded_blackstone"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			dependencies: ["29D440BF0B39FBFA"]
 			tasks: [{
 				id: "58E18B70F544E3AE"
@@ -318,6 +552,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "74193582FA970AD9"
@@ -326,7 +561,8 @@
 			x: 6.0d
 			y: -5.5d
 			icon: "minecraft:gold_block"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			optional: true
 			dependencies: ["66955F8A5DA7600D"]
 			tasks: [{
@@ -349,6 +585,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "4688FB928B33933F"
@@ -357,7 +594,8 @@
 			x: 9.0d
 			y: -5.5d
 			icon: "minecraft:cooked_porkchop"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			optional: true
 			dependencies: ["74193582FA970AD9"]
 			tasks: [{
@@ -380,6 +618,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "031CD896CBC3B75D"
@@ -388,7 +627,8 @@
 			x: 3.0d
 			y: 3.0d
 			icon: "minecraft:blackstone"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["060BA736EF32E9F5"]
 			tasks: [{
 				id: "415E141B8AE55931"
@@ -411,6 +651,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "63F2CE1B298FF952"
@@ -419,7 +660,8 @@
 			x: 6.0d
 			y: 3.0d
 			icon: "minecraft:polished_blackstone_bricks"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["031CD896CBC3B75D"]
 			tasks: [{
 				id: "6F30E479EB79C854"
@@ -441,6 +683,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "057308B8365632F8"
@@ -449,7 +692,8 @@
 			x: 9.0d
 			y: 3.0d
 			icon: "minecraft:powder_snow_bucket"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			optional: true
 			dependencies: ["63F2CE1B298FF952"]
 			tasks: [{
@@ -472,6 +716,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "497F7F30C2E2AD71"
@@ -480,7 +725,8 @@
 			x: 12.0d
 			y: 5.0d
 			icon: "minecraft:bone_block"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			optional: true
 			dependencies: ["057308B8365632F8"]
 			tasks: [{
@@ -503,6 +749,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "7DC38AD8EF13ED6B"
@@ -511,7 +758,8 @@
 			x: 0.0d
 			y: -3.0d
 			icon: "minecraft:crimson_fungus"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["060BA736EF32E9F5"]
 			tasks: [{
@@ -534,6 +782,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "6B5133ED763E8FEC"
@@ -542,7 +791,8 @@
 			x: 0.0d
 			y: -5.5d
 			icon: "minecraft:warped_fungus"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["7DC38AD8EF13ED6B"]
 			tasks: [{
@@ -565,6 +815,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "70DECF35C46F0180"
@@ -573,7 +824,8 @@
 			x: 0.0d
 			y: -8.0d
 			icon: "minecraft:soul_sand"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["6B5133ED763E8FEC"]
 			tasks: [{
@@ -596,6 +848,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "79E3FF74B36FC7E6"
@@ -604,7 +857,8 @@
 			x: 3.0d
 			y: -8.0d
 			icon: "minecraft:ghast_tear"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			optional: true
 			dependencies: ["70DECF35C46F0180"]
 			tasks: [{
@@ -631,6 +885,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "43BFB23BB3DE07A6"
@@ -639,7 +894,8 @@
 			x: 6.0d
 			y: -8.0d
 			icon: "minecraft:warped_fungus_on_a_stick"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			optional: true
 			dependencies: ["79E3FF74B36FC7E6"]
 			tasks: [{
@@ -662,6 +918,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 		{
 			id: "6B54BF13BBC94A90"
@@ -670,6 +927,7 @@
 			x: 9.0d
 			y: -8.0d
 			icon: "minecraft:ancient_debris"
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["43BFB23BB3DE07A6"]
 			tasks: [{
@@ -698,6 +956,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_netheritage"
 		}
 	]
 }

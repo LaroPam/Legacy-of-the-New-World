@@ -163,6 +163,12 @@ class PreservationTests(unittest.TestCase):
         shapes['kubejs/assets/ftbquests/textures/shapes/crown/shape.png'] = grey.getvalue()
         self.assertIn('shape_texture_opaque', self.codes(self.report(extra={**theme, **shapes})))
 
+    def test_shape_missing_from_theme_is_detected(self):
+        theme = {'kubejs/assets/ftbquests/ftb_quests_theme.txt': b'extra_quest_shapes: gear'}
+        self.assertNotIn('shape_undeclared', self.codes(self.report(extra=theme)))
+        source = SOURCE.replace(b'title: "First"', b'shape: "boss" title: "First"')
+        self.assertIn('shape_undeclared', self.codes(quality.evaluate({REF: source, **theme}, {REF: SOURCE, **theme})))
+
     def test_theme_icon_that_is_not_a_resource_location_is_detected(self):
         theme = b'[*]\ncontainer_slot: hollow_rectangle:#526C8C + color=#24374B\n'
         r = self.report(extra={'kubejs/assets/ftbquests/ftb_quests_theme.txt': theme})

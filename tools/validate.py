@@ -10,7 +10,9 @@ from pathlib import Path
 import re
 import sys
 
+import curves
 import quality
+import quest_frames
 import questbook
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,7 +20,7 @@ REGISTRY = ROOT / 'references' / 'registry.json'
 # Issues inherited from Alpha 42 that the Alpha 43 rework must remove; new ones always fail.
 KNOWN = ROOT / 'references' / 'known_issues.json'
 SHAPES = {'circle', 'square', 'rsquare', 'diamond', 'pentagon', 'hexagon', 'octagon', 'heart', 'gear',
-          'crown', 'laurel', 'scroll', 'shield', 'coin', 'star', 'ribbon', 'none', 'default'}
+          'none', 'default'} | set(quest_frames.TYPES)  # FTB built-ins and the book's medallions
 TASK_FIELDS = {'item': 'item', 'kill': 'entity', 'structure': 'structure', 'biome': 'biome', 'advancement': 'advancement'}
 LONG_TEXT = 900
 VANILLA_HINT = 'minecraft'
@@ -272,6 +274,25 @@ def evaluate(files, registry):
             'scope': 'Static checks only; Minecraft was not run.'}
 
 
+def curve_issues(src=questbook.SRC):
+    """Smooth dependency curves (tools/curves.py) must not run through a quest other than their two ends."""
+    chapters = questbook.load_sources(src)
+    names = questbook.resolve_ids(chapters)
+    every = {}
+    for name, data in chapters.items():
+        for quest in data['quests']:
+            quest['_chapter'] = name
+            every[quest['_id']] = quest
+    errors = []
+    for name, data in chapters.items():
+        if not data['chapter'].get('curves', True):
+            continue
+        for a, b, crossed in curves.crossings(name, data, lambda ref, ch: questbook.dependency(ref, ch, names), every):
+            errors.append(problem('curve_through_quest', f'{name}#{b}', 'Dependency curve runs through another quest',
+                                  dependency=a, crossed=crossed))
+    return errors
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--report', type=Path)
@@ -282,6 +303,7 @@ def main(argv=None):
     if questbook.main(['check']):
         return 1
     report = evaluate(collect_files(), registry)
+    report['errors'] += curve_issues()
     keys = sorted({issue_key(e) for e in report['errors']})
     if args.write_known:
         KNOWN.write_text(json.dumps(keys, ensure_ascii=False, indent=1) + '\n')

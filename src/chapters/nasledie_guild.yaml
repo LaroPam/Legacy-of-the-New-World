@@ -7,12 +7,12 @@ chapter:
   title: Бестиарий Ингрид Берг
   icon: alexsmobs:animal_dictionary
   order_index: 17
-  default_hide_dependency_lines: false
-  default_quest_shape: circle
+  default_hide_dependency_lines: true
+  default_quest_shape: step
   progression_mode: flexible
 
 links:
-  - {quest: nasledie_chronicle/frostmaw, x: -1.88, y: -3.53, shape: crown, size: 1.4}
+  - {quest: nasledie_chronicle/frostmaw, x: -1.88, y: -3.53, shape: boss, size: 1.4}
 
 quests:
   - key: field_journal
@@ -23,7 +23,7 @@ quests:
     x: 0.0
     y: 0.0
     icon: alexsmobs:animal_dictionary
-    shape: star
+    shape: milestone
     size: 1.8
     tasks:
       - {type: criteria, title: Собрать книгу о животных, crafted: alexsmobs:animal_dictionary}
@@ -56,7 +56,7 @@ quests:
     x: -3.5
     y: 0.0
     icon: alexsmobs:maraca
-    shape: heart
+    shape: home
     optional: true
     deps: [field_journal]
     tasks:
@@ -73,7 +73,7 @@ quests:
     x: -5.82
     y: 1.45
     icon: alexsmobs:transmutation_table
-    shape: star
+    shape: milestone
     optional: true
     deps: [field_journal]
     tasks:
@@ -137,7 +137,7 @@ quests:
     x: 0.0
     y: -8.5
     icon: alexsmobs:stink_bottle
-    shape: heart
+    shape: home
     optional: true
     deps: [grizzly]
     tasks:
@@ -216,7 +216,7 @@ quests:
     x: 8.43
     y: -7.07
     icon: minecraft:feather
-    shape: star
+    shape: milestone
     deps: [hood]
     tasks:
       - {type: advancement, advancement: alexsmobs:alexsmobs/bald_eagle_challenge}
@@ -310,7 +310,7 @@ quests:
     x: 7.77
     y: 3.46
     icon: minecraft:porkchop
-    shape: star
+    shape: milestone
     optional: true
     deps: [capuchin]
     tasks:
@@ -343,7 +343,7 @@ quests:
     x: 3.0
     y: 5.2
     icon: minecraft:red_carpet
-    shape: heart
+    shape: home
     optional: true
     deps: [elephant]
     tasks:
@@ -360,7 +360,7 @@ quests:
     x: 1.65
     y: 5.77
     icon: minecraft:bone
-    shape: star
+    shape: milestone
     optional: true
     deps: [elephant]
     tasks:
@@ -407,7 +407,7 @@ quests:
     x: -0.83
     y: 9.46
     icon: alexsmobs:soul_heart
-    shape: shield
+    shape: trial
     optional: true
     deps: [tarantula_hawk]
     tasks:
@@ -427,7 +427,7 @@ quests:
     x: -2.01
     y: 2.87
     icon: minecraft:cod
-    shape: heart
+    shape: home
     deps: [field_journal]
     tasks:
       - {type: advancement, advancement: alexsmobs:alexsmobs/seagull_steal}
@@ -458,7 +458,7 @@ quests:
     x: -4.5
     y: 7.79
     icon: alexsmobs:ambergris
-    shape: star
+    shape: milestone
     optional: true
     deps: [mantis_shrimp]
     tasks:
@@ -538,7 +538,7 @@ quests:
     x: -8.28
     y: -3.52
     icon: minecraft:saddle
-    shape: star
+    shape: milestone
     optional: true
     deps: [laviathan]
     tasks:
@@ -555,7 +555,7 @@ quests:
     x: -7.88
     y: -5.31
     icon: alexsmobs:hemolymph_sac
-    shape: crown
+    shape: boss
     size: 1.5
     optional: true
     deps: [laviathan]
@@ -574,7 +574,7 @@ quests:
     x: -5.2
     y: 3.0
     icon: minecraft:sweet_berries
-    shape: star
+    shape: milestone
     optional: true
     deps: [field_notes]
     tasks:

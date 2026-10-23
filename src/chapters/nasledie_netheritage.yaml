@@ -7,13 +7,13 @@ chapter:
   title: Нижний мир — огонь и черепа
   icon: minecraft:wither_skeleton_skull
   order_index: 8
-  default_hide_dependency_lines: false
-  default_quest_shape: circle
+  default_hide_dependency_lines: true
+  default_quest_shape: step
   progression_mode: flexible
 
 links:
-  - {quest: nasledie_chronicle/nether_eye, x: 9, y: -2.5, shape: star, size: 1.4}
-  - {quest: nasledie_chronicle/wither, x: 15, y: 0, shape: crown, size: 1.6}
+  - {quest: nasledie_chronicle/nether_eye, x: 9, y: -2.5, shape: milestone, size: 1.4}
+  - {quest: nasledie_chronicle/wither, x: 15, y: 0, shape: boss, size: 1.6}
 
 quests:
   - key: enter
@@ -24,7 +24,7 @@ quests:
     x: 0
     y: 0
     icon: minecraft:obsidian
-    shape: scroll
+    shape: expedition
     size: 1.4
     deps: [nasledie_chronicle/route]
     tasks:
@@ -41,7 +41,7 @@ quests:
     x: 0
     y: 3
     icon: cold_sweat:soulspring_lamp
-    shape: gear
+    shape: tech
     deps: [enter]
     tasks:
       - {type: advancement, advancement: cold_sweat:get_soul_lamp}
@@ -58,7 +58,7 @@ quests:
     x: 3
     y: 0
     icon: minecraft:nether_bricks
-    shape: scroll
+    shape: expedition
     deps: [enter]
     tasks:
       - {type: structure, structure: betterfortresses:fortress}
@@ -73,7 +73,7 @@ quests:
     x: 6
     y: 0
     icon: minecraft:blaze_rod
-    shape: shield
+    shape: trial
     deps: [fortress]
     tasks:
       - {type: advancement, advancement: minecraft:nether/obtain_blaze_rod}
@@ -89,7 +89,7 @@ quests:
     x: 9
     y: 0
     icon: minecraft:stone_sword
-    shape: shield
+    shape: trial
     deps: [blaze_rod]
     tasks:
       - {type: kill, entity: minecraft:wither_skeleton, value: 1}
@@ -104,7 +104,7 @@ quests:
     x: 12
     y: 0
     icon: minecraft:wither_skeleton_skull
-    shape: shield
+    shape: trial
     deps: [wither_skeleton]
     tasks:
       - {type: advancement, advancement: minecraft:nether/get_wither_skull}
@@ -120,7 +120,7 @@ quests:
     x: 12
     y: 2.5
     icon: minecraft:magma_cream
-    shape: star
+    shape: milestone
     optional: true
     deps: [skull]
     tasks:
@@ -139,7 +139,7 @@ quests:
     x: 3
     y: -3
     icon: minecraft:golden_axe
-    shape: shield
+    shape: trial
     deps: [enter]
     tasks:
       - {type: kill, entity: minecraft:piglin_brute, value: 1}
@@ -154,7 +154,7 @@ quests:
     x: 6
     y: -3
     icon: minecraft:gilded_blackstone
-    shape: shield
+    shape: trial
     deps: [brute]
     tasks:
       - {type: advancement, advancement: minecraft:nether/loot_bastion}
@@ -169,7 +169,7 @@ quests:
     x: 6
     y: -5.5
     icon: minecraft:gold_block
-    shape: shield
+    shape: trial
     optional: true
     deps: [bastion]
     tasks:
@@ -185,7 +185,7 @@ quests:
     x: 9
     y: -5.5
     icon: minecraft:cooked_porkchop
-    shape: star
+    shape: milestone
     optional: true
     deps: [piglin_outpost]
     tasks:
@@ -203,7 +203,7 @@ quests:
     x: 3
     y: 3
     icon: minecraft:blackstone
-    shape: scroll
+    shape: expedition
     deps: [enter]
     tasks:
       - {type: criteria, title: Открыть сундук порта, loot: nova_structures:chests/nether_port/nether_port_chest}
@@ -219,7 +219,7 @@ quests:
     x: 6
     y: 3
     icon: minecraft:polished_blackstone_bricks
-    shape: scroll
+    shape: expedition
     deps: [nether_port]
     tasks:
       - {type: structure, structure: nova_structures:nether_keep}
@@ -235,7 +235,7 @@ quests:
     x: 9
     y: 3
     icon: minecraft:powder_snow_bucket
-    shape: star
+    shape: milestone
     optional: true
     deps: [nether_keep]
     tasks:
@@ -251,7 +251,7 @@ quests:
     x: 12
     y: 5
     icon: minecraft:bone_block
-    shape: star
+    shape: milestone
     optional: true
     deps: [keep_snow]
     tasks:
@@ -269,7 +269,7 @@ quests:
     x: 0
     y: -3
     icon: minecraft:crimson_fungus
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [enter]
     tasks:
@@ -286,7 +286,7 @@ quests:
     x: 0
     y: -5.5
     icon: minecraft:warped_fungus
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [crimson_forest]
     tasks:
@@ -303,7 +303,7 @@ quests:
     x: 0
     y: -8
     icon: minecraft:soul_sand
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [warped_forest]
     tasks:
@@ -320,7 +320,7 @@ quests:
     x: 3
     y: -8
     icon: minecraft:ghast_tear
-    shape: shield
+    shape: trial
     optional: true
     deps: [soul_valley]
     tasks:
@@ -336,7 +336,7 @@ quests:
     x: 6
     y: -8
     icon: minecraft:warped_fungus_on_a_stick
-    shape: star
+    shape: milestone
     optional: true
     deps: [ghast]
     tasks:

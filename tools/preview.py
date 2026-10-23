@@ -24,6 +24,7 @@ import zipfile
 from PIL import Image, ImageDraw, ImageFont
 
 import apply_palettes
+import curves
 import questbook
 
 UNIT = 56
@@ -253,25 +254,8 @@ def progress(quests, ids, name):
     return state
 
 
-def render_screen(name, data, ids, icons, out, every, screen):
-    chapter_id = data['chapter']['id']
-    quests, links = data['quests'], data.get('links', [])
-    by_id = {q['_id']: q for q in quests}
-    linked = {questbook.dependency(l['quest'], name, ids): l for l in links}
-    nodes = dict(by_id, **linked)
-    spacing = float(screen.prop(chapter_id, 'quest_spacing') or 1)
-    xs = [float(n['x']) for n in nodes.values()]
-    ys = [float(n['y']) for n in nodes.values()]
-    for zoom in (16, 12, 8, 4):
-        unit = (zoom * 1.5 + zoom * spacing / 4) * GUI_SCALE
-        if (max(xs) - min(xs) + 1) * unit <= SCREEN[0] and (max(ys) - min(ys) + 1) * unit <= SCREEN[1]:
-            break
-    button = zoom * 1.5 * GUI_SCALE
-    cx, cy = (max(xs) + min(xs)) / 2, (max(ys) + min(ys)) / 2
-    pos = lambda n: (SCREEN[0] / 2 + (float(n['x']) - cx) * unit, SCREEN[1] / 2 + (float(n['y']) - cy) * unit)
-
-    image = screen.background(chapter_id).convert('RGBA')
-    state = progress(quests, ids, name)
+def straight_lines(screen, chapter_id, nodes, every, ids, state, pos, zoom):
+    """FTB's own dependency lines, for chapters without curves."""
     hi = 2  # lines are drawn at double resolution and scaled down, like a smooth GPU quad
     lines = Image.new('RGBA', (SCREEN[0] * hi, SCREEN[1] * hi), (0, 0, 0, 0))
     texture = screen.texture(screen.prop(chapter_id, 'dependency_line_texture') or 'ftbquests:textures/gui/dependency.png')
@@ -291,7 +275,50 @@ def render_screen(name, data, ids, icons, out, every, screen):
                                        screen.color(chapter_id, key) + (255,))
                 lines.alpha_composite(strip, (max(at[0], 0), max(at[1], 0)), (max(-at[0], 0), max(-at[1], 0)))
     lines = lines.resize(SCREEN, Image.LANCZOS)
-    image.alpha_composite(lines)
+    return lines
+
+
+def draw_curves(image, name, data, ids, every, state, pos, button):
+    """The chapter's curve images as FTB draws them: base under everything, a prerequisite's overlay once it is done."""
+    colours, global_colours, spacing = curves.palettes()
+    entries, files = curves.chapter_images(name, data, lambda ref, ch: questbook.dependency(ref, ch, ids), every,
+                                           colours.get(name, global_colours), spacing)
+    for entry in sorted(entries, key=lambda e: e['order']):
+        if entry.get('dependency') and state.get(entry['dependency']) != 'completed':
+            continue
+        path = curves.TEXTURES / Path(entry['image'].split('textures/curves/', 1)[1])
+        texture = Image.open(io.BytesIO(files[path])).convert('RGBA')
+        size = (max(1, round(entry['width'] * button)), max(1, round(entry['height'] * button)))
+        colour = ((entry['color'] >> 16) & 255, (entry['color'] >> 8) & 255, entry['color'] & 255)
+        layer = tinted(texture.resize(size, Image.BILINEAR), colour, None, entry['alpha'])
+        x, y = pos({'x': entry['x'], 'y': entry['y']})
+        image.alpha_composite(layer, (round(x - size[0] / 2), round(y - size[1] / 2)))
+
+
+def render_screen(name, data, ids, icons, out, every, screen):
+    chapter_id = data['chapter']['id']
+    quests, links = data['quests'], data.get('links', [])
+    by_id = {q['_id']: q for q in quests}
+    linked = {questbook.dependency(l['quest'], name, ids): l for l in links}
+    nodes = dict(by_id, **linked)
+    spacing = float(screen.prop(chapter_id, 'quest_spacing') or 1)
+    xs = [float(n['x']) for n in nodes.values()]
+    ys = [float(n['y']) for n in nodes.values()]
+    for zoom in (16, 12, 8, 4):
+        unit = (zoom * 1.5 + zoom * spacing / 4) * GUI_SCALE
+        if (max(xs) - min(xs) + 1) * unit <= SCREEN[0] and (max(ys) - min(ys) + 1) * unit <= SCREEN[1]:
+            break
+    button = zoom * 1.5 * GUI_SCALE
+    cx, cy = (max(xs) + min(xs)) / 2, (max(ys) + min(ys)) / 2
+    pos = lambda n: (SCREEN[0] / 2 + (float(n['x']) - cx) * unit, SCREEN[1] / 2 + (float(n['y']) - cy) * unit)
+
+    image = screen.background(chapter_id).convert('RGBA')
+    state = progress(quests, ids, name)
+    if data['chapter'].get('curves', True):
+        draw_curves(image, name, data, ids, every, state, pos, button)
+    else:
+        image.alpha_composite(straight_lines(screen, chapter_id, nodes, every, ids, state, pos, zoom))
+
 
     default_shape = data['chapter'].get('default_quest_shape', 'circle')
     for ident, node in nodes.items():
@@ -307,7 +334,7 @@ def render_screen(name, data, ids, icons, out, every, screen):
             image.alpha_composite(tinted(screen.shape(kind, 'outline'), color, size), corner)
         icon = icons.get(quest.get('icon', ''))
         if icon:
-            side = round(size * 2 / 3 * float(quest.get('icon_scale', 1)))
+            side = round(size * 2 / 3 * float(quest.get('icon_scale', questbook.ICON_SCALE)))
             image.alpha_composite(icon.resize((side, side), Image.NEAREST), (round(x - side / 2), round(y - side / 2)))
     caption = ImageDraw.Draw(image)
     caption.text((12, SCREEN[1] - 24), f"{data['chapter']['title']} — zoom {zoom}, GUI 3, 1920x1080",

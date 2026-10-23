@@ -8,13 +8,13 @@ chapter:
   title: Промышленность и артиллерия
   icon: create:precision_mechanism
   order_index: 10
-  default_hide_dependency_lines: false
-  default_quest_shape: gear
+  default_hide_dependency_lines: true
+  default_quest_shape: tech
   progression_mode: flexible
 
 links:
-  - {quest: nasledie_chronicle/strand_notes, x: -3.5, y: -3.5, shape: star, size: 1.4}
-  - {quest: nasledie_chronicle/harbinger, x: -6.5, y: -3.5, shape: crown, size: 1.5}
+  - {quest: nasledie_chronicle/strand_notes, x: -3.5, y: -3.5, shape: milestone, size: 1.4}
+  - {quest: nasledie_chronicle/harbinger, x: -6.5, y: -3.5, shape: boss, size: 1.5}
 
 quests:
   - key: brass
@@ -25,7 +25,7 @@ quests:
     x: 0
     y: 0
     icon: create:brass_ingot
-    shape: star
+    shape: milestone
     size: 1.7
     deps: [nasledie_create/burner]
     tasks:
@@ -88,7 +88,7 @@ quests:
     x: 0
     y: -10.5
     icon: create:precision_mechanism
-    shape: star
+    shape: milestone
     size: 1.4
     deps: [deployer]
     tasks:
@@ -150,7 +150,7 @@ quests:
     x: -2.5
     y: -15
     icon: create:mechanical_crafter
-    shape: circle
+    shape: step
     optional: true
     deps: [crafter]
     tasks:
@@ -182,7 +182,7 @@ quests:
     x: 2.5
     y: -18
     icon: create:crushed_raw_iron
-    shape: circle
+    shape: step
     optional: true
     deps: [crushing]
     tasks:
@@ -291,7 +291,7 @@ quests:
     x: 18.5
     y: 0
     icon: createaddition:copper_wire
-    shape: star
+    shape: milestone
     size: 1.4
     deps: [motor]
     tasks:
@@ -369,7 +369,7 @@ quests:
     x: 2.5
     y: 12.5
     icon: createdieselgenerators:engine_turbocharger
-    shape: circle
+    shape: step
     optional: true
     deps: [diesel_engine]
     tasks:
@@ -387,7 +387,7 @@ quests:
     x: 0
     y: 13.5
     icon: create:wheat_flour
-    shape: star
+    shape: milestone
     size: 1.4
     deps: [diesel_engine]
     tasks:
@@ -420,7 +420,7 @@ quests:
     x: -5
     y: 5
     icon: create:steam_engine
-    shape: star
+    shape: milestone
     deps: [lava_pump]
     tasks:
       - {type: advancement, advancement: create:steam_engine_maxed}
@@ -436,7 +436,7 @@ quests:
     x: -7
     y: 7
     icon: create:stressometer
-    shape: circle
+    shape: step
     optional: true
     deps: [steam_maxed]
     tasks:
@@ -528,7 +528,7 @@ quests:
     x: -16
     y: 0
     icon: createbigcannons:solid_shot
-    shape: shield
+    shape: trial
     deps: [cannon_loader]
     tasks:
       - {type: advancement, advancement: nasledie:events/artillery/kill, title: Победа выстрелом из орудия}
@@ -543,7 +543,7 @@ quests:
     x: -18.5
     y: 0
     icon: createbigcannons:he_shell
-    shape: star
+    shape: milestone
     size: 1.5
     optional: true
     deps: [first_shot]

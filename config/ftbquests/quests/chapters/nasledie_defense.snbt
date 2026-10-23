@@ -5,16 +5,197 @@
 	title: "Звери и стражи старого мира"
 	icon: "mowziesmobs:wrought_helmet"
 	order_index: 6
-	default_hide_dependency_lines: false
-	default_quest_shape: "shield"
+	default_hide_dependency_lines: true
+	default_quest_shape: "trial"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: 0.1501d
+			y: -5.37d
+			width: 21.4082d
+			height: 28.435d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/base.png"
+			color: 16741450
+			alpha: 255
+			order: -2
+		}
+		{
+			x: -0.3501d
+			y: -4.495d
+			width: 16.1682d
+			height: 23.7468d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/00c7daa7bbbe1abd.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "00C7DAA7BBBE1ABD"
+		}
+		{
+			x: 4.905d
+			y: 0.785d
+			width: 3.8187d
+			height: 2.3618d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/06bf2a4d15d6cd27.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "06BF2A4D15D6CD27"
+		}
+		{
+			x: 4.66d
+			y: 5.555d
+			width: 2.397d
+			height: 2.7612d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/0da6143558a570bf.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "0DA6143558A570BF"
+		}
+		{
+			x: -6.265d
+			y: -7.47d
+			width: 2.4087d
+			height: 2.773d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/0ea51c1efc97cf87.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "0EA51C1EFC97CF87"
+		}
+		{
+			x: -4.66d
+			y: -5.555d
+			width: 2.397d
+			height: 2.7612d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/1aa2f1d6f60e9fdb.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "1AA2F1D6F60E9FDB"
+		}
+		{
+			x: -6.99d
+			y: -15.815d
+			width: 0.564d
+			height: 3.8892d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/2378d8f13118ff97.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "2378D8F13118FF97"
+		}
+		{
+			x: -3.725d
+			y: -3.64d
+			width: 3.9833d
+			height: 2.773d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/3704072aa3306667.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "3704072AA3306667"
+		}
+		{
+			x: 2.375d
+			y: -4.115d
+			width: 1.9858d
+			height: 3.0668d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/389addcbcb295f18.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "389ADDCBCB295F18"
+		}
+		{
+			x: -2.245d
+			y: 4.715d
+			width: 3.7717d
+			height: 3.8657d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/43488e4931e0f280.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "43488E4931E0F280"
+		}
+		{
+			x: 7.675d
+			y: 2.255d
+			width: 3.7248d
+			height: 2.1268d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/4843aed5ce824450.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "4843AED5CE824450"
+		}
+		{
+			x: 3.9d
+			y: -5.835d
+			width: 6.0395d
+			height: 2.0092d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/549b46dd723548e4.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "549B46DD723548E4"
+		}
+		{
+			x: 3.055d
+			y: 4.17d
+			width: 2.4088d
+			height: 4.0185d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/5c3bccac46517ede.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "5C3BCCAC46517EDE"
+		}
+		{
+			x: -7.9049d
+			y: -9.385d
+			width: 2.4789d
+			height: 2.7613d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/667fadb4630b1fbc.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "667FADB4630B1FBC"
+		}
+		{
+			x: -7.845d
+			y: -12.36d
+			width: 2.4793d
+			height: 5.264d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/defense/72c49e809d227970.png"
+			color: 16761006
+			alpha: 255
+			order: -1
+			dependency: "72C49E809D227970"
+		}
+	]
 	quest_links: [
 		{
 			id: "75DBB43E7EFB083C"
 			linked_quest: "00C7DAA7BBBE1ABD"
 			x: 0.0d
 			y: 0.0d
-			shape: "star"
+			shape: "milestone"
 			size: 1.8d
 		}
 		{
@@ -22,7 +203,7 @@
 			linked_quest: "2378D8F13118FF97"
 			x: -7.01d
 			y: -14.38d
-			shape: "crown"
+			shape: "boss"
 			size: 1.5d
 		}
 		{
@@ -30,7 +211,7 @@
 			linked_quest: "5F85EFBB8E452760"
 			x: 6.25d
 			y: -6.47d
-			shape: "crown"
+			shape: "boss"
 			size: 1.5d
 		}
 		{
@@ -38,7 +219,7 @@
 			linked_quest: "4843AED5CE824450"
 			x: 6.31d
 			y: 1.57d
-			shape: "crown"
+			shape: "boss"
 			size: 1.5d
 		}
 		{
@@ -46,7 +227,7 @@
 			linked_quest: "12AF3238F7B8776E"
 			x: -3.63d
 			y: 5.39d
-			shape: "crown"
+			shape: "boss"
 			size: 1.5d
 		}
 	]
@@ -58,7 +239,8 @@
 			x: -2.25d
 			y: -2.68d
 			icon: "mowziesmobs:umvuthana_mask_fury"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
 				id: "7179D6B524A8819C"
@@ -88,6 +270,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "1AA2F1D6F60E9FDB"
@@ -96,6 +279,7 @@
 			x: -3.86d
 			y: -4.6d
 			icon: "mowziesmobs:umvuthana_mask_rage"
+			icon_scale: 0.6d
 			dependencies: ["3704072AA3306667"]
 			tasks: [{
 				id: "64515B8014B5D927"
@@ -117,6 +301,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "0EA51C1EFC97CF87"
@@ -125,6 +310,7 @@
 			x: -5.46d
 			y: -6.51d
 			icon: "mowziesmobs:umvuthana_mask_fear"
+			icon_scale: 0.6d
 			dependencies: ["1AA2F1D6F60E9FDB"]
 			tasks: [
 				{
@@ -155,6 +341,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "667FADB4630B1FBC"
@@ -163,7 +350,8 @@
 			x: -7.07d
 			y: -8.43d
 			icon: "mowziesmobs:umvuthana_mask_bliss"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["0EA51C1EFC97CF87"]
 			tasks: [{
@@ -186,6 +374,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "72C49E809D227970"
@@ -194,7 +383,8 @@
 			x: -8.68d
 			y: -10.34d
 			icon: "minecraft:chest"
-			shape: "circle"
+			icon_scale: 0.6d
+			shape: "step"
 			dependencies: ["667FADB4630B1FBC"]
 			tasks: [{
 				id: "6C36C440C9E50AD1"
@@ -217,6 +407,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "233D4E94573F3BD4"
@@ -225,6 +416,7 @@
 			x: -5.2d
 			y: -3.38d
 			icon: "mowziesmobs:foliaath_seed"
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["3704072AA3306667"]
 			tasks: [{
@@ -247,6 +439,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "62D20856FFA016C3"
@@ -255,7 +448,8 @@
 			x: -6.97d
 			y: -17.25d
 			icon: "mowziesmobs:sol_visage"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			optional: true
 			dependencies: ["2378D8F13118FF97"]
 			tasks: [{
@@ -278,6 +472,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "389ADDCBCB295F18"
@@ -286,7 +481,8 @@
 			x: 1.75d
 			y: -3.03d
 			icon: "mowziesmobs:geomancer_robe"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
 				id: "0C88539A7FF5BA07"
@@ -308,6 +504,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "549B46DD723548E4"
@@ -316,7 +513,8 @@
 			x: 3.0d
 			y: -5.2d
 			icon: "minecraft:barrel"
-			shape: "circle"
+			icon_scale: 0.6d
+			shape: "step"
 			dependencies: ["389ADDCBCB295F18"]
 			tasks: [{
 				id: "0904D1BE48083BFD"
@@ -339,6 +537,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "4CE1E389229E6BFE"
@@ -347,7 +546,8 @@
 			x: 1.55d
 			y: -6.21d
 			icon: "minecraft:feather"
-			shape: "circle"
+			icon_scale: 0.6d
+			shape: "step"
 			optional: true
 			dependencies: ["549B46DD723548E4"]
 			tasks: [{
@@ -376,6 +576,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "06BF2A4D15D6CD27"
@@ -384,7 +585,8 @@
 			x: 3.5d
 			y: 0.0d
 			icon: "mowziesmobs:wrought_axe"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
 				id: "10690160BD928BAA"
@@ -406,6 +608,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "1B6EFB1C669C7CFA"
@@ -414,7 +617,8 @@
 			x: 9.04d
 			y: 2.94d
 			icon: "mowziesmobs:wrought_axe"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			optional: true
 			dependencies: ["4843AED5CE824450"]
 			tasks: [
@@ -458,6 +662,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "5C3BCCAC46517EDE"
@@ -466,7 +671,8 @@
 			x: 2.25d
 			y: 2.68d
 			icon: "minecraft:diamond_ore"
-			shape: "circle"
+			icon_scale: 0.6d
+			shape: "step"
 			optional: true
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
@@ -489,6 +695,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "0DA6143558A570BF"
@@ -497,7 +704,8 @@
 			x: 3.86d
 			y: 4.6d
 			icon: "minecraft:diamond"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			optional: true
 			dependencies: ["5C3BCCAC46517EDE"]
 			tasks: [{
@@ -520,6 +728,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "23EDE771A3D3FAE9"
@@ -528,7 +737,8 @@
 			x: 5.46d
 			y: 6.51d
 			icon: "minecraft:deepslate_diamond_ore"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			optional: true
 			dependencies: ["0DA6143558A570BF"]
 			tasks: [{
@@ -551,6 +761,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "216A8A3EE5B58D96"
@@ -559,6 +770,7 @@
 			x: 2.76d
 			y: 5.66d
 			icon: "minecraft:sandstone"
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["5C3BCCAC46517EDE"]
 			tasks: [{
@@ -581,6 +793,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "43488E4931E0F280"
@@ -589,7 +802,8 @@
 			x: -1.2d
 			y: 3.29d
 			icon: "minecraft:snow_block"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
 				id: "4718756ED99A6966"
@@ -611,6 +825,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "1E7E546AB7203A0B"
@@ -619,7 +834,8 @@
 			x: -0.86d
 			y: 6.14d
 			icon: "mowziesmobs:ice_crystal"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			optional: true
 			dependencies: ["43488E4931E0F280"]
 			tasks: [{
@@ -642,6 +858,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 		{
 			id: "7F7561483C27E289"
@@ -650,6 +867,7 @@
 			x: -3.38d
 			y: 0.91d
 			icon: "mowziesmobs:naga_fang"
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
@@ -672,6 +890,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_defense"
 		}
 	]
 }

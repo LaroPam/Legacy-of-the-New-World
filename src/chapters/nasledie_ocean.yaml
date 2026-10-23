@@ -7,12 +7,12 @@ chapter:
   title: Океан — проводник и монумент
   icon: minecraft:conduit
   order_index: 7
-  default_hide_dependency_lines: false
-  default_quest_shape: scroll
+  default_hide_dependency_lines: true
+  default_quest_shape: expedition
   progression_mode: flexible
 
 links:
-  - {quest: nasledie_chronicle/elder_guardian, x: 18, y: 0, shape: crown, size: 1.5}
+  - {quest: nasledie_chronicle/elder_guardian, x: 18, y: 0, shape: boss, size: 1.5}
 
 quests:
   # ── К монументу ──
@@ -86,7 +86,7 @@ quests:
     x: 12
     y: 0
     icon: minecraft:conduit
-    shape: gear
+    shape: tech
     deps: [monument]
     tasks:
       - {type: advancement, advancement: nasledie:ocean/conduit_power, title: Получить силу проводника}
@@ -102,7 +102,7 @@ quests:
     x: 15
     y: 0
     icon: minecraft:prismarine_shard
-    shape: shield
+    shape: trial
     deps: [conduit]
     tasks:
       - {type: kill, entity: minecraft:guardian, value: 1}
@@ -118,7 +118,7 @@ quests:
     x: 21
     y: 0
     icon: minecraft:trident
-    shape: star
+    shape: milestone
     size: 1.4
     optional: true
     deps: [nasledie_chronicle/elder_guardian]
@@ -154,7 +154,7 @@ quests:
     x: 3
     y: -3
     icon: minecraft:skeleton_skull
-    shape: shield
+    shape: trial
     deps: [lighthouse]
     tasks:
       - {type: criteria, title: Открыть сокровищницу корабля нежити, loot: dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_treasure}
@@ -170,7 +170,7 @@ quests:
     x: 6
     y: -3
     icon: minecraft:crossbow
-    shape: shield
+    shape: trial
     optional: true
     deps: [pirate_ship]
     tasks:
@@ -187,7 +187,7 @@ quests:
     x: 9
     y: -3
     icon: minecraft:dark_oak_planks
-    shape: star
+    shape: milestone
     optional: true
     deps: [corsair]
     tasks:
@@ -304,7 +304,7 @@ quests:
     x: 3
     y: 6
     icon: create:copper_diving_helmet
-    shape: gear
+    shape: tech
     optional: true
     deps: [water_village]
     tasks:

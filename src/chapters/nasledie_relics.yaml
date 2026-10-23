@@ -7,8 +7,8 @@ chapter:
   title: Кабинет редкостей
   icon: relics:researching_table
   order_index: 18
-  default_hide_dependency_lines: false
-  default_quest_shape: scroll
+  default_hide_dependency_lines: true
+  default_quest_shape: expedition
   progression_mode: flexible
 
 quests:
@@ -20,7 +20,7 @@ quests:
     x: 0.0
     y: 0.0
     icon: relics:leather_belt
-    shape: star
+    shape: milestone
     size: 1.6
     tasks:
       - type: criteria
@@ -178,7 +178,7 @@ quests:
     x: 2.83
     y: -2.83
     icon: relics:enders_hand
-    shape: star
+    shape: milestone
     size: 1.4
     deps: [first_relic]
     tasks:
@@ -200,7 +200,7 @@ quests:
     x: -6.01
     y: 2.49
     icon: artifacts:mimic_spawn_egg
-    shape: shield
+    shape: trial
     size: 1.2
     deps: [first_relic]
     tasks:
@@ -217,7 +217,7 @@ quests:
     x: -8.31
     y: 3.44
     icon: artifacts:onion_ring
-    shape: circle
+    shape: step
     optional: true
     deps: [mimic]
     tasks:

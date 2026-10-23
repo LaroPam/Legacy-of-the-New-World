@@ -13,7 +13,7 @@ Source format (one YAML file per chapter):
       id: 0123456789ABCDEF       # optional; generated from filename/key when absent
       title: ...
       description: [...]
-      x: 0; y: 0; icon; shape; size; optional
+      x: 0; y: 0; icon; icon_scale (default 0.6); shape; size; optional
       deps: [other_key, chapter_filename/key, 0123456789ABCDEF]
       tasks:   [{type: advancement, advancement: ...}, ...]
       rewards: [{type: xp, xp: 100}, {type: item, item: id, count: 2},
@@ -40,6 +40,9 @@ import sys
 import ftb_snbt_lib as snbt
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import curves  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / 'src' / 'chapters'
 GROUPS = ROOT / 'src' / 'chapter_groups.yaml'
@@ -52,9 +55,10 @@ BOOK_AUTHOR = 'Первая экспедиция'
 
 CHAPTER_ORDER = ('filename', 'id', 'group', 'title', 'icon', 'order_index', 'default_hide_dependency_lines',
                  'default_quest_shape', 'default_quest_size', 'progression_mode', 'subtitle', 'images')
-QUEST_ORDER = ('id', 'title', 'subtitle', 'description', 'x', 'y', 'icon', 'shape', 'size', 'optional',
+QUEST_ORDER = ('id', 'title', 'subtitle', 'description', 'x', 'y', 'icon', 'icon_scale', 'shape', 'size', 'optional',
                'dependencies', 'dependency_requirement', 'hide_dependency_lines', 'tasks', 'rewards')
-DOUBLE_KEYS = {'x', 'y', 'size', 'default_quest_size'}
+DOUBLE_KEYS = {'x', 'y', 'size', 'default_quest_size', 'icon_scale'}
+ICON_SCALE = 0.6  # the item icon stays inside the medallion's recess (tools/quest_frames.py)
 
 
 def make_id(seed):
@@ -307,8 +311,8 @@ def sentence(line):
     return line
 
 
-def build_chapter(name, data, names, generated):
-    chapter = {k: tag(v, k) for k, v in data['chapter'].items()}
+def build_chapter(name, data, names, generated, every=None, palettes=None):
+    chapter = {k: tag(v, k) for k, v in data['chapter'].items() if k != 'curves'}
     links = []
     for i, link in enumerate(data.get('links', [])):
         body = {'id': snbt.String(link.get('id') or make_id(f'{name}/link/{link["quest"]}')),
@@ -334,6 +338,7 @@ def build_chapter(name, data, names, generated):
                 continue
             body[key] = tag(value, key)
         body.setdefault('description', snbt.List([]))
+        body.setdefault('icon_scale', tag(ICON_SCALE, 'icon_scale'))
         if quest.get('deps'):
             body['dependencies'] = snbt.List([snbt.String(dependency(d, name, names)) for d in quest['deps']])
         stem = (quest.get('key') or ident.lower()).replace('-', '_')
@@ -345,6 +350,13 @@ def build_chapter(name, data, names, generated):
         body['rewards'] = snbt.List([build_reward(r, f'{ident}/reward/{i}') for i, r in enumerate(quest.get('rewards', []))])
         quests.append(snbt.Compound(ordered(body, QUEST_ORDER)))
     chapter['quests'] = snbt.List(quests)
+    if every is not None and data['chapter'].get('curves', True):
+        # Smooth curves replace FTB's straight lines (tools/curves.py).
+        entries, files = curves.chapter_images(name, data, lambda ref, chapter: dependency(ref, chapter, names),
+                                               every, palettes[0].get(name, palettes[1]), palettes[2])
+        chapter['default_hide_dependency_lines'] = snbt.Bool(True)
+        chapter['images'] = tag([{k: round(v, 4) if isinstance(v, float) else v for k, v in e.items()} for e in entries])
+        generated.update(files)
     return snbt.Compound(ordered(chapter, CHAPTER_ORDER + ('quest_links', 'quests')))
 
 
@@ -364,20 +376,39 @@ def build_all(src=SRC, groups=GROUPS):
             if group not in group_ids:
                 raise ValueError(f'Unknown chapter group {group}')
             data['chapter']['group'] = group_ids[group]
+    every = {}
     for name, data in chapters.items():
-        generated[OUT / (name + '.snbt')] = snbt.dumps(build_chapter(name, data, names, generated)) + '\n'
+        for quest in data['quests']:
+            quest['_chapter'] = name
+            every[quest['_id']] = quest
+    palettes = curves.palettes()
+    for name, data in chapters.items():
+        generated[OUT / (name + '.snbt')] = snbt.dumps(build_chapter(name, data, names, generated, every, palettes)) + '\n'
     if groups.exists():
         generated[GROUP_FILE] = snbt.dumps(snbt.Compound({'chapter_groups': tag(entries)})) + '\n'
     return generated
 
 
 def managed(path):
-    return path.parent == OUT or path == GROUP_FILE or ADV_DIR in path.parents
+    return path.parent == OUT or path == GROUP_FILE or ADV_DIR in path.parents or curves.TEXTURES in path.parents
 
 
 def existing_files():
     files = set(OUT.glob('*.snbt')) | (set(ADV_DIR.rglob('*.json')) if ADV_DIR.exists() else set())
+    files |= {p for p in curves.TEXTURES.rglob('*') if p.is_file()} if curves.TEXTURES.exists() else set()
     return files | ({GROUP_FILE} if GROUP_FILE.exists() and GROUPS.exists() else set())
+
+
+def same(path, content):
+    """Generated text must match exactly; generated PNGs by pixels (zlib builds compress differently)."""
+    if not path.exists():
+        return False
+    if isinstance(content, str):
+        return path.read_text(encoding='utf-8') == content
+    from PIL import Image
+    import io
+    old, new = Image.open(path), Image.open(io.BytesIO(content))
+    return old.size == new.size and old.mode == new.mode and old.tobytes() == new.tobytes()
 
 
 def import_sources():
@@ -421,7 +452,7 @@ def main(argv=None):
     built = build_all()
     existing = existing_files()
     if args.command == 'check':
-        bad = [p for p, text in built.items() if not p.exists() or p.read_text(encoding='utf-8') != text]
+        bad = [p for p, content in built.items() if not same(p, content)]
         bad += sorted(existing - set(built))
         if bad:
             print('Out of date or unexpected generated files (run tools/questbook.py build):',
@@ -432,10 +463,13 @@ def main(argv=None):
     for stale in existing - set(built):
         stale.unlink()
         print('removed', stale.relative_to(ROOT))
-    for path, text in built.items():
+    for path, content in built.items():
         path.parent.mkdir(parents=True, exist_ok=True)
-        if not path.exists() or path.read_text(encoding='utf-8') != text:
-            path.write_text(text, encoding='utf-8')
+        if not same(path, content):
+            if isinstance(content, str):
+                path.write_text(content, encoding='utf-8')
+            else:
+                path.write_bytes(content)
     print('built', sum(p.parent == OUT for p in built), 'chapters,', len(built), 'files')
     return 0
 

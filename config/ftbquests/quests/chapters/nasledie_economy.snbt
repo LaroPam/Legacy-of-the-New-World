@@ -5,9 +5,106 @@
 	title: "Торговый дом"
 	icon: "minecraft:emerald"
 	order_index: 12
-	default_hide_dependency_lines: false
-	default_quest_shape: "coin"
+	default_hide_dependency_lines: true
+	default_quest_shape: "home"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: 7.5d
+			y: -0.0473d
+			width: 18.142d
+			height: 5.7143d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/economy/base.png"
+			color: 3535520
+			alpha: 255
+			order: -2
+		}
+		{
+			x: 13.5d
+			y: -1.0d
+			width: 4.042d
+			height: 2.867d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/economy/17aea3ed48bde6aa.png"
+			color: 10811860
+			alpha: 255
+			order: -1
+			dependency: "17AEA3ED48BDE6AA"
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			width: 4.042d
+			height: 5.217d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/economy/1ce7c2cff54fece4.png"
+			color: 10811860
+			alpha: 255
+			order: -1
+			dependency: "1CE7C2CFF54FECE4"
+		}
+		{
+			x: 10.5d
+			y: 0.0d
+			width: 4.042d
+			height: 5.6032d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/economy/3e7c211a268c501d.png"
+			color: 10811860
+			alpha: 255
+			order: -1
+			dependency: "3E7C211A268C501D"
+		}
+		{
+			x: 6.0d
+			y: 1.0d
+			width: 7.567d
+			height: 2.867d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/economy/467b6833737a892e.png"
+			color: 10811860
+			alpha: 255
+			order: -1
+			dependency: "467B6833737A892E"
+		}
+		{
+			x: 13.5d
+			y: 1.0d
+			width: 4.042d
+			height: 2.867d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/economy/6f6cbc1af7abe154.png"
+			color: 10811860
+			alpha: 255
+			order: -1
+			dependency: "6F6CBC1AF7ABE154"
+		}
+		{
+			x: 7.5d
+			y: -1.0d
+			width: 4.042d
+			height: 2.867d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/economy/70c5dd6dfbf85a1c.png"
+			color: 10811860
+			alpha: 255
+			order: -1
+			dependency: "70C5DD6DFBF85A1C"
+		}
+		{
+			x: 4.5d
+			y: -2.1294d
+			width: 4.042d
+			height: 0.8212d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/economy/7b634ee0c189a59b.png"
+			color: 10811860
+			alpha: 255
+			order: -1
+			dependency: "7B634EE0C189A59B"
+		}
+	]
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,6 +114,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "minecraft:emerald"
+			icon_scale: 0.6d
 			size: 1.5d
 			dependencies: ["7380B6B164146847"]
 			tasks: [{
@@ -40,6 +138,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_economy"
 		}
 		{
 			id: "7B634EE0C189A59B"
@@ -48,6 +147,7 @@
 			x: 3.0d
 			y: -2.0d
 			icon: "minecraft:enchanted_book"
+			icon_scale: 0.6d
 			dependencies: ["1CE7C2CFF54FECE4"]
 			tasks: [{
 				id: "390A7DC935CF3877"
@@ -70,6 +170,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_economy"
 		}
 		{
 			id: "70C5DD6DFBF85A1C"
@@ -78,6 +179,7 @@
 			x: 6.0d
 			y: -2.0d
 			icon: "minecraft:ender_pearl"
+			icon_scale: 0.6d
 			dependencies: ["7B634EE0C189A59B"]
 			tasks: [{
 				id: "48BB545046C71871"
@@ -100,6 +202,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_economy"
 		}
 		{
 			id: "467B6833737A892E"
@@ -108,6 +211,7 @@
 			x: 3.0d
 			y: 2.0d
 			icon: "minecraft:lead"
+			icon_scale: 0.6d
 			dependencies: ["1CE7C2CFF54FECE4"]
 			tasks: [{
 				id: "5D64EEC7736A8417"
@@ -130,6 +234,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_economy"
 		}
 		{
 			id: "0E5524C7DD99D7F7"
@@ -138,6 +243,7 @@
 			x: 6.0d
 			y: 2.0d
 			icon: "minecraft:feather"
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["467B6833737A892E"]
 			tasks: [{
@@ -160,6 +266,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_economy"
 		}
 		{
 			id: "3E7C211A268C501D"
@@ -168,7 +275,8 @@
 			x: 9.0d
 			y: 0.0d
 			icon: "minecraft:emerald_block"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			dependencies: [
 				"70C5DD6DFBF85A1C"
 				"467B6833737A892E"
@@ -194,6 +302,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_economy"
 		}
 		{
 			id: "17AEA3ED48BDE6AA"
@@ -202,6 +311,7 @@
 			x: 12.0d
 			y: -2.0d
 			icon: "workers:merchant_spawn_egg"
+			icon_scale: 0.6d
 			dependencies: [
 				"3E7C211A268C501D"
 				"37852ACAEF9733ED"
@@ -227,6 +337,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_economy"
 		}
 		{
 			id: "6F6CBC1AF7ABE154"
@@ -235,6 +346,7 @@
 			x: 12.0d
 			y: 2.0d
 			icon: "create:white_table_cloth"
+			icon_scale: 0.6d
 			dependencies: [
 				"3E7C211A268C501D"
 				"432715AF6479C057"
@@ -259,6 +371,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_economy"
 		}
 		{
 			id: "62F24C6158049C2F"
@@ -267,7 +380,8 @@
 			x: 15.0d
 			y: 0.0d
 			icon: "sophisticatedstorage:controller"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			size: 1.4d
 			dependencies: [
 				"17AEA3ED48BDE6AA"
@@ -294,6 +408,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_economy"
 		}
 	]
 }

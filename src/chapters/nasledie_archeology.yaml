@@ -6,12 +6,12 @@ chapter:
   title: Археология — по следам Холма
   icon: minecraft:brush
   order_index: 4
-  default_hide_dependency_lines: false
-  default_quest_shape: circle
+  default_hide_dependency_lines: true
+  default_quest_shape: step
   progression_mode: flexible
 
 links:
-  - {quest: nasledie_chronicle/camp, x: -3, y: 0, shape: star, size: 1.4}
+  - {quest: nasledie_chronicle/camp, x: -3, y: 0, shape: milestone, size: 1.4}
 
 quests:
   # ── Полевая работа ──
@@ -129,7 +129,7 @@ quests:
     x: 12
     y: -3
     icon: betterarcheology:unidentified_artifact
-    shape: star
+    shape: milestone
     deps: [shards]
     tasks:
       - {type: advancement, advancement: betterarcheology:unidentified_artifact}
@@ -162,7 +162,7 @@ quests:
     x: 15
     y: -3
     icon: betterarcheology:guardian_fossil_head
-    shape: star
+    shape: milestone
     size: 1.4
     optional: true
     deps: [unidentified]
@@ -245,7 +245,7 @@ quests:
     x: 15
     y: 3
     icon: minecraft:chiseled_bookshelf
-    shape: star
+    shape: milestone
     size: 1.4
     optional: true
     deps: [exhibit_wolf]
@@ -268,7 +268,7 @@ quests:
     x: 0
     y: 6
     icon: minecraft:suspicious_sand
-    shape: scroll
+    shape: expedition
     deps: [brush]
     tasks:
       - {type: criteria, title: Открыть сундук засыпанных руин, loot: betterarcheology:archeology/chest_buried_ruins_sand}
@@ -284,7 +284,7 @@ quests:
     x: 3
     y: 6
     icon: minecraft:grass_block
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [buried_ruins]
     tasks:
@@ -301,7 +301,7 @@ quests:
     x: 6
     y: 6
     icon: minecraft:skeleton_skull
-    shape: shield
+    shape: trial
     optional: true
     deps: [tumulus]
     tasks:
@@ -325,7 +325,7 @@ quests:
     x: 9
     y: 6
     icon: minecraft:red_sand
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [catacombs]
     tasks:
@@ -342,7 +342,7 @@ quests:
     x: 0
     y: 9
     icon: minecraft:glowstone
-    shape: shield
+    shape: trial
     optional: true
     deps: [buried_ruins]
     tasks:
@@ -359,7 +359,7 @@ quests:
     x: 3
     y: 9
     icon: minecraft:mossy_cobblestone
-    shape: shield
+    shape: trial
     optional: true
     deps: [light_temple]
     tasks:
@@ -376,7 +376,7 @@ quests:
     x: 6
     y: 9
     icon: minecraft:prismarine_bricks
-    shape: star
+    shape: milestone
     optional: true
     deps: [jungle_temple]
     tasks:
@@ -393,7 +393,7 @@ quests:
     x: 9
     y: 9
     icon: minecraft:stone
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [underwater]
     tasks:
@@ -410,7 +410,7 @@ quests:
     x: -3
     y: 3
     icon: minecraft:cobblestone_wall
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [brush]
     tasks:

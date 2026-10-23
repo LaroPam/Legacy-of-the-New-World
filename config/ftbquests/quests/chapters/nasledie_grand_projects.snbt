@@ -5,9 +5,226 @@
 	title: "Великие проекты — база оживает"
 	icon: "minecraft:beacon"
 	order_index: 13
-	default_hide_dependency_lines: false
-	default_quest_shape: "square"
+	default_hide_dependency_lines: true
+	default_quest_shape: "tech"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: -1.25d
+			y: 0.75d
+			width: 35.1795d
+			height: 22.2545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/base.png"
+			color: 15880382
+			alpha: 255
+			order: -2
+		}
+		{
+			x: 4.75d
+			y: 0.25d
+			width: 3.4545d
+			height: 1.1045d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/001db3a2feaebbd6.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "001DB3A2FEAEBBD6"
+		}
+		{
+			x: 1.0d
+			y: 4.75d
+			width: 4.042d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/02e8f7c592478c40.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "02E8F7C592478C40"
+		}
+		{
+			x: -0.75d
+			y: 7.25d
+			width: 1.1045d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/1310ef94f77c64f4.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "1310EF94F77C64F4"
+		}
+		{
+			x: 0.5d
+			y: -7.25d
+			width: 7.567d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/13293a60cc292db9.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "13293A60CC292DB9"
+		}
+		{
+			x: 12.25d
+			y: 1.75d
+			width: 3.4545d
+			height: 1.1045d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/1401d666941df3eb.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "1401D666941DF3EB"
+		}
+		{
+			x: 3.75d
+			y: 8.75d
+			width: 1.1045d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/167acbd7508350fa.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "167ACBD7508350FA"
+		}
+		{
+			x: -14.75d
+			y: 2.25d
+			width: 3.4545d
+			height: 1.1045d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/18d464dfe627eaff.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "18D464DFE627EAFF"
+		}
+		{
+			x: -4.75d
+			y: 0.25d
+			width: 3.4545d
+			height: 1.1045d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/254de6fd7e31fcad.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "254DE6FD7E31FCAD"
+		}
+		{
+			x: 3.0d
+			y: 6.25d
+			width: 1.692d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/2d51b2d4e3d0e0df.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "2D51B2D4E3D0E0DF"
+		}
+		{
+			x: -12.25d
+			y: 1.75d
+			width: 3.4545d
+			height: 1.1045d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/2df4de4021a4ddd2.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "2DF4DE4021A4DDD2"
+		}
+		{
+			x: 7.25d
+			y: 0.75d
+			width: 3.4545d
+			height: 1.1045d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/33706b9f6b93ba33.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "33706B9F6B93BA33"
+		}
+		{
+			x: 9.75d
+			y: 2.25d
+			width: 3.4545d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/432715af6479c057.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "432715AF6479C057"
+		}
+		{
+			x: -7.25d
+			y: 0.75d
+			width: 3.4545d
+			height: 1.1045d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/481a6638d3700bb6.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "481A6638D3700BB6"
+		}
+		{
+			x: -9.75d
+			y: 1.25d
+			width: 3.4545d
+			height: 1.1045d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/6555136bc726b91d.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "6555136BC726B91D"
+		}
+		{
+			x: 10.75d
+			y: 4.0d
+			width: 3.4545d
+			height: 1.692d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/67f2853b8418f46d.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "67F2853B8418F46D"
+		}
+		{
+			x: 0.25d
+			y: -4.75d
+			width: 1.1045d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/724a5ca9571ce25a.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "724A5CA9571CE25A"
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			width: 8.742d
+			height: 8.742d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/grand_projects/7d0417def7f45b46.png"
+			color: 16363746
+			alpha: 255
+			order: -1
+			dependency: "7D0417DEF7F45B46"
+		}
+	]
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,7 +234,8 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "create:stressometer"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			size: 1.7d
 			dependencies: ["027C7ABF4F61942F"]
 			tasks: [{
@@ -40,6 +258,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "001DB3A2FEAEBBD6"
@@ -48,6 +267,7 @@
 			x: 3.5d
 			y: 0.0d
 			icon: "create:display_link"
+			icon_scale: 0.6d
 			dependencies: ["7D0417DEF7F45B46"]
 			tasks: [{
 				id: "75A9BF81C60C7F45"
@@ -69,6 +289,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "33706B9F6B93BA33"
@@ -77,6 +298,7 @@
 			x: 6.0d
 			y: 0.5d
 			icon: "create:packager"
+			icon_scale: 0.6d
 			dependencies: ["001DB3A2FEAEBBD6"]
 			tasks: [{
 				id: "0AEBA15CA1F9AC62"
@@ -98,6 +320,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "432715AF6479C057"
@@ -106,6 +329,7 @@
 			x: 8.5d
 			y: 1.0d
 			icon: "create:stock_ticker"
+			icon_scale: 0.6d
 			dependencies: ["33706B9F6B93BA33"]
 			tasks: [{
 				id: "0BB8F4E3A7626C2A"
@@ -127,6 +351,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "1401D666941DF3EB"
@@ -135,6 +360,7 @@
 			x: 11.0d
 			y: 1.5d
 			icon: "create:package_frogport"
+			icon_scale: 0.6d
 			dependencies: ["432715AF6479C057"]
 			tasks: [{
 				id: "6C6F98BFDE360457"
@@ -156,6 +382,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "1B721B53DDC184D8"
@@ -164,7 +391,8 @@
 			x: 13.5d
 			y: 2.0d
 			icon: "create:factory_gauge"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			size: 1.4d
 			dependencies: ["1401D666941DF3EB"]
 			tasks: [{
@@ -187,6 +415,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "67F2853B8418F46D"
@@ -195,7 +424,8 @@
 			x: 9.5d
 			y: 3.5d
 			icon: "create:cardboard_block"
-			shape: "circle"
+			icon_scale: 0.6d
+			shape: "step"
 			optional: true
 			dependencies: ["432715AF6479C057"]
 			tasks: [{
@@ -218,6 +448,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "6AD9E4891242F10A"
@@ -226,7 +457,8 @@
 			x: 12.0d
 			y: 4.5d
 			icon: "create:cardboard_helmet"
-			shape: "circle"
+			icon_scale: 0.6d
+			shape: "step"
 			optional: true
 			dependencies: ["67F2853B8418F46D"]
 			tasks: [{
@@ -249,6 +481,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "724A5CA9571CE25A"
@@ -257,6 +490,7 @@
 			x: 0.0d
 			y: -3.5d
 			icon: "create:linked_controller"
+			icon_scale: 0.6d
 			dependencies: ["7D0417DEF7F45B46"]
 			tasks: [{
 				id: "58AE35B8DE8D31D6"
@@ -278,6 +512,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "13293A60CC292DB9"
@@ -286,6 +521,7 @@
 			x: 0.5d
 			y: -6.0d
 			icon: "create:mechanical_arm"
+			icon_scale: 0.6d
 			dependencies: ["724A5CA9571CE25A"]
 			tasks: [{
 				id: "602C5B1BD2639689"
@@ -307,6 +543,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "43F2CF43CEF0F671"
@@ -315,6 +552,7 @@
 			x: 1.0d
 			y: -8.5d
 			icon: "create:blaze_burner"
+			icon_scale: 0.6d
 			dependencies: ["13293A60CC292DB9"]
 			tasks: [{
 				id: "59CE28AF04EEFD78"
@@ -336,6 +574,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "545EE0ABAC59400C"
@@ -344,7 +583,8 @@
 			x: -2.5d
 			y: -7.0d
 			icon: "create:item_drain"
-			shape: "circle"
+			icon_scale: 0.6d
+			shape: "step"
 			optional: true
 			dependencies: ["13293A60CC292DB9"]
 			tasks: [{
@@ -367,6 +607,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "521A9F7F45B8BAA3"
@@ -375,7 +616,8 @@
 			x: 3.5d
 			y: -7.5d
 			icon: "create:weighted_ejector"
-			shape: "circle"
+			icon_scale: 0.6d
+			shape: "step"
 			optional: true
 			dependencies: ["13293A60CC292DB9"]
 			tasks: [{
@@ -398,6 +640,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "254DE6FD7E31FCAD"
@@ -406,6 +649,7 @@
 			x: -3.5d
 			y: 0.0d
 			icon: "create:clockwork_bearing"
+			icon_scale: 0.6d
 			dependencies: ["7D0417DEF7F45B46"]
 			tasks: [{
 				id: "140769638DCE6786"
@@ -427,6 +671,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "481A6638D3700BB6"
@@ -435,6 +680,7 @@
 			x: -6.0d
 			y: 0.5d
 			icon: "create:cuckoo_clock"
+			icon_scale: 0.6d
 			dependencies: ["254DE6FD7E31FCAD"]
 			tasks: [{
 				id: "7DAB1B92657540FA"
@@ -456,6 +702,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "6555136BC726B91D"
@@ -464,6 +711,7 @@
 			x: -8.5d
 			y: 1.0d
 			icon: "create:steam_whistle"
+			icon_scale: 0.6d
 			dependencies: ["481A6638D3700BB6"]
 			tasks: [{
 				id: "5DAFEDDFD6A8DF5D"
@@ -485,6 +733,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "2DF4DE4021A4DDD2"
@@ -493,6 +742,7 @@
 			x: -11.0d
 			y: 1.5d
 			icon: "create:haunted_bell"
+			icon_scale: 0.6d
 			dependencies: ["6555136BC726B91D"]
 			tasks: [{
 				id: "27DE323D5757FAB3"
@@ -514,6 +764,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "18D464DFE627EAFF"
@@ -522,6 +773,7 @@
 			x: -13.5d
 			y: 2.0d
 			icon: "minecraft:jukebox"
+			icon_scale: 0.6d
 			dependencies: ["2DF4DE4021A4DDD2"]
 			tasks: [{
 				id: "0E92F99A7CDC4864"
@@ -543,6 +795,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "51E72065750CAA2D"
@@ -551,7 +804,8 @@
 			x: -16.0d
 			y: 2.5d
 			icon: "create:steam_whistle"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			size: 1.4d
 			dependencies: ["18D464DFE627EAFF"]
 			tasks: [{
@@ -582,6 +836,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "02E8F7C592478C40"
@@ -590,6 +845,7 @@
 			x: 0.0d
 			y: 3.5d
 			icon: "create:copper_backtank"
+			icon_scale: 0.6d
 			dependencies: ["7D0417DEF7F45B46"]
 			tasks: [{
 				id: "48F478E34A0D9C34"
@@ -611,6 +867,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "1310EF94F77C64F4"
@@ -619,6 +876,7 @@
 			x: -0.5d
 			y: 6.0d
 			icon: "create:rope_pulley"
+			icon_scale: 0.6d
 			dependencies: ["02E8F7C592478C40"]
 			tasks: [{
 				id: "33D55B7A796A4C00"
@@ -640,6 +898,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "6318A6A61AD56A13"
@@ -648,7 +907,8 @@
 			x: -1.0d
 			y: 8.5d
 			icon: "minecraft:minecart"
-			shape: "circle"
+			icon_scale: 0.6d
+			shape: "step"
 			optional: true
 			dependencies: ["1310EF94F77C64F4"]
 			tasks: [{
@@ -671,6 +931,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "2D51B2D4E3D0E0DF"
@@ -679,7 +940,8 @@
 			x: 2.5d
 			y: 5.0d
 			icon: "create:water_wheel"
-			shape: "circle"
+			icon_scale: 0.6d
+			shape: "step"
 			optional: true
 			dependencies: ["02E8F7C592478C40"]
 			tasks: [{
@@ -702,6 +964,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "167ACBD7508350FA"
@@ -710,7 +973,8 @@
 			x: 3.5d
 			y: 7.5d
 			icon: "minecraft:anvil"
-			shape: "circle"
+			icon_scale: 0.6d
+			shape: "step"
 			optional: true
 			dependencies: ["2D51B2D4E3D0E0DF"]
 			tasks: [{
@@ -733,6 +997,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 		{
 			id: "35271CE5B6428CAF"
@@ -741,7 +1006,8 @@
 			x: 4.0d
 			y: 10.0d
 			icon: "create:deployer"
-			shape: "heart"
+			icon_scale: 0.6d
+			shape: "home"
 			optional: true
 			dependencies: ["167ACBD7508350FA"]
 			tasks: [{
@@ -764,6 +1030,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_grand_projects"
 		}
 	]
 }

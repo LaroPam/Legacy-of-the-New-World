@@ -7,8 +7,8 @@ chapter:
   title: Мастерская — первые машины
   icon: create:cogwheel
   order_index: 9
-  default_hide_dependency_lines: false
-  default_quest_shape: gear
+  default_hide_dependency_lines: true
+  default_quest_shape: tech
   progression_mode: flexible
 
 quests:
@@ -21,7 +21,7 @@ quests:
     x: 0
     y: 0
     icon: create:andesite_alloy
-    shape: star
+    shape: milestone
     size: 1.8
     deps: [nasledie_chronicle/route]
     tasks:
@@ -55,7 +55,7 @@ quests:
     x: -2
     y: -5.5
     icon: create:hand_crank
-    shape: circle
+    shape: step
     optional: true
     deps: [water_wheel]
     tasks:
@@ -102,7 +102,7 @@ quests:
     x: 1.5
     y: -11
     icon: create:white_sail
-    shape: star
+    shape: milestone
     optional: true
     deps: [windmill]
     tasks:
@@ -241,7 +241,7 @@ quests:
     x: 12
     y: 5.5
     icon: create:honeyed_apple
-    shape: star
+    shape: milestone
     optional: true
     deps: [burner]
     tasks:
@@ -304,7 +304,7 @@ quests:
     x: 1.5
     y: 9
     icon: create:brass_funnel
-    shape: circle
+    shape: step
     optional: true
     deps: [funnel]
     tasks:
@@ -382,7 +382,7 @@ quests:
     x: -3.5
     y: 21
     icon: create:railway_casing
-    shape: star
+    shape: milestone
     optional: true
     deps: [psi]
     tasks:
@@ -399,7 +399,7 @@ quests:
     x: 2.5
     y: 5
     icon: create:extendo_grip
-    shape: circle
+    shape: step
     optional: true
     deps: [saw]
     tasks:
@@ -416,7 +416,7 @@ quests:
     x: 4.5
     y: 6.5
     icon: create:extendo_grip
-    shape: circle
+    shape: step
     optional: true
     deps: [extendo]
     tasks:
@@ -433,7 +433,7 @@ quests:
     x: 4
     y: 9
     icon: create:potato_cannon
-    shape: circle
+    shape: step
     optional: true
     deps: [extendo_dual]
     tasks:
@@ -511,7 +511,7 @@ quests:
     x: -13.5
     y: -2
     icon: create:steam_engine
-    shape: star
+    shape: milestone
     size: 1.4
     deps: [drain]
     tasks:
@@ -528,7 +528,7 @@ quests:
     x: -7.5
     y: 1.5
     icon: create:chocolate_bucket
-    shape: circle
+    shape: step
     optional: true
     deps: [spout]
     tasks:
@@ -545,7 +545,7 @@ quests:
     x: -10
     y: 1
     icon: minecraft:honey_bottle
-    shape: circle
+    shape: step
     optional: true
     deps: [drain]
     tasks:
@@ -562,7 +562,7 @@ quests:
     x: -12.5
     y: 0.5
     icon: minecraft:obsidian
-    shape: circle
+    shape: step
     optional: true
     deps: [honey]
     tasks:
@@ -579,7 +579,7 @@ quests:
     x: -16
     y: -2.5
     icon: create:netherite_diving_helmet
-    shape: circle
+    shape: step
     optional: true
     deps: [steam_engine]
     tasks:

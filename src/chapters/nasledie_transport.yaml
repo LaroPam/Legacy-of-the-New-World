@@ -6,8 +6,8 @@ chapter:
   title: Дороги нового мира — рельсы и крылья
   icon: create:track
   order_index: 11
-  default_hide_dependency_lines: false
-  default_quest_shape: circle
+  default_hide_dependency_lines: true
+  default_quest_shape: step
   progression_mode: flexible
 
 quests:
@@ -66,7 +66,7 @@ quests:
     x: 9
     y: 0
     icon: create:controls
-    shape: star
+    shape: milestone
     size: 1.5
     deps: [train_casing]
     tasks:
@@ -208,7 +208,7 @@ quests:
     x: 15
     y: -6
     icon: minecraft:compass
-    shape: star
+    shape: milestone
     size: 1.4
     optional: true
     deps: [long_train]
@@ -226,7 +226,7 @@ quests:
     x: 18
     y: -3
     icon: minecraft:obsidian
-    shape: star
+    shape: milestone
     optional: true
     deps: [display_board]
     tasks:
@@ -364,7 +364,7 @@ quests:
     x: 6
     y: -10
     icon: immersive_aircraft:warship
-    shape: star
+    shape: milestone
     size: 1.4
     optional: true
     deps: [cargo_airship]

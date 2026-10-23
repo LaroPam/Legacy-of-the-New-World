@@ -6,8 +6,8 @@ chapter:
   title: Летопись Первой экспедиции
   icon: minecraft:writable_book
   order_index: 0
-  default_hide_dependency_lines: false
-  default_quest_shape: star
+  default_hide_dependency_lines: true
+  default_quest_shape: milestone
   default_quest_size: 1.5
 
 quests:
@@ -23,7 +23,7 @@ quests:
     x: 0
     y: 0
     icon: minecraft:writable_book
-    shape: star
+    shape: milestone
     size: 1.6
     tasks:
       - {type: checkmark, title: Открыть летопись}
@@ -92,7 +92,7 @@ quests:
     x: 10
     y: -6
     icon: mowziesmobs:wrought_helmet
-    shape: crown
+    shape: boss
     deps: [route, nasledie_defense/wrought_chamber]
     tasks:
       - {type: advancement, advancement: mowziesmobs:kill_ferrous_wroughtnaut}
@@ -114,7 +114,7 @@ quests:
     x: 10
     y: -3.6
     icon: mowziesmobs:sol_visage
-    shape: crown
+    shape: boss
     deps: [route, nasledie_defense/grove_chest]
     tasks:
       - {type: advancement, advancement: mowziesmobs:kill_umvuthi}
@@ -138,7 +138,7 @@ quests:
     x: 10
     y: -1.2
     icon: mowziesmobs:sculptor_staff
-    shape: crown
+    shape: boss
     deps: [route, nasledie_defense/monastery_chest]
     tasks:
       - {type: advancement, advancement: mowziesmobs:sculptor_challenge}
@@ -162,7 +162,7 @@ quests:
     x: 10
     y: 1.2
     icon: mowziesmobs:ice_crystal
-    shape: crown
+    shape: boss
     deps: [route, nasledie_defense/frostmaw_lair]
     tasks:
       - {type: advancement, advancement: mowziesmobs:kill_frostmaw}
@@ -184,7 +184,7 @@ quests:
     x: 10
     y: 3.6
     icon: minecraft:prismarine_shard
-    shape: crown
+    shape: boss
     deps: [route, nasledie_ocean/guardian]
     tasks:
       - {type: kill, entity: minecraft:elder_guardian, value: 1}
@@ -207,7 +207,7 @@ quests:
     x: 10
     y: 6
     icon: cataclysm:flame_eye
-    shape: star
+    shape: milestone
     deps: [route, nasledie_netheritage/blaze_rod]
     tasks:
       - type: criteria
@@ -233,7 +233,7 @@ quests:
     x: 13
     y: 6
     icon: minecraft:wither_skeleton_skull
-    shape: crown
+    shape: boss
     size: 1.7
     deps: [nether_eye, nasledie_netheritage/skull]
     tasks:
@@ -282,7 +282,7 @@ quests:
     x: 18
     y: 1
     icon: cataclysm:wither_assault_shoulder_weapon
-    shape: crown
+    shape: boss
     size: 1.7
     deps: [strand_notes]
     tasks:
@@ -307,7 +307,7 @@ quests:
     x: 15.5
     y: 8.8
     icon: cataclysm:monstrous_helm
-    shape: crown
+    shape: boss
     size: 1.7
     deps: [nether_eye, nasledie_cataclysm/0A9ACE48F5328D23]
     tasks:
@@ -333,7 +333,7 @@ quests:
     x: 21
     y: 2.5
     icon: cataclysm:ignited_revenant_spawn_egg
-    shape: shield
+    shape: trial
     size: 1.5
     min_required_dependencies: 1
     deps: [harbinger, monstrosity]
@@ -362,7 +362,7 @@ quests:
     x: 24.5
     y: -3.5
     icon: cataclysm:flame_eye
-    shape: crown
+    shape: boss
     size: 1.7
     deps: [awakened, nasledie_cataclysm/7EE6E381AE1C38B7]
     tasks:
@@ -386,7 +386,7 @@ quests:
     x: 24.5
     y: -0.5
     icon: cataclysm:desert_eye
-    shape: crown
+    shape: boss
     size: 1.7
     deps: [awakened, nasledie_cataclysm/0B35EC876DCDE6DC]
     tasks:
@@ -412,7 +412,7 @@ quests:
     x: 24.5
     y: 2.5
     icon: cataclysm:cursed_eye
-    shape: crown
+    shape: boss
     size: 1.7
     deps: [awakened, nasledie_cataclysm/1648CF8E2A62BFAF]
     tasks:
@@ -437,7 +437,7 @@ quests:
     x: 24.5
     y: 5.5
     icon: cataclysm:abyss_eye
-    shape: crown
+    shape: boss
     size: 1.7
     deps: [awakened, nasledie_cataclysm/296277A6BE605D32]
     tasks:
@@ -461,7 +461,7 @@ quests:
     x: 24.5
     y: 8.5
     icon: cataclysm:storm_eye
-    shape: crown
+    shape: boss
     size: 1.7
     deps: [awakened, nasledie_cataclysm/72FD5EEB117B3119]
     tasks:
@@ -487,7 +487,7 @@ quests:
     x: 28.5
     y: 2.5
     icon: minecraft:ender_eye
-    shape: star
+    shape: milestone
     size: 1.7
     min_required_dependencies: 4
     deps: [ignis, remnant, maledictus, leviathan, scylla]
@@ -511,7 +511,7 @@ quests:
     x: 32
     y: 2.5
     icon: minecraft:dragon_head
-    shape: crown
+    shape: boss
     size: 1.8
     deps: [eklund_alive]
     tasks:
@@ -529,7 +529,7 @@ quests:
     x: 35.5
     y: 2.5
     icon: cataclysm:void_eye
-    shape: crown
+    shape: boss
     size: 2.2
     deps: [dragon, nasledie_cataclysm/0B22878BF8763415]
     tasks:
@@ -554,7 +554,7 @@ quests:
     x: 39.5
     y: 2.5
     icon: minecraft:beacon
-    shape: star
+    shape: milestone
     size: 2.4
     deps: [ender_guardian, nasledie_village/hero, nasledie_transport/train, nasledie_grand_projects/factory_gauge]
     tasks:
@@ -576,7 +576,7 @@ quests:
     x: 19.5
     y: 16.5
     icon: alexscaves:shadow_silk
-    shape: crown
+    shape: boss
     size: 1.7
     deps: [ancient_city, nasledie_legends/watcher]
     tasks:
@@ -599,7 +599,7 @@ quests:
     x: 22.5
     y: 16.5
     icon: alexscaves:submarine
-    shape: crown
+    shape: boss
     size: 1.7
     deps: [ancient_city, nasledie_legends/abyssal_ruins]
     tasks:
@@ -622,7 +622,7 @@ quests:
     x: 25.5
     y: 15.5
     icon: alexscaves:tectonic_shard
-    shape: crown
+    shape: boss
     size: 1.7
     deps: [ancient_city, nasledie_legends/summon_titan]
     tasks:
@@ -645,7 +645,7 @@ quests:
     x: 27.5
     y: 13
     icon: alexscaves:tremorzilla_egg
-    shape: heart
+    shape: home
     size: 1.7
     deps: [ancient_city, nasledie_legends/hatch_tremorzilla]
     tasks:
@@ -667,7 +667,7 @@ quests:
     x: 21
     y: 12
     icon: minecraft:sculk_shrieker
-    shape: star
+    shape: milestone
     size: 1.6
     deps: [awakened, nasledie_legends/cave_codex]
     tasks:
@@ -690,7 +690,7 @@ quests:
     x: 17
     y: 14.5
     icon: minecraft:echo_shard
-    shape: crown
+    shape: boss
     size: 1.7
     deps: [ancient_city]
     tasks:

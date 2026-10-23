@@ -5,16 +5,293 @@
 	title: "Восемь очей Зодчих"
 	icon: "cataclysm:flame_eye"
 	order_index: 15
-	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
+	default_hide_dependency_lines: true
+	default_quest_shape: "step"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: -2.73d
+			y: 0.0d
+			width: 34.0515d
+			height: 27.636d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/base.png"
+			color: 16724314
+			alpha: 255
+			order: -2
+		}
+		{
+			x: -3.535d
+			y: -3.535d
+			width: 3.0197d
+			height: 3.0197d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/0a06c98f48b2324f.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "0A06C98F48B2324F"
+		}
+		{
+			x: 5.66d
+			y: 7.55d
+			width: 3.008d
+			height: 7.4495d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/0a9ace48f5328d23.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "0A9ACE48F5328D23"
+		}
+		{
+			x: 1.655d
+			y: -9.02d
+			width: 4.4063d
+			height: 6.439d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/0b22878bf8763415.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "0B22878BF8763415"
+		}
+		{
+			x: -8.88d
+			y: -1.655d
+			width: 6.768d
+			height: 4.4063d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/0b35ec876dcde6dc.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "0B35EC876DCDE6DC"
+		}
+		{
+			x: -5.66d
+			y: -7.55d
+			width: 3.008d
+			height: 7.4495d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/1648cf8e2a62bfaf.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "1648CF8E2A62BFAF"
+		}
+		{
+			x: -15.75d
+			y: 0.0d
+			width: 3.4545d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/1cb249497ef14d92.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "1CB249497EF14D92"
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			width: 0.517d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/1f7f25ce4ebe950f.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "1F7F25CE4EBE950F"
+		}
+		{
+			x: -6.91d
+			y: 2.79d
+			width: 3.243d
+			height: 1.6215d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/20d9b1bc47b0a927.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "20D9B1BC47B0A927"
+		}
+		{
+			x: -7.55d
+			y: 5.66d
+			width: 7.4495d
+			height: 3.008d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/296277a6be605d32.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "296277A6BE605D32"
+		}
+		{
+			x: -9.225d
+			y: 3.73d
+			width: 3.2313d
+			height: 1.6215d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/2b0db46c4bd473e2.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "2B0DB46C4BD473E2"
+		}
+		{
+			x: 1.5d
+			y: 3.5d
+			width: 12.267d
+			height: 16.967d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/3433e7faf2f51b45.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "3433E7FAF2F51B45"
+		}
+		{
+			x: -5.0d
+			y: 1.16d
+			width: 4.042d
+			height: 3.243d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/3853c84668190895.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "3853C84668190895"
+		}
+		{
+			x: 9.02d
+			y: 1.655d
+			width: 6.439d
+			height: 4.4063d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/391f9987f1f32442.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "391F9987F1F32442"
+		}
+		{
+			x: -0.96d
+			y: -5.0d
+			width: 2.773d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/3f01c0bc0df00b8f.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "3F01C0BC0DF00B8F"
+		}
+		{
+			x: 3.535d
+			y: 3.535d
+			width: 3.0197d
+			height: 3.0197d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/4057db6475b1edff.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "4057DB6475B1EDFF"
+		}
+		{
+			x: 7.78d
+			y: -7.78d
+			width: 3.008d
+			height: 3.008d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/51b93f857cad59f0.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "51B93F857CAD59F0"
+		}
+		{
+			x: -7.78d
+			y: -7.78d
+			width: 3.008d
+			height: 3.008d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/629080c9200cf3ff.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "629080C9200CF3FF"
+		}
+		{
+			x: -3.535d
+			y: 3.535d
+			width: 3.0197d
+			height: 3.0197d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/6e51e5ebb7e57bdf.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "6E51E5EBB7E57BDF"
+		}
+		{
+			x: 7.55d
+			y: -5.66d
+			width: 7.4495d
+			height: 3.008d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/72fd5eeb117b3119.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "72FD5EEB117B3119"
+		}
+		{
+			x: 3.535d
+			y: -3.535d
+			width: 3.0197d
+			height: 3.0197d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/7ea7999bb80d322b.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "7EA7999BB80D322B"
+		}
+		{
+			x: -1.655d
+			y: 9.02d
+			width: 4.4063d
+			height: 6.439d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/7ee6e381ae1c38b7.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "7EE6E381AE1C38B7"
+		}
+		{
+			x: -12.0d
+			y: 0.0d
+			width: 6.392d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/cataclysm/7fac9890e47b2038.png"
+			color: 16753333
+			alpha: 255
+			order: -1
+			dependency: "7FAC9890E47B2038"
+		}
+	]
 	quest_links: [
 		{
 			id: "72566FF137A6C250"
 			linked_quest: "3433E7FAF2F51B45"
 			x: 0.0d
 			y: 0.0d
-			shape: "star"
+			shape: "milestone"
 			size: 2.2d
 		}
 		{
@@ -22,7 +299,7 @@
 			linked_quest: "4E228116310381E8"
 			x: 3.31d
 			y: -11.54d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -30,7 +307,7 @@
 			linked_quest: "63651E9F6E43FAEB"
 			x: 10.5d
 			y: -5.82d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -38,7 +315,7 @@
 			linked_quest: "391F9987F1F32442"
 			x: 6.5d
 			y: 0.0d
-			shape: "star"
+			shape: "milestone"
 			size: 1.4d
 		}
 		{
@@ -46,7 +323,7 @@
 			linked_quest: "0792C39846E0D49E"
 			x: 11.54d
 			y: 3.31d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -54,7 +331,7 @@
 			linked_quest: "52813202FFECF301"
 			x: 5.82d
 			y: 10.5d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -62,7 +339,7 @@
 			linked_quest: "12B1754C45756107"
 			x: -3.31d
 			y: 11.54d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -70,7 +347,7 @@
 			linked_quest: "20BE4189EEE72883"
 			x: -10.5d
 			y: 5.82d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -78,7 +355,7 @@
 			linked_quest: "64338CFBA5C5B699"
 			x: -11.54d
 			y: -3.31d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -86,7 +363,7 @@
 			linked_quest: "213ADF5DA222DA68"
 			x: -5.82d
 			y: -10.5d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 	]
@@ -98,7 +375,8 @@
 			x: 13.44d
 			y: 13.44d
 			icon: "cataclysm:bulwark_of_the_flame"
-			shape: "crown"
+			icon_scale: 0.6d
+			shape: "boss"
 			size: 2.0d
 			dependencies: [
 				"12B1754C45756107"
@@ -184,6 +462,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "3F01C0BC0DF00B8F"
@@ -192,6 +471,7 @@
 			x: 0.0d
 			y: -3.5d
 			icon: "cataclysm:void_eye"
+			icon_scale: 0.6d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "2432A68BD33BA208"
@@ -218,6 +498,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "0B22878BF8763415"
@@ -226,7 +507,8 @@
 			x: 0.0d
 			y: -6.5d
 			icon: "minecraft:purpur_block"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["3F01C0BC0DF00B8F"]
 			tasks: [{
 				id: "5FBB94DD4E9FA384"
@@ -248,6 +530,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "1E822E9D64762351"
@@ -256,7 +539,8 @@
 			x: 0.0d
 			y: -9.5d
 			icon: "minecraft:end_stone_bricks"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			dependencies: ["0B22878BF8763415"]
 			tasks: [{
 				id: "116586B63BFEF568"
@@ -286,6 +570,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "28A645C41091FB06"
@@ -294,7 +579,8 @@
 			x: -1.92d
 			y: -5.9d
 			icon: "minecraft:obsidian"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["3F01C0BC0DF00B8F"]
 			tasks: [{
@@ -317,6 +603,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "7EA7999BB80D322B"
@@ -325,6 +612,7 @@
 			x: 2.47d
 			y: -2.47d
 			icon: "cataclysm:storm_eye"
+			icon_scale: 0.6d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "16CB9604D9DBDF5D"
@@ -351,6 +639,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "72FD5EEB117B3119"
@@ -359,7 +648,8 @@
 			x: 4.6d
 			y: -4.6d
 			icon: "minecraft:lightning_rod"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["7EA7999BB80D322B"]
 			tasks: [{
 				id: "563989E28E83E431"
@@ -381,6 +671,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "51B93F857CAD59F0"
@@ -389,6 +680,7 @@
 			x: 6.72d
 			y: -6.72d
 			icon: "minecraft:gold_block"
+			icon_scale: 0.6d
 			dependencies: ["72FD5EEB117B3119"]
 			tasks: [{
 				id: "1F9529F85683B4C3"
@@ -411,6 +703,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "43C293DB6BB1573F"
@@ -419,7 +712,8 @@
 			x: 8.84d
 			y: -8.84d
 			icon: "cataclysm:chitin_claw"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			dependencies: ["51B93F857CAD59F0"]
 			tasks: [{
 				id: "3CE1D862BBA24697"
@@ -441,6 +735,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "4910856630A3880F"
@@ -449,6 +744,7 @@
 			x: 3.4d
 			y: -0.85d
 			icon: "cataclysm:mech_eye"
+			icon_scale: 0.6d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "0B4290EAE62BD41B"
@@ -472,6 +768,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "1738FC36D192D408"
@@ -480,7 +777,8 @@
 			x: 9.5d
 			y: 0.0d
 			icon: "minecraft:iron_block"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			dependencies: ["391F9987F1F32442"]
 			tasks: [{
 				id: "2477D5EA6F8693C9"
@@ -503,6 +801,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "4057DB6475B1EDFF"
@@ -511,6 +810,7 @@
 			x: 2.47d
 			y: 2.47d
 			icon: "cataclysm:monstrous_eye"
+			icon_scale: 0.6d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "4F686C6568571D98"
@@ -537,6 +837,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "0A9ACE48F5328D23"
@@ -545,7 +846,8 @@
 			x: 4.6d
 			y: 4.6d
 			icon: "minecraft:anvil"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["4057DB6475B1EDFF"]
 			tasks: [{
 				id: "5CF8E03269AFBF49"
@@ -567,6 +869,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "3BA92955F4AA2D1F"
@@ -575,7 +878,8 @@
 			x: 6.72d
 			y: 6.72d
 			icon: "minecraft:blackstone"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			dependencies: ["0A9ACE48F5328D23"]
 			tasks: [
 				{
@@ -606,6 +910,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "1F7F25CE4EBE950F"
@@ -614,6 +919,7 @@
 			x: 0.0d
 			y: 3.5d
 			icon: "cataclysm:flame_eye"
+			icon_scale: 0.6d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "5F568C4339DB266C"
@@ -640,6 +946,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "7EE6E381AE1C38B7"
@@ -648,7 +955,8 @@
 			x: 0.0d
 			y: 6.5d
 			icon: "minecraft:magma_block"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["1F7F25CE4EBE950F"]
 			tasks: [{
 				id: "51EA7E4D0D2CEF7A"
@@ -670,6 +978,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "11CA5BADA78F67A2"
@@ -678,7 +987,8 @@
 			x: 0.0d
 			y: 9.5d
 			icon: "minecraft:blaze_powder"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			dependencies: ["7EE6E381AE1C38B7"]
 			tasks: [{
 				id: "4FCF2EC2DB828C02"
@@ -700,6 +1010,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "6E51E5EBB7E57BDF"
@@ -708,6 +1019,7 @@
 			x: -2.47d
 			y: 2.47d
 			icon: "cataclysm:abyss_eye"
+			icon_scale: 0.6d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "21542B2EE94E2043"
@@ -734,6 +1046,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "296277A6BE605D32"
@@ -742,7 +1055,8 @@
 			x: -4.6d
 			y: 4.6d
 			icon: "minecraft:prismarine_bricks"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["6E51E5EBB7E57BDF"]
 			tasks: [{
 				id: "6181054428C56979"
@@ -764,6 +1078,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "721761F49BC3DC1D"
@@ -772,7 +1087,8 @@
 			x: -6.72d
 			y: 6.72d
 			icon: "minecraft:tube_coral_block"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			dependencies: ["296277A6BE605D32"]
 			tasks: [
 				{
@@ -817,6 +1133,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "3853C84668190895"
@@ -825,6 +1142,7 @@
 			x: -3.5d
 			y: 0.0d
 			icon: "cataclysm:desert_eye"
+			icon_scale: 0.6d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "41030CD4BB74AE93"
@@ -848,6 +1166,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "0B35EC876DCDE6DC"
@@ -856,7 +1175,8 @@
 			x: -6.5d
 			y: 0.0d
 			icon: "minecraft:chiseled_sandstone"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["3853C84668190895"]
 			tasks: [{
 				id: "264E9B5219D893B9"
@@ -878,6 +1198,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "7FAC9890E47B2038"
@@ -886,7 +1207,8 @@
 			x: -9.5d
 			y: 0.0d
 			icon: "cataclysm:kobolediator_skull"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			dependencies: ["0B35EC876DCDE6DC"]
 			tasks: [{
 				id: "5FF3DDF42766CB78"
@@ -909,6 +1231,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "09ECBBE772E8674C"
@@ -917,6 +1240,7 @@
 			x: -6.22d
 			y: -1.9d
 			icon: "minecraft:gold_ingot"
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["0B35EC876DCDE6DC"]
 			tasks: [{
@@ -940,6 +1264,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "20D9B1BC47B0A927"
@@ -948,7 +1273,8 @@
 			x: -5.75d
 			y: 2.32d
 			icon: "minecraft:cobweb"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["3853C84668190895"]
 			tasks: [{
@@ -971,6 +1297,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "2B0DB46C4BD473E2"
@@ -979,7 +1306,8 @@
 			x: -8.07d
 			y: 3.26d
 			icon: "minecraft:sandstone"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["20D9B1BC47B0A927"]
 			tasks: [{
@@ -1002,6 +1330,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "4C6AECEDA32DA758"
@@ -1010,7 +1339,8 @@
 			x: -10.38d
 			y: 4.2d
 			icon: "minecraft:brush"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["2B0DB46C4BD473E2"]
 			tasks: [{
@@ -1033,6 +1363,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "1CB249497EF14D92"
@@ -1041,7 +1372,8 @@
 			x: -14.5d
 			y: 0.0d
 			icon: "minecraft:cut_sandstone"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["7FAC9890E47B2038"]
 			tasks: [{
@@ -1065,6 +1397,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "32584C9F3E1DF7E2"
@@ -1073,7 +1406,8 @@
 			x: -17.0d
 			y: 0.0d
 			icon: "minecraft:amethyst_cluster"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["1CB249497EF14D92"]
 			tasks: [{
@@ -1097,6 +1431,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "0A06C98F48B2324F"
@@ -1105,6 +1440,7 @@
 			x: -2.47d
 			y: -2.47d
 			icon: "cataclysm:cursed_eye"
+			icon_scale: 0.6d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "59CBCC67E9E2E8C1"
@@ -1128,6 +1464,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "1648CF8E2A62BFAF"
@@ -1136,7 +1473,8 @@
 			x: -4.6d
 			y: -4.6d
 			icon: "minecraft:packed_ice"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["0A06C98F48B2324F"]
 			tasks: [{
 				id: "61E76F09EA1D9D08"
@@ -1161,6 +1499,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "629080C9200CF3FF"
@@ -1169,6 +1508,7 @@
 			x: -6.72d
 			y: -6.72d
 			icon: "minecraft:blue_ice"
+			icon_scale: 0.6d
 			dependencies: ["1648CF8E2A62BFAF"]
 			tasks: [{
 				id: "7B3AA5E20F5DE431"
@@ -1191,6 +1531,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 		{
 			id: "1D100BB1E2D79A37"
@@ -1199,7 +1540,8 @@
 			x: -8.84d
 			y: -8.84d
 			icon: "cataclysm:aptrgangr_head"
-			shape: "shield"
+			icon_scale: 0.6d
+			shape: "trial"
 			dependencies: ["629080C9200CF3FF"]
 			tasks: [{
 				id: "6DA00655D742D852"
@@ -1222,6 +1564,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_cataclysm"
 		}
 	]
 }

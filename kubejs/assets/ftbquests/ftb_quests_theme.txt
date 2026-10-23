@@ -1,7 +1,7 @@
 // Generated from reviews/chapter_palettes.json
 // FTB Quests 2001.4.22: [*] is required before global properties.
 [*]
-extra_quest_shapes: diamond, pentagon, hexagon, octagon, heart, gear, crown, laurel, scroll, shield, coin, star, ribbon
+extra_quest_shapes: diamond, pentagon, hexagon, octagon, heart, gear, step, expedition, milestone, trial, tech, boss, home
 background: nasledie:textures/backgrounds/bg_global.png
 selected_chapter_highlight_1: #70A67C52
 selected_chapter_highlight_2: #307C5C3B
@@ -25,8 +25,8 @@ quest_view_title: #D9E8F9
 quest_started_color: #51E6FF
 quest_not_started_color: #FFB52E
 quest_locked_color: #9C8063
-dependency_line_completed_color: #63BE91
-dependency_line_uncompleted_color: #83B8E0
+dependency_line_completed_color: #0063BE91
+dependency_line_uncompleted_color: #0083B8E0
 dependency_line_requires_color: #DEB768
 dependency_line_required_for_color: #72B8D9
 quest_spacing: 1.05
@@ -46,8 +46,8 @@ quest_locked_color: #9A8C4F
 quest_not_started_color: #FFD43B
 quest_started_color: #FF7B48
 quest_completed_color: #FFECA7
-dependency_line_completed_color: #FFECA7
-dependency_line_uncompleted_color: #FFD43B
+dependency_line_completed_color: #00FFECA7
+dependency_line_uncompleted_color: #00FFD43B
 dependency_line_requires_color: #FF7B48
 dependency_line_required_for_color: #FFB091
 quest_view_border: #FFD43B
@@ -64,8 +64,8 @@ quest_locked_color: #61954E
 quest_not_started_color: #88E638
 quest_started_color: #FFE35A
 quest_completed_color: #C9F4A5
-dependency_line_completed_color: #C9F4A5
-dependency_line_uncompleted_color: #88E638
+dependency_line_completed_color: #00C9F4A5
+dependency_line_uncompleted_color: #0088E638
 dependency_line_requires_color: #FFE35A
 dependency_line_required_for_color: #FFEE9C
 quest_view_border: #88E638
@@ -82,8 +82,8 @@ quest_locked_color: #9A6E42
 quest_not_started_color: #FF961F
 quest_started_color: #4FE4E8
 quest_completed_color: #FFD09A
-dependency_line_completed_color: #FFD09A
-dependency_line_uncompleted_color: #FF961F
+dependency_line_completed_color: #00FFD09A
+dependency_line_uncompleted_color: #00FF961F
 dependency_line_requires_color: #4FE4E8
 dependency_line_required_for_color: #95EFF1
 quest_view_border: #FF961F
@@ -100,8 +100,8 @@ quest_locked_color: #2B9593
 quest_not_started_color: #18E6C9
 quest_started_color: #F9B755
 quest_completed_color: #97F4E7
-dependency_line_completed_color: #97F4E7
-dependency_line_uncompleted_color: #18E6C9
+dependency_line_completed_color: #0097F4E7
+dependency_line_uncompleted_color: #0018E6C9
 dependency_line_requires_color: #F9B755
 dependency_line_required_for_color: #FBD499
 quest_view_border: #18E6C9
@@ -118,8 +118,8 @@ quest_locked_color: #9A7A6D
 quest_not_started_color: #FFAF78
 quest_started_color: #E4F248
 quest_completed_color: #FFDBC2
-dependency_line_completed_color: #FFDBC2
-dependency_line_uncompleted_color: #FFAF78
+dependency_line_completed_color: #00FFDBC2
+dependency_line_uncompleted_color: #00FFAF78
 dependency_line_requires_color: #E4F248
 dependency_line_required_for_color: #EFF791
 quest_view_border: #FFAF78
@@ -136,8 +136,8 @@ quest_locked_color: #399B80
 quest_not_started_color: #35F2A0
 quest_started_color: #FFC83D
 quest_completed_color: #A4F9D4
-dependency_line_completed_color: #A4F9D4
-dependency_line_uncompleted_color: #35F2A0
+dependency_line_completed_color: #00A4F9D4
+dependency_line_uncompleted_color: #0035F2A0
 dependency_line_requires_color: #FFC83D
 dependency_line_required_for_color: #FFDE8B
 quest_view_border: #35F2A0
@@ -154,8 +154,8 @@ quest_locked_color: #4470AD
 quest_not_started_color: #4C99FF
 quest_started_color: #FFE15A
 quest_completed_color: #AED1FF
-dependency_line_completed_color: #AED1FF
-dependency_line_uncompleted_color: #4C99FF
+dependency_line_completed_color: #00AED1FF
+dependency_line_uncompleted_color: #004C99FF
 dependency_line_requires_color: #FFE15A
 dependency_line_required_for_color: #FFED9C
 quest_view_border: #4C99FF
@@ -172,8 +172,8 @@ quest_locked_color: #859844
 quest_not_started_color: #D4ED24
 quest_started_color: #30D8E6
 quest_completed_color: #ECF79C
-dependency_line_completed_color: #ECF79C
-dependency_line_uncompleted_color: #D4ED24
+dependency_line_completed_color: #00ECF79C
+dependency_line_uncompleted_color: #00D4ED24
 dependency_line_requires_color: #30D8E6
 dependency_line_required_for_color: #83E8F0
 quest_view_border: #D4ED24
@@ -190,8 +190,8 @@ quest_locked_color: #9A5E56
 quest_not_started_color: #FF744A
 quest_started_color: #FFD650
 quest_completed_color: #FFC0AE
-dependency_line_completed_color: #FFC0AE
-dependency_line_uncompleted_color: #FF744A
+dependency_line_completed_color: #00FFC0AE
+dependency_line_uncompleted_color: #00FF744A
 dependency_line_requires_color: #FFD650
 dependency_line_required_for_color: #FFE696
 quest_view_border: #FF744A
@@ -208,8 +208,8 @@ quest_locked_color: #7A5AAD
 quest_not_started_color: #BD6BFF
 quest_started_color: #62F4E3
 quest_completed_color: #E1BCFF
-dependency_line_completed_color: #E1BCFF
-dependency_line_uncompleted_color: #BD6BFF
+dependency_line_completed_color: #00E1BCFF
+dependency_line_uncompleted_color: #00BD6BFF
 dependency_line_requires_color: #62F4E3
 dependency_line_required_for_color: #A1F8EE
 quest_view_border: #BD6BFF
@@ -226,8 +226,8 @@ quest_locked_color: #944D8E
 quest_not_started_color: #F250BE
 quest_started_color: #76E8FF
 quest_completed_color: #F9B0E2
-dependency_line_completed_color: #F9B0E2
-dependency_line_uncompleted_color: #F250BE
+dependency_line_completed_color: #00F9B0E2
+dependency_line_uncompleted_color: #00F250BE
 dependency_line_requires_color: #76E8FF
 dependency_line_required_for_color: #ADF1FF
 quest_view_border: #F250BE
@@ -244,8 +244,8 @@ quest_locked_color: #3B8F65
 quest_not_started_color: #38D968
 quest_started_color: #FFBC64
 quest_completed_color: #A5EEBB
-dependency_line_completed_color: #A5EEBB
-dependency_line_uncompleted_color: #38D968
+dependency_line_completed_color: #00A5EEBB
+dependency_line_uncompleted_color: #0038D968
 dependency_line_requires_color: #FFBC64
 dependency_line_required_for_color: #FFD7A2
 quest_view_border: #38D968
@@ -262,8 +262,8 @@ quest_locked_color: #9A3E5E
 quest_not_started_color: #FF315A
 quest_started_color: #F5CF56
 quest_completed_color: #FFA2B5
-dependency_line_completed_color: #FFA2B5
-dependency_line_uncompleted_color: #FF315A
+dependency_line_completed_color: #00FFA2B5
+dependency_line_uncompleted_color: #00FF315A
 dependency_line_requires_color: #F5CF56
 dependency_line_required_for_color: #F9E29A
 quest_view_border: #FF315A
@@ -280,8 +280,8 @@ quest_locked_color: #8A7C59
 quest_not_started_color: #DDB350
 quest_started_color: #70DACD
 quest_completed_color: #F0DDB0
-dependency_line_completed_color: #F0DDB0
-dependency_line_uncompleted_color: #DDB350
+dependency_line_completed_color: #00F0DDB0
+dependency_line_uncompleted_color: #00DDB350
 dependency_line_requires_color: #70DACD
 dependency_line_required_for_color: #A9E9E1
 quest_view_border: #DDB350
@@ -298,8 +298,8 @@ quest_locked_color: #675AAD
 quest_not_started_color: #956BFF
 quest_started_color: #FABBEB
 quest_completed_color: #CFBCFF
-dependency_line_completed_color: #CFBCFF
-dependency_line_uncompleted_color: #956BFF
+dependency_line_completed_color: #00CFBCFF
+dependency_line_uncompleted_color: #00956BFF
 dependency_line_requires_color: #FABBEB
 dependency_line_required_for_color: #FCD6F3
 quest_view_border: #956BFF
@@ -316,8 +316,8 @@ quest_locked_color: #9A4642
 quest_not_started_color: #FF421F
 quest_started_color: #FFB82E
 quest_completed_color: #FFAA9A
-dependency_line_completed_color: #FFAA9A
-dependency_line_uncompleted_color: #FF421F
+dependency_line_completed_color: #00FFAA9A
+dependency_line_uncompleted_color: #00FF421F
 dependency_line_requires_color: #FFB82E
 dependency_line_required_for_color: #FFD482
 quest_view_border: #FF421F
@@ -334,8 +334,8 @@ quest_locked_color: #368CAD
 quest_not_started_color: #2ED4FF
 quest_started_color: #60FFB9
 quest_completed_color: #A1ECFF
-dependency_line_completed_color: #A1ECFF
-dependency_line_uncompleted_color: #2ED4FF
+dependency_line_completed_color: #00A1ECFF
+dependency_line_uncompleted_color: #002ED4FF
 dependency_line_requires_color: #60FFB9
 dependency_line_required_for_color: #A0FFD5
 quest_view_border: #2ED4FF
@@ -352,8 +352,8 @@ quest_locked_color: #5565AD
 quest_not_started_color: #6F83FF
 quest_started_color: #FFC978
 quest_completed_color: #BEC7FF
-dependency_line_completed_color: #BEC7FF
-dependency_line_uncompleted_color: #6F83FF
+dependency_line_completed_color: #00BEC7FF
+dependency_line_uncompleted_color: #006F83FF
 dependency_line_requires_color: #FFC978
 dependency_line_required_for_color: #FFDFAE
 quest_view_border: #6F83FF
@@ -370,8 +370,8 @@ quest_locked_color: #6E5A8A
 quest_not_started_color: #C77DFF
 quest_started_color: #7CF5D3
 quest_completed_color: #E9D5FF
-dependency_line_completed_color: #E9D5FF
-dependency_line_uncompleted_color: #C77DFF
+dependency_line_completed_color: #00E9D5FF
+dependency_line_uncompleted_color: #00C77DFF
 dependency_line_requires_color: #7CF5D3
 dependency_line_required_for_color: #B5F9E6
 quest_view_border: #C77DFF

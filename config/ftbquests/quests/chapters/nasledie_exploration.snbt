@@ -5,9 +5,298 @@
 	title: "Дорога за горизонт"
 	icon: "minecraft:compass"
 	order_index: 3
-	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
+	default_hide_dependency_lines: true
+	default_quest_shape: "step"
 	progression_mode: "flexible"
+	images: [
+		{
+			x: 4.5d
+			y: 1.75d
+			width: 25.192d
+			height: 24.6045d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/base.png"
+			color: 1631945
+			alpha: 255
+			order: -2
+		}
+		{
+			x: 10.5d
+			y: -8.5d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/076b03b26967b3f5.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "076B03B26967B3F5"
+		}
+		{
+			x: 7.5d
+			y: -6.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/07a63c78a1e0efd4.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "07A63C78A1E0EFD4"
+		}
+		{
+			x: 4.5d
+			y: 12.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/098102a102a9739a.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "098102A102A9739A"
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/120cfadbf5186faa.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "120CFADBF5186FAA"
+		}
+		{
+			x: 13.5d
+			y: 12.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/13ea4ac90bb6f5e7.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "13EA4AC90BB6F5E7"
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/1fb71b915fe0b5f5.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "1FB71B915FE0B5F5"
+		}
+		{
+			x: 7.5d
+			y: -8.5d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/251bb178fdf89518.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "251BB178FDF89518"
+		}
+		{
+			x: 10.5d
+			y: -5.7667d
+			width: 4.042d
+			height: 1.0653d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/291583b5b92c22eb.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "291583B5B92C22EB"
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/2c2f436a72535e22.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "2C2F436A72535E22"
+		}
+		{
+			x: 13.5d
+			y: 6.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/2dcb2702fc5c1f31.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "2DCB2702FC5C1F31"
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			width: 7.567d
+			height: 14.617d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/30000f5f1f069afa.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "30000F5F1F069AFA"
+		}
+		{
+			x: 4.2667d
+			y: 10.5d
+			width: 4.5903d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/34c64200c1af50b8.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "34C64200C1AF50B8"
+		}
+		{
+			x: 12.1944d
+			y: -7.25d
+			width: 0.9739d
+			height: 3.4545d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/4d62103dcf8b4fda.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "4D62103DCF8B4FDA"
+		}
+		{
+			x: 10.5d
+			y: 6.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/507f5e2261a499da.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "507F5E2261A499DA"
+		}
+		{
+			x: 7.5d
+			y: 12.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/5086797b05bc7619.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "5086797B05BC7619"
+		}
+		{
+			x: 10.5d
+			y: 12.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/5386ae04902da4bf.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "5386AE04902DA4BF"
+		}
+		{
+			x: 7.5d
+			y: 9.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/5f8ceaf644533833.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "5F8CEAF644533833"
+		}
+		{
+			x: 7.5d
+			y: 6.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/62ae15e5827fe50a.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "62AE15E5827FE50A"
+		}
+		{
+			x: 1.5d
+			y: -8.5d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/64e54ca8c96b8110.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "64E54CA8C96B8110"
+		}
+		{
+			x: 4.5d
+			y: -6.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/66dc4a843be1c287.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "66DC4A843BE1C287"
+		}
+		{
+			x: 7.5d
+			y: 3.0d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/697ca3bf8ae957e1.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "697CA3BF8AE957E1"
+		}
+		{
+			x: 4.5d
+			y: 7.5d
+			width: 4.042d
+			height: 4.042d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/717a293356cd1404.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "717A293356CD1404"
+		}
+		{
+			x: 4.5d
+			y: -8.5d
+			width: 4.042d
+			height: 0.517d
+			rotation: 0.0d
+			image: "nasledie:textures/curves/exploration/7a97e4175f142993.png"
+			color: 9958631
+			alpha: 255
+			order: -1
+			dependency: "7A97E4175F142993"
+		}
+	]
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,6 +306,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "minecraft:leather_boots"
+			icon_scale: 0.6d
 			size: 1.4d
 			tasks: [{
 				id: "72F2E8EF2D9E942A"
@@ -39,6 +329,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "5DCFED353E2F543B"
@@ -47,6 +338,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:diamond_boots"
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
@@ -78,6 +370,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "2C2F436A72535E22"
@@ -86,6 +379,7 @@
 			x: 3.0d
 			y: -3.0d
 			icon: "waystones:waystone"
+			icon_scale: 0.6d
 			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
 				id: "30EEC846023B85EB"
@@ -108,6 +402,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "26CC2B362439ACAB"
@@ -116,6 +411,7 @@
 			x: 6.0d
 			y: -3.0d
 			icon: "waystones:warp_stone"
+			icon_scale: 0.6d
 			dependencies: ["2C2F436A72535E22"]
 			tasks: [{
 				id: "366BCD6539110CD0"
@@ -138,6 +434,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "1FB71B915FE0B5F5"
@@ -146,6 +443,7 @@
 			x: 3.0d
 			y: 3.0d
 			icon: "minecraft:chest"
+			icon_scale: 0.6d
 			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
 				id: "48C40A18758637E4"
@@ -167,6 +465,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "697CA3BF8AE957E1"
@@ -175,6 +474,7 @@
 			x: 6.0d
 			y: 3.0d
 			icon: "minecraft:barrel"
+			icon_scale: 0.6d
 			dependencies: ["1FB71B915FE0B5F5"]
 			tasks: [{
 				id: "4B254ABA62FCD5AA"
@@ -196,6 +496,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "20F56C8C55CE5185"
@@ -204,7 +505,8 @@
 			x: 9.0d
 			y: 3.0d
 			icon: "sophisticatedbackpacks:iron_backpack"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			optional: true
 			dependencies: ["697CA3BF8AE957E1"]
 			tasks: [{
@@ -227,6 +529,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "717A293356CD1404"
@@ -235,7 +538,8 @@
 			x: 3.0d
 			y: 6.0d
 			icon: "minecraft:rail"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
 				id: "18A3A9BD25F50096"
@@ -257,6 +561,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "62AE15E5827FE50A"
@@ -265,6 +570,7 @@
 			x: 6.0d
 			y: 6.0d
 			icon: "minecraft:chest_minecart"
+			icon_scale: 0.6d
 			dependencies: ["717A293356CD1404"]
 			tasks: [{
 				id: "65F188D2DF04E46E"
@@ -286,6 +592,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "507F5E2261A499DA"
@@ -294,7 +601,8 @@
 			x: 9.0d
 			y: 6.0d
 			icon: "minecraft:honeycomb"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["62AE15E5827FE50A"]
 			tasks: [{
@@ -317,6 +625,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "2DCB2702FC5C1F31"
@@ -325,7 +634,8 @@
 			x: 12.0d
 			y: 6.0d
 			icon: "minecraft:mossy_stone_bricks"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["507F5E2261A499DA"]
 			tasks: [{
@@ -348,6 +658,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "4580A1C9022BB90F"
@@ -356,7 +667,8 @@
 			x: 15.0d
 			y: 6.0d
 			icon: "minecraft:blue_ice"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["2DCB2702FC5C1F31"]
 			tasks: [{
@@ -379,6 +691,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "34C64200C1AF50B8"
@@ -387,6 +700,7 @@
 			x: 3.0d
 			y: 9.0d
 			icon: "minecraft:paper"
+			icon_scale: 0.6d
 			dependencies: ["717A293356CD1404"]
 			tasks: [{
 				id: "78CF095731369D4D"
@@ -408,6 +722,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "5F8CEAF644533833"
@@ -416,6 +731,7 @@
 			x: 6.0d
 			y: 9.0d
 			icon: "minecraft:gold_ingot"
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["34C64200C1AF50B8"]
 			tasks: [{
@@ -438,6 +754,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "287623914CB5D09C"
@@ -446,6 +763,7 @@
 			x: 9.0d
 			y: 9.0d
 			icon: "minecraft:skeleton_skull"
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["5F8CEAF644533833"]
 			tasks: [{
@@ -468,6 +786,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "120CFADBF5186FAA"
@@ -476,6 +795,7 @@
 			x: -3.0d
 			y: 0.0d
 			icon: "cold_sweat:chameleon_molt"
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
@@ -498,6 +818,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "26D85A9E31B251BF"
@@ -506,6 +827,7 @@
 			x: -6.0d
 			y: 0.0d
 			icon: "minecraft:spyglass"
+			icon_scale: 0.6d
 			optional: true
 			dependencies: ["120CFADBF5186FAA"]
 			tasks: [{
@@ -528,6 +850,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "66DC4A843BE1C287"
@@ -536,7 +859,8 @@
 			x: 3.0d
 			y: -6.0d
 			icon: "minecraft:feather"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
@@ -559,6 +883,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "07A63C78A1E0EFD4"
@@ -567,7 +892,8 @@
 			x: 6.0d
 			y: -6.0d
 			icon: "minecraft:sand"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["66DC4A843BE1C287"]
 			tasks: [{
@@ -590,6 +916,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "291583B5B92C22EB"
@@ -598,7 +925,8 @@
 			x: 9.0d
 			y: -6.0d
 			icon: "minecraft:emerald_ore"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["07A63C78A1E0EFD4"]
 			tasks: [{
@@ -621,6 +949,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "4D62103DCF8B4FDA"
@@ -629,7 +958,8 @@
 			x: 12.0d
 			y: -6.0d
 			icon: "minecraft:packed_ice"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["291583B5B92C22EB"]
 			tasks: [{
@@ -652,6 +982,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "076B03B26967B3F5"
@@ -660,7 +991,8 @@
 			x: 12.0d
 			y: -8.5d
 			icon: "minecraft:magma_block"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["4D62103DCF8B4FDA"]
 			tasks: [{
@@ -683,6 +1015,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "251BB178FDF89518"
@@ -691,7 +1024,8 @@
 			x: 9.0d
 			y: -8.5d
 			icon: "minecraft:amethyst_shard"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["076B03B26967B3F5"]
 			tasks: [{
@@ -714,6 +1048,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "7A97E4175F142993"
@@ -722,7 +1057,8 @@
 			x: 6.0d
 			y: -8.5d
 			icon: "minecraft:glow_berries"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["251BB178FDF89518"]
 			tasks: [{
@@ -745,6 +1081,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "64E54CA8C96B8110"
@@ -753,7 +1090,8 @@
 			x: 3.0d
 			y: -8.5d
 			icon: "minecraft:basalt"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["7A97E4175F142993"]
 			tasks: [{
@@ -776,6 +1114,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "5EE4BCDF015E9D94"
@@ -784,7 +1123,8 @@
 			x: 0.0d
 			y: -8.5d
 			icon: "minecraft:filled_map"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			size: 1.4d
 			optional: true
 			dependencies: ["64E54CA8C96B8110"]
@@ -808,6 +1148,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "098102A102A9739A"
@@ -816,7 +1157,8 @@
 			x: 3.0d
 			y: 12.0d
 			icon: "minecraft:mossy_cobblestone"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			dependencies: ["34C64200C1AF50B8"]
 			tasks: [{
 				id: "4B6723D4B7D191EC"
@@ -838,6 +1180,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "5086797B05BC7619"
@@ -846,7 +1189,8 @@
 			x: 6.0d
 			y: 12.0d
 			icon: "minecraft:cobweb"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["098102A102A9739A"]
 			tasks: [{
@@ -869,6 +1213,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "5386AE04902DA4BF"
@@ -877,7 +1222,8 @@
 			x: 9.0d
 			y: 12.0d
 			icon: "minecraft:zombie_head"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["5086797B05BC7619"]
 			tasks: [{
@@ -900,6 +1246,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "13EA4AC90BB6F5E7"
@@ -908,7 +1255,8 @@
 			x: 12.0d
 			y: 12.0d
 			icon: "minecraft:skeleton_skull"
-			shape: "scroll"
+			icon_scale: 0.6d
+			shape: "expedition"
 			optional: true
 			dependencies: ["5386AE04902DA4BF"]
 			tasks: [{
@@ -931,6 +1279,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 		{
 			id: "1B5B9D58445466FE"
@@ -939,7 +1288,8 @@
 			x: 15.0d
 			y: 12.0d
 			icon: "minecraft:spawner"
-			shape: "star"
+			icon_scale: 0.6d
+			shape: "milestone"
 			optional: true
 			dependencies: ["13EA4AC90BB6F5E7"]
 			tasks: [{
@@ -962,6 +1312,7 @@
 					}
 				}
 			]
+			_chapter: "nasledie_exploration"
 		}
 	]
 }

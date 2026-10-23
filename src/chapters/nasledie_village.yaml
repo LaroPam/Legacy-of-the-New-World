@@ -8,8 +8,8 @@ chapter:
   title: Люди нашего поселения
   icon: minecraft:bell
   order_index: 2
-  default_hide_dependency_lines: false
-  default_quest_shape: circle
+  default_hide_dependency_lines: true
+  default_quest_shape: step
   progression_mode: flexible
 
 quests:
@@ -22,7 +22,7 @@ quests:
     x: 0
     y: 0
     icon: minecraft:bell
-    shape: heart
+    shape: home
     size: 1.4
     tasks:
       - {type: advancement, advancement: mca:root}
@@ -38,7 +38,7 @@ quests:
     x: 0
     y: -3
     icon: minecraft:cartography_table
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [first_village]
     tasks:
@@ -56,7 +56,7 @@ quests:
     x: -3.45
     y: -3.61
     icon: minecraft:jungle_log
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [big_village]
     tasks:
@@ -74,7 +74,7 @@ quests:
     x: -2.47
     y: -5.47
     icon: minecraft:spruce_sapling
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [big_village]
     tasks:
@@ -94,7 +94,7 @@ quests:
     x: -0.61
     y: -6.45
     icon: minecraft:stone_brick_wall
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [big_village]
     tasks:
@@ -112,7 +112,7 @@ quests:
     x: 1.48
     y: -6.17
     icon: minecraft:red_mushroom_block
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [big_village]
     tasks:
@@ -131,7 +131,7 @@ quests:
     x: 3
     y: -3
     icon: mca:bouquet
-    shape: heart
+    shape: home
     deps: [first_village]
     tasks:
       - {type: advancement, advancement: mca:friend}
@@ -147,7 +147,7 @@ quests:
     x: 5.5
     y: -3
     icon: mca:bouquet
-    shape: heart
+    shape: home
     deps: [friend]
     tasks:
       - {type: advancement, advancement: mca:excellent_gift}
@@ -163,7 +163,7 @@ quests:
     x: 8
     y: -3
     icon: mca:engagement_ring
-    shape: heart
+    shape: home
     optional: true
     deps: [gift]
     tasks:
@@ -180,7 +180,7 @@ quests:
     x: 10.5
     y: -3
     icon: mca:wedding_ring
-    shape: heart
+    shape: home
     optional: true
     deps: [best_friend]
     tasks:
@@ -229,7 +229,7 @@ quests:
     x: 8
     y: 0
     icon: minecraft:bell
-    shape: star
+    shape: milestone
     deps: [noble]
     tasks:
       - {type: advancement, advancement: mca:mayor}
@@ -244,7 +244,7 @@ quests:
     x: 10.5
     y: 0
     icon: minecraft:golden_helmet
-    shape: star
+    shape: milestone
     optional: true
     deps: [mayor]
     tasks:
@@ -333,7 +333,7 @@ quests:
     x: 15.5
     y: 3
     icon: minecraft:nether_star
-    shape: star
+    shape: milestone
     optional: true
     deps: [bounty_rare]
     tasks:
@@ -351,7 +351,7 @@ quests:
     x: 3
     y: 6
     icon: recruits:recruit_block
-    shape: shield
+    shape: trial
     deps: [first_village]
     tasks:
       - {type: advancement, advancement: nasledie:events/hired/recruits, title: Нанять рекрута}
@@ -367,7 +367,7 @@ quests:
     x: 5.5
     y: 6
     icon: recruits:bowman_block
-    shape: shield
+    shape: trial
     deps: [hire_recruit]
     tasks:
       - {type: advancement, advancement: nasledie:events/hired/recruits/bowman, title: Нанять лучника}
@@ -382,7 +382,7 @@ quests:
     x: 8
     y: 6
     icon: minecraft:iron_helmet
-    shape: shield
+    shape: trial
     optional: true
     deps: [hire_bowman]
     tasks:
@@ -398,7 +398,7 @@ quests:
     x: 10.5
     y: 6
     icon: minecraft:iron_chestplate
-    shape: shield
+    shape: trial
     optional: true
     deps: [promote]
     tasks:
@@ -415,7 +415,7 @@ quests:
     x: 5.5
     y: 8.25
     icon: minecraft:crossbow
-    shape: shield
+    shape: trial
     size: 1.3
     deps: [hire_bowman]
     tasks:
@@ -433,7 +433,7 @@ quests:
     x: -3
     y: 3
     icon: minecraft:decorated_pot
-    shape: scroll
+    shape: expedition
     size: 1.2
     optional: true
     deps: [first_village]
@@ -450,7 +450,7 @@ quests:
     x: -1.96
     y: 6.86
     icon: minecraft:mangrove_roots
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [other_ways]
     tasks:
@@ -467,7 +467,7 @@ quests:
     x: -4.04
     y: 6.86
     icon: minecraft:cherry_sapling
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [other_ways]
     tasks:
@@ -486,7 +486,7 @@ quests:
     x: -5.83
     y: 5.83
     icon: artifacts:cowboy_hat
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [other_ways]
     tasks:
@@ -503,7 +503,7 @@ quests:
     x: -6.86
     y: 4.04
     icon: minecraft:lead
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [other_ways]
     tasks:
@@ -520,7 +520,7 @@ quests:
     x: -6.86
     y: 1.96
     icon: minecraft:spruce_log
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [other_ways]
     tasks:
@@ -538,7 +538,7 @@ quests:
     x: -5.83
     y: 0.17
     icon: minecraft:campfire
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [other_ways]
     tasks:
@@ -558,7 +558,7 @@ quests:
     x: 8
     y: 8.25
     icon: minecraft:crossbow
-    shape: shield
+    shape: trial
     optional: true
     deps: [hero]
     tasks:

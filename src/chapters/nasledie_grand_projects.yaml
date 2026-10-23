@@ -7,8 +7,8 @@ chapter:
   title: Великие проекты — база оживает
   icon: minecraft:beacon
   order_index: 13
-  default_hide_dependency_lines: false
-  default_quest_shape: square
+  default_hide_dependency_lines: true
+  default_quest_shape: tech
   progression_mode: flexible
 
 quests:
@@ -20,7 +20,7 @@ quests:
     x: 0
     y: 0
     icon: create:stressometer
-    shape: star
+    shape: milestone
     size: 1.7
     deps: [nasledie_industry/precision]
     tasks:
@@ -98,7 +98,7 @@ quests:
     x: 13.5
     y: 2
     icon: create:factory_gauge
-    shape: star
+    shape: milestone
     size: 1.4
     deps: [frogport]
     tasks:
@@ -115,7 +115,7 @@ quests:
     x: 9.5
     y: 3.5
     icon: create:cardboard_block
-    shape: circle
+    shape: step
     optional: true
     deps: [stock_ticker]
     tasks:
@@ -132,7 +132,7 @@ quests:
     x: 12
     y: 4.5
     icon: create:cardboard_helmet
-    shape: circle
+    shape: step
     optional: true
     deps: [package_throw]
     tasks:
@@ -195,7 +195,7 @@ quests:
     x: -2.5
     y: -7
     icon: create:item_drain
-    shape: circle
+    shape: step
     optional: true
     deps: [arm_many]
     tasks:
@@ -212,7 +212,7 @@ quests:
     x: 3.5
     y: -7.5
     icon: create:weighted_ejector
-    shape: circle
+    shape: step
     optional: true
     deps: [arm_many]
     tasks:
@@ -305,7 +305,7 @@ quests:
     x: -16
     y: 2.5
     icon: create:steam_whistle
-    shape: star
+    shape: milestone
     size: 1.4
     deps: [musical_arm]
     tasks:
@@ -354,7 +354,7 @@ quests:
     x: -1
     y: 8.5
     icon: minecraft:minecart
-    shape: circle
+    shape: step
     optional: true
     deps: [pulley_maxed]
     tasks:
@@ -371,7 +371,7 @@ quests:
     x: 2.5
     y: 5
     icon: create:water_wheel
-    shape: circle
+    shape: step
     optional: true
     deps: [backtank]
     tasks:
@@ -388,7 +388,7 @@ quests:
     x: 3.5
     y: 7.5
     icon: minecraft:anvil
-    shape: circle
+    shape: step
     optional: true
     deps: [lava_wheel]
     tasks:
@@ -405,7 +405,7 @@ quests:
     x: 4
     y: 10
     icon: create:deployer
-    shape: heart
+    shape: home
     optional: true
     deps: [anvil_plough]
     tasks:
