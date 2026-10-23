@@ -180,6 +180,14 @@ def quest_issues(parsed):
             errors.append(problem('shape_unknown', location, 'Unknown quest shape', shape=str(quest.get('shape'))))
         if not quest.get('tasks'):
             errors.append(problem('no_tasks', location, 'Quest has no tasks'))
+        for reward in quest.get('rewards', []):
+            item = reward.get('item') if str(reward.get('type')) == 'item' else None
+            if item is not None and str(item.get('id')) == 'minecraft:written_book':
+                title = str(item.get('tag', {}).get('title', ''))
+                if not title or len(title) > 32 or 'author' not in item.get('tag', {}):
+                    # WrittenBookItem.makeSureTagIsValid (1.20.1): title of 1..32 characters and an author.
+                    errors.append(problem('book_invalid', location, 'Written book needs a title of 1-32 chars and an author',
+                                          title=title))
         for task in quest.get('tasks', []):
             # KillTask/StatTask read `value` with getLong/getInt: a missing key means a goal of 0.
             if str(task.get('type')) in ('kill', 'stat') and int(task.get('value', 0)) < 1:

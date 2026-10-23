@@ -539,7 +539,7 @@ quests:
       - {type: item, item: cataclysm:music_disc_ender_guardian}
       - {type: item, item: cataclysm:void_core}
       - type: book
-        title: Последняя запись Торвальда Эклунда
+        title: Последняя запись Эклунда
         author: Торвальд Эклунд
         pages:
           - "Если вы читаете это, доспех пуст. Значит, сила ушла не ко мне."

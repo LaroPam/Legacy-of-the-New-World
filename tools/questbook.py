@@ -202,6 +202,9 @@ def build_task(task, seed, generated=None, path=None):
     return snbt.Compound(body)
 
 
+BOOK_TITLE_MAX = 32
+
+
 def item_stack(item, count=1, nbt=None):
     stack = {'Count': snbt.Byte(count), 'id': snbt.String(item)}
     if nbt is not None:
@@ -217,6 +220,9 @@ def build_reward(reward, seed):
     if kind == 'book':
         pages = [json.dumps({'text': page}, ensure_ascii=False) for page in reward.pop('pages')]
         nbt = {'title': reward.pop('title'), 'author': reward.pop('author', BOOK_AUTHOR), 'pages': pages}
+        if len(nbt['title']) > BOOK_TITLE_MAX:
+            # WrittenBookItem.makeSureTagIsValid: a longer title makes the client show "Invalid book tag".
+            raise ValueError(f'Book title longer than {BOOK_TITLE_MAX} characters: {nbt["title"]}')
         if 'lore' in reward:
             nbt['display'] = {'Lore': [json.dumps({'text': line, 'italic': True}, ensure_ascii=False)
                                        for line in reward.pop('lore')]}
