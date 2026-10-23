@@ -41,7 +41,8 @@ def norm(v):
 
 def graph(name, data, dependency, every):
     """Nodes {id: (x, y, size)} of the chapter (quests and links) and its dependency edges (prerequisite, quest)."""
-    nodes = {q['_id']: (float(q.get('x', 0)), float(q.get('y', 0)), float(q.get('size', 1))) for q in data['quests']}
+    default = data.get('chapter', {}).get('default_quest_size', 1)
+    nodes = {q['_id']: (float(q.get('x', 0)), float(q.get('y', 0)), float(q.get('size', default))) for q in data['quests']}
     for link in data.get('links', []):
         nodes[dependency(link['quest'], name)] = (float(link['x']), float(link['y']), float(link.get('size', 1)))
     edges = []

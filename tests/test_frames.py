@@ -31,6 +31,14 @@ class FrameTests(unittest.TestCase):
                          [('nasledie:textures/frames/step_dim.png', 0, None),
                           ('nasledie:textures/frames/step.png', 1, 'B')])
 
+    def test_frame_brightens_after_any_prerequisite_when_fewer_are_enough(self):
+        # D opens after 1 of A, B: a single dependency on B would keep it dim if the players finish only A.
+        data, every = chapter({'_id': 'A'}, {'_id': 'B', 'deps': ['A']},
+                              {'_id': 'D', 'x': 3, 'deps': ['A', 'B'], 'min_required_dependencies': 1})
+        bright = [e.get('dependency') for e in quest_frames.frame_images('c', data, dep, every, {'c': data})
+                  if e['x'] == 3 and e['order'] == 1]
+        self.assertEqual(bright, ['A', 'B'])
+
     def test_link_uses_its_own_place_and_shape(self):
         data, every = chapter({'_id': 'A'}, links=[{'quest': 'A', 'x': 5, 'y': 6, 'shape': 'home'}])
         entries = quest_frames.frame_images('c', data, dep, every, {'c': data})

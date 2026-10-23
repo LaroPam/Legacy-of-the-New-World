@@ -482,6 +482,54 @@
 			alpha: 255
 			image: "nasledie:textures/frames/milestone.png"
 			order: 1
+			dependency: "12B1754C45756107"
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			width: 1.5d
+			height: 1.5d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "20BE4189EEE72883"
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			width: 1.5d
+			height: 1.5d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "213ADF5DA222DA68"
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			width: 1.5d
+			height: 1.5d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "63651E9F6E43FAEB"
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			width: 1.5d
+			height: 1.5d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
 			dependency: "64338CFBA5C5B699"
 		}
 		{

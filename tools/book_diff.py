@@ -41,8 +41,8 @@ def cell(text):
 
 
 def main(argv):
-    if not argv:
-        print(__doc__)
+    if not argv or not all(Path(root, CHAPTERS).is_dir() for root in (argv[0], *argv[1:2])):
+        print(__doc__)  # a wrong directory would otherwise read as an empty book: every quest "new"
         return 2
     base, current = load(argv[0]), load(argv[1] if len(argv) > 1 else '.')
     removed = [k for k in base if k not in current]

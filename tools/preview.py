@@ -15,6 +15,7 @@ the default 16, or lower if the chapter would not fit. Progress is simulated: th
 branch are completed, the next available, the rest locked. Interface buttons and tooltips are not drawn.
 """
 import argparse
+import functools
 import io
 import json
 from pathlib import Path
@@ -183,6 +184,7 @@ class Screen:
             return Image.new('RGB', SCREEN, BG)
         return Image.open(self.root / 'kubejs/assets' / ns / path).convert('RGB').resize(SCREEN, Image.BILINEAR)
 
+    @functools.lru_cache(maxsize=None)
     def texture(self, value):
         """A theme texture like ftbquests:textures/gui/dependency.png from kubejs or the FTB Quests JAR."""
         ns, _, path = value.split(';')[0].strip().partition(':')
@@ -290,8 +292,11 @@ def draw_images(image, name, data, ids, every, chapters, state, pos, button, scr
     for entry in sorted(entries, key=lambda e: e['order']):
         if entry.get('dependency') and state.get(entry['dependency']) != 'completed':
             continue
-        local = curves.TEXTURES / Path(entry['image'].split('textures/curves/', 1)[-1])
-        texture = (Image.open(io.BytesIO(files[local])) if local in files else screen.texture(entry['image'])).convert('RGBA')
+        prefix = 'nasledie:textures/curves/'
+        if entry['image'].startswith(prefix):  # curves as just generated, which may not be built yet
+            texture = Image.open(io.BytesIO(files[curves.TEXTURES / entry['image'][len(prefix):]])).convert('RGBA')
+        else:
+            texture = screen.texture(entry['image'])
         size = (max(1, round(entry['width'] * button)), max(1, round(entry['height'] * button)))
         colour = ((entry['color'] >> 16) & 255, (entry['color'] >> 8) & 255, entry['color'] & 255)
         layer = tinted(texture.resize(size, Image.BILINEAR), colour, None, entry['alpha'])
@@ -326,7 +331,9 @@ def render_screen(name, data, ids, icons, out, every, screen):
     default_shape = data['chapter'].get('default_quest_shape', 'circle')
     for ident, node in nodes.items():
         quest = every[ident]
-        size = round(button * float(quest.get('size', data['chapter'].get('default_quest_size', 1))))
+        # A link has its own size (QuestLink: 1 when unset), a quest falls back to the chapter default.
+        default = 1 if ident in linked else data['chapter'].get('default_quest_size', 1)
+        size = round(button * float(node.get('size', default)))
         x, y = pos(node)
         corner = (round(x - size / 2), round(y - size / 2))
         kind = node.get('shape') or quest.get('shape') or default_shape

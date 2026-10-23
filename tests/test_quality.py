@@ -191,6 +191,14 @@ class PreservationTests(unittest.TestCase):
         unknown = source.replace(b'dependency: "0000000000000002"', b'dependency: "0000000000000099"')
         self.assertIn('chapter_image_dependency', self.codes(quality.evaluate({REF: unknown, **present}, {REF: SOURCE, **present})))
 
+    def test_chapter_default_size_counts_for_overlap(self):
+        # FTB draws a quest without its own size at the chapter's default_quest_size.
+        quests = [{'id': '0000000000000002', 'x': 0.0, 'y': 0.0}, {'id': '0000000000000003', 'x': 1.2, 'y': 0.0}]
+        small = {REF: {'id': '0000000000000007', 'quests': quests}}
+        large = {REF: {'id': '0000000000000007', 'default_quest_size': 1.5, 'quests': quests}}
+        self.assertNotIn('node_overlap', {i['code'] for i in quality.geometry(small)[0]})
+        self.assertIn('node_overlap', {i['code'] for i in quality.geometry(large)[0]})
+
     def test_duplicate_json_keys_are_rejected(self):
         r = self.report(extra={'kubejs/data/test/advancements/a.json': b'{"criteria":{},"criteria":{}}'})
         self.assertIn('parse', self.codes(r))

@@ -41,6 +41,8 @@ def apply(text, spec):
 
 
 def main():
+    if len(sys.argv) != 3:
+        sys.exit(__doc__)
     chapter, spec_path = sys.argv[1], Path(sys.argv[2])
     path = ROOT / 'src' / 'chapters' / f'nasledie_{chapter}.yaml'
     spec = yaml.safe_load(spec_path.read_text(encoding='utf-8'))
