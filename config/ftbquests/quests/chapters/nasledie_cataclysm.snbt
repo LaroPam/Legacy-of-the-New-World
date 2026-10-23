@@ -284,6 +284,995 @@
 			order: -1
 			dependency: "7FAC9890E47B2038"
 		}
+		{
+			x: 13.44d
+			y: 13.44d
+			width: 2.0d
+			height: 2.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss_dim.png"
+			order: 0
+		}
+		{
+			x: 13.44d
+			y: 13.44d
+			width: 2.0d
+			height: 2.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss.png"
+			order: 1
+			dependency: "4E228116310381E8"
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "3433E7FAF2F51B45"
+		}
+		{
+			x: 0.0d
+			y: -6.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: 0.0d
+			y: -6.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "3F01C0BC0DF00B8F"
+		}
+		{
+			x: 0.0d
+			y: -9.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial_dim.png"
+			order: 0
+		}
+		{
+			x: 0.0d
+			y: -9.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial.png"
+			order: 1
+			dependency: "0B22878BF8763415"
+		}
+		{
+			x: -1.92d
+			y: -5.9d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: -1.92d
+			y: -5.9d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "3F01C0BC0DF00B8F"
+		}
+		{
+			x: 2.47d
+			y: -2.47d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 2.47d
+			y: -2.47d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "3433E7FAF2F51B45"
+		}
+		{
+			x: 4.6d
+			y: -4.6d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: 4.6d
+			y: -4.6d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "7EA7999BB80D322B"
+		}
+		{
+			x: 6.72d
+			y: -6.72d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 6.72d
+			y: -6.72d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "72FD5EEB117B3119"
+		}
+		{
+			x: 8.84d
+			y: -8.84d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial_dim.png"
+			order: 0
+		}
+		{
+			x: 8.84d
+			y: -8.84d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial.png"
+			order: 1
+			dependency: "51B93F857CAD59F0"
+		}
+		{
+			x: 3.4d
+			y: -0.85d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 3.4d
+			y: -0.85d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "3433E7FAF2F51B45"
+		}
+		{
+			x: 9.5d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial_dim.png"
+			order: 0
+		}
+		{
+			x: 9.5d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial.png"
+			order: 1
+			dependency: "391F9987F1F32442"
+		}
+		{
+			x: 2.47d
+			y: 2.47d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 2.47d
+			y: 2.47d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "3433E7FAF2F51B45"
+		}
+		{
+			x: 4.6d
+			y: 4.6d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: 4.6d
+			y: 4.6d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "4057DB6475B1EDFF"
+		}
+		{
+			x: 6.72d
+			y: 6.72d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial_dim.png"
+			order: 0
+		}
+		{
+			x: 6.72d
+			y: 6.72d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial.png"
+			order: 1
+			dependency: "0A9ACE48F5328D23"
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "3433E7FAF2F51B45"
+		}
+		{
+			x: 0.0d
+			y: 6.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: 0.0d
+			y: 6.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "1F7F25CE4EBE950F"
+		}
+		{
+			x: 0.0d
+			y: 9.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial_dim.png"
+			order: 0
+		}
+		{
+			x: 0.0d
+			y: 9.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial.png"
+			order: 1
+			dependency: "7EE6E381AE1C38B7"
+		}
+		{
+			x: -2.47d
+			y: 2.47d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: -2.47d
+			y: 2.47d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "3433E7FAF2F51B45"
+		}
+		{
+			x: -4.6d
+			y: 4.6d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: -4.6d
+			y: 4.6d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "6E51E5EBB7E57BDF"
+		}
+		{
+			x: -6.72d
+			y: 6.72d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial_dim.png"
+			order: 0
+		}
+		{
+			x: -6.72d
+			y: 6.72d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial.png"
+			order: 1
+			dependency: "296277A6BE605D32"
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "3433E7FAF2F51B45"
+		}
+		{
+			x: -6.5d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: -6.5d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "3853C84668190895"
+		}
+		{
+			x: -9.5d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial_dim.png"
+			order: 0
+		}
+		{
+			x: -9.5d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial.png"
+			order: 1
+			dependency: "0B35EC876DCDE6DC"
+		}
+		{
+			x: -6.22d
+			y: -1.9d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: -6.22d
+			y: -1.9d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "0B35EC876DCDE6DC"
+		}
+		{
+			x: -5.75d
+			y: 2.32d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: -5.75d
+			y: 2.32d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "3853C84668190895"
+		}
+		{
+			x: -8.07d
+			y: 3.26d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: -8.07d
+			y: 3.26d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "20D9B1BC47B0A927"
+		}
+		{
+			x: -10.38d
+			y: 4.2d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: -10.38d
+			y: 4.2d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "2B0DB46C4BD473E2"
+		}
+		{
+			x: -14.5d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: -14.5d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "7FAC9890E47B2038"
+		}
+		{
+			x: -17.0d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: -17.0d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "1CB249497EF14D92"
+		}
+		{
+			x: -2.47d
+			y: -2.47d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: -2.47d
+			y: -2.47d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "3433E7FAF2F51B45"
+		}
+		{
+			x: -4.6d
+			y: -4.6d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: -4.6d
+			y: -4.6d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "0A06C98F48B2324F"
+		}
+		{
+			x: -6.72d
+			y: -6.72d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: -6.72d
+			y: -6.72d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "1648CF8E2A62BFAF"
+		}
+		{
+			x: -8.84d
+			y: -8.84d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial_dim.png"
+			order: 0
+		}
+		{
+			x: -8.84d
+			y: -8.84d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial.png"
+			order: 1
+			dependency: "629080C9200CF3FF"
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			width: 2.2d
+			height: 2.2d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone_dim.png"
+			order: 0
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			width: 2.2d
+			height: 2.2d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "3D03E0EFD6FA3386"
+		}
+		{
+			x: 3.31d
+			y: -11.54d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss_dim.png"
+			order: 0
+		}
+		{
+			x: 3.31d
+			y: -11.54d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss.png"
+			order: 1
+			dependency: "367C7D7E1F81D391"
+		}
+		{
+			x: 10.5d
+			y: -5.82d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss_dim.png"
+			order: 0
+		}
+		{
+			x: 10.5d
+			y: -5.82d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss.png"
+			order: 1
+			dependency: "1175C66EAEDBF91E"
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			width: 1.4d
+			height: 1.4d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone_dim.png"
+			order: 0
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			width: 1.4d
+			height: 1.4d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "3433E7FAF2F51B45"
+		}
+		{
+			x: 11.54d
+			y: 3.31d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss_dim.png"
+			order: 0
+		}
+		{
+			x: 11.54d
+			y: 3.31d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss.png"
+			order: 1
+			dependency: "391F9987F1F32442"
+		}
+		{
+			x: 5.82d
+			y: 10.5d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss_dim.png"
+			order: 0
+		}
+		{
+			x: 5.82d
+			y: 10.5d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss.png"
+			order: 1
+			dependency: "0A9ACE48F5328D23"
+		}
+		{
+			x: -3.31d
+			y: 11.54d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss_dim.png"
+			order: 0
+		}
+		{
+			x: -3.31d
+			y: 11.54d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss.png"
+			order: 1
+			dependency: "1175C66EAEDBF91E"
+		}
+		{
+			x: -10.5d
+			y: 5.82d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss_dim.png"
+			order: 0
+		}
+		{
+			x: -10.5d
+			y: 5.82d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss.png"
+			order: 1
+			dependency: "1175C66EAEDBF91E"
+		}
+		{
+			x: -11.54d
+			y: -3.31d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss_dim.png"
+			order: 0
+		}
+		{
+			x: -11.54d
+			y: -3.31d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss.png"
+			order: 1
+			dependency: "1175C66EAEDBF91E"
+		}
+		{
+			x: -5.82d
+			y: -10.5d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss_dim.png"
+			order: 0
+		}
+		{
+			x: -5.82d
+			y: -10.5d
+			width: 1.7d
+			height: 1.7d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/boss.png"
+			order: 1
+			dependency: "1175C66EAEDBF91E"
+		}
 	]
 	quest_links: [
 		{

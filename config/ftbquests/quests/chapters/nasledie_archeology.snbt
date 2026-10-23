@@ -236,6 +236,581 @@
 			order: -1
 			dependency: "7CDA95A50F3EBC9F"
 		}
+		{
+			x: 0.0d
+			y: 0.0d
+			width: 1.4d
+			height: 1.4d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			width: 1.4d
+			height: 1.4d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "79C6E9FC12713C40"
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "5224CC946496E3DE"
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "6C1B1B7C67F46419"
+		}
+		{
+			x: 9.0d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 9.0d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "60A0AF61E08C5A2D"
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "5224CC946496E3DE"
+		}
+		{
+			x: 6.0d
+			y: -3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 6.0d
+			y: -3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "239CCB33A472D0AD"
+		}
+		{
+			x: 9.0d
+			y: -3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 9.0d
+			y: -3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "44248A7F0011AAF7"
+		}
+		{
+			x: 12.0d
+			y: -3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone_dim.png"
+			order: 0
+		}
+		{
+			x: 12.0d
+			y: -3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "2BA185CBF139E3AF"
+		}
+		{
+			x: 9.0d
+			y: -5.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 9.0d
+			y: -5.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "44248A7F0011AAF7"
+		}
+		{
+			x: 15.0d
+			y: -3.0d
+			width: 1.4d
+			height: 1.4d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone_dim.png"
+			order: 0
+		}
+		{
+			x: 15.0d
+			y: -3.0d
+			width: 1.4d
+			height: 1.4d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "01C584DB0BC6D1D4"
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "5224CC946496E3DE"
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "597CBEDC468A5108"
+		}
+		{
+			x: 9.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 9.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "7CDA95A50F3EBC9F"
+		}
+		{
+			x: 12.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step_dim.png"
+			order: 0
+		}
+		{
+			x: 12.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/step.png"
+			order: 1
+			dependency: "72A2A054CFCAC69D"
+		}
+		{
+			x: 15.0d
+			y: 3.0d
+			width: 1.4d
+			height: 1.4d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone_dim.png"
+			order: 0
+		}
+		{
+			x: 15.0d
+			y: 3.0d
+			width: 1.4d
+			height: 1.4d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "1F662B92CD52ECF4"
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "5224CC946496E3DE"
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "7BF1AAEFC633EC9F"
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial_dim.png"
+			order: 0
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial.png"
+			order: 1
+			dependency: "718927C2E9263AAC"
+		}
+		{
+			x: 9.0d
+			y: 6.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: 9.0d
+			y: 6.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "2387D38D6E080261"
+		}
+		{
+			x: 0.0d
+			y: 9.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial_dim.png"
+			order: 0
+		}
+		{
+			x: 0.0d
+			y: 9.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial.png"
+			order: 1
+			dependency: "7BF1AAEFC633EC9F"
+		}
+		{
+			x: 3.0d
+			y: 9.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial_dim.png"
+			order: 0
+		}
+		{
+			x: 3.0d
+			y: 9.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/trial.png"
+			order: 1
+			dependency: "19745F0470E73C17"
+		}
+		{
+			x: 6.0d
+			y: 9.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone_dim.png"
+			order: 0
+		}
+		{
+			x: 6.0d
+			y: 9.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "316AFB9A561BE01E"
+		}
+		{
+			x: 9.0d
+			y: 9.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: 9.0d
+			y: 9.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "08352D47820D40B4"
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition_dim.png"
+			order: 0
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/expedition.png"
+			order: 1
+			dependency: "5224CC946496E3DE"
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			width: 1.4d
+			height: 1.4d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone_dim.png"
+			order: 0
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			width: 1.4d
+			height: 1.4d
+			rotation: 0.0d
+			color: 16777215
+			alpha: 255
+			image: "nasledie:textures/frames/milestone.png"
+			order: 1
+			dependency: "4A2CFD219A124357"
+		}
 	]
 	quest_links: [{
 		id: "65DD46998E5DC870"

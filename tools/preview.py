@@ -25,6 +25,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 import apply_palettes
 import curves
+import quest_frames
 import questbook
 
 UNIT = 56
@@ -278,16 +279,19 @@ def straight_lines(screen, chapter_id, nodes, every, ids, state, pos, zoom):
     return lines
 
 
-def draw_curves(image, name, data, ids, every, state, pos, button):
-    """The chapter's curve images as FTB draws them: base under everything, a prerequisite's overlay once it is done."""
-    colours, global_colours, spacing = curves.palettes()
-    entries, files = curves.chapter_images(name, data, lambda ref, ch: questbook.dependency(ref, ch, ids), every,
-                                           colours.get(name, global_colours), spacing)
+def draw_images(image, name, data, ids, every, chapters, state, pos, button, screen):
+    """Chapter images as FTB draws them, by order: curves, then frames; one with a `dependency` once it is done."""
+    resolve = lambda ref, ch: questbook.dependency(ref, ch, ids)  # noqa: E731
+    entries, files = [], {}
+    if data['chapter'].get('curves', True):
+        colours, global_colours, spacing = curves.palettes()
+        entries, files = curves.chapter_images(name, data, resolve, every, colours.get(name, global_colours), spacing)
+    entries = entries + quest_frames.frame_images(name, data, resolve, every, chapters)
     for entry in sorted(entries, key=lambda e: e['order']):
         if entry.get('dependency') and state.get(entry['dependency']) != 'completed':
             continue
-        path = curves.TEXTURES / Path(entry['image'].split('textures/curves/', 1)[1])
-        texture = Image.open(io.BytesIO(files[path])).convert('RGBA')
+        local = curves.TEXTURES / Path(entry['image'].split('textures/curves/', 1)[-1])
+        texture = (Image.open(io.BytesIO(files[local])) if local in files else screen.texture(entry['image'])).convert('RGBA')
         size = (max(1, round(entry['width'] * button)), max(1, round(entry['height'] * button)))
         colour = ((entry['color'] >> 16) & 255, (entry['color'] >> 8) & 255, entry['color'] & 255)
         layer = tinted(texture.resize(size, Image.BILINEAR), colour, None, entry['alpha'])
@@ -314,10 +318,9 @@ def render_screen(name, data, ids, icons, out, every, screen):
 
     image = screen.background(chapter_id).convert('RGBA')
     state = progress(quests, ids, name)
-    if data['chapter'].get('curves', True):
-        draw_curves(image, name, data, ids, every, state, pos, button)
-    else:
+    if not data['chapter'].get('curves', True):
         image.alpha_composite(straight_lines(screen, chapter_id, nodes, every, ids, state, pos, zoom))
+    draw_images(image, name, data, ids, every, screen.chapters, state, pos, button, screen)
 
 
     default_shape = data['chapter'].get('default_quest_shape', 'circle')
@@ -336,6 +339,8 @@ def render_screen(name, data, ids, icons, out, every, screen):
         if icon:
             side = round(size * 2 / 3 * float(quest.get('icon_scale', questbook.ICON_SCALE)))
             image.alpha_composite(icon.resize((side, side), Image.NEAREST), (round(x - side / 2), round(y - side / 2)))
+        if state.get(ident) == 'locked' and screen.shape(kind, 'shape'):  # FTB darkens a locked quest over its shape
+            image.alpha_composite(tinted(screen.shape(kind, 'shape'), (0, 0, 0), size, 100), corner)
     caption = ImageDraw.Draw(image)
     caption.text((12, SCREEN[1] - 24), f"{data['chapter']['title']} — zoom {zoom}, GUI 3, 1920x1080",
                  fill=(200, 200, 200), font=ImageFont.truetype(FONT, 14))
@@ -370,6 +375,8 @@ def main():
             every[quest['_id']] = quest
     icons = Icons(args.jars)
     screen = Screen(Path(__file__).resolve().parents[1], args.jars) if args.screen else None
+    if screen:
+        screen.chapters = chapters
     for name, data in chapters.items():
         if not args.chapters or name.removeprefix('nasledie_') in args.chapters:
             if screen:

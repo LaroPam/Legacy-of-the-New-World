@@ -1,17 +1,25 @@
 #!/usr/bin/env python3
-"""Turn the author's medallion pictures into FTB Quests shapes, one per quest type.
+"""Turn the author's medallion pictures into quest medallions, one per quest type.
 
-  python tools/quest_frames.py            # art/frames/frame_<type>.png -> kubejs/assets/ftbquests/textures/shapes/<type>/
-  python tools/quest_frames.py --check    # every type has its three textures, masks with alpha
+  python tools/quest_frames.py            # art/frames/frame_<type>.png -> FTB shape textures and frame images
+  python tools/quest_frames.py --check    # every type has its textures, masks with alpha
 
 FTB Quests 2001.4.22 draws a quest button from three textures of its shape: shape.png filled with #212121,
-background.png on top at alpha 150/255, outline.png tinted with the quest state colour (locked, available,
-started, completed), then the item icon in the middle 2/3 of the button times the quest's icon_scale.
-Every type uses the same round medallion. The whole picture is fitted into the button, ornaments that stick out
-of the ring included, and cut out of its black background. The empty recess in its middle is filled with a glow in
-the type's colour (violet for milestones, red for trials...); the outline is a thin white ring around the recess
-that FTB colours by quest state. Quests get questbook.ICON_SCALE, small enough for the icon to stay inside every
-recess. Preparing needs numpy; --check needs only Pillow.
+background.png on top at alpha 150/255, outline.png tinted with the quest state colour, then the item icon in the
+middle 2/3 of the button times the quest's icon_scale; a black layer at alpha 100 over shape.png darkens quests
+whose dependencies are not complete. A background at alpha 150 can never be brighter than ~64 %, so the frame
+itself is not part of the shape:
+
+- the frame (the author's picture fitted whole into the button, cut out of its black background, recess empty) is a
+  chapter image under the quest button at full brightness: a dimmed copy always, the bright one appears once the
+  quest's prerequisite is completed (`dependency`), so locked quests look dimmed and open or done ones bright;
+- the shape keeps the recess: shape.png is opaque there and 5/255 over the frame (FTB counts clicks where the mask
+  alpha is at least 5, so the whole medallion stays clickable while the dark fill stays invisible),
+  background.png is a glow in the type's colour, outline.png a thin white ring around the recess that FTB colours
+  by quest state.
+
+Quests get ICON_SCALE, small enough for the icon to stay inside every recess. Preparing needs numpy; --check and
+frame_images() only Pillow.
 """
 import argparse
 import json
@@ -20,12 +28,10 @@ import sys
 
 from PIL import Image, ImageDraw
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from questbook import ICON_SCALE  # noqa: E402
-
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'art/frames'
 TARGET = ROOT / 'kubejs/assets/ftbquests/textures/shapes'
+FRAMES = ROOT / 'kubejs/assets/nasledie/textures/frames'
 TYPES = {  # shape name: (picture, what it marks, glow colour of the recess)
     'step': ('frame_step.png', 'обычный шаг', (120, 170, 255)),
     'expedition': ('frame_expedition.png', 'экспедиция', (255, 165, 60)),
@@ -37,6 +43,9 @@ TYPES = {  # shape name: (picture, what it marks, glow colour of the recess)
 }
 SIZE = 256
 WORK = 1024            # pictures are cut at this size, then scaled down for smooth edges
+ICON_SCALE = 0.6       # quests' icon_scale (tools/questbook.py)
+DIM = 0.6              # brightness of a locked quest's frame, like FTB's black overlay at alpha 100
+CLICKABLE = 5 / 255    # shape.png alpha over the frame: FTB's click test needs at least 5
 ICON_REACH = 2 / 3 * ICON_SCALE * 2 ** 0.5  # diameter a square icon's corners span, share of the button
 GLOW_CORE, GLOW_EDGE = 0.30, 0.62  # glow brightness on screen (FTB caps the background near 0.64) in the middle, at the rim
 RIM = 0.03             # state rim width around the recess, share of the button
@@ -98,35 +107,75 @@ def ring(diameter_share, width_share):
 
 
 def render(picture, glow):
-    """shape, background and outline textures of one medallion and its recess diameter as a share of the button."""
+    """Shape textures, frame image (bright, dim) of one medallion and its recess diameter as a share of the button."""
     import numpy as np
     picture = picture.convert('RGB')
     cx, cy, recess, reach = measure(picture)
     half = reach * 1.02  # the whole medallion fits, nothing is cut
     work = picture.crop((round(cx - half), round(cy - half), round(cx + half), round(cy + half))).resize((WORK, WORK), Image.LANCZOS)
-    rgb = np.asarray(work, dtype=np.float32) / 255
-    lum = rgb @ np.array([0.2126, 0.7152, 0.0722], dtype=np.float32)
+    art = np.asarray(work, dtype=np.float32) / 255
+    lum = art @ np.array([0.2126, 0.7152, 0.0722], dtype=np.float32)
     alpha, inside = silhouette(lum)
     share = recess / half / 2  # recess radius as a share of the button width
     yy, xx = np.mgrid[0:WORK, 0:WORK]
     r = np.sqrt((yy - WORK / 2) ** 2 + (xx - WORK / 2) ** 2) / WORK / share  # 1 at the recess edge
-    # The recess becomes a glow in the type's colour: a soft core, brighter towards the rim like light inside a lens.
+    fill = np.clip((1.0 - r) / 0.06, 0, 1)  # the recess, blending into the ring at its edge
+    # The recess glows in the type's colour: a soft core, brighter towards the rim like light inside a lens.
     t = np.clip((r - 0.55) / 0.45, 0, 1)
     light = GLOW_CORE + (GLOW_EDGE - GLOW_CORE) * t * t * (3 - 2 * t)
     lens = light[..., None] * (np.array(glow, dtype=np.float32) / 255)[None, None, :]
-    fill = np.clip((1.0 - r) / 0.06, 0, 1)[..., None]  # recess fully glow, blending into the ring at its edge
-    # FTB draws the background at alpha 150/255 over the #212121 fill: undo that blend so colours stay as drawn.
-    rgb = rgb * (1 - fill) + lens * fill
-    rgb = (rgb - (1 - BLEND) * FILL) / BLEND
+    lens = (lens - (1 - BLEND) * FILL) / BLEND  # FTB blends the background at 150/255 over #212121: undo it
+
     def texture(rgb, a):
-        data = np.dstack([np.clip(rgb, 0, 1) * 255, a * 255]).astype('uint8')
+        data = np.dstack([np.clip(rgb, 0, 1) * 255, np.clip(a, 0, 1) * 255]).astype('uint8')
         return Image.fromarray(data, 'RGBA').resize((SIZE, SIZE), Image.LANCZOS)
-    white = np.ones_like(rgb)
-    background = texture(rgb, np.maximum(alpha, fill[..., 0]))
-    shape = texture(white, np.maximum(inside, fill[..., 0]))
+
+    white = np.ones_like(art)
+    frame_alpha = np.maximum(alpha, inside) * (1 - fill)
     outline = Image.new('RGBA', (SIZE, SIZE), (255, 255, 255, 0))
     outline.putalpha(ring(share * 2, RIM))
-    return {'shape.png': shape, 'background.png': background, 'outline.png': outline}, share * 2
+    shapes = {'shape.png': texture(white, np.maximum(fill, inside * CLICKABLE)),
+              'background.png': texture(lens, fill), 'outline.png': outline}
+    frames = {'': texture(art, frame_alpha), '_dim': texture(art * DIM, frame_alpha)}
+    return shapes, frames, share * 2
+
+
+def node_type(quest, data, link=None):
+    return (link or {}).get('shape') or quest.get('shape') or data['chapter'].get('default_quest_shape', 'step')
+
+
+def frame_images(name, data, dependency, every, chapters):
+    """Chapter image entries for the frames of a chapter's quests and links: dimmed always, bright once the quest's
+    prerequisite is completed (the deepest one when there are several: likely the last to be done)."""
+    depth = {}
+
+    def deep(ident, seen=()):
+        if ident not in depth:
+            quest = every[ident]
+            prereqs = [dependency(d, quest['_chapter']) for d in quest.get('deps', [])]
+            depth[ident] = 1 + max((deep(p, seen + (ident,)) for p in prereqs if p in every and p not in seen), default=-1)
+        return depth[ident]
+
+    nodes = [(q, q, None) for q in data['quests']]
+    nodes += [(every[dependency(l['quest'], name)], None, l) for l in data.get('links', [])]
+    entries = []
+    for quest, own, link in nodes:
+        place = link or own
+        kind = node_type(quest, chapters[quest['_chapter']], link)
+        if kind not in TYPES:
+            continue
+        prereqs = [dependency(d, quest['_chapter']) for d in quest.get('deps', [])]
+        prereqs = [p for p in prereqs if p in every]
+        size = float(place.get('size', data['chapter'].get('default_quest_size', 1)))
+        base = {'x': float(place.get('x', 0)), 'y': float(place.get('y', 0)), 'width': size, 'height': size,
+                'rotation': 0.0, 'color': 0xFFFFFF, 'alpha': 255}
+        if prereqs:
+            entries.append(dict(base, image=f'nasledie:textures/frames/{kind}_dim.png', order=0))
+            entries.append(dict(base, image=f'nasledie:textures/frames/{kind}.png', order=1,
+                                dependency=max(prereqs, key=lambda p: (deep(p), p))))
+        else:
+            entries.append(dict(base, image=f'nasledie:textures/frames/{kind}.png', order=1))
+    return entries
 
 
 def check():
@@ -134,17 +183,17 @@ def check():
     for name, (picture, _, _) in TYPES.items():
         if not (SOURCE / picture).exists():
             problems.append(f'{name}: picture art/frames/{picture} is missing')
-        for part in ('shape.png', 'background.png', 'outline.png'):
-            path = TARGET / name / part
+        for part in ('shape.png', 'background.png', 'outline.png', 'frame.png', 'frame_dim.png'):
+            path = TARGET / name / part if not part.startswith('frame') else FRAMES / part.replace('frame', name)
             if not path.exists():
-                problems.append(f'{name}/{part}: not prepared')
+                problems.append(f'{path.relative_to(ROOT)}: not prepared')
                 continue
             image = Image.open(path)
             if image.mode != 'RGBA' or image.size != (SIZE, SIZE):
-                problems.append(f'{name}/{part}: {image.mode} {image.size}, expected RGBA {SIZE}x{SIZE}')
-            meta = path.with_name(part + '.mcmeta')
+                problems.append(f'{path.relative_to(ROOT)}: {image.mode} {image.size}, expected RGBA {SIZE}x{SIZE}')
+            meta = path.with_name(path.name + '.mcmeta')
             if not meta.exists() or json.loads(meta.read_text()) != MCMETA:
-                problems.append(f'{name}/{part}.mcmeta: missing or different')
+                problems.append(f'{meta.relative_to(ROOT)}: missing or different')
     for line in problems:
         print('ERROR', line)
     print(f'{len(TYPES)} quest frames: ' + ('ok' if not problems else f'{len(problems)} problems'))
@@ -163,7 +212,11 @@ def main(argv=None):
             print(f'skip {name}: no art/frames/{picture}')
             continue
         (TARGET / name).mkdir(parents=True, exist_ok=True)
-        parts, recess = render(Image.open(source), glow)
+        FRAMES.mkdir(parents=True, exist_ok=True)
+        parts, frames, recess = render(Image.open(source), glow)
+        for suffix, image in frames.items():
+            image.save(FRAMES / f'{name}{suffix}.png', optimize=True)
+            (FRAMES / f'{name}{suffix}.png.mcmeta').write_text(json.dumps(MCMETA, indent=2) + '\n')
         if recess < ICON_REACH:
             print(f'ERROR {name}: recess {recess:.2f} of the button, a square icon needs {ICON_REACH:.2f}')
         for part, image in parts.items():
