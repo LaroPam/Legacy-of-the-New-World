@@ -29,6 +29,14 @@ python tools/questbook.py check   # SNBT совпадает со свежей с
 нет владельца-игрока, поэтому смерть от урона `createbigcannons.*` засчитывается игрокам в радиусе 128 блоков
 (`nasledie:events/artillery/kill`, для боссов — ещё `.../boss`).
 
+История в модах (подробно — `docs/STORY.md`, «История в модах»):
+- `kubejs/assets/<мод>/lang/ru_ru.json` — переименования отдельных ключей перевода модов
+  (KubeJS ставит свой пакет ресурсов поверх модов, но под пользовательскими ресурс-паками);
+- `kubejs/client_scripts/nasledie_tooltips.js` — сюжетные подсказки к предметам;
+- `kubejs/server_scripts/nasledie_notes.js` — страницы экспедиции в сундуках
+  (`ServerEvents.chestLootTables`: путь передаётся без `chests/`, KubeJS добавляет его сам).
+Название подписанной книги — не длиннее 32 символов: иначе клиент 1.20.1 не откроет её.
+
 Схемы глав для проверки раскладки: `python tools/preview.py ПАПКА [глава ...] --jars ПАПКА_С_JAR`
 (положение, формы, значки и линии реальные; шрифты и рамки — нет).
 
@@ -49,6 +57,8 @@ python tools/validate.py [--report file.json] [--strict]
 - награда выдаёт предмет, который является целью другого квеста (Item Task или
   `inventory_changed` в достижении); одинаковый предмет несколько раз в наградах одного квеста;
 - ручная галочка с предметной наградой (книга-запись дневника допускается);
+- задача `kill`/`stat` без положительного `value` (FTB читает отсутствующее значение как цель 0);
+- подписанная книга без автора или с названием длиннее 32 символов;
 - ресурсы достижений KubeJS и текстуры форм.
 
 Предупреждения: слишком длинные описания (похоже на инструкцию), технические слова в тексте,
@@ -71,10 +81,12 @@ python tools/build_registry.py ПАПКА_С_JAR --vanilla-ru ru_ru.json
 
 ## Выпуск
 
-1. `python -m unittest discover -s tests`, `node --test tests/factory_trials.test.cjs`,
-   `python tools/validate.py --strict`, `python tools/apply_palettes.py --check`.
-2. Архив для установки: папки `config/ftbquests/` и `kubejs/` целиком.
-3. Установка: на обоих компьютерах (игра по сети через «Открыть для сети» + VPN) заменить
-   `config/ftbquests/quests/chapters/` целиком (старые главы удалить, иначе останутся лишние) и
-   скопировать `kubejs/` поверх. Перезапустить игру полностью.
-4. Игровой тест по списку проверок релиза. Статическая проверка ≠ игровой тест.
+1. `python -m unittest discover -s tests`, `node --test tests/*.cjs`, `python tools/validate.py`
+   (0 ошибок; предупреждения просмотрены и перечислены в отчёте), `python tools/apply_palettes.py --check`.
+2. Журнал ID относительно базы: `python tools/book_diff.py <распакованная база>` → приложение к журналу изменений.
+3. Архив для установки: `python tools/package_release.py` — папки `config/ftbquests/` и `kubejs/`
+   ровно в состоянии коммита, плюс `SHA256SUMS` и инструкция.
+4. Установка: на обоих компьютерах (игра по сети через «Открыть для сети» + VPN) удалить
+   `config/ftbquests/quests/chapters/` и `kubejs/data/nasledie/` целиком, скопировать `config/` и `kubejs/`
+   поверх, перезапустить игру полностью.
+5. Игровой тест по `docs/ALPHA43_TEST_CHECKLIST.md`. Статическая проверка ≠ игровой тест.
