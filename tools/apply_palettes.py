@@ -39,6 +39,9 @@ def sections(text):
             selector = line[1:-1]
             if selector in result:
                 raise ValueError(f'Duplicate selector at line {number}')
+            if selector != '*' and int(selector, 16) >= 1 << 63:
+                # ThemeLoader reads selectors with parseHexId (signed): such a chapter selector is ignored
+                raise ValueError(f'Chapter ID out of FTB range at line {number}: {selector}')
             current = result[selector] = {}
         elif current is None or ':' not in line:
             raise ValueError(f'Ignored or invalid theme line {number}: {line}')

@@ -32,7 +32,7 @@ quests:
       - {type: item, item: alexsmobs:fish_oil, count: 4}
 
   - key: field_notes
-    id: F57181DBDA992F0B
+    id: 757181DBDA992F0B
     title: Три живые записи дневника
     description:
       - Найдите и рассмотрите вблизи грифовую черепаху, визгуна и шёпота. Берг рисовала их по памяти — сверьте рисунки с натурой.
@@ -99,7 +99,7 @@ quests:
       - {type: item, item: alexsmobs:frontier_cap}
 
   - key: grizzly
-    id: 96A5A07EA384E3E1
+    id: 16A5A07EA384E3E1
     title: Медведь принимает угощение
     description:
       - Мёд и лосось — путь к сердцу бурого медведя. Приручите его.
@@ -130,7 +130,7 @@ quests:
       - {type: item, item: alexsmobs:moose_headgear}
 
   - key: skunk
-    id: 8EC4540A9E0B729E
+    id: 0EC4540A9E0B729E
     title: Аромат полевого исследования
     description:
       - Подойдите к скунсу слишком близко. Наука требует жертв, Юра.
@@ -147,7 +147,7 @@ quests:
       - {type: item, item: alexsmobs:stink_ray}
 
   - key: underminer
-    id: A11B0DC1744B593F
+    id: 211B0DC1744B593F
     title: Опередить призрачного шахтёра
     description:
       - Призрачный рудокоп копает жилы, которых не видно. Сломайте блок, который он копает, — и найдёте спрятанную руду.
@@ -164,7 +164,7 @@ quests:
 
   # ── Небо: соколиная охота ──
   - key: eagle
-    id: E4D66B92C822D527
+    id: 64D66B92C822D527
     title: Первый пернатый союзник
     description:
       - Приручите орла рыбьим жиром. Он станет глазами экспедиции с высоты.
@@ -209,7 +209,7 @@ quests:
       - {type: item, item: alexsmobs:roadrunner_boots}
 
   - key: eagle_challenge
-    id: 96E3403FB5591B32
+    id: 16E3403FB5591B32
     title: Орёл достигает дальней цели
     description:
       - Пусть орёл в капюшоне сразит существо в сотне блоков от вас. Настоящая соколиная охота.
@@ -241,7 +241,7 @@ quests:
       - {type: item, item: alexsmobs:sopa_de_macaco, count: 2}
 
   - key: capuchin
-    id: A69880141C867BB1
+    id: 269880141C867BB1
     title: Маленький спутник из джунглей
     description:
       - Капуцин ездит на плече и швыряется во врагов. Приручите его.
@@ -287,7 +287,7 @@ quests:
       - {type: item, item: alexsmobs:maraca}
 
   - key: anteater
-    id: 936D71E0D75C5CFD
+    id: 136D71E0D75C5CFD
     title: Семья муравьедов
     description:
       - Муравьеды любят куколок муравьёв. Разведите пару.
@@ -303,7 +303,7 @@ quests:
       - {type: item, item: alexsmobs:gongylidia, count: 4}
 
   - key: tiger
-    id: 9ED723F7F76497AD
+    id: 1ED723F7F76497AD
     title: Благословение тигра
     description:
       - Накормите тигра мясом, и он благословит вас — враги не заметят вашего приближения.
@@ -321,7 +321,7 @@ quests:
 
   # ── Саванна и пустыня ──
   - key: elephant
-    id: 95C85BF47DA01D26
+    id: 15C85BF47DA01D26
     title: Слон принимает предложение
     description:
       - Приручите слона акациевым цветком. На спине у него поместятся сундуки — караван готов.
@@ -400,7 +400,7 @@ quests:
       - {type: item, item: minecraft:golden_carrot, count: 12}
 
   - key: three_wastes
-    id: 8D963EB7C6BEE5F5
+    id: 0D963EB7C6BEE5F5
     title: Трофеи трёх пустошей
     description:
       - Рыба-кость в море, стервятник душ в Нижнем мире и гремучая змея в пустыне. Победите каждую.
@@ -420,7 +420,7 @@ quests:
 
   # ── Море ──
   - key: seagull
-    id: 99429B59EE71CDA8
+    id: 19429B59EE71CDA8
     title: Чайка забрала обед
     description:
       - Позвольте чайке украсть еду у вас из рук. Максим, это был твой бутерброд.
@@ -436,7 +436,7 @@ quests:
       - {type: item, item: farmersdelight:fish_stew, count: 4}
 
   - key: mantis_shrimp
-    id: B949C4277618FEC3
+    id: 3949C4277618FEC3
     title: Рак-богомол становится союзником
     description:
       - Рак-богомол бьёт так, что ломает панцири. Приручите его тропической рыбой.
@@ -451,7 +451,7 @@ quests:
       - {type: item, item: alexsmobs:shrimp_fried_rice, count: 4}
 
   - key: cachalot
-    id: E159D133BD51F992
+    id: 6159D133BD51F992
     title: Спасти кита
     description:
       - Иногда кашалота выбрасывает на берег. Столкните его обратно в воду — и он оставит амбру в благодарность.
@@ -485,7 +485,7 @@ quests:
 
   # ── Нижний мир ──
   - key: stradpole
-    id: B9C5E7F638070495
+    id: 39C5E7F638070495
     title: Угощение для страдпола
     description:
       - Покормите страдпола личинками комара. Из головастика вырастет страддлер — живая лодка по лаве.
@@ -516,7 +516,7 @@ quests:
       - {type: item, item: minecraft:magma_cream, count: 6}
 
   - key: laviathan
-    id: ACE2BBCB182D3BF5
+    id: 2CE2BBCB182D3BF5
     title: Лавовый гигант в объективе
     description:
       - В лавовых озёрах плавает лавиафан. Посмотрите на него в подзорную трубу — с безопасного расстояния.
@@ -548,7 +548,7 @@ quests:
       - {type: item, item: minecraft:netherite_scrap}
 
   - key: warped_mosco
-    id: A3CBB2323447F658
+    id: 23CBB2323447F658
     title: Искажённый комар
     description:
       - Багровый комар, накормленный странным грибом, превращается в искажённого москита — защитника искажённого леса. Сразите его.
@@ -567,7 +567,7 @@ quests:
 
   # ── Питомник ──
   - key: sanctuary
-    id: 9B3BBB54EE27AC7B
+    id: 1B3BBB54EE27AC7B
     title: Питомник трёх биомов
     description:
       - Разведите лис, панд и верблюдов. Животные из трёх краёв живут у вас дома — Берг была бы счастлива.

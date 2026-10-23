@@ -1,7 +1,7 @@
 {
 	filename: "nasledie_netheritage"
-	id: "BC5663C3D347C93F"
-	group: "EF93B76DFA48CC13"
+	id: "3C5663C3D347C93F"
+	group: "6F93B76DFA48CC13"
 	title: "Нижний мир — огонь и черепа"
 	icon: "minecraft:wither_skeleton_skull"
 	order_index: 8
@@ -11,15 +11,15 @@
 	quest_links: [
 		{
 			id: "334F9230767F52DF"
-			linked_quest: "B433E7FAF2F51B45"
+			linked_quest: "3433E7FAF2F51B45"
 			x: 9.0d
 			y: -2.5d
 			shape: "star"
 			size: 1.4d
 		}
 		{
-			id: "CCA959B0D701AAE5"
-			linked_quest: "88304673F4543996"
+			id: "4CA959B0D701AAE5"
+			linked_quest: "08304673F4543996"
 			x: 15.0d
 			y: 0.0d
 			shape: "crown"
@@ -49,7 +49,7 @@
 					xp: 100
 				}
 				{
-					id: "E185D59BB4066EF4"
+					id: "6185D59BB4066EF4"
 					type: "item"
 					item: {
 						Count: 2b
@@ -62,7 +62,7 @@
 			]
 		}
 		{
-			id: "9F3B94588E4D3BF0"
+			id: "1F3B94588E4D3BF0"
 			title: "Фонарь душ"
 			description: ["Жара Нижнего мира изматывает даже в лучшей одежде. Фонарь душ держит прохладу вокруг вас, пока в нём есть топливо. Для него нужно сердце моря — вот и пригодилась морская вылазка."]
 			x: 0.0d
@@ -71,18 +71,18 @@
 			shape: "gear"
 			dependencies: ["060BA736EF32E9F5"]
 			tasks: [{
-				id: "167CEFF4D493D013"
+				id: "438AE08839BEF3E3"
 				type: "advancement"
 				advancement: "cold_sweat:get_soul_lamp"
 			}]
 			rewards: [
 				{
-					id: "579DEF6F286B2745"
+					id: "10B5A180D9BC1A40"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "0B7D40A9D9EFD2C9"
+					id: "6C95726D3A03677F"
 					type: "item"
 					item: {
 						Count: 1b
@@ -92,7 +92,7 @@
 			]
 		}
 		{
-			id: "9657C7068A9F33B4"
+			id: "1657C7068A9F33B4"
 			title: "Крепость Нижнего мира"
 			description: ["Мосты и залы из незерского кирпича, где живут ифриты и визер-скелеты. Найдите крепость — здесь начинается путь к очам и к обряду."]
 			x: 3.0d
@@ -101,18 +101,18 @@
 			shape: "scroll"
 			dependencies: ["060BA736EF32E9F5"]
 			tasks: [{
-				id: "29CA0859EEADC5F4"
+				id: "6D1AAA671982F01C"
 				type: "structure"
 				structure: "betterfortresses:fortress"
 			}]
 			rewards: [
 				{
-					id: "8E41A059976C7F95"
+					id: "79D420D2BC014D47"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "8CB5D98249F89173"
+					id: "4D1052F96C70A79A"
 					type: "item"
 					item: {
 						Count: 1b
@@ -129,7 +129,7 @@
 			y: 0.0d
 			icon: "minecraft:blaze_rod"
 			shape: "shield"
-			dependencies: ["9657C7068A9F33B4"]
+			dependencies: ["1657C7068A9F33B4"]
 			tasks: [{
 				id: "70CD00CF2B50D889"
 				type: "advancement"
@@ -173,7 +173,7 @@
 					xp: 150
 				}
 				{
-					id: "8B06653DD3BEB786"
+					id: "0B06653DD3BEB786"
 					type: "item"
 					item: {
 						Count: 1b
@@ -183,7 +183,7 @@
 			]
 		}
 		{
-			id: "E41D15990FE74505"
+			id: "641D15990FE74505"
 			title: "Первый череп"
 			description: ["Для обряда нужно три черепа визер-скелетов. Добудьте первый — дальше только терпение и меч с добычей."]
 			x: 12.0d
@@ -192,18 +192,18 @@
 			shape: "shield"
 			dependencies: ["6FB70B1DE8310B79"]
 			tasks: [{
-				id: "BA4174C34D6A60B4"
+				id: "240A85B3C39B6050"
 				type: "advancement"
 				advancement: "minecraft:nether/get_wither_skull"
 			}]
 			rewards: [
 				{
-					id: "E430B6ACFCE583FB"
+					id: "106AD07902AA3176"
 					type: "xp"
 					xp: 250
 				}
 				{
-					id: "980B38250EC40FB5"
+					id: "7C30E8C7B2E10B7A"
 					type: "item"
 					item: {
 						Count: 1b
@@ -227,16 +227,16 @@
 			icon: "minecraft:magma_cream"
 			shape: "star"
 			optional: true
-			dependencies: ["E41D15990FE74505"]
+			dependencies: ["641D15990FE74505"]
 			tasks: [
 				{
-					id: "B4CA0C48E773EDD3"
+					id: "34CA0C48E773EDD3"
 					type: "advancement"
 					advancement: "nasledie:alpha42/nether/fireproof_assault/blaze"
 					title: "Ифрит под огнестойкостью"
 				}
 				{
-					id: "9E14813127EB1C84"
+					id: "1E14813127EB1C84"
 					type: "advancement"
 					advancement: "nasledie:alpha42/nether/fireproof_assault/wither"
 					title: "Визер-скелет под огнестойкостью"
@@ -244,7 +244,7 @@
 			]
 			rewards: [
 				{
-					id: "F4C82992698E4A28"
+					id: "74C82992698E4A28"
 					type: "xp"
 					xp: 630
 				}
@@ -259,7 +259,7 @@
 			]
 		}
 		{
-			id: "A9D440BF0B39FBFA"
+			id: "29D440BF0B39FBFA"
 			title: "Пиглин-брут"
 			description: ["Бруты охраняют бастионы и не любят гостей даже в золоте. Победите одного."]
 			x: 3.0d
@@ -268,19 +268,19 @@
 			shape: "shield"
 			dependencies: ["060BA736EF32E9F5"]
 			tasks: [{
-				id: "8D556B2B272CE641"
+				id: "55D24E7EDBAD6D60"
 				type: "kill"
 				entity: "minecraft:piglin_brute"
 				value: 1
 			}]
 			rewards: [
 				{
-					id: "5337FF70CE304BC6"
+					id: "392080FEC0245861"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "118E6AC8D7A02C60"
+					id: "4B362C4C88ED85B8"
 					type: "item"
 					item: {
 						Count: 1b
@@ -297,7 +297,7 @@
 			y: -3.0d
 			icon: "minecraft:gilded_blackstone"
 			shape: "shield"
-			dependencies: ["A9D440BF0B39FBFA"]
+			dependencies: ["29D440BF0B39FBFA"]
 			tasks: [{
 				id: "58E18B70F544E3AE"
 				type: "advancement"
@@ -305,7 +305,7 @@
 			}]
 			rewards: [
 				{
-					id: "8DD1CF540F86A2D9"
+					id: "0DD1CF540F86A2D9"
 					type: "xp"
 					xp: 300
 				}
@@ -336,12 +336,12 @@
 			}]
 			rewards: [
 				{
-					id: "CA1AAC1CF9511ED9"
+					id: "4A1AAC1CF9511ED9"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "BFD98DD68DEBF659"
+					id: "3FD98DD68DEBF659"
 					type: "item"
 					item: {
 						Count: 16b
@@ -382,7 +382,7 @@
 			]
 		}
 		{
-			id: "831CD896CBC3B75D"
+			id: "031CD896CBC3B75D"
 			title: "Порт среди лавы"
 			description: ["Кто-то построил порт на лавовом озере. Найдите его и откройте сундук на причале."]
 			x: 3.0d
@@ -391,19 +391,19 @@
 			shape: "scroll"
 			dependencies: ["060BA736EF32E9F5"]
 			tasks: [{
-				id: "7A5C721ECFDC32A0"
+				id: "415E141B8AE55931"
 				type: "advancement"
 				title: "Открыть сундук порта"
 				advancement: "nasledie:q/netheritage/nether_port"
 			}]
 			rewards: [
 				{
-					id: "BCA7EA98F1B655CF"
+					id: "220AC6EAFE61C939"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "F77E1AD51B6C2EDF"
+					id: "4BA8EBAB90035C32"
 					type: "item"
 					item: {
 						Count: 2b
@@ -413,27 +413,27 @@
 			]
 		}
 		{
-			id: "E3F2CE1B298FF952"
+			id: "63F2CE1B298FF952"
 			title: "Замок Нижнего мира"
 			description: ["Огромный замок с бетонными залами и неожиданным снегом внутри. Найдите его."]
 			x: 6.0d
 			y: 3.0d
 			icon: "minecraft:polished_blackstone_bricks"
 			shape: "scroll"
-			dependencies: ["831CD896CBC3B75D"]
+			dependencies: ["031CD896CBC3B75D"]
 			tasks: [{
-				id: "DD4ED671EB298AEA"
+				id: "6F30E479EB79C854"
 				type: "structure"
 				structure: "nova_structures:nether_keep"
 			}]
 			rewards: [
 				{
-					id: "FB147ED06EA10435"
+					id: "5D8A9711BD633FBF"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "BC0D928FBE176EA8"
+					id: "2FE893816640D124"
 					type: "item"
 					item: {
 						Count: 6b
@@ -451,9 +451,9 @@
 			icon: "minecraft:powder_snow_bucket"
 			shape: "star"
 			optional: true
-			dependencies: ["E3F2CE1B298FF952"]
+			dependencies: ["63F2CE1B298FF952"]
 			tasks: [{
-				id: "B9D45B9699BC785A"
+				id: "39D45B9699BC785A"
 				type: "advancement"
 				advancement: "nova_structures:nether/powder_snow_keep"
 			}]
@@ -464,7 +464,7 @@
 					xp: 270
 				}
 				{
-					id: "D4FB44920A885020"
+					id: "54FB44920A885020"
 					type: "item"
 					item: {
 						Count: 1b
@@ -484,7 +484,7 @@
 			optional: true
 			dependencies: ["057308B8365632F8"]
 			tasks: [{
-				id: "AE228DCE0A6F7121"
+				id: "2E228DCE0A6F7121"
 				type: "advancement"
 				advancement: "nova_structures:nether/find_skeleton_tower"
 			}]
@@ -495,7 +495,7 @@
 					xp: 500
 				}
 				{
-					id: "88AF74E7D69780A6"
+					id: "08AF74E7D69780A6"
 					type: "item"
 					item: {
 						Count: 1b
@@ -505,7 +505,7 @@
 			]
 		}
 		{
-			id: "FDC38AD8EF13ED6B"
+			id: "7DC38AD8EF13ED6B"
 			title: "Багровый лес"
 			description: ["Красные грибы-деревья и хоглины. Здесь растут припасы для варки — и для неприятностей."]
 			x: 0.0d
@@ -515,18 +515,18 @@
 			optional: true
 			dependencies: ["060BA736EF32E9F5"]
 			tasks: [{
-				id: "27348130D0E87B0E"
+				id: "575BE5A6D12BEA3B"
 				type: "biome"
 				biome: "minecraft:crimson_forest"
 			}]
 			rewards: [
 				{
-					id: "3DE4B074A9AAAC71"
+					id: "48B164D645D472CA"
 					type: "xp"
 					xp: 75
 				}
 				{
-					id: "BF9E75552AE19F7A"
+					id: "71CF9FE1D2E16922"
 					type: "item"
 					item: {
 						Count: 4b
@@ -536,7 +536,7 @@
 			]
 		}
 		{
-			id: "EB5133ED763E8FEC"
+			id: "6B5133ED763E8FEC"
 			title: "Искажённый лес"
 			description: ["Синий лес, где эндермены чувствуют себя как дома. Самое спокойное место Нижнего мира."]
 			x: 0.0d
@@ -544,20 +544,20 @@
 			icon: "minecraft:warped_fungus"
 			shape: "scroll"
 			optional: true
-			dependencies: ["FDC38AD8EF13ED6B"]
+			dependencies: ["7DC38AD8EF13ED6B"]
 			tasks: [{
-				id: "3157E98A29CA2720"
+				id: "14793FE2473DDA01"
 				type: "biome"
 				biome: "minecraft:warped_forest"
 			}]
 			rewards: [
 				{
-					id: "145B67A88435E1C6"
+					id: "0279D8DB75047730"
 					type: "xp"
 					xp: 75
 				}
 				{
-					id: "6BC42F032E1F23C6"
+					id: "699E3273588432AD"
 					type: "item"
 					item: {
 						Count: 4b
@@ -567,7 +567,7 @@
 			]
 		}
 		{
-			id: "F0DECF35C46F0180"
+			id: "70DECF35C46F0180"
 			title: "Долина песка душ"
 			description: ["Песок, в котором вязнут ноги, и синее пламя. Именно этот песок нужен для обряда."]
 			x: 0.0d
@@ -575,20 +575,20 @@
 			icon: "minecraft:soul_sand"
 			shape: "scroll"
 			optional: true
-			dependencies: ["EB5133ED763E8FEC"]
+			dependencies: ["6B5133ED763E8FEC"]
 			tasks: [{
-				id: "16123F7CF2EEA3BC"
+				id: "676446D7FC836616"
 				type: "biome"
 				biome: "minecraft:soul_sand_valley"
 			}]
 			rewards: [
 				{
-					id: "D9F5AED207B76685"
+					id: "338063439DB1287A"
 					type: "xp"
 					xp: 75
 				}
 				{
-					id: "73ECF80EA7757A45"
+					id: "637DCCE56F43B985"
 					type: "item"
 					item: {
 						Count: 4b
@@ -606,7 +606,7 @@
 			icon: "minecraft:ghast_tear"
 			shape: "shield"
 			optional: true
-			dependencies: ["F0DECF35C46F0180"]
+			dependencies: ["70DECF35C46F0180"]
 			tasks: [{
 				id: "5727117CB1BE348B"
 				type: "kill"
@@ -615,12 +615,12 @@
 			}]
 			rewards: [
 				{
-					id: "A2373BB1AA92278D"
+					id: "22373BB1AA92278D"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "D45B047626513BA8"
+					id: "545B047626513BA8"
 					type: "item"
 					item: {
 						Count: 2b
@@ -633,7 +633,7 @@
 			]
 		}
 		{
-			id: "C3BFB23BB3DE07A6"
+			id: "43BFB23BB3DE07A6"
 			title: "На страйдере по лаве"
 			description: ["Страйдеры ходят по лаве, как по воде. Оседлайте одного и прокатитесь — удочка с грибом вам в помощь."]
 			x: 6.0d
@@ -643,18 +643,18 @@
 			optional: true
 			dependencies: ["79E3FF74B36FC7E6"]
 			tasks: [{
-				id: "28C94FE1542F933E"
+				id: "1CA27E430C0E1CFE"
 				type: "advancement"
 				advancement: "minecraft:nether/ride_strider"
 			}]
 			rewards: [
 				{
-					id: "BDFE6E19E40D25BD"
+					id: "2CED0E8124DD4AF0"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "E3CA2442EDD5DBED"
+					id: "1CB835891C520035"
 					type: "item"
 					item: {
 						Count: 1b
@@ -664,27 +664,27 @@
 			]
 		}
 		{
-			id: "EB54BF13BBC94A90"
+			id: "6B54BF13BBC94A90"
 			title: "Древние обломки"
 			description: ["Глубоко в Нижнем мире лежат древние обломки — из них плавят незерит. Найдите первый."]
 			x: 9.0d
 			y: -8.0d
 			icon: "minecraft:ancient_debris"
 			optional: true
-			dependencies: ["C3BFB23BB3DE07A6"]
+			dependencies: ["43BFB23BB3DE07A6"]
 			tasks: [{
-				id: "DA4C2C61BECCEB3F"
+				id: "4A218D062ACB6826"
 				type: "advancement"
 				advancement: "minecraft:nether/obtain_ancient_debris"
 			}]
 			rewards: [
 				{
-					id: "C4CC7052CAEBC86D"
+					id: "04473DC1F7B0BCC2"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "96C6267D40FFDB0F"
+					id: "201EB2BC69B51155"
 					type: "item"
 					item: {
 						Count: 1b

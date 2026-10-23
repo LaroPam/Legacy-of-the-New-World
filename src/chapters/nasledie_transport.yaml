@@ -1,7 +1,7 @@
 # Акт III. Транспорт: железная дорога Create/Steam Rails и воздушный флот Immersive Aircraft.
 chapter:
   filename: nasledie_transport
-  id: D90DA6CC0E252361
+  id: 590DA6CC0E252361
   group: act3
   title: Дороги нового мира — рельсы и крылья
   icon: create:track
@@ -13,7 +13,7 @@ chapter:
 quests:
   # ── Железная дорога ──
   - key: sturdy_sheet
-    id: C1772DE6B882A602
+    id: 41772DE6B882A602
     title: Материал большого пути
     description:
       - Прочный лист из обсидиана и меди нужен для колёс и тормозов поезда. С него начинается железная дорога.
@@ -59,7 +59,7 @@ quests:
       - {type: item, item: railways:big_buffer, count: 2}
 
   - key: train
-    id: D727915E29A5F477
+    id: 5727915E29A5F477
     title: Поезд готов к отправлению
     description:
       - Соберите состав с тележками и пультом машиниста на станции. Первый рейс — праздник для всей деревни.
@@ -201,7 +201,7 @@ quests:
       - {type: item, item: interiors:red_chair, count: 4}
 
   - key: long_travel
-    id: B6EA6A2338C90595
+    id: 36EA6A2338C90595
     title: Пять тысяч блоков от дома
     description:
       - Проедьте на поезде пять тысяч блоков за один рейс. Протяните линию к дальнему логову — пусть Катаклизм будет на расстоянии поездки.
@@ -219,7 +219,7 @@ quests:
       - {type: item, item: waystones:warp_stone}
 
   - key: train_portal
-    id: AB76CE2DB46422C6
+    id: 2B76CE2DB46422C6
     title: Рейс в другое измерение
     description:
       - Проведите рельсы сквозь портал. Поезд в Нижний мир — лучший способ возить огненные стержни.
@@ -252,7 +252,7 @@ quests:
       - {type: item, item: create:railway_casing, count: 12}
 
   - key: handcar
-    id: B39341943A77E20B
+    id: 339341943A77E20B
     title: Дрезина для осмотра пути
     description:
       - Поставьте дрезину и прокатитесь вдоль линии. Ручной привод — Юре полезно.
@@ -262,7 +262,7 @@ quests:
     optional: true
     deps: [track]
     tasks:
-      - {id: EEF5774CADE39519, type: advancement, advancement: nasledie:alpha34/actions/eef5774cade39519, title: Поставить дрезину}
+      - {id: 6EF5774CADE39519, type: advancement, advancement: nasledie:alpha34/actions/eef5774cade39519, title: Поставить дрезину}
     rewards:
       - {type: xp, xp: 100}
       - {type: item, item: farmersdelight:bacon_sandwich, count: 4}
@@ -274,11 +274,11 @@ quests:
       - Наденьте фуражку кондуктора. Теперь вы главный на вокзале — Юра, предъяви билет.
     x: 12
     y: 3
-    icon: railways:conductor_cap
+    icon: railways:red_conductor_cap
     optional: true
     deps: [conductor]
     tasks:
-      - {id: A62C8B9DBBC8BE51, type: advancement, advancement: nasledie:alpha35/engineering/0c11f617809503c4, title: Надеть фуражку кондуктора}
+      - {id: 262C8B9DBBC8BE51, type: advancement, advancement: nasledie:alpha35/engineering/0c11f617809503c4, title: Надеть фуражку кондуктора}
     rewards:
       - {type: xp, xp: 100}
       - {type: item, item: railways:remote_lens}
@@ -299,7 +299,7 @@ quests:
       - {type: item, item: immersive_aircraft:sail, count: 4}
 
   - key: biplane
-    id: CABC4D7CB8FBE2B6
+    id: 4ABC4D7CB8FBE2B6
     title: Биплан для разведки
     description:
       - Биплан с двигателем летит далеко и быстро. Облетите окрестности — с высоты лагеря и логова видно издалека.

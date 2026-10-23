@@ -1,7 +1,7 @@
 {
 	filename: "nasledie_defense"
-	id: "A1279E21532D7CDD"
-	group: "EF93B76DFA48CC13"
+	id: "21279E21532D7CDD"
+	group: "6F93B76DFA48CC13"
 	title: "Звери и стражи старого мира"
 	icon: "mowziesmobs:wrought_helmet"
 	order_index: 6
@@ -18,8 +18,8 @@
 			size: 1.8d
 		}
 		{
-			id: "CBE175DC6942F002"
-			linked_quest: "A378D8F13118FF97"
+			id: "4BE175DC6942F002"
+			linked_quest: "2378D8F13118FF97"
 			x: -7.01d
 			y: -14.38d
 			shape: "crown"
@@ -27,7 +27,7 @@
 		}
 		{
 			id: "39EAE576209133ED"
-			linked_quest: "DF85EFBB8E452760"
+			linked_quest: "5F85EFBB8E452760"
 			x: 6.25d
 			y: -6.47d
 			shape: "crown"
@@ -43,7 +43,7 @@
 		}
 		{
 			id: "603D972C1ED79C4F"
-			linked_quest: "92AF3238F7B8776E"
+			linked_quest: "12AF3238F7B8776E"
 			x: -3.63d
 			y: 5.39d
 			shape: "crown"
@@ -52,7 +52,7 @@
 	]
 	quests: [
 		{
-			id: "B704072AA3306667"
+			id: "3704072AA3306667"
 			title: "Роща солнечного племени"
 			description: ["В джунглях и саваннах живёт народ в масках — умвутана. Их роща окружена частоколом, а в центре горит то, что они охраняют. Найдите её, но не спешите внутрь."]
 			x: -2.25d
@@ -61,18 +61,18 @@
 			shape: "scroll"
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
-				id: "3AF3E69EB9C3B4D3"
+				id: "7179D6B524A8819C"
 				type: "structure"
 				structure: "mowziesmobs:umvuthana_grove"
 			}]
 			rewards: [
 				{
-					id: "09231E9657546590"
+					id: "64D978ADF8D8375A"
 					type: "xp"
 					xp: 240
 				}
 				{
-					id: "F26CD3C5E1613406"
+					id: "5A33500928E748FE"
 					type: "item"
 					item: {
 						Count: 1b
@@ -80,7 +80,7 @@
 					}
 				}
 				{
-					id: "BD56AFF102157D91"
+					id: "29B8A2E2776C0C6E"
 					type: "item"
 					item: {
 						Count: 16b
@@ -96,7 +96,7 @@
 			x: -3.86d
 			y: -4.6d
 			icon: "mowziesmobs:umvuthana_mask_rage"
-			dependencies: ["B704072AA3306667"]
+			dependencies: ["3704072AA3306667"]
 			tasks: [{
 				id: "64515B8014B5D927"
 				type: "advancement"
@@ -109,7 +109,7 @@
 					xp: 150
 				}
 				{
-					id: "FDF7E5972A4AD79B"
+					id: "7DF7E5972A4AD79B"
 					type: "item"
 					item: {
 						Count: 1b
@@ -142,12 +142,12 @@
 			]
 			rewards: [
 				{
-					id: "C7F5D1C8D1F5CCB2"
+					id: "47F5D1C8D1F5CCB2"
 					type: "xp"
 					xp: 230
 				}
 				{
-					id: "AC013AEFEE628DD6"
+					id: "2C013AEFEE628DD6"
 					type: "item"
 					item: {
 						Count: 6b
@@ -173,12 +173,12 @@
 			}]
 			rewards: [
 				{
-					id: "B216B1C16C84F521"
+					id: "3216B1C16C84F521"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "C7EAB297AA34C1C5"
+					id: "47EAB297AA34C1C5"
 					type: "item"
 					item: {
 						Count: 1b
@@ -197,14 +197,14 @@
 			shape: "circle"
 			dependencies: ["667FADB4630B1FBC"]
 			tasks: [{
-				id: "EC36C440C9E50AD1"
+				id: "6C36C440C9E50AD1"
 				type: "advancement"
 				title: "Открыть сундук рощи"
 				advancement: "nasledie:q/defense/grove_chest"
 			}]
 			rewards: [
 				{
-					id: "85CA0F2D5A53F4DE"
+					id: "05CA0F2D5A53F4DE"
 					type: "xp"
 					xp: 200
 				}
@@ -219,27 +219,27 @@
 			]
 		}
 		{
-			id: "A33D4E94573F3BD4"
+			id: "233D4E94573F3BD4"
 			title: "Хищник среди листвы"
 			description: ["В джунглях растут цветы, которые едят неосторожных. Победите фолиаата — до того, как он закроет пасть."]
 			x: -5.2d
 			y: -3.38d
 			icon: "mowziesmobs:foliaath_seed"
 			optional: true
-			dependencies: ["B704072AA3306667"]
+			dependencies: ["3704072AA3306667"]
 			tasks: [{
-				id: "F02C87180F33D1EE"
+				id: "352ACA4FDC96312C"
 				type: "advancement"
 				advancement: "mowziesmobs:kill_foliaath"
 			}]
 			rewards: [
 				{
-					id: "4FE0E283F263D184"
+					id: "123C4A600D05A3CA"
 					type: "xp"
 					xp: 120
 				}
 				{
-					id: "BC689D49B31E0527"
+					id: "090CBCA03B97A9C9"
 					type: "item"
 					item: {
 						Count: 1b
@@ -257,7 +257,7 @@
 			icon: "mowziesmobs:sol_visage"
 			shape: "star"
 			optional: true
-			dependencies: ["A378D8F13118FF97"]
+			dependencies: ["2378D8F13118FF97"]
 			tasks: [{
 				id: "7E6D47F401B51B50"
 				type: "advancement"
@@ -270,7 +270,7 @@
 					xp: 400
 				}
 				{
-					id: "DF151438EE4356F2"
+					id: "5F151438EE4356F2"
 					type: "item"
 					item: {
 						Count: 1b
@@ -280,7 +280,7 @@
 			]
 		}
 		{
-			id: "B89ADDCBCB295F18"
+			id: "389ADDCBCB295F18"
 			title: "Тропа к монастырю"
 			description: ["Высоко в горах стоит монастырь, а над ним — скала, где живёт отшельник. Поднимитесь к монастырю и осмотритесь."]
 			x: 1.75d
@@ -289,18 +289,18 @@
 			shape: "scroll"
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
-				id: "DDE3F82BAF61B3E1"
+				id: "0C88539A7FF5BA07"
 				type: "structure"
 				structure: "mowziesmobs:monastery"
 			}]
 			rewards: [
 				{
-					id: "CCB161BEAC4E57AC"
+					id: "6B0701347DFD969F"
 					type: "xp"
 					xp: 280
 				}
 				{
-					id: "C50CA383D52C7856"
+					id: "53EB8A971D01E94A"
 					type: "item"
 					item: {
 						Count: 4b
@@ -310,28 +310,28 @@
 			]
 		}
 		{
-			id: "D49B46DD723548E4"
+			id: "549B46DD723548E4"
 			title: "Кладовая монахов"
 			description: ["Монахи давно ушли, но кладовая цела. Откройте её сундук — припасы для подъёма к вершине."]
 			x: 3.0d
 			y: -5.2d
 			icon: "minecraft:barrel"
 			shape: "circle"
-			dependencies: ["B89ADDCBCB295F18"]
+			dependencies: ["389ADDCBCB295F18"]
 			tasks: [{
-				id: "E88A49715B71EED9"
+				id: "0904D1BE48083BFD"
 				type: "advancement"
 				title: "Открыть сундук монастыря"
 				advancement: "nasledie:q/defense/monastery_chest"
 			}]
 			rewards: [
 				{
-					id: "0F991A14D983D7BC"
+					id: "634C9580ED133BC7"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "08F9896BF5B57F03"
+					id: "690DA828AE5C3F23"
 					type: "item"
 					item: {
 						Count: 12b
@@ -349,7 +349,7 @@
 			icon: "minecraft:feather"
 			shape: "circle"
 			optional: true
-			dependencies: ["D49B46DD723548E4"]
+			dependencies: ["549B46DD723548E4"]
 			tasks: [{
 				id: "62E4ACC6E391C391"
 				type: "advancement"
@@ -362,7 +362,7 @@
 					xp: 160
 				}
 				{
-					id: "F993D6125E8AF5B5"
+					id: "7993D6125E8AF5B5"
 					type: "item"
 					item: {
 						Count: 1b
@@ -387,18 +387,18 @@
 			shape: "scroll"
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
-				id: "90690160BD928BAA"
+				id: "10690160BD928BAA"
 				type: "structure"
 				structure: "mowziesmobs:wrought_chamber"
 			}]
 			rewards: [
 				{
-					id: "B7C489670C3906B6"
+					id: "37C489670C3906B6"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "A4279B387324BFAA"
+					id: "24279B387324BFAA"
 					type: "item"
 					item: {
 						Count: 10b
@@ -408,7 +408,7 @@
 			]
 		}
 		{
-			id: "9B6EFB1C669C7CFA"
+			id: "1B6EFB1C669C7CFA"
 			title: "Четыре испытания топора"
 			description: ["Топор тысячи металлов, взятый у кованого стража, рубит как живой. Испытайте его на четырёх противниках — разорителе, призывателе, пиглине-бруте и визер-скелете. Топор должен быть в руке в момент победы."]
 			x: 9.04d
@@ -419,25 +419,25 @@
 			dependencies: ["4843AED5CE824450"]
 			tasks: [
 				{
-					id: "A974A6687579527B"
+					id: "64B6CB62D4E4F43B"
 					type: "advancement"
 					advancement: "nasledie:alpha41_qa2/warrior/1_ravager"
 					title: "Разоритель"
 				}
 				{
-					id: "CF96AAB527485D6A"
+					id: "2AD1F0E110B3006A"
 					type: "advancement"
 					advancement: "nasledie:alpha41_qa2/warrior/2_evoker"
 					title: "Призыватель"
 				}
 				{
-					id: "1372F4FD58C0B936"
+					id: "17DA2C065D11F96A"
 					type: "advancement"
 					advancement: "nasledie:alpha41_qa2/warrior/3_piglin_brute"
 					title: "Пиглин-брут"
 				}
 				{
-					id: "1B2976F789B1EE5F"
+					id: "72D93B7A51588413"
 					type: "advancement"
 					advancement: "nasledie:alpha41_qa2/warrior/4_wither_skeleton"
 					title: "Визер-скелет"
@@ -445,12 +445,12 @@
 			]
 			rewards: [
 				{
-					id: "F6048A28FCA3B750"
+					id: "70740792FF7221CC"
 					type: "xp"
 					xp: 950
 				}
 				{
-					id: "309BF5DCF95EA7C7"
+					id: "7405EF6B41A1FFF8"
 					type: "item"
 					item: {
 						Count: 1b
@@ -481,7 +481,7 @@
 					xp: 80
 				}
 				{
-					id: "C9B048362F6AEEA8"
+					id: "49B048362F6AEEA8"
 					type: "item"
 					item: {
 						Count: 1b
@@ -501,7 +501,7 @@
 			optional: true
 			dependencies: ["5C3BCCAC46517EDE"]
 			tasks: [{
-				id: "BE96030A3AFD20DC"
+				id: "3E96030A3AFD20DC"
 				type: "advancement"
 				advancement: "mowziesmobs:kill_grottol_fortune"
 			}]
@@ -522,7 +522,7 @@
 			]
 		}
 		{
-			id: "A3EDE771A3D3FAE9"
+			id: "23EDE771A3D3FAE9"
 			title: "Гроттол в сохранности"
 			description: ["А кирка с шёлковым касанием забирает гроттола целиком. Юра давно хотел питомца, который не ест."]
 			x: 5.46d
@@ -532,18 +532,18 @@
 			optional: true
 			dependencies: ["0DA6143558A570BF"]
 			tasks: [{
-				id: "62297C8E22846319"
+				id: "12BBEE492F46F32D"
 				type: "advancement"
 				advancement: "mowziesmobs:kill_grottol_silk_touch"
 			}]
 			rewards: [
 				{
-					id: "AC1C9EA83C9B21A5"
+					id: "58687EA4EA80D6DE"
 					type: "xp"
 					xp: 350
 				}
 				{
-					id: "14048BD908A62100"
+					id: "484CA325E08B7BEA"
 					type: "item"
 					item: {
 						Count: 1b
@@ -568,12 +568,12 @@
 			}]
 			rewards: [
 				{
-					id: "B911F5B5732E3CD9"
+					id: "3911F5B5732E3CD9"
 					type: "xp"
 					xp: 80
 				}
 				{
-					id: "A76EBF3DC9348811"
+					id: "276EBF3DC9348811"
 					type: "item"
 					item: {
 						Count: 1b
@@ -603,7 +603,7 @@
 					xp: 200
 				}
 				{
-					id: "C4F417D858F84F46"
+					id: "44F417D858F84F46"
 					type: "item"
 					item: {
 						Count: 6b
@@ -623,13 +623,13 @@
 			optional: true
 			dependencies: ["43488E4931E0F280"]
 			tasks: [{
-				id: "8638999EE1F7CB15"
+				id: "0638999EE1F7CB15"
 				type: "advancement"
 				advancement: "mowziesmobs:steal_ice_crystal"
 			}]
 			rewards: [
 				{
-					id: "B76256D3515B597E"
+					id: "376256D3515B597E"
 					type: "xp"
 					xp: 390
 				}
@@ -644,7 +644,7 @@
 			]
 		}
 		{
-			id: "FF7561483C27E289"
+			id: "7F7561483C27E289"
 			title: "Нага над головой"
 			description: ["Над морскими скалами кружат наги и плюются кислотой. Собьёте одну — получите клык, из которого выходит отличный кинжал."]
 			x: -3.38d
@@ -653,18 +653,18 @@
 			optional: true
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
-				id: "0E68DE4C0E4AB6B5"
+				id: "76CB91FE2D510668"
 				type: "advancement"
 				advancement: "mowziesmobs:kill_naga"
 			}]
 			rewards: [
 				{
-					id: "548B9F8D4F90B1DB"
+					id: "637ABFA25FBB2026"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "571D2DD88C4210F9"
+					id: "54BE87AF5060DF61"
 					type: "item"
 					item: {
 						Count: 1b

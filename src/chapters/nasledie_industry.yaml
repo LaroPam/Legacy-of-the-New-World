@@ -18,7 +18,7 @@ links:
 
 quests:
   - key: brass
-    id: 9A09307A8AC167F1
+    id: 1A09307A8AC167F1
     title: Латунь для самостоятельной фабрики
     description:
       - Медь и цинк, смешанные в нагретой чаше, дают латунь — металл второй ступени. Из неё делают механизмы, которые думают сами.
@@ -32,7 +32,7 @@ quests:
       - {type: advancement, advancement: create:brass}
     rewards:
       - {type: xp, xp: 150}
-      - {type: item, item: createaddition:multimeter}
+      - {type: item, item: create:electron_tube, count: 4}
 
   # ── Точные машины ──
   - key: brass_casing
@@ -51,7 +51,7 @@ quests:
       - {type: item, item: create:brass_hand, count: 2}
 
   - key: rose_quartz
-    id: 9D86DEEFC75B8B99
+    id: 1D86DEEFC75B8B99
     title: Кварц для управляющих деталей
     description:
       - Розовый кварц, отполированный на ленте с наждаком, проводит сигналы. Без него не собрать точный механизм.
@@ -113,7 +113,7 @@ quests:
       - {type: item, item: createaddition:digital_adapter}
 
   - key: speed_controller
-    id: D994CE2C8A394112
+    id: 5994CE2C8A394112
     title: Настроить станок под задачу
     description:
       - Регулятор скорости задаёт точные обороты. Одним станкам нужно медленно, другим — быстро.
@@ -143,7 +143,7 @@ quests:
       - {type: item, item: createaddition:portable_energy_interface}
 
   - key: lazy_crafter
-    id: B5E6A417D0B2682F
+    id: 35E6A417D0B2682F
     title: Сборщик никуда не спешит
     description:
       - Запустите сборщиков на самой низкой скорости и посмотрите, как они справляются. Медленно, зато верно.
@@ -160,7 +160,7 @@ quests:
       - {type: item, item: create:chain_conveyor, count: 2}
 
   - key: crushing
-    id: B69AB097B2252286
+    id: 369AB097B2252286
     title: Дробилка начинает вращаться
     description:
       - Пара дробильных колёс перемалывает руду в крошку — из неё выходит больше металла.
@@ -172,7 +172,7 @@ quests:
       - {type: advancement, advancement: create:crushing_wheel}
     rewards:
       - {type: xp, xp: 160}
-      - {type: item, item: createaddition:heater}
+      - {type: item, item: create:raw_zinc, count: 16}
 
   - key: crusher_maxed
     id: 4CE999FF8FB4E62F
@@ -268,7 +268,7 @@ quests:
       - {type: item, item: createaddition:tesla_coil}
 
   - key: motor
-    id: C90C2277CD8D5A1A
+    id: 490C2277CD8D5A1A
     title: Электропривод у станка
     description:
       - Электромотор даёт вращение там, куда дотянулся провод. Поставьте его у рабочего места.
@@ -302,7 +302,7 @@ quests:
 
   # ── Дизель ──
   - key: oil_scan
-    id: DBE167F5106C0134
+    id: 5BE167F5106C0134
     title: Разведка нефтяного участка
     description:
       - Нефтяной сканер в руке показывает, есть ли под ногами нефть. Найдите участок с хорошим сигналом.
@@ -317,7 +317,7 @@ quests:
       - {type: item, item: createdieselgenerators:hammer}
 
   - key: distillation
-    id: DF4913690DFB0B64
+    id: 5F4913690DFB0B64
     title: Место для перегонки
     description:
       - Перегонная колонна разделяет нефть на топливо. Поставьте её контроллер и соберите колонну.
@@ -332,7 +332,7 @@ quests:
       - {type: item, item: createdieselgenerators:sheet_metal_panel, count: 8}
 
   - key: diesel
-    id: DC984DF9A7FB8BA2
+    id: 5C984DF9A7FB8BA2
     title: Топливо для дальней базы
     description:
       - Наберите ведро дизеля. Топливо можно возить с собой — мастерская больше не привязана к реке.
@@ -398,7 +398,7 @@ quests:
 
   # ── Котельная ──
   - key: lava_pump
-    id: A7CEF6292A89B0A2
+    id: 27CEF6292A89B0A2
     title: Топливный резерв котельной
     description:
       - Шланговый насос в бесконечном лавовом озере качает топливо без конца. Котельная скажет спасибо.
@@ -429,7 +429,7 @@ quests:
       - {type: item, item: create:steam_whistle}
 
   - key: stress_maxed
-    id: D6494B4749F6037E
+    id: 56494B4749F6037E
     title: Юра на границе перегрузки
     description:
       - Нагрузите сеть ровно до предела. Ещё одна шестерня — и всё встанет. Юра уверен, что не встанет.
@@ -507,7 +507,7 @@ quests:
       - {type: item, item: createbigcannons:solid_shot, count: 8}
 
   - key: cannon_loader
-    id: 8EC3B7E438EA800A
+    id: 0EC3B7E438EA800A
     title: Механизм заряжания
     description:
       - Заряжатель толкает снаряд и порох в ствол сам. Стрелять можно чаще, а стоять рядом — безопаснее.

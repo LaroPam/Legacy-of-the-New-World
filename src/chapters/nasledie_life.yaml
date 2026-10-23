@@ -1,7 +1,7 @@
 # Акт I. Дом: кухня, огород, тепло и запасы. Глава без сюжетных обязательств.
 chapter:
   filename: nasledie_life
-  id: DC7EC49FBED1A9C6
+  id: 5C7EC49FBED1A9C6
   group: act1
   title: Дом, к которому возвращаются
   icon: farmersdelight:cooking_pot
@@ -28,7 +28,7 @@ quests:
 
   # ── Кухня ──
   - key: knife
-    id: C322668146484A1C
+    id: 4322668146484A1C
     title: Нож повара
     description:
       - Даже дальняя вылазка начинается с хорошего ужина. Сделайте кухонный нож — кремнёвого вполне хватит. Им режут продукты на доске и
@@ -40,7 +40,7 @@ quests:
     tasks:
       - {id: 477EAE38055AFECF, type: advancement, advancement: farmersdelight:main/craft_knife}
     rewards:
-      - {id: DC2CEFB27380022A, type: xp, xp: 40}
+      - {id: 5C2CEFB27380022A, type: xp, xp: 40}
       - {type: item, item: farmersdelight:cutting_board}
 
   - key: cutting_board
@@ -135,7 +135,7 @@ quests:
     icon: farmersdelight:cabbage_seeds
     deps: [bed]
     tasks:
-      - {id: DA407032247C7A03, type: advancement, advancement: farmersdelight:main/get_fd_seed}
+      - {id: 5A407032247C7A03, type: advancement, advancement: farmersdelight:main/get_fd_seed}
     rewards:
       - {id: 266E0006AE14F939, type: xp, xp: 40}
       - {type: item, item: farmersdelight:rope, count: 8}
@@ -156,7 +156,7 @@ quests:
       - {type: item, item: minecraft:bone_meal, count: 16}
 
   - key: tomato
-    id: 9E550CA158EE0E76
+    id: 1E550CA158EE0E76
     title: Томаты на верёвке
     description:
       - Томатная лоза ползёт вверх по верёвке над грядкой. Подвяжите её и соберите урожай с высокого куста.
@@ -204,7 +204,7 @@ quests:
       - {type: item, item: farmersdelight:mushroom_rice, count: 2}
 
   - key: all_crops
-    id: E3867CE6EB276D6B
+    id: 63867CE6EB276D6B
     title: Огород со всего света
     description:
       - Вырастите все культуры, какие найдёте в этом мире. Для этого придётся заглянуть в разные климаты — повод для пары неторопливых путешествий.
@@ -241,7 +241,7 @@ quests:
 
   # ── Тепло ──
   - key: insulate
-    id: C2A7FBADC6571244
+    id: 42A7FBADC6571244
     title: Одежда по погоде
     description:
       - В этом мире холод и жара опасны всерьёз. На швейном столе к броне пришивают утеплитель — козий мех от холода, хоглинью шкуру от жары.
@@ -272,7 +272,7 @@ quests:
       - {type: item, item: cold_sweat:waterskin}
 
   - key: smokestack
-    id: 85F72175E8F3882D
+    id: 05F72175E8F3882D
     title: Дымоход
     description:
       - Поставьте дымоход на бойлер или холодильник — устройство начнёт прогревать или охлаждать не только себя, но и всю комнату.
@@ -330,7 +330,7 @@ quests:
     tasks:
       - {id: 6EB6532083976608, type: advancement, advancement: nasledie:alpha35/engineering/69525cbd49df5fdb}
     rewards:
-      - {id: DB478A995FFA5042, type: xp, xp: 60}
+      - {id: 5B478A995FFA5042, type: xp, xp: 60}
       - {id: 5171D320535CAC28, type: item, item: sophisticatedbackpacks:upgrade_base}
 
   - key: pickup
@@ -349,7 +349,7 @@ quests:
       - {type: item, item: sophisticatedbackpacks:magnet_upgrade}
 
   - key: iron_chest
-    id: BCC7916DB9793560
+    id: 3CC7916DB9793560
     title: Место для запасов
     description:
       - Обычных сундуков скоро станет мало. Поставьте железный сундук — его можно улучшать дальше, а в кладовой появится порядок.

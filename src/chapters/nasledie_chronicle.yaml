@@ -13,7 +13,7 @@ chapter:
 quests:
   # ── Акт I. Высадка ────────────────────────────────────────────────
   - key: arrival
-    id: CA2CFD219A124357
+    id: 4A2CFD219A124357
     title: Чужой берег
     description:
       - Максим, Юра, вы не первые, кто высадился на этот берег. Двадцать лет назад вглубь нового мира ушла Первая экспедиция — пятеро
@@ -47,7 +47,7 @@ quests:
     icon: minecraft:spyglass
     deps: [arrival]
     tasks:
-      - {id: F5F6C315ED6C3CA9, type: structure, structure: '#nasledie:archeologist_camps'}
+      - {id: 75F6C315ED6C3CA9, type: structure, structure: '#nasledie:archeologist_camps'}
     rewards:
       - {type: xp, xp: 150}
       - {type: item, item: minecraft:spyglass}
@@ -107,7 +107,7 @@ quests:
           - "Мы отбились. Эклунд записал: «пробный сосуд». Я спросил — пробный для чего? Он не ответил.\n\nЖелезо не должно ненавидеть. Кто-то его научил."
 
   - key: umvuthi
-    id: A378D8F13118FF97
+    id: 2378D8F13118FF97
     title: Птица из солнца
     description:
       - Солнечный народ кормит свою птицу уже тысячу лет. Экспедиция пришла к ним с подарками, а ушла, оставив за собой пепел. Победите Умвути.
@@ -130,7 +130,7 @@ quests:
           - "Эклунд велел её убить — сказал, это проверка. Птица горела ещё долго после смерти.\n\nЭклунд стоял к огню ближе всех."
 
   - key: sculptor
-    id: DF85EFBB8E452760
+    id: 5F85EFBB8E452760
     title: Слово отшельника
     description:
       - На вершине над монастырём живёт отшельник, который лепит камень как глину. Он пускает к себе только тех, кто пройдёт его испытание.
@@ -154,7 +154,7 @@ quests:
           - "Он посмотрел вниз, туда, где ждал Эклунд, и ничего не ответил."
 
   - key: frostmaw
-    id: 92AF3238F7B8776E
+    id: 12AF3238F7B8776E
     title: Зверь зимы
     description:
       - В снегах спит морозная пасть — зверь, рядом с которым снег не тает веками. Разбудите её и победите. Ледяной кристалл у неё на шее
@@ -274,7 +274,7 @@ quests:
           - "Оставляю чертежи: против машины нужна машина. Пушки, броня, своя мастерская.\n\nЭклунд торопит. Говорит, у нас нет времени. У кого — у нас?"
 
   - key: harbinger
-    id: 8792C39846E0D49E
+    id: 0792C39846E0D49E
     title: Машина, которая помнит
     description:
       - В сердце фабрики спит Предвестник — мастер Зодчих в железном теле. Разбудите его и победите. Пушки, о которых писал Странд, здесь очень
@@ -355,7 +355,7 @@ quests:
       - {type: item, item: cataclysm:belt_of_beginner}
 
   - key: ignis
-    id: 92B1754C45756107
+    id: 12B1754C45756107
     title: Рыцарь, принявший огонь
     description:
       - На пылающей арене горит рыцарь Зодчих. Он до сих пор помнит присягу. Победите Игниса.
@@ -364,7 +364,7 @@ quests:
     icon: cataclysm:flame_eye
     shape: crown
     size: 1.7
-    deps: [awakened, nasledie_cataclysm/FEE6E381AE1C38B7]
+    deps: [awakened, nasledie_cataclysm/7EE6E381AE1C38B7]
     tasks:
       - {type: advancement, advancement: cataclysm:kill_ignis}
     rewards:
@@ -404,7 +404,7 @@ quests:
           - "Песок поднимается.\n\nЯ понял, зачем меня взяли. Ключ всегда идёт первым."
 
   - key: maledictus
-    id: A13ADF5DA222DA68
+    id: 213ADF5DA222DA68
     title: Король во льду
     description:
       - Король Зодчих запер себя в ледяной тюрьме вместе со стражей, чтобы не выпустить проклятие. Драугры до сих пор несут караул. Победите
@@ -414,7 +414,7 @@ quests:
     icon: cataclysm:cursed_eye
     shape: crown
     size: 1.7
-    deps: [awakened, nasledie_cataclysm/9648CF8E2A62BFAF]
+    deps: [awakened, nasledie_cataclysm/1648CF8E2A62BFAF]
     tasks:
       - {type: advancement, advancement: cataclysm:kill_maledictus}
     rewards:
@@ -430,7 +430,7 @@ quests:
           - "Я не ушёл.\n\nХолод теперь живёт в моих пальцах рядом с жаром. Они уживаются. Я — уживаюсь."
 
   - key: leviathan
-    id: A0BE4189EEE72883
+    id: 20BE4189EEE72883
     title: Боль, ушедшая в глубину
     description:
       - В затонувшем городе спит Левиафан — единственный сосуд, в который Зодчие поместили не себя, а свою боль. Победите его.
@@ -439,7 +439,7 @@ quests:
     icon: cataclysm:abyss_eye
     shape: crown
     size: 1.7
-    deps: [awakened, nasledie_cataclysm/A96277A6BE605D32]
+    deps: [awakened, nasledie_cataclysm/296277A6BE605D32]
     tasks:
       - {type: advancement, advancement: cataclysm:kill_leviathan}
     rewards:
@@ -454,7 +454,7 @@ quests:
           - "Мы пели ему, чтобы он спал.\n\nЧужаки пришли без песни. Теперь мы молчим, и он не спит."
 
   - key: scylla
-    id: E3651E9F6E43FAEB
+    id: 63651E9F6E43FAEB
     title: Последняя запись Линд
     description:
       - Над облаками стоит акрополь, где жрица бури сторожит небо. У её подножия Сигрид Линд оставила последнюю запись. Победите Сциллу.
@@ -463,7 +463,7 @@ quests:
     icon: cataclysm:storm_eye
     shape: crown
     size: 1.7
-    deps: [awakened, nasledie_cataclysm/F2FD5EEB117B3119]
+    deps: [awakened, nasledie_cataclysm/72FD5EEB117B3119]
     tasks:
       - {type: advancement, advancement: cataclysm:kill_scylla}
     rewards:
@@ -531,7 +531,7 @@ quests:
     icon: cataclysm:void_eye
     shape: crown
     size: 2.2
-    deps: [dragon, nasledie_cataclysm/8B22878BF8763415]
+    deps: [dragon, nasledie_cataclysm/0B22878BF8763415]
     tasks:
       - {type: advancement, advancement: cataclysm:kill_ender_guardian}
     rewards:
@@ -638,7 +638,7 @@ quests:
           - "Может, Зодчие ошиблись. Не всё нужно заковывать. Кое-что достаточно оставить в покое."
 
   - key: tremorzilla
-    id: FED39CE9F2148371
+    id: 7ED39CE9F2148371
     title: Сосуд, который выбрал сам
     description:
       - Сотрясозилла вылупилась из ядерного огня — неудачный опыт Зодчих с чистой энергией. Её не нужно побеждать. Накормите её и приручите.

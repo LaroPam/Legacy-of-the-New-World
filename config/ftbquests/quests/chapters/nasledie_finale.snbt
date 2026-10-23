@@ -11,14 +11,14 @@
 	quest_links: [
 		{
 			id: "5DBFD07979C5CFF3"
-			linked_quest: "A80C23723A869A8B"
+			linked_quest: "280C23723A869A8B"
 			x: 0.0d
 			y: 0.0d
 			shape: "star"
 			size: 1.5d
 		}
 		{
-			id: "97B2BB0C7A8A7509"
+			id: "17B2BB0C7A8A7509"
 			linked_quest: "367C7D7E1F81D391"
 			x: 3.5d
 			y: 0.0d
@@ -26,7 +26,7 @@
 			size: 1.8d
 		}
 		{
-			id: "8538FFDA6280CF38"
+			id: "0538FFDA6280CF38"
 			linked_quest: "4E228116310381E8"
 			x: 8.0d
 			y: 0.0d
@@ -35,7 +35,7 @@
 		}
 		{
 			id: "5C6045C2271A2658"
-			linked_quest: "F691DA83D3708164"
+			linked_quest: "7691DA83D3708164"
 			x: 12.0d
 			y: 0.0d
 			shape: "star"
@@ -44,7 +44,7 @@
 	]
 	quests: [
 		{
-			id: "B4B69B58C4015C3F"
+			id: "34B69B58C4015C3F"
 			title: "Шаг за рамку"
 			description: ["Двенадцать очей встают в рамку, и портал, который Зодчие запирали последним, открывается. Пока жив дракон, обратной дороги нет — разве что через смерть. Тыква на голове, кстати, успокаивает эндерменов."]
 			x: 1.75d
@@ -52,20 +52,20 @@
 			icon: "minecraft:end_portal_frame"
 			shape: "scroll"
 			size: 1.2d
-			dependencies: ["A80C23723A869A8B"]
+			dependencies: ["280C23723A869A8B"]
 			tasks: [{
-				id: "37B3C466C48FF423"
+				id: "51DB9367835FA32B"
 				type: "advancement"
 				advancement: "minecraft:end/root"
 			}]
 			rewards: [
 				{
-					id: "62184EFB7CE70900"
+					id: "704C9A7CF1FBD26F"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "2640FCD49E2BC30D"
+					id: "03C26B2EB5CAA8FA"
 					type: "item"
 					item: {
 						Count: 1b
@@ -73,7 +73,7 @@
 					}
 				}
 				{
-					id: "348B239434B45440"
+					id: "53352868FB38F18A"
 					type: "item"
 					item: {
 						Count: 4b
@@ -90,7 +90,7 @@
 			y: -5.25d
 			icon: "alexsmobs:soul_heart"
 			optional: true
-			dependencies: ["B4B69B58C4015C3F"]
+			dependencies: ["34B69B58C4015C3F"]
 			tasks: [{
 				id: "4484F593686BAA13"
 				type: "advancement"
@@ -99,12 +99,12 @@
 			}]
 			rewards: [
 				{
-					id: "F640D0DA6CF31EF7"
+					id: "7640D0DA6CF31EF7"
 					type: "xp"
 					xp: 450
 				}
 				{
-					id: "D7B5A947482F401E"
+					id: "57B5A947482F401E"
 					type: "item"
 					item: {
 						Count: 8b
@@ -112,7 +112,7 @@
 					}
 				}
 				{
-					id: "FFB8BF70DC445653"
+					id: "7FB8BF70DC445653"
 					type: "item"
 					item: {
 						Count: 2b
@@ -122,27 +122,27 @@
 			]
 		}
 		{
-			id: "D48DB0A9A973A90D"
+			id: "548DB0A9A973A90D"
 			title: "Капсид эндериофага"
 			description: ["По равнинам Края бродят эндериофаги — биомеханические вирусы ростом с человека. С разбитого падает капсид; положите в него рыбу или личинку, и он переделает её во что-то странное."]
 			x: 4.5d
 			y: -2.75d
 			icon: "alexsmobs:capsid"
-			dependencies: ["B4B69B58C4015C3F"]
+			dependencies: ["34B69B58C4015C3F"]
 			tasks: [{
-				id: "426463C71759E85E"
+				id: "47E973A7F9D2E058"
 				type: "advancement"
 				title: "Добыть капсид"
 				advancement: "nasledie:q/finale/capsid"
 			}]
 			rewards: [
 				{
-					id: "9FB1FFEA80FC09F9"
+					id: "190DCA5D3F4019A2"
 					type: "xp"
 					xp: 350
 				}
 				{
-					id: "0C1F019B6721B26A"
+					id: "3376C0E73CD78379"
 					type: "item"
 					item: {
 						Count: 8b
@@ -159,9 +159,9 @@
 			y: -5.25d
 			icon: "minecraft:chorus_fruit"
 			optional: true
-			dependencies: ["D48DB0A9A973A90D"]
+			dependencies: ["548DB0A9A973A90D"]
 			tasks: [{
-				id: "A4355D31B671A4F9"
+				id: "24355D31B671A4F9"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/ender_flu"
 			}]
@@ -172,7 +172,7 @@
 					xp: 260
 				}
 				{
-					id: "E1670F5403E2AEB3"
+					id: "61670F5403E2AEB3"
 					type: "item"
 					item: {
 						Count: 16b
@@ -180,7 +180,7 @@
 					}
 				}
 				{
-					id: "A45885C2391B0810"
+					id: "245885C2391B0810"
 					type: "item"
 					item: {
 						Count: 4b
@@ -196,9 +196,9 @@
 			x: 7.0d
 			y: -2.75d
 			icon: "alexsmobs:cosmic_cod"
-			dependencies: ["D48DB0A9A973A90D"]
+			dependencies: ["548DB0A9A973A90D"]
 			tasks: [{
-				id: "AE1702787FA1C576"
+				id: "2E1702787FA1C576"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/tame_cosmaw"
 			}]
@@ -209,7 +209,7 @@
 					xp: 400
 				}
 				{
-					id: "CFF3C4EA348A291D"
+					id: "4FF3C4EA348A291D"
 					type: "item"
 					item: {
 						Count: 8b
@@ -227,7 +227,7 @@
 			]
 		}
 		{
-			id: "C5769170EBDD1A02"
+			id: "45769170EBDD1A02"
 			title: "Приманка для пустоты"
 			description: ["Личинка багрового комара в капсиде становится загадочным червём. Брошенный в пустоту Края, он позовёт то, что живёт под островами. Зодчие закрыли эту дверь — вы её откроете."]
 			x: 6.25d
@@ -235,7 +235,7 @@
 			icon: "alexsmobs:mysterious_worm"
 			shape: "shield"
 			size: 1.3d
-			dependencies: ["D48DB0A9A973A90D"]
+			dependencies: ["548DB0A9A973A90D"]
 			tasks: [{
 				id: "4183BD5511A7CAD6"
 				type: "advancement"
@@ -243,12 +243,12 @@
 			}]
 			rewards: [
 				{
-					id: "83ED59D9B07AC7A2"
+					id: "2C8BF8CDA4B7F776"
 					type: "xp"
 					xp: 500
 				}
 				{
-					id: "BE81A62AC2F646BF"
+					id: "3289BE66CA4F1D83"
 					type: "item"
 					item: {
 						Count: 3b
@@ -259,7 +259,7 @@
 					}
 				}
 				{
-					id: "FF6A2DCA97A41C91"
+					id: "66EB8ABECE66BC46"
 					type: "item"
 					item: {
 						Count: 8b
@@ -277,7 +277,7 @@
 			icon: "alexsmobs:void_worm_mandible"
 			shape: "star"
 			optional: true
-			dependencies: ["C5769170EBDD1A02"]
+			dependencies: ["45769170EBDD1A02"]
 			tasks: [{
 				id: "553932FEAD227C14"
 				type: "advancement"
@@ -285,7 +285,7 @@
 			}]
 			rewards: [
 				{
-					id: "89606EFAECADDDB8"
+					id: "09606EFAECADDDB8"
 					type: "xp"
 					xp: 600
 				}
@@ -308,9 +308,9 @@
 			icon: "alexsmobs:void_worm_eye"
 			shape: "crown"
 			size: 1.8d
-			dependencies: ["C5769170EBDD1A02"]
+			dependencies: ["45769170EBDD1A02"]
 			tasks: [{
-				id: "D82E89EEE3373184"
+				id: "582E89EEE3373184"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/void_worm_kill"
 			}]
@@ -358,7 +358,7 @@
 			optional: true
 			dependencies: ["367C7D7E1F81D391"]
 			tasks: [{
-				id: "ADEA24274D2E8762"
+				id: "2DEA24274D2E8762"
 				type: "advancement"
 				advancement: "minecraft:end/respawn_dragon"
 			}]
@@ -377,7 +377,7 @@
 					}
 				}
 				{
-					id: "D5522AC00615DE53"
+					id: "55522AC00615DE53"
 					type: "item"
 					item: {
 						Count: 6b
@@ -397,7 +397,7 @@
 			size: 1.2d
 			dependencies: ["367C7D7E1F81D391"]
 			tasks: [{
-				id: "A6CF07CB6799268E"
+				id: "26CF07CB6799268E"
 				type: "advancement"
 				advancement: "minecraft:end/enter_end_gateway"
 			}]
@@ -408,7 +408,7 @@
 					xp: 400
 				}
 				{
-					id: "BC2D27AACF39C49A"
+					id: "3C2D27AACF39C49A"
 					type: "item"
 					item: {
 						Count: 16b
@@ -427,7 +427,7 @@
 			size: 1.2d
 			dependencies: ["04EA8A84E185E1C3"]
 			tasks: [{
-				id: "E571FCD02B7B1939"
+				id: "6571FCD02B7B1939"
 				type: "advancement"
 				advancement: "minecraft:end/find_end_city"
 			}]
@@ -463,7 +463,7 @@
 			}]
 			rewards: [
 				{
-					id: "E255B41608BD6ACF"
+					id: "6255B41608BD6ACF"
 					type: "xp"
 					xp: 600
 				}
@@ -486,7 +486,7 @@
 			]
 		}
 		{
-			id: "DCA34D31A998F7C1"
+			id: "5CA34D31A998F7C1"
 			title: "Крылья с корабля"
 			description: ["У некоторых городов висит корабль, а на его носу — крылья в рамке. Заберите их — дальше Край станет маленьким."]
 			x: 10.5d
@@ -496,18 +496,18 @@
 			size: 1.5d
 			dependencies: ["1A559A6BB038EF61"]
 			tasks: [{
-				id: "174D5E6EA2F18FFF"
+				id: "042CD9E75F04E57B"
 				type: "advancement"
 				advancement: "minecraft:end/elytra"
 			}]
 			rewards: [
 				{
-					id: "AB460CB2824657D3"
+					id: "4E3E20C8E8644ECA"
 					type: "xp"
 					xp: 800
 				}
 				{
-					id: "DE52BE7387F429F1"
+					id: "31B2823799A49E46"
 					type: "item"
 					item: {
 						Count: 32b
@@ -515,7 +515,7 @@
 					}
 				}
 				{
-					id: "7B88B3AE6FC4AE27"
+					id: "2206C63D66903C7D"
 					type: "item"
 					item: {
 						Count: 4b
@@ -534,7 +534,7 @@
 			optional: true
 			dependencies: ["1A559A6BB038EF61"]
 			tasks: [{
-				id: "FF73856927E2DF20"
+				id: "7F73856927E2DF20"
 				type: "advancement"
 				advancement: "minecraft:end/levitate"
 			}]
@@ -545,7 +545,7 @@
 					xp: 300
 				}
 				{
-					id: "FA79FB6806B009CA"
+					id: "7A79FB6806B009CA"
 					type: "item"
 					item: {
 						Count: 2b
@@ -574,14 +574,14 @@
 			icon: "minecraft:purple_shulker_box"
 			dependencies: ["1A559A6BB038EF61"]
 			tasks: [{
-				id: "AB037429BD505CC0"
+				id: "2B037429BD505CC0"
 				type: "advancement"
 				title: "Получить ящик шалкера"
 				advancement: "nasledie:q/finale/shulker_box"
 			}]
 			rewards: [
 				{
-					id: "B30BC4205AC62667"
+					id: "330BC4205AC62667"
 					type: "xp"
 					xp: 400
 				}

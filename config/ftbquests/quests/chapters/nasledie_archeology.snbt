@@ -1,7 +1,7 @@
 {
 	filename: "nasledie_archeology"
-	id: "CF8AC0B0D69E3A34"
-	group: "EF93B76DFA48CC13"
+	id: "4F8AC0B0D69E3A34"
+	group: "6F93B76DFA48CC13"
 	title: "Археология — по следам Холма"
 	icon: "minecraft:brush"
 	order_index: 4
@@ -18,7 +18,7 @@
 	}]
 	quests: [
 		{
-			id: "D224CC946496E3DE"
+			id: "5224CC946496E3DE"
 			title: "Кисть вместо кирки"
 			description: ["Холм говорил, что кирка уничтожает историю, а кисть её открывает. Сделайте железную кисть и расчистите ею что-нибудь."]
 			x: 0.0d
@@ -34,12 +34,12 @@
 			}]
 			rewards: [
 				{
-					id: "8F5E945941BB12AE"
+					id: "59C37D387DB07935"
 					type: "xp"
 					xp: 100
 				}
 				{
-					id: "8F1B07CB6E70B438"
+					id: "701D35CE4079D980"
 					type: "item"
 					item: {
 						Count: 1b
@@ -55,7 +55,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:archer_pottery_sherd"
-			dependencies: ["D224CC946496E3DE"]
+			dependencies: ["5224CC946496E3DE"]
 			tasks: [{
 				id: "72A747690ACD9DDA"
 				type: "advancement"
@@ -63,7 +63,7 @@
 			}]
 			rewards: [
 				{
-					id: "B7963E17F6707F42"
+					id: "37963E17F6707F42"
 					type: "xp"
 					xp: 120
 				}
@@ -78,7 +78,7 @@
 			]
 		}
 		{
-			id: "E0A0AF61E08C5A2D"
+			id: "60A0AF61E08C5A2D"
 			title: "Ваза из черепков"
 			description: ["Соберите вазу только из найденных черепков. Четыре рисунка с четырёх раскопов — уже маленькая выставка."]
 			x: 6.0d
@@ -87,18 +87,18 @@
 			optional: true
 			dependencies: ["6C1B1B7C67F46419"]
 			tasks: [{
-				id: "26AF8720474F162C"
+				id: "6D2809A6984E4049"
 				type: "advancement"
 				advancement: "minecraft:adventure/craft_decorated_pot_using_only_sherds"
 			}]
 			rewards: [
 				{
-					id: "77C294FA7F780A2B"
+					id: "461064C5B9523AE2"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "F16025998EC8E8AE"
+					id: "1BD7C76F1EB415CA"
 					type: "item"
 					item: {
 						Count: 1b
@@ -108,27 +108,27 @@
 			]
 		}
 		{
-			id: "867104F631B643F9"
+			id: "067104F631B643F9"
 			title: "Разбитая ваза"
 			description: ["В руинах стоят древние вазы с подношениями. Разбейте одну и заберите, что внутри. Холм бы поморщился, но поблагодарил за находку."]
 			x: 9.0d
 			y: 0.0d
 			icon: "betterarcheology:loot_vase"
 			optional: true
-			dependencies: ["E0A0AF61E08C5A2D"]
+			dependencies: ["60A0AF61E08C5A2D"]
 			tasks: [{
-				id: "6BE923A60608D9A9"
+				id: "412039F8B4180CE9"
 				type: "advancement"
 				advancement: "betterarcheology:loot_vase_broken"
 			}]
 			rewards: [
 				{
-					id: "461A4D6F237A43E9"
+					id: "6CD6ABF1478C30F8"
 					type: "xp"
 					xp: 120
 				}
 				{
-					id: "080D51328B50813A"
+					id: "2BE7AB94E50910F4"
 					type: "item"
 					item: {
 						Count: 6b
@@ -138,13 +138,13 @@
 			]
 		}
 		{
-			id: "A39CCB33A472D0AD"
+			id: "239CCB33A472D0AD"
 			title: "Первая часть древнего существа"
 			description: ["В земле с окаменелостями попадаются кости давно вымерших животных. Найдите первую — голову или тело."]
 			x: 3.0d
 			y: -3.0d
 			icon: "betterarcheology:villager_fossil_head"
-			dependencies: ["D224CC946496E3DE"]
+			dependencies: ["5224CC946496E3DE"]
 			tasks: [{
 				id: "4A2E602529B5A8EC"
 				type: "advancement"
@@ -157,7 +157,7 @@
 					xp: 150
 				}
 				{
-					id: "24C09CAADFB5392F"
+					id: "132A9A192738E5AE"
 					type: "item"
 					item: {
 						Count: 2b
@@ -167,27 +167,27 @@
 			]
 		}
 		{
-			id: "C4248A7F0011AAF7"
+			id: "44248A7F0011AAF7"
 			title: "Стол археолога"
 			description: ["На столе археолога находки разбирают и изучают. Поставьте его — здесь будут рождаться артефакты."]
 			x: 6.0d
 			y: -3.0d
 			icon: "betterarcheology:archeology_table"
-			dependencies: ["A39CCB33A472D0AD"]
+			dependencies: ["239CCB33A472D0AD"]
 			tasks: [{
-				id: "162330EDD66EA921"
+				id: "1C3899A83D5C171C"
 				type: "advancement"
 				advancement: "nasledie:setup/archeology/archeology_table"
 				title: "Поставить стол археолога"
 			}]
 			rewards: [
 				{
-					id: "475AADDAB4366C94"
+					id: "350982904ABA929F"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "6331702A18BA18B6"
+					id: "754A6AF66B2C46C7"
 					type: "item"
 					item: {
 						Count: 2b
@@ -203,7 +203,7 @@
 			x: 9.0d
 			y: -3.0d
 			icon: "betterarcheology:artifact_shards"
-			dependencies: ["C4248A7F0011AAF7"]
+			dependencies: ["44248A7F0011AAF7"]
 			tasks: [{
 				id: "04F5001BCE36C45C"
 				type: "advancement"
@@ -216,7 +216,7 @@
 					xp: 150
 				}
 				{
-					id: "CE163DF78B2709F5"
+					id: "4E163DF78B2709F5"
 					type: "item"
 					item: {
 						Count: 8b
@@ -246,7 +246,7 @@
 					xp: 250
 				}
 				{
-					id: "BDBABD82EBFC391B"
+					id: "3DBABD82EBFC391B"
 					type: "item"
 					item: {
 						Count: 1b
@@ -263,21 +263,21 @@
 			y: -5.5d
 			icon: "betterarcheology:diamond_brush"
 			optional: true
-			dependencies: ["C4248A7F0011AAF7"]
+			dependencies: ["44248A7F0011AAF7"]
 			tasks: [{
-				id: "CD4DA62D30AE230E"
+				id: "4D4DA62D30AE230E"
 				type: "advancement"
 				advancement: "nasledie:alpha34/actions/74fe1d1f8af47a14"
 				title: "Поработать алмазной кистью"
 			}]
 			rewards: [
 				{
-					id: "E052A5C2EE129417"
+					id: "6052A5C2EE129417"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "AC036BFFD3DF5C46"
+					id: "2C036BFFD3DF5C46"
 					type: "item"
 					item: {
 						Count: 3b
@@ -287,7 +287,7 @@
 			]
 		}
 		{
-			id: "F4DBD3E2D7478445"
+			id: "74DBD3E2D7478445"
 			title: "Четырнадцать фрагментов прошлого"
 			description: ["Соберите головы и тела всех семи окаменелостей — от курицы до стража. Это работа на много вылазок, но и коллекция будет единственной в своём роде."]
 			x: 15.0d
@@ -298,18 +298,18 @@
 			optional: true
 			dependencies: ["01C584DB0BC6D1D4"]
 			tasks: [{
-				id: "99D79EE77BC0C7C0"
+				id: "19D79EE77BC0C7C0"
 				type: "advancement"
 				advancement: "betterarcheology:all_fossils_found"
 			}]
 			rewards: [
 				{
-					id: "D38A63E3052DDD2F"
+					id: "53C9591060D72B41"
 					type: "xp"
 					xp: 800
 				}
 				{
-					id: "18D20B67EEF88DB8"
+					id: "091A88912BA772F0"
 					type: "item"
 					item: {
 						Count: 1b
@@ -317,7 +317,7 @@
 					}
 				}
 				{
-					id: "D96F244A248EDA81"
+					id: "115A7434BAA22A4D"
 					type: "item"
 					item: {
 						Count: 1b
@@ -327,27 +327,27 @@
 			]
 		}
 		{
-			id: "D97CBEDC468A5108"
+			id: "597CBEDC468A5108"
 			title: "Первый экспонат"
 			description: ["Соберите из найденных частей и поставьте окаменелость курицы. Музей начинается с первой находки на постаменте, а не с сундука костей."]
 			x: 3.0d
 			y: 3.0d
 			icon: "betterarcheology:chicken_fossil"
-			dependencies: ["D224CC946496E3DE"]
+			dependencies: ["5224CC946496E3DE"]
 			tasks: [{
-				id: "0A59BB1066CCC006"
+				id: "191A9C168E1CF05C"
 				type: "advancement"
 				advancement: "nasledie:alpha34/actions/4f9e8a7b479c731c"
 				title: "Поставить окаменелость курицы"
 			}]
 			rewards: [
 				{
-					id: "92CFFF04C90A06BE"
+					id: "34B2C26EA3016036"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "5E3063A6E1214344"
+					id: "1684B6AD273B5198"
 					type: "item"
 					item: {
 						Count: 4b
@@ -357,28 +357,28 @@
 			]
 		}
 		{
-			id: "FCDA95A50F3EBC9F"
+			id: "7CDA95A50F3EBC9F"
 			title: "Доисторический крипер"
 			description: ["Окаменелый крипер выглядит так же недружелюбно, как живой. Поставьте его рядом с первым экспонатом."]
 			x: 6.0d
 			y: 3.0d
 			icon: "betterarcheology:creeper_fossil"
 			optional: true
-			dependencies: ["D97CBEDC468A5108"]
+			dependencies: ["597CBEDC468A5108"]
 			tasks: [{
-				id: "9F25129CFD00D753"
+				id: "3415975A1D1EE90F"
 				type: "advancement"
 				advancement: "nasledie:alpha34/actions/fbcd803abb48c000"
 				title: "Поставить окаменелость крипера"
 			}]
 			rewards: [
 				{
-					id: "2EA61D11A860C0CB"
+					id: "702EC5C2E5DA1864"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "A3A9583D4FCA51BB"
+					id: "43B3EB693A638286"
 					type: "item"
 					item: {
 						Count: 1b
@@ -395,9 +395,9 @@
 			y: 3.0d
 			icon: "betterarcheology:guardian_fossil"
 			optional: true
-			dependencies: ["FCDA95A50F3EBC9F"]
+			dependencies: ["7CDA95A50F3EBC9F"]
 			tasks: [{
-				id: "C15961B8240DF1E7"
+				id: "415961B8240DF1E7"
 				type: "advancement"
 				advancement: "nasledie:alpha34/actions/955b5cc01aede53d"
 				title: "Поставить окаменелость стража"
@@ -409,7 +409,7 @@
 					xp: 150
 				}
 				{
-					id: "D144B0AD3263A9EB"
+					id: "5144B0AD3263A9EB"
 					type: "item"
 					item: {
 						Count: 12b
@@ -419,7 +419,7 @@
 			]
 		}
 		{
-			id: "9F662B92CD52ECF4"
+			id: "1F662B92CD52ECF4"
 			title: "След древнего хищника"
 			description: ["Окаменелый волк — гордость любой коллекции. Поставьте его в центре зала."]
 			x: 12.0d
@@ -428,19 +428,19 @@
 			optional: true
 			dependencies: ["72A2A054CFCAC69D"]
 			tasks: [{
-				id: "CEA1991AFEE7D2AC"
+				id: "43E83185FCE85CA5"
 				type: "advancement"
 				advancement: "nasledie:alpha34/actions/609e3ad404ef3d43"
 				title: "Поставить окаменелость волка"
 			}]
 			rewards: [
 				{
-					id: "68AEC87EE30EA34E"
+					id: "4D7C0245C6E8EAE1"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "C5A80FC5B1A1C4D6"
+					id: "42D5687CB1667461"
 					type: "item"
 					item: {
 						Count: 8b
@@ -450,7 +450,7 @@
 			]
 		}
 		{
-			id: "8F6CAF327167B0A5"
+			id: "0F6CAF327167B0A5"
 			title: "Открыть двери музея"
 			description: ["Обставьте зал — кафедра для истории раскопок, резная полка для записей экспедиции, ваза и свет. Пусть у находок будет дом."]
 			x: 15.0d
@@ -459,7 +459,7 @@
 			shape: "star"
 			size: 1.4d
 			optional: true
-			dependencies: ["9F662B92CD52ECF4"]
+			dependencies: ["1F662B92CD52ECF4"]
 			tasks: [
 				{
 					id: "30E6662CF6244C50"
@@ -468,7 +468,7 @@
 					title: "Кафедра"
 				}
 				{
-					id: "D625969196DCC507"
+					id: "5625969196DCC507"
 					type: "advancement"
 					advancement: "nasledie:alpha41_qa2/museum/2_chiseled_bookshelf"
 					title: "Резная книжная полка"
@@ -480,7 +480,7 @@
 					title: "Украшенная ваза"
 				}
 				{
-					id: "AC78608977F9C6B6"
+					id: "2C78608977F9C6B6"
 					type: "advancement"
 					advancement: "nasledie:alpha41_qa2/museum/4_lantern"
 					title: "Фонарь"
@@ -488,12 +488,12 @@
 			]
 			rewards: [
 				{
-					id: "8B9B113ECB34644F"
+					id: "0A82529470D8EFA6"
 					type: "xp"
 					xp: 700
 				}
 				{
-					id: "A78D29EC69006C2A"
+					id: "788B8DF03E8D74E3"
 					type: "item"
 					item: {
 						Count: 1b
@@ -501,7 +501,7 @@
 					}
 				}
 				{
-					id: "D773728C33373C84"
+					id: "244F077E6C2F69B1"
 					type: "item"
 					item: {
 						Count: 24b
@@ -511,28 +511,28 @@
 			]
 		}
 		{
-			id: "FBF1AAEFC633EC9F"
+			id: "7BF1AAEFC633EC9F"
 			title: "Руины под песком"
 			description: ["Пустыня прячет засыпанные дома. Найдите руины и откройте их сундук — песок сохранил его лучше, чем стены."]
 			x: 0.0d
 			y: 6.0d
 			icon: "minecraft:suspicious_sand"
 			shape: "scroll"
-			dependencies: ["D224CC946496E3DE"]
+			dependencies: ["5224CC946496E3DE"]
 			tasks: [{
-				id: "A472B3559638ED4D"
+				id: "420FD48F26D21629"
 				type: "advancement"
 				title: "Открыть сундук засыпанных руин"
 				advancement: "nasledie:q/archeology/buried_ruins"
 			}]
 			rewards: [
 				{
-					id: "10F9DCEDFAE46E16"
+					id: "4EC95AFD74825B29"
 					type: "xp"
 					xp: 250
 				}
 				{
-					id: "E17FBBE604E3CC76"
+					id: "7DBFEEB35C441213"
 					type: "item"
 					item: {
 						Count: 2b
@@ -550,9 +550,9 @@
 			icon: "minecraft:grass_block"
 			shape: "scroll"
 			optional: true
-			dependencies: ["FBF1AAEFC633EC9F"]
+			dependencies: ["7BF1AAEFC633EC9F"]
 			tasks: [{
-				id: "E28351F69FEABB96"
+				id: "628351F69FEABB96"
 				type: "advancement"
 				title: "Открыть сундук кургана"
 				advancement: "nasledie:q/archeology/tumulus"
@@ -564,7 +564,7 @@
 					xp: 250
 				}
 				{
-					id: "C1067E21809E1F25"
+					id: "41067E21809E1F25"
 					type: "item"
 					item: {
 						Count: 1b
@@ -574,7 +574,7 @@
 			]
 		}
 		{
-			id: "A387D38D6E080261"
+			id: "2387D38D6E080261"
 			title: "Катакомбы забытых жителей"
 			description: ["Под землёй тянутся коридоры с нишами для мёртвых. В катакомбах есть сундуки — и есть те, кто их сторожит."]
 			x: 6.0d
@@ -584,19 +584,19 @@
 			optional: true
 			dependencies: ["718927C2E9263AAC"]
 			tasks: [{
-				id: "BBE736BC3CA6BDE7"
+				id: "2F1D8E65A0951711"
 				type: "advancement"
 				title: "Открыть сундук катакомб"
 				advancement: "nasledie:q/archeology/catacombs"
 			}]
 			rewards: [
 				{
-					id: "D531DC0DB16D4519"
+					id: "452D142093E1435A"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "4E701C27A0C7EF81"
+					id: "6CF1F6322517DCE4"
 					type: "item"
 					item: {
 						Count: 1b
@@ -606,7 +606,7 @@
 			]
 		}
 		{
-			id: "938F14F75C60045E"
+			id: "138F14F75C60045E"
 			title: "Руины красной земли"
 			description: ["На красных песках стоят остатки древних стен. Найдите их тайник."]
 			x: 9.0d
@@ -614,21 +614,21 @@
 			icon: "minecraft:red_sand"
 			shape: "scroll"
 			optional: true
-			dependencies: ["A387D38D6E080261"]
+			dependencies: ["2387D38D6E080261"]
 			tasks: [{
-				id: "6C417F9FD9C68CE2"
+				id: "53CD61F31AF1F161"
 				type: "advancement"
 				title: "Открыть сундук руин красной земли"
 				advancement: "nasledie:q/archeology/mesa_ruins"
 			}]
 			rewards: [
 				{
-					id: "C41FE978687B6EFC"
+					id: "04A87DEBB0FEABE7"
 					type: "xp"
 					xp: 250
 				}
 				{
-					id: "FAD15484F1A7CF84"
+					id: "4263B751AA9349C1"
 					type: "item"
 					item: {
 						Count: 3b
@@ -646,7 +646,7 @@
 			icon: "minecraft:glowstone"
 			shape: "shield"
 			optional: true
-			dependencies: ["FBF1AAEFC633EC9F"]
+			dependencies: ["7BF1AAEFC633EC9F"]
 			tasks: [{
 				id: "07CFA5CE5723ABE4"
 				type: "advancement"
@@ -655,7 +655,7 @@
 			}]
 			rewards: [
 				{
-					id: "ED26976806F95666"
+					id: "6D26976806F95666"
 					type: "xp"
 					xp: 300
 				}
@@ -687,7 +687,7 @@
 			}]
 			rewards: [
 				{
-					id: "80C995F035D435BE"
+					id: "00C995F035D435BE"
 					type: "xp"
 					xp: 300
 				}
@@ -702,7 +702,7 @@
 			]
 		}
 		{
-			id: "88352D47820D40B4"
+			id: "08352D47820D40B4"
 			title: "Последний зал — под водой"
 			description: ["Часть древних построек ушла под воду. Найдите затопленные руины и откройте их сундук, не утонув по дороге."]
 			x: 6.0d
@@ -712,19 +712,19 @@
 			optional: true
 			dependencies: ["316AFB9A561BE01E"]
 			tasks: [{
-				id: "D3B023435F942E95"
+				id: "617504240B1ACBD8"
 				type: "advancement"
 				title: "Открыть сундук затопленных руин"
 				advancement: "nasledie:q/archeology/underwater"
 			}]
 			rewards: [
 				{
-					id: "14164C59DFD062D7"
+					id: "5FE608BFA05884DF"
 					type: "xp"
 					xp: 350
 				}
 				{
-					id: "9E74AE11D5FD0D32"
+					id: "20096E6319DF4E1A"
 					type: "item"
 					item: {
 						Count: 1b
@@ -734,7 +734,7 @@
 			]
 		}
 		{
-			id: "C71D778A13B77EBF"
+			id: "471D778A13B77EBF"
 			title: "Каменный круг"
 			description: ["Огромные камни, поставленные в круг. Зачем — не знал даже Холм. Найдите круг и постойте в центре на закате."]
 			x: 9.0d
@@ -742,20 +742,20 @@
 			icon: "minecraft:stone"
 			shape: "scroll"
 			optional: true
-			dependencies: ["88352D47820D40B4"]
+			dependencies: ["08352D47820D40B4"]
 			tasks: [{
-				id: "0C7EE6F737FBE0A8"
+				id: "0F876859DCDAFF24"
 				type: "structure"
 				structure: "betterarcheology:stonehenge_grassy"
 			}]
 			rewards: [
 				{
-					id: "8D228AC464851A04"
+					id: "081CF88A4F273F39"
 					type: "xp"
 					xp: 230
 				}
 				{
-					id: "A5A0DD447BEDAFF5"
+					id: "07FDB4138C19D8F1"
 					type: "item"
 					item: {
 						Count: 16b
@@ -765,7 +765,7 @@
 			]
 		}
 		{
-			id: "D69937827610767B"
+			id: "569937827610767B"
 			title: "Забытая могила жителя"
 			description: ["Одинокая могила на пустыре. Чья она — неизвестно. Найдите её; иногда под надгробием есть что-то кроме костей."]
 			x: -3.0d
@@ -773,20 +773,20 @@
 			icon: "minecraft:cobblestone_wall"
 			shape: "scroll"
 			optional: true
-			dependencies: ["D224CC946496E3DE"]
+			dependencies: ["5224CC946496E3DE"]
 			tasks: [{
-				id: "43A90D76C0111C5F"
+				id: "65D0E63EE901C9B4"
 				type: "structure"
 				structure: "betterarcheology:villager_grave"
 			}]
 			rewards: [
 				{
-					id: "A681FB404069B3BF"
+					id: "232E4C2323C978A0"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "E64A017031AEEC6C"
+					id: "04123352ED4BB54C"
 					type: "item"
 					item: {
 						Count: 1b

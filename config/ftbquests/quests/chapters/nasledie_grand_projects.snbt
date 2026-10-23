@@ -1,7 +1,7 @@
 {
 	filename: "nasledie_grand_projects"
 	id: "73CB4E221EBED702"
-	group: "C513A3C540C2F7E2"
+	group: "4513A3C540C2F7E2"
 	title: "Великие проекты — база оживает"
 	icon: "minecraft:beacon"
 	order_index: 13
@@ -11,7 +11,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "FD0417DEF7F45B46"
+			id: "7D0417DEF7F45B46"
 			title: "Пульт главного инженера"
 			description: ["Большая база начинается с понимания, сколько силы у вас есть. Поставьте измеритель нагрузки и посмотрите на сеть в инженерных очках."]
 			x: 0.0d
@@ -21,18 +21,18 @@
 			size: 1.7d
 			dependencies: ["027C7ABF4F61942F"]
 			tasks: [{
-				id: "87C06B0B0D8D7958"
+				id: "13890E1B5F5227C3"
 				type: "advancement"
 				advancement: "create:stressometer"
 			}]
 			rewards: [
 				{
-					id: "5413C8EF1A85C377"
+					id: "06E23448BFB29B5A"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "E21FB0133272AC58"
+					id: "741E126F4E86CFB8"
 					type: "item"
 					item: {
 						Count: 8b
@@ -48,7 +48,7 @@
 			x: 3.5d
 			y: 0.0d
 			icon: "create:display_link"
-			dependencies: ["FD0417DEF7F45B46"]
+			dependencies: ["7D0417DEF7F45B46"]
 			tasks: [{
 				id: "75A9BF81C60C7F45"
 				type: "advancement"
@@ -56,12 +56,12 @@
 			}]
 			rewards: [
 				{
-					id: "FB1E390A3C06685C"
+					id: "7B1E390A3C06685C"
 					type: "xp"
 					xp: 120
 				}
 				{
-					id: "9B614B3FF65CC578"
+					id: "1B614B3FF65CC578"
 					type: "item"
 					item: {
 						Count: 4b
@@ -79,13 +79,13 @@
 			icon: "create:packager"
 			dependencies: ["001DB3A2FEAEBBD6"]
 			tasks: [{
-				id: "8AEBA15CA1F9AC62"
+				id: "0AEBA15CA1F9AC62"
 				type: "advancement"
 				advancement: "create:packager"
 			}]
 			rewards: [
 				{
-					id: "BA1433E0093B63EF"
+					id: "3A1433E0093B63EF"
 					type: "xp"
 					xp: 150
 				}
@@ -100,7 +100,7 @@
 			]
 		}
 		{
-			id: "C32715AF6479C057"
+			id: "432715AF6479C057"
 			title: "Заказ через складскую стойку"
 			description: ["Складская стойка принимает заказы — выберите, что нужно, и склад сам соберёт посылку."]
 			x: 8.5d
@@ -108,18 +108,18 @@
 			icon: "create:stock_ticker"
 			dependencies: ["33706B9F6B93BA33"]
 			tasks: [{
-				id: "1FB810E3748BF51C"
+				id: "0BB8F4E3A7626C2A"
 				type: "advancement"
 				advancement: "create:stock_ticker"
 			}]
 			rewards: [
 				{
-					id: "37CFFBA80F180DE8"
+					id: "5CD2D2BD64642C37"
 					type: "xp"
 					xp: 180
 				}
 				{
-					id: "B3D6E8609771F4EC"
+					id: "6A6D5EB821AF2E71"
 					type: "item"
 					item: {
 						Count: 1b
@@ -129,26 +129,26 @@
 			]
 		}
 		{
-			id: "9401D666941DF3EB"
+			id: "1401D666941DF3EB"
 			title: "Посылка сходит с цепного конвейера"
 			description: ["Лягушка-порт ловит посылки с цепного конвейера и отправляет свои. Протяните цепь между цехами."]
 			x: 11.0d
 			y: 1.5d
 			icon: "create:package_frogport"
-			dependencies: ["C32715AF6479C057"]
+			dependencies: ["432715AF6479C057"]
 			tasks: [{
-				id: "90A13638311A103A"
+				id: "6C6F98BFDE360457"
 				type: "advancement"
 				advancement: "create:frogport"
 			}]
 			rewards: [
 				{
-					id: "79E29A2D16A0E5F3"
+					id: "0E27D7406FE61F3B"
 					type: "xp"
 					xp: 180
 				}
 				{
-					id: "FB6C21D72634672B"
+					id: "1A00EBE5412BC72D"
 					type: "item"
 					item: {
 						Count: 4b
@@ -158,7 +158,7 @@
 			]
 		}
 		{
-			id: "9B721B53DDC184D8"
+			id: "1B721B53DDC184D8"
 			title: "Склад сам просит пополнения"
 			description: ["Заводской датчик следит за запасом и сам заказывает недостающее. Мастерская думает за вас."]
 			x: 13.5d
@@ -166,20 +166,20 @@
 			icon: "create:factory_gauge"
 			shape: "star"
 			size: 1.4d
-			dependencies: ["9401D666941DF3EB"]
+			dependencies: ["1401D666941DF3EB"]
 			tasks: [{
-				id: "B1C784E9725BCCC5"
+				id: "58D73481B34E3D98"
 				type: "advancement"
 				advancement: "create:factory_gauge"
 			}]
 			rewards: [
 				{
-					id: "669D794E68FC05DD"
+					id: "4C26308531E465BA"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "7D56F62141D13E7B"
+					id: "520B30C30EF0A9B1"
 					type: "item"
 					item: {
 						Count: 1b
@@ -189,7 +189,7 @@
 			]
 		}
 		{
-			id: "E7F2853B8418F46D"
+			id: "67F2853B8418F46D"
 			title: "Посылка с точным попаданием"
 			description: ["Пусть желоб швырнёт посылку прямо в цель. Трёхочковый!"]
 			x: 9.5d
@@ -197,20 +197,20 @@
 			icon: "create:cardboard_block"
 			shape: "circle"
 			optional: true
-			dependencies: ["C32715AF6479C057"]
+			dependencies: ["432715AF6479C057"]
 			tasks: [{
-				id: "CE1CC82FA1225FCB"
+				id: "678B97054A3D39ED"
 				type: "advancement"
 				advancement: "create:package_chute_throw"
 			}]
 			rewards: [
 				{
-					id: "2AD2A7AACC156900"
+					id: "10743BA2CC7B357C"
 					type: "xp"
 					xp: 135
 				}
 				{
-					id: "372D41F37837F56C"
+					id: "527890F495B6FEAC"
 					type: "item"
 					item: {
 						Count: 2b
@@ -220,7 +220,7 @@
 			]
 		}
 		{
-			id: "EAD9E4891242F10A"
+			id: "6AD9E4891242F10A"
 			title: "Вся мастерская меня не видит"
 			description: ["Наденьте полный комплект картонной брони и спрячьтесь среди коробок. Юра, ты где?"]
 			x: 12.0d
@@ -228,20 +228,20 @@
 			icon: "create:cardboard_helmet"
 			shape: "circle"
 			optional: true
-			dependencies: ["E7F2853B8418F46D"]
+			dependencies: ["67F2853B8418F46D"]
 			tasks: [{
-				id: "F87DAE3960A64CED"
+				id: "2E45A124CFE19D61"
 				type: "advancement"
 				advancement: "create:cardboard_armor"
 			}]
 			rewards: [
 				{
-					id: "2A0DCDDBCE874C57"
+					id: "2BDCEE336CFADFA5"
 					type: "xp"
 					xp: 100
 				}
 				{
-					id: "823E730649D6DD50"
+					id: "785168CF9C8807A6"
 					type: "item"
 					item: {
 						Count: 2b
@@ -251,26 +251,26 @@
 			]
 		}
 		{
-			id: "F24A5CA9571CE25A"
+			id: "724A5CA9571CE25A"
 			title: "Пульт для мастерской"
 			description: ["Связанный пульт управляет механизмами по радио. Ворота, лифты и пушки — всё с одной руки."]
 			x: 0.0d
 			y: -3.5d
 			icon: "create:linked_controller"
-			dependencies: ["FD0417DEF7F45B46"]
+			dependencies: ["7D0417DEF7F45B46"]
 			tasks: [{
-				id: "DCF301F24EA7708C"
+				id: "58AE35B8DE8D31D6"
 				type: "advancement"
 				advancement: "create:linked_controller"
 			}]
 			rewards: [
 				{
-					id: "24DE17AC83A58012"
+					id: "1C5D4CC027D97051"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "103CCCF8432C0D08"
+					id: "1F4E9F33655C71AE"
 					type: "item"
 					item: {
 						Count: 4b
@@ -286,9 +286,9 @@
 			x: 0.5d
 			y: -6.0d
 			icon: "create:mechanical_arm"
-			dependencies: ["F24A5CA9571CE25A"]
+			dependencies: ["724A5CA9571CE25A"]
 			tasks: [{
-				id: "E02C5B1BD2639689"
+				id: "602C5B1BD2639689"
 				type: "advancement"
 				advancement: "create:arm_many_targets"
 			}]
@@ -309,7 +309,7 @@
 			]
 		}
 		{
-			id: "C3F2CF43CEF0F671"
+			id: "43F2CF43CEF0F671"
 			title: "Горелка получает топливо сама"
 			description: ["Пусть механическая рука сама подкладывает топливо в горелку. Больше никаких походов за углём."]
 			x: 1.0d
@@ -317,18 +317,18 @@
 			icon: "create:blaze_burner"
 			dependencies: ["13293A60CC292DB9"]
 			tasks: [{
-				id: "F9C4CB5F38ED7E63"
+				id: "59CE28AF04EEFD78"
 				type: "advancement"
 				advancement: "create:arm_blaze_burner"
 			}]
 			rewards: [
 				{
-					id: "659C01B04E5524E8"
+					id: "47E38665C20C01EE"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "1DF9FD2C1D8F2071"
+					id: "27C959E6BFADD356"
 					type: "item"
 					item: {
 						Count: 4b
@@ -354,12 +354,12 @@
 			}]
 			rewards: [
 				{
-					id: "D5B5DB88B09054C4"
+					id: "55B5DB88B09054C4"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "EA6A089115B1437E"
+					id: "6A6A089115B1437E"
 					type: "item"
 					item: {
 						Count: 16b
@@ -369,7 +369,7 @@
 			]
 		}
 		{
-			id: "D21A9F7F45B8BAA3"
+			id: "521A9F7F45B8BAA3"
 			title: "Юра летит дальше тридцати"
 			description: ["Катапульта Create бросает предметы — и людей. Отправьте Юру в полёт на тридцать блоков. Максим поймает. Наверное."]
 			x: 3.5d
@@ -379,18 +379,18 @@
 			optional: true
 			dependencies: ["13293A60CC292DB9"]
 			tasks: [{
-				id: "B39667B50B0FF79B"
+				id: "01A676A7E08AE0EF"
 				type: "advancement"
 				advancement: "create:ejector_maxed"
 			}]
 			rewards: [
 				{
-					id: "5CD1CE05FC5BC1FC"
+					id: "63ABFEB94ECFE76F"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "CB7A2EE790773944"
+					id: "2B20BCB1C1773340"
 					type: "item"
 					item: {
 						Count: 1b
@@ -400,26 +400,26 @@
 			]
 		}
 		{
-			id: "A54DE6FD7E31FCAD"
+			id: "254DE6FD7E31FCAD"
 			title: "Часы для площади"
 			description: ["Часовой подшипник крутит стрелки по настоящему игровому времени. Поставьте часы на ратушу."]
 			x: -3.5d
 			y: 0.0d
 			icon: "create:clockwork_bearing"
-			dependencies: ["FD0417DEF7F45B46"]
+			dependencies: ["7D0417DEF7F45B46"]
 			tasks: [{
-				id: "931E29071D1A8A89"
+				id: "140769638DCE6786"
 				type: "advancement"
 				advancement: "create:clockwork_bearing"
 			}]
 			rewards: [
 				{
-					id: "574898C1D192D681"
+					id: "12640EB10A0EA733"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "A3FE4734811C07CF"
+					id: "15D7DE0492C34CA8"
 					type: "item"
 					item: {
 						Count: 16b
@@ -435,9 +435,9 @@
 			x: -6.0d
 			y: 0.5d
 			icon: "create:cuckoo_clock"
-			dependencies: ["A54DE6FD7E31FCAD"]
+			dependencies: ["254DE6FD7E31FCAD"]
 			tasks: [{
-				id: "FDAB1B92657540FA"
+				id: "7DAB1B92657540FA"
 				type: "advancement"
 				advancement: "create:cuckoo_clock"
 			}]
@@ -466,7 +466,7 @@
 			icon: "create:steam_whistle"
 			dependencies: ["481A6638D3700BB6"]
 			tasks: [{
-				id: "DDAFEDDFD6A8DF5D"
+				id: "5DAFEDDFD6A8DF5D"
 				type: "advancement"
 				advancement: "create:steam_whistle"
 			}]
@@ -477,7 +477,7 @@
 					xp: 150
 				}
 				{
-					id: "9887B3AF15869308"
+					id: "1887B3AF15869308"
 					type: "item"
 					item: {
 						Count: 4b
@@ -487,7 +487,7 @@
 			]
 		}
 		{
-			id: "ADF4DE4021A4DDD2"
+			id: "2DF4DE4021A4DDD2"
 			title: "Колокол с другой стороны"
 			description: ["Проклятый колокол показывает, где ночью появятся монстры. Жутко, но полезно для обороны."]
 			x: -11.0d
@@ -495,18 +495,18 @@
 			icon: "create:haunted_bell"
 			dependencies: ["6555136BC726B91D"]
 			tasks: [{
-				id: "5339F6C30295878C"
+				id: "27DE323D5757FAB3"
 				type: "advancement"
 				advancement: "create:haunted_bell"
 			}]
 			rewards: [
 				{
-					id: "A59F636987721318"
+					id: "1CDA0FFD37BE7A8D"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "409F3A81E86E717D"
+					id: "33D2F09E7EF96158"
 					type: "item"
 					item: {
 						Count: 6b
@@ -522,7 +522,7 @@
 			x: -13.5d
 			y: 2.0d
 			icon: "minecraft:jukebox"
-			dependencies: ["ADF4DE4021A4DDD2"]
+			dependencies: ["2DF4DE4021A4DDD2"]
 			tasks: [{
 				id: "0E92F99A7CDC4864"
 				type: "advancement"
@@ -530,12 +530,12 @@
 			}]
 			rewards: [
 				{
-					id: "F4B630186536F109"
+					id: "74B630186536F109"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "C331CBC183D8E37A"
+					id: "4331CBC183D8E37A"
 					type: "item"
 					item: {
 						Count: 1b
@@ -545,7 +545,7 @@
 			]
 		}
 		{
-			id: "D1E72065750CAA2D"
+			id: "51E72065750CAA2D"
 			title: "Орган для вашей площади"
 			description: ["Соберите из свистков настоящий орган. Сыграйте что-нибудь торжественное — база заслужила."]
 			x: -16.0d
@@ -555,18 +555,18 @@
 			size: 1.4d
 			dependencies: ["18D464DFE627EAFF"]
 			tasks: [{
-				id: "30D3F818E6FA0F7B"
+				id: "38677950B4F61BFF"
 				type: "advancement"
 				advancement: "create:pipe_organ"
 			}]
 			rewards: [
 				{
-					id: "079605218B7FAD81"
+					id: "5BF2867B9CFB3649"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "CF652BE61D0F709F"
+					id: "529E356557756180"
 					type: "item"
 					item: {
 						Count: 6b
@@ -574,7 +574,7 @@
 					}
 				}
 				{
-					id: "2A27C5B52541A79E"
+					id: "6677578249725F5B"
 					type: "item"
 					item: {
 						Count: 8b
@@ -590,20 +590,20 @@
 			x: 0.0d
 			y: 3.5d
 			icon: "create:copper_backtank"
-			dependencies: ["FD0417DEF7F45B46"]
+			dependencies: ["7D0417DEF7F45B46"]
 			tasks: [{
-				id: "C8F478E34A0D9C34"
+				id: "48F478E34A0D9C34"
 				type: "advancement"
 				advancement: "create:backtank"
 			}]
 			rewards: [
 				{
-					id: "F06D4E66CA15733B"
+					id: "706D4E66CA15733B"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "88CCAABB8CA0D70E"
+					id: "08CCAABB8CA0D70E"
 					type: "item"
 					item: {
 						Count: 1b
@@ -613,7 +613,7 @@
 			]
 		}
 		{
-			id: "9310EF94F77C64F4"
+			id: "1310EF94F77C64F4"
 			title: "Спуск глубже двухсот блоков"
 			description: ["Растяните верёвочный блок на максимальную длину. Лифт в самую глубокую шахту готов."]
 			x: -0.5d
@@ -621,18 +621,18 @@
 			icon: "create:rope_pulley"
 			dependencies: ["02E8F7C592478C40"]
 			tasks: [{
-				id: "EE9B236650C9C06E"
+				id: "33D55B7A796A4C00"
 				type: "advancement"
 				advancement: "create:pulley_maxed"
 			}]
 			rewards: [
 				{
-					id: "87801B183ACE2CE9"
+					id: "5126DB9D0E1E3F58"
 					type: "xp"
 					xp: 250
 				}
 				{
-					id: "368BD3726714F767"
+					id: "570ACC84A6067748"
 					type: "item"
 					item: {
 						Count: 6b
@@ -650,9 +650,9 @@
 			icon: "minecraft:minecart"
 			shape: "circle"
 			optional: true
-			dependencies: ["9310EF94F77C64F4"]
+			dependencies: ["1310EF94F77C64F4"]
 			tasks: [{
-				id: "E4825F864F062692"
+				id: "64825F864F062692"
 				type: "advancement"
 				advancement: "create:cart_pickup"
 			}]
@@ -663,7 +663,7 @@
 					xp: 150
 				}
 				{
-					id: "9A4890955E9F4200"
+					id: "1A4890955E9F4200"
 					type: "item"
 					item: {
 						Count: 2b
@@ -683,7 +683,7 @@
 			optional: true
 			dependencies: ["02E8F7C592478C40"]
 			tasks: [{
-				id: "C9A3E699511F9F94"
+				id: "49A3E699511F9F94"
 				type: "advancement"
 				advancement: "create:lava_wheel_00000"
 			}]
@@ -745,13 +745,13 @@
 			optional: true
 			dependencies: ["167ACBD7508350FA"]
 			tasks: [{
-				id: "8090D7D82AD2510A"
+				id: "0090D7D82AD2510A"
 				type: "advancement"
 				advancement: "create:fist_bump"
 			}]
 			rewards: [
 				{
-					id: "AF252E55FEB31F9E"
+					id: "2F252E55FEB31F9E"
 					type: "xp"
 					xp: 150
 				}

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "railways:conductor_cap"
+      "item": "railways:red_conductor_cap"
     },
     "title": {
       "text": "Примерить фуражку проводника"
@@ -24,9 +24,7 @@
             "predicate": {
               "equipment": {
                 "head": {
-                  "items": [
-                    "railways:conductor_cap"
-                  ]
+                  "tag": "railways:conductor_caps"
                 }
               }
             }

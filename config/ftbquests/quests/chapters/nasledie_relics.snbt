@@ -40,7 +40,7 @@
 					}
 				}
 				{
-					id: "FD480301B9F24BCE"
+					id: "7D480301B9F24BCE"
 					type: "item"
 					item: {
 						Count: 2b
@@ -74,14 +74,14 @@
 					consume_items: false
 				}
 				{
-					id: "ECC4F455A8F6D19B"
+					id: "6CC4F455A8F6D19B"
 					type: "item"
 					item: "relics:hunter_belt"
 					count: 1L
 					consume_items: false
 				}
 				{
-					id: "86E5305F18305522"
+					id: "06E5305F18305522"
 					type: "item"
 					item: "relics:infinity_ham"
 					count: 1L
@@ -90,7 +90,7 @@
 			]
 			rewards: [
 				{
-					id: "EE96E272D072F4C5"
+					id: "6E96E272D072F4C5"
 					type: "xp"
 					xp: 600
 				}
@@ -113,7 +113,7 @@
 			]
 		}
 		{
-			id: "B90415D4DBCA873B"
+			id: "390415D4DBCA873B"
 			title: "Дорожный набор"
 			description: ["Роликовые коньки и лошадиная флейта попадаются в деревнях, шахтах и крепостях. Флейта прячет лошадь в себе и выпускает там, где она нужна."]
 			x: -2.83d
@@ -123,14 +123,14 @@
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
 				{
-					id: "CDEA5C3BFD48F539"
+					id: "38C2FA8DEF7C6CEC"
 					type: "item"
 					item: "relics:roller_skates"
 					count: 1L
 					consume_items: false
 				}
 				{
-					id: "3FD6D56344939614"
+					id: "010BAA316AA89000"
 					type: "item"
 					item: "relics:horse_flute"
 					count: 1L
@@ -139,12 +139,12 @@
 			]
 			rewards: [
 				{
-					id: "0E6C380A714FE4B7"
+					id: "4AFABA02187F5BD1"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "0A86C46D9A87568A"
+					id: "331E14829C79BA7E"
 					type: "item"
 					item: {
 						Count: 2b
@@ -152,7 +152,7 @@
 					}
 				}
 				{
-					id: "C4F022BF0924FB21"
+					id: "1DFAA813D609D75F"
 					type: "item"
 					item: {
 						Count: 1b
@@ -162,7 +162,7 @@
 			]
 		}
 		{
-			id: "BD35FEC30FF182E4"
+			id: "3D35FEC30FF182E4"
 			title: "Тайники подземелий"
 			description: ["Волшебное зеркало, полуночная мантия и пространственная печать прячутся в заброшенных шахтах, крепостях и подземных городах. Зеркало вернёт домой, печать — по собственным следам."]
 			x: -2.83d
@@ -172,21 +172,21 @@
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
 				{
-					id: "7449B14FDDB0C6E3"
+					id: "1AA714D9AAB6DE78"
 					type: "item"
 					item: "relics:magic_mirror"
 					count: 1L
 					consume_items: false
 				}
 				{
-					id: "85742109CB8B2601"
+					id: "119C1AB64CCDC757"
 					type: "item"
 					item: "relics:midnight_robe"
 					count: 1L
 					consume_items: false
 				}
 				{
-					id: "3ECD571F0F56BFB8"
+					id: "20C5788D3633D8ED"
 					type: "item"
 					item: "relics:spatial_sign"
 					count: 1L
@@ -195,12 +195,12 @@
 			]
 			rewards: [
 				{
-					id: "D8AC5563343DDA43"
+					id: "68AEA6A5F9D6B52C"
 					type: "xp"
 					xp: 600
 				}
 				{
-					id: "F9CFFF0639A86FFD"
+					id: "1C65B07B02FCC4EC"
 					type: "item"
 					item: {
 						Count: 3b
@@ -208,7 +208,7 @@
 					}
 				}
 				{
-					id: "BF740D5C596D96F0"
+					id: "37792DB1C592441D"
 					type: "item"
 					item: {
 						Count: 1b
@@ -218,7 +218,7 @@
 			]
 		}
 		{
-			id: "C984B5E091D37A3A"
+			id: "4984B5E091D37A3A"
 			title: "Морская коллекция"
 			description: ["Водоходы, ботинок амфибии, пояс утопленника и ожерелье медузы — добыча затонувших кораблей, подводных руин и зарытых кладов."]
 			x: 4.0d
@@ -228,28 +228,28 @@
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
 				{
-					id: "1D2891CB218479B1"
+					id: "297FFEBB30959AF6"
 					type: "item"
 					item: "relics:aqua_walker"
 					count: 1L
 					consume_items: false
 				}
 				{
-					id: "4A9C2AABC05D4F0C"
+					id: "2D61F9DC5F1B3E35"
 					type: "item"
 					item: "relics:amphibian_boot"
 					count: 1L
 					consume_items: false
 				}
 				{
-					id: "4012ED0FFE674E9E"
+					id: "352F29CED0272B0F"
 					type: "item"
 					item: "relics:drowned_belt"
 					count: 1L
 					consume_items: false
 				}
 				{
-					id: "0BC20AC3D4019520"
+					id: "51D972275675853E"
 					type: "item"
 					item: "relics:jellyfish_necklace"
 					count: 1L
@@ -258,12 +258,12 @@
 			]
 			rewards: [
 				{
-					id: "CAE568F4F089A9D4"
+					id: "1C26874C9682D4B3"
 					type: "xp"
 					xp: 600
 				}
 				{
-					id: "2DD94AA6341DB003"
+					id: "5C79D68A75F1E7DE"
 					type: "item"
 					item: {
 						Count: 3b
@@ -271,7 +271,7 @@
 					}
 				}
 				{
-					id: "F150CBEF8282E52E"
+					id: "6D9F05186D9B2A11"
 					type: "item"
 					item: {
 						Count: 3b
@@ -282,7 +282,7 @@
 					}
 				}
 				{
-					id: "2801197E01649EF9"
+					id: "635DB5F521E1FDE3"
 					type: "item"
 					item: {
 						Count: 1b
@@ -316,7 +316,7 @@
 					consume_items: false
 				}
 				{
-					id: "FBE2BC39D4E88224"
+					id: "7BE2BC39D4E88224"
 					type: "item"
 					item: "relics:wool_mitten"
 					count: 1L
@@ -325,12 +325,12 @@
 			]
 			rewards: [
 				{
-					id: "F1DAE8C8E9BABF35"
+					id: "71DAE8C8E9BABF35"
 					type: "xp"
 					xp: 500
 				}
 				{
-					id: "B629D10CF54172D8"
+					id: "3629D10CF54172D8"
 					type: "item"
 					item: {
 						Count: 3b
@@ -338,7 +338,7 @@
 					}
 				}
 				{
-					id: "D8BE4D19EED9309A"
+					id: "58BE4D19EED9309A"
 					type: "item"
 					item: {
 						Count: 32b
@@ -358,7 +358,7 @@
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
 				{
-					id: "C397FBFA0BCEE350"
+					id: "4397FBFA0BCEE350"
 					type: "item"
 					item: "relics:holy_locket"
 					count: 1L
@@ -374,7 +374,7 @@
 			]
 			rewards: [
 				{
-					id: "F105527F88AEB08F"
+					id: "7105527F88AEB08F"
 					type: "xp"
 					xp: 500
 				}
@@ -464,7 +464,7 @@
 					}
 				}
 				{
-					id: "88D586E7159A4176"
+					id: "08D586E7159A4176"
 					type: "item"
 					item: {
 						Count: 4b
@@ -485,21 +485,21 @@
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
 				{
-					id: "99E628237C035E5F"
+					id: "19E628237C035E5F"
 					type: "item"
 					item: "relics:enders_hand"
 					count: 1L
 					consume_items: false
 				}
 				{
-					id: "B205C54E48F5D3F0"
+					id: "3205C54E48F5D3F0"
 					type: "item"
 					item: "relics:chorus_inhibitor"
 					count: 1L
 					consume_items: false
 				}
 				{
-					id: "F247B25630898169"
+					id: "7247B25630898169"
 					type: "item"
 					item: "relics:elytra_booster"
 					count: 1L
@@ -520,7 +520,7 @@
 					xp: 1500
 				}
 				{
-					id: "A9D3FD6BCC7747F5"
+					id: "29D3FD6BCC7747F5"
 					type: "item"
 					item: {
 						Count: 6b
@@ -528,7 +528,7 @@
 					}
 				}
 				{
-					id: "B8DF48DE4007D2CC"
+					id: "38DF48DE4007D2CC"
 					type: "item"
 					item: {
 						Count: 1b
@@ -538,7 +538,7 @@
 			]
 		}
 		{
-			id: "F5D8F4D63F925F92"
+			id: "75D8F4D63F925F92"
 			title: "Сундук оказался голодным"
 			description: ["Не каждый сундук — сундук. Мимик кусается, зато внутри у него артефакт. Победите одного."]
 			x: -6.01d
@@ -548,18 +548,18 @@
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [{
-				id: "9252B7D24A80B6D8"
+				id: "1252B7D24A80B6D8"
 				type: "advancement"
 				advancement: "artifacts:chest_slayer"
 			}]
 			rewards: [
 				{
-					id: "A8B7FAD21FB20F3B"
+					id: "3F0C228439A9C38A"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "18D11D2C1172B977"
+					id: "2195C3C0E4BC4F8E"
 					type: "item"
 					item: {
 						Count: 1b
@@ -577,7 +577,7 @@
 			icon: "artifacts:onion_ring"
 			shape: "circle"
 			optional: true
-			dependencies: ["F5D8F4D63F925F92"]
+			dependencies: ["75D8F4D63F925F92"]
 			tasks: [{
 				id: "3B6DDF4018DD7C8A"
 				type: "advancement"
@@ -590,7 +590,7 @@
 					xp: 300
 				}
 				{
-					id: "CFEE08B1C5324D28"
+					id: "4FEE08B1C5324D28"
 					type: "item"
 					item: {
 						Count: 4b
@@ -598,7 +598,7 @@
 					}
 				}
 				{
-					id: "B46484A3BF544B57"
+					id: "346484A3BF544B57"
 					type: "item"
 					item: {
 						Count: 1b

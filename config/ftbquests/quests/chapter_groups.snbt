@@ -1,16 +1,16 @@
 {
 	chapter_groups: [
 		{
-			id: "842B4DB4DBD349A0"
+			id: "042B4DB4DBD349A0"
 			title: "Акт I · Высадка"
 		}
 		{
 			title: "Акт II · По следам экспедиции"
-			id: "EF93B76DFA48CC13"
+			id: "6F93B76DFA48CC13"
 		}
 		{
 			title: "Акт III · Мастерская нового мира"
-			id: "C513A3C540C2F7E2"
+			id: "4513A3C540C2F7E2"
 		}
 		{
 			title: "Акт IV · Пробуждённые"

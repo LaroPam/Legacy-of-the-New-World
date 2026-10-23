@@ -9,8 +9,8 @@
 	default_quest_shape: "circle"
 	progression_mode: "flexible"
 	quest_links: [{
-		id: "E035792C37A284FA"
-		linked_quest: "92AF3238F7B8776E"
+		id: "6035792C37A284FA"
+		linked_quest: "12AF3238F7B8776E"
 		x: -1.88d
 		y: -3.53d
 		shape: "crown"
@@ -27,7 +27,7 @@
 			shape: "star"
 			size: 1.8d
 			tasks: [{
-				id: "81AAAE8B63AD0F16"
+				id: "01AAAE8B63AD0F16"
 				type: "advancement"
 				title: "Собрать книгу о животных"
 				advancement: "nasledie:q/guild/field_journal"
@@ -49,7 +49,7 @@
 			]
 		}
 		{
-			id: "F57181DBDA992F0B"
+			id: "757181DBDA992F0B"
 			title: "Три живые записи дневника"
 			description: ["Найдите и рассмотрите вблизи грифовую черепаху, визгуна и шёпота. Берг рисовала их по памяти — сверьте рисунки с натурой."]
 			x: -3.03d
@@ -58,19 +58,19 @@
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [
 				{
-					id: "44D359419D002D73"
+					id: "531F1729C9DC8D41"
 					type: "advancement"
 					advancement: "nasledie:alpha39/mobs/field_notes"
 					title: "Грифовая черепаха"
 				}
 				{
-					id: "5A5D444427353638"
+					id: "3E508F6837C112BC"
 					type: "advancement"
 					advancement: "nasledie:alpha39/mobs/field_notes__skreecher"
 					title: "Визгун"
 				}
 				{
-					id: "CF240525DDB8C865"
+					id: "1F9D464FBCF67B74"
 					type: "advancement"
 					advancement: "nasledie:alpha39/mobs/field_notes__murmur"
 					title: "Шёпот"
@@ -78,12 +78,12 @@
 			]
 			rewards: [
 				{
-					id: "7335D8028CCC799C"
+					id: "0B1169BD161B52E9"
 					type: "xp"
 					xp: 260
 				}
 				{
-					id: "CBAA48ACB5CA5317"
+					id: "2F4343F3DC5B399B"
 					type: "item"
 					item: {
 						Count: 1b
@@ -103,18 +103,18 @@
 			optional: true
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
-				id: "906E0C636B889940"
+				id: "106E0C636B889940"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/la_cucaracha"
 			}]
 			rewards: [
 				{
-					id: "FFA23540D5E948C5"
+					id: "7FA23540D5E948C5"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "8E2F18F6488D320F"
+					id: "0E2F18F6488D320F"
 					type: "item"
 					item: {
 						Count: 1b
@@ -184,7 +184,7 @@
 			]
 		}
 		{
-			id: "96A5A07EA384E3E1"
+			id: "16A5A07EA384E3E1"
 			title: "Медведь принимает угощение"
 			description: ["Мёд и лосось — путь к сердцу бурого медведя. Приручите его."]
 			x: 0.0d
@@ -192,18 +192,18 @@
 			icon: "alexsmobs:bear_fur"
 			dependencies: ["59BE881A23FA5362"]
 			tasks: [{
-				id: "6C5B9EE2165FE56E"
+				id: "587864688609C05D"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/tame_grizzly_bear"
 			}]
 			rewards: [
 				{
-					id: "9F880E984F852651"
+					id: "35E726E8F7037BD7"
 					type: "xp"
 					xp: 270
 				}
 				{
-					id: "27932067E1BA1620"
+					id: "0EF3A74A0CB111EC"
 					type: "item"
 					item: {
 						Count: 8b
@@ -222,13 +222,13 @@
 			optional: true
 			dependencies: ["59BE881A23FA5362"]
 			tasks: [{
-				id: "F995D2875DE92483"
+				id: "7995D2875DE92483"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/maned_wolf_apple"
 			}]
 			rewards: [
 				{
-					id: "EF5F25AE57FFA86A"
+					id: "6F5F25AE57FFA86A"
 					type: "xp"
 					xp: 185
 				}
@@ -243,7 +243,7 @@
 			]
 		}
 		{
-			id: "8EC4540A9E0B729E"
+			id: "0EC4540A9E0B729E"
 			title: "Аромат полевого исследования"
 			description: ["Подойдите к скунсу слишком близко. Наука требует жертв, Юра."]
 			x: 0.0d
@@ -251,20 +251,20 @@
 			icon: "alexsmobs:stink_bottle"
 			shape: "heart"
 			optional: true
-			dependencies: ["96A5A07EA384E3E1"]
+			dependencies: ["16A5A07EA384E3E1"]
 			tasks: [{
-				id: "3EF287D29AD24C31"
+				id: "7966BB68B3732AB3"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/skunk"
 			}]
 			rewards: [
 				{
-					id: "10F8CA1BB848CDC2"
+					id: "445E9475C8FC1395"
 					type: "xp"
 					xp: 190
 				}
 				{
-					id: "2A34977231A8265A"
+					id: "06F8A0873EC1036C"
 					type: "item"
 					item: {
 						Count: 1b
@@ -274,27 +274,27 @@
 			]
 		}
 		{
-			id: "A11B0DC1744B593F"
+			id: "211B0DC1744B593F"
 			title: "Опередить призрачного шахтёра"
 			description: ["Призрачный рудокоп копает жилы, которых не видно. Сломайте блок, который он копает, — и найдёте спрятанную руду."]
 			x: -2.2d
 			y: -8.21d
 			icon: "alexsmobs:ghostly_pickaxe"
 			optional: true
-			dependencies: ["96A5A07EA384E3E1"]
+			dependencies: ["16A5A07EA384E3E1"]
 			tasks: [{
-				id: "7E70B7F693877877"
+				id: "41D2AA9347319D91"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/underminer"
 			}]
 			rewards: [
 				{
-					id: "4C6A540F2ABBA471"
+					id: "45A7DE343D102A72"
 					type: "xp"
 					xp: 275
 				}
 				{
-					id: "4EC16F7B223BB4FD"
+					id: "113A2D0330B44CC7"
 					type: "item"
 					item: {
 						Count: 2b
@@ -304,7 +304,7 @@
 			]
 		}
 		{
-			id: "E4D66B92C822D527"
+			id: "64D66B92C822D527"
 			title: "Первый пернатый союзник"
 			description: ["Приручите орла рыбьим жиром. Он станет глазами экспедиции с высоты."]
 			x: 2.68d
@@ -312,18 +312,18 @@
 			icon: "alexsmobs:fish_oil"
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
-				id: "9B178844772769EB"
+				id: "628499842EACBFFA"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/tame_bald_eagle"
 			}]
 			rewards: [
 				{
-					id: "EAA3CDCED346DB60"
+					id: "38E6EE6D76947E16"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "4EB2AD6E9BCC50B4"
+					id: "7304508B10D2CD88"
 					type: "item"
 					item: {
 						Count: 8b
@@ -339,7 +339,7 @@
 			x: 4.6d
 			y: -3.86d
 			icon: "alexsmobs:falconry_glove"
-			dependencies: ["E4D66B92C822D527"]
+			dependencies: ["64D66B92C822D527"]
 			tasks: [{
 				id: "6F5F50A93BF1D08E"
 				type: "advancement"
@@ -370,7 +370,7 @@
 			icon: "alexsmobs:falconry_hood"
 			dependencies: ["252A21A892E4E5A0"]
 			tasks: [{
-				id: "95EE6E3B9B7E7852"
+				id: "15EE6E3B9B7E7852"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/falconry_hood"
 			}]
@@ -391,7 +391,7 @@
 			]
 		}
 		{
-			id: "96E3403FB5591B32"
+			id: "16E3403FB5591B32"
 			title: "Орёл достигает дальней цели"
 			description: ["Пусть орёл в капюшоне сразит существо в сотне блоков от вас. Настоящая соколиная охота."]
 			x: 8.43d
@@ -400,18 +400,18 @@
 			shape: "star"
 			dependencies: ["1AC57DF4745395A2"]
 			tasks: [{
-				id: "6CE5CEB729E06ECE"
+				id: "32F8937E9C9A9C73"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/bald_eagle_challenge"
 			}]
 			rewards: [
 				{
-					id: "91FDCBFD8FA2B465"
+					id: "5D1BFF99C1225F52"
 					type: "xp"
 					xp: 450
 				}
 				{
-					id: "C3B095F20B1336F1"
+					id: "1D6F76D0EC662617"
 					type: "item"
 					item: {
 						Count: 1b
@@ -435,12 +435,12 @@
 			}]
 			rewards: [
 				{
-					id: "E2DF2FA0BB407648"
+					id: "62DF2FA0BB407648"
 					type: "xp"
 					xp: 230
 				}
 				{
-					id: "82EBAD388EE09816"
+					id: "02EBAD388EE09816"
 					type: "item"
 					item: {
 						Count: 2b
@@ -450,7 +450,7 @@
 			]
 		}
 		{
-			id: "A69880141C867BB1"
+			id: "269880141C867BB1"
 			title: "Маленький спутник из джунглей"
 			description: ["Капуцин ездит на плече и швыряется во врагов. Приручите его."]
 			x: 5.91d
@@ -458,18 +458,18 @@
 			icon: "alexsmobs:banana"
 			dependencies: ["4B932485B3983E85"]
 			tasks: [{
-				id: "D15D709BC84A2BF4"
+				id: "516D10F4D859A619"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/tame_capuchin"
 			}]
 			rewards: [
 				{
-					id: "C212397E9037EED6"
+					id: "31E6DD993E01522B"
 					type: "xp"
 					xp: 275
 				}
 				{
-					id: "7D5E8DBB5B668D39"
+					id: "39949933AB226BB5"
 					type: "item"
 					item: {
 						Count: 1b
@@ -485,7 +485,7 @@
 			x: 8.37d
 			y: 1.48d
 			icon: "minecraft:poppy"
-			dependencies: ["A69880141C867BB1"]
+			dependencies: ["269880141C867BB1"]
 			tasks: [{
 				id: "11C482CE8355E14F"
 				type: "advancement"
@@ -498,7 +498,7 @@
 					xp: 200
 				}
 				{
-					id: "98CFF026C7E1A5FD"
+					id: "18CFF026C7E1A5FD"
 					type: "item"
 					item: {
 						Count: 1b
@@ -517,7 +517,7 @@
 			optional: true
 			dependencies: ["19FCA77EB16A1E4A"]
 			tasks: [{
-				id: "B6699FE26DA5566C"
+				id: "36699FE26DA5566C"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/tame_flutter"
 			}]
@@ -538,7 +538,7 @@
 			]
 		}
 		{
-			id: "936D71E0D75C5CFD"
+			id: "136D71E0D75C5CFD"
 			title: "Семья муравьедов"
 			description: ["Муравьеды любят куколок муравьёв. Разведите пару."]
 			x: 5.99d
@@ -547,18 +547,18 @@
 			optional: true
 			dependencies: ["4B932485B3983E85"]
 			tasks: [{
-				id: "D06B5C1F5A97948F"
+				id: "3E52A268834DECA7"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/breed_anteater"
 			}]
 			rewards: [
 				{
-					id: "16FBC84B08341FA3"
+					id: "51D80D8CE4DD8B03"
 					type: "xp"
 					xp: 340
 				}
 				{
-					id: "C3B9579D6FE72E52"
+					id: "159F06BFA90CB646"
 					type: "item"
 					item: {
 						Count: 4b
@@ -568,7 +568,7 @@
 			]
 		}
 		{
-			id: "9ED723F7F76497AD"
+			id: "1ED723F7F76497AD"
 			title: "Благословение тигра"
 			description: ["Накормите тигра мясом, и он благословит вас — враги не заметят вашего приближения."]
 			x: 7.77d
@@ -576,20 +576,20 @@
 			icon: "minecraft:porkchop"
 			shape: "star"
 			optional: true
-			dependencies: ["A69880141C867BB1"]
+			dependencies: ["269880141C867BB1"]
 			tasks: [{
-				id: "301701AEFA33E1CA"
+				id: "5F900D396F9C5CDF"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/tigers_blessing"
 			}]
 			rewards: [
 				{
-					id: "99746CF43FBF9ED0"
+					id: "0C171A43C12F12D1"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "3F7EACCBAA227094"
+					id: "18E183B01BB156F4"
 					type: "item"
 					item: {
 						Count: 1b
@@ -599,7 +599,7 @@
 			]
 		}
 		{
-			id: "95C85BF47DA01D26"
+			id: "15C85BF47DA01D26"
 			title: "Слон принимает предложение"
 			description: ["Приручите слона акациевым цветком. На спине у него поместятся сундуки — караван готов."]
 			x: 1.75d
@@ -607,18 +607,18 @@
 			icon: "alexsmobs:acacia_blossom"
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
-				id: "9CF787EB00A54EDE"
+				id: "53D2A594FD348510"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/tame_elephant"
 			}]
 			rewards: [
 				{
-					id: "DD979274155BE35C"
+					id: "2446E3D6F9131DC5"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "62DBEE1482CCB09B"
+					id: "6D33638F2BA9DA53"
 					type: "item"
 					item: {
 						Count: 4b
@@ -636,7 +636,7 @@
 			icon: "minecraft:red_carpet"
 			shape: "heart"
 			optional: true
-			dependencies: ["95C85BF47DA01D26"]
+			dependencies: ["15C85BF47DA01D26"]
 			tasks: [{
 				id: "01451B7F5888366B"
 				type: "advancement"
@@ -667,15 +667,15 @@
 			icon: "minecraft:bone"
 			shape: "star"
 			optional: true
-			dependencies: ["95C85BF47DA01D26"]
+			dependencies: ["15C85BF47DA01D26"]
 			tasks: [{
-				id: "F2968E63A66FDC7D"
+				id: "72968E63A66FDC7D"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/tame_elephant_tusked"
 			}]
 			rewards: [
 				{
-					id: "D325ADB307A6D7C2"
+					id: "5325ADB307A6D7C2"
 					type: "xp"
 					xp: 400
 				}
@@ -704,7 +704,7 @@
 			}]
 			rewards: [
 				{
-					id: "E35C8187E748C1CB"
+					id: "635C8187E748C1CB"
 					type: "xp"
 					xp: 300
 				}
@@ -733,12 +733,12 @@
 			}]
 			rewards: [
 				{
-					id: "BC3199222CFB1359"
+					id: "3C3199222CFB1359"
 					type: "xp"
 					xp: 360
 				}
 				{
-					id: "B556C0569272379C"
+					id: "3556C0569272379C"
 					type: "item"
 					item: {
 						Count: 12b
@@ -748,7 +748,7 @@
 			]
 		}
 		{
-			id: "8D963EB7C6BEE5F5"
+			id: "0D963EB7C6BEE5F5"
 			title: "Трофеи трёх пустошей"
 			description: ["Рыба-кость в море, стервятник душ в Нижнем мире и гремучая змея в пустыне. Победите каждую."]
 			x: -0.83d
@@ -759,19 +759,19 @@
 			dependencies: ["3C70087F08BB9172"]
 			tasks: [
 				{
-					id: "8DBA7A133DC782F2"
+					id: "7F1A6F55A18DD01E"
 					type: "advancement"
 					advancement: "nasledie:alpha39/mobs/three_wastes"
 					title: "Рыба-кость"
 				}
 				{
-					id: "77A8053A02DC4F2E"
+					id: "16366C90C263E4BB"
 					type: "advancement"
 					advancement: "nasledie:alpha39/mobs/three_wastes__vulture"
 					title: "Стервятник душ"
 				}
 				{
-					id: "5FC8D60CA98EF875"
+					id: "690E2929C4F699F4"
 					type: "advancement"
 					advancement: "nasledie:alpha39/mobs/three_wastes__snake"
 					title: "Гремучая змея"
@@ -779,12 +779,12 @@
 			]
 			rewards: [
 				{
-					id: "C6EF1D29F41FCFC6"
+					id: "76B21BC022888AD0"
 					type: "xp"
 					xp: 390
 				}
 				{
-					id: "A03CB52A3451FE97"
+					id: "38587679B6AA1635"
 					type: "item"
 					item: {
 						Count: 2b
@@ -794,7 +794,7 @@
 			]
 		}
 		{
-			id: "99429B59EE71CDA8"
+			id: "19429B59EE71CDA8"
 			title: "Чайка забрала обед"
 			description: ["Позвольте чайке украсть еду у вас из рук. Максим, это был твой бутерброд."]
 			x: -2.01d
@@ -803,18 +803,18 @@
 			shape: "heart"
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
-				id: "AC46D78D5C6D8C45"
+				id: "198FA1DA427C46F2"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/seagull_steal"
 			}]
 			rewards: [
 				{
-					id: "6B5255F82171243E"
+					id: "485A8546279FDBF9"
 					type: "xp"
 					xp: 175
 				}
 				{
-					id: "AD793161816E3872"
+					id: "47E2D7717C594139"
 					type: "item"
 					item: {
 						Count: 4b
@@ -824,26 +824,26 @@
 			]
 		}
 		{
-			id: "B949C4277618FEC3"
+			id: "3949C4277618FEC3"
 			title: "Рак-богомол становится союзником"
 			description: ["Рак-богомол бьёт так, что ломает панцири. Приручите его тропической рыбой."]
 			x: -3.25d
 			y: 5.63d
 			icon: "minecraft:tropical_fish"
-			dependencies: ["99429B59EE71CDA8"]
+			dependencies: ["19429B59EE71CDA8"]
 			tasks: [{
-				id: "762EA7A8B41A5B4B"
+				id: "016649403388BC7C"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/tame_mantis_shrimp"
 			}]
 			rewards: [
 				{
-					id: "F1B7D99336D1AE22"
+					id: "40357BC3C71C028A"
 					type: "xp"
 					xp: 240
 				}
 				{
-					id: "CF98B25F7C6F6970"
+					id: "50C14BB402E592C3"
 					type: "item"
 					item: {
 						Count: 4b
@@ -853,7 +853,7 @@
 			]
 		}
 		{
-			id: "E159D133BD51F992"
+			id: "6159D133BD51F992"
 			title: "Спасти кита"
 			description: ["Иногда кашалота выбрасывает на берег. Столкните его обратно в воду — и он оставит амбру в благодарность."]
 			x: -4.5d
@@ -861,20 +861,20 @@
 			icon: "alexsmobs:ambergris"
 			shape: "star"
 			optional: true
-			dependencies: ["B949C4277618FEC3"]
+			dependencies: ["3949C4277618FEC3"]
 			tasks: [{
-				id: "6B86CE19FBE593B1"
+				id: "195E4AE2F5558AF1"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/save_cachalot_whale"
 			}]
 			rewards: [
 				{
-					id: "EFDC2FF0FC955C13"
+					id: "01A7BEF2B776C96D"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "C8D85BC8E5A8C029"
+					id: "6E00343E459CD755"
 					type: "item"
 					item: {
 						Count: 1b
@@ -891,9 +891,9 @@
 			y: 6.69d
 			icon: "minecraft:nautilus_shell"
 			optional: true
-			dependencies: ["B949C4277618FEC3"]
+			dependencies: ["3949C4277618FEC3"]
 			tasks: [{
-				id: "A63E9C632FC9CA1D"
+				id: "263E9C632FC9CA1D"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/orcas_might"
 			}]
@@ -914,7 +914,7 @@
 			]
 		}
 		{
-			id: "B9C5E7F638070495"
+			id: "39C5E7F638070495"
 			title: "Угощение для страдпола"
 			description: ["Покормите страдпола личинками комара. Из головастика вырастет страддлер — живая лодка по лаве."]
 			x: -3.09d
@@ -922,18 +922,18 @@
 			icon: "alexsmobs:stradpole_bucket"
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
-				id: "E087F94A3D82DC61"
+				id: "6511488F59080B91"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/stradpole_feed"
 			}]
 			rewards: [
 				{
-					id: "71C4A839FADBDFE9"
+					id: "57D9E4151A7281FF"
 					type: "xp"
 					xp: 230
 				}
 				{
-					id: "F3EBF8F6361311DE"
+					id: "060C759645A23979"
 					type: "item"
 					item: {
 						Count: 1b
@@ -950,15 +950,15 @@
 			y: -4.17d
 			icon: "minecraft:warped_fungus"
 			optional: true
-			dependencies: ["B9C5E7F638070495"]
+			dependencies: ["39C5E7F638070495"]
 			tasks: [{
-				id: "953C777D1C3F57F4"
+				id: "153C777D1C3F57F4"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/tame_warped_toad"
 			}]
 			rewards: [
 				{
-					id: "CD1DE3406350C349"
+					id: "4D1DE3406350C349"
 					type: "xp"
 					xp: 250
 				}
@@ -973,26 +973,26 @@
 			]
 		}
 		{
-			id: "ACE2BBCB182D3BF5"
+			id: "2CE2BBCB182D3BF5"
 			title: "Лавовый гигант в объективе"
 			description: ["В лавовых озёрах плавает лавиафан. Посмотрите на него в подзорную трубу — с безопасного расстояния."]
 			x: -5.84d
 			y: -2.85d
 			icon: "minecraft:spyglass"
-			dependencies: ["B9C5E7F638070495"]
+			dependencies: ["39C5E7F638070495"]
 			tasks: [{
-				id: "4CD42F05A04508CC"
+				id: "2D7ACF415EE5B6A0"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/laviathan_spyglass"
 			}]
 			rewards: [
 				{
-					id: "2346C22A00797C7A"
+					id: "209266EBA61F651F"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "FAA43BD2E8C42E1D"
+					id: "7D90682F4EF40AA3"
 					type: "item"
 					item: {
 						Count: 3b
@@ -1013,9 +1013,9 @@
 			icon: "minecraft:saddle"
 			shape: "star"
 			optional: true
-			dependencies: ["ACE2BBCB182D3BF5"]
+			dependencies: ["2CE2BBCB182D3BF5"]
 			tasks: [{
-				id: "CA07F617A5F2F196"
+				id: "4A07F617A5F2F196"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/laviathan_four_passengers"
 			}]
@@ -1036,7 +1036,7 @@
 			]
 		}
 		{
-			id: "A3CBB2323447F658"
+			id: "23CBB2323447F658"
 			title: "Искажённый комар"
 			description: ["Багровый комар, накормленный странным грибом, превращается в искажённого москита — защитника искажённого леса. Сразите его."]
 			x: -7.88d
@@ -1045,20 +1045,20 @@
 			shape: "crown"
 			size: 1.5d
 			optional: true
-			dependencies: ["ACE2BBCB182D3BF5"]
+			dependencies: ["2CE2BBCB182D3BF5"]
 			tasks: [{
-				id: "88CB5FA27EB0248D"
+				id: "022C21D3254471F2"
 				type: "advancement"
 				advancement: "alexsmobs:alexsmobs/warped_mosco_kill"
 			}]
 			rewards: [
 				{
-					id: "D3D74AF3FB27B065"
+					id: "314B9BD112222F3E"
 					type: "xp"
 					xp: 900
 				}
 				{
-					id: "20ECA331F6491DC0"
+					id: "4288042A4B4AFAC5"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1068,7 +1068,7 @@
 			]
 		}
 		{
-			id: "9B3BBB54EE27AC7B"
+			id: "1B3BBB54EE27AC7B"
 			title: "Питомник трёх биомов"
 			description: ["Разведите лис, панд и верблюдов. Животные из трёх краёв живут у вас дома — Берг была бы счастлива."]
 			x: -5.2d
@@ -1076,22 +1076,22 @@
 			icon: "minecraft:sweet_berries"
 			shape: "star"
 			optional: true
-			dependencies: ["F57181DBDA992F0B"]
+			dependencies: ["757181DBDA992F0B"]
 			tasks: [
 				{
-					id: "0BA5496D2FA20468"
+					id: "2189C25D89A09A16"
 					type: "advancement"
 					advancement: "nasledie:alpha41_qa2/sanctuary/1_fox"
 					title: "Лисята"
 				}
 				{
-					id: "AF241C6F295A9222"
+					id: "5E08DEDB90C4A8D1"
 					type: "advancement"
 					advancement: "nasledie:alpha41_qa2/sanctuary/2_panda"
 					title: "Пандята"
 				}
 				{
-					id: "93F74C0A6DD68C4C"
+					id: "30A41029099205BE"
 					type: "advancement"
 					advancement: "nasledie:alpha41_qa2/sanctuary/3_camel"
 					title: "Верблюжонок"
@@ -1099,12 +1099,12 @@
 			]
 			rewards: [
 				{
-					id: "76D9B5C66CAD2B1A"
+					id: "603B17ED50CC13F7"
 					type: "xp"
 					xp: 690
 				}
 				{
-					id: "AAE41758FBB38292"
+					id: "5E5A0BB6CF0AE3A5"
 					type: "item"
 					item: {
 						Count: 4b
@@ -1112,7 +1112,7 @@
 					}
 				}
 				{
-					id: "99739BBB55D9CBA2"
+					id: "1203180AB52AF07C"
 					type: "item"
 					item: {
 						Count: 16b

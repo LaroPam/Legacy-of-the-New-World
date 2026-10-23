@@ -15,6 +15,10 @@ class ThemeParsingTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             sections('[#1234567890ABCDEF]\nquest_started_color: #FF8800\n')
 
+    def test_selector_with_top_bit_is_rejected(self):
+        with self.assertRaises(ValueError):
+            sections('[*]\n[C54798B08E30ED27]\nquest_started_color: #FF8800\n')
+
     def test_repeated_selector_is_rejected(self):
         with self.assertRaises(ValueError):
             sections('[*]\nbackground: color:transparent\n[*]\n')

@@ -2,6 +2,8 @@
 """Index ids from the pack's JAR files into references/registry.json and references/names_ru.json.
 
 Static evidence only: item models, entity lang keys, data-pack structures/biomes/advancements.
+Item models without a name in any language and without a mention in recipes, loot tables or advancements
+are listed separately (items_without_name): most are parent models, not registered items.
 An id found this way can still be missing at runtime (e.g. disabled by config); an id absent from
 a covered namespace is almost certainly a typo.
 
@@ -48,6 +50,8 @@ def scan(archive, out, langs, depth=0):
             except ValueError:
                 pass
             continue
+        if re.match(r'data/[^/]+/(recipes|loot_tables|advancements)/.+\.json$', name):
+            out['data_refs'].update(m.decode() for m in re.findall(rb'"([a-z0-9_.-]+:[a-z0-9_/.-]+)"', archive.read(name)))
         for kind, pattern in PATTERNS.items():
             match = re.match(pattern, name)
             if not match:
@@ -77,7 +81,7 @@ def main():
     parser.add_argument('--vanilla-ru', type=Path)
     args = parser.parse_args()
     out = {k: set() for k in PATTERNS}
-    out['advancement_info'], out['advancement_items'] = {}, {}
+    out['advancement_info'], out['advancement_items'], out['data_refs'] = {}, {}, set()
     langs = {'en_us': {}, 'ru_ru': {}}
     jars = sorted(args.jars.glob('*.jar'))
     for jar in jars:
@@ -92,6 +96,11 @@ def main():
     registry = {kind: sorted(out[kind]) for kind in kinds}
     registry['namespaces'] = {kind: sorted({i.split(':')[0] for i in out[kind]}) for kind in kinds}
     registry['advancement_items'] = out['advancement_items']
+    # A model with no item/block name in any language that no recipe, loot table or advancement mentions is
+    # usually a parent model (railways:conductor_cap, createaddition:multimeter), not a registered item.
+    named = {key for lang in langs.values() for key in lang}
+    registry['items_without_name'] = sorted(i for i in out['items'] if i not in out['data_refs'] and not {
+        f'item.{i.replace(":", ".")}', f'block.{i.replace(":", ".")}'} & named)
     registry['sources'] = [jar.name for jar in jars]
     (ROOT / 'references' / 'registry.json').write_text(json.dumps(registry, ensure_ascii=False, indent=0) + '\n')
 

@@ -2,7 +2,7 @@
 # «Очи Зодчих» и бой с Визером — сюжетные квесты летописи, здесь показаны ссылками.
 chapter:
   filename: nasledie_netheritage
-  id: BC5663C3D347C93F
+  id: 3C5663C3D347C93F
   group: act2
   title: Нижний мир — огонь и черепа
   icon: minecraft:wither_skeleton_skull
@@ -51,7 +51,7 @@ quests:
 
   # ── Крепость ──
   - key: fortress
-    id: 9657C7068A9F33B4
+    id: 1657C7068A9F33B4
     title: Крепость Нижнего мира
     description:
       - Мосты и залы из незерского кирпича, где живут ифриты и визер-скелеты. Найдите крепость — здесь начинается путь к очам и к обряду.
@@ -132,7 +132,7 @@ quests:
 
   # ── Пиглины ──
   - key: brute
-    id: A9D440BF0B39FBFA
+    id: 29D440BF0B39FBFA
     title: Пиглин-брут
     description:
       - Бруты охраняют бастионы и не любят гостей даже в золоте. Победите одного.
@@ -196,7 +196,7 @@ quests:
 
   # ── Порт и замок ──
   - key: nether_port
-    id: 831CD896CBC3B75D
+    id: 031CD896CBC3B75D
     title: Порт среди лавы
     description:
       - Кто-то построил порт на лавовом озере. Найдите его и откройте сундук на причале.
@@ -212,7 +212,7 @@ quests:
       - {type: item, item: alexsmobs:lava_bottle, count: 2}
 
   - key: nether_keep
-    id: E3F2CE1B298FF952
+    id: 63F2CE1B298FF952
     title: Замок Нижнего мира
     description:
       - Огромный замок с бетонными залами и неожиданным снегом внутри. Найдите его.
@@ -262,7 +262,7 @@ quests:
 
   # ── Земли Нижнего мира ──
   - key: crimson_forest
-    id: FDC38AD8EF13ED6B
+    id: 7DC38AD8EF13ED6B
     title: Багровый лес
     description:
       - Красные грибы-деревья и хоглины. Здесь растут припасы для варки — и для неприятностей.
@@ -279,7 +279,7 @@ quests:
       - {type: item, item: minecraft:magma_cream, count: 4}
 
   - key: warped_forest
-    id: EB5133ED763E8FEC
+    id: 6B5133ED763E8FEC
     title: Искажённый лес
     description:
       - Синий лес, где эндермены чувствуют себя как дома. Самое спокойное место Нижнего мира.
@@ -296,7 +296,7 @@ quests:
       - {type: item, item: minecraft:ender_pearl, count: 4}
 
   - key: soul_valley
-    id: F0DECF35C46F0180
+    id: 70DECF35C46F0180
     title: Долина песка душ
     description:
       - Песок, в котором вязнут ноги, и синее пламя. Именно этот песок нужен для обряда.

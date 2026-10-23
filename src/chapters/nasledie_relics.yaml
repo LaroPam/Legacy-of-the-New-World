@@ -193,7 +193,7 @@ quests:
 
   # ── Artifacts: сундуки, которые кусаются ──
   - key: mimic
-    id: F5D8F4D63F925F92
+    id: 75D8F4D63F925F92
     title: Сундук оказался голодным
     description:
       - Не каждый сундук — сундук. Мимик кусается, зато внутри у него артефакт. Победите одного.
@@ -204,7 +204,7 @@ quests:
     size: 1.2
     deps: [first_relic]
     tasks:
-      - {id: 9252B7D24A80B6D8, type: advancement, advancement: artifacts:chest_slayer}
+      - {id: 1252B7D24A80B6D8, type: advancement, advancement: artifacts:chest_slayer}
     rewards:
       - {type: xp, xp: 300}
       - {type: item, item: sophisticatedbackpacks:advanced_pickup_upgrade}

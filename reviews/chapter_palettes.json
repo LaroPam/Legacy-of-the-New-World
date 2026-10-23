@@ -63,7 +63,7 @@
       "background": "nasledie:textures/backgrounds/bg_chronicle.png"
     },
     "nasledie_life": {
-      "id": "DC7EC49FBED1A9C6",
+      "id": "5C7EC49FBED1A9C6",
       "name": "Зелёный сад",
       "properties": {
         "quest_locked_color": "#61954E",
@@ -84,7 +84,7 @@
       "background": "nasledie:textures/backgrounds/bg_life.png"
     },
     "nasledie_create": {
-      "id": "9B72DF3BE0E6A5DE",
+      "id": "1B72DF3BE0E6A5DE",
       "name": "Латунь и огонь",
       "properties": {
         "quest_locked_color": "#9A6E42",
@@ -147,7 +147,7 @@
       "background": "nasledie:textures/backgrounds/bg_village.png"
     },
     "nasledie_economy": {
-      "id": "8F4597A009915275",
+      "id": "0F4597A009915275",
       "name": "Изумруд и золото",
       "properties": {
         "quest_locked_color": "#399B80",
@@ -168,7 +168,7 @@
       "background": "nasledie:textures/backgrounds/bg_economy.png"
     },
     "nasledie_transport": {
-      "id": "D90DA6CC0E252361",
+      "id": "590DA6CC0E252361",
       "name": "Синий экспресс",
       "properties": {
         "quest_locked_color": "#4470AD",
@@ -210,7 +210,7 @@
       "background": "nasledie:textures/backgrounds/bg_industry.png"
     },
     "nasledie_defense": {
-      "id": "A1279E21532D7CDD",
+      "id": "21279E21532D7CDD",
       "name": "Медь и алый щит",
       "properties": {
         "quest_locked_color": "#9A5E56",
@@ -294,7 +294,7 @@
       "background": "nasledie:textures/backgrounds/bg_guild.png"
     },
     "nasledie_cataclysm": {
-      "id": "C54798B08E30ED27",
+      "id": "454798B08E30ED27",
       "name": "Багровая корона",
       "properties": {
         "quest_locked_color": "#9A3E5E",
@@ -315,7 +315,7 @@
       "background": "nasledie:textures/backgrounds/bg_cataclysm.png"
     },
     "nasledie_archeology": {
-      "id": "CF8AC0B0D69E3A34",
+      "id": "4F8AC0B0D69E3A34",
       "name": "Янтарь раскопок",
       "properties": {
         "quest_locked_color": "#8A7C59",
@@ -357,7 +357,7 @@
       "background": "nasledie:textures/backgrounds/bg_relics.png"
     },
     "nasledie_netheritage": {
-      "id": "BC5663C3D347C93F",
+      "id": "3C5663C3D347C93F",
       "name": "Красная лава",
       "properties": {
         "quest_locked_color": "#9A4642",
@@ -399,7 +399,7 @@
       "background": "nasledie:textures/backgrounds/bg_ocean.png"
     },
     "nasledie_compass": {
-      "id": "9D8645FBEA4E9EC9",
+      "id": "1D8645FBEA4E9EC9",
       "name": "Индиго звёздных карт",
       "properties": {
         "quest_locked_color": "#5565AD",

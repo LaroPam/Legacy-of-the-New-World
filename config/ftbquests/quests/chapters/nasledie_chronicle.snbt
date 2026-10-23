@@ -10,7 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "CA2CFD219A124357"
+			id: "4A2CFD219A124357"
 			title: "Чужой берег"
 			description: [
 				"Максим, Юра, вы не первые, кто высадился на этот берег. Двадцать лет назад вглубь нового мира ушла Первая экспедиция — пятеро учёных во главе с Торвальдом Эклундом. Не вернулся никто."
@@ -22,12 +22,12 @@
 			shape: "star"
 			size: 1.6d
 			tasks: [{
-				id: "5CABB2BA77853098"
+				id: "64CCBD7043684ACC"
 				type: "checkmark"
 				title: "Открыть летопись"
 			}]
 			rewards: [{
-				id: "5EA6B7538ECDD0BF"
+				id: "06671755D3FBE869"
 				type: "item"
 				item: {
 					Count: 1b
@@ -53,20 +53,20 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:spyglass"
-			dependencies: ["CA2CFD219A124357"]
+			dependencies: ["4A2CFD219A124357"]
 			tasks: [{
-				id: "F5F6C315ED6C3CA9"
+				id: "75F6C315ED6C3CA9"
 				type: "structure"
 				structure: "#nasledie:archeologist_camps"
 			}]
 			rewards: [
 				{
-					id: "F93173522A2C8056"
+					id: "793173522A2C8056"
 					type: "xp"
 					xp: 150
 				}
 				{
-					id: "E38D3610DF68BD10"
+					id: "638D3610DF68BD10"
 					type: "item"
 					item: {
 						Count: 1b
@@ -104,7 +104,7 @@
 			icon: "explorerscompass:explorerscompass"
 			dependencies: ["79C6E9FC12713C40"]
 			tasks: [{
-				id: "C981B18151863395"
+				id: "4981B18151863395"
 				type: "advancement"
 				title: "Собрать компас исследователя"
 				advancement: "nasledie:q/chronicle/route"
@@ -157,18 +157,18 @@
 				"06BF2A4D15D6CD27"
 			]
 			tasks: [{
-				id: "BE99A474C277AE61"
+				id: "3E99A474C277AE61"
 				type: "advancement"
 				advancement: "mowziesmobs:kill_ferrous_wroughtnaut"
 			}]
 			rewards: [
 				{
-					id: "9DDE1A58E145C375"
+					id: "1DDE1A58E145C375"
 					type: "xp"
 					xp: 500
 				}
 				{
-					id: "ADBD9DC120FF057E"
+					id: "2DBD9DC120FF057E"
 					type: "item"
 					item: {
 						Count: 1b
@@ -194,7 +194,7 @@
 			]
 		}
 		{
-			id: "A378D8F13118FF97"
+			id: "2378D8F13118FF97"
 			title: "Птица из солнца"
 			description: ["Солнечный народ кормит свою птицу уже тысячу лет. Экспедиция пришла к ним с подарками, а ушла, оставив за собой пепел. Победите Умвути."]
 			x: 10.0d
@@ -206,18 +206,18 @@
 				"72C49E809D227970"
 			]
 			tasks: [{
-				id: "64D38AAD1604EB3D"
+				id: "764E18C3382657CF"
 				type: "advancement"
 				advancement: "mowziesmobs:kill_umvuthi"
 			}]
 			rewards: [
 				{
-					id: "DC40F96AB684B565"
+					id: "0ABD158D41530022"
 					type: "xp"
 					xp: 700
 				}
 				{
-					id: "635E386D097EF9D2"
+					id: "332743A2B408F00F"
 					type: "item"
 					item: {
 						Count: 1b
@@ -225,7 +225,7 @@
 					}
 				}
 				{
-					id: "013782BAE0C4B6B4"
+					id: "66AA3D40CFBA4D1F"
 					type: "item"
 					item: {
 						Count: 1b
@@ -244,7 +244,7 @@
 			]
 		}
 		{
-			id: "DF85EFBB8E452760"
+			id: "5F85EFBB8E452760"
 			title: "Слово отшельника"
 			description: ["На вершине над монастырём живёт отшельник, который лепит камень как глину. Он пускает к себе только тех, кто пройдёт его испытание. Поднимитесь по ожившей скале и не сорвитесь."]
 			x: 10.0d
@@ -253,21 +253,21 @@
 			shape: "crown"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
-				"D49B46DD723548E4"
+				"549B46DD723548E4"
 			]
 			tasks: [{
-				id: "4E1DB51376C7FB15"
+				id: "47CBF9DB23260445"
 				type: "advancement"
 				advancement: "mowziesmobs:sculptor_challenge"
 			}]
 			rewards: [
 				{
-					id: "97D8A240475C876D"
+					id: "31A2F71F625303FA"
 					type: "xp"
 					xp: 800
 				}
 				{
-					id: "EC0D4FC5D10A2854"
+					id: "51717E3F2690E011"
 					type: "item"
 					item: {
 						Count: 1b
@@ -275,7 +275,7 @@
 					}
 				}
 				{
-					id: "B1035FD95CFCE815"
+					id: "434E978AD5063AA8"
 					type: "item"
 					item: {
 						Count: 1b
@@ -294,7 +294,7 @@
 			]
 		}
 		{
-			id: "92AF3238F7B8776E"
+			id: "12AF3238F7B8776E"
 			title: "Зверь зимы"
 			description: ["В снегах спит морозная пасть — зверь, рядом с которым снег не тает веками. Разбудите её и победите. Ледяной кристалл у неё на шее стоит того, чтобы рискнуть."]
 			x: 10.0d
@@ -306,18 +306,18 @@
 				"43488E4931E0F280"
 			]
 			tasks: [{
-				id: "1565813706E2BE4A"
+				id: "198D7041F39722F9"
 				type: "advancement"
 				advancement: "mowziesmobs:kill_frostmaw"
 			}]
 			rewards: [
 				{
-					id: "31BC913C0B9527F9"
+					id: "427B8D52457F8C24"
 					type: "xp"
 					xp: 500
 				}
 				{
-					id: "73EE29CB112F1B68"
+					id: "7813ACF5D180C4B3"
 					type: "item"
 					item: {
 						Count: 1b
@@ -325,7 +325,7 @@
 					}
 				}
 				{
-					id: "860B0832FD78ED99"
+					id: "759CD129F516ADD4"
 					type: "item"
 					item: {
 						Count: 1b
@@ -352,10 +352,10 @@
 			shape: "crown"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
-				"D8C373CD97382003"
+				"58C373CD97382003"
 			]
 			tasks: [{
-				id: "D78CB589108A8AC9"
+				id: "578CB589108A8AC9"
 				type: "kill"
 				entity: "minecraft:elder_guardian"
 				value: 1
@@ -367,7 +367,7 @@
 					xp: 550
 				}
 				{
-					id: "889AF9953926B7C0"
+					id: "089AF9953926B7C0"
 					type: "item"
 					item: {
 						Count: 1b
@@ -375,7 +375,7 @@
 					}
 				}
 				{
-					id: "89ACF2BA032F7D73"
+					id: "09ACF2BA032F7D73"
 					type: "item"
 					item: {
 						Count: 24b
@@ -383,7 +383,7 @@
 					}
 				}
 				{
-					id: "F445716680CD6384"
+					id: "7445716680CD6384"
 					type: "item"
 					item: {
 						Count: 1b
@@ -401,7 +401,7 @@
 			]
 		}
 		{
-			id: "B433E7FAF2F51B45"
+			id: "3433E7FAF2F51B45"
 			title: "Очи Зодчих"
 			description: ["Эклунд писал об «очах», что ведут к сосудам. Соберите любое око Катаклизма — у каждого свой рецепт, и все начинаются с ока Края. Брошенное око летит к своему логову."]
 			x: 10.0d
@@ -413,19 +413,19 @@
 				"3D03E0EFD6FA3386"
 			]
 			tasks: [{
-				id: "D9B3E63B0171B3D4"
+				id: "683538A6C43355F9"
 				type: "advancement"
 				title: "Получить любое око Катаклизма"
 				advancement: "nasledie:q/chronicle/nether_eye"
 			}]
 			rewards: [
 				{
-					id: "DB1DCD4BDD87AB7E"
+					id: "76E4F89CF9066AEA"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "6BF9C1918775DBE0"
+					id: "224F140E35DAA1B8"
 					type: "item"
 					item: {
 						Count: 4b
@@ -433,7 +433,7 @@
 					}
 				}
 				{
-					id: "82DBAE31EE90683C"
+					id: "3B3D0024D41FBB52"
 					type: "item"
 					item: {
 						Count: 1b
@@ -452,7 +452,7 @@
 			]
 		}
 		{
-			id: "88304673F4543996"
+			id: "08304673F4543996"
 			title: "Три души в одной"
 			description: ["В стене крепости Эклунд нашёл обряд — песок душ и три черепа. Проведите его сами и победите то, что поднимется из песка. Лучше подальше от дома."]
 			x: 13.0d
@@ -461,23 +461,23 @@
 			shape: "crown"
 			size: 1.7d
 			dependencies: [
-				"B433E7FAF2F51B45"
-				"E41D15990FE74505"
+				"3433E7FAF2F51B45"
+				"641D15990FE74505"
 			]
 			tasks: [{
-				id: "1592AE1D05E0A4EB"
+				id: "387A61B0862156F6"
 				type: "advancement"
 				title: "Победить Визера"
 				advancement: "nasledie:q/chronicle/wither"
 			}]
 			rewards: [
 				{
-					id: "0838711EB361371C"
+					id: "2D2D182AC99FB5DE"
 					type: "xp"
 					xp: 1000
 				}
 				{
-					id: "97AD441F46D10154"
+					id: "0279075CAD682EFF"
 					type: "item"
 					item: {
 						Count: 1b
@@ -485,7 +485,7 @@
 					}
 				}
 				{
-					id: "AC98ED0F150CA845"
+					id: "050A779C11C75CCD"
 					type: "item"
 					item: {
 						Count: 1b
@@ -510,7 +510,7 @@
 			x: 15.0d
 			y: 2.5d
 			icon: "cataclysm:mech_eye"
-			dependencies: ["B433E7FAF2F51B45"]
+			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "78715FFBE94F12D2"
 				type: "advancement"
@@ -518,12 +518,12 @@
 			}]
 			rewards: [
 				{
-					id: "ED414473875F773F"
+					id: "6D414473875F773F"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "C95387047ABA531C"
+					id: "495387047ABA531C"
 					type: "item"
 					item: {
 						Count: 1b
@@ -558,7 +558,7 @@
 			]
 		}
 		{
-			id: "8792C39846E0D49E"
+			id: "0792C39846E0D49E"
 			title: "Машина, которая помнит"
 			description: ["В сердце фабрики спит Предвестник — мастер Зодчих в железном теле. Разбудите его и победите. Пушки, о которых писал Странд, здесь очень пригодятся."]
 			x: 18.0d
@@ -568,18 +568,18 @@
 			size: 1.7d
 			dependencies: ["391F9987F1F32442"]
 			tasks: [{
-				id: "89774D9F3E3C6DE6"
+				id: "3E3EF2ED57584EBD"
 				type: "advancement"
 				advancement: "cataclysm:kill_harbinger"
 			}]
 			rewards: [
 				{
-					id: "3DBECCB006E5A4A2"
+					id: "04D65C5043851E7D"
 					type: "xp"
 					xp: 1200
 				}
 				{
-					id: "D358740B1CA63A0E"
+					id: "6812C43644942FB8"
 					type: "item"
 					item: {
 						Count: 1b
@@ -587,7 +587,7 @@
 					}
 				}
 				{
-					id: "CDD5A4AD0BDD9336"
+					id: "33D4C73713E363C4"
 					type: "item"
 					item: {
 						Count: 1b
@@ -595,7 +595,7 @@
 					}
 				}
 				{
-					id: "09873DB0F23EBB7D"
+					id: "70A47E5AEE4FCD2B"
 					type: "item"
 					item: {
 						Count: 1b
@@ -623,17 +623,17 @@
 			shape: "crown"
 			size: 1.7d
 			dependencies: [
-				"B433E7FAF2F51B45"
+				"3433E7FAF2F51B45"
 				"0A9ACE48F5328D23"
 			]
 			tasks: [{
-				id: "8875F4EDDF8E0219"
+				id: "0875F4EDDF8E0219"
 				type: "advancement"
 				advancement: "cataclysm:kill_monstrosity"
 			}]
 			rewards: [
 				{
-					id: "CAB7BB572E49F59A"
+					id: "4AB7BB572E49F59A"
 					type: "xp"
 					xp: 1200
 				}
@@ -654,7 +654,7 @@
 					}
 				}
 				{
-					id: "D511C0567A842ADC"
+					id: "5511C0567A842ADC"
 					type: "item"
 					item: {
 						Count: 1b
@@ -682,11 +682,11 @@
 			shape: "shield"
 			size: 1.5d
 			dependencies: [
-				"8792C39846E0D49E"
+				"0792C39846E0D49E"
 				"52813202FFECF301"
 			]
 			tasks: [{
-				id: "CD0D4E5859AEB4DC"
+				id: "4D0D4E5859AEB4DC"
 				type: "advancement"
 				title: "Победить младшего стража Катаклизма"
 				advancement: "nasledie:q/chronicle/awakened"
@@ -698,7 +698,7 @@
 					xp: 400
 				}
 				{
-					id: "9B427F19B8C25D10"
+					id: "1B427F19B8C25D10"
 					type: "item"
 					item: {
 						Count: 1b
@@ -709,7 +709,7 @@
 			min_required_dependencies: 1
 		}
 		{
-			id: "92B1754C45756107"
+			id: "12B1754C45756107"
 			title: "Рыцарь, принявший огонь"
 			description: ["На пылающей арене горит рыцарь Зодчих. Он до сих пор помнит присягу. Победите Игниса."]
 			x: 24.5d
@@ -719,21 +719,21 @@
 			size: 1.7d
 			dependencies: [
 				"1175C66EAEDBF91E"
-				"FEE6E381AE1C38B7"
+				"7EE6E381AE1C38B7"
 			]
 			tasks: [{
-				id: "8846161F0DA4EECA"
+				id: "2C42DBFE5B53968B"
 				type: "advancement"
 				advancement: "cataclysm:kill_ignis"
 			}]
 			rewards: [
 				{
-					id: "1BA3AA673D42037C"
+					id: "7BC490C21266DBD6"
 					type: "xp"
 					xp: 1400
 				}
 				{
-					id: "9ED21AD4C03F1D0C"
+					id: "2C26E693BD6394C5"
 					type: "item"
 					item: {
 						Count: 1b
@@ -741,7 +741,7 @@
 					}
 				}
 				{
-					id: "E3952EE086035385"
+					id: "26CD68318C9970BB"
 					type: "item"
 					item: {
 						Count: 1b
@@ -749,7 +749,7 @@
 					}
 				}
 				{
-					id: "1E51C0FBC66C1B76"
+					id: "32F32CA0F0985A27"
 					type: "item"
 					item: {
 						Count: 1b
@@ -799,7 +799,7 @@
 					}
 				}
 				{
-					id: "935BA7AA86405F85"
+					id: "135BA7AA86405F85"
 					type: "item"
 					item: {
 						Count: 1b
@@ -807,7 +807,7 @@
 					}
 				}
 				{
-					id: "BBD591C8A5238A20"
+					id: "3BD591C8A5238A20"
 					type: "item"
 					item: {
 						Count: 1b
@@ -826,7 +826,7 @@
 			]
 		}
 		{
-			id: "A13ADF5DA222DA68"
+			id: "213ADF5DA222DA68"
 			title: "Король во льду"
 			description: ["Король Зодчих запер себя в ледяной тюрьме вместе со стражей, чтобы не выпустить проклятие. Драугры до сих пор несут караул. Победите Маледиктуса."]
 			x: 24.5d
@@ -836,21 +836,21 @@
 			size: 1.7d
 			dependencies: [
 				"1175C66EAEDBF91E"
-				"9648CF8E2A62BFAF"
+				"1648CF8E2A62BFAF"
 			]
 			tasks: [{
-				id: "5ED9A7559CDF7465"
+				id: "634536BF491B3D67"
 				type: "advancement"
 				advancement: "cataclysm:kill_maledictus"
 			}]
 			rewards: [
 				{
-					id: "B96B0C4C77D96095"
+					id: "12E76C970238CC28"
 					type: "xp"
 					xp: 1400
 				}
 				{
-					id: "F02A85D1508D692E"
+					id: "77DAAFB069F56FB0"
 					type: "item"
 					item: {
 						Count: 1b
@@ -858,7 +858,7 @@
 					}
 				}
 				{
-					id: "F481B30B29228704"
+					id: "639E694329071AC2"
 					type: "item"
 					item: {
 						Count: 1b
@@ -866,7 +866,7 @@
 					}
 				}
 				{
-					id: "E8BFBA3C0477A9AF"
+					id: "022BA79D6F63B02C"
 					type: "item"
 					item: {
 						Count: 1b
@@ -885,7 +885,7 @@
 			]
 		}
 		{
-			id: "A0BE4189EEE72883"
+			id: "20BE4189EEE72883"
 			title: "Боль, ушедшая в глубину"
 			description: ["В затонувшем городе спит Левиафан — единственный сосуд, в который Зодчие поместили не себя, а свою боль. Победите его."]
 			x: 24.5d
@@ -895,21 +895,21 @@
 			size: 1.7d
 			dependencies: [
 				"1175C66EAEDBF91E"
-				"A96277A6BE605D32"
+				"296277A6BE605D32"
 			]
 			tasks: [{
-				id: "1EBDB9643D7EB505"
+				id: "0BB2C77BF969274F"
 				type: "advancement"
 				advancement: "cataclysm:kill_leviathan"
 			}]
 			rewards: [
 				{
-					id: "5DEE238113349FA8"
+					id: "3A930EA3AABCB3AC"
 					type: "xp"
 					xp: 1500
 				}
 				{
-					id: "91689FD078AEAA6A"
+					id: "51E1D81785A179E5"
 					type: "item"
 					item: {
 						Count: 1b
@@ -917,7 +917,7 @@
 					}
 				}
 				{
-					id: "E84F73A18BECAAC1"
+					id: "75FBA8CCC02E51E8"
 					type: "item"
 					item: {
 						Count: 1b
@@ -925,7 +925,7 @@
 					}
 				}
 				{
-					id: "FF288AA40E37E3B0"
+					id: "2A7A80A317B3C9AE"
 					type: "item"
 					item: {
 						Count: 1b
@@ -943,7 +943,7 @@
 			]
 		}
 		{
-			id: "E3651E9F6E43FAEB"
+			id: "63651E9F6E43FAEB"
 			title: "Последняя запись Линд"
 			description: ["Над облаками стоит акрополь, где жрица бури сторожит небо. У её подножия Сигрид Линд оставила последнюю запись. Победите Сциллу."]
 			x: 24.5d
@@ -953,21 +953,21 @@
 			size: 1.7d
 			dependencies: [
 				"1175C66EAEDBF91E"
-				"F2FD5EEB117B3119"
+				"72FD5EEB117B3119"
 			]
 			tasks: [{
-				id: "047FE3B060B829FF"
+				id: "46EFE223FB90D7FA"
 				type: "advancement"
 				advancement: "cataclysm:kill_scylla"
 			}]
 			rewards: [
 				{
-					id: "E16D2458A7B9A348"
+					id: "044D6D1F7E905367"
 					type: "xp"
 					xp: 1500
 				}
 				{
-					id: "F3285A51EE4988DA"
+					id: "1DB92022E49B1CC1"
 					type: "item"
 					item: {
 						Count: 1b
@@ -975,7 +975,7 @@
 					}
 				}
 				{
-					id: "B89AA4710B247A08"
+					id: "72533C5D66C4D320"
 					type: "item"
 					item: {
 						Count: 1b
@@ -983,7 +983,7 @@
 					}
 				}
 				{
-					id: "2D57A528FCF89ED5"
+					id: "21A1B8D798DAFF2D"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1002,7 +1002,7 @@
 			]
 		}
 		{
-			id: "A80C23723A869A8B"
+			id: "280C23723A869A8B"
 			title: "Он жив"
 			description: ["Стражи падают один за другим. Когда падут хотя бы четверо из пяти пробуждённых, в крепости, где спит портал в Край, вас ждёт свежая страница — подписанная человеком, который «погиб» двадцать лет назад. Найдите крепость."]
 			x: 28.5d
@@ -1011,25 +1011,25 @@
 			shape: "star"
 			size: 1.7d
 			dependencies: [
-				"92B1754C45756107"
+				"12B1754C45756107"
 				"64338CFBA5C5B699"
-				"A13ADF5DA222DA68"
-				"A0BE4189EEE72883"
-				"E3651E9F6E43FAEB"
+				"213ADF5DA222DA68"
+				"20BE4189EEE72883"
+				"63651E9F6E43FAEB"
 			]
 			tasks: [{
-				id: "AB1B7CC5D05DFAED"
+				id: "65250602F902F487"
 				type: "structure"
 				structure: "betterstrongholds:stronghold"
 			}]
 			rewards: [
 				{
-					id: "678FFC9F3A92D692"
+					id: "732423788DC8D138"
 					type: "xp"
 					xp: 800
 				}
 				{
-					id: "CA2BDC2C1C8E3DC9"
+					id: "0370E8A8CF8A6958"
 					type: "item"
 					item: {
 						Count: 12b
@@ -1037,7 +1037,7 @@
 					}
 				}
 				{
-					id: "ED6BFF0FAD3E7EA0"
+					id: "619F592A2B8D56E1"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1065,15 +1065,15 @@
 			icon: "minecraft:dragon_head"
 			shape: "crown"
 			size: 1.8d
-			dependencies: ["A80C23723A869A8B"]
+			dependencies: ["280C23723A869A8B"]
 			tasks: [{
-				id: "EBD62E9EA214E97C"
+				id: "6BD62E9EA214E97C"
 				type: "advancement"
 				advancement: "minecraft:end/kill_dragon"
 			}]
 			rewards: [
 				{
-					id: "9002185FCFB299B9"
+					id: "1002185FCFB299B9"
 					type: "xp"
 					xp: 2000
 				}
@@ -1086,7 +1086,7 @@
 					}
 				}
 				{
-					id: "9C046519268D530B"
+					id: "1C046519268D530B"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1106,7 +1106,7 @@
 			size: 2.2d
 			dependencies: [
 				"367C7D7E1F81D391"
-				"8B22878BF8763415"
+				"0B22878BF8763415"
 			]
 			tasks: [{
 				id: "0FB2E313BC492326"
@@ -1128,7 +1128,7 @@
 					}
 				}
 				{
-					id: "9EAE7768FFBD513A"
+					id: "1EAE7768FFBD513A"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1136,7 +1136,7 @@
 					}
 				}
 				{
-					id: "C49BC8F3BF525C22"
+					id: "449BC8F3BF525C22"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1155,7 +1155,7 @@
 			]
 		}
 		{
-			id: "F691DA83D3708164"
+			id: "7691DA83D3708164"
 			title: "Наследие нового мира"
 			description: ["Сосуды разбиты, а мир не рассыпался. Его держит теперь то, что построили вы, — деревня, которую вы защитили, дороги, мастерская, которая работает сама. Зажгите маяк на полную мощь — из звезды, что когда-то держала три души."]
 			x: 39.5d
@@ -1165,23 +1165,23 @@
 			size: 2.4d
 			dependencies: [
 				"4E228116310381E8"
-				"A86CDB4787747C32"
-				"D727915E29A5F477"
-				"9B721B53DDC184D8"
+				"286CDB4787747C32"
+				"5727915E29A5F477"
+				"1B721B53DDC184D8"
 			]
 			tasks: [{
-				id: "4338F76ACBEA2574"
+				id: "387FB4749C0DF95D"
 				type: "advancement"
 				advancement: "minecraft:nether/create_full_beacon"
 			}]
 			rewards: [
 				{
-					id: "1E1DB4EDD09B2A7E"
+					id: "43CCCF1DA4461133"
 					type: "xp"
 					xp: 5000
 				}
 				{
-					id: "C946AC55DF371FA8"
+					id: "21A20151C2188229"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1189,7 +1189,7 @@
 					}
 				}
 				{
-					id: "D53E75B0EC9A47FF"
+					id: "1B49D6E17FB3C545"
 					type: "item"
 					item: {
 						Count: 4b
@@ -1197,7 +1197,7 @@
 					}
 				}
 				{
-					id: "CDAA1CDCBD696096"
+					id: "6646F2DE163BB554"
 					type: "item"
 					item: {
 						Count: 2b
@@ -1205,7 +1205,7 @@
 					}
 				}
 				{
-					id: "72B5ABFA8514D6FD"
+					id: "11E44707FA439EDD"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1231,13 +1231,13 @@
 				"1C4B8279C22D289B"
 			]
 			tasks: [{
-				id: "8A2444928B3F870C"
+				id: "0A2444928B3F870C"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/defeat_forsaken"
 			}]
 			rewards: [
 				{
-					id: "81D28718EBFF5557"
+					id: "01D28718EBFF5557"
 					type: "xp"
 					xp: 1400
 				}
@@ -1279,10 +1279,10 @@
 			size: 1.7d
 			dependencies: [
 				"0DD7A99E440FC3DA"
-				"DD30229DC0039862"
+				"5D30229DC0039862"
 			]
 			tasks: [{
-				id: "8F29C9862B5FC946"
+				id: "0F29C9862B5FC946"
 				type: "advancement"
 				title: "Победить Кораблекрушителя"
 				advancement: "nasledie:q/chronicle/hullbreaker"
@@ -1344,7 +1344,7 @@
 					xp: 1500
 				}
 				{
-					id: "983E3FB46F05AD57"
+					id: "183E3FB46F05AD57"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1370,7 +1370,7 @@
 			]
 		}
 		{
-			id: "FED39CE9F2148371"
+			id: "7ED39CE9F2148371"
 			title: "Сосуд, который выбрал сам"
 			description: ["Сотрясозилла вылупилась из ядерного огня — неудачный опыт Зодчих с чистой энергией. Её не нужно побеждать. Накормите её и приручите."]
 			x: 27.5d
@@ -1383,18 +1383,18 @@
 				"7AF2CF003133B836"
 			]
 			tasks: [{
-				id: "8333D96D7CC28801"
+				id: "13D8EDEAF083D42C"
 				type: "advancement"
 				advancement: "alexscaves:alexscaves/tame_tremorzilla"
 			}]
 			rewards: [
 				{
-					id: "DFADBA7DC31D6CD5"
+					id: "429E3656A0667A4D"
 					type: "xp"
 					xp: 1500
 				}
 				{
-					id: "1A8CB29E78C70A27"
+					id: "09491CDCDF12B5D7"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1402,7 +1402,7 @@
 					}
 				}
 				{
-					id: "9077090579E77E07"
+					id: "0CB1CE8D46D09549"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1430,10 +1430,10 @@
 			size: 1.6d
 			dependencies: [
 				"1175C66EAEDBF91E"
-				"8B88E55204890F85"
+				"0B88E55204890F85"
 			]
 			tasks: [{
-				id: "EDE789ECA5624831"
+				id: "6DE789ECA5624831"
 				type: "advancement"
 				title: "Открыть сундук древнего города"
 				advancement: "nasledie:q/chronicle/ancient_city"
@@ -1445,7 +1445,7 @@
 					xp: 1000
 				}
 				{
-					id: "D16053981E370393"
+					id: "516053981E370393"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1472,7 +1472,7 @@
 			]
 		}
 		{
-			id: "9B9C44FAB8D12B42"
+			id: "1B9C44FAB8D12B42"
 			title: "Тот, кто слушает"
 			description: ["Хранитель охраняет тишину древнего города. Он слеп, но слышит каждый шаг. Победите его — если решитесь."]
 			x: 17.0d
@@ -1482,19 +1482,19 @@
 			size: 1.7d
 			dependencies: ["0DD7A99E440FC3DA"]
 			tasks: [{
-				id: "5267239FF99CF20D"
+				id: "5CFDCD1F2138D311"
 				type: "advancement"
 				title: "Победить Хранителя"
 				advancement: "nasledie:q/chronicle/warden"
 			}]
 			rewards: [
 				{
-					id: "331F537EFC76EDF5"
+					id: "49F50F90931EB19D"
 					type: "xp"
 					xp: 2000
 				}
 				{
-					id: "F91B255B618C306F"
+					id: "7E5B1265B97C7E67"
 					type: "item"
 					item: {
 						Count: 1b
@@ -1502,7 +1502,7 @@
 					}
 				}
 				{
-					id: "687DA5F36E0B1A5E"
+					id: "639D02F763C3B17B"
 					type: "item"
 					item: {
 						Count: 8b

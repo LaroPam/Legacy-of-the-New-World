@@ -10,7 +10,7 @@ import questbook  # noqa: E402
 import validate  # noqa: E402
 
 CHAPTER = """
-chapter: {filename: test_a, id: 0000000000000A01, group: 842B4DB4DBD349A0, title: Тест, icon: minecraft:book,
+chapter: {filename: test_a, id: 0000000000000A01, group: 042B4DB4DBD349A0, title: Тест, icon: minecraft:book,
           order_index: 0, default_quest_shape: circle}
 quests:
   - key: start
@@ -29,7 +29,7 @@ quests:
     rewards: [{type: item, item: minecraft:emerald, count: 3}]
 """
 OTHER = """
-chapter: {filename: test_b, id: 0000000000000B01, group: 842B4DB4DBD349A0, title: Другая, icon: minecraft:map, order_index: 1}
+chapter: {filename: test_b, id: 0000000000000B01, group: 042B4DB4DBD349A0, title: Другая, icon: minecraft:map, order_index: 1}
 quests:
   - key: far
     title: Далеко
@@ -135,7 +135,7 @@ class Validation(unittest.TestCase):
     def files(self, *sources):
         out = build(*sources)
         files = {f'config/ftbquests/quests/chapters/{n}.snbt': snbt.dumps(c).encode() for n, c in out.items()}
-        files['config/ftbquests/quests/chapter_groups.snbt'] = b'{chapter_groups: [{id: "842B4DB4DBD349A0", title: "G"}]}'
+        files['config/ftbquests/quests/chapter_groups.snbt'] = b'{chapter_groups: [{id: "042B4DB4DBD349A0", title: "G"}]}'
         return files
 
     def codes(self, files, registry=None):

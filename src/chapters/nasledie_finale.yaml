@@ -89,7 +89,7 @@ quests:
     optional: true
     deps: [capsid]
     tasks:
-      - {id: A4355D31B671A4F9, type: advancement, advancement: alexsmobs:alexsmobs/ender_flu}
+      - {id: 24355D31B671A4F9, type: advancement, advancement: alexsmobs:alexsmobs/ender_flu}
     rewards:
       - {type: xp, xp: 260}
       - {type: item, item: minecraft:chorus_fruit, count: 16}
@@ -106,7 +106,7 @@ quests:
     icon: alexsmobs:cosmic_cod
     deps: [capsid]
     tasks:
-      - {id: AE1702787FA1C576, type: advancement, advancement: alexsmobs:alexsmobs/tame_cosmaw}
+      - {id: 2E1702787FA1C576, type: advancement, advancement: alexsmobs:alexsmobs/tame_cosmaw}
     rewards:
       - {type: xp, xp: 400}
       - {type: item, item: alexsmobs:cosmic_cod, count: 8}
@@ -114,7 +114,7 @@ quests:
 
   # ── Эпилог: то, что под миром ──
   - key: void_summon
-    id: C5769170EBDD1A02
+    id: 45769170EBDD1A02
     title: Приманка для пустоты
     description:
       - Личинка багрового комара в капсиде становится загадочным червём. Брошенный в пустоту Края, он позовёт то, что живёт под островами.
@@ -161,7 +161,7 @@ quests:
     size: 1.8
     deps: [void_summon]
     tasks:
-      - {id: D82E89EEE3373184, type: advancement, advancement: alexsmobs:alexsmobs/void_worm_kill}
+      - {id: 582E89EEE3373184, type: advancement, advancement: alexsmobs:alexsmobs/void_worm_kill}
     rewards:
       - {type: xp, xp: 2500}
       - {type: item, item: alexsmobs:dimensional_carver}

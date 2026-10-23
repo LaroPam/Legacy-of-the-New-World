@@ -1,7 +1,7 @@
 {
 	filename: "nasledie_transport"
-	id: "D90DA6CC0E252361"
-	group: "C513A3C540C2F7E2"
+	id: "590DA6CC0E252361"
+	group: "4513A3C540C2F7E2"
 	title: "Дороги нового мира — рельсы и крылья"
 	icon: "create:track"
 	order_index: 11
@@ -11,7 +11,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "C1772DE6B882A602"
+			id: "41772DE6B882A602"
 			title: "Материал большого пути"
 			description: ["Прочный лист из обсидиана и меди нужен для колёс и тормозов поезда. С него начинается железная дорога."]
 			x: 0.0d
@@ -20,18 +20,18 @@
 			size: 1.4d
 			dependencies: ["027C7ABF4F61942F"]
 			tasks: [{
-				id: "B40BFA40C00DDCF0"
+				id: "21E2D5C57F07FE7D"
 				type: "advancement"
 				advancement: "create:sturdy_sheet"
 			}]
 			rewards: [
 				{
-					id: "F3DD70C0FC70BA53"
+					id: "49995F8EF66C4BD1"
 					type: "xp"
 					xp: 120
 				}
 				{
-					id: "81DB6E786E38750B"
+					id: "30EAE2B3C9EF15C9"
 					type: "item"
 					item: {
 						Count: 1b
@@ -47,9 +47,9 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "create:track"
-			dependencies: ["C1772DE6B882A602"]
+			dependencies: ["41772DE6B882A602"]
 			tasks: [{
-				id: "EE2A7BA814C6A78C"
+				id: "6E2A7BA814C6A78C"
 				type: "advancement"
 				advancement: "create:track_0"
 			}]
@@ -60,7 +60,7 @@
 					xp: 100
 				}
 				{
-					id: "A33AE9294DACC3AC"
+					id: "233AE9294DACC3AC"
 					type: "item"
 					item: {
 						Count: 2b
@@ -84,7 +84,7 @@
 			}]
 			rewards: [
 				{
-					id: "F5CD68509D215DC2"
+					id: "75CD68509D215DC2"
 					type: "xp"
 					xp: 100
 				}
@@ -99,7 +99,7 @@
 			]
 		}
 		{
-			id: "D727915E29A5F477"
+			id: "5727915E29A5F477"
 			title: "Поезд готов к отправлению"
 			description: ["Соберите состав с тележками и пультом машиниста на станции. Первый рейс — праздник для всей деревни."]
 			x: 9.0d
@@ -109,18 +109,18 @@
 			size: 1.5d
 			dependencies: ["0BE47753BC6BEF28"]
 			tasks: [{
-				id: "B8171EB789B81417"
+				id: "20D845B36A996464"
 				type: "advancement"
 				advancement: "create:train"
 			}]
 			rewards: [
 				{
-					id: "2674A64D5B3D1E35"
+					id: "008B76060ABCE68A"
 					type: "xp"
 					xp: 250
 				}
 				{
-					id: "CEBECBC9E736F460"
+					id: "39BD9A012B84BD77"
 					type: "item"
 					item: {
 						Count: 2b
@@ -137,7 +137,7 @@
 			y: -3.0d
 			icon: "create:steam_whistle"
 			optional: true
-			dependencies: ["D727915E29A5F477"]
+			dependencies: ["5727915E29A5F477"]
 			tasks: [{
 				id: "13197C0B2EC277DE"
 				type: "advancement"
@@ -150,7 +150,7 @@
 					xp: 100
 				}
 				{
-					id: "DC825E653C97CD87"
+					id: "5C825E653C97CD87"
 					type: "item"
 					item: {
 						Count: 1b
@@ -166,9 +166,9 @@
 			x: 12.0d
 			y: 0.0d
 			icon: "create:schedule"
-			dependencies: ["D727915E29A5F477"]
+			dependencies: ["5727915E29A5F477"]
 			tasks: [{
-				id: "B2C88DE4AE203ABA"
+				id: "32C88DE4AE203ABA"
 				type: "advancement"
 				advancement: "create:conductor"
 			}]
@@ -179,7 +179,7 @@
 					xp: 150
 				}
 				{
-					id: "DADF042A6D041FEB"
+					id: "5ADF042A6D041FEB"
 					type: "item"
 					item: {
 						Count: 1b
@@ -208,7 +208,7 @@
 					xp: 100
 				}
 				{
-					id: "D2D9921817C16797"
+					id: "52D9921817C16797"
 					type: "item"
 					item: {
 						Count: 2b
@@ -227,7 +227,7 @@
 			optional: true
 			dependencies: ["3DC5EEC5097BB375"]
 			tasks: [{
-				id: "AF4ED2A5EB3297EA"
+				id: "2F4ED2A5EB3297EA"
 				type: "advancement"
 				advancement: "create:red_signal"
 			}]
@@ -257,7 +257,7 @@
 			optional: true
 			dependencies: ["7B13E63BEA35FC61"]
 			tasks: [{
-				id: "8BBDE38B164E342E"
+				id: "0BBDE38B164E342E"
 				type: "advancement"
 				advancement: "create:train_crash_backwards"
 			}]
@@ -268,7 +268,7 @@
 					xp: 250
 				}
 				{
-					id: "A360766DB9A877B6"
+					id: "2360766DB9A877B6"
 					type: "item"
 					item: {
 						Count: 3b
@@ -316,7 +316,7 @@
 			optional: true
 			dependencies: ["27A5DCA80F77C440"]
 			tasks: [{
-				id: "D6ED777B3EBC69A0"
+				id: "56ED777B3EBC69A0"
 				type: "advancement"
 				advancement: "create:track_crafting_factory"
 			}]
@@ -327,7 +327,7 @@
 					xp: 200
 				}
 				{
-					id: "CC54B7642C44986C"
+					id: "4C54B7642C44986C"
 					type: "item"
 					item: {
 						Count: 1b
@@ -346,18 +346,18 @@
 			optional: true
 			dependencies: ["3E14426D5444F75E"]
 			tasks: [{
-				id: "CAF9C5EA4281492F"
+				id: "4AF9C5EA4281492F"
 				type: "advancement"
 				advancement: "create:long_train"
 			}]
 			rewards: [
 				{
-					id: "F34BD200412151A8"
+					id: "734BD200412151A8"
 					type: "xp"
 					xp: 220
 				}
 				{
-					id: "ADD73AD11009B0DE"
+					id: "2DD73AD11009B0DE"
 					type: "item"
 					item: {
 						Count: 4b
@@ -367,7 +367,7 @@
 			]
 		}
 		{
-			id: "B6EA6A2338C90595"
+			id: "36EA6A2338C90595"
 			title: "Пять тысяч блоков от дома"
 			description: ["Проедьте на поезде пять тысяч блоков за один рейс. Протяните линию к дальнему логову — пусть Катаклизм будет на расстоянии поездки."]
 			x: 15.0d
@@ -378,18 +378,18 @@
 			optional: true
 			dependencies: ["0A24638E79FF2418"]
 			tasks: [{
-				id: "D59E29C768EC9916"
+				id: "67E32EA4AECD41A1"
 				type: "advancement"
 				advancement: "create:long_travel"
 			}]
 			rewards: [
 				{
-					id: "C40FBD169C39CE32"
+					id: "48D28E363CC6A588"
 					type: "xp"
 					xp: 400
 				}
 				{
-					id: "8364AD5822D2ED4D"
+					id: "5E27CAE1B6ED06DE"
 					type: "item"
 					item: {
 						Count: 1b
@@ -399,7 +399,7 @@
 			]
 		}
 		{
-			id: "AB76CE2DB46422C6"
+			id: "2B76CE2DB46422C6"
 			title: "Рейс в другое измерение"
 			description: ["Проведите рельсы сквозь портал. Поезд в Нижний мир — лучший способ возить огненные стержни."]
 			x: 18.0d
@@ -409,18 +409,18 @@
 			optional: true
 			dependencies: ["57D8DDEFF1169558"]
 			tasks: [{
-				id: "0624A1E3E21EE0D7"
+				id: "48802ED1FC6FF50D"
 				type: "advancement"
 				advancement: "create:train_portal"
 			}]
 			rewards: [
 				{
-					id: "8BF1A2FC2A9F08AD"
+					id: "090F99DAA57B72F2"
 					type: "xp"
 					xp: 300
 				}
 				{
-					id: "776141C8B86BC78F"
+					id: "3B1D46BA74CFEF06"
 					type: "item"
 					item: {
 						Count: 1b
@@ -439,7 +439,7 @@
 			optional: true
 			dependencies: ["0BE47753BC6BEF28"]
 			tasks: [{
-				id: "DA248197E5BE4BA0"
+				id: "5A248197E5BE4BA0"
 				type: "advancement"
 				advancement: "create:train_roadkill"
 			}]
@@ -460,7 +460,7 @@
 			]
 		}
 		{
-			id: "B39341943A77E20B"
+			id: "339341943A77E20B"
 			title: "Дрезина для осмотра пути"
 			description: ["Поставьте дрезину и прокатитесь вдоль линии. Ручной привод — Юре полезно."]
 			x: 3.0d
@@ -469,19 +469,19 @@
 			optional: true
 			dependencies: ["168FB859D289DA38"]
 			tasks: [{
-				id: "EEF5774CADE39519"
+				id: "6EF5774CADE39519"
 				type: "advancement"
 				advancement: "nasledie:alpha34/actions/eef5774cade39519"
 				title: "Поставить дрезину"
 			}]
 			rewards: [
 				{
-					id: "07A46A87E8836648"
+					id: "5E972719696C68E8"
 					type: "xp"
 					xp: 100
 				}
 				{
-					id: "C71F05C683354A76"
+					id: "578C8E36EEC3DE1D"
 					type: "item"
 					item: {
 						Count: 4b
@@ -496,18 +496,18 @@
 			description: ["Наденьте фуражку кондуктора. Теперь вы главный на вокзале — Юра, предъяви билет."]
 			x: 12.0d
 			y: 3.0d
-			icon: "railways:conductor_cap"
+			icon: "railways:red_conductor_cap"
 			optional: true
 			dependencies: ["27A5DCA80F77C440"]
 			tasks: [{
-				id: "A62C8B9DBBC8BE51"
+				id: "262C8B9DBBC8BE51"
 				type: "advancement"
 				advancement: "nasledie:alpha35/engineering/0c11f617809503c4"
 				title: "Надеть фуражку кондуктора"
 			}]
 			rewards: [
 				{
-					id: "EED881F72CECFBCD"
+					id: "6ED881F72CECFBCD"
 					type: "xp"
 					xp: 100
 				}
@@ -530,7 +530,7 @@
 			icon: "immersive_aircraft:gyrodyne"
 			dependencies: ["1D1395D17D6238DB"]
 			tasks: [{
-				id: "97A1C11F4E962544"
+				id: "17A1C11F4E962544"
 				type: "advancement"
 				title: "Сесть в винтокрыл"
 				advancement: "nasledie:q/transport/gyrodyne"
@@ -542,7 +542,7 @@
 					xp: 150
 				}
 				{
-					id: "A218038554601A39"
+					id: "2218038554601A39"
 					type: "item"
 					item: {
 						Count: 4b
@@ -552,7 +552,7 @@
 			]
 		}
 		{
-			id: "CABC4D7CB8FBE2B6"
+			id: "4ABC4D7CB8FBE2B6"
 			title: "Биплан для разведки"
 			description: ["Биплан с двигателем летит далеко и быстро. Облетите окрестности — с высоты лагеря и логова видно издалека."]
 			x: 3.0d
@@ -567,12 +567,12 @@
 			}]
 			rewards: [
 				{
-					id: "BCB4F9A83D672220"
+					id: "3EA611E92F019258"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "44C9EAB1DD15F9F5"
+					id: "0ABA881A1F3213CB"
 					type: "item"
 					item: {
 						Count: 1b
@@ -589,21 +589,21 @@
 			y: -7.0d
 			icon: "immersive_aircraft:quadrocopter"
 			optional: true
-			dependencies: ["CABC4D7CB8FBE2B6"]
+			dependencies: ["4ABC4D7CB8FBE2B6"]
 			tasks: [{
-				id: "B46C9A8DBB9960D9"
+				id: "346C9A8DBB9960D9"
 				type: "advancement"
 				title: "Сесть в квадрокоптер"
 				advancement: "nasledie:q/transport/quadrocopter"
 			}]
 			rewards: [
 				{
-					id: "DDC0BD4CF3DFDD5E"
+					id: "5DC0BD4CF3DFDD5E"
 					type: "xp"
 					xp: 200
 				}
 				{
-					id: "CC3D047E542B24BA"
+					id: "4C3D047E542B24BA"
 					type: "item"
 					item: {
 						Count: 1b
@@ -619,21 +619,21 @@
 			x: 6.0d
 			y: -4.0d
 			icon: "immersive_aircraft:airship"
-			dependencies: ["CABC4D7CB8FBE2B6"]
+			dependencies: ["4ABC4D7CB8FBE2B6"]
 			tasks: [{
-				id: "D4813CFDB6430EAF"
+				id: "54813CFDB6430EAF"
 				type: "advancement"
 				title: "Подняться на дирижабле"
 				advancement: "nasledie:q/transport/airship"
 			}]
 			rewards: [
 				{
-					id: "EC1EF9EFF55D66B4"
+					id: "6C1EF9EFF55D66B4"
 					type: "xp"
 					xp: 250
 				}
 				{
-					id: "B949B7908BAFDE65"
+					id: "3949B7908BAFDE65"
 					type: "item"
 					item: {
 						Count: 1b
@@ -684,7 +684,7 @@
 			optional: true
 			dependencies: ["34F99F7AE0F5BD92"]
 			tasks: [{
-				id: "D2C858BEB8627BD5"
+				id: "52C858BEB8627BD5"
 				type: "advancement"
 				title: "Подняться на военном дирижабле"
 				advancement: "nasledie:q/transport/warship"
