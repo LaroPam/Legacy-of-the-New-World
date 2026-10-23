@@ -2,7 +2,7 @@
 // FTB Quests 2001.4.22: [*] is required before global properties.
 [*]
 extra_quest_shapes: diamond, pentagon, hexagon, octagon, heart, gear, crown, laurel, scroll, shield, coin, star, ribbon
-background: color:transparent
+background: nasledie:textures/backgrounds/bg_global.png
 selected_chapter_highlight_1: #70A67C52
 selected_chapter_highlight_2: #307C5C3B
 text_color: #DDE8F7
@@ -14,12 +14,12 @@ button: hollow_rectangle:{{widget_border}}
 panel: {{container_slot}}
 disabled_button: hollow_rectangle:{{widget_border}}
 hover_button: {{button}} + {{widget_background}}; padding=1
-context_menu: hollow_rectangle:{{widget_border}}; round_edges + {{background}}; color=#D5C5AC; padding=1
+context_menu: hollow_rectangle:{{widget_border}}; round_edges + #F0141B24; padding=1
 scroll_bar_background: {{widget_background}}
 scroll_bar: {{button}} + {{widget_background}}; padding=1
-container_slot: hollow_rectangle:#526C8C + color=#24374B
-text_box: hollow_rectangle:#526C8C + color=#24374B
-quest_view_background: color:transparent
+container_slot: hollow_rectangle:#526C8C + #24374B; padding=1
+text_box: hollow_rectangle:#526C8C + #24374B; padding=1
+quest_view_background: #E6121820
 quest_view_border: #4F6A86
 quest_view_title: #D9E8F9
 quest_started_color: #51E6FF
@@ -54,6 +54,7 @@ tasks_text_color: #FF7B48
 rewards_text_color: #FFECA7
 selected_chapter_highlight_1: #78FFD43B
 selected_chapter_highlight_2: #36FFD43B
+background: nasledie:textures/backgrounds/bg_chronicle.png
 
 // nasledie_life — Зелёный сад
 [DC7EC49FBED1A9C6]
@@ -71,6 +72,7 @@ tasks_text_color: #FFE35A
 rewards_text_color: #C9F4A5
 selected_chapter_highlight_1: #7888E638
 selected_chapter_highlight_2: #3688E638
+background: nasledie:textures/backgrounds/bg_life.png
 
 // nasledie_create — Латунь и огонь
 [9B72DF3BE0E6A5DE]
@@ -88,6 +90,7 @@ tasks_text_color: #4FE4E8
 rewards_text_color: #FFD09A
 selected_chapter_highlight_1: #78FF961F
 selected_chapter_highlight_2: #36FF961F
+background: nasledie:textures/backgrounds/bg_create.png
 
 // nasledie_exploration — Бирюза горизонта
 [67AB9D3E8CAB8CAC]
@@ -105,6 +108,7 @@ tasks_text_color: #F9B755
 rewards_text_color: #97F4E7
 selected_chapter_highlight_1: #7818E6C9
 selected_chapter_highlight_2: #3618E6C9
+background: nasledie:textures/backgrounds/bg_exploration.png
 
 // nasledie_village — Тёплая терракота
 [30082B6F5380787E]
@@ -122,6 +126,7 @@ tasks_text_color: #E4F248
 rewards_text_color: #FFDBC2
 selected_chapter_highlight_1: #78FFAF78
 selected_chapter_highlight_2: #36FFAF78
+background: nasledie:textures/backgrounds/bg_village.png
 
 // nasledie_economy — Изумруд и золото
 [8F4597A009915275]
@@ -139,6 +144,7 @@ tasks_text_color: #FFC83D
 rewards_text_color: #A4F9D4
 selected_chapter_highlight_1: #7835F2A0
 selected_chapter_highlight_2: #3635F2A0
+background: nasledie:textures/backgrounds/bg_economy.png
 
 // nasledie_transport — Синий экспресс
 [D90DA6CC0E252361]
@@ -156,6 +162,7 @@ tasks_text_color: #FFE15A
 rewards_text_color: #AED1FF
 selected_chapter_highlight_1: #784C99FF
 selected_chapter_highlight_2: #364C99FF
+background: nasledie:textures/backgrounds/bg_transport.png
 
 // nasledie_industry — Сера и электричество
 [21DEFD3CCFC622D0]
@@ -173,6 +180,7 @@ tasks_text_color: #30D8E6
 rewards_text_color: #ECF79C
 selected_chapter_highlight_1: #78D4ED24
 selected_chapter_highlight_2: #36D4ED24
+background: nasledie:textures/backgrounds/bg_industry.png
 
 // nasledie_defense — Медь и алый щит
 [A1279E21532D7CDD]
@@ -190,6 +198,7 @@ tasks_text_color: #FFD650
 rewards_text_color: #FFC0AE
 selected_chapter_highlight_1: #78FF744A
 selected_chapter_highlight_2: #36FF744A
+background: nasledie:textures/backgrounds/bg_defense.png
 
 // nasledie_legends — Фиолетовое свечение
 [2D3B7589DD553745]
@@ -207,6 +216,7 @@ tasks_text_color: #62F4E3
 rewards_text_color: #E1BCFF
 selected_chapter_highlight_1: #78BD6BFF
 selected_chapter_highlight_2: #36BD6BFF
+background: nasledie:textures/backgrounds/bg_legends.png
 
 // nasledie_grand_projects — Малиновая искра
 [73CB4E221EBED702]
@@ -224,6 +234,7 @@ tasks_text_color: #76E8FF
 rewards_text_color: #F9B0E2
 selected_chapter_highlight_1: #78F250BE
 selected_chapter_highlight_2: #36F250BE
+background: nasledie:textures/backgrounds/bg_grand_projects.png
 
 // nasledie_guild — Дикая зелень
 [0ABE8126BB237195]
@@ -241,6 +252,7 @@ tasks_text_color: #FFBC64
 rewards_text_color: #A5EEBB
 selected_chapter_highlight_1: #7838D968
 selected_chapter_highlight_2: #3638D968
+background: nasledie:textures/backgrounds/bg_guild.png
 
 // nasledie_cataclysm — Багровая корона
 [C54798B08E30ED27]
@@ -258,6 +270,7 @@ tasks_text_color: #F5CF56
 rewards_text_color: #FFA2B5
 selected_chapter_highlight_1: #78FF315A
 selected_chapter_highlight_2: #36FF315A
+background: nasledie:textures/backgrounds/bg_cataclysm.png
 
 // nasledie_archeology — Янтарь раскопок
 [CF8AC0B0D69E3A34]
@@ -275,6 +288,7 @@ tasks_text_color: #70DACD
 rewards_text_color: #F0DDB0
 selected_chapter_highlight_1: #78DDB350
 selected_chapter_highlight_2: #36DDB350
+background: nasledie:textures/backgrounds/bg_archeology.png
 
 // nasledie_relics — Аметист и серебро
 [14127D019AF8A60A]
@@ -292,6 +306,7 @@ tasks_text_color: #FABBEB
 rewards_text_color: #CFBCFF
 selected_chapter_highlight_1: #78956BFF
 selected_chapter_highlight_2: #36956BFF
+background: nasledie:textures/backgrounds/bg_relics.png
 
 // nasledie_netheritage — Красная лава
 [BC5663C3D347C93F]
@@ -309,6 +324,7 @@ tasks_text_color: #FFB82E
 rewards_text_color: #FFAA9A
 selected_chapter_highlight_1: #78FF421F
 selected_chapter_highlight_2: #36FF421F
+background: nasledie:textures/backgrounds/bg_netheritage.png
 
 // nasledie_ocean — Голубая глубина
 [42E670E2D2E5798E]
@@ -326,6 +342,7 @@ tasks_text_color: #60FFB9
 rewards_text_color: #A1ECFF
 selected_chapter_highlight_1: #782ED4FF
 selected_chapter_highlight_2: #362ED4FF
+background: nasledie:textures/backgrounds/bg_ocean.png
 
 // nasledie_compass — Индиго звёздных карт
 [9D8645FBEA4E9EC9]
@@ -343,6 +360,7 @@ tasks_text_color: #FFC978
 rewards_text_color: #BEC7FF
 selected_chapter_highlight_1: #786F83FF
 selected_chapter_highlight_2: #366F83FF
+background: nasledie:textures/backgrounds/bg_compass.png
 
 // nasledie_finale — Пурпур пустоты
 [3E920F5B7179C5CD]
@@ -360,3 +378,4 @@ tasks_text_color: #7CF5D3
 rewards_text_color: #E9D5FF
 selected_chapter_highlight_1: #78C77DFF
 selected_chapter_highlight_2: #36C77DFF
+background: nasledie:textures/backgrounds/bg_finale.png
