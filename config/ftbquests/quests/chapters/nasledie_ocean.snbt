@@ -180,6 +180,7 @@
 				id: "B90AAD256C51EF2C"
 				type: "kill"
 				entity: "minecraft:guardian"
+				value: 1
 			}]
 			rewards: [
 				{

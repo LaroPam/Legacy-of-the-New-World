@@ -67,7 +67,6 @@ quests:
       - {type: item, item: better_weaponry:diamond_dagger}
 
   - key: blaze_rod
-    id: F627CCC35580E95F
     title: Огненный стержень
     description:
       - Ифриты оставляют огненные стержни. Из стержня — порошок, из порошка и жемчуга — око Края, начало любого ока Зодчих.
@@ -93,7 +92,7 @@ quests:
     shape: shield
     deps: [blaze_rod]
     tasks:
-      - {type: kill, entity: minecraft:wither_skeleton}
+      - {type: kill, entity: minecraft:wither_skeleton, value: 1}
     rewards:
       - {type: xp, xp: 150}
       - {type: item, item: minecraft:milk_bucket}
@@ -143,7 +142,7 @@ quests:
     shape: shield
     deps: [enter]
     tasks:
-      - {type: kill, entity: minecraft:piglin_brute}
+      - {type: kill, entity: minecraft:piglin_brute, value: 1}
     rewards:
       - {type: xp, xp: 150}
       - {type: item, item: minecraft:golden_apple}
@@ -325,7 +324,7 @@ quests:
     optional: true
     deps: [soul_valley]
     tasks:
-      - {type: kill, entity: minecraft:ghast}
+      - {type: kill, entity: minecraft:ghast, value: 1}
     rewards:
       - {type: xp, xp: 150}
       - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:strong_regeneration"}', count: 2}

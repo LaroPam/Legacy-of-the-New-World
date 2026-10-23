@@ -358,6 +358,7 @@
 				id: "D78CB589108A8AC9"
 				type: "kill"
 				entity: "minecraft:elder_guardian"
+				value: 1
 			}]
 			rewards: [
 				{
@@ -409,7 +410,7 @@
 			shape: "star"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
-				"F627CCC35580E95F"
+				"3D03E0EFD6FA3386"
 			]
 			tasks: [{
 				id: "D9B3E63B0171B3D4"

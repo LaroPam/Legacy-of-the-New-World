@@ -495,7 +495,6 @@ quests:
       - {type: item, item: minecraft:shield}
 
   - key: all_dungeons
-    id: E0B32143847E9AF0
     title: Все сокровищницы YUNG
     description:
       - Побывайте во всех видах подземелий, включая незерскую сокровищницу. Профессиональный подземельщик.

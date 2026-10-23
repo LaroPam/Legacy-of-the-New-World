@@ -29,7 +29,7 @@ quests:
     title: Восемь побед Катаклизма
     description:
       - Победите всех восьмерых — огонь, бездну, бурю, проклятие, пустыню, машину, чудовище и пустоту. Мир, который держали сосуды, теперь
-        держите вы.
+        держите вы. Победы считаются на команду — неважно, чей удар был последним.
     x: 13.44
     y: 13.44
     icon: cataclysm:bulwark_of_the_flame
@@ -39,7 +39,14 @@ quests:
     deps: [nasledie_chronicle/ignis, nasledie_chronicle/leviathan, nasledie_chronicle/harbinger, nasledie_chronicle/ender_guardian,
            nasledie_chronicle/maledictus, nasledie_chronicle/remnant, nasledie_chronicle/monstrosity, nasledie_chronicle/scylla]
     tasks:
-      - {type: advancement, advancement: cataclysm:kill_all_bosses}
+      - {type: kill, entity: cataclysm:ignis, value: 1}
+      - {type: kill, entity: cataclysm:the_leviathan, value: 1}
+      - {type: kill, entity: cataclysm:the_harbinger, value: 1}
+      - {type: kill, entity: cataclysm:ender_guardian, value: 1}
+      - {type: kill, entity: cataclysm:maledictus, value: 1}
+      - {type: kill, entity: cataclysm:ancient_remnant, value: 1}
+      - {type: kill, entity: cataclysm:netherite_monstrosity, value: 1}
+      - {type: kill, entity: cataclysm:scylla, value: 1}
     rewards:
       - {type: xp, xp: 3000}
       - {type: item, item: cataclysm:bulwark_of_the_flame}

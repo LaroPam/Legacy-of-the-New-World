@@ -105,7 +105,7 @@ quests:
     shape: shield
     deps: [conduit]
     tasks:
-      - {type: kill, entity: minecraft:guardian}
+      - {type: kill, entity: minecraft:guardian, value: 1}
     rewards:
       - {type: xp, xp: 120}
       - {type: item, item: alexsmobs:shark_tooth_arrow, count: 16}

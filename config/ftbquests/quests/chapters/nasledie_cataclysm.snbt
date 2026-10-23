@@ -94,7 +94,7 @@
 		{
 			id: "DE6173A11D04779E"
 			title: "Восемь побед Катаклизма"
-			description: ["Победите всех восьмерых — огонь, бездну, бурю, проклятие, пустыню, машину, чудовище и пустоту. Мир, который держали сосуды, теперь держите вы."]
+			description: ["Победите всех восьмерых — огонь, бездну, бурю, проклятие, пустыню, машину, чудовище и пустоту. Мир, который держали сосуды, теперь держите вы. Победы считаются на команду — неважно, чей удар был последним."]
 			x: 13.44d
 			y: 13.44d
 			icon: "cataclysm:bulwark_of_the_flame"
@@ -111,11 +111,56 @@
 				"E3651E9F6E43FAEB"
 			]
 			hide_dependency_lines: true
-			tasks: [{
-				id: "BC5391EF2420BE93"
-				type: "advancement"
-				advancement: "cataclysm:kill_all_bosses"
-			}]
+			tasks: [
+				{
+					id: "BC5391EF2420BE93"
+					type: "kill"
+					entity: "cataclysm:ignis"
+					value: 1
+				}
+				{
+					id: "E78927BFA57E6C90"
+					type: "kill"
+					entity: "cataclysm:the_leviathan"
+					value: 1
+				}
+				{
+					id: "80DB19257E49D7A9"
+					type: "kill"
+					entity: "cataclysm:the_harbinger"
+					value: 1
+				}
+				{
+					id: "5496E79A3A9AD1EE"
+					type: "kill"
+					entity: "cataclysm:ender_guardian"
+					value: 1
+				}
+				{
+					id: "5BE92059235F2041"
+					type: "kill"
+					entity: "cataclysm:maledictus"
+					value: 1
+				}
+				{
+					id: "DAC5F00566683C48"
+					type: "kill"
+					entity: "cataclysm:ancient_remnant"
+					value: 1
+				}
+				{
+					id: "4010DF3BA0B18485"
+					type: "kill"
+					entity: "cataclysm:netherite_monstrosity"
+					value: 1
+				}
+				{
+					id: "01C83F43E9E669E5"
+					type: "kill"
+					entity: "cataclysm:scylla"
+					value: 1
+				}
+			]
 			rewards: [
 				{
 					id: "FD8748EE8222261B"

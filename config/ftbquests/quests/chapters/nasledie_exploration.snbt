@@ -933,7 +933,7 @@
 			]
 		}
 		{
-			id: "E0B32143847E9AF0"
+			id: "9B5B9D58445466FE"
 			title: "Все сокровищницы YUNG"
 			description: ["Побывайте во всех видах подземелий, включая незерскую сокровищницу. Профессиональный подземельщик."]
 			x: 15.0d
@@ -943,18 +943,18 @@
 			optional: true
 			dependencies: ["93EA4AC90BB6F5E7"]
 			tasks: [{
-				id: "20358355EA81D54D"
+				id: "D48F391E4D55DDF0"
 				type: "advancement"
 				advancement: "betterdungeons:all_dungeons"
 			}]
 			rewards: [
 				{
-					id: "BA5B095A880F9171"
+					id: "CE3C1EAF5D645D73"
 					type: "xp"
 					xp: 500
 				}
 				{
-					id: "3CB0F15803E71C9E"
+					id: "4B26DE583132C74A"
 					type: "item"
 					item: {
 						Count: 4b

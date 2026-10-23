@@ -180,6 +180,10 @@ def quest_issues(parsed):
             errors.append(problem('shape_unknown', location, 'Unknown quest shape', shape=str(quest.get('shape'))))
         if not quest.get('tasks'):
             errors.append(problem('no_tasks', location, 'Quest has no tasks'))
+        for task in quest.get('tasks', []):
+            # KillTask/StatTask read `value` with getLong/getInt: a missing key means a goal of 0.
+            if str(task.get('type')) in ('kill', 'stat') and int(task.get('value', 0)) < 1:
+                errors.append(problem('count_missing', location, 'Kill/stat task needs value >= 1', task=str(task.get('id'))))
         text = '\n'.join(map(str, quest.get('description', [])))
         if not text.strip():
             warnings.append(problem('no_description', location, 'Quest has no description'))
