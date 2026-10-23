@@ -6,7 +6,7 @@
 	icon: "create:cogwheel"
 	order_index: 9
 	default_hide_dependency_lines: false
-	default_quest_shape: "gear"
+	default_quest_shape: "tech"
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -20,7 +20,8 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "create:andesite_alloy"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.8d
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
@@ -59,6 +60,7 @@
 			x: 0.0d
 			y: -3.5d
 			icon: "create:water_wheel"
+			icon_scale: 0.75d
 			dependencies: ["1D1395D17D6238DB"]
 			tasks: [{
 				id: "737B74D3EF7F995F"
@@ -88,7 +90,8 @@
 			x: -2.0d
 			y: -5.5d
 			icon: "create:hand_crank"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["3FA8926603B35ADD"]
 			tasks: [{
@@ -119,6 +122,7 @@
 			x: 0.5d
 			y: -6.0d
 			icon: "create:large_cogwheel"
+			icon_scale: 0.75d
 			dependencies: ["3FA8926603B35ADD"]
 			tasks: [{
 				id: "586E37F1D086BDF5"
@@ -148,6 +152,7 @@
 			x: 1.0d
 			y: -8.5d
 			icon: "create:windmill_bearing"
+			icon_scale: 0.75d
 			dependencies: ["37C2A96BD4EE0C5C"]
 			tasks: [{
 				id: "18072D681FECB3A2"
@@ -177,7 +182,8 @@
 			x: 1.5d
 			y: -11.0d
 			icon: "create:white_sail"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["11C8A76B406CF0AF"]
 			tasks: [{
@@ -216,6 +222,7 @@
 			x: 3.5d
 			y: 0.0d
 			icon: "create:andesite_casing"
+			icon_scale: 0.75d
 			dependencies: ["1D1395D17D6238DB"]
 			tasks: [{
 				id: "0C0E2608E7B2C67F"
@@ -245,6 +252,7 @@
 			x: 6.0d
 			y: 0.5d
 			icon: "create:mechanical_press"
+			icon_scale: 0.75d
 			dependencies: ["7208B2429B83E7D8"]
 			tasks: [{
 				id: "4B7BF0C3893723DD"
@@ -274,6 +282,7 @@
 			x: 8.5d
 			y: 1.0d
 			icon: "create:basin"
+			icon_scale: 0.75d
 			dependencies: ["013B127CA07E038A"]
 			tasks: [{
 				id: "273BA82D03EB50BC"
@@ -303,6 +312,7 @@
 			x: 11.0d
 			y: 1.5d
 			icon: "create:millstone"
+			icon_scale: 0.75d
 			dependencies: ["48C4ECA83D73BF63"]
 			tasks: [{
 				id: "41F30B6A0E22F15D"
@@ -332,6 +342,7 @@
 			x: 13.5d
 			y: 2.0d
 			icon: "create:encased_fan"
+			icon_scale: 0.75d
 			dependencies: ["15DD2AD4CCAA7D90"]
 			tasks: [{
 				id: "75063F102903D4D3"
@@ -361,6 +372,7 @@
 			x: 16.0d
 			y: 2.5d
 			icon: "minecraft:bread"
+			icon_scale: 0.75d
 			dependencies: ["02EB3ADD3D2CD6B9"]
 			tasks: [{
 				id: "172B930D57499638"
@@ -390,6 +402,7 @@
 			x: 7.0d
 			y: 3.5d
 			icon: "create:mechanical_mixer"
+			icon_scale: 0.75d
 			dependencies: ["013B127CA07E038A"]
 			tasks: [{
 				id: "7924868EFA6D8CE6"
@@ -419,6 +432,7 @@
 			x: 9.5d
 			y: 4.5d
 			icon: "create:blaze_burner"
+			icon_scale: 0.75d
 			dependencies: ["4DAC640579002402"]
 			tasks: [{
 				id: "5C5AD1CEB841D70E"
@@ -448,7 +462,8 @@
 			x: 12.0d
 			y: 5.5d
 			icon: "create:honeyed_apple"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["49C8A0032E4C0E17"]
 			tasks: [{
@@ -479,6 +494,7 @@
 			x: 0.0d
 			y: 3.5d
 			icon: "create:mechanical_saw"
+			icon_scale: 0.75d
 			dependencies: ["1D1395D17D6238DB"]
 			tasks: [{
 				id: "570B7FBBE1FFFA98"
@@ -508,6 +524,7 @@
 			x: -0.5d
 			y: 6.0d
 			icon: "create:belt_connector"
+			icon_scale: 0.75d
 			dependencies: ["6A8154FB9A317740"]
 			tasks: [{
 				id: "7D6BE7B548BBC4AC"
@@ -537,6 +554,7 @@
 			x: -1.0d
 			y: 8.5d
 			icon: "create:andesite_funnel"
+			icon_scale: 0.75d
 			dependencies: ["768B3CF3BC1979DB"]
 			tasks: [{
 				id: "47C1327BAEB9394E"
@@ -566,7 +584,8 @@
 			x: 1.5d
 			y: 9.0d
 			icon: "create:brass_funnel"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["26B8EA27D2BE22B9"]
 			tasks: [{
@@ -597,6 +616,7 @@
 			x: -1.5d
 			y: 11.0d
 			icon: "create:chute"
+			icon_scale: 0.75d
 			dependencies: ["26B8EA27D2BE22B9"]
 			tasks: [{
 				id: "5A781B64FCEBD12C"
@@ -626,6 +646,7 @@
 			x: -2.0d
 			y: 13.5d
 			icon: "create:super_glue"
+			icon_scale: 0.75d
 			dependencies: ["2EBBB558E1A30F2F"]
 			tasks: [{
 				id: "51DD003C04C45F7C"
@@ -663,6 +684,7 @@
 			x: -2.5d
 			y: 16.0d
 			icon: "create:mechanical_drill"
+			icon_scale: 0.75d
 			dependencies: ["4CF5C3CD6FF300E7"]
 			tasks: [{
 				id: "5517DC51568A26EE"
@@ -692,6 +714,7 @@
 			x: -3.0d
 			y: 18.5d
 			icon: "create:portable_storage_interface"
+			icon_scale: 0.75d
 			dependencies: ["0D62D114AA053441"]
 			tasks: [{
 				id: "7A22F7DC537856F0"
@@ -721,7 +744,8 @@
 			x: -3.5d
 			y: 21.0d
 			icon: "create:railway_casing"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["4C3AA9001AA8E8D5"]
 			tasks: [{
@@ -752,7 +776,8 @@
 			x: 2.5d
 			y: 5.0d
 			icon: "create:extendo_grip"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["6A8154FB9A317740"]
 			tasks: [{
@@ -783,7 +808,8 @@
 			x: 4.5d
 			y: 6.5d
 			icon: "create:extendo_grip"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["6C70D65F82B2FEF1"]
 			tasks: [{
@@ -814,7 +840,8 @@
 			x: 4.0d
 			y: 9.0d
 			icon: "create:potato_cannon"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["549B77B92B0AFF7C"]
 			tasks: [{
@@ -845,6 +872,7 @@
 			x: -3.5d
 			y: 0.0d
 			icon: "create:copper_casing"
+			icon_scale: 0.75d
 			dependencies: ["1D1395D17D6238DB"]
 			tasks: [{
 				id: "60CE8BF1224442CB"
@@ -874,6 +902,7 @@
 			x: -6.0d
 			y: -0.5d
 			icon: "create:mechanical_pump"
+			icon_scale: 0.75d
 			dependencies: ["0F58E4E6C70518FE"]
 			tasks: [{
 				id: "37CCC981DBA21A57"
@@ -903,6 +932,7 @@
 			x: -8.5d
 			y: -1.0d
 			icon: "create:spout"
+			icon_scale: 0.75d
 			dependencies: ["77E2465288E575FF"]
 			tasks: [{
 				id: "4AF3F458C1059530"
@@ -932,6 +962,7 @@
 			x: -11.0d
 			y: -1.5d
 			icon: "create:item_drain"
+			icon_scale: 0.75d
 			dependencies: ["13F9199B68F09FF2"]
 			tasks: [{
 				id: "704B367DEF779CB8"
@@ -961,7 +992,8 @@
 			x: -13.5d
 			y: -2.0d
 			icon: "create:steam_engine"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.4d
 			dependencies: ["053070B7D8792A37"]
 			tasks: [{
@@ -992,7 +1024,8 @@
 			x: -7.5d
 			y: 1.5d
 			icon: "create:chocolate_bucket"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["13F9199B68F09FF2"]
 			tasks: [{
@@ -1023,7 +1056,8 @@
 			x: -10.0d
 			y: 1.0d
 			icon: "minecraft:honey_bottle"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["053070B7D8792A37"]
 			tasks: [{
@@ -1054,7 +1088,8 @@
 			x: -12.5d
 			y: 0.5d
 			icon: "minecraft:obsidian"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["1DCEBEFB5C85037B"]
 			tasks: [{
@@ -1085,7 +1120,8 @@
 			x: -16.0d
 			y: -2.5d
 			icon: "create:netherite_diving_helmet"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["18ED8A27D511509E"]
 			tasks: [{

@@ -1,7 +1,7 @@
 // Generated from reviews/chapter_palettes.json
 // FTB Quests 2001.4.22: [*] is required before global properties.
 [*]
-extra_quest_shapes: diamond, pentagon, hexagon, octagon, heart, gear, crown, laurel, scroll, shield, coin, star, ribbon
+extra_quest_shapes: diamond, pentagon, hexagon, octagon, heart, gear, step, expedition, milestone, trial, tech, boss, home
 background: nasledie:textures/backgrounds/bg_global.png
 selected_chapter_highlight_1: #70A67C52
 selected_chapter_highlight_2: #307C5C3B

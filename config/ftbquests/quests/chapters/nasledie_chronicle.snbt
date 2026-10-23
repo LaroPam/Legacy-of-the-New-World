@@ -5,7 +5,7 @@
 	icon: "minecraft:writable_book"
 	order_index: 0
 	default_hide_dependency_lines: false
-	default_quest_shape: "star"
+	default_quest_shape: "milestone"
 	default_quest_size: 1.5d
 	quest_links: [ ]
 	quests: [
@@ -19,7 +19,8 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "minecraft:writable_book"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.6d
 			tasks: [{
 				id: "64CCBD7043684ACC"
@@ -53,6 +54,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:spyglass"
+			icon_scale: 0.75d
 			dependencies: ["4A2CFD219A124357"]
 			tasks: [{
 				id: "75F6C315ED6C3CA9"
@@ -102,6 +104,7 @@
 			x: 6.0d
 			y: 0.0d
 			icon: "explorerscompass:explorerscompass"
+			icon_scale: 0.75d
 			dependencies: ["79C6E9FC12713C40"]
 			tasks: [{
 				id: "4981B18151863395"
@@ -151,7 +154,8 @@
 			x: 10.0d
 			y: -6.0d
 			icon: "mowziesmobs:wrought_helmet"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
 				"06BF2A4D15D6CD27"
@@ -200,7 +204,8 @@
 			x: 10.0d
 			y: -3.6d
 			icon: "mowziesmobs:sol_visage"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
 				"72C49E809D227970"
@@ -250,7 +255,8 @@
 			x: 10.0d
 			y: -1.2d
 			icon: "mowziesmobs:sculptor_staff"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
 				"549B46DD723548E4"
@@ -300,7 +306,8 @@
 			x: 10.0d
 			y: 1.2d
 			icon: "mowziesmobs:ice_crystal"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
 				"43488E4931E0F280"
@@ -349,7 +356,8 @@
 			x: 10.0d
 			y: 3.6d
 			icon: "minecraft:prismarine_shard"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
 				"58C373CD97382003"
@@ -407,7 +415,8 @@
 			x: 10.0d
 			y: 6.0d
 			icon: "cataclysm:flame_eye"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			dependencies: [
 				"00C7DAA7BBBE1ABD"
 				"3D03E0EFD6FA3386"
@@ -458,7 +467,8 @@
 			x: 13.0d
 			y: 6.0d
 			icon: "minecraft:wither_skeleton_skull"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.7d
 			dependencies: [
 				"3433E7FAF2F51B45"
@@ -510,6 +520,7 @@
 			x: 15.0d
 			y: 2.5d
 			icon: "cataclysm:mech_eye"
+			icon_scale: 0.75d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "78715FFBE94F12D2"
@@ -564,7 +575,8 @@
 			x: 18.0d
 			y: 1.0d
 			icon: "cataclysm:wither_assault_shoulder_weapon"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.7d
 			dependencies: ["391F9987F1F32442"]
 			tasks: [{
@@ -620,7 +632,8 @@
 			x: 15.5d
 			y: 8.8d
 			icon: "cataclysm:monstrous_helm"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.7d
 			dependencies: [
 				"3433E7FAF2F51B45"
@@ -679,7 +692,8 @@
 			x: 21.0d
 			y: 2.5d
 			icon: "cataclysm:ignited_revenant_spawn_egg"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			size: 1.5d
 			dependencies: [
 				"0792C39846E0D49E"
@@ -715,7 +729,8 @@
 			x: 24.5d
 			y: -3.5d
 			icon: "cataclysm:flame_eye"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.7d
 			dependencies: [
 				"1175C66EAEDBF91E"
@@ -773,7 +788,8 @@
 			x: 24.5d
 			y: -0.5d
 			icon: "cataclysm:desert_eye"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.7d
 			dependencies: [
 				"1175C66EAEDBF91E"
@@ -832,7 +848,8 @@
 			x: 24.5d
 			y: 2.5d
 			icon: "cataclysm:cursed_eye"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.7d
 			dependencies: [
 				"1175C66EAEDBF91E"
@@ -891,7 +908,8 @@
 			x: 24.5d
 			y: 5.5d
 			icon: "cataclysm:abyss_eye"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.7d
 			dependencies: [
 				"1175C66EAEDBF91E"
@@ -949,7 +967,8 @@
 			x: 24.5d
 			y: 8.5d
 			icon: "cataclysm:storm_eye"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.7d
 			dependencies: [
 				"1175C66EAEDBF91E"
@@ -1008,7 +1027,8 @@
 			x: 28.5d
 			y: 2.5d
 			icon: "minecraft:ender_eye"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.7d
 			dependencies: [
 				"12B1754C45756107"
@@ -1063,7 +1083,8 @@
 			x: 32.0d
 			y: 2.5d
 			icon: "minecraft:dragon_head"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.8d
 			dependencies: ["280C23723A869A8B"]
 			tasks: [{
@@ -1102,7 +1123,8 @@
 			x: 35.5d
 			y: 2.5d
 			icon: "cataclysm:void_eye"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 2.2d
 			dependencies: [
 				"367C7D7E1F81D391"
@@ -1161,7 +1183,8 @@
 			x: 39.5d
 			y: 2.5d
 			icon: "minecraft:beacon"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 2.4d
 			dependencies: [
 				"4E228116310381E8"
@@ -1224,7 +1247,8 @@
 			x: 19.5d
 			y: 16.5d
 			icon: "alexscaves:shadow_silk"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.7d
 			dependencies: [
 				"0DD7A99E440FC3DA"
@@ -1275,7 +1299,8 @@
 			x: 22.5d
 			y: 16.5d
 			icon: "alexscaves:submarine"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.7d
 			dependencies: [
 				"0DD7A99E440FC3DA"
@@ -1326,7 +1351,8 @@
 			x: 25.5d
 			y: 15.5d
 			icon: "alexscaves:tectonic_shard"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.7d
 			dependencies: [
 				"0DD7A99E440FC3DA"
@@ -1376,7 +1402,8 @@
 			x: 27.5d
 			y: 13.0d
 			icon: "alexscaves:tremorzilla_egg"
-			shape: "heart"
+			icon_scale: 0.75d
+			shape: "home"
 			size: 1.7d
 			dependencies: [
 				"0DD7A99E440FC3DA"
@@ -1426,7 +1453,8 @@
 			x: 21.0d
 			y: 12.0d
 			icon: "minecraft:sculk_shrieker"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.6d
 			dependencies: [
 				"1175C66EAEDBF91E"
@@ -1478,7 +1506,8 @@
 			x: 17.0d
 			y: 14.5d
 			icon: "minecraft:echo_shard"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.7d
 			dependencies: ["0DD7A99E440FC3DA"]
 			tasks: [{

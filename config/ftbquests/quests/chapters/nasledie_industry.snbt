@@ -6,7 +6,7 @@
 	icon: "create:precision_mechanism"
 	order_index: 10
 	default_hide_dependency_lines: false
-	default_quest_shape: "gear"
+	default_quest_shape: "tech"
 	progression_mode: "flexible"
 	quest_links: [
 		{
@@ -14,7 +14,7 @@
 			linked_quest: "391F9987F1F32442"
 			x: -3.5d
 			y: -3.5d
-			shape: "star"
+			shape: "milestone"
 			size: 1.4d
 		}
 		{
@@ -22,7 +22,7 @@
 			linked_quest: "0792C39846E0D49E"
 			x: -6.5d
 			y: -3.5d
-			shape: "crown"
+			shape: "boss"
 			size: 1.5d
 		}
 	]
@@ -34,7 +34,8 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "create:brass_ingot"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.7d
 			dependencies: ["49C8A0032E4C0E17"]
 			tasks: [{
@@ -65,6 +66,7 @@
 			x: 0.0d
 			y: -3.0d
 			icon: "create:brass_casing"
+			icon_scale: 0.75d
 			dependencies: ["1A09307A8AC167F1"]
 			tasks: [{
 				id: "5C01AE515C6A98BB"
@@ -94,6 +96,7 @@
 			x: 0.0d
 			y: -5.5d
 			icon: "create:polished_rose_quartz"
+			icon_scale: 0.75d
 			dependencies: ["2C5A509D463729FC"]
 			tasks: [{
 				id: "2C745A1E9814CBB0"
@@ -123,6 +126,7 @@
 			x: 0.0d
 			y: -8.0d
 			icon: "create:deployer"
+			icon_scale: 0.75d
 			dependencies: ["1D86DEEFC75B8B99"]
 			tasks: [{
 				id: "2AD3DC9E867AD1C7"
@@ -152,7 +156,8 @@
 			x: 0.0d
 			y: -10.5d
 			icon: "create:precision_mechanism"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.4d
 			dependencies: ["190D1B7281918ABB"]
 			tasks: [{
@@ -183,6 +188,7 @@
 			x: 2.5d
 			y: -12.0d
 			icon: "create:mechanical_arm"
+			icon_scale: 0.75d
 			dependencies: ["027C7ABF4F61942F"]
 			tasks: [{
 				id: "7497BBF91EA2AC1E"
@@ -212,6 +218,7 @@
 			x: -2.5d
 			y: -12.0d
 			icon: "create:rotation_speed_controller"
+			icon_scale: 0.75d
 			dependencies: ["027C7ABF4F61942F"]
 			tasks: [{
 				id: "1347000F964EE0D3"
@@ -241,6 +248,7 @@
 			x: 0.0d
 			y: -13.5d
 			icon: "create:mechanical_crafter"
+			icon_scale: 0.75d
 			dependencies: ["027C7ABF4F61942F"]
 			tasks: [{
 				id: "25C906111EBA8D8D"
@@ -270,7 +278,8 @@
 			x: -2.5d
 			y: -15.0d
 			icon: "create:mechanical_crafter"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["0DC509B56847083F"]
 			tasks: [{
@@ -301,6 +310,7 @@
 			x: 0.0d
 			y: -16.5d
 			icon: "create:crushing_wheel"
+			icon_scale: 0.75d
 			dependencies: ["0DC509B56847083F"]
 			tasks: [{
 				id: "0FF485B678806146"
@@ -330,7 +340,8 @@
 			x: 2.5d
 			y: -18.0d
 			icon: "create:crushed_raw_iron"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["369AB097B2252286"]
 			tasks: [{
@@ -361,6 +372,7 @@
 			x: 3.5d
 			y: 0.0d
 			icon: "createaddition:rolling_mill"
+			icon_scale: 0.75d
 			dependencies: ["1A09307A8AC167F1"]
 			tasks: [{
 				id: "606621CD7D93E574"
@@ -391,6 +403,7 @@
 			x: 6.0d
 			y: 0.0d
 			icon: "createaddition:connector"
+			icon_scale: 0.75d
 			dependencies: ["11C8B2178B32ACA1"]
 			tasks: [{
 				id: "19EDD86FD9771DA6"
@@ -421,6 +434,7 @@
 			x: 8.5d
 			y: 0.0d
 			icon: "createaddition:copper_spool"
+			icon_scale: 0.75d
 			dependencies: ["6FCBB312002617A1"]
 			tasks: [{
 				id: "4FF4D24EA8CB30DC"
@@ -451,6 +465,7 @@
 			x: 11.0d
 			y: 0.0d
 			icon: "createaddition:alternator"
+			icon_scale: 0.75d
 			dependencies: ["7902F08D734F15A4"]
 			tasks: [{
 				id: "5B591768218157E2"
@@ -481,6 +496,7 @@
 			x: 13.5d
 			y: 0.0d
 			icon: "createaddition:modular_accumulator"
+			icon_scale: 0.75d
 			dependencies: ["00CCE8A0C6DB132B"]
 			tasks: [{
 				id: "56EDDDDFCC22F45D"
@@ -511,6 +527,7 @@
 			x: 16.0d
 			y: 0.0d
 			icon: "createaddition:electric_motor"
+			icon_scale: 0.75d
 			dependencies: ["6B646181101275F1"]
 			tasks: [{
 				id: "02920536C71B39B8"
@@ -541,7 +558,8 @@
 			x: 18.5d
 			y: 0.0d
 			icon: "createaddition:copper_wire"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.4d
 			dependencies: ["490C2277CD8D5A1A"]
 			tasks: [{
@@ -573,6 +591,7 @@
 			x: 0.0d
 			y: 3.5d
 			icon: "createdieselgenerators:oil_scanner"
+			icon_scale: 0.75d
 			dependencies: ["1A09307A8AC167F1"]
 			tasks: [{
 				id: "4ACF54DB568868A1"
@@ -603,6 +622,7 @@
 			x: 0.0d
 			y: 6.0d
 			icon: "createdieselgenerators:distillation_controller"
+			icon_scale: 0.75d
 			dependencies: ["5BE167F5106C0134"]
 			tasks: [{
 				id: "4F13D5C42BAB24DA"
@@ -633,6 +653,7 @@
 			x: 0.0d
 			y: 8.5d
 			icon: "createdieselgenerators:diesel_bucket"
+			icon_scale: 0.75d
 			dependencies: ["5F4913690DFB0B64"]
 			tasks: [{
 				id: "22AD870126961601"
@@ -664,6 +685,7 @@
 			x: 0.0d
 			y: 11.0d
 			icon: "createdieselgenerators:diesel_engine"
+			icon_scale: 0.75d
 			dependencies: ["5C984DF9A7FB8BA2"]
 			tasks: [{
 				id: "76A5FEFCB6D619DD"
@@ -694,7 +716,8 @@
 			x: 2.5d
 			y: 12.5d
 			icon: "createdieselgenerators:engine_turbocharger"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["6185039BCD7BBF2F"]
 			tasks: [{
@@ -726,7 +749,8 @@
 			x: 0.0d
 			y: 13.5d
 			icon: "create:wheat_flour"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.4d
 			dependencies: ["6185039BCD7BBF2F"]
 			tasks: [{
@@ -758,6 +782,7 @@
 			x: -3.0d
 			y: 3.0d
 			icon: "create:hose_pulley"
+			icon_scale: 0.75d
 			dependencies: ["1A09307A8AC167F1"]
 			tasks: [{
 				id: "3CB1840AD88AD9E9"
@@ -787,7 +812,8 @@
 			x: -5.0d
 			y: 5.0d
 			icon: "create:steam_engine"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			dependencies: ["27CEF6292A89B0A2"]
 			tasks: [{
 				id: "0C254D384F581D6A"
@@ -817,7 +843,8 @@
 			x: -7.0d
 			y: 7.0d
 			icon: "create:stressometer"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["41102025AA038BF1"]
 			tasks: [{
@@ -848,6 +875,7 @@
 			x: -3.5d
 			y: 0.0d
 			icon: "createbigcannons:casting_sand"
+			icon_scale: 0.75d
 			dependencies: [
 				"1A09307A8AC167F1"
 				"391F9987F1F32442"
@@ -882,6 +910,7 @@
 			x: -6.0d
 			y: 0.0d
 			icon: "createbigcannons:cannon_builder"
+			icon_scale: 0.75d
 			dependencies: ["0EF67FFF73E6D383"]
 			tasks: [{
 				id: "22A90D25B88230C6"
@@ -912,6 +941,7 @@
 			x: -8.5d
 			y: 0.0d
 			icon: "createbigcannons:cannon_drill"
+			icon_scale: 0.75d
 			dependencies: ["35AB582E2E08DF86"]
 			tasks: [{
 				id: "79A3A72627B9B5CE"
@@ -942,6 +972,7 @@
 			x: -11.0d
 			y: 0.0d
 			icon: "createbigcannons:fixed_cannon_mount"
+			icon_scale: 0.75d
 			dependencies: ["35D125C19D556E7A"]
 			tasks: [{
 				id: "42EB033292301AEB"
@@ -972,6 +1003,7 @@
 			x: -13.5d
 			y: 0.0d
 			icon: "createbigcannons:cannon_loader"
+			icon_scale: 0.75d
 			dependencies: ["17FE2073432FC7E0"]
 			tasks: [{
 				id: "469D55A8C6CB9C79"
@@ -1002,7 +1034,8 @@
 			x: -16.0d
 			y: 0.0d
 			icon: "createbigcannons:solid_shot"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["0EC3B7E438EA800A"]
 			tasks: [{
 				id: "441E46D43F16D89C"
@@ -1033,7 +1066,8 @@
 			x: -18.5d
 			y: 0.0d
 			icon: "createbigcannons:he_shell"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.5d
 			optional: true
 			dependencies: ["08DCA843A4F83D7F"]

@@ -45,6 +45,12 @@ python tools/questbook.py check   # SNBT совпадает со свежей с
 Фоны глав: исходники автора — `art/backgrounds/`, готовые текстуры — `kubejs/assets/nasledie/textures/backgrounds/`
 (`python tools/backgrounds.py`, нужны Pillow и numpy; подробности — `docs/BACKGROUND_PROMPTS.md`).
 Какой фон у какой главы, задаёт `reviews/chapter_palettes.json`; тему собирает `python tools/apply_palettes.py`.
+Значки квестов — круглые медальоны семи типов (`docs/QUEST_FRAME_PROMPTS.md`): рисунки автора `art/frames/`
+превращает в формы FTB `python tools/quest_frames.py` (нужны Pillow и numpy; `--check` — только Pillow).
+Типы перечислены в `tools/quest_frames.py` (`TYPES`), валидатор берёт список форм оттуда и требует, чтобы каждая
+использованная форма была объявлена в теме (`extra_quest_shapes`): иначе FTB молча рисует стандартную.
+Генератор ставит каждому квесту `icon_scale: 0.75`, чтобы значок помещался в рамку.
+
 Линии связей рисует `kubejs/assets/nasledie/textures/gui/dependency_soft.png` (тема: `dependency_line_texture`,
 толщина `dependency_line_thickness: 0.24`) вместо стрелок FTB; текстуру создаёт `python tools/ui_textures.py`.
 Minecraft читает любую текстуру как RGBA: маска формы квеста (`shape.png`) без альфа-канала
@@ -104,7 +110,7 @@ python tools/build_registry.py ПАПКА_С_JAR --vanilla-ru ru_ru.json
 
 1. `python -m unittest discover -s tests`, `node --test tests/*.cjs`, `python tools/validate.py`
    (0 ошибок; предупреждения просмотрены и перечислены в отчёте), `python tools/apply_palettes.py --check`,
-   `python tools/backgrounds.py --check`, `python tools/ui_textures.py --check`.
+   `python tools/backgrounds.py --check`, `python tools/ui_textures.py --check`, `python tools/quest_frames.py --check`.
 2. Журнал ID относительно базы: `python tools/book_diff.py <распакованная база>` → приложение к журналу изменений.
 3. Архив для установки: `python tools/package_release.py` — папки `config/ftbquests/` и `kubejs/`
    ровно в состоянии коммита, плюс `SHA256SUMS` и инструкция.

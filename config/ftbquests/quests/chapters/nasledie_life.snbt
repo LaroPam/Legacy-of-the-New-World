@@ -6,7 +6,7 @@
 	icon: "farmersdelight:cooking_pot"
 	order_index: 1
 	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
+	default_quest_shape: "step"
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -17,7 +17,8 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "minecraft:red_bed"
-			shape: "heart"
+			icon_scale: 0.75d
+			shape: "home"
 			size: 1.4d
 			tasks: [{
 				id: "7944B037D07AD8DA"
@@ -47,6 +48,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "farmersdelight:flint_knife"
+			icon_scale: 0.75d
 			dependencies: ["305D6F5E90BFA385"]
 			tasks: [{
 				id: "477EAE38055AFECF"
@@ -76,6 +78,7 @@
 			x: 5.5d
 			y: 0.0d
 			icon: "farmersdelight:cutting_board"
+			icon_scale: 0.75d
 			dependencies: ["4322668146484A1C"]
 			tasks: [{
 				id: "45A1FF1C485C204C"
@@ -105,6 +108,7 @@
 			x: 8.0d
 			y: 0.0d
 			icon: "farmersdelight:cooking_pot"
+			icon_scale: 0.75d
 			dependencies: ["464A27B6AA037B37"]
 			tasks: [{
 				id: "4F93452F3C54B5AE"
@@ -134,6 +138,7 @@
 			x: 10.5d
 			y: 0.0d
 			icon: "farmersdelight:beef_stew"
+			icon_scale: 0.75d
 			dependencies: ["70BD314183AC1CDE"]
 			tasks: [{
 				id: "16D5BE52FF14FDDB"
@@ -163,7 +168,8 @@
 			x: 13.0d
 			y: 0.0d
 			icon: "farmersdelight:roast_chicken_block"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["4E740C0034B4382F"]
 			tasks: [{
@@ -194,7 +200,8 @@
 			x: 15.5d
 			y: 0.0d
 			icon: "farmersdelight:honey_glazed_ham_block"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.4d
 			optional: true
 			dependencies: ["52659216F4F03E2C"]
@@ -226,6 +233,7 @@
 			x: 3.0d
 			y: -3.0d
 			icon: "farmersdelight:cabbage_seeds"
+			icon_scale: 0.75d
 			dependencies: ["305D6F5E90BFA385"]
 			tasks: [{
 				id: "5A407032247C7A03"
@@ -255,6 +263,7 @@
 			x: 5.5d
 			y: -3.0d
 			icon: "farmersdelight:rice_panicle"
+			icon_scale: 0.75d
 			dependencies: ["42E5495CA00F5CC6"]
 			tasks: [{
 				id: "7B4D77729467D073"
@@ -284,6 +293,7 @@
 			x: 8.0d
 			y: -3.0d
 			icon: "farmersdelight:tomato"
+			icon_scale: 0.75d
 			dependencies: ["5B2F6F1B27706E1D"]
 			tasks: [{
 				id: "3494089F31F3BD4A"
@@ -313,6 +323,7 @@
 			x: 10.5d
 			y: -3.0d
 			icon: "farmersdelight:rich_soil"
+			icon_scale: 0.75d
 			dependencies: ["1E550CA158EE0E76"]
 			tasks: [{
 				id: "278FB9DC9A9352F6"
@@ -350,6 +361,7 @@
 			x: 13.0d
 			y: -3.0d
 			icon: "farmersdelight:brown_mushroom_colony"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["0F10C8510B15A8C2"]
 			tasks: [{
@@ -380,7 +392,8 @@
 			x: 15.5d
 			y: -3.0d
 			icon: "farmersdelight:fruit_salad"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.4d
 			optional: true
 			dependencies: ["6D582231374D6FBB"]
@@ -420,6 +433,7 @@
 			x: 0.0d
 			y: -3.0d
 			icon: "minecraft:wheat"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["305D6F5E90BFA385"]
 			tasks: [{
@@ -458,6 +472,7 @@
 			x: 3.0d
 			y: 3.0d
 			icon: "cold_sweat:goat_fur_chestplate"
+			icon_scale: 0.75d
 			dependencies: ["305D6F5E90BFA385"]
 			tasks: [{
 				id: "1B8D871046AC33A4"
@@ -487,7 +502,8 @@
 			x: 5.5d
 			y: 3.0d
 			icon: "cold_sweat:hearth"
-			shape: "heart"
+			icon_scale: 0.75d
+			shape: "home"
 			dependencies: ["42A7FBADC6571244"]
 			tasks: [{
 				id: "2C909DA0B3D8F72F"
@@ -517,6 +533,7 @@
 			x: 8.0d
 			y: 3.0d
 			icon: "cold_sweat:smokestack"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["119A349F7B3DEF2E"]
 			tasks: [{
@@ -547,6 +564,7 @@
 			x: 8.0d
 			y: 4.5d
 			icon: "cold_sweat:goat_fur_helmet"
+			icon_scale: 0.75d
 			dependencies: ["119A349F7B3DEF2E"]
 			tasks: [{
 				id: "23C28200FB42C442"
@@ -576,6 +594,7 @@
 			x: 0.0d
 			y: 3.0d
 			icon: "minecraft:skeleton_skull"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["305D6F5E90BFA385"]
 			tasks: [{
@@ -606,6 +625,7 @@
 			x: 3.0d
 			y: 7.0d
 			icon: "sophisticatedbackpacks:backpack"
+			icon_scale: 0.75d
 			dependencies: ["305D6F5E90BFA385"]
 			tasks: [{
 				id: "6EB6532083976608"
@@ -635,6 +655,7 @@
 			x: 5.5d
 			y: 7.0d
 			icon: "sophisticatedbackpacks:pickup_upgrade"
+			icon_scale: 0.75d
 			dependencies: ["69525CBD49DF5FDB"]
 			tasks: [{
 				id: "5711FACB7CAA789A"
@@ -664,6 +685,7 @@
 			x: 8.0d
 			y: 7.0d
 			icon: "sophisticatedstorage:iron_chest"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["6BF257BC86E5F51D"]
 			tasks: [{

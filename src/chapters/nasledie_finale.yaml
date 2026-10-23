@@ -8,14 +8,14 @@ chapter:
   icon: minecraft:end_portal_frame
   order_index: 16
   default_hide_dependency_lines: false
-  default_quest_shape: circle
+  default_quest_shape: step
   progression_mode: flexible
 
 links:
-  - {quest: nasledie_chronicle/eklund_alive, x: 0.0, y: 0.0, shape: star, size: 1.5}
-  - {quest: nasledie_chronicle/dragon, x: 3.5, y: 0.0, shape: crown, size: 1.8}
-  - {quest: nasledie_chronicle/ender_guardian, x: 8.0, y: 0.0, shape: crown, size: 2.0}
-  - {quest: nasledie_chronicle/legacy, x: 12.0, y: 0.0, shape: star, size: 2.2}
+  - {quest: nasledie_chronicle/eklund_alive, x: 0.0, y: 0.0, shape: milestone, size: 1.5}
+  - {quest: nasledie_chronicle/dragon, x: 3.5, y: 0.0, shape: boss, size: 1.8}
+  - {quest: nasledie_chronicle/ender_guardian, x: 8.0, y: 0.0, shape: boss, size: 2.0}
+  - {quest: nasledie_chronicle/legacy, x: 12.0, y: 0.0, shape: milestone, size: 2.2}
 
 quests:
   # ── Пустота над островами ──
@@ -27,7 +27,7 @@ quests:
     x: 1.75
     y: -2.75
     icon: minecraft:end_portal_frame
-    shape: scroll
+    shape: expedition
     size: 1.2
     deps: [nasledie_chronicle/eklund_alive]
     tasks:
@@ -122,7 +122,7 @@ quests:
     x: 6.25
     y: -5.25
     icon: alexsmobs:mysterious_worm
-    shape: shield
+    shape: trial
     size: 1.3
     deps: [capsid]
     tasks:
@@ -140,7 +140,7 @@ quests:
     x: 6.25
     y: -7.75
     icon: alexsmobs:void_worm_mandible
-    shape: star
+    shape: milestone
     optional: true
     deps: [void_summon]
     tasks:
@@ -157,7 +157,7 @@ quests:
     x: 9.0
     y: -5.25
     icon: alexsmobs:void_worm_eye
-    shape: crown
+    shape: boss
     size: 1.8
     deps: [void_summon]
     tasks:
@@ -181,7 +181,7 @@ quests:
     x: 1.75
     y: 2.75
     icon: minecraft:end_crystal
-    shape: star
+    shape: milestone
     optional: true
     deps: [nasledie_chronicle/dragon]
     tasks:
@@ -198,7 +198,7 @@ quests:
     x: 5.5
     y: 3.0
     icon: minecraft:ender_pearl
-    shape: scroll
+    shape: expedition
     size: 1.2
     deps: [nasledie_chronicle/dragon]
     tasks:
@@ -244,7 +244,7 @@ quests:
     x: 10.5
     y: 5.5
     icon: minecraft:elytra
-    shape: star
+    shape: milestone
     size: 1.5
     deps: [end_city]
     tasks:

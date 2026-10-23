@@ -8,15 +8,15 @@ chapter:
   icon: mowziesmobs:wrought_helmet
   order_index: 6
   default_hide_dependency_lines: false
-  default_quest_shape: shield
+  default_quest_shape: trial
   progression_mode: flexible
 
 links:
-  - {quest: nasledie_chronicle/route, x: 0.0, y: 0.0, shape: star, size: 1.8}
-  - {quest: nasledie_chronicle/umvuthi, x: -7.01, y: -14.38, shape: crown, size: 1.5}
-  - {quest: nasledie_chronicle/sculptor, x: 6.25, y: -6.47, shape: crown, size: 1.5}
-  - {quest: nasledie_chronicle/wroughtnaut, x: 6.31, y: 1.57, shape: crown, size: 1.5}
-  - {quest: nasledie_chronicle/frostmaw, x: -3.63, y: 5.39, shape: crown, size: 1.5}
+  - {quest: nasledie_chronicle/route, x: 0.0, y: 0.0, shape: milestone, size: 1.8}
+  - {quest: nasledie_chronicle/umvuthi, x: -7.01, y: -14.38, shape: boss, size: 1.5}
+  - {quest: nasledie_chronicle/sculptor, x: 6.25, y: -6.47, shape: boss, size: 1.5}
+  - {quest: nasledie_chronicle/wroughtnaut, x: 6.31, y: 1.57, shape: boss, size: 1.5}
+  - {quest: nasledie_chronicle/frostmaw, x: -3.63, y: 5.39, shape: boss, size: 1.5}
 
 quests:
   # ── Солнечная роща ──
@@ -29,7 +29,7 @@ quests:
     x: -2.25
     y: -2.68
     icon: mowziesmobs:umvuthana_mask_fury
-    shape: scroll
+    shape: expedition
     deps: [nasledie_chronicle/route]
     tasks:
       - {type: structure, structure: mowziesmobs:umvuthana_grove}
@@ -77,7 +77,7 @@ quests:
     x: -7.07
     y: -8.43
     icon: mowziesmobs:umvuthana_mask_bliss
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [grove_watch]
     tasks:
@@ -93,7 +93,7 @@ quests:
     x: -8.68
     y: -10.34
     icon: minecraft:chest
-    shape: circle
+    shape: step
     deps: [sneak]
     tasks:
       - {type: criteria, title: Открыть сундук рощи, loot: mowziesmobs:chests/umvuthana_grove_chest}
@@ -125,7 +125,7 @@ quests:
     x: -6.97
     y: -17.25
     icon: mowziesmobs:sol_visage
-    shape: star
+    shape: milestone
     optional: true
     deps: [nasledie_chronicle/umvuthi]
     tasks:
@@ -143,7 +143,7 @@ quests:
     x: 1.75
     y: -3.03
     icon: mowziesmobs:geomancer_robe
-    shape: scroll
+    shape: expedition
     deps: [nasledie_chronicle/route]
     tasks:
       - {type: structure, structure: mowziesmobs:monastery}
@@ -158,7 +158,7 @@ quests:
     x: 3.0
     y: -5.2
     icon: minecraft:barrel
-    shape: circle
+    shape: step
     deps: [monastery]
     tasks:
       - {type: criteria, title: Открыть сундук монастыря, loot: mowziesmobs:chests/monastery_chest}
@@ -174,7 +174,7 @@ quests:
     x: 1.55
     y: -6.21
     icon: minecraft:feather
-    shape: circle
+    shape: step
     optional: true
     deps: [monastery_chest]
     tasks:
@@ -192,7 +192,7 @@ quests:
     x: 3.5
     y: 0.0
     icon: mowziesmobs:wrought_axe
-    shape: scroll
+    shape: expedition
     deps: [nasledie_chronicle/route]
     tasks:
       - {type: structure, structure: mowziesmobs:wrought_chamber}
@@ -209,7 +209,7 @@ quests:
     x: 9.04
     y: 2.94
     icon: mowziesmobs:wrought_axe
-    shape: star
+    shape: milestone
     optional: true
     deps: [nasledie_chronicle/wroughtnaut]
     tasks:
@@ -230,7 +230,7 @@ quests:
     x: 2.25
     y: 2.68
     icon: minecraft:diamond_ore
-    shape: circle
+    shape: step
     optional: true
     deps: [nasledie_chronicle/route]
     tasks:
@@ -247,7 +247,7 @@ quests:
     x: 3.86
     y: 4.6
     icon: minecraft:diamond
-    shape: star
+    shape: milestone
     optional: true
     deps: [grottol]
     tasks:
@@ -264,7 +264,7 @@ quests:
     x: 5.46
     y: 6.51
     icon: minecraft:deepslate_diamond_ore
-    shape: star
+    shape: milestone
     optional: true
     deps: [grottol_fortune]
     tasks:
@@ -297,7 +297,7 @@ quests:
     x: -1.2
     y: 3.29
     icon: minecraft:snow_block
-    shape: scroll
+    shape: expedition
     deps: [nasledie_chronicle/route]
     tasks:
       - {type: structure, structure: mowziesmobs:frostmaw_spawn}
@@ -313,7 +313,7 @@ quests:
     x: -0.86
     y: 6.14
     icon: mowziesmobs:ice_crystal
-    shape: star
+    shape: milestone
     optional: true
     deps: [frostmaw_lair]
     tasks:

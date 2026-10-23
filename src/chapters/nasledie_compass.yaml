@@ -8,11 +8,11 @@ chapter:
   icon: explorerscompass:explorerscompass
   order_index: 5
   default_hide_dependency_lines: false
-  default_quest_shape: scroll
+  default_quest_shape: expedition
   progression_mode: flexible
 
 links:
-  - {quest: nasledie_chronicle/route, x: 0, y: 0, shape: star, size: 2}
+  - {quest: nasledie_chronicle/route, x: 0, y: 0, shape: milestone, size: 2}
 
 quests:
   # ── Логова иллагеров ──
@@ -39,7 +39,7 @@ quests:
     x: 0.5
     y: -5.68
     icon: minecraft:chest
-    shape: shield
+    shape: trial
     deps: [hideout]
     tasks:
       - {type: advancement, advancement: nova_structures:adventure/loot_illager_hideout}
@@ -70,7 +70,7 @@ quests:
     x: 2.77
     y: -10.34
     icon: minecraft:iron_axe
-    shape: shield
+    shape: trial
     deps: [fort]
     tasks:
       - {type: advancement, advancement: nasledie:alpha41/fort_assault/pillager_inside_fort, title: Разбойник внутри форта}
@@ -86,7 +86,7 @@ quests:
     x: 4.51
     y: -12.4
     icon: minecraft:emerald_block
-    shape: shield
+    shape: trial
     deps: [fort_defenders]
     tasks:
       - {type: criteria, title: Открыть казну форта, loot: dungeons_arise:chests/illager_fort/illager_fort_treasure}
@@ -101,7 +101,7 @@ quests:
     x: 6.64
     y: -14.23
     icon: minecraft:white_banner
-    shape: star
+    shape: milestone
     optional: true
     deps: [fort_treasure]
     tasks:
@@ -149,7 +149,7 @@ quests:
     x: 7.2
     y: -3.92
     icon: immersive_aircraft:gyroscope
-    shape: star
+    shape: milestone
     optional: true
     deps: [heavenly_challenger]
     tasks:
@@ -182,7 +182,7 @@ quests:
     x: 12.51
     y: -4.2
     icon: create:schematicannon
-    shape: star
+    shape: milestone
     deps: [mechanical_nest]
     tasks:
       - {type: advancement, advancement: nasledie:alpha43/expeditions/nest_treasure, title: Открыть сокровищницу гнезда}
@@ -244,7 +244,7 @@ quests:
     x: 9.46
     y: 5.0
     icon: minecraft:blaze_rod
-    shape: shield
+    shape: trial
     deps: [foundry]
     tasks:
       - {type: advancement, advancement: nasledie:alpha43/expeditions/foundry_blaze, title: Ифрит в кузнице}
@@ -322,7 +322,7 @@ quests:
     x: 1.99
     y: 10.51
     icon: minecraft:fermented_spider_eye
-    shape: shield
+    shape: trial
     deps: [keep_kayra]
     tasks:
       - {type: criteria, title: Открыть сокровищницу приюта, loot: dungeons_arise:chests/plague_asylum/plague_asylum_treasure}
@@ -400,7 +400,7 @@ quests:
     x: -6.98
     y: 8.11
     icon: minecraft:spider_eye
-    shape: shield
+    shape: trial
     deps: [infested_temple]
     tasks:
       - {type: advancement, advancement: nasledie:alpha43/expeditions/temple_cave_spider, title: Пещерный паук в храме}
@@ -447,7 +447,7 @@ quests:
     x: -8.19
     y: 0.41
     icon: minecraft:gold_block
-    shape: star
+    shape: milestone
     deps: [tavern_map]
     tasks:
       - type: criteria
@@ -492,7 +492,7 @@ quests:
     x: -13.1
     y: -1.64
     icon: minecraft:totem_of_undying
-    shape: shield
+    shape: trial
     deps: [miner_outpost]
     tasks:
       - {type: advancement, advancement: nova_structures:adventure/conquer_miner_outpost}
@@ -571,7 +571,7 @@ quests:
     x: -6.88
     y: -11.26
     icon: minecraft:amethyst_cluster
-    shape: star
+    shape: milestone
     optional: true
     deps: [mage_tower]
     tasks:

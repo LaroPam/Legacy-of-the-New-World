@@ -6,14 +6,14 @@
 	icon: "alexsmobs:animal_dictionary"
 	order_index: 17
 	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
+	default_quest_shape: "step"
 	progression_mode: "flexible"
 	quest_links: [{
 		id: "6035792C37A284FA"
 		linked_quest: "12AF3238F7B8776E"
 		x: -1.88d
 		y: -3.53d
-		shape: "crown"
+		shape: "boss"
 		size: 1.4d
 	}]
 	quests: [
@@ -24,7 +24,8 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "alexsmobs:animal_dictionary"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.8d
 			tasks: [{
 				id: "01AAAE8B63AD0F16"
@@ -55,6 +56,7 @@
 			x: -3.03d
 			y: 1.75d
 			icon: "minecraft:writable_book"
+			icon_scale: 0.75d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [
 				{
@@ -99,7 +101,8 @@
 			x: -3.5d
 			y: 0.0d
 			icon: "alexsmobs:maraca"
-			shape: "heart"
+			icon_scale: 0.75d
+			shape: "home"
 			optional: true
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
@@ -130,7 +133,8 @@
 			x: -5.82d
 			y: 1.45d
 			icon: "alexsmobs:transmutation_table"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
@@ -161,6 +165,7 @@
 			x: 0.0d
 			y: -3.5d
 			icon: "minecraft:spyglass"
+			icon_scale: 0.75d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
 				id: "1F864CD314D0747E"
@@ -190,6 +195,7 @@
 			x: 0.0d
 			y: -6.0d
 			icon: "alexsmobs:bear_fur"
+			icon_scale: 0.75d
 			dependencies: ["59BE881A23FA5362"]
 			tasks: [{
 				id: "587864688609C05D"
@@ -219,6 +225,7 @@
 			x: 1.55d
 			y: -5.8d
 			icon: "minecraft:apple"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["59BE881A23FA5362"]
 			tasks: [{
@@ -249,7 +256,8 @@
 			x: 0.0d
 			y: -8.5d
 			icon: "alexsmobs:stink_bottle"
-			shape: "heart"
+			icon_scale: 0.75d
+			shape: "home"
 			optional: true
 			dependencies: ["16A5A07EA384E3E1"]
 			tasks: [{
@@ -280,6 +288,7 @@
 			x: -2.2d
 			y: -8.21d
 			icon: "alexsmobs:ghostly_pickaxe"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["16A5A07EA384E3E1"]
 			tasks: [{
@@ -310,6 +319,7 @@
 			x: 2.68d
 			y: -2.25d
 			icon: "alexsmobs:fish_oil"
+			icon_scale: 0.75d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
 				id: "628499842EACBFFA"
@@ -339,6 +349,7 @@
 			x: 4.6d
 			y: -3.86d
 			icon: "alexsmobs:falconry_glove"
+			icon_scale: 0.75d
 			dependencies: ["64D66B92C822D527"]
 			tasks: [{
 				id: "6F5F50A93BF1D08E"
@@ -368,6 +379,7 @@
 			x: 6.51d
 			y: -5.46d
 			icon: "alexsmobs:falconry_hood"
+			icon_scale: 0.75d
 			dependencies: ["252A21A892E4E5A0"]
 			tasks: [{
 				id: "15EE6E3B9B7E7852"
@@ -397,7 +409,8 @@
 			x: 8.43d
 			y: -7.07d
 			icon: "minecraft:feather"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			dependencies: ["1AC57DF4745395A2"]
 			tasks: [{
 				id: "32F8937E9C9A9C73"
@@ -427,6 +440,7 @@
 			x: 3.45d
 			y: 0.61d
 			icon: "alexsmobs:banana"
+			icon_scale: 0.75d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
 				id: "4F499F5711FC1389"
@@ -456,6 +470,7 @@
 			x: 5.91d
 			y: 1.04d
 			icon: "alexsmobs:banana"
+			icon_scale: 0.75d
 			dependencies: ["4B932485B3983E85"]
 			tasks: [{
 				id: "516D10F4D859A619"
@@ -485,6 +500,7 @@
 			x: 8.37d
 			y: 1.48d
 			icon: "minecraft:poppy"
+			icon_scale: 0.75d
 			dependencies: ["269880141C867BB1"]
 			tasks: [{
 				id: "11C482CE8355E14F"
@@ -514,6 +530,7 @@
 			x: 10.83d
 			y: 1.91d
 			icon: "minecraft:allium"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["19FCA77EB16A1E4A"]
 			tasks: [{
@@ -544,6 +561,7 @@
 			x: 5.99d
 			y: -0.42d
 			icon: "alexsmobs:leafcutter_ant_pupa"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["4B932485B3983E85"]
 			tasks: [{
@@ -574,7 +592,8 @@
 			x: 7.77d
 			y: 3.46d
 			icon: "minecraft:porkchop"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["269880141C867BB1"]
 			tasks: [{
@@ -605,6 +624,7 @@
 			x: 1.75d
 			y: 3.03d
 			icon: "alexsmobs:acacia_blossom"
+			icon_scale: 0.75d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
 				id: "53D2A594FD348510"
@@ -634,7 +654,8 @@
 			x: 3.0d
 			y: 5.2d
 			icon: "minecraft:red_carpet"
-			shape: "heart"
+			icon_scale: 0.75d
+			shape: "home"
 			optional: true
 			dependencies: ["15C85BF47DA01D26"]
 			tasks: [{
@@ -665,7 +686,8 @@
 			x: 1.65d
 			y: 5.77d
 			icon: "minecraft:bone"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["15C85BF47DA01D26"]
 			tasks: [{
@@ -696,6 +718,7 @@
 			x: -0.39d
 			y: 4.48d
 			icon: "alexsmobs:crocodile_egg"
+			icon_scale: 0.75d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
 				id: "3EEFE319AF7D09C6"
@@ -725,6 +748,7 @@
 			x: -0.61d
 			y: 6.97d
 			icon: "minecraft:spider_eye"
+			icon_scale: 0.75d
 			dependencies: ["427CD312AE0EB773"]
 			tasks: [{
 				id: "39D1B19111118BE5"
@@ -754,7 +778,8 @@
 			x: -0.83d
 			y: 9.46d
 			icon: "alexsmobs:soul_heart"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			optional: true
 			dependencies: ["3C70087F08BB9172"]
 			tasks: [
@@ -800,7 +825,8 @@
 			x: -2.01d
 			y: 2.87d
 			icon: "minecraft:cod"
-			shape: "heart"
+			icon_scale: 0.75d
+			shape: "home"
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
 				id: "198FA1DA427C46F2"
@@ -830,6 +856,7 @@
 			x: -3.25d
 			y: 5.63d
 			icon: "minecraft:tropical_fish"
+			icon_scale: 0.75d
 			dependencies: ["19429B59EE71CDA8"]
 			tasks: [{
 				id: "016649403388BC7C"
@@ -859,7 +886,8 @@
 			x: -4.5d
 			y: 7.79d
 			icon: "alexsmobs:ambergris"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["3949C4277618FEC3"]
 			tasks: [{
@@ -890,6 +918,7 @@
 			x: -6.02d
 			y: 6.69d
 			icon: "minecraft:nautilus_shell"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["3949C4277618FEC3"]
 			tasks: [{
@@ -920,6 +949,7 @@
 			x: -3.09d
 			y: -1.64d
 			icon: "alexsmobs:stradpole_bucket"
+			icon_scale: 0.75d
 			dependencies: ["7E2ECDC313839529"]
 			tasks: [{
 				id: "6511488F59080B91"
@@ -949,6 +979,7 @@
 			x: -4.32d
 			y: -4.17d
 			icon: "minecraft:warped_fungus"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["39C5E7F638070495"]
 			tasks: [{
@@ -979,6 +1010,7 @@
 			x: -5.84d
 			y: -2.85d
 			icon: "minecraft:spyglass"
+			icon_scale: 0.75d
 			dependencies: ["39C5E7F638070495"]
 			tasks: [{
 				id: "2D7ACF415EE5B6A0"
@@ -1011,7 +1043,8 @@
 			x: -8.28d
 			y: -3.52d
 			icon: "minecraft:saddle"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["2CE2BBCB182D3BF5"]
 			tasks: [{
@@ -1042,7 +1075,8 @@
 			x: -7.88d
 			y: -5.31d
 			icon: "alexsmobs:hemolymph_sac"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.5d
 			optional: true
 			dependencies: ["2CE2BBCB182D3BF5"]
@@ -1074,7 +1108,8 @@
 			x: -5.2d
 			y: 3.0d
 			icon: "minecraft:sweet_berries"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["757181DBDA992F0B"]
 			tasks: [

@@ -13,7 +13,7 @@ Source format (one YAML file per chapter):
       id: 0123456789ABCDEF       # optional; generated from filename/key when absent
       title: ...
       description: [...]
-      x: 0; y: 0; icon; shape; size; optional
+      x: 0; y: 0; icon; icon_scale (default 0.75); shape; size; optional
       deps: [other_key, chapter_filename/key, 0123456789ABCDEF]
       tasks:   [{type: advancement, advancement: ...}, ...]
       rewards: [{type: xp, xp: 100}, {type: item, item: id, count: 2},
@@ -52,9 +52,10 @@ BOOK_AUTHOR = 'Первая экспедиция'
 
 CHAPTER_ORDER = ('filename', 'id', 'group', 'title', 'icon', 'order_index', 'default_hide_dependency_lines',
                  'default_quest_shape', 'default_quest_size', 'progression_mode', 'subtitle', 'images')
-QUEST_ORDER = ('id', 'title', 'subtitle', 'description', 'x', 'y', 'icon', 'shape', 'size', 'optional',
+QUEST_ORDER = ('id', 'title', 'subtitle', 'description', 'x', 'y', 'icon', 'icon_scale', 'shape', 'size', 'optional',
                'dependencies', 'dependency_requirement', 'hide_dependency_lines', 'tasks', 'rewards')
-DOUBLE_KEYS = {'x', 'y', 'size', 'default_quest_size'}
+DOUBLE_KEYS = {'x', 'y', 'size', 'default_quest_size', 'icon_scale'}
+ICON_SCALE = 0.75  # the item icon stays inside the medallion's recess (tools/quest_frames.py)
 
 
 def make_id(seed):
@@ -334,6 +335,7 @@ def build_chapter(name, data, names, generated):
                 continue
             body[key] = tag(value, key)
         body.setdefault('description', snbt.List([]))
+        body.setdefault('icon_scale', tag(ICON_SCALE, 'icon_scale'))
         if quest.get('deps'):
             body['dependencies'] = snbt.List([snbt.String(dependency(d, name, names)) for d in quest['deps']])
         stem = (quest.get('key') or ident.lower()).replace('-', '_')

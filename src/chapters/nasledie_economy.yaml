@@ -7,7 +7,7 @@ chapter:
   icon: minecraft:emerald
   order_index: 12
   default_hide_dependency_lines: false
-  default_quest_shape: coin
+  default_quest_shape: home
   progression_mode: flexible
 
 quests:
@@ -100,7 +100,7 @@ quests:
     x: 9
     y: 0
     icon: minecraft:emerald_block
-    shape: star
+    shape: milestone
     deps: [pearl_deal, wandering]
     tasks:
       - {id: 0B4DDDAE184A446C, type: stat, stat: minecraft:traded_with_villager, value: 25}
@@ -145,7 +145,7 @@ quests:
     x: 15
     y: 0
     icon: sophisticatedstorage:controller
-    shape: star
+    shape: milestone
     size: 1.4
     deps: [merchant_worker, shop]
     tasks:

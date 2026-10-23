@@ -8,20 +8,20 @@ chapter:
   icon: cataclysm:flame_eye
   order_index: 15
   default_hide_dependency_lines: false
-  default_quest_shape: circle
+  default_quest_shape: step
   progression_mode: flexible
 
 links:
-  - {quest: nasledie_chronicle/nether_eye, x: 0.0, y: 0.0, shape: star, size: 2.2}
-  - {quest: nasledie_chronicle/ender_guardian, x: 3.31, y: -11.54, shape: crown, size: 1.7}
-  - {quest: nasledie_chronicle/scylla, x: 10.5, y: -5.82, shape: crown, size: 1.7}
-  - {quest: nasledie_chronicle/strand_notes, x: 6.5, y: 0.0, shape: star, size: 1.4}
-  - {quest: nasledie_chronicle/harbinger, x: 11.54, y: 3.31, shape: crown, size: 1.7}
-  - {quest: nasledie_chronicle/monstrosity, x: 5.82, y: 10.5, shape: crown, size: 1.7}
-  - {quest: nasledie_chronicle/ignis, x: -3.31, y: 11.54, shape: crown, size: 1.7}
-  - {quest: nasledie_chronicle/leviathan, x: -10.5, y: 5.82, shape: crown, size: 1.7}
-  - {quest: nasledie_chronicle/remnant, x: -11.54, y: -3.31, shape: crown, size: 1.7}
-  - {quest: nasledie_chronicle/maledictus, x: -5.82, y: -10.5, shape: crown, size: 1.7}
+  - {quest: nasledie_chronicle/nether_eye, x: 0.0, y: 0.0, shape: milestone, size: 2.2}
+  - {quest: nasledie_chronicle/ender_guardian, x: 3.31, y: -11.54, shape: boss, size: 1.7}
+  - {quest: nasledie_chronicle/scylla, x: 10.5, y: -5.82, shape: boss, size: 1.7}
+  - {quest: nasledie_chronicle/strand_notes, x: 6.5, y: 0.0, shape: milestone, size: 1.4}
+  - {quest: nasledie_chronicle/harbinger, x: 11.54, y: 3.31, shape: boss, size: 1.7}
+  - {quest: nasledie_chronicle/monstrosity, x: 5.82, y: 10.5, shape: boss, size: 1.7}
+  - {quest: nasledie_chronicle/ignis, x: -3.31, y: 11.54, shape: boss, size: 1.7}
+  - {quest: nasledie_chronicle/leviathan, x: -10.5, y: 5.82, shape: boss, size: 1.7}
+  - {quest: nasledie_chronicle/remnant, x: -11.54, y: -3.31, shape: boss, size: 1.7}
+  - {quest: nasledie_chronicle/maledictus, x: -5.82, y: -10.5, shape: boss, size: 1.7}
 
 quests:
   - key: eight_victories
@@ -33,7 +33,7 @@ quests:
     x: 13.44
     y: 13.44
     icon: cataclysm:bulwark_of_the_flame
-    shape: crown
+    shape: boss
     size: 2
     hide_dependency_lines: true
     deps: [nasledie_chronicle/ignis, nasledie_chronicle/leviathan, nasledie_chronicle/harbinger, nasledie_chronicle/ender_guardian,
@@ -75,7 +75,7 @@ quests:
     x: 0.0
     y: -6.5
     icon: minecraft:purpur_block
-    shape: scroll
+    shape: expedition
     deps: [void_eye]
     tasks:
       - {type: advancement, advancement: cataclysm:find_ruined_citadel}
@@ -91,7 +91,7 @@ quests:
     x: 0.0
     y: -9.5
     icon: minecraft:end_stone_bricks
-    shape: shield
+    shape: trial
     deps: [citadel]
     tasks:
       - {type: advancement, advancement: cataclysm:kill_ender_golem}
@@ -108,7 +108,7 @@ quests:
     x: -1.92
     y: -5.9
     icon: minecraft:obsidian
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [void_eye]
     tasks:
@@ -140,7 +140,7 @@ quests:
     x: 4.6
     y: -4.6
     icon: minecraft:lightning_rod
-    shape: scroll
+    shape: expedition
     deps: [storm_eye]
     tasks:
       - {type: advancement, advancement: cataclysm:find_acropolis}
@@ -170,7 +170,7 @@ quests:
     x: 8.84
     y: -8.84
     icon: cataclysm:chitin_claw
-    shape: shield
+    shape: trial
     deps: [acropolis_treasure]
     tasks:
       - {type: advancement, advancement: cataclysm:kill_clawdian}
@@ -200,7 +200,7 @@ quests:
     x: 9.5
     y: 0.0
     icon: minecraft:iron_block
-    shape: shield
+    shape: trial
     deps: [nasledie_chronicle/strand_notes]
     tasks:
       - {type: criteria, title: Победить Провожатого, kill: cataclysm:the_prowler}
@@ -231,7 +231,7 @@ quests:
     x: 4.6
     y: 4.6
     icon: minecraft:anvil
-    shape: scroll
+    shape: expedition
     deps: [monstrous_eye]
     tasks:
       - {type: advancement, advancement: cataclysm:find_soul_black_smith}
@@ -247,7 +247,7 @@ quests:
     x: 6.72
     y: 6.72
     icon: minecraft:blackstone
-    shape: shield
+    shape: trial
     deps: [forge]
     tasks:
       - {type: advancement, advancement: nasledie:alpha39/cataclysm/ash_vanguard, title: Огненный берсерк}
@@ -279,7 +279,7 @@ quests:
     x: 0.0
     y: 6.5
     icon: minecraft:magma_block
-    shape: scroll
+    shape: expedition
     deps: [flame_eye]
     tasks:
       - {type: advancement, advancement: cataclysm:find_burning_arena}
@@ -295,7 +295,7 @@ quests:
     x: 0.0
     y: 9.5
     icon: minecraft:blaze_powder
-    shape: shield
+    shape: trial
     deps: [arena]
     tasks:
       - {type: advancement, advancement: cataclysm:kill_revenant}
@@ -326,7 +326,7 @@ quests:
     x: -4.6
     y: 4.6
     icon: minecraft:prismarine_bricks
-    shape: scroll
+    shape: expedition
     deps: [abyss_eye]
     tasks:
       - {type: advancement, advancement: cataclysm:find_sunken_city}
@@ -342,7 +342,7 @@ quests:
     x: -6.72
     y: 6.72
     icon: minecraft:tube_coral_block
-    shape: shield
+    shape: trial
     deps: [sunken_city]
     tasks:
       - {type: advancement, advancement: nasledie:alpha39/cataclysm/deep_patrol, title: Брут-глубинник}
@@ -376,7 +376,7 @@ quests:
     x: -6.5
     y: 0.0
     icon: minecraft:chiseled_sandstone
-    shape: scroll
+    shape: expedition
     deps: [desert_eye]
     tasks:
       - {type: advancement, advancement: cataclysm:find_cursed_pyramid}
@@ -391,7 +391,7 @@ quests:
     x: -9.5
     y: 0.0
     icon: cataclysm:kobolediator_skull
-    shape: shield
+    shape: trial
     deps: [pyramid]
     tasks:
       - type: criteria
@@ -426,7 +426,7 @@ quests:
     x: -5.75
     y: 2.32
     icon: minecraft:cobweb
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [desert_eye]
     tasks:
@@ -443,7 +443,7 @@ quests:
     x: -8.07
     y: 3.26
     icon: minecraft:sandstone
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [ruined_village]
     tasks:
@@ -460,7 +460,7 @@ quests:
     x: -10.38
     y: 4.2
     icon: minecraft:brush
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [occupied_village]
     tasks:
@@ -477,7 +477,7 @@ quests:
     x: -14.5
     y: 0.0
     icon: minecraft:cut_sandstone
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [pyramid_guards]
     tasks:
@@ -494,7 +494,7 @@ quests:
     x: -17.0
     y: 0.0
     icon: minecraft:amethyst_cluster
-    shape: scroll
+    shape: expedition
     optional: true
     deps: [abandoned_temple]
     tasks:
@@ -526,7 +526,7 @@ quests:
     x: -4.6
     y: -4.6
     icon: minecraft:packed_ice
-    shape: scroll
+    shape: expedition
     deps: [cursed_eye]
     tasks:
       - {type: advancement, advancement: cataclysm:find_frosted_prison}
@@ -555,7 +555,7 @@ quests:
     x: -8.84
     y: -8.84
     icon: cataclysm:aptrgangr_head
-    shape: shield
+    shape: trial
     deps: [prison_treasure]
     tasks:
       - {type: criteria, title: Победить Аптерганга, kill: cataclysm:aptrgangr}

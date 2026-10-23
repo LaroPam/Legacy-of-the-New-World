@@ -6,14 +6,14 @@
 	icon: "explorerscompass:explorerscompass"
 	order_index: 5
 	default_hide_dependency_lines: false
-	default_quest_shape: "scroll"
+	default_quest_shape: "expedition"
 	progression_mode: "flexible"
 	quest_links: [{
 		id: "0A322CCF4C7C8D0B"
 		linked_quest: "00C7DAA7BBBE1ABD"
 		x: 0.0d
 		y: 0.0d
-		shape: "star"
+		shape: "milestone"
 		size: 2.0d
 	}]
 	quests: [
@@ -24,6 +24,7 @@
 			x: 0.0d
 			y: -3.2d
 			icon: "minecraft:iron_axe"
+			icon_scale: 0.75d
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
 				id: "6CF360B85081D978"
@@ -53,7 +54,8 @@
 			x: 0.5d
 			y: -5.68d
 			icon: "minecraft:chest"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["3C793EEF82907B7E"]
 			tasks: [{
 				id: "1BC3C82A630A7354"
@@ -83,6 +85,7 @@
 			x: 1.42d
 			y: -8.08d
 			icon: "minecraft:crossbow"
+			icon_scale: 0.75d
 			dependencies: ["4344AC4C44AE8AB1"]
 			tasks: [{
 				id: "5E53461A2033F8D6"
@@ -112,7 +115,8 @@
 			x: 2.77d
 			y: -10.34d
 			icon: "minecraft:iron_axe"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["0E33F6A4EE9EECA6"]
 			tasks: [
 				{
@@ -151,7 +155,8 @@
 			x: 4.51d
 			y: -12.4d
 			icon: "minecraft:emerald_block"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["579F172C28F00556"]
 			tasks: [{
 				id: "351E62D16077919C"
@@ -182,7 +187,8 @@
 			x: 6.64d
 			y: -14.23d
 			icon: "minecraft:white_banner"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["7A0615279F1E7C8F"]
 			tasks: [{
@@ -213,6 +219,7 @@
 			x: 2.5d
 			y: -2.0d
 			icon: "immersive_aircraft:propeller"
+			icon_scale: 0.75d
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
 				id: "5C0CAE170E926A62"
@@ -243,6 +250,7 @@
 			x: 4.75d
 			y: -3.15d
 			icon: "immersive_aircraft:hull"
+			icon_scale: 0.75d
 			dependencies: ["213990B38C18BF50"]
 			tasks: [{
 				id: "56728C3D4AE7363D"
@@ -273,7 +281,8 @@
 			x: 7.2d
 			y: -3.92d
 			icon: "immersive_aircraft:gyroscope"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["6F5D057D0A543404"]
 			tasks: [{
@@ -313,6 +322,7 @@
 			x: 9.81d
 			y: -4.28d
 			icon: "create:cogwheel"
+			icon_scale: 0.75d
 			dependencies: ["1F4C744CFD45A276"]
 			tasks: [{
 				id: "2095A6A2DBA07A6E"
@@ -342,7 +352,8 @@
 			x: 12.51d
 			y: -4.2d
 			icon: "create:schematicannon"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			dependencies: ["4AD20583645F8C5F"]
 			tasks: [{
 				id: "38E2EF3099AF531D"
@@ -373,6 +384,7 @@
 			x: 3.12d
 			y: 0.71d
 			icon: "minecraft:iron_pickaxe"
+			icon_scale: 0.75d
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
 				id: "03779BA4C767628B"
@@ -403,6 +415,7 @@
 			x: 5.43d
 			y: 1.75d
 			icon: "minecraft:red_mushroom_block"
+			icon_scale: 0.75d
 			dependencies: ["3BFF245E8A4EEBE2"]
 			tasks: [{
 				id: "45E82BDA063857FE"
@@ -433,6 +446,7 @@
 			x: 7.56d
 			y: 3.19d
 			icon: "minecraft:blast_furnace"
+			icon_scale: 0.75d
 			dependencies: ["5DB6F54ADA7C276F"]
 			tasks: [{
 				id: "548EBA25644B196E"
@@ -462,7 +476,8 @@
 			x: 9.46d
 			y: 5.0d
 			icon: "minecraft:blaze_rod"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["7C2F522F0B5765F9"]
 			tasks: [
 				{
@@ -501,6 +516,7 @@
 			x: 11.09d
 			y: 7.16d
 			icon: "minecraft:magma_block"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["43FEC71E36DEB59A"]
 			tasks: [{
@@ -532,6 +548,7 @@
 			x: 1.39d
 			y: 2.88d
 			icon: "minecraft:stone_bricks"
+			icon_scale: 0.75d
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
 				id: "21277CB815EFFAD8"
@@ -562,6 +579,7 @@
 			x: 2.02d
 			y: 5.33d
 			icon: "minecraft:chiseled_sandstone"
+			icon_scale: 0.75d
 			dependencies: ["15734C53761E6456"]
 			tasks: [{
 				id: "75F6B5D460917093"
@@ -592,6 +610,7 @@
 			x: 2.22d
 			y: 7.89d
 			icon: "minecraft:polished_deepslate"
+			icon_scale: 0.75d
 			dependencies: ["31509620769451B8"]
 			tasks: [{
 				id: "38F05D8667D9DFFD"
@@ -622,7 +641,8 @@
 			x: 1.99d
 			y: 10.51d
 			icon: "minecraft:fermented_spider_eye"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["173E6DFEEE903031"]
 			tasks: [{
 				id: "0418AE1AF418FBFB"
@@ -653,6 +673,7 @@
 			x: 1.31d
 			y: 13.13d
 			icon: "minecraft:chiseled_stone_bricks"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["07C8419F1FE8738D"]
 			tasks: [{
@@ -683,6 +704,7 @@
 			x: -1.39d
 			y: 2.88d
 			icon: "minecraft:map"
+			icon_scale: 0.75d
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
 				id: "268DFB6C89FCF763"
@@ -712,6 +734,7 @@
 			x: -2.91d
 			y: 4.9d
 			icon: "minecraft:filled_map"
+			icon_scale: 0.75d
 			dependencies: ["3D1F1FA8837A8FC5"]
 			tasks: [{
 				id: "2F904BA652C4738D"
@@ -741,6 +764,7 @@
 			x: -4.79d
 			y: 6.66d
 			icon: "minecraft:cobweb"
+			icon_scale: 0.75d
 			dependencies: ["0268BA06604DD7A2"]
 			tasks: [{
 				id: "43BE7784A749281A"
@@ -770,7 +794,8 @@
 			x: -6.98d
 			y: 8.11d
 			icon: "minecraft:spider_eye"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["1B7D417FC2AD346C"]
 			tasks: [
 				{
@@ -809,6 +834,7 @@
 			x: -3.12d
 			y: 0.71d
 			icon: "minecraft:barrel"
+			icon_scale: 0.75d
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
 				id: "78847E879FAC49BE"
@@ -838,6 +864,7 @@
 			x: -5.65d
 			y: 0.78d
 			icon: "minecraft:filled_map"
+			icon_scale: 0.75d
 			dependencies: ["225B6CD9BBAC0F47"]
 			tasks: [{
 				id: "1D6966F263CB1136"
@@ -867,7 +894,8 @@
 			x: -8.19d
 			y: 0.41d
 			icon: "minecraft:gold_block"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			dependencies: ["79B22217425743C5"]
 			tasks: [{
 				id: "2114162470C9DB3A"
@@ -898,6 +926,7 @@
 			x: -10.69d
 			y: -0.4d
 			icon: "minecraft:terracotta"
+			icon_scale: 0.75d
 			dependencies: ["6E0CAA1280D33E75"]
 			tasks: [{
 				id: "31FAE8003A7C6E62"
@@ -927,7 +956,8 @@
 			x: -13.1d
 			y: -1.64d
 			icon: "minecraft:totem_of_undying"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["0CE8AF2473DAB8AA"]
 			tasks: [{
 				id: "2083E1A5B3E373EC"
@@ -957,6 +987,7 @@
 			x: -2.5d
 			y: -2.0d
 			icon: "minecraft:snow_block"
+			icon_scale: 0.75d
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
 				id: "7D0E59F1C8DCBA84"
@@ -987,6 +1018,7 @@
 			x: -4.13d
 			y: -3.93d
 			icon: "minecraft:jungle_log"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["59752216F591E945"]
 			tasks: [{
@@ -1018,6 +1050,7 @@
 			x: -5.43d
 			y: -6.15d
 			icon: "minecraft:rose_bush"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["40194CADC20BB042"]
 			tasks: [{
@@ -1049,6 +1082,7 @@
 			x: -6.35d
 			y: -8.61d
 			icon: "minecraft:enchanting_table"
+			icon_scale: 0.75d
 			dependencies: ["3F8E03C856083FE1"]
 			tasks: [{
 				id: "647011AC8867D852"
@@ -1078,7 +1112,8 @@
 			x: -6.88d
 			y: -11.26d
 			icon: "minecraft:amethyst_cluster"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["0A349956329B7C72"]
 			tasks: [{

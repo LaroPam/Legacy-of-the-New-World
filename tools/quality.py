@@ -483,6 +483,16 @@ def resource_checks(files, parsed):
             elif not png_has_alpha(files[name]):
                 # Minecraft loads every texture as RGBA: a grey mask without alpha becomes an opaque square.
                 errors.append(problem("shape_texture_opaque", name, "Quest shape texture has no alpha channel"))
+    builtin = {"circle", "square", "rsquare", "diamond", "pentagon", "hexagon", "octagon", "heart", "gear", "none", "default", ""}
+    for name, body in parsed.items():
+        if name.startswith(CHAPTER_ROOT) and body is not None:
+            used = [("chapter", str(body.get("default_quest_shape", "")))]
+            used += [(str(q.get("id")), str(q.get("shape", ""))) for q in body.get("quests", [])]
+            used += [(str(l.get("id")), str(l.get("shape", ""))) for l in body.get("quest_links", [])]
+            for where, shape in used:
+                if shape not in builtin and shape not in custom_shapes:
+                    # FTB falls back to the default shape for a name missing from extra_quest_shapes.
+                    errors.append(problem("shape_undeclared", f"{name}#{where}", "Quest shape is not declared in the theme", shape=shape))
     errors += theme_icon_problems(theme, files, theme_name)
     return errors
 

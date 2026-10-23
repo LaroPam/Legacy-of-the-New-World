@@ -20,6 +20,7 @@ jobs:
       - run: python tools/apply_palettes.py --check
       - run: python tools/backgrounds.py --check
       - run: python tools/ui_textures.py --check
+      - run: python tools/quest_frames.py --check
       - uses: actions/upload-artifact@v4
         if: always()
         with:

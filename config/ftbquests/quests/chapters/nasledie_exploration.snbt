@@ -6,7 +6,7 @@
 	icon: "minecraft:compass"
 	order_index: 3
 	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
+	default_quest_shape: "step"
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -17,6 +17,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "minecraft:leather_boots"
+			icon_scale: 0.75d
 			size: 1.4d
 			tasks: [{
 				id: "72F2E8EF2D9E942A"
@@ -47,6 +48,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:diamond_boots"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
@@ -86,6 +88,7 @@
 			x: 3.0d
 			y: -3.0d
 			icon: "waystones:waystone"
+			icon_scale: 0.75d
 			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
 				id: "30EEC846023B85EB"
@@ -116,6 +119,7 @@
 			x: 6.0d
 			y: -3.0d
 			icon: "waystones:warp_stone"
+			icon_scale: 0.75d
 			dependencies: ["2C2F436A72535E22"]
 			tasks: [{
 				id: "366BCD6539110CD0"
@@ -146,6 +150,7 @@
 			x: 3.0d
 			y: 3.0d
 			icon: "minecraft:chest"
+			icon_scale: 0.75d
 			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
 				id: "48C40A18758637E4"
@@ -175,6 +180,7 @@
 			x: 6.0d
 			y: 3.0d
 			icon: "minecraft:barrel"
+			icon_scale: 0.75d
 			dependencies: ["1FB71B915FE0B5F5"]
 			tasks: [{
 				id: "4B254ABA62FCD5AA"
@@ -204,7 +210,8 @@
 			x: 9.0d
 			y: 3.0d
 			icon: "sophisticatedbackpacks:iron_backpack"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["697CA3BF8AE957E1"]
 			tasks: [{
@@ -235,7 +242,8 @@
 			x: 3.0d
 			y: 6.0d
 			icon: "minecraft:rail"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
 				id: "18A3A9BD25F50096"
@@ -265,6 +273,7 @@
 			x: 6.0d
 			y: 6.0d
 			icon: "minecraft:chest_minecart"
+			icon_scale: 0.75d
 			dependencies: ["717A293356CD1404"]
 			tasks: [{
 				id: "65F188D2DF04E46E"
@@ -294,7 +303,8 @@
 			x: 9.0d
 			y: 6.0d
 			icon: "minecraft:honeycomb"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["62AE15E5827FE50A"]
 			tasks: [{
@@ -325,7 +335,8 @@
 			x: 12.0d
 			y: 6.0d
 			icon: "minecraft:mossy_stone_bricks"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["507F5E2261A499DA"]
 			tasks: [{
@@ -356,7 +367,8 @@
 			x: 15.0d
 			y: 6.0d
 			icon: "minecraft:blue_ice"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["2DCB2702FC5C1F31"]
 			tasks: [{
@@ -387,6 +399,7 @@
 			x: 3.0d
 			y: 9.0d
 			icon: "minecraft:paper"
+			icon_scale: 0.75d
 			dependencies: ["717A293356CD1404"]
 			tasks: [{
 				id: "78CF095731369D4D"
@@ -416,6 +429,7 @@
 			x: 6.0d
 			y: 9.0d
 			icon: "minecraft:gold_ingot"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["34C64200C1AF50B8"]
 			tasks: [{
@@ -446,6 +460,7 @@
 			x: 9.0d
 			y: 9.0d
 			icon: "minecraft:skeleton_skull"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["5F8CEAF644533833"]
 			tasks: [{
@@ -476,6 +491,7 @@
 			x: -3.0d
 			y: 0.0d
 			icon: "cold_sweat:chameleon_molt"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
@@ -506,6 +522,7 @@
 			x: -6.0d
 			y: 0.0d
 			icon: "minecraft:spyglass"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["120CFADBF5186FAA"]
 			tasks: [{
@@ -536,7 +553,8 @@
 			x: 3.0d
 			y: -6.0d
 			icon: "minecraft:feather"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["30000F5F1F069AFA"]
 			tasks: [{
@@ -567,7 +585,8 @@
 			x: 6.0d
 			y: -6.0d
 			icon: "minecraft:sand"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["66DC4A843BE1C287"]
 			tasks: [{
@@ -598,7 +617,8 @@
 			x: 9.0d
 			y: -6.0d
 			icon: "minecraft:emerald_ore"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["07A63C78A1E0EFD4"]
 			tasks: [{
@@ -629,7 +649,8 @@
 			x: 12.0d
 			y: -6.0d
 			icon: "minecraft:packed_ice"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["291583B5B92C22EB"]
 			tasks: [{
@@ -660,7 +681,8 @@
 			x: 12.0d
 			y: -8.5d
 			icon: "minecraft:magma_block"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["4D62103DCF8B4FDA"]
 			tasks: [{
@@ -691,7 +713,8 @@
 			x: 9.0d
 			y: -8.5d
 			icon: "minecraft:amethyst_shard"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["076B03B26967B3F5"]
 			tasks: [{
@@ -722,7 +745,8 @@
 			x: 6.0d
 			y: -8.5d
 			icon: "minecraft:glow_berries"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["251BB178FDF89518"]
 			tasks: [{
@@ -753,7 +777,8 @@
 			x: 3.0d
 			y: -8.5d
 			icon: "minecraft:basalt"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["7A97E4175F142993"]
 			tasks: [{
@@ -784,7 +809,8 @@
 			x: 0.0d
 			y: -8.5d
 			icon: "minecraft:filled_map"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.4d
 			optional: true
 			dependencies: ["64E54CA8C96B8110"]
@@ -816,7 +842,8 @@
 			x: 3.0d
 			y: 12.0d
 			icon: "minecraft:mossy_cobblestone"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			dependencies: ["34C64200C1AF50B8"]
 			tasks: [{
 				id: "4B6723D4B7D191EC"
@@ -846,7 +873,8 @@
 			x: 6.0d
 			y: 12.0d
 			icon: "minecraft:cobweb"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["098102A102A9739A"]
 			tasks: [{
@@ -877,7 +905,8 @@
 			x: 9.0d
 			y: 12.0d
 			icon: "minecraft:zombie_head"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["5086797B05BC7619"]
 			tasks: [{
@@ -908,7 +937,8 @@
 			x: 12.0d
 			y: 12.0d
 			icon: "minecraft:skeleton_skull"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["5386AE04902DA4BF"]
 			tasks: [{
@@ -939,7 +969,8 @@
 			x: 15.0d
 			y: 12.0d
 			icon: "minecraft:spawner"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["13EA4AC90BB6F5E7"]
 			tasks: [{

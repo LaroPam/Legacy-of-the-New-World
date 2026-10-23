@@ -11,6 +11,7 @@ import re
 import sys
 
 import quality
+import quest_frames
 import questbook
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,7 +19,7 @@ REGISTRY = ROOT / 'references' / 'registry.json'
 # Issues inherited from Alpha 42 that the Alpha 43 rework must remove; new ones always fail.
 KNOWN = ROOT / 'references' / 'known_issues.json'
 SHAPES = {'circle', 'square', 'rsquare', 'diamond', 'pentagon', 'hexagon', 'octagon', 'heart', 'gear',
-          'crown', 'laurel', 'scroll', 'shield', 'coin', 'star', 'ribbon', 'none', 'default'}
+          'none', 'default'} | set(quest_frames.TYPES)  # FTB built-ins and the book's medallions
 TASK_FIELDS = {'item': 'item', 'kill': 'entity', 'structure': 'structure', 'biome': 'biome', 'advancement': 'advancement'}
 LONG_TEXT = 900
 VANILLA_HINT = 'minecraft'

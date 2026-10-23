@@ -6,7 +6,7 @@
 	icon: "cataclysm:flame_eye"
 	order_index: 15
 	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
+	default_quest_shape: "step"
 	progression_mode: "flexible"
 	quest_links: [
 		{
@@ -14,7 +14,7 @@
 			linked_quest: "3433E7FAF2F51B45"
 			x: 0.0d
 			y: 0.0d
-			shape: "star"
+			shape: "milestone"
 			size: 2.2d
 		}
 		{
@@ -22,7 +22,7 @@
 			linked_quest: "4E228116310381E8"
 			x: 3.31d
 			y: -11.54d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -30,7 +30,7 @@
 			linked_quest: "63651E9F6E43FAEB"
 			x: 10.5d
 			y: -5.82d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -38,7 +38,7 @@
 			linked_quest: "391F9987F1F32442"
 			x: 6.5d
 			y: 0.0d
-			shape: "star"
+			shape: "milestone"
 			size: 1.4d
 		}
 		{
@@ -46,7 +46,7 @@
 			linked_quest: "0792C39846E0D49E"
 			x: 11.54d
 			y: 3.31d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -54,7 +54,7 @@
 			linked_quest: "52813202FFECF301"
 			x: 5.82d
 			y: 10.5d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -62,7 +62,7 @@
 			linked_quest: "12B1754C45756107"
 			x: -3.31d
 			y: 11.54d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -70,7 +70,7 @@
 			linked_quest: "20BE4189EEE72883"
 			x: -10.5d
 			y: 5.82d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -78,7 +78,7 @@
 			linked_quest: "64338CFBA5C5B699"
 			x: -11.54d
 			y: -3.31d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 		{
@@ -86,7 +86,7 @@
 			linked_quest: "213ADF5DA222DA68"
 			x: -5.82d
 			y: -10.5d
-			shape: "crown"
+			shape: "boss"
 			size: 1.7d
 		}
 	]
@@ -98,7 +98,8 @@
 			x: 13.44d
 			y: 13.44d
 			icon: "cataclysm:bulwark_of_the_flame"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 2.0d
 			dependencies: [
 				"12B1754C45756107"
@@ -192,6 +193,7 @@
 			x: 0.0d
 			y: -3.5d
 			icon: "cataclysm:void_eye"
+			icon_scale: 0.75d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "2432A68BD33BA208"
@@ -226,7 +228,8 @@
 			x: 0.0d
 			y: -6.5d
 			icon: "minecraft:purpur_block"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			dependencies: ["3F01C0BC0DF00B8F"]
 			tasks: [{
 				id: "5FBB94DD4E9FA384"
@@ -256,7 +259,8 @@
 			x: 0.0d
 			y: -9.5d
 			icon: "minecraft:end_stone_bricks"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["0B22878BF8763415"]
 			tasks: [{
 				id: "116586B63BFEF568"
@@ -294,7 +298,8 @@
 			x: -1.92d
 			y: -5.9d
 			icon: "minecraft:obsidian"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["3F01C0BC0DF00B8F"]
 			tasks: [{
@@ -325,6 +330,7 @@
 			x: 2.47d
 			y: -2.47d
 			icon: "cataclysm:storm_eye"
+			icon_scale: 0.75d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "16CB9604D9DBDF5D"
@@ -359,7 +365,8 @@
 			x: 4.6d
 			y: -4.6d
 			icon: "minecraft:lightning_rod"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			dependencies: ["7EA7999BB80D322B"]
 			tasks: [{
 				id: "563989E28E83E431"
@@ -389,6 +396,7 @@
 			x: 6.72d
 			y: -6.72d
 			icon: "minecraft:gold_block"
+			icon_scale: 0.75d
 			dependencies: ["72FD5EEB117B3119"]
 			tasks: [{
 				id: "1F9529F85683B4C3"
@@ -419,7 +427,8 @@
 			x: 8.84d
 			y: -8.84d
 			icon: "cataclysm:chitin_claw"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["51B93F857CAD59F0"]
 			tasks: [{
 				id: "3CE1D862BBA24697"
@@ -449,6 +458,7 @@
 			x: 3.4d
 			y: -0.85d
 			icon: "cataclysm:mech_eye"
+			icon_scale: 0.75d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "0B4290EAE62BD41B"
@@ -480,7 +490,8 @@
 			x: 9.5d
 			y: 0.0d
 			icon: "minecraft:iron_block"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["391F9987F1F32442"]
 			tasks: [{
 				id: "2477D5EA6F8693C9"
@@ -511,6 +522,7 @@
 			x: 2.47d
 			y: 2.47d
 			icon: "cataclysm:monstrous_eye"
+			icon_scale: 0.75d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "4F686C6568571D98"
@@ -545,7 +557,8 @@
 			x: 4.6d
 			y: 4.6d
 			icon: "minecraft:anvil"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			dependencies: ["4057DB6475B1EDFF"]
 			tasks: [{
 				id: "5CF8E03269AFBF49"
@@ -575,7 +588,8 @@
 			x: 6.72d
 			y: 6.72d
 			icon: "minecraft:blackstone"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["0A9ACE48F5328D23"]
 			tasks: [
 				{
@@ -614,6 +628,7 @@
 			x: 0.0d
 			y: 3.5d
 			icon: "cataclysm:flame_eye"
+			icon_scale: 0.75d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "5F568C4339DB266C"
@@ -648,7 +663,8 @@
 			x: 0.0d
 			y: 6.5d
 			icon: "minecraft:magma_block"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			dependencies: ["1F7F25CE4EBE950F"]
 			tasks: [{
 				id: "51EA7E4D0D2CEF7A"
@@ -678,7 +694,8 @@
 			x: 0.0d
 			y: 9.5d
 			icon: "minecraft:blaze_powder"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["7EE6E381AE1C38B7"]
 			tasks: [{
 				id: "4FCF2EC2DB828C02"
@@ -708,6 +725,7 @@
 			x: -2.47d
 			y: 2.47d
 			icon: "cataclysm:abyss_eye"
+			icon_scale: 0.75d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "21542B2EE94E2043"
@@ -742,7 +760,8 @@
 			x: -4.6d
 			y: 4.6d
 			icon: "minecraft:prismarine_bricks"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			dependencies: ["6E51E5EBB7E57BDF"]
 			tasks: [{
 				id: "6181054428C56979"
@@ -772,7 +791,8 @@
 			x: -6.72d
 			y: 6.72d
 			icon: "minecraft:tube_coral_block"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["296277A6BE605D32"]
 			tasks: [
 				{
@@ -825,6 +845,7 @@
 			x: -3.5d
 			y: 0.0d
 			icon: "cataclysm:desert_eye"
+			icon_scale: 0.75d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "41030CD4BB74AE93"
@@ -856,7 +877,8 @@
 			x: -6.5d
 			y: 0.0d
 			icon: "minecraft:chiseled_sandstone"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			dependencies: ["3853C84668190895"]
 			tasks: [{
 				id: "264E9B5219D893B9"
@@ -886,7 +908,8 @@
 			x: -9.5d
 			y: 0.0d
 			icon: "cataclysm:kobolediator_skull"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["0B35EC876DCDE6DC"]
 			tasks: [{
 				id: "5FF3DDF42766CB78"
@@ -917,6 +940,7 @@
 			x: -6.22d
 			y: -1.9d
 			icon: "minecraft:gold_ingot"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["0B35EC876DCDE6DC"]
 			tasks: [{
@@ -948,7 +972,8 @@
 			x: -5.75d
 			y: 2.32d
 			icon: "minecraft:cobweb"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["3853C84668190895"]
 			tasks: [{
@@ -979,7 +1004,8 @@
 			x: -8.07d
 			y: 3.26d
 			icon: "minecraft:sandstone"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["20D9B1BC47B0A927"]
 			tasks: [{
@@ -1010,7 +1036,8 @@
 			x: -10.38d
 			y: 4.2d
 			icon: "minecraft:brush"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["2B0DB46C4BD473E2"]
 			tasks: [{
@@ -1041,7 +1068,8 @@
 			x: -14.5d
 			y: 0.0d
 			icon: "minecraft:cut_sandstone"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["7FAC9890E47B2038"]
 			tasks: [{
@@ -1073,7 +1101,8 @@
 			x: -17.0d
 			y: 0.0d
 			icon: "minecraft:amethyst_cluster"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			optional: true
 			dependencies: ["1CB249497EF14D92"]
 			tasks: [{
@@ -1105,6 +1134,7 @@
 			x: -2.47d
 			y: -2.47d
 			icon: "cataclysm:cursed_eye"
+			icon_scale: 0.75d
 			dependencies: ["3433E7FAF2F51B45"]
 			tasks: [{
 				id: "59CBCC67E9E2E8C1"
@@ -1136,7 +1166,8 @@
 			x: -4.6d
 			y: -4.6d
 			icon: "minecraft:packed_ice"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			dependencies: ["0A06C98F48B2324F"]
 			tasks: [{
 				id: "61E76F09EA1D9D08"
@@ -1169,6 +1200,7 @@
 			x: -6.72d
 			y: -6.72d
 			icon: "minecraft:blue_ice"
+			icon_scale: 0.75d
 			dependencies: ["1648CF8E2A62BFAF"]
 			tasks: [{
 				id: "7B3AA5E20F5DE431"
@@ -1199,7 +1231,8 @@
 			x: -8.84d
 			y: -8.84d
 			icon: "cataclysm:aptrgangr_head"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["629080C9200CF3FF"]
 			tasks: [{
 				id: "6DA00655D742D852"

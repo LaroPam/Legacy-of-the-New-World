@@ -6,14 +6,14 @@
 	icon: "minecraft:conduit"
 	order_index: 7
 	default_hide_dependency_lines: false
-	default_quest_shape: "scroll"
+	default_quest_shape: "expedition"
 	progression_mode: "flexible"
 	quest_links: [{
 		id: "64285DB7A4C70029"
 		linked_quest: "7561C2A49CE25872"
 		x: 18.0d
 		y: 0.0d
-		shape: "crown"
+		shape: "boss"
 		size: 1.5d
 	}]
 	quests: [
@@ -24,6 +24,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "minecraft:oak_boat"
+			icon_scale: 0.75d
 			size: 1.4d
 			dependencies: ["00C7DAA7BBBE1ABD"]
 			tasks: [{
@@ -54,6 +55,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:oak_planks"
+			icon_scale: 0.75d
 			dependencies: ["268C40E37C45E3BF"]
 			tasks: [{
 				id: "4C3E8F0C021CCF8D"
@@ -84,6 +86,7 @@
 			x: 6.0d
 			y: 0.0d
 			icon: "minecraft:heart_of_the_sea"
+			icon_scale: 0.75d
 			dependencies: ["55B701274F41916E"]
 			tasks: [{
 				id: "3B6E9998B072321D"
@@ -114,6 +117,7 @@
 			x: 9.0d
 			y: 0.0d
 			icon: "minecraft:prismarine_bricks"
+			icon_scale: 0.75d
 			dependencies: ["770436662909AF80"]
 			tasks: [{
 				id: "18EACFBBC34C012C"
@@ -143,7 +147,8 @@
 			x: 12.0d
 			y: 0.0d
 			icon: "minecraft:conduit"
-			shape: "gear"
+			icon_scale: 0.75d
+			shape: "tech"
 			dependencies: ["76F24423146B2BF8"]
 			tasks: [{
 				id: "55892B4ED78C57E1"
@@ -174,7 +179,8 @@
 			x: 15.0d
 			y: 0.0d
 			icon: "minecraft:prismarine_shard"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["26C3DFEC8B6B5AA3"]
 			tasks: [{
 				id: "7898FCB2E8A60219"
@@ -205,7 +211,8 @@
 			x: 21.0d
 			y: 0.0d
 			icon: "minecraft:trident"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.4d
 			optional: true
 			dependencies: ["7561C2A49CE25872"]
@@ -254,6 +261,7 @@
 			x: 0.0d
 			y: -3.0d
 			icon: "minecraft:lantern"
+			icon_scale: 0.75d
 			dependencies: ["268C40E37C45E3BF"]
 			tasks: [{
 				id: "6D983007EE04939D"
@@ -284,7 +292,8 @@
 			x: 3.0d
 			y: -3.0d
 			icon: "minecraft:skeleton_skull"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			dependencies: ["42CDC43E1DFBDB97"]
 			tasks: [{
 				id: "6232A6C44EAE614D"
@@ -315,7 +324,8 @@
 			x: 6.0d
 			y: -3.0d
 			icon: "minecraft:crossbow"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			optional: true
 			dependencies: ["75934B268BAE9806"]
 			tasks: [{
@@ -347,7 +357,8 @@
 			x: 9.0d
 			y: -3.0d
 			icon: "minecraft:dark_oak_planks"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["19935D46EBDDE471"]
 			tasks: [{
@@ -379,6 +390,7 @@
 			x: 0.0d
 			y: 3.0d
 			icon: "minecraft:packed_ice"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["268C40E37C45E3BF"]
 			tasks: [{
@@ -409,6 +421,7 @@
 			x: 3.0d
 			y: 3.0d
 			icon: "minecraft:brain_coral"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["5D6F6A8D9A89C57C"]
 			tasks: [{
@@ -439,6 +452,7 @@
 			x: 6.0d
 			y: 3.0d
 			icon: "minecraft:cracked_stone_bricks"
+			icon_scale: 0.75d
 			dependencies: ["2303D9CBF0C8194D"]
 			tasks: [{
 				id: "2A30E4738A455F55"
@@ -469,6 +483,7 @@
 			x: 9.0d
 			y: 3.0d
 			icon: "minecraft:prismarine"
+			icon_scale: 0.75d
 			dependencies: ["6FD514AB841DF820"]
 			tasks: [{
 				id: "1224D718BE6C8414"
@@ -499,6 +514,7 @@
 			x: 12.0d
 			y: 3.0d
 			icon: "minecraft:skeleton_skull"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["689F59FCDCE5619F"]
 			tasks: [{
@@ -529,6 +545,7 @@
 			x: 0.0d
 			y: 6.0d
 			icon: "minecraft:oak_fence"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["5D6F6A8D9A89C57C"]
 			tasks: [{
@@ -559,7 +576,8 @@
 			x: 3.0d
 			y: 6.0d
 			icon: "create:copper_diving_helmet"
-			shape: "gear"
+			icon_scale: 0.75d
+			shape: "tech"
 			optional: true
 			dependencies: ["362F963DF6A6BCFE"]
 			tasks: [{

@@ -6,7 +6,7 @@
 	icon: "create:track"
 	order_index: 11
 	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
+	default_quest_shape: "step"
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -17,6 +17,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "create:sturdy_sheet"
+			icon_scale: 0.75d
 			size: 1.4d
 			dependencies: ["027C7ABF4F61942F"]
 			tasks: [{
@@ -47,6 +48,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "create:track"
+			icon_scale: 0.75d
 			dependencies: ["41772DE6B882A602"]
 			tasks: [{
 				id: "6E2A7BA814C6A78C"
@@ -76,6 +78,7 @@
 			x: 6.0d
 			y: 0.0d
 			icon: "create:railway_casing"
+			icon_scale: 0.75d
 			dependencies: ["168FB859D289DA38"]
 			tasks: [{
 				id: "13D965A9565E5462"
@@ -105,7 +108,8 @@
 			x: 9.0d
 			y: 0.0d
 			icon: "create:controls"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.5d
 			dependencies: ["0BE47753BC6BEF28"]
 			tasks: [{
@@ -136,6 +140,7 @@
 			x: 9.0d
 			y: -3.0d
 			icon: "create:steam_whistle"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["5727915E29A5F477"]
 			tasks: [{
@@ -166,6 +171,7 @@
 			x: 12.0d
 			y: 0.0d
 			icon: "create:schedule"
+			icon_scale: 0.75d
 			dependencies: ["5727915E29A5F477"]
 			tasks: [{
 				id: "32C88DE4AE203ABA"
@@ -195,6 +201,7 @@
 			x: 15.0d
 			y: 0.0d
 			icon: "create:track_signal"
+			icon_scale: 0.75d
 			dependencies: ["27A5DCA80F77C440"]
 			tasks: [{
 				id: "62B09FDF5F878F1B"
@@ -224,6 +231,7 @@
 			x: 15.0d
 			y: 3.0d
 			icon: "minecraft:redstone_torch"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["3DC5EEC5097BB375"]
 			tasks: [{
@@ -254,6 +262,7 @@
 			x: 15.0d
 			y: 6.0d
 			icon: "create:railway_casing"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["7B13E63BEA35FC61"]
 			tasks: [{
@@ -284,6 +293,7 @@
 			x: 18.0d
 			y: 0.0d
 			icon: "create:display_board"
+			icon_scale: 0.75d
 			dependencies: ["3DC5EEC5097BB375"]
 			tasks: [{
 				id: "564E0F4D8380E8E2"
@@ -313,6 +323,7 @@
 			x: 12.0d
 			y: -3.0d
 			icon: "create:track"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["27A5DCA80F77C440"]
 			tasks: [{
@@ -343,6 +354,7 @@
 			x: 12.0d
 			y: -6.0d
 			icon: "create:minecart_coupling"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["3E14426D5444F75E"]
 			tasks: [{
@@ -373,7 +385,8 @@
 			x: 15.0d
 			y: -6.0d
 			icon: "minecraft:compass"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.4d
 			optional: true
 			dependencies: ["0A24638E79FF2418"]
@@ -405,7 +418,8 @@
 			x: 18.0d
 			y: -3.0d
 			icon: "minecraft:obsidian"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["57D8DDEFF1169558"]
 			tasks: [{
@@ -436,6 +450,7 @@
 			x: 6.0d
 			y: 3.0d
 			icon: "minecraft:rotten_flesh"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["0BE47753BC6BEF28"]
 			tasks: [{
@@ -466,6 +481,7 @@
 			x: 3.0d
 			y: 3.0d
 			icon: "railways:handcar"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["168FB859D289DA38"]
 			tasks: [{
@@ -497,6 +513,7 @@
 			x: 12.0d
 			y: 3.0d
 			icon: "railways:red_conductor_cap"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["27A5DCA80F77C440"]
 			tasks: [{
@@ -528,6 +545,7 @@
 			x: 0.0d
 			y: -4.0d
 			icon: "immersive_aircraft:gyrodyne"
+			icon_scale: 0.75d
 			dependencies: ["1D1395D17D6238DB"]
 			tasks: [{
 				id: "17A1C11F4E962544"
@@ -558,6 +576,7 @@
 			x: 3.0d
 			y: -4.0d
 			icon: "immersive_aircraft:biplane"
+			icon_scale: 0.75d
 			dependencies: ["65A85C57E7511720"]
 			tasks: [{
 				id: "357B61E283AA8D27"
@@ -588,6 +607,7 @@
 			x: 3.0d
 			y: -7.0d
 			icon: "immersive_aircraft:quadrocopter"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["4ABC4D7CB8FBE2B6"]
 			tasks: [{
@@ -619,6 +639,7 @@
 			x: 6.0d
 			y: -4.0d
 			icon: "immersive_aircraft:airship"
+			icon_scale: 0.75d
 			dependencies: ["4ABC4D7CB8FBE2B6"]
 			tasks: [{
 				id: "54813CFDB6430EAF"
@@ -649,6 +670,7 @@
 			x: 6.0d
 			y: -7.0d
 			icon: "immersive_aircraft:cargo_airship"
+			icon_scale: 0.75d
 			dependencies: ["0A185710BAFA698A"]
 			tasks: [{
 				id: "762D58F4A6D0B9FD"
@@ -679,7 +701,8 @@
 			x: 6.0d
 			y: -10.0d
 			icon: "immersive_aircraft:warship"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.4d
 			optional: true
 			dependencies: ["34F99F7AE0F5BD92"]

@@ -6,7 +6,7 @@
 	icon: "relics:researching_table"
 	order_index: 18
 	default_hide_dependency_lines: false
-	default_quest_shape: "scroll"
+	default_quest_shape: "expedition"
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -17,7 +17,8 @@
 			x: 0.0d
 			y: 0.0d
 			icon: "relics:leather_belt"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.6d
 			tasks: [{
 				id: "439DC1CCAE1E24C5"
@@ -56,6 +57,7 @@
 			x: -4.0d
 			y: 0.0d
 			icon: "relics:infinity_ham"
+			icon_scale: 0.75d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -119,6 +121,7 @@
 			x: -2.83d
 			y: -2.83d
 			icon: "relics:horse_flute"
+			icon_scale: 0.75d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -168,6 +171,7 @@
 			x: -2.83d
 			y: 2.83d
 			icon: "relics:magic_mirror"
+			icon_scale: 0.75d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -224,6 +228,7 @@
 			x: 4.0d
 			y: 0.0d
 			icon: "relics:jellyfish_necklace"
+			icon_scale: 0.75d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -298,6 +303,7 @@
 			x: 0.0d
 			y: -4.0d
 			icon: "relics:ice_skates"
+			icon_scale: 0.75d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -354,6 +360,7 @@
 			x: 2.83d
 			y: 2.83d
 			icon: "relics:holy_locket"
+			icon_scale: 0.75d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -403,6 +410,7 @@
 			x: 0.0d
 			y: 4.0d
 			icon: "relics:blazing_flask"
+			icon_scale: 0.75d
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -480,7 +488,8 @@
 			x: 2.83d
 			y: -2.83d
 			icon: "relics:enders_hand"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.4d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [
@@ -544,7 +553,8 @@
 			x: -6.01d
 			y: 2.49d
 			icon: "artifacts:mimic_spawn_egg"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			size: 1.2d
 			dependencies: ["717680DDFA2AAC5E"]
 			tasks: [{
@@ -575,7 +585,8 @@
 			x: -8.31d
 			y: 3.44d
 			icon: "artifacts:onion_ring"
-			shape: "circle"
+			icon_scale: 0.75d
+			shape: "step"
 			optional: true
 			dependencies: ["75D8F4D63F925F92"]
 			tasks: [{

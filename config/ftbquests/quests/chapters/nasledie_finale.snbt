@@ -6,7 +6,7 @@
 	icon: "minecraft:end_portal_frame"
 	order_index: 16
 	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
+	default_quest_shape: "step"
 	progression_mode: "flexible"
 	quest_links: [
 		{
@@ -14,7 +14,7 @@
 			linked_quest: "280C23723A869A8B"
 			x: 0.0d
 			y: 0.0d
-			shape: "star"
+			shape: "milestone"
 			size: 1.5d
 		}
 		{
@@ -22,7 +22,7 @@
 			linked_quest: "367C7D7E1F81D391"
 			x: 3.5d
 			y: 0.0d
-			shape: "crown"
+			shape: "boss"
 			size: 1.8d
 		}
 		{
@@ -30,7 +30,7 @@
 			linked_quest: "4E228116310381E8"
 			x: 8.0d
 			y: 0.0d
-			shape: "crown"
+			shape: "boss"
 			size: 2.0d
 		}
 		{
@@ -38,7 +38,7 @@
 			linked_quest: "7691DA83D3708164"
 			x: 12.0d
 			y: 0.0d
-			shape: "star"
+			shape: "milestone"
 			size: 2.2d
 		}
 	]
@@ -50,7 +50,8 @@
 			x: 1.75d
 			y: -2.75d
 			icon: "minecraft:end_portal_frame"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			size: 1.2d
 			dependencies: ["280C23723A869A8B"]
 			tasks: [{
@@ -89,6 +90,7 @@
 			x: 0.0d
 			y: -5.25d
 			icon: "alexsmobs:soul_heart"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["34B69B58C4015C3F"]
 			tasks: [{
@@ -128,6 +130,7 @@
 			x: 4.5d
 			y: -2.75d
 			icon: "alexsmobs:capsid"
+			icon_scale: 0.75d
 			dependencies: ["34B69B58C4015C3F"]
 			tasks: [{
 				id: "47E973A7F9D2E058"
@@ -158,6 +161,7 @@
 			x: 3.5d
 			y: -5.25d
 			icon: "minecraft:chorus_fruit"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["548DB0A9A973A90D"]
 			tasks: [{
@@ -196,6 +200,7 @@
 			x: 7.0d
 			y: -2.75d
 			icon: "alexsmobs:cosmic_cod"
+			icon_scale: 0.75d
 			dependencies: ["548DB0A9A973A90D"]
 			tasks: [{
 				id: "2E1702787FA1C576"
@@ -233,7 +238,8 @@
 			x: 6.25d
 			y: -5.25d
 			icon: "alexsmobs:mysterious_worm"
-			shape: "shield"
+			icon_scale: 0.75d
+			shape: "trial"
 			size: 1.3d
 			dependencies: ["548DB0A9A973A90D"]
 			tasks: [{
@@ -275,7 +281,8 @@
 			x: 6.25d
 			y: -7.75d
 			icon: "alexsmobs:void_worm_mandible"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["45769170EBDD1A02"]
 			tasks: [{
@@ -306,7 +313,8 @@
 			x: 9.0d
 			y: -5.25d
 			icon: "alexsmobs:void_worm_eye"
-			shape: "crown"
+			icon_scale: 0.75d
+			shape: "boss"
 			size: 1.8d
 			dependencies: ["45769170EBDD1A02"]
 			tasks: [{
@@ -354,7 +362,8 @@
 			x: 1.75d
 			y: 2.75d
 			icon: "minecraft:end_crystal"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			optional: true
 			dependencies: ["367C7D7E1F81D391"]
 			tasks: [{
@@ -393,7 +402,8 @@
 			x: 5.5d
 			y: 3.0d
 			icon: "minecraft:ender_pearl"
-			shape: "scroll"
+			icon_scale: 0.75d
+			shape: "expedition"
 			size: 1.2d
 			dependencies: ["367C7D7E1F81D391"]
 			tasks: [{
@@ -424,6 +434,7 @@
 			x: 8.0d
 			y: 3.0d
 			icon: "minecraft:purpur_block"
+			icon_scale: 0.75d
 			size: 1.2d
 			dependencies: ["04EA8A84E185E1C3"]
 			tasks: [{
@@ -454,6 +465,7 @@
 			x: 10.5d
 			y: 3.0d
 			icon: "minecraft:chest"
+			icon_scale: 0.75d
 			dependencies: ["1A559A6BB038EF61"]
 			tasks: [{
 				id: "3B38010DA1F3016E"
@@ -492,7 +504,8 @@
 			x: 10.5d
 			y: 5.5d
 			icon: "minecraft:elytra"
-			shape: "star"
+			icon_scale: 0.75d
+			shape: "milestone"
 			size: 1.5d
 			dependencies: ["1A559A6BB038EF61"]
 			tasks: [{
@@ -531,6 +544,7 @@
 			x: 8.0d
 			y: 5.5d
 			icon: "minecraft:shulker_shell"
+			icon_scale: 0.75d
 			optional: true
 			dependencies: ["1A559A6BB038EF61"]
 			tasks: [{
@@ -572,6 +586,7 @@
 			x: 5.5d
 			y: 5.5d
 			icon: "minecraft:purple_shulker_box"
+			icon_scale: 0.75d
 			dependencies: ["1A559A6BB038EF61"]
 			tasks: [{
 				id: "2B037429BD505CC0"

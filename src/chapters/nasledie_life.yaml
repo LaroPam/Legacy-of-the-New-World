@@ -7,7 +7,7 @@ chapter:
   icon: farmersdelight:cooking_pot
   order_index: 1
   default_hide_dependency_lines: false
-  default_quest_shape: circle
+  default_quest_shape: step
   progression_mode: flexible
 
 quests:
@@ -18,7 +18,7 @@ quests:
     x: 0
     y: 0
     icon: minecraft:red_bed
-    shape: heart
+    shape: home
     size: 1.4
     tasks:
       - {type: advancement, advancement: minecraft:adventure/sleep_in_bed}
@@ -97,7 +97,7 @@ quests:
     x: 13
     y: 0
     icon: farmersdelight:roast_chicken_block
-    shape: star
+    shape: milestone
     optional: true
     deps: [nourishing]
     tasks:
@@ -113,7 +113,7 @@ quests:
     x: 15.5
     y: 0
     icon: farmersdelight:honey_glazed_ham_block
-    shape: star
+    shape: milestone
     size: 1.4
     optional: true
     deps: [feast]
@@ -211,7 +211,7 @@ quests:
     x: 15.5
     y: -3
     icon: farmersdelight:fruit_salad
-    shape: star
+    shape: milestone
     size: 1.4
     optional: true
     deps: [mushroom_colony]
@@ -263,7 +263,7 @@ quests:
     x: 5.5
     y: 3
     icon: cold_sweat:hearth
-    shape: heart
+    shape: home
     deps: [insulate]
     tasks:
       - {type: advancement, advancement: cold_sweat:use_hearth}
