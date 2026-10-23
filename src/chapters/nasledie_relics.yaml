@@ -1,0 +1,228 @@
+# Свободная глава «Кабинет редкостей» (Relics + Artifacts): первая реликвия в центре, восемь коллекций лучами по краям мира.
+# Где лежит каждая реликвия — по коду Relics 0.8.0.13 (LootCollections: шаблоны путей сундуков). Раскладка — src/layouts/relics.yaml.
+chapter:
+  filename: nasledie_relics
+  id: 14127D019AF8A60A
+  group: free
+  title: Кабинет редкостей
+  icon: relics:researching_table
+  order_index: 18
+  default_hide_dependency_lines: false
+  default_quest_shape: scroll
+  progression_mode: flexible
+
+quests:
+  - key: first_relic
+    title: Первая реликвия
+    description:
+      - Реликвии — вещи с характером. Они растут в уровне вместе с хозяином и тратят на это его опыт. Лежат в сундуках по всему миру, у каждой
+        свой край. Найдите любую.
+    x: 0.0
+    y: 0.0
+    icon: relics:leather_belt
+    shape: star
+    size: 1.6
+    tasks:
+      - type: criteria
+        title: Найти любую реликвию
+        obtain: [relics:leather_belt, relics:arrow_quiver, relics:hunter_belt, relics:infinity_ham, relics:roller_skates, relics:horse_flute,
+                 relics:magic_mirror, relics:midnight_robe, relics:spatial_sign, relics:aqua_walker, relics:amphibian_boot, relics:drowned_belt,
+                 relics:jellyfish_necklace, relics:ice_skates, relics:ice_breaker, relics:wool_mitten, relics:holy_locket, relics:spore_sack,
+                 relics:blazing_flask, relics:magma_walker, relics:rage_glove, relics:reflection_necklace, relics:space_dissector,
+                 relics:bastion_ring, relics:chorus_inhibitor, relics:elytra_booster, relics:enders_hand, relics:shadow_glaive]
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: relics:researching_table}
+      - {type: item, item: relics:relic_experience_bottle, count: 2}
+
+  - key: village
+    title: Деревенские сундуки
+    description:
+      - Кожаный пояс, колчан, пояс охотника и бесконечный окорок лежат в деревенских сундуках. Жители не заметят. Наверное.
+    x: -4.0
+    y: 0.0
+    icon: relics:infinity_ham
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:leather_belt}
+      - {type: item, item: relics:arrow_quiver}
+      - {type: item, item: relics:hunter_belt}
+      - {type: item, item: relics:infinity_ham}
+    rewards:
+      - {type: xp, xp: 600}
+      - {type: item, item: relics:relic_experience_bottle, count: 3}
+      - {type: item, item: farmersdelight:honey_glazed_ham_block}
+
+  - key: road
+    title: Дорожный набор
+    description:
+      - Роликовые коньки и лошадиная флейта попадаются в деревнях, шахтах и крепостях. Флейта прячет лошадь в себе и выпускает там, где
+        она нужна.
+    x: -2.83
+    y: -2.83
+    icon: relics:horse_flute
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:roller_skates}
+      - {type: item, item: relics:horse_flute}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: relics:relic_experience_bottle, count: 2}
+      - {type: item, item: minecraft:diamond_horse_armor}
+
+  - key: dungeons
+    title: Тайники подземелий
+    description:
+      - Волшебное зеркало, полуночная мантия и пространственная печать прячутся в заброшенных шахтах, крепостях и подземных городах.
+        Зеркало вернёт домой, печать — по собственным следам.
+    x: -2.83
+    y: 2.83
+    icon: relics:magic_mirror
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:magic_mirror}
+      - {type: item, item: relics:midnight_robe}
+      - {type: item, item: relics:spatial_sign}
+    rewards:
+      - {type: xp, xp: 600}
+      - {type: item, item: relics:relic_experience_bottle, count: 3}
+      - {type: item, item: sophisticatedbackpacks:xp_pump_upgrade}
+
+  - key: sea
+    title: Морская коллекция
+    description:
+      - Водоходы, ботинок амфибии, пояс утопленника и ожерелье медузы — добыча затонувших кораблей, подводных руин и зарытых кладов.
+    x: 4.0
+    y: 0.0
+    icon: relics:jellyfish_necklace
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:aqua_walker}
+      - {type: item, item: relics:amphibian_boot}
+      - {type: item, item: relics:drowned_belt}
+      - {type: item, item: relics:jellyfish_necklace}
+    rewards:
+      - {type: xp, xp: 600}
+      - {type: item, item: relics:relic_experience_bottle, count: 3}
+      - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_water_breathing"}', count: 3}
+      - {type: item, item: sophisticatedbackpacks:pump_upgrade}
+
+  - key: north
+    title: Северная коллекция
+    description:
+      - Ледовые коньки, ледоколы и шерстяная рукавица ждут в иглу, снежных и таёжных деревнях. Рукавица лепит снежки, от которых враги
+        замерзают.
+    x: 0.0
+    y: -4.0
+    icon: relics:ice_skates
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:ice_skates}
+      - {type: item, item: relics:ice_breaker}
+      - {type: item, item: relics:wool_mitten}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: relics:relic_experience_bottle, count: 3}
+      - {type: item, item: minecraft:blue_ice, count: 32}
+
+  - key: south
+    title: Храмы юга
+    description:
+      - Священный медальон лежит в пустынных пирамидах и домах, мешок со спорами — в храмах джунглей. Медальон выжигает нежить вокруг
+        хозяина.
+    x: 2.83
+    y: 2.83
+    icon: relics:holy_locket
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:holy_locket}
+      - {type: item, item: relics:spore_sack}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: relics:relic_experience_bottle, count: 2}
+      - {type: item, item: artifacts:umbrella}
+
+  - key: nether
+    title: Огненная коллекция
+    description:
+      - Пылающий флакон, лаваходы, перчатка ярости, отражающий амулет и рассекатель пространства — из крепостей Нижнего мира и разрушенных
+        порталов. Кольцо бастиона, как ни странно, в бастионах.
+    x: 0.0
+    y: 4.0
+    icon: relics:blazing_flask
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:blazing_flask}
+      - {type: item, item: relics:magma_walker}
+      - {type: item, item: relics:rage_glove}
+      - {type: item, item: relics:reflection_necklace}
+      - {type: item, item: relics:space_dissector}
+      - {type: item, item: relics:bastion_ring}
+    rewards:
+      - {type: xp, xp: 1200}
+      - {type: item, item: relics:relic_experience_bottle, count: 5}
+      - {type: item, item: minecraft:gold_block, count: 4}
+
+  - key: end
+    title: Реликвии Края
+    description:
+      - Рука Края, хорусовый ингибитор, ускоритель элитр и теневая глефа лежат в городах Края. Глефа встречается и в древних городах — если
+        хватит смелости.
+    x: 2.83
+    y: -2.83
+    icon: relics:enders_hand
+    shape: star
+    size: 1.4
+    deps: [first_relic]
+    tasks:
+      - {type: item, item: relics:enders_hand}
+      - {type: item, item: relics:chorus_inhibitor}
+      - {type: item, item: relics:elytra_booster}
+      - {type: item, item: relics:shadow_glaive}
+    rewards:
+      - {type: xp, xp: 1500}
+      - {type: item, item: relics:relic_experience_bottle, count: 6}
+      - {type: item, item: sophisticatedbackpacks:netherite_backpack}
+
+  # ── Artifacts: сундуки, которые кусаются ──
+  - key: mimic
+    id: F5D8F4D63F925F92
+    title: Сундук оказался голодным
+    description:
+      - Не каждый сундук — сундук. Мимик кусается, зато внутри у него артефакт. Победите одного.
+    x: -6.01
+    y: 2.49
+    icon: artifacts:mimic_spawn_egg
+    shape: shield
+    size: 1.2
+    deps: [first_relic]
+    tasks:
+      - {id: 9252B7D24A80B6D8, type: advancement, advancement: artifacts:chest_slayer}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: sophisticatedbackpacks:advanced_pickup_upgrade}
+
+  - key: onion
+    id: 71351EBD4433810D
+    title: Юра, это точно украшение?
+    description:
+      - Луковое кольцо из Artifacts носят на пальце. Но его можно и съесть. Юра, не надо… Ладно, надо.
+    x: -8.31
+    y: 3.44
+    icon: artifacts:onion_ring
+    shape: circle
+    optional: true
+    deps: [mimic]
+    tasks:
+      - {id: 3B6DDF4018DD7C8A, type: advancement, advancement: artifacts:adventurous_eater}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: farmersdelight:onion_soup, count: 4}
+      - {type: item, item: sophisticatedstorage:advanced_hopper_upgrade}

@@ -1,0 +1,581 @@
+# Акт II. Атлас Линд: дальние экспедиции по отметкам картографа. Почти каждая цель — вскрыть
+# сокровищницу постройки (Lootr: свой сундук у каждого игрока), а не просто дойти до неё.
+chapter:
+  filename: nasledie_compass
+  id: 9D8645FBEA4E9EC9
+  group: act2
+  title: Атлас Линд — дальние экспедиции
+  icon: explorerscompass:explorerscompass
+  order_index: 5
+  default_hide_dependency_lines: false
+  default_quest_shape: scroll
+  progression_mode: flexible
+
+links:
+  - {quest: nasledie_chronicle/route, x: 0, y: 0, shape: star, size: 2}
+
+quests:
+  # ── Логова иллагеров ──
+  - key: hideout
+    id: BC793EEF82907B7E
+    title: Убежище иллагеров
+    description:
+      - Линд отметила на полях — «здесь прячутся те, кто грабит караваны». Найдите убежище иллагеров в лесу.
+    x: 0.0
+    y: -3.2
+    icon: minecraft:iron_axe
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: structure, structure: nova_structures:illager_hideout}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:arrow, count: 32}
+
+  - key: hideout_loot
+    id: 4344AC4C44AE8AB1
+    title: Сердце убежища
+    description:
+      - Главный тайник спрятан глубже всех комнат. Найдите его и заберите добычу разбойников.
+    x: 0.5
+    y: -5.68
+    icon: minecraft:chest
+    shape: shield
+    deps: [hideout]
+    tasks:
+      - {type: advancement, advancement: nova_structures:adventure/loot_illager_hideout}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: better_weaponry:diamond_cutlass}
+
+  - key: fort
+    id: 8E33F6A4EE9EECA6
+    title: Иллагерский форт
+    description:
+      - Настоящая крепость с башнями и гарнизоном. Найдите её и решите, идёте ли вы на штурм вдвоём или с отрядом рекрутов.
+    x: 1.42
+    y: -8.08
+    icon: minecraft:crossbow
+    deps: [hideout_loot]
+    tasks:
+      - {type: structure, structure: dungeons_arise:illager_fort}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:shield, count: 2}
+
+  - key: fort_defenders
+    id: D79F172C28F00556
+    title: Защитники форта
+    description:
+      - Победите разбойника и поборника внутри стен форта. Снаружи не считается — нужно войти.
+    x: 2.77
+    y: -10.34
+    icon: minecraft:iron_axe
+    shape: shield
+    deps: [fort]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha41/fort_assault/pillager_inside_fort, title: Разбойник внутри форта}
+      - {type: advancement, advancement: nasledie:alpha41/fort_assault/vindicator_inside_fort, title: Поборник внутри форта}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: minecraft:totem_of_undying}
+
+  - key: fort_treasure
+    title: Казна форта
+    description:
+      - Главная казна форта спрятана за последней дверью. Доберитесь до неё.
+    x: 4.51
+    y: -12.4
+    icon: minecraft:emerald_block
+    shape: shield
+    deps: [fort_defenders]
+    tasks:
+      - {type: criteria, title: Открыть казну форта, loot: dungeons_arise:chests/illager_fort/illager_fort_treasure}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: artifacts:vampiric_glove}
+
+  - key: all_illagers
+    title: Гроза разбойников
+    description:
+      - Побывайте во всех логовах иллагеров и ведьм — от лагеря до особняка. Линд отмечала их красным, чтобы обходить стороной. Вы — не обходите.
+    x: 6.64
+    y: -14.23
+    icon: minecraft:white_banner
+    shape: star
+    optional: true
+    deps: [fort_treasure]
+    tasks:
+      - {type: advancement, advancement: nova_structures:adventure/find_all_illager_structures}
+    rewards:
+      - {type: xp, xp: 800}
+      - {type: item, item: minecraft:enchanted_golden_apple}
+
+  # ── Небесные корабли ──
+  - key: heavenly_rider
+    id: A13990B38C18BF50
+    title: Небесный всадник
+    description:
+      - Над облаками дрейфует корабль. Как туда попасть — ваша забота. Найдите его сокровищницу.
+    x: 2.5
+    y: -2.0
+    icon: immersive_aircraft:propeller
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу Небесного всадника, loot: dungeons_arise:chests/heavenly_rider/heavenly_rider_treasure}
+    rewards:
+      - {type: xp, xp: 450}
+      - {type: item, item: immersive_aircraft:engine}
+
+  - key: heavenly_challenger
+    id: EF5D057D0A543404
+    title: Небесный претендент
+    description:
+      - Корабль побольше и с охраной на палубе. Его сокровищница — в трюме.
+    x: 4.75
+    y: -3.15
+    icon: immersive_aircraft:hull
+    deps: [heavenly_rider]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу Небесного претендента, loot: dungeons_arise:chests/heavenly_challenger/heavenly_challenger_treasure}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: immersive_aircraft:enhanced_propeller}
+
+  - key: heavenly_conqueror
+    id: 9F4C744CFD45A276
+    title: Небесный завоеватель
+    description:
+      - Флагман небесного флота. Взять его казну — повод для рассказов на годы вперёд.
+    x: 7.2
+    y: -3.92
+    icon: immersive_aircraft:gyroscope
+    shape: star
+    optional: true
+    deps: [heavenly_challenger]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу Небесного завоевателя, loot: dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_treasure}
+    rewards:
+      - {type: xp, xp: 600}
+      - {type: item, item: immersive_aircraft:gyroscope_dials}
+      - {type: item, item: minecraft:diamond, count: 6}
+
+  - key: mechanical_nest
+    id: 4AD20583645F8C5F
+    title: Механическое гнездо
+    description:
+      - На высоте под двести блоков висит гнездо из шестерёнок и труб. Кто его построил — Линд не знала. Поднимитесь к нему.
+    x: 9.81
+    y: -4.28
+    icon: create:cogwheel
+    deps: [heavenly_conqueror]
+    tasks:
+      - {type: structure, structure: dungeons_arise:mechanical_nest}
+    rewards:
+      - {type: xp, xp: 370}
+      - {type: item, item: immersive_aircraft:industrial_gears, count: 3}
+
+  - key: nest_treasure
+    id: 437A23B0113CA26B
+    title: Сокровищница гнезда
+    description:
+      - Обычные склады гнезда — не то. Найдите сокровищницу, а в ней чертёжную пушку для собственных построек.
+    x: 12.51
+    y: -4.2
+    icon: create:schematicannon
+    shape: star
+    deps: [mechanical_nest]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha43/expeditions/nest_treasure, title: Открыть сокровищницу гнезда}
+    rewards:
+      - {type: xp, xp: 350}
+      - {type: item, item: create:schematicannon}
+
+  # ── Под землёй ──
+  - key: mining_system
+    id: 3BFF245E8A4EEBE2
+    title: Большая шахтная система
+    description:
+      - Целый подземный город шахтёров — с рельсами, лифтами и складами. Доберитесь до его главной сокровищницы.
+    x: 3.12
+    y: 0.71
+    icon: minecraft:iron_pickaxe
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу шахт, loot: dungeons_arise:chests/mining_system/mining_system_treasure}
+    rewards:
+      - {type: xp, xp: 340}
+      - {type: item, item: minecraft:diamond, count: 4}
+
+  - key: mushroom_mines
+    id: 5DB6F54ADA7C276F
+    title: Грибные шахты
+    description:
+      - Шахты, которые захватили гигантские грибы. Там до сих пор лежат инструменты и сокровища.
+    x: 5.43
+    y: 1.75
+    icon: minecraft:red_mushroom_block
+    deps: [mining_system]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу грибных шахт, loot: dungeons_arise:chests/mushroom_mines/mushroom_mines_treasure}
+    rewards:
+      - {type: xp, xp: 330}
+      - {type: item, item: artifacts:digging_claws}
+
+  - key: foundry
+    id: FC2F522F0B5765F9
+    title: Древняя кузница
+    description:
+      - Под землёй, на глубине около десяти блоков ниже нуля, стоит кузница со своими огненными стражами. Найдите её.
+    x: 7.56
+    y: 3.19
+    icon: minecraft:blast_furnace
+    deps: [mushroom_mines]
+    tasks:
+      - {type: advancement, advancement: dungeons_arise:find_foundry}
+    rewards:
+      - {type: xp, xp: 420}
+      - {type: item, item: minecraft:iron_block, count: 8}
+
+  - key: foundry_treasure
+    id: 43FEC71E36DEB59A
+    title: Сокровищница кузницы
+    description:
+      - Победите ифрита прямо в кузнице, затем вскройте её сокровищницу. Две задачи можно поделить между Максимом и Юрой.
+    x: 9.46
+    y: 5.0
+    icon: minecraft:blaze_rod
+    shape: shield
+    deps: [foundry]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha43/expeditions/foundry_blaze, title: Ифрит в кузнице}
+      - {type: advancement, advancement: nasledie:alpha43/expeditions/foundry_treasure, title: Сокровищница кузницы}
+    rewards:
+      - {type: xp, xp: 350}
+      - {type: item, item: create:blaze_cake, count: 4}
+
+  - key: scorched_mines
+    title: Выжженные шахты
+    description:
+      - В бесплодных землях есть шахты, где земля всё ещё тлеет. Найдите их сокровищницу.
+    x: 11.09
+    y: 7.16
+    icon: minecraft:magma_block
+    optional: true
+    deps: [foundry_treasure]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу выжженных шахт, loot: dungeons_arise:chests/scorched_mines/scorched_mines_treasure}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: artifacts:obsidian_skull}
+
+  # ── Дворцы и твердыни ──
+  - key: bandit_towers
+    id: 95734C53761E6456
+    title: Башни бандитов
+    description:
+      - Бандиты устроили логово в старых башнях на перевале. Их казна — на самом верху.
+    x: 1.39
+    y: 2.88
+    icon: minecraft:stone_bricks
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: criteria, title: Открыть казну башен бандитов, loot: dungeons_arise:chests/bandit_towers/bandit_towers_treasure}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: better_weaponry:emerald_broadsword}
+
+  - key: shiraz_palace
+    id: B1509620769451B8
+    title: Дворец Шираз
+    description:
+      - Пустынный дворец с садами и библиотекой. Хозяева давно ушли, а сокровищница осталась.
+    x: 2.02
+    y: 5.33
+    icon: minecraft:chiseled_sandstone
+    deps: [bandit_towers]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу дворца, loot: dungeons_arise:chests/shiraz_palace/shiraz_palace_treasure}
+    rewards:
+      - {type: xp, xp: 450}
+      - {type: item, item: artifacts:running_shoes}
+
+  - key: keep_kayra
+    id: 973E6DFEEE903031
+    title: Крепость Кайры
+    description:
+      - Горная крепость с садом и библиотекой. Кайра, кем бы она ни была, умела строить. Найдите её главную казну.
+    x: 2.22
+    y: 7.89
+    icon: minecraft:polished_deepslate
+    deps: [shiraz_palace]
+    tasks:
+      - {type: criteria, title: Открыть казну крепости Кайры, loot: dungeons_arise:chests/keep_kayra/keep_kayra_treasure}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: minecraft:netherite_scrap, count: 2}
+
+  - key: plague_asylum
+    id: 07C8419F1FE8738D
+    title: Чумной приют
+    description:
+      - Здание, откуда никто не вышел. Внутри — палаты, склянки и сокровищница главного врача. Ингрид Берг отказалась сюда заходить.
+    x: 1.99
+    y: 10.51
+    icon: minecraft:fermented_spider_eye
+    shape: shield
+    deps: [keep_kayra]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу приюта, loot: dungeons_arise:chests/plague_asylum/plague_asylum_treasure}
+    rewards:
+      - {type: xp, xp: 420}
+      - {type: item, item: artifacts:antidote_vessel}
+
+  - key: coliseum
+    id: CEBF8266AC205E60
+    title: Колизей
+    description:
+      - Огромная арена, где когда-то сражались ради зрителей. Сейчас зрители — вы. Найдите колизей.
+    x: 1.31
+    y: 13.13
+    icon: minecraft:chiseled_stone_bricks
+    optional: true
+    deps: [plague_asylum]
+    tasks:
+      - {type: advancement, advancement: dungeons_arise:find_coliseum}
+    rewards:
+      - {type: xp, xp: 390}
+      - {type: item, item: better_weaponry:diamond_claymore}
+
+  # ── Монастырь и заражённый храм ──
+  - key: monastery
+    id: BD1F1FA8837A8FC5
+    title: Монастырь с картами
+    description:
+      - В монастыре хранят карты окрестных земель. Найдите его — Линд провела здесь неделю.
+    x: -1.39
+    y: 2.88
+    icon: minecraft:map
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: advancement, advancement: dungeons_arise:find_monasteries}
+    rewards:
+      - {type: xp, xp: 385}
+      - {type: item, item: minecraft:experience_bottle, count: 16}
+
+  - key: monastery_map
+    id: 8268BA06604DD7A2
+    title: Карта к заражённому храму
+    description:
+      - В монастырском тайнике бывает карта к заражённому храму. Найдите её — повезёт не с первого сундука.
+    x: -2.91
+    y: 4.9
+    icon: minecraft:filled_map
+    deps: [monastery]
+    tasks:
+      - {type: advancement, advancement: dungeons_arise:find_infested_temple_map}
+    rewards:
+      - {type: xp, xp: 380}
+      - {type: item, item: minecraft:emerald, count: 12}
+
+  - key: infested_temple
+    id: 1B7D417FC2AD346C
+    title: Заражённый храм
+    description:
+      - Храм в джунглях, где пауки свили гнёзда во всех коридорах. Доберитесь до него.
+    x: -4.79
+    y: 6.66
+    icon: minecraft:cobweb
+    deps: [monastery_map]
+    tasks:
+      - {type: advancement, advancement: dungeons_arise:find_infested_temple}
+    rewards:
+      - {type: xp, xp: 410}
+      - {type: item, item: minecraft:fire_charge, count: 8}
+
+  - key: temple_treasure
+    id: 43B6739A38C338FD
+    title: Вершина заражённого храма
+    description:
+      - Победите пещерного паука внутри храма и вскройте сокровищницу на вершине.
+    x: -6.98
+    y: 8.11
+    icon: minecraft:spider_eye
+    shape: shield
+    deps: [infested_temple]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha43/expeditions/temple_cave_spider, title: Пещерный паук в храме}
+      - {type: advancement, advancement: nasledie:alpha43/expeditions/temple_treasure, title: Сокровищница на вершине}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:enchanted_golden_apple}
+
+  # ── Таверны и заказы ──
+  - key: tavern
+    id: 225B6CD9BBAC0F47
+    title: Таверна у дороги
+    description:
+      - В таверне всегда тепло, а у хозяина бывают карты с заданиями. Найдите любую таверну.
+    x: -3.12
+    y: 0.71
+    icon: minecraft:barrel
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: advancement, advancement: nova_structures:adventure/find_tavern}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: farmersdelight:roast_chicken_block}
+
+  - key: tavern_map
+    id: 79B22217425743C5
+    title: Карта из таверны
+    description:
+      - Получите в таверне карту с заданием. Она ведёт к месту, где кто-то оставил награду.
+    x: -5.65
+    y: 0.78
+    icon: minecraft:filled_map
+    deps: [tavern]
+    tasks:
+      - {type: advancement, advancement: nova_structures:adventure/tavern_quest}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:compass}
+
+  - key: tavern_reward
+    title: Задание выполнено
+    description:
+      - Дойдите по карте до цели и откройте тайник с наградой. Хозяин таверны будет доволен.
+    x: -8.19
+    y: 0.41
+    icon: minecraft:gold_block
+    shape: star
+    deps: [tavern_map]
+    tasks:
+      - type: criteria
+        title: Открыть тайник по карте таверны
+        any_of:
+          - {loot: nova_structures:chests/tavern_quest/undead_crypt}
+          - {loot: nova_structures:chests/tavern_quest/illager_hideout}
+          - {loot: nova_structures:chests/tavern_quest/conduit_ruin}
+          - {loot: nova_structures:chests/tavern_quest/ancient_city}
+          - {loot: nova_structures:chests/tavern_quest/illager_manor}
+          - {loot: nova_structures:chests/tavern_quest/desert_ruin}
+          - {loot: nova_structures:chests/tavern_quest/badlands_miner_outpost}
+          - {loot: nova_structures:chests/tavern_quest/stray_fort}
+          - {loot: nova_structures:chests/tavern_quest/ruin_town}
+          - {loot: nova_structures:chests/tavern_quest/witch_villa}
+          - {loot: nova_structures:chests/tavern_quest/creeping_crypt}
+          - {loot: nova_structures:chests/tavern_quest/jungle_ruin}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: artifacts:universal_attractor}
+
+  - key: miner_outpost
+    id: 0CE8AF2473DAB8AA
+    title: Аванпост шахтёров
+    description:
+      - На красных землях шахтёры построили аванпост, и что-то там пошло не так. Найдите его.
+    x: -10.69
+    y: -0.4
+    icon: minecraft:terracotta
+    deps: [tavern_reward]
+    tasks:
+      - {type: structure, structure: nova_structures:badlands_miner_outpost}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:iron_ingot, count: 12}
+
+  - key: outpost_conquer
+    id: 430EC24EEA0B18E4
+    title: Заклинатель аванпоста
+    description:
+      - Аванпост захватил заклинатель. Победите его и освободите шахту.
+    x: -13.1
+    y: -1.64
+    icon: minecraft:totem_of_undying
+    shape: shield
+    deps: [miner_outpost]
+    tasks:
+      - {type: advancement, advancement: nova_structures:adventure/conquer_miner_outpost}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:golden_apple, count: 4}
+
+  # ── Снега и джунгли ──
+  - key: stray_fort
+    id: 59752216F591E945
+    title: Снежный форт
+    description:
+      - В снегах стоит форт, где служат зимогоры. Доберитесь до его сокровищницы.
+    x: -2.5
+    y: -2.0
+    icon: minecraft:snow_block
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу снежного форта, loot: nova_structures:chests/stray_fort_tresure}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: better_weaponry:diamond_shield}
+
+  - key: tree_house
+    id: C0194CADC20BB042
+    title: Дом над джунглями
+    description:
+      - Кто-то построил дом на самой высокой кроне джунглей. Поднимитесь и найдите сундук хозяина.
+    x: -4.13
+    y: -3.93
+    icon: minecraft:jungle_log
+    optional: true
+    deps: [stray_fort]
+    tasks:
+      - {type: criteria, title: Открыть тайник дома над джунглями, loot: dungeons_arise:chests/jungle_tree_house/jungle_tree_house_treasure}
+    rewards:
+      - {type: xp, xp: 280}
+      - {type: item, item: minecraft:emerald, count: 18}
+
+  - key: thornborn
+    title: Башни Торнборн
+    description:
+      - Иногда монастырская карта ведёт не к храму, а к башням Торнборн. Если такая попалась — поднимитесь на вершину.
+    x: -5.43
+    y: -6.15
+    icon: minecraft:rose_bush
+    optional: true
+    deps: [tree_house]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу на вершине башен, loot: dungeons_arise:chests/thornborn_towers/thornborn_towers_top_treasure}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: artifacts:thorn_pendant}
+
+  # ── Маги ──
+  - key: mage_tower
+    id: 0A349956329B7C72
+    title: Башня мага
+    description:
+      - Одинокая башня с библиотекой наверху. Маг ушёл, книги остались.
+    x: -6.35
+    y: -8.61
+    icon: minecraft:enchanting_table
+    deps: [thornborn]
+    tasks:
+      - {type: structure, structure: terralith:mage_tower}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:lapis_lazuli, count: 24}
+
+  - key: mage_complex
+    id: 34A240DB0D634249
+    title: Комплекс мага
+    description:
+      - Не башня, а целый городок мага. Найдите его — говорят, там жили ученики, а учитель так и не вернулся из последнего опыта.
+    x: -6.88
+    y: -11.26
+    icon: minecraft:amethyst_cluster
+    shape: star
+    optional: true
+    deps: [mage_tower]
+    tasks:
+      - {type: structure, structure: terralith:mage_complex}
+    rewards:
+      - {type: xp, xp: 410}
+      - {type: item, item: minecraft:ender_pearl, count: 12}

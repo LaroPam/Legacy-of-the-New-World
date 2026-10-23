@@ -1,0 +1,43 @@
+{
+  "criteria": {
+    "c0": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "betterarcheology:archeology/chest_catacombs_combat"
+      }
+    },
+    "c1": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "betterarcheology:archeology/chest_catacombs_generic"
+      }
+    },
+    "c2": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "betterarcheology:archeology/chest_catacombs_golden"
+      }
+    },
+    "c3": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "betterarcheology:archeology/chest_catacombs_library"
+      }
+    },
+    "c4": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "betterarcheology:archeology/chest_catacombs_potion"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "c0",
+      "c1",
+      "c2",
+      "c3",
+      "c4"
+    ]
+  ]
+}

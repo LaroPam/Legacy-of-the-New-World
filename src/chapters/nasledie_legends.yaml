@@ -1,0 +1,882 @@
+# Акт IV. Легенды глубин (Alex's Caves): шесть потерянных миров лучами от пещерной карты.
+# В каждом — вход, главная тайна, существо или страж. Бои со стражами — сюжетные квесты летописи («Глубины»).
+# Раскладка — src/layouts/legends.yaml.
+chapter:
+  filename: nasledie_legends
+  id: 2D3B7589DD553745
+  group: act4
+  title: Легенды глубин — шесть потерянных миров
+  icon: alexscaves:cave_map
+  order_index: 14
+  default_hide_dependency_lines: false
+  default_quest_shape: circle
+  progression_mode: flexible
+
+links:
+  - {quest: nasledie_chronicle/luxtructosaurus, x: 15.34, y: -10.35, shape: crown, size: 1.7}
+  - {quest: nasledie_chronicle/tremorzilla, x: 14.97, y: 10.87, shape: heart, size: 1.7}
+  - {quest: nasledie_chronicle/hullbreaker, x: -2.91, y: 13.69, shape: crown, size: 1.7}
+  - {quest: nasledie_chronicle/forsaken, x: -13.31, y: 4.33, shape: crown, size: 1.7}
+
+quests:
+  # ── Вход в глубины ──
+  - key: cave_tablet
+    id: E5CDBE2CB81CBFFC
+    title: Табличка зовёт под землю
+    description:
+      - В подземных хижинах лежат пещерные таблички с рисунками далёких глубин. Найдите одну — с неё начинается путь вниз.
+    x: -3.0
+    y: -5.2
+    icon: alexscaves:cave_tablet
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/cave_tablet}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: alexscaves:bioluminescent_torch, count: 16}
+
+  - key: cave_codex
+    id: 8B88E55204890F85
+    title: Прочитать древнюю табличку
+    description:
+      - Переведите табличку на столе спелеолога. Письмена старше любой деревни — возможно, их писали Зодчие.
+    x: -1.75
+    y: -3.03
+    icon: alexscaves:cave_codex
+    deps: [cave_tablet]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/cave_codex}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: alexscaves:amber, count: 4}
+
+  - key: cave_map
+    id: 1E0319E7396C1AF2
+    title: Карта потерянной глубины
+    description:
+      - Пещерная карта ведёт к одному из шести затерянных миров. Выберите, куда спуститесь первыми.
+    x: 0.0
+    y: 0.0
+    icon: alexscaves:cave_map
+    shape: star
+    size: 2
+    deps: [cave_codex]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/cave_map}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: alexscaves:floater, count: 2}
+
+  - key: cave_book
+    id: 3C74408B2EA9F8D7
+    title: Книга шести экспедиций
+    description:
+      - Пещерный путеводитель записывает всё, что вы узнали о глубинах. Соберите его — пригодится и Максиму, и Юре.
+    x: -4.25
+    y: -7.36
+    icon: alexscaves:cave_book
+    optional: true
+    deps: [cave_tablet]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/cave_book}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: alexscaves:sack_of_sating}
+
+  - key: atlas
+    id: E9BA2C6E0A89756A
+    title: Атлас шести глубин
+    description:
+      - Побывайте во всех шести затерянных мирах. Таких атласов не было даже у Линд.
+    x: -3.0
+    y: 5.2
+    icon: minecraft:filled_map
+    shape: star
+    size: 1.6
+    optional: true
+    deps: [cave_map]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/discover_magnetic_caves, title: Магнитные пещеры}
+      - {type: advancement, advancement: alexscaves:alexscaves/discover_primordial_caves, title: Первобытные пещеры}
+      - {type: advancement, advancement: alexscaves:alexscaves/discover_toxic_caves, title: Токсичные пещеры}
+      - {type: advancement, advancement: alexscaves:alexscaves/discover_abyssal_chasm, title: Бездонная расщелина}
+      - {type: advancement, advancement: alexscaves:alexscaves/discover_forlorn_hollows, title: Заброшенные пустоты}
+      - {type: advancement, advancement: alexscaves:alexscaves/discover_candy_cavity, title: Конфетный котлован}
+    rewards:
+      - {type: xp, xp: 1100}
+      - {type: item, item: alexscaves:totem_of_possession}
+
+  # ── Магнитные пещеры ──
+  - key: magnetic
+    id: 60D9315769C4E578
+    title: Магнитные пещеры
+    description:
+      - Здесь металл парит в воздухе, а компас сходит с ума. Спуститесь в магнитные пещеры.
+    x: 0.0
+    y: -3.5
+    icon: alexscaves:azure_magnet
+    deps: [cave_map]
+    tasks:
+      - {type: biome, biome: alexscaves:magnetic_caves}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:iron_ingot, count: 12}
+
+  - key: neodymium
+    id: 5EEE4A0183E3245F
+    title: Две стороны неодима
+    description:
+      - Лазурный и алый неодим притягивают и отталкивают. Добудьте оба вида.
+    x: 0.0
+    y: -6.0
+    icon: alexscaves:raw_azure_neodymium
+    deps: [magnetic]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/neodymium}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: alexscaves:resistor_shield}
+
+  - key: magnetron
+    id: 054E760F5D9B1153
+    title: Сердце магнитной бури
+    description:
+      - Магнетрон собирает себе тело из летающих блоков. Сразите его и заберите железное сердце.
+    x: 0.0
+    y: -8.5
+    icon: alexscaves:ferrouslime_ball
+    shape: shield
+    deps: [neodymium]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/defeat_magnetron}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: alexscaves:magnetic_levitation_rail, count: 16}
+
+  - key: boundroid
+    id: FCE22E10D39BCA44
+    title: Страж на тяжёлой цепи
+    description:
+      - Связиборг висит на цепи и бьёт сверху. Победите его.
+    x: 0.0
+    y: -11.0
+    icon: minecraft:chain
+    shape: shield
+    deps: [magnetron]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/defeat_boundroid}
+    rewards:
+      - {type: xp, xp: 350}
+      - {type: item, item: alexscaves:seeking_arrow, count: 16}
+
+  - key: quarry
+    id: 6F2F3D36A0C60B9E
+    title: Карьер до дна мира
+    description:
+      - Магнитный карьер копает сам. Пусть дойдёт до самого дна мира — путь к центру земли открыт.
+    x: 0.0
+    y: -13.5
+    icon: alexscaves:quarry
+    shape: star
+    optional: true
+    deps: [boundroid]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/finished_quarry}
+    rewards:
+      - {type: xp, xp: 450}
+      - {type: item, item: minecraft:diamond, count: 6}
+
+  - key: galena
+    id: FD6B3DB0A377F701
+    title: Магнитный удар издалека
+    description:
+      - Галенитовая перчатка бросает металл как снаряд. Сразите ею моба с двадцати блоков.
+    x: 2.25
+    y: -9.74
+    icon: alexscaves:galena_gauntlet
+    optional: true
+    deps: [magnetron]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/galena_gauntlet_challenge}
+    rewards:
+      - {type: xp, xp: 380}
+      - {type: item, item: alexscaves:scarlet_neodymium_ingot, count: 4}
+
+  - key: notor
+    id: 5DA969509DFEF44B
+    title: Маячок больше не выдаст
+    description:
+      - Маленькие летающие маячки следят за пещерой и выдают вас. Собейте один.
+    x: 1.69
+    y: -7.31
+    icon: minecraft:observer
+    optional: true
+    deps: [neodymium]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/defeat_notor}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: alexscaves:azure_neodymium_ingot, count: 4}
+
+  # ── Первобытные пещеры ──
+  - key: primordial
+    id: A682A9C8CBE99BB1
+    title: Мир, забывший о времени
+    description:
+      - Под землёй живут динозавры, а над ними светит подземное солнце. Спуститесь в первобытные пещеры.
+    x: 3.03
+    y: -1.75
+    icon: alexscaves:tree_star
+    deps: [cave_map]
+    tasks:
+      - {type: biome, biome: alexscaves:primordial_caves}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: alexscaves:cooked_dinosaur_chop, count: 8}
+
+  - key: subterranodon
+    id: B658222BC6AAB8B9
+    title: Крылья первобытной пещеры
+    description:
+      - Подтерранодон любит хвосты трилокарисов. Приручите его — и летайте под каменным небом.
+    x: 5.2
+    y: -3.0
+    icon: alexscaves:subterranodon_egg
+    deps: [primordial]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/tame_subterranodon}
+    rewards:
+      - {type: xp, xp: 280}
+      - {type: item, item: alexscaves:serene_salad, count: 2}
+
+  - key: paleo
+    id: 52CDC1EEE3086A8D
+    title: Три знакомства палеонтолога
+    description:
+      - Подойдите к гротоцератопсу, подтерранодону и сотрясозавру и рассмотрите каждого. Холм отдал бы за это год жизни.
+    x: 7.36
+    y: -4.25
+    icon: minecraft:spyglass
+    deps: [subterranodon]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha39/caves/paleo_fieldwork, title: Гротоцератопс}
+      - {type: advancement, advancement: nasledie:alpha39/caves/paleo_fieldwork__subterranodon, title: Подтерранодон}
+      - {type: advancement, advancement: nasledie:alpha39/caves/paleo_fieldwork__tremorsaurus, title: Сотрясозавр}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: alexscaves:dinosaur_nugget, count: 6}
+
+  - key: vallumraptor
+    id: 7727FFA6871B87B6
+    title: Договор с ловким раптором
+    description:
+      - Оставьте в сундуке динозавровые наггетсы и подождите, пока раптор их украдёт. Потом — дружба.
+    x: 9.53
+    y: -5.5
+    icon: alexscaves:dinosaur_nugget
+    deps: [paleo]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/tame_vallumraptor}
+    rewards:
+      - {type: xp, xp: 380}
+      - {type: item, item: alexscaves:primitive_club}
+
+  - key: tremorsaurus
+    id: FDF8F9FB47383497
+    title: Союз с грозой пещер
+    description:
+      - Оглушите сотрясозавра и накормите салатом спокойствия. Самый страшный хищник глубин станет вашим.
+    x: 11.69
+    y: -6.75
+    icon: alexscaves:serene_salad
+    shape: star
+    deps: [vallumraptor]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/tame_tremorsaurus}
+    rewards:
+      - {type: xp, xp: 530}
+      - {type: item, item: minecraft:golden_apple, count: 3}
+
+  - key: summon_titan
+    id: 3FCB8D7FF82745AF
+    title: Вулкан пробуждает титана
+    description:
+      - Зловещий катализатор, брошенный в жерло вулкана, будит люкстрактозавра. Готовьтесь заранее — он не спит долго.
+    x: 13.86
+    y: -8.0
+    icon: alexscaves:ominous_catalyst
+    shape: shield
+    deps: [tremorsaurus]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/summon_luxtructosaurus}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_fire_resistance"}', count: 3}
+
+  - key: atlatitan
+    id: 06A53594EC209D3A
+    title: Топот приручённого великана
+    description:
+      - Успокойте атлатитана салатом, оседлайте и топните — вокруг всё сровняется с землёй.
+    x: 5.56
+    y: -5.75
+    icon: alexscaves:atlatitan_egg
+    optional: true
+    deps: [subterranodon]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/atlatitan_stomp}
+    rewards:
+      - {type: xp, xp: 340}
+      - {type: item, item: alexscaves:amber, count: 6}
+
+  - key: convert_biome
+    id: 176790254CA17C3C
+    title: Первый изменённый биом
+    description:
+      - Тигель трансформации превращает один биом в другой. Создайте свой кусочек иного мира прямо у дома.
+    x: 7.29
+    y: -7.55
+    icon: alexscaves:conversion_crucible
+    shape: star
+    optional: true
+    deps: [atlatitan]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/convert_biome}
+    rewards:
+      - {type: xp, xp: 600}
+      - {type: item, item: minecraft:diamond, count: 4}
+
+  # ── Токсичные пещеры ──
+  - key: toxic
+    id: C54CEAEDCFA1F140
+    title: Лаборатория токсичных глубин
+    description:
+      - Кислотные озёра, ржавые бочки и радиация. Кто-то здесь уже экспериментировал. Спуститесь — в защите.
+    x: 3.03
+    y: 1.75
+    icon: alexscaves:uranium
+    deps: [cave_map]
+    tasks:
+      - {type: biome, biome: alexscaves:toxic_caves}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: alexscaves:hazmat_mask}
+
+  - key: acid_rust
+    id: CD890C4519D39302
+    title: Кислота меняет металл
+    description:
+      - Металлолом рядом с кислотой ржавеет на глазах. Окислите блок.
+    x: 5.2
+    y: 3.0
+    icon: alexscaves:metal_swarf
+    deps: [toxic]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/acid_create_rust}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: alexscaves:radon_bottle, count: 2}
+
+  - key: acid_armor
+    id: 28820C6F7944A6F3
+    title: Броня встречает кислоту
+    description:
+      - Окунитесь в кислоту в броне, которая примет удар на себя. Броне будет больно, вам — нет.
+    x: 7.36
+    y: 4.25
+    icon: alexscaves:hazmat_chestplate
+    deps: [acid_rust]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/enter_acid_with_armor}
+    rewards:
+      - {type: xp, xp: 330}
+      - {type: item, item: alexscaves:hazmat_leggings}
+
+  - key: raycat
+    id: A070AFC86412D9CF
+    title: Спутник против радиации
+    description:
+      - Лучекот любит радиабров и вычищает радиацию из хозяина. Приручите его — пригодится.
+    x: 9.53
+    y: 5.5
+    icon: alexscaves:radgill
+    deps: [acid_armor]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/tame_raycat}
+    rewards:
+      - {type: xp, xp: 345}
+      - {type: item, item: alexscaves:hazmat_boots}
+
+  - key: nucleeper
+    id: 9FCD3892785E34CA
+    title: Остановить ядрипера
+    description:
+      - Ядрипер — крипер с ядерным зарядом. Победите его до того, как над пещерой вырастет гриб.
+    x: 11.69
+    y: 6.75
+    icon: alexscaves:nuclear_bomb
+    shape: shield
+    deps: [raycat]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/defeat_nucleeper}
+    rewards:
+      - {type: xp, xp: 480}
+      - {type: item, item: alexscaves:hazmat_chestplate}
+
+  - key: meltdown
+    id: 35A20348AABD6323
+    title: Вернуть печь из критического состояния
+    description:
+      - Ядерная печь даёт энергию, но любит перегреваться. Спасите её от расплава, убрав отходы вовремя.
+    x: 8.84
+    y: 8.84
+    icon: alexscaves:nuclear_furnace_component
+    optional: true
+    deps: [raycat]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/stop_nuclear_furnace_meltdown}
+    rewards:
+      - {type: xp, xp: 600}
+      - {type: item, item: alexscaves:uranium_rod, count: 2}
+
+  - key: defuse
+    id: AC100A1C72C67C78
+    title: Красный провод
+    description:
+      - Обезвредьте ядерную бомбу ножницами. Какой провод резать — решайте вместе. Быстро.
+    x: 10.61
+    y: 10.61
+    icon: minecraft:shears
+    optional: true
+    deps: [meltdown]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/defuse_nuclear_bomb}
+    rewards:
+      - {type: xp, xp: 700}
+      - {type: item, item: minecraft:enchanted_golden_apple}
+
+  - key: ride_bomb
+    id: 273A0D05D74B7984
+    title: Юра выбрал необычное седло
+    description:
+      - Залезьте на ядерную бомбу перед взрывом. Юра настаивает, что это лучший вид на пещеру. Максим, сними на память.
+    x: 12.37
+    y: 12.37
+    icon: minecraft:saddle
+    shape: heart
+    optional: true
+    deps: [defuse]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/ride_nuclear_bomb}
+    rewards:
+      - {type: xp, xp: 320}
+      - {type: item, item: minecraft:totem_of_undying}
+
+  - key: hatch_tremorzilla
+    id: 7AF2CF003133B836
+    title: Из яйца выходит Сотрясозилла
+    description:
+      - Соберите яйцо сотрясозиллы и разбудите его ядерным огнём. То, что вылупится, решит — враг вы ему или семья.
+    x: 13.86
+    y: 8.0
+    icon: alexscaves:tremorzilla_egg
+    shape: star
+    deps: [nucleeper]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/hatch_tremorzilla_egg}
+    rewards:
+      - {type: xp, xp: 460}
+      - {type: item, item: alexscaves:primordial_soup, count: 2}
+
+  - key: tremorzilla_beam
+    id: A6AF0FFF36488B07
+    title: Один луч — двадцать чудовищ
+    description:
+      - Верхом на сотрясозилле сожгите двадцать монстров одним лучом. Король монстров на вашей стороне.
+    x: 16.99
+    y: 12.34
+    icon: minecraft:beacon
+    shape: star
+    optional: true
+    deps: [nasledie_chronicle/tremorzilla]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/tremorzilla_kill_beam}
+    rewards:
+      - {type: xp, xp: 800}
+      - {type: item, item: minecraft:enchanted_golden_apple, count: 2}
+
+  # ── Бездонная расщелина ──
+  - key: abyssal
+    id: EF811CDE1BFBABE2
+    title: У входа в бездну
+    description:
+      - Под океаном открывается расщелина без дна, где живут глубинники. Спуститесь — с поплавком и запасом воздуха.
+    x: 0.0
+    y: 3.5
+    icon: alexscaves:diving_helmet
+    deps: [cave_map]
+    tasks:
+      - {type: biome, biome: alexscaves:abyssal_chasm}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: alexscaves:diving_boots}
+
+  - key: repair_submarine
+    id: FF39C1FF3A9C0C7E
+    title: Медь для подводного корпуса
+    description:
+      - Субмарина — лучший способ ходить по дну бездны. Почините её медью.
+    x: 0.0
+    y: 6.0
+    icon: minecraft:copper_ingot
+    deps: [abyssal]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/repair_submarine}
+    rewards:
+      - {type: xp, xp: 330}
+      - {type: item, item: minecraft:copper_block, count: 8}
+
+  - key: ride_submarine
+    id: CF6FFE76F5F9E33C
+    title: Место капитана подлодки
+    description:
+      - Займите место капитана и опуститесь на дно. Юра — штурман.
+    x: 0.0
+    y: 8.5
+    icon: alexscaves:submarine
+    deps: [repair_submarine]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/ride_submarine}
+    rewards:
+      - {type: xp, xp: 260}
+      - {type: item, item: alexscaves:deep_sea_sushi_roll, count: 6}
+
+  - key: abyssal_ruins
+    id: DD30229DC0039862
+    title: Воздух в затонувших руинах
+    description:
+      - В бездне есть место, где можно дышать, — руины глубинников. Найдите их.
+    x: 0.0
+    y: 11.0
+    icon: alexscaves:abyssmarine
+    deps: [ride_submarine]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/discover_abyssal_ruins}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: alexscaves:pearl, count: 2}
+
+  - key: deep_trade
+    id: 20BB4BB6D059B828
+    title: Первая сделка в глубине
+    description:
+      - Глубинники торгуют, если принести им то, что они ценят. Обменяйтесь с одним из них.
+    x: 0.0
+    y: 13.5
+    icon: alexscaves:pearl
+    deps: [abyssal_ruins]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/trade_with_deep_one}
+    rewards:
+      - {type: xp, xp: 260}
+      - {type: item, item: alexscaves:magic_conch}
+
+  - key: deep_neutral
+    id: F83BDD5302CAB271
+    title: Глубинники перестали бояться
+    description:
+      - Торгуйте с глубинниками раз за разом, пока они не перестанут прятаться при виде вас.
+    x: 0.0
+    y: 16.0
+    icon: alexscaves:marine_snow
+    deps: [deep_trade]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/deep_ones_become_neutral}
+    rewards:
+      - {type: xp, xp: 350}
+      - {type: item, item: alexscaves:sea_staff}
+
+  - key: deep_helpful
+    id: 835B28BFA782D516
+    title: Союзники Бездонной расщелины
+    description:
+      - Заслужите такое доверие глубинников, что они придут на помощь в бою.
+    x: 0.0
+    y: 18.5
+    icon: alexscaves:abyssal_altar
+    shape: star
+    optional: true
+    deps: [deep_neutral]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/deep_ones_become_helpful}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: minecraft:diamond, count: 4}
+
+  - key: stalked
+    id: 1FDE61E7AC73CF59
+    title: Кто-то следит из воды
+    description:
+      - Однажды вы увидите то, что видеть не стоило. Не оборачивайтесь.
+    x: 1.46
+    y: 6.33
+    icon: minecraft:ender_eye
+    optional: true
+    deps: [abyssal]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/stalked_by_deep_one}
+    rewards:
+      - {type: xp, xp: 295}
+      - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_night_vision"}', count: 3}
+
+  - key: mine_guardian
+    id: 1AD4F36AEE69BAE9
+    title: Страж затонувших разработок
+    description:
+      - Минный страж висит на якоре и взрывается от приближения. Уничтожьте его издалека.
+    x: 2.14
+    y: 9.26
+    icon: alexscaves:depth_charge
+    shape: shield
+    optional: true
+    deps: [ride_submarine]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/defeat_mine_guardian}
+    rewards:
+      - {type: xp, xp: 440}
+      - {type: item, item: alexscaves:depth_charge, count: 4}
+
+  # ── Заброшенные пустоты ──
+  - key: forlorn
+    id: E64ED6625A930A36
+    title: Коридоры забытого мрака
+    description:
+      - Тёмные пустоты, где живут подзектанты и злые мотыльки. Ингрид Берг ушла сюда и не вернулась. Спуститесь за ней.
+    x: -3.03
+    y: 1.75
+    icon: alexscaves:dark_tatters
+    deps: [cave_map]
+    tasks:
+      - {type: biome, biome: alexscaves:forlorn_hollows}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: alexscaves:bioluminescent_torch, count: 16}
+
+  - key: gloomoth
+    id: F204791E23CFF9E5
+    title: Мотылёк сумрачных полостей
+    description:
+      - Злотыльки летят на свет и кусаются. Сбейте одного.
+    x: -5.2
+    y: 3.0
+    icon: alexscaves:moth_ball
+    deps: [forlorn]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/defeat_gloomoth}
+    rewards:
+      - {type: xp, xp: 260}
+      - {type: item, item: alexscaves:moth_ball, count: 4}
+
+  - key: sacrifice
+    id: C23DDD9DAAD5EAB7
+    title: Увидеть запретный ритуал
+    description:
+      - Подзектанты приносят жертвы тьме. Станьте свидетелями ритуала — так же, как Берг.
+    x: -7.36
+    y: 4.25
+    icon: alexscaves:desolate_dagger
+    deps: [gloomoth]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/underzealot_sacrifice}
+    rewards:
+      - {type: xp, xp: 350}
+      - {type: item, item: alexscaves:shadow_silk}
+
+  - key: watcher
+    id: 1C4B8279C22D289B
+    title: Наблюдатель, вызванный ритуалом
+    description:
+      - Ритуал вызывает Смотрителя — того, кто видит изнутри. Победите его, прежде чем идти дальше в темноту.
+    x: -9.53
+    y: 5.5
+    icon: minecraft:ender_eye
+    shape: shield
+    deps: [sacrifice]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/defeat_watcher}
+    rewards:
+      - {type: xp, xp: 420}
+      - {type: item, item: alexscaves:cloak_of_darkness}
+
+  - key: darkened_apple
+    id: 680C2889E6EF571F
+    title: Яблоко продлевает тьму
+    description:
+      - Съешьте тёмное яблоко, пока вы в обличье тьмы. Тьма станет вашей чуть дольше.
+    x: -11.69
+    y: 6.75
+    icon: minecraft:apple
+    optional: true
+    deps: [watcher]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/eat_darkened_apple}
+    rewards:
+      - {type: xp, xp: 330}
+      - {type: item, item: minecraft:ender_pearl, count: 6}
+
+  # ── Конфетный котлован ──
+  - key: candy
+    id: 338E0B562BF293D5
+    title: Пещера, которую хочется попробовать
+    description:
+      - Пещера из конфет, газировки и пряников. Здесь хочется остаться — именно поэтому стоит быть осторожными.
+    x: -3.03
+    y: -1.75
+    icon: alexscaves:candy_cane
+    deps: [cave_map]
+    tasks:
+      - {type: biome, biome: alexscaves:candy_cavity}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: alexscaves:candy_cane_hook}
+
+  - key: caramel
+    id: 2C50224379627B14
+    title: Карамель из живого куба
+    description:
+      - Карамельный куб оставляет после себя карамель. Добудьте её.
+    x: -5.2
+    y: -3.0
+    icon: alexscaves:caramel
+    deps: [candy]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/caramel}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: minecraft:apple, count: 8}
+
+  - key: caramel_apple
+    id: 66097831A964FDD6
+    title: Угощение для будущего спутника
+    description:
+      - Карамельное яблоко — любимое лакомство леденорога. Сделайте его.
+    x: -7.36
+    y: -4.25
+    icon: alexscaves:caramel_apple
+    deps: [caramel]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/caramel_apple}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: alexscaves:jelly_bean, count: 4}
+
+  - key: candicorn
+    id: A9FDA172CB9A8629
+    title: Сладкий скакун
+    description:
+      - Приручите леденорога карамельными яблоками. Радуга прилагается.
+    x: -9.53
+    y: -5.5
+    icon: alexscaves:gummy_ring_pink
+    deps: [caramel_apple]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/tame_candicorn}
+    rewards:
+      - {type: xp, xp: 330}
+      - {type: item, item: alexscaves:rainbounce_boots}
+
+  - key: gingerbread_town
+    id: 1BE92C03BDBB686A
+    title: Пряничный город
+    description:
+      - Где-то в котловане стоит город пряничных человечков. Найдите его — и не ешьте жителей.
+    x: -11.69
+    y: -6.75
+    icon: alexscaves:gingerbread_block
+    deps: [candicorn]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/gingerbread_town}
+    rewards:
+      - {type: xp, xp: 340}
+      - {type: item, item: alexscaves:gobthumper}
+
+  - key: licowitch
+    id: D1155DEF31997ADB
+    title: Башня на лакричном дереве
+    description:
+      - На вершине огромного конфетного корня стоит башня конфедьмы. Поднимитесь к ней.
+    x: -13.86
+    y: -8.0
+    icon: alexscaves:licoroot
+    deps: [gingerbread_town]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/licowitch_tower}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: alexscaves:confection_oven}
+
+  - key: ride_gum_worm
+    id: F169B6525412B860
+    title: Всадник сладкой бури
+    description:
+      - Зацепите мармеладного червя двумя леденцовыми крюками и правьте им. Самая сладкая поездка в мире.
+    x: -16.02
+    y: -9.25
+    icon: alexscaves:candy_cane_hook
+    shape: star
+    deps: [licowitch]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/ride_gum_worm}
+    rewards:
+      - {type: xp, xp: 450}
+      - {type: item, item: alexscaves:gummy_ring_red, count: 4}
+
+  - key: gum_worm
+    id: 5302C3B080472681
+    title: Победа над жевательным червём
+    description:
+      - А теперь — сразите мармеладного червя. Без обид.
+    x: -18.19
+    y: -10.5
+    icon: alexscaves:shot_gum
+    shape: shield
+    optional: true
+    deps: [ride_gum_worm]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/defeat_gum_worm}
+    rewards:
+      - {type: xp, xp: 440}
+      - {type: item, item: alexscaves:shot_gum}
+
+  - key: frostmint
+    id: 605FA347740DE9A7
+    title: Мята встречает газировку
+    description:
+      - Уроните мятную жвачку в реку фиолетовой газировки и отойдите подальше.
+    x: -6.28
+    y: -1.68
+    icon: alexscaves:frostmint
+    optional: true
+    deps: [candy]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/frostmint_explosion}
+    rewards:
+      - {type: xp, xp: 350}
+      - {type: item, item: minecraft:golden_apple, count: 2}
+
+  - key: chocolate
+    id: 662E9E2A4828CD48
+    title: Максим съел весь шоколад
+    description:
+      - Съешьте целый блок шоколада. Максим, мы знаем, что это был ты.
+    x: -4.6
+    y: -4.6
+    icon: alexscaves:block_of_chocolate
+    shape: heart
+    optional: true
+    deps: [candy]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/eat_block_of_chocolate}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: alexscaves:sundae, count: 2}

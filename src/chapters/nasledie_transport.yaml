@@ -1,0 +1,375 @@
+# Акт III. Транспорт: железная дорога Create/Steam Rails и воздушный флот Immersive Aircraft.
+chapter:
+  filename: nasledie_transport
+  id: D90DA6CC0E252361
+  group: act3
+  title: Дороги нового мира — рельсы и крылья
+  icon: create:track
+  order_index: 11
+  default_hide_dependency_lines: false
+  default_quest_shape: circle
+  progression_mode: flexible
+
+quests:
+  # ── Железная дорога ──
+  - key: sturdy_sheet
+    id: C1772DE6B882A602
+    title: Материал большого пути
+    description:
+      - Прочный лист из обсидиана и меди нужен для колёс и тормозов поезда. С него начинается железная дорога.
+    x: 0
+    y: 0
+    icon: create:sturdy_sheet
+    size: 1.4
+    deps: [nasledie_industry/precision]
+    tasks:
+      - {type: advancement, advancement: create:sturdy_sheet}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: railways:conductor_whistle}
+
+  - key: track
+    id: 168FB859D289DA38
+    title: Путь между поселениями
+    description:
+      - Проложите первые рельсы Create. Они гнутся плавно — можно вести дорогу через холмы и реки.
+    x: 3
+    y: 0
+    icon: create:track
+    deps: [sturdy_sheet]
+    tasks:
+      - {type: advancement, advancement: create:track_0}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: railways:buffer, count: 2}
+
+  - key: train_casing
+    id: 0BE47753BC6BEF28
+    title: Железнодорожный корпус
+    description:
+      - Обшейте блок железнодорожным корпусом — из таких собирают вагоны и тележки.
+    x: 6
+    y: 0
+    icon: create:railway_casing
+    deps: [track]
+    tasks:
+      - {type: advancement, advancement: create:train_casing_00}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: railways:big_buffer, count: 2}
+
+  - key: train
+    id: D727915E29A5F477
+    title: Поезд готов к отправлению
+    description:
+      - Соберите состав с тележками и пультом машиниста на станции. Первый рейс — праздник для всей деревни.
+    x: 9
+    y: 0
+    icon: create:controls
+    shape: star
+    size: 1.5
+    deps: [train_casing]
+    tasks:
+      - {type: advancement, advancement: create:train}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: railways:benchcart, count: 2}
+
+  - key: whistle
+    id: 2CC98EB2E8824152
+    title: Свисток перед отправлением
+    description:
+      - Поставьте на поезд свисток. Пусть вся округа знает, что Максим выезжает.
+    x: 9
+    y: -3
+    icon: create:steam_whistle
+    optional: true
+    deps: [train]
+    tasks:
+      - {type: advancement, advancement: create:train_whistle}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: railways:conductor_vent}
+
+  - key: conductor
+    id: 27A5DCA80F77C440
+    title: Передать маршрут машинисту
+    description:
+      - Расписание в руках машиниста — и поезд ходит сам. Посадите жителя или рекрута за пульт.
+    x: 12
+    y: 0
+    icon: create:schedule
+    deps: [train]
+    tasks:
+      - {type: advancement, advancement: create:conductor}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: railways:track_coupler}
+
+  - key: signal
+    id: 3DC5EEC5097BB375
+    title: Сигналы для общей линии
+    description:
+      - Два поезда на одной ветке — без сигналов это авария. Поставьте первый светофор.
+    x: 15
+    y: 0
+    icon: create:track_signal
+    deps: [conductor]
+    tasks:
+      - {type: advancement, advancement: create:track_signal}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: railways:semaphore, count: 2}
+
+  - key: red_signal
+    id: 7B13E63BEA35FC61
+    title: Максим, сигнал был красным
+    description:
+      - Проедьте на красный. Только один раз. Ради достижения. Юра всё видел.
+    x: 15
+    y: 3
+    icon: minecraft:redstone_torch
+    optional: true
+    deps: [signal]
+    tasks:
+      - {type: advancement, advancement: create:red_signal}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: railways:copycat_headstock}
+
+  - key: backwards_crash
+    id: 6E3CC9D4F972BDBB
+    title: Задним ходом — прямо в историю
+    description:
+      - Столкнитесь с поездом, едущим задом. Неважно, кто виноват — важно, что весело.
+    x: 15
+    y: 6
+    icon: create:railway_casing
+    optional: true
+    deps: [red_signal]
+    tasks:
+      - {type: advancement, advancement: create:train_crash_backwards}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: minecraft:diamond, count: 3}
+
+  - key: display_board
+    id: 57D8DDEFF1169558
+    title: Вокзал знает время прибытия
+    description:
+      - Табло показывает, когда придёт поезд. Подключите его к станции через дисплейную связь.
+    x: 18
+    y: 0
+    icon: create:display_board
+    deps: [signal]
+    tasks:
+      - {type: advancement, advancement: create:display_board_0}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: railways:link_and_pin, count: 4}
+
+  - key: track_factory
+    id: 3E14426D5444F75E
+    title: Своя рельсовая фабрика
+    description:
+      - Наладьте сборку рельсов на машинах. Дальние ветки съедают их тысячами.
+    x: 12
+    y: -3
+    icon: create:track
+    optional: true
+    deps: [conductor]
+    tasks:
+      - {type: advancement, advancement: create:track_crafting_factory}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: railways:fuel_tank}
+
+  - key: long_train
+    id: 0A24638E79FF2418
+    title: Шесть вагонов для дальней дороги
+    description:
+      - Соберите длинный состав — сокровища экспедиций сами себя не довезут.
+    x: 12
+    y: -6
+    icon: create:minecart_coupling
+    optional: true
+    deps: [track_factory]
+    tasks:
+      - {type: advancement, advancement: create:long_train}
+    rewards:
+      - {type: xp, xp: 220}
+      - {type: item, item: interiors:red_chair, count: 4}
+
+  - key: long_travel
+    id: B6EA6A2338C90595
+    title: Пять тысяч блоков от дома
+    description:
+      - Проедьте на поезде пять тысяч блоков за один рейс. Протяните линию к дальнему логову — пусть Катаклизм будет на расстоянии поездки.
+    x: 15
+    y: -6
+    icon: minecraft:compass
+    shape: star
+    size: 1.4
+    optional: true
+    deps: [long_train]
+    tasks:
+      - {type: advancement, advancement: create:long_travel}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: waystones:warp_stone}
+
+  - key: train_portal
+    id: AB76CE2DB46422C6
+    title: Рейс в другое измерение
+    description:
+      - Проведите рельсы сквозь портал. Поезд в Нижний мир — лучший способ возить огненные стержни.
+    x: 18
+    y: -3
+    icon: minecraft:obsidian
+    shape: star
+    optional: true
+    deps: [display_board]
+    tasks:
+      - {type: advancement, advancement: create:train_portal}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: railways:paint_brush}
+
+  - key: roadkill
+    id: 098405E74DFFDA00
+    title: Рельсовое происшествие
+    description:
+      - Поезд сбивает моба. Не специально, конечно.
+    x: 6
+    y: 3
+    icon: minecraft:rotten_flesh
+    optional: true
+    deps: [train_casing]
+    tasks:
+      - {type: advancement, advancement: create:train_roadkill}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: create:railway_casing, count: 12}
+
+  - key: handcar
+    id: B39341943A77E20B
+    title: Дрезина для осмотра пути
+    description:
+      - Поставьте дрезину и прокатитесь вдоль линии. Ручной привод — Юре полезно.
+    x: 3
+    y: 3
+    icon: railways:handcar
+    optional: true
+    deps: [track]
+    tasks:
+      - {id: EEF5774CADE39519, type: advancement, advancement: nasledie:alpha34/actions/eef5774cade39519, title: Поставить дрезину}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: farmersdelight:bacon_sandwich, count: 4}
+
+  - key: conductor_cap
+    id: 0C11F617809503C4
+    title: Фуражка дежурного по станции
+    description:
+      - Наденьте фуражку кондуктора. Теперь вы главный на вокзале — Юра, предъяви билет.
+    x: 12
+    y: 3
+    icon: railways:conductor_cap
+    optional: true
+    deps: [conductor]
+    tasks:
+      - {id: A62C8B9DBBC8BE51, type: advancement, advancement: nasledie:alpha35/engineering/0c11f617809503c4, title: Надеть фуражку кондуктора}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: railways:remote_lens}
+
+  # ── Воздушный флот ──
+  - key: gyrodyne
+    title: Винтокрыл на мускульной тяге
+    description:
+      - Винтокрыл раскручивают ногами — топливо не нужно. Поднимитесь в воздух на первом самодельном аппарате.
+    x: 0
+    y: -4
+    icon: immersive_aircraft:gyrodyne
+    deps: [nasledie_create/alloy]
+    tasks:
+      - {type: criteria, title: Сесть в винтокрыл, ride: immersive_aircraft:gyrodyne}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: immersive_aircraft:sail, count: 4}
+
+  - key: biplane
+    id: CABC4D7CB8FBE2B6
+    title: Биплан для разведки
+    description:
+      - Биплан с двигателем летит далеко и быстро. Облетите окрестности — с высоты лагеря и логова видно издалека.
+    x: 3
+    y: -4
+    icon: immersive_aircraft:biplane
+    deps: [gyrodyne]
+    tasks:
+      - {id: 357B61E283AA8D27, type: advancement, advancement: nasledie:alpha34/actions/357b61e283aa8d27, title: Сесть в биплан}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: immersive_aircraft:improved_landing_gear}
+
+  - key: quadrocopter
+    title: Квадрокоптер
+    description:
+      - Квадрокоптер висит в воздухе на месте — удобно для стройки на высоте и осмотра небесных кораблей.
+    x: 3
+    y: -7
+    icon: immersive_aircraft:quadrocopter
+    optional: true
+    deps: [biplane]
+    tasks:
+      - {type: criteria, title: Сесть в квадрокоптер, ride: immersive_aircraft:quadrocopter}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: immersive_aircraft:gyroscope}
+
+  - key: airship
+    title: Дирижабль
+    description:
+      - Дирижабль медленный, зато берёт пассажира и груз. Отличный транспорт для экспедиции вдвоём.
+    x: 6
+    y: -4
+    icon: immersive_aircraft:airship
+    deps: [biplane]
+    tasks:
+      - {type: criteria, title: Подняться на дирижабле, ride: immersive_aircraft:airship}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: immersive_aircraft:hull_reinforcement}
+
+  - key: cargo_airship
+    id: 34F99F7AE0F5BD92
+    title: Грузовой дирижабль
+    description:
+      - Летающий склад для дальних экспедиций. Загрузите сундуки — и в путь к логову.
+    x: 6
+    y: -7
+    icon: immersive_aircraft:cargo_airship
+    deps: [airship]
+    tasks:
+      - {id: 762D58F4A6D0B9FD, type: advancement, advancement: nasledie:alpha34/actions/762d58f4a6d0b9fd, title: Подняться на грузовом дирижабле}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: immersive_aircraft:eco_engine}
+
+  - key: warship
+    title: Военный дирижабль
+    description:
+      - Бронированный корабль с орудиями на борту. Летите на нём к акрополю бури — Сцилла этого не ждёт.
+    x: 6
+    y: -10
+    icon: immersive_aircraft:warship
+    shape: star
+    size: 1.4
+    optional: true
+    deps: [cargo_airship]
+    tasks:
+      - {type: criteria, title: Подняться на военном дирижабле, ride: immersive_aircraft:warship}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: immersive_aircraft:rotary_cannon}

@@ -1,0 +1,48 @@
+{
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "relics:leather_belt",
+              "relics:arrow_quiver",
+              "relics:hunter_belt",
+              "relics:infinity_ham",
+              "relics:roller_skates",
+              "relics:horse_flute",
+              "relics:magic_mirror",
+              "relics:midnight_robe",
+              "relics:spatial_sign",
+              "relics:aqua_walker",
+              "relics:amphibian_boot",
+              "relics:drowned_belt",
+              "relics:jellyfish_necklace",
+              "relics:ice_skates",
+              "relics:ice_breaker",
+              "relics:wool_mitten",
+              "relics:holy_locket",
+              "relics:spore_sack",
+              "relics:blazing_flask",
+              "relics:magma_walker",
+              "relics:rage_glove",
+              "relics:reflection_necklace",
+              "relics:space_dissector",
+              "relics:bastion_ring",
+              "relics:chorus_inhibitor",
+              "relics:elytra_booster",
+              "relics:enders_hand",
+              "relics:shadow_glaive"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

@@ -1,576 +1,692 @@
 {
-    filename: "nasledie_life"
-    id: "DC7EC49FBED1A9C6"
-    group: "842B4DB4DBD349A0"
-    title: "Дом, к которому возвращаются"
-    icon: "minecraft:campfire"
-    order_index: 1
-    progression_mode: "flexible"
-    default_hide_dependency_lines: false
-    default_quest_shape: "heart"
-    default_quest_size: 1.28d
+	filename: "nasledie_life"
+	id: "DC7EC49FBED1A9C6"
+	group: "842B4DB4DBD349A0"
+	title: "Дом, к которому возвращаются"
+	icon: "farmersdelight:cooking_pot"
+	order_index: 1
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			id: "B05D6F5E90BFA385"
+			title: "Ночлег"
+			description: ["Экспедиция начинается не с карты, а с места, куда хочется вернуться. Поставьте кровать и переночуйте — так мир запомнит, где ваш дом."]
+			x: 0.0d
+			y: 0.0d
+			icon: "minecraft:red_bed"
+			shape: "heart"
+			size: 1.4d
+			tasks: [{
+				id: "DFA2704E8BB44475"
+				type: "advancement"
+				advancement: "minecraft:adventure/sleep_in_bed"
+			}]
+			rewards: [
+				{
+					id: "9AEDB022F5EAE4DC"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "4535FAAC26325A95"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:lantern"
+					}
+				}
+			]
+		}
+		{
+			id: "C322668146484A1C"
+			title: "Нож повара"
+			description: ["Даже дальняя вылазка начинается с хорошего ужина. Сделайте кухонный нож — кремнёвого вполне хватит. Им режут продукты на доске и срезают солому с травы."]
+			x: 3.0d
+			y: 0.0d
+			icon: "farmersdelight:flint_knife"
+			dependencies: ["B05D6F5E90BFA385"]
+			tasks: [{
+				id: "477EAE38055AFECF"
+				type: "advancement"
+				advancement: "farmersdelight:main/craft_knife"
+			}]
+			rewards: [
+				{
+					id: "DC2CEFB27380022A"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "473F630BFCA3E0E3"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "farmersdelight:cutting_board"
+					}
+				}
+			]
+		}
+		{
+			id: "464A27B6AA037B37"
+			title: "Разделочная доска"
+			description: ["Положите продукт на доску и разделайте его ножом. Из одного куска мяса выходит несколько порций, из капусты — листья для голубцов."]
+			x: 5.5d
+			y: 0.0d
+			icon: "farmersdelight:cutting_board"
+			dependencies: ["C322668146484A1C"]
+			tasks: [{
+				id: "C5A1FF1C485C204C"
+				type: "advancement"
+				advancement: "farmersdelight:main/use_cutting_board"
+			}]
+			rewards: [
+				{
+					id: "A4096B2176209939"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "B3CD27AB347BC682"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:iron_ingot"
+					}
+				}
+			]
+		}
+		{
+			id: "70BD314183AC1CDE"
+			title: "Котёл на кухне"
+			description: ["Кухонный котёл варит супы и рагу, которые сытнее любого жаркого. Поставьте его над огнём или жаровней и попробуйте первый рецепт."]
+			x: 8.0d
+			y: 0.0d
+			icon: "farmersdelight:cooking_pot"
+			dependencies: ["464A27B6AA037B37"]
+			tasks: [{
+				id: "4F93452F3C54B5AE"
+				type: "advancement"
+				advancement: "farmersdelight:main/place_cooking_pot"
+			}]
+			rewards: [
+				{
+					id: "719F454E13F70D22"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "DD941313DF4B26BA"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "farmersdelight:skillet"
+					}
+				}
+			]
+		}
+		{
+			id: "4E740C0034B4382F"
+			title: "Сытный обед"
+			description: ["Блюда из котла дают «Сытость» — голод надолго перестаёт мешать работе. Перед дальней дорогой это важнее лишнего стака хлеба."]
+			x: 10.5d
+			y: 0.0d
+			icon: "farmersdelight:beef_stew"
+			dependencies: ["70BD314183AC1CDE"]
+			tasks: [{
+				id: "16D5BE52FF14FDDB"
+				type: "advancement"
+				advancement: "farmersdelight:main/eat_nourishing_food"
+			}]
+			rewards: [
+				{
+					id: "B4578FCE65150DAA"
+					type: "xp"
+					xp: 70
+				}
+				{
+					id: "C679A0AB0D0FDD16"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "farmersdelight:apple_cider"
+					}
+				}
+			]
+		}
+		{
+			id: "52659216F4F03E2C"
+			title: "Максим, ужин готов!"
+			description: ["Некоторые блюда подают целиком на стол — режьте и угощайте друг друга. Приготовьте праздничное блюдо и поставьте его, пока Юра не съел всё прямо из котла."]
+			x: 13.0d
+			y: 0.0d
+			icon: "farmersdelight:roast_chicken_block"
+			shape: "star"
+			optional: true
+			dependencies: ["4E740C0034B4382F"]
+			tasks: [{
+				id: "C3E73BCEA67AD04F"
+				type: "advancement"
+				advancement: "farmersdelight:main/place_feast"
+			}]
+			rewards: [
+				{
+					id: "BDD19353D5B27533"
+					type: "xp"
+					xp: 140
+				}
+				{
+					id: "1E37FFB760C3F871"
+					type: "item"
+					item: {
+						Count: 6b
+						id: "farmersdelight:cabbage_rolls"
+					}
+				}
+			]
+		}
+		{
+			id: "B134069526544AEA"
+			title: "Шеф-повар нового мира"
+			description: ["Попробуйте все блюда, какие умеет ваша кухня. Это долгая цель на много вечеров — зато в награду рюкзак научится сам кормить вас в пути."]
+			x: 15.5d
+			y: 0.0d
+			icon: "farmersdelight:honey_glazed_ham_block"
+			shape: "star"
+			size: 1.4d
+			optional: true
+			dependencies: ["52659216F4F03E2C"]
+			tasks: [{
+				id: "EC8DE64E843B7E58"
+				type: "advancement"
+				advancement: "farmersdelight:main/master_chef"
+			}]
+			rewards: [
+				{
+					id: "411F4A8DA16AE48A"
+					type: "xp"
+					xp: 600
+				}
+				{
+					id: "19A3AE47F0C82352"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "sophisticatedbackpacks:advanced_feeding_upgrade"
+					}
+				}
+			]
+		}
+		{
+			id: "42E5495CA00F5CC6"
+			title: "Семена другого мира"
+			description: ["В дикой природе растут капуста, томаты, лук и рис. Принесите домой хотя бы одну новую культуру — с неё начнётся огород, который прокормит вас между вылазками."]
+			x: 3.0d
+			y: -3.0d
+			icon: "farmersdelight:cabbage_seeds"
+			dependencies: ["B05D6F5E90BFA385"]
+			tasks: [{
+				id: "DA407032247C7A03"
+				type: "advancement"
+				advancement: "farmersdelight:main/get_fd_seed"
+			}]
+			rewards: [
+				{
+					id: "266E0006AE14F939"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "BDD97E44FD446355"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "farmersdelight:rope"
+					}
+				}
+			]
+		}
+		{
+			id: "5B2F6F1B27706E1D"
+			title: "Рисовые поля"
+			description: ["Рис сажают в неглубокую воду. Пока он растёт, рядом можно устроить пруд или ферму — место у воды всегда пригодится."]
+			x: 5.5d
+			y: -3.0d
+			icon: "farmersdelight:rice_panicle"
+			dependencies: ["42E5495CA00F5CC6"]
+			tasks: [{
+				id: "7B4D77729467D073"
+				type: "advancement"
+				advancement: "farmersdelight:main/plant_rice"
+			}]
+			rewards: [
+				{
+					id: "B9E09836EB55332F"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "CDC168157C6E63D3"
+					type: "item"
+					item: {
+						Count: 16b
+						id: "minecraft:bone_meal"
+					}
+				}
+			]
+		}
+		{
+			id: "9E550CA158EE0E76"
+			title: "Томаты на верёвке"
+			description: ["Томатная лоза ползёт вверх по верёвке над грядкой. Подвяжите её и соберите урожай с высокого куста."]
+			x: 8.0d
+			y: -3.0d
+			icon: "farmersdelight:tomato"
+			dependencies: ["5B2F6F1B27706E1D"]
+			tasks: [{
+				id: "3B757C0F1E9EDD3E"
+				type: "advancement"
+				advancement: "farmersdelight:main/harvest_ropelogged_tomato"
+			}]
+			rewards: [
+				{
+					id: "63F8ADC65E162DAB"
+					type: "xp"
+					xp: 55
+				}
+				{
+					id: "1F835033C10D6A82"
+					type: "item"
+					item: {
+						Count: 3b
+						id: "farmersdelight:pasta_with_meatballs"
+					}
+				}
+			]
+		}
+		{
+			id: "0F10C8510B15A8C2"
+			title: "Плодородная почва"
+			description: ["Органический компост медленно превращается в плодородную почву — быстрее на солнце, у воды и рядом с грибами. На ней урожай растёт бодрее, а грибы дают колонии."]
+			x: 10.5d
+			y: -3.0d
+			icon: "farmersdelight:rich_soil"
+			dependencies: ["9E550CA158EE0E76"]
+			tasks: [{
+				id: "278FB9DC9A9352F6"
+				type: "advancement"
+				advancement: "farmersdelight:main/get_rich_soil"
+			}]
+			rewards: [
+				{
+					id: "6D5BC4227046828F"
+					type: "xp"
+					xp: 70
+				}
+				{
+					id: "DB443A27063D2CE8"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:brown_mushroom"
+					}
+				}
+				{
+					id: "CF2F33AD45B3DF89"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:red_mushroom"
+					}
+				}
+			]
+		}
+		{
+			id: "6D582231374D6FBB"
+			title: "Грибная ферма"
+			description: ["Посадите гриб на плодородную почву в тени и дождитесь колонии. Срежьте её ножом — так грибы можно разводить без поисков по пещерам."]
+			x: 13.0d
+			y: -3.0d
+			icon: "farmersdelight:brown_mushroom_colony"
+			optional: true
+			dependencies: ["0F10C8510B15A8C2"]
+			tasks: [{
+				id: "DEFC78290F2564A5"
+				type: "advancement"
+				advancement: "farmersdelight:main/get_mushroom_colony"
+			}]
+			rewards: [
+				{
+					id: "2E8113910CE63DEC"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "6312CC9569AFD449"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "farmersdelight:mushroom_rice"
+					}
+				}
+			]
+		}
+		{
+			id: "E3867CE6EB276D6B"
+			title: "Огород со всего света"
+			description: ["Вырастите все культуры, какие найдёте в этом мире. Для этого придётся заглянуть в разные климаты — повод для пары неторопливых путешествий."]
+			x: 15.5d
+			y: -3.0d
+			icon: "farmersdelight:fruit_salad"
+			shape: "star"
+			size: 1.4d
+			optional: true
+			dependencies: ["6D582231374D6FBB"]
+			tasks: [{
+				id: "8C3BEA5F20657A93"
+				type: "advancement"
+				advancement: "farmersdelight:main/plant_all_crops"
+			}]
+			rewards: [
+				{
+					id: "BCFC21605065B3EA"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "B67548E1EC7AC0AE"
+					type: "item"
+					item: {
+						Count: 16b
+						id: "minecraft:golden_carrot"
+					}
+				}
+				{
+					id: "9E22E7EDD450691E"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "farmersdelight:fruit_salad"
+					}
+				}
+			]
+		}
+		{
+			id: "470CCDD13E8599DD"
+			title: "Своё стадо"
+			description: ["Приведите домой пару животных и вырастите потомство. Своя ферма — это мясо, шерсть и кожа без охоты по окрестностям."]
+			x: 0.0d
+			y: -3.0d
+			icon: "minecraft:wheat"
+			optional: true
+			dependencies: ["B05D6F5E90BFA385"]
+			tasks: [{
+				id: "2326B4EA97A0B0C4"
+				type: "advancement"
+				advancement: "minecraft:husbandry/breed_an_animal"
+			}]
+			rewards: [
+				{
+					id: "A7609A7AE8550355"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "03B3D74533A8F594"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "minecraft:lead"
+					}
+				}
+				{
+					id: "B205B2E49228B1B5"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:name_tag"
+					}
+				}
+			]
+		}
+		{
+			id: "C2A7FBADC6571244"
+			title: "Одежда по погоде"
+			description: ["В этом мире холод и жара опасны всерьёз. На швейном столе к броне пришивают утеплитель — козий мех от холода, хоглинью шкуру от жары."]
+			x: 3.0d
+			y: 3.0d
+			icon: "cold_sweat:goat_fur_chestplate"
+			dependencies: ["B05D6F5E90BFA385"]
+			tasks: [{
+				id: "4C60D258EC32E49D"
+				type: "advancement"
+				advancement: "cold_sweat:insulate_armor"
+			}]
+			rewards: [
+				{
+					id: "01BBB3D9424B03FE"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "9B07ED26429303DA"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cold_sweat:thermometer"
+					}
+				}
+			]
+		}
+		{
+			id: "119A349F7B3DEF2E"
+			title: "Тепло родного очага"
+			description: ["Очаг держит в доме ровную температуру, если подать ему топливо. Зимой это разница между уютом и инеем на ресницах."]
+			x: 5.5d
+			y: 3.0d
+			icon: "cold_sweat:hearth"
+			shape: "heart"
+			dependencies: ["C2A7FBADC6571244"]
+			tasks: [{
+				id: "2C909DA0B3D8F72F"
+				type: "advancement"
+				advancement: "cold_sweat:use_hearth"
+			}]
+			rewards: [
+				{
+					id: "09EFC3392218A14F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4CA4447A9DB2FC05"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "cold_sweat:waterskin"
+					}
+				}
+			]
+		}
+		{
+			id: "85F72175E8F3882D"
+			title: "Дымоход"
+			description: ["Поставьте дымоход на бойлер или холодильник — устройство начнёт прогревать или охлаждать не только себя, но и всю комнату."]
+			x: 8.0d
+			y: 3.0d
+			icon: "cold_sweat:smokestack"
+			optional: true
+			dependencies: ["119A349F7B3DEF2E"]
+			tasks: [{
+				id: "C06038416320FAD9"
+				type: "advancement"
+				advancement: "cold_sweat:use_smokestack"
+			}]
+			rewards: [
+				{
+					id: "A69B237AB8A21761"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "D477C341D6352C58"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "cold_sweat:goat_fur"
+					}
+				}
+			]
+		}
+		{
+			id: "86F885604312EEAC"
+			title: "Одет по сезону"
+			description: ["Утеплите полный комплект брони. В горах и пустынях, куда уходила экспедиция, без этого долго не продержаться."]
+			x: 8.0d
+			y: 4.5d
+			icon: "cold_sweat:goat_fur_helmet"
+			dependencies: ["119A349F7B3DEF2E"]
+			tasks: [{
+				id: "C45053498A239386"
+				type: "advancement"
+				advancement: "cold_sweat:full_insulation"
+			}]
+			rewards: [
+				{
+					id: "04BB0F7F531D29A4"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "EC5EF0AF2E5445E9"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "cold_sweat:hoglin_hide"
+					}
+				}
+			]
+		}
+		{
+			id: "ECB99D5FF6B575D6"
+			title: "Юра, где твои вещи?"
+			description: ["Рано или поздно кто-то из вас упадёт в лаву или встретит крипера. Вещи не пропадут — на месте гибели появится могила. Найдите её и заберите своё."]
+			x: 0.0d
+			y: 3.0d
+			icon: "minecraft:skeleton_skull"
+			optional: true
+			dependencies: ["B05D6F5E90BFA385"]
+			tasks: [{
+				id: "66D77B6CF9506E24"
+				type: "advancement"
+				advancement: "tombstone:adventure/first_grave"
+			}]
+			rewards: [
+				{
+					id: "5AE5A043BFBD6062"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "E91AA3089C1692C6"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:golden_carrot"
+					}
+				}
+			]
+		}
+		{
+			id: "69525CBD49DF5FDB"
+			title: "Рюкзак за плечами"
+			description: ["Сшейте рюкзак и наденьте его. В нём помещается больше, чем в карманах, а улучшения научат его подбирать, сортировать и даже кормить."]
+			x: 3.0d
+			y: 7.0d
+			icon: "sophisticatedbackpacks:backpack"
+			dependencies: ["B05D6F5E90BFA385"]
+			tasks: [{
+				id: "6EB6532083976608"
+				type: "advancement"
+				advancement: "nasledie:alpha35/engineering/69525cbd49df5fdb"
+			}]
+			rewards: [
+				{
+					id: "DB478A995FFA5042"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "5171D320535CAC28"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "sophisticatedbackpacks:upgrade_base"
+					}
+				}
+			]
+		}
+		{
+			id: "6BF257BC86E5F51D"
+			title: "Рюкзак подбирает находки"
+			description: ["Улучшение «Подбор» складывает добычу прямо в рюкзак. Удобно, когда в шахте разбегаются руды и кости скелетов."]
+			x: 5.5d
+			y: 7.0d
+			icon: "sophisticatedbackpacks:pickup_upgrade"
+			dependencies: ["69525CBD49DF5FDB"]
+			tasks: [{
+				id: "D711FACB7CAA789A"
+				type: "advancement"
+				advancement: "nasledie:alpha35/engineering/6bf257bc86e5f51d"
+			}]
+			rewards: [
+				{
+					id: "25AAEA335C13B5AB"
+					type: "xp"
+					xp: 90
+				}
+				{
+					id: "CFD3877669478DDB"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "sophisticatedbackpacks:magnet_upgrade"
+					}
+				}
+			]
+		}
+		{
+			id: "BCC7916DB9793560"
+			title: "Место для запасов"
+			description: ["Обычных сундуков скоро станет мало. Поставьте железный сундук — его можно улучшать дальше, а в кладовой появится порядок."]
+			x: 8.0d
+			y: 7.0d
+			icon: "sophisticatedstorage:iron_chest"
+			optional: true
+			dependencies: ["6BF257BC86E5F51D"]
+			tasks: [{
+				id: "E43F90915EC24942"
+				type: "advancement"
+				advancement: "nasledie:alpha34/actions/bdc7f410e273570a"
+			}]
+			rewards: [
+				{
+					id: "483CA3381F9A46EA"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "9808718C60B6E648"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "sophisticatedstorage:pickup_upgrade"
+					}
+				}
+			]
+		}
+	]
+}
 
-    quest_links: []
-    quests: [
-        
-        
-        {
-            id: "464A27B6AA037B37"
-            rewards: [
-                { id: "132937842DFF6979" type: "xp" xp: 31 }
-                {
-                    id: "9A59563D7C5578F2"
-                    type: "item"
-                    item: { Count: 6b, id: "farmersdelight:rope" }
-                }
-        ]
-            title: "Разделка на доске"
-            icon: "farmersdelight:cutting_board"
-            shape: "circle"
-            size: 1.20d
-            x: 0.00d
-            y: 0.00d
-            description: [
-                "Положите подходящий ингредиент на разделочную доску и обработайте его нужным инструментом. Начните с рецепта для кухонного ножа: пусть походные запасы станут разнообразнее."
-            ]
-
-            tasks: [
-                {
-                    id: "26109FF6DB36F2A5"
-                    type: "advancement"
-                    advancement: "farmersdelight:main/use_cutting_board"
-                }
-        ]
-        }
-        {
-            id: "6E42774EBA2B38FB"
-            title: "Порядок на складе"
-            x: 2.50d
-            y: 5.00d
-            icon: "sophisticatedstorage:filter_upgrade"
-            optional: true
-            shape: "square"
-            size: 1.20d
-            rewards: [
-                { id: "21D7E12CDA3FADCE" type: "xp" xp: 34 }
-                {
-                    id: "F0B03E577169E5D5"
-                    type: "item"
-                    item: { Count: 1b, id: "sophisticatedstorage:stack_upgrade_tier_1" }
-                }
-        ]
-            description: [
-                "Изготовьте улучшение фильтра для хранилища Sophisticated Storage. Когда будете обустраивать склад, его списки разрешённых и запрещённых предметов помогут навести порядок; цель этого шага — изготовление модуля."
-            ]
-            dependencies: [
-                "464A27B6AA037B37"
-        ]
-            tasks: [
-                {
-                    id: "9202CAEA03C27166"
-                    type: "advancement"
-                    advancement: "nasledie:alpha35/engineering/6e42774eba2b38fb"
-                }
-        ]
-        }
-        
-        
-        
-        {
-            id: "5B2F6F1B27706E1D"
-            title: "Рисовые поля"
-            x: 2.50d
-            y: -2.50d
-            icon: "farmersdelight:rice"
-            shape: "circle"
-            size: 1.20d
-            rewards: [
-                { id: "7B13C85A382F3327" type: "xp" xp: 46 }
-                {
-                    id: "A19CE19BB0E8150D"
-                    type: "item"
-                    item: { Count: 8b, id: "farmersdelight:straw" }
-                }
-        ]
-            description: [
-                "Посадите рис Farmer’s Delight на мелководье. У будущего поля будет своя маленькая заводь — оставьте рядом место, откуда удобно собирать урожай."
-            ]
-            dependencies: [
-                "464A27B6AA037B37"
-        ]
-            tasks: [
-                {
-                    id: "A27CF8349E3464F8"
-                    type: "advancement"
-                    advancement: "farmersdelight:main/plant_rice"
-                }
-        ]
-        }
-        {
-            id: "9E550CA158EE0E76"
-            rewards: [
-                { id: "C29BFB55466323C3" type: "xp" xp: 49 }
-                {
-                    id: "D122C9070CB592EE"
-                    type: "item"
-                    item: { Count: 4b, id: "farmersdelight:tomato_seeds" }
-                }
-        ]
-            title: "Томаты на подвязке"
-            icon: "farmersdelight:tomato_seeds"
-            shape: "circle"
-            size: 1.20d
-            x: 5.00d
-            y: -2.50d
-            description: [
-                "Протяните верёвку над томатами, дождитесь урожая и соберите его с подвязанного куста. Томаты должны расти именно на верёвке: обычная грядка для этой цели не подходит."
-            ]
-            dependencies: [
-                "5B2F6F1B27706E1D"
-        ]
-            tasks: [
-                {
-                    id: "F66CF5EDC8ADAF11"
-                    type: "advancement"
-                    advancement: "farmersdelight:main/harvest_ropelogged_tomato"
-                }
-        ]
-        }
-        {
-            id: "FE2674FC9E1DD748"
-            rewards: [
-                { id: "1FEB0F180C2762CD" type: "xp" xp: 52 }
-                {
-                    id: "A7EE3E5D31CCF686"
-                    type: "item"
-                    item: { Count: 8b, id: "farmersdelight:rope" }
-                }
-        ]
-            title: "Солома из урожая"
-            icon: "farmersdelight:straw"
-            shape: "circle"
-            size: 1.20d
-            x: 7.50d
-            y: -2.50d
-            description: [
-                "Добудьте солому Farmer’s Delight. Попробуйте срезать ножом траву, пшеницу или рис; сохраните находку для хозяйственных поделок и компоста."
-            ]
-            dependencies: [
-                "9E550CA158EE0E76"
-        ]
-            tasks: [
-                {
-                    id: "9FA8189E04B11E38"
-                    type: "advancement"
-                    advancement: "farmersdelight:main/harvest_straw"
-                }
-        ]
-        }
-        {
-            id: "C3D9E46E5C4B9DA5"
-            rewards: [
-                { id: "ADC6458544D5EBD8" type: "xp" xp: 55 }
-                {
-                    id: "0963BCF253AC2D88"
-                    type: "item"
-                    item: { Count: 10b, id: "farmersdelight:straw" }
-                }
-        ]
-            title: "Из отходов в почву"
-            icon: "farmersdelight:organic_compost"
-            shape: "circle"
-            size: 1.20d
-            x: 10.00d
-            y: -2.50d
-            description: [
-                "Установите органический компост Farmer’s Delight. Для его созревания полезны солнце, вода и грибы поблизости — выделите ему уголок рядом с будущими грядками."
-            ]
-            dependencies: [
-                "FE2674FC9E1DD748"
-        ]
-            tasks: [
-                {
-                    id: "C178D79B48E6505D"
-                    type: "advancement"
-                    advancement: "farmersdelight:main/place_organic_compost"
-                }
-        ]
-        }
-        {
-            id: "0F10C8510B15A8C2"
-            rewards: [
-                { id: "CA42275784D56D8B" type: "xp" xp: 58 }
-                {
-                    id: "DF1F77E39D8D0A62"
-                    type: "item"
-                    item: { Count: 6b, id: "farmersdelight:rice" }
-                }
-        ]
-            title: "Плодородная почва"
-            icon: "farmersdelight:rich_soil"
-            shape: "circle"
-            size: 1.20d
-            x: 12.50d
-            y: -2.50d
-            description: [
-                "Получите блок плодородной почвы Farmer’s Delight. В такую почву постепенно превращается органический компост: теперь у ваших грядок появится основа получше обычной земли."
-            ]
-            dependencies: [
-                "C3D9E46E5C4B9DA5"
-        ]
-            tasks: [
-                {
-                    id: "0A4D7825FCB74AAF"
-                    type: "advancement"
-                    advancement: "farmersdelight:main/get_rich_soil"
-                }
-        ]
-        }
-        {
-            id: "70BD314183AC1CDE"
-            title: "Котёл на кухне"
-            x: 2.50d
-            y: 0.00d
-            icon: "farmersdelight:cooking_pot"
-            shape: "circle"
-            size: 1.20d
-            rewards: [
-                { id: "B2762433E254DB09" type: "xp" xp: 61 }
-                {
-                    id: "000ECC140458F69F"
-                    type: "item"
-                    item: { Count: 3b, id: "farmersdelight:tomato_seeds" }
-                }
-        ]
-            description: [
-                "Установите кухонный котёл Farmer’s Delight. Чтобы затем готовить в нём, обеспечьте тепло снизу и подготовьте посуду для выбранного блюда; здесь ваша цель — поставить сам котёл."
-            ]
-            dependencies: [
-                "464A27B6AA037B37"
-        ]
-            tasks: [
-                {
-                    id: "4A4BC43BC45FAEB0"
-                    type: "advancement"
-                    advancement: "farmersdelight:main/place_cooking_pot"
-                }
-        ]
-        }
-        
-        {
-            id: "4E740C0034B4382F"
-            title: "Сытный обед"
-            x: 5.00d
-            y: 0.00d
-            icon: "farmersdelight:steak_and_potatoes"
-            shape: "circle"
-            size: 1.20d
-            rewards: [
-                { id: "699372646B4C5EC5" type: "xp" xp: 67 }
-                {
-                    id: "9722C6AE4200775A"
-                    type: "item"
-                    item: { Count: 2b, id: "farmersdelight:apple_cider" }
-                }
-        ]
-            description: [
-                "Получите эффект «Питание» от сытного блюда Farmer’s Delight. Выбирайте еду, которая даёт именно этот эффект: например, стейк с картофелем. Одного утоления голода недостаточно."
-            ]
-            dependencies: [
-                "70BD314183AC1CDE"
-        ]
-            tasks: [
-                {
-                    id: "1B49009A828B2ECD"
-                    type: "advancement"
-                    advancement: "farmersdelight:main/eat_nourishing_food"
-                }
-        ]
-        }
-        
-        {
-            id: "6D582231374D6FBB"
-            rewards: [
-                { id: "750B94F5603D4949" type: "xp" xp: 73 }
-                {
-                    id: "554584654C84ED13"
-                    type: "item"
-                    item: { Count: 2b, id: "farmersdelight:mushroom_rice" }
-                }
-        ]
-            title: "Грибная ферма"
-            icon: "farmersdelight:brown_mushroom_colony"
-            shape: "circle"
-            size: 1.20d
-            x: 15.00d
-            y: -2.50d
-            description: [
-                "Получите целую красную или коричневую грибную колонию Farmer’s Delight. Дайте грибам вырасти на плодородной почве и воспользуйтесь ножницами — обычный одиночный гриб не заменит колонию."
-            ]
-            dependencies: ["0F10C8510B15A8C2"]
-            tasks: [
-                {
-                    id: "2BDA593B68C50CCB"
-                    type: "advancement"
-                    advancement: "farmersdelight:main/get_mushroom_colony"
-                }
-        ]
-        }
-        
-        {
-            id: "E3867CE6EB276D6B"
-            rewards: [
-                { id: "A6F176260745473D" type: "xp" xp: 79 }
-                {
-                    id: "246BF81167BBF758"
-                    type: "item"
-                    item: { Count: 4b, id: "farmersdelight:fruit_salad" }
-                }
-        ]
-            title: "Огород со всего света"
-            icon: "farmersdelight:cabbage_seeds"
-            shape: "star"
-            size: 1.20d
-            x: 20.00d
-            y: -2.50d
-            description: [
-                "Посадите все 19 пищевых культур из этого испытания: пшеницу, свёклу, морковь, картофель, капусту, томаты, лук, рис, арбуз, тыкву, сладкие ягоды, сахарный тростник, ламинарию, какао, адский нарост, цветок хоруса, красный и коричневый грибы, светящиеся ягоды."
-                "Собирайте коллекцию постепенно: за некоторыми растениями придётся отправиться далеко от дома."
-            ]
-            dependencies: ["470CCDD13E8599DD"]
-            tasks: [
-                {
-                    id: "F4DF31DFE52853E5"
-                    type: "advancement"
-                    advancement: "farmersdelight:main/plant_all_crops"
-                }
-        ]
-            optional: true
-}
-        {
-            id: "470CCDD13E8599DD"
-            rewards: [
-                { id: "9AFDFC871C0A0750" type: "xp" xp: 82 }
-                {
-                    id: "A439D7F65A6972EE"
-                    type: "item"
-                    item: { Count: 1b, id: "farmersdelight:flint_knife" }
-                }
-        ]
-            title: "Племенное хозяйство"
-            icon: "minecraft:wheat"
-            shape: "circle"
-            size: 1.20d
-            x: 17.50d
-            y: -2.50d
-            description: [
-                "Разведите пару животных и получите детёныша. Начните с тех, кому сможете обеспечить корм и безопасное место рядом с домом."
-            ]
-            dependencies: ["6D582231374D6FBB"]
-            tasks: [
-                {
-                    id: "6ABEE22EABA4B33B"
-                    type: "advancement"
-                    advancement: "minecraft:husbandry/breed_an_animal"
-                }
-        ]
-        }
-        {
-            id: "119A349F7B3DEF2E"
-            rewards: [
-                { id: "1AD3292673844C14" type: "xp" xp: 85 }
-                {
-                    id: "125926F87D9F1D93"
-                    type: "item"
-                    item: { Count: 1b, id: "cold_sweat:waterskin" }
-                }
-        ]
-            title: "Тепло родного очага"
-            icon: "cold_sweat:hearth"
-            shape: "circle"
-            size: 1.20d
-            x: 5.00d
-            y: 2.50d
-            description: [
-                "Поставьте очаг Cold Sweat и получите от него эффект тепла или прохлады. Одной установки недостаточно: наполните очаг подходящим топливом и проверьте, что он помогает вам переносить температуру."
-            ]
-            dependencies: [
-                "C2A7FBADC6571244"
-        ]
-            tasks: [
-                {
-                    id: "089A35EBBDFC71F0"
-                    type: "advancement"
-                    advancement: "cold_sweat:use_hearth"
-                }
-        ]
-            optional: true
-}
-        
-        
-        
-        {
-            id: "85F72175E8F3882D"
-            rewards: [
-                { id: "63E8EEFEA0C68670" type: "xp" xp: 97 }
-                {
-                    id: "16A98E69539E61BC"
-                    type: "item"
-                    item: { Count: 4b, id: "cold_sweat:goat_fur" }
-                }
-        ]
-            title: "Дымоход и отвод тепла"
-            icon: "cold_sweat:smokestack"
-            shape: "circle"
-            size: 1.20d
-            x: 7.50d
-            y: 2.50d
-            description: [
-                "Установите дымоход прямо над бойлером или ледником Cold Sweat. Затем получите эффект тепла либо прохлады. Здесь нужны и правильный монтаж, и температурный эффект."
-            ]
-            dependencies: [
-                "119A349F7B3DEF2E"
-        ]
-            tasks: [
-                {
-                    id: "869CF05764697B2E"
-                    type: "advancement"
-                    advancement: "cold_sweat:use_smokestack"
-                }
-        ]
-            optional: true
-}
-        
-        
-        {
-            id: "C2A7FBADC6571244"
-            title: "Одежда по погоде"
-            x: 2.50d
-            y: 2.50d
-            icon: "cold_sweat:goat_fur"
-            shape: "circle"
-            size: 1.20d
-            rewards: [
-                { id: "868F9E237257D898" type: "xp" xp: 106 }
-                {
-                    id: "0C4C5BEF7ACF2592"
-                    type: "item"
-                    item: { Count: 3b, id: "cold_sweat:goat_fur" }
-                }
-        ]
-            description: [
-                "Утеплите один предмет брони с помощью Cold Sweat. Выберите подходящую подкладку: за пределами дома одежда станет вашей первой защитой от непогоды."
-            ]
-            dependencies: [
-                "464A27B6AA037B37"
-        ]
-            optional: true
-            tasks: [
-                {
-                    id: "EB2B62404E45C371"
-                    type: "advancement"
-                    advancement: "cold_sweat:insulate_armor"
-                }
-        ]
-        }
-        {
-            id: "6BF257BC86E5F51D"
-            title: "Рюкзак подбирает находки"
-            x: 7.50d
-            y: 5.00d
-            icon: "sophisticatedbackpacks:pickup_upgrade"
-            shape: "gear"
-            size: 1.20d
-            rewards: [
-                { id: "FE6DB408B4338A4E" type: "xp" xp: 109 }
-                {
-                    id: "9AC7292D0F159C21"
-                    type: "item"
-                    item: { Count: 1b, id: "sophisticatedbackpacks:filter_upgrade" }
-                }
-        ]
-            description: [
-                "Изготовьте улучшение подбора для рюкзака Sophisticated Backpacks. После этого сможете настроить его для будущих походов, чтобы меньше времени тратить на сбор выпавших вещей."
-            ]
-            dependencies: ["BCC7916DB9793560"]
-            optional: true
-            tasks: [
-                {
-                    id: "F73D0D411F42B427"
-                    type: "advancement"
-                    advancement: "nasledie:alpha35/engineering/6bf257bc86e5f51d"
-                }
-        ]
-        }
-        
-        {
-            id: "BCC7916DB9793560"
-            rewards: [
-                { id: "0BDB9AFD33B278D0" type: "xp" xp: 115 }
-                {
-                    id: "0502840F06FC6C8E"
-                    type: "item"
-                    item: { Count: 1b, id: "sophisticatedstorage:pickup_upgrade" }
-                }
-        ]
-            title: "Место для запасов"
-            icon: "sophisticatedstorage:iron_chest"
-            shape: "circle"
-            size: 1.20d
-            x: 5.00d
-            y: 5.00d
-            description: [
-                "Установите железный сундук Sophisticated Storage. Выделите ему место на складе — туда скоро отправятся припасы, запасные инструменты и трофеи из вылазок."
-            ]
-            dependencies: ["6E42774EBA2B38FB"]
-            optional: true
-            tasks: [
-                {
-                    id: "BDC7F410E273570A"
-                    type: "advancement"
-                    advancement: "nasledie:alpha34/actions/bdc7f410e273570a"
-                }
-        ]
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        {
-            id: "52659216F4F03E2C"
-            optional: true
-            title: "Максим, ужин готов!"
-            x: 7.50d
-            y: 0.00d
-            shape: "star"
-            size: 1.20d
-            icon: "farmersdelight:roast_chicken_block"
-            dependencies: [
-                "4E740C0034B4382F"
-        ]
-            description: [
-                "Максим, пора звать Юру к столу. Поставьте одно большое блюдо Farmer’s Delight: жареную курицу, фаршированную тыкву, ветчину, пастуший пирог, сияющий салат или ассорти рисовых рулетов."
-                "Выбор блюда и повара за вами; цель — поставить угощение, которым можно поделиться."
-            ]
-            tasks: [
-                {
-                    id: "A718485CDDB4F5EA"
-                    type: "advancement"
-                    advancement: "farmersdelight:main/place_feast"
-                }
-        ]
-            rewards: [
-                { id: "826EB2233D94B278" type: "xp" xp: 142 }
-                {
-                    id: "A480853E0D204F84"
-                    type: "item"
-                    item: { Count: 6b, id: "farmersdelight:cabbage_rolls" }
-                }
-        ]
-        }
-    ]
-}

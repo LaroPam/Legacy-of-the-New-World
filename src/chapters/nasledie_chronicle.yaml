@@ -1,0 +1,701 @@
+# Главная сюжетная линия: «Летопись Первой экспедиции». Сюжет — docs/STORY.md.
+# Здесь только сюжетные квесты; подготовка и побочные дела живут в тематических главах.
+chapter:
+  filename: nasledie_chronicle
+  id: 24C1CA6B47BF45C9
+  title: Летопись Первой экспедиции
+  icon: minecraft:writable_book
+  order_index: 0
+  default_hide_dependency_lines: false
+  default_quest_shape: star
+  default_quest_size: 1.5
+
+quests:
+  # ── Акт I. Высадка ────────────────────────────────────────────────
+  - key: arrival
+    id: CA2CFD219A124357
+    title: Чужой берег
+    description:
+      - Максим, Юра, вы не первые, кто высадился на этот берег. Двадцать лет назад вглубь нового мира ушла Первая экспедиция — пятеро
+        учёных во главе с Торвальдом Эклундом. Не вернулся никто.
+      - Говорят, их записи до сих пор находят в брошенных лагерях и у безымянных могил. Эта книга станет вашей летописью. Откройте её,
+        когда будете готовы.
+    x: 0
+    y: 0
+    icon: minecraft:writable_book
+    shape: star
+    size: 1.6
+    tasks:
+      - {type: checkmark, title: Открыть летопись}
+    rewards:
+      - type: book
+        title: Объявление из порта
+        author: Портовая контора
+        pages:
+          - "РАЗЫСКИВАЕТСЯ\nПервая экспедиция в новый мир.\n\nТ. Эклунд, С. Линд, Э. Холм, У. Странд, И. Берг.\n\nУшли вглубь материка двадцать лет назад."
+          - "Последняя весть пришла с караваном: обрывок карты и слово «Зодчие», обведённое трижды.\n\nВознаграждение тому, кто узнает, что с ними стало."
+
+  - key: camp
+    id: 79C6E9FC12713C40
+    title: Лагерь у старого раскопа
+    description:
+      - Экспедиция начинала как обычные археологи. Найдите полевой лагерь у раскопа — палатки, ящики, брошенные инструменты. Такие стоянки
+        встречаются на равнинах, в пустынях и на красных песках.
+      - Если кто-то из пятерых оставил записи, то здесь.
+    x: 3
+    y: 0
+    icon: minecraft:spyglass
+    deps: [arrival]
+    tasks:
+      - {id: F5F6C315ED6C3CA9, type: structure, structure: '#nasledie:archeologist_camps'}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:spyglass}
+      - type: book
+        title: Запись Сигрид Линд, I
+        author: Сигрид Линд, картограф
+        pages:
+          - "День четвёртый.\nЛагерь разбит у раскопа. Холм не спит третью ночь: под песком он нашёл кладку, которой здесь быть не может, — слишком ровную, слишком старую."
+          - "Эклунд доволен. Говорит, мы стоим на пороге открытия века.\n\nЯ рисую карты и молчу. Мне не нравится, как он произносит слово «наследие»."
+          - "Если кто-то найдёт эти листы: мы ушли дальше, к горам. Странд собрал компас, который чует старые постройки. Идите по нему.\n\nИли не идите вовсе."
+
+  - key: route
+    title: Маршрут Первой экспедиции
+    description:
+      - Линд упоминает компас, который «чует старые постройки». Соберите компас исследователя — с ним можно искать нужные сооружения
+        по названию, как это делала экспедиция.
+      - Среди бумаг лагеря есть ещё один лист, исписанный другим почерком. Похоже, он не предназначался для чужих глаз.
+    x: 6
+    y: 0
+    icon: explorerscompass:explorerscompass
+    deps: [camp]
+    tasks:
+      - {type: criteria, title: Собрать компас исследователя, crafted: explorerscompass:explorers_compass}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:emerald, count: 8}
+      - type: book
+        title: Маршрут, рука Эклунда
+        author: Торвальд Эклунд
+        pages:
+          - "Маршрут.\n\n1. Кованый зал под горой — «пустой доспех».\n2. Роща солнечного культа.\n3. Монастырь на вершине — спросить отшельника."
+          - "4. Нижний мир: крепость, огненные стержни — для очей.\n5. Дальше — по очам.\n\nОстальным не показывать до перевала."
+
+  # ── Акт II. По следам экспедиции ──────────────────────────────────
+  # Шесть стражей в любом порядке; в тематических главах эти квесты показаны ссылками.
+  - key: wroughtnaut
+    id: 4843AED5CE824450
+    title: Пустой доспех
+    description:
+      - Первая отметка на маршруте Эклунда — «кованый зал под горой». Внутри стоит доспех, который сражается сам. Победите кованого стража.
+      - Целиться нужно в спину, когда он застрянет после удара. Подсказка от Странда, оплаченная синяками.
+    x: 10
+    y: -6
+    icon: mowziesmobs:wrought_helmet
+    shape: crown
+    deps: [route, nasledie_defense/wrought_chamber]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:kill_ferrous_wroughtnaut}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: artifacts:power_glove}
+      - type: book
+        title: Запись Улофа Странда, I
+        author: Улоф Странд, инженер
+        pages:
+          - "Под горой — зал, кованый целиком. В центре стоял доспех. Пустой: я заглянул в забрало и увидел темноту.\n\nПотом доспех повернул голову."
+          - "Мы отбились. Эклунд записал: «пробный сосуд». Я спросил — пробный для чего? Он не ответил.\n\nЖелезо не должно ненавидеть. Кто-то его научил."
+
+  - key: umvuthi
+    id: A378D8F13118FF97
+    title: Птица из солнца
+    description:
+      - Солнечный народ кормит свою птицу уже тысячу лет. Экспедиция пришла к ним с подарками, а ушла, оставив за собой пепел. Победите Умвути.
+    x: 10
+    y: -3.6
+    icon: mowziesmobs:sol_visage
+    shape: crown
+    deps: [route, nasledie_defense/grove_chest]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:kill_umvuthi}
+    rewards:
+      - {type: xp, xp: 700}
+      - {type: item, item: artifacts:flame_pendant}
+      - type: book
+        title: Запись Эйнара Холма, I
+        author: Эйнар Холм, археолог
+        pages:
+          - "Солнечный народ носит маски. Меня пустили в рощу в маске — я выменял её на нож и два слитка."
+          - "Жрец рассказал: давным-давно строители зажгли птицу из солнца и велели её кормить. Они кормят до сих пор. Если птица голодна, огонь уходит из мира."
+          - "Эклунд велел её убить — сказал, это проверка. Птица горела ещё долго после смерти.\n\nЭклунд стоял к огню ближе всех."
+
+  - key: sculptor
+    id: DF85EFBB8E452760
+    title: Слово отшельника
+    description:
+      - На вершине над монастырём живёт отшельник, который лепит камень как глину. Он пускает к себе только тех, кто пройдёт его испытание.
+        Поднимитесь по ожившей скале и не сорвитесь.
+    x: 10
+    y: -1.2
+    icon: mowziesmobs:sculptor_staff
+    shape: crown
+    deps: [route, nasledie_defense/monastery_chest]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:sculptor_challenge}
+    rewards:
+      - {type: xp, xp: 800}
+      - {type: item, item: artifacts:cloud_in_a_bottle}
+      - type: book
+        title: Запись Сигрид Линд, II
+        author: Сигрид Линд, картограф
+        pages:
+          - "Отшельник не назвал имени. Он испытывает каждого, кто поднимается. Я прошла."
+          - "Он сказал: «Зодчие отдали себя сосудам, чтобы мир не рассыпался. Кто разбивает сосуд, берёт на себя их ношу — или их силу».\n\nЯ спросила: что выберет человек?"
+          - "Он посмотрел вниз, туда, где ждал Эклунд, и ничего не ответил."
+
+  - key: frostmaw
+    id: 92AF3238F7B8776E
+    title: Зверь зимы
+    description:
+      - В снегах спит морозная пасть — зверь, рядом с которым снег не тает веками. Разбудите её и победите. Ледяной кристалл у неё на шее
+        стоит того, чтобы рискнуть.
+    x: 10
+    y: 1.2
+    icon: mowziesmobs:ice_crystal
+    shape: crown
+    deps: [route, nasledie_defense/frostmaw_lair]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:kill_frostmaw}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: artifacts:snowshoes}
+      - type: book
+        title: Запись Ингрид Берг, I
+        author: Ингрид Берг, врач
+        pages:
+          - "Звери у швов мира меняются. Морозная пасть спала у старого обрыва, и снег вокруг неё не таял сотни лет."
+          - "Она не страж и не сосуд. Просто зверь, который вырос рядом с чужой силой и стал на неё похож.\n\nКак и мы, если задержимся здесь надолго."
+
+  - key: elder_guardian
+    id: 7561C2A49CE25872
+    title: Дозорный монумента
+    description:
+      - Подводные монументы сложены той же кладкой, что и кованый зал. Старший страж сторожит их тысячи лет. Спуститесь к нему и победите.
+    x: 10
+    y: 3.6
+    icon: minecraft:prismarine_shard
+    shape: crown
+    deps: [route, nasledie_ocean/guardian]
+    tasks:
+      - {type: kill, entity: minecraft:elder_guardian, value: 1}
+    rewards:
+      - {type: xp, xp: 550}
+      - {type: item, item: artifacts:snorkel}
+      - {type: item, item: minecraft:prismarine_crystals, count: 24}
+      - type: book
+        title: Запись Сигрид Линд, III
+        author: Сигрид Линд, картограф
+        pages:
+          - "Монументы строили не рыбы. Странд говорит, кладка та же, что в кованом зале."
+          - "Старшие стражи сторожат пустые залы. Эклунд сказал: они охраняют дорогу, а не то, что в конце.\n\nЗначит, конец дороги где-то ещё."
+
+  - key: nether_eye
+    title: Очи Зодчих
+    description:
+      - Эклунд писал об «очах», что ведут к сосудам. Соберите любое око Катаклизма — у каждого свой рецепт, и все начинаются с ока Края. Брошенное
+        око летит к своему логову.
+    x: 10
+    y: 6
+    icon: cataclysm:flame_eye
+    shape: star
+    deps: [route, nasledie_netheritage/blaze_rod]
+    tasks:
+      - type: criteria
+        title: Получить любое око Катаклизма
+        obtain: [cataclysm:flame_eye, cataclysm:abyss_eye, cataclysm:storm_eye, cataclysm:cursed_eye, cataclysm:desert_eye,
+                 cataclysm:mech_eye, cataclysm:monstrous_eye, cataclysm:void_eye]
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:ender_eye, count: 4}
+      - type: book
+        title: Запись Торвальда Эклунда, I
+        author: Торвальд Эклунд
+        pages:
+          - "Око Края смотрит туда, где мир тоньше. Зодчие делали свои очи — каждое смотрит на один сосуд."
+          - "Огонь, бездна, буря, проклятие, пустыня, машина, чудовище, пустота. Восемь. Одного глаза хватит, чтобы найти дверь."
+          - "Странд спрашивает, зачем нам двери. Я сказал — чтобы закрыть их.\n\nОн поверил. Пока."
+
+  - key: wither
+    title: Три души в одной
+    description:
+      - В стене крепости Эклунд нашёл обряд — песок душ и три черепа. Проведите его сами и победите то, что поднимется из песка. Лучше
+        подальше от дома.
+    x: 13
+    y: 6
+    icon: minecraft:wither_skeleton_skull
+    shape: crown
+    size: 1.7
+    deps: [nether_eye, nasledie_netheritage/skull]
+    tasks:
+      - {type: criteria, title: Победить Визера, kill: minecraft:wither}
+    rewards:
+      - {type: xp, xp: 1000}
+      - {type: item, item: artifacts:cross_necklace}
+      - type: book
+        title: Запись Ингрид Берг, II
+        author: Ингрид Берг, врач
+        pages:
+          - "Эклунд нашёл рецепт в стене крепости: песок душ и три черепа. Сказал, это обряд Зодчих. Мы провели его ночью."
+          - "Из песка поднялись три головы на одном хребте. Три души, сплавленные силой. Оно кричало тремя голосами, пока мы его убивали."
+          - "Звезда, что осталась, тёплая. Эклунд держал её в руке очень долго.\n\nЯ больше не верю, что мы здесь, чтобы что-то закрывать."
+
+  # ── Акт III. Мастерская нового мира ───────────────────────────────
+  - key: strand_notes
+    id: 391F9987F1F32442
+    title: Фабрика Странда
+    description:
+      - Око меха указывает на древнюю фабрику. Там погиб Улоф Странд. Найдите её — и его последние чертежи.
+    x: 15
+    y: 2.5
+    icon: cataclysm:mech_eye
+    deps: [nether_eye]
+    tasks:
+      - {type: advancement, advancement: cataclysm:find_ancient_factory}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: create:schematic_and_quill}
+      - {type: item, item: create:empty_schematic, count: 4}
+      - type: book
+        title: Запись Улофа Странда, II
+        author: Улоф Странд, инженер
+        pages:
+          - "Фабрика. Внутри всё ещё работает: трубы гудят, ленты ползут, а в центре зала спит машина размером с дом."
+          - "Это не страж. Это мастер Зодчих, который отказался от тела и собрал себя из железа. Он не забыл ремесло — он забыл, зачем."
+          - "Оставляю чертежи: против машины нужна машина. Пушки, броня, своя мастерская.\n\nЭклунд торопит. Говорит, у нас нет времени. У кого — у нас?"
+
+  - key: harbinger
+    id: 8792C39846E0D49E
+    title: Машина, которая помнит
+    description:
+      - В сердце фабрики спит Предвестник — мастер Зодчих в железном теле. Разбудите его и победите. Пушки, о которых писал Странд, здесь очень
+        пригодятся.
+    x: 18
+    y: 1
+    icon: cataclysm:wither_assault_shoulder_weapon
+    shape: crown
+    size: 1.7
+    deps: [strand_notes]
+    tasks:
+      - {type: advancement, advancement: cataclysm:kill_harbinger}
+    rewards:
+      - {type: xp, xp: 1200}
+      - {type: item, item: cataclysm:music_disc_the_harbinger}
+      - {type: item, item: cataclysm:sticky_gloves}
+      - type: book
+        title: Запись Улофа Странда, III
+        author: Улоф Странд, инженер
+        pages:
+          - "Если вы это нашли — я не вышел. Машина проснулась, когда Эклунд коснулся пульта. Я видел: он сделал это нарочно."
+          - "Предвестник не нападал на него. Только на нас."
+          - "Берг уводит раненых. Линд рисует выход. Я держу дверь.\n\nПростите, что пишу криво — рука уже не моя."
+
+  - key: monstrosity
+    id: 52813202FFECF301
+    title: Кузнец, ставший молотом
+    description:
+      - Око чудовища ведёт в Нижний мир, к кузне душ. Её последний мастер давно стал частью наковальни. Победите незеритовое чудище.
+    x: 15.5
+    y: 8.8
+    icon: cataclysm:monstrous_helm
+    shape: crown
+    size: 1.7
+    deps: [nether_eye, nasledie_cataclysm/0A9ACE48F5328D23]
+    tasks:
+      - {type: advancement, advancement: cataclysm:kill_monstrosity}
+    rewards:
+      - {type: xp, xp: 1200}
+      - {type: item, item: cataclysm:music_disc_netherite_monstrosity}
+      - {type: item, item: cataclysm:sturdy_boots}
+      - type: book
+        title: Запись Торвальда Эклунда, II
+        author: Торвальд Эклунд
+        pages:
+          - "Кузня душ. Здесь Зодчие сплавляли металл и волю. Чудище у наковальни — их последний кузнец, ставший собственным молотом."
+          - "Странд погиб глупо. Он не понимал: стража нельзя победить и оставить как есть. Сила ищет хозяина."
+          - "Когда чудище упало, жар вошёл мне в руки. Я почти не чувствую боли.\n\nОстальным знать не нужно."
+
+  # ── Акт IV. Пробуждённые ──────────────────────────────────────────
+  - key: awakened
+    title: Пробуждённые
+    description:
+      - После фабрики и кузни стражи начали просыпаться сами. Их слуги выходят навстречу — ревенанты, драугры, глубинники. Победите любого из
+        младших стражей Катаклизма.
+    x: 21
+    y: 2.5
+    icon: cataclysm:ignited_revenant_spawn_egg
+    shape: shield
+    size: 1.5
+    min_required_dependencies: 1
+    deps: [harbinger, monstrosity]
+    tasks:
+      - type: criteria
+        title: Победить младшего стража Катаклизма
+        any_of:
+          - {kill: cataclysm:ignited_revenant}
+          - {kill: cataclysm:clawdian}
+          - {kill: cataclysm:the_prowler}
+          - {kill: cataclysm:kobolediator}
+          - {kill: cataclysm:wadjet}
+          - {kill: cataclysm:aptrgangr}
+          - {kill: cataclysm:coralssus}
+          - {kill: cataclysm:ender_golem}
+          - {kill: cataclysm:netherite_ministrosity}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: cataclysm:belt_of_beginner}
+
+  - key: ignis
+    id: 92B1754C45756107
+    title: Рыцарь, принявший огонь
+    description:
+      - На пылающей арене горит рыцарь Зодчих. Он до сих пор помнит присягу. Победите Игниса.
+    x: 24.5
+    y: -3.5
+    icon: cataclysm:flame_eye
+    shape: crown
+    size: 1.7
+    deps: [awakened, nasledie_cataclysm/FEE6E381AE1C38B7]
+    tasks:
+      - {type: advancement, advancement: cataclysm:kill_ignis}
+    rewards:
+      - {type: xp, xp: 1400}
+      - {type: item, item: cataclysm:music_disc_ignis}
+      - {type: item, item: cataclysm:berserker_soul_amulet}
+      - type: book
+        title: Присяга на стене арены
+        author: Неизвестный Зодчий
+        pages:
+          - "Мы, рыцари огня, приняли пламя в себя, чтобы оно не сожгло мир.\n\nПусть горит в нас, а не в полях."
+          - "Если придёт тот, кто погасит нас, — пусть знает: огонь не исчезнет. Он ищет новый сосуд.\n\nНе будь им."
+
+  - key: remnant
+    id: 64338CFBA5C5B699
+    title: Ключ всегда идёт первым
+    description:
+      - Под проклятой пирамидой спит правитель пустынных Зодчих. Здесь погиб Эйнар Холм. Разбудите древние останки и победите их.
+    x: 24.5
+    y: -0.5
+    icon: cataclysm:desert_eye
+    shape: crown
+    size: 1.7
+    deps: [awakened, nasledie_cataclysm/0B35EC876DCDE6DC]
+    tasks:
+      - {type: advancement, advancement: cataclysm:kill_remnant}
+    rewards:
+      - {type: xp, xp: 1400}
+      - {type: item, item: cataclysm:music_disc_ancient_remnant}
+      - {type: item, item: cataclysm:sandstorm_in_a_bottle}
+      - type: book
+        title: Запись Эйнара Холма, II
+        author: Эйнар Холм, археолог
+        pages:
+          - "Пирамида. Песок здесь шепчет. Эклунд нашёл ожерелье и надел его мне на шею — сказал, оно откроет дверь."
+          - "Дверь открылась. Из-под песка поднялся правитель, сухой, как сама пустыня. Он смотрел не на Эклунда — на меня. На ожерелье."
+          - "Песок поднимается.\n\nЯ понял, зачем меня взяли. Ключ всегда идёт первым."
+
+  - key: maledictus
+    id: A13ADF5DA222DA68
+    title: Король во льду
+    description:
+      - Король Зодчих запер себя в ледяной тюрьме вместе со стражей, чтобы не выпустить проклятие. Драугры до сих пор несут караул. Победите
+        Маледиктуса.
+    x: 24.5
+    y: 2.5
+    icon: cataclysm:cursed_eye
+    shape: crown
+    size: 1.7
+    deps: [awakened, nasledie_cataclysm/9648CF8E2A62BFAF]
+    tasks:
+      - {type: advancement, advancement: cataclysm:kill_maledictus}
+    rewards:
+      - {type: xp, xp: 1400}
+      - {type: item, item: cataclysm:music_disc_maledictus}
+      - {type: item, item: cataclysm:ring_of_grudged}
+      - type: book
+        title: Запись Торвальда Эклунда, III
+        author: Торвальд Эклунд
+        pages:
+          - "Ледяная тюрьма. Король заперся здесь со своей стражей, чтобы не выпустить проклятие. Его драугры до сих пор несут караул."
+          - "Он почти человек. Он говорил со мной. Просил закрыть дверь снаружи и уйти."
+          - "Я не ушёл.\n\nХолод теперь живёт в моих пальцах рядом с жаром. Они уживаются. Я — уживаюсь."
+
+  - key: leviathan
+    id: A0BE4189EEE72883
+    title: Боль, ушедшая в глубину
+    description:
+      - В затонувшем городе спит Левиафан — единственный сосуд, в который Зодчие поместили не себя, а свою боль. Победите его.
+    x: 24.5
+    y: 5.5
+    icon: cataclysm:abyss_eye
+    shape: crown
+    size: 1.7
+    deps: [awakened, nasledie_cataclysm/A96277A6BE605D32]
+    tasks:
+      - {type: advancement, advancement: cataclysm:kill_leviathan}
+    rewards:
+      - {type: xp, xp: 1500}
+      - {type: item, item: cataclysm:music_disc_the_leviathan}
+      - {type: item, item: cataclysm:the_baby_leviathan_bucket}
+      - type: book
+        title: Песня глубинников
+        author: Народ глубин
+        pages:
+          - "Строители дали нам море и дали морю зверя. Зверь — их боль, ушедшая в глубину, чтобы не тревожить землю."
+          - "Мы пели ему, чтобы он спал.\n\nЧужаки пришли без песни. Теперь мы молчим, и он не спит."
+
+  - key: scylla
+    id: E3651E9F6E43FAEB
+    title: Последняя запись Линд
+    description:
+      - Над облаками стоит акрополь, где жрица бури сторожит небо. У её подножия Сигрид Линд оставила последнюю запись. Победите Сциллу.
+    x: 24.5
+    y: 8.5
+    icon: cataclysm:storm_eye
+    shape: crown
+    size: 1.7
+    deps: [awakened, nasledie_cataclysm/F2FD5EEB117B3119]
+    tasks:
+      - {type: advancement, advancement: cataclysm:kill_scylla}
+    rewards:
+      - {type: xp, xp: 1500}
+      - {type: item, item: cataclysm:music_disc_scylla}
+      - {type: item, item: cataclysm:vitality_ankh}
+      - type: book
+        title: Запись Сигрид Линд, IV
+        author: Сигрид Линд, картограф
+        pages:
+          - "Сегодня я нашла в сумке Эклунда пачку листов. Наших листов — Холма, Странда, Берг. Он их не терял. Он их раскладывал."
+          - "Он оставляет их там, где найдут. Ему нужны следующие — те, кто пройдёт путь до конца и разобьёт оставшиеся сосуды за него."
+          - "Если вы это читаете — вы уже на его тропе. Остановитесь.\n\nИли дойдите до конца, но не отдавайте ему того, что освободите."
+
+  # ── Финал. Конец пути ─────────────────────────────────────────────
+  - key: eklund_alive
+    title: Он жив
+    description:
+      - Стражи падают один за другим. Когда падут хотя бы четверо из пяти пробуждённых, в крепости, где спит портал в Край, вас ждёт свежая страница — подписанная человеком, который «погиб» двадцать лет
+        назад. Найдите крепость.
+    x: 28.5
+    y: 2.5
+    icon: minecraft:ender_eye
+    shape: star
+    size: 1.7
+    min_required_dependencies: 4
+    deps: [ignis, remnant, maledictus, leviathan, scylla]
+    tasks:
+      - {type: structure, structure: betterstrongholds:stronghold}
+    rewards:
+      - {type: xp, xp: 800}
+      - {type: item, item: minecraft:ender_eye, count: 12}
+      - type: book
+        title: Запись Торвальда Эклунда, IV
+        author: Торвальд Эклунд
+        pages:
+          - "Линд думала, что успеет предупредить. Она не учла: я знаю, где лежит каждый лист.\n\nЭтот я оставил сам."
+          - "Двадцать лет. Огонь, холод, буря, машина — всё во мне. Не хватает пустоты. Её стережёт последний доспех в цитадели Края."
+          - "Вы сильны, раз дочитали.\n\nПриходите. Я покажу вам, что такое наследие."
+
+  - key: dragon
+    title: Печать на краю мира
+    description:
+      - Дракон Края — первая и самая древняя печать Зодчих. Без победы над ним к дальним островам не пройти. Сразите дракона.
+    x: 32
+    y: 2.5
+    icon: minecraft:dragon_head
+    shape: crown
+    size: 1.8
+    deps: [eklund_alive]
+    tasks:
+      - {type: advancement, advancement: minecraft:end/kill_dragon}
+    rewards:
+      - {type: xp, xp: 2000}
+      - {type: item, item: minecraft:dragon_head}
+      - {type: item, item: artifacts:chorus_totem}
+
+  - key: ender_guardian
+    id: 4E228116310381E8
+    title: Последний доспех
+    description:
+      - В разрушенной цитадели на дальних островах стоит доспех Эндер-хранителя. Внутри — Торвальд Эклунд. Победите его.
+    x: 35.5
+    y: 2.5
+    icon: cataclysm:void_eye
+    shape: crown
+    size: 2.2
+    deps: [dragon, nasledie_cataclysm/8B22878BF8763415]
+    tasks:
+      - {type: advancement, advancement: cataclysm:kill_ender_guardian}
+    rewards:
+      - {type: xp, xp: 3000}
+      - {type: item, item: cataclysm:music_disc_ender_guardian}
+      - {type: item, item: cataclysm:void_core}
+      - type: book
+        title: Последняя запись Эклунда
+        author: Торвальд Эклунд
+        pages:
+          - "Если вы читаете это, доспех пуст. Значит, сила ушла не ко мне."
+          - "Зодчие отдали себя, чтобы держать мир. Я хотел взять, ничего не отдав. Пустота знает разницу."
+          - "Куда она ушла? Посмотрите вокруг себя. На то, что вы построили.\n\nВидимо, мир выбрал не меня."
+
+  - key: legacy
+    title: Наследие нового мира
+    description:
+      - Сосуды разбиты, а мир не рассыпался. Его держит теперь то, что построили вы, — деревня, которую вы защитили, дороги, мастерская,
+        которая работает сама. Зажгите маяк на полную мощь — из звезды, что когда-то держала три души.
+    x: 39.5
+    y: 2.5
+    icon: minecraft:beacon
+    shape: star
+    size: 2.4
+    deps: [ender_guardian, nasledie_village/hero, nasledie_transport/train, nasledie_grand_projects/factory_gauge]
+    tasks:
+      - {type: advancement, advancement: minecraft:nether/create_full_beacon}
+    rewards:
+      - {type: xp, xp: 5000}
+      - {type: item, item: cataclysm:music_disc_the_cataclysmfarer}
+      - {type: item, item: minecraft:enchanted_golden_apple, count: 4}
+      - {type: item, item: minecraft:netherite_ingot, count: 2}
+      - {type: item, item: minecraft:writable_book, nbt: '{pages:["Летопись Максима и Юры.\n\nНаследие нового мира — то, что мы построили. Дальше пишем сами:"]}'}
+
+  # ── Глубины: подземные стражи (подготовка — «Легенды глубин»); вход — Древний город ──
+  - key: forsaken
+    id: 2A2A1ECDD23269E9
+    title: Что пришло из темноты
+    description:
+      - В заброшенных пустотах Ингрид Берг повторила обряд подзектантов. Из темноты пришло что-то голодное. Призовите его снова и победите
+        Забытого.
+    x: 19.5
+    y: 16.5
+    icon: alexscaves:shadow_silk
+    shape: crown
+    size: 1.7
+    deps: [ancient_city, nasledie_legends/watcher]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/defeat_forsaken}
+    rewards:
+      - {type: xp, xp: 1400}
+      - {type: item, item: alexscaves:dreadbow}
+      - type: book
+        title: Запись Ингрид Берг, III
+        author: Ингрид Берг, врач
+        pages:
+          - "Подзектанты поют в темноте. Говорят, тьма — тоже сосуд, только его никто не запечатал. Я хочу увидеть то, что видят они."
+          - "Ритуал начался. Из пустоты пришло что-то большое и голодное. Оно смотрит на меня. Оно смотрит на меня. Оно"
+          - "\n\n\n\n            не смотрите вниз"
+
+  - key: hullbreaker
+    title: Страж расщелины
+    description:
+      - Вход в дом глубинников сторожит Кораблекрушитель — огромный зверь, который не пускает сухопутных. Победите его.
+    x: 22.5
+    y: 16.5
+    icon: alexscaves:submarine
+    shape: crown
+    size: 1.7
+    deps: [ancient_city, nasledie_legends/abyssal_ruins]
+    tasks:
+      - {type: criteria, title: Победить Кораблекрушителя, kill: alexscaves:hullbreaker}
+    rewards:
+      - {type: xp, xp: 1400}
+      - {type: item, item: alexscaves:ortholance}
+      - type: book
+        title: Слово стража
+        author: Народ глубин
+        pages:
+          - "Кораблекрушитель стережёт вход в наш дом. Строители велели ему не пускать сухопутных."
+          - "Он помнит приказ лучше нас. Мы давно забыли, от кого он нас бережёт. Может быть, от вас."
+
+  - key: luxtructosaurus
+    id: 3E03C21C1C3001DF
+    title: Мир до Зодчих
+    description:
+      - В жерле вулкана первобытных пещер спит титан, которого никто никогда не запирал. Призовите люкстрактозавра и победите его.
+    x: 25.5
+    y: 15.5
+    icon: alexscaves:tectonic_shard
+    shape: crown
+    size: 1.7
+    deps: [ancient_city, nasledie_legends/summon_titan]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/defeat_luxtructosaurus}
+    rewards:
+      - {type: xp, xp: 1500}
+      - {type: item, item: alexscaves:extinction_spear}
+      - type: book
+        title: Заметка на полях атласа
+        author: Сигрид Линд, картограф
+        pages:
+          - "Под вулканом сила ни в чём не заперта. Она просто есть — дикая, древняя, ничья."
+          - "Может, Зодчие ошиблись. Не всё нужно заковывать. Кое-что достаточно оставить в покое."
+
+  - key: tremorzilla
+    id: FED39CE9F2148371
+    title: Сосуд, который выбрал сам
+    description:
+      - Сотрясозилла вылупилась из ядерного огня — неудачный опыт Зодчих с чистой энергией. Её не нужно побеждать. Накормите её и приручите.
+    x: 27.5
+    y: 13
+    icon: alexscaves:tremorzilla_egg
+    shape: heart
+    size: 1.7
+    deps: [ancient_city, nasledie_legends/hatch_tremorzilla]
+    tasks:
+      - {type: advancement, advancement: alexscaves:alexscaves/tame_tremorzilla}
+    rewards:
+      - {type: xp, xp: 1500}
+      - {type: item, item: alexscaves:raygun}
+      - type: book
+        title: Неотправленное письмо
+        author: Ингрид Берг, врач
+        pages:
+          - "Если найдётся существо, которое примет силу и не сойдёт с ума, — значит, дело не в силе, а в том, кто её держит."
+          - "Позаботьтесь о нём. Мы не смогли позаботиться друг о друге."
+
+  - key: ancient_city
+    title: Город, отдавший голос
+    description:
+      - Глубоко под землёй лежит последний город Зодчих. Тише — здесь слушают. Проберитесь в город и откройте сундук, не разбудив его стража.
+    x: 21
+    y: 12
+    icon: minecraft:sculk_shrieker
+    shape: star
+    size: 1.6
+    deps: [awakened, nasledie_legends/cave_codex]
+    tasks:
+      - {type: criteria, title: Открыть сундук древнего города, loot: minecraft:chests/ancient_city}
+    rewards:
+      - {type: xp, xp: 1000}
+      - {type: item, item: minecraft:recovery_compass}
+      - type: book
+        title: Табличка Зодчих
+        author: Неизвестный Зодчий
+        pages:
+          - "Мы собрались в последнем городе и решили: мир держится, только если кто-то держит его изнутри."
+          - "Каждый, кто уходит в сосуд, оставляет здесь свой голос. Город замолчал, когда ушёл последний."
+          - "Тот, кто слушает, охраняет тишину — чтобы никто не услышал, как нас звали."
+
+  - key: warden
+    title: Тот, кто слушает
+    description:
+      - Хранитель охраняет тишину древнего города. Он слеп, но слышит каждый шаг. Победите его — если решитесь.
+    x: 17
+    y: 14.5
+    icon: minecraft:echo_shard
+    shape: crown
+    size: 1.7
+    deps: [ancient_city]
+    tasks:
+      - {type: criteria, title: Победить Хранителя, kill: minecraft:warden}
+    rewards:
+      - {type: xp, xp: 2000}
+      - {type: item, item: minecraft:music_disc_otherside}
+      - {type: item, item: minecraft:echo_shard, count: 8}

@@ -1,0 +1,511 @@
+# Акт I. Дорога за горизонт: путешествия, путевые обелиски, тайники Lootr, чудеса Terralith.
+# Lootr даёт каждому игроку свой сундук: задания на сундуки могут выполнить и Максим, и Юра.
+chapter:
+  filename: nasledie_exploration
+  id: 67AB9D3E8CAB8CAC
+  group: act1
+  title: Дорога за горизонт
+  icon: minecraft:compass
+  order_index: 3
+  default_hide_dependency_lines: false
+  default_quest_shape: circle
+  progression_mode: flexible
+
+quests:
+  - key: first_km
+    id: 30000F5F1F069AFA
+    title: Первая тысяча метров
+    description:
+      - Пройдите пешком первый километр. За ближайшим холмом всегда оказывается ещё один — а за ним что-то, ради чего стоило идти.
+    x: 0
+    y: 0
+    icon: minecraft:leather_boots
+    size: 1.4
+    tasks:
+      - {type: stat, stat: minecraft:walk_one_cm, value: 100000}
+    rewards:
+      - {type: xp, xp: 45}
+      - {type: item, item: minecraft:saddle}
+
+  - key: long_road
+    id: 5DCFED353E2F543B
+    title: Десять километров пути
+    description:
+      - Пешком, не верхом. Десять километров — столько экспедиция проходила за неделю, нагруженная ящиками и картами.
+    x: 3
+    y: 0
+    icon: minecraft:diamond_boots
+    optional: true
+    deps: [first_km]
+    tasks:
+      - {type: stat, stat: minecraft:walk_one_cm, value: 1000000}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: waystones:return_scroll, count: 4}
+      - {type: item, item: minecraft:golden_carrot, count: 8}
+
+  # ── Путевые обелиски ──
+  - key: waystone_first
+    title: Путевой обелиск
+    description:
+      - В мире стоят древние обелиски. Активируйте первый — потом к нему можно вернуться из любого другого.
+    x: 3
+    y: -3
+    icon: waystones:waystone
+    deps: [first_km]
+    tasks:
+      - {type: stat, stat: waystones:waystone_activated, value: 1}
+    rewards:
+      - {type: xp, xp: 80}
+      - {type: item, item: waystones:warp_dust, count: 8}
+
+  - key: waystone_net
+    title: Сеть обелисков
+    description:
+      - Десять активированных обелисков связывают мир в сеть. Теперь дорога назад занимает секунду, а не вечер.
+    x: 6
+    y: -3
+    icon: waystones:warp_stone
+    deps: [waystone_first]
+    tasks:
+      - {type: stat, stat: waystones:waystone_activated, value: 10}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: waystones:warp_stone}
+
+  # ── Тайники ──
+  - key: loot_first
+    title: Сундук для каждого
+    description:
+      - Сундуки в постройках этого мира помнят каждого гостя — Максим и Юра находят в одном сундуке каждый свою добычу. Откройте первый.
+    x: 3
+    y: 3
+    icon: minecraft:chest
+    deps: [first_km]
+    tasks:
+      - {type: advancement, advancement: lootr:1chest}
+    rewards:
+      - {type: xp, xp: 60}
+      - {type: item, item: minecraft:iron_ingot, count: 6}
+
+  - key: loot_25
+    title: Двадцать пять тайников
+    description:
+      - Откройте двадцать пять сундуков в чужих постройках. Сокровища редко лежат у дороги — придётся заглянуть в башни, шахты и подвалы.
+    x: 6
+    y: 3
+    icon: minecraft:barrel
+    deps: [loot_first]
+    tasks:
+      - {type: advancement, advancement: lootr:25loot}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:diamond, count: 2}
+
+  - key: loot_100
+    title: Сто сундуков
+    description:
+      - Сотня открытых тайников — это уже профессия. Награда — рюкзак побольше, чтобы было куда складывать находки.
+    x: 9
+    y: 3
+    icon: sophisticatedbackpacks:iron_backpack
+    shape: star
+    optional: true
+    deps: [loot_25]
+    tasks:
+      - {type: advancement, advancement: lootr:100loot}
+    rewards:
+      - {type: xp, xp: 600}
+      - {type: item, item: sophisticatedbackpacks:iron_backpack}
+
+  # ── Под землёй ──
+  - key: mineshaft
+    id: F17A293356CD1404
+    title: Заброшенная шахта
+    description:
+      - Старые шахты тянутся под землёй на сотни метров. Найдите одну — в любом биоме они выглядят по-своему.
+    x: 3
+    y: 6
+    icon: minecraft:rail
+    shape: scroll
+    deps: [first_km]
+    tasks:
+      - {type: structure, structure: '#nasledie:mineshafts'}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: minecraft:iron_ingot, count: 8}
+
+  - key: loot_cart
+    title: Вагонетка с добычей
+    description:
+      - В шахтах стоят брошенные вагонетки с припасами. Откройте одну — кто-то оставил её здесь очень давно.
+    x: 6
+    y: 6
+    icon: minecraft:chest_minecart
+    deps: [mineshaft]
+    tasks:
+      - {type: advancement, advancement: lootr:1cart}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: minecraft:golden_apple}
+
+  - key: bee_hive
+    id: 507F5E2261A499DA
+    title: Улей под землёй
+    description:
+      - Глубоко под землёй встречаются ульи размером с дом. Найдите такой — и берегитесь хозяев.
+    x: 9
+    y: 6
+    icon: minecraft:honeycomb
+    shape: scroll
+    optional: true
+    deps: [loot_cart]
+    tasks:
+      - {type: structure, structure: terralith:underground/giant_bee_hive}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:honey_block, count: 8}
+
+  - key: sunken_tower
+    id: 2DCB2702FC5C1F31
+    title: Башня, ушедшая в камень
+    description:
+      - Кто-то построил башню, а земля её проглотила. Найдите её в глубине — внутри до сих пор стоят полки и сундуки.
+    x: 12
+    y: 6
+    icon: minecraft:mossy_stone_bricks
+    shape: scroll
+    optional: true
+    deps: [bee_hive]
+    tasks:
+      - {type: structure, structure: terralith:underground/sunken_tower}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:ender_pearl, count: 4}
+
+  - key: frosted_dungeon
+    id: C580A1C9022BB90F
+    title: Морозное подземелье
+    description:
+      - Подо льдом скрыто подземелье, где холод держит своих стражей. Тёплая одежда здесь не роскошь.
+    x: 15
+    y: 6
+    icon: minecraft:blue_ice
+    shape: scroll
+    optional: true
+    deps: [sunken_tower]
+    tasks:
+      - {type: structure, structure: terralith:underground/frosted_dungeon}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:diamond, count: 2}
+
+  # ── Таблички и могилы ──
+  - key: lost_tablet
+    title: Потерянная табличка
+    description:
+      - В шахтах, руинах и сундуках попадаются древние таблички. Прочитайте одну — она укажет путь к далёкому месту.
+    x: 3
+    y: 9
+    icon: minecraft:paper
+    deps: [mineshaft]
+    tasks:
+      - {type: advancement, advancement: tombstone:adventure/find_lost_tablet}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: minecraft:map, count: 3}
+
+  - key: tablet_treasure
+    title: Сокровище по табличке
+    description:
+      - Найдите табличку, которая ведёт к спрятанному сокровищу. Дорога может оказаться длинной, но таблички не врут.
+    x: 6
+    y: 9
+    icon: minecraft:gold_ingot
+    optional: true
+    deps: [lost_tablet]
+    tasks:
+      - {type: advancement, advancement: tombstone:adventure/find_lost_tablet_treasure}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: minecraft:diamond, count: 3}
+
+  - key: roadside_grave
+    title: Могилы у обочины
+    description:
+      - Не все путники вернулись домой. Заброшенные могилы прячут их последние вещи. Заберите их — мёртвым они уже не нужны. Наверное.
+    x: 9
+    y: 9
+    icon: minecraft:skeleton_skull
+    optional: true
+    deps: [tablet_treasure]
+    tasks:
+      - {type: advancement, advancement: tombstone:adventure/funeral_theft}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: minecraft:soul_lantern, count: 2}
+
+  # ── Хамелеон ──
+  - key: chameleon
+    title: Хамелеон-проводник
+    description:
+      - В тёплых краях живут хамелеоны. Приручите одного — он умеет менять цвет и, что важнее, чует дорогу к другим краям.
+    x: -3
+    y: 0
+    icon: cold_sweat:chameleon_molt
+    optional: true
+    deps: [first_km]
+    tasks:
+      - {type: advancement, advancement: cold_sweat:tame_chameleon}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: minecraft:golden_carrot, count: 4}
+
+  - key: chameleon_biome
+    title: За хвостом хамелеона
+    description:
+      - Попросите хамелеона показать новый биом и идите за ним. Возможно, он знает этот мир лучше вас.
+    x: -6
+    y: 0
+    icon: minecraft:spyglass
+    optional: true
+    deps: [chameleon]
+    tasks:
+      - {type: advancement, advancement: cold_sweat:chameleon_find_biome}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:experience_bottle, count: 8}
+
+  # ── Чудеса нового мира ──
+  - key: skylands
+    id: E6DC4A843BE1C287
+    title: Острова в небе
+    description:
+      - Где-то над землёй висят острова с лесами и водопадами. Доберитесь до них — по лестнице, на крыльях или на самолёте.
+    x: 3
+    y: -6
+    icon: minecraft:feather
+    shape: scroll
+    optional: true
+    deps: [first_km]
+    tasks:
+      - {type: biome, biome: '#nasledie:skylands'}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:ender_pearl, count: 4}
+
+  - key: mirage
+    id: 07A63C78A1E0EFD4
+    title: Мираж над морем
+    description:
+      - Над тёплым морем поднимаются острова-миражи. Найдите их — и убедитесь, что они настоящие.
+    x: 6
+    y: -6
+    icon: minecraft:sand
+    shape: scroll
+    optional: true
+    deps: [skylands]
+    tasks:
+      - {type: biome, biome: terralith:mirage_isles}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:nautilus_shell, count: 2}
+
+  - key: emerald_peaks
+    id: A91583B5B92C22EB
+    title: Изумрудные пики
+    description:
+      - Горы, где изумруды выходят прямо на склоны. Красиво, высоко и очень холодно.
+    x: 9
+    y: -6
+    icon: minecraft:emerald_ore
+    shape: scroll
+    optional: true
+    deps: [mirage]
+    tasks:
+      - {type: biome, biome: terralith:emerald_peaks}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:emerald, count: 6}
+
+  - key: glacial_chasm
+    id: CD62103DCF8B4FDA
+    title: Ледниковый разлом
+    description:
+      - Трещина в леднике уходит глубоко вниз. Спуститесь, если хватит тёплой одежды и смелости.
+    x: 12
+    y: -6
+    icon: minecraft:packed_ice
+    shape: scroll
+    optional: true
+    deps: [emerald_peaks]
+    tasks:
+      - {type: biome, biome: terralith:glacial_chasm}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: cold_sweat:goat_fur, count: 6}
+
+  - key: yellowstone
+    title: Горячие источники
+    description:
+      - Земля здесь дышит паром, а вода в озёрах цвета радуги. Говорят, источники лечат. Проверять, пожалуй, не стоит.
+    x: 12
+    y: -8.5
+    icon: minecraft:magma_block
+    shape: scroll
+    optional: true
+    deps: [glacial_chasm]
+    tasks:
+      - {type: biome, biome: terralith:yellowstone}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:experience_bottle, count: 8}
+
+  - key: amethyst_canyon
+    title: Аметистовый каньон
+    description:
+      - Стены каньона усыпаны аметистом. Отличное место для вылазки за кристаллами — и для красивого снимка на память.
+    x: 9
+    y: -8.5
+    icon: minecraft:amethyst_shard
+    shape: scroll
+    optional: true
+    deps: [yellowstone]
+    tasks:
+      - {type: biome, biome: terralith:amethyst_canyon}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:amethyst_shard, count: 8}
+
+  - key: moonlight_grove
+    title: Лунная роща
+    description:
+      - В этой роще ночью светлее, чем днём в других лесах. Приходите после заката.
+    x: 6
+    y: -8.5
+    icon: minecraft:glow_berries
+    shape: scroll
+    optional: true
+    deps: [amethyst_canyon]
+    tasks:
+      - {type: biome, biome: terralith:moonlight_grove}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:experience_bottle, count: 8}
+
+  - key: volcanic_crater
+    title: Кратер вулкана
+    description:
+      - Чёрный камень, лава и запах серы. Здесь мир ещё помнит, каким он был до людей.
+    x: 3
+    y: -8.5
+    icon: minecraft:basalt
+    shape: scroll
+    optional: true
+    deps: [moonlight_grove]
+    tasks:
+      - {type: biome, biome: terralith:volcanic_crater}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:magma_cream, count: 6}
+
+  - key: adventuring_time
+    title: Время приключений
+    description:
+      - Побывайте во всех обычных биомах Верхнего мира. Это долгий путь на много сессий — карта мира после него будет выглядеть совсем иначе.
+    x: 0
+    y: -8.5
+    icon: minecraft:filled_map
+    shape: star
+    size: 1.4
+    optional: true
+    deps: [volcanic_crater]
+    tasks:
+      - {type: advancement, advancement: minecraft:adventure/adventuring_time}
+    rewards:
+      - {type: xp, xp: 1000}
+      - {type: item, item: sophisticatedbackpacks:gold_backpack}
+
+  # ── Подземелья YUNG ──
+  - key: small_dungeon
+    id: 898102A102A9739A
+    title: Первое подземелье
+    description:
+      - Под землёй прячутся маленькие подземелья с клетками-спаунерами и сундуками. Найдите первое.
+    x: 3
+    y: 12
+    icon: minecraft:mossy_cobblestone
+    shape: scroll
+    deps: [lost_tablet]
+    tasks:
+      - {type: advancement, advancement: betterdungeons:small_dungeon}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: minecraft:torch, count: 32}
+
+  - key: spider_dungeon
+    id: 5086797B05BC7619
+    title: Паучья пещера
+    description:
+      - Пещера, затянутая паутиной от пола до потолка. Ножницы и факелы — лучшие друзья.
+    x: 6
+    y: 12
+    icon: minecraft:cobweb
+    shape: scroll
+    optional: true
+    deps: [small_dungeon]
+    tasks:
+      - {type: advancement, advancement: betterdungeons:spider_dungeon}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:shears}
+
+  - key: zombie_dungeon
+    id: 5386AE04902DA4BF
+    title: Катакомбы беспокойных мертвецов
+    description:
+      - Склепы, где мёртвые не лежат спокойно. Спуститесь в катакомбы.
+    x: 9
+    y: 12
+    icon: minecraft:zombie_head
+    shape: scroll
+    optional: true
+    deps: [spider_dungeon]
+    tasks:
+      - {type: advancement, advancement: betterdungeons:zombie_dungeon}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:golden_apple}
+
+  - key: skeleton_dungeon
+    id: 93EA4AC90BB6F5E7
+    title: Крепость нежити
+    description:
+      - Подземная крепость скелетов-стрелков. Щит в руки — и вперёд.
+    x: 12
+    y: 12
+    icon: minecraft:skeleton_skull
+    shape: scroll
+    optional: true
+    deps: [zombie_dungeon]
+    tasks:
+      - {type: advancement, advancement: betterdungeons:skeleton_dungeon}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:shield}
+
+  - key: all_dungeons
+    title: Все сокровищницы YUNG
+    description:
+      - Побывайте во всех видах подземелий, включая незерскую сокровищницу. Профессиональный подземельщик.
+    x: 15
+    y: 12
+    icon: minecraft:spawner
+    shape: star
+    optional: true
+    deps: [skeleton_dungeon]
+    tasks:
+      - {type: advancement, advancement: betterdungeons:all_dungeons}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: minecraft:diamond, count: 4}

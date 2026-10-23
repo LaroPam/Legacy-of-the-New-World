@@ -1,0 +1,614 @@
+# Акт I. Деревня: соседи (MCA), заказы (Bountiful), ополчение (Recruits), работники (Workers)
+# и чужие деревни: CTOV (веер от «Города за холмами») и Towns and Towers (веер от «Деревень другого уклада»).
+# Найм засчитывает kubejs/startup_scripts/nasledie_events.js через достижения nasledie:events/...
+chapter:
+  filename: nasledie_village
+  id: 30082B6F5380787E
+  group: act1
+  title: Люди нашего поселения
+  icon: minecraft:bell
+  order_index: 2
+  default_hide_dependency_lines: false
+  default_quest_shape: circle
+  progression_mode: flexible
+
+quests:
+  - key: first_village
+    id: C3524B3B7A1175C3
+    title: Первые соседи
+    description:
+      - В этом мире у жителей есть имена, характеры и семьи. Зайдите в деревню и познакомьтесь — здесь можно найти друзей, торговцев и тех,
+        кто однажды встанет с вами на стены.
+    x: 0
+    y: 0
+    icon: minecraft:bell
+    shape: heart
+    size: 1.4
+    tasks:
+      - {type: advancement, advancement: mca:root}
+    rewards:
+      - {type: xp, xp: 50}
+      - {type: item, item: mca:bouquet}
+
+  - key: big_village
+    title: Город за холмами
+    description:
+      - Кроме хуторов, в мире встречаются большие поселения с рынками, укреплениями и десятками домов. Найдите такое — там лучшие торговцы
+        и больше всего работы.
+    x: 0
+    y: -3
+    icon: minecraft:cartography_table
+    shape: scroll
+    optional: true
+    deps: [first_village]
+    tasks:
+      - {type: structure, structure: '#nasledie:large_villages'}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: waystones:warp_scroll, count: 2}
+
+  # ── Деревни разных краёв (ChoiceTheorem's Overhauled Village) ──
+  - key: tree_village
+    title: Деревня в кронах
+    description:
+      - В джунглях встречаются деревни, построенные прямо на деревьях, — мостки, лестницы и дома среди листвы. Поднимитесь туда и поторгуйтесь
+        с жителями. Вниз лучше не смотреть.
+    x: -3.45
+    y: -3.61
+    icon: minecraft:jungle_log
+    shape: scroll
+    optional: true
+    deps: [big_village]
+    tasks:
+      - type: criteria
+        title: Поторговать в деревне на деревьях
+        any_of: [{trade_in: ctov:small/village_jungle_tree}, {trade_in: ctov:medium/village_jungle_tree}, {trade_in: ctov:large/village_jungle_tree}]
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: alexsmobs:banana, count: 12}
+
+  - key: christmas_village
+    title: Юра встречает Новый год
+    description:
+      - Среди снегов стоят деревни, где круглый год ёлки и гирлянды. Юра уверен, что сейчас декабрь. Поторгуйтесь там — и не разубеждайте его.
+    x: -2.47
+    y: -5.47
+    icon: minecraft:spruce_sapling
+    shape: scroll
+    optional: true
+    deps: [big_village]
+    tasks:
+      - type: criteria
+        title: Поторговать в праздничной деревне
+        any_of: [{trade_in: ctov:small/village_christmas}, {trade_in: ctov:medium/village_christmas}, {trade_in: ctov:large/village_christmas}]
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: minecraft:cake}
+      - {type: item, item: farmersdelight:sweet_berry_cookie, count: 16}
+
+  - key: fortified_village
+    title: Ночь за крепостной стеной
+    description:
+      - На равнинах, в бэдлендах, на болотах и в тайге попадаются деревни, обнесённые стенами. Переночуйте в такой — впервые за долгое время
+        можно спать спокойно.
+    x: -0.61
+    y: -6.45
+    icon: minecraft:stone_brick_wall
+    shape: scroll
+    optional: true
+    deps: [big_village]
+    tasks:
+      - type: criteria
+        title: Уснуть в укреплённой деревне
+        any_of: [{slept_in: ctov:small/village_plains_fortified}, {slept_in: ctov:medium/village_plains_fortified}, {slept_in: ctov:large/village_plains_fortified}, {slept_in: ctov:small/village_mesa_fortified}, {slept_in: ctov:medium/village_mesa_fortified}, {slept_in: ctov:large/village_mesa_fortified}, {slept_in: ctov:small/village_swamp_fortified}, {slept_in: ctov:medium/village_swamp_fortified}, {slept_in: ctov:large/village_swamp_fortified}, {slept_in: ctov:small/village_taiga_fortified}, {slept_in: ctov:medium/village_taiga_fortified}, {slept_in: ctov:large/village_taiga_fortified}]
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:spyglass}
+
+  - key: mushroom_village
+    title: Грибная кладовая
+    description:
+      - На грибных островах тоже живут люди, и дома у них — грибы. Загляните в сундук такого дома — что едят те, у кого вместо огорода мицелий?
+    x: 1.48
+    y: -6.17
+    icon: minecraft:red_mushroom_block
+    shape: scroll
+    optional: true
+    deps: [big_village]
+    tasks:
+      - {type: criteria, title: Открыть сундук грибного дома, loot: ctov:chests/village/village_mushroom_house}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: farmersdelight:mushroom_rice, count: 4}
+      - {type: item, item: minecraft:mycelium, count: 8}
+
+  # ── Дружба ──
+  - key: friend
+    id: AFC6DEB96FAAF4A1
+    title: Знакомые лица
+    description:
+      - Поговорите, пошутите, помогите. Когда отношения с кем-то дойдут до 50 сердец, у вас появится первый настоящий друг в этом мире.
+    x: 3
+    y: -3
+    icon: mca:bouquet
+    shape: heart
+    deps: [first_village]
+    tasks:
+      - {type: advancement, advancement: mca:friend}
+    rewards:
+      - {type: xp, xp: 60}
+      - {type: item, item: mca:rose_gold_ingot, count: 2}
+
+  - key: gift
+    id: 7154299D354A1B07
+    title: Подарок в точку
+    description:
+      - Дорогая вещь — не обязательно хороший подарок. Узнайте, что любит ваш друг, и подарите то, от чего он просияет.
+    x: 5.5
+    y: -3
+    icon: mca:bouquet
+    shape: heart
+    deps: [friend]
+    tasks:
+      - {type: advancement, advancement: mca:excellent_gift}
+    rewards:
+      - {type: xp, xp: 80}
+      - {type: item, item: mca:bouquet, count: 2}
+
+  - key: best_friend
+    id: E7B10EC3B6680953
+    title: Близкий друг
+    description:
+      - Двести сердец — это уже не знакомство, а дружба на годы. Такой житель будет рад вам в любое время.
+    x: 8
+    y: -3
+    icon: mca:engagement_ring
+    shape: heart
+    optional: true
+    deps: [gift]
+    tasks:
+      - {type: advancement, advancement: mca:best_friend}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: mca:rose_gold_ingot, count: 3}
+
+  - key: marriage
+    id: 2C75530B1A6E014E
+    title: Пока смерть не разлучит
+    description:
+      - Обручитесь и сыграйте свадьбу. Максим, Юра — кто первый? Второй будет шафером и отвечает за торт.
+    x: 10.5
+    y: -3
+    icon: mca:wedding_ring
+    shape: heart
+    optional: true
+    deps: [best_friend]
+    tasks:
+      - {type: advancement, advancement: mca:marriage}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:cake}
+      - {type: item, item: minecraft:golden_apple, count: 2}
+
+  # ── Положение в поселении ──
+  - key: merchant
+    id: 28708C663F59906A
+    title: Звание торговца
+    description:
+      - Жители сами решают, кого уважать. Получите первое звание в деревне — с ним открываются новые возможности книги поселения.
+    x: 3
+    y: 0
+    icon: minecraft:emerald
+    deps: [first_village]
+    tasks:
+      - {type: advancement, advancement: mca:merchant}
+    rewards:
+      - {type: xp, xp: 80}
+      - {type: item, item: minecraft:emerald, count: 6}
+
+  - key: noble
+    id: 10E550A7AA6FE780
+    title: Дворянин поселения
+    description:
+      - Дворянство даётся тем, кто много сделал для поселения. Растите деревню, помогайте жителям — и вас признают.
+    x: 5.5
+    y: 0
+    icon: minecraft:golden_helmet
+    deps: [merchant]
+    tasks:
+      - {type: advancement, advancement: mca:noble}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:emerald, count: 12}
+
+  - key: mayor
+    id: EF7C435DEE5C7F2A
+    title: Юра — мэр города
+    description:
+      - Мэр отвечает за всё — от новых домов до праздников. Юра давно хотел власти, вот и пусть разбирается с жалобами на соседских кур.
+    x: 8
+    y: 0
+    icon: minecraft:bell
+    shape: star
+    deps: [noble]
+    tasks:
+      - {type: advancement, advancement: mca:mayor}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:diamond, count: 3}
+
+  - key: monarch
+    title: Максим Первый
+    description:
+      - Если мэра мало, можно стать монархом. Максим, корону носить тяжело — но мантия вам к лицу.
+    x: 10.5
+    y: 0
+    icon: minecraft:golden_helmet
+    shape: star
+    optional: true
+    deps: [mayor]
+    tasks:
+      - {type: advancement, advancement: mca:monarch}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: minecraft:enchanted_golden_apple}
+
+  # ── Торговля и заказы ──
+  - key: trade
+    title: Первая сделка
+    description:
+      - 'Изумруды — главная валюта деревень. Обменяйте что-нибудь у жителя: лишняя пшеница или уголь легко превращаются в нужные вещи.'
+    x: 3
+    y: 3
+    icon: minecraft:emerald
+    deps: [first_village]
+    tasks:
+      - {type: advancement, advancement: minecraft:adventure/trade}
+    rewards:
+      - {type: xp, xp: 40}
+      - {type: item, item: minecraft:emerald, count: 3}
+
+  - key: bounty_board
+    id: 4F244541933746FE
+    title: Доска объявлений
+    description:
+      - Поставьте доску объявлений в деревне. Жители будут вывешивать на ней заказы — принести, добыть, победить — и щедро платить.
+    x: 5.5
+    y: 3
+    icon: bountiful:bountyboard
+    deps: [trade]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha34/actions/f94e2c9ae9da1a88}
+    rewards:
+      - {type: xp, xp: 80}
+      - {type: item, item: bountiful:decree}
+
+  - key: bounty_first
+    title: Первый заказ
+    description:
+      - Возьмите заказ с доски и выполните его. Награда указана прямо на листке, а срок лучше не упускать.
+    x: 8
+    y: 3
+    icon: minecraft:paper
+    deps: [bounty_board]
+    tasks:
+      - {type: stat, stat: bountiful:bounties_done, value: 1}
+    rewards:
+      - {type: xp, xp: 80}
+      - {type: item, item: minecraft:emerald, count: 4}
+
+  - key: bounty_ten
+    title: Надёжный подрядчик
+    description:
+      - Десять выполненных заказов — и в округе о вас говорят как о людях слова. Можно делить — часть заказов берёт Максим, часть — Юра.
+    x: 10.5
+    y: 3
+    icon: minecraft:writable_book
+    deps: [bounty_first]
+    tasks:
+      - {type: stat, stat: bountiful:bounties_done, value: 10}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: minecraft:diamond, count: 2}
+
+  - key: bounty_rare
+    title: Редкий заказ
+    description:
+      - Иногда на доске появляются редкие заказы — сложнее и дороже обычных. Выполните хотя бы один.
+    x: 13
+    y: 3
+    icon: minecraft:map
+    optional: true
+    deps: [bounty_ten]
+    tasks:
+      - {type: stat, stat: bountiful:bounties_done_2, value: 1}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:golden_apple, count: 2}
+
+  - key: bounty_epic
+    title: Эпический заказ
+    description:
+      - Самые трудные заказы приходят редко и требуют настоящей подготовки. Выполните эпический заказ — о таком будут рассказывать в таверне.
+    x: 15.5
+    y: 3
+    icon: minecraft:nether_star
+    shape: star
+    optional: true
+    deps: [bounty_rare]
+    tasks:
+      - {type: stat, stat: bountiful:bounties_done_3, value: 1}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:enchanted_golden_apple}
+
+  # ── Ополчение ──
+  - key: hire_recruit
+    title: Первый наёмник
+    description:
+      - Жители соглашаются стать рекрутами за плату. Поставьте у деревни стол рекрута, дождитесь добровольца и наймите его. Не забывайте
+        кормить свой отряд.
+    x: 3
+    y: 6
+    icon: recruits:recruit_block
+    shape: shield
+    deps: [first_village]
+    tasks:
+      - {type: advancement, advancement: nasledie:events/hired/recruits, title: Нанять рекрута}
+    rewards:
+      - {type: xp, xp: 80}
+      - {type: item, item: minecraft:iron_sword}
+      - {type: item, item: minecraft:bread, count: 16}
+
+  - key: hire_bowman
+    title: Лучники на стене
+    description:
+      - Стрелки держат врага на расстоянии, пока мечники прикрывают их. Наймите рекрута-лучника.
+    x: 5.5
+    y: 6
+    icon: recruits:bowman_block
+    shape: shield
+    deps: [hire_recruit]
+    tasks:
+      - {type: advancement, advancement: nasledie:events/hired/recruits/bowman, title: Нанять лучника}
+    rewards:
+      - {type: xp, xp: 80}
+      - {type: item, item: minecraft:arrow, count: 32}
+
+  - key: promote
+    title: Капитан отряда
+    description:
+      - Опытного рекрута можно повысить — в капитаны, разведчики или посланники. Отряду нужен тот, кто поведёт его без вас.
+    x: 8
+    y: 6
+    icon: minecraft:iron_helmet
+    shape: shield
+    optional: true
+    deps: [hire_bowman]
+    tasks:
+      - {type: advancement, advancement: nasledie:events/recruits/promoted, title: Повысить рекрута}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:shield, count: 2}
+
+  - key: veteran
+    title: Ветеран
+    description:
+      - Рекруты растут в боях. Доведите одного из своих до пятого уровня — с таким бойцом не страшно и в подземелье.
+    x: 10.5
+    y: 6
+    icon: minecraft:iron_chestplate
+    shape: shield
+    optional: true
+    deps: [promote]
+    tasks:
+      - {type: advancement, advancement: nasledie:events/recruits/level_5, title: Рекрут пятого уровня}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: minecraft:diamond, count: 2}
+      - {type: item, item: minecraft:golden_apple}
+
+  - key: hero
+    title: Защитники деревни
+    description:
+      - Однажды к деревне придёт налёт разбойников. Отбейте его вместе с ополчением — жители этого не забудут.
+    x: 5.5
+    y: 8.25
+    icon: minecraft:crossbow
+    shape: shield
+    size: 1.3
+    deps: [hire_bowman]
+    tasks:
+      - {type: advancement, advancement: minecraft:adventure/hero_of_the_village}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:emerald_block, count: 2}
+
+  # ── Деревни другого уклада (Towns and Towers) ──
+  - key: other_ways
+    title: Деревни другого уклада
+    description:
+      - Не все деревни похожи на вашу. Где-то строят пуэбло из глины, где-то — дома на сваях или ворота с фонарями. Найдите поселение совсем
+        другого уклада.
+    x: -3
+    y: 3
+    icon: minecraft:decorated_pot
+    shape: scroll
+    size: 1.2
+    optional: true
+    deps: [first_village]
+    tasks:
+      - {type: structure, structure: '#nasledie:tt_villages'}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: waystones:return_scroll, count: 2}
+
+  - key: swamp_village
+    title: Дом на сваях
+    description:
+      - На болотах деревни стоят на сваях и лодках. Загляните в сундук такого дома — что хранят те, у кого под полом вода?
+    x: -1.96
+    y: 6.86
+    icon: minecraft:mangrove_roots
+    shape: scroll
+    optional: true
+    deps: [other_ways]
+    tasks:
+      - {type: criteria, title: Открыть сундук свайного дома, loot: kaisyn:village/village_swamp_house}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:mangrove_chest_boat}
+      - {type: item, item: farmersdelight:fish_stew, count: 3}
+
+  - key: sakura_village
+    title: Деревня под сакурой
+    description:
+      - Среди цветущих деревьев стоит деревня с воротами и фонарями. Поторгуйтесь с жителями и унесите с собой немного весны.
+    x: -4.04
+    y: 6.86
+    icon: minecraft:cherry_sapling
+    shape: scroll
+    optional: true
+    deps: [other_ways]
+    tasks:
+      - type: criteria
+        title: Поторговать в деревне под сакурой
+        any_of: [{trade_in: towns_and_towers:village_flower_forest}]
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:cherry_sapling, count: 4}
+      - {type: item, item: minecraft:pink_petals, count: 16}
+
+  - key: pueblo_village
+    title: Юра, тебе идёт
+    description:
+      - В красных скалах бэдлендов стоят пуэбло и типи. Откройте сундук в одном из домов, а Юра пока примерит шляпу.
+    x: -5.83
+    y: 5.83
+    icon: artifacts:cowboy_hat
+    shape: scroll
+    optional: true
+    deps: [other_ways]
+    tasks:
+      - {type: criteria, title: Открыть сундук в пуэбло или типи, loot: kaisyn:village/village_badlands_house}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: artifacts:cowboy_hat}
+
+  - key: trader_camp
+    title: Лагерь странствующих торговцев
+    description:
+      - В оазисах пустыни встречается лагерь странствующих торговцев с загонами для лам. Загляните в сундук их хижины — торговцы всегда
+        везут что-то необычное.
+    x: -6.86
+    y: 4.04
+    icon: minecraft:lead
+    shape: scroll
+    optional: true
+    deps: [other_ways]
+    tasks:
+      - {type: criteria, title: Открыть сундук хижины торговцев, loot: kaisyn:village/exclusives/village_wandering_trader_hut}
+    rewards:
+      - {type: xp, xp: 350}
+      - {type: item, item: minecraft:emerald, count: 12}
+      - {type: item, item: minecraft:lead, count: 2}
+
+  - key: viking_village
+    title: Торг у северян
+    description:
+      - В снежной тайге живут северяне. Поторгуйтесь с ними — Максиму давно нужен топор посерьёзнее.
+    x: -6.86
+    y: 1.96
+    icon: minecraft:spruce_log
+    shape: scroll
+    optional: true
+    deps: [other_ways]
+    tasks:
+      - type: criteria
+        title: Поторговать в северной деревне
+        any_of: [{trade_in: towns_and_towers:village_snowy_taiga}]
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: better_weaponry:iron_battleaxe}
+
+  - key: mountain_inn
+    title: Ночь в горном трактире
+    description:
+      - На снежных склонах стоит трактир для путников. Переночуйте в нём — утром будет что рассказать.
+    x: -5.83
+    y: 0.17
+    icon: minecraft:campfire
+    shape: scroll
+    optional: true
+    deps: [other_ways]
+    tasks:
+      - type: criteria
+        title: Уснуть в горном трактире
+        any_of: [{slept_in: towns_and_towers:village_snowy_slopes}]
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: farmersdelight:beef_stew, count: 3}
+      - {type: item, item: farmersdelight:hot_cocoa, count: 3}
+
+  - key: bandit_armory
+    title: Арсенал разбойников
+    description:
+      - Разбойники ставят лагеря на побережьях, в снегах у моря, на плато саванн и в редких джунглях. Захватите их арсенал — лучший арбалет
+        капитана теперь ваш.
+    x: 8
+    y: 8.25
+    icon: minecraft:crossbow
+    shape: shield
+    optional: true
+    deps: [hero]
+    tasks:
+      - {type: criteria, title: Открыть арсенал лагеря разбойников, loot: kaisyn:outpost/common/armory}
+    rewards:
+      - {type: xp, xp: 450}
+      - {type: item, item: minecraft:crossbow, nbt: '{Enchantments:[{id:"minecraft:quick_charge",lvl:2s}]}'}
+
+  # ── Работники ──
+  - key: hire_worker
+    title: Рабочие руки
+    description:
+      - Наёмный работник трудится сам, пока вы в походе. Наймите первого — фермера, лесоруба, шахтёра или рыбака — и отведите ему участок.
+    x: 3
+    y: 10.5
+    icon: minecraft:iron_hoe
+    deps: [hire_recruit]
+    tasks:
+      - {type: advancement, advancement: nasledie:events/hired/workers, title: Нанять работника}
+    rewards:
+      - {type: xp, xp: 80}
+      - {type: item, item: minecraft:bread, count: 16}
+
+  - key: farmer
+    title: Свой фермер
+    description:
+      - Фермер сам пашет, сеет и собирает урожай на отведённом поле. Наймите его и выдайте мотыгу.
+    x: 5.5
+    y: 10.5
+    icon: minecraft:wheat
+    deps: [hire_worker]
+    tasks:
+      - {type: advancement, advancement: nasledie:events/hired/workers/farmer, title: Нанять фермера}
+    rewards:
+      - {type: xp, xp: 80}
+      - {type: item, item: minecraft:iron_hoe}
+
+  - key: forest_and_stone
+    title: Лес и камень
+    description:
+      - Стройке нужны брёвна и камень в количествах, на которые жалко тратить вечер. Наймите лесоруба и шахтёра.
+    x: 8
+    y: 10.5
+    icon: minecraft:iron_axe
+    optional: true
+    deps: [farmer]
+    tasks:
+      - {type: advancement, advancement: nasledie:events/hired/workers/lumberjack, title: Нанять лесоруба}
+      - {type: advancement, advancement: nasledie:events/hired/workers/miner, title: Нанять шахтёра}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:iron_axe}
+      - {type: item, item: minecraft:iron_pickaxe}

@@ -1,0 +1,340 @@
+# Акт II. Звери и стражи старого мира (Mowzie's Mobs). Четыре боя со стражами — сюжетные квесты
+# летописи, здесь они показаны ссылками рядом с подготовкой к ним.
+chapter:
+  filename: nasledie_defense
+  id: A1279E21532D7CDD
+  group: act2
+  title: Звери и стражи старого мира
+  icon: mowziesmobs:wrought_helmet
+  order_index: 6
+  default_hide_dependency_lines: false
+  default_quest_shape: shield
+  progression_mode: flexible
+
+links:
+  - {quest: nasledie_chronicle/route, x: 0.0, y: 0.0, shape: star, size: 1.8}
+  - {quest: nasledie_chronicle/umvuthi, x: -7.01, y: -14.38, shape: crown, size: 1.5}
+  - {quest: nasledie_chronicle/sculptor, x: 6.25, y: -6.47, shape: crown, size: 1.5}
+  - {quest: nasledie_chronicle/wroughtnaut, x: 6.31, y: 1.57, shape: crown, size: 1.5}
+  - {quest: nasledie_chronicle/frostmaw, x: -3.63, y: 5.39, shape: crown, size: 1.5}
+
+quests:
+  # ── Солнечная роща ──
+  - key: grove
+    id: B704072AA3306667
+    title: Роща солнечного племени
+    description:
+      - В джунглях и саваннах живёт народ в масках — умвутана. Их роща окружена частоколом, а в центре горит то, что они охраняют.
+        Найдите её, но не спешите внутрь.
+    x: -2.25
+    y: -2.68
+    icon: mowziesmobs:umvuthana_mask_fury
+    shape: scroll
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: structure, structure: mowziesmobs:umvuthana_grove}
+    rewards:
+      - {type: xp, xp: 240}
+      - {type: item, item: mowziesmobs:blowgun}
+      - {type: item, item: mowziesmobs:dart, count: 16}
+
+  - key: raptor
+    id: 1AA2F1D6F60E9FDB
+    title: Воин в маске
+    description:
+      - Раптор — вожак отряда умвутана. Победите его, и маски остальных потеряют уверенность.
+    x: -3.86
+    y: -4.6
+    icon: mowziesmobs:umvuthana_mask_rage
+    deps: [grove]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:kill_umvuthana_raptor}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: better_weaponry:diamond_spear}
+
+  - key: grove_watch
+    id: 0EA51C1EFC97CF87
+    title: Караул солнечной рощи
+    description:
+      - Победите двух разных воинов племени — в маске Ярости и в маске Страха. Порядок охоты выбирайте сами.
+    x: -5.46
+    y: -6.51
+    icon: mowziesmobs:umvuthana_mask_fear
+    deps: [raptor]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha39/mowzie/grove_watch, title: Умвутана в маске Ярости}
+      - {type: advancement, advancement: nasledie:alpha39/mowzie/grove_watch__fear, title: Умвутана в маске Страха}
+    rewards:
+      - {type: xp, xp: 230}
+      - {type: item, item: minecraft:gold_ingot, count: 6}
+
+  - key: sneak
+    id: 667FADB4630B1FBC
+    title: Свой среди чужих
+    description:
+      - Холм входил в рощу в маске. Повторите его трюк — проберитесь внутрь, переодевшись умвутана, и вас не тронут.
+    x: -7.07
+    y: -8.43
+    icon: mowziesmobs:umvuthana_mask_bliss
+    shape: scroll
+    optional: true
+    deps: [grove_watch]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:sneak_grove}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: artifacts:feral_claws}
+
+  - key: grove_chest
+    title: Дары солнцу
+    description:
+      - Племя хранит подношения в сундуках у святилища. Откройте один — Максим и Юра найдут каждый своё.
+    x: -8.68
+    y: -10.34
+    icon: minecraft:chest
+    shape: circle
+    deps: [sneak]
+    tasks:
+      - {type: criteria, title: Открыть сундук рощи, loot: mowziesmobs:chests/umvuthana_grove_chest}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:golden_apple, count: 2}
+
+  - key: foliaath
+    id: A33D4E94573F3BD4
+    title: Хищник среди листвы
+    description:
+      - В джунглях растут цветы, которые едят неосторожных. Победите фолиаата — до того, как он закроет пасть.
+    x: -5.2
+    y: -3.38
+    icon: mowziesmobs:foliaath_seed
+    optional: true
+    deps: [grove]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:kill_foliaath}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: better_weaponry:emerald_sickle}
+
+  - key: suns_blessing
+    id: 62D20856FFA016C3
+    title: Благословение солнца
+    description:
+      - Сила птицы не исчезла вместе с ней. Получите благословение солнца — и почувствуйте, как огонь слушается вас.
+    x: -6.97
+    y: -17.25
+    icon: mowziesmobs:sol_visage
+    shape: star
+    optional: true
+    deps: [nasledie_chronicle/umvuthi]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:suns_blessing}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: artifacts:fire_gauntlet}
+
+  # ── Монастырь отшельника ──
+  - key: monastery
+    id: B89ADDCBCB295F18
+    title: Тропа к монастырю
+    description:
+      - Высоко в горах стоит монастырь, а над ним — скала, где живёт отшельник. Поднимитесь к монастырю и осмотритесь.
+    x: 1.75
+    y: -3.03
+    icon: mowziesmobs:geomancer_robe
+    shape: scroll
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: structure, structure: mowziesmobs:monastery}
+    rewards:
+      - {type: xp, xp: 280}
+      - {type: item, item: mowziesmobs:geomancer_beads, count: 4}
+
+  - key: monastery_chest
+    title: Кладовая монахов
+    description:
+      - Монахи давно ушли, но кладовая цела. Откройте её сундук — припасы для подъёма к вершине.
+    x: 3.0
+    y: -5.2
+    icon: minecraft:barrel
+    shape: circle
+    deps: [monastery]
+    tasks:
+      - {type: criteria, title: Открыть сундук монастыря, loot: mowziesmobs:chests/monastery_chest}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:experience_bottle, count: 12}
+
+  - key: sculptor_failure
+    id: 4CE1E389229E6BFE
+    title: Цена неверного шага
+    description:
+      - Испытание отшельника — это подъём по движущимся камням. Кто-то из вас обязательно сорвётся. Лучше сейчас, чем на последнем уступе.
+    x: 1.55
+    y: -6.21
+    icon: minecraft:feather
+    shape: circle
+    optional: true
+    deps: [monastery_chest]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:sculptor_failure}
+    rewards:
+      - {type: xp, xp: 160}
+      - {type: item, item: minecraft:enchanted_book, nbt: '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:4s}]}'}
+
+  # ── Кованый зал ──
+  - key: wrought_chamber
+    id: 06BF2A4D15D6CD27
+    title: Зал кованого стража
+    description:
+      - Глубоко под землёй есть зал, выкованный целиком. Там ждёт первая отметка с маршрута Эклунда. Найдите вход.
+    x: 3.5
+    y: 0.0
+    icon: mowziesmobs:wrought_axe
+    shape: scroll
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: structure, structure: mowziesmobs:wrought_chamber}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: mowziesmobs:glowing_jelly, count: 10}
+
+  - key: axe_trials
+    id: 9B6EFB1C669C7CFA
+    title: Четыре испытания топора
+    description:
+      - Топор тысячи металлов, взятый у кованого стража, рубит как живой. Испытайте его на четырёх противниках — разорителе, призывателе,
+        пиглине-бруте и визер-скелете. Топор должен быть в руке в момент победы.
+    x: 9.04
+    y: 2.94
+    icon: mowziesmobs:wrought_axe
+    shape: star
+    optional: true
+    deps: [nasledie_chronicle/wroughtnaut]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha41_qa2/warrior/1_ravager, title: Разоритель}
+      - {type: advancement, advancement: nasledie:alpha41_qa2/warrior/2_evoker, title: Призыватель}
+      - {type: advancement, advancement: nasledie:alpha41_qa2/warrior/3_piglin_brute, title: Пиглин-брут}
+      - {type: advancement, advancement: nasledie:alpha41_qa2/warrior/4_wither_skeleton, title: Визер-скелет}
+    rewards:
+      - {type: xp, xp: 950}
+      - {type: item, item: minecraft:totem_of_undying}
+
+  # ── Пещерные жители ──
+  - key: grottol
+    id: 5C3BCCAC46517EDE
+    title: Сокровище умеет убегать
+    description:
+      - Гроттол — каменный жучок с алмазами на спине. Он быстро бегает и ещё быстрее прячется. Догоните.
+    x: 2.25
+    y: 2.68
+    icon: minecraft:diamond_ore
+    shape: circle
+    optional: true
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:kill_grottol}
+    rewards:
+      - {type: xp, xp: 80}
+      - {type: item, item: minecraft:diamond}
+
+  - key: grottol_fortune
+    id: 0DA6143558A570BF
+    title: Гроттол и удача
+    description:
+      - Если ударить гроттола киркой с удачей, алмазов будет больше. Проверьте.
+    x: 3.86
+    y: 4.6
+    icon: minecraft:diamond
+    shape: star
+    optional: true
+    deps: [grottol]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:kill_grottol_fortune}
+    rewards:
+      - {type: xp, xp: 340}
+      - {type: item, item: minecraft:diamond, count: 3}
+
+  - key: grottol_silk
+    id: A3EDE771A3D3FAE9
+    title: Гроттол в сохранности
+    description:
+      - А кирка с шёлковым касанием забирает гроттола целиком. Юра давно хотел питомца, который не ест.
+    x: 5.46
+    y: 6.51
+    icon: minecraft:deepslate_diamond_ore
+    shape: star
+    optional: true
+    deps: [grottol_fortune]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:kill_grottol_silk_touch}
+    rewards:
+      - {type: xp, xp: 350}
+      - {type: item, item: artifacts:digging_claws}
+
+  - key: bluff
+    id: 216A8A3EE5B58D96
+    title: Каменная засада
+    description:
+      - В пустынях на песке лежат «камни», которые иногда моргают. Победите блафа, пока он не притворился снова.
+    x: 2.76
+    y: 5.66
+    icon: minecraft:sandstone
+    optional: true
+    deps: [grottol]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:kill_bluff}
+    rewards:
+      - {type: xp, xp: 80}
+      - {type: item, item: better_weaponry:amethyst_rapier}
+
+  # ── Снега ──
+  - key: frostmaw_lair
+    title: Лёжка морозной пасти
+    description:
+      - В снежных краях спит огромный зверь. Найдите его лёжку — и решите, будить ли его сразу.
+    x: -1.2
+    y: 3.29
+    icon: minecraft:snow_block
+    shape: scroll
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: structure, structure: mowziesmobs:frostmaw_spawn}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: cold_sweat:goat_fur, count: 6}
+
+  - key: steal_crystal
+    id: 1E7E546AB7203A0B
+    title: Кристалл без поединка
+    description:
+      - Ледяной кристалл можно не отбирать в бою, а стянуть, пока зверь спит. Нужны ловкость и путь отступления.
+    x: -0.86
+    y: 6.14
+    icon: mowziesmobs:ice_crystal
+    shape: star
+    optional: true
+    deps: [frostmaw_lair]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:steal_ice_crystal}
+    rewards:
+      - {type: xp, xp: 390}
+      - {type: item, item: artifacts:steadfast_spikes}
+
+  # ── Побережье ──
+  - key: naga
+    id: FF7561483C27E289
+    title: Нага над головой
+    description:
+      - Над морскими скалами кружат наги и плюются кислотой. Собьёте одну — получите клык, из которого выходит отличный кинжал.
+    x: -3.38
+    y: 0.91
+    icon: mowziesmobs:naga_fang
+    optional: true
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: advancement, advancement: mowziesmobs:kill_naga}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: artifacts:helium_flamingo}

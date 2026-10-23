@@ -1,0 +1,15 @@
+{
+  "entity.mowziesmobs.ferrous_wroughtnaut": "Кованый страж",
+  "entity.mowziesmobs.frostmaw": "Морозная пасть",
+  "entity.mowziesmobs.umvuthi": "Умвути, солнечная птица",
+  "entity.mowziesmobs.umvuthi.trade": "Умвути, солнечная птица",
+  "entity.mowziesmobs.sculptor": "Тонгби, Скульптор",
+  "item.mowziesmobs.wrought_helmet": "Кованый шлем",
+  "item.mowziesmobs.wroughtnaut_spawn_egg": "Яйцо призыва Кованого стража",
+  "item.mowziesmobs.umvuthi_spawn_egg": "Яйцо призыва Умвути, солнечной птицы",
+  "item.mowziesmobs.sculptor_spawn_egg": "Яйцо призыва Тонгби, Скульптора",
+  "advancements.mowziesmobs.kill_ferrous_wroughtnaut.description": "Повергните Кованого стража",
+  "advancements.mowziesmobs.kill_frostmaw.description": "Повергните Морозную пасть",
+  "advancements.mowziesmobs.steal_ice_crystal.description": "Украдите Кристалл Бурана у Морозной пасти",
+  "subtitles.mowziesmobs.ferrous_wroughtnaut_theme": "Музыкальная тема Кованого стража"
+}

@@ -1,0 +1,564 @@
+# Акт IV. Восемь очей Зодчих (L_Ender's Cataclysm): восемь лучей от «Очей Зодчих» — око, логово, младший страж,
+# бой со стражем. Бои — сюжетные квесты летописи, здесь показаны ссылками. Раскладка — src/layouts/cataclysm.yaml.
+chapter:
+  filename: nasledie_cataclysm
+  id: C54798B08E30ED27
+  group: act4
+  title: Восемь очей Зодчих
+  icon: cataclysm:flame_eye
+  order_index: 15
+  default_hide_dependency_lines: false
+  default_quest_shape: circle
+  progression_mode: flexible
+
+links:
+  - {quest: nasledie_chronicle/nether_eye, x: 0.0, y: 0.0, shape: star, size: 2.2}
+  - {quest: nasledie_chronicle/ender_guardian, x: 3.31, y: -11.54, shape: crown, size: 1.7}
+  - {quest: nasledie_chronicle/scylla, x: 10.5, y: -5.82, shape: crown, size: 1.7}
+  - {quest: nasledie_chronicle/strand_notes, x: 6.5, y: 0.0, shape: star, size: 1.4}
+  - {quest: nasledie_chronicle/harbinger, x: 11.54, y: 3.31, shape: crown, size: 1.7}
+  - {quest: nasledie_chronicle/monstrosity, x: 5.82, y: 10.5, shape: crown, size: 1.7}
+  - {quest: nasledie_chronicle/ignis, x: -3.31, y: 11.54, shape: crown, size: 1.7}
+  - {quest: nasledie_chronicle/leviathan, x: -10.5, y: 5.82, shape: crown, size: 1.7}
+  - {quest: nasledie_chronicle/remnant, x: -11.54, y: -3.31, shape: crown, size: 1.7}
+  - {quest: nasledie_chronicle/maledictus, x: -5.82, y: -10.5, shape: crown, size: 1.7}
+
+quests:
+  - key: eight_victories
+    id: DE6173A11D04779E
+    title: Восемь побед Катаклизма
+    description:
+      - Победите всех восьмерых — огонь, бездну, бурю, проклятие, пустыню, машину, чудовище и пустоту. Мир, который держали сосуды, теперь
+        держите вы. Победы считаются на команду — неважно, чей удар был последним.
+    x: 13.44
+    y: 13.44
+    icon: cataclysm:bulwark_of_the_flame
+    shape: crown
+    size: 2
+    hide_dependency_lines: true
+    deps: [nasledie_chronicle/ignis, nasledie_chronicle/leviathan, nasledie_chronicle/harbinger, nasledie_chronicle/ender_guardian,
+           nasledie_chronicle/maledictus, nasledie_chronicle/remnant, nasledie_chronicle/monstrosity, nasledie_chronicle/scylla]
+    tasks:
+      - {type: kill, entity: cataclysm:ignis, value: 1}
+      - {type: kill, entity: cataclysm:the_leviathan, value: 1}
+      - {type: kill, entity: cataclysm:the_harbinger, value: 1}
+      - {type: kill, entity: cataclysm:ender_guardian, value: 1}
+      - {type: kill, entity: cataclysm:maledictus, value: 1}
+      - {type: kill, entity: cataclysm:ancient_remnant, value: 1}
+      - {type: kill, entity: cataclysm:netherite_monstrosity, value: 1}
+      - {type: kill, entity: cataclysm:scylla, value: 1}
+    rewards:
+      - {type: xp, xp: 3000}
+      - {type: item, item: cataclysm:bulwark_of_the_flame}
+      - {type: item, item: minecraft:enchanted_golden_apple, count: 2}
+
+  # ── Пустота: цитадель Края ──
+  - key: void_eye
+    title: Око пустоты
+    description:
+      - Око пустоты собирают из пурпура и панцирей шалкеров — значит, путь к нему лежит через города Края. Оно смотрит на последний доспех.
+    x: 0.0
+    y: -3.5
+    icon: cataclysm:void_eye
+    deps: [nasledie_chronicle/nether_eye]
+    tasks:
+      - {type: item, item: cataclysm:void_eye}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_slow_falling"}', count: 2}
+
+  - key: citadel
+    id: 8B22878BF8763415
+    title: Руины на краю Бездны
+    description:
+      - На дальних островах Края стоит разрушенная цитадель. Найдите её — здесь закончится путь Эклунда.
+    x: 0.0
+    y: -6.5
+    icon: minecraft:purpur_block
+    shape: scroll
+    deps: [void_eye]
+    tasks:
+      - {type: advancement, advancement: cataclysm:find_ruined_citadel}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:shulker_shell, count: 4}
+
+  - key: ender_golem
+    id: 1E822E9D64762351
+    title: Первый страж цитадели
+    description:
+      - Эндер-голем сторожит вход. Изучите его удары — хозяин цитадели бьёт сильнее.
+    x: 0.0
+    y: -9.5
+    icon: minecraft:end_stone_bricks
+    shape: shield
+    deps: [citadel]
+    tasks:
+      - {type: advancement, advancement: cataclysm:kill_ender_golem}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: minecraft:chorus_fruit, count: 16}
+      - {type: item, item: better_weaponry:netherite_glaive}
+
+  - key: spire
+    id: 28A645C41091FB06
+    title: Шпиль перед Бездной
+    description:
+      - Заброшенный шпиль — одна из немногих построек Зодчих, что стоят открыто. Найдите его и осмотрите.
+    x: -1.92
+    y: -5.9
+    icon: minecraft:obsidian
+    shape: scroll
+    optional: true
+    deps: [void_eye]
+    tasks:
+      - {type: structure, structure: cataclysm:abandoned_spire}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:ender_pearl, count: 8}
+
+  # ── Буря: акрополь ──
+  - key: storm_eye
+    title: Око шторма
+    description:
+      - Око шторма — из призмарина, алмазов и громоотвода. Оно тянет туда, где над облаками бьют молнии.
+    x: 2.47
+    y: -2.47
+    icon: cataclysm:storm_eye
+    deps: [nasledie_chronicle/nether_eye]
+    tasks:
+      - {type: item, item: cataclysm:storm_eye}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_slow_falling"}', count: 2}
+
+  - key: acropolis
+    id: F2FD5EEB117B3119
+    title: Акрополь в небесах
+    description:
+      - Акрополь парит в грозовых облаках. Подъём — отдельное приключение; дирижабль или эндер-жемчуг вам в помощь.
+    x: 4.6
+    y: -4.6
+    icon: minecraft:lightning_rod
+    shape: scroll
+    deps: [storm_eye]
+    tasks:
+      - {type: advancement, advancement: cataclysm:find_acropolis}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:trident}
+
+  - key: acropolis_treasure
+    title: Сокровищница акрополя
+    description:
+      - Жрица бури хранит дары в сокровищнице храма. Откройте её до боя — или после, если хватит сил.
+    x: 6.72
+    y: -6.72
+    icon: minecraft:gold_block
+    deps: [acropolis]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу акрополя, loot: cataclysm:chests/acropolis_treasure}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: artifacts:shock_pendant}
+
+  - key: clawdian
+    id: 43C293DB6BB1573F
+    title: Клешни на пути к буре
+    description:
+      - Клешниан стережёт подступы к жрице. Победите его — и путь к вершине открыт.
+    x: 8.84
+    y: -8.84
+    icon: cataclysm:chitin_claw
+    shape: shield
+    deps: [acropolis_treasure]
+    tasks:
+      - {type: advancement, advancement: cataclysm:kill_clawdian}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: minecraft:golden_apple, count: 3}
+
+  # ── Машина: фабрика ──
+  - key: mech_eye
+    title: Око меха
+    description:
+      - Око меха — из редстоуна и железа, самое простое из восьми. Оно ведёт к фабрике, где погиб Странд.
+    x: 3.4
+    y: -0.85
+    icon: cataclysm:mech_eye
+    deps: [nasledie_chronicle/nether_eye]
+    tasks:
+      - {type: item, item: cataclysm:mech_eye}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:redstone_block, count: 4}
+
+  - key: prowler
+    title: Провожатый фабрики
+    description:
+      - Фабрику охраняют машины поменьше. Провожатый ходит по цехам и не любит гостей. Победите его.
+    x: 9.5
+    y: 0.0
+    icon: minecraft:iron_block
+    shape: shield
+    deps: [nasledie_chronicle/strand_notes]
+    tasks:
+      - {type: criteria, title: Победить Провожатого, kill: cataclysm:the_prowler}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: createbigcannons:he_shell, count: 6}
+
+  # ── Чудовище: кузня душ ──
+  - key: monstrous_eye
+    title: Око чудовища
+    description:
+      - Око чудовища — из незеритового лома, лавы и чернокамня. Оно смотрит в Нижний мир, на кузню душ.
+    x: 2.47
+    y: 2.47
+    icon: cataclysm:monstrous_eye
+    deps: [nasledie_chronicle/nether_eye]
+    tasks:
+      - {type: item, item: cataclysm:monstrous_eye}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_fire_resistance"}', count: 2}
+
+  - key: forge
+    id: 0A9ACE48F5328D23
+    title: Кузня душ
+    description:
+      - Кузня стоит среди лавы, и наковальня в ней до сих пор тёплая. Найдите её.
+    x: 4.6
+    y: 4.6
+    icon: minecraft:anvil
+    shape: scroll
+    deps: [monstrous_eye]
+    tasks:
+      - {type: advancement, advancement: cataclysm:find_soul_black_smith}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:netherite_scrap}
+
+  - key: ash_guard
+    id: BBA92955F4AA2D1F
+    title: Пепельный караул
+    description:
+      - У кузни дежурят огненный берсерк и малое незеритовое чудище. Победите обоих — порядок не важен.
+    x: 6.72
+    y: 6.72
+    icon: minecraft:blackstone
+    shape: shield
+    deps: [forge]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha39/cataclysm/ash_vanguard, title: Огненный берсерк}
+      - {type: advancement, advancement: nasledie:alpha39/cataclysm/ash_vanguard__ministrosity, title: Малое незеритовое чудище}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: artifacts:fire_gauntlet}
+
+  # ── Огонь: пылающая арена ──
+  - key: flame_eye
+    title: Око огня
+    description:
+      - Око огня — из огненного порошка, незеритового лома и песка душ. Оно указывает на пылающую арену.
+    x: 0.0
+    y: 3.5
+    icon: cataclysm:flame_eye
+    deps: [nasledie_chronicle/nether_eye]
+    tasks:
+      - {type: item, item: cataclysm:flame_eye}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_fire_resistance"}', count: 2}
+
+  - key: arena
+    id: FEE6E381AE1C38B7
+    title: Пылающая арена
+    description:
+      - Арена в глубинах Нижнего мира, где рыцарь Зодчих ждёт соперника. Найдите её и осмотритесь до боя.
+    x: 0.0
+    y: 6.5
+    icon: minecraft:magma_block
+    shape: scroll
+    deps: [flame_eye]
+    tasks:
+      - {type: advancement, advancement: cataclysm:find_burning_arena}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:golden_apple, count: 2}
+
+  - key: revenant
+    id: 11CA5BADA78F67A2
+    title: Тот, кто восстал из жара
+    description:
+      - Огненный ревенант — оруженосец Игниса. Победите его, прежде чем вызывать хозяина.
+    x: 0.0
+    y: 9.5
+    icon: minecraft:blaze_powder
+    shape: shield
+    deps: [arena]
+    tasks:
+      - {type: advancement, advancement: cataclysm:kill_revenant}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: better_weaponry:netherite_rapier}
+
+  # ── Бездна: затонувший город ──
+  - key: abyss_eye
+    title: Око глубины
+    description:
+      - Око глубины — из обсидиана и плачущего обсидиана. Оно тянет вниз, в затонувший город глубинников.
+    x: -2.47
+    y: 2.47
+    icon: cataclysm:abyss_eye
+    deps: [nasledie_chronicle/nether_eye]
+    tasks:
+      - {type: item, item: cataclysm:abyss_eye}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_water_breathing"}', count: 3}
+
+  - key: sunken_city
+    id: A96277A6BE605D32
+    title: Город под толщей воды
+    description:
+      - Город глубинников лежит на самом дне. Проводник и водолазный костюм здесь не роскошь.
+    x: -4.6
+    y: 4.6
+    icon: minecraft:prismarine_bricks
+    shape: scroll
+    deps: [abyss_eye]
+    tasks:
+      - {type: advancement, advancement: cataclysm:find_sunken_city}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:heart_of_the_sea}
+
+  - key: deep_patrol
+    id: F21761F49BC3DC1D
+    title: Охрана морской пучины
+    description:
+      - Город охраняют глубинники — брут, колдун и коралловый колосс. Победите всех троих.
+    x: -6.72
+    y: 6.72
+    icon: minecraft:tube_coral_block
+    shape: shield
+    deps: [sunken_city]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha39/cataclysm/deep_patrol, title: Брут-глубинник}
+      - {type: advancement, advancement: nasledie:alpha39/cataclysm/deep_patrol__warlock, title: Колдун-глубинник}
+      - {type: advancement, advancement: nasledie:alpha39/cataclysm/deep_patrol__coralssus, title: Коралловый колосс}
+    rewards:
+      - {type: xp, xp: 600}
+      - {type: item, item: artifacts:flippers}
+      - {type: item, item: minecraft:diamond, count: 4}
+
+  # ── Пустыня: проклятая пирамида ──
+  - key: desert_eye
+    title: Око пустыни
+    description:
+      - Око пустыни собирают из золота, кактусов, костей и песчаника. Оно смотрит на пирамиду, где погиб Холм.
+    x: -3.5
+    y: 0.0
+    icon: cataclysm:desert_eye
+    deps: [nasledie_chronicle/nether_eye]
+    tasks:
+      - {type: item, item: cataclysm:desert_eye}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:bread, count: 16}
+
+  - key: pyramid
+    id: 0B35EC876DCDE6DC
+    title: Пирамида под проклятием
+    description:
+      - Проклятая пирамида стоит посреди песков, и песок вокруг неё шепчет. Найдите её.
+    x: -6.5
+    y: 0.0
+    icon: minecraft:chiseled_sandstone
+    shape: scroll
+    deps: [desert_eye]
+    tasks:
+      - {type: advancement, advancement: cataclysm:find_cursed_pyramid}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:golden_apple, count: 2}
+
+  - key: pyramid_guards
+    title: Стражи песков
+    description:
+      - Пирамиду охраняют коболедатор и уаджет. Победите одного из них — второй сам вас найдёт.
+    x: -9.5
+    y: 0.0
+    icon: cataclysm:kobolediator_skull
+    shape: shield
+    deps: [pyramid]
+    tasks:
+      - type: criteria
+        title: Победить коболедатора или уаджета
+        any_of:
+          - {kill: cataclysm:kobolediator}
+          - {kill: cataclysm:wadjet}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: artifacts:snorkel}
+
+  - key: desert_treasure
+    title: Сокровища пустыни
+    description:
+      - В пустынных руинах Катаклизма спрятаны сундуки с древними дарами. Откройте один.
+    x: -6.22
+    y: -1.9
+    icon: minecraft:gold_ingot
+    optional: true
+    deps: [pyramid]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу пустыни, loot: cataclysm:chests/desert_treasure}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:emerald_block, count: 2}
+
+  - key: ruined_village
+    id: A0D9B1BC47B0A927
+    title: Поселение после катастрофы
+    description:
+      - Деревня, которую покинули в спешке. Здесь жили люди, пока Катаклизм не проснулся впервые.
+    x: -5.75
+    y: 2.32
+    icon: minecraft:cobweb
+    shape: scroll
+    optional: true
+    deps: [desert_eye]
+    tasks:
+      - {type: structure, structure: cataclysm:abandoned_village}
+    rewards:
+      - {type: xp, xp: 230}
+      - {type: item, item: minecraft:hay_block, count: 4}
+
+  - key: occupied_village
+    id: AB0DB46C4BD473E2
+    title: Деревня занята чужими
+    description:
+      - Пустынную деревню заняли слуги пирамиды. Разведайте её снаружи, прежде чем лезть внутрь.
+    x: -8.07
+    y: 3.26
+    icon: minecraft:sandstone
+    shape: scroll
+    optional: true
+    deps: [ruined_village]
+    tasks:
+      - {type: structure, structure: cataclysm:desert_occupied_village}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:arrow, count: 32}
+
+  - key: desert_site
+    id: CC6AECEDA32DA758
+    title: Раскоп древнего мира
+    description:
+      - Кто-то копал здесь до вас. Возможно, Холм. Осмотрите раскоп — кисть пригодится.
+    x: -10.38
+    y: 4.2
+    icon: minecraft:brush
+    shape: scroll
+    optional: true
+    deps: [occupied_village]
+    tasks:
+      - {type: structure, structure: cataclysm:desert_site}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: betterarcheology:diamond_brush}
+
+  - key: abandoned_temple
+    id: 1CB249497EF14D92
+    title: Храм за пределами пирамиды
+    description:
+      - Заброшенный храм в стороне от пирамиды. Его открыли — и ушли, не закрыв.
+    x: -14.5
+    y: 0.0
+    icon: minecraft:cut_sandstone
+    shape: scroll
+    optional: true
+    deps: [pyramid_guards]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу заброшенного храма, loot: cataclysm:chests/abandoned_treasure}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:diamond, count: 3}
+
+  - key: amethyst_nest
+    id: B2584C9F3E1DF7E2
+    title: Аметистовое гнездо
+    description:
+      - Пещера, заросшая аметистом, где живут аметистовые крабы. Найдите гнездо и его сундук.
+    x: -17.0
+    y: 0.0
+    icon: minecraft:amethyst_cluster
+    shape: scroll
+    optional: true
+    deps: [abandoned_temple]
+    tasks:
+      - {type: criteria, title: Открыть сундук аметистового гнезда, loot: cataclysm:chests/amethyst_nest_chest}
+    rewards:
+      - {type: xp, xp: 310}
+      - {type: item, item: cataclysm:blessed_amethyst_crab_meat, count: 3}
+
+  # ── Проклятие: ледяная тюрьма ──
+  - key: cursed_eye
+    title: Око проклятия
+    description:
+      - Око проклятия — из золота, костей, гнили и мембран фантома. Оно смотрит на север, в ледяную тюрьму.
+    x: -2.47
+    y: -2.47
+    icon: cataclysm:cursed_eye
+    deps: [nasledie_chronicle/nether_eye]
+    tasks:
+      - {type: item, item: cataclysm:cursed_eye}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: cold_sweat:goat_fur, count: 6}
+
+  - key: prison
+    id: 9648CF8E2A62BFAF
+    title: За дверью ледяной тюрьмы
+    description:
+      - Ледяная тюрьма стоит в снегах, и дверь у неё до сих пор заперта изнутри. Найдите её.
+    x: -4.6
+    y: -4.6
+    icon: minecraft:packed_ice
+    shape: scroll
+    deps: [cursed_eye]
+    tasks:
+      - {type: advancement, advancement: cataclysm:find_frosted_prison}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_strength"}', count: 2}
+
+  - key: prison_treasure
+    title: Казна ледяного короля
+    description:
+      - Король заперся вместе с казной. Откройте её — драугры будут недовольны.
+    x: -6.72
+    y: -6.72
+    icon: minecraft:blue_ice
+    deps: [prison]
+    tasks:
+      - {type: criteria, title: Открыть казну ледяной тюрьмы, loot: cataclysm:chests/frosted_prison_treasure}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: artifacts:snowshoes}
+
+  - key: aptrgangr
+    title: Предводитель драугров
+    description:
+      - Аптерганг — командир мёртвой стражи. Победите его до встречи с королём.
+    x: -8.84
+    y: -8.84
+    icon: cataclysm:aptrgangr_head
+    shape: shield
+    deps: [prison_treasure]
+    tasks:
+      - {type: criteria, title: Победить Аптерганга, kill: cataclysm:aptrgangr}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: better_weaponry:netherite_battleaxe}

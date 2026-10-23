@@ -1,0 +1,155 @@
+# Акт III. Торговый дом: выгодные сделки, странствующий торговец, свой работник-торговец, лавка Create и склад.
+chapter:
+  filename: nasledie_economy
+  id: 8F4597A009915275
+  group: act3
+  title: Торговый дом
+  icon: minecraft:emerald
+  order_index: 12
+  default_hide_dependency_lines: false
+  default_quest_shape: coin
+  progression_mode: flexible
+
+quests:
+  - key: ten_trades
+    id: 9CE7C2CFF54FECE4
+    title: Десять сделок
+    description:
+      - Торговля — дело привычки. Совершите десять сделок с жителями — Максим и Юра могут торговать каждый в своём углу рынка.
+    x: 0
+    y: 0
+    icon: minecraft:emerald
+    size: 1.5
+    deps: [nasledie_village/trade]
+    tasks:
+      - {id: BEB88D215C2F506B, type: stat, stat: minecraft:traded_with_villager, value: 10}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: sophisticatedstorage:storage_tool}
+
+  - key: book_deal
+    id: FB634EE0C189A59B
+    title: Сделка знаний
+    description:
+      - Библиотекари продают зачарованные книги. Купите одну — и узнайте, у кого какие чары в запасе.
+    x: 3
+    y: -2
+    icon: minecraft:enchanted_book
+    deps: [ten_trades]
+    tasks:
+      - {type: advancement, advancement: nasledie:economy/bought_enchanted_book, title: Купить зачарованную книгу}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: minecraft:bookshelf, count: 6}
+
+  - key: pearl_deal
+    id: F0C5DD6DFBF85A1C
+    title: Жемчуг для очей
+    description:
+      - Жрецы продают жемчуг Края — основу ока Края, а значит, и всех очей Зодчих. Купите у них жемчужину.
+    x: 6
+    y: -2
+    icon: minecraft:ender_pearl
+    deps: [book_deal]
+    tasks:
+      - {type: advancement, advancement: nasledie:economy/bought_ender_pearl, title: Купить жемчуг Края}
+    rewards:
+      - {type: xp, xp: 135}
+      - {type: item, item: minecraft:blaze_powder, count: 8}
+
+  - key: wandering
+    title: Странствующий торговец
+    description:
+      - Иногда к дому приходит торговец с ламами и редкими товарами. Купите у него хоть что-нибудь, пока он не исчез.
+    x: 3
+    y: 2
+    icon: minecraft:lead
+    deps: [ten_trades]
+    tasks:
+      - type: criteria
+        title: Сделка со странствующим торговцем
+        criteria:
+          trade:
+            trigger: minecraft:villager_trade
+            conditions:
+              villager: {type: minecraft:wandering_trader}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: minecraft:emerald, count: 8}
+
+  - key: sky_trade
+    title: Сделка под облаками
+    description:
+      - Заведите жителя на самую вершину мира и поторгуйтесь там. Зачем? Потому что так интереснее.
+    x: 6
+    y: 2
+    icon: minecraft:feather
+    optional: true
+    deps: [wandering]
+    tasks:
+      - {type: advancement, advancement: minecraft:adventure/trade_at_world_height}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: artifacts:cloud_in_a_bottle}
+
+  - key: regulars
+    id: BE7C211A268C501D
+    title: Постоянный клиент
+    description:
+      - Двадцать пять сделок — и в деревне вас встречают по имени. Цены стали мягче, а товары — интереснее.
+    x: 9
+    y: 0
+    icon: minecraft:emerald_block
+    shape: star
+    deps: [pearl_deal, wandering]
+    tasks:
+      - {id: 0B4DDDAE184A446C, type: stat, stat: minecraft:traded_with_villager, value: 25}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: sophisticatedbackpacks:advanced_magnet_upgrade}
+
+  - key: merchant_worker
+    title: Свой торговец
+    description:
+      - Наймите работника-торговца. Он продаёт ваши товары, пока вы в экспедиции, — излишки мастерской превращаются в изумруды.
+    x: 12
+    y: -2
+    icon: workers:merchant_spawn_egg
+    deps: [regulars, nasledie_village/hire_worker]
+    tasks:
+      - {type: advancement, advancement: nasledie:events/hired/workers/merchant, title: Нанять торговца}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: interiors:green_chair, count: 2}
+
+  - key: shop
+    id: 6F6CBC1AF7ABE154
+    title: Мы открыты!
+    description:
+      - Скатерть-лавка Create продаёт товары со склада сама. Откройте магазин — Максим за прилавком, Юра первый покупатель.
+    x: 12
+    y: 2
+    icon: create:white_table_cloth
+    deps: [regulars, nasledie_grand_projects/stock_ticker]
+    tasks:
+      - {type: advancement, advancement: create:table_cloth_shop}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: createdeco:yellow_brass_lamp, count: 4}
+
+  - key: storage_hub
+    id: 62F24C6158049C2F
+    title: Склад торгового дома
+    description:
+      - Контроллер хранилища объединяет сундуки в одну сеть — весь склад торгового дома в одном окне.
+    x: 15
+    y: 0
+    icon: sophisticatedstorage:controller
+    shape: star
+    size: 1.4
+    deps: [merchant_worker, shop]
+    tasks:
+      - {type: advancement, advancement: nasledie:setup/economy/controller, title: Поставить контроллер хранилища}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: sophisticatedstorage:stack_upgrade_tier_2, count: 2}

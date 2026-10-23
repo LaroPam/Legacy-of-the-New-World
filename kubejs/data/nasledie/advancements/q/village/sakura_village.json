@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "c0": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "towns_and_towers:village_flower_forest"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "c0"
+    ]
+  ]
+}

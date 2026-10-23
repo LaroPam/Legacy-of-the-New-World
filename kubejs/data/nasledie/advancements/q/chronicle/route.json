@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "explorerscompass:explorers_compass"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "criteria": {
+    "c0": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "ctov:small/village_christmas"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "c1": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "ctov:medium/village_christmas"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "c2": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "ctov:large/village_christmas"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "c0",
+      "c1",
+      "c2"
+    ]
+  ]
+}

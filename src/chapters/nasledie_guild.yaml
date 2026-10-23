@@ -1,0 +1,587 @@
+# Свободная глава. Бестиарий Ингрид Берг (Alex's Mobs): существа нового мира по краям, лучами от полевого дневника.
+# Существа Края — в главе финала. Раскладка — src/layouts/guild.yaml.
+chapter:
+  filename: nasledie_guild
+  id: 0ABE8126BB237195
+  group: free
+  title: Бестиарий Ингрид Берг
+  icon: alexsmobs:animal_dictionary
+  order_index: 17
+  default_hide_dependency_lines: false
+  default_quest_shape: circle
+  progression_mode: flexible
+
+links:
+  - {quest: nasledie_chronicle/frostmaw, x: -1.88, y: -3.53, shape: crown, size: 1.4}
+
+quests:
+  - key: field_journal
+    id: 7E2ECDC313839529
+    title: Полевой дневник
+    description:
+      - Ингрид Берг записывала каждое существо, которое встречала. Соберите книгу о животных и продолжите её бестиарий.
+    x: 0.0
+    y: 0.0
+    icon: alexsmobs:animal_dictionary
+    shape: star
+    size: 1.8
+    tasks:
+      - {type: criteria, title: Собрать книгу о животных, crafted: alexsmobs:animal_dictionary}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: alexsmobs:fish_oil, count: 4}
+
+  - key: field_notes
+    id: F57181DBDA992F0B
+    title: Три живые записи дневника
+    description:
+      - Найдите и рассмотрите вблизи грифовую черепаху, визгуна и шёпота. Берг рисовала их по памяти — сверьте рисунки с натурой.
+    x: -3.03
+    y: 1.75
+    icon: minecraft:writable_book
+    deps: [field_journal]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha39/mobs/field_notes, title: Грифовая черепаха}
+      - {type: advancement, advancement: nasledie:alpha39/mobs/field_notes__skreecher, title: Визгун}
+      - {type: advancement, advancement: nasledie:alpha39/mobs/field_notes__murmur, title: Шёпот}
+    rewards:
+      - {type: xp, xp: 260}
+      - {type: item, item: alexsmobs:spiked_turtle_shell}
+
+  - key: cucaracha
+    id: 6901B3595877A394
+    title: Музыкант с шестью лапами
+    description:
+      - Дайте таракану маракас — и он станцует. Научного смысла ноль, удовольствия — море.
+    x: -3.5
+    y: 0.0
+    icon: alexsmobs:maraca
+    shape: heart
+    optional: true
+    deps: [field_journal]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/la_cucaracha}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: alexsmobs:sombrero}
+
+  - key: transmute
+    id: 32AF726FDB0E97B5
+    title: Тысяча превращений
+    description:
+      - Трансмутационный стол превращает одно в другое. Проведите через него тысячу предметов — работа на много вечеров.
+    x: -5.82
+    y: 1.45
+    icon: alexsmobs:transmutation_table
+    shape: star
+    optional: true
+    deps: [field_journal]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/transmute_1000_items}
+    rewards:
+      - {type: xp, xp: 600}
+      - {type: item, item: minecraft:diamond_block}
+
+  # ── Леса и равнины ──
+  - key: bison
+    id: 59BE881A23FA5362
+    title: Бизон в объективе
+    description:
+      - Посмотрите на бизона в подзорную трубу. Издалека — потому что вблизи он не любит.
+    x: 0.0
+    y: -3.5
+    icon: minecraft:spyglass
+    deps: [field_journal]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/bison_spyglass}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: alexsmobs:frontier_cap}
+
+  - key: grizzly
+    id: 96A5A07EA384E3E1
+    title: Медведь принимает угощение
+    description:
+      - Мёд и лосось — путь к сердцу бурого медведя. Приручите его.
+    x: 0.0
+    y: -6.0
+    icon: alexsmobs:bear_fur
+    deps: [bison]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/tame_grizzly_bear}
+    rewards:
+      - {type: xp, xp: 270}
+      - {type: item, item: minecraft:honey_bottle, count: 8}
+
+  - key: maned_wolf
+    id: 237F60330304F23A
+    title: Яблоко для гривистого волка
+    description:
+      - Гривистый волк обожает яблоки. Угостите — и он покажет, где растут лучшие.
+    x: 1.55
+    y: -5.8
+    icon: minecraft:apple
+    optional: true
+    deps: [bison]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/maned_wolf_apple}
+    rewards:
+      - {type: xp, xp: 185}
+      - {type: item, item: alexsmobs:moose_headgear}
+
+  - key: skunk
+    id: 8EC4540A9E0B729E
+    title: Аромат полевого исследования
+    description:
+      - Подойдите к скунсу слишком близко. Наука требует жертв, Юра.
+    x: 0.0
+    y: -8.5
+    icon: alexsmobs:stink_bottle
+    shape: heart
+    optional: true
+    deps: [grizzly]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/skunk}
+    rewards:
+      - {type: xp, xp: 190}
+      - {type: item, item: alexsmobs:stink_ray}
+
+  - key: underminer
+    id: A11B0DC1744B593F
+    title: Опередить призрачного шахтёра
+    description:
+      - Призрачный рудокоп копает жилы, которых не видно. Сломайте блок, который он копает, — и найдёте спрятанную руду.
+    x: -2.2
+    y: -8.21
+    icon: alexsmobs:ghostly_pickaxe
+    optional: true
+    deps: [grizzly]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/underminer}
+    rewards:
+      - {type: xp, xp: 275}
+      - {type: item, item: minecraft:diamond, count: 2}
+
+  # ── Небо: соколиная охота ──
+  - key: eagle
+    id: E4D66B92C822D527
+    title: Первый пернатый союзник
+    description:
+      - Приручите орла рыбьим жиром. Он станет глазами экспедиции с высоты.
+    x: 2.68
+    y: -2.25
+    icon: alexsmobs:fish_oil
+    deps: [field_journal]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/tame_bald_eagle}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:leather, count: 8}
+
+  - key: glove
+    id: 252A21A892E4E5A0
+    title: Посадочное место на руке
+    description:
+      - Сокольничья перчатка — место для орла. Сшейте её из кожи и медвежьего меха.
+    x: 4.6
+    y: -3.86
+    icon: alexsmobs:falconry_glove
+    deps: [eagle]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/falconry_glove}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: alexsmobs:fish_oil, count: 4}
+
+  - key: hood
+    id: 1AC57DF4745395A2
+    title: Управление полётом орла
+    description:
+      - Орёл в капюшоне летит туда, куда вы смотрите. Сделайте капюшон из кожи и перьев.
+    x: 6.51
+    y: -5.46
+    icon: alexsmobs:falconry_hood
+    deps: [glove]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/falconry_hood}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: alexsmobs:roadrunner_boots}
+
+  - key: eagle_challenge
+    id: 96E3403FB5591B32
+    title: Орёл достигает дальней цели
+    description:
+      - Пусть орёл в капюшоне сразит существо в сотне блоков от вас. Настоящая соколиная охота.
+    x: 8.43
+    y: -7.07
+    icon: minecraft:feather
+    shape: star
+    deps: [hood]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/bald_eagle_challenge}
+    rewards:
+      - {type: xp, xp: 450}
+      - {type: item, item: artifacts:night_vision_goggles}
+
+  # ── Джунгли ──
+  - key: gorilla
+    id: 4B932485B3983E85
+    title: Договориться с гориллой
+    description:
+      - Горилла принимает бананы и в ответ — дружбу. Приручите её.
+    x: 3.45
+    y: 0.61
+    icon: alexsmobs:banana
+    deps: [field_journal]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/tame_gorilla}
+    rewards:
+      - {type: xp, xp: 230}
+      - {type: item, item: alexsmobs:sopa_de_macaco, count: 2}
+
+  - key: capuchin
+    id: A69880141C867BB1
+    title: Маленький спутник из джунглей
+    description:
+      - Капуцин ездит на плече и швыряется во врагов. Приручите его.
+    x: 5.91
+    y: 1.04
+    icon: alexsmobs:banana
+    deps: [gorilla]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/tame_capuchin}
+    rewards:
+      - {type: xp, xp: 275}
+      - {type: item, item: alexsmobs:fedora}
+
+  - key: hummingbird
+    id: 19FCA77EB16A1E4A
+    title: Потомство среди цветов
+    description:
+      - Колибри размножаются среди цветов. Разведите их — и сад оживёт.
+    x: 8.37
+    y: 1.48
+    icon: minecraft:poppy
+    deps: [capuchin]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/breed_hummingbird}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: alexsmobs:hummingbird_feeder}
+
+  - key: flutter
+    id: 7187AE5CE52E38D9
+    title: Разборчивый любитель цветов
+    description:
+      - Пархун приручается только разными цветами. Соберите букет посложнее.
+    x: 10.83
+    y: 1.91
+    icon: minecraft:allium
+    optional: true
+    deps: [hummingbird]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/tame_flutter}
+    rewards:
+      - {type: xp, xp: 290}
+      - {type: item, item: alexsmobs:maraca}
+
+  - key: anteater
+    id: 936D71E0D75C5CFD
+    title: Семья муравьедов
+    description:
+      - Муравьеды любят куколок муравьёв. Разведите пару.
+    x: 5.99
+    y: -0.42
+    icon: alexsmobs:leafcutter_ant_pupa
+    optional: true
+    deps: [gorilla]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/breed_anteater}
+    rewards:
+      - {type: xp, xp: 340}
+      - {type: item, item: alexsmobs:gongylidia, count: 4}
+
+  - key: tiger
+    id: 9ED723F7F76497AD
+    title: Благословение тигра
+    description:
+      - Накормите тигра мясом, и он благословит вас — враги не заметят вашего приближения.
+    x: 7.77
+    y: 3.46
+    icon: minecraft:porkchop
+    shape: star
+    optional: true
+    deps: [capuchin]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/tigers_blessing}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: artifacts:kitty_slippers}
+
+  # ── Саванна и пустыня ──
+  - key: elephant
+    id: 95C85BF47DA01D26
+    title: Слон принимает предложение
+    description:
+      - Приручите слона акациевым цветком. На спине у него поместятся сундуки — караван готов.
+    x: 1.75
+    y: 3.03
+    icon: alexsmobs:acacia_blossom
+    deps: [field_journal]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/tame_elephant}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:chest, count: 4}
+
+  - key: elephant_swag
+    id: 4BCEC123A1B35749
+    title: Праздничный караван
+    description:
+      - Нарядите слона цветным ковром. Караван должен выглядеть празднично.
+    x: 3.0
+    y: 5.2
+    icon: minecraft:red_carpet
+    shape: heart
+    optional: true
+    deps: [elephant]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/elephant_swag}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: alexsmobs:mosquito_repellent_stew, count: 2}
+
+  - key: tusked
+    id: 63D42711634C8471
+    title: Редкий участник каравана
+    description:
+      - Слонёнок с бивнями — редкость. Приручите его, пока он маленький.
+    x: 1.65
+    y: 5.77
+    icon: minecraft:bone
+    shape: star
+    optional: true
+    deps: [elephant]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/tame_elephant_tusked}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:emerald_block, count: 2}
+
+  - key: crocodile
+    id: 427CD312AE0EB773
+    title: Новая жизнь у воды
+    description:
+      - Разведите крокодилов гнилой плотью. Яйца не топчите — мамаша рядом.
+    x: -0.39
+    y: 4.48
+    icon: alexsmobs:crocodile_egg
+    deps: [field_journal]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/breed_crocodile}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: alexsmobs:crocodile_chestplate}
+
+  - key: tarantula_hawk
+    id: 3C70087F08BB9172
+    title: Оса становится союзником
+    description:
+      - Тарантуловый ястреб — гигантская оса пустыни. Накормите её паучьими глазами.
+    x: -0.61
+    y: 6.97
+    icon: minecraft:spider_eye
+    deps: [crocodile]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/tame_tarantula_hawk}
+    rewards:
+      - {type: xp, xp: 360}
+      - {type: item, item: minecraft:golden_carrot, count: 12}
+
+  - key: three_wastes
+    id: 8D963EB7C6BEE5F5
+    title: Трофеи трёх пустошей
+    description:
+      - Рыба-кость в море, стервятник душ в Нижнем мире и гремучая змея в пустыне. Победите каждую.
+    x: -0.83
+    y: 9.46
+    icon: alexsmobs:soul_heart
+    shape: shield
+    optional: true
+    deps: [tarantula_hawk]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha39/mobs/three_wastes, title: Рыба-кость}
+      - {type: advancement, advancement: nasledie:alpha39/mobs/three_wastes__vulture, title: Стервятник душ}
+      - {type: advancement, advancement: nasledie:alpha39/mobs/three_wastes__snake, title: Гремучая змея}
+    rewards:
+      - {type: xp, xp: 390}
+      - {type: item, item: minecraft:golden_apple, count: 2}
+
+  # ── Море ──
+  - key: seagull
+    id: 99429B59EE71CDA8
+    title: Чайка забрала обед
+    description:
+      - Позвольте чайке украсть еду у вас из рук. Максим, это был твой бутерброд.
+    x: -2.01
+    y: 2.87
+    icon: minecraft:cod
+    shape: heart
+    deps: [field_journal]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/seagull_steal}
+    rewards:
+      - {type: xp, xp: 175}
+      - {type: item, item: farmersdelight:fish_stew, count: 4}
+
+  - key: mantis_shrimp
+    id: B949C4277618FEC3
+    title: Рак-богомол становится союзником
+    description:
+      - Рак-богомол бьёт так, что ломает панцири. Приручите его тропической рыбой.
+    x: -3.25
+    y: 5.63
+    icon: minecraft:tropical_fish
+    deps: [seagull]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/tame_mantis_shrimp}
+    rewards:
+      - {type: xp, xp: 240}
+      - {type: item, item: alexsmobs:shrimp_fried_rice, count: 4}
+
+  - key: cachalot
+    id: E159D133BD51F992
+    title: Спасти кита
+    description:
+      - Иногда кашалота выбрасывает на берег. Столкните его обратно в воду — и он оставит амбру в благодарность.
+    x: -4.5
+    y: 7.79
+    icon: alexsmobs:ambergris
+    shape: star
+    optional: true
+    deps: [mantis_shrimp]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/save_cachalot_whale}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: alexsmobs:echolocator}
+
+  - key: orcas
+    id: 1F1BD6529A7A9340
+    title: Сила морской стаи
+    description:
+      - Дикие косатки благословляют тех, кто плавает рядом. Получите их силу.
+    x: -6.02
+    y: 6.69
+    icon: minecraft:nautilus_shell
+    optional: true
+    deps: [mantis_shrimp]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/orcas_might}
+    rewards:
+      - {type: xp, xp: 190}
+      - {type: item, item: alexsmobs:flying_fish_boots}
+
+  # ── Нижний мир ──
+  - key: stradpole
+    id: B9C5E7F638070495
+    title: Угощение для страдпола
+    description:
+      - Покормите страдпола личинками комара. Из головастика вырастет страддлер — живая лодка по лаве.
+    x: -3.09
+    y: -1.64
+    icon: alexsmobs:stradpole_bucket
+    deps: [field_journal]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/stradpole_feed}
+    rewards:
+      - {type: xp, xp: 230}
+      - {type: item, item: alexsmobs:straddle_saddle}
+
+  - key: warped_toad
+    id: 7A5B99FCC0910E12
+    title: Искажённая жаба
+    description:
+      - Искажённая жаба ест вредных насекомых Нижнего мира. Приручите её — пригодится против комаров.
+    x: -4.32
+    y: -4.17
+    icon: minecraft:warped_fungus
+    optional: true
+    deps: [stradpole]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/tame_warped_toad}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: minecraft:magma_cream, count: 6}
+
+  - key: laviathan
+    id: ACE2BBCB182D3BF5
+    title: Лавовый гигант в объективе
+    description:
+      - В лавовых озёрах плавает лавиафан. Посмотрите на него в подзорную трубу — с безопасного расстояния.
+    x: -5.84
+    y: -2.85
+    icon: minecraft:spyglass
+    deps: [stradpole]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/laviathan_spyglass}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_fire_resistance"}', count: 3}
+
+  - key: laviathan_ride
+    id: 1DAF34828799DEB2
+    title: Четыре места на лавиафане
+    description:
+      - Прокатитесь на лавиафане вчетвером. Максим, Юра и двое рекрутов — общественный транспорт Нижнего мира.
+    x: -8.28
+    y: -3.52
+    icon: minecraft:saddle
+    shape: star
+    optional: true
+    deps: [laviathan]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/laviathan_four_passengers}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: minecraft:netherite_scrap}
+
+  - key: warped_mosco
+    id: A3CBB2323447F658
+    title: Искажённый комар
+    description:
+      - Багровый комар, накормленный странным грибом, превращается в искажённого москита — защитника искажённого леса. Сразите его.
+    x: -7.88
+    y: -5.31
+    icon: alexsmobs:hemolymph_sac
+    shape: crown
+    size: 1.5
+    optional: true
+    deps: [laviathan]
+    tasks:
+      - {type: advancement, advancement: alexsmobs:alexsmobs/warped_mosco_kill}
+    rewards:
+      - {type: xp, xp: 900}
+      - {type: item, item: alexsmobs:hemolymph_blaster}
+
+  # ── Питомник ──
+  - key: sanctuary
+    id: 9B3BBB54EE27AC7B
+    title: Питомник трёх биомов
+    description:
+      - Разведите лис, панд и верблюдов. Животные из трёх краёв живут у вас дома — Берг была бы счастлива.
+    x: -5.2
+    y: 3.0
+    icon: minecraft:sweet_berries
+    shape: star
+    optional: true
+    deps: [field_notes]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha41_qa2/sanctuary/1_fox, title: Лисята}
+      - {type: advancement, advancement: nasledie:alpha41_qa2/sanctuary/2_panda, title: Пандята}
+      - {type: advancement, advancement: nasledie:alpha41_qa2/sanctuary/3_camel, title: Верблюжонок}
+    rewards:
+      - {type: xp, xp: 690}
+      - {type: item, item: interiors:green_chair, count: 4}
+      - {type: item, item: minecraft:golden_carrot, count: 16}

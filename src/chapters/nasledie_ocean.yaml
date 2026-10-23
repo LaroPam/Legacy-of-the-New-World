@@ -1,0 +1,314 @@
+# Акт II. Океан: сокровища затонувших кораблей, проводник у монумента и морские разбойники.
+# Бой со старшим стражем — сюжетный квест летописи, здесь показан ссылкой.
+chapter:
+  filename: nasledie_ocean
+  id: 42E670E2D2E5798E
+  group: act2
+  title: Океан — проводник и монумент
+  icon: minecraft:conduit
+  order_index: 7
+  default_hide_dependency_lines: false
+  default_quest_shape: scroll
+  progression_mode: flexible
+
+links:
+  - {quest: nasledie_chronicle/elder_guardian, x: 18, y: 0, shape: crown, size: 1.5}
+
+quests:
+  # ── К монументу ──
+  - key: deep_ocean
+    id: A68C40E37C45E3BF
+    title: Выйти в глубокий океан
+    description:
+      - Где дно уходит в темноту, начинается настоящее море. Выйдите в глубокий океан — лодка, запас еды и путь назад по звёздам.
+    x: 0
+    y: 0
+    icon: minecraft:oak_boat
+    size: 1.4
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: biome, biome: minecraft:deep_ocean}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: artifacts:flippers}
+
+  - key: shipwreck
+    id: D5B701274F41916E
+    title: Затонувший корабль
+    description:
+      - Корабли тонули здесь и до экспедиции. В капитанском сундуке обычно лежит карта к зарытому кладу. Откройте его.
+    x: 3
+    y: 0
+    icon: minecraft:oak_planks
+    deps: [deep_ocean]
+    tasks:
+      - {type: criteria, title: Открыть сундук с сокровищами корабля, loot: minecraft:chests/shipwreck_treasure}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: create:copper_diving_helmet}
+
+  - key: buried_treasure
+    id: F70436662909AF80
+    title: Клад по карте
+    description:
+      - Карта ведёт к кладу на берегу. Копайте под крестом — внутри всегда лежит сердце моря, главная деталь проводника.
+    x: 6
+    y: 0
+    icon: minecraft:heart_of_the_sea
+    deps: [shipwreck]
+    tasks:
+      - {type: criteria, title: Откопать зарытый клад, loot: minecraft:chests/buried_treasure}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:nautilus_shell, count: 4}
+
+  - key: monument
+    id: 76F24423146B2BF8
+    title: Монумент на дне
+    description:
+      - На дне стоит монумент, сложенный той же кладкой, что кованый зал. Найдите его и присмотрите место для плацдарма рядом.
+    x: 9
+    y: 0
+    icon: minecraft:prismarine_bricks
+    deps: [buried_treasure]
+    tasks:
+      - {type: structure, structure: betteroceanmonuments:ocean_monument}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: create:copper_backtank}
+
+  - key: conduit
+    id: A6C3DFEC8B6B5AA3
+    title: Проводник у монумента
+    description:
+      - Сердце моря и восемь раковин наутилуса — и проводник даст дыхание под водой, ночное зрение и скорость копания. Окружите его рамкой из
+        призмарина и встаньте рядом.
+    x: 12
+    y: 0
+    icon: minecraft:conduit
+    shape: gear
+    deps: [monument]
+    tasks:
+      - {type: advancement, advancement: nasledie:ocean/conduit_power, title: Получить силу проводника}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: artifacts:charm_of_sinking}
+
+  - key: guardian
+    id: D8C373CD97382003
+    title: Страж монумента
+    description:
+      - Обычные стражи стреляют лучом издалека. Победите одного — и поймёте, почему старший так опасен.
+    x: 15
+    y: 0
+    icon: minecraft:prismarine_shard
+    shape: shield
+    deps: [conduit]
+    tasks:
+      - {type: kill, entity: minecraft:guardian, value: 1}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: alexsmobs:shark_tooth_arrow, count: 16}
+
+  - key: conduit_duel
+    id: D1FC6F90AE011A99
+    title: Две победы под морской силой
+    description:
+      - Под силой проводника победите обычного и старшего стража. Монумент станет вашим, а море — чуть менее чужим.
+    x: 21
+    y: 0
+    icon: minecraft:trident
+    shape: star
+    size: 1.4
+    optional: true
+    deps: [nasledie_chronicle/elder_guardian]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha42/ocean/conduit_duel/guard, title: Страж под силой проводника}
+      - {type: advancement, advancement: nasledie:alpha42/ocean/conduit_duel/elder, title: Старший страж под силой проводника}
+    rewards:
+      - {type: xp, xp: 700}
+      - {type: item, item: minecraft:trident}
+      - {type: item, item: minecraft:diamond, count: 4}
+
+  # ── Морские разбойники ──
+  - key: lighthouse
+    id: 42CDC43E1DFBDB97
+    title: Береговой маяк
+    description:
+      - Маяки строят там, где корабли бьются о скалы. Поднимитесь на вершину маяка и откройте сундук смотрителя.
+    x: 0
+    y: -3
+    icon: minecraft:lantern
+    deps: [deep_ocean]
+    tasks:
+      - {type: criteria, title: Открыть сундук на вершине маяка, loot: dungeons_arise:chests/lighthouse/lighthouse_top}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:spyglass}
+
+  - key: pirate_ship
+    id: 75934B268BAE9806
+    title: Корабль нежити
+    description:
+      - Пиратский корабль, где команда давно умерла, но службу не бросила. Доберитесь до его сокровищ.
+    x: 3
+    y: -3
+    icon: minecraft:skeleton_skull
+    shape: shield
+    deps: [lighthouse]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу корабля нежити, loot: dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_treasure}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: better_weaponry:diamond_cutlass}
+
+  - key: corsair
+    id: 99935D46EBDDE471
+    title: Корсарский корабль
+    description:
+      - Иллагеры тоже ходят в море. Возьмите на абордаж их корсарский корабль.
+    x: 6
+    y: -3
+    icon: minecraft:crossbow
+    shape: shield
+    optional: true
+    deps: [pirate_ship]
+    tasks:
+      - {type: criteria, title: Открыть сокровищницу корсаров, loot: dungeons_arise:chests/illager_corsair/illager_corsair_treasure}
+    rewards:
+      - {type: xp, xp: 390}
+      - {type: item, item: minecraft:nautilus_shell, count: 6}
+
+  - key: galley
+    id: 27C6A5C2087489CC
+    title: Галера иллагеров
+    description:
+      - Галера — флагман морских иллагеров, с вёслами и пушечной палубой. Её казна — лучшая добыча на воде.
+    x: 9
+    y: -3
+    icon: minecraft:dark_oak_planks
+    shape: star
+    optional: true
+    deps: [corsair]
+    tasks:
+      - {type: criteria, title: Открыть казну галеры, loot: dungeons_arise:chests/illager_galley/illager_galley_treasure}
+    rewards:
+      - {type: xp, xp: 450}
+      - {type: item, item: artifacts:shock_pendant}
+
+  # ── Руины под водой ──
+  - key: frozen_ocean
+    id: 5D6F6A8D9A89C57C
+    title: Океан среди айсбергов
+    description:
+      - На севере море замерзает айсбергами. Доплывите туда в тёплой одежде.
+    x: 0
+    y: 3
+    icon: minecraft:packed_ice
+    optional: true
+    deps: [deep_ocean]
+    tasks:
+      - {type: biome, biome: minecraft:frozen_ocean}
+    rewards:
+      - {type: xp, xp: 75}
+      - {type: item, item: cold_sweat:goat_fur, count: 4}
+
+  - key: warm_ocean
+    id: A303D9CBF0C8194D
+    title: Коралловое море
+    description:
+      - В тёплых водах растут кораллы всех цветов. Красиво — и полно рыбы.
+    x: 3
+    y: 3
+    icon: minecraft:brain_coral
+    optional: true
+    deps: [frozen_ocean]
+    tasks:
+      - {type: biome, biome: minecraft:warm_ocean}
+    rewards:
+      - {type: xp, xp: 75}
+      - {type: item, item: alexsmobs:lobster_tail, count: 4}
+
+  - key: ruin_chest
+    id: 6FD514AB841DF820
+    title: Сундук подводных руин
+    description:
+      - На дне лежат руины старых поселений. Найдите среди них сундук — водолазный шлем здесь очень кстати.
+    x: 6
+    y: 3
+    icon: minecraft:cracked_stone_bricks
+    deps: [warm_ocean]
+    tasks:
+      - type: criteria
+        title: Открыть сундук подводных руин
+        any_of:
+          - {loot: minecraft:chests/underwater_ruin_big}
+          - {loot: minecraft:chests/underwater_ruin_small}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: alexscaves:sea_glass_shards, count: 6}
+
+  - key: conduit_ruin
+    id: E89F59FCDCE5619F
+    title: Руины проводника
+    description:
+      - Кто-то уже строил проводник до вас — и не уберёг. Найдите его руины и главный сундук.
+    x: 9
+    y: 3
+    icon: minecraft:prismarine
+    deps: [ruin_chest]
+    tasks:
+      - {type: criteria, title: Открыть главный сундук руин проводника, loot: nova_structures:chests/conduit_ruin/conduit_ruin_main}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:nautilus_shell, count: 4}
+
+  - key: ocean_grave
+    id: 9BA296205688E999
+    title: Затопленная могила
+    description:
+      - Чья-то могила ушла под воду вместе с берегом. Найдите её. Говорят, одну такую экспедиция оставила сама.
+    x: 12
+    y: 3
+    icon: minecraft:skeleton_skull
+    optional: true
+    deps: [conduit_ruin]
+    tasks:
+      - {type: structure, structure: tombstone:abandoned_grave_ocean}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:experience_bottle, count: 8}
+
+  # ── Под водой надолго ──
+  - key: water_village
+    id: 362F963DF6A6BCFE
+    title: Деревня на воде
+    description:
+      - Целая деревня на сваях посреди моря. Хорошее место для привала и торговли рыбой.
+    x: 0
+    y: 6
+    icon: minecraft:oak_fence
+    optional: true
+    deps: [frozen_ocean]
+    tasks:
+      - {type: structure, structure: towns_and_towers:village_ocean}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: minecraft:emerald, count: 8}
+
+  - key: diving_suit
+    id: CA1FCBC43099A918
+    title: Водолазный костюм
+    description:
+      - Шлем, баллон с воздухом и тяжёлые ботинки — и можно ходить по дну. Баллон заряжается от вращения в мастерской.
+    x: 3
+    y: 6
+    icon: create:copper_diving_helmet
+    shape: gear
+    optional: true
+    deps: [water_village]
+    tasks:
+      - {type: advancement, advancement: create:diving_suit}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: create:copper_diving_boots}

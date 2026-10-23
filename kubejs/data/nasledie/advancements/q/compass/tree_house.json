@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "dungeons_arise:chests/jungle_tree_house/jungle_tree_house_treasure"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

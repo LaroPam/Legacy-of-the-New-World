@@ -1,0 +1,600 @@
+{
+	filename: "nasledie_finale"
+	id: "3E920F5B7179C5CD"
+	group: "771A560C3B3370A6"
+	title: "Край — конец пути"
+	icon: "minecraft:end_portal_frame"
+	order_index: 16
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	progression_mode: "flexible"
+	quest_links: [
+		{
+			id: "5DBFD07979C5CFF3"
+			linked_quest: "A80C23723A869A8B"
+			x: 0.0d
+			y: 0.0d
+			shape: "star"
+			size: 1.5d
+		}
+		{
+			id: "97B2BB0C7A8A7509"
+			linked_quest: "367C7D7E1F81D391"
+			x: 3.5d
+			y: 0.0d
+			shape: "crown"
+			size: 1.8d
+		}
+		{
+			id: "8538FFDA6280CF38"
+			linked_quest: "4E228116310381E8"
+			x: 8.0d
+			y: 0.0d
+			shape: "crown"
+			size: 2.0d
+		}
+		{
+			id: "5C6045C2271A2658"
+			linked_quest: "F691DA83D3708164"
+			x: 12.0d
+			y: 0.0d
+			shape: "star"
+			size: 2.2d
+		}
+	]
+	quests: [
+		{
+			id: "B4B69B58C4015C3F"
+			title: "Шаг за рамку"
+			description: ["Двенадцать очей встают в рамку, и портал, который Зодчие запирали последним, открывается. Пока жив дракон, обратной дороги нет — разве что через смерть. Тыква на голове, кстати, успокаивает эндерменов."]
+			x: 1.75d
+			y: -2.75d
+			icon: "minecraft:end_portal_frame"
+			shape: "scroll"
+			size: 1.2d
+			dependencies: ["A80C23723A869A8B"]
+			tasks: [{
+				id: "37B3C466C48FF423"
+				type: "advancement"
+				advancement: "minecraft:end/root"
+			}]
+			rewards: [
+				{
+					id: "62184EFB7CE70900"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "2640FCD49E2BC30D"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:carved_pumpkin"
+					}
+				}
+				{
+					id: "348B239434B45440"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:golden_apple"
+					}
+				}
+			]
+		}
+		{
+			id: "418BF87D0F99A324"
+			title: "Поводок для спектра"
+			description: ["В пустоте между островами плывут спектры — призрачные родичи фантомов. Приманите одного сердцем души из Нижнего мира и накиньте поводок — он потащит вас к новым островам."]
+			x: 0.0d
+			y: -5.25d
+			icon: "alexsmobs:soul_heart"
+			optional: true
+			dependencies: ["B4B69B58C4015C3F"]
+			tasks: [{
+				id: "4484F593686BAA13"
+				type: "advancement"
+				title: "Привязать спектра поводком"
+				advancement: "nasledie:q/finale/spectre"
+			}]
+			rewards: [
+				{
+					id: "F640D0DA6CF31EF7"
+					type: "xp"
+					xp: 450
+				}
+				{
+					id: "D7B5A947482F401E"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:ender_pearl"
+					}
+				}
+				{
+					id: "FFB8BF70DC445653"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "minecraft:lead"
+					}
+				}
+			]
+		}
+		{
+			id: "D48DB0A9A973A90D"
+			title: "Капсид эндериофага"
+			description: ["По равнинам Края бродят эндериофаги — биомеханические вирусы ростом с человека. С разбитого падает капсид; положите в него рыбу или личинку, и он переделает её во что-то странное."]
+			x: 4.5d
+			y: -2.75d
+			icon: "alexsmobs:capsid"
+			dependencies: ["B4B69B58C4015C3F"]
+			tasks: [{
+				id: "426463C71759E85E"
+				type: "advancement"
+				title: "Добыть капсид"
+				advancement: "nasledie:q/finale/capsid"
+			}]
+			rewards: [
+				{
+					id: "9FB1FFEA80FC09F9"
+					type: "xp"
+					xp: 350
+				}
+				{
+					id: "0C1F019B6721B26A"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:cod"
+					}
+				}
+			]
+		}
+		{
+			id: "50F2011C089DD095"
+			title: "Эндер-грипп"
+			description: ["Эндериофаг кого-то заразил. Максима или Юру — неважно. Лечите хорусом и молоком, и быстро — через десять минут грипп взрывается маленькими фагами."]
+			x: 3.5d
+			y: -5.25d
+			icon: "minecraft:chorus_fruit"
+			optional: true
+			dependencies: ["D48DB0A9A973A90D"]
+			tasks: [{
+				id: "A4355D31B671A4F9"
+				type: "advancement"
+				advancement: "alexsmobs:alexsmobs/ender_flu"
+			}]
+			rewards: [
+				{
+					id: "1D1CC46B82E2B530"
+					type: "xp"
+					xp: 260
+				}
+				{
+					id: "E1670F5403E2AEB3"
+					type: "item"
+					item: {
+						Count: 16b
+						id: "minecraft:chorus_fruit"
+					}
+				}
+				{
+					id: "A45885C2391B0810"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "farmersdelight:milk_bottle"
+					}
+				}
+			]
+		}
+		{
+			id: "3C2AA39C0E1FDEF8"
+			title: "Рыба? Жук? Космав!"
+			description: ["Треска из капсида становится космической, а космавы за неё готовы на всё. Приручите одного — он подхватит хозяина, сорвавшегося с края острова."]
+			x: 7.0d
+			y: -2.75d
+			icon: "alexsmobs:cosmic_cod"
+			dependencies: ["D48DB0A9A973A90D"]
+			tasks: [{
+				id: "AE1702787FA1C576"
+				type: "advancement"
+				advancement: "alexsmobs:alexsmobs/tame_cosmaw"
+			}]
+			rewards: [
+				{
+					id: "77A77E35EB69DC05"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "CFF3C4EA348A291D"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "alexsmobs:cosmic_cod"
+					}
+				}
+				{
+					id: "74E9F68D16199902"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "minecraft:chorus_fruit"
+					}
+				}
+			]
+		}
+		{
+			id: "C5769170EBDD1A02"
+			title: "Приманка для пустоты"
+			description: ["Личинка багрового комара в капсиде становится загадочным червём. Брошенный в пустоту Края, он позовёт то, что живёт под островами. Зодчие закрыли эту дверь — вы её откроете."]
+			x: 6.25d
+			y: -5.25d
+			icon: "alexsmobs:mysterious_worm"
+			shape: "shield"
+			size: 1.3d
+			dependencies: ["D48DB0A9A973A90D"]
+			tasks: [{
+				id: "4183BD5511A7CAD6"
+				type: "advancement"
+				advancement: "alexsmobs:alexsmobs/void_worm_summon"
+			}]
+			rewards: [
+				{
+					id: "83ED59D9B07AC7A2"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "BE81A62AC2F646BF"
+					type: "item"
+					item: {
+						Count: 3b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_slow_falling"
+						}
+					}
+				}
+				{
+					id: "FF6A2DCA97A41C91"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "alexsmobs:enderiophage_rocket"
+					}
+				}
+			]
+		}
+		{
+			id: "7C9F211F3C3FEE27"
+			title: "Надо было по голове"
+			description: ["Ударьте Червя пустоты не в голову, а в тело — и он разделится надвое. Зачем? Чтобы Юра потом рассказывал, что червей было два."]
+			x: 6.25d
+			y: -7.75d
+			icon: "alexsmobs:void_worm_mandible"
+			shape: "star"
+			optional: true
+			dependencies: ["C5769170EBDD1A02"]
+			tasks: [{
+				id: "553932FEAD227C14"
+				type: "advancement"
+				advancement: "alexsmobs:alexsmobs/void_worm_split"
+			}]
+			rewards: [
+				{
+					id: "89606EFAECADDDB8"
+					type: "xp"
+					xp: 600
+				}
+				{
+					id: "7106AB5D770CCAAB"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "alexsmobs:void_worm_effigy"
+					}
+				}
+			]
+		}
+		{
+			id: "2DAF49A8C5352825"
+			title: "Червь пустоты"
+			description: ["Под миром осталось то, что Зодчие не смогли заковать ни в один сосуд. Оно поднялось на вашу приманку. Уничтожьте его."]
+			x: 9.0d
+			y: -5.25d
+			icon: "alexsmobs:void_worm_eye"
+			shape: "crown"
+			size: 1.8d
+			dependencies: ["C5769170EBDD1A02"]
+			tasks: [{
+				id: "D82E89EEE3373184"
+				type: "advancement"
+				advancement: "alexsmobs:alexsmobs/void_worm_kill"
+			}]
+			rewards: [
+				{
+					id: "371C6DF7498128AB"
+					type: "xp"
+					xp: 2500
+				}
+				{
+					id: "12387D08F3755FC8"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "alexsmobs:dimensional_carver"
+					}
+				}
+				{
+					id: "7398063DA0AD44BB"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							title: "Табличка, найденная в пустоте"
+							author: "Неизвестный Зодчий"
+							pages: [
+								"{\"text\": \"Мы заковали огонь, море, бурю и смерть. Восемь сосудов на восьми швах.\\n\\nПустоту под миром заковать было не во что.\"}"
+								"{\"text\": \"Она не сила и не зверь. Она голод. Мы закрыли её островами и надеялись, что никто не бросит ей приманку.\"}"
+								"{\"text\": \"Вы убили то, что поднялось. Голод остался. Его не держат сосуды — только то, что живёт и растёт над ним.\\n\\nСтройте дальше.\"}"
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "6A480F8148BFE375"
+			title: "Второй раунд"
+			description: ["Четыре кристалла Края на краю портала — и печать встаёт снова. Призовите дракона ещё раз; теперь вы знаете, чего ждать."]
+			x: 1.75d
+			y: 2.75d
+			icon: "minecraft:end_crystal"
+			shape: "star"
+			optional: true
+			dependencies: ["367C7D7E1F81D391"]
+			tasks: [{
+				id: "ADEA24274D2E8762"
+				type: "advancement"
+				advancement: "minecraft:end/respawn_dragon"
+			}]
+			rewards: [
+				{
+					id: "5026C7008E17D572"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "40AC6FC167D9128F"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:totem_of_undying"
+					}
+				}
+				{
+					id: "D5522AC00615DE53"
+					type: "item"
+					item: {
+						Count: 6b
+						id: "minecraft:dragon_breath"
+					}
+				}
+			]
+		}
+		{
+			id: "04EA8A84E185E1C3"
+			title: "Врата к дальним островам"
+			description: ["После гибели дракона над островом открываются малые врата. Бросьте в них жемчуг — и окажетесь там, где стоят города и цитадель."]
+			x: 5.5d
+			y: 3.0d
+			icon: "minecraft:ender_pearl"
+			shape: "scroll"
+			size: 1.2d
+			dependencies: ["367C7D7E1F81D391"]
+			tasks: [{
+				id: "A6CF07CB6799268E"
+				type: "advancement"
+				advancement: "minecraft:end/enter_end_gateway"
+			}]
+			rewards: [
+				{
+					id: "5FB2E4A86B7041ED"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "BC2D27AACF39C49A"
+					type: "item"
+					item: {
+						Count: 16b
+						id: "minecraft:ender_pearl"
+					}
+				}
+			]
+		}
+		{
+			id: "1A559A6BB038EF61"
+			title: "Город шалкеров"
+			description: ["Пурпурные башни выросли здесь без Зодчих — кто-то жил в Краю и до них. Войдите в город и не стойте под пулями шалкеров."]
+			x: 8.0d
+			y: 3.0d
+			icon: "minecraft:purpur_block"
+			size: 1.2d
+			dependencies: ["04EA8A84E185E1C3"]
+			tasks: [{
+				id: "E571FCD02B7B1939"
+				type: "advancement"
+				advancement: "minecraft:end/find_end_city"
+			}]
+			rewards: [
+				{
+					id: "5241CB553876DA35"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "1EE4C8BBD04EC23D"
+					type: "item"
+					item: {
+						Count: 3b
+						id: "waystones:return_scroll"
+					}
+				}
+			]
+		}
+		{
+			id: "60AD7180FDDD9EDA"
+			title: "Сокровищница башни"
+			description: ["В верхних комнатах башен стоят сундуки. Откройте хотя бы один — добыча в нём у каждого своя."]
+			x: 10.5d
+			y: 3.0d
+			icon: "minecraft:chest"
+			dependencies: ["1A559A6BB038EF61"]
+			tasks: [{
+				id: "3B38010DA1F3016E"
+				type: "advancement"
+				title: "Открыть сундук города Края"
+				advancement: "nasledie:q/finale/treasure"
+			}]
+			rewards: [
+				{
+					id: "E255B41608BD6ACF"
+					type: "xp"
+					xp: 600
+				}
+				{
+					id: "6D782D64C2A096CA"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:spire_armor_trim_smithing_template"
+					}
+				}
+				{
+					id: "3D134AB3A4B0C36A"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:diamond"
+					}
+				}
+			]
+		}
+		{
+			id: "DCA34D31A998F7C1"
+			title: "Крылья с корабля"
+			description: ["У некоторых городов висит корабль, а на его носу — крылья в рамке. Заберите их — дальше Край станет маленьким."]
+			x: 10.5d
+			y: 5.5d
+			icon: "minecraft:elytra"
+			shape: "star"
+			size: 1.5d
+			dependencies: ["1A559A6BB038EF61"]
+			tasks: [{
+				id: "174D5E6EA2F18FFF"
+				type: "advancement"
+				advancement: "minecraft:end/elytra"
+			}]
+			rewards: [
+				{
+					id: "AB460CB2824657D3"
+					type: "xp"
+					xp: 800
+				}
+				{
+					id: "DE52BE7387F429F1"
+					type: "item"
+					item: {
+						Count: 32b
+						id: "minecraft:firework_rocket"
+					}
+				}
+				{
+					id: "7B88B3AE6FC4AE27"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "minecraft:phantom_membrane"
+					}
+				}
+			]
+		}
+		{
+			id: "02B4461D69F73E9A"
+			title: "Юра улетел"
+			description: ["Пуля шалкера поднимает в воздух. Поднимитесь на пятьдесят блоков — и надейтесь, что под вами окажется остров, а не пустота."]
+			x: 8.0d
+			y: 5.5d
+			icon: "minecraft:shulker_shell"
+			optional: true
+			dependencies: ["1A559A6BB038EF61"]
+			tasks: [{
+				id: "FF73856927E2DF20"
+				type: "advancement"
+				advancement: "minecraft:end/levitate"
+			}]
+			rewards: [
+				{
+					id: "15D93AD8B27843D2"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "FA79FB6806B009CA"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_slow_falling"
+						}
+					}
+				}
+				{
+					id: "3C8B956EAD039168"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "farmersdelight:milk_bottle"
+					}
+				}
+			]
+		}
+		{
+			id: "5827675D74CF8E0E"
+			title: "Сундук, который летает с тобой"
+			description: ["Два панциря шалкера и сундук — и выходит ящик, который не теряет содержимое. Соберите свой склад в кармане для дальних островов."]
+			x: 5.5d
+			y: 5.5d
+			icon: "minecraft:purple_shulker_box"
+			dependencies: ["1A559A6BB038EF61"]
+			tasks: [{
+				id: "AB037429BD505CC0"
+				type: "advancement"
+				title: "Получить ящик шалкера"
+				advancement: "nasledie:q/finale/shulker_box"
+			}]
+			rewards: [
+				{
+					id: "B30BC4205AC62667"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "5FE140A59A945FE2"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "sophisticatedstorage:shulker_box"
+					}
+				}
+			]
+		}
+	]
+}
+

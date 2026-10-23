@@ -1,962 +1,1072 @@
 {
-    filename: "nasledie_industry"
-    id: "21DEFD3CCFC622D0"
-    group: "842B4DB4DBD349A0"
-    title: "Промышленность — фабрика с результатом"
-    icon: "create:precision_mechanism"
-    order_index: 7
-    progression_mode: "flexible"
-    default_hide_dependency_lines: false
-    default_quest_shape: "gear"
-
-    quest_links: []
-    quests: [
-        {
-            id: "9A09307A8AC167F1"
-            title: "Латунь для самостоятельной фабрики"
-            x: 0.00d
-            y: 0.00d
-            icon: "create:brass_ingot"
-            shape: "gear"
-            size: 1.20d
-            description: [
-                "Получите латунный слиток: смешайте медь и цинк в чаше под миксером с нагревом от горелки. Латунь открывает точные механизмы, механические руки и более сложную сборку."
-                "В этой главе цель — освободить ваши руки: собрать точный механизм, научить руку переносить материалы и запустить мощную дробилку. Дополнительные маршруты ведут к проволоке на электроприводе, муке от дизельной мельницы и большой котельной. Выберите полезный для вашей базы результат и двигайтесь по его ветке."
-            ]
-            tasks: [
-                {
-                    id: "8A72E65DD3CF79C5"
-                    type: "advancement"
-                    advancement: "create:brass"
-                }
-            ]
-            rewards: [
-                {
-                    id: "E581D85438CDD01D"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "2CABC3B9CC32114B"
-                    type: "item"
-                    item: { Count: 1b, id: "createaddition:multimeter" }
-                }
-            ]
-        }
-        {
-            id: "2C5A509D463729FC"
-            title: "Корпус точных машин"
-            x: 2.50d
-            y: 0.00d
-            icon: "create:brass_casing"
-            shape: "gear"
-            size: 1.20d
-            dependencies: [
-                "9A09307A8AC167F1"
-            ]
-            description: [
-                "Примените латунь к обтёсанному бревну. Этот корпус понадобится для устройств, которые смогут выполнять повторяющиеся операции в вашей мастерской."
-            ]
-            tasks: [
-                {
-                    id: "DD6E7086E1ACE04F"
-                    type: "advancement"
-                    advancement: "create:brass_casing"
-                }
-            ]
-            rewards: [
-                {
-                    id: "2F4CCA74C378A5E2"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "DBE028A98D40EE19"
-                    type: "item"
-                    item: { Count: 1b, id: "createaddition:copper_spool" }
-                }
-            ]
-        }
-        {
-            id: "9D86DEEFC75B8B99"
-            title: "Кварц для управляющих деталей"
-            x: 5.00d
-            y: 0.00d
-            icon: "create:polished_rose_quartz"
-            shape: "gear"
-            size: 1.20d
-            dependencies: [
-                "2C5A509D463729FC"
-            ]
-            description: [
-                "Получите отполированный розовый кварц. Подготовьте розовый кварц и обработайте его наждачной бумагой по рецепту: следующий шаг — механическая рука-исполнитель."
-            ]
-            tasks: [
-                {
-                    id: "033E54B9A7F3C0E0"
-                    type: "advancement"
-                    advancement: "create:rose_quartz"
-                }
-            ]
-            rewards: [
-                {
-                    id: "192C2183B557018E"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "7CF4E9A2FBB61093"
-                    type: "item"
-                    item: { Count: 1b, id: "createaddition:capacitor" }
-                }
-            ]
-        }
-        {
-            id: "190D1B7281918ABB"
-            title: "Исполнитель берёт работу на себя"
-            x: 7.50d
-            y: 0.00d
-            icon: "create:deployer"
-            shape: "gear"
-            size: 1.20d
-            dependencies: [
-                "9D86DEEFC75B8B99"
-            ]
-            description: [
-                "Установите и запитайте вращением механическую руку-исполнитель. Она умеет применять предметы к деталям — это основа последовательной сборки точного механизма."
-                "Сначала разберитесь с одной операцией на депо. Подачу заготовок по ленте можно добавить, когда станет понятен порядок обработки."
-            ]
-            tasks: [
-                {
-                    id: "B8813D5F6FEEC239"
-                    type: "advancement"
-                    advancement: "create:deployer"
-                }
-            ]
-            rewards: [
-                {
-                    id: "E5FC9AF91832DDA3"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "E4BE26B7961DF6B3"
-                    type: "item"
-                    item: { Count: 1b, id: "createaddition:electrum_ingot" }
-                }
-            ]
-        }
-        {
-            id: "027C7ABF4F61942F"
-            title: "Точный механизм для новой ступени"
-            x: 10.00d
-            y: 0.00d
-            icon: "create:precision_mechanism"
-            shape: "gear"
-            size: 1.20d
-            dependencies: [
-                "190D1B7281918ABB"
-            ]
-            description: [
-                "Получите точный механизм. Заготовка проходит последовательную сборку: золотой лист, затем операции с малой шестернёй, большой шестернёй и железным самородком; последовательность повторяется пять раз."
-                "Сборка может дать побочный результат, поэтому подготовьте запас материалов. Успешный механизм откроет регулятор скорости и механическую руку — инструменты управляемой фабрики."
-            ]
-            tasks: [
-                {
-                    id: "8C91236BA3FAB740"
-                    type: "advancement"
-                    advancement: "create:precision_mechanism"
-                }
-            ]
-            rewards: [
-                {
-                    id: "FBD34A6E33E7237B"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "3FB5C8A7D1A9F7BB"
-                    type: "item"
-                    item: { Count: 1b, id: "createaddition:electrum_wire" }
-                }
-            ]
-        }
-        {
-            id: "D994CE2C8A394112"
-            title: "Настроить станок под задачу"
-            x: 12.50d
-            y: 0.00d
-            icon: "create:rotation_speed_controller"
-            shape: "gear"
-            size: 1.20d
-            dependencies: [
-                "027C7ABF4F61942F"
-            ]
-            description: [
-                "Отрегулируйте вращение контроллером скорости. Теперь можно подобрать темп конкретной машины без длинной цепочки ускоряющих передач. Следите также за запасом мощности."
-            ]
-            tasks: [
-                {
-                    id: "0AC0C8202464F892"
-                    type: "advancement"
-                    advancement: "create:speed_controller"
-                }
-            ]
-            rewards: [
-                {
-                    id: "E50EC7CE155EE48B"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "2314F68B4869E79C"
-                    type: "item"
-                    item: { Count: 1b, id: "createaddition:large_connector" }
-                }
-            ]
-        }
-        {
-            id: "1D168F928F039193"
-            title: "Рука действительно переносит груз"
-            x: 15.00d
-            y: 0.00d
-            icon: "create:mechanical_arm"
-            shape: "star"
-            size: 1.40d
-            dependencies: [
-                "D994CE2C8A394112"
-            ]
-            description: [
-                "Добейтесь первой передачи предмета механической рукой. До её установки назначьте места забора и выдачи взаимодействием с нужными блоками, затем установите руку и подайте вращение."
-                "Это первый законченный проект точной мастерской: материалы перемещаются между выбранными вами устройствами. В великих проектах такой принцип пригодится для снабжения горелок и нескольких рабочих мест."
-            ]
-            tasks: [
-                {
-                    id: "E1878BD4D6DD0319"
-                    type: "advancement"
-                    advancement: "create:mechanical_arm"
-                }
-            ]
-            rewards: [
-                {
-                    id: "D9688AD3FED0CC5E"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "D0CC9CCEE0F0F78A"
-                    type: "item"
-                    item: { Count: 1b, id: "createaddition:digital_adapter" }
-                }
-            ]
-        }
-        {
-            id: "0DC509B56847083F"
-            title: "Сборочный стенд для больших рецептов"
-            x: 10.00d
-            y: -2.50d
-            icon: "create:mechanical_crafter"
-            shape: "gear"
-            size: 1.20d
-            dependencies: ["027C7ABF4F61942F"]
-            description: [
-                "Установите и запитайте механические сборщики. Разложите их по схеме нужного рецепта и настройте направление передачи к выходу; встроенная анимация покажет принцип соединения."
-                "Первой большой целью станут дробящие колёса. Зачёт этого этапа подтверждает подключённые сборщики; изготовление и запуск колёс идут дальше."
-            ]
-            tasks: [
-                {
-                    id: "D6600544BA04DAD7"
-                    type: "advancement"
-                    advancement: "create:mechanical_crafter"
-                }
-            ]
-            rewards: [
-                {
-                    id: "4C7A65DB80916C18"
-                    type: "xp"
-                    xp: 180
-                }
-                {
-                    id: "87A3AD0447AA54DF"
-                    type: "item"
-                    item: { Count: 1b, id: "createaddition:portable_energy_interface" }
-                }
-                {
-                    id: "FB8C8DCACEAC30F2"
-                    type: "stage"
-                    stage: "nasledie_mechanical"
-                    add: true
-                    team_reward: false
-                }
-            ]
-        }
-        {
-            id: "B69AB097B2252286"
-            title: "Дробилка начинает вращаться"
-            x: 12.50d
-            y: -2.50d
-            icon: "create:crushing_wheel"
-            shape: "gear"
-            size: 1.20d
-            dependencies: [
-                "0DC509B56847083F"
-            ]
-            description: [
-                "Поставьте и запитайте пару дробящих колёс. Организуйте подачу материала между ними и сбор результата снизу. Здесь вы получите установку для глубокой переработки ресурсов."
-            ]
-            tasks: [
-                {
-                    id: "18BB1F3514FC9109"
-                    type: "advancement"
-                    advancement: "create:crushing_wheel"
-                }
-            ]
-            rewards: [
-                {
-                    id: "735592912EF40DCA"
-                    type: "xp"
-                    xp: 120
-                }
-                {
-                    id: "3751DA395B0C4BD5"
-                    type: "item"
-                    item: { Count: 1b, id: "createaddition:heater" }
-                }
-            ]
-        }
-        {
-            id: "11C8B2178B32ACA1"
-            title: "Стан для будущей электросети"
-            x: 10.00d
-            y: 2.50d
-            icon: "createaddition:rolling_mill"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: ["027C7ABF4F61942F"]
-            description: [
-                "Установите прокатный стан: он превращает металлические слитки в стержни, а листы — в проволоку. Сначала дайте ему вращение от уже освоенного механического привода и подготовьте детали для первой проводки."
-                "Цель этой ветки — перевести стан на электродвигатель и выпускать новую проволоку вдали от исходного привода. Дальше вы поставите разъёмы, получите катушку, генератор и накопитель; в финале линия выполнит контрольный заказ."
-            ]
-            tasks: [
-                {
-                    id: "F2942C0D358F53CE"
-                    type: "advancement"
-                    advancement: "nasledie:setup/industry/rolling_mill"
-                }
-            ]
-            rewards: [
-                {
-                    id: "EC188655E622ECD4"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "A4D9D800E50ECB11"
-                    type: "item"
-                    item: { Count: 1b, id: "createaddition:biomass_pellet" }
-                }
-            ]
-        }
-        {
-            id: "7902F08D734F15A4"
-            title: "Катушка для первой линии"
-            x: 15.00d
-            y: 2.50d
-            icon: "createaddition:copper_wire"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: ["6FCBB312002617A1"]
-            description: [
-                "Получите медную катушку Create Crafts & Additions. Проволока — материал для изготовления; соединять электрические узлы нужно именно катушкой."
-                "Подготовив разъёмы, последовательно выберите катушкой два совместимых узла. После этого сможете связать генератор, накопитель и электродвигатель. Этот шаг отмечает наличие катушки, а не завершение всей сети."
-            ]
-            tasks: [
-                {
-                    id: "DEFEA01A25B34722"
-                    type: "advancement"
-                    advancement: "nasledie:alpha34/actions/defea01a25b34722"
-                }
-            ]
-            rewards: [
-                {
-                    id: "0CA594C2CB8B3ECD"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "7C538D8B6E94AA0C"
-                    type: "item"
-                    item: { Count: 1b, id: "createaddition:redstone_relay" }
-                }
-            ]
-        }
-        {
-            id: "6FCBB312002617A1"
-            title: "Точки подключения"
-            x: 12.50d
-            y: 2.50d
-            icon: "createaddition:connector"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: ["11C8B2178B32ACA1"]
-            description: [
-                "Поставьте электрический разъём. Продумайте короткую линию между будущим генератором, накопителем и потребителем: разъёмы нужны для организации проводов, а не для выработки энергии."
-            ]
-            tasks: [
-                {
-                    id: "21FD0D567859EF0E"
-                    type: "advancement"
-                    advancement: "nasledie:setup/industry/connector"
-                }
-            ]
-            rewards: [
-                {
-                    id: "4CDDAAB852006341"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "B6D7A0DB9629E044"
-                    type: "item"
-                    item: { Count: 1b, id: "createaddition:iron_rod" }
-                }
-            ]
-        }
-        {
-            id: "00CCE8A0C6DB132B"
-            title: "От вращения к электричеству"
-            x: 17.50d
-            y: 2.50d
-            icon: "createaddition:alternator"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: ["7902F08D734F15A4"]
-            description: [
-                "Поставьте генератор переменного тока. Его назначение — превращать механическое вращение в электрическую энергию для вашей линии. Подведите вал от подготовленного источника и соедините выход катушкой."
-                "Сейчас отмечается установка генератора; фактическую выработку смотрите по показателям оборудования."
-            ]
-            tasks: [
-                {
-                    id: "3FA4351B2BD8DC98"
-                    type: "advancement"
-                    advancement: "nasledie:setup/industry/alternator"
-                }
-            ]
-            rewards: [
-                {
-                    id: "B91F9D7522B8F8B4"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "810148289CE66B37"
-                    type: "item"
-                    item: { Count: 1b, id: "createaddition:brass_rod" }
-                }
-            ]
-        }
-        {
-            id: "6B646181101275F1"
-            title: "Запас для электрической линии"
-            x: 20.00d
-            y: 2.50d
-            icon: "createaddition:modular_accumulator"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: [
-                "00CCE8A0C6DB132B"
-            ]
-            description: [
-                "Поставьте модульный накопитель. Он нужен между выработкой энергии и её потреблением, чтобы запасать электричество. Проверьте направления соединений и показатели заряда перед подключением двигателя."
-            ]
-            tasks: [
-                {
-                    id: "023729190D0BF4C2"
-                    type: "advancement"
-                    advancement: "nasledie:setup/industry/modular_accumulator"
-                }
-            ]
-            rewards: [
-                {
-                    id: "53EC757670348A5E"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "A5B0B39B1704BEE0"
-                    type: "item"
-                    item: { Count: 1b, id: "createdieselgenerators:engine_silencer" }
-                }
-            ]
-        }
-        {
-            id: "C90C2277CD8D5A1A"
-            title: "Электропривод у рабочего места"
-            x: 22.50d
-            y: 2.50d
-            icon: "createaddition:electric_motor"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: [
-                "6B646181101275F1"
-            ]
-            description: [
-                "Поставьте электродвигатель у прокатного стана. Генератор превращает вращение в электричество, а этот двигатель выполняет обратную работу: позволяет доставить энергию проводами и получить вращение у потребителя."
-                "Соедините разъёмы катушкой, подайте энергию на двигатель и передайте его вращение стану. Проверьте заряд, соединения и нагрузку. Следующий шаг — выпустить медную проволоку на собранном приводе; одного монтажа для производственного финала недостаточно."
-            ]
-            tasks: [
-                {
-                    id: "5E9BB87B9EFC37A5"
-                    type: "advancement"
-                    advancement: "nasledie:setup/industry/electric_motor"
-                }
-            ]
-            rewards: [
-                {
-                    id: "1B9DE80EE3D6ACF3"
-                    type: "xp"
-                    xp: 170
-                }
-                {
-                    id: "7499B3D932924D2B"
-                    type: "item"
-                    item: { Count: 1b, id: "createdieselgenerators:canister" }
-                }
-                {
-                    id: "7C6988D2C90929F6"
-                    type: "stage"
-                    stage: "nasledie_electric"
-                    add: true
-                    team_reward: false
-                }
-            ]
-        }
-        {
-            id: "DBE167F5106C0134"
-            title: "Разведка нефтяного участка"
-            x: 10.00d
-            y: -5.00d
-            icon: "createdieselgenerators:oil_scanner"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: [
-                "0DC509B56847083F"
-            ]
-            description: [
-                "Держите в основной руке нефтяной сканер с показанием типа 2 или 3. Найдите участок с подходящим сигналом и отметьте его для возвращения с оборудованием."
-                "Нефтяная ветка ведёт к компактной мельнице на дизеле: топливо позволит обустроить производство у дальней базы. Первое измерение помогает выбрать место; затем предстоят добыча, переработка и запуск двигателя."
-            ]
-            tasks: [
-                {
-                    id: "2B6B454C5A6480E5"
-                    type: "advancement"
-                    advancement: "nasledie:alpha35/engineering/dbe167f5106c0134"
-                }
-            ]
-            rewards: [
-                {
-                    id: "8C92467722583019"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "FB37178403961785"
-                    type: "item"
-                    item: { Count: 1b, id: "createdieselgenerators:hammer" }
-                }
-            ]
-        }
-        {
-            id: "DF4913690DFB0B64"
-            title: "Место для перегонки"
-            x: 12.50d
-            y: -5.00d
-            icon: "createdieselgenerators:distillation_controller"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: [
-                "DBE167F5106C0134"
-            ]
-            description: [
-                "Примените контроллер перегонной установки к блоку при её монтаже. Разберитесь с устройством колонны по внутриигровой инструкции мода и оставьте место для труб и продуктов переработки."
-                "Этот этап фиксирует применение контроллера. Полноту колонны он не подтверждает; следующим осязаемым результатом станет ведро дизельного топлива."
-            ]
-            tasks: [
-                {
-                    id: "F9CFED8252A6B4A4"
-                    type: "advancement"
-                    advancement: "nasledie:alpha34/actions/f9cfed8252a6b4a4"
-                }
-            ]
-            rewards: [
-                {
-                    id: "97E4D623EB7C78FE"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "74C149CDAA56155A"
-                    type: "item"
-                    item: { Count: 1b, id: "createdieselgenerators:sheet_metal_panel" }
-                }
-            ]
-        }
-        {
-            id: "DC984DF9A7FB8BA2"
-            title: "Топливо для экспедиционной базы"
-            x: 15.00d
-            y: -5.00d
-            icon: "createdieselgenerators:diesel_bucket"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: [
-                "DF4913690DFB0B64"
-            ]
-            description: [
-                "Получите ведро дизельного топлива. Сырая нефть и готовое топливо — разные материалы: сверяйте рецепт переработки. Ведро останется у вас для дальнейшего использования."
-            ]
-            tasks: [
-                {
-                    id: "9CE67EBEB573AC11"
-                    type: "item"
-                    item: "createdieselgenerators:diesel_bucket"
-                    count: 1L
-                    consume_items: false
-                }
-            ]
-            rewards: [
-                {
-                    id: "7C3C23D369DB6BE5"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "843814ADDF436DB8"
-                    type: "item"
-                    item: { Count: 1b, id: "createdieselgenerators:asphalt_block" }
-                }
-            ]
-        }
-        {
-            id: "6185039BCD7BBF2F"
-            title: "Двигатель для походной мельницы"
-            x: 17.50d
-            y: -5.00d
-            icon: "createdieselgenerators:diesel_engine"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: [
-                "DC984DF9A7FB8BA2"
-            ]
-            description: [
-                "Установите обычный дизельный двигатель рядом с жерновами Create. Это отдельный источник вращения для мест, куда неудобно тянуть длинный вал: подготовьте бак с дизелем и соедините вращающийся выход с жерновами."
-                "Сейчас требуется монтаж. После знакомства с турбонаддувом ветка завершится контрольным помолом пшеницы на этом приводе."
-            ]
-            tasks: [
-                {
-                    id: "0439A5462CE90EDF"
-                    type: "advancement"
-                    advancement: "nasledie:setup/industry/diesel_engine"
-                }
-            ]
-            rewards: [
-                {
-                    id: "B7300046387F6098"
-                    type: "xp"
-                    xp: 170
-                }
-                {
-                    id: "CCBFB7AC78AC42F5"
-                    type: "item"
-                    item: { Count: 1b, id: "createdieselgenerators:chemical_sprayer" }
-                }
-                {
-                    id: "DAF103A5D9DAD986"
-                    type: "stage"
-                    stage: "nasledie_diesel"
-                    add: true
-                    team_reward: false
-                }
-            ]
-        }
-        {
-            id: "01A997FB916A7F84"
-            title: "Турбонаддув для двигателя"
-            x: 20.00d
-            y: -5.00d
-            icon: "createdieselgenerators:engine_turbocharger"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: [
-                "6185039BCD7BBF2F"
-            ]
-            description: [
-                "Примените турбонагнетатель к дизельному двигателю. Взаимодействие знакомит с дополнением; успешную установку и изменение характеристик проверьте на самом двигателе."
-                "Оборудование готово к полезной работе. Следующий шаг — жернова на дизельном приводе: смелите пшеницу и получите муку для будущих походных припасов."
-            ]
-            tasks: [
-                {
-                    id: "6A62BC56D5E2388A"
-                    type: "advancement"
-                    advancement: "nasledie:alpha35/engineering/01a997fb916a7f84"
-                }
-            ]
-            rewards: [
-                {
-                    id: "551FECB60FF91F0C"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "6F6EFF457528DE10"
-                    type: "item"
-                    item: { Count: 1b, id: "createdieselgenerators:kelp_handle" }
-                }
-            ]
-        }
-        {
-            id: "A7CEF6292A89B0A2"
-            title: "Топливный резерв котельной"
-            x: 0.00d
-            y: 5.00d
-            icon: "create:hose_pulley"
-            shape: "gear"
-            size: 1.20d
-            dependencies: []
-            description: [
-                "Откачивайте лаву из водоёма, который Create признаёт бесконечным источником. Выберите удобный доступ для шланга и продумайте дальнейшую доставку топлива."
-                "Это самостоятельный проект мощной котельной. Опыт с обычным паровым двигателем из главы Create поможет связать воду, нагрев и требуемую нагрузку."
-            ]
-            tasks: [
-                {
-                    id: "75486B0EF382F940"
-                    type: "advancement"
-                    advancement: "create:hose_pulley_lava"
-                }
-            ]
-            rewards: [
-                {
-                    id: "6448CE0A0DBB99B3"
-                    type: "xp"
-                    xp: 150
-                }
-                {
-                    id: "A01B8BE9D4B39DBD"
-                    type: "item"
-                    item: { Count: 1b, id: "create:stock_ticker" }
-                }
-            ]
-        }
-        {
-            id: "41102025AA038BF1"
-            title: "Котельная полной мощности"
-            x: 2.50d
-            y: 5.00d
-            icon: "create:steam_engine"
-            shape: "gear"
-            size: 1.20d
-            dependencies: [
-                "A7CEF6292A89B0A2"
-            ]
-            description: [
-                "Запустите котёл на максимальном уровне мощности. Проверьте три ограничения: размеры резервуара, достаточную подачу воды и нагрев."
-                "Такой источник рассчитан на большой производственный узел. Подключайте станки постепенно и наблюдайте запас нагрузки; дальше можно испытать сеть на точном пределе."
-            ]
-            tasks: [
-                {
-                    id: "FECC2C5691AD3F4F"
-                    type: "advancement"
-                    advancement: "create:steam_engine_maxed"
-                }
-            ]
-            rewards: [
-                {
-                    id: "E26D3CC8521F314F"
-                    type: "xp"
-                    xp: 240
-                }
-                {
-                    id: "DF189615722E87F1"
-                    type: "item"
-                    item: { Count: 1b, id: "create:steam_whistle" }
-                }
-                {
-                    id: "6905F21F482DE359"
-                    type: "stage"
-                    stage: "nasledie_industrial"
-                    add: true
-                    team_reward: false
-                }
-            ]
-        }
-        {
-            id: "D6494B4749F6037E"
-            title: "Юра на границе перегрузки"
-            x: 5.00d
-            y: 5.00d
-            icon: "create:stressometer"
-            shape: "star"
-            size: 1.40d
-            optional: true
-            dependencies: [
-                "41102025AA038BF1"
-            ]
-            description: [
-                "Добейтесь показания ровно 100% на измерителе нагрузки. Юра подбирает подключённые станки, Максим следит за шкалой. Это отдельное испытание точной настройки, а не требование постоянно держать фабрику на пределе."
-            ]
-            tasks: [
-                {
-                    id: "D4C9C14DC24FA669"
-                    type: "advancement"
-                    advancement: "create:stressometer_maxed"
-                }
-            ]
-            rewards: [
-                {
-                    id: "31F862036AAA5669"
-                    type: "xp"
-                    xp: 160
-                }
-                {
-                    id: "BA94AAEE21E799C7"
-                    type: "item"
-                    item: { Count: 1b, id: "create:brass_hand" }
-                }
-            ]
-        }
-    
-
-        {
-            id: "B5E6A417D0B2682F"
-            title: "Сборщик никуда не спешит"
-            x: 7.50d
-            y: -2.50d
-            icon: "create:mechanical_crafter"
-            shape: "star"
-            size: 1.40d
-            optional: true
-            dependencies: [
-                "0DC509B56847083F"
-            ]
-            description: [
-                "Сильно замедлите работающий механический сборщик, чтобы получить скрытое достижение Create. Небольшой опыт показывает, почему доступная скорость важна для большой сборочной линии."
-            ]
-            tasks: [
-                {
-                    id: "3307EAB3DEADF532"
-                    type: "advancement"
-                    advancement: "create:crafter_lazy_000"
-                }
-            ]
-            rewards: [
-                {
-                    id: "8166A00114DF1F33"
-                    type: "xp"
-                    xp: 125
-                }
-                {
-                    id: "97B9CCBCCFFC88A3"
-                    type: "item"
-                    item: { Count: 2b, id: "create:chain_conveyor" }
-                }
-            ]
-        }
-        {
-            id: "4CE999FF8FB4E62F"
-            title: "Дробильный цех на полной скорости"
-            x: 15.00d
-            y: -2.50d
-            icon: "create:crushing_wheel"
-            shape: "star"
-            size: 1.40d
-            optional: true
-            dependencies: [
-                "B69AB097B2252286"
-            ]
-            description: [
-                "Запустите пару дробящих колёс на максимальной скорости. Обеспечьте достаточную мощность и понятную подачу материала. Это финал маршрута от латуни и сборочного стенда к высокоскоростной переработке."
-            ]
-            tasks: [
-                {
-                    id: "7FC171C3FF0969FE"
-                    type: "advancement"
-                    advancement: "create:crusher_maxed_0000"
-                }
-            ]
-            rewards: [
-                {
-                    id: "856825421171F226"
-                    type: "xp"
-                    xp: 180
-                }
-                {
-                    id: "A2E53BE6BE5CF1DE"
-                    type: "item"
-                    item: { Count: 2b, id: "create:smart_chute" }
-                }
-            ]
-        }
-        {
-            id: "43927DB0D42A5F58"
-            title: "Проволока от электропривода"
-            x: 25.00d
-            y: 2.50d
-            icon: "createaddition:copper_wire"
-            shape: "star"
-            size: 1.50d
-            optional: true
-            dependencies: ["C90C2277CD8D5A1A"]
-            description: [
-                "Запустите прокатный стан от электродвигателя и превратите один медный лист Create в две медные проволоки. Теперь ваша электрическая линия делает материал для собственного расширения: из проволоки собираются катушки для новых соединений."
-                "Подведите электричество к двигателю через разъём и катушку, затем соедините его вращающийся выход со станом напрямую или валами и шестернями. Генератору нужен отдельный механический привод; накопитель позволяет использовать запас заряда. Замкнутый круг «двигатель → генератор → тот же двигатель» не создаёт энергию."
-                "Медный лист получается из медного слитка под прессом. В стане слиток даст стержни, а для этой цели нужна именно проволока из листа. При необходимости смотрите рецепт предмета и встроенные сцены с устройством станков."
-                "Для зачёта сделайте контрольный выпуск: освободите выход стана, временно отключите автоматическую подачу и выгрузку. Возьмите обычные часы в основную руку и нажмите ими правой кнопкой по вращающемуся стану. Затем в течение минуты положите на вход ровно один медный лист; часы можно убрать, чтобы открыть стан."
-                "Дождитесь сообщения об успешном выпуске, прежде чем забирать проволоку. Оставайтесь не дальше 16 блоков; для опыта используйте короткий привод до 32 звеньев. Максим может наблюдать, а Юра — подавать лист. После выхода из игры незаконченный опыт нужно начать часами заново."
-                "Четыре латунные воронки из награды помогут превратить контрольный стан в постоянную линию: настройте подачу листов и выдачу проволоки, затем добавляйте новые рабочие места по мере необходимости."
-            ]
-            tasks: [
-                {"id": "43DA5FE12471C262", "type": "advancement", "advancement": "nasledie:alpha43/industry/electric_wire", "title": "Прокатать медный лист на электроприводе"}
-            ]
-            rewards: [
-                { id: "43609D0BB3655592" type: "xp" xp: 300 }
-                { id: "43830694594B33E9" type: "item" item: { id: "create:brass_funnel" Count: 4b } }
-            ]
-        }
-        {
-            id: "43CE9DDCB2EF166C"
-            title: "Походная мельница на дизеле"
-            x: 22.50d
-            y: -5.00d
-            icon: "create:wheat_flour"
-            shape: "star"
-            size: 1.50d
-            optional: true
-            dependencies: ["01A997FB916A7F84"]
-            description: [
-                "Запустите жернова Create от обычного дизельного двигателя и смелите одну пшеницу в муку. Такой компактный привод пригодится для мастерской у дальней базы: вы сами выбираете место и привозите запас топлива."
-                "Залейте дизель в бак двигателя и передайте вращение жерновам напрямую или валами и шестернями. Проверьте, что источник действительно работает и нагрузка не остановила линию. В этом опыте используется обычный одноблочный двигатель и именно дизельное топливо."
-                "Для зачёта освободите выход жерновов и временно отключите автоматическую подачу и выгрузку. Возьмите обычные часы в основную руку и нажмите ими правой кнопкой по вращающимся жерновам. Затем в течение минуты подайте ровно одну пшеницу; часы можно убрать, чтобы открыть жернова."
-                "Дождитесь сообщения об успешном помоле, прежде чем забирать муку. Оставайтесь не дальше 16 блоков и используйте короткий привод до 32 звеньев. Иногда жернова дают дополнительную муку или семена — такой результат тоже подходит. После выхода из игры незаконченный опыт нужно начать часами заново."
-                "Дальше превращайте муку в тесто и хлеб знакомым способом из главы Create, верните автоматическую подачу и готовьте припасы для новых вылазок. Восемь порций мяса с картофелем из награды накормят вас, пока вы обустраиваете производство."
-            ]
-            tasks: [
-                {"id": "43D5DC583A7E887D", "type": "advancement", "advancement": "nasledie:alpha43/industry/diesel_flour", "title": "Смолоть пшеницу от дизельного двигателя"}
-            ]
-            rewards: [
-                { id: "43A69B423A4DE45F" type: "xp" xp: 300 }
-                { id: "430ACBBAEF2DDB2B" type: "item" item: { id: "farmersdelight:steak_and_potatoes" Count: 8b } }
-            ]
-        }
-]
+	filename: "nasledie_industry"
+	id: "21DEFD3CCFC622D0"
+	group: "C513A3C540C2F7E2"
+	title: "Промышленность и артиллерия"
+	icon: "create:precision_mechanism"
+	order_index: 10
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	progression_mode: "flexible"
+	quest_links: [
+		{
+			id: "126B842888A8762D"
+			linked_quest: "391F9987F1F32442"
+			x: -3.5d
+			y: -3.5d
+			shape: "star"
+			size: 1.4d
+		}
+		{
+			id: "ECEE849D0CA051B8"
+			linked_quest: "8792C39846E0D49E"
+			x: -6.5d
+			y: -3.5d
+			shape: "crown"
+			size: 1.5d
+		}
+	]
+	quests: [
+		{
+			id: "9A09307A8AC167F1"
+			title: "Латунь для самостоятельной фабрики"
+			description: ["Медь и цинк, смешанные в нагретой чаше, дают латунь — металл второй ступени. Из неё делают механизмы, которые думают сами."]
+			x: 0.0d
+			y: 0.0d
+			icon: "create:brass_ingot"
+			shape: "star"
+			size: 1.7d
+			dependencies: ["49C8A0032E4C0E17"]
+			tasks: [{
+				id: "399F577917CAB297"
+				type: "advancement"
+				advancement: "create:brass"
+			}]
+			rewards: [
+				{
+					id: "76F7D56FAD00305D"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "7E18B036CD197B41"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "createaddition:multimeter"
+					}
+				}
+			]
+		}
+		{
+			id: "2C5A509D463729FC"
+			title: "Корпус точных машин"
+			description: ["Латунный корпус — основа для умных станков: роботов-исполнителей, механических рук и сборщиков."]
+			x: 0.0d
+			y: -3.0d
+			icon: "create:brass_casing"
+			dependencies: ["9A09307A8AC167F1"]
+			tasks: [{
+				id: "5C01AE515C6A98BB"
+				type: "advancement"
+				advancement: "create:brass_casing"
+			}]
+			rewards: [
+				{
+					id: "9BCC692C37FDB750"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "B735F6B0139764BB"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "create:brass_hand"
+					}
+				}
+			]
+		}
+		{
+			id: "9D86DEEFC75B8B99"
+			title: "Кварц для управляющих деталей"
+			description: ["Розовый кварц, отполированный на ленте с наждаком, проводит сигналы. Без него не собрать точный механизм."]
+			x: 0.0d
+			y: -5.5d
+			icon: "create:polished_rose_quartz"
+			dependencies: ["2C5A509D463729FC"]
+			tasks: [{
+				id: "06454BF495523616"
+				type: "advancement"
+				advancement: "create:rose_quartz"
+			}]
+			rewards: [
+				{
+					id: "221010F58EBEF560"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "AAF22F8889493D04"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "createaddition:capacitor"
+					}
+				}
+			]
+		}
+		{
+			id: "190D1B7281918ABB"
+			title: "Исполнитель берёт работу на себя"
+			description: ["Механический исполнитель держит предмет и применяет его, как игрок. Ставит, бьёт, жмёт кнопки — без вас."]
+			x: 0.0d
+			y: -8.0d
+			icon: "create:deployer"
+			dependencies: ["9D86DEEFC75B8B99"]
+			tasks: [{
+				id: "AAD3DC9E867AD1C7"
+				type: "advancement"
+				advancement: "create:deployer"
+			}]
+			rewards: [
+				{
+					id: "B02289FBD2687FD1"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "3A1C69EC1BD03215"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "createaddition:electrum_ingot"
+					}
+				}
+			]
+		}
+		{
+			id: "027C7ABF4F61942F"
+			title: "Точный механизм"
+			description: ["Соберите точный механизм на линии сборки. Это ключ ко всем машинам третьей ступени — и к поездам."]
+			x: 0.0d
+			y: -10.5d
+			icon: "create:precision_mechanism"
+			shape: "star"
+			size: 1.4d
+			dependencies: ["190D1B7281918ABB"]
+			tasks: [{
+				id: "98FA919A30E456A4"
+				type: "advancement"
+				advancement: "create:precision_mechanism"
+			}]
+			rewards: [
+				{
+					id: "86BBC93A57907CCA"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "A0B22211DC000441"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "createaddition:electrum_wire"
+					}
+				}
+			]
+		}
+		{
+			id: "1D168F928F039193"
+			title: "Рука переносит груз"
+			description: ["Механическая рука берёт предметы из одного места и кладёт в другое. Настройте ей вход и выход."]
+			x: 2.5d
+			y: -12.0d
+			icon: "create:mechanical_arm"
+			dependencies: ["027C7ABF4F61942F"]
+			tasks: [{
+				id: "7497BBF91EA2AC1E"
+				type: "advancement"
+				advancement: "create:mechanical_arm"
+			}]
+			rewards: [
+				{
+					id: "17036D45D3B564CF"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "1F72A560B842FD37"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "createaddition:digital_adapter"
+					}
+				}
+			]
+		}
+		{
+			id: "D994CE2C8A394112"
+			title: "Настроить станок под задачу"
+			description: ["Регулятор скорости задаёт точные обороты. Одним станкам нужно медленно, другим — быстро."]
+			x: -2.5d
+			y: -12.0d
+			icon: "create:rotation_speed_controller"
+			dependencies: ["027C7ABF4F61942F"]
+			tasks: [{
+				id: "14A6ACEAD4D87F2E"
+				type: "advancement"
+				advancement: "create:speed_controller"
+			}]
+			rewards: [
+				{
+					id: "C7E382F660A4FE32"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "6D40D9D28D20329F"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "createaddition:large_connector"
+					}
+				}
+			]
+		}
+		{
+			id: "0DC509B56847083F"
+			title: "Сборочный стенд для больших рецептов"
+			description: ["Механические сборщики складывают рецепты больше верстака. Соедините несколько в решётку."]
+			x: 0.0d
+			y: -13.5d
+			icon: "create:mechanical_crafter"
+			dependencies: ["027C7ABF4F61942F"]
+			tasks: [{
+				id: "25C906111EBA8D8D"
+				type: "advancement"
+				advancement: "create:mechanical_crafter"
+			}]
+			rewards: [
+				{
+					id: "AFF50A3D63349FFB"
+					type: "xp"
+					xp: 180
+				}
+				{
+					id: "BE28745E6A3D98E6"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "createaddition:portable_energy_interface"
+					}
+				}
+			]
+		}
+		{
+			id: "B5E6A417D0B2682F"
+			title: "Сборщик никуда не спешит"
+			description: ["Запустите сборщиков на самой низкой скорости и посмотрите, как они справляются. Медленно, зато верно."]
+			x: -2.5d
+			y: -15.0d
+			icon: "create:mechanical_crafter"
+			shape: "circle"
+			optional: true
+			dependencies: ["0DC509B56847083F"]
+			tasks: [{
+				id: "3982A6639C3C4AED"
+				type: "advancement"
+				advancement: "create:crafter_lazy_000"
+			}]
+			rewards: [
+				{
+					id: "CC78C03245852D93"
+					type: "xp"
+					xp: 125
+				}
+				{
+					id: "2D27257C2BA4308E"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "create:chain_conveyor"
+					}
+				}
+			]
+		}
+		{
+			id: "B69AB097B2252286"
+			title: "Дробилка начинает вращаться"
+			description: ["Пара дробильных колёс перемалывает руду в крошку — из неё выходит больше металла."]
+			x: 0.0d
+			y: -16.5d
+			icon: "create:crushing_wheel"
+			dependencies: ["0DC509B56847083F"]
+			tasks: [{
+				id: "886B1FAC1D81FF7F"
+				type: "advancement"
+				advancement: "create:crushing_wheel"
+			}]
+			rewards: [
+				{
+					id: "B0C72885AB43E780"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "1DF6F4A9A8A9FC48"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "createaddition:heater"
+					}
+				}
+			]
+		}
+		{
+			id: "4CE999FF8FB4E62F"
+			title: "Дробильный цех на полной скорости"
+			description: ["Разгоните дробилку до максимума. Руда превращается в крошку быстрее, чем вы её подносите."]
+			x: 2.5d
+			y: -18.0d
+			icon: "create:crushed_raw_iron"
+			shape: "circle"
+			optional: true
+			dependencies: ["B69AB097B2252286"]
+			tasks: [{
+				id: "5B52954F4613FD70"
+				type: "advancement"
+				advancement: "create:crusher_maxed_0000"
+			}]
+			rewards: [
+				{
+					id: "30194114DEC7FEAC"
+					type: "xp"
+					xp: 180
+				}
+				{
+					id: "46990F51DDBDD913"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "create:smart_chute"
+					}
+				}
+			]
+		}
+		{
+			id: "11C8B2178B32ACA1"
+			title: "Стан для будущей электросети"
+			description: ["Прокатный стан делает из листов проволоку, а из слитков — стержни. Начало всей электрической ветки."]
+			x: 3.5d
+			y: 0.0d
+			icon: "createaddition:rolling_mill"
+			dependencies: ["9A09307A8AC167F1"]
+			tasks: [{
+				id: "E06621CD7D93E574"
+				type: "advancement"
+				advancement: "nasledie:setup/industry/rolling_mill"
+				title: "Поставить прокатный стан"
+			}]
+			rewards: [
+				{
+					id: "4F3E0C85735C6611"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "81BD7E7190D86854"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "createaddition:biomass_pellet"
+					}
+				}
+			]
+		}
+		{
+			id: "6FCBB312002617A1"
+			title: "Точки подключения"
+			description: ["Коннекторы — опоры для проводов. Поставьте первый у будущего генератора."]
+			x: 6.0d
+			y: 0.0d
+			icon: "createaddition:connector"
+			dependencies: ["11C8B2178B32ACA1"]
+			tasks: [{
+				id: "19EDD86FD9771DA6"
+				type: "advancement"
+				advancement: "nasledie:setup/industry/connector"
+				title: "Поставить коннектор"
+			}]
+			rewards: [
+				{
+					id: "67688A4E7FDE506A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "3AD2D4E065EBE4A8"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "createaddition:iron_rod"
+					}
+				}
+			]
+		}
+		{
+			id: "7902F08D734F15A4"
+			title: "Катушка для первой линии"
+			description: ["Намотайте медную проволоку на катушку. Ею соединяют коннекторы."]
+			x: 8.5d
+			y: 0.0d
+			icon: "createaddition:copper_spool"
+			dependencies: ["6FCBB312002617A1"]
+			tasks: [{
+				id: "CFF4D24EA8CB30DC"
+				type: "advancement"
+				advancement: "nasledie:alpha34/actions/defea01a25b34722"
+				title: "Получить медную катушку"
+			}]
+			rewards: [
+				{
+					id: "8DDFE34C4B99C580"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7E0A01D9AA4738DA"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "createaddition:redstone_relay"
+					}
+				}
+			]
+		}
+		{
+			id: "00CCE8A0C6DB132B"
+			title: "От вращения к электричеству"
+			description: ["Генератор превращает вращение в электричество. Подведите к нему вал от колеса или пара."]
+			x: 11.0d
+			y: 0.0d
+			icon: "createaddition:alternator"
+			dependencies: ["7902F08D734F15A4"]
+			tasks: [{
+				id: "5B591768218157E2"
+				type: "advancement"
+				advancement: "nasledie:setup/industry/alternator"
+				title: "Поставить генератор"
+			}]
+			rewards: [
+				{
+					id: "F07CD2B861952214"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "B335ED1C947EC1FC"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "createaddition:brass_rod"
+					}
+				}
+			]
+		}
+		{
+			id: "6B646181101275F1"
+			title: "Запас для электросети"
+			description: ["Аккумулятор копит энергию между выработкой и расходом. Без него станки встают, как только стихнет ветер."]
+			x: 13.5d
+			y: 0.0d
+			icon: "createaddition:modular_accumulator"
+			dependencies: ["00CCE8A0C6DB132B"]
+			tasks: [{
+				id: "D6EDDDDFCC22F45D"
+				type: "advancement"
+				advancement: "nasledie:setup/industry/modular_accumulator"
+				title: "Поставить аккумулятор"
+			}]
+			rewards: [
+				{
+					id: "AA4459209A61B4AD"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "B80AD9844A72C628"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "createaddition:tesla_coil"
+					}
+				}
+			]
+		}
+		{
+			id: "C90C2277CD8D5A1A"
+			title: "Электропривод у станка"
+			description: ["Электромотор даёт вращение там, куда дотянулся провод. Поставьте его у рабочего места."]
+			x: 16.0d
+			y: 0.0d
+			icon: "createaddition:electric_motor"
+			dependencies: ["6B646181101275F1"]
+			tasks: [{
+				id: "B1BD13AAE8E3BEC5"
+				type: "advancement"
+				advancement: "nasledie:setup/industry/electric_motor"
+				title: "Поставить электромотор"
+			}]
+			rewards: [
+				{
+					id: "62AD6A846536EF32"
+					type: "xp"
+					xp: 170
+				}
+				{
+					id: "17EE50EC20C8E1D9"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "createaddition:electrum_spool"
+					}
+				}
+			]
+		}
+		{
+			id: "43927DB0D42A5F58"
+			title: "Проволока от электропривода"
+			description: ["Пусть прокатный стан на электромоторе превратит медный лист в проволоку. Ударьте вращающийся стан обычными часами и в течение минуты положите на вход один лист — сервер проследит, что работает именно электропривод."]
+			x: 18.5d
+			y: 0.0d
+			icon: "createaddition:copper_wire"
+			shape: "star"
+			size: 1.4d
+			dependencies: ["C90C2277CD8D5A1A"]
+			tasks: [{
+				id: "FA216F7C2803FAD2"
+				type: "advancement"
+				advancement: "nasledie:alpha43/industry/electric_wire"
+				title: "Контрольный выпуск проволоки"
+			}]
+			rewards: [
+				{
+					id: "B0B9C05FE48D994F"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "804D765E65BDF3D5"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "create:brass_funnel"
+					}
+				}
+			]
+		}
+		{
+			id: "DBE167F5106C0134"
+			title: "Разведка нефтяного участка"
+			description: ["Нефтяной сканер в руке показывает, есть ли под ногами нефть. Найдите участок с хорошим сигналом."]
+			x: 0.0d
+			y: 3.5d
+			icon: "createdieselgenerators:oil_scanner"
+			dependencies: ["9A09307A8AC167F1"]
+			tasks: [{
+				id: "1FE22CCE1D82C3ED"
+				type: "advancement"
+				advancement: "nasledie:alpha35/engineering/dbe167f5106c0134"
+				title: "Найти нефть сканером"
+			}]
+			rewards: [
+				{
+					id: "F46B1EAD4646D01F"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "0A8A9EC5DEB597DE"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "createdieselgenerators:hammer"
+					}
+				}
+			]
+		}
+		{
+			id: "DF4913690DFB0B64"
+			title: "Место для перегонки"
+			description: ["Перегонная колонна разделяет нефть на топливо. Поставьте её контроллер и соберите колонну."]
+			x: 0.0d
+			y: 6.0d
+			icon: "createdieselgenerators:distillation_controller"
+			dependencies: ["DBE167F5106C0134"]
+			tasks: [{
+				id: "B56C5CF7F368F6D2"
+				type: "advancement"
+				advancement: "nasledie:alpha34/actions/f9cfed8252a6b4a4"
+				title: "Применить контроллер перегонки"
+			}]
+			rewards: [
+				{
+					id: "D0F6F7B77BE838A0"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "DD8F88ABC2A7F4E8"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "createdieselgenerators:sheet_metal_panel"
+					}
+				}
+			]
+		}
+		{
+			id: "DC984DF9A7FB8BA2"
+			title: "Топливо для дальней базы"
+			description: ["Наберите ведро дизеля. Топливо можно возить с собой — мастерская больше не привязана к реке."]
+			x: 0.0d
+			y: 8.5d
+			icon: "createdieselgenerators:diesel_bucket"
+			dependencies: ["DF4913690DFB0B64"]
+			tasks: [{
+				id: "A59BA799A3285CAC"
+				type: "item"
+				item: "createdieselgenerators:diesel_bucket"
+				count: 1L
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "324F272AFA22622D"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "D455C5E7A5C17535"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "createdieselgenerators:canister"
+					}
+				}
+			]
+		}
+		{
+			id: "6185039BCD7BBF2F"
+			title: "Двигатель для походной мельницы"
+			description: ["Дизельный генератор крутит валы на топливе. Поставьте его — дальше он смелет пшеницу где угодно."]
+			x: 0.0d
+			y: 11.0d
+			icon: "createdieselgenerators:diesel_engine"
+			dependencies: ["DC984DF9A7FB8BA2"]
+			tasks: [{
+				id: "F6A5FEFCB6D619DD"
+				type: "advancement"
+				advancement: "nasledie:setup/industry/diesel_engine"
+				title: "Поставить дизельный генератор"
+			}]
+			rewards: [
+				{
+					id: "3D6E22DC4C44F32B"
+					type: "xp"
+					xp: 170
+				}
+				{
+					id: "8E616D99ED45EF59"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "createdieselgenerators:engine_silencer"
+					}
+				}
+			]
+		}
+		{
+			id: "01A997FB916A7F84"
+			title: "Турбонаддув"
+			description: ["Турбонагнетатель на двигателе прибавляет мощности. Примените его к генератору."]
+			x: 2.5d
+			y: 12.5d
+			icon: "createdieselgenerators:engine_turbocharger"
+			shape: "circle"
+			optional: true
+			dependencies: ["6185039BCD7BBF2F"]
+			tasks: [{
+				id: "C7E16074301882B7"
+				type: "advancement"
+				advancement: "nasledie:alpha35/engineering/01a997fb916a7f84"
+				title: "Применить турбонагнетатель"
+			}]
+			rewards: [
+				{
+					id: "0C31F537DD5F34CB"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "57691F7F7D679AFE"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "createdieselgenerators:chemical_sprayer"
+					}
+				}
+			]
+		}
+		{
+			id: "43CE9DDCB2EF166C"
+			title: "Походная мельница на дизеле"
+			description: ["Пусть жернова на дизельном генераторе смелют пшеницу. Ударьте вращающиеся жернова часами и в течение минуты подайте одну пшеницу — сервер проверит, что работает именно дизель."]
+			x: 0.0d
+			y: 13.5d
+			icon: "create:wheat_flour"
+			shape: "star"
+			size: 1.4d
+			dependencies: ["6185039BCD7BBF2F"]
+			tasks: [{
+				id: "ABE49F3A06A1AB64"
+				type: "advancement"
+				advancement: "nasledie:alpha43/industry/diesel_flour"
+				title: "Контрольный помол на дизеле"
+			}]
+			rewards: [
+				{
+					id: "FF7D9EBEDBF97562"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "752387763A91E75E"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "farmersdelight:steak_and_potatoes"
+					}
+				}
+			]
+		}
+		{
+			id: "A7CEF6292A89B0A2"
+			title: "Топливный резерв котельной"
+			description: ["Шланговый насос в бесконечном лавовом озере качает топливо без конца. Котельная скажет спасибо."]
+			x: -3.0d
+			y: 3.0d
+			icon: "create:hose_pulley"
+			dependencies: ["9A09307A8AC167F1"]
+			tasks: [{
+				id: "5CEABD2D9950A24F"
+				type: "advancement"
+				advancement: "create:hose_pulley_lava"
+			}]
+			rewards: [
+				{
+					id: "4E487BD1B1674124"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "EB4D5E53AAD8E3E4"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "create:fluid_tank"
+					}
+				}
+			]
+		}
+		{
+			id: "41102025AA038BF1"
+			title: "Котельная полной мощности"
+			description: ["Разгоните бойлер до восемнадцатого уровня — паровые двигатели вокруг него потянут целый завод."]
+			x: -5.0d
+			y: 5.0d
+			icon: "create:steam_engine"
+			shape: "star"
+			dependencies: ["A7CEF6292A89B0A2"]
+			tasks: [{
+				id: "8C254D384F581D6A"
+				type: "advancement"
+				advancement: "create:steam_engine_maxed"
+			}]
+			rewards: [
+				{
+					id: "1E5EE8C3DC11CAA9"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "1CB74BA4EBD3C326"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "create:steam_whistle"
+					}
+				}
+			]
+		}
+		{
+			id: "D6494B4749F6037E"
+			title: "Юра на границе перегрузки"
+			description: ["Нагрузите сеть ровно до предела. Ещё одна шестерня — и всё встанет. Юра уверен, что не встанет."]
+			x: -7.0d
+			y: 7.0d
+			icon: "create:stressometer"
+			shape: "circle"
+			optional: true
+			dependencies: ["41102025AA038BF1"]
+			tasks: [{
+				id: "EB452A7B570C2E4F"
+				type: "advancement"
+				advancement: "create:stressometer_maxed"
+			}]
+			rewards: [
+				{
+					id: "D679CBF8997D6A75"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "F100FCB2BA36108F"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "interiors:yellow_chair"
+					}
+				}
+			]
+		}
+		{
+			id: "0EF67FFF73E6D383"
+			title: "Песок будущих орудий"
+			description: ["Странд оставил чертежи пушек. Стволы отливают в формах из литейного песка. Раздобудьте его."]
+			x: -3.5d
+			y: 0.0d
+			icon: "createbigcannons:casting_sand"
+			dependencies: [
+				"9A09307A8AC167F1"
+				"391F9987F1F32442"
+			]
+			tasks: [{
+				id: "3556A62C70DAC6DD"
+				type: "item"
+				item: "createbigcannons:casting_sand"
+				count: 1L
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "35E91BC14C19BB6E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "0EFA715E5D6A1F40"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "createbigcannons:gas_mask"
+					}
+				}
+			]
+		}
+		{
+			id: "35AB582E2E08DF86"
+			title: "Наращиватель стволов"
+			description: ["Наращиватель собирает ствол слой за слоем. Поставьте его — пушка начинается здесь."]
+			x: -6.0d
+			y: 0.0d
+			icon: "createbigcannons:cannon_builder"
+			dependencies: ["0EF67FFF73E6D383"]
+			tasks: [{
+				id: "22A90D25B88230C6"
+				type: "advancement"
+				advancement: "nasledie:setup/defense/cannon_builder"
+				title: "Поставить наращиватель"
+			}]
+			rewards: [
+				{
+					id: "C88D780372280D5F"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "AB704529AEBEEB4F"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "createbigcannons:impact_fuze"
+					}
+				}
+			]
+		}
+		{
+			id: "35D125C19D556E7A"
+			title: "Сверлильный станок"
+			description: ["Отлитый ствол нужно рассверлить. Без этого снаряду некуда лететь."]
+			x: -8.5d
+			y: 0.0d
+			icon: "createbigcannons:cannon_drill"
+			dependencies: ["35AB582E2E08DF86"]
+			tasks: [{
+				id: "79A3A72627B9B5CE"
+				type: "advancement"
+				advancement: "nasledie:setup/defense/cannon_drill"
+				title: "Поставить сверлильный станок"
+			}]
+			rewards: [
+				{
+					id: "FD2C658E649D47AE"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "AC520E56094042F5"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "createbigcannons:empty_powder_charge"
+					}
+				}
+			]
+		}
+		{
+			id: "17FE2073432FC7E0"
+			title: "Основание орудия"
+			description: ["Пушке нужен лафет. Неподвижное крепление держит ствол и наводит его по вращению вала."]
+			x: -11.0d
+			y: 0.0d
+			icon: "createbigcannons:fixed_cannon_mount"
+			dependencies: ["35D125C19D556E7A"]
+			tasks: [{
+				id: "C2EB033292301AEB"
+				type: "advancement"
+				advancement: "nasledie:setup/defense/fixed_cannon_mount"
+				title: "Поставить крепление пушки"
+			}]
+			rewards: [
+				{
+					id: "F6F92DE8B7FBEFEF"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "FA624643F0086DAD"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "createbigcannons:solid_shot"
+					}
+				}
+			]
+		}
+		{
+			id: "8EC3B7E438EA800A"
+			title: "Механизм заряжания"
+			description: ["Заряжатель толкает снаряд и порох в ствол сам. Стрелять можно чаще, а стоять рядом — безопаснее."]
+			x: -13.5d
+			y: 0.0d
+			icon: "createbigcannons:cannon_loader"
+			dependencies: ["17FE2073432FC7E0"]
+			tasks: [{
+				id: "F49C546C52755D66"
+				type: "advancement"
+				advancement: "nasledie:setup/defense/cannon_loader"
+				title: "Поставить заряжатель"
+			}]
+			rewards: [
+				{
+					id: "216CDADABCC3E6EE"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "0EF4FFD01C4F5035"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "createbigcannons:he_shell"
+					}
+				}
+			]
+		}
+		{
+			id: "88DCA843A4F83D7F"
+			title: "Первый залп"
+			description: ["Наведите орудие и уничтожьте любое существо выстрелом. Засчитывается всем, кто стоял неподалёку, — пушкарю и корректировщику."]
+			x: -16.0d
+			y: 0.0d
+			icon: "createbigcannons:solid_shot"
+			shape: "shield"
+			dependencies: ["8EC3B7E438EA800A"]
+			tasks: [{
+				id: "2770335435D3C146"
+				type: "advancement"
+				advancement: "nasledie:events/artillery/kill"
+				title: "Победа выстрелом из орудия"
+			}]
+			rewards: [
+				{
+					id: "473A98E6D4B50D2C"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "3D9213D59B8AC3BF"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "createbigcannons:shrapnel_shell"
+					}
+				}
+			]
+		}
+		{
+			id: "31F6BD6E02A19B29"
+			title: "Артиллерия против стражей"
+			description: ["Добейте большого босса — стража Катаклизма, зверя Mowzie или чудище глубин — выстрелом из своего орудия. Странд был бы доволен."]
+			x: -18.5d
+			y: 0.0d
+			icon: "createbigcannons:he_shell"
+			shape: "star"
+			size: 1.5d
+			optional: true
+			dependencies: ["88DCA843A4F83D7F"]
+			tasks: [{
+				id: "1DD1D664A8D12446"
+				type: "advancement"
+				advancement: "nasledie:events/artillery/boss"
+				title: "Босс повержен выстрелом"
+			}]
+			rewards: [
+				{
+					id: "BA97022180B7656F"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "BE10277B251BB72D"
+					type: "item"
+					item: {
+						Count: 8b
+						id: "createbigcannons:ap_shell"
+					}
+				}
+				{
+					id: "F244C2A36C10D2B2"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_golden_apple"
+					}
+				}
+			]
+		}
+	]
 }
+

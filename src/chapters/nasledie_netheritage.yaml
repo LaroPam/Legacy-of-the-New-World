@@ -1,0 +1,361 @@
+# Акт II. Нижний мир: крепость и черепа для обряда, бастионы пиглинов, жара и биомы.
+# «Очи Зодчих» и бой с Визером — сюжетные квесты летописи, здесь показаны ссылками.
+chapter:
+  filename: nasledie_netheritage
+  id: BC5663C3D347C93F
+  group: act2
+  title: Нижний мир — огонь и черепа
+  icon: minecraft:wither_skeleton_skull
+  order_index: 8
+  default_hide_dependency_lines: false
+  default_quest_shape: circle
+  progression_mode: flexible
+
+links:
+  - {quest: nasledie_chronicle/nether_eye, x: 9, y: -2.5, shape: star, size: 1.4}
+  - {quest: nasledie_chronicle/wither, x: 15, y: 0, shape: crown, size: 1.6}
+
+quests:
+  - key: enter
+    id: 060BA736EF32E9F5
+    title: Войти в Нижний мир
+    description:
+      - Эклунд писал о «крепости и огненных стержнях для очей». Постройте портал и шагните в жар. Возьмите с собой еду и путь назад.
+    x: 0
+    y: 0
+    icon: minecraft:obsidian
+    shape: scroll
+    size: 1.4
+    deps: [nasledie_chronicle/route]
+    tasks:
+      - {type: dimension, dimension: minecraft:the_nether}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:long_fire_resistance"}', count: 2}
+
+  - key: soul_lamp
+    title: Фонарь душ
+    description:
+      - Жара Нижнего мира изматывает даже в лучшей одежде. Фонарь душ держит прохладу вокруг вас, пока в нём есть топливо. Для него нужно
+        сердце моря — вот и пригодилась морская вылазка.
+    x: 0
+    y: 3
+    icon: cold_sweat:soulspring_lamp
+    shape: gear
+    deps: [enter]
+    tasks:
+      - {type: advancement, advancement: cold_sweat:get_soul_lamp}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: cold_sweat:hoglin_chestplate}
+
+  # ── Крепость ──
+  - key: fortress
+    id: 9657C7068A9F33B4
+    title: Крепость Нижнего мира
+    description:
+      - Мосты и залы из незерского кирпича, где живут ифриты и визер-скелеты. Найдите крепость — здесь начинается путь к очам и к обряду.
+    x: 3
+    y: 0
+    icon: minecraft:nether_bricks
+    shape: scroll
+    deps: [enter]
+    tasks:
+      - {type: structure, structure: betterfortresses:fortress}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: better_weaponry:diamond_dagger}
+
+  - key: blaze_rod
+    title: Огненный стержень
+    description:
+      - Ифриты оставляют огненные стержни. Из стержня — порошок, из порошка и жемчуга — око Края, начало любого ока Зодчих.
+    x: 6
+    y: 0
+    icon: minecraft:blaze_rod
+    shape: shield
+    deps: [fortress]
+    tasks:
+      - {type: advancement, advancement: minecraft:nether/obtain_blaze_rod}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:ender_pearl, count: 4}
+
+  - key: wither_skeleton
+    id: 6FB70B1DE8310B79
+    title: Визер-скелет
+    description:
+      - Высокие чёрные скелеты бьют иссушением. Победите одного — и начните охоту за черепами.
+    x: 9
+    y: 0
+    icon: minecraft:stone_sword
+    shape: shield
+    deps: [blaze_rod]
+    tasks:
+      - {type: kill, entity: minecraft:wither_skeleton, value: 1}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:milk_bucket}
+
+  - key: skull
+    title: Первый череп
+    description:
+      - Для обряда нужно три черепа визер-скелетов. Добудьте первый — дальше только терпение и меч с добычей.
+    x: 12
+    y: 0
+    icon: minecraft:wither_skeleton_skull
+    shape: shield
+    deps: [wither_skeleton]
+    tasks:
+      - {type: advancement, advancement: minecraft:nether/get_wither_skull}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: minecraft:enchanted_book, nbt: '{StoredEnchantments:[{id:"minecraft:looting",lvl:3s}]}'}
+
+  - key: fireproof_assault
+    id: 16246ABD1F6A02BF
+    title: Штурм под огнестойкостью
+    description:
+      - Под зельем огнестойкости победите ифрита и визер-скелета внутри крепости. Так экспедиция ходила за черепами — быстро и без ожогов.
+    x: 12
+    y: 2.5
+    icon: minecraft:magma_cream
+    shape: star
+    optional: true
+    deps: [skull]
+    tasks:
+      - {type: advancement, advancement: nasledie:alpha42/nether/fireproof_assault/blaze, title: Ифрит под огнестойкостью}
+      - {type: advancement, advancement: nasledie:alpha42/nether/fireproof_assault/wither, title: Визер-скелет под огнестойкостью}
+    rewards:
+      - {type: xp, xp: 630}
+      - {type: item, item: artifacts:pickaxe_heater}
+
+  # ── Пиглины ──
+  - key: brute
+    id: A9D440BF0B39FBFA
+    title: Пиглин-брут
+    description:
+      - Бруты охраняют бастионы и не любят гостей даже в золоте. Победите одного.
+    x: 3
+    y: -3
+    icon: minecraft:golden_axe
+    shape: shield
+    deps: [enter]
+    tasks:
+      - {type: kill, entity: minecraft:piglin_brute, value: 1}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:golden_apple}
+
+  - key: bastion
+    title: Добыча бастиона
+    description:
+      - В бастионах пиглины прячут золото и редкие сокровища. Найдите бастион и откройте его сундук.
+    x: 6
+    y: -3
+    icon: minecraft:gilded_blackstone
+    shape: shield
+    deps: [brute]
+    tasks:
+      - {type: advancement, advancement: minecraft:nether/loot_bastion}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:netherite_scrap}
+
+  - key: piglin_outpost
+    title: Застава пиглинов
+    description:
+      - На пустошах пиглины строят заставы с казной. Взломайте её.
+    x: 6
+    y: -5.5
+    icon: minecraft:gold_block
+    shape: shield
+    optional: true
+    deps: [bastion]
+    tasks:
+      - {type: advancement, advancement: nova_structures:nether/find_piglin_outpost}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:gold_ingot, count: 16}
+
+  - key: piglin_hunt
+    title: Охота на кабанов
+    description:
+      - Побывайте во всех поселениях пиглинов — лагере, заставе, хуторе и донжоне. Нижний мир населён гуще, чем кажется.
+    x: 9
+    y: -5.5
+    icon: minecraft:cooked_porkchop
+    shape: star
+    optional: true
+    deps: [piglin_outpost]
+    tasks:
+      - {type: advancement, advancement: nova_structures:nether/find_piglins}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: immersive_aircraft:nether_engine}
+
+  # ── Порт и замок ──
+  - key: nether_port
+    id: 831CD896CBC3B75D
+    title: Порт среди лавы
+    description:
+      - Кто-то построил порт на лавовом озере. Найдите его и откройте сундук на причале.
+    x: 3
+    y: 3
+    icon: minecraft:blackstone
+    shape: scroll
+    deps: [enter]
+    tasks:
+      - {type: criteria, title: Открыть сундук порта, loot: nova_structures:chests/nether_port/nether_port_chest}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: alexsmobs:lava_bottle, count: 2}
+
+  - key: nether_keep
+    id: E3F2CE1B298FF952
+    title: Замок Нижнего мира
+    description:
+      - Огромный замок с бетонными залами и неожиданным снегом внутри. Найдите его.
+    x: 6
+    y: 3
+    icon: minecraft:polished_blackstone_bricks
+    shape: scroll
+    deps: [nether_port]
+    tasks:
+      - {type: structure, structure: nova_structures:nether_keep}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:crying_obsidian, count: 6}
+
+  - key: keep_snow
+    id: 057308B8365632F8
+    title: Снег в аду
+    description:
+      - В замке есть комната с рыхлым снегом. Окунитесь в него посреди Нижнего мира — Юра обещал, что не замёрзнет.
+    x: 9
+    y: 3
+    icon: minecraft:powder_snow_bucket
+    shape: star
+    optional: true
+    deps: [nether_keep]
+    tasks:
+      - {type: advancement, advancement: nova_structures:nether/powder_snow_keep}
+    rewards:
+      - {type: xp, xp: 270}
+      - {type: item, item: minecraft:netherite_scrap}
+
+  - key: skeleton_towers
+    title: Костяные башни
+    description:
+      - В разных биомах Нижнего мира стоят башни скелетов. Побывайте у всех — багровой, искажённой, базальтовой и башни душ.
+    x: 12
+    y: 5
+    icon: minecraft:bone_block
+    shape: star
+    optional: true
+    deps: [keep_snow]
+    tasks:
+      - {type: advancement, advancement: nova_structures:nether/find_skeleton_tower}
+    rewards:
+      - {type: xp, xp: 500}
+      - {type: item, item: artifacts:obsidian_skull}
+
+  # ── Земли Нижнего мира ──
+  - key: crimson_forest
+    id: FDC38AD8EF13ED6B
+    title: Багровый лес
+    description:
+      - Красные грибы-деревья и хоглины. Здесь растут припасы для варки — и для неприятностей.
+    x: 0
+    y: -3
+    icon: minecraft:crimson_fungus
+    shape: scroll
+    optional: true
+    deps: [enter]
+    tasks:
+      - {type: biome, biome: minecraft:crimson_forest}
+    rewards:
+      - {type: xp, xp: 75}
+      - {type: item, item: minecraft:magma_cream, count: 4}
+
+  - key: warped_forest
+    id: EB5133ED763E8FEC
+    title: Искажённый лес
+    description:
+      - Синий лес, где эндермены чувствуют себя как дома. Самое спокойное место Нижнего мира.
+    x: 0
+    y: -5.5
+    icon: minecraft:warped_fungus
+    shape: scroll
+    optional: true
+    deps: [crimson_forest]
+    tasks:
+      - {type: biome, biome: minecraft:warped_forest}
+    rewards:
+      - {type: xp, xp: 75}
+      - {type: item, item: minecraft:ender_pearl, count: 4}
+
+  - key: soul_valley
+    id: F0DECF35C46F0180
+    title: Долина песка душ
+    description:
+      - Песок, в котором вязнут ноги, и синее пламя. Именно этот песок нужен для обряда.
+    x: 0
+    y: -8
+    icon: minecraft:soul_sand
+    shape: scroll
+    optional: true
+    deps: [warped_forest]
+    tasks:
+      - {type: biome, biome: minecraft:soul_sand_valley}
+    rewards:
+      - {type: xp, xp: 75}
+      - {type: item, item: minecraft:soul_lantern, count: 4}
+
+  - key: ghast
+    id: 79E3FF74B36FC7E6
+    title: Победить гаста
+    description:
+      - Гасты плачут, когда умирают. Слеза гаста — редкий ингредиент для зелья регенерации.
+    x: 3
+    y: -8
+    icon: minecraft:ghast_tear
+    shape: shield
+    optional: true
+    deps: [soul_valley]
+    tasks:
+      - {type: kill, entity: minecraft:ghast, value: 1}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:potion, nbt: '{Potion:"minecraft:strong_regeneration"}', count: 2}
+
+  - key: strider
+    title: На страйдере по лаве
+    description:
+      - Страйдеры ходят по лаве, как по воде. Оседлайте одного и прокатитесь — удочка с грибом вам в помощь.
+    x: 6
+    y: -8
+    icon: minecraft:warped_fungus_on_a_stick
+    shape: star
+    optional: true
+    deps: [ghast]
+    tasks:
+      - {type: advancement, advancement: minecraft:nether/ride_strider}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: minecraft:saddle}
+
+  - key: ancient_debris
+    title: Древние обломки
+    description:
+      - Глубоко в Нижнем мире лежат древние обломки — из них плавят незерит. Найдите первый.
+    x: 9
+    y: -8
+    icon: minecraft:ancient_debris
+    optional: true
+    deps: [strider]
+    tasks:
+      - {type: advancement, advancement: minecraft:nether/obtain_ancient_debris}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: minecraft:enchanted_book, nbt: '{StoredEnchantments:[{id:"minecraft:fortune",lvl:3s}]}'}

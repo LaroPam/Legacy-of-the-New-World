@@ -1,0 +1,415 @@
+# Акт III. Великие проекты: логистика, автоматизация, площадь с часами и музыкой, глубинные работы.
+# Финал книги требует, чтобы база жила, — эти проекты и есть «наследие», которое строят Максим и Юра.
+chapter:
+  filename: nasledie_grand_projects
+  id: 73CB4E221EBED702
+  group: act3
+  title: Великие проекты — база оживает
+  icon: minecraft:beacon
+  order_index: 13
+  default_hide_dependency_lines: false
+  default_quest_shape: square
+  progression_mode: flexible
+
+quests:
+  - key: chief_engineer
+    id: FD0417DEF7F45B46
+    title: Пульт главного инженера
+    description:
+      - Большая база начинается с понимания, сколько силы у вас есть. Поставьте измеритель нагрузки и посмотрите на сеть в инженерных очках.
+    x: 0
+    y: 0
+    icon: create:stressometer
+    shape: star
+    size: 1.7
+    deps: [nasledie_industry/precision]
+    tasks:
+      - {type: advancement, advancement: create:stressometer}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: create:brass_casing, count: 8}
+
+  # ── Логистика ──
+  - key: display_link
+    id: 001DB3A2FEAEBBD6
+    title: Склад показывает свои данные
+    description:
+      - Дисплейная связь выводит на табло что угодно — запасы склада, скорость станков, время.
+    x: 3.5
+    y: 0
+    icon: create:display_link
+    deps: [chief_engineer]
+    tasks:
+      - {type: advancement, advancement: create:display_link}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: create:nixie_tube, count: 4}
+
+  - key: packager
+    id: 33706B9F6B93BA33
+    title: Первая упакованная поставка
+    description:
+      - Упаковщик заворачивает предметы в коробку с адресом. С этого начинается почта между цехами.
+    x: 6
+    y: 0.5
+    icon: create:packager
+    deps: [display_link]
+    tasks:
+      - {type: advancement, advancement: create:packager}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: createdeco:industrial_iron_catwalk, count: 4}
+
+  - key: stock_ticker
+    id: C32715AF6479C057
+    title: Заказ через складскую стойку
+    description:
+      - Складская стойка принимает заказы — выберите, что нужно, и склад сам соберёт посылку.
+    x: 8.5
+    y: 1
+    icon: create:stock_ticker
+    deps: [packager]
+    tasks:
+      - {type: advancement, advancement: create:stock_ticker}
+    rewards:
+      - {type: xp, xp: 180}
+      - {type: item, item: sophisticatedstorage:advanced_compacting_upgrade}
+
+  - key: frogport
+    id: 9401D666941DF3EB
+    title: Посылка сходит с цепного конвейера
+    description:
+      - Лягушка-порт ловит посылки с цепного конвейера и отправляет свои. Протяните цепь между цехами.
+    x: 11
+    y: 1.5
+    icon: create:package_frogport
+    deps: [stock_ticker]
+    tasks:
+      - {type: advancement, advancement: create:frogport}
+    rewards:
+      - {type: xp, xp: 180}
+      - {type: item, item: create:chain_conveyor, count: 4}
+
+  - key: factory_gauge
+    id: 9B721B53DDC184D8
+    title: Склад сам просит пополнения
+    description:
+      - Заводской датчик следит за запасом и сам заказывает недостающее. Мастерская думает за вас.
+    x: 13.5
+    y: 2
+    icon: create:factory_gauge
+    shape: star
+    size: 1.4
+    deps: [frogport]
+    tasks:
+      - {type: advancement, advancement: create:factory_gauge}
+    rewards:
+      - {type: xp, xp: 300}
+      - {type: item, item: sophisticatedstorage:advanced_alchemy_upgrade}
+
+  - key: package_throw
+    id: E7F2853B8418F46D
+    title: Посылка с точным попаданием
+    description:
+      - Пусть желоб швырнёт посылку прямо в цель. Трёхочковый!
+    x: 9.5
+    y: 3.5
+    icon: create:cardboard_block
+    shape: circle
+    optional: true
+    deps: [stock_ticker]
+    tasks:
+      - {type: advancement, advancement: create:package_chute_throw}
+    rewards:
+      - {type: xp, xp: 135}
+      - {type: item, item: create:stockpile_switch, count: 2}
+
+  - key: cardboard_armor
+    id: EAD9E4891242F10A
+    title: Вся мастерская меня не видит
+    description:
+      - Наденьте полный комплект картонной брони и спрячьтесь среди коробок. Юра, ты где?
+    x: 12
+    y: 4.5
+    icon: create:cardboard_helmet
+    shape: circle
+    optional: true
+    deps: [package_throw]
+    tasks:
+      - {type: advancement, advancement: create:cardboard_armor}
+    rewards:
+      - {type: xp, xp: 100}
+      - {type: item, item: create:package_filter, count: 2}
+
+  # ── Автоматизация ──
+  - key: linked_controller
+    id: F24A5CA9571CE25A
+    title: Пульт для мастерской
+    description:
+      - Связанный пульт управляет механизмами по радио. Ворота, лифты и пушки — всё с одной руки.
+    x: 0
+    y: -3.5
+    icon: create:linked_controller
+    deps: [chief_engineer]
+    tasks:
+      - {type: advancement, advancement: create:linked_controller}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: create:redstone_link, count: 4}
+
+  - key: arm_many
+    id: 13293A60CC292DB9
+    title: Одна рука — десять направлений
+    description:
+      - Настройте одной механической руке десять целей. Сортировочный цех готов.
+    x: 0.5
+    y: -6
+    icon: create:mechanical_arm
+    deps: [linked_controller]
+    tasks:
+      - {type: advancement, advancement: create:arm_many_targets}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: createdieselgenerators:large_diesel_engine}
+
+  - key: arm_burner
+    id: C3F2CF43CEF0F671
+    title: Горелка получает топливо сама
+    description:
+      - Пусть механическая рука сама подкладывает топливо в горелку. Больше никаких походов за углём.
+    x: 1
+    y: -8.5
+    icon: create:blaze_burner
+    deps: [arm_many]
+    tasks:
+      - {type: advancement, advancement: create:arm_blaze_burner}
+    rewards:
+      - {type: xp, xp: 200}
+      - {type: item, item: create:blaze_cake, count: 4}
+
+  - key: chained_drain
+    id: 545EE0ABAC59400C
+    title: Предмет проходит сливную линию
+    description:
+      - Протащите предмет по цепочке сливов — каждый заберёт свою жидкость.
+    x: -2.5
+    y: -7
+    icon: create:item_drain
+    shape: circle
+    optional: true
+    deps: [arm_many]
+    tasks:
+      - {type: advancement, advancement: create:chained_drain}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: copycats:copycat_block, count: 16}
+
+  - key: ejector
+    id: D21A9F7F45B8BAA3
+    title: Юра летит дальше тридцати
+    description:
+      - Катапульта Create бросает предметы — и людей. Отправьте Юру в полёт на тридцать блоков. Максим поймает. Наверное.
+    x: 3.5
+    y: -7.5
+    icon: create:weighted_ejector
+    shape: circle
+    optional: true
+    deps: [arm_many]
+    tasks:
+      - {type: advancement, advancement: create:ejector_maxed}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: artifacts:bunny_hoppers}
+
+  # ── Площадь ──
+  - key: clockwork
+    id: A54DE6FD7E31FCAD
+    title: Часы для площади
+    description:
+      - Часовой подшипник крутит стрелки по настоящему игровому времени. Поставьте часы на ратушу.
+    x: -3.5
+    y: 0
+    icon: create:clockwork_bearing
+    deps: [chief_engineer]
+    tasks:
+      - {type: advancement, advancement: create:clockwork_bearing}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: create:brass_scaffolding, count: 16}
+
+  - key: cuckoo
+    id: 481A6638D3700BB6
+    title: Кукушка объявляет вечер
+    description:
+      - Часы с кукушкой предупредят, когда пора домой — до того, как выйдут монстры.
+    x: -6
+    y: 0.5
+    icon: create:cuckoo_clock
+    deps: [clockwork]
+    tasks:
+      - {type: advancement, advancement: create:cuckoo_clock}
+    rewards:
+      - {type: xp, xp: 120}
+      - {type: item, item: interiors:brown_chair, count: 4}
+
+  - key: steam_whistle
+    id: 6555136BC726B91D
+    title: У мастерской появился голос
+    description:
+      - Паровой свисток гудит на весь посёлок. Обед, тревога, конец смены — у каждого гудка свой смысл.
+    x: -8.5
+    y: 1
+    icon: create:steam_whistle
+    deps: [cuckoo]
+    tasks:
+      - {type: advancement, advancement: create:steam_whistle}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: createdeco:blue_brass_lamp, count: 4}
+
+  - key: haunted_bell
+    id: ADF4DE4021A4DDD2
+    title: Колокол с другой стороны
+    description:
+      - Проклятый колокол показывает, где ночью появятся монстры. Жутко, но полезно для обороны.
+    x: -11
+    y: 1.5
+    icon: create:haunted_bell
+    deps: [steam_whistle]
+    tasks:
+      - {type: advancement, advancement: create:haunted_bell}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:soul_lantern, count: 6}
+
+  - key: musical_arm
+    id: 18D464DFE627EAFF
+    title: Музыкальный автомат
+    description:
+      - Механическая рука ставит пластинки в проигрыватель. Музыка на площади весь вечер.
+    x: -13.5
+    y: 2
+    icon: minecraft:jukebox
+    deps: [haunted_bell]
+    tasks:
+      - {type: advancement, advancement: create:musical_arm}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: minecraft:music_disc_pigstep}
+
+  - key: pipe_organ
+    id: D1E72065750CAA2D
+    title: Орган для вашей площади
+    description:
+      - Соберите из свистков настоящий орган. Сыграйте что-нибудь торжественное — база заслужила.
+    x: -16
+    y: 2.5
+    icon: create:steam_whistle
+    shape: star
+    size: 1.4
+    deps: [musical_arm]
+    tasks:
+      - {type: advancement, advancement: create:pipe_organ}
+    rewards:
+      - {type: xp, xp: 400}
+      - {type: item, item: interiors:white_chair, count: 6}
+      - {type: item, item: createdeco:yellow_brass_lamp, count: 8}
+
+  # ── Глубинные работы ──
+  - key: backtank
+    id: 02E8F7C592478C40
+    title: Воздух для выездных работ
+    description:
+      - Медный баллон с воздухом питает инструменты и даёт дышать под водой. Зарядите его от вращения.
+    x: 0
+    y: 3.5
+    icon: create:copper_backtank
+    deps: [chief_engineer]
+    tasks:
+      - {type: advancement, advancement: create:backtank}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: create:copper_diving_boots}
+
+  - key: pulley_maxed
+    id: 9310EF94F77C64F4
+    title: Спуск глубже двухсот блоков
+    description:
+      - Растяните верёвочный блок на максимальную длину. Лифт в самую глубокую шахту готов.
+    x: -0.5
+    y: 6
+    icon: create:rope_pulley
+    deps: [backtank]
+    tasks:
+      - {type: advancement, advancement: create:pulley_maxed}
+    rewards:
+      - {type: xp, xp: 250}
+      - {type: item, item: create:controller_rail, count: 6}
+
+  - key: cart_pickup
+    id: 6318A6A61AD56A13
+    title: Двести блоков в дорогу
+    description:
+      - Протащите вагонетку с грузом двести блоков. Тяжело, но для дальних шахт пригодится.
+    x: -1
+    y: 8.5
+    icon: minecraft:minecart
+    shape: circle
+    optional: true
+    deps: [pulley_maxed]
+    tasks:
+      - {type: advancement, advancement: create:cart_pickup}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: createdeco:locked_brass_door, count: 2}
+
+  - key: lava_wheel
+    id: 2D51B2D4E3D0E0DF
+    title: Колесо в раскалённом потоке
+    description:
+      - Поставьте водяное колесо в поток лавы. Работает! Только не трогайте.
+    x: 2.5
+    y: 5
+    icon: create:water_wheel
+    shape: circle
+    optional: true
+    deps: [backtank]
+    tasks:
+      - {type: advancement, advancement: create:lava_wheel_00000}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: create:purple_toolbox}
+
+  - key: anvil_plough
+    id: 167ACBD7508350FA
+    title: Кузнечная артиллерия
+    description:
+      - Сбросьте наковальню с машины-плуга. Это не оружие. Наверное.
+    x: 3.5
+    y: 7.5
+    icon: minecraft:anvil
+    shape: circle
+    optional: true
+    deps: [lava_wheel]
+    tasks:
+      - {type: advancement, advancement: create:anvil_plough}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: createdieselgenerators:wire_cutters}
+
+  - key: fist_bump
+    id: 35271CE5B6428CAF
+    title: Максим и Юра передают привет
+    description:
+      - Пусть два механических исполнителя стукнутся кулаками. А потом вы — по-настоящему.
+    x: 4
+    y: 10
+    icon: create:deployer
+    shape: heart
+    optional: true
+    deps: [anvil_plough]
+    tasks:
+      - {type: advancement, advancement: create:fist_bump}
+    rewards:
+      - {type: xp, xp: 150}
+      - {type: item, item: farmersdelight:cake_slice, count: 6}

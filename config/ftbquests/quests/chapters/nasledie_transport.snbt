@@ -1,634 +1,710 @@
 {
-    filename: "nasledie_transport"
-    id: "D90DA6CC0E252361"
-    group: "842B4DB4DBD349A0"
-    title: "Транспорт — дороги к новым землям"
-    icon: "create:track_station"
-    order_index: 6
-    progression_mode: "flexible"
-    default_hide_dependency_lines: false
-    default_quest_shape: "gear"
-
-    quest_links: []
-    quests: [
-        {
-            id: "168FB859D289DA38"
-            title: "Путь между вашими поселениями"
-            x: 2.50d
-            y: 0.00d
-            icon: "create:track"
-            shape: "gear"
-            size: 1.20d
-            dependencies: [
-                "C1772DE6B882A602"
-            ]
-            description: [
-                "Получите железнодорожные пути Create. Наметьте две полезные точки: дом и добывающий участок, деревню или будущий порт. Железная дорога должна соединять места, куда вам действительно хочется ездить."
-            ]
-            tasks: [
-                {
-                    id: "B8951AD3219EF0D1"
-                    type: "advancement"
-                    advancement: "create:track_0"
-                }
-            ]
-            rewards: [
-                {
-                    id: "E192E8A7CA15CDCF"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "88B129BA9E09CAF1"
-                    type: "item"
-                    item: { Count: 1b, id: "railways:conductor_whistle" }
-                }
-            ]
-        }
-        {
-            id: "C1772DE6B882A602"
-            title: "Материал большого путешествия"
-            x: 0.00d
-            y: 0.00d
-            icon: "create:sturdy_sheet"
-            shape: "gear"
-            size: 1.20d
-            description: [
-                "Получите прочный лист Create из переработанного обсидиана по рецепту. Он откроет железнодорожные компоненты."
-                "Главная цель — собрать поезд и уйти на нём в дальнюю экспедицию. По дороге можно обустроить вокзал с табло, расширить состав или построить маршрут через портал. Авиация — самостоятельная альтернатива для разведки."
-            ]
-            tasks: [
-                {
-                    id: "A9B7BEC16BC9B0C6"
-                    type: "advancement"
-                    advancement: "create:sturdy_sheet"
-                }
-            ]
-            rewards: [
-                {
-                    id: "D20E6830EACB6DEC"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "BD21D32CFDC58823"
-                    type: "item"
-                    item: { Count: 1b, id: "railways:buffer" }
-                }
-            ]
-        }
-        {
-            id: "0BE47753BC6BEF28"
-            title: "Компоненты будущего состава"
-            x: 5.00d
-            y: 0.00d
-            icon: "create:railway_casing"
-            shape: "gear"
-            size: 1.20d
-            dependencies: [
-                "168FB859D289DA38"
-            ]
-            description: [
-                "Примените прочные листы для создания железнодорожного корпуса. Подготовьте компоненты станции и поезда; состав собирается у станции, а не обычным размещением вагонетки."
-            ]
-            tasks: [
-                {
-                    id: "BDBDED8BF01AEB5E"
-                    type: "advancement"
-                    advancement: "create:train_casing_00"
-                }
-            ]
-            rewards: [
-                {
-                    id: "F932959126AC355B"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "57E05C8301B969C4"
-                    type: "item"
-                    item: { Count: 1b, id: "railways:big_buffer" }
-                }
-            ]
-        }
-        {
-            id: "D727915E29A5F477"
-            title: "Поезд готов к отправлению"
-            x: 7.50d
-            y: 0.00d
-            icon: "create:track_station"
-            shape: "star"
-            size: 1.40d
-            dependencies: [
-                "0BE47753BC6BEF28"
-            ]
-            description: [
-                "Соберите первый поезд Create у станции. Сперва сделайте короткий испытательный путь и небольшой состав с местом управления. Встроенная анимация станции покажет сборку."
-                "После этого выбирайте: организовать регулярное движение и вокзал или строить протяжённую линию для большой экспедиции."
-            ]
-            tasks: [
-                {
-                    id: "3D2174EACF07F95C"
-                    type: "advancement"
-                    advancement: "create:train"
-                }
-            ]
-            rewards: [
-                {
-                    id: "5196D28F75562374"
-                    type: "xp"
-                    xp: 140
-                }
-                {
-                    id: "552AEF12A8DE842C"
-                    type: "item"
-                    item: { Count: 1b, id: "railways:benchcart" }
-                }
-            ]
-        }
-        {
-            id: "27A5DCA80F77C440"
-            title: "Передать маршрут машинисту"
-            x: 7.50d
-            y: 2.50d
-            icon: "create:schedule"
-            shape: "gear"
-            size: 1.20d
-            dependencies: [
-                "D727915E29A5F477"
-            ]
-            description: [
-                "Назначьте машинисту расписание поезда. Укажите станции и условия отправления, чтобы состав мог выполнять поездки по вашему плану. Этот шаг подтверждает передачу расписания; завершение рейса проверьте сами."
-            ]
-            tasks: [
-                {
-                    id: "9998071F2FAE1D42"
-                    type: "advancement"
-                    advancement: "create:conductor"
-                }
-            ]
-            rewards: [
-                {
-                    id: "2CAF0AF921FC64BF"
-                    type: "xp"
-                    xp: 140
-                }
-                {
-                    id: "B92D36963FACE365"
-                    type: "item"
-                    item: { Count: 1b, id: "railways:track_coupler" }
-                }
-            ]
-        }
-        {
-            id: "3DC5EEC5097BB375"
-            title: "Сигналы для общей линии"
-            x: 10.00d
-            y: 2.50d
-            icon: "create:track_signal"
-            shape: "gear"
-            size: 1.20d
-            dependencies: [
-                "27A5DCA80F77C440"
-            ]
-            description: [
-                "Установите железнодорожный сигнал. Он разделяет путь на участки и помогает организовать движение нескольких составов. Перед регулярными рейсами разберитесь, какой участок контролирует каждый сигнал."
-            ]
-            tasks: [
-                {
-                    id: "C0A3AF7C0A981D59"
-                    type: "advancement"
-                    advancement: "create:track_signal"
-                }
-            ]
-            rewards: [
-                {
-                    id: "D71790F5CBCDC251"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "9C3DC73F9E7C9AB1"
-                    type: "item"
-                    item: { Count: 1b, id: "railways:semaphore" }
-                }
-            ]
-        }
-        {
-            id: "57D8DDEFF1169558"
-            title: "Вокзал знает время прибытия"
-            x: 12.50d
-            y: 2.50d
-            icon: "create:display_board"
-            shape: "star"
-            size: 1.40d
-            dependencies: [
-                "3DC5EEC5097BB375"
-            ]
-            description: [
-                "Выведите прогноз прибытия поезда на табло с помощью передатчиков данных. Это финал проекта пассажирского вокзала: маршрут задан, участки обозначены, ожидаемый рейс виден вам обоим."
-            ]
-            tasks: [
-                {
-                    id: "E31AC6F19B2DD5E5"
-                    type: "advancement"
-                    advancement: "create:display_board_0"
-                }
-            ]
-            rewards: [
-                {
-                    id: "0B2B0EBE6F1CD65E"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "88A4ECC77773D39C"
-                    type: "item"
-                    item: { Count: 1b, id: "railways:link_and_pin" }
-                }
-            ]
-        }
-        {
-            id: "2CC98EB2E8824152"
-            title: "Свисток перед отправлением"
-            x: 7.50d
-            y: -2.50d
-            icon: "create:steam_whistle"
-            shape: "gear"
-            size: 1.20d
-            dependencies: [
-                "D727915E29A5F477"
-            ]
-            description: [
-                "Установите паровой свисток на поезд и подайте сигнал во время управления. Теперь состав можно услышать при отправлении; следующая экспедиция пересечёт границу измерений."
-            ]
-            tasks: [
-                {
-                    id: "279DB6A1B9E4B78B"
-                    type: "advancement"
-                    advancement: "create:train_whistle"
-                }
-            ]
-            rewards: [
-                {
-                    id: "CDA4CFA872D15EAB"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "8A94B84E19721AC0"
-                    type: "item"
-                    item: { Count: 1b, id: "railways:conductor_vent" }
-                }
-            ]
-        }
-        {
-            id: "AB76CE2DB46422C6"
-            title: "Рейс в другое измерение"
-            x: 10.00d
-            y: -2.50d
-            icon: "minecraft:amethyst_block"
-            shape: "star"
-            size: 1.40d
-            optional: true
-            dependencies: [
-                "2CC98EB2E8824152"
-            ]
-            description: [
-                "Проедьте на поезде через портал. Подготовьте выход и продолжение пути по ту сторону заранее. Это законченный транспортный проект: ваши базы в разных измерениях получают железнодорожное сообщение."
-            ]
-            tasks: [
-                {
-                    id: "37BB8687ABCA4220"
-                    type: "advancement"
-                    advancement: "create:train_portal"
-                }
-            ]
-            rewards: [
-                {
-                    id: "94B293E531EFDC64"
-                    type: "xp"
-                    xp: 170
-                }
-                {
-                    id: "615FE01FB9B2442A"
-                    type: "item"
-                    item: { Count: 1b, id: "railways:paint_brush" }
-                }
-            ]
-        }
-        {
-            id: "7B13E63BEA35FC61"
-            title: "Максим, сигнал был красным"
-            x: 10.00d
-            y: 5.00d
-            icon: "create:track_signal"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: [
-                "3DC5EEC5097BB375"
-            ]
-            description: [
-                "Проедьте на запрещающий красный сигнал. Это шуточное испытание Create, а не образец правильного движения. Выделите для опыта отдельный участок, чтобы не мешать рабочему расписанию."
-            ]
-            tasks: [
-                {
-                    id: "FBA2EA8F0C39D5FD"
-                    type: "advancement"
-                    advancement: "create:red_signal"
-                }
-            ]
-            rewards: [
-                {
-                    id: "75BC1AA623E01A57"
-                    type: "xp"
-                    xp: 120
-                }
-                {
-                    id: "DA26974B4AD0EE98"
-                    type: "item"
-                    item: { Count: 1b, id: "railways:copycat_headstock" }
-                }
-            ]
-        }
-        {
-            id: "3E14426D5444F75E"
-            title: "Собственная рельсовая фабрика"
-            x: 10.00d
-            y: 0.00d
-            icon: "create:mechanical_press"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: ["D727915E29A5F477"]
-            description: [
-                "Изготовьте больше 1000 железнодорожных путей одним и тем же механическим прессом. Подготовьте постоянную подачу ингредиентов и сохраняйте выбранный пресс на месте."
-                "Такой объём нужен для дальней дороги. После производства пути увеличим состав и отправимся за пределы обжитой территории."
-            ]
-            tasks: [
-                {
-                    id: "A21AA2836CF50C7F"
-                    type: "advancement"
-                    advancement: "create:track_crafting_factory"
-                }
-            ]
-            rewards: [
-                {
-                    id: "6CF3DD19D0CE4D5A"
-                    type: "xp"
-                    xp: 200
-                }
-                {
-                    id: "80215007A38A558E"
-                    type: "item"
-                    item: { Count: 1b, id: "railways:fuel_tank" }
-                }
-            ]
-        }
-        {
-            id: "0A24638E79FF2418"
-            title: "Шесть вагонов для дальней дороги"
-            x: 12.50d
-            y: 0.00d
-            icon: "minecraft:minecart"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: ["3E14426D5444F75E"]
-            description: [
-                "Соберите поезд как минимум из шести вагонов. Продумайте назначение состава: пассажирские места, экспедиционное имущество и место для будущих находок. Для зачёта важна длина собранного поезда."
-            ]
-            tasks: [
-                {
-                    id: "7A11B506111A1E62"
-                    type: "advancement"
-                    advancement: "create:long_train"
-                }
-            ]
-            rewards: [
-                {
-                    id: "9584313F87F8C5D1"
-                    type: "xp"
-                    xp: 220
-                }
-                {
-                    id: "C1E325B5AC1D56B1"
-                    type: "item"
-                    item: { Count: 1b, id: "immersive_aircraft:enhanced_propeller" }
-                }
-            ]
-        }
-        {
-            id: "B6EA6A2338C90595"
-            title: "Пять тысяч блоков от дома"
-            x: 15.00d
-            y: 0.00d
-            icon: "create:green_seat"
-            shape: "star"
-            size: 1.40d
-            optional: true
-            dependencies: [
-                "0A24638E79FF2418"
-            ]
-            description: [
-                "Покиньте место управления поездом более чем в 5000 блоках от точки начала поездки. Круги возле базы не заменят дальность: нужна удалённая конечная точка."
-                "Это финал большого железнодорожного путешествия. Найдите место для новой станции, чтобы следующая экспедиция начиналась уже с освоенной линии."
-            ]
-            tasks: [
-                {
-                    id: "A840D72A51B48C7C"
-                    type: "advancement"
-                    advancement: "create:long_travel"
-                }
-            ]
-            rewards: [
-                {
-                    id: "A33174DDCCC66E3E"
-                    type: "xp"
-                    xp: 250
-                }
-                {
-                    id: "2408C0A3EDC56DC7"
-                    type: "item"
-                    item: { Count: 1b, id: "immersive_aircraft:engine" }
-                }
-            ]
-        }
-        {
-            id: "B39341943A77E20B"
-            title: "Дрезина для осмотра пути"
-            x: 2.50d
-            y: 2.50d
-            icon: "railways:handcar"
-            shape: "star"
-            size: 1.40d
-            optional: true
-            dependencies: [
-                "168FB859D289DA38"
-            ]
-            description: [
-                "Установите дрезину на подготовленном железнодорожном участке. Она пригодится для небольших поездок вдоль линии. Задание посвящено размещению; протяжённость поездки здесь не измеряется."
-            ]
-            tasks: [
-                {
-                    id: "EEF5774CADE39519"
-                    type: "advancement"
-                    advancement: "nasledie:alpha34/actions/eef5774cade39519"
-                }
-            ]
-            rewards: [
-                {
-                    id: "397BB2E88BE9E43C"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "C0A464588876405C"
-                    type: "item"
-                    item: { Count: 1b, id: "immersive_aircraft:gyroscope" }
-                }
-            ]
-        }
-        {
-            id: "CABC4D7CB8FBE2B6"
-            title: "Воздушная разведка"
-            x: 0.00d
-            y: -5.00d
-            icon: "immersive_aircraft:biplane"
-            shape: "gear"
-            size: 1.20d
-            optional: true
-            dependencies: []
-            description: [
-                "Сядьте в биплан. Самолёт — отдельное направление для поиска новых мест, пока железная дорога ещё не проложена."
-                "Зачёт отмечает посадку на борт. Перед дальним полётом освойте управление, подготовьте необходимые припасы и выберите место возвращения."
-            ]
-            tasks: [
-                {
-                    id: "357B61E283AA8D27"
-                    type: "advancement"
-                    advancement: "nasledie:alpha34/actions/357b61e283aa8d27"
-                }
-            ]
-            rewards: [
-                {
-                    id: "6D7C085E8F642F56"
-                    type: "xp"
-                    xp: 125
-                }
-                {
-                    id: "CCDC167C31B74EBD"
-                    type: "item"
-                    item: { Count: 1b, id: "immersive_aircraft:hull_reinforcement" }
-                }
-            ]
-        }
-        {
-            id: "34F99F7AE0F5BD92"
-            title: "Борт для экспедиционных грузов"
-            x: 2.50d
-            y: -5.00d
-            icon: "immersive_aircraft:cargo_airship"
-            shape: "star"
-            size: 1.40d
-            optional: true
-            dependencies: [
-                "CABC4D7CB8FBE2B6"
-            ]
-            description: [
-                "Поднимитесь на борт грузового дирижабля. После знакомства с небольшим самолётом подготовьте более вместительную воздушную экспедицию: выберите цель, место посадки и обратный маршрут."
-                "Задание фиксирует посадку на дирижабль; доставку груза и сам полёт оно не проверяет."
-            ]
-            tasks: [
-                {
-                    id: "762D58F4A6D0B9FD"
-                    type: "advancement"
-                    advancement: "nasledie:alpha34/actions/762d58f4a6d0b9fd"
-                }
-            ]
-            rewards: [
-                {
-                    id: "37A8AA830C971427"
-                    type: "xp"
-                    xp: 155
-                }
-                {
-                    id: "E66C23BBC420F22B"
-                    type: "item"
-                    item: { Count: 1b, id: "immersive_aircraft:improved_landing_gear" }
-                }
-            ]
-        }
-        {
-            id: "0C11F617809503C4"
-            title: "Фуражка дежурного по станции"
-            x: 7.50d
-            y: 5.00d
-            icon: "railways:conductor_cap"
-            shape: "star"
-            size: 1.40d
-            optional: true
-            dependencies: [
-                "27A5DCA80F77C440"
-            ]
-            description: [
-                "Наденьте фуражку проводника в слот головы. Теперь у вокзала есть человек, который с серьёзным видом объясняет Юре, почему поезд опять уехал."
-            ]
-            tasks: [
-                {
-                    id: "A62C8B9DBBC8BE51"
-                    type: "advancement"
-                    advancement: "nasledie:alpha35/engineering/0c11f617809503c4"
-                }
-            ]
-            rewards: [
-                {
-                    id: "B8BF8D3AEB537889"
-                    type: "xp"
-                    xp: 75
-                }
-                {
-                    id: "8DBC62FEAA81CD73"
-                    type: "item"
-                    item: { Count: 1b, id: "immersive_aircraft:eco_engine" }
-                }
-            ]
-        }
-    
-
-        {
-            id: "6E3CC9D4F972BDBB"
-            title: "Задним ходом — прямо в историю"
-            x: 10.00d
-            y: 7.50d
-            icon: "create:railway_casing"
-            shape: "star"
-            size: 1.40d
-            optional: true
-            dependencies: ["7B13E63BEA35FC61"]
-            description: [
-                "Столкнитесь с другим поездом, управляя своим составом задним ходом. Это отдельный курьёз для испытательного пути; он не требуется ни для вокзала, ни для дальнего рейса."
-            ]
-            tasks: [
-                {
-                    id: "597F76479A5C70C6"
-                    type: "advancement"
-                    advancement: "create:train_crash_backwards"
-                }
-            ]
-            rewards: [
-                {
-                    id: "0A3A31AC3F162459"
-                    type: "xp"
-                    xp: 310
-                }
-                {
-                    id: "70E27DB9B4E9F83E"
-                    type: "item"
-                    item: { Count: 6b, id: "minecraft:diamond" }
-                }
-            ]
-        }
-]
+	filename: "nasledie_transport"
+	id: "D90DA6CC0E252361"
+	group: "C513A3C540C2F7E2"
+	title: "Дороги нового мира — рельсы и крылья"
+	icon: "create:track"
+	order_index: 11
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			id: "C1772DE6B882A602"
+			title: "Материал большого пути"
+			description: ["Прочный лист из обсидиана и меди нужен для колёс и тормозов поезда. С него начинается железная дорога."]
+			x: 0.0d
+			y: 0.0d
+			icon: "create:sturdy_sheet"
+			size: 1.4d
+			dependencies: ["027C7ABF4F61942F"]
+			tasks: [{
+				id: "B40BFA40C00DDCF0"
+				type: "advancement"
+				advancement: "create:sturdy_sheet"
+			}]
+			rewards: [
+				{
+					id: "F3DD70C0FC70BA53"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "81DB6E786E38750B"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "railways:conductor_whistle"
+					}
+				}
+			]
+		}
+		{
+			id: "168FB859D289DA38"
+			title: "Путь между поселениями"
+			description: ["Проложите первые рельсы Create. Они гнутся плавно — можно вести дорогу через холмы и реки."]
+			x: 3.0d
+			y: 0.0d
+			icon: "create:track"
+			dependencies: ["C1772DE6B882A602"]
+			tasks: [{
+				id: "EE2A7BA814C6A78C"
+				type: "advancement"
+				advancement: "create:track_0"
+			}]
+			rewards: [
+				{
+					id: "233D52AC62CCFCB9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "A33AE9294DACC3AC"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "railways:buffer"
+					}
+				}
+			]
+		}
+		{
+			id: "0BE47753BC6BEF28"
+			title: "Железнодорожный корпус"
+			description: ["Обшейте блок железнодорожным корпусом — из таких собирают вагоны и тележки."]
+			x: 6.0d
+			y: 0.0d
+			icon: "create:railway_casing"
+			dependencies: ["168FB859D289DA38"]
+			tasks: [{
+				id: "13D965A9565E5462"
+				type: "advancement"
+				advancement: "create:train_casing_00"
+			}]
+			rewards: [
+				{
+					id: "F5CD68509D215DC2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "07367AF8146FF466"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "railways:big_buffer"
+					}
+				}
+			]
+		}
+		{
+			id: "D727915E29A5F477"
+			title: "Поезд готов к отправлению"
+			description: ["Соберите состав с тележками и пультом машиниста на станции. Первый рейс — праздник для всей деревни."]
+			x: 9.0d
+			y: 0.0d
+			icon: "create:controls"
+			shape: "star"
+			size: 1.5d
+			dependencies: ["0BE47753BC6BEF28"]
+			tasks: [{
+				id: "B8171EB789B81417"
+				type: "advancement"
+				advancement: "create:train"
+			}]
+			rewards: [
+				{
+					id: "2674A64D5B3D1E35"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "CEBECBC9E736F460"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "railways:benchcart"
+					}
+				}
+			]
+		}
+		{
+			id: "2CC98EB2E8824152"
+			title: "Свисток перед отправлением"
+			description: ["Поставьте на поезд свисток. Пусть вся округа знает, что Максим выезжает."]
+			x: 9.0d
+			y: -3.0d
+			icon: "create:steam_whistle"
+			optional: true
+			dependencies: ["D727915E29A5F477"]
+			tasks: [{
+				id: "13197C0B2EC277DE"
+				type: "advancement"
+				advancement: "create:train_whistle"
+			}]
+			rewards: [
+				{
+					id: "08EAA25DB00A0A2D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "DC825E653C97CD87"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "railways:conductor_vent"
+					}
+				}
+			]
+		}
+		{
+			id: "27A5DCA80F77C440"
+			title: "Передать маршрут машинисту"
+			description: ["Расписание в руках машиниста — и поезд ходит сам. Посадите жителя или рекрута за пульт."]
+			x: 12.0d
+			y: 0.0d
+			icon: "create:schedule"
+			dependencies: ["D727915E29A5F477"]
+			tasks: [{
+				id: "B2C88DE4AE203ABA"
+				type: "advancement"
+				advancement: "create:conductor"
+			}]
+			rewards: [
+				{
+					id: "788ADF233092A98E"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "DADF042A6D041FEB"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "railways:track_coupler"
+					}
+				}
+			]
+		}
+		{
+			id: "3DC5EEC5097BB375"
+			title: "Сигналы для общей линии"
+			description: ["Два поезда на одной ветке — без сигналов это авария. Поставьте первый светофор."]
+			x: 15.0d
+			y: 0.0d
+			icon: "create:track_signal"
+			dependencies: ["27A5DCA80F77C440"]
+			tasks: [{
+				id: "62B09FDF5F878F1B"
+				type: "advancement"
+				advancement: "create:track_signal"
+			}]
+			rewards: [
+				{
+					id: "40289564AA6C31D6"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "D2D9921817C16797"
+					type: "item"
+					item: {
+						Count: 2b
+						id: "railways:semaphore"
+					}
+				}
+			]
+		}
+		{
+			id: "7B13E63BEA35FC61"
+			title: "Максим, сигнал был красным"
+			description: ["Проедьте на красный. Только один раз. Ради достижения. Юра всё видел."]
+			x: 15.0d
+			y: 3.0d
+			icon: "minecraft:redstone_torch"
+			optional: true
+			dependencies: ["3DC5EEC5097BB375"]
+			tasks: [{
+				id: "AF4ED2A5EB3297EA"
+				type: "advancement"
+				advancement: "create:red_signal"
+			}]
+			rewards: [
+				{
+					id: "707C8CF29772CCEB"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "3BF2B6BB14100E98"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "railways:copycat_headstock"
+					}
+				}
+			]
+		}
+		{
+			id: "6E3CC9D4F972BDBB"
+			title: "Задним ходом — прямо в историю"
+			description: ["Столкнитесь с поездом, едущим задом. Неважно, кто виноват — важно, что весело."]
+			x: 15.0d
+			y: 6.0d
+			icon: "create:railway_casing"
+			optional: true
+			dependencies: ["7B13E63BEA35FC61"]
+			tasks: [{
+				id: "8BBDE38B164E342E"
+				type: "advancement"
+				advancement: "create:train_crash_backwards"
+			}]
+			rewards: [
+				{
+					id: "652104FD0FDED981"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "A360766DB9A877B6"
+					type: "item"
+					item: {
+						Count: 3b
+						id: "minecraft:diamond"
+					}
+				}
+			]
+		}
+		{
+			id: "57D8DDEFF1169558"
+			title: "Вокзал знает время прибытия"
+			description: ["Табло показывает, когда придёт поезд. Подключите его к станции через дисплейную связь."]
+			x: 18.0d
+			y: 0.0d
+			icon: "create:display_board"
+			dependencies: ["3DC5EEC5097BB375"]
+			tasks: [{
+				id: "564E0F4D8380E8E2"
+				type: "advancement"
+				advancement: "create:display_board_0"
+			}]
+			rewards: [
+				{
+					id: "3A27A8BACABF3A92"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "152DCEC5A2CB85BA"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "railways:link_and_pin"
+					}
+				}
+			]
+		}
+		{
+			id: "3E14426D5444F75E"
+			title: "Своя рельсовая фабрика"
+			description: ["Наладьте сборку рельсов на машинах. Дальние ветки съедают их тысячами."]
+			x: 12.0d
+			y: -3.0d
+			icon: "create:track"
+			optional: true
+			dependencies: ["27A5DCA80F77C440"]
+			tasks: [{
+				id: "D6ED777B3EBC69A0"
+				type: "advancement"
+				advancement: "create:track_crafting_factory"
+			}]
+			rewards: [
+				{
+					id: "149CFE1B7B942CCF"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "CC54B7642C44986C"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "railways:fuel_tank"
+					}
+				}
+			]
+		}
+		{
+			id: "0A24638E79FF2418"
+			title: "Шесть вагонов для дальней дороги"
+			description: ["Соберите длинный состав — сокровища экспедиций сами себя не довезут."]
+			x: 12.0d
+			y: -6.0d
+			icon: "create:minecart_coupling"
+			optional: true
+			dependencies: ["3E14426D5444F75E"]
+			tasks: [{
+				id: "CAF9C5EA4281492F"
+				type: "advancement"
+				advancement: "create:long_train"
+			}]
+			rewards: [
+				{
+					id: "F34BD200412151A8"
+					type: "xp"
+					xp: 220
+				}
+				{
+					id: "ADD73AD11009B0DE"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "interiors:red_chair"
+					}
+				}
+			]
+		}
+		{
+			id: "B6EA6A2338C90595"
+			title: "Пять тысяч блоков от дома"
+			description: ["Проедьте на поезде пять тысяч блоков за один рейс. Протяните линию к дальнему логову — пусть Катаклизм будет на расстоянии поездки."]
+			x: 15.0d
+			y: -6.0d
+			icon: "minecraft:compass"
+			shape: "star"
+			size: 1.4d
+			optional: true
+			dependencies: ["0A24638E79FF2418"]
+			tasks: [{
+				id: "D59E29C768EC9916"
+				type: "advancement"
+				advancement: "create:long_travel"
+			}]
+			rewards: [
+				{
+					id: "C40FBD169C39CE32"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "8364AD5822D2ED4D"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "waystones:warp_stone"
+					}
+				}
+			]
+		}
+		{
+			id: "AB76CE2DB46422C6"
+			title: "Рейс в другое измерение"
+			description: ["Проведите рельсы сквозь портал. Поезд в Нижний мир — лучший способ возить огненные стержни."]
+			x: 18.0d
+			y: -3.0d
+			icon: "minecraft:obsidian"
+			shape: "star"
+			optional: true
+			dependencies: ["57D8DDEFF1169558"]
+			tasks: [{
+				id: "0624A1E3E21EE0D7"
+				type: "advancement"
+				advancement: "create:train_portal"
+			}]
+			rewards: [
+				{
+					id: "8BF1A2FC2A9F08AD"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "776141C8B86BC78F"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "railways:paint_brush"
+					}
+				}
+			]
+		}
+		{
+			id: "098405E74DFFDA00"
+			title: "Рельсовое происшествие"
+			description: ["Поезд сбивает моба. Не специально, конечно."]
+			x: 6.0d
+			y: 3.0d
+			icon: "minecraft:rotten_flesh"
+			optional: true
+			dependencies: ["0BE47753BC6BEF28"]
+			tasks: [{
+				id: "DA248197E5BE4BA0"
+				type: "advancement"
+				advancement: "create:train_roadkill"
+			}]
+			rewards: [
+				{
+					id: "099B0D36341AFBA7"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "1ED0810E928E024D"
+					type: "item"
+					item: {
+						Count: 12b
+						id: "create:railway_casing"
+					}
+				}
+			]
+		}
+		{
+			id: "B39341943A77E20B"
+			title: "Дрезина для осмотра пути"
+			description: ["Поставьте дрезину и прокатитесь вдоль линии. Ручной привод — Юре полезно."]
+			x: 3.0d
+			y: 3.0d
+			icon: "railways:handcar"
+			optional: true
+			dependencies: ["168FB859D289DA38"]
+			tasks: [{
+				id: "EEF5774CADE39519"
+				type: "advancement"
+				advancement: "nasledie:alpha34/actions/eef5774cade39519"
+				title: "Поставить дрезину"
+			}]
+			rewards: [
+				{
+					id: "07A46A87E8836648"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "C71F05C683354A76"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "farmersdelight:bacon_sandwich"
+					}
+				}
+			]
+		}
+		{
+			id: "0C11F617809503C4"
+			title: "Фуражка дежурного по станции"
+			description: ["Наденьте фуражку кондуктора. Теперь вы главный на вокзале — Юра, предъяви билет."]
+			x: 12.0d
+			y: 3.0d
+			icon: "railways:conductor_cap"
+			optional: true
+			dependencies: ["27A5DCA80F77C440"]
+			tasks: [{
+				id: "A62C8B9DBBC8BE51"
+				type: "advancement"
+				advancement: "nasledie:alpha35/engineering/0c11f617809503c4"
+				title: "Надеть фуражку кондуктора"
+			}]
+			rewards: [
+				{
+					id: "EED881F72CECFBCD"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "6B2492E635224233"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "railways:remote_lens"
+					}
+				}
+			]
+		}
+		{
+			id: "65A85C57E7511720"
+			title: "Винтокрыл на мускульной тяге"
+			description: ["Винтокрыл раскручивают ногами — топливо не нужно. Поднимитесь в воздух на первом самодельном аппарате."]
+			x: 0.0d
+			y: -4.0d
+			icon: "immersive_aircraft:gyrodyne"
+			dependencies: ["1D1395D17D6238DB"]
+			tasks: [{
+				id: "97A1C11F4E962544"
+				type: "advancement"
+				title: "Сесть в винтокрыл"
+				advancement: "nasledie:q/transport/gyrodyne"
+			}]
+			rewards: [
+				{
+					id: "7D213F7636DA6EDF"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "A218038554601A39"
+					type: "item"
+					item: {
+						Count: 4b
+						id: "immersive_aircraft:sail"
+					}
+				}
+			]
+		}
+		{
+			id: "CABC4D7CB8FBE2B6"
+			title: "Биплан для разведки"
+			description: ["Биплан с двигателем летит далеко и быстро. Облетите окрестности — с высоты лагеря и логова видно издалека."]
+			x: 3.0d
+			y: -4.0d
+			icon: "immersive_aircraft:biplane"
+			dependencies: ["65A85C57E7511720"]
+			tasks: [{
+				id: "357B61E283AA8D27"
+				type: "advancement"
+				advancement: "nasledie:alpha34/actions/357b61e283aa8d27"
+				title: "Сесть в биплан"
+			}]
+			rewards: [
+				{
+					id: "BCB4F9A83D672220"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "44C9EAB1DD15F9F5"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "immersive_aircraft:improved_landing_gear"
+					}
+				}
+			]
+		}
+		{
+			id: "78B0CB9F88378AFC"
+			title: "Квадрокоптер"
+			description: ["Квадрокоптер висит в воздухе на месте — удобно для стройки на высоте и осмотра небесных кораблей."]
+			x: 3.0d
+			y: -7.0d
+			icon: "immersive_aircraft:quadrocopter"
+			optional: true
+			dependencies: ["CABC4D7CB8FBE2B6"]
+			tasks: [{
+				id: "B46C9A8DBB9960D9"
+				type: "advancement"
+				title: "Сесть в квадрокоптер"
+				advancement: "nasledie:q/transport/quadrocopter"
+			}]
+			rewards: [
+				{
+					id: "DDC0BD4CF3DFDD5E"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "CC3D047E542B24BA"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "immersive_aircraft:gyroscope"
+					}
+				}
+			]
+		}
+		{
+			id: "0A185710BAFA698A"
+			title: "Дирижабль"
+			description: ["Дирижабль медленный, зато берёт пассажира и груз. Отличный транспорт для экспедиции вдвоём."]
+			x: 6.0d
+			y: -4.0d
+			icon: "immersive_aircraft:airship"
+			dependencies: ["CABC4D7CB8FBE2B6"]
+			tasks: [{
+				id: "D4813CFDB6430EAF"
+				type: "advancement"
+				title: "Подняться на дирижабле"
+				advancement: "nasledie:q/transport/airship"
+			}]
+			rewards: [
+				{
+					id: "EC1EF9EFF55D66B4"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "B949B7908BAFDE65"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "immersive_aircraft:hull_reinforcement"
+					}
+				}
+			]
+		}
+		{
+			id: "34F99F7AE0F5BD92"
+			title: "Грузовой дирижабль"
+			description: ["Летающий склад для дальних экспедиций. Загрузите сундуки — и в путь к логову."]
+			x: 6.0d
+			y: -7.0d
+			icon: "immersive_aircraft:cargo_airship"
+			dependencies: ["0A185710BAFA698A"]
+			tasks: [{
+				id: "762D58F4A6D0B9FD"
+				type: "advancement"
+				advancement: "nasledie:alpha34/actions/762d58f4a6d0b9fd"
+				title: "Подняться на грузовом дирижабле"
+			}]
+			rewards: [
+				{
+					id: "787E4FEA093592DB"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "2A855811B0AB137C"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "immersive_aircraft:eco_engine"
+					}
+				}
+			]
+		}
+		{
+			id: "647BC9A7C706F2A8"
+			title: "Военный дирижабль"
+			description: ["Бронированный корабль с орудиями на борту. Летите на нём к акрополю бури — Сцилла этого не ждёт."]
+			x: 6.0d
+			y: -10.0d
+			icon: "immersive_aircraft:warship"
+			shape: "star"
+			size: 1.4d
+			optional: true
+			dependencies: ["34F99F7AE0F5BD92"]
+			tasks: [{
+				id: "D2C858BEB8627BD5"
+				type: "advancement"
+				title: "Подняться на военном дирижабле"
+				advancement: "nasledie:q/transport/warship"
+			}]
+			rewards: [
+				{
+					id: "5E8DF1B3670314E0"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "3A34871200A9F14B"
+					type: "item"
+					item: {
+						Count: 1b
+						id: "immersive_aircraft:rotary_cannon"
+					}
+				}
+			]
+		}
+	]
 }
+

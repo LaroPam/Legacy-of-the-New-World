@@ -41,9 +41,9 @@
     "add_icon": "builtin"
   },
   "chapters": {
-    "nasledie_prolog": {
+    "nasledie_chronicle": {
       "id": "24C1CA6B47BF45C9",
-      "name": "Первый рассвет",
+      "name": "Летопись",
       "properties": {
         "quest_locked_color": "#9A8C4F",
         "quest_not_started_color": "#FFD43B",
@@ -399,6 +399,26 @@
         "rewards_text_color": "#BEC7FF",
         "selected_chapter_highlight_1": "#786F83FF",
         "selected_chapter_highlight_2": "#366F83FF"
+      }
+    },
+    "nasledie_finale": {
+      "id": "3E920F5B7179C5CD",
+      "name": "Пурпур пустоты",
+      "properties": {
+        "quest_locked_color": "#6E5A8A",
+        "quest_not_started_color": "#C77DFF",
+        "quest_started_color": "#7CF5D3",
+        "quest_completed_color": "#E9D5FF",
+        "dependency_line_completed_color": "#E9D5FF",
+        "dependency_line_uncompleted_color": "#C77DFF",
+        "dependency_line_requires_color": "#7CF5D3",
+        "dependency_line_required_for_color": "#B5F9E6",
+        "quest_view_border": "#C77DFF",
+        "quest_view_title": "#E9D5FF",
+        "tasks_text_color": "#7CF5D3",
+        "rewards_text_color": "#E9D5FF",
+        "selected_chapter_highlight_1": "#78C77DFF",
+        "selected_chapter_highlight_2": "#36C77DFF"
       }
     }
   }

@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "c0": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/underwater_ruin_big"
+      }
+    },
+    "c1": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/underwater_ruin_small"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "c0",
+      "c1"
+    ]
+  ]
+}
